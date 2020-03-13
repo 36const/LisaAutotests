@@ -1,0 +1,31 @@
+{
+    "name": "gomer/lisa-tests",
+    "description": "API tests for lisa",
+    "type": "poject",
+    "license": "Open Source",
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@gitlab-ce.local:autotests/codeception-test-helper.git"
+        }
+    ],
+    "require": {
+        "codeception/codeception": "^3.0",
+        "phpunit/phpunit": "^7.0",
+        "cnam/codeception-json-schema": "^0.0.1",
+        "mvadzim/allure-codeception": "^2.0",
+        "cweagans/composer-patches": "^1.6",
+        "rzk/codeception-test-helper" : "*"
+    },
+    "require-dev": {
+    },
+    "extra": {
+        "patches": {
+            "codeception/codeception": {
+                "Fix https://github.com/Codeception/Codeception/issues/5783 (Undefined table with '-')": "vendor/product-api-tests/tests/_support/Helper/Patch/patch-codeception-db-driver.diff"
+            }
+        }
+    }
+
+}

@@ -1,0 +1,43 @@
+suite_namespace: lisa
+actor: FunctionalTester
+modules:
+    enabled:
+        - \lisa\Helper\Api
+        - Cli
+        - JsonSchema
+        - Asserts
+        - rzk\Database
+        - PhpBrowser:
+              url: http://gomer.local # Domen вашего приложения
+              auth: ['test', 'G#G@#$H%^H@%H#%^HN#%W^UHNYW$%Y#Q$TF!$']
+        - REST:
+              depends: PhpBrowser
+              url: http://gomer.local # Domen вашего приложения, должен быть такой же как и выше
+        - Db: # Подключение к базе вашего приложения (Именно в эту базу будут загружатся фикстуры)
+              dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=gomer_db'
+              user: 'gomer' # Логин к базе
+              password: '4c0EcmzAm28AeqbFFOb8N5RBw' # Пароль к базе
+              cleanup: false
+              databases:
+                gomer_fixtures:
+                  dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=gomer_db'
+                  user: 'gomer'
+                  password: '4c0EcmzAm28AeqbFFOb8N5RBw'
+                cooper_fixtures:
+                  dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=cooper_mock_db'
+                  user: 'gomer'
+                  password: '4c0EcmzAm28AeqbFFOb8N5RBw'
+                  cleanup: true
+                  #                  repopulate: false
+                  populate: true
+                  dump: 'tests/dump_cooper.sql'
+                store_fixtures:
+                  dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=store_mock_db'
+                  user: 'gomer'
+                  password: '4c0EcmzAm28AeqbFFOb8N5RBw'
+                  cleanup: true
+                  populate: true
+                  dump: 'tests/dump_store.sql'
+
+        #   - Yii2: # Интеграция с yii2
+        #        part: [orm, email, fixtures]
