@@ -1,15 +1,15 @@
 suite_namespace: lisa
-actor: ApiTester
+actor: FunctionalTester
 modules:
     enabled:
-        - \lisa\Helper\Api
+        - \lisa\Helper\Functional
         - Cli
         - JsonSchema
         - Asserts
         - rzk\Database
         - PhpBrowser:
               url: http://gomer.local # Domen вашего приложения
-              auth: ['test', 'G#G@#$H%^H@%H#%^HN#%W^UHNYW$%Y#Q$TF!$']
+              auth: ['test', '$2y$13$N4pQhvAYnwJM3AjjGmO3r.rfVRlHwUIYUCr0zGjxatZDZ..RRMSs.']
         - REST:
               depends: PhpBrowser
               url: http://gomer.local # Domen вашего приложения, должен быть такой же как и выше
@@ -24,5 +24,5 @@ modules:
                   user: 'lisa'
                   password: 'lisa'
 
-     #   - Yii2: # Интеграция с yii2
-      #        part: [orm, email, fixtures]
+        #   - Yii2: # Интеграция с yii2
+        #        part: [orm, email, fixtures]
