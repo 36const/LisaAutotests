@@ -1,13 +1,14 @@
 <?php
-namespace gomer;
+namespace lisa;
 
 use Codeception\Util\HttpCode;
 use rzk\TestHelper;
 
 /**
- * @group api
+ * @group lisa
+ * @group GETItemsLogXmlDownloadCest
  */
-class GETItemsLogXmlDownloadCest
+class GETItemsLogXmlDownloadsCest
 {
     /**
      * @var TestHelper $testHelper
@@ -39,8 +40,7 @@ class GETItemsLogXmlDownloadCest
      */
     protected function pageProvider()
     {
-        $test = $this->testHelper->getDataProvider();
-        return $test;
+        return $this->testHelper->getDataProvider();
     }
 
 
@@ -61,12 +61,6 @@ class GETItemsLogXmlDownloadCest
     public function GETItemsLogXmlDownload(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
-        $this->testHelper->loadFixture($I, $data);
-        $I->wantTo($data['setting']['description']);
-        $I->haveHttpHeader('Content-Type', 'application/json');
-        $I->sendGET('/gomer/api/pricevalidator/items-log-xml/download', $providerData['query_params']);
-        $I->seeResponseCodeIs($providerData['responseCode']);
-        $I->seeResponseIsJson();
-        $I->seeResponseContainsJson($providerData['fields']);
+       print_r($providerData);
     }
 }

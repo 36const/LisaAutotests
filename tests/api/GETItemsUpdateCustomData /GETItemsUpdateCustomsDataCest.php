@@ -4,10 +4,8 @@ namespace gomer;
 use Codeception\Util\HttpCode;
 use rzk\TestHelper;
 
-/**
- * @group api
- */
-class GETItemsUpdateCustomDataCest
+
+class GETItemsUpdateCustomsDataCest
 {
     /**
      * @var TestHelper $testHelper
