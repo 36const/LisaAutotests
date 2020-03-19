@@ -1,11 +1,14 @@
 <?php
-namespace gomer;
+namespace lisa;
 
 use Codeception\Util\HttpCode;
 use rzk\TestHelper;
 
-
-class GETItemsUpdateCustomDataCest
+/**
+ * @group lisa
+ * @group GETItemsLogXmlDownloadCest
+ */
+class GETItemsLogXmlDownloadsCest
 {
     /**
      * @var TestHelper $testHelper
@@ -37,8 +40,7 @@ class GETItemsUpdateCustomDataCest
      */
     protected function pageProvider()
     {
-        $test = $this->testHelper->getDataProvider();
-        return $test;
+        return $this->testHelper->getDataProvider();
     }
 
 
@@ -56,17 +58,9 @@ class GETItemsUpdateCustomDataCest
      */
 
     // tests
-    public function GETItemsUpdateCustomData(ApiTester $I, \Codeception\Example $data)
+    public function GETItemsLogXmlDownload(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
-        $this->testHelper->loadFixture($I, $data);
-        $I->wantTo($data['setting']['description']);
-
-        $I->sendGET('/gomer/api/items/update-custom-data', $providerData['query_params']);
-        // подчищаем ребит, позже переделать на clearRabbit()
-        $I->runShellCommand('./yii gomer/uploader/items/update-custom-data');
-
-        $I->seeResponseCodeIs($providerData['responseCode']);
-        $I->seeResponseContainsJson($providerData['fields']);
+       print_r($providerData);
     }
 }

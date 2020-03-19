@@ -1,2 +1,5 @@
 <?php
-define("FIXTURES_DIR", __DIR__ . '/fixtures/template/');
+
+use rzk\FixtureController;
+
+FixtureController::setFixtureDir(__DIR__ . '/fixtures/template/');
