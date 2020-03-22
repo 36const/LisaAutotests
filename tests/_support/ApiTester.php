@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Util\HttpCode;
@@ -29,12 +30,11 @@ class ApiTester extends \Codeception\Actor
      */
 
 
-    public function loadDataForTest(\Codeception\Example $data , TestHelper $testHelper)
+    public function loadDataForTest(\Codeception\Example $data, TestHelper $testHelper)
     {
         $I = $this;
         $testHelper->loadFixtureAndMock($I, $data);
         $I->wantTo($data['setting']['description']);
-
     }
 
     public function validateGETResponse(\Codeception\Example $data)
@@ -46,17 +46,14 @@ class ApiTester extends \Codeception\Actor
         $I->seeResponseContainsJson($providerData['response_fields']);
     }
 
-    public function validateInDB(string $DBName, string $Table,array $checkValuesRecords )
+    public function validateInDB(string $DBName, string $Table, array $checkValuesRecords)
     {
         $I = $this;
         $I->amConnectedToDatabase($DBName);
 
-        foreach ($checkValuesRecords as $item)
-        {
+        foreach ($checkValuesRecords as $item) {
             $I->seeInDatabase($Table, $item);
-
         }
-
     }
 }
 

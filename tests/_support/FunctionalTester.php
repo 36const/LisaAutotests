@@ -42,6 +42,7 @@ class FunctionalTester extends \Codeception\Actor
         $I->click("login-button");
 
         $I->seeInTitle("Добро пожаловать");
+        $I->seeCookie('_csrf-backend');
     }
 
     public function checkboxInCreatingPage($name)

@@ -16,7 +16,7 @@ class RequestCreatingCest
      */
     private $testHelper;
 
-    /**z
+    /**
      * GetMainCest constructor.
      * Конструктор класса GetMainCest
      *
