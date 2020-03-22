@@ -29,7 +29,6 @@ class ApiTester extends \Codeception\Actor
      * Define custom actions here
      */
 
-
     public function loadDataForTest(\Codeception\Example $data, TestHelper $testHelper)
     {
         $I = $this;
@@ -46,14 +45,11 @@ class ApiTester extends \Codeception\Actor
         $I->seeResponseContainsJson($providerData['response_fields']);
     }
 
-    public function validateInDB(string $DBName, string $Table, array $checkValuesRecords)
+    public function validateInDB(string $DBName, string $table, array $checkValuesRecords)
     {
         $I = $this;
         $I->amConnectedToDatabase($DBName);
-
-        foreach ($checkValuesRecords as $item) {
-            $I->seeInDatabase($Table, $item);
-        }
+        $I->seeInDatabase($table, $checkValuesRecords);
     }
 }
 

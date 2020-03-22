@@ -6,10 +6,10 @@ use rzk\TestHelper;
 
 /**
  * @group lisa
- * @group POSTGomer_1_2
+ * @group POSTGomer_1_2_automod
  */
 
-class POSTGomer_1_2Cest
+class POSTGomer_1_2_automodCest
 {
     /**
      * @var TestHelper $testHelper
@@ -58,7 +58,7 @@ class POSTGomer_1_2Cest
      *
      */
 
-    public function POSTGomer_1_2(ApiTester $I, \Codeception\Example $data)
+    public function POSTGomer_1_2_automod(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
         $this->testHelper->loadFixture($I, $data);
@@ -69,7 +69,8 @@ class POSTGomer_1_2Cest
                 "sync_source_id" => 1,
                 "market_id" => 83,
                 "type_id" => 1,
-                "items_count" => 10
+                "items_count" => 10,
+                "auto_moderation" => true
             ]);
 
         $I->seeResponseCodeIs($providerData['responseCode']);

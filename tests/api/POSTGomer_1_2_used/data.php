@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Заявка на Добавление новых товаров',
+            'description' => 'Заявка на Добавление новых товаров c Б/У>',
         ],
 
         'provider_data' => [
@@ -58,7 +58,11 @@ return [
                         "sv_report_periods" => null,
                     ],
 
-                "requests_fields" => []
+                "requests_fields" => [
+                    'request_id' => 603,
+                    'field_id' => 17,
+                    'value' => 1,
+                ]
             ]
         ]
     ]

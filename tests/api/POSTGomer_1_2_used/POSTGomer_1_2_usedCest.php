@@ -1,11 +1,15 @@
 <?php
-namespace gomer;
+namespace lisa;
 
 use Codeception\Util\HttpCode;
 use rzk\TestHelper;
 
+/**
+ * @group lisa
+ * @group POSTGomer_1_2_used
+ */
 
-class GETItemsUpdateCustomsDataCest
+class POSTGomer_1_2_usedCest
 {
     /**
      * @var TestHelper $testHelper
@@ -41,7 +45,6 @@ class GETItemsUpdateCustomsDataCest
         return $test;
     }
 
-
     public function _before(ApiTester $I)
     {
     }
@@ -55,18 +58,25 @@ class GETItemsUpdateCustomsDataCest
      *
      */
 
-    // tests
-    public function GETItemsUpdateCustomData(ApiTester $I, \Codeception\Example $data)
+    public function POSTGomer_1_2_used(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
         $this->testHelper->loadFixture($I, $data);
         $I->wantTo($data['setting']['description']);
 
-        $I->sendGET('/gomer/api/items/update-custom-data', $providerData['query_params']);
-        // подчищаем ребит, позже переделать на clearRabbit()
-        $I->runShellCommand('./yii gomer/uploader/items/update-custom-data');
+        $I->sendPOST('/bpm/api/create-request-by-market-id',
+            [
+                "sync_source_id" => 1,
+                "market_id" => 83,
+                "type_id" => 1,
+                "items_count" => 10,
+                "used_ref" => true
+            ]);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
-        $I->seeResponseContainsJson($providerData['fields']);
+        $I->seeResponseContainsJson($providerData['responseBody']);
+
+        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
+        $I->validateInDB('lisa_fixtures', 'requests_fields', $providerData['db']['requests_fields']);
     }
 }

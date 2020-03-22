@@ -9,7 +9,7 @@ modules:
         - rzk\Database
         - PhpBrowser:
               url: http://gomer.local # Domen вашего приложения
-              auth: ['test', 'G#G@#$H%^H@%H#%^HN#%W^UHNYW$%Y#Q$TF!$']
+              auth: ['lisa_api', 'lisa_api']
         - REST:
               depends: PhpBrowser
               url: http://gomer.local # Domen вашего приложения, должен быть такой же как и выше

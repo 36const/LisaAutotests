@@ -6,9 +6,10 @@ use rzk\TestHelper;
 
 /**
  * @group lisa
- * @group GETItemsLogXmlDownloadCest
+ * @group POSTGomer_1_2_used_automod
  */
-class GETItemsLogXmlDownloadsCest
+
+class POSTGomer_1_2_used_automodCest
 {
     /**
      * @var TestHelper $testHelper
@@ -40,9 +41,9 @@ class GETItemsLogXmlDownloadsCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider();
+        $test = $this->testHelper->getDataProvider();
+        return $test;
     }
-
 
     public function _before(ApiTester $I)
     {
@@ -57,10 +58,27 @@ class GETItemsLogXmlDownloadsCest
      *
      */
 
-    // tests
-    public function GETItemsLogXmlDownload(ApiTester $I, \Codeception\Example $data)
+    public function POSTGomer_1_2_used_automod(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
-       print_r($providerData);
+        $this->testHelper->loadFixture($I, $data);
+        $I->wantTo($data['setting']['description']);
+
+        $I->sendPOST('/bpm/api/create-request-by-market-id',
+            [
+                "sync_source_id" => 1,
+                "market_id" => 83,
+                "type_id" => 1,
+                "items_count" => 10,
+                "used_ref" => true,
+                "auto_moderation" => true
+            ]);
+
+        $I->seeResponseCodeIs($providerData['responseCode']);
+        $I->seeResponseContainsJson($providerData['responseBody']);
+
+        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
+        $I->validateInDB('lisa_fixtures', 'requests_fields', $providerData['db']['requests_fields_1']);
+        $I->validateInDB('lisa_fixtures', 'requests_fields', $providerData['db']['requests_fields_2']);
     }
 }

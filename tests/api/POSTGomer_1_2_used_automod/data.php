@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Заявка на Добавление новых товаров',
+            'description' => 'Заявка на Добавление новых товаров c Автомодерацией и Б/У>',
         ],
 
         'provider_data' => [
@@ -58,7 +58,17 @@ return [
                         "sv_report_periods" => null,
                     ],
 
-                "requests_fields" => []
+                "requests_fields_1" => [
+                        'request_id' => 603,
+                        'field_id' => 5,
+                        'value' => 1,
+                    ],
+
+                "requests_fields_2" => [
+                        'request_id' => 603,
+                        'field_id' => 17,
+                        'value' => 1
+                    ]
             ]
         ]
     ]
