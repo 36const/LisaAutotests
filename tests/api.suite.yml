@@ -32,7 +32,7 @@ modules:
                   user: 'gomer'
                   password: '4c0EcmzAm28AeqbFFOb8N5RBw'
                   cleanup: true
-                  #                  repopulate: false
+                  #repopulate: false
                   populate: true
                   dump: 'tests/dump_cooper.sql'
 
