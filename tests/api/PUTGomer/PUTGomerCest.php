@@ -1,11 +1,15 @@
 <?php
-namespace gomer;
+namespace lisa;
 
 use Codeception\Util\HttpCode;
 use rzk\TestHelper;
 
+/**
+ * @group lisa
+ * @group PUTGomer
+ */
 
-class GETItemsUpdateCustomsDataCest
+class PUTGomerCest
 {
     /**
      * @var TestHelper $testHelper
@@ -41,7 +45,6 @@ class GETItemsUpdateCustomsDataCest
         return $test;
     }
 
-
     public function _before(ApiTester $I)
     {
     }
@@ -55,18 +58,17 @@ class GETItemsUpdateCustomsDataCest
      *
      */
 
-    // tests
-    public function GETItemsUpdateCustomData(ApiTester $I, \Codeception\Example $data)
+    public function PUTGomer(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
         $this->testHelper->loadFixture($I, $data);
         $I->wantTo($data['setting']['description']);
 
-        $I->sendGET('/gomer/api/items/update-custom-data', $providerData['query_params']);
-        // подчищаем ребит, позже переделать на clearRabbit()
-        $I->runShellCommand('./yii gomer/uploader/items/update-custom-data');
+        $I->sendPUT('/bpm/api/update-amount-to-work?id=596', ["amount" => 10]);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
-        $I->seeResponseContainsJson($providerData['fields']);
+        $I->seeResponseContainsJson($providerData['responseBody']);
+
+        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
     }
 }

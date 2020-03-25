@@ -6,9 +6,10 @@ use rzk\TestHelper;
 
 /**
  * @group lisa
- * @group GETItemsLogXmlDownloadCest
+ * @group GETGomerSyncSourceId
  */
-class GETItemsLogXmlDownloadsCest
+
+class GETGomerSyncSourceIdCest
 {
     /**
      * @var TestHelper $testHelper
@@ -40,9 +41,9 @@ class GETItemsLogXmlDownloadsCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider();
+        $test = $this->testHelper->getDataProvider();
+        return $test;
     }
-
 
     public function _before(ApiTester $I)
     {
@@ -57,10 +58,18 @@ class GETItemsLogXmlDownloadsCest
      *
      */
 
-    // tests
-    public function GETItemsLogXmlDownload(ApiTester $I, \Codeception\Example $data)
+    public function GETGomerSyncSourceId(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
-       print_r($providerData);
+        $this->testHelper->loadFixture($I, $data);
+        $I->wantTo($data['setting']['description']);
+
+        $I->sendGET('/bpm/api/get-request-by-sync-source-id',
+            [
+                "sync_source_id" => 1,
+            ]);
+
+        $I->seeResponseCodeIs($providerData['responseCode']);
+        $I->seeResponseContainsJson($providerData['responseBody']);
     }
 }

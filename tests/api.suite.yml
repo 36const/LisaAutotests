@@ -9,7 +9,7 @@ modules:
         - rzk\Database
         - PhpBrowser:
               url: http://gomer.local # Domen вашего приложения
-              auth: ['test', 'G#G@#$H%^H@%H#%^HN#%W^UHNYW$%Y#Q$TF!$']
+              auth: ['lisa_api', 'lisa_api']
         - REST:
               depends: PhpBrowser
               url: http://gomer.local # Domen вашего приложения, должен быть такой же как и выше
@@ -23,6 +23,18 @@ modules:
                   dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=lisa_db'
                   user: 'lisa'
                   password: 'jw8s0F4'
+                gomer_fixtures:
+                  dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=gomer_db'
+                  user: 'gomer'
+                  password: '4c0EcmzAm28AeqbFFOb8N5RBw'
+                cooper_fixtures:
+                  dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=cooper_mock_db'
+                  user: 'gomer'
+                  password: '4c0EcmzAm28AeqbFFOb8N5RBw'
+                  cleanup: true
+                  #repopulate: false
+                  populate: true
+                  dump: 'tests/dump_cooper.sql'
 
-     #   - Yii2: # Интеграция с yii2
+      #   - Yii2: # Интеграция с yii2
       #        part: [orm, email, fixtures]
