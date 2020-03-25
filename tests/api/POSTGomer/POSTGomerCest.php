@@ -8,7 +8,6 @@ use rzk\TestHelper;
  * @group lisa
  * @group POSTGomer
  */
-
 class POSTGomerCest
 {
     /**
@@ -57,7 +56,6 @@ class POSTGomerCest
      * @dataProvider pageProvider
      *
      */
-
     public function POSTGomer(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
