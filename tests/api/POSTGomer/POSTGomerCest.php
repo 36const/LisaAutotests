@@ -6,10 +6,10 @@ use rzk\TestHelper;
 
 /**
  * @group lisa
- * @group POSTGomer_1_2
+ * @group POSTGomer
  */
 
-class POSTGomer_1_2Cest
+class POSTGomerCest
 {
     /**
      * @var TestHelper $testHelper
@@ -58,19 +58,13 @@ class POSTGomer_1_2Cest
      *
      */
 
-    public function POSTGomer_1_2(ApiTester $I, \Codeception\Example $data)
+    public function POSTGomer(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
         $this->testHelper->loadFixture($I, $data);
         $I->wantTo($data['setting']['description']);
 
-        $I->sendPOST('/bpm/api/create-request-by-market-id',
-            [
-                "sync_source_id" => 1,
-                "market_id" => 83,
-                "type_id" => 1,
-                "items_count" => 10
-            ]);
+        $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
