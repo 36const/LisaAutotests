@@ -454,5 +454,56 @@ return [
                 "requests_fields" => []
             ]
         ]
-    ]
+    ],
+
+    'case8' => [
+        'setting' => [
+            'description' => 'Пустой запрос',
+        ],
+        'provider_data' => [
+            'requestURL' => '/bpm/api/create-request-by-market-id',
+            'requestBody' => [],
+            "responseCode" => 200,
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Не передано поле sync_source_id",
+                    "Не передано поле market_id",
+                    "Не передано поле type_id",
+                    "Не передано поле items_count"
+                ]
+            ],
+            'db' => [
+                "requests" => [],
+                "requests_fields" => []
+            ]
+        ]
+    ],
+
+    'case9' => [
+        'setting' => [
+            'description' => 'Несуществующий продавец',
+        ],
+        'provider_data' => [
+            'requestURL' => '/bpm/api/create-request-by-market-id',
+            'requestBody' => [
+                "sync_source_id" => 1,
+                "market_id" => 9999999,
+                "type_id" => 1,
+                "items_count" => 10
+            ],
+            "responseCode" => 200,
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "передан несуществующий продавец"
+                ]
+            ],
+            'db' => [
+                "requests" => [],
+                "requests_fields" => []
+            ]
+        ]
+    ],
+
 ];

@@ -6,9 +6,9 @@ use rzk\TestHelper;
 
 /**
  * @group lisa
- * @group POSTGomer
+ * @group POSTModeration
  */
-class POSTGomerCest
+class POSTModerationCest
 {
     /**
      * @var TestHelper $testHelper
@@ -40,7 +40,7 @@ class POSTGomerCest
      */
     protected function pageProvider()
     {
-        $test = $this->testHelper->getDataProvider('case8 case9');
+        $test = $this->testHelper->getDataProvider();
         return $test;
     }
 
@@ -56,7 +56,7 @@ class POSTGomerCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTGomer(ApiTester $I, \Codeception\Example $data)
+    public function POSTModeration(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
         $this->testHelper->loadFixture($I, $data);

@@ -8,7 +8,6 @@ use rzk\TestHelper;
  * @group lisa
  * @group PUTGomer
  */
-
 class PUTGomerCest
 {
     /**
@@ -57,14 +56,13 @@ class PUTGomerCest
      * @dataProvider pageProvider
      *
      */
-
     public function PUTGomer(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
         $this->testHelper->loadFixture($I, $data);
         $I->wantTo($data['setting']['description']);
 
-        $I->sendPUT('/bpm/api/update-amount-to-work?id=596', ["amount" => 10]);
+        $I->sendPUT($providerData['requestURL'], $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);

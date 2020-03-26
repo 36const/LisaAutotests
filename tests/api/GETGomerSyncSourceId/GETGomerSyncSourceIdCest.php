@@ -57,7 +57,6 @@ class GETGomerSyncSourceIdCest
      * @dataProvider pageProvider
      *
      */
-
     public function GETGomerSyncSourceId(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
