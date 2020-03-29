@@ -6,10 +6,10 @@ use rzk\TestHelper;
 
 /**
  * @group lisa
- * @group GETGomerSyncSourceId
+ * @group GETGomerSyncSourceIdtTypeId
  */
 
-class GETGomerSyncSourceIdCest
+class GETGomerSyncSourceIdtTypeIdCest
 {
     /**
      * @var TestHelper $testHelper
@@ -57,16 +57,13 @@ class GETGomerSyncSourceIdCest
      * @dataProvider pageProvider
      *
      */
-    public function GETGomerSyncSourceId(ApiTester $I, \Codeception\Example $data)
+    public function GETGomerSyncSourceIdtTypeId(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
         $this->testHelper->loadFixture($I, $data);
         $I->wantTo($data['setting']['description']);
 
-        $I->sendGET('/bpm/api/get-request-by-sync-source-id',
-            [
-                "sync_source_id" => 1,
-            ]);
+        $I->sendGET('/bpm/api/get-request-by-sync-source-id', $providerData['requestParameters']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
