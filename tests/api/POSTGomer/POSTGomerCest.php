@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Util\HttpCode;
@@ -40,7 +41,7 @@ class POSTGomerCest
      */
     protected function pageProvider()
     {
-        $test = $this->testHelper->getDataProvider('case8 case9');
+        $test = $this->testHelper->getDataProvider('case2 case1');
         return $test;
     }
 
@@ -59,7 +60,7 @@ class POSTGomerCest
     public function POSTGomer(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
-        $this->testHelper->loadFixture($I, $data);
+        $this->testHelper->clearDB($I, $data);
         $I->wantTo($data['setting']['description']);
 
         $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
@@ -67,7 +68,13 @@ class POSTGomerCest
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
 
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->validateInDB('lisa_fixtures', 'requests_fields', $providerData['db']['requests_fields']);
+        $I->seeNumRecords($providerData['seeNumRecords']['requests'], 'requests');
+        $I->seeNumRecords($providerData['seeNumRecords']['requests_fields'], 'requests_fields');
+
+        $I->grabNumRecords('requests') > 0 ??
+            $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
+        $I->grabNumRecords('requests_fields') > 0 ??
+            $I->validateInDB('lisa_fixtures', 'requests_fields', $providerData['db']['requests_fields']);
+
     }
 }
