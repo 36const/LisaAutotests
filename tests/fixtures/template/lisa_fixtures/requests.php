@@ -1,7 +1,7 @@
 <?php
 return [
     [
-        'id' => 596,
+        'id' => 1,
         "author_id" => 4,
         "type_id" => 1,
         "supervisor_id" => 7,
@@ -16,7 +16,7 @@ return [
         "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
         "description" => 'description',
         "attachments" => '[]',
-        "category_id" => null,
+        "category_id" => 1,
         "seller_id" => 5,
         "recommendations" => null,
         "reason_id" => null,

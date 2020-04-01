@@ -7,7 +7,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/update-amount-to-work?id=596',
+            'requestURL' => '/bpm/api/update-amount-to-work?id=1',
             'requestBody' => [
                 "amount" => 10
             ],
@@ -15,7 +15,7 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 596
+                    "id" => 1
                 ]
             ],
             'db' => [
@@ -32,7 +32,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/update-amount-to-work?id=596',
+            'requestURL' => '/bpm/api/update-amount-to-work?id=1',
             'requestBody' => [],
             "responseCode" => 200,
             "responseBody" => [
@@ -55,7 +55,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/update-amount-to-work?id=596',
+            'requestURL' => '/bpm/api/update-amount-to-work?id=1',
             'requestBody' => [
                 "amount" => ''
             ],

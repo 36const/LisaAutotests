@@ -26,12 +26,12 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 622
+                    "id" => 2
                 ]
             ],
             'db' => [
                 "requests" => [
-                    "id" => 622,
+                    "id" => 2,
                     "author_id" => 1,
                     "type_id" => 2,
                     "supervisor_id" => 6,
@@ -83,17 +83,17 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 622,
+                    'request_id' => 2,
                     'field_id' => 1,
                     'value' => 1,
                 ],
                 "requests_fields" => [
-                    'request_id' => 622,
+                    'request_id' => 2,
                     'field_id' => 12,
                     'value' => 1,
                 ],
                 "requests_fields" => [
-                    'request_id' => 622,
+                    'request_id' => 2,
                     'field_id' => 20,
                     'value' => 61,
                 ]
@@ -115,12 +115,12 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 623
+                    "id" => 3
                 ]
             ],
             'db' => [
                 "requests" => [
-                    "id" => 623,
+                    "id" => 3,
                     "author_id" => 1,
                     "type_id" => 2,
                     "supervisor_id" => 6,
@@ -172,17 +172,17 @@ Media:
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 623,
+                    'request_id' => 3,
                     'field_id' => 1,
                     'value' => 1,
                 ],
                 "requests_fields" => [
-                    'request_id' => 623,
+                    'request_id' => 3,
                     'field_id' => 12,
                     'value' => 1,
                 ],
                 "requests_fields" => [
-                    'request_id' => 623,
+                    'request_id' => 3,
                     'field_id' => 20,
                     'value' => 61,
                 ]
