@@ -5,6 +5,7 @@ return [
         'setting' => [
             'description' => 'Заявка модерации со всеми полями',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-client-comment',
             'requestBody' => [
@@ -26,15 +27,19 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 2
+                    "id" => 1
                 ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 1,
+                "requests_fields" => 3
             ],
             'db' => [
                 "requests" => [
-                    "id" => 2,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 2,
-                    "supervisor_id" => 6,
+                    "supervisor_id" => 4,
                     "manager_id" => null,
                     "status" => 1,
                     "direction" => 1,
@@ -83,17 +88,17 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 2,
+                    'request_id' => 1,
                     'field_id' => 1,
                     'value' => 1,
                 ],
                 "requests_fields" => [
-                    'request_id' => 2,
+                    'request_id' => 1,
                     'field_id' => 12,
                     'value' => 1,
                 ],
                 "requests_fields" => [
-                    'request_id' => 2,
+                    'request_id' => 1,
                     'field_id' => 20,
                     'value' => 61,
                 ]
@@ -105,6 +110,7 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
         'setting' => [
             'description' => 'Заявка модерации только с обязательными полями',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-client-comment',
             'requestBody' => [
@@ -115,15 +121,19 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 3
+                    "id" => 1
                 ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 1,
+                "requests_fields" => 3
             ],
             'db' => [
                 "requests" => [
-                    "id" => 3,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 2,
-                    "supervisor_id" => 6,
+                    "supervisor_id" => 4,
                     "manager_id" => null,
                     "status" => 1,
                     "direction" => 1,
@@ -172,17 +182,17 @@ Media:
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 3,
+                    'request_id' => 1,
                     'field_id' => 1,
                     'value' => 1,
                 ],
                 "requests_fields" => [
-                    'request_id' => 3,
+                    'request_id' => 1,
                     'field_id' => 12,
                     'value' => 1,
                 ],
                 "requests_fields" => [
-                    'request_id' => 3,
+                    'request_id' => 1,
                     'field_id' => 20,
                     'value' => 61,
                 ]
@@ -194,6 +204,7 @@ Media:
         'setting' => [
             'description' => 'Заявка модерации с пустым id',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-client-comment',
             'requestBody' => [
@@ -217,6 +228,10 @@ Media:
                 "errors" => [
                     "Не передано поле idComment",
                 ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 0,
+                "requests_fields" => 0
             ],
             'db' => [
                 "requests" => [],
@@ -253,6 +268,10 @@ Media:
                     "idComment: поле должно быть числом"
                 ]
             ],
+            "seeNumRecords" => [
+                "requests" => 0,
+                "requests_fields" => 0
+            ],
             'db' => [
                 "requests" => [],
                 "requests_fields" => [],
@@ -288,6 +307,10 @@ Media:
                     "Не передано поле sProductName"
                 ]
             ],
+            "seeNumRecords" => [
+                "requests" => 0,
+                "requests_fields" => 0
+            ],
             'db' => [
                 "requests" => [],
                 "requests_fields" => [],
@@ -322,6 +345,10 @@ Media:
                 "errors" => [
                     "Не передано поле sProductName"
                 ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 0,
+                "requests_fields" => 0
             ],
             'db' => [
                 "requests" => [],

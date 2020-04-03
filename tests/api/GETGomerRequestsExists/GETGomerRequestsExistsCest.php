@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Util\HttpCode;
@@ -6,10 +7,10 @@ use rzk\TestHelper;
 
 /**
  * @group lisa
- * @group GETGomerSyncSourceIdtTypeId
+ * @group lisa_api
+ * @group GETGomerRequestsExists
  */
-
-class GETGomerSyncSourceIdtTypeIdCest
+class GETGomerRequestsExistsCest
 {
     /**
      * @var TestHelper $testHelper
@@ -57,13 +58,14 @@ class GETGomerSyncSourceIdtTypeIdCest
      * @dataProvider pageProvider
      *
      */
-    public function GETGomerSyncSourceIdtTypeId(ApiTester $I, \Codeception\Example $data)
+    public function GETGomerRequestsExists(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
+        $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
         $this->testHelper->loadFixture($I, $data);
         $I->wantTo($data['setting']['description']);
 
-        $I->sendGET('/bpm/api/get-request-by-sync-source-id', $providerData['requestParameters']);
+        $I->sendGET('/bpm/api/requests-exists', $providerData['requestParameters']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);

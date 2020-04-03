@@ -7,9 +7,10 @@ use rzk\TestHelper;
 /**
  * @group lisa
  * @group lisa_api
- * @group PUTGomer
+ * @group GETModerationRequestStatuses
  */
-class PUTGomerCest
+
+class GETModerationRequestStatusesCest
 {
     /**
      * @var TestHelper $testHelper
@@ -41,7 +42,7 @@ class PUTGomerCest
      */
     protected function pageProvider()
     {
-        $test = $this->testHelper->getDataProvider();
+        $test = $this->testHelper->getDataProvider('');
         return $test;
     }
 
@@ -57,18 +58,16 @@ class PUTGomerCest
      * @dataProvider pageProvider
      *
      */
-    public function PUTGomer(ApiTester $I, \Codeception\Example $data)
+    public function GETModerationRequestStatuses(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
         $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
         $this->testHelper->loadFixture($I, $data);
         $I->wantTo($data['setting']['description']);
 
-        $I->sendPUT($providerData['requestURL'], $providerData['requestBody']);
+        $I->sendGET('/bpm/api/get-request-statuses', $providerData['requestParameters']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
-
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
     }
 }

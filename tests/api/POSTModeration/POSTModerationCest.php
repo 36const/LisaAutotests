@@ -6,6 +6,7 @@ use rzk\TestHelper;
 
 /**
  * @group lisa
+ * @group lisa_api
  * @group POSTModeration
  */
 class POSTModerationCest
@@ -59,7 +60,7 @@ class POSTModerationCest
     public function POSTModeration(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
-        $this->testHelper->loadFixture($I, $data);
+        $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
         $I->wantTo($data['setting']['description']);
 
         $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
@@ -67,7 +68,13 @@ class POSTModerationCest
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
 
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->validateInDB('lisa_fixtures', 'requests_fields', $providerData['db']['requests_fields']);
+        $I->seeNumRecords($providerData['seeNumRecords']['requests'], 'requests');
+        $I->seeNumRecords($providerData['seeNumRecords']['requests_fields'], 'requests_fields');
+
+        $I->grabNumRecords('requests') == 0 ?:
+            $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
+        $I->grabNumRecords('requests_fields') == 0 ?:
+            $I->validateInDB('lisa_fixtures', 'requests_fields', $providerData['db']['requests_fields']);
+
     }
 }

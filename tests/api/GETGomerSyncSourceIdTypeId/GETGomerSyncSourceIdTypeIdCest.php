@@ -7,9 +7,10 @@ use rzk\TestHelper;
 /**
  * @group lisa
  * @group lisa_api
- * @group PUTGomer
+ * @group GETGomerSyncSourceIdTypeId
  */
-class PUTGomerCest
+
+class GETGomerSyncSourceIdTypeIdCest
 {
     /**
      * @var TestHelper $testHelper
@@ -57,18 +58,16 @@ class PUTGomerCest
      * @dataProvider pageProvider
      *
      */
-    public function PUTGomer(ApiTester $I, \Codeception\Example $data)
+    public function GETGomerSyncSourceIdTypeId(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
         $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
         $this->testHelper->loadFixture($I, $data);
         $I->wantTo($data['setting']['description']);
 
-        $I->sendPUT($providerData['requestURL'], $providerData['requestBody']);
+        $I->sendGET('/bpm/api/get-request-by-sync-source-id-and-type-id', $providerData['requestParameters']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
-
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
     }
 }

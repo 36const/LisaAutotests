@@ -94,7 +94,7 @@ return [
             ],
             'db' => [
                 "requests" => [
-                    "id" => 2,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 1,
                     "supervisor_id" => 6,
@@ -131,7 +131,7 @@ return [
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 2,
+                    'request_id' => 1,
                     'field_id' => 5,
                     'value' => 1,
                 ]
@@ -143,6 +143,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Добавление новых товаров c Б/У>',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -165,7 +166,7 @@ return [
             ],
             'db' => [
                 "requests" => [
-                    "id" => 3,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 1,
                     "supervisor_id" => 6,
@@ -202,7 +203,7 @@ return [
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 3,
+                    'request_id' => 1,
                     'field_id' => 17,
                     'value' => 1,
                 ]
@@ -214,6 +215,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Добавление новых товаров c Автомодерацией и Б/У>',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -237,7 +239,7 @@ return [
             ],
             'db' => [
                 "requests" => [
-                    "id" => 4,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 1,
                     "supervisor_id" => 6,
@@ -279,7 +281,7 @@ return [
                     'value' => 1,
                 ],
                 "requests_fields" => [
-                    'request_id' => 4,
+                    'request_id' => 1,
                     'field_id' => 17,
                     'value' => 1
                 ]
@@ -291,6 +293,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Добавление/изменение информации в существующих товарах',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -312,7 +315,7 @@ return [
             ],
             'db' => [
                 "requests" => [
-                    "id" => 5,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 2,
                     "supervisor_id" => 6,
@@ -357,6 +360,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Перенос товаров (изменение категории в товарах)',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -378,7 +382,7 @@ return [
             ],
             'db' => [
                 "requests" => [
-                    "id" => 6,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 3,
                     "supervisor_id" => 6,
@@ -423,6 +427,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Проверку скрытых товаров',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -444,7 +449,7 @@ return [
             ],
             'db' => [
                 "requests" => [
-                    "id" => 7,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 6,
                     "supervisor_id" => 6,

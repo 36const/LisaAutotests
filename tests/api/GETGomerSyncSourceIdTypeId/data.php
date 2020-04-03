@@ -15,7 +15,7 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 2
+                    "id" => 1
                 ]
             ]
         ]
@@ -25,11 +25,31 @@ return [
         'setting' => [
             'description' => 'Существующий тип 2 в статусе 2 при наличии типов 1, 3 и 6 в статусах 1, 3 и 3',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case2.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             "requestParameters" => [
                 "sync_source_id" => 1,
                 "type_id" => 2
+            ],
+            "responseCode" => 200,
+            "responseBody" => [
+                "status" => 200,
+                "result" => [
+                    "id" => 2
+                ]
+            ]
+        ]
+    ],
+
+    'case3' => [
+        'setting' => [
+            'description' => 'Существующий тип 3 в статусе 3 при наличии типов 1, 2 и 6 в статусах 1, 2 и 3',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "requestParameters" => [
+                "sync_source_id" => 1,
+                "type_id" => 3
             ],
             "responseCode" => 200,
             "responseBody" => [
@@ -41,31 +61,11 @@ return [
         ]
     ],
 
-    'case3' => [
-        'setting' => [
-            'description' => 'Существующий тип 3 в статусе 3 при наличии типов 1, 2 и 6 в статусах 1, 2 и 3',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case3.php',
-        'provider_data' => [
-            "requestParameters" => [
-                "sync_source_id" => 1,
-                "type_id" => 3
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 200,
-                "result" => [
-                    "id" => 4
-                ]
-            ]
-        ]
-    ],
-
     'case4' => [
         'setting' => [
             'description' => 'Существующий тип 6 в статусе 3 при наличии типов 1, 2 и 3 в статусах 1, 2 и 3',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case4.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             "requestParameters" => [
                 "sync_source_id" => 1,
@@ -75,7 +75,7 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 5
+                    "id" => 4
                 ]
             ]
         ]
@@ -196,7 +196,7 @@ return [
             "responseCode" => 400,
             "responseBody" => [
                 "name" => "Bad Request",
-                "message" => "Отсутствуют обязательные параметры =>  sync_source_id, type_id",
+                "message" => "Отсутствуют обязательные параметры: sync_source_id, type_id",
                 "code" => 0,
                 "status" => 400,
                 "type" => "yii\\web\\BadRequestHttpException"
