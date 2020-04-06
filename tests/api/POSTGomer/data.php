@@ -22,7 +22,7 @@ return [
                 ]
             ],
             "seeNumRecords" => [
-                "requests" => 1, 
+                "requests" => 1,
                 "requests_fields" => 0
             ],
             'db' => [
@@ -131,9 +131,11 @@ return [
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 1,
-                    'field_id' => 5,
-                    'value' => 1,
+                    [
+                        'request_id' => 1,
+                        'field_id' => 5,
+                        'value' => 1,
+                    ]
                 ]
             ]
         ]
@@ -203,9 +205,11 @@ return [
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 1,
-                    'field_id' => 17,
-                    'value' => 1,
+                    [
+                        'request_id' => 1,
+                        'field_id' => 17,
+                        'value' => 1,
+                    ]
                 ]
             ]
         ]
@@ -276,14 +280,16 @@ return [
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 4,
-                    'field_id' => 5,
-                    'value' => 1,
-                ],
-                "requests_fields" => [
-                    'request_id' => 1,
-                    'field_id' => 17,
-                    'value' => 1
+                    [
+                        'request_id' => 1,
+                        'field_id' => 5,
+                        'value' => 1,
+                    ],
+                    [
+                        'request_id' => 1,
+                        'field_id' => 17,
+                        'value' => 1
+                    ]
                 ]
             ]
         ]

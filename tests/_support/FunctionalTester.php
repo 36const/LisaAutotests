@@ -45,17 +45,46 @@ class FunctionalTester extends \Codeception\Actor
         $I->seeCookie('_csrf-backend');
     }
 
+    public function amOnCreatingPage(int $type, int $direction)
+    {
+        $I = $this;
+        $I->amOnPage("/bpm/request/create-by-type?typeId=$type&direction=$direction");
+        $cookie = $I->grabCookie('_csrf-backend');
+        $I->haveHttpHeader('Cookie', '_csrf-backend=' . $cookie);
+    }
+
+    public function grabCsrfFromInput()
+    {
+        $I = $this;
+        $csrf = $I->grabValueFrom('input[name="_csrf-backend"]');
+        return $csrf;
+    }
+
     public function checkboxInCreatingPage($name)
     {
         return "//*[@class='attachments-update']//*[text()=\" $name\"]";
     }
 
-    public function allCheckboxesNamesInCreatingPage()
+    public function allCheckboxesInCreatingPage()
     {
         $I = $this;
         return $I->grabMultiple("//*[@class='attachments-update']//label");
     }
 
+    public function validateInDB(string $DBName, string $table, $checkValuesRecords)
+    {
+        $I = $this;
+        $I->amConnectedToDatabase($DBName);
+        $I->seeInDatabase($table, $checkValuesRecords);
+    }
+
+    public function validateRequestsFieldsInDB($checkValuesRecords)
+    {
+        $I = $this;
+        foreach ($checkValuesRecords as $key => $value) {
+            $I->validateInDB('lisa_fixtures', 'requests_fields', $value);
+        }
+    }
 
     /**
      * Define custom actions here

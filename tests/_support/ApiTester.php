@@ -45,11 +45,19 @@ class ApiTester extends \Codeception\Actor
         $I->seeResponseContainsJson($providerData['response_fields']);
     }
 
-    public function validateInDB(string $DBName, string $table, array $checkValuesRecords)
+    public function validateInDB(string $DBName, string $table, $checkValuesRecords)
     {
         $I = $this;
         $I->amConnectedToDatabase($DBName);
         $I->seeInDatabase($table, $checkValuesRecords);
+    }
+
+    public function validateRequestsFieldsInDB($checkValuesRecords)
+    {
+        $I = $this;
+        foreach ($checkValuesRecords as $key => $value) {
+            $I->validateInDB('lisa_fixtures', 'requests_fields', $value);
+        }
     }
 }
 

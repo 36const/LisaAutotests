@@ -74,7 +74,7 @@ class POSTGomerCest
         $I->grabNumRecords('requests') == 0 ?:
             $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
         $I->grabNumRecords('requests_fields') == 0 ?:
-            $I->validateInDB('lisa_fixtures', 'requests_fields', $providerData['db']['requests_fields']);
+            $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
 
     }
 }
