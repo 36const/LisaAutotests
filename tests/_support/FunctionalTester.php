@@ -31,33 +31,47 @@ class FunctionalTester extends \Codeception\Actor
         $I->wantTo($data['setting']['description']);
     }
 
+    public static $csrfToken;
+    public static $csrfCookie;
+
     public function login()
     {
+        //if (self::$csrfToken == null) {
+            $I = $this;
+            $I->amOnPage('/');
+
+            $I->fillField("LoginForm[username]", "test");
+            $I->fillField("LoginForm[password]", "!23qweASD");
+            $I->checkOption(['id' => 'loginform-isbasicauth']);
+            $I->click("login-button");
+
+            $I->seeInTitle("Добро пожаловать");
+
+            $I->grabCsrfToken();
+            $I->grabCsrfCookie();
+            /*$cookie = $I->grabCookie('_csrf-backend');
+            $I->haveHttpHeader('Cookie', '_csrf-backend=' . $cookie);*/
+        //}
+    }
+
+    public function grabCsrfToken()
+    {
         $I = $this;
-        $I->amOnPage('/');
+        self::$csrfToken = $I->grabMultiple("//meta[@name='csrf-token']", 'content');
+        return self::$csrfToken[0];
+    }
 
-        $I->fillField("LoginForm[username]", "test");
-        $I->fillField("LoginForm[password]", "!23qweASD");
-        $I->checkOption(['id' => 'loginform-isbasicauth']);
-        $I->click("login-button");
-
-        $I->seeInTitle("Добро пожаловать");
-        $I->seeCookie('_csrf-backend');
+    public function grabCsrfCookie()
+    {
+        $I = $this;
+        self::$csrfCookie = $I->grabCookie('_csrf-backend');;
+        return self::$csrfCookie;
     }
 
     public function amOnCreatingPage(int $type, int $direction)
     {
         $I = $this;
         $I->amOnPage("/bpm/request/create-by-type?typeId=$type&direction=$direction");
-        $cookie = $I->grabCookie('_csrf-backend');
-        $I->haveHttpHeader('Cookie', '_csrf-backend=' . $cookie);
-    }
-
-    public function grabCsrfFromInput()
-    {
-        $I = $this;
-        $csrf = $I->grabValueFrom('input[name="_csrf-backend"]');
-        return $csrf;
     }
 
     public function checkboxInCreatingPage($name)
