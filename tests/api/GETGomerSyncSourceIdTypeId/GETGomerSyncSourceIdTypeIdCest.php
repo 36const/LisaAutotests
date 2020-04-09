@@ -9,7 +9,6 @@ use rzk\TestHelper;
  * @group lisa_api
  * @group GETGomerSyncSourceIdTypeId
  */
-
 class GETGomerSyncSourceIdTypeIdCest
 {
     /**
@@ -42,8 +41,7 @@ class GETGomerSyncSourceIdTypeIdCest
      */
     protected function pageProvider()
     {
-        $test = $this->testHelper->getDataProvider();
-        return $test;
+        return $this->testHelper->getDataProvider();
     }
 
     public function _before(ApiTester $I)

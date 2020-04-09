@@ -36,7 +36,7 @@ class FunctionalTester extends \Codeception\Actor
 
     public function login()
     {
-        //if (self::$csrfToken == null) {
+        if (self::$csrfToken == null) {
             $I = $this;
             $I->amOnPage('/');
 
@@ -49,9 +49,7 @@ class FunctionalTester extends \Codeception\Actor
 
             $I->grabCsrfToken();
             $I->grabCsrfCookie();
-            /*$cookie = $I->grabCookie('_csrf-backend');
-            $I->haveHttpHeader('Cookie', '_csrf-backend=' . $cookie);*/
-        //}
+        }
     }
 
     public function grabCsrfToken()
@@ -64,7 +62,7 @@ class FunctionalTester extends \Codeception\Actor
     public function grabCsrfCookie()
     {
         $I = $this;
-        self::$csrfCookie = $I->grabCookie('_csrf-backend');;
+        self::$csrfCookie = $I->grabCookie('_csrf-backend');
         return self::$csrfCookie;
     }
 
@@ -74,7 +72,7 @@ class FunctionalTester extends \Codeception\Actor
         $I->amOnPage("/bpm/request/create-by-type?typeId=$type&direction=$direction");
     }
 
-    public function checkboxInCreatingPage($name)
+    public function findCheckboxInCreatingPage($name)
     {
         return "//*[@class='attachments-update']//*[text()=\" $name\"]";
     }

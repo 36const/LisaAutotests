@@ -42,8 +42,7 @@ class POSTCreateRequestCest
      */
     protected function pageProvider()
     {
-        $test = $this->testHelper->getDataProvider('case1 case2');
-        return $test;
+        return $this->testHelper->getDataProvider('case1 case2');
     }
 
     public function _before(FunctionalTester $I)
@@ -59,7 +58,6 @@ class POSTCreateRequestCest
      * @dataProvider pageProvider
      *
      */
-
     public function POSTCreateRequest(FunctionalTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
