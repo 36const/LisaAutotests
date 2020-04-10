@@ -55,8 +55,8 @@ class FunctionalTester extends \Codeception\Actor
     public function grabCsrfToken()
     {
         $I = $this;
-        self::$csrfToken = $I->grabMultiple("//meta[@name='csrf-token']", 'content');
-        return self::$csrfToken[0];
+        self::$csrfToken = $I->grabAttributeFrom("//meta[@name='csrf-token']", 'content');
+        return self::$csrfToken;
     }
 
     public function grabCsrfCookie()

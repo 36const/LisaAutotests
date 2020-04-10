@@ -66,7 +66,7 @@ class POSTCreateRequestCest
         $I->wantTo($settings['description']);
 
         $I->amOnCreatingPage($settings['type'], $settings['direction']);
-        $providerData['requestBody']['_csrf-backend'] = FunctionalTester::$csrfToken[0];
+        $providerData['requestBody']['_csrf-backend'] = FunctionalTester::$csrfToken;
 
         $I->seeInTitle($settings['description']);
         $I->see($settings['description'], ['class' => 'global-caption']);
