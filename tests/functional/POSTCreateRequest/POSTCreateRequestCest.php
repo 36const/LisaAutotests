@@ -42,7 +42,7 @@ class POSTCreateRequestCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('case1');
+        return $this->testHelper->getDataProvider();
     }
 
     public function _before(FunctionalTester $I)
