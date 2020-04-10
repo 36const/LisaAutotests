@@ -42,7 +42,7 @@ class POSTCreateRequestCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('case1 case2');
+        return $this->testHelper->getDataProvider('case1');
     }
 
     public function _before(FunctionalTester $I)
@@ -73,8 +73,8 @@ class POSTCreateRequestCest
 
         $I->assertEquals($I->allCheckboxesInCreatingPage(), $providerData['checkboxes']);
         if ($settings['direction'] != 2) {
-            $I->seeCheckboxIsChecked($I->checkboxInCreatingPage('Ручная загрузка'));
-            $I->dontSeeCheckboxIsChecked($I->checkboxInCreatingPage('Пакетная загрузка'));
+            $I->seeCheckboxIsChecked($I->findCheckboxInCreatingPage('Ручная загрузка'));
+            $I->dontSeeCheckboxIsChecked($I->findCheckboxInCreatingPage('Пакетная загрузка'));
         }
 
         $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
