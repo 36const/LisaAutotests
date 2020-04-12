@@ -8,9 +8,10 @@ use rzk\TestHelper;
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTCreateRequest
+ * @group POSTFromStatuses
+ * @group POSTFromStatus1
  */
-class POSTCreateRequestCest
+class POSTFromStatus1Cest
 {
     /**
      * @var TestHelper $testHelper
@@ -58,29 +59,25 @@ class POSTCreateRequestCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTCreateRequest(FunctionalTester $I, \Codeception\Example $data)
+    public function POSTFromStatus1(FunctionalTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
         $settings = $data['settings'];
         $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
+        $this->testHelper->loadFixture($I, $data);
         $I->wantTo($settings['description']);
 
-        $I->amOnCreatingPage($settings['type'], $settings['direction']);
-        $providerData['requestBody']['_csrf-backend'] = FunctionalTester::$csrfToken;
+        $I->amOnPage('/bpm/request/view?id=1');
 
-        $I->seeInTitle($settings['description']);
-        $I->see($settings['description'], ['class' => 'global-caption']);
+        !isset($providerData['requestUpdateBody']) ?:
+            $I->sendPostIfRequestBodyExists($providerData['requestUpdateBody'], '/bpm/request/update?id=1');
 
-        $I->assertEquals($I->allCheckboxesInCreatingPage(), $providerData['checkboxes']);
-        if ($settings['direction'] != 2) {
-            $I->seeCheckboxIsChecked($I->findCheckboxInCreatingPage('Ручная загрузка'));
-            $I->dontSeeCheckboxIsChecked($I->findCheckboxInCreatingPage('Пакетная загрузка'));
-        }
+        !isset($providerData['requestChangeReasonBody']) ?:
+            $I->sendPostIfRequestBodyExists($providerData['requestChangeReasonBody'], '/bpm/request/change-reason?id=1');
 
-        $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
+        !isset($providerData['requestAppointManagerBody']) ?:
+            $I->sendPostIfRequestBodyExists($providerData['requestAppointManagerBody'], '/bpm/request/appoint-manager?id=1');
 
-        $I->seeResponseCodeIs($providerData['responseCode']);
-//die();
         $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
         $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
     }

@@ -83,6 +83,14 @@ class FunctionalTester extends \Codeception\Actor
         return $I->grabMultiple("//*[@class='attachments-update']//label");
     }
 
+    public function sendPostIfRequestBodyExists($requestBody, $url)
+    {
+        $I = $this;
+        $requestBody['_csrf-backend'] = self::$csrfToken;
+        $I->sendPOST($url, $requestBody);
+        $I->seeResponseCodeIs(200);
+    }
+
     public function validateInDB(string $DBName, string $table, $checkValuesRecords)
     {
         $I = $this;
