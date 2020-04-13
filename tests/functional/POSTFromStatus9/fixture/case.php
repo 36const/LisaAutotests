@@ -7,7 +7,7 @@ return [
                 "author_id" => 2,
                 "type_id" => 1,
                 "supervisor_id" => 4,
-                "manager_id" => 8,
+                "manager_id" => 11,
                 "status" => 9,
                 "direction" => 1,
                 "priority" => 2,

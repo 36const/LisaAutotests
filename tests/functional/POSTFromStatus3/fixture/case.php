@@ -33,7 +33,7 @@ return [
                 "difficulty" => null,
                 "result_comment" => '',
                 "supervisor_comment" => '',
-                //"last_change_status_date" => "2020-01-01 00:00:01",
+                "last_change_status_date" => "2020-01-01 00:00:01",
                 "team_direction" => 3,
                 "report_period_id" => null,
                 "sync_source_id" => null,

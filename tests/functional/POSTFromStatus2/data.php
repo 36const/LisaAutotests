@@ -406,11 +406,12 @@ return [
                 'Request[subject]' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '4',
+                'Request[sv_report_periods]' => '1',
                 'Request[uploadedFiles][]' => '',
                 '_csrf-backend' => null
             ],
             'requestAppointManagerBody' => [
-                'Request[manager_id]' => '8',
+                'Request[manager_id]' => '11',
                 "_csrf-backend" => null,
                 'keys',
             ],
@@ -421,7 +422,7 @@ return [
                     "author_id" => 2,
                     "type_id" => 1,
                     "supervisor_id" => 4,
-                    "manager_id" => 8,
+                    "manager_id" => 11,
                     "status" => 5,
                     "direction" => 1,
                     "priority" => 2,

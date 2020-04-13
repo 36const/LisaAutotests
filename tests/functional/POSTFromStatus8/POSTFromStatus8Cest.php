@@ -74,7 +74,7 @@ class POSTFromStatus8Cest
 
         !isset($providerData['requestToCorrectionBody']) ?:
             $I->sendPostIfRequestBodyExists($providerData['requestToCorrectionBody'], '/bpm/request/to-correction?id=1&changeStatus=1');
-
+//die();
         $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
         $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
     }

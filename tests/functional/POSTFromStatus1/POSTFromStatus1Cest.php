@@ -68,7 +68,7 @@ class POSTFromStatus1Cest
         $I->wantTo($settings['description']);
 
         $I->amOnPage('/bpm/request/view?id=1');
-
+        //die();
         !isset($providerData['requestUpdateBody']) ?:
             $I->sendPostIfRequestBodyExists($providerData['requestUpdateBody'], '/bpm/request/update?id=1');
 

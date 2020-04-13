@@ -37,7 +37,7 @@ return [
             'db' => [
                 "requests" => [
                     "id" => 1,
-                    "author_id" => 1,
+                    "author_id" => 7,
                     "type_id" => 2,
                     "supervisor_id" => 4,
                     "manager_id" => null,
@@ -133,7 +133,7 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
             'db' => [
                 "requests" => [
                     "id" => 1,
-                    "author_id" => 1,
+                    "author_id" => 7,
                     "type_id" => 2,
                     "supervisor_id" => 4,
                     "manager_id" => null,
