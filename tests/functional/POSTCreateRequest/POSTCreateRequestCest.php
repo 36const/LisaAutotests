@@ -3,7 +3,10 @@
 namespace lisa;
 
 use Codeception\Util\HttpCode;
+use Codeception\Example;
 use rzk\TestHelper;
+use lisa\Page\Functional\Login;
+use lisa\Page\Functional\RequestCreating;
 
 /**
  * @group lisa
@@ -51,16 +54,15 @@ class POSTCreateRequestCest
 
     /**
      * @param FunctionalTester $I
-     * @param \Codeception\Example $data
+     * @param Example $data
+     * @param Login $login
+     * @param RequestCreating $creatingPage
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTCreateRequest(FunctionalTester $I, 
-                                      \Codeception\Example $data,
-                                      \lisa\Page\Functional\Login $login,
-                                      \lisa\Page\Functional\RequestCreating $creatingPage)
+    public function POSTCreateRequest(FunctionalTester $I, Example $data, Login $login, RequestCreating $creatingPage)
     {
         $login->login();
         $I->loadDataForTest($data, $this->testHelper);
