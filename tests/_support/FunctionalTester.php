@@ -32,13 +32,13 @@ class FunctionalTester extends \Codeception\Actor
         $I->wantTo($data['setting']['description']);
     }
 
-   /* public function sendPostIfRequestBodyExists($requestBody, $url)
+    public function changeStatus($requestParameter, $requestBody)
     {
         $I = $this;
-        $requestBody['_csrf-backend'] = self::$csrfToken;
+        $url = '/bpm/request/' . "$requestParameter" . '?id=1';
         $I->sendPOST($url, $requestBody);
         $I->seeResponseCodeIs(200);
-    }*/
+    }
 
     public function validateInDB(string $DBName, string $table, $checkValuesRecords)
     {

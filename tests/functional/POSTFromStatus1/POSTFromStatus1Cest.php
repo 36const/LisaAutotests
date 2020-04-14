@@ -3,7 +3,9 @@
 namespace lisa;
 
 use Codeception\Util\HttpCode;
+use Codeception\Example;
 use rzk\TestHelper;
+use lisa\Page\Functional\Login;
 
 /**
  * @group lisa
@@ -48,7 +50,6 @@ class POSTFromStatus1Cest
 
     public function _before(FunctionalTester $I)
     {
-        $I->login();
     }
 
     /**
@@ -59,24 +60,17 @@ class POSTFromStatus1Cest
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatus1(FunctionalTester $I, \Codeception\Example $data)
+    public function POSTFromStatus1(FunctionalTester $I, Example $data, Login $login)
     {
+        $login->login();
+        $I->loadDataForTest($data, $this->testHelper);
+
         $providerData = $data['provider_data'];
-        $settings = $data['settings'];
-        $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
-        $this->testHelper->loadFixture($I, $data);
-        $I->wantTo($settings['description']);
+        $providerData['requestBody']['_csrf-backend'] = $login->grabCsrfToken();
 
         $I->amOnPage('/bpm/request/view?id=1');
-        //die();
-        !isset($providerData['requestUpdateBody']) ?:
-            $I->sendPostIfRequestBodyExists($providerData['requestUpdateBody'], '/bpm/request/update?id=1');
 
-        !isset($providerData['requestChangeReasonBody']) ?:
-            $I->sendPostIfRequestBodyExists($providerData['requestChangeReasonBody'], '/bpm/request/change-reason?id=1');
-
-        !isset($providerData['requestAppointManagerBody']) ?:
-            $I->sendPostIfRequestBodyExists($providerData['requestAppointManagerBody'], '/bpm/request/appoint-manager?id=1');
+        $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
         $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
         $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
