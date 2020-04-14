@@ -27,69 +27,18 @@ class FunctionalTester extends \Codeception\Actor
     public function loadDataForTest(\Codeception\Example $data, TestHelper $testHelper)
     {
         $I = $this;
+        $testHelper->clearDB($I, $data);
         $testHelper->loadFixtureAndMock($I, $data);
         $I->wantTo($data['setting']['description']);
     }
 
-    public static $csrfToken;
-    public static $csrfCookie;
-
-    public function login()
-    {
-        if (self::$csrfToken == null) {
-            $I = $this;
-            $I->amOnPage('/');
-
-            $I->fillField("LoginForm[username]", "test");
-            $I->fillField("LoginForm[password]", "!23qweASD");
-            $I->checkOption(['id' => 'loginform-isbasicauth']);
-            $I->click("login-button");
-
-            $I->seeInTitle("Добро пожаловать");
-
-            $I->grabCsrfToken();
-            $I->grabCsrfCookie();
-        }
-    }
-
-    public function grabCsrfToken()
-    {
-        $I = $this;
-        self::$csrfToken = $I->grabAttributeFrom("//meta[@name='csrf-token']", 'content');
-        return self::$csrfToken;
-    }
-
-    public function grabCsrfCookie()
-    {
-        $I = $this;
-        self::$csrfCookie = $I->grabCookie('_csrf-backend');
-        return self::$csrfCookie;
-    }
-
-    public function amOnCreatingPage(int $type, int $direction)
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/request/create-by-type?typeId=$type&direction=$direction");
-    }
-
-    public function findCheckboxInCreatingPage($name)
-    {
-        return "//*[@class='attachments-update']//*[text()=\" $name\"]";
-    }
-
-    public function allCheckboxesInCreatingPage()
-    {
-        $I = $this;
-        return $I->grabMultiple("//*[@class='attachments-update']//label");
-    }
-
-    public function sendPostIfRequestBodyExists($requestBody, $url)
+   /* public function sendPostIfRequestBodyExists($requestBody, $url)
     {
         $I = $this;
         $requestBody['_csrf-backend'] = self::$csrfToken;
         $I->sendPOST($url, $requestBody);
         $I->seeResponseCodeIs(200);
-    }
+    }*/
 
     public function validateInDB(string $DBName, string $table, $checkValuesRecords)
     {

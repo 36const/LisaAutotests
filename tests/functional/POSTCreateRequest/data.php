@@ -2,7 +2,7 @@
 
 return [
     'case1' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Добавление новых товаров (Работа с товарами Розетки)',
             'type' => 1,
             'direction' => 1
@@ -51,7 +51,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 1,
                     "supervisor_id" => 4,
                     "manager_id" => null,
@@ -164,7 +164,7 @@ return [
     ],
 
     'case2' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Добавление новых товаров (Работа с товарами Маркетплейса)',
             'type' => 1,
             'direction' => 2
@@ -206,7 +206,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 1,
                     "supervisor_id" => 5,
                     "manager_id" => null,
@@ -308,7 +308,7 @@ return [
     ],
 
     'case3' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
             'type' => 2,
             'direction' => 1
@@ -358,7 +358,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 2,
                     "supervisor_id" => 4,
                     "manager_id" => null,
@@ -471,7 +471,7 @@ return [
     ],
 
     'case4' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
             'type' => 2,
             'direction' => 2
@@ -512,7 +512,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 2,
                     "supervisor_id" => 5,
                     "manager_id" => null,
@@ -615,7 +615,7 @@ return [
     ],
 
     'case5' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Перенос товаров (Работа с товарами Розетки)',
             'type' => 3,
             'direction' => 1
@@ -663,7 +663,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 3,
                     "supervisor_id" => 4,
                     "manager_id" => null,
@@ -776,7 +776,7 @@ return [
     ],
 
     'case6' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Перенос товаров (Работа с товарами Маркетплейса)',
             'type' => 3,
             'direction' => 2
@@ -817,7 +817,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 3,
                     "supervisor_id" => 5,
                     "manager_id" => null,
@@ -920,7 +920,7 @@ return [
     ],
 
     'case7' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Группировка товаров (Определяется типом задачи)',
             'type' => 4,
             'direction' => 0
@@ -955,9 +955,9 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 4,
-                    "supervisor_id" => 30,
+                    "supervisor_id" => 33,
                     "manager_id" => null,
                     "status" => 1,
                     "direction" => 0,
@@ -1028,7 +1028,7 @@ return [
     ],
 
     'case8' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Заливка фото с фотостудии (Работа с товарами Розетки)',
             'type' => 5,
             'direction' => 1
@@ -1076,7 +1076,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 5,
                     "supervisor_id" => 4,
                     "manager_id" => null,
@@ -1189,7 +1189,7 @@ return [
     ],
 
     'case9' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Проверка скрытых товаров (Работа с товарами Маркетплейса)',
             'type' => 6,
             'direction' => 2
@@ -1230,7 +1230,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 6,
                     "supervisor_id" => 5,
                     "manager_id" => null,
@@ -1333,7 +1333,7 @@ return [
     ],
 
     'case10' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
             'type' => 7,
             'direction' => 0
@@ -1370,9 +1370,9 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 7,
-                    "supervisor_id" => 32,
+                    "supervisor_id" => 35,
                     "manager_id" => null,
                     "status" => 1,
                     "direction" => 0,
@@ -1443,7 +1443,7 @@ return [
     ],
 
     'case11' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
             'type' => 8,
             'direction' => 0
@@ -1480,9 +1480,9 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 8,
-                    "supervisor_id" => 32,
+                    "supervisor_id" => 35,
                     "manager_id" => null,
                     "status" => 1,
                     "direction" => 0,
@@ -1553,7 +1553,7 @@ return [
     ],
 
     'case12' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Добавление параметров/значений (Определяется типом задачи)',
             'type' => 9,
             'direction' => 0
@@ -1588,7 +1588,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 9,
                     "supervisor_id" => 34,
                     "manager_id" => null,
@@ -1661,7 +1661,7 @@ return [
     ],
 
     'case13' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Изменение существующих параметров/значений (Определяется типом задачи)',
             'type' => 10,
             'direction' => 0
@@ -1696,7 +1696,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 10,
                     "supervisor_id" => 34,
                     "manager_id" => null,
@@ -1769,7 +1769,7 @@ return [
     ],
 
     'case14' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Проектирование структуры (Определяется типом задачи)',
             'type' => 11,
             'direction' => 0
@@ -1804,7 +1804,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 11,
                     "supervisor_id" => 34,
                     "manager_id" => null,
@@ -1877,7 +1877,7 @@ return [
     ],
 
     'case15' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
             'type' => 12,
             'direction' => 1
@@ -1925,7 +1925,7 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 12,
                     "supervisor_id" => 4,
                     "manager_id" => null,
@@ -2038,7 +2038,7 @@ return [
     ],
 
     'case16' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Добавление/изменение видео (Определяется типом задачи)',
             'type' => 13,
             'direction' => 0
@@ -2073,9 +2073,9 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 13,
-                    "supervisor_id" => 32,
+                    "supervisor_id" => 35,
                     "manager_id" => null,
                     "status" => 1,
                     "direction" => 0,
@@ -2146,7 +2146,7 @@ return [
     ],
 
     'case17' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Добавление/изменение размерной сетки (Определяется типом задачи)',
             'type' => 14,
             'direction' => 0
@@ -2181,9 +2181,9 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 14,
-                    "supervisor_id" => 32,
+                    "supervisor_id" => 35,
                     "manager_id" => null,
                     "status" => 1,
                     "direction" => 0,
@@ -2254,7 +2254,7 @@ return [
     ],
 
     'case18' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Новая заявка на Добавление/изменение тегов (Определяется типом задачи)',
             'type' => 15,
             'direction' => 0
@@ -2289,9 +2289,9 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 15,
-                    "supervisor_id" => 32,
+                    "supervisor_id" => 35,
                     "manager_id" => null,
                     "status" => 1,
                     "direction" => 0,

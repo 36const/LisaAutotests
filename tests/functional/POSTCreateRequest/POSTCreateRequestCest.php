@@ -47,7 +47,6 @@ class POSTCreateRequestCest
 
     public function _before(FunctionalTester $I)
     {
-        $I->login();
     }
 
     /**
@@ -58,29 +57,31 @@ class POSTCreateRequestCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTCreateRequest(FunctionalTester $I, \Codeception\Example $data)
+    public function POSTCreateRequest(FunctionalTester $I, 
+                                      \Codeception\Example $data,
+                                      \lisa\Page\Functional\Login $login,
+                                      \lisa\Page\Functional\RequestCreating $creatingPage)
     {
+        $login->login();
+        $I->loadDataForTest($data, $this->testHelper);
+
+        $setting = $data['setting'];
         $providerData = $data['provider_data'];
-        $settings = $data['settings'];
-        $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
-        $I->wantTo($settings['description']);
+        $providerData['requestBody']['_csrf-backend'] = $login->grabCsrfToken();
 
-        $I->amOnCreatingPage($settings['type'], $settings['direction']);
-        $providerData['requestBody']['_csrf-backend'] = FunctionalTester::$csrfToken;
+        $creatingPage->amOnCreatingPage($setting['type'], $setting['direction']);
+        $I->seeInTitle($setting['description']);
+        $I->see($setting['description'], ['class' => 'global-caption']);
 
-        $I->seeInTitle($settings['description']);
-        $I->see($settings['description'], ['class' => 'global-caption']);
-
-        $I->assertEquals($I->allCheckboxesInCreatingPage(), $providerData['checkboxes']);
-        if ($settings['direction'] != 2) {
-            $I->seeCheckboxIsChecked($I->findCheckboxInCreatingPage('Ручная загрузка'));
-            $I->dontSeeCheckboxIsChecked($I->findCheckboxInCreatingPage('Пакетная загрузка'));
+        $I->assertEquals($creatingPage->grabAllCheckboxes(), $providerData['checkboxes']);
+        if ($setting['direction'] != 2) {
+            $I->seeCheckboxIsChecked($creatingPage->findCheckbox('Ручная загрузка'));
+            $I->dontSeeCheckboxIsChecked($creatingPage->findCheckbox('Пакетная загрузка'));
         }
 
         $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
-
         $I->seeResponseCodeIs($providerData['responseCode']);
-//die();
+
         $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
         $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
     }
