@@ -24,7 +24,7 @@ class RequestCreating extends FunctionalTester
         return static::$URL.$param;
     }
 
-    public function amOnCreatingPage(int $type, int $direction)
+    public function amOnRequestCreating(int $type, int $direction)
     {
         $I = $this;
         $I->amOnPage("/bpm/request/create-by-type?typeId=$type&direction=$direction");

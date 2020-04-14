@@ -6,6 +6,7 @@ use Codeception\Util\HttpCode;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
+use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
@@ -60,7 +61,7 @@ class POSTFromStatus1Cest
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatus1(FunctionalTester $I, Example $data, Login $login)
+    public function POSTFromStatus1(FunctionalTester $I, Example $data, Login $login, RequestView $view)
     {
         $login->login();
         $I->loadDataForTest($data, $this->testHelper);
@@ -71,6 +72,10 @@ class POSTFromStatus1Cest
         $I->amOnPage('/bpm/request/view?id=1');
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
+
+        $providerData['requestParameter'] == 'update' ?
+            $view->checkFields($providerData['requestBody']) :
+            $view->checkFields($providerData['fields']);
 
         $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
         $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);

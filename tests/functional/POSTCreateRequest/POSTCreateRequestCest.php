@@ -71,7 +71,7 @@ class POSTCreateRequestCest
         $providerData = $data['provider_data'];
         $providerData['requestBody']['_csrf-backend'] = $login->grabCsrfToken();
 
-        $creatingPage->amOnCreatingPage($setting['type'], $setting['direction']);
+        $creatingPage->amOnRequestCreating($setting['type'], $setting['direction']);
         $I->seeInTitle($setting['description']);
         $I->see($setting['description'], ['class' => 'global-caption']);
 
