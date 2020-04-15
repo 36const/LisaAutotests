@@ -43,8 +43,7 @@ class Login extends FunctionalTester
         $I = $this;
         $I->amOnPage('/');
 
-        $I->grabCsrfToken();
-        $I->grabCsrfCookie();
+        return $I->grabCsrfToken();
     }
 
 }

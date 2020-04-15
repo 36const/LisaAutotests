@@ -63,10 +63,13 @@ class POSTFromStatus1Cest
      */
     public function POSTFromStatus1(FunctionalTester $I, Example $data, Login $login, RequestView $view)
     {
+        // TODO посмотреть реализацию предедущего теста
         $login->login();
         $I->loadDataForTest($data, $this->testHelper);
 
         $providerData = $data['provider_data'];
+
+        // TODO посмотреть реализацию предедущего теста
         $providerData['requestBody']['_csrf-backend'] = $login->grabCsrfToken();
 
         $I->amOnPage('/bpm/request/view?id=1');

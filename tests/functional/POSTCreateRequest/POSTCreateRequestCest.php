@@ -65,12 +65,12 @@ class POSTCreateRequestCest
      */
     public function POSTCreateRequest(FunctionalTester $I, Example $data, Login $login, RequestCreating $creatingPage, RequestView $view)
     {
-        $login->login();
         $I->loadDataForTest($data, $this->testHelper);
 
         $setting = $data['setting'];
         $providerData = $data['provider_data'];
-        $providerData['requestBody']['_csrf-backend'] = $login->grabCsrfToken();
+        //TODO посмотреть реализацию попробовать использовать
+        $providerData['requestBody']['_csrf-backend'] = $login->login();
 
         $creatingPage->amOnRequestCreating($setting['type'], $setting['direction']);
         $I->seeInTitle($setting['description']);

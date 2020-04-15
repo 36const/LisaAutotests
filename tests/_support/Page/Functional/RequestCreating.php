@@ -7,6 +7,7 @@ class RequestCreating extends FunctionalTester
 {
     // include url of current page
     public static $URL = '';
+    public static $allCheckbox = "//*[@class='attachments-update']//label";
 
     /**
      * Declare UI map for this page here. CSS or XPath allowed.
@@ -30,6 +31,7 @@ class RequestCreating extends FunctionalTester
         $I->amOnPage("/bpm/request/create-by-type?typeId=$type&direction=$direction");
     }
 
+    //TODO реализовать через sprintf() https://www.php.net/manual/ru/function.sprintf.php
     public function findCheckbox($name)
     {
         return "//*[@class='attachments-update']//*[text()=\" $name\"]";
