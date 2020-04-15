@@ -7,6 +7,7 @@ use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestCreating;
+use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
@@ -62,7 +63,7 @@ class POSTCreateRequestCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTCreateRequest(FunctionalTester $I, Example $data, Login $login, RequestCreating $creatingPage)
+    public function POSTCreateRequest(FunctionalTester $I, Example $data, Login $login, RequestCreating $creatingPage, RequestView $view)
     {
         $login->login();
         $I->loadDataForTest($data, $this->testHelper);
@@ -83,6 +84,9 @@ class POSTCreateRequestCest
 
         $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
         $I->seeResponseCodeIs($providerData['responseCode']);
+
+        $I->amOnPage('/bpm/request/view?id=1');
+        $view->checkFields($providerData['fields']);
 
         $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
         $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
