@@ -77,7 +77,6 @@ return [
                 'RequestField[9]' => '1',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => '034f0c1d521b0b6e211e0a1c93445161',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -132,7 +131,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -463,7 +461,6 @@ return [
                 'RequestField[9]' => '1',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => 'b4e416c1c29b8c328495f8df010a8cd1',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -518,7 +515,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -651,7 +647,6 @@ return [
                 'RequestField[94]' => '0',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => 'e9d20901a9ea095a32f7e13c99bf2c92',
                 'Request[author_id]' => '4',
                 'Request[correction_comment]' => '',
                 'Request[deletedAttachments]' => '[]',
@@ -705,7 +700,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -847,7 +841,6 @@ return [
                 'RequestField[9]' => '1',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => 'b6f40b3fb3ff1dc2b641896ba7961e94',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -902,7 +895,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -1035,7 +1027,6 @@ return [
                 'RequestField[94]' => '0',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => 'd7ca9fba4d62708644c1700cd9c74c96',
                 'Request[author_id]' => '4',
                 'Request[correction_comment]' => '',
                 'Request[deletedAttachments]' => '[]',
@@ -1089,7 +1080,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -1204,7 +1194,6 @@ return [
                 'RequestField[95]' => '0',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => 'e6ab198354e60cf3808f431d954e7668',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -1259,7 +1248,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -1371,7 +1359,6 @@ return [
                 'RequestField[9]' => '1',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => 'e1bd3393e3c0c83695f9f8ab2b37f474',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -1426,7 +1413,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -1559,7 +1545,6 @@ return [
                 'RequestField[94]' => '0',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => '54a9a8492b61e8f66706be8a5b28bbbe',
                 'Request[author_id]' => '4',
                 'Request[correction_comment]' => '',
                 'Request[deletedAttachments]' => '[]',
@@ -1613,7 +1598,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -1715,7 +1699,49 @@ return [
                 "Request[uploadedFiles][]" => null,
             ],
             'responseCode' => 200,
-            'fields' => [],
+            'fields' => [
+                'RequestField[104]' => '0',
+                'RequestField[105]' => '0',
+                'RequestField[106]' => '0',
+                'RequestField[107]' => '0',
+                'RequestField[109]' => '0',
+                'RequestField[112]' => '0',
+                'RequestField[113]' => '0',
+                'RequestField[115]' => '0',
+                'RequestField[121]' => '',
+                'RequestField[1]' => '1',
+                'RequestField[20]' => '',
+                'RequestField[28]' => '',
+                'RequestField[29]' => '',
+                'RequestField[30]' => '',
+                'RequestField[65]' => '0',
+                'RequestField[79]' => '0',
+                'RequestField[80]' => '0',
+                'RequestField[81]' => '0',
+                'RequestField[84]' => '0',
+                'RequestField[85]' => '0',
+                'RequestField[90]' => '0',
+                'RequestField[97]' => '0',
+                'RequestField[98]' => '0',
+                'RequestField[99]' => '0',
+                'Request[addedAttachments]' => '[]',
+                'Request[amount_to_work]' => '10',
+                'Request[author_id]' => '4',
+                'Request[category_id]' => '1',
+                'Request[correction_comment]' => '',
+                'Request[deletedAttachments]' => '[]',
+                'Request[description]' => 'description',
+                'Request[manager_id]' => '',
+                'Request[planned_start_date]' => '',
+                'Request[priority]' => '2',
+                'Request[recommendations]' => '',
+                'Request[report_period_id]' => '',
+                'Request[result_comment]' => '',
+                'Request[seller_id]' => '0',
+                'Request[subject]' => 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
+                'Request[supervisor_comment]' => '',
+                'Request[supervisor_id]' => '35',
+            ],
             'db' => [
                 'requests' => [
                     "id" => 1,
@@ -1754,7 +1780,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -1853,7 +1878,6 @@ return [
                 'RequestField[99]' => '0',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => '9095851312d966add12d3902f8bc7778',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -1908,7 +1932,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -1995,7 +2018,6 @@ return [
                 'RequestField[99]' => '0',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => '56a81a05c99cd078c53789d80eb28b62',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -2050,7 +2072,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -2137,7 +2158,6 @@ return [
                 'RequestField[99]' => '0',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => '9b85f2afb55e5b09c36afdf88675b724',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -2192,7 +2212,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -2281,7 +2300,6 @@ return [
                 'RequestField[99]' => '0',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => '00229367e769484866d437a61a69bbb7',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -2336,7 +2354,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -2448,7 +2465,6 @@ return [
                 'RequestField[9]' => '1',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => 'f3fac2a927700d5be9c1a9952a7e5772',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -2503,7 +2519,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -2631,7 +2646,6 @@ return [
                 'RequestField[88]' => '0',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => '7cfb366f49af2753078d693bc6eaff53',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -2686,7 +2700,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -2766,7 +2779,6 @@ return [
                 'RequestField[82]' => '0',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => '2011ed32bb8a72b48f0d774f478c05dc',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -2821,7 +2833,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
@@ -2902,7 +2913,6 @@ return [
                 'RequestField[92]' => '0',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
-                'Request[attachment_folder]' => 'e32b940667eb190cce5a5b414a64bf2d',
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
@@ -2957,7 +2967,6 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => null,
                 ],
-
                 'requests_fields' => [
                     [
                         'request_id' => 1,
