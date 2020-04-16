@@ -7,6 +7,18 @@ modules:
         - JsonSchema
         - Asserts
         - rzk\Database
+#        - WebDriver:
+#            url: http://gomer.local
+#            window_size: false
+#            port: 4444
+#            host: gomer.local
+#            browser: chrome
+#            restart: false
+#            clear_cookies: false
+#            capabilities:
+#              "goog:chromeOptions":
+#                "args": ["--headless", "--disable-gpu"]
+#                "binary": "/usr/bin/google-chrome"
         - PhpBrowser:
               url: http://gomer.local # Domen вашего приложения
               auth: ['kutsan.k', '123qweASD!']
