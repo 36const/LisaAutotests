@@ -1,15 +1,20 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Util\HttpCode;
+use Codeception\Example;
 use rzk\TestHelper;
+use lisa\Page\Functional\Login;
+use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
- * @group lisa_api
- * @group POSTGomer
+ * @group lisa_functional
+ * @group POSTFromStatuses
+ * @group POSTFromStatus6
  */
-class POSTGomerCest
+class POSTFromStatus6Cest
 {
     /**
      * @var TestHelper $testHelper
@@ -41,39 +46,42 @@ class POSTGomerCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider();
+        return $this->testHelper->getDataProvider('');
     }
 
-    public function _before(ApiTester $I)
+    public function _before(FunctionalTester $I)
     {
     }
 
     /**
-     * @param ApiTester $I
-     * @param \Codeception\Example $data
+     * @param FunctionalTester $I
+     * @param Example $data
+     * @param Login $login
+     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTGomer(ApiTester $I, \Codeception\Example $data)
+    public function POSTFromStatus6(FunctionalTester $I, Example $data, Login $login, RequestView $view)
     {
+        $I->loadDataForTest($data, $this->testHelper);
+
         $providerData = $data['provider_data'];
-        $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
-        $I->wantTo($data['setting']['description']);
 
-        $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
+        $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->seeResponseCodeIs($providerData['responseCode']);
-        $I->seeResponseContainsJson($providerData['responseBody']);
+        $I->amOnPage('/bpm/request/view?id=1');
 
-        $I->seeNumRecords($providerData['seeNumRecords']['requests'], 'requests');
-        $I->seeNumRecords($providerData['seeNumRecords']['requests_fields'], 'requests_fields');
+        $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
-        $I->grabNumRecords('requests') == 0 ?:
-            $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->grabNumRecords('requests_fields') == 0 ?:
-            $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
+        $I->amOnPage('/bpm/request/view?id=1');
 
+        $providerData['requestParameter'] == 'update' ?
+            $view->checkFields($providerData['requestBody']) :
+            $view->checkFields($providerData['fields']);
+
+        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
+        $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
     }
 }

@@ -5,6 +5,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Добавление новых товаров',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -17,12 +18,16 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 622
+                    "id" => 1
                 ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 1,
+                "requests_fields" => 0
             ],
             'db' => [
                 "requests" => [
-                    "id" => 622,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 1,
                     "supervisor_id" => 6,
@@ -58,8 +63,7 @@ return [
                     "sync_source_id" => 1,
                     "sv_report_periods" => null,
                 ],
-                "requests_fields" => []
-            ]
+            ],
         ]
     ],
 
@@ -67,6 +71,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Добавление новых товаров c автомодерацией',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -80,12 +85,16 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 623
+                    "id" => 1
                 ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 1,
+                "requests_fields" => 1
             ],
             'db' => [
                 "requests" => [
-                    "id" => 623,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 1,
                     "supervisor_id" => 6,
@@ -122,9 +131,11 @@ return [
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 623,
-                    'field_id' => 5,
-                    'value' => 1,
+                    [
+                        'request_id' => 1,
+                        'field_id' => 5,
+                        'value' => 1,
+                    ]
                 ]
             ]
         ]
@@ -134,6 +145,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Добавление новых товаров c Б/У>',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -147,12 +159,16 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 624
+                    "id" => 1
                 ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 1,
+                "requests_fields" => 1
             ],
             'db' => [
                 "requests" => [
-                    "id" => 624,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 1,
                     "supervisor_id" => 6,
@@ -189,9 +205,11 @@ return [
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 624,
-                    'field_id' => 17,
-                    'value' => 1,
+                    [
+                        'request_id' => 1,
+                        'field_id' => 17,
+                        'value' => 1,
+                    ]
                 ]
             ]
         ]
@@ -201,6 +219,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Добавление новых товаров c Автомодерацией и Б/У>',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -215,12 +234,16 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 625
+                    "id" => 1
                 ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 1,
+                "requests_fields" => 2
             ],
             'db' => [
                 "requests" => [
-                    "id" => 625,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 1,
                     "supervisor_id" => 6,
@@ -257,14 +280,16 @@ return [
                     "sv_report_periods" => null,
                 ],
                 "requests_fields" => [
-                    'request_id' => 625,
-                    'field_id' => 5,
-                    'value' => 1,
-                ],
-                "requests_fields" => [
-                    'request_id' => 625,
-                    'field_id' => 17,
-                    'value' => 1
+                    [
+                        'request_id' => 1,
+                        'field_id' => 5,
+                        'value' => 1,
+                    ],
+                    [
+                        'request_id' => 1,
+                        'field_id' => 17,
+                        'value' => 1
+                    ]
                 ]
             ]
         ]
@@ -274,6 +299,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Добавление/изменение информации в существующих товарах',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -286,12 +312,16 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 626
+                    "id" => 1
                 ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 1,
+                "requests_fields" => 0
             ],
             'db' => [
                 "requests" => [
-                    "id" => 626,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 2,
                     "supervisor_id" => 6,
@@ -336,6 +366,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Перенос товаров (изменение категории в товарах)',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -348,12 +379,16 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 627
+                    "id" => 1
                 ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 1,
+                "requests_fields" => 0
             ],
             'db' => [
                 "requests" => [
-                    "id" => 627,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 3,
                     "supervisor_id" => 6,
@@ -398,6 +433,7 @@ return [
         'setting' => [
             'description' => 'Заявка на Проверку скрытых товаров',
         ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
@@ -410,12 +446,16 @@ return [
             "responseBody" => [
                 "status" => 200,
                 "result" => [
-                    "id" => 628
+                    "id" => 1
                 ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 1,
+                "requests_fields" => 0
             ],
             'db' => [
                 "requests" => [
-                    "id" => 628,
+                    "id" => 1,
                     "author_id" => 1,
                     "type_id" => 6,
                     "supervisor_id" => 6,
@@ -454,5 +494,65 @@ return [
                 "requests_fields" => []
             ]
         ]
-    ]
+    ],
+
+    'case8' => [
+        'setting' => [
+            'description' => 'Пустой запрос',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestURL' => '/bpm/api/create-request-by-market-id',
+            'requestBody' => [],
+            "responseCode" => 200,
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Не передано поле sync_source_id",
+                    "Не передано поле market_id",
+                    "Не передано поле type_id",
+                    "Не передано поле items_count"
+                ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 0,
+                "requests_fields" => 0
+            ],
+            'db' => [
+                "requests" => [],
+                "requests_fields" => []
+            ]
+        ]
+    ],
+
+    'case9' => [
+        'setting' => [
+            'description' => 'Несуществующий продавец',
+        ],
+        'provider_data' => [
+            'requestURL' => '/bpm/api/create-request-by-market-id',
+            'requestBody' => [
+                "sync_source_id" => 1,
+                "market_id" => 9999999,
+                "type_id" => 1,
+                "items_count" => 10
+            ],
+            "responseCode" => 200,
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "передан несуществующий продавец"
+                ]
+            ],
+            "seeNumRecords" => [
+                "requests" => 0,
+                "requests_fields" => 0
+            ],
+            'db' => [
+                "requests" => [],
+                "requests_fields" => []
+            ]
+        ]
+    ],
+
 ];

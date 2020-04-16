@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Util\HttpCode;
@@ -7,9 +8,9 @@ use rzk\TestHelper;
 /**
  * @group lisa
  * @group lisa_api
- * @group POSTGomer
+ * @group GETGomerRequestsExists
  */
-class POSTGomerCest
+class GETGomerRequestsExistsCest
 {
     /**
      * @var TestHelper $testHelper
@@ -56,24 +57,16 @@ class POSTGomerCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTGomer(ApiTester $I, \Codeception\Example $data)
+    public function GETGomerRequestsExists(ApiTester $I, \Codeception\Example $data)
     {
         $providerData = $data['provider_data'];
         $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
+        $this->testHelper->loadFixture($I, $data);
         $I->wantTo($data['setting']['description']);
 
-        $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
+        $I->sendGET('/bpm/api/requests-exists', $providerData['requestParameters']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
-
-        $I->seeNumRecords($providerData['seeNumRecords']['requests'], 'requests');
-        $I->seeNumRecords($providerData['seeNumRecords']['requests_fields'], 'requests_fields');
-
-        $I->grabNumRecords('requests') == 0 ?:
-            $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->grabNumRecords('requests_fields') == 0 ?:
-            $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
-
     }
 }

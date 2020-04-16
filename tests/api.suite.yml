@@ -14,13 +14,13 @@ modules:
               depends: PhpBrowser
               url: http://gomer.local # Domen вашего приложения, должен быть такой же как и выше
         - Db: # Подключение к базе вашего приложения (Именно в эту базу будут загружатся фикстуры)
-              dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=lisa_db'
+              dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=lisa_auto_db'
               user: 'lisa' # Логин к базе
               password: 'jw8s0F4' # Пароль к базе
               cleanup: false
               databases:
                 lisa_fixtures:
-                  dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=lisa_db'
+                  dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=lisa_auto_db'
                   user: 'lisa'
                   password: 'jw8s0F4'
                 gomer_fixtures:

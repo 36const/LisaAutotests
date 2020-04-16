@@ -1,15 +1,20 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Util\HttpCode;
+use Codeception\Example;
 use rzk\TestHelper;
+use lisa\Page\Functional\Login;
+use lisa\Page\Functional\RequestCreate;
+use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
- * @group lisa_api
- * @group PUTGomer
+ * @group lisa_functional
+ * @group POSTCreateRequest
  */
-class PUTGomerCest
+class POSTCreateRequestCest
 {
     /**
      * @var TestHelper $testHelper
@@ -41,33 +46,50 @@ class PUTGomerCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider();
+        return $this->testHelper->getDataProvider('');
     }
 
-    public function _before(ApiTester $I)
+    public function _before(FunctionalTester $I)
     {
     }
 
     /**
-     * @param ApiTester $I
-     * @param \Codeception\Example $data
+     * @param FunctionalTester $I
+     * @param Example $data
+     * @param Login $login
+     * @param RequestCreate $create
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function PUTGomer(ApiTester $I, \Codeception\Example $data)
+    public function POSTCreateRequest(FunctionalTester $I, Example $data, Login $login, RequestCreate $create, RequestView $view)
     {
+        $I->loadDataForTest($data, $this->testHelper);
+
+        $setting = $data['setting'];
         $providerData = $data['provider_data'];
-        $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
-        $this->testHelper->loadFixture($I, $data);
-        $I->wantTo($data['setting']['description']);
 
-        $I->sendPUT($providerData['requestURL'], $providerData['requestBody']);
+        $providerData['requestBody']['_csrf-backend'] = $login->login();
 
+        $create->amOnRequestCreate($setting['type'], $setting['direction']);
+        $I->seeInTitle($setting['description']);
+        $I->see($setting['description'], ['class' => 'global-caption']);
+
+        $I->assertEquals($I->grabMultiple(RequestCreate::$allCheckboxes), $providerData['checkboxes']);
+
+        if ($setting['direction'] != 2) {
+            $I->seeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
+            $I->dontSeeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
+        }
+
+        $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
         $I->seeResponseCodeIs($providerData['responseCode']);
-        $I->seeResponseContainsJson($providerData['responseBody']);
+
+        $I->amOnPage('/bpm/request/view?id=1');
+        $view->checkFields($providerData['fields']);
 
         $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
+        $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
     }
 }
