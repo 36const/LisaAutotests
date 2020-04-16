@@ -12,9 +12,9 @@ use lisa\Page\Functional\RequestView;
  * @group lisa
  * @group lisa_functional
  * @group POSTFromStatuses
- * @group POSTFromStatus1
+ * @group POSTFromStatus9
  */
-class POSTFromStatus1Cest
+class POSTFromStatus9Cest
 {
     /**
      * @var TestHelper $testHelper
@@ -55,26 +55,27 @@ class POSTFromStatus1Cest
 
     /**
      * @param FunctionalTester $I
-     * @param \Codeception\Example $data
+     * @param Example $data
+     * @param Login $login
+     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatus1(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function POSTFromStatus9(FunctionalTester $I, Example $data, Login $login, RequestView $view)
     {
-        // TODO посмотреть реализацию предедущего теста
-        $login->login();
         $I->loadDataForTest($data, $this->testHelper);
 
         $providerData = $data['provider_data'];
 
-        // TODO посмотреть реализацию предедущего теста
-        $providerData['requestBody']['_csrf-backend'] = $login->grabCsrfToken();
+        $providerData['requestBody']['_csrf-backend'] = $login->login();
 
         $I->amOnPage('/bpm/request/view?id=1');
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
+
+        $I->amOnPage('/bpm/request/view?id=1');
 
         $providerData['requestParameter'] == 'update' ?
             $view->checkFields($providerData['requestBody']) :

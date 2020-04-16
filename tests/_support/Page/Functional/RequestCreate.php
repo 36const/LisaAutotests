@@ -3,11 +3,10 @@ namespace lisa\Page\Functional;
 
 use lisa\FunctionalTester;
 
-class RequestCreating extends FunctionalTester
+class RequestCreate extends FunctionalTester
 {
-    // include url of current page
     public static $URL = '';
-    public static $allCheckbox = "//*[@class='attachments-update']//label";
+    public static $allCheckboxes = "//*[@class='attachments-update']//label";
 
     /**
      * Declare UI map for this page here. CSS or XPath allowed.
@@ -25,22 +24,15 @@ class RequestCreating extends FunctionalTester
         return static::$URL.$param;
     }
 
-    public function amOnRequestCreating(int $type, int $direction)
+    public function amOnRequestCreate(int $type, int $direction)
     {
         $I = $this;
         $I->amOnPage("/bpm/request/create-by-type?typeId=$type&direction=$direction");
     }
 
-    //TODO реализовать через sprintf() https://www.php.net/manual/ru/function.sprintf.php
     public function findCheckbox($name)
     {
         return "//*[@class='attachments-update']//*[text()=\" $name\"]";
-    }
-
-    public function grabAllCheckboxes()
-    {
-        $I = $this;
-        return $I->grabMultiple("//*[@class='attachments-update']//label");
     }
 
 }

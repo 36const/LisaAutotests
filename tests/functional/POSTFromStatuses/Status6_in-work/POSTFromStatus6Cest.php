@@ -3,15 +3,18 @@
 namespace lisa;
 
 use Codeception\Util\HttpCode;
+use Codeception\Example;
 use rzk\TestHelper;
+use lisa\Page\Functional\Login;
+use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
  * @group lisa_functional
  * @group POSTFromStatuses
- * @group POSTFromStatus2
+ * @group POSTFromStatus6
  */
-class POSTFromStatus2Cest
+class POSTFromStatus6Cest
 {
     /**
      * @var TestHelper $testHelper
@@ -48,35 +51,35 @@ class POSTFromStatus2Cest
 
     public function _before(FunctionalTester $I)
     {
-        $I->login();
     }
 
     /**
      * @param FunctionalTester $I
-     * @param \Codeception\Example $data
+     * @param Example $data
+     * @param Login $login
+     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatus2(FunctionalTester $I, \Codeception\Example $data)
+    public function POSTFromStatus6(FunctionalTester $I, Example $data, Login $login, RequestView $view)
     {
+        $I->loadDataForTest($data, $this->testHelper);
+
         $providerData = $data['provider_data'];
-        $settings = $data['settings'];
-        $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
-        $this->testHelper->loadFixture($I, $data);
-        $I->wantTo($settings['description']);
+
+        $providerData['requestBody']['_csrf-backend'] = $login->login();
 
         $I->amOnPage('/bpm/request/view?id=1');
 
-        !isset($providerData['requestUpdateBody']) ?:
-            $I->sendPostIfRequestBodyExists($providerData['requestUpdateBody'], '/bpm/request/update?id=1');
+        $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
-        !isset($providerData['requestChangeReasonBody']) ?:
-            $I->sendPostIfRequestBodyExists($providerData['requestChangeReasonBody'], '/bpm/request/change-reason?id=1');
+        $I->amOnPage('/bpm/request/view?id=1');
 
-        !isset($providerData['requestAppointManagerBody']) ?:
-            $I->sendPostIfRequestBodyExists($providerData['requestAppointManagerBody'], '/bpm/request/appoint-manager?id=1');
+        $providerData['requestParameter'] == 'update' ?
+            $view->checkFields($providerData['requestBody']) :
+            $view->checkFields($providerData['fields']);
 
         $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
         $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);

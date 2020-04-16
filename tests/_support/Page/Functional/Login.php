@@ -5,7 +5,6 @@ use lisa\FunctionalTester;
 
 class Login extends FunctionalTester
 {
-    // include url of current page
     public static $URL = '';
 
     /**
@@ -42,7 +41,6 @@ class Login extends FunctionalTester
     {
         $I = $this;
         $I->amOnPage('/');
-
         return $I->grabCsrfToken();
     }
 

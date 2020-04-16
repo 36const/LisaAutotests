@@ -18,6 +18,7 @@ class RequestView extends FunctionalTester
         unset($fields['newStatus']);
         unset($fields['Request[uploadedFiles][]']);
         unset($fields['Request[attachment_folder]']);
+        unset($fields['Request[sv_report_periods]']);
         $I->seeInFormFields('form[id=update_form]', $fields);
     }
 

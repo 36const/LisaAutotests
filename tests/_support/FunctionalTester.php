@@ -35,7 +35,9 @@ class FunctionalTester extends \Codeception\Actor
     public function changeStatus($requestParameter, $requestBody)
     {
         $I = $this;
-        $url = '/bpm/request/' . "$requestParameter" . '?id=1';
+        $requestParameter == 'to-correction' ?
+            $url = '/bpm/request/' . "$requestParameter" . '?id=1&changeStatus=1' :
+            $url = '/bpm/request/' . "$requestParameter" . '?id=1';
         $I->sendPOST($url, $requestBody);
         $I->seeResponseCodeIs(200);
     }
@@ -55,7 +57,4 @@ class FunctionalTester extends \Codeception\Actor
         }
     }
 
-    /**
-     * Define custom actions here
-     */
 }

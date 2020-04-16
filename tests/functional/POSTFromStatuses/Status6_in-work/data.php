@@ -2,12 +2,21 @@
 
 return [
     'case4' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Перевод из "В работе" в "Отменена"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
-            'requestUpdateBody' => [
+            'requestParameter' => 'change-reason',
+            'requestBody' => [
+                'Request[reason]' => 'Отменить',
+                'Request[reason_id]' => '11',
+                'Request[status]' => '4',
+                "_csrf-backend" => null,
+                'keys',
+                'keys',
+            ],
+            'fields' => [
                 'RequestField[111]' => '0',
                 'RequestField[121]' => '',
                 'RequestField[15]' => '1',
@@ -42,7 +51,7 @@ return [
                 'Request[correction_comment]' => '',
                 'Request[deletedAttachments]' => '[]',
                 'Request[description]' => 'description',
-                'Request[manager_id]' => '',
+                'Request[manager_id]' => '11',
                 'Request[planned_start_date]' => '',
                 'Request[priority]' => '2',
                 'Request[recommendations]' => '',
@@ -52,18 +61,7 @@ return [
                 'Request[subject]' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '4',
-                'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null
             ],
-            'requestChangeReasonBody' => [
-                'Request[reason]' => 'Отменить',
-                'Request[reason_id]' => '11',
-                'Request[status]' => '4',
-                "_csrf-backend" => null,
-                'keys',
-                'keys',
-            ],
-
             'db' => [
                 'requests' => [
                     "id" => 1,
@@ -179,12 +177,18 @@ return [
     ],
 
     'case5' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Перевод из "В работе" в "Ожидает взятия в работу"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
-            'requestUpdateBody' => [
+            'requestParameter' => 'appoint-manager',
+            'requestBody' => [
+                'Request[manager_id]' => '12',
+                "_csrf-backend" => null,
+                'keys',
+            ],
+            'fields' => [
                 'RequestField[111]' => '0',
                 'RequestField[121]' => '',
                 'RequestField[15]' => '1',
@@ -219,7 +223,7 @@ return [
                 'Request[correction_comment]' => '',
                 'Request[deletedAttachments]' => '[]',
                 'Request[description]' => 'description',
-                'Request[manager_id]' => '11',
+                'Request[manager_id]' => '12',
                 'Request[planned_start_date]' => '',
                 'Request[priority]' => '2',
                 'Request[recommendations]' => '',
@@ -229,16 +233,7 @@ return [
                 'Request[subject]' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '4',
-                'Request[uploadedFiles][]' => '',
-                'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
             ],
-            'requestAppointManagerBody' => [
-                'Request[manager_id]' => '12',
-                "_csrf-backend" => null,
-                'keys',
-            ],
-
             'db' => [
                 'requests' => [
                     "id" => 1,
@@ -354,12 +349,21 @@ return [
     ],
 
     'case7' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Перевод из "В работе" в "Ожидает (ризоны)"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
-            'requestUpdateBody' => [
+            'requestParameter' => 'change-reason',
+            'requestBody' => [
+                'Request[reason]' => 'Ожидать',
+                'Request[reason_id]' => '1',
+                'Request[status]' => '7',
+                "_csrf-backend" => null,
+                'keys',
+                'keys',
+            ],
+            'fields' => [
                 'RequestField[111]' => '0',
                 'RequestField[121]' => '',
                 'RequestField[15]' => '1',
@@ -404,18 +408,7 @@ return [
                 'Request[subject]' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '4',
-                'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
             ],
-            'requestChangeReasonBody' => [
-                'Request[reason]' => 'Ожидать',
-                'Request[reason_id]' => '1',
-                'Request[status]' => '7',
-                "_csrf-backend" => null,
-                'keys',
-                'keys',
-            ],
-
             'db' => [
                 'requests' => [
                     "id" => 1,
@@ -531,12 +524,39 @@ return [
     ],
 
     'case8' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Перевод из "В работе" в "Частично выполнен"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
-            'requestUpdateBody' => [
+            'requestParameter' => 'complete',
+            'requestBody' => [
+                'RequestField[111]' => '10',
+                'RequestField[21]' => '1',
+                'RequestField[22]' => '6',
+                'RequestField[23]' => '11',
+                'RequestField[24]' => '15',
+                'RequestField[25]' => '18',
+                'RequestField[26]' => '22',
+                'RequestField[27]' => '24',
+                'RequestField[31]' => '48',
+                'RequestField[66]' => '10',
+                'RequestField[68]' => '10',
+                'RequestField[69]' => '10',
+                'RequestField[70]' => '10',
+                'RequestField[71]' => '10',
+                'RequestField[76]' => '10',
+                'RequestField[77]' => '10',
+                'RequestField[88]' => '10',
+                'RequestField[93]' => '10',
+                'RequestField[94]' => '10',
+                'Request[awaiting_correction]' => '0',
+                'Request[reason_id]' => '15',
+                'Request[status]' => '8',
+                'Request[result_comment]' => 'Комментарий к результату задачи',
+                "_csrf-backend" => null,
+            ],
+            'fields' => [
                 'RequestField[111]' => '10',
                 'RequestField[121]' => '',
                 'RequestField[15]' => '1',
@@ -576,41 +596,12 @@ return [
                 'Request[priority]' => '2',
                 'Request[recommendations]' => '',
                 'Request[report_period_id]' => '',
-                'Request[result_comment]' => '',
+                'Request[result_comment]' => 'Комментарий к результату задачи',
                 'Request[seller_id]' => '83',
                 'Request[subject]' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '4',
-                'Request[sv_report_periods][]' => '1',
-                'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
             ],
-            'requestCompleteBody' => [
-                'RequestField[111]' => '10',
-                'RequestField[21]' => '1',
-                'RequestField[22]' => '6',
-                'RequestField[23]' => '11',
-                'RequestField[24]' => '15',
-                'RequestField[25]' => '18',
-                'RequestField[26]' => '22',
-                'RequestField[27]' => '24',
-                'RequestField[31]' => '48',
-                'RequestField[66]' => '10',
-                'RequestField[68]' => '10',
-                'RequestField[69]' => '10',
-                'RequestField[70]' => '10',
-                'RequestField[71]' => '10',
-                'RequestField[76]' => '10',
-                'RequestField[77]' => '10',
-                'RequestField[88]' => '10',
-                'RequestField[93]' => '10',
-                'RequestField[94]' => '10',
-                'Request[awaiting_correction]' => '0',
-                'Request[reason_id]' => '15',
-                'Request[result_comment]' => 'Комментарий к результату задачи',
-                'Request[status]' => '8',                "_csrf-backend" => null,
-            ],
-
             'db' => [
                 'requests' => [
                     "id" => 1,
@@ -647,7 +638,7 @@ return [
                     "team_direction" => 3,
                     "report_period_id" => null,
                     "sync_source_id" => null,
-                    "sv_report_periods" => '{"1": "1"}',
+                    "sv_report_periods" => '{"1": 1}',
                 ],
                 'requests_fields' => [
                     [
@@ -821,12 +812,38 @@ return [
     ],
 
     'case9' => [
-        'settings' => [
+        'setting' => [
             'description' => 'Перевод из "В работе" в "Выполнен"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
-            'requestUpdateBody' => [
+            'requestParameter' => 'complete',
+            'requestBody' => [
+                'RequestField[111]' => '10',
+                'RequestField[21]' => '1',
+                'RequestField[22]' => '6',
+                'RequestField[23]' => '11',
+                'RequestField[24]' => '15',
+                'RequestField[25]' => '18',
+                'RequestField[26]' => '22',
+                'RequestField[27]' => '24',
+                'RequestField[31]' => '48',
+                'RequestField[66]' => '10',
+                'RequestField[68]' => '10',
+                'RequestField[69]' => '10',
+                'RequestField[70]' => '10',
+                'RequestField[71]' => '10',
+                'RequestField[76]' => '10',
+                'RequestField[77]' => '10',
+                'RequestField[88]' => '10',
+                'RequestField[93]' => '10',
+                'RequestField[94]' => '10',
+                'Request[awaiting_correction]' => '0',
+                'Request[result_comment]' => 'Комментарий к результату задачи',
+                'Request[status]' => '9',
+                "_csrf-backend" => null,
+            ],
+            'fields' => [
                 'RequestField[111]' => '10',
                 'RequestField[121]' => '',
                 'RequestField[15]' => '1',
@@ -866,41 +883,12 @@ return [
                 'Request[priority]' => '2',
                 'Request[recommendations]' => '',
                 'Request[report_period_id]' => '',
-                'Request[result_comment]' => '',
+                'Request[result_comment]' => 'Комментарий к результату задачи',
                 'Request[seller_id]' => '83',
                 'Request[subject]' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '4',
-                'Request[sv_report_periods][]' => '1',
-                'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
             ],
-            'requestCompleteBody' => [
-                'RequestField[111]' => '10',
-                'RequestField[21]' => '1',
-                'RequestField[22]' => '6',
-                'RequestField[23]' => '11',
-                'RequestField[24]' => '15',
-                'RequestField[25]' => '18',
-                'RequestField[26]' => '22',
-                'RequestField[27]' => '24',
-                'RequestField[31]' => '48',
-                'RequestField[66]' => '10',
-                'RequestField[68]' => '10',
-                'RequestField[69]' => '10',
-                'RequestField[70]' => '10',
-                'RequestField[71]' => '10',
-                'RequestField[76]' => '10',
-                'RequestField[77]' => '10',
-                'RequestField[88]' => '10',
-                'RequestField[93]' => '10',
-                'RequestField[94]' => '10',
-                'Request[awaiting_correction]' => '0',
-                'Request[result_comment]' => 'Комментарий к результату задачи',
-                'Request[status]' => '9',
-                "_csrf-backend" => null,
-            ],
-
             'db' => [
                 'requests' => [
                     "id" => 1,
@@ -937,7 +925,7 @@ return [
                     "team_direction" => 3,
                     "report_period_id" => null,
                     "sync_source_id" => null,
-                    "sv_report_periods" => '{"1": "1"}',
+                    "sv_report_periods" => '{"1": 1}',
                 ],
                 'requests_fields' => [
                     [

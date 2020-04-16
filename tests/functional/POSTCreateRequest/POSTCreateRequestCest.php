@@ -6,7 +6,7 @@ use Codeception\Util\HttpCode;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\RequestCreating;
+use lisa\Page\Functional\RequestCreate;
 use lisa\Page\Functional\RequestView;
 
 /**
@@ -57,29 +57,30 @@ class POSTCreateRequestCest
      * @param FunctionalTester $I
      * @param Example $data
      * @param Login $login
-     * @param RequestCreating $creatingPage
+     * @param RequestCreate $create
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTCreateRequest(FunctionalTester $I, Example $data, Login $login, RequestCreating $creatingPage, RequestView $view)
+    public function POSTCreateRequest(FunctionalTester $I, Example $data, Login $login, RequestCreate $create, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
         $setting = $data['setting'];
         $providerData = $data['provider_data'];
-        //TODO посмотреть реализацию попробовать использовать
+
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $creatingPage->amOnRequestCreating($setting['type'], $setting['direction']);
+        $create->amOnRequestCreate($setting['type'], $setting['direction']);
         $I->seeInTitle($setting['description']);
         $I->see($setting['description'], ['class' => 'global-caption']);
 
-        $I->assertEquals($creatingPage->grabAllCheckboxes(), $providerData['checkboxes']);
+        $I->assertEquals($I->grabMultiple(RequestCreate::$allCheckboxes), $providerData['checkboxes']);
+
         if ($setting['direction'] != 2) {
-            $I->seeCheckboxIsChecked($creatingPage->findCheckbox('Ручная загрузка'));
-            $I->dontSeeCheckboxIsChecked($creatingPage->findCheckbox('Пакетная загрузка'));
+            $I->seeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
+            $I->dontSeeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
         }
 
         $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);

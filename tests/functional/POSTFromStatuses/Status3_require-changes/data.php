@@ -1,13 +1,22 @@
 <?php
 
 return [
-    'case7' => [
-        'settings' => [
-            'description' => 'Перевод из "Ожидает (ризоны)" во "В работе"',
+    'case1' => [
+        'setting' => [
+            'description' => 'Перевод из "Требует изменений" в "Ожидает проверки условий"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
-            'requestUpdateBody' => [
+            'requestParameter' => 'change-reason',
+            'requestBody' => [
+                'Request[correction_comment]' => 'Вернуть на проверку',
+                'Request[reason_id]' => '15',
+                'Request[status]' => '1',
+                "_csrf-backend" => null,
+                'keys',
+                'keys',
+            ],
+            'fields' => [
                 'RequestField[111]' => '0',
                 'RequestField[121]' => '',
                 'RequestField[15]' => '1',
@@ -42,7 +51,7 @@ return [
                 'Request[correction_comment]' => '',
                 'Request[deletedAttachments]' => '[]',
                 'Request[description]' => 'description',
-                'Request[manager_id]' => '11',
+                'Request[manager_id]' => '',
                 'Request[planned_start_date]' => '',
                 'Request[priority]' => '2',
                 'Request[recommendations]' => '',
@@ -52,24 +61,20 @@ return [
                 'Request[subject]' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '4',
-                'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
-                'newStatus' => '6',
             ],
-
             'db' => [
                 'requests' => [
                     "id" => 1,
                     "author_id" => 2,
                     "type_id" => 1,
                     "supervisor_id" => 4,
-                    "manager_id" => 11,
-                    "status" => 6,
+                    "manager_id" => null,
+                    "status" => 1,
                     "direction" => 1,
                     "priority" => 2,
                     "awaiting_correction" => 0,
                     "created_at" => '2020-01-01 00:00:00',
-                    "correction_comment" => '',
+                    "correction_comment" => 'Вернуть на проверку',
                     "amount_to_work" => 10,
                     "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                     "description" => 'description',
@@ -77,12 +82,12 @@ return [
                     "category_id" => 1,
                     "seller_id" => 83,
                     "recommendations" => '',
-                    "reason_id" => null,
-                    "reason" => null,
+                    "reason_id" => 15,
+                    "reason" => 'Затребовать изменения',
                     "parent_id" => null,
                     "planned_start_date" => null,
                     "planned_finish_date" => null,
-                    "actual_start_date" => '2020-01-01 00:00:03',
+                    "actual_start_date" => null,
                     "actual_finish_date" => null,
                     "supervisor_process_date" => '2020-01-01 00:00:02',
                     "supervisor_check_date" => null,
@@ -95,6 +100,7 @@ return [
                     "sync_source_id" => null,
                     "sv_report_periods" => '{"1": 1}',
                 ],
+
                 'requests_fields' => [
                     [
                         'request_id' => 1,
