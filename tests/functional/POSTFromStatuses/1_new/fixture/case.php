@@ -5,9 +5,9 @@ return [
         "requests" => [
             [
                 "id" => 1,
-                "author_id" => 2,
+                "author_id" => 4,
                 "type_id" => 1,
-                "supervisor_id" => 4,
+                "supervisor_id" => 6,
                 "manager_id" => null,
                 "status" => 1,
                 "direction" => 1,
@@ -49,21 +49,6 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 8,
-                'value' => 1,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 9,
-                'value' => 1,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 15,
-                'value' => 1,
-            ],
-            [
-                'request_id' => 1,
                 'field_id' => 49,
                 'value' => 0,
             ],
@@ -80,7 +65,7 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 52,
-                'value' => 15,
+                        'value' => 1,
             ],
             [
                 'request_id' => 1,

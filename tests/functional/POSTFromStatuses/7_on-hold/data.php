@@ -11,7 +11,6 @@ return [
             'requestBody' => [
                 'RequestField[111]' => '0',
                 'RequestField[121]' => '',
-                'RequestField[15]' => '1',
                 'RequestField[1]' => '1',
                 'RequestField[20]' => '',
                 'RequestField[21]' => '',
@@ -31,14 +30,12 @@ return [
                 'RequestField[76]' => '0',
                 'RequestField[77]' => '0',
                 'RequestField[88]' => '0',
-                'RequestField[8]' => '1',
                 'RequestField[93]' => '0',
                 'RequestField[94]' => '0',
-                'RequestField[9]' => '1',
                 'Request[addedAttachments]' => '[]',
                 'Request[amount_to_work]' => '10',
                 'Request[attachment_folder]' => '9c4f8356ab2ddca8b9dcafb8b511df50',
-                'Request[author_id]' => '2',
+                'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
                 'Request[deletedAttachments]' => '[]',
@@ -52,7 +49,7 @@ return [
                 'Request[seller_id]' => '83',
                 'Request[subject]' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'Request[supervisor_comment]' => '',
-                'Request[supervisor_id]' => '4',
+                'Request[supervisor_id]' => '6',
                 'Request[uploadedFiles][]' => '',
                 '_csrf-backend' => null,
                 'newStatus' => '6',
@@ -61,9 +58,9 @@ return [
             'db' => [
                 'requests' => [
                     "id" => 1,
-                    "author_id" => 2,
+                    "author_id" => 4,
                     "type_id" => 1,
-                    "supervisor_id" => 4,
+                    "supervisor_id" => 6,
                     "manager_id" => 11,
                     "status" => 6,
                     "direction" => 1,
@@ -104,21 +101,6 @@ return [
                     ],
                     [
                         'request_id' => 1,
-                        'field_id' => 8,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 9,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 15,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
                         'field_id' => 49,
                         'value' => 0,
                     ],
@@ -135,7 +117,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 52,
-                        'value' => 15,
+                        'value' => 1,
                     ],
                     [
                         'request_id' => 1,
