@@ -82,6 +82,7 @@ class POSTFromStatus9Cest
             $view->checkFields($providerData['fields']);
 
         $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
+        $I->validateInDB('lisa_fixtures', 'request_errors', $providerData['db']['request_errors']);
         $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
     }
 }
