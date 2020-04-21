@@ -12,9 +12,9 @@ use lisa\Page\Functional\RequestView;
  * @group lisa
  * @group lisa_functional
  * @group POSTMotivation
- * @group POSTMotivationManager
+ * @group POSTMotivationSupervisor
  */
-class POSTMotivationManagerCest
+class POSTMotivationSupervisorCest
 {
     /**
      * @var TestHelper $testHelper
@@ -63,7 +63,7 @@ class POSTMotivationManagerCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTMotivationManager(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function POSTMotivationSupervisor(FunctionalTester $I, Example $data, Login $login, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
@@ -80,6 +80,7 @@ class POSTMotivationManagerCest
         $view->checkFields($providerData['fields']);
 
         $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
+        $I->validateInDB('lisa_fixtures', 'request_errors', $providerData['db']['request_errors']);
         $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
     }
 }
