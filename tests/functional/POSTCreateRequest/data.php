@@ -170,7 +170,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 52,
-                        'value' => 15,
+                        'value' => 1,
                     ],
                     [
                         'request_id' => 1,
@@ -352,7 +352,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 53,
-                        'value' => 1,
+                        'value' => 3,
                     ],
                     [
                         'request_id' => 1,
@@ -554,12 +554,12 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 52,
-                        'value' => 15,
+                        'value' => 1,
                     ],
                     [
                         'request_id' => 1,
                         'field_id' => 53,
-                        'value' => 0.1,
+                        'value' => 1,
                     ],
                     [
                         'request_id' => 1,
@@ -734,7 +734,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 53,
-                        'value' => 1,
+                        'value' => 3,
                     ],
                     [
                         'request_id' => 1,
@@ -934,12 +934,12 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 52,
-                        'value' => 15,
+                        'value' => 1,
                     ],
                     [
                         'request_id' => 1,
                         'field_id' => 53,
-                        'value' => 0.75,
+                        'value' => 1,
                     ],
                     [
                         'request_id' => 1,
@@ -1114,7 +1114,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 53,
-                        'value' => 1,
+                        'value' => 3,
                     ],
                     [
                         'request_id' => 1,
@@ -1257,7 +1257,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 53,
-                        'value' => 0.5,
+                        'value' => 1,
                     ],
                     [
                         'request_id' => 1,
@@ -1452,7 +1452,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 52,
-                        'value' => 15,
+                        'value' => 1,
                     ],
                     [
                         'request_id' => 1,
@@ -1632,7 +1632,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 53,
-                        'value' => 1,
+                        'value' => 3,
                     ],
                     [
                         'request_id' => 1,
@@ -1681,6 +1681,8 @@ return [
             'requestURL' => '/bpm/request/create',
             'requestBody' => [
                 "RequestField[1]" => 1,
+                "RequestField[6]" => 1,
+                "RequestField[7]" => 1,
                 "Request[amount_to_work]" => 10,
                 "Request[attachment_folder]" => '18ac118ec8919dcb3ad0d7ddd129d88a',
                 "Request[addedAttachments]" => '[]',
@@ -1788,8 +1790,18 @@ return [
                     ],
                     [
                         'request_id' => 1,
-                        'field_id' => 53,
+                        'field_id' => 6,
                         'value' => 1,
+                    ],
+                    [
+                        'request_id' => 1,
+                        'field_id' => 7,
+                        'value' => 1,
+                    ],
+                    [
+                        'request_id' => 1,
+                        'field_id' => 53,
+                        'value' => 3,
                     ],
                     [
                         'request_id' => 1,
@@ -1833,6 +1845,8 @@ return [
             'requestURL' => '/bpm/request/create',
             'requestBody' => [
                 "RequestField[1]" => 1,
+                "RequestField[6]" => 1,
+                "RequestField[7]" => 1,
                 "Request[amount_to_work]" => 10,
                 "Request[attachment_folder]" => '18ac118ec8919dcb3ad0d7ddd129d88a',
                 "Request[addedAttachments]" => '[]',
@@ -1940,8 +1954,18 @@ return [
                     ],
                     [
                         'request_id' => 1,
-                        'field_id' => 53,
+                        'field_id' => 6,
                         'value' => 1,
+                    ],
+                    [
+                        'request_id' => 1,
+                        'field_id' => 7,
+                        'value' => 1,
+                    ],
+                    [
+                        'request_id' => 1,
+                        'field_id' => 53,
+                        'value' => 3,
                     ],
                     [
                         'request_id' => 1,
@@ -2527,16 +2551,6 @@ return [
                     ],
                     [
                         'request_id' => 1,
-                        'field_id' => 8,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 9,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
                         'field_id' => 15,
                         'value' => 1,
                     ],
@@ -2558,7 +2572,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 52,
-                        'value' => 15,
+                        'value' => 1,
                     ],
                     [
                         'request_id' => 1,
