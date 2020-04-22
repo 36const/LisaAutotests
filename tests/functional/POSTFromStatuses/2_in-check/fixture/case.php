@@ -65,12 +65,12 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 52,
-                        'value' => 2,
+                'value' => 2,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 53,
-                        'value' => 0.5,
+                'value' => 0.5,
             ],
             [
                 'request_id' => 1,

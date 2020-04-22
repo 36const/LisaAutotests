@@ -1507,7 +1507,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 61,
-                        'value' => 11,
+                        'value' => 6,
                     ],
                     [
                         'request_id' => 1,
@@ -2539,7 +2539,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 59,
-                        'value' => 61.1,
+                        'value' => 30.55,
                     ],
                     [
                         'request_id' => 1,
@@ -2702,7 +2702,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 59,
-                        'value' => 61.1,
+                        'value' => 30.55,
                     ],
                     [
                         'request_id' => 1,
@@ -2865,7 +2865,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 59,
-                        'value' => 61.1,
+                        'value' => 30.55,
                     ],
                     [
                         'request_id' => 1,
@@ -3316,7 +3316,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 56,
-                        'value' => 30,
+                        'value' => 25,
                     ],
                     [
                         'request_id' => 1,
@@ -3469,7 +3469,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 57,
-                        'value' => 20,
+                        'value' => 10,
                     ],
                     [
                         'request_id' => 1,
@@ -3592,7 +3592,7 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 58,
-                        'value' => 30,
+                        'value' => 15,
                     ],
                     [
                         'request_id' => 1,
