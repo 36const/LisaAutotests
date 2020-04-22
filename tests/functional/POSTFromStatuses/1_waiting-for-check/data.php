@@ -117,12 +117,12 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 52,
-                        'value' => 1,
+                        'value' => 2,
                     ],
                     [
                         'request_id' => 1,
                         'field_id' => 53,
-                        'value' => 1,
+                        'value' => 0.5,
                     ],
                     [
                         'request_id' => 1,
@@ -274,12 +274,12 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 52,
-                        'value' => 1,
+                        'value' => 2,
                     ],
                     [
                         'request_id' => 1,
                         'field_id' => 53,
-                        'value' => 1,
+                        'value' => 0.5,
                     ],
                     [
                         'request_id' => 1,
@@ -431,12 +431,12 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 52,
-                        'value' => 1,
+                        'value' => 2,
                     ],
                     [
                         'request_id' => 1,
                         'field_id' => 53,
-                        'value' => 1,
+                        'value' => 0.5,
                     ],
                     [
                         'request_id' => 1,
@@ -585,12 +585,12 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 52,
-                        'value' => 1,
+                        'value' => 2,
                     ],
                     [
                         'request_id' => 1,
                         'field_id' => 53,
-                        'value' => 1,
+                        'value' => 0.5,
                     ],
                     [
                         'request_id' => 1,
