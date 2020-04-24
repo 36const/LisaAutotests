@@ -75,11 +75,11 @@ class POSTFromStatus1Cest
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
-        $providerData['requestParameter'] == 'update' ?
-            $view->checkFields($providerData['requestBody']) :
-            $view->checkFields($providerData['fields']);
+        $I->amOnPage('/bpm/request/view?id=1');
 
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
+        $view->checkFields2($providerData['db']);
+
+        $I->checkTableInDB('lisa_fixtures','requests', $providerData['db']['requests']);
+        $I->checkTableInDB('lisa_fixtures','requests_fields', $providerData['db']['requests_fields']);
     }
 }

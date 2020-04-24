@@ -57,4 +57,13 @@ class FunctionalTester extends \Codeception\Actor
         }
     }
 
+    public function checkTableInDB(string $DBName, string $table, $tableArray)
+    {
+        $I = $this;
+        $I->amConnectedToDatabase($DBName);
+
+        foreach ($tableArray as $key => $value) {
+            $I->seeInDatabase($table, $value);
+        }
+    }
 }
