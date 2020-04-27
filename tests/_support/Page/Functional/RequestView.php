@@ -12,11 +12,6 @@ class RequestView extends FunctionalTester
         $I->amOnPage("/bpm/request/view?id=$id");
     }
 
-    public $tableHttpName = [
-        'requests' => 'Request',
-        'requests_fields' => 'RequestField'
-    ];
-
     public $textFields = [
         //основная информация
         'Request[id]',
@@ -46,6 +41,8 @@ class RequestView extends FunctionalTester
         'RequestField[59]',
         'RequestField[60]',
         'RequestField[61]',
+        'RequestField[101]',
+        'RequestField[122]',
         //ошибки
         'ErrorsCount[\d+]',
         'ErrorsItemsCount[\d+]',
@@ -62,7 +59,6 @@ class RequestView extends FunctionalTester
         'team_direction',
         'report_period_id',
         'sync_source_id',
-        'sv_report_periods',
 
         'planned_start_date',
         'planned_finish_date',
@@ -73,9 +69,6 @@ class RequestView extends FunctionalTester
 
         'request_id',
         '64',
-        '101', //temp
-        '122', //temp
-
     ];
 
     public function checkFields($fields)
@@ -100,13 +93,18 @@ class RequestView extends FunctionalTester
                 foreach ($tableRow as $column => $value) {
 
                     if ($tableName == 'requests') {
+                        $column != 'sv_report_periods' ?:
+                            $value = json_decode($value, true)['1'];
                         in_array($column, $this->unsetFields) ?:
-                            $fields[$this->tableHttpName["$tableName"] . '[' . $column . ']'] = $value;
+                            ($column == 'sv_report_periods' ?
+                                $fields['Request[' . $column . '][]'] = $value :
+                                $fields['Request[' . $column . ']'] = $value);
                     }
 
                     if ($tableName == 'requests_fields') {
+                        $tableRow['value'] != null ?: $tableRow['value'] = 0;
                         in_array($tableRow['field_id'], $this->unsetFields) ?:
-                            $fields[$this->tableHttpName["$tableName"] . '[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
+                            $fields['RequestField[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
                     }
                 }
             }
