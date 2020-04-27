@@ -79,8 +79,10 @@ class POSTFromStatus9Cest
         $view->amOnView(1);
         $view->checkFields2($providerData['db']);
 
-        $toCorrection->amOnToCorrection(1);
-        $toCorrection->checkFields($providerData['requestBody']);
+        if ($providerData['requestParameter'] == 'to-correction') {
+            $toCorrection->amOnToCorrection(1);
+            $toCorrection->checkFields($providerData['requestBody']);
+        }
 
         $I->checkTableInDB('lisa_fixtures','requests', $providerData['db']['requests']);
         $I->checkTableInDB('lisa_fixtures','requests_fields', $providerData['db']['requests_fields']);
