@@ -71,12 +71,11 @@ class POSTFromStatus1Cest
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->amOnPage('/bpm/request/view?id=1');
+        $view->amOnView(1);
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
-        $I->amOnPage('/bpm/request/view?id=1');
-
+        $view->amOnView(1);
         $view->checkFields2($providerData['db']);
 
         $I->checkTableInDB('lisa_fixtures','requests', $providerData['db']['requests']);

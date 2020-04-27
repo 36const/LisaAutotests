@@ -7,6 +7,7 @@ use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestView;
+use lisa\Page\Functional\RequestToCorrection;
 
 /**
  * @group lisa
@@ -63,7 +64,7 @@ class POSTFromStatus9Cest
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatus9(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function POSTFromStatus9(FunctionalTester $I, Example $data, Login $login, RequestView $view, RequestToCorrection $toCorrection)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
@@ -71,18 +72,18 @@ class POSTFromStatus9Cest
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->amOnPage('/bpm/request/view?id=1');
+        $view->amOnView(1);
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
-        $I->amOnPage('/bpm/request/view?id=1');
+        $view->amOnView(1);
+        $view->checkFields2($providerData['db']);
 
-        $providerData['requestParameter'] == 'update' ?
-            $view->checkFields($providerData['requestBody']) :
-            $view->checkFields($providerData['fields']);
+        $toCorrection->amOnToCorrection(1);
+        $toCorrection->checkFields($providerData['requestBody']);
 
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->validateInDB('lisa_fixtures', 'request_errors', $providerData['db']['request_errors']);
-        $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
+        $I->checkTableInDB('lisa_fixtures','requests', $providerData['db']['requests']);
+        $I->checkTableInDB('lisa_fixtures','requests_fields', $providerData['db']['requests_fields']);
+        $I->checkTableInDB('lisa_fixtures','request_errors', $providerData['db']['request_errors']);
     }
 }
