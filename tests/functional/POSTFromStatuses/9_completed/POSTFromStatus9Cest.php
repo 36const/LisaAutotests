@@ -8,6 +8,7 @@ use rzk\TestHelper;
 use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestView;
 use lisa\Page\Functional\RequestToCorrection;
+use lisa\Page\Functional\RequestCorrection;
 
 /**
  * @group lisa
@@ -59,12 +60,14 @@ class POSTFromStatus9Cest
      * @param Example $data
      * @param Login $login
      * @param RequestView $view
+     * @param RequestToCorrection $toCorrection
+     * @param RequestCorrection $correction
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatus9(FunctionalTester $I, Example $data, Login $login, RequestView $view, RequestToCorrection $toCorrection)
+    public function POSTFromStatus9(FunctionalTester $I, Example $data, Login $login, RequestView $view, RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
@@ -80,12 +83,18 @@ class POSTFromStatus9Cest
         $view->checkFields2($providerData['db']);
 
         if ($providerData['requestParameter'] == 'to-correction') {
+
             $toCorrection->amOnToCorrection(1);
             $toCorrection->checkFields($providerData['requestBody']);
+
+            $correction->amOnCorrection(1);
+            $correction->checkFields($providerData['requestBody']);
         }
 
-        $I->checkTableInDB('lisa_fixtures','requests', $providerData['db']['requests']);
+        /*$I->checkTableInDB('lisa_fixtures','requests', $providerData['db']['requests']);
         $I->checkTableInDB('lisa_fixtures','requests_fields', $providerData['db']['requests_fields']);
-        $I->checkTableInDB('lisa_fixtures','request_errors', $providerData['db']['request_errors']);
+        $I->checkTableInDB('lisa_fixtures','request_errors', $providerData['db']['request_errors']);*/
+
+        $I->checkTablesInDB($providerData['db']);
     }
 }

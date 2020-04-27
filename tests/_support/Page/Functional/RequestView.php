@@ -12,6 +12,10 @@ class RequestView extends FunctionalTester
         $I->amOnPage("/bpm/request/view?id=$id");
     }
 
+    /**
+     * Поля, которые нужно проверять не через input-атрибут value,
+     * а через содержимое самого поля
+     */
     public $textFields = [
         //основная информация
         'Request[id]',
@@ -48,6 +52,9 @@ class RequestView extends FunctionalTester
         'ErrorsItemsCount[\d+]',
     ];
 
+    /**
+     * Колонки таблиц БД, значения которых не нужно проверять в html
+     */
     public $unsetFields = [
         'direction',
         'awaiting_correction',
@@ -71,6 +78,49 @@ class RequestView extends FunctionalTester
         '64',
     ];
 
+    /**
+     * Конвертация массивов для проверки БД в массивы для проверки html
+     * @param $dbTablesArray
+     * @return array
+     */
+    public function convertDbArrays($dbTablesArray)
+    {
+
+        $fields = [];
+
+        foreach ($dbTablesArray as $dbName) {
+            foreach ($dbName as $tableName => $tableData) {
+                foreach ($tableData as $tableRow) {
+                    foreach ($tableRow as $column => $value) {
+
+                        if ($tableName == 'requests') {
+                            $column != 'sv_report_periods' ?:
+                                $value = json_decode($value, true)['1'];
+                            in_array($column, $this->unsetFields) ?:
+                                ($column == 'sv_report_periods' ?
+                                    $fields['Request[' . $column . '][]'] = $value :
+                                    $fields['Request[' . $column . ']'] = $value);
+                        }
+
+                        if ($tableName == 'requests_fields') {
+                            $tableRow['value'] != null ?: $tableRow['value'] = 0;
+                            in_array($tableRow['field_id'], $this->unsetFields) ?:
+                                $fields['RequestField[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
+                        }
+                    }
+                }
+
+                if ($fields['Request[type_id]'] == 1)
+                    unset($fields['RequestField[50]']);
+
+                if (in_array($fields['Request[type_id]'], [2, 3, 5, 6]))
+                    unset($fields['RequestField[49]']);
+            }
+
+            return $fields;
+        }
+    }
+
     public function checkFields($fields)
     {
         $I = $this;
@@ -82,44 +132,31 @@ class RequestView extends FunctionalTester
         $I->seeInFormFields('form[id=update_form]', $fields);
     }
 
+    /**
+     * Проверка html-полей и их значений в форме заявки
+     * @param $dbTablesArray
+     */
     public function checkFields2($dbTablesArray)
     {
         $I = $this;
-
-        $fields = [];
-
-        foreach ($dbTablesArray as $tableName => $tableData) {
-            foreach ($tableData as $tableRow) {
-                foreach ($tableRow as $column => $value) {
-
-                    if ($tableName == 'requests') {
-                        $column != 'sv_report_periods' ?:
-                            $value = json_decode($value, true)['1'];
-                        in_array($column, $this->unsetFields) ?:
-                            ($column == 'sv_report_periods' ?
-                                $fields['Request[' . $column . '][]'] = $value :
-                                $fields['Request[' . $column . ']'] = $value);
-                    }
-
-                    if ($tableName == 'requests_fields') {
-                        $tableRow['value'] != null ?: $tableRow['value'] = 0;
-                        in_array($tableRow['field_id'], $this->unsetFields) ?:
-                            $fields['RequestField[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
-                    }
-                }
-            }
-
-            if ($fields['Request[type_id]'] == 1)
-                unset($fields['RequestField[50]']);
-
-            if (in_array($fields['Request[type_id]'], [2, 3, 5, 6]))
-                unset($fields['RequestField[49]']);
-        }
+        $errors = null;
+        $fields = $this->convertDbArrays($dbTablesArray);
 
         foreach ($fields as $field => $value) {
-            in_array($field, $this->textFields) ?
-                $I->seeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]) :
-                $I->seeInField($field, $value);
+            try {
+                in_array($field, $this->textFields) ?
+                    $I->seeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]) :
+                    $I->seeInField($field, $value);
+            } catch (\Exception $exception) {
+                $errors[] = [
+                    'field' => $field,
+                    'value' => $value,
+                    'message' => $exception->getMessage()
+                ];
+            }
         }
+
+        is_null($errors) ?: print_r($errors);
+
     }
 }

@@ -4,16 +4,16 @@ namespace lisa\Page\Functional;
 
 use lisa\FunctionalTester;
 
-class RequestToCorrection extends FunctionalTester
+class RequestCorrection extends FunctionalTester
 {
-    public function amOnToCorrection(int $id)
+    public function amOnCorrection(int $id)
     {
         $I = $this;
-        $I->amOnPage("/bpm/request/to-correction?id=$id");
+        $I->amOnPage("/bpm/request/correction?id=$id");
     }
 
     /**
-     * Проверка html-полей и их значений в форме ошибок для супервайзера
+     * Проверка html-полей и их значений в форме ошибок для менеджера
      * @param $requestBody
      */
     public function checkFields($requestBody)
@@ -23,8 +23,8 @@ class RequestToCorrection extends FunctionalTester
 
         foreach ($requestBody as $field => $value) {
             try {
-                ($field == '_csrf-backend') ?:
-                    $I->seeInField($field, $value);
+                ($value == '') || in_array($field, ['_csrf-backend', 'RequestField[121]', 'RequestField[65]']) ?:
+                    $I->seeElement('//div[@class="kv-attribute"][1]//*', ['name' => $field, 'value' => $value]);
             } catch (\Exception $exception) {
                 $errors[] = [
                     'field' => $field,
