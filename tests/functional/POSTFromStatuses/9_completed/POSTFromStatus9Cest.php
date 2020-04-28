@@ -67,7 +67,8 @@ class POSTFromStatus9Cest
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatus9(FunctionalTester $I, Example $data, Login $login, RequestView $view, RequestToCorrection $toCorrection, RequestCorrection $correction)
+    public function POSTFromStatus9(FunctionalTester $I, Example $data, Login $login, RequestView $view,
+                                    RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
@@ -75,12 +76,10 @@ class POSTFromStatus9Cest
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $view->amOnView(1);
-
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
         $view->amOnView(1);
-        $view->checkFields2($providerData['db']);
+        $view->checkFields($providerData['db']);
 
         if ($providerData['requestParameter'] == 'to-correction') {
 
@@ -90,10 +89,6 @@ class POSTFromStatus9Cest
             $correction->amOnCorrection(1);
             $correction->checkFields($providerData['requestBody']);
         }
-
-        /*$I->checkTableInDB('lisa_fixtures','requests', $providerData['db']['requests']);
-        $I->checkTableInDB('lisa_fixtures','requests_fields', $providerData['db']['requests_fields']);
-        $I->checkTableInDB('lisa_fixtures','request_errors', $providerData['db']['request_errors']);*/
 
         $I->checkTablesInDB($providerData['db']);
     }

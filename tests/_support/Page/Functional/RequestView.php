@@ -48,8 +48,8 @@ class RequestView extends FunctionalTester
         'RequestField[101]',
         'RequestField[122]',
         //ошибки
-        'ErrorsCount[\d+]',
-        'ErrorsItemsCount[\d+]',
+        'RequestErrors[\d+][\d+][errorsCount]',
+        'RequestErrors[\d+][\d+][itemsCount]',
     ];
 
     /**
@@ -96,6 +96,7 @@ class RequestView extends FunctionalTester
                         if ($tableName == 'requests') {
                             $column != 'sv_report_periods' ?:
                                 $value = json_decode($value, true)['1'];
+
                             in_array($column, $this->unsetFields) ?:
                                 ($column == 'sv_report_periods' ?
                                     $fields['Request[' . $column . '][]'] = $value :
@@ -104,16 +105,20 @@ class RequestView extends FunctionalTester
 
                         if ($tableName == 'requests_fields') {
                             $tableRow['value'] != null ?: $tableRow['value'] = 0;
+
                             in_array($tableRow['field_id'], $this->unsetFields) ?:
                                 $fields['RequestField[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
                         }
                     }
+
+                    if ($tableName == 'requests' && $tableRow['direction'] == 2)
+                        unset($fields['Request[category_id]']);
                 }
 
                 if ($fields['Request[type_id]'] == 1)
                     unset($fields['RequestField[50]']);
 
-                if (in_array($fields['Request[type_id]'], [2, 3, 5, 6]))
+                if (in_array($fields['Request[type_id]'], [2, 3, 5, 6, 11]))
                     unset($fields['RequestField[49]']);
             }
 
@@ -121,22 +126,11 @@ class RequestView extends FunctionalTester
         }
     }
 
-    public function checkFields($fields)
-    {
-        $I = $this;
-        unset($fields['_csrf-backend']);
-        unset($fields['newStatus']);
-        unset($fields['Request[uploadedFiles][]']);
-        unset($fields['Request[attachment_folder]']);
-        unset($fields['Request[sv_report_periods]']);
-        $I->seeInFormFields('form[id=update_form]', $fields);
-    }
-
     /**
      * Проверка html-полей и их значений в форме заявки
      * @param $dbTablesArray
      */
-    public function checkFields2($dbTablesArray)
+    public function checkFields($dbTablesArray)
     {
         $I = $this;
         $errors = null;
@@ -157,6 +151,5 @@ class RequestView extends FunctionalTester
         }
 
         is_null($errors) ?: print_r($errors);
-
     }
 }

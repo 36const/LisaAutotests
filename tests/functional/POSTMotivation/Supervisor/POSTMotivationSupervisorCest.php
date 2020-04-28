@@ -7,6 +7,8 @@ use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestView;
+use lisa\Page\Functional\RequestToCorrection;
+use lisa\Page\Functional\RequestCorrection;
 
 /**
  * @group lisa
@@ -63,7 +65,8 @@ class POSTMotivationSupervisorCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTMotivationSupervisor(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function POSTMotivationSupervisor(FunctionalTester $I, Example $data, Login $login, RequestView $view,
+                                             RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
@@ -71,16 +74,20 @@ class POSTMotivationSupervisorCest
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->amOnPage('/bpm/request/view?id=1');
-
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
-        $I->amOnPage('/bpm/request/view?id=1');
+        $view->amOnView(1);
+        $view->checkFields2($providerData['db']);
 
-        $view->checkFields($providerData['fields']);
+        if ($providerData['requestParameter'] == 'to-correction') {
 
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->validateInDB('lisa_fixtures', 'request_errors', $providerData['db']['request_errors']);
-        $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
+            $toCorrection->amOnToCorrection(1);
+            $toCorrection->checkFields($providerData['requestBody']);
+
+            $correction->amOnCorrection(1);
+            $correction->checkFields($providerData['requestBody']);
+        }
+
+        $I->checkTablesInDB($providerData['db']);
     }
 }

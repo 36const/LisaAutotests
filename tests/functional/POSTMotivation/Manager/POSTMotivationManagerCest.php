@@ -71,15 +71,11 @@ class POSTMotivationManagerCest
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->amOnPage('/bpm/request/view?id=1');
-
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
-        $I->amOnPage('/bpm/request/view?id=1');
+        $view->amOnView(1);
+        $view->checkFields2($providerData['db']);
 
-        $view->checkFields($providerData['fields']);
-
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
+        $I->checkTablesInDB($providerData['db']);
     }
 }
