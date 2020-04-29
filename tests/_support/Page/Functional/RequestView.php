@@ -79,13 +79,12 @@ class RequestView extends FunctionalTester
     ];
 
     /**
-     * Конвертация массивов для проверки БД в массивы для проверки html
+     * Конвертация массивов для проверки БД в массив для проверки html
      * @param $dbTablesArray
      * @return array
      */
     public function convertDbArrays($dbTablesArray)
     {
-
         $fields = [];
 
         foreach ($dbTablesArray as $dbName) {
@@ -94,7 +93,7 @@ class RequestView extends FunctionalTester
                     foreach ($tableRow as $column => $value) {
 
                         if ($tableName == 'requests') {
-                            $column != 'sv_report_periods' ?:
+                            ($column != 'sv_report_periods' && $value != null) ?:
                                 $value = json_decode($value, true)['1'];
 
                             in_array($column, $this->unsetFields) ?:
@@ -118,7 +117,7 @@ class RequestView extends FunctionalTester
                 if ($fields['Request[type_id]'] == 1)
                     unset($fields['RequestField[50]']);
 
-                if (in_array($fields['Request[type_id]'], [2, 3, 5, 6, 11]))
+                if (in_array($fields['Request[type_id]'], [2, 3, 5, 6, 12]))
                     unset($fields['RequestField[49]']);
             }
 
@@ -150,6 +149,6 @@ class RequestView extends FunctionalTester
             }
         }
 
-        is_null($errors) ?: print_r($errors);
+        return $errors;
     }
 }

@@ -42,31 +42,6 @@ class FunctionalTester extends \Codeception\Actor
         $I->seeResponseCodeIs(200);
     }
 
-    public function validateInDB(string $DBName, string $table, $checkValuesRecords)
-    {
-        $I = $this;
-        $I->amConnectedToDatabase($DBName);
-        $I->seeInDatabase($table, $checkValuesRecords);
-    }
-
-    public function validateRequestsFieldsInDB($checkValuesRecords)
-    {
-        $I = $this;
-        foreach ($checkValuesRecords as $key => $value) {
-            $I->validateInDB('lisa_fixtures', 'requests_fields', $value);
-        }
-    }
-
-    public function checkTableInDB(string $DBName, string $table, $tableArray)
-    {
-        $I = $this;
-        $I->amConnectedToDatabase($DBName);
-
-        foreach ($tableArray as $key => $value) {
-            $I->seeInDatabase($table, $value);
-        }
-    }
-
     public function checkTablesInDB($dbTablesArray)
     {
         $I = $this;
@@ -90,6 +65,7 @@ class FunctionalTester extends \Codeception\Actor
             }
         }
 
-        is_null($errors) ?: print_r($errors);
+        //is_null($errors) ?: print_r($errors);
+        return $errors;
     }
 }

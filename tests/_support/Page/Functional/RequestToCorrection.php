@@ -34,6 +34,6 @@ class RequestToCorrection extends FunctionalTester
             }
         }
 
-        is_null($errors) ?: print_r($errors);
+        return $errors;
     }
 }
