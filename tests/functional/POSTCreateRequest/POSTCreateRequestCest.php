@@ -87,9 +87,8 @@ class POSTCreateRequestCest
         $I->seeResponseCodeIs($providerData['responseCode']);
 
         $I->amOnPage('/bpm/request/view?id=1');
-        $view->checkFields($providerData['fields']);
+        $view->checkFields($providerData['db']);
 
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
+        $I->checkTablesInDB($providerData['db']);
     }
 }

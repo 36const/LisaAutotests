@@ -7,14 +7,15 @@ use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestView;
+use lisa\Page\Functional\RequestToCorrection;
+use lisa\Page\Functional\RequestCorrection;
 
 /**
  * @group lisa
  * @group lisa_functional
  * @group POSTFromStatuses
- * @group POSTFromStatus2
  */
-class POSTFromStatus2Cest
+class POSTFromStatusesCest
 {
     /**
      * @var TestHelper $testHelper
@@ -58,14 +59,19 @@ class POSTFromStatus2Cest
      * @param Example $data
      * @param Login $login
      * @param RequestView $view
+     * @param RequestToCorrection $toCorrection
+     * @param RequestCorrection $correction
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatus2(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function POSTFromStatuses(FunctionalTester $I, Example $data, Login $login, RequestView $view,
+                                    RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
         $I->loadDataForTest($data, $this->testHelper);
+
+        $errors = null;
 
         $providerData = $data['provider_data'];
 
@@ -74,8 +80,19 @@ class POSTFromStatus2Cest
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
         $view->amOnView(1);
-        $view->checkFields($providerData['db']);
+        $errors[] = $view->checkFields($providerData['db']);
 
-        $I->checkTablesInDB($providerData['db']);
+        if ($providerData['requestParameter'] == 'to-correction') {
+
+            $toCorrection->amOnToCorrection(1);
+            $errors[] = $toCorrection->checkFields($providerData['requestBody']);
+
+            $correction->amOnCorrection(1);
+            $errors[] = $correction->checkFields($providerData['requestBody']);
+        }
+
+        $errors[] = $I->checkTablesInDB($providerData['db']);
+
+        foreach ($errors as $error) $I->assertNull($error);
     }
 }
