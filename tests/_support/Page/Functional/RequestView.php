@@ -79,11 +79,13 @@ class RequestView extends FunctionalTester
     ];
 
     /**
-     * Конвертация массивов для проверки БД в массив для проверки html
+     * Перевод массивов для проверки БД в массив тегов для проверки html
+     * и исключение из него полей, не отображающихся на странице
      * @param $dbTablesArray
+     * @param $otherTypesFields
      * @return array
      */
-    public function convertDbArrays($dbTablesArray)
+    public function convertDbArrays($dbTablesArray, $otherTypesFields)
     {
         $fields = [];
 
@@ -113,13 +115,17 @@ class RequestView extends FunctionalTester
                     if ($tableName == 'requests' && $tableRow['direction'] == 2)
                         unset($fields['Request[category_id]']);
                 }
-
-                if ($fields['Request[type_id]'] == 1)
-                    unset($fields['RequestField[50]']);
-
-                if (in_array($fields['Request[type_id]'], [2, 3, 5, 6, 12]))
-                    unset($fields['RequestField[49]']);
             }
+
+            if ($fields['Request[type_id]'] == 1)
+                unset($fields['RequestField[50]']);
+
+            if (in_array($fields['Request[type_id]'], [2, 3, 5, 6, 12]))
+                unset($fields['RequestField[49]']);
+
+            if (!empty($otherTypesFields))
+                foreach ($otherTypesFields as $otherTypesField)
+                    unset($fields[$otherTypesField]);
 
             return $fields;
         }
@@ -129,11 +135,11 @@ class RequestView extends FunctionalTester
      * Проверка html-полей и их значений в форме заявки
      * @param $dbTablesArray
      */
-    public function checkFields($dbTablesArray)
+    public function checkFields($dbTablesArray, $otherTypesFields = [])
     {
         $I = $this;
         $errors = null;
-        $fields = $this->convertDbArrays($dbTablesArray);
+        $fields = $this->convertDbArrays($dbTablesArray, $otherTypesFields);
 
         foreach ($fields as $field => $value) {
             try {

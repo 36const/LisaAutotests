@@ -3,6 +3,7 @@
 namespace lisa;
 
 use Codeception\Util\HttpCode;
+use Codeception\Example;
 use rzk\TestHelper;
 
 /**
@@ -24,7 +25,7 @@ class FunctionalTester extends \Codeception\Actor
 {
     use _generated\FunctionalTesterActions;
 
-    public function loadDataForTest(\Codeception\Example $data, TestHelper $testHelper)
+    public function loadDataForTest(Example $data, TestHelper $testHelper)
     {
         $I = $this;
         $testHelper->clearDB($I, $data);
@@ -38,6 +39,14 @@ class FunctionalTester extends \Codeception\Actor
         $requestParameter == 'to-correction' ?
             $url = '/bpm/request/' . "$requestParameter" . '?id=1&changeStatus=1' :
             $url = '/bpm/request/' . "$requestParameter" . '?id=1';
+        $I->sendPOST($url, $requestBody);
+        $I->seeResponseCodeIs(200);
+    }
+
+    public function changeType($requestParameter, $requestBody)
+    {
+        $I = $this;
+        $url = '/bpm/request/change-type?typeId=' . $requestParameter['typeId'] . '&direction=' . $requestParameter['direction'] . '&id=1';
         $I->sendPOST($url, $requestBody);
         $I->seeResponseCodeIs(200);
     }

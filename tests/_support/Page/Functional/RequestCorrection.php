@@ -15,7 +15,7 @@ class RequestCorrection extends FunctionalTester
     /**
      * Поля мотивации СВ, не отображаемые на странице correction
      */
-    public $unchekingSVFields = [
+    public $uncheckingSVFields = [
         '_csrf-backend',
         //типы 1, 2, 3, 5, 6
         'RequestField[121]',
@@ -50,7 +50,7 @@ class RequestCorrection extends FunctionalTester
 
         foreach ($requestBody as $field => $value) {
             try {
-                ($value == '') || in_array($field, $unchekingSVFields) ?:
+                ($value == '') || in_array($field, $this->uncheckingSVFields) ?:
                     $I->seeElement('//div[@class="kv-attribute"][1]//*', ['name' => $field, 'value' => $value]);
             } catch (\Exception $exception) {
                 $errors[] = [
