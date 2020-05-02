@@ -13,8 +13,8 @@ class RequestView extends FunctionalTester
     }
 
     /**
-     * Поля, которые нужно проверять не через input-атрибут value,
-     * а через содержимое самого поля
+     * Поля с готовыми текстовыми значениями (не input), которые нужно проверять
+     * не через seeInField, а через seeElement
      */
     public $textFields = [
         //основная информация
@@ -64,7 +64,6 @@ class RequestView extends FunctionalTester
         'parent_id',
         'difficulty',
         'team_direction',
-        'report_period_id',
         'sync_source_id',
 
         'planned_start_date',
@@ -79,15 +78,12 @@ class RequestView extends FunctionalTester
     ];
 
     /**
-     * Перевод массивов для проверки БД в массив тегов для проверки html
+     * Перевод массивов для проверки БД в массив полей для проверки html
      * и исключение из него полей, не отображающихся на странице
-     * @param $dbTablesArray
-     * @param $otherTypesFields
-     * @return array
      */
     public function convertDbArrays($dbTablesArray, $otherTypesFields)
     {
-        $fields = [];
+        $requests = [];
 
         foreach ($dbTablesArray as $dbName) {
             foreach ($dbName as $tableName => $tableData) {
@@ -95,63 +91,113 @@ class RequestView extends FunctionalTester
                     foreach ($tableRow as $column => $value) {
 
                         if ($tableName == 'requests') {
+                            //перевести значение отчётного периода СВ из json
                             ($column != 'sv_report_periods' && $value != null) ?:
                                 $value = json_decode($value, true)['1'];
 
                             in_array($column, $this->unsetFields) ?:
                                 ($column == 'sv_report_periods' ?
-                                    $fields['Request[' . $column . '][]'] = $value :
-                                    $fields['Request[' . $column . ']'] = $value);
+                                    $requests[$tableRow['id']]['Request[' . $column . '][]'] = $value :
+                                    $requests[$tableRow['id']]['Request[' . $column . ']'] = $value);
                         }
 
                         if ($tableName == 'requests_fields') {
+                            //перевести значения параметров null в 0
                             $tableRow['value'] != null ?: $tableRow['value'] = 0;
 
                             in_array($tableRow['field_id'], $this->unsetFields) ?:
-                                $fields['RequestField[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
+                                $requests[$tableRow['request_id']]['RequestField[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
                         }
                     }
-
+                    //исключить поле category для направления Маркет
                     if ($tableName == 'requests' && $tableRow['direction'] == 2)
-                        unset($fields['Request[category_id]']);
+                        unset($requests[$tableRow['id']]['Request[category_id]']);
                 }
             }
 
-            if ($fields['Request[type_id]'] == 1)
-                unset($fields['RequestField[50]']);
+            foreach ($requests as &$request) {
 
-            if (in_array($fields['Request[type_id]'], [2, 3, 5, 6, 12]))
-                unset($fields['RequestField[49]']);
+                //исключить поле "Кол-во изменённых товаров" для типа 1
+                if ($request['Request[type_id]'] == 1)
+                    unset($request['RequestField[50]']);
 
-            if (!empty($otherTypesFields))
-                foreach ($otherTypesFields as $otherTypesField)
-                    unset($fields[$otherTypesField]);
+                //исключить поле "Кол-во добавленных товаров" для типов 2, 3, 5, 6, 12
+                if (in_array($request['Request[type_id]'], [2, 3, 5, 6, 12]))
+                    unset($request['RequestField[49]']);
 
-            return $fields;
+                //исключить поля, не отображаемые в новом типе заявки (для кейсов POSTChangeType
+                if (!empty($otherTypesFields)) {
+                    foreach ($otherTypesFields as $otherTypesField)
+                        unset($request[$otherTypesField]);
+                }
+            }
+
+            return $requests;
         }
     }
 
     /**
      * Проверка html-полей и их значений в форме заявки
-     * @param $dbTablesArray
      */
     public function checkFields($dbTablesArray, $otherTypesFields = [])
     {
         $I = $this;
         $errors = null;
-        $fields = $this->convertDbArrays($dbTablesArray, $otherTypesFields);
+        $requests = $this->convertDbArrays($dbTablesArray, $otherTypesFields);
 
-        foreach ($fields as $field => $value) {
-            try {
-                in_array($field, $this->textFields) ?
-                    $I->seeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]) :
-                    $I->seeInField($field, $value);
-            } catch (\Exception $exception) {
-                $errors[] = [
-                    'field' => $field,
-                    'value' => $value,
-                    'message' => $exception->getMessage()
-                ];
+        foreach ($requests as $id => $request) {
+            $I->amOnView($id);
+            foreach ($request as $field => $value) {
+                try {
+                    in_array($field, $this->textFields) ?
+                        $I->seeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]) :
+                        $I->seeInField($field, $value);
+                } catch (\Exception $exception) {
+                    $errors[] = [
+                        'id' => $id,
+                        'field' => $field,
+                        'value' => $value,
+                        'message' => $exception->getMessage()
+                    ];
+                };
+            }
+        }
+
+        return $errors;
+    }
+
+    /**
+     * Проверка html-полей и их значений в форме заявки с доп. проверкой,
+     * есть ли такое поле в форме заявки (для кейсов с пакетным редактированием)
+     */
+    public function checkFieldsForMassEditing($dbTablesArray)
+    {
+        $I = $this;
+        $errors = null;
+        $requests = $this->convertDbArrays($dbTablesArray, []);
+
+        foreach ($requests as $id => $request) {
+            $I->amOnView($id);
+
+            foreach ($request as $field => $value) {
+                try {
+                    $I->seeElement('//form[@id="update_form"]//*', ['name' => $field]);
+
+                    try {
+                        in_array($field, $this->textFields) ?
+                            $I->seeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]) :
+                            $I->seeInField($field, $value);
+                    } catch (\Exception $exception) {
+                        $errors[] = [
+                            'id' => $id,
+                            'field' => $field,
+                            'value' => $value,
+                            'message' => $exception->getMessage()
+                        ];
+                    }
+                } catch (\Exception $exception) {
+                    continue;
+                };
             }
         }
 

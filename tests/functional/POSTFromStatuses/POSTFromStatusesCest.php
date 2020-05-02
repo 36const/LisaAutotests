@@ -79,7 +79,6 @@ class POSTFromStatusesCest
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
-        $view->amOnView(1);
         $errors[] = $view->checkFields($providerData['db']);
 
         if ($providerData['requestParameter'] == 'to-correction') {

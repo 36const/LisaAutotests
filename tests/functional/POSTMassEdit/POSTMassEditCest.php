@@ -5,14 +5,15 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
+use lisa\Page\Functional\Requests;
 use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTChangeType
+ * @group POSTMassEdit
  */
-class POSTChangeTypeCest
+class POSTMassEditCest
 {
     /**
      * @var TestHelper $testHelper
@@ -44,7 +45,7 @@ class POSTChangeTypeCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return $this->testHelper->getDataProvider('case1');
     }
 
     public function _before(FunctionalTester $I)
@@ -63,7 +64,8 @@ class POSTChangeTypeCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTChangeType(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function POSTMassEdit(FunctionalTester $I, Example $data, Login $login,
+                                 Requests $requests, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
@@ -73,9 +75,9 @@ class POSTChangeTypeCest
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->changeType($providerData['requestParameter'], $providerData['requestBody']);
+        $I->massEdit($providerData['requestBody']);
 
-        $errors[] = $view->checkFields($providerData['db'], $providerData['otherTypesFields']);
+        $errors[] = $view->checkFieldsForMassEditing($providerData['db']);
 
         $errors[] = $I->checkTablesInDB($providerData['db']);
 
