@@ -5,7 +5,6 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\Requests;
 use lisa\Page\Functional\RequestView;
 
 /**
@@ -57,15 +56,12 @@ class POSTMassEditCest
      * @param Example $data
      * @param Login $login
      * @param RequestView $view
-     * @param RequestToCorrection $toCorrection
-     * @param RequestCorrection $correction
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTMassEdit(FunctionalTester $I, Example $data, Login $login,
-                                 Requests $requests, RequestView $view)
+    public function POSTMassEdit(FunctionalTester $I, Example $data, Login $login, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper);
 

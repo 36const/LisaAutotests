@@ -56,8 +56,6 @@ class POSTChangeTypeCest
      * @param Example $data
      * @param Login $login
      * @param RequestView $view
-     * @param RequestToCorrection $toCorrection
-     * @param RequestCorrection $correction
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider

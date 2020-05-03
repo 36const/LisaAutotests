@@ -51,7 +51,8 @@ class FunctionalTester extends \Codeception\Actor
         $I->seeResponseCodeIs(200);
     }
 
-    public function massEdit($requestBody) {
+    public function massEdit($requestBody)
+    {
         $I = $this;
         $url = '/bpm/request/mass-edit';
         $I->sendPOST($url, $requestBody);
