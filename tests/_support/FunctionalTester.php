@@ -58,6 +58,13 @@ class FunctionalTester extends \Codeception\Actor
         $I->seeResponseCodeIs(200);
     }
 
+    public function checkErrors($errors) {
+        $I = $this;
+        foreach ($errors as $error) {
+            $I->assertNull($error);
+        }
+    }
+
     public function checkTablesInDB($dbTablesArray)
     {
         $I = $this;

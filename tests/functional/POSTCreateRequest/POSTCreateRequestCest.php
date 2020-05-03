@@ -90,6 +90,6 @@ class POSTCreateRequestCest
         $errors[] = $view->checkFields($providerData['db']);
         $errors[] = $I->checkTablesInDB($providerData['db']);
 
-        foreach ($errors as $error) $I->assertNull($error);
+        $I->checkErrors($errors);
     }
 }

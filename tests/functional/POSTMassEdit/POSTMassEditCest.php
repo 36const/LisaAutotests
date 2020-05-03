@@ -45,7 +45,7 @@ class POSTMassEditCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('case1');
+        return $this->testHelper->getDataProvider('');
     }
 
     public function _before(FunctionalTester $I)
@@ -81,6 +81,6 @@ class POSTMassEditCest
 
         $errors[] = $I->checkTablesInDB($providerData['db']);
 
-        foreach ($errors as $error) $I->assertNull($error);
+        $I->checkErrors($errors);
     }
 }

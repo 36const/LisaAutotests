@@ -92,6 +92,6 @@ class POSTFromStatusesCest
 
         $errors[] = $I->checkTablesInDB($providerData['db']);
 
-        foreach ($errors as $error) $I->assertNull($error);
+        $I->checkErrors($errors);
     }
 }
