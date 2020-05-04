@@ -66,7 +66,7 @@ class FunctionalTester extends \Codeception\Actor
         }
     }
 
-    public function checkTablesInDB($dbTablesArray)
+    public function checkTablesInDB($dbTablesArray, bool $dontSee = false)
     {
         $I = $this;
         $errors = null;
@@ -77,7 +77,9 @@ class FunctionalTester extends \Codeception\Actor
             foreach ($dbData as $tableName => $tableData) {
                 foreach ($tableData as $tableRow) {
                     try {
-                        $I->seeInDatabase($tableName, $tableRow);
+                        (!$dontSee) ?
+                            $I->seeInDatabase($tableName, $tableRow) :
+                            $I->dontSeeInDatabase($tableName, $tableRow);
                     } catch (\Exception $exception) {
                        $errors[] = [
                            'table' => $tableName,
