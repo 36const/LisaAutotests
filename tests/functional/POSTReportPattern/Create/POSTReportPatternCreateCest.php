@@ -2,19 +2,18 @@
 
 namespace lisa;
 
-use Codeception\Util\HttpCode;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\RequestView;
+use lisa\Page\Functional\Report;
 
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTFromStatuses
- * @group POSTFromStatus9
+ * @group POSTReportPattern
+ * @group POSTReportPatternCreate
  */
-class POSTFromStatus9Cest
+class POSTReportPatternCreateCest
 {
     /**
      * @var TestHelper $testHelper
@@ -57,31 +56,33 @@ class POSTFromStatus9Cest
      * @param FunctionalTester $I
      * @param Example $data
      * @param Login $login
-     * @param RequestView $view
+     * @param Report $report
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatus9(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function POSTReportPatternCreate(FunctionalTester $I, Example $data, Login $login, Report $report)
     {
         $I->loadDataForTest($data, $this->testHelper);
+
+        $errors = null;
 
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->amOnPage('/bpm/request/view?id=1');
+        $I->sendPOST('/bpm/report/create', $providerData['requestBody']);
+        $I->seeResponseCodeIs(200);
 
-        $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
+        $report->amOnReportView(1);
+        $I->seeResponseCodeIs(200);
 
-        $I->amOnPage('/bpm/request/view?id=1');
+        $report->amOnReportUpdate(1);
+        $I->seeResponseCodeIs(200);
 
-        $providerData['requestParameter'] == 'update' ?
-            $view->checkFields($providerData['requestBody']) :
-            $view->checkFields($providerData['fields']);
+        $errors[] = $I->checkTablesInDB($providerData['db']);
 
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
+        $I->checkErrors($errors);
     }
 }

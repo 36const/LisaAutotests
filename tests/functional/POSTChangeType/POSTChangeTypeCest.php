@@ -2,7 +2,6 @@
 
 namespace lisa;
 
-use Codeception\Util\HttpCode;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
@@ -11,10 +10,9 @@ use lisa\Page\Functional\RequestView;
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTFromStatuses
- * @group POSTFromStatus5
+ * @group POSTChangeType
  */
-class POSTFromStatus5Cest
+class POSTChangeTypeCest
 {
     /**
      * @var TestHelper $testHelper
@@ -63,23 +61,22 @@ class POSTFromStatus5Cest
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatus5(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function POSTChangeType(FunctionalTester $I, Example $data, Login $login, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper);
+
+        $errors = null;
 
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->amOnPage('/bpm/request/view?id=1');
+        $I->changeType($providerData['requestParameter'], $providerData['requestBody']);
 
-        $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
+        $errors[] = $view->checkFields($providerData['db'], $providerData['otherTypesFields']);
 
-        $providerData['requestParameter'] == 'update' ?
-            $view->checkFields($providerData['requestBody']) :
-            $view->checkFields($providerData['fields']);
+        $errors[] = $I->checkTablesInDB($providerData['db']);
 
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
+        $I->checkErrors($errors);
     }
 }

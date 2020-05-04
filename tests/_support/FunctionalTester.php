@@ -3,6 +3,7 @@
 namespace lisa;
 
 use Codeception\Util\HttpCode;
+use Codeception\Example;
 use rzk\TestHelper;
 
 /**
@@ -24,7 +25,7 @@ class FunctionalTester extends \Codeception\Actor
 {
     use _generated\FunctionalTesterActions;
 
-    public function loadDataForTest(\Codeception\Example $data, TestHelper $testHelper)
+    public function loadDataForTest(Example $data, TestHelper $testHelper)
     {
         $I = $this;
         $testHelper->clearDB($I, $data);
@@ -42,19 +43,54 @@ class FunctionalTester extends \Codeception\Actor
         $I->seeResponseCodeIs(200);
     }
 
-    public function validateInDB(string $DBName, string $table, $checkValuesRecords)
+    public function changeType($requestParameter, $requestBody)
     {
         $I = $this;
-        $I->amConnectedToDatabase($DBName);
-        $I->seeInDatabase($table, $checkValuesRecords);
+        $url = '/bpm/request/change-type?typeId=' . $requestParameter['typeId'] . '&direction=' . $requestParameter['direction'] . '&id=1';
+        $I->sendPOST($url, $requestBody);
+        $I->seeResponseCodeIs(200);
     }
 
-    public function validateRequestsFieldsInDB($checkValuesRecords)
+    public function massEdit($requestBody)
     {
         $I = $this;
-        foreach ($checkValuesRecords as $key => $value) {
-            $I->validateInDB('lisa_fixtures', 'requests_fields', $value);
+        $url = '/bpm/request/mass-edit';
+        $I->sendPOST($url, $requestBody);
+        $I->seeResponseCodeIs(200);
+    }
+
+    public function checkErrors($errors) {
+        $I = $this;
+        foreach ($errors as $error) {
+            $I->assertNull($error);
         }
     }
 
+    public function checkTablesInDB($dbTablesArray, bool $dontSee = false)
+    {
+        $I = $this;
+        $errors = null;
+
+        foreach ($dbTablesArray as $dbName => $dbData) {
+            $I->amConnectedToDatabase($dbName);
+
+            foreach ($dbData as $tableName => $tableData) {
+                foreach ($tableData as $tableRow) {
+                    try {
+                        (!$dontSee) ?
+                            $I->seeInDatabase($tableName, $tableRow) :
+                            $I->dontSeeInDatabase($tableName, $tableRow);
+                    } catch (\Exception $exception) {
+                       $errors[] = [
+                           'table' => $tableName,
+                           'row' => $tableRow,
+                           'message' => $exception->getMessage()
+                       ];
+                    }
+                }
+            }
+        }
+
+        return $errors;
+    }
 }

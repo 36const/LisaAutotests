@@ -7,14 +7,15 @@ use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestView;
+use lisa\Page\Functional\RequestToCorrection;
+use lisa\Page\Functional\RequestCorrection;
 
 /**
  * @group lisa
  * @group lisa_functional
  * @group POSTFromStatuses
- * @group POSTFromStatus3
  */
-class POSTFromStatus3Cest
+class POSTFromStatusesCest
 {
     /**
      * @var TestHelper $testHelper
@@ -58,28 +59,39 @@ class POSTFromStatus3Cest
      * @param Example $data
      * @param Login $login
      * @param RequestView $view
+     * @param RequestToCorrection $toCorrection
+     * @param RequestCorrection $correction
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatus3(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function POSTFromStatuses(FunctionalTester $I, Example $data, Login $login, RequestView $view,
+                                    RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
         $I->loadDataForTest($data, $this->testHelper);
+
+        $errors = null;
 
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->amOnPage('/bpm/request/view?id=1');
-
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
-        $providerData['requestParameter'] == 'update' ?
-            $view->checkFields($providerData['requestBody']) :
-            $view->checkFields($providerData['fields']);
+        $errors[] = $view->checkFields($providerData['db']);
 
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
-        $I->validateRequestsFieldsInDB($providerData['db']['requests_fields']);
+        if ($providerData['requestParameter'] == 'to-correction') {
+
+            $toCorrection->amOnToCorrection(1);
+            $errors[] = $toCorrection->checkFields($providerData['requestBody']);
+
+            $correction->amOnCorrection(1);
+            $errors[] = $correction->checkFields($providerData['requestBody']);
+        }
+
+        $errors[] = $I->checkTablesInDB($providerData['db']);
+
+        $I->checkErrors($errors);
     }
 }
