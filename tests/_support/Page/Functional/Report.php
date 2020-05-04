@@ -18,5 +18,15 @@ class Report extends FunctionalTester
         $I->amOnPage("/bpm/report/update?id=$id");
     }
 
+    public function amOnReportPeriod()
+    {
+        $I = $this;
+        $I->amOnPage("/bpm/report-period");
+    }
 
+    public function amOnReportPeriodUpdate(int $id)
+    {
+        $I = $this;
+        $I->amOnPage("/bpm/report-period/update?id=$id");
+    }
 }
