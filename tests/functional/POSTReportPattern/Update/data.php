@@ -48,17 +48,8 @@ return [
                 'Fields[amount_to_work]' => 'on',
                 'Fields[category_id]' => 'on',
                 'Fields[subject]' => 'on',
-                'Report[conditions][team_direction][]' => '1',
-                'Report[conditions][team_direction][]' => '2',
-                'Report[conditions][team_direction][]' => '3',
-                'Report[conditions][type_id][]' => '1',
-                'Report[conditions][type_id][]' => '2',
-                'Report[conditions][type_id][]' => '3',
-                'Report[conditions][type_id][]' => '4',
-                'Report[conditions][type_id][]' => '5',
-                'Report[conditions][type_id][]' => '6',
-                'Report[conditions][type_id][]' => '7',
-                'Report[conditions][type_id][]' => '8',
+                'Report[conditions][team_direction]' => ['1','2','3'],
+                'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8'],
                 'Report[title]' => 'Всё во всём',
                 '_csrf-backend' => null
             ],
@@ -69,7 +60,7 @@ return [
                             "id" => 1,
                             "title" => "Всё во всём",
                             "fields" => '[100, 102, 103, 104, 105, 106, 107, 112, 115, 116, 118, 126, 13, 18, 63, 66, 67, 70, 71, 76, 77, 79, 7, 80, 81, 82, 83, 84, 87, 90, 91, 93, 95, 96, 97, 98, 99, "amount_to_work", "category_id", "subject"]',
-                            //"conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8"], "team_direction": ["1", "2", "3"]}',
+                            "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8"], "team_direction": ["1", "2", "3"]}',
                             "type" => 0
                         ]
                     ],
@@ -125,17 +116,8 @@ return [
                 'Fields[amount_to_work]' => 'on',
                 'Fields[category_id]' => 'on',
                 'Fields[subject]' => 'on',
-                'Report[conditions][team_direction][]' => '1',
-                'Report[conditions][team_direction][]' => '5',
-                'Report[conditions][team_direction][]' => '6',
-                'Report[conditions][type_id][]' => '1',
-                'Report[conditions][type_id][]' => '2',
-                'Report[conditions][type_id][]' => '3',
-                'Report[conditions][type_id][]' => '4',
-                'Report[conditions][type_id][]' => '5',
-                'Report[conditions][type_id][]' => '6',
-                'Report[conditions][type_id][]' => '7',
-                'Report[conditions][type_id][]' => '8',
+                'Report[conditions][team_direction]' => ['1','5','6'],
+                'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8'],
                 'Report[title]' => 'Всё во всём',
                 '_csrf-backend' => null
             ],
@@ -146,7 +128,7 @@ return [
                             "id" => 1,
                             "title" => "Всё во всём",
                             "fields" => '[100, 102, 103, 104, 105, 106, 107, 112, 115, 116, 118, 126, 13, 18, 63, 66, 67, 70, 71, 76, 77, 79, 7, 80, 81, 82, 83, 84, 87, 90, 91, 93, 95, 96, 97, 98, 99, "amount_to_work", "category_id", "subject"]',
-                            //"conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8"], "team_direction": ["1", "5", "6"]}',
+                            "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8"], "team_direction": ["1", "5", "6"]}',
                             "type" => 0
                         ]
                     ],
@@ -215,6 +197,8 @@ return [
                 'Report[conditions][type_id][]' => '13',
                 'Report[conditions][type_id][]' => '14',
                 'Report[conditions][type_id][]' => '15',
+                'Report[conditions][team_direction]' => ['1','2','3'],
+                'Report[conditions][type_id]' => ['1','2','3','9','10','11','12','13','14','15'],
                 'Report[title]' => 'Всё во всём',
                 '_csrf-backend' => null
             ],
@@ -225,7 +209,7 @@ return [
                             "id" => 1,
                             "title" => "Всё во всём",
                             "fields" => '[100, 102, 103, 104, 105, 106, 107, 112, 115, 116, 118, 126, 13, 18, 63, 66, 67, 70, 71, 76, 77, 79, 7, 80, 81, 82, 83, 84, 87, 90, 91, 93, 95, 96, 97, 98, 99, "amount_to_work", "category_id", "subject"]',
-                            //"conditions" => '{"type_id": ["1", "2", "3", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3"]}',
+                            "conditions" => '{"type_id": ["1", "2", "3", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3"]}',
                             "type" => 0
                         ]
                     ]
@@ -290,6 +274,8 @@ return [
                 'Report[conditions][type_id][]' => '13',
                 'Report[conditions][type_id][]' => '14',
                 'Report[conditions][type_id][]' => '15',
+                'Report[conditions][team_direction]' => ['3','5','6'],
+                'Report[conditions][type_id]' => ['6','7','8','13','14','15'],
                 'Report[title]' => 'Всё во всём',
                 '_csrf-backend' => null
             ],
@@ -300,7 +286,7 @@ return [
                             "id" => 1,
                             "title" => "Всё во всём",
                             "fields" => '[100, 102, 103, 104, 105, 106, 107, 112, 115, 116, 118, 126, 13, 18, 63, 66, 67, 70, 71, 76, 77, 79, 7, 80, 81, 82, 83, 84, 87, 90, 91, 93, 95, 96, 97, 98, 99, "amount_to_work", "category_id", "subject"]',
-                            //"conditions" => '{"type_id": ["6", "7", "8", "13", "14", "15"], "team_direction": ["3", "5", "6"]}',
+                            "conditions" => '{"type_id": ["6", "7", "8", "13", "14", "15"], "team_direction": ["3", "5", "6"]}',
                             "type" => 0
                         ]
                     ],

@@ -72,7 +72,7 @@ class POSTReportPatternCreateCest
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->sendPOST('/bpm/report/create', $providerData['requestBody']);
+        $I->sendPOST($providerData['requestParameter'], $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $report->amOnReportView(1);
