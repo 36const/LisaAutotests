@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa\Page\Functional;
 
 use lisa\FunctionalTester;
