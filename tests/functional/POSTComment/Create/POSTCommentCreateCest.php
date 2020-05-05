@@ -78,11 +78,6 @@ class POSTCommentCreateCest
         $view->amOnView(1);
         $I->seeResponseCodeIs(200);
 
-        $I->amOnPage('/bpm/request-comments/changes?id=1');
-        $I->seeResponseCodeIs(200);
-        $I->dontSeeElement('//tr[@data-key="1"]');
-        $I->dontSeeElement('//td[@class="data-container"]');
-
         $errors[] = $I->checkTablesInDB($providerData['db']);
         $I->checkErrors($errors);
     }

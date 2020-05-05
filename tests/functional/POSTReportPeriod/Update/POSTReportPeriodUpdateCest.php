@@ -62,7 +62,7 @@ class POSTReportPeriodUpdateCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTReportPeriod(FunctionalTester $I, Example $data, Login $login, Report $report)
+    public function POSTReportPeriodUpdate(FunctionalTester $I, Example $data, Login $login, Report $report)
     {
         $I->loadDataForTest($data, $this->testHelper);
 

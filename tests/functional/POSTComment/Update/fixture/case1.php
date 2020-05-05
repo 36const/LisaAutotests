@@ -115,14 +115,6 @@ return [
                 "status" => 1
             ]
         ],
-        "request_comments_history" => [
-            [
-                "id" => 0,
-                "comment_id" => 0,
-                "user_id" => 0,
-                "changes" => "{}",
-                "created_at" => "2020-01-01 00:00:02",
-            ],
-        ],
+        "request_comments_history" => [],
     ],
 ];

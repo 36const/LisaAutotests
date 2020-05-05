@@ -103,6 +103,6 @@ return [
                 'value' => null,
             ],
         ],
-        "request_comments" => [[]],
+        "request_comments" => [],
     ],
 ];
