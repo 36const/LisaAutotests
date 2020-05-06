@@ -74,9 +74,7 @@ class POSTCommentCreateCest
 
         $I->sendPOST('/bpm/request-comments/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
-
-        $view->amOnView(1);
-        $I->seeResponseCodeIs(200);
+        $I->seeResponseContainsJson($providerData['responseBody']);
 
         $errors[] = $I->checkTablesInDB($providerData['db']);
         $I->checkErrors($errors);

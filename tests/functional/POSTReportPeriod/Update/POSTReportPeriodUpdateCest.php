@@ -75,12 +75,6 @@ class POSTReportPeriodUpdateCest
         $I->sendPOST('/bpm/report-period/update?id=1', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
-        $report->amOnReportPeriod();
-        $I->seeResponseCodeIs(200);
-
-        $report->amOnReportPeriodUpdate(1);
-        $I->seeResponseCodeIs(200);
-
         $errors[] = $I->checkTablesInDB($providerData['db']);
 
         $I->checkErrors($errors);
