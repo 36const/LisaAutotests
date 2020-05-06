@@ -26,9 +26,6 @@ return [
             'requestURL' => '/bpm/request/create',
             'requestBody' => [
                 "RequestField[1]" => 1,
-                "RequestField[8]" => 1,
-                "RequestField[9]" => 1,
-                "RequestField[15]" => 1,
                 "Request[amount_to_work]" => 10,
                 "Request[attachment_folder]" => '18ac118ec8919dcb3ad0d7ddd129d88a',
                 "Request[addedAttachments]" => '[]',
@@ -93,21 +90,6 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 8,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 9,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 15,
                             'value' => 1,
                         ],
                         [
@@ -342,9 +324,6 @@ return [
         'requestURL' => '/bpm/request/create',
         'requestBody' => [
             "RequestField[1]" => 1,
-            "RequestField[8]" => 1,
-            "RequestField[9]" => 1,
-            "RequestField[15]" => 1,
             "Request[amount_to_work]" => 10,
             "Request[attachment_folder]" => '18ac118ec8919dcb3ad0d7ddd129d88a',
             "Request[addedAttachments]" => '[]',
@@ -408,21 +387,6 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 1,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 8,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 9,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 15,
                         'value' => 1,
                     ],
                     [
@@ -654,9 +618,6 @@ return [
         'requestURL' => '/bpm/request/create',
         'requestBody' => [
             "RequestField[1]" => 1,
-            "RequestField[8]" => 1,
-            "RequestField[9]" => 1,
-            "RequestField[15]" => 1,
             "Request[amount_to_work]" => 10,
             "Request[attachment_folder]" => '18ac118ec8919dcb3ad0d7ddd129d88a',
             "Request[addedAttachments]" => '[]',
@@ -720,21 +681,6 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 1,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 8,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 9,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 15,
                         'value' => 1,
                     ],
                     [
@@ -1077,9 +1023,6 @@ return [
         'requestURL' => '/bpm/request/create',
         'requestBody' => [
             "RequestField[1]" => 1,
-            "RequestField[8]" => 1,
-            "RequestField[9]" => 1,
-            "RequestField[15]" => 1,
             "Request[amount_to_work]" => 10,
             "Request[attachment_folder]" => '18ac118ec8919dcb3ad0d7ddd129d88a',
             "Request[addedAttachments]" => '[]',
@@ -1143,21 +1086,6 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 1,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 8,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 9,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 15,
                         'value' => 1,
                     ],
                     [
@@ -1972,9 +1900,6 @@ return [
         'requestURL' => '/bpm/request/create',
         'requestBody' => [
             "RequestField[1]" => 1,
-            "RequestField[8]" => 1,
-            "RequestField[9]" => 1,
-            "RequestField[15]" => 1,
             "Request[amount_to_work]" => 10,
             "Request[attachment_folder]" => '18ac118ec8919dcb3ad0d7ddd129d88a',
             "Request[addedAttachments]" => '[]',
@@ -2038,11 +1963,6 @@ return [
                     [
                         'request_id' => 1,
                         'field_id' => 1,
-                        'value' => 1,
-                    ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 15,
                         'value' => 1,
                     ],
                     [
