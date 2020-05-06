@@ -9,11 +9,11 @@ use lisa\Page\Functional\Filters;
 
 /**
  * @group lisa
- * @group lisa_functional
+
  * @group Filters
  * @group FiltersUpdate
  */
-class FilterUpdateCest
+class NotificationSettingsUpdateCest
 {
     /**
      * @var TestHelper $testHelper
@@ -74,6 +74,9 @@ class FilterUpdateCest
 
         $I->sendPOST('/bpm/filter/update?id=1', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
+
+        $filter->amOnFilterUpdating(1);
+        $I->seeResponseCodeIs($providerData['responseCode']);
 
         $errors[] = $I->checkTablesInDB($providerData['db']);
         $I->checkErrors($errors);

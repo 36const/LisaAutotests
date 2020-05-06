@@ -79,8 +79,8 @@ class FunctionalTester extends \Codeception\Actor
                 foreach ($tableData as $tableRow) {
                     try {
                         (!$dontSee) ?
-                            $I->seeInDatabase($tableName, $tableRow) :
-                            $I->dontSeeInDatabase($tableName, $tableRow);
+                            $I->canSeeInDatabase($tableName, $tableRow) :
+                            $I->cantSeeInDatabase($tableName, $tableRow);
                     } catch (\Exception $exception) {
                        $errors[] = [
                            'table' => $tableName,

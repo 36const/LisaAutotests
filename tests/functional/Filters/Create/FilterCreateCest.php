@@ -75,9 +75,6 @@ class FilterCreateCest
         $I->sendPOST('/bpm/filter/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
-        $filter->amOnFilterUpdating(1);
-        $I->seeResponseCodeIs($providerData['responseCode']);
-
         $errors[] = $I->checkTablesInDB($providerData['db']);
         $I->checkErrors($errors);
     }
