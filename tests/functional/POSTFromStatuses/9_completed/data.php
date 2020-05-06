@@ -258,7 +258,7 @@ return [
                             'value' => null,
                         ],
                     ],
-                    'request_errors' => [[]]
+                    "request_errors" => [],
                 ],
             ]
         ]

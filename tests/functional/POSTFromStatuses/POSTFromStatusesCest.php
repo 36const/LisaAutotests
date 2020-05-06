@@ -47,7 +47,7 @@ class POSTFromStatusesCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return $this->testHelper->getDataProvider('case8_6 case8_11 case9_11');
     }
 
     public function _before(FunctionalTester $I)
