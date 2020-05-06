@@ -74,14 +74,7 @@ class POSTCommentUpdateCest
 
         $I->sendPOST('/bpm/request-comments/update', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
-
-        $view->amOnView(1);
-        $I->seeResponseCodeIs(200);
-
-        $I->amOnPage('/bpm/request-comments/changes?id=1');
-        $I->seeResponseCodeIs(200);
-        $I->seeElement('//tr[@data-key="1"]');
-        $I->seeElement('//td[@class="data-container"]');
+        $I->seeResponseContainsJson($providerData['responseBody']);
 
         $errors[] = $I->checkTablesInDB($providerData['db']);
         $I->checkErrors($errors);

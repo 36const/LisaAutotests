@@ -62,7 +62,7 @@ class POSTReportPeriodUpdateCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTReportPeriod(FunctionalTester $I, Example $data, Login $login, Report $report)
+    public function POSTReportPeriodUpdate(FunctionalTester $I, Example $data, Login $login, Report $report)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
@@ -73,12 +73,6 @@ class POSTReportPeriodUpdateCest
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
         $I->sendPOST('/bpm/report-period/update?id=1', $providerData['requestBody']);
-        $I->seeResponseCodeIs(200);
-
-        $report->amOnReportPeriod();
-        $I->seeResponseCodeIs(200);
-
-        $report->amOnReportPeriodUpdate(1);
         $I->seeResponseCodeIs(200);
 
         $errors[] = $I->checkTablesInDB($providerData['db']);

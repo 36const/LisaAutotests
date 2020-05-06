@@ -75,12 +75,6 @@ class POSTReportPatternUpdateCest
         $I->sendPOST('/bpm/report/update?id=1', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
-        $report->amOnReportView(1);
-        $I->seeResponseCodeIs(200);
-
-        $report->amOnReportUpdate(1);
-        $I->seeResponseCodeIs(200);
-
         $errors[] = $I->checkTablesInDB($providerData['db']);
 
         $I->checkErrors($errors);
