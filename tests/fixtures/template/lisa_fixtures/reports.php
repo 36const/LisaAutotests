@@ -1,10 +1,10 @@
 <?php
 return [
     [
-        "id" => 0,
+        //"id" => 0,
         "title" => 'title',
-        "fields" => null,
-        "conditions" => null,
+        "fields" => '[]',
+        "conditions" => '[]',
         "type" => 0
     ],
 ];

@@ -104,6 +104,6 @@ return [
             ],
         ],
         "report_periods" => [[]],
-        "request_errors" => [[]],
+        "request_errors" => [],
     ],
 ];
