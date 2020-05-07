@@ -142,38 +142,26 @@ class RequestView extends FunctionalTester
     public function checkFields($dbTablesArray, $otherTypesFields = [])
     {
         $I = $this;
-        $errors = null;
         $requests = $this->convertDbArrays($dbTablesArray, $otherTypesFields);
 
         foreach ($requests as $id => $request) {
             $I->amOnView($id);
+
             foreach ($request as $field => $value) {
-                try {
-                    in_array($field, $this->textFields) ?
-                        $I->seeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]) :
-                        $I->seeInField($field, $value);
-                } catch (\Exception $exception) {
-                    $errors[] = [
-                        'id' => $id,
-                        'field' => $field,
-                        'value' => $value,
-                        'message' => $exception->getMessage()
-                    ];
-                };
+                in_array($field, $this->textFields) ?
+                    $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]) :
+                    $I->canSeeInField($field, $value);
             }
         }
-
-        return $errors;
     }
 
     /**
-     * Проверка html-полей и их значений в форме заявки с доп. проверкой,
+     * Проверка html-полей и их значений в форме заявки с предварительной проверкой,
      * есть ли такое поле в форме заявки (для кейсов с пакетным редактированием)
      */
     public function checkFieldsForMassEditing($dbTablesArray)
     {
         $I = $this;
-        $errors = null;
         $requests = $this->convertDbArrays($dbTablesArray, []);
 
         foreach ($requests as $id => $request) {
@@ -183,24 +171,14 @@ class RequestView extends FunctionalTester
                 try {
                     $I->seeElement('//form[@id="update_form"]//*', ['name' => $field]);
 
-                    try {
-                        in_array($field, $this->textFields) ?
-                            $I->seeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]) :
-                            $I->seeInField($field, $value);
-                    } catch (\Exception $exception) {
-                        $errors[] = [
-                            'id' => $id,
-                            'field' => $field,
-                            'value' => $value,
-                            'message' => $exception->getMessage()
-                        ];
-                    }
+                    in_array($field, $this->textFields) ?
+                        $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]) :
+                        $I->canSeeInField($field, $value);
+
                 } catch (\Exception $exception) {
                     continue;
-                };
+                }
             }
         }
-
-        return $errors;
     }
 }

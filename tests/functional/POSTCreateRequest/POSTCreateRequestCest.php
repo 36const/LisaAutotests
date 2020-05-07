@@ -66,7 +66,6 @@ class POSTCreateRequestCest
     public function POSTCreateRequest(FunctionalTester $I, Example $data, Login $login, RequestCreate $create, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper);
-        $errors = null;
 
         $setting = $data['setting'];
         $providerData = $data['provider_data'];
@@ -87,9 +86,7 @@ class POSTCreateRequestCest
         $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
         $I->seeResponseCodeIs($providerData['responseCode']);
 
-        $errors[] = $view->checkFields($providerData['db']);
-        $errors[] = $I->checkTablesInDB($providerData['db']);
-
-        $I->checkErrors($errors);
+        $view->checkFields($providerData['db']);
+        $I->checkTablesInDB($providerData['db']);
     }
 }

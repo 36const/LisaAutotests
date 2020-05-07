@@ -46,21 +46,10 @@ class RequestCorrection extends FunctionalTester
     public function checkFields($requestBody)
     {
         $I = $this;
-        $errors = null;
 
         foreach ($requestBody as $field => $value) {
-            try {
-                ($value == '') || in_array($field, $this->uncheckingSVFields) ?:
-                    $I->seeElement('//div[@class="kv-attribute"][1]//*', ['name' => $field, 'value' => $value]);
-            } catch (\Exception $exception) {
-                $errors[] = [
-                    'field' => $field,
-                    'value' => $value,
-                    'message' => $exception->getMessage()
-                ];
-            }
+            ($value == '') || in_array($field, $this->uncheckingSVFields) ?:
+                $I->canSeeElement('//div[@class="kv-attribute"][1]//*', ['name' => $field, 'value' => $value]);
         }
-
-        return $errors;
     }
 }

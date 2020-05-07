@@ -66,8 +66,6 @@ class POSTReportPatternCreateCest
     {
         $I->loadDataForTest($data, $this->testHelper);
 
-        $errors = null;
-
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
@@ -75,8 +73,6 @@ class POSTReportPatternCreateCest
         $I->sendPOST($providerData['requestParameter'], $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
-        $errors[] = $I->checkTablesInDB($providerData['db']);
-
-        $I->checkErrors($errors);
+        $I->checkTablesInDB($providerData['db']);
     }
 }

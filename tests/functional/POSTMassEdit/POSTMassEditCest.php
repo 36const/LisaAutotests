@@ -65,18 +65,14 @@ class POSTMassEditCest
     {
         $I->loadDataForTest($data, $this->testHelper);
 
-        $errors = null;
-
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
         $I->massEdit($providerData['requestBody']);
 
-        $errors[] = $view->checkFieldsForMassEditing($providerData['db']);
+        $view->checkFieldsForMassEditing($providerData['db']);
 
-        $errors[] = $I->checkTablesInDB($providerData['db']);
-
-        $I->checkErrors($errors);
+        $I->checkTablesInDB($providerData['db']);
     }
 }

@@ -66,8 +66,6 @@ class POSTCommentCreateCest
     {
         $I->loadDataForTest($data, $this->testHelper);
 
-        $errors = null;
-
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
@@ -76,7 +74,6 @@ class POSTCommentCreateCest
         $I->seeResponseCodeIs(200);
         $I->seeResponseContainsJson($providerData['responseBody']);
 
-        $errors[] = $I->checkTablesInDB($providerData['db']);
-        $I->checkErrors($errors);
+        $I->checkTablesInDB($providerData['db']);
     }
 }
