@@ -59,39 +59,20 @@ class FunctionalTester extends \Codeception\Actor
         $I->seeResponseCodeIs(200);
     }
 
-    public function checkErrors($errors)
-    {
-        $I = $this;
-        foreach ($errors as $error) {
-            $I->assertNull($error);
-        }
-    }
-
     public function checkTablesInDB($dbTablesArray, bool $dontSee = false)
     {
         $I = $this;
-        $errors = null;
 
         foreach ($dbTablesArray as $dbName => $dbData) {
             $I->amConnectedToDatabase($dbName);
 
             foreach ($dbData as $tableName => $tableData) {
                 foreach ($tableData as $tableRow) {
-                    try {
-                        (!$dontSee) ?
-                            $I->seeInDatabase($tableName, $tableRow) :
-                            $I->dontSeeInDatabase($tableName, $tableRow);
-                    } catch (\Exception $exception) {
-                       $errors[] = [
-                           'table' => $tableName,
-                           'row' => $tableRow,
-                           'message' => $exception->getMessage()
-                       ];
-                    }
+                    (!$dontSee) ?
+                        $I->canSeeInDatabase($tableName, $tableRow) :
+                        $I->cantSeeInDatabase($tableName, $tableRow);
                 }
             }
         }
-
-        return $errors;
     }
 }

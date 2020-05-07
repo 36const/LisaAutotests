@@ -13,7 +13,6 @@ return [
             ],
             'requestBody' => [
                 'RequestField[1]' => '1',
-                'RequestField[8]' => '1',
                 'Request[category_id]' => '1',
                 'Request[direction]' => '1',
                 'Request[seller_id]' => '83',
@@ -66,11 +65,6 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 8,
                             'value' => 1,
                         ],
                         [

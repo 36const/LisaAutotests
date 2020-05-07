@@ -66,8 +66,6 @@ class POSTReportPeriodCreateCest
     {
         $I->loadDataForTest($data, $this->testHelper);
 
-        $errors = null;
-
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
@@ -75,8 +73,6 @@ class POSTReportPeriodCreateCest
         $I->sendPOST('/bpm/report-period/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
-        $errors[] = $I->checkTablesInDB($providerData['db']);
-
-        $I->checkErrors($errors);
+        $I->checkTablesInDB($providerData['db']);
     }
 }

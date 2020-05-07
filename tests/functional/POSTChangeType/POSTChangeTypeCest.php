@@ -65,18 +65,14 @@ class POSTChangeTypeCest
     {
         $I->loadDataForTest($data, $this->testHelper);
 
-        $errors = null;
-
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
         $I->changeType($providerData['requestParameter'], $providerData['requestBody']);
 
-        $errors[] = $view->checkFields($providerData['db'], $providerData['otherTypesFields']);
+        $view->checkFields($providerData['db'], $providerData['otherTypesFields']);
 
-        $errors[] = $I->checkTablesInDB($providerData['db']);
-
-        $I->checkErrors($errors);
+        $I->checkTablesInDB($providerData['db']);
     }
 }

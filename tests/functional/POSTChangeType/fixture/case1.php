@@ -75,7 +75,7 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 53,
-                'value' => 0.5,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,

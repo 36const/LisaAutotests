@@ -2,19 +2,18 @@
 
 namespace lisa;
 
-use Codeception\Util\HttpCode;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\RequestCreate;
-use lisa\Page\Functional\RequestView;
+use lisa\Page\Functional\Filters;
 
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTCreateRequest
+ * @group POSTFilters
+ * @group POSTFiltersCreate
  */
-class POSTCreateRequestCest
+class POSTFilterCreateCest
 {
     /**
      * @var TestHelper $testHelper
@@ -57,36 +56,23 @@ class POSTCreateRequestCest
      * @param FunctionalTester $I
      * @param Example $data
      * @param Login $login
-     * @param RequestCreate $create
+     * @param Filters $filter
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTCreateRequest(FunctionalTester $I, Example $data, Login $login, RequestCreate $create, RequestView $view)
+    public function POSTFilterCreate(FunctionalTester $I, Example $data, Login $login, Filters $filter)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
-        $setting = $data['setting'];
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $create->amOnRequestCreate($setting['type'], $setting['direction']);
-        $I->seeInTitle($setting['description']);
-        $I->see($setting['description'], ['class' => 'global-caption']);
+        $I->sendPOST('/bpm/filter/create', $providerData['requestBody']);
+        $I->seeResponseCodeIs(200);
 
-        $I->assertEquals($I->grabMultiple(RequestCreate::$allCheckboxes), $providerData['checkboxes']);
-
-        if ($setting['direction'] != 2) {
-            $I->seeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
-            $I->dontSeeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
-        }
-
-        $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
-        $I->seeResponseCodeIs($providerData['responseCode']);
-
-        $view->checkFields($providerData['db']);
         $I->checkTablesInDB($providerData['db']);
     }
 }

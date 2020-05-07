@@ -71,27 +71,23 @@ class POSTFromStatusesCest
     {
         $I->loadDataForTest($data, $this->testHelper);
 
-        $errors = null;
-
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
-        $errors[] = $view->checkFields($providerData['db']);
+        $view->checkFields($providerData['db']);
 
         if ($providerData['requestParameter'] == 'to-correction') {
 
             $toCorrection->amOnToCorrection(1);
-            $errors[] = $toCorrection->checkFields($providerData['requestBody']);
+            $toCorrection->checkFields($providerData['requestBody']);
 
             $correction->amOnCorrection(1);
-            $errors[] = $correction->checkFields($providerData['requestBody']);
+            $correction->checkFields($providerData['requestBody']);
         }
 
-        $errors[] = $I->checkTablesInDB($providerData['db']);
-
-        $I->checkErrors($errors);
+        $I->checkTablesInDB($providerData['db']);
     }
 }

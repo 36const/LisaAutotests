@@ -19,21 +19,10 @@ class RequestToCorrection extends FunctionalTester
     public function checkFields($requestBody)
     {
         $I = $this;
-        $errors = null;
 
         foreach ($requestBody as $field => $value) {
-            try {
-                ($field == '_csrf-backend') ?:
-                    $I->seeInField($field, $value);
-            } catch (\Exception $exception) {
-                $errors[] = [
-                    'field' => $field,
-                    'value' => $value,
-                    'message' => $exception->getMessage()
-                ];
-            }
+            ($field == '_csrf-backend') ?:
+                $I->canSeeInField($field, $value);
         }
-
-        return $errors;
     }
 }
