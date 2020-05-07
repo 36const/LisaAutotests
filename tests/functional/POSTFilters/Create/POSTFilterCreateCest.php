@@ -10,10 +10,10 @@ use lisa\Page\Functional\Filters;
 /**
  * @group lisa
  * @group lisa_functional
- * @group NotificationSettings
- * @group FiltersCreate
+ * @group POSTFilters
+ * @group POSTFiltersCreate
  */
-class NotificationSettingsCreateCest
+class POSTFilterCreateCest
 {
     /**
      * @var TestHelper $testHelper
@@ -45,7 +45,7 @@ class NotificationSettingsCreateCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('case2');
+        return $this->testHelper->getDataProvider('');
     }
 
     public function _before(FunctionalTester $I)
@@ -62,20 +62,17 @@ class NotificationSettingsCreateCest
      * @dataProvider pageProvider
      *
      */
-    public function FilterCreate(FunctionalTester $I, Example $data, Login $login, Filters $filter)
+    public function POSTFilterCreate(FunctionalTester $I, Example $data, Login $login, Filters $filter)
     {
         $I->loadDataForTest($data, $this->testHelper);
-
-        $errors = null;
 
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->sendPOST('/bpm/notification-settings/update', $providerData['requestBody']);
+        $I->sendPOST('/bpm/filter/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
-        $errors[] = $I->checkTablesInDB($providerData['db']);
-        $I->checkErrors($errors);
+        $I->checkTablesInDB($providerData['db']);
     }
 }

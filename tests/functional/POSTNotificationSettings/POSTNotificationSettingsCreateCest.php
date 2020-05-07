@@ -12,7 +12,7 @@ use lisa\Page\Functional\Filters;
  * @group lisa_functional
  * @group POSTNotificationSettings
  */
-class NotificationSettingsCreateCest
+class POSTNotificationSettingsCreateCest
 {
     /**
      * @var TestHelper $testHelper
@@ -61,7 +61,7 @@ class NotificationSettingsCreateCest
      * @dataProvider pageProvider
      *
      */
-    public function FilterCreate(FunctionalTester $I, Example $data, Login $login, Filters $filter)
+    public function POSTFilterCreate(FunctionalTester $I, Example $data, Login $login, Filters $filter)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
