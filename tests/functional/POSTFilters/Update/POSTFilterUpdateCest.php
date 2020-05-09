@@ -13,7 +13,7 @@ use lisa\Page\Functional\Filters;
  * @group POSTFilters
  * @group POSTFiltersUpdate
  */
-class FilterUpdateCest
+class POSTFilterUpdateCest
 {
     /**
      * @var TestHelper $testHelper
@@ -62,7 +62,7 @@ class FilterUpdateCest
      * @dataProvider pageProvider
      *
      */
-    public function FilterUpdate(FunctionalTester $I, Example $data, Login $login, Filters $filter)
+    public function POSTFilterUpdate(FunctionalTester $I, Example $data, Login $login, Filters $filter)
     {
         $I->loadDataForTest($data, $this->testHelper);
 

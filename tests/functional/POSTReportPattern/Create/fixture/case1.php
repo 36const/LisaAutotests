@@ -2,6 +2,6 @@
 
 return [
     "lisa_fixtures" => [
-        "reports" => [[]],
+        "reports" => [],
     ],
 ];

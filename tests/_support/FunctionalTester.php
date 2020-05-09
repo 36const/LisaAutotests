@@ -67,6 +67,12 @@ class FunctionalTester extends \Codeception\Actor
             $I->amConnectedToDatabase($dbName);
 
             foreach ($dbData as $tableName => $tableData) {
+
+                $expectedNumber = count($tableData);
+
+                ($dontSee) ?:
+                    $I->canSeeNumRecords($expectedNumber, $tableName);
+
                 foreach ($tableData as $tableRow) {
                     (!$dontSee) ?
                         $I->canSeeInDatabase($tableName, $tableRow) :

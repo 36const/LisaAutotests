@@ -5,7 +5,6 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\Filters;
 
 /**
  * @group lisa
@@ -61,7 +60,7 @@ class POSTNotificationSettingsCreateCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTFilterCreate(FunctionalTester $I, Example $data, Login $login, Filters $filter)
+    public function POSTNotificationSettings(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper);
 

@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Создание фильтра без доп. полей; события и статусы - 2 ',
+            'description' => 'Нотификации без доп. полей; события и статусы - 2 ',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -44,7 +44,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Создание фильтра с доп. полями; события - 1, статусы - 2 ',
+            'description' => 'Нотификации с доп. полями; события - 1, статусы - 2 ',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -86,7 +86,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Создание фильтра с доп. полями чек-боксами; события - 0, статусы - 1 ',
+            'description' => 'Нотификации с доп. полями чек-боксами; события - 0, статусы - 1 ',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -128,7 +128,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Создание фильтра с доп. полями рассчётными кол-вами; события - 2, статусы - 0 ',
+            'description' => 'Нотификации с доп. полями рассчётными кол-вами; события - 2, статусы - 0 ',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
