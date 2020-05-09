@@ -6,6 +6,7 @@ return [
         "request_errors" => [],
         'notification_settings' => [],
         "user_notifications" => [],
-        "request_status_history" => []
+        "request_status_history" => [],
+        "observers" => []
     ],
 ];

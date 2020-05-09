@@ -83,8 +83,8 @@ class POSTCreateRequestCest
             $I->dontSeeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
         }
 
-        $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
-        $I->seeResponseCodeIs($providerData['responseCode']);
+        $I->sendPOST('/bpm/request/create', $providerData['requestBody']);
+        $I->seeResponseCodeIs(200);
 
         $view->checkFields($providerData['db']);
         $I->checkTablesInDB($providerData['db']);
