@@ -135,6 +135,19 @@ return [
                             "priority" => 2,
                             "recipients" => "Константин Куцан, Супервайзер Начальникович 1"
                         ]
+                    ],
+                    'request_status_history' => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 3,
+                            "new_status" => 1,
+                            "reason_id" => 15,
+                            "reason" => 'Вернуть на проверку',
+                            //"created_at" => "2020-01-01 00:00:01",
+                            "manager_id" => null
+                        ]
                     ]
                 ]
             ]

@@ -145,6 +145,19 @@ return [
                             "priority" => 2,
                             "recipients" => "Константин Куцан, Супервайзер Начальникович 1, Менеджер Контентович 1А"
                         ],
+                    ],
+                    'request_status_history' => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 4,
+                            "reason_id" => 11,
+                            "reason" => 'Отменить',
+                            //"created_at" => "2020-01-01 00:00:01",
+                            "manager_id" => 11
+                        ]
                     ]
                 ]
             ]
@@ -333,6 +346,19 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             "recipients" => "Константин Куцан, Супервайзер Начальникович 1, Менеджер Контентович 1А"
+                        ]
+                    ],
+                    'request_status_history' => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => null,
+                            "reason" => null,
+                            //"created_at" => "2020-01-01 00:00:01",
+                            "manager_id" => 11
                         ]
                     ]
                 ]
