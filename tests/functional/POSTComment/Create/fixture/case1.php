@@ -104,5 +104,8 @@ return [
             ],
         ],
         "request_comments" => [],
+        'notification_settings' => [],
+        "user_notifications" => [],
+        "request_status_history" => []
     ],
 ];
