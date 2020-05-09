@@ -104,5 +104,8 @@ return [
         ],
         "report_periods" => [[]],
         "request_errors" => [],
+        'notification_settings' => [],
+        "user_notifications" => [],
+        "request_status_history" => []
     ]
 ];
