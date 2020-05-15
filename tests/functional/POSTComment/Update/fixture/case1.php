@@ -116,5 +116,8 @@ return [
             ]
         ],
         "request_comments_history" => [],
+        'notification_settings' => [],
+        "user_notifications" => [],
+        "request_status_history" => []
     ],
 ];

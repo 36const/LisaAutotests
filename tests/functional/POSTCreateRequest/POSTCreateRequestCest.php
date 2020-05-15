@@ -78,13 +78,18 @@ class POSTCreateRequestCest
 
         $I->assertEquals($I->grabMultiple(RequestCreate::$allCheckboxes), $providerData['checkboxes']);
 
-        if ($setting['direction'] != 2) {
+        if ($setting['direction'] != 2 && $setting['type'] != 4) {
             $I->seeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
             $I->dontSeeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
         }
 
-        $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
-        $I->seeResponseCodeIs($providerData['responseCode']);
+        if ($setting['type'] == 4) {
+            $I->dontSeeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
+            $I->seeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
+        }
+
+        $I->sendPOST('/bpm/request/create', $providerData['requestBody']);
+        $I->seeResponseCodeIs(200);
 
         $view->checkFields($providerData['db']);
         $I->checkTablesInDB($providerData['db']);

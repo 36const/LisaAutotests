@@ -158,5 +158,11 @@ return [
                 'correction_date' => null
             ]
         ],
+        "excluded_fields" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/excluded_fields.php',
+        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
+        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
+        "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
+        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
+        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php'
     ],
 ];
