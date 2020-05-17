@@ -165,7 +165,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Создание значения Видео к товарам	, Активное',
+            'description' => 'Создание значения Видео к товарам, Активное',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
