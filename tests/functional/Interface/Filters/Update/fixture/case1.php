@@ -4,7 +4,7 @@ return [
     "lisa_fixtures" => [
         "filters" => [
             [
-                'id' => 1,
+                //'id' => 1,
                 "user_id" => 4,
                 "name" => 'Фильтр1',
                 "conditions" => '{
