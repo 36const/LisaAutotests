@@ -46,7 +46,7 @@ class POSTRolesUpdateCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('case1 case2');
+        return $this->testHelper->getDataProvider('');
     }
 
     public function _before(FunctionalTester $I)

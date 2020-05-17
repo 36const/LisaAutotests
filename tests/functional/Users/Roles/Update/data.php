@@ -634,7 +634,7 @@ return [
                         [
                             "id" => 1,
                             "name" => "Должность",
-                            "description" => "Описание описаниям",
+                            "description" => "Описание описания",
                             //"created_at" => "2020-03-10 12:07:48",
                             //"updated_at" => null
                         ],
@@ -650,84 +650,85 @@ return [
                         [
                             "id" => 17,
                             "role_id" => 2,
-                            "permission_id" => 40
+                            "permission_id" => 1
                         ],
                         [
                             "id" => 18,
                             "role_id" => 2,
-                            "permission_id" => 51
+                            "permission_id" => 2
                         ],
                         [
                             "id" => 19,
                             "role_id" => 2,
-                            "permission_id" => 52
+                            "permission_id" => 3
                         ],
                         [
                             "id" => 20,
                             "role_id" => 2,
-                            "permission_id" => 53
+                            "permission_id" => 4
                         ],
                         [
                             "id" => 21,
                             "role_id" => 2,
-                            "permission_id" => 44
+                            "permission_id" => 54
                         ],
                         [
-                            "id" => 1,
+                            "id" => 22,
                             "role_id" => 1,
                             "permission_id" => 40
                         ],
                         [
-                            "id" => 2,
-                            "role_id" => 1,
-                            "permission_id" => 51
-                        ],
-                        [
-                            "id" => 3,
-                            "role_id" => 1,
-                            "permission_id" => 52
-                        ],
-                        [
-                            "id" => 4,
-                            "role_id" => 1,
-                            "permission_id" => 53
-                        ],
-                        [
-                            "id" => 5,
+                            "id" => 23,
                             "role_id" => 1,
                             "permission_id" => 44
                         ],
                         [
-                            "id" => 6,
+                            "id" => 24,
                             "role_id" => 1,
                             "permission_id" => 45
                         ],
                         [
-                            "id" => 7,
+                            "id" => 25,
                             "role_id" => 1,
                             "permission_id" => 46
                         ],
                         [
-                            "id" => 8,
+                            "id" => 26,
                             "role_id" => 1,
                             "permission_id" => 47
                         ],
                         [
-                            "id" => 9,
+                            "id" => 27,
                             "role_id" => 1,
                             "permission_id" => 48
                         ],
                         [
-                            "id" => 10,
+                            "id" => 28,
                             "role_id" => 1,
                             "permission_id" => 49
                         ],
                         [
-                            "id" => 11,
+                            "id" => 29,
                             "role_id" => 1,
                             "permission_id" => 50
-                        ]                    ]
-                ],
+                        ],
+                        [
+                            "id" => 30,
+                            "role_id" => 1,
+                            "permission_id" => 51
+                        ],
+                        [
+                            "id" => 31,
+                            "role_id" => 1,
+                            "permission_id" => 52
+                        ],
+                        [
+                            "id" => 32,
+                            "role_id" => 1,
+                            "permission_id" => 53
+                        ]
+                    ]
+                ]
             ]
         ]
     ],

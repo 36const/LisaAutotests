@@ -4,7 +4,7 @@ return [
     "lisa_fixtures" => [
         "requests" => [
             [
-                "id" => 1,
+//                "id" => 1,
                 "author_id" => 4,
                 "type_id" => 1,
                 "supervisor_id" => 6,
@@ -105,7 +105,7 @@ return [
         ],
         "request_comments" => [
             [
-                "id" => 1,
+                //"id" => 1,
                 "request_id" => 1,
                 "user_id" => 4,
                 "created_at" => "2020-01-01 00:00:01",
