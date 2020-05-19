@@ -28,7 +28,7 @@ return [
                 "planned_finish_date" => null,
                 "actual_start_date" => '2020-01-01 00:00:03',
                 "actual_finish_date" => null,
-                "supervisor_process_date" => '2020-01-01 00:00:02',
+                "supervisor_process_date" => null,
                 "supervisor_check_date" => null,
                 "difficulty" => null,
                 "result_comment" => '',
@@ -37,7 +37,7 @@ return [
                 "team_direction" => 3,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}',
+                "sv_report_periods" => null,
             ],
         ],
         'requests_fields' => [

@@ -73,9 +73,9 @@ class POSTRolesCreateCest
         $I->sendPOST('/bpm/roles/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
+        $I->checkTablesInDB($providerData['db']);
+
         $roles->amOnRoleUpdate(1);
         $roles->checkCheckboxes($providerData['requestBody']);
-
-        $I->checkTablesInDB($providerData['db']);
     }
 }

@@ -71,8 +71,8 @@ class POSTMassEditCest
 
         $I->massEdit($providerData['requestBody']);
 
-        $view->checkFieldsForMassEditing($providerData['db']);
-
         $I->checkTablesInDB($providerData['db']);
+
+        $view->checkFieldsForMassEditing($providerData['db']);
     }
 }

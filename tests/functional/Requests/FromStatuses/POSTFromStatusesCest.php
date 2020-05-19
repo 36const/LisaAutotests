@@ -77,6 +77,8 @@ class POSTFromStatusesCest
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
+        $I->checkTablesInDB($providerData['db']);
+
         $view->checkFields($providerData['db']);
 
         if ($providerData['requestParameter'] == 'to-correction') {
@@ -87,7 +89,5 @@ class POSTFromStatusesCest
             $correction->amOnCorrection(1);
             $correction->checkFields($providerData['requestBody']);
         }
-
-        $I->checkTablesInDB($providerData['db']);
     }
 }

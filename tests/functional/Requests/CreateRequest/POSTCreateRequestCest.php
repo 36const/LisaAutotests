@@ -91,7 +91,7 @@ class POSTCreateRequestCest
         $I->sendPOST('/bpm/request/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
-        $view->checkFields($providerData['db']);
         $I->checkTablesInDB($providerData['db']);
+        $view->checkFields($providerData['db']);
     }
 }

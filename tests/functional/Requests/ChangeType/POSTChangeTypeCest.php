@@ -71,8 +71,8 @@ class POSTChangeTypeCest
 
         $I->changeType($providerData['requestParameter'], $providerData['requestBody']);
 
-        $view->checkFields($providerData['db'], $providerData['otherTypesFields']);
-
         $I->checkTablesInDB($providerData['db']);
+
+        $view->checkFields($providerData['db'], $providerData['otherTypesFields']);
     }
 }
