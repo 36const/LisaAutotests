@@ -14,7 +14,6 @@ class RequestToCorrection extends FunctionalTester
 
     /**
      * Проверка html-полей и их значений в форме ошибок для супервайзера
-     * @param $requestBody
      */
     public function checkFields($requestBody)
     {
