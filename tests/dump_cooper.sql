@@ -24,8 +24,7 @@ create table market
     resident smallint default 1 not null,
     owox_id_history integer,
     create_ip inet,
-    sms_template_id integer
-        ,
+    sms_template_id integer,
 --         constraint fk_sms_template_id
 --             references sms_template,
     manager_id integer,
@@ -164,12 +163,6 @@ create index market_owox_id_history_idx
 create unique index primary_sellermarketparams_idx
     on market (id);
 
--- create trigger onupdate
---     before update
---     on market
---     for each row
--- execute procedure update_timestamp_field();
--- DROP TABLE IF EXISTS "admin_market_link" CASCADE;
 create table admin_market_link
 (
     account_id integer not null,
