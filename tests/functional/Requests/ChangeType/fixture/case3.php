@@ -105,7 +105,7 @@ return [
         ],
         "report_periods" => [[]],
         "request_errors" => [],
-        "excluded_fields" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/excluded_fields.php',
+        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
         "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
         "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',

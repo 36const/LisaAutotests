@@ -3,6 +3,7 @@
 return [
     "lisa_fixtures" => [
         "filters" => [],
+        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
         "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
         "report_periods" => [
