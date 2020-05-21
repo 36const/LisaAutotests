@@ -9,10 +9,10 @@ use lisa\Page\Functional\Login;
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTCategories
- * @group POSTCategoriesUpdate
+ * @group POSTSeller
+ * @group POSTSellerUpdate
  */
-class POSTCategoriesUpdateCest
+class POSTSellerUpdateCest
 {
     /**
      * @var TestHelper $testHelper
@@ -59,7 +59,7 @@ class POSTCategoriesUpdateCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTCategoriesUpdate(FunctionalTester $I, Example $data, Login $login)
+    public function POSTSellerUpdate(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
@@ -67,7 +67,7 @@ class POSTCategoriesUpdateCest
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->sendPOST('/bpm/category/update?id=2', $providerData['requestBody']);
+        $I->sendPOST('/bpm/seller/' . $providerData['requestParameter'], $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);
