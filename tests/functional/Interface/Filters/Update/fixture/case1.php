@@ -21,7 +21,7 @@ return [
                     "seller_id": ["in", "requests.seller_id", ["0", "5", "83"]], 
                     "created_at": ["between", "created_at", "2020-04-27 00:00", "2020-05-03 23:59"], 
                     "manager_id": ["in", "requests.manager_id", ["11", "13"]], 
-                    "category_id": ["in", "requests.category_id", ["1", "23"]], 
+                    "category_id": ["in", "requests.category_id", ["1", "2"]], 
                     "description": {"requests.description": "250~!@#$%^&*()_+`=-]\'/[;.,}\"?{:><|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ"}, 
                     "supervisor_id": ["in", "requests.supervisor_id", ["33", "35", "6"]], 
                     "amount_to_work": {"requests.amount_to_work": "10"}, 
@@ -42,6 +42,7 @@ return [
                 }',
             ]
         ],
+        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
         "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
         "report_periods" => [
