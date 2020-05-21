@@ -1,7 +1,7 @@
 <?php
 namespace lisa;
 
-use Codeception\Util\HttpCode;
+use Codeception\Example;
 use rzk\TestHelper;
 
 /**
@@ -41,7 +41,7 @@ class PUTGomerCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider();
+        return $this->testHelper->getDataProvider('');
     }
 
     public function _before(ApiTester $I)
@@ -50,24 +50,22 @@ class PUTGomerCest
 
     /**
      * @param ApiTester $I
-     * @param \Codeception\Example $data
+     * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function PUTGomer(ApiTester $I, \Codeception\Example $data)
+    public function PUTGomer(ApiTester $I, Example $data)
     {
+        $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
-        $this->testHelper->clearInDB($I, $data, 'lisa_fixtures');
-        $this->testHelper->loadFixture($I, $data);
-        $I->wantTo($data['setting']['description']);
 
         $I->sendPUT($providerData['requestURL'], $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
 
-        $I->validateInDB('lisa_fixtures', 'requests', $providerData['db']['requests']);
+        $I->checkTablesInDB($providerData['db']);
     }
 }

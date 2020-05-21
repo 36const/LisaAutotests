@@ -26,43 +26,47 @@ return [
                 "requests_fields" => 0
             ],
             'db' => [
-                "requests" => [
-                    "id" => 1,
-                    "author_id" => 1,
-                    "type_id" => 1,
-                    "supervisor_id" => 6,
-                    "manager_id" => null,
-                    "status" => 1,
-                    "direction" => 2,
-                    "priority" => null,
-                    "awaiting_correction" => 0,
-                    //"created_at" =>
-                    "correction_comment" => null,
-                    "amount_to_work" => 10,
-                    "subject" => "Euromart. Источник №1",
-                    "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
-                    "attachments" => '[]',
-                    "category_id" => null,
-                    "seller_id" => 83,
-                    "recommendations" => null,
-                    "reason_id" => null,
-                    "reason" => null,
-                    "parent_id" => null,
-                    "planned_start_date" => null,
-                    "planned_finish_date" => null,
-                    "actual_start_date" => null,
-                    "actual_finish_date" => null,
-                    "supervisor_process_date" => null,
-                    "supervisor_check_date" => null,
-                    "difficulty" => null,
-                    "result_comment" => null,
-                    "supervisor_comment" => null,
-                    //"last_change_status_date" =>
-                    "team_direction" => 2,
-                    "report_period_id" => null,
-                    "sync_source_id" => 1,
-                    "sv_report_periods" => null,
-                ],
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 1,
+                            "type_id" => 1,
+                            "supervisor_id" => 6,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 2,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            //"created_at" =>
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Euromart. Источник №1",
+                            "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
+                            "attachments" => '[]',
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason_id" => null,
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            //"last_change_status_date" =>
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => 1,
+                            "sv_report_periods" => null,
+                        ]
+                    ],
+                ]
             ],
         ]
     ],
@@ -93,48 +97,52 @@ return [
                 "requests_fields" => 1
             ],
             'db' => [
-                "requests" => [
-                    "id" => 1,
-                    "author_id" => 1,
-                    "type_id" => 1,
-                    "supervisor_id" => 6,
-                    "manager_id" => null,
-                    "status" => 1,
-                    "direction" => 2,
-                    "priority" => null,
-                    "awaiting_correction" => 0,
-                    //"created_at" =>
-                    "correction_comment" => null,
-                    "amount_to_work" => 10,
-                    "subject" => "Euromart. Источник №1",
-                    "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
-                    "attachments" => '[]',
-                    "category_id" => null,
-                    "seller_id" => 83,
-                    "recommendations" => null,
-                    "reason_id" => null,
-                    "reason" => null,
-                    "parent_id" => null,
-                    "planned_start_date" => null,
-                    "planned_finish_date" => null,
-                    "actual_start_date" => null,
-                    "actual_finish_date" => null,
-                    "supervisor_process_date" => null,
-                    "supervisor_check_date" => null,
-                    "difficulty" => null,
-                    "result_comment" => null,
-                    "supervisor_comment" => null,
-                    //"last_change_status_date" =>
-                    "team_direction" => 2,
-                    "report_period_id" => null,
-                    "sync_source_id" => 1,
-                    "sv_report_periods" => null,
-                ],
-                "requests_fields" => [
-                    [
-                        'request_id' => 1,
-                        'field_id' => 5,
-                        'value' => 1,
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 1,
+                            "type_id" => 1,
+                            "supervisor_id" => 6,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 2,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            //"created_at" =>
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Euromart. Источник №1",
+                            "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
+                            "attachments" => '[]',
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason_id" => null,
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            //"last_change_status_date" =>
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => 1,
+                            "sv_report_periods" => null,
+                        ]
+                    ],
+                    "requests_fields" => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 5,
+                            'value' => 1,
+                        ]
                     ]
                 ]
             ]
@@ -167,48 +175,52 @@ return [
                 "requests_fields" => 1
             ],
             'db' => [
-                "requests" => [
-                    "id" => 1,
-                    "author_id" => 1,
-                    "type_id" => 1,
-                    "supervisor_id" => 6,
-                    "manager_id" => null,
-                    "status" => 1,
-                    "direction" => 2,
-                    "priority" => null,
-                    "awaiting_correction" => 0,
-                    //"created_at" =>
-                    "correction_comment" => null,
-                    "amount_to_work" => 10,
-                    "subject" => "Euromart. Источник №1",
-                    "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
-                    "attachments" => '[]',
-                    "category_id" => null,
-                    "seller_id" => 83,
-                    "recommendations" => null,
-                    "reason_id" => null,
-                    "reason" => null,
-                    "parent_id" => null,
-                    "planned_start_date" => null,
-                    "planned_finish_date" => null,
-                    "actual_start_date" => null,
-                    "actual_finish_date" => null,
-                    "supervisor_process_date" => null,
-                    "supervisor_check_date" => null,
-                    "difficulty" => null,
-                    "result_comment" => null,
-                    "supervisor_comment" => null,
-                    //"last_change_status_date" =>
-                    "team_direction" => 2,
-                    "report_period_id" => null,
-                    "sync_source_id" => 1,
-                    "sv_report_periods" => null,
-                ],
-                "requests_fields" => [
-                    [
-                        'request_id' => 1,
-                        'field_id' => 17,
-                        'value' => 1,
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 1,
+                            "type_id" => 1,
+                            "supervisor_id" => 6,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 2,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            //"created_at" =>
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Euromart. Источник №1",
+                            "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
+                            "attachments" => '[]',
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason_id" => null,
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            //"last_change_status_date" =>
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => 1,
+                            "sv_report_periods" => null,
+                        ]
+                    ],
+                    "requests_fields" => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 17,
+                            'value' => 1,
+                        ]
                     ]
                 ]
             ]
@@ -242,53 +254,57 @@ return [
                 "requests_fields" => 2
             ],
             'db' => [
-                "requests" => [
-                    "id" => 1,
-                    "author_id" => 1,
-                    "type_id" => 1,
-                    "supervisor_id" => 6,
-                    "manager_id" => null,
-                    "status" => 1,
-                    "direction" => 2,
-                    "priority" => null,
-                    "awaiting_correction" => 0,
-                    //"created_at" =>
-                    "correction_comment" => null,
-                    "amount_to_work" => 10,
-                    "subject" => "Euromart. Источник №1",
-                    "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
-                    "attachments" => '[]',
-                    "category_id" => null,
-                    "seller_id" => 83,
-                    "recommendations" => null,
-                    "reason_id" => null,
-                    "reason" => null,
-                    "parent_id" => null,
-                    "planned_start_date" => null,
-                    "planned_finish_date" => null,
-                    "actual_start_date" => null,
-                    "actual_finish_date" => null,
-                    "supervisor_process_date" => null,
-                    "supervisor_check_date" => null,
-                    "difficulty" => null,
-                    "result_comment" => null,
-                    "supervisor_comment" => null,
-                    //"last_change_status_date" =>
-                    "team_direction" => 2,
-                    "report_period_id" => null,
-                    "sync_source_id" => 1,
-                    "sv_report_periods" => null,
-                ],
-                "requests_fields" => [
-                    [
-                        'request_id' => 1,
-                        'field_id' => 5,
-                        'value' => 1,
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 1,
+                            "type_id" => 1,
+                            "supervisor_id" => 6,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 2,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            //"created_at" =>
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Euromart. Источник №1",
+                            "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
+                            "attachments" => '[]',
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason_id" => null,
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            //"last_change_status_date" =>
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => 1,
+                            "sv_report_periods" => null,
+                        ]
                     ],
-                    [
-                        'request_id' => 1,
-                        'field_id' => 17,
-                        'value' => 1
+                    "requests_fields" => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 5,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 17,
+                            'value' => 1
+                        ]
                     ]
                 ]
             ]
@@ -320,44 +336,48 @@ return [
                 "requests_fields" => 0
             ],
             'db' => [
-                "requests" => [
-                    "id" => 1,
-                    "author_id" => 1,
-                    "type_id" => 2,
-                    "supervisor_id" => 6,
-                    "manager_id" => null,
-                    "status" => 1,
-                    "direction" => 2,
-                    "priority" => null,
-                    "awaiting_correction" => 0,
-                    //"created_at" =>
-                    "correction_comment" => null,
-                    "amount_to_work" => 10,
-                    "subject" => "Euromart. Источник №1",
-                    "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=2',
-                    "attachments" => '[]',
-                    "category_id" => null,
-                    "seller_id" => 83,
-                    "recommendations" => null,
-                    "reason_id" => null,
-                    "reason" => null,
-                    "parent_id" => null,
-                    "planned_start_date" => null,
-                    "planned_finish_date" => null,
-                    "actual_start_date" => null,
-                    "actual_finish_date" => null,
-                    "supervisor_process_date" => null,
-                    "supervisor_check_date" => null,
-                    "difficulty" => null,
-                    "result_comment" => null,
-                    "supervisor_comment" => null,
-                    //"last_change_status_date" =>
-                    "team_direction" => 2,
-                    "report_period_id" => null,
-                    "sync_source_id" => 1,
-                    "sv_report_periods" => null,
-                ],
-                "requests_fields" => []
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 1,
+                            "type_id" => 2,
+                            "supervisor_id" => 6,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 2,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            //"created_at" =>
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Euromart. Источник №1",
+                            "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=2',
+                            "attachments" => '[]',
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason_id" => null,
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            //"last_change_status_date" =>
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => 1,
+                            "sv_report_periods" => null,
+                        ]
+                    ],
+                    "requests_fields" => []
+                ]
             ]
         ]
     ],
@@ -387,44 +407,48 @@ return [
                 "requests_fields" => 0
             ],
             'db' => [
-                "requests" => [
-                    "id" => 1,
-                    "author_id" => 1,
-                    "type_id" => 3,
-                    "supervisor_id" => 6,
-                    "manager_id" => null,
-                    "status" => 1,
-                    "direction" => 2,
-                    "priority" => null,
-                    "awaiting_correction" => 0,
-                    //"created_at" =>
-                    "correction_comment" => null,
-                    "amount_to_work" => 10,
-                    "subject" => "Euromart. Источник №1",
-                    "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bchange_type%5D=sync_source_category_id',
-                    "attachments" => '[]',
-                    "category_id" => null,
-                    "seller_id" => 83,
-                    "recommendations" => null,
-                    "reason_id" => null,
-                    "reason" => null,
-                    "parent_id" => null,
-                    "planned_start_date" => null,
-                    "planned_finish_date" => null,
-                    "actual_start_date" => null,
-                    "actual_finish_date" => null,
-                    "supervisor_process_date" => null,
-                    "supervisor_check_date" => null,
-                    "difficulty" => null,
-                    "result_comment" => null,
-                    "supervisor_comment" => null,
-                    //"last_change_status_date" =>
-                    "team_direction" => 2,
-                    "report_period_id" => null,
-                    "sync_source_id" => 1,
-                    "sv_report_periods" => null,
-                ],
-                "requests_fields" => []
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 1,
+                            "type_id" => 3,
+                            "supervisor_id" => 6,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 2,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            //"created_at" =>
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Euromart. Источник №1",
+                            "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bchange_type%5D=sync_source_category_id',
+                            "attachments" => '[]',
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason_id" => null,
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            //"last_change_status_date" =>
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => 1,
+                            "sv_report_periods" => null,
+                        ]
+                    ],
+                    "requests_fields" => []
+                ]
             ]
         ]
     ],
@@ -454,44 +478,48 @@ return [
                 "requests_fields" => 0
             ],
             'db' => [
-                "requests" => [
-                    "id" => 1,
-                    "author_id" => 1,
-                    "type_id" => 6,
-                    "supervisor_id" => 6,
-                    "manager_id" => null,
-                    "status" => 1,
-                    "direction" => 2,
-                    "priority" => null,
-                    "awaiting_correction" => 0,
-                    //"created_at" =>
-                    "correction_comment" => null,
-                    "amount_to_work" => 10,
-                    "subject" => "Euromart. Источник №1",
-                    "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=9',
-                    "attachments" => '[]',
-                    "category_id" => null,
-                    "seller_id" => 83,
-                    "recommendations" => null,
-                    "reason_id" => null,
-                    "reason" => null,
-                    "parent_id" => null,
-                    "planned_start_date" => null,
-                    "planned_finish_date" => null,
-                    "actual_start_date" => null,
-                    "actual_finish_date" => null,
-                    "supervisor_process_date" => null,
-                    "supervisor_check_date" => null,
-                    "difficulty" => null,
-                    "result_comment" => null,
-                    "supervisor_comment" => null,
-                    //"last_change_status_date" =>
-                    "team_direction" => 2,
-                    "report_period_id" => null,
-                    "sync_source_id" => 1,
-                    "sv_report_periods" => null,
-                ],
-                "requests_fields" => []
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 1,
+                            "type_id" => 6,
+                            "supervisor_id" => 6,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 2,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            //"created_at" =>
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Euromart. Источник №1",
+                            "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=9',
+                            "attachments" => '[]',
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason_id" => null,
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            //"last_change_status_date" =>
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => 1,
+                            "sv_report_periods" => null,
+                        ]
+                    ],
+                    "requests_fields" => []
+                ]
             ]
         ]
     ],
@@ -519,8 +547,10 @@ return [
                 "requests_fields" => 0
             ],
             'db' => [
-                "requests" => [],
-                "requests_fields" => []
+                'lisa_fixtures' => [
+                    "requests" => [],
+                    "requests_fields" => []
+                ]
             ]
         ]
     ],
@@ -549,8 +579,10 @@ return [
                 "requests_fields" => 0
             ],
             'db' => [
-                "requests" => [],
-                "requests_fields" => []
+                'lisa_fixtures' => [
+                    "requests" => [],
+                    "requests_fields" => []
+                ]
             ]
         ]
     ],

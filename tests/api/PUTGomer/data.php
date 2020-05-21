@@ -19,9 +19,11 @@ return [
                 ]
             ],
             'db' => [
-                "requests" => [
-                    "amount_to_work" => 20,
-                ],
+                'lisa_fixtures' => [
+                    "requests" => [[
+                        "amount_to_work" => 20,
+                    ]],
+                ]
             ]
         ]
     ],
@@ -42,9 +44,11 @@ return [
                 ]
             ],
             'db' => [
-                "requests" => [
-                    "amount_to_work" => 10,
-                ],
+                'lisa_fixtures' => [
+                    "requests" => [[
+                        "amount_to_work" => 10,
+                    ]],
+                ]
             ]
         ],
     ],
@@ -67,9 +71,11 @@ return [
                 ]
             ],
             'db' => [
-                "requests" => [
-                    "amount_to_work" => 10,
-                ],
+                'lisa_fixtures' => [
+                    "requests" => [[
+                        "amount_to_work" => 10,
+                    ]],
+                ]
             ]
         ],
     ],
@@ -92,9 +98,11 @@ return [
                 ]
             ],
             'db' => [
-                "requests" => [
-                    "amount_to_work" => 10,
-                ],
+                'lisa_fixtures' => [
+                    "requests" => [[
+                        "amount_to_work" => 10,
+                    ]],
+                ]
             ]
         ]
     ]

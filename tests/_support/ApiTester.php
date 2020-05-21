@@ -3,8 +3,8 @@
 namespace lisa;
 
 use Codeception\Util\HttpCode;
+use Codeception\Example;
 use rzk\TestHelper;
-
 
 /**
  * Inherited Methods
@@ -25,39 +25,30 @@ class ApiTester extends \Codeception\Actor
 {
     use _generated\ApiTesterActions;
 
-    /**
-     * Define custom actions here
-     */
-
-    public function loadDataForTest(\Codeception\Example $data, TestHelper $testHelper)
+    public function loadDataForTest(Example $data, TestHelper $testHelper)
     {
         $I = $this;
+        $testHelper->clearDB($I, $data);
         $testHelper->loadFixtureAndMock($I, $data);
         $I->wantTo($data['setting']['description']);
     }
 
-    public function validateGETResponse(\Codeception\Example $data)
+    public function checkTablesInDB($dbTablesArray)
     {
         $I = $this;
-        $providerData = $data['provider_data'];
-        $I->seeResponseCodeIs(HttpCode::OK);
-        $I->canSeeResponseIsValidOnSchemaFile($providerData['json_structure']);
-        $I->seeResponseContainsJson($providerData['response_fields']);
-    }
 
-    public function validateInDB(string $DBName, string $table, $checkValuesRecords)
-    {
-        $I = $this;
-        $I->amConnectedToDatabase($DBName);
-        $I->seeInDatabase($table, $checkValuesRecords);
-    }
+        foreach ($dbTablesArray as $dbName => $dbData) {
+            $I->amConnectedToDatabase($dbName);
 
-    public function validateRequestsFieldsInDB($checkValuesRecords)
-    {
-        $I = $this;
-        foreach ($checkValuesRecords as $key => $value) {
-            $I->validateInDB('lisa_fixtures', 'requests_fields', $value);
+            foreach ($dbData as $tableName => $tableData) {
+
+                $expectedNumber = count($tableData);
+                $I->canSeeNumRecords($expectedNumber, $tableName);
+
+                foreach ($tableData as $tableRow) {
+                    $I->canSeeInDatabase($tableName, $tableRow);
+                }
+            }
         }
     }
 }
-
