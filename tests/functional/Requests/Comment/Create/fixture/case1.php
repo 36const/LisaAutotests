@@ -105,6 +105,16 @@ return [
         ],
         "request_comments" => [],
         'notification_settings' => [],
+        'observers' => [
+            [
+                "request_id" => 1,
+                "user_id" => 15
+            ],
+            [
+                "request_id" => 1,
+                "user_id" => 17
+            ]
+        ],
         "user_notifications" => [],
         "request_status_history" => []
     ],
