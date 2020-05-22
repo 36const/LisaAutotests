@@ -542,10 +542,6 @@ return [
                     "Не передано поле items_count"
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [],
@@ -573,10 +569,6 @@ return [
                 "errors" => [
                     "передан несуществующий продавец"
                 ]
-            ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
             ],
             'db' => [
                 'lisa_fixtures' => [

@@ -241,10 +241,6 @@ Media:
                     "Не передано поле idComment",
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [],
@@ -282,10 +278,6 @@ Media:
                     "idComment: поле должно быть числом"
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [],
@@ -297,12 +289,12 @@ Media:
 
     'case5' => [
         'setting' => [
-            'description' => 'Заявка модерации с без названия товара',
+            'description' => 'Заявка модерации без названия товара',
         ],
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-client-comment',
             'requestBody' => [
-                "idComment" => 'qwer',
+                "idComment" => '1',
                 "sVisitorName" => "Михаил Михаил",
                 "sVisitorEmail" => "fishman@rozetka.com.ua",
                 "sVisitorMobilePhone" => "380993774442; 380660657036;",
@@ -322,10 +314,6 @@ Media:
                 "errors" => [
                     "Не передано поле sProductName"
                 ]
-            ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -363,10 +351,6 @@ Media:
                 "errors" => [
                     "Не передано поле sProductName"
                 ]
-            ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
             ],
             'db' => [
                 'lisa_fixtures' => [
