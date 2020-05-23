@@ -918,12 +918,12 @@ return [
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 154,
+                            "id" => 153,
                             "user_id" => 4,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 164,
+                            "id" => 163,
                             "user_id" => 4,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
@@ -2038,12 +2038,12 @@ return [
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 155,
+                            "id" => 154,
                             "user_id" => 4,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 164,
+                            "id" => 163,
                             "user_id" => 4,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
@@ -2343,6 +2343,7 @@ return [
                 'UserBpm[userPermissions][sellerUpdate]' => '0',
                 'UserBpm[userPermissions][sellerUpdate]' => '1',
                 'UserBpm[userPermissions][takeToWork]' => '0',
+                'UserBpm[userPermissions][takeToWork]' => '1',
                 'UserBpm[userPermissions][teamUpdate]' => '0',
                 'UserBpm[userPermissions][teamUpdate]' => '1',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '0',
@@ -2448,1025 +2449,1030 @@ return [
                     ],
                     "user_permissions" => [
                         [
-                            "id" => 1,
+                            //"id" => 1,
                             "user_id" => 1,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 2,
+                            //"id" => 3,
                             "user_id" => 1,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 3,
+                            //"id" => 5,
                             "user_id" => 1,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 4,
+                            //"id" => 7,
                             "user_id" => 1,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 5,
+                            //"id" => 9,
                             "user_id" => 1,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 6,
+                            //"id" => 11,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 7,
+                            //"id" => 13,
                             "user_id" => 1,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 8,
+                            //"id" => 15,
                             "user_id" => 1,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 9,
+                            //"id" => 17,
                             "user_id" => 1,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 10,
+                            //"id" => 19,
                             "user_id" => 1,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 11,
+                            //"id" => 21,
                             "user_id" => 1,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 12,
+                            //"id" => 23,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 13,
+                            //"id" => 25,
                             "user_id" => 1,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 14,
+                            //"id" => 27,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 15,
+                            //"id" => 29,
                             "user_id" => 1,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 16,
+                            //"id" => 31,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 17,
+                            //"id" => 33,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 18,
+                            //"id" => 35,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 19,
+                            //"id" => 37,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 20,
+                            //"id" => 39,
                             "user_id" => 1,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 21,
+                            //"id" => 41,
                             "user_id" => 1,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 22,
+                            //"id" => 43,
                             "user_id" => 1,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 23,
+                            //"id" => 45,
                             "user_id" => 1,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 24,
+                            //"id" => 47,
                             "user_id" => 1,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 25,
+                            //"id" => 49,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 26,
+                            //"id" => 51,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 27,
+                            //"id" => 53,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 28,
+                            //"id" => 55,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 29,
+                            //"id" => 57,
                             "user_id" => 1,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 30,
+                            //"id" => 59,
                             "user_id" => 1,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 31,
+                            //"id" => 61,
                             "user_id" => 1,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 32,
+                            //"id" => 63,
                             "user_id" => 1,
                             "permission_name" => "requestAppointManager"
                         ],
                         [
-                            "id" => 33,
+                            //"id" => 65,
                             "user_id" => 1,
                             "permission_name" => "requestAppointSupervisor"
                         ],
                         [
-                            "id" => 34,
+                            //"id" => 67,
                             "user_id" => 1,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 35,
+                            //"id" => 69,
                             "user_id" => 1,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 36,
+                            //"id" => 71,
                             "user_id" => 1,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 37,
+                            //"id" => 75,
                             "user_id" => 1,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 38,
+                            //"id" => 77,
                             "user_id" => 1,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 39,
+                            //"id" => 79,
                             "user_id" => 1,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 40,
+                            //"id" => 83,
                             "user_id" => 1,
                             "permission_name" => "requestDeleteAttachments"
                         ],
                         [
-                            "id" => 41,
+                            //"id" => 929,
                             "user_id" => 1,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 42,
+                            //"id" => 938,
                             "user_id" => 1,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 43,
+                            //"id" => 991,
                             "user_id" => 1,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 44,
+                            //"id" => 994,
                             "user_id" => 1,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 45,
+                            //"id" => 997,
                             "user_id" => 1,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 46,
+                            //"id" => 1000,
                             "user_id" => 1,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 47,
+                            //"id" => 1003,
                             "user_id" => 1,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 48,
+                            //"id" => 1006,
                             "user_id" => 1,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 49,
+                            //"id" => 1009,
                             "user_id" => 1,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 50,
+                            //"id" => 1100,
                             "user_id" => 1,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 51,
+                            //"id" => 2220,
                             "user_id" => 1,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 52,
+                            //"id" => 2325,
                             "user_id" => 1,
                             "permission_name" => "takeToWork"
                         ],
                         [
-                            "id" => 53,
+                            //"id" => 2,
                             "user_id" => 2,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 54,
+                            //"id" => 4,
                             "user_id" => 2,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 55,
+                            //"id" => 6,
                             "user_id" => 2,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 56,
+                            //"id" => 8,
                             "user_id" => 2,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 57,
+                            //"id" => 10,
                             "user_id" => 2,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 58,
+                            //"id" => 12,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 59,
+                            //"id" => 14,
                             "user_id" => 2,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 60,
+                            //"id" => 16,
                             "user_id" => 2,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 61,
+                            //"id" => 18,
                             "user_id" => 2,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 62,
+                            //"id" => 20,
                             "user_id" => 2,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 63,
+                            //"id" => 22,
                             "user_id" => 2,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 64,
+                            //"id" => 24,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 65,
+                            //"id" => 26,
                             "user_id" => 2,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 66,
+                            //"id" => 28,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 67,
+                            //"id" => 30,
                             "user_id" => 2,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 68,
+                            //"id" => 32,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 69,
+                            //"id" => 34,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 70,
+                            //"id" => 36,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 71,
+                            //"id" => 38,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 72,
+                            //"id" => 40,
                             "user_id" => 2,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 73,
+                            //"id" => 42,
                             "user_id" => 2,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 74,
+                            //"id" => 44,
                             "user_id" => 2,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 75,
+                            //"id" => 46,
                             "user_id" => 2,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 76,
+                            //"id" => 48,
                             "user_id" => 2,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 77,
+                            //"id" => 50,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 78,
+                            //"id" => 52,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 79,
+                            //"id" => 54,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 80,
+                            //"id" => 56,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 81,
+                            //"id" => 58,
                             "user_id" => 2,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 82,
+                            //"id" => 60,
                             "user_id" => 2,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 83,
+                            //"id" => 62,
                             "user_id" => 2,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 84,
+                            //"id" => 64,
                             "user_id" => 2,
                             "permission_name" => "requestAppointManager"
                         ],
                         [
-                            "id" => 85,
+                            //"id" => 66,
                             "user_id" => 2,
                             "permission_name" => "requestAppointSupervisor"
                         ],
                         [
-                            "id" => 86,
+                            //"id" => 68,
                             "user_id" => 2,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 87,
+                            //"id" => 70,
                             "user_id" => 2,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 88,
+                            //"id" => 72,
                             "user_id" => 2,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 89,
+                            //"id" => 73,
                             "user_id" => 2,
                             "permission_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 90,
+                            //"id" => 74,
                             "user_id" => 2,
                             "permission_name" => "requestViewDirectionRequests"
                         ],
                         [
-                            "id" => 91,
+                            //"id" => 76,
                             "user_id" => 2,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 92,
+                            //"id" => 78,
                             "user_id" => 2,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 93,
+                            //"id" => 80,
                             "user_id" => 2,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 94,
+                            //"id" => 81,
                             "user_id" => 2,
                             "permission_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 95,
+                            //"id" => 82,
                             "user_id" => 2,
                             "permission_name" => "requestDeleteAttachments"
                         ],
                         [
-                            "id" => 96,
+                            //"id" => 927,
                             "user_id" => 2,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 97,
+                            //"id" => 931,
                             "user_id" => 2,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 98,
+                            //"id" => 934,
                             "user_id" => 2,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 99,
+                            //"id" => 936,
                             "user_id" => 2,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 100,
+                            //"id" => 940,
                             "user_id" => 2,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 101,
+                            //"id" => 960,
                             "user_id" => 2,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 102,
+                            //"id" => 989,
                             "user_id" => 2,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 103,
+                            //"id" => 992,
                             "user_id" => 2,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 104,
+                            //"id" => 995,
                             "user_id" => 2,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 105,
+                            //"id" => 998,
                             "user_id" => 2,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 106,
+                            //"id" => 1001,
                             "user_id" => 2,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 107,
+                            //"id" => 1004,
                             "user_id" => 2,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 108,
+                            //"id" => 1007,
                             "user_id" => 2,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 109,
+                            //"id" => 1098,
                             "user_id" => 2,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 110,
+                            //"id" => 2222,
                             "user_id" => 2,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 111,
+                            //"id" => 2327,
                             "user_id" => 2,
                             "permission_name" => "takeToWork"
                         ],
                         [
-                            "id" => 112,
+                            //"id" => 1333,
                             "user_id" => 4,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 113,
+                            //"id" => 1334,
                             "user_id" => 4,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 114,
+                            //"id" => 1335,
                             "user_id" => 4,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 115,
+                            //"id" => 1336,
                             "user_id" => 4,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 116,
+                            //"id" => 1337,
                             "user_id" => 4,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 117,
+                            //"id" => 1338,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 118,
+                            //"id" => 1339,
                             "user_id" => 4,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 119,
+                            //"id" => 1340,
                             "user_id" => 4,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 120,
+                            //"id" => 1341,
                             "user_id" => 4,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 121,
+                            //"id" => 1342,
                             "user_id" => 4,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 122,
+                            //"id" => 1343,
                             "user_id" => 4,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 123,
+                            //"id" => 1344,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 124,
+                            //"id" => 1345,
                             "user_id" => 4,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 125,
+                            //"id" => 1346,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 126,
+                            //"id" => 1347,
                             "user_id" => 4,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 127,
+                            //"id" => 1348,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 128,
+                            //"id" => 1349,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 129,
+                            //"id" => 1350,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 130,
+                            //"id" => 1351,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 131,
+                            //"id" => 1352,
                             "user_id" => 4,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 132,
+                            //"id" => 1353,
                             "user_id" => 4,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 133,
+                            //"id" => 1354,
                             "user_id" => 4,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 134,
+                            //"id" => 1355,
                             "user_id" => 4,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 135,
+                            //"id" => 1356,
                             "user_id" => 4,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 136,
+                            //"id" => 1357,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 137,
+                            //"id" => 1358,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 138,
+                            //"id" => 1359,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 139,
+                            //"id" => 1360,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 140,
+                            //"id" => 1361,
                             "user_id" => 4,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 141,
+                            //"id" => 1362,
                             "user_id" => 4,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 142,
+                            //"id" => 1363,
                             "user_id" => 4,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 143,
+                            //"id" => 1364,
                             "user_id" => 4,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 144,
+                            //"id" => 1365,
                             "user_id" => 4,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 145,
+                            //"id" => 1366,
                             "user_id" => 4,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 146,
+                            //"id" => 1367,
                             "user_id" => 4,
                             "permission_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 147,
+                            //"id" => 1368,
                             "user_id" => 4,
                             "permission_name" => "requestViewDirectionRequests"
                         ],
                         [
-                            "id" => 148,
+                            //"id" => 1369,
                             "user_id" => 4,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 149,
+                            //"id" => 1370,
                             "user_id" => 4,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 150,
+                            //"id" => 1371,
                             "user_id" => 4,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 151,
+                            //"id" => 1372,
                             "user_id" => 4,
                             "permission_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 152,
-                            "user_id" => 4,
-                            "permission_name" => "requestDeleteAttachments"
-                        ],
-                        [
-                            "id" => 153,
+                            //"id" => 1374,
                             "user_id" => 4,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 154,
+                            //"id" => 1375,
                             "user_id" => 4,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 155,
+                            //"id" => 1376,
                             "user_id" => 4,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 156,
+                            //"id" => 1377,
                             "user_id" => 4,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 157,
+                            //"id" => 1378,
                             "user_id" => 4,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 158,
+                            //"id" => 1379,
                             "user_id" => 4,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 159,
+                            //"id" => 1380,
                             "user_id" => 4,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 160,
+                            //"id" => 1381,
                             "user_id" => 4,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 161,
+                            //"id" => 1382,
                             "user_id" => 4,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 162,
+                            //"id" => 1383,
                             "user_id" => 4,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 163,
+                            //"id" => 1384,
                             "user_id" => 4,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 164,
+                            //"id" => 2223,
                             "user_id" => 4,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 166,
+                            //"id" => 2272,
+                            "user_id" => 4,
+                            "permission_name" => "requestDeleteAttachments"
+                        ],
+                        [
+                            //"id" => 2328,
+                            "user_id" => 4,
+                            "permission_name" => "takeToWork"
+                        ],
+                        [
+                            //"id" => 1386,
                             "user_id" => 5,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 167,
+                            //"id" => 1387,
                             "user_id" => 5,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 168,
+                            //"id" => 1388,
                             "user_id" => 5,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 169,
+                            //"id" => 1389,
                             "user_id" => 5,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 170,
+                            //"id" => 1390,
                             "user_id" => 5,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 171,
+                            //"id" => 1391,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 172,
+                            //"id" => 1392,
                             "user_id" => 5,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 173,
+                            //"id" => 1393,
                             "user_id" => 5,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 174,
+                            //"id" => 1394,
                             "user_id" => 5,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 175,
+                            //"id" => 1395,
                             "user_id" => 5,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 176,
+                            //"id" => 1396,
                             "user_id" => 5,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 177,
+                            //"id" => 1397,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 178,
+                            //"id" => 1398,
                             "user_id" => 5,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 179,
+                            //"id" => 1399,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 180,
+                            //"id" => 1400,
                             "user_id" => 5,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 181,
+                            //"id" => 1401,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 182,
+                            //"id" => 1402,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 183,
+                            //"id" => 1403,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 184,
+                            //"id" => 1404,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 185,
+                            //"id" => 1405,
                             "user_id" => 5,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 186,
+                            //"id" => 1406,
                             "user_id" => 5,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 187,
+                            //"id" => 1407,
                             "user_id" => 5,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 188,
+                            //"id" => 1408,
                             "user_id" => 5,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 189,
+                            //"id" => 1409,
                             "user_id" => 5,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 190,
+                            //"id" => 1410,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 191,
+                            //"id" => 1411,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 192,
+                            //"id" => 1412,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 193,
+                            //"id" => 1413,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 194,
+                            //"id" => 1414,
                             "user_id" => 5,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 195,
+                            //"id" => 1415,
                             "user_id" => 5,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 196,
+                            //"id" => 1416,
                             "user_id" => 5,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 197,
+                            //"id" => 1417,
                             "user_id" => 5,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 198,
+                            //"id" => 1418,
                             "user_id" => 5,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 199,
+                            //"id" => 1419,
                             "user_id" => 5,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 200,
+                            //"id" => 1420,
                             "user_id" => 5,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 201,
+                            //"id" => 1421,
                             "user_id" => 5,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 202,
+                            //"id" => 1422,
                             "user_id" => 5,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 203,
+                            //"id" => 1423,
                             "user_id" => 5,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 204,
+                            //"id" => 2224,
                             "user_id" => 5,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 205,
+                            //"id" => 2329,
                             "user_id" => 5,
                             "permission_name" => "takeToWork"
-                        ]
+                        ],
                     ]
                 ],
             ]
@@ -3558,6 +3564,7 @@ return [
                 'UserBpm[userPermissions][sellerUpdate]' => '0',
                 'UserBpm[userPermissions][sellerUpdate]' => '1',
                 'UserBpm[userPermissions][takeToWork]' => '0',
+                'UserBpm[userPermissions][takeToWork]' => '1',
                 'UserBpm[userPermissions][teamUpdate]' => '0',
                 'UserBpm[userPermissions][teamUpdate]' => '1',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '0',
@@ -3663,1025 +3670,1030 @@ return [
                     ],
                     "user_permissions" => [
                         [
-                            "id" => 1,
+                            //"id" => 1,
                             "user_id" => 1,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 2,
+                            //"id" => 3,
                             "user_id" => 1,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 3,
+                            //"id" => 5,
                             "user_id" => 1,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 4,
+                            //"id" => 7,
                             "user_id" => 1,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 5,
+                            //"id" => 9,
                             "user_id" => 1,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 6,
+                            //"id" => 11,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 7,
+                            //"id" => 13,
                             "user_id" => 1,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 8,
+                            //"id" => 15,
                             "user_id" => 1,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 9,
+                            //"id" => 17,
                             "user_id" => 1,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 10,
+                            //"id" => 19,
                             "user_id" => 1,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 11,
+                            //"id" => 21,
                             "user_id" => 1,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 12,
+                            //"id" => 23,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 13,
+                            //"id" => 25,
                             "user_id" => 1,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 14,
+                            //"id" => 27,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 15,
+                            //"id" => 29,
                             "user_id" => 1,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 16,
+                            //"id" => 31,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 17,
+                            //"id" => 33,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 18,
+                            //"id" => 35,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 19,
+                            //"id" => 37,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 20,
+                            //"id" => 39,
                             "user_id" => 1,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 21,
+                            //"id" => 41,
                             "user_id" => 1,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 22,
+                            //"id" => 43,
                             "user_id" => 1,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 23,
+                            //"id" => 45,
                             "user_id" => 1,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 24,
+                            //"id" => 47,
                             "user_id" => 1,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 25,
+                            //"id" => 49,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 26,
+                            //"id" => 51,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 27,
+                            //"id" => 53,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 28,
+                            //"id" => 55,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 29,
+                            //"id" => 57,
                             "user_id" => 1,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 30,
+                            //"id" => 59,
                             "user_id" => 1,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 31,
+                            //"id" => 61,
                             "user_id" => 1,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 32,
+                            //"id" => 63,
                             "user_id" => 1,
                             "permission_name" => "requestAppointManager"
                         ],
                         [
-                            "id" => 33,
+                            //"id" => 65,
                             "user_id" => 1,
                             "permission_name" => "requestAppointSupervisor"
                         ],
                         [
-                            "id" => 34,
+                            //"id" => 67,
                             "user_id" => 1,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 35,
+                            //"id" => 69,
                             "user_id" => 1,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 36,
+                            //"id" => 71,
                             "user_id" => 1,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 37,
+                            //"id" => 75,
                             "user_id" => 1,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 38,
+                            //"id" => 77,
                             "user_id" => 1,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 39,
+                            //"id" => 79,
                             "user_id" => 1,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 40,
+                            //"id" => 83,
                             "user_id" => 1,
                             "permission_name" => "requestDeleteAttachments"
                         ],
                         [
-                            "id" => 41,
+                            //"id" => 929,
                             "user_id" => 1,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 42,
+                            //"id" => 938,
                             "user_id" => 1,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 43,
+                            //"id" => 991,
                             "user_id" => 1,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 44,
+                            //"id" => 994,
                             "user_id" => 1,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 45,
+                            //"id" => 997,
                             "user_id" => 1,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 46,
+                            //"id" => 1000,
                             "user_id" => 1,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 47,
+                            //"id" => 1003,
                             "user_id" => 1,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 48,
+                            //"id" => 1006,
                             "user_id" => 1,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 49,
+                            //"id" => 1009,
                             "user_id" => 1,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 50,
+                            //"id" => 1100,
                             "user_id" => 1,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 51,
+                            //"id" => 2220,
                             "user_id" => 1,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 52,
+                            //"id" => 2325,
                             "user_id" => 1,
                             "permission_name" => "takeToWork"
                         ],
                         [
-                            "id" => 53,
+                            //"id" => 2,
                             "user_id" => 2,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 54,
+                            //"id" => 4,
                             "user_id" => 2,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 55,
+                            //"id" => 6,
                             "user_id" => 2,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 56,
+                            //"id" => 8,
                             "user_id" => 2,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 57,
+                            //"id" => 10,
                             "user_id" => 2,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 58,
+                            //"id" => 12,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 59,
+                            //"id" => 14,
                             "user_id" => 2,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 60,
+                            //"id" => 16,
                             "user_id" => 2,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 61,
+                            //"id" => 18,
                             "user_id" => 2,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 62,
+                            //"id" => 20,
                             "user_id" => 2,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 63,
+                            //"id" => 22,
                             "user_id" => 2,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 64,
+                            //"id" => 24,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 65,
+                            //"id" => 26,
                             "user_id" => 2,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 66,
+                            //"id" => 28,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 67,
+                            //"id" => 30,
                             "user_id" => 2,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 68,
+                            //"id" => 32,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 69,
+                            //"id" => 34,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 70,
+                            //"id" => 36,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 71,
+                            //"id" => 38,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 72,
+                            //"id" => 40,
                             "user_id" => 2,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 73,
+                            //"id" => 42,
                             "user_id" => 2,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 74,
+                            //"id" => 44,
                             "user_id" => 2,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 75,
+                            //"id" => 46,
                             "user_id" => 2,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 76,
+                            //"id" => 48,
                             "user_id" => 2,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 77,
+                            //"id" => 50,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 78,
+                            //"id" => 52,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 79,
+                            //"id" => 54,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 80,
+                            //"id" => 56,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 81,
+                            //"id" => 58,
                             "user_id" => 2,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 82,
+                            //"id" => 60,
                             "user_id" => 2,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 83,
+                            //"id" => 62,
                             "user_id" => 2,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 84,
+                            //"id" => 64,
                             "user_id" => 2,
                             "permission_name" => "requestAppointManager"
                         ],
                         [
-                            "id" => 85,
+                            //"id" => 66,
                             "user_id" => 2,
                             "permission_name" => "requestAppointSupervisor"
                         ],
                         [
-                            "id" => 86,
+                            //"id" => 68,
                             "user_id" => 2,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 87,
+                            //"id" => 70,
                             "user_id" => 2,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 88,
+                            //"id" => 72,
                             "user_id" => 2,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 89,
+                            //"id" => 73,
                             "user_id" => 2,
                             "permission_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 90,
+                            //"id" => 74,
                             "user_id" => 2,
                             "permission_name" => "requestViewDirectionRequests"
                         ],
                         [
-                            "id" => 91,
+                            //"id" => 76,
                             "user_id" => 2,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 92,
+                            //"id" => 78,
                             "user_id" => 2,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 93,
+                            //"id" => 80,
                             "user_id" => 2,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 94,
+                            //"id" => 81,
                             "user_id" => 2,
                             "permission_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 95,
+                            //"id" => 82,
                             "user_id" => 2,
                             "permission_name" => "requestDeleteAttachments"
                         ],
                         [
-                            "id" => 96,
+                            //"id" => 927,
                             "user_id" => 2,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 97,
+                            //"id" => 931,
                             "user_id" => 2,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 98,
+                            //"id" => 934,
                             "user_id" => 2,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 99,
+                            //"id" => 936,
                             "user_id" => 2,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 100,
+                            //"id" => 940,
                             "user_id" => 2,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 101,
+                            //"id" => 960,
                             "user_id" => 2,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 102,
+                            //"id" => 989,
                             "user_id" => 2,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 103,
+                            //"id" => 992,
                             "user_id" => 2,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 104,
+                            //"id" => 995,
                             "user_id" => 2,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 105,
+                            //"id" => 998,
                             "user_id" => 2,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 106,
+                            //"id" => 1001,
                             "user_id" => 2,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 107,
+                            //"id" => 1004,
                             "user_id" => 2,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 108,
+                            //"id" => 1007,
                             "user_id" => 2,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 109,
+                            //"id" => 1098,
                             "user_id" => 2,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 110,
+                            //"id" => 2222,
                             "user_id" => 2,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 111,
+                            //"id" => 2327,
                             "user_id" => 2,
                             "permission_name" => "takeToWork"
                         ],
                         [
-                            "id" => 112,
+                            //"id" => 1333,
                             "user_id" => 4,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 113,
+                            //"id" => 1334,
                             "user_id" => 4,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 114,
+                            //"id" => 1335,
                             "user_id" => 4,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 115,
+                            //"id" => 1336,
                             "user_id" => 4,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 116,
+                            //"id" => 1337,
                             "user_id" => 4,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 117,
+                            //"id" => 1338,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 118,
+                            //"id" => 1339,
                             "user_id" => 4,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 119,
+                            //"id" => 1340,
                             "user_id" => 4,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 120,
+                            //"id" => 1341,
                             "user_id" => 4,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 121,
+                            //"id" => 1342,
                             "user_id" => 4,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 122,
+                            //"id" => 1343,
                             "user_id" => 4,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 123,
+                            //"id" => 1344,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 124,
+                            //"id" => 1345,
                             "user_id" => 4,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 125,
+                            //"id" => 1346,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 126,
+                            //"id" => 1347,
                             "user_id" => 4,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 127,
+                            //"id" => 1348,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 128,
+                            //"id" => 1349,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 129,
+                            //"id" => 1350,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 130,
+                            //"id" => 1351,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 131,
+                            //"id" => 1352,
                             "user_id" => 4,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 132,
+                            //"id" => 1353,
                             "user_id" => 4,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 133,
+                            //"id" => 1354,
                             "user_id" => 4,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 134,
+                            //"id" => 1355,
                             "user_id" => 4,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 135,
+                            //"id" => 1356,
                             "user_id" => 4,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 136,
+                            //"id" => 1357,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 137,
+                            //"id" => 1358,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 138,
+                            //"id" => 1359,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 139,
+                            //"id" => 1360,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 140,
+                            //"id" => 1361,
                             "user_id" => 4,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 141,
+                            //"id" => 1362,
                             "user_id" => 4,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 142,
+                            //"id" => 1363,
                             "user_id" => 4,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 143,
+                            //"id" => 1364,
                             "user_id" => 4,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 144,
+                            //"id" => 1365,
                             "user_id" => 4,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 145,
+                            //"id" => 1366,
                             "user_id" => 4,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 146,
+                            //"id" => 1367,
                             "user_id" => 4,
                             "permission_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 147,
+                            //"id" => 1368,
                             "user_id" => 4,
                             "permission_name" => "requestViewDirectionRequests"
                         ],
                         [
-                            "id" => 148,
+                            //"id" => 1369,
                             "user_id" => 4,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 149,
+                            //"id" => 1370,
                             "user_id" => 4,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 150,
+                            //"id" => 1371,
                             "user_id" => 4,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 151,
+                            //"id" => 1372,
                             "user_id" => 4,
                             "permission_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 152,
-                            "user_id" => 4,
-                            "permission_name" => "requestDeleteAttachments"
-                        ],
-                        [
-                            "id" => 153,
+                            //"id" => 1374,
                             "user_id" => 4,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 154,
+                            //"id" => 1375,
                             "user_id" => 4,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 155,
+                            //"id" => 1376,
                             "user_id" => 4,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 156,
+                            //"id" => 1377,
                             "user_id" => 4,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 157,
+                            //"id" => 1378,
                             "user_id" => 4,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 158,
+                            //"id" => 1379,
                             "user_id" => 4,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 159,
+                            //"id" => 1380,
                             "user_id" => 4,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 160,
+                            //"id" => 1381,
                             "user_id" => 4,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 161,
+                            //"id" => 1382,
                             "user_id" => 4,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 162,
+                            //"id" => 1383,
                             "user_id" => 4,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 163,
+                            //"id" => 1384,
                             "user_id" => 4,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 164,
+                            //"id" => 2223,
                             "user_id" => 4,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 166,
+                            //"id" => 2272,
+                            "user_id" => 4,
+                            "permission_name" => "requestDeleteAttachments"
+                        ],
+                        [
+                            //"id" => 2328,
+                            "user_id" => 4,
+                            "permission_name" => "takeToWork"
+                        ],
+                        [
+                            //"id" => 1386,
                             "user_id" => 5,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 167,
+                            //"id" => 1387,
                             "user_id" => 5,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 168,
+                            //"id" => 1388,
                             "user_id" => 5,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 169,
+                            //"id" => 1389,
                             "user_id" => 5,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 170,
+                            //"id" => 1390,
                             "user_id" => 5,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 171,
+                            //"id" => 1391,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 172,
+                            //"id" => 1392,
                             "user_id" => 5,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 173,
+                            //"id" => 1393,
                             "user_id" => 5,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 174,
+                            //"id" => 1394,
                             "user_id" => 5,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 175,
+                            //"id" => 1395,
                             "user_id" => 5,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 176,
+                            //"id" => 1396,
                             "user_id" => 5,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 177,
+                            //"id" => 1397,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 178,
+                            //"id" => 1398,
                             "user_id" => 5,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 179,
+                            //"id" => 1399,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 180,
+                            //"id" => 1400,
                             "user_id" => 5,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 181,
+                            //"id" => 1401,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 182,
+                            //"id" => 1402,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 183,
+                            //"id" => 1403,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 184,
+                            //"id" => 1404,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 185,
+                            //"id" => 1405,
                             "user_id" => 5,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 186,
+                            //"id" => 1406,
                             "user_id" => 5,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 187,
+                            //"id" => 1407,
                             "user_id" => 5,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 188,
+                            //"id" => 1408,
                             "user_id" => 5,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 189,
+                            //"id" => 1409,
                             "user_id" => 5,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 190,
+                            //"id" => 1410,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 191,
+                            //"id" => 1411,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 192,
+                            //"id" => 1412,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 193,
+                            //"id" => 1413,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 194,
+                            //"id" => 1414,
                             "user_id" => 5,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 195,
+                            //"id" => 1415,
                             "user_id" => 5,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 196,
+                            //"id" => 1416,
                             "user_id" => 5,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 197,
+                            //"id" => 1417,
                             "user_id" => 5,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 198,
+                            //"id" => 1418,
                             "user_id" => 5,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 199,
+                            //"id" => 1419,
                             "user_id" => 5,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 200,
+                            //"id" => 1420,
                             "user_id" => 5,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 201,
+                            //"id" => 1421,
                             "user_id" => 5,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 202,
+                            //"id" => 1422,
                             "user_id" => 5,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 203,
+                            //"id" => 1423,
                             "user_id" => 5,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 204,
+                            //"id" => 2224,
                             "user_id" => 5,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 205,
+                            //"id" => 2329,
                             "user_id" => 5,
                             "permission_name" => "takeToWork"
-                        ]
+                        ],
                     ]
                 ],
             ]
@@ -4774,6 +4786,7 @@ return [
                 'UserBpm[userPermissions][sellerUpdate]' => '0',
                 'UserBpm[userPermissions][sellerUpdate]' => '1',
                 'UserBpm[userPermissions][takeToWork]' => '0',
+                'UserBpm[userPermissions][takeToWork]' => '1',
                 'UserBpm[userPermissions][teamUpdate]' => '0',
                 'UserBpm[userPermissions][teamUpdate]' => '1',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '0',
@@ -4879,1025 +4892,1030 @@ return [
                     ],
                     "user_permissions" => [
                         [
-                            "id" => 1,
+                            //"id" => 1,
                             "user_id" => 1,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 2,
+                            //"id" => 3,
                             "user_id" => 1,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 3,
+                            //"id" => 5,
                             "user_id" => 1,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 4,
+                            //"id" => 7,
                             "user_id" => 1,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 5,
+                            //"id" => 9,
                             "user_id" => 1,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 6,
+                            //"id" => 11,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 7,
+                            //"id" => 13,
                             "user_id" => 1,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 8,
+                            //"id" => 15,
                             "user_id" => 1,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 9,
+                            //"id" => 17,
                             "user_id" => 1,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 10,
+                            //"id" => 19,
                             "user_id" => 1,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 11,
+                            //"id" => 21,
                             "user_id" => 1,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 12,
+                            //"id" => 23,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 13,
+                            //"id" => 25,
                             "user_id" => 1,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 14,
+                            //"id" => 27,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 15,
+                            //"id" => 29,
                             "user_id" => 1,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 16,
+                            //"id" => 31,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 17,
+                            //"id" => 33,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 18,
+                            //"id" => 35,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 19,
+                            //"id" => 37,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 20,
+                            //"id" => 39,
                             "user_id" => 1,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 21,
+                            //"id" => 41,
                             "user_id" => 1,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 22,
+                            //"id" => 43,
                             "user_id" => 1,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 23,
+                            //"id" => 45,
                             "user_id" => 1,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 24,
+                            //"id" => 47,
                             "user_id" => 1,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 25,
+                            //"id" => 49,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 26,
+                            //"id" => 51,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 27,
+                            //"id" => 53,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 28,
+                            //"id" => 55,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 29,
+                            //"id" => 57,
                             "user_id" => 1,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 30,
+                            //"id" => 59,
                             "user_id" => 1,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 31,
+                            //"id" => 61,
                             "user_id" => 1,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 32,
+                            //"id" => 63,
                             "user_id" => 1,
                             "permission_name" => "requestAppointManager"
                         ],
                         [
-                            "id" => 33,
+                            //"id" => 65,
                             "user_id" => 1,
                             "permission_name" => "requestAppointSupervisor"
                         ],
                         [
-                            "id" => 34,
+                            //"id" => 67,
                             "user_id" => 1,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 35,
+                            //"id" => 69,
                             "user_id" => 1,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 36,
+                            //"id" => 71,
                             "user_id" => 1,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 37,
+                            //"id" => 75,
                             "user_id" => 1,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 38,
+                            //"id" => 77,
                             "user_id" => 1,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 39,
+                            //"id" => 79,
                             "user_id" => 1,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 40,
+                            //"id" => 83,
                             "user_id" => 1,
                             "permission_name" => "requestDeleteAttachments"
                         ],
                         [
-                            "id" => 41,
+                            //"id" => 929,
                             "user_id" => 1,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 42,
+                            //"id" => 938,
                             "user_id" => 1,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 43,
+                            //"id" => 991,
                             "user_id" => 1,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 44,
+                            //"id" => 994,
                             "user_id" => 1,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 45,
+                            //"id" => 997,
                             "user_id" => 1,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 46,
+                            //"id" => 1000,
                             "user_id" => 1,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 47,
+                            //"id" => 1003,
                             "user_id" => 1,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 48,
+                            //"id" => 1006,
                             "user_id" => 1,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 49,
+                            //"id" => 1009,
                             "user_id" => 1,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 50,
+                            //"id" => 1100,
                             "user_id" => 1,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 51,
+                            //"id" => 2220,
                             "user_id" => 1,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 52,
+                            //"id" => 2325,
                             "user_id" => 1,
                             "permission_name" => "takeToWork"
                         ],
                         [
-                            "id" => 53,
+                            //"id" => 2,
                             "user_id" => 2,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 54,
+                            //"id" => 4,
                             "user_id" => 2,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 55,
+                            //"id" => 6,
                             "user_id" => 2,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 56,
+                            //"id" => 8,
                             "user_id" => 2,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 57,
+                            //"id" => 10,
                             "user_id" => 2,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 58,
+                            //"id" => 12,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 59,
+                            //"id" => 14,
                             "user_id" => 2,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 60,
+                            //"id" => 16,
                             "user_id" => 2,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 61,
+                            //"id" => 18,
                             "user_id" => 2,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 62,
+                            //"id" => 20,
                             "user_id" => 2,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 63,
+                            //"id" => 22,
                             "user_id" => 2,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 64,
+                            //"id" => 24,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 65,
+                            //"id" => 26,
                             "user_id" => 2,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 66,
+                            //"id" => 28,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 67,
+                            //"id" => 30,
                             "user_id" => 2,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 68,
+                            //"id" => 32,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 69,
+                            //"id" => 34,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 70,
+                            //"id" => 36,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 71,
+                            //"id" => 38,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 72,
+                            //"id" => 40,
                             "user_id" => 2,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 73,
+                            //"id" => 42,
                             "user_id" => 2,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 74,
+                            //"id" => 44,
                             "user_id" => 2,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 75,
+                            //"id" => 46,
                             "user_id" => 2,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 76,
+                            //"id" => 48,
                             "user_id" => 2,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 77,
+                            //"id" => 50,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 78,
+                            //"id" => 52,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 79,
+                            //"id" => 54,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 80,
+                            //"id" => 56,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 81,
+                            //"id" => 58,
                             "user_id" => 2,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 82,
+                            //"id" => 60,
                             "user_id" => 2,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 83,
+                            //"id" => 62,
                             "user_id" => 2,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 84,
+                            //"id" => 64,
                             "user_id" => 2,
                             "permission_name" => "requestAppointManager"
                         ],
                         [
-                            "id" => 85,
+                            //"id" => 66,
                             "user_id" => 2,
                             "permission_name" => "requestAppointSupervisor"
                         ],
                         [
-                            "id" => 86,
+                            //"id" => 68,
                             "user_id" => 2,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 87,
+                            //"id" => 70,
                             "user_id" => 2,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 88,
+                            //"id" => 72,
                             "user_id" => 2,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 89,
+                            //"id" => 73,
                             "user_id" => 2,
                             "permission_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 90,
+                            //"id" => 74,
                             "user_id" => 2,
                             "permission_name" => "requestViewDirectionRequests"
                         ],
                         [
-                            "id" => 91,
+                            //"id" => 76,
                             "user_id" => 2,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 92,
+                            //"id" => 78,
                             "user_id" => 2,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 93,
+                            //"id" => 80,
                             "user_id" => 2,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 94,
+                            //"id" => 81,
                             "user_id" => 2,
                             "permission_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 95,
+                            //"id" => 82,
                             "user_id" => 2,
                             "permission_name" => "requestDeleteAttachments"
                         ],
                         [
-                            "id" => 96,
+                            //"id" => 927,
                             "user_id" => 2,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 97,
+                            //"id" => 931,
                             "user_id" => 2,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 98,
+                            //"id" => 934,
                             "user_id" => 2,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 99,
+                            //"id" => 936,
                             "user_id" => 2,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 100,
+                            //"id" => 940,
                             "user_id" => 2,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 101,
+                            //"id" => 960,
                             "user_id" => 2,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 102,
+                            //"id" => 989,
                             "user_id" => 2,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 103,
+                            //"id" => 992,
                             "user_id" => 2,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 104,
+                            //"id" => 995,
                             "user_id" => 2,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 105,
+                            //"id" => 998,
                             "user_id" => 2,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 106,
+                            //"id" => 1001,
                             "user_id" => 2,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 107,
+                            //"id" => 1004,
                             "user_id" => 2,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 108,
+                            //"id" => 1007,
                             "user_id" => 2,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 109,
+                            //"id" => 1098,
                             "user_id" => 2,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 110,
+                            //"id" => 2222,
                             "user_id" => 2,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 111,
+                            //"id" => 2327,
                             "user_id" => 2,
                             "permission_name" => "takeToWork"
                         ],
                         [
-                            "id" => 112,
+                            //"id" => 1333,
                             "user_id" => 4,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 113,
+                            //"id" => 1334,
                             "user_id" => 4,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 114,
+                            //"id" => 1335,
                             "user_id" => 4,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 115,
+                            //"id" => 1336,
                             "user_id" => 4,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 116,
+                            //"id" => 1337,
                             "user_id" => 4,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 117,
+                            //"id" => 1338,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 118,
+                            //"id" => 1339,
                             "user_id" => 4,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 119,
+                            //"id" => 1340,
                             "user_id" => 4,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 120,
+                            //"id" => 1341,
                             "user_id" => 4,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 121,
+                            //"id" => 1342,
                             "user_id" => 4,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 122,
+                            //"id" => 1343,
                             "user_id" => 4,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 123,
+                            //"id" => 1344,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 124,
+                            //"id" => 1345,
                             "user_id" => 4,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 125,
+                            //"id" => 1346,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 126,
+                            //"id" => 1347,
                             "user_id" => 4,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 127,
+                            //"id" => 1348,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 128,
+                            //"id" => 1349,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 129,
+                            //"id" => 1350,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 130,
+                            //"id" => 1351,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 131,
+                            //"id" => 1352,
                             "user_id" => 4,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 132,
+                            //"id" => 1353,
                             "user_id" => 4,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 133,
+                            //"id" => 1354,
                             "user_id" => 4,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 134,
+                            //"id" => 1355,
                             "user_id" => 4,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 135,
+                            //"id" => 1356,
                             "user_id" => 4,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 136,
+                            //"id" => 1357,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 137,
+                            //"id" => 1358,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 138,
+                            //"id" => 1359,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 139,
+                            //"id" => 1360,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 140,
+                            //"id" => 1361,
                             "user_id" => 4,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 141,
+                            //"id" => 1362,
                             "user_id" => 4,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 142,
+                            //"id" => 1363,
                             "user_id" => 4,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 143,
+                            //"id" => 1364,
                             "user_id" => 4,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 144,
+                            //"id" => 1365,
                             "user_id" => 4,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 145,
+                            //"id" => 1366,
                             "user_id" => 4,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 146,
+                            //"id" => 1367,
                             "user_id" => 4,
                             "permission_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 147,
+                            //"id" => 1368,
                             "user_id" => 4,
                             "permission_name" => "requestViewDirectionRequests"
                         ],
                         [
-                            "id" => 148,
+                            //"id" => 1369,
                             "user_id" => 4,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 149,
+                            //"id" => 1370,
                             "user_id" => 4,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 150,
+                            //"id" => 1371,
                             "user_id" => 4,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 151,
+                            //"id" => 1372,
                             "user_id" => 4,
                             "permission_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 152,
-                            "user_id" => 4,
-                            "permission_name" => "requestDeleteAttachments"
-                        ],
-                        [
-                            "id" => 153,
+                            //"id" => 1374,
                             "user_id" => 4,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 154,
+                            //"id" => 1375,
                             "user_id" => 4,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 155,
+                            //"id" => 1376,
                             "user_id" => 4,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 156,
+                            //"id" => 1377,
                             "user_id" => 4,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 157,
+                            //"id" => 1378,
                             "user_id" => 4,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 158,
+                            //"id" => 1379,
                             "user_id" => 4,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 159,
+                            //"id" => 1380,
                             "user_id" => 4,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 160,
+                            //"id" => 1381,
                             "user_id" => 4,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 161,
+                            //"id" => 1382,
                             "user_id" => 4,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 162,
+                            //"id" => 1383,
                             "user_id" => 4,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 163,
+                            //"id" => 1384,
                             "user_id" => 4,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 164,
+                            //"id" => 2223,
                             "user_id" => 4,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 166,
+                            //"id" => 2272,
+                            "user_id" => 4,
+                            "permission_name" => "requestDeleteAttachments"
+                        ],
+                        [
+                            //"id" => 2328,
+                            "user_id" => 4,
+                            "permission_name" => "takeToWork"
+                        ],
+                        [
+                            //"id" => 1386,
                             "user_id" => 5,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 167,
+                            //"id" => 1387,
                             "user_id" => 5,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 168,
+                            //"id" => 1388,
                             "user_id" => 5,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 169,
+                            //"id" => 1389,
                             "user_id" => 5,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 170,
+                            //"id" => 1390,
                             "user_id" => 5,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 171,
+                            //"id" => 1391,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 172,
+                            //"id" => 1392,
                             "user_id" => 5,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 173,
+                            //"id" => 1393,
                             "user_id" => 5,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 174,
+                            //"id" => 1394,
                             "user_id" => 5,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 175,
+                            //"id" => 1395,
                             "user_id" => 5,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 176,
+                            //"id" => 1396,
                             "user_id" => 5,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 177,
+                            //"id" => 1397,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 178,
+                            //"id" => 1398,
                             "user_id" => 5,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 179,
+                            //"id" => 1399,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 180,
+                            //"id" => 1400,
                             "user_id" => 5,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 181,
+                            //"id" => 1401,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 182,
+                            //"id" => 1402,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 183,
+                            //"id" => 1403,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 184,
+                            //"id" => 1404,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 185,
+                            //"id" => 1405,
                             "user_id" => 5,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 186,
+                            //"id" => 1406,
                             "user_id" => 5,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 187,
+                            //"id" => 1407,
                             "user_id" => 5,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 188,
+                            //"id" => 1408,
                             "user_id" => 5,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 189,
+                            //"id" => 1409,
                             "user_id" => 5,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 190,
+                            //"id" => 1410,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 191,
+                            //"id" => 1411,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 192,
+                            //"id" => 1412,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 193,
+                            //"id" => 1413,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 194,
+                            //"id" => 1414,
                             "user_id" => 5,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 195,
+                            //"id" => 1415,
                             "user_id" => 5,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 196,
+                            //"id" => 1416,
                             "user_id" => 5,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 197,
+                            //"id" => 1417,
                             "user_id" => 5,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 198,
+                            //"id" => 1418,
                             "user_id" => 5,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 199,
+                            //"id" => 1419,
                             "user_id" => 5,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 200,
+                            //"id" => 1420,
                             "user_id" => 5,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 201,
+                            //"id" => 1421,
                             "user_id" => 5,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 202,
+                            //"id" => 1422,
                             "user_id" => 5,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 203,
+                            //"id" => 1423,
                             "user_id" => 5,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 204,
+                            //"id" => 2224,
                             "user_id" => 5,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 205,
+                            //"id" => 2329,
                             "user_id" => 5,
                             "permission_name" => "takeToWork"
-                        ]
+                        ],
                     ]
                 ],
             ]
@@ -5990,6 +6008,7 @@ return [
                 'UserBpm[userPermissions][sellerUpdate]' => '0',
                 'UserBpm[userPermissions][sellerUpdate]' => '1',
                 'UserBpm[userPermissions][takeToWork]' => '0',
+                'UserBpm[userPermissions][takeToWork]' => '1',
                 'UserBpm[userPermissions][teamUpdate]' => '0',
                 'UserBpm[userPermissions][teamUpdate]' => '1',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '0',
@@ -6095,1029 +6114,1033 @@ return [
                     ],
                     "user_permissions" => [
                         [
-                            "id" => 1,
+                            //"id" => 1,
                             "user_id" => 1,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 2,
+                            //"id" => 3,
                             "user_id" => 1,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 3,
+                            //"id" => 5,
                             "user_id" => 1,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 4,
+                            //"id" => 7,
                             "user_id" => 1,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 5,
+                            //"id" => 9,
                             "user_id" => 1,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 6,
+                            //"id" => 11,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 7,
+                            //"id" => 13,
                             "user_id" => 1,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 8,
+                            //"id" => 15,
                             "user_id" => 1,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 9,
+                            //"id" => 17,
                             "user_id" => 1,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 10,
+                            //"id" => 19,
                             "user_id" => 1,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 11,
+                            //"id" => 21,
                             "user_id" => 1,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 12,
+                            //"id" => 23,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 13,
+                            //"id" => 25,
                             "user_id" => 1,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 14,
+                            //"id" => 27,
                             "user_id" => 1,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 15,
+                            //"id" => 29,
                             "user_id" => 1,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 16,
+                            //"id" => 31,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 17,
+                            //"id" => 33,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 18,
+                            //"id" => 35,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 19,
+                            //"id" => 37,
                             "user_id" => 1,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 20,
+                            //"id" => 39,
                             "user_id" => 1,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 21,
+                            //"id" => 41,
                             "user_id" => 1,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 22,
+                            //"id" => 43,
                             "user_id" => 1,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 23,
+                            //"id" => 45,
                             "user_id" => 1,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 24,
+                            //"id" => 47,
                             "user_id" => 1,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 25,
+                            //"id" => 49,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 26,
+                            //"id" => 51,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 27,
+                            //"id" => 53,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 28,
+                            //"id" => 55,
                             "user_id" => 1,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 29,
+                            //"id" => 57,
                             "user_id" => 1,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 30,
+                            //"id" => 59,
                             "user_id" => 1,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 31,
+                            //"id" => 61,
                             "user_id" => 1,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 32,
+                            //"id" => 63,
                             "user_id" => 1,
                             "permission_name" => "requestAppointManager"
                         ],
                         [
-                            "id" => 33,
+                            //"id" => 65,
                             "user_id" => 1,
                             "permission_name" => "requestAppointSupervisor"
                         ],
                         [
-                            "id" => 34,
+                            //"id" => 67,
                             "user_id" => 1,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 35,
+                            //"id" => 69,
                             "user_id" => 1,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 36,
+                            //"id" => 71,
                             "user_id" => 1,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 37,
+                            //"id" => 75,
                             "user_id" => 1,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 38,
+                            //"id" => 77,
                             "user_id" => 1,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 39,
+                            //"id" => 79,
                             "user_id" => 1,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 40,
+                            //"id" => 83,
                             "user_id" => 1,
                             "permission_name" => "requestDeleteAttachments"
                         ],
                         [
-                            "id" => 41,
+                            //"id" => 929,
                             "user_id" => 1,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 42,
+                            //"id" => 938,
                             "user_id" => 1,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 43,
+                            //"id" => 991,
                             "user_id" => 1,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 44,
+                            //"id" => 994,
                             "user_id" => 1,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 45,
+                            //"id" => 997,
                             "user_id" => 1,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 46,
+                            //"id" => 1000,
                             "user_id" => 1,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 47,
+                            //"id" => 1003,
                             "user_id" => 1,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 48,
+                            //"id" => 1006,
                             "user_id" => 1,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 49,
+                            //"id" => 1009,
                             "user_id" => 1,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 50,
+                            //"id" => 1100,
                             "user_id" => 1,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 51,
+                            //"id" => 2220,
                             "user_id" => 1,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 52,
+                            //"id" => 2325,
                             "user_id" => 1,
                             "permission_name" => "takeToWork"
                         ],
                         [
-                            "id" => 53,
+                            //"id" => 2,
                             "user_id" => 2,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 54,
+                            //"id" => 4,
                             "user_id" => 2,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 55,
+                            //"id" => 6,
                             "user_id" => 2,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 56,
+                            //"id" => 8,
                             "user_id" => 2,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 57,
+                            //"id" => 10,
                             "user_id" => 2,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 58,
+                            //"id" => 12,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 59,
+                            //"id" => 14,
                             "user_id" => 2,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 60,
+                            //"id" => 16,
                             "user_id" => 2,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 61,
+                            //"id" => 18,
                             "user_id" => 2,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 62,
+                            //"id" => 20,
                             "user_id" => 2,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 63,
+                            //"id" => 22,
                             "user_id" => 2,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 64,
+                            //"id" => 24,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 65,
+                            //"id" => 26,
                             "user_id" => 2,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 66,
+                            //"id" => 28,
                             "user_id" => 2,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 67,
+                            //"id" => 30,
                             "user_id" => 2,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 68,
+                            //"id" => 32,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 69,
+                            //"id" => 34,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 70,
+                            //"id" => 36,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 71,
+                            //"id" => 38,
                             "user_id" => 2,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 72,
+                            //"id" => 40,
                             "user_id" => 2,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 73,
+                            //"id" => 42,
                             "user_id" => 2,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 74,
+                            //"id" => 44,
                             "user_id" => 2,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 75,
+                            //"id" => 46,
                             "user_id" => 2,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 76,
+                            //"id" => 48,
                             "user_id" => 2,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 77,
+                            //"id" => 50,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 78,
+                            //"id" => 52,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 79,
+                            //"id" => 54,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 80,
+                            //"id" => 56,
                             "user_id" => 2,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 81,
+                            //"id" => 58,
                             "user_id" => 2,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 82,
+                            //"id" => 60,
                             "user_id" => 2,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 83,
+                            //"id" => 62,
                             "user_id" => 2,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 84,
+                            //"id" => 64,
                             "user_id" => 2,
                             "permission_name" => "requestAppointManager"
                         ],
                         [
-                            "id" => 85,
+                            //"id" => 66,
                             "user_id" => 2,
                             "permission_name" => "requestAppointSupervisor"
                         ],
                         [
-                            "id" => 86,
+                            //"id" => 68,
                             "user_id" => 2,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 87,
+                            //"id" => 70,
                             "user_id" => 2,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 88,
+                            //"id" => 72,
                             "user_id" => 2,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 89,
+                            //"id" => 73,
                             "user_id" => 2,
                             "permission_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 90,
+                            //"id" => 74,
                             "user_id" => 2,
                             "permission_name" => "requestViewDirectionRequests"
                         ],
                         [
-                            "id" => 91,
+                            //"id" => 76,
                             "user_id" => 2,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 92,
+                            //"id" => 78,
                             "user_id" => 2,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 93,
+                            //"id" => 80,
                             "user_id" => 2,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 94,
+                            //"id" => 81,
                             "user_id" => 2,
                             "permission_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 95,
+                            //"id" => 82,
                             "user_id" => 2,
                             "permission_name" => "requestDeleteAttachments"
                         ],
                         [
-                            "id" => 96,
+                            //"id" => 927,
                             "user_id" => 2,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 97,
+                            //"id" => 931,
                             "user_id" => 2,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 98,
+                            //"id" => 934,
                             "user_id" => 2,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 99,
+                            //"id" => 936,
                             "user_id" => 2,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 100,
+                            //"id" => 940,
                             "user_id" => 2,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 101,
+                            //"id" => 960,
                             "user_id" => 2,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 102,
+                            //"id" => 989,
                             "user_id" => 2,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 103,
+                            //"id" => 992,
                             "user_id" => 2,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 104,
+                            //"id" => 995,
                             "user_id" => 2,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 105,
+                            //"id" => 998,
                             "user_id" => 2,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 106,
+                            //"id" => 1001,
                             "user_id" => 2,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 107,
+                            //"id" => 1004,
                             "user_id" => 2,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 108,
+                            //"id" => 1007,
                             "user_id" => 2,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 109,
+                            //"id" => 1098,
                             "user_id" => 2,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 110,
+                            //"id" => 2222,
                             "user_id" => 2,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 111,
+                            //"id" => 2327,
                             "user_id" => 2,
                             "permission_name" => "takeToWork"
                         ],
                         [
-                            "id" => 112,
+                            //"id" => 1333,
                             "user_id" => 4,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 113,
+                            //"id" => 1334,
                             "user_id" => 4,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 114,
+                            //"id" => 1335,
                             "user_id" => 4,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 115,
+                            //"id" => 1336,
                             "user_id" => 4,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 116,
+                            //"id" => 1337,
                             "user_id" => 4,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 117,
+                            //"id" => 1338,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 118,
+                            //"id" => 1339,
                             "user_id" => 4,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 119,
+                            //"id" => 1340,
                             "user_id" => 4,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 120,
+                            //"id" => 1341,
                             "user_id" => 4,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 121,
+                            //"id" => 1342,
                             "user_id" => 4,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 122,
+                            //"id" => 1343,
                             "user_id" => 4,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 123,
+                            //"id" => 1344,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 124,
+                            //"id" => 1345,
                             "user_id" => 4,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 125,
+                            //"id" => 1346,
                             "user_id" => 4,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 126,
+                            //"id" => 1347,
                             "user_id" => 4,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 127,
+                            //"id" => 1348,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 128,
+                            //"id" => 1349,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 129,
+                            //"id" => 1350,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 130,
+                            //"id" => 1351,
                             "user_id" => 4,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 131,
+                            //"id" => 1352,
                             "user_id" => 4,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 132,
+                            //"id" => 1353,
                             "user_id" => 4,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 133,
+                            //"id" => 1354,
                             "user_id" => 4,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 134,
+                            //"id" => 1355,
                             "user_id" => 4,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 135,
+                            //"id" => 1356,
                             "user_id" => 4,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 136,
+                            //"id" => 1357,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 137,
+                            //"id" => 1358,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 138,
+                            //"id" => 1359,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 139,
+                            //"id" => 1360,
                             "user_id" => 4,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 140,
+                            //"id" => 1361,
                             "user_id" => 4,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 141,
+                            //"id" => 1362,
                             "user_id" => 4,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 142,
+                            //"id" => 1363,
                             "user_id" => 4,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 143,
+                            //"id" => 1364,
                             "user_id" => 4,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 144,
+                            //"id" => 1365,
                             "user_id" => 4,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 145,
+                            //"id" => 1366,
                             "user_id" => 4,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 146,
+                            //"id" => 1367,
                             "user_id" => 4,
                             "permission_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 147,
+                            //"id" => 1368,
                             "user_id" => 4,
                             "permission_name" => "requestViewDirectionRequests"
                         ],
                         [
-                            "id" => 148,
+                            //"id" => 1369,
                             "user_id" => 4,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 149,
+                            //"id" => 1370,
                             "user_id" => 4,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 150,
+                            //"id" => 1371,
                             "user_id" => 4,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 151,
+                            //"id" => 1372,
                             "user_id" => 4,
                             "permission_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 152,
-                            "user_id" => 4,
-                            "permission_name" => "requestDeleteAttachments"
-                        ],
-                        [
-                            "id" => 153,
+                            //"id" => 1374,
                             "user_id" => 4,
                             "permission_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 154,
+                            //"id" => 1375,
                             "user_id" => 4,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 155,
+                            //"id" => 1376,
                             "user_id" => 4,
                             "permission_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 156,
+                            //"id" => 1377,
                             "user_id" => 4,
                             "permission_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 157,
+                            //"id" => 1378,
                             "user_id" => 4,
                             "permission_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 158,
+                            //"id" => 1379,
                             "user_id" => 4,
                             "permission_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 159,
+                            //"id" => 1380,
                             "user_id" => 4,
                             "permission_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 160,
+                            //"id" => 1381,
                             "user_id" => 4,
                             "permission_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 161,
+                            //"id" => 1382,
                             "user_id" => 4,
                             "permission_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 162,
+                            //"id" => 1383,
                             "user_id" => 4,
                             "permission_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 163,
+                            //"id" => 1384,
                             "user_id" => 4,
                             "permission_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 164,
+                            //"id" => 2223,
                             "user_id" => 4,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 166,
+                            //"id" => 2272,
+                            "user_id" => 4,
+                            "permission_name" => "requestDeleteAttachments"
+                        ],
+                        [
+                            //"id" => 2328,
+                            "user_id" => 4,
+                            "permission_name" => "takeToWork"
+                        ],
+                        [
+                            //"id" => 1386,
                             "user_id" => 5,
                             "permission_name" => "createUser"
                         ],
                         [
-                            "id" => 167,
+                            //"id" => 1387,
                             "user_id" => 5,
                             "permission_name" => "updateUser"
                         ],
                         [
-                            "id" => 168,
+                            //"id" => 1388,
                             "user_id" => 5,
                             "permission_name" => "blockUser"
                         ],
                         [
-                            "id" => 169,
+                            //"id" => 1389,
                             "user_id" => 5,
                             "permission_name" => "viewUser"
                         ],
                         [
-                            "id" => 170,
+                            //"id" => 1390,
                             "user_id" => 5,
                             "permission_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 171,
+                            //"id" => 1391,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 172,
+                            //"id" => 1392,
                             "user_id" => 5,
                             "permission_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 173,
+                            //"id" => 1393,
                             "user_id" => 5,
                             "permission_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 174,
+                            //"id" => 1394,
                             "user_id" => 5,
                             "permission_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 175,
+                            //"id" => 1395,
                             "user_id" => 5,
                             "permission_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 176,
+                            //"id" => 1396,
                             "user_id" => 5,
                             "permission_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 177,
+                            //"id" => 1397,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 178,
+                            //"id" => 1398,
                             "user_id" => 5,
                             "permission_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 179,
+                            //"id" => 1399,
                             "user_id" => 5,
                             "permission_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 180,
+                            //"id" => 1400,
                             "user_id" => 5,
                             "permission_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 181,
+                            //"id" => 1401,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 182,
+                            //"id" => 1402,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 183,
+                            //"id" => 1403,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 184,
+                            //"id" => 1404,
                             "user_id" => 5,
                             "permission_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 185,
+                            //"id" => 1405,
                             "user_id" => 5,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 186,
+                            //"id" => 1406,
                             "user_id" => 5,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 187,
+                            //"id" => 1407,
                             "user_id" => 5,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 188,
+                            //"id" => 1408,
                             "user_id" => 5,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 189,
+                            //"id" => 1409,
                             "user_id" => 5,
                             "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 190,
+                            //"id" => 1410,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 191,
+                            //"id" => 1411,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 192,
+                            //"id" => 1412,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 193,
+                            //"id" => 1413,
                             "user_id" => 5,
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 194,
+                            //"id" => 1414,
                             "user_id" => 5,
                             "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 195,
+                            //"id" => 1415,
                             "user_id" => 5,
                             "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 196,
+                            //"id" => 1416,
                             "user_id" => 5,
                             "permission_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 197,
+                            //"id" => 1417,
                             "user_id" => 5,
                             "permission_name" => "requestCreate"
                         ],
                         [
-                            "id" => 198,
+                            //"id" => 1418,
                             "user_id" => 5,
                             "permission_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 199,
+                            //"id" => 1419,
                             "user_id" => 5,
                             "permission_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 200,
+                            //"id" => 1420,
                             "user_id" => 5,
                             "permission_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 201,
+                            //"id" => 1421,
                             "user_id" => 5,
                             "permission_name" => "reportView"
                         ],
                         [
-                            "id" => 202,
+                            //"id" => 1422,
                             "user_id" => 5,
                             "permission_name" => "massEdit"
                         ],
                         [
-                            "id" => 203,
+                            //"id" => 1423,
                             "user_id" => 5,
                             "permission_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 204,
+                            //"id" => 2224,
                             "user_id" => 5,
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 205,
+                            //"id" => 2329,
                             "user_id" => 5,
                             "permission_name" => "takeToWork"
-                        ]
+                        ],
                     ]
                 ],
             ]
         ]
     ],
-
 ];

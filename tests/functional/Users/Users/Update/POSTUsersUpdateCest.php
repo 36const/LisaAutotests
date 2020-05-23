@@ -69,10 +69,10 @@ class POSTUsersUpdateCest
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
-//die();
+
         $I->sendPOST('/bpm/user/update?id=4', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
-//die();
+
         $I->checkTablesInDB($providerData['db']);
 
         $user->amOnUserUpdate(4);
