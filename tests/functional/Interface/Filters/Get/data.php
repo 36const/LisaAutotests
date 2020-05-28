@@ -7,7 +7,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "requestParameters" => [],
+            "url" => '',
             "pageObjects" => [
                 "canSee" => [
                     "emptyTable" => [
@@ -26,9 +26,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "requestParameters" => [
-                "sort" => "name",
-            ],
+            "url" => '',
             "pageObjects" => [
                 "canSee" => [
                     "emptyTable" => [
@@ -47,6 +45,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            "url" => '',
             "requestParameters" => [
                     "sort" => "conditions",
             ],
@@ -68,8 +67,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4.php',
         'provider_data' => [
-            "requestParameters" => [
-            ],
+            "url" => '',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -116,9 +114,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4.php',
         'provider_data' => [
-            "requestParameters" => [
-                "sort" => "-name",
-            ],
+            "url" => "?sort=-name",
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -165,9 +161,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4.php',
         'provider_data' => [
-            "requestParameters" => [
-                "FilterSearch%5Bname%5D" => "Фильтр1",
-            ],
+            "url" => "?FilterSearch%5Bname%5D=Фильтр1",
             "pageObjects" => [
                 "canSee" => [
                     [

@@ -63,12 +63,12 @@ class GETFilterCest
     public function GETFilter(FunctionalTester $I, Example $data, Filters $filter, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper);
+
         $providerData = $data['provider_data'];
 
         $login->login();
 
-        $I->amOnPage('/bpm/filter/index', $providerData['requestParameters']);
-
+        $I->amOnPage('bpm/filter' . $providerData['url']);
         $I->seeResponseCodeIs(200);
 
         $I->checkFieldsOnPage($providerData['pageObjects']);
