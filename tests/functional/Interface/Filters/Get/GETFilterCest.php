@@ -5,7 +5,6 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\Filters;
 
 /**
  * @group lisa
@@ -54,13 +53,12 @@ class GETFilterCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Filters $filter
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function GETFilter(FunctionalTester $I, Example $data, Filters $filter, Login $login)
+    public function GETFilter(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper);
 

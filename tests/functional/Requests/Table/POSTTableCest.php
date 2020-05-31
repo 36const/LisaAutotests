@@ -54,7 +54,6 @@ class POSTTableCest
      * @param FunctionalTester $I
      * @param Example $data
      * @param Login $login
-     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
