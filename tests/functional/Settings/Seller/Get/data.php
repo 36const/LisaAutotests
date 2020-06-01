@@ -495,6 +495,46 @@ return [
                     ],
                 ],
                 "cantSee" => [
+                    "Магазин 0" => [
+                        [
+                            "selector" => "//tbody",
+                            "value" => "0"
+                        ],
+                        [
+                            "selector" => "//tbody",
+                            "value" => "Маркетплейс (общий)"
+                        ],
+                    ],
+                    "Магазин 5" => [
+                        [
+                            "selector" => "//tbody",
+                            "value" => "5"
+                        ],
+                        [
+                            "selector" => "//tbody",
+                            "value" => "Rozetka"
+                        ],
+                    ],
+                    "Магазин 9423" => [
+                        [
+                            "selector" => "//tbody",
+                            "value" => "9423"
+                        ],
+                        [
+                            "selector" => "//tbody",
+                            "value" => "anytech"
+                        ],
+                    ],
+                    "Магазин 67757" => [
+                        [
+                            "selector" => "//tbody",
+                            "value" => "67757"
+                        ],
+                        [
+                            "selector" => "//tbody",
+                            "value" => "iTook"
+                        ],
+                    ],
                 ]
             ]
         ]
@@ -553,6 +593,46 @@ return [
                     ],
                 ],
                 "cantSee" => [
+                    "Магазин 83" => [
+                        [
+                            "selector" => "//tbody",
+                            "value" => "83"
+                        ],
+                        [
+                            "selector" => "//tbody",
+                            "value" => "Euromart"
+                        ],
+                    ],
+                    "Магазин 5" => [
+                        [
+                            "selector" => "//tbody",
+                            "value" => "5"
+                        ],
+                        [
+                            "selector" => "//tbody",
+                            "value" => "Rozetka"
+                        ],
+                    ],
+                    "Магазин 9423" => [
+                        [
+                            "selector" => "//tbody",
+                            "value" => "9423"
+                        ],
+                        [
+                            "selector" => "//tbody",
+                            "value" => "anytech"
+                        ],
+                    ],
+                    "Магазин 67757" => [
+                        [
+                            "selector" => "//tbody",
+                            "value" => "67757"
+                        ],
+                        [
+                            "selector" => "//tbody",
+                            "value" => "iTook"
+                        ],
+                    ],
                 ]
             ]
         ]
@@ -632,6 +712,36 @@ return [
                     ],
                 ],
                 "cantSee" => [
+                    "Магазин 0" => [
+                        [
+                            "selector" => "//tbody",
+                            "value" => "0"
+                        ],
+                        [
+                            "selector" => "//tbody",
+                            "value" => "Маркетплейс (общий)"
+                        ],
+                    ],
+                    "Магазин 9423" => [
+                        [
+                            "selector" => "//tbody",
+                            "value" => "9423"
+                        ],
+                        [
+                            "selector" => "//tbody",
+                            "value" => "anytech"
+                        ],
+                    ],
+                    "Магазин 67757" => [
+                        [
+                            "selector" => "//tbody",
+                            "value" => "67757"
+                        ],
+                        [
+                            "selector" => "//tbody",
+                            "value" => "iTook"
+                        ],
+                    ],
                 ]
             ]
         ]

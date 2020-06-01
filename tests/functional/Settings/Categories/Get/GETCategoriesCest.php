@@ -9,10 +9,9 @@ use lisa\Page\Functional\Login;
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTSeller
- * @group POSTSellerCreate
+ * @group GETCategories
  */
-class POSTSellerCreateCest
+class GETCategoriesCest
 {
     /**
      * @var TestHelper $testHelper
@@ -54,20 +53,22 @@ class POSTSellerCreateCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTSellerCreate(FunctionalTester $I, Example $data, Login $login)
+    public function GETCategories(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
         $providerData = $data['provider_data'];
 
-        $I->runShellCommand('./yii bpm/seller/appoint-supervisors');
+        $login->login();
 
-        $I->checkTablesInDB($providerData['db']);
+        $I->amOnPage('bpm/category/index/' . $providerData['url']);
+        $I->seeResponseCodeIs(200);
+
+        $I->checkFieldsOnPage($providerData['pageObjects']);
     }
 }
