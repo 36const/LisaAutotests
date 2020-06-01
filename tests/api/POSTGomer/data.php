@@ -21,10 +21,6 @@ return [
                     "id" => 1
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 1,
-                "requests_fields" => 0
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [
@@ -91,10 +87,6 @@ return [
                 "result" => [
                     "id" => 1
                 ]
-            ],
-            "seeNumRecords" => [
-                "requests" => 1,
-                "requests_fields" => 1
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -170,10 +162,6 @@ return [
                     "id" => 1
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 1,
-                "requests_fields" => 1
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [
@@ -248,10 +236,6 @@ return [
                 "result" => [
                     "id" => 1
                 ]
-            ],
-            "seeNumRecords" => [
-                "requests" => 1,
-                "requests_fields" => 2
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -331,10 +315,6 @@ return [
                     "id" => 1
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 1,
-                "requests_fields" => 0
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [
@@ -401,10 +381,6 @@ return [
                 "result" => [
                     "id" => 1
                 ]
-            ],
-            "seeNumRecords" => [
-                "requests" => 1,
-                "requests_fields" => 0
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -473,10 +449,6 @@ return [
                     "id" => 1
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 1,
-                "requests_fields" => 0
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [
@@ -542,10 +514,6 @@ return [
                     "Не передано поле items_count"
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [],
@@ -573,10 +541,6 @@ return [
                 "errors" => [
                     "передан несуществующий продавец"
                 ]
-            ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
             ],
             'db' => [
                 'lisa_fixtures' => [

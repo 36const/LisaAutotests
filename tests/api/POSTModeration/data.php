@@ -30,10 +30,6 @@ return [
                     "id" => 1
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 1,
-                "requests_fields" => 3
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [
@@ -129,10 +125,6 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
                 "result" => [
                     "id" => 1
                 ]
-            ],
-            "seeNumRecords" => [
-                "requests" => 1,
-                "requests_fields" => 3
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -241,10 +233,6 @@ Media:
                     "Не передано поле idComment",
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [],
@@ -281,10 +269,6 @@ Media:
                 "errors" => [
                     "idComment: поле должно быть числом"
                 ]
-            ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -323,10 +307,6 @@ Media:
                     "Не передано поле sProductName"
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [],
@@ -363,10 +343,6 @@ Media:
                 "errors" => [
                     "Не передано поле sProductName"
                 ]
-            ],
-            "seeNumRecords" => [
-                "requests" => 0,
-                "requests_fields" => 0
             ],
             'db' => [
                 'lisa_fixtures' => [

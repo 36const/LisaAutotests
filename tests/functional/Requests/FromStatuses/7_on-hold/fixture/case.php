@@ -22,7 +22,7 @@ return [
                 "seller_id" => 83,
                 "recommendations" => '',
                 "reason_id" => 1,
-                "reason" => 'Ожидать',
+                "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
                 "parent_id" => null,
                 "planned_start_date" => null,
                 "planned_finish_date" => null,
@@ -101,7 +101,19 @@ return [
         "request_errors" => [],
         'notification_settings' => [],
         "user_notifications" => [],
-        "request_status_history" => [],
+        'request_status_history' => [
+            [
+                //"id" => 1,
+                "request_id" => 1,
+                "user_id" => 4,
+                "old_status" => 6,
+                "new_status" => 7,
+                "reason_id" => 1,
+                "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                //"created_at" => "2020-01-01 00:00:01",
+                "manager_id" => 11
+            ]
+        ],
         "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
         "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',

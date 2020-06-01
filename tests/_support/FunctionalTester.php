@@ -81,4 +81,29 @@ class FunctionalTester extends \Codeception\Actor
             }
         }
     }
+
+    public function checkFieldsOnPage($pageObjects)
+    {
+        $I = $this;
+
+        if (isset($pageObjects['canSee'])) {
+            foreach ($pageObjects['canSee'] as $objects) {
+                foreach ($objects as $object) {
+                    isset($object['value']) ?
+                        $I->canSee($object['value'], $object['selector']) :
+                        $I->canSeeElement($object['selector']);
+                }
+            }
+        }
+
+        if (isset($pageObjects['cantSee'])) {
+            foreach ($pageObjects['cantSee'] as $objects) {
+                foreach ($objects as $object) {
+                    isset($object['value']) ?
+                        $I->cantSee($object['value'], $object['selector']) :
+                        $I->cantSeeElement($object['selector']);
+                }
+            }
+        }
+    }
 }
