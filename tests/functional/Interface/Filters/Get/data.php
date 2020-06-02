@@ -28,7 +28,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '',
+            "url" => '?sort=name',
             "pageObjects" => [
                 "canSee" => [
                     "emptyTable" => [
@@ -49,10 +49,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '',
-            "requestParameters" => [
-                "sort" => "conditions",
-            ],
+            "url" => '?sort=conditions',
             "pageObjects" => [
                 "canSee" => [
                     "emptyTable" => [
