@@ -76,11 +76,71 @@ return [
                             "request_field" => "author_id",
                             "request_status" => 4,
                             "permission_list" => '{"users": ["5", "6", "11", "19"], "members": ["author_id", "manager_id", "supervisor_id"], "positions": ["supervisor", "contentManager", "productManager"]}'
-                        ]
+                        ],
+                        [
+                            "id" => 11,
+                            "request_field" => "subject",
+                            "request_status" => 1,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 12,
+                            "request_field" => "subject",
+                            "request_status" => 2,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 13,
+                            "request_field" => "subject",
+                            "request_status" => 3,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 14,
+                            "request_field" => "subject",
+                            "request_status" => 5,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 15,
+                            "request_field" => "subject",
+                            "request_status" => 6,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 16,
+                            "request_field" => "subject",
+                            "request_status" => 7,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 17,
+                            "request_field" => "subject",
+                            "request_status" => 8,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 18,
+                            "request_field" => "subject",
+                            "request_status" => 9,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 19,
+                            "request_field" => "subject",
+                            "request_status" => 11,
+                            "permission_list" => '{"positions": ["headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 20,
+                            "request_field" => "subject",
+                            "request_status" => 4,
+                            "permission_list" => '{"positions": ["headSupervisor", "admin"]}'
+                        ],
                     ],
-                ],
+                ]
             ]
-        ]
+        ],
     ],
 
     'case2' => [
@@ -157,6 +217,66 @@ return [
                             "request_field" => "author_id",
                             "request_status" => 4,
                             "permission_list" => "[]"
+                        ],
+                        [
+                            "id" => 11,
+                            "request_field" => "subject",
+                            "request_status" => 1,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 12,
+                            "request_field" => "subject",
+                            "request_status" => 2,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 13,
+                            "request_field" => "subject",
+                            "request_status" => 3,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 14,
+                            "request_field" => "subject",
+                            "request_status" => 5,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 15,
+                            "request_field" => "subject",
+                            "request_status" => 6,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 16,
+                            "request_field" => "subject",
+                            "request_status" => 7,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 17,
+                            "request_field" => "subject",
+                            "request_status" => 8,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 18,
+                            "request_field" => "subject",
+                            "request_status" => 9,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 19,
+                            "request_field" => "subject",
+                            "request_status" => 11,
+                            "permission_list" => '{"positions": ["headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 20,
+                            "request_field" => "subject",
+                            "request_status" => 4,
+                            "permission_list" => '{"positions": ["headSupervisor", "admin"]}'
                         ],
                     ],
                 ],
@@ -237,7 +357,67 @@ return [
                             "request_field" => "author_id",
                             "request_status" => 4,
                             "permission_list" => '{"members": ["author_id"]}'
-                        ]
+                        ],
+                        [
+                            "id" => 11,
+                            "request_field" => "subject",
+                            "request_status" => 1,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 12,
+                            "request_field" => "subject",
+                            "request_status" => 2,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 13,
+                            "request_field" => "subject",
+                            "request_status" => 3,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 14,
+                            "request_field" => "subject",
+                            "request_status" => 5,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 15,
+                            "request_field" => "subject",
+                            "request_status" => 6,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 16,
+                            "request_field" => "subject",
+                            "request_status" => 7,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 17,
+                            "request_field" => "subject",
+                            "request_status" => 8,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 18,
+                            "request_field" => "subject",
+                            "request_status" => 9,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 19,
+                            "request_field" => "subject",
+                            "request_status" => 11,
+                            "permission_list" => '{"positions": ["headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 20,
+                            "request_field" => "subject",
+                            "request_status" => 4,
+                            "permission_list" => '{"positions": ["headSupervisor", "admin"]}'
+                        ],
                     ],
                 ],
             ]
@@ -316,6 +496,66 @@ return [
                             "request_field" => "author_id",
                             "request_status" => 4,
                             "permission_list" => "[]"
+                        ],
+                        [
+                            "id" => 11,
+                            "request_field" => "subject",
+                            "request_status" => 1,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 12,
+                            "request_field" => "subject",
+                            "request_status" => 2,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 13,
+                            "request_field" => "subject",
+                            "request_status" => 3,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 14,
+                            "request_field" => "subject",
+                            "request_status" => 5,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 15,
+                            "request_field" => "subject",
+                            "request_status" => 6,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 16,
+                            "request_field" => "subject",
+                            "request_status" => 7,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 17,
+                            "request_field" => "subject",
+                            "request_status" => 8,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 18,
+                            "request_field" => "subject",
+                            "request_status" => 9,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 19,
+                            "request_field" => "subject",
+                            "request_status" => 11,
+                            "permission_list" => '{"positions": ["headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 20,
+                            "request_field" => "subject",
+                            "request_status" => 4,
+                            "permission_list" => '{"positions": ["headSupervisor", "admin"]}'
                         ],
                     ],
                 ],
@@ -396,7 +636,67 @@ return [
                             "request_field" => "author_id",
                             "request_status" => 4,
                             "permission_list" => '{"users": ["19"]}'
-                        ]
+                        ],
+                        [
+                            "id" => 11,
+                            "request_field" => "subject",
+                            "request_status" => 1,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 12,
+                            "request_field" => "subject",
+                            "request_status" => 2,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 13,
+                            "request_field" => "subject",
+                            "request_status" => 3,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 14,
+                            "request_field" => "subject",
+                            "request_status" => 5,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 15,
+                            "request_field" => "subject",
+                            "request_status" => 6,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 16,
+                            "request_field" => "subject",
+                            "request_status" => 7,
+                            "permission_list" => '{"members": ["author_id"], "positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 17,
+                            "request_field" => "subject",
+                            "request_status" => 8,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 18,
+                            "request_field" => "subject",
+                            "request_status" => 9,
+                            "permission_list" => '{"positions": ["supervisor", "headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 19,
+                            "request_field" => "subject",
+                            "request_status" => 11,
+                            "permission_list" => '{"positions": ["headSupervisor", "admin"]}'
+                        ],
+                        [
+                            "id" => 20,
+                            "request_field" => "subject",
+                            "request_status" => 4,
+                            "permission_list" => '{"positions": ["headSupervisor", "admin"]}'
+                        ],
                     ],
                 ],
             ]
