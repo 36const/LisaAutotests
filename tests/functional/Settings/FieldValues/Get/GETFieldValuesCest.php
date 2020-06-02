@@ -9,9 +9,9 @@ use lisa\Page\Functional\Login;
 /**
  * @group lisa
  * @group lisa_functional
- * @group GETDifficultyCoef
+ * @group GETFieldValues
  */
-class GETDifficultyCoefCest
+class GETFieldValuesCest
 {
     /**
      * @var TestHelper $testHelper
@@ -58,14 +58,14 @@ class GETDifficultyCoefCest
      * @dataProvider pageProvider
      *
      */
-    public function GETDifficultyCoef(FunctionalTester $I, Example $data, Login $login)
+    public function GETFieldValues(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
 
         $login->login();
 
-        $I->amOnPage('bpm/difficulty-coef/index/' . $providerData['url']);
+        $I->amOnPage('bpm/field-values/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);
 
         $I->checkFieldsOnPage($providerData['pageObjects']);

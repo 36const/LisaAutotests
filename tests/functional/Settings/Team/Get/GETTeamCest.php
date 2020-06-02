@@ -61,9 +61,8 @@ class GETTeamCest
     public function GETTeam(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper);
-
         $providerData = $data['provider_data'];
-//die();
+
         $login->login();
 
         $I->amOnPage('bpm/team/index/' . $providerData['url']);
