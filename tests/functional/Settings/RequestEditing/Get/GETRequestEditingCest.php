@@ -62,7 +62,7 @@ class GETRequestEditingCest
     {
         $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
-die();
+
         $login->login();
 
         $I->amOnPage('bpm/request-editing/index/' . $providerData['url']);
