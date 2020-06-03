@@ -1128,4 +1128,386 @@ return [
             ]
         ]
     ],
+
+    'case9' => [
+        'setting' => [
+            'description' => 'Cтраница команд с фильтром по id > 999 999 999',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?TeamSearch%5Bid%5D=9999999999&TeamSearch%5Bname%5D=&TeamSearch%5Bdirection%5D=&TeamSearch%5Bstatus%5D=',
+            "pageObjects" => [
+                "canSee" => [
+                    "Ошибка" => [
+                        [
+                            "selector" => "//thead//td[@class='has-error']//div",
+                            "value" => "Значение «ID» не должно превышать 999999999."
+                        ],
+                    ],
+                    "Заголовки" => [
+                        [
+                            "selector" => "//thead/tr/th[1]",
+                            "value" => "ID"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[2]",
+                            "value" => "Название"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[3]",
+                            "value" => "Направление"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[4]",
+                            "value" => "Статус"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@class='action-column']",
+                        ],
+                    ],
+                    "Маркетплейс 1" => [
+                        [
+                            "selector" => "//tbody/tr[1]/td[1]",
+                            "value" => "1"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[2]",
+                            "value" => "Маркетплейс 1"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[3]",
+                            "value" => "Работа с товарами Маркетплейса"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[4]",
+                            "value" => "Активный"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[5]/a[@href='/bpm/team/update?id=1']",
+                        ],
+                    ],
+                    "Fashion" => [
+                        [
+                            "selector" => "//tbody/tr[2]/td[1]",
+                            "value" => "2"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[2]",
+                            "value" => "Fashion"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[3]",
+                            "value" => "Работа с товарами Rozetka"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[4]",
+                            "value" => "Активный"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[5]/a[@href='/bpm/team/update?id=2']",
+                        ],
+                    ],
+                    "Группировка товаров" => [
+                        [
+                            "selector" => "//tbody/tr[3]/td[1]",
+                            "value" => "3"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[2]",
+                            "value" => "Группировка товаров"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[3]",
+                            "value" => "Работа с группами"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[4]",
+                            "value" => "Активный"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[5]/a[@href='/bpm/team/update?id=3']",
+                        ],
+                    ],
+                    "Проектирование структур категорий + фильтры" => [
+                        [
+                            "selector" => "//tbody/tr[4]/td[1]",
+                            "value" => "4"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[4]/td[2]",
+                            "value" => "Проектирование структур категорий + фильтры"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[4]/td[3]",
+                            "value" => "Работа с проектированием структур + фильтрами"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[4]/td[4]",
+                            "value" => "Активный"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[4]/td[5]/a[@href='/bpm/team/update?id=4']",
+                        ],
+                    ],
+                    "Изменения в категориях" => [
+                        [
+                            "selector" => "//tbody/tr[5]/td[1]",
+                            "value" => "5"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[5]/td[2]",
+                            "value" => "Изменения в категориях"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[5]/td[3]",
+                            "value" => "Работа с порталами, фат-меню, категориями"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[5]/td[4]",
+                            "value" => "Активный"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[5]/td[5]/a[@href='/bpm/team/update?id=5']",
+                        ],
+                    ],
+                    "Административная команда" => [
+                        [
+                            "selector" => "//tbody/tr[6]/td[1]",
+                            "value" => "6   "
+                        ],
+                        [
+                            "selector" => "//tbody/tr[6]/td[2]",
+                            "value" => "Административная команда"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[6]/td[3]",
+                            "value" => "Управление отделом"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[6]/td[4]",
+                            "value" => "Заблокированый"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[6]/td[5]/a[@href='/bpm/team/update?id=6']",
+                        ],
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
+
+    'case10' => [
+        'setting' => [
+            'description' => 'Cтраница команд с нечисловым фильтром по id',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?TeamSearch%5Bid%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&TeamSearch%5Bname%5D=&TeamSearch%5Bdirection%5D=&TeamSearch%5Bstatus%5D=',
+            "pageObjects" => [
+                "canSee" => [
+                    "Ошибка" => [
+                        [
+                            "selector" => "//thead//td[@class='has-error']//div",
+                            "value" => "Значение «ID» должно быть целым числом."
+                        ],
+                    ],
+                    "Заголовки" => [
+                        [
+                            "selector" => "//thead/tr/th[1]",
+                            "value" => "ID"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[2]",
+                            "value" => "Название"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[3]",
+                            "value" => "Направление"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[4]",
+                            "value" => "Статус"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@class='action-column']",
+                        ],
+                    ],
+                    "Маркетплейс 1" => [
+                        [
+                            "selector" => "//tbody/tr[1]/td[1]",
+                            "value" => "1"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[2]",
+                            "value" => "Маркетплейс 1"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[3]",
+                            "value" => "Работа с товарами Маркетплейса"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[4]",
+                            "value" => "Активный"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[5]/a[@href='/bpm/team/update?id=1']",
+                        ],
+                    ],
+                    "Fashion" => [
+                        [
+                            "selector" => "//tbody/tr[2]/td[1]",
+                            "value" => "2"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[2]",
+                            "value" => "Fashion"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[3]",
+                            "value" => "Работа с товарами Rozetka"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[4]",
+                            "value" => "Активный"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[5]/a[@href='/bpm/team/update?id=2']",
+                        ],
+                    ],
+                    "Группировка товаров" => [
+                        [
+                            "selector" => "//tbody/tr[3]/td[1]",
+                            "value" => "3"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[2]",
+                            "value" => "Группировка товаров"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[3]",
+                            "value" => "Работа с группами"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[4]",
+                            "value" => "Активный"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[5]/a[@href='/bpm/team/update?id=3']",
+                        ],
+                    ],
+                    "Проектирование структур категорий + фильтры" => [
+                        [
+                            "selector" => "//tbody/tr[4]/td[1]",
+                            "value" => "4"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[4]/td[2]",
+                            "value" => "Проектирование структур категорий + фильтры"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[4]/td[3]",
+                            "value" => "Работа с проектированием структур + фильтрами"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[4]/td[4]",
+                            "value" => "Активный"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[4]/td[5]/a[@href='/bpm/team/update?id=4']",
+                        ],
+                    ],
+                    "Изменения в категориях" => [
+                        [
+                            "selector" => "//tbody/tr[5]/td[1]",
+                            "value" => "5"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[5]/td[2]",
+                            "value" => "Изменения в категориях"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[5]/td[3]",
+                            "value" => "Работа с порталами, фат-меню, категориями"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[5]/td[4]",
+                            "value" => "Активный"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[5]/td[5]/a[@href='/bpm/team/update?id=5']",
+                        ],
+                    ],
+                    "Административная команда" => [
+                        [
+                            "selector" => "//tbody/tr[6]/td[1]",
+                            "value" => "6   "
+                        ],
+                        [
+                            "selector" => "//tbody/tr[6]/td[2]",
+                            "value" => "Административная команда"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[6]/td[3]",
+                            "value" => "Управление отделом"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[6]/td[4]",
+                            "value" => "Заблокированый"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[6]/td[5]/a[@href='/bpm/team/update?id=6']",
+                        ],
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
+
+    'case11' => [
+        'setting' => [
+            'description' => 'Cтраница команд с несуществующим фильтром по id',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?TeamSearch%5Bid%5D=999&TeamSearch%5Bname%5D=&TeamSearch%5Bdirection%5D=&TeamSearch%5Bstatus%5D=',
+            "pageObjects" => [
+                "canSee" => [
+                    "Ошибка" => [
+                        [
+                            "selector" => "//div[@class='empty']",
+                            "value" => "Ничего не найдено."
+                        ],
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
+
+    'case12' => [
+        'setting' => [
+            'description' => 'Cтраница команд с несуществующим фильтром по названию',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?TeamSearch%5Bid%5D=&TeamSearch%5Bname%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&TeamSearch%5Bdirection%5D=&TeamSearch%5Bstatus%5D=',
+            "pageObjects" => [
+                "canSee" => [
+                    "Ошибка" => [
+                        [
+                            "selector" => "//div[@class='empty']",
+                            "value" => "Ничего не найдено."
+                        ],
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
 ];
