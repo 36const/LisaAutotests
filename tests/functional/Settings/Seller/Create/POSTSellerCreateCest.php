@@ -9,6 +9,7 @@ use lisa\Page\Functional\Login;
 /**
  * @group lisa
  * @group lisa_functional
+ * @group lisa_functional_settings
  * @group POSTSeller
  * @group POSTSellerCreate
  */

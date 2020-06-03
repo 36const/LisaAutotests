@@ -10,6 +10,7 @@ use lisa\Page\Functional\Report;
 /**
  * @group lisa
  * @group lisa_functional
+ * @group lisa_functional_reports
  * @group POSTReportPattern
  * @group POSTReportPatternCreate
  */

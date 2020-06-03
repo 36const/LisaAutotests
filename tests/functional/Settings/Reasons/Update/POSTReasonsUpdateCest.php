@@ -10,6 +10,7 @@ use lisa\Page\Functional\RequestView;
 /**
  * @group lisa
  * @group lisa_functional
+ * @group lisa_functional_settings
  * @group POSTReasons
  * @group POSTReasonsUpdate
  */

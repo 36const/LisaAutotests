@@ -10,6 +10,7 @@ use lisa\Page\Functional\Login;
 /**
  * @group lisa
  * @group lisa_functional
+ * @group lisa_functional_reports
  * @group POSTReportPattern
  * @group POSTReportPatternUpdate
  */

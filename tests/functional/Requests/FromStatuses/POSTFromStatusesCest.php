@@ -13,6 +13,7 @@ use lisa\Page\Functional\RequestCorrection;
 /**
  * @group lisa
  * @group lisa_functional
+ * @group lisa_functional_requests
  * @group POSTFromStatuses
  */
 class POSTFromStatusesCest
