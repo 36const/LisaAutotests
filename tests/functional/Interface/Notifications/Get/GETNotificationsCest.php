@@ -9,9 +9,9 @@ use lisa\Page\Functional\Login;
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTNotificationSettings
+ * @group GETNotifications
  */
-class POSTNotificationSettingsCreateCest
+class GETNotificationsCest
 {
     /**
      * @var TestHelper $testHelper
@@ -59,17 +59,16 @@ class POSTNotificationSettingsCreateCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTNotificationSettings(FunctionalTester $I, Example $data, Login $login)
+    public function GETNotifications(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper);
-
         $providerData = $data['provider_data'];
 
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
+        $login->login();
 
-        $I->sendPOST('/bpm/notification-settings/update', $providerData['requestBody']);
+        $I->amOnPage('bpm/notification/' . $providerData['url']);
         $I->seeResponseCodeIs(200);
 
-        $I->checkTablesInDB($providerData['db']);
+        $I->checkFieldsOnPage($providerData['pageObjects']);
     }
 }
