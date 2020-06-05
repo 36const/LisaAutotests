@@ -68,7 +68,7 @@ class GETRolesCest
 
         $I->amOnPage('bpm/roles/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);
-//die();
+
         $I->checkFieldsOnPage($providerData['pageObjects']);
     }
 }
