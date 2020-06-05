@@ -68,7 +68,7 @@ class GETUserChangesCest
 
         $I->amOnPage('bpm/user-changes/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);
-//die();
+
         $I->checkFieldsOnPage($providerData['pageObjects']);
     }
 }
