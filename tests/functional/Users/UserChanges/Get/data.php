@@ -1195,7 +1195,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[20]/td[5]",
-                            "value" => "В работе  -&gt; Отменена (transferInWorkToDeclined)"
+                            "value" => "В работе	-> Отменена"
                         ],
                         [
                             "selector" => "//tbody/tr[20]/td[6]",
