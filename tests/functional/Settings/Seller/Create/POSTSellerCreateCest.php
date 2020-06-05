@@ -9,6 +9,7 @@ use lisa\Page\Functional\Login;
 /**
  * @group lisa
  * @group lisa_functional
+ * @group lisa_functional_settings
  * @group POSTSeller
  * @group POSTSellerCreate
  */
@@ -60,7 +61,7 @@ class POSTSellerCreateCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTCategoriesCreate(FunctionalTester $I, Example $data, Login $login)
+    public function POSTSellerCreate(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper);
 

@@ -28,6 +28,7 @@ class FunctionalTester extends \Codeception\Actor
     public function loadDataForTest(Example $data, TestHelper $testHelper)
     {
         $I = $this;
+        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $testHelper->clearDB($I, $data);
         $testHelper->loadFixtureAndMock($I, $data);
         $I->wantTo($data['setting']['description']);

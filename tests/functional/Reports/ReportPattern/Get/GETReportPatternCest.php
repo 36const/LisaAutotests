@@ -2,19 +2,17 @@
 
 namespace lisa;
 
-use Codeception\Util\HttpCode;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\RequestCreate;
-use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTCreateRequest
+ * @group lisa_functional_reports
+ * @group GETReportPattern
  */
-class POSTCreateRequestCest
+class GETReportPatternCest
 {
     /**
      * @var TestHelper $testHelper
@@ -57,41 +55,21 @@ class POSTCreateRequestCest
      * @param FunctionalTester $I
      * @param Example $data
      * @param Login $login
-     * @param RequestCreate $create
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTCreateRequest(FunctionalTester $I, Example $data, Login $login, RequestCreate $create, RequestView $view)
+    public function GETReportPattern(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper);
-
-        $setting = $data['setting'];
         $providerData = $data['provider_data'];
 
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
+        $login->login();
 
-        $create->amOnRequestCreate($setting['type'], $setting['direction']);
-        $I->seeInTitle($setting['description']);
-        $I->see($setting['description'], ['class' => 'global-caption']);
-
-        $I->assertEquals($I->grabMultiple(RequestCreate::$allCheckboxes), $providerData['checkboxes']);
-
-        if ($setting['direction'] != 2 && $setting['type'] != 4) {
-            $I->seeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
-            $I->dontSeeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
-        }
-
-        if ($setting['type'] == 4) {
-            $I->dontSeeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
-            $I->seeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
-        }
-
-        $I->sendPOST('/bpm/request/create', $providerData['requestBody']);
+        $I->amOnPage('bpm/report/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);
 
-        $I->checkTablesInDB($providerData['db']);
-        $view->checkFields($providerData['db']);
+        $I->checkFieldsOnPage($providerData['pageObjects']);
     }
 }

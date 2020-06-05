@@ -10,6 +10,7 @@ use lisa\Page\Functional\Report;
 /**
  * @group lisa
  * @group lisa_functional
+ * @group lisa_functional_reports
  * @group POSTReportPattern
  * @group POSTReportPatternCreate
  */
@@ -70,7 +71,7 @@ class POSTReportPatternCreateCest
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->sendPOST($providerData['requestParameter'], $providerData['requestBody']);
+        $I->sendPOST('/bpm/report/' . $providerData['requestParameter'], $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);
