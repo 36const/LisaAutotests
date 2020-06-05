@@ -4,7 +4,6 @@ modules:
     enabled:
         - \lisa\Helper\Functional
         - Cli
-        - JsonSchema
         - Asserts
         - rzk\Database
         - PhpBrowser:
