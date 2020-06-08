@@ -69,6 +69,6 @@ class GETExcludedFieldsCest
         $I->amOnPage('bpm/excluded-fields/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);
 
-        $I->checkFieldsOnPage($providerData['pageObjects']);
+        $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }

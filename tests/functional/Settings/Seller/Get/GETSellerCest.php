@@ -70,6 +70,6 @@ class GETSellerCest
         $I->amOnPage('bpm/seller/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);
 
-        $I->checkFieldsOnPage($providerData['pageObjects']);
+        $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }

@@ -69,6 +69,6 @@ class GETFilterCest
         $I->amOnPage('bpm/filter' . $providerData['url']);
         $I->seeResponseCodeIs(200);
 
-        $I->checkFieldsOnPage($providerData['pageObjects']);
+        $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }

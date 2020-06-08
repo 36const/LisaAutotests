@@ -70,6 +70,6 @@ class GETReportPatternCest
         $I->amOnPage('bpm/report/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);
 
-        $I->checkFieldsOnPage($providerData['pageObjects']);
+        $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }

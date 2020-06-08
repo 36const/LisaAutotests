@@ -73,6 +73,6 @@ class POSTTableCest
 
         $I->amOnPage('/bpm/request/' . $providerData['url']);
 
-        $I->checkFieldsOnPage($providerData['pageObjects']);
+        $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }

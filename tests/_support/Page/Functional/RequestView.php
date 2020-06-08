@@ -125,7 +125,7 @@ class RequestView extends FunctionalTester
                 if (in_array($request['Request[type_id]'], [2, 3, 5, 6, 12]))
                     unset($request['RequestField[49]']);
 
-                //исключить поля, не отображаемые в новом типе заявки (для кейсов POSTChangeType
+                //исключить поля, не отображаемые в новом типе заявки (для кейсов POSTChangeType)
                 if (!empty($otherTypesFields)) {
                     foreach ($otherTypesFields as $otherTypesField)
                         unset($request[$otherTypesField]);

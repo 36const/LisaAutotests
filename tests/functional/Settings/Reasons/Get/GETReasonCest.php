@@ -69,6 +69,6 @@ class GETReasonCest
         $I->amOnPage('bpm/reason/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);
 
-        $I->checkFieldsOnPage($providerData['pageObjects']);
+        $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }

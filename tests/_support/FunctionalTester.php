@@ -83,7 +83,7 @@ class FunctionalTester extends \Codeception\Actor
         }
     }
 
-    public function checkFieldsOnPage($pageObjects)
+    public function checkObjectsOnPage($pageObjects)
     {
         $I = $this;
 
