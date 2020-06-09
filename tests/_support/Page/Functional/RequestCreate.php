@@ -94,7 +94,7 @@ class RequestCreate extends FunctionalTester
     }
 
     /**
-     * Проверка html-полей и их значений в форме создания заявки
+     * Проверка html-полей и их значений
      */
     public function checkFields($tableRow, int $type, int $direction, int $id)
     {
