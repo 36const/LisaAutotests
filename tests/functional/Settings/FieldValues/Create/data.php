@@ -11,7 +11,6 @@ return [
                 'FieldValue[field_id]' => '21',
                 'FieldValue[status]' => '1',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -38,7 +37,6 @@ return [
                 'FieldValue[field_id]' => '22',
                 'FieldValue[status]' => '0',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -65,7 +63,6 @@ return [
                 'FieldValue[field_id]' => '23',
                 'FieldValue[status]' => '1',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -92,7 +89,6 @@ return [
                 'FieldValue[field_id]' => '24',
                 'FieldValue[status]' => '0',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -119,7 +115,6 @@ return [
                 'FieldValue[field_id]' => '25',
                 'FieldValue[status]' => '1',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -146,7 +141,6 @@ return [
                 'FieldValue[field_id]' => '26',
                 'FieldValue[status]' => '0',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -173,7 +167,6 @@ return [
                 'FieldValue[field_id]' => '27',
                 'FieldValue[status]' => '1',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -200,7 +193,6 @@ return [
                 'FieldValue[field_id]' => '28',
                 'FieldValue[status]' => '0',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -227,7 +219,6 @@ return [
                 'FieldValue[field_id]' => '29',
                 'FieldValue[status]' => '1',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -254,7 +245,6 @@ return [
                 'FieldValue[field_id]' => '30',
                 'FieldValue[status]' => '0',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -281,7 +271,6 @@ return [
                 'FieldValue[field_id]' => '31',
                 'FieldValue[status]' => '1',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -308,7 +297,6 @@ return [
                 'FieldValue[field_id]' => '32',
                 'FieldValue[status]' => '0',
                 'FieldValue[value]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

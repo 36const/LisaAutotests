@@ -23,7 +23,6 @@ return [
                 'NotificationSettings[types_for_notification][create]' => '2',
                 'NotificationSettings[types_for_notification][manager_id]' => '2',
                 'NotificationSettings[types_for_notification][supervisor_id]' => '2',
-                '_csrf-backend' => null,
             ],
             "responseCode" => 200,
             'db' => [
@@ -65,7 +64,6 @@ return [
                 'NotificationSettings[types_for_notification][create]' => '1',
                 'NotificationSettings[types_for_notification][manager_id]' => '1',
                 'NotificationSettings[types_for_notification][supervisor_id]' => '1',
-                '_csrf-backend' => null,
             ],
             "responseCode" => 200,
             'db' => [
@@ -107,7 +105,6 @@ return [
                 'NotificationSettings[types_for_notification][create]' => '1',
                 'NotificationSettings[types_for_notification][manager_id]' => '0',
                 'NotificationSettings[types_for_notification][supervisor_id]' => '0',
-                '_csrf-backend' => null,
             ],
             "responseCode" => 200,
             'db' => [
@@ -149,7 +146,6 @@ return [
                 'NotificationSettings[types_for_notification][create]' => '2',
                 'NotificationSettings[types_for_notification][manager_id]' => '2',
                 'NotificationSettings[types_for_notification][supervisor_id]' => '2',
-                '_csrf-backend' => null,
             ],
             "responseCode" => 200,
             'db' => [

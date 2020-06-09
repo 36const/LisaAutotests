@@ -12,7 +12,6 @@ return [
                 'members' => ['author_id', 'manager_id', 'supervisor_id'],
                 'positions' => ['supervisor', 'contentManager', 'productManager'],
                 'users' => ['5', '6', '11', '19'],
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -153,7 +152,6 @@ return [
                 'members' => ['author_id', 'manager_id', 'supervisor_id'],
                 'positions' => ['supervisor', 'contentManager', 'productManager'],
                 'users' => ['5', '6', '11', '19'],
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -293,7 +291,6 @@ return [
             'requestBody' => [
                 'for_all_statuses' => '1',
                 'members' => ['author_id'],
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -432,7 +429,6 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'positions' => ['system', 'admin', 'headSupervisor', 'supervisor', 'contentManager', 'teamLead', 'productManager', 'photoManager', 'seo', 'moderator'],
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -572,7 +568,6 @@ return [
             'requestBody' => [
                 'for_all_statuses' => '1',
                 'users[]' => '19',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

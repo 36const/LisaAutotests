@@ -33,7 +33,6 @@ return [
                 'fields[7]' => '1',
                 'fields[8]' => '1',
                 'fields[9]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -67,7 +66,6 @@ return [
                 'fields[1]' => '1',
                 'fields[4]' => '1',
                 'fields[7]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -101,7 +99,6 @@ return [
                 'fields[2]' => '1',
                 'fields[5]' => '1',
                 'fields[8]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -135,7 +132,6 @@ return [
                 'fields[18]' => '1',
                 'fields[124]' => '1',
                 'fields[127]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

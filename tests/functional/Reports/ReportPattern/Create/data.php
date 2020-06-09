@@ -170,7 +170,6 @@ return [
                 'Fields[team_direction]' => 'on',
                 'Fields[type_id]' => 'on',
                 'Report[title]' => 'Всё во всём',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -358,7 +357,6 @@ return [
                 'Fields[type_id]' => 'on',
                 'Report[conditions][team_direction]' => ['1','2','3','4','5','6'],
                 'Report[title]' => 'Всё во всём',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -546,7 +544,6 @@ return [
                 'Fields[type_id]' => 'on',
                 'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
                 'Report[title]' => 'Всё во всём',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -735,7 +732,6 @@ return [
                 'Report[conditions][team_direction]' => ['1','2','3','4','5','6'],
                 'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
                 'Report[title]' => 'Всё во всём',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -922,7 +918,6 @@ return [
                 'Fields[team_direction]' => 'on',
                 'Fields[type_id]' => 'on',
                 'Report[title]' => 'Всё во всём (сводный)',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -1117,7 +1112,6 @@ return [
                 'Fields[type_id]' => 'on',
                 'Report[conditions][team_direction]' => ['1','2','3','4','5','6'],
                 'Report[title]' => 'Всё во всём (сводный)',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -1312,7 +1306,6 @@ return [
                 'Fields[type_id]' => 'on',
                 'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
                 'Report[title]' => 'Всё во всём (сводный)',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -1508,7 +1501,6 @@ return [
                 'Report[conditions][team_direction]' => ['1','2','3','4','5','6'],
                 'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
                 'Report[title]' => 'Всё во всём (сводный)',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -1704,7 +1696,6 @@ return [
                 'Report[conditions][team_direction]' => ['1','2','3','4','5','6'],
                 'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
                 'Report[title]' => 'Всё во всём (копия)',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -1900,7 +1891,6 @@ return [
                 'Report[conditions][team_direction]' => ['1','2','3','4','5','6'],
                 'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
                 'Report[title]' => 'Всё во всём (сводный) (копия)',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

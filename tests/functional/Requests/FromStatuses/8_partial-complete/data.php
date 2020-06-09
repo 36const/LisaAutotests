@@ -95,7 +95,6 @@ return [
                 'RequestErrors[46][139][itemsCount]' => '',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -416,7 +415,6 @@ return [
                 'Request[sv_report_periods][]' => '1',
                 'Request[uploadedFiles][]' => '',
                 'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
                 'newStatus' => '11',
             ],
             'db' => [

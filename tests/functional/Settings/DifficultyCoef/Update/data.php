@@ -9,7 +9,6 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'DifficultyCoef[difficulty_coef]' => '2.5',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

@@ -52,7 +52,6 @@ return [
                 'Request[supervisor_id]' => '6',
                 'Request[sv_report_periods][]' => '1',
                 'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
                 'newStatus' => '11',
             ],
             'db' => [
@@ -408,7 +407,6 @@ return [
                 'RequestErrors[46][139][itemsCount]' => '',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -735,7 +733,6 @@ return [
                 'RequestErrors[39][137][itemsCount]' => '',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1048,7 +1045,6 @@ return [
                 'RequestErrors[46][139][itemsCount]' => '',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1375,7 +1371,6 @@ return [
                 'RequestErrors[39][137][itemsCount]' => '',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1688,7 +1683,6 @@ return [
                 'RequestErrors[46][139][itemsCount]' => '',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -2015,7 +2009,6 @@ return [
                 'RequestErrors[39][137][itemsCount]' => '',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -2257,7 +2250,6 @@ return [
                 'RequestField[103]' => '10',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[95]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -2540,7 +2532,6 @@ return [
                 'RequestErrors[46][139][itemsCount]' => '',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -2867,7 +2858,6 @@ return [
                 'RequestErrors[39][137][itemsCount]' => '',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -3167,7 +3157,6 @@ return [
                 'RequestField[109]' => '10',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -3497,7 +3486,6 @@ return [
                 'RequestField[109]' => '10',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -3788,7 +3776,6 @@ return [
                 'RequestField[105]' => '10',
                 'RequestField[106]' => '10',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -4029,7 +4016,6 @@ return [
                 'RequestField[105]' => '10',
                 'RequestField[106]' => '10',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -4270,7 +4256,6 @@ return [
                 'RequestField[105]' => '10',
                 'RequestField[106]' => '10',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -4563,7 +4548,6 @@ return [
                 'RequestErrors[46][139][itemsCount]' => '',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -4849,7 +4833,6 @@ return [
                 'RequestField[102]' => '10',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -5078,7 +5061,6 @@ return [
                 'RequestErrors[43][121][itemsCount]' => '',
                 'RequestField[108]' => '10',
                 'RequestField[120]' => 'http://gomer.local/bpm/request/to-correction?id=1',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -5265,7 +5247,6 @@ return [
                 'RequestField[117]' => '10',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1',
                 'RequestField[65]' => '10',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [

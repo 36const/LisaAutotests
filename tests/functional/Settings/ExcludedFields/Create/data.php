@@ -10,7 +10,6 @@ return [
             'requestBody' => [
                 'ExcludedField[excluded_field_id]' => '2',
                 'ExcludedField[field_id]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

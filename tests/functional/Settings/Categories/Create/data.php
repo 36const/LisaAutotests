@@ -12,7 +12,6 @@ return [
                 'Category[status]' => '1',
                 'Category[supervisor_id]' => '10',
                 'Category[title]' => 'Котикгория',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -62,7 +61,6 @@ return [
                 'Category[status]' => '0',
                 'Category[supervisor_id]' => '10',
                 'Category[title]' => 'Котикгория',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

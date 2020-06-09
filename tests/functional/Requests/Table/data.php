@@ -13,7 +13,6 @@ return [
                 'DynaGridConfig[theme]' => 'panel-danger',
                 'deleteFlag' => '0',
                 'visibleKeys' => 'ef6ef760,50cd524a,bf04724b,4a16cdfb,805bbc04,3d33757d,ddcc7b4a,54eab21f,6f4cf3ff',
-                '_csrf-backend' => null,
             ],
             "pageObjects" => [
                 "canSee" => [
@@ -434,7 +433,6 @@ return [
                 'DynaGridConfig[theme]' => 'panel-danger',
                 'deleteFlag' => '0',
                 'visibleKeys' => 'd82b34cd,7551a25e,216af811,195c6167,7100d06f,9f3bab20,3a15b8f6,12fe4397,132cbbd2',
-                '_csrf-backend' => null,
             ],
             "pageObjects" => [
                 "canSee" => [
@@ -857,7 +855,6 @@ return [
                 'DynaGridConfig[theme]' => 'panel-danger',
                 'deleteFlag' => '0',
                 'visibleKeys' => 'f237cb47,cb2e0668,f5a35a47,a5480d6b,00bab8f4',
-                '_csrf-backend' => null,
             ],
             "pageObjects" => [
                 "canSee" => [
@@ -1249,7 +1246,6 @@ return [
                 'DynaGridConfig[theme]' => 'panel-danger',
                 'deleteFlag' => '0',
                 'visibleKeys' => '45671659,9cf76095,4017ea5d,fdd5e993,f69e93e9,e7ee29ab',
-                '_csrf-backend' => null,
             ],
             "pageObjects" => [
                 "canSee" => [
@@ -1648,7 +1644,6 @@ return [
                 'DynaGridConfig[theme]' => 'panel-danger',
                 'deleteFlag' => '0',
                 'visibleKeys' => '4e9f52f3,92daa30a,4c0599eb,4173aa0a,0c4a481f,3190e8ed,c23b3887,17888c9e,9052d997,450d4c53',
-                '_csrf-backend' => null,
             ],
             "pageObjects" => [
                 "canSee" => [
@@ -2079,7 +2074,6 @@ return [
                 'DynaGridConfig[theme]' => 'panel-danger',
                 'deleteFlag' => '0',
                 'visibleKeys' => 'd4c95f87,9036328c,4a81e2dd,d0e05655,41125d67,5e00cc71,93b970aa,266c381f,0788d3f1,06b2967b,67b74568,ee469705',
-                '_csrf-backend' => null,
             ],
             "pageObjects" => [
                 "canSee" => [
@@ -2526,7 +2520,6 @@ return [
                 'DynaGridConfig[theme]' => 'panel-danger',
                 'deleteFlag' => '0',
                 'visibleKeys' => 'f4f49851,329730bf,100af6ba,f3809f80,2cbe2443,29902e9a,e7f76e0d,5800ee87,07546bc1,43f73178,4c698919,80fd31f5',
-                '_csrf-backend' => null,
             ],
             "pageObjects" => [
                 "canSee" => [

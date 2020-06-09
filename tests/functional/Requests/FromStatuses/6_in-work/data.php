@@ -12,7 +12,6 @@ return [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[reason_id]' => '11',
                 'Request[status]' => '4',
-                "_csrf-backend" => null,
                 'keys',
                 'keys',
             ],
@@ -173,7 +172,6 @@ return [
             'requestParameter' => 'appoint-manager',
             'requestBody' => [
                 'Request[manager_id]' => '12',
-                "_csrf-backend" => null,
                 'keys',
             ],
             'db' => [
@@ -355,7 +353,6 @@ return [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[reason_id]' => '1',
                 'Request[status]' => '7',
-                "_csrf-backend" => null,
                 'keys',
                 'keys',
             ],
@@ -538,7 +535,6 @@ return [
                 'Request[reason_id]' => '15',
                 'Request[status]' => '8',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -813,7 +809,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1077,7 +1072,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1302,7 +1296,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1566,7 +1559,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1791,7 +1783,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -2055,7 +2046,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -2268,7 +2258,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -2426,7 +2415,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -2690,7 +2678,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -2909,7 +2896,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -3133,7 +3119,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -3352,7 +3337,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -3536,7 +3520,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -3720,7 +3703,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -3915,7 +3897,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -4181,7 +4162,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -4370,7 +4350,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -4524,7 +4503,6 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '9',
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -4714,7 +4692,6 @@ return [
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '10',
                 'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
                 'newStatus' => '0',
             ],
             'db' => [

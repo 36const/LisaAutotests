@@ -12,7 +12,6 @@ return [
                 'Reason[parent_status]' => '2',
                 'Reason[reason]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ ',
                 'Reason[status]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -48,7 +47,6 @@ return [
                 'Reason[parent_status]' => '1',
                 'Reason[reason]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ ',
                 'Reason[status]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -84,7 +82,6 @@ return [
                 'Reason[parent_status]' => '1',
                 'Reason[reason]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\| ',
                 'Reason[status]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -120,7 +117,6 @@ return [
                 'Reason[parent_status]' => '1',
                 'Reason[reason]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ ',
                 'Reason[status]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -156,7 +152,6 @@ return [
                 'Reason[parent_status]' => '1',
                 'Reason[reason]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ ',
                 'Reason[status]' => '0',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -192,7 +187,6 @@ return [
                 'Reason[parent_status]' => '5',
                 'Reason[reason]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\| ',
                 'Reason[status]' => '0',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

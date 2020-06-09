@@ -51,7 +51,6 @@ return [
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '6',
                 'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
                 'newStatus' => '6',
             ],
             'db' => [

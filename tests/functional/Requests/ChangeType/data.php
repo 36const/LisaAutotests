@@ -17,7 +17,6 @@ return [
                 'Request[direction]' => '1',
                 'Request[seller_id]' => '83',
                 'Request[type_id]' => '2',
-                '_csrf-backend' => null,
             ],
             'otherTypesFields' => [],
             'db' => [
@@ -139,7 +138,6 @@ return [
                 'Request[direction]' => '0',
                 'Request[seller_id]' => '5',
                 'Request[type_id]' => '4',
-                '_csrf-backend' => null,
             ],
             'otherTypesFields' => [
                 'RequestField[49]',
@@ -271,7 +269,6 @@ return [
                 'Request[direction]' => '2',
                 'Request[seller_id]' => '5',
                 'Request[type_id]' => '6',
-                '_csrf-backend' => null,
             ],
             'otherTypesFields' => [
                 'RequestField[52]',
@@ -401,7 +398,6 @@ return [
                 'Request[direction]' => '0',
                 'Request[seller_id]' => '83',
                 'Request[type_id]' => '8',
-                '_csrf-backend' => null,
             ],
             'otherTypesFields' => [],
             'db' => [
@@ -498,7 +494,6 @@ return [
                 'Request[direction]' => '0',
                 'Request[seller_id]' => '0',
                 'Request[type_id]' => '10',
-                '_csrf-backend' => null,
             ],
             'otherTypesFields' => [],
             'db' => [
@@ -635,7 +630,6 @@ return [
                 'Request[direction]' => '1',
                 'Request[seller_id]' => '5',
                 'Request[type_id]' => '12',
-                '_csrf-backend' => null,
             ],
             'otherTypesFields' => [
                 'RequestField[29]',
@@ -830,7 +824,6 @@ return [
                 'Request[direction]' => '0',
                 'Request[seller_id]' => '83',
                 'Request[type_id]' => '14',
-                '_csrf-backend' => null,
             ],
             'otherTypesFields' => [
                 'RequestField[27]',
@@ -1034,7 +1027,6 @@ return [
                 'Request[direction]' => '2',
                 'Request[seller_id]' => '0',
                 'Request[type_id]' => '1',
-                '_csrf-backend' => null,
             ],
             'otherTypesFields' => [
                 'RequestField[20]',

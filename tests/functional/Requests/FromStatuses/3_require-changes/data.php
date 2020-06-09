@@ -12,7 +12,6 @@ return [
                 'Request[correction_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[reason_id]' => '15',
                 'Request[status]' => '1',
-                "_csrf-backend" => null,
                 'keys',
                 'keys',
             ],

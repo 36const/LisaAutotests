@@ -31,7 +31,6 @@ return [
                 "Request[supervisor_id]" => 6,
                 "Request[uploadedFiles][]" => null,
                 "Request[uploadedFiles][]" => null,
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -331,7 +330,6 @@ return [
                 "Request[supervisor_id]" => 6,
                 "Request[uploadedFiles][]" => null,
                 "Request[uploadedFiles][]" => null,
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -586,7 +584,6 @@ return [
                 "Request[supervisor_id]" => 35,
                 "Request[uploadedFiles][]" => null,
                 "Request[uploadedFiles][]" => null,
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -819,7 +816,6 @@ return [
                 "Request[supervisor_id]" => 34,
                 "Request[uploadedFiles][]" => null,
                 "Request[uploadedFiles][]" => null,
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1017,7 +1013,6 @@ return [
                 "Request[supervisor_id]" => 37,
                 "Request[uploadedFiles][]" => null,
                 "Request[uploadedFiles][]" => null,
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1221,7 +1216,6 @@ return [
                 "Request[supervisor_id]" => 38,
                 "Request[uploadedFiles][]" => null,
                 "Request[uploadedFiles][]" => null,
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1492,7 +1486,6 @@ return [
                 "Request[supervisor_id]" => 38,
                 "Request[uploadedFiles][]" => null,
                 "Request[uploadedFiles][]" => null,
-                "_csrf-backend" => null,
             ],
             'db' => [
                 'lisa_fixtures' => [

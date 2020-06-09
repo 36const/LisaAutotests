@@ -18,7 +18,6 @@ return [
                 'load_type' => '1',
                 'report_period_id' => '1',
                 'sv_report_periods[]' => '1',
-                '_csrf-backend' => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -665,7 +664,6 @@ return [
                 'load_type' => '0',
                 'report_period_id' => '',
                 'sv_report_periods[]' => '1',
-                '_csrf-backend' => null,
             ],
             'db' => [
                 'lisa_fixtures' => [

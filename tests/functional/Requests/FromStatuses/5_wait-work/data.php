@@ -12,7 +12,6 @@ return [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[reason_id]' => '11',
                 'Request[status]' => '4',
-                "_csrf-backend" => null,
                 'keys',
                 'keys',
             ],
@@ -215,7 +214,6 @@ return [
                 'Request[supervisor_id]' => '6',
                 'Request[uploadedFiles][]' => '',
                 'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
                 'newStatus' => '6',
             ],
             'db' => [
