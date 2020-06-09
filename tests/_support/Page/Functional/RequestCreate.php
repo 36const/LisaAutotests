@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa\Page\Functional;
 
 use lisa\FunctionalTester;
@@ -21,7 +22,6 @@ class RequestCreate extends FunctionalTester
     public function amOnRelatedRequestCreate(int $type, int $direction, int $id)
     {
         $I = $this;
-//        print_r("/bpm/request/create-by-type?typeId=$type&direction=$direction&id=$id");
         $I->amOnPage("/bpm/request/create-by-type?typeId=$type&direction=$direction&id=$id");
     }
 
@@ -31,14 +31,13 @@ class RequestCreate extends FunctionalTester
     public $pageFields = [
         'subject',
         'description',
+        'category',
         'seller_id',
         'amount_to_work',
-        'planned_finish_date',
         'observers',
         'priority',
         '1',
         '2',
-        '3',
         '4',
         '5',
         '6',
@@ -60,14 +59,13 @@ class RequestCreate extends FunctionalTester
         '125',
         '126',
         '127',
-
     ];
 
     /**
      * Перевод массивов для проверки БД в массив полей для проверки html
      * и исключение из него полей, не отображающихся на странице
      */
-    public function convertDbArrays($dbTablesArray, $otherTypesFields)
+    public function convertDbArrays($dbTablesArray, $requestId)
     {
         $requests = [];
 
@@ -76,39 +74,37 @@ class RequestCreate extends FunctionalTester
                 foreach ($tableData as $tableRow) {
                     foreach ($tableRow as $column => $value) {
 
-                        if (($tableName == 'requests') && in_array($column, $this->pageFields)) {
-                                $requests[$tableRow['id']]['Request[' . $column . ']'] = $value;
+                        if (($tableName == 'requests') && ($tableRow['id'] == $requestId)) {
+                            if (in_array($column, $this->pageFields)) {
+                                $requests['Request[' . $column . ']'] = $value;
+                            }
                         }
 
-                        if (($tableName == 'requests_fields') && in_array($tableRow['field_id'], $this->pageFields)) {
-                                $requests[$tableRow['request_id']]['RequestField[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
+                        if (($tableName == 'requests_fields') && ($tableRow['request_id'] == $requestId)) {
+                            if (in_array($tableRow['field_id'], $this->pageFields)) {
+                                $requests['RequestField[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
+                            }
                         }
                     }
-                    //исключить поле category для направления Маркет
-                    if ($tableName == 'requests' && $tableRow['direction'] == 2)
-                        unset($requests[$tableRow['id']]['Request[category_id]']);
                 }
             }
-
-            return $requests;
         }
+
+        return $requests;
     }
 
     /**
      * Проверка html-полей и их значений в форме создания заявки
      */
-    public function checkFields($dbTablesArray, $otherTypesFields = [])
+    public function checkFields($tableRow, int $type, int $direction, int $id)
     {
         $I = $this;
-        $requests = $this->convertDbArrays($dbTablesArray, $otherTypesFields);
+        $request = $this->convertDbArrays($tableRow, $id);
 
-        foreach ($requests as $id => $request) {
-            $I->amOnView($id);
+        $I->amOnRelatedRequestCreate($type, $direction, $id);
 
-            foreach ($request as $field => $value) {
-                $I->canSeeInField($field, $value);
-            }
-        }
+        foreach ($request as $field => $value)
+            $I->canSeeInField($field, $value);
     }
 
 }
