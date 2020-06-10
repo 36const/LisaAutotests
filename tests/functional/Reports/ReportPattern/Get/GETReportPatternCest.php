@@ -32,10 +32,6 @@ class GETReportPatternCest
         return $this->testHelper->getDataProvider('');
     }
 
-    public function _before(FunctionalTester $I)
-    {
-    }
-
     /**
      * @param FunctionalTester $I
      * @param Example $data

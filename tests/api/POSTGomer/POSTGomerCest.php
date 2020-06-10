@@ -29,10 +29,6 @@ class POSTGomerCest
         return $this->testHelper->getDataProvider('');
     }
 
-    public function _before(ApiTester $I)
-    {
-    }
-
     /**
      * @param ApiTester $I
      * @param Example $data
