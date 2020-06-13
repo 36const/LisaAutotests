@@ -45,8 +45,13 @@ class RequestView extends FunctionalTester
         'RequestField[59]',
         'RequestField[60]',
         'RequestField[61]',
+        'RequestField[142]',
+        'RequestField[143]',
+        //общие количества ошибок
         'RequestField[101]',
         'RequestField[122]',
+        'RequestField[146]',
+        'RequestField[158]',
         //ошибки
         'RequestErrors[\d+][\d+][errorsCount]',
         'RequestErrors[\d+][\d+][itemsCount]',
@@ -65,6 +70,8 @@ class RequestView extends FunctionalTester
         'difficulty',
         'team_direction',
         'sync_source_id',
+        'cross_check_status',
+        'cross_check_manager_id',
 
         'planned_start_date',
         'planned_finish_date',
