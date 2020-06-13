@@ -58,6 +58,8 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -116,6 +118,26 @@ return [
                             'field_id' => 122,
                             'value' => null,
                         ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
                     ]
                 ]
             ]
@@ -145,6 +167,8 @@ return [
                 'RequestField[51]',
                 'RequestField[60]',
                 'RequestField[114]',
+                'RequestField[142]',
+                'RequestField[143]',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -184,7 +208,9 @@ return [
                             "team_direction" => 4,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}',
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     "requests_fields" => [
@@ -246,6 +272,26 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
                             'value' => null,
                         ],
                     ],
@@ -312,7 +358,9 @@ return [
                             "team_direction" => 2,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}',
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     "requests_fields" => [
@@ -374,6 +422,26 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
                             'value' => null,
                         ],
                     ],
@@ -438,7 +506,9 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}',
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     "requests_fields" => [
@@ -470,6 +540,16 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
                             'value' => null,
                         ],
                     ],
@@ -534,7 +614,9 @@ return [
                             "team_direction" => 5,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}',
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     "requests_fields" => [
@@ -606,6 +688,16 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
                             'value' => null,
                         ],
                     ],
@@ -683,7 +775,9 @@ return [
                             "team_direction" => 3,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}',
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     "requests_fields" => [
@@ -802,6 +896,26 @@ return [
                             'field_id' => 122,
                             'value' => null,
                         ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
                     ],
                 ]
             ]
@@ -838,10 +952,10 @@ return [
                 'RequestField[87]',
                 'RequestField[88]',
                 'RequestField[100]',
-                'RequestField[101]',
+//                'RequestField[101]',
                 'RequestField[102]',
                 'RequestField[121]',
-                'RequestField[122]',
+//                'RequestField[122]',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -990,6 +1104,16 @@ return [
                             'field_id' => 122,
                             'value' => 10,
                         ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
                     ],
                     "request_errors" => [
                         [
@@ -1036,6 +1160,7 @@ return [
                 'RequestField[92]',
                 'RequestField[110]',
                 'RequestField[117]',
+                'RequestField[155]',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1076,6 +1201,8 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     "requests_fields" => [
@@ -1183,6 +1310,26 @@ return [
                             'request_id' => 1,
                             'field_id' => 122,
                             'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
                         ],
                     ],
                     "request_errors" => [
