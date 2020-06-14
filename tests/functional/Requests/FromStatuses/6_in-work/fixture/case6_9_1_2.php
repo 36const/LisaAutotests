@@ -38,6 +38,8 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "cross_check_status" => 0,
+                "cross_check_manager_id" => null,
             ],
         ],
         'requests_fields' => [
@@ -99,6 +101,26 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 122,
+                'value' => null,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 142,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 143,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 146,
+                'value' => null,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 158,
                 'value' => null,
             ],
         ],
