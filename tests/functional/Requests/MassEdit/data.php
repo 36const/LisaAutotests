@@ -57,7 +57,9 @@ return [
                             "team_direction" => 3,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -94,7 +96,9 @@ return [
                             "team_direction" => 2,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -131,7 +135,9 @@ return [
                             "team_direction" => 4,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -168,7 +174,9 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 5,
@@ -205,7 +213,9 @@ return [
                             "team_direction" => 5,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 6,
@@ -242,7 +252,9 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -325,6 +337,26 @@ return [
                             "request_id" => 1,
                             "field_id" => 122,
                             "value" => null
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
                         ],
                         [
                             "request_id" => 2,
@@ -412,6 +444,26 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 3,
                             "field_id" => 1,
                             "value" => "1"
@@ -465,6 +517,16 @@ return [
                             "request_id" => 3,
                             "field_id" => 122,
                             "value" => null
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
                         ],
                         [
                             "request_id" => 4,
@@ -532,6 +594,16 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 5,
                             "field_id" => 1,
                             "value" => "1"
@@ -587,6 +659,16 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 6,
                             "field_id" => 1,
                             "value" => "1"
@@ -640,7 +722,17 @@ return [
                             "request_id" => 6,
                             "field_id" => 122,
                             "value" => null
-                        ]
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
                     ]
                 ]
             ]
@@ -703,7 +795,9 @@ return [
                             "team_direction" => 2,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -740,7 +834,9 @@ return [
                             "team_direction" => 3,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -777,7 +873,9 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -814,7 +912,9 @@ return [
                             "team_direction" => 5,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 5,
@@ -851,7 +951,9 @@ return [
                             "team_direction" => 5,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 6,
@@ -888,7 +990,9 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 7,
@@ -925,7 +1029,9 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1005,6 +1111,26 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 2,
                             "field_id" => 1,
                             "value" => "1"
@@ -1075,6 +1201,26 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 3,
                             "field_id" => 1,
                             "value" => "1"
@@ -1130,6 +1276,16 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 3,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 4,
                             "field_id" => 1,
                             "value" => "1"
@@ -1175,6 +1331,16 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 4,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 5,
                             "field_id" => 2,
                             "value" => "1"
@@ -1218,6 +1384,16 @@ return [
                             "request_id" => 5,
                             "field_id" => 122,
                             "value" => null
+                        ],
+                        [
+                            'request_id' => 5,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 5,
+                            'field_id' => 158,
+                            'value' => null,
                         ],
                         [
                             "request_id" => 6,
@@ -1315,6 +1491,16 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 6,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 7,
                             "field_id" => 2,
                             "value" => "1"
@@ -1373,7 +1559,17 @@ return [
                             "request_id" => 7,
                             "field_id" => 122,
                             "value" => null
-                        ]
+                        ],
+                        [
+                            'request_id' => 7,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 7,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
                     ]
                 ]
             ]
