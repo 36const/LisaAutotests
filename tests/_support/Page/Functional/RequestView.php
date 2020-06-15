@@ -6,10 +6,10 @@ use lisa\FunctionalTester;
 
 class RequestView extends FunctionalTester
 {
-    public function amOnView(int $id)
+    public function amOnView(int $id, int $cc = 0)
     {
         $I = $this;
-        $I->amOnPage("/bpm/request/view?id=$id");
+        $I->amOnPage("/bpm/request/view?id=$id&forCrossCheck=$cc");
     }
 
     /**
@@ -22,6 +22,7 @@ class RequestView extends FunctionalTester
         'Request[type_id]',
         'Request[status]',
         'Request[created_at]',
+        'Request[cross_check_status]',
         //даты
         'Request[planned_start_date]',
         'Request[planned_finish_date]',
@@ -52,9 +53,6 @@ class RequestView extends FunctionalTester
         'RequestField[122]',
         'RequestField[146]',
         'RequestField[158]',
-        //ошибки
-        'RequestErrors[\d+][\d+][errorsCount]',
-        'RequestErrors[\d+][\d+][itemsCount]',
     ];
 
     /**
@@ -70,8 +68,6 @@ class RequestView extends FunctionalTester
         'difficulty',
         'team_direction',
         'sync_source_id',
-        'cross_check_status',
-        'cross_check_manager_id',
 
         'planned_start_date',
         'planned_finish_date',

@@ -17,26 +17,39 @@ class RequestCorrection extends FunctionalTester
      */
     public $uncheckingSVFields = [
         '_csrf-backend',
-        //типы 1, 2, 3, 5, 6
+        //типы 1, 2, 3, 5, 6, 12
         'RequestField[121]',
         'RequestField[65]',
+        'RequestField[157]',
+        'RequestField[144]',
         //тип 4
         'RequestField[103]',
         'RequestField[95]',
+        'RequestField[145]',
+        'RequestField[148]',
         //типы 9, 10, 11
         'RequestField[104]',
         'RequestField[105]',
         'RequestField[106]',
+        'RequestField[149]',
+        'RequestField[150]',
+        'RequestField[151]',
         //типы 7, 8
         'RequestField[107]',
         'RequestField[109]',
+        'RequestField[152]',
+        'RequestField[154]',
         //тип 13
         'RequestField[102]',
+        'RequestField[147]',
         //тип 14
         'RequestField[108]',
         'RequestField[120]',
+        'RequestField[153]',
+        'RequestField[156]',
         //тип 15
-        'RequestField[117]'
+        'RequestField[117]',
+        'RequestField[155]',
     ];
 
     /**
@@ -49,7 +62,7 @@ class RequestCorrection extends FunctionalTester
 
         foreach ($requestBody as $field => $value) {
             ($value == '') || in_array($field, $this->uncheckingSVFields) ?:
-                $I->canSeeElement('//div[@class="kv-attribute"][1]//*', ['name' => $field, 'value' => $value]);
+                $I->canSeeElement('//div[@class="kv-attribute"]//*', ['name' => $field, 'value' => $value]);
         }
     }
 }
