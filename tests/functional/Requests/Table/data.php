@@ -12,7 +12,7 @@ return [
                 '4-dynagrid' => '1',
                 'DynaGridConfig[theme]' => 'panel-danger',
                 'deleteFlag' => '0',
-                'visibleKeys' => 'ef6ef760,50cd524a,bf04724b,4a16cdfb,805bbc04,3d33757d,ddcc7b4a,54eab21f,6f4cf3ff',
+                'visibleKeys' => 'ef6ef760,50cd524a,bf04724b,4a16cdfb,805bbc04,3d33757d,ddcc7b4a,54eab21f,6f4cf3ff,2187abd1,0e27ac6a',
             ],
             "pageObjects" => [
                 "canSee" => [
@@ -65,6 +65,14 @@ return [
                             "selector" => "//thead/tr/th[@data-col-seq='13']",
                             "value" => "Приоритет"
                         ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='14']",
+                            "value" => "Кросс-чек статус"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='15']",
+                            "value" => "Кросс-чек менеджер"
+                        ],
                     ],
                     "Заявка 7" => [
                         [
@@ -114,6 +122,14 @@ return [
                         [
                             "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='13']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='14']",
+                            "value" => "Не прошла кросс-чек"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='15']",
+                            "value" => "(не задано)"
                         ],
                     ],
                     "Заявка 6" => [
@@ -165,6 +181,14 @@ return [
                             "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='14']",
+                            "value" => "Не прошла кросс-чек"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='15']",
+                            "value" => "(не задано)"
+                        ],
                     ],
                     "Заявка 5" => [
                         [
@@ -201,7 +225,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
-//                            "value" => "Работа с&nbsp;проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
@@ -214,6 +238,14 @@ return [
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='14']",
+                            "value" => "Не прошла кросс-чек"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='15']",
+                            "value" => "(не задано)"
                         ],
                     ],
                     "Заявка 4" => [
@@ -251,7 +283,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
-//                            "value" => "Работа с проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
@@ -264,6 +296,14 @@ return [
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='13']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='14']",
+                            "value" => "Не прошла кросс-чек"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='15']",
+                            "value" => "(не задано)"
                         ],
                     ],
                     "Заявка 3" => [
@@ -315,6 +355,14 @@ return [
                             "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='13']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='14']",
+                            "value" => "Не прошла кросс-чек"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='15']",
+                            "value" => "(не задано)"
+                        ],
                     ],
                     "Заявка 2" => [
                         [
@@ -365,6 +413,14 @@ return [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='13']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='14']",
+                            "value" => "Не прошла кросс-чек"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='15']",
+                            "value" => "(не задано)"
+                        ],
                     ],
                     "Заявка 1" => [
                         [
@@ -414,6 +470,14 @@ return [
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='13']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='14']",
+                            "value" => "Не прошла кросс-чек"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='15']",
+                            "value" => "(не задано)"
                         ],
                     ],
                 ]
