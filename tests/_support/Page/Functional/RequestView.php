@@ -13,8 +13,39 @@ class RequestView extends FunctionalTester
     }
 
     /**
+     * Поля-чекбоксы, которые нужно проверять
+     * не через canSeeInField, а через canSeeCheckboxIsChecked
+     */
+    public $checkboxes = [
+        'RequestField[1]',
+        'RequestField[2]',
+        'RequestField[3]',
+        'RequestField[4]',
+        'RequestField[5]',
+        'RequestField[6]',
+        'RequestField[7]',
+        'RequestField[8]',
+        'RequestField[9]',
+        'RequestField[10]',
+        'RequestField[11]',
+        'RequestField[12]',
+        'RequestField[13]',
+        'RequestField[14]',
+        'RequestField[15]',
+        'RequestField[16]',
+        'RequestField[17]',
+        'RequestField[18]',
+        'RequestField[19]',
+        'RequestField[123]',
+        'RequestField[124]',
+        'RequestField[125]',
+        'RequestField[126]',
+        'RequestField[127]',
+    ];
+
+    /**
      * Поля с готовыми текстовыми значениями (не input), которые нужно проверять
-     * не через seeInField, а через seeElement
+     * не через canSeeInField, а через canSeeElement
      */
     public $textFields = [
         //основная информация
@@ -151,9 +182,14 @@ class RequestView extends FunctionalTester
             $I->amOnView($id);
 
             foreach ($request as $field => $value) {
-                in_array($field, $this->textFields) ?
-                    $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]) :
+
+                if (in_array($field, $this->checkboxes)) {
+                    $I->canSeeCheckboxIsChecked($field);
+                } elseif (in_array($field, $this->textFields)) {
+                    $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]);
+                } else {
                     $I->canSeeInField($field, $value);
+                }
             }
         }
     }
@@ -174,9 +210,13 @@ class RequestView extends FunctionalTester
                 try {
                     $I->seeElement('//form[@id="update_form"]//*', ['name' => $field]);
 
-                    in_array($field, $this->textFields) ?
-                        $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]) :
+                    if (in_array($field, $this->checkboxes)) {
+                        $I->canSeeCheckboxIsChecked($field);
+                    } elseif (in_array($field, $this->textFields)) {
+                        $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => $value]);
+                    } else {
                         $I->canSeeInField($field, $value);
+                    }
 
                 } catch (\Exception $exception) {
                     continue;
