@@ -55,7 +55,7 @@ class POSTRolesCreateCest
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);
-
+//die();
         $roles->amOnRoleUpdate(1);
         $roles->checkCheckboxes($providerData['requestBody']);
     }

@@ -108,6 +108,8 @@ return [
                 'RoleBpm[rolePermissions][57]' => '1',
                 'RoleBpm[rolePermissions][58]' => '0',
                 'RoleBpm[rolePermissions][58]' => '1',
+                'RoleBpm[rolePermissions][59]' => '0',
+                'RoleBpm[rolePermissions][59]' => '1',
                 'RoleBpm[rolePermissions][5]' => '0',
                 'RoleBpm[rolePermissions][5]' => '1',
                 'RoleBpm[rolePermissions][6]' => '0',
@@ -379,25 +381,30 @@ return [
                         [
                             "id" => 50,
                             "role_id" => 1,
-                            "permission_id" => 5
+                            "permission_id" => 59
                         ],
                         [
                             "id" => 51,
                             "role_id" => 1,
-                            "permission_id" => 6
+                            "permission_id" => 5
                         ],
                         [
                             "id" => 52,
                             "role_id" => 1,
-                            "permission_id" => 7
+                            "permission_id" => 6
                         ],
                         [
                             "id" => 53,
                             "role_id" => 1,
-                            "permission_id" => 8
+                            "permission_id" => 7
                         ],
                         [
                             "id" => 54,
+                            "role_id" => 1,
+                            "permission_id" => 8
+                        ],
+                        [
+                            "id" => 55,
                             "role_id" => 1,
                             "permission_id" => 9
                         ]
@@ -470,6 +477,7 @@ return [
                 'RoleBpm[rolePermissions][54]' => '1',
                 'RoleBpm[rolePermissions][57]' => '0',
                 'RoleBpm[rolePermissions][58]' => '0',
+                'RoleBpm[rolePermissions][59]' => '0',
                 'RoleBpm[rolePermissions][5]' => '0',
                 'RoleBpm[rolePermissions][6]' => '0',
                 'RoleBpm[rolePermissions][7]' => '0',
@@ -587,6 +595,7 @@ return [
                 'RoleBpm[rolePermissions][54]' => '0',
                 'RoleBpm[rolePermissions][57]' => '0',
                 'RoleBpm[rolePermissions][58]' => '0',
+                'RoleBpm[rolePermissions][59]' => '0',
                 'RoleBpm[rolePermissions][5]' => '0',
                 'RoleBpm[rolePermissions][5]' => '1',
                 'RoleBpm[rolePermissions][6]' => '0',
@@ -760,6 +769,7 @@ return [
                 'RoleBpm[rolePermissions][54]' => '0',
                 'RoleBpm[rolePermissions][57]' => '0',
                 'RoleBpm[rolePermissions][58]' => '0',
+                'RoleBpm[rolePermissions][59]' => '0',
                 'RoleBpm[rolePermissions][5]' => '0',
                 'RoleBpm[rolePermissions][6]' => '0',
                 'RoleBpm[rolePermissions][7]' => '0',
@@ -913,6 +923,7 @@ return [
                 'RoleBpm[rolePermissions][57]' => '1',
                 'RoleBpm[rolePermissions][58]' => '0',
                 'RoleBpm[rolePermissions][58]' => '1',
+                'RoleBpm[rolePermissions][59]' => '0',
                 'RoleBpm[rolePermissions][5]' => '0',
                 'RoleBpm[rolePermissions][6]' => '0',
                 'RoleBpm[rolePermissions][7]' => '0',
@@ -1054,6 +1065,7 @@ return [
                 'RoleBpm[rolePermissions][54]' => '0',
                 'RoleBpm[rolePermissions][57]' => '0',
                 'RoleBpm[rolePermissions][58]' => '0',
+                'RoleBpm[rolePermissions][59]' => '0',
                 'RoleBpm[rolePermissions][5]' => '0',
                 'RoleBpm[rolePermissions][6]' => '0',
                 'RoleBpm[rolePermissions][7]' => '0',
@@ -1163,6 +1175,8 @@ return [
                 'RoleBpm[rolePermissions][54]' => '0',
                 'RoleBpm[rolePermissions][57]' => '0',
                 'RoleBpm[rolePermissions][58]' => '0',
+                'RoleBpm[rolePermissions][59]' => '0',
+                'RoleBpm[rolePermissions][59]' => '1',
                 'RoleBpm[rolePermissions][5]' => '0',
                 'RoleBpm[rolePermissions][6]' => '0',
                 'RoleBpm[rolePermissions][7]' => '0',
@@ -1215,6 +1229,11 @@ return [
                             "id" => 7,
                             "role_id" => 1,
                             "permission_id" => 50
+                        ],
+                        [
+                            "id" => 8,
+                            "role_id" => 1,
+                            "permission_id" => 59
                         ],
                     ]
                 ]

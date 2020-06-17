@@ -1335,4 +1335,14 @@ return [
         "role_id" => 4,
         "permission_id" => 58
     ],
+    [
+        //"id" => 268,
+        "role_id" => 1,
+        "permission_id" => 59
+    ],
+    [
+        //"id" => 269,
+        "role_id" => 2,
+        "permission_id" => 59
+    ],
 ];
