@@ -3,13 +3,14 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Создание коэф. сложности тип 1 со всеми чекбоксами',
+            'description' => 'Создание активного коэф. сложности тип 1 со всеми чекбоксами',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
                 'DifficultyCoef[difficulty_coef]' => '1.5',
                 'DifficultyCoef[type_id]' => '1',
+                'DifficultyCoef[status]' => '1',
                 'fields[10]' => '1',
                 'fields[11]' => '1',
                 'fields[123]' => '1',
@@ -41,7 +42,8 @@ return [
                             "id" => 1,
                             "type_id" => 1,
                             "field_ids" => "[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 123, 124, 125, 126, 127]",
-                            "difficulty_coef" => 1.5
+                            "difficulty_coef" => 1.5,
+                            "status" => 1
                         ],
                     ],
                 ],
@@ -51,13 +53,14 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Создание коэф. сложности тип 4 с некоторыми чекбоксами',
+            'description' => 'Создание заблокированного коэф. сложности тип 4 с некоторыми чекбоксами',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
                 'DifficultyCoef[difficulty_coef]' => '0.75',
                 'DifficultyCoef[type_id]' => '4',
+                'DifficultyCoef[status]' => '0',
                 'fields[10]' => '1',
                 'fields[125]' => '1',
                 'fields[13]' => '1',
@@ -74,7 +77,8 @@ return [
                             "id" => 1,
                             "type_id" => 4,
                             "field_ids" => "[1, 4, 7, 10, 13, 16, 19, 125]",
-                            "difficulty_coef" => 0.75
+                            "difficulty_coef" => 0.75,
+                            "status" => 0
                         ],
                     ],
                 ],
@@ -84,13 +88,14 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Создание коэф. сложности тип 7 с некоторыми чекбоксами',
+            'description' => 'Создание активного коэф. сложности тип 7 с некоторыми чекбоксами',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
                 'DifficultyCoef[difficulty_coef]' => '2.5',
                 'DifficultyCoef[type_id]' => '7',
+                'DifficultyCoef[status]' => '1',
                 'fields[11]' => '1',
                 'fields[123]' => '1',
                 'fields[126]' => '1',
@@ -107,7 +112,8 @@ return [
                             "id" => 1,
                             "type_id" => 7,
                             "field_ids" => "[2, 5, 8, 11, 14, 17, 123, 126]",
-                            "difficulty_coef" => 2.5
+                            "difficulty_coef" => 2.5,
+                            "status" => 1
                         ],
                     ],
                 ],
@@ -117,13 +123,14 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Создание коэф. сложности тип 11 с некоторыми чекбоксами',
+            'description' => 'Создание заблокированного коэф. сложности тип 11 с некоторыми чекбоксами',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
                 'DifficultyCoef[difficulty_coef]' => '3.0',
                 'DifficultyCoef[type_id]' => '11',
+                'DifficultyCoef[status]' => '0',
                 'fields[3]' => '1',
                 'fields[6]' => '1',
                 'fields[9]' => '1',
@@ -140,7 +147,8 @@ return [
                             "id" => 1,
                             "type_id" => 11,
                             "field_ids" => "[3, 6, 9, 12, 15, 18, 124, 127]",
-                            "difficulty_coef" => 3
+                            "difficulty_coef" => 3,
+                            "status" => 0
                         ],
                     ],
                 ],
