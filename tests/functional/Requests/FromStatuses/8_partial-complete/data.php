@@ -5031,12 +5031,12 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 142,
-                            'value' => 10,
+                            'value' => 5,
                         ],
                         [
                             'request_id' => 1,
                             'field_id' => 143,
-                            'value' => 10,
+                            'value' => 5,
                         ],
                         [
                             'request_id' => 1,

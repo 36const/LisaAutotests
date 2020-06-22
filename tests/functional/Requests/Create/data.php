@@ -42,6 +42,7 @@ return [
                 "Request[type_id]" => 1,
                 "Request[uploadedFiles][]" => null,
                 "Request[uploadedFiles][]" => null,
+                '_csrf-backend' => null
             ],
             'db' => [
                 'lisa_fixtures' => [

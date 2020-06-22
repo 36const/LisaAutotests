@@ -54,7 +54,7 @@ class POSTCommentUpdateCest
 
         $I->sendPOST('/bpm/request-comments/update', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
-        $I->seeResponseContainsJson($providerData['responseBody']);
+        $I->canSeeResponseContainsJson($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
     }
