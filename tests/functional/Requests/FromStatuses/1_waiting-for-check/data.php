@@ -11,6 +11,8 @@ return [
             'requestBody' => [
                 'RequestField[111]' => '0',
                 'RequestField[121]' => '',
+                'RequestField[144]' => '0',
+                'RequestField[157]' => '',
                 'RequestField[1]' => '1',
                 'RequestField[20]' => '',
                 'RequestField[21]' => '',
@@ -764,7 +766,7 @@ return [
         ]
     ],
 
-    'case1_0' => [
+    'case1_0_sv' => [
         'setting' => [
             'description' => 'Изменение супервайзера в "Ожидает проверки условий"',
         ],
@@ -774,6 +776,8 @@ return [
             'requestBody' => [
                 'RequestField[111]' => '0',
                 'RequestField[121]' => '',
+                'RequestField[144]' => '0',
+                'RequestField[157]' => '',
                 'RequestField[1]' => '1',
                 'RequestField[20]' => '',
                 'RequestField[21]' => '',

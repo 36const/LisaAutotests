@@ -56,7 +56,7 @@ class POSTFromStatusesCest
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
-
+//die();
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 
         $I->checkTablesInDB($providerData['db']);

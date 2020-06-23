@@ -31,7 +31,7 @@ class POSTRelatedRequestCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('case7');
+        return $this->testHelper->getDataProvider('');
     }
 
     /**

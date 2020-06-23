@@ -11,6 +11,8 @@ return [
             'requestBody' => [
                 'RequestField[111]' => '10',
                 'RequestField[121]' => 'http://gomer.local/bpm/request/to-correction?id=1 =~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'RequestField[144]' => '0',
+                'RequestField[157]' => '',
                 'RequestField[1]' => '1',
                 'RequestField[20]' => '66',
                 'RequestField[21]' => '1',
