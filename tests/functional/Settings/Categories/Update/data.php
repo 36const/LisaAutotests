@@ -12,7 +12,6 @@ return [
                 'Category[status]' => '0',
                 'Category[supervisor_id]' => '6',
                 'Category[title]' => 'Видео к товару - new',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -55,7 +54,6 @@ return [
                 'Category[status]' => '1',
                 'Category[supervisor_id]' => '10',
                 'Category[title]' => 'Видео к товару',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -98,7 +96,6 @@ return [
                 'Category[status]' => '0',
                 'Category[supervisor_id]' => '10',
                 'Category[title]' => 'Видео к товару',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -141,7 +138,6 @@ return [
                 'Category[status]' => '1',
                 'Category[supervisor_id]' => '6',
                 'Category[title]' => 'Видео к товару',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -184,7 +180,6 @@ return [
                 'Category[status]' => '1',
                 'Category[supervisor_id]' => '10',
                 'Category[title]' => 'Видео к товару - new',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

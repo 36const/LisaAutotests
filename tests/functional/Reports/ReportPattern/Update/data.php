@@ -51,7 +51,6 @@ return [
                 'Report[conditions][team_direction]' => ['1','2','3'],
                 'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8'],
                 'Report[title]' => 'Всё во всём',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -119,7 +118,6 @@ return [
                 'Report[conditions][team_direction]' => ['1','5','6'],
                 'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8'],
                 'Report[title]' => 'Всё во всём',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -200,7 +198,6 @@ return [
                 'Report[conditions][team_direction]' => ['1','2','3'],
                 'Report[conditions][type_id]' => ['1','2','3','9','10','11','12','13','14','15'],
                 'Report[title]' => 'Всё во всём',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -277,7 +274,6 @@ return [
                 'Report[conditions][team_direction]' => ['3','5','6'],
                 'Report[conditions][type_id]' => ['6','7','8','13','14','15'],
                 'Report[title]' => 'Всё во всём',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

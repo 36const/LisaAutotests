@@ -63,7 +63,6 @@ return [
                 'RoleBpm[rolePermissions][7]' => '0',
                 'RoleBpm[rolePermissions][8]' => '0',
                 'RoleBpm[rolePermissions][9]' => '0',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -231,7 +230,6 @@ return [
                 'RoleBpm[rolePermissions][8]' => '1',
                 'RoleBpm[rolePermissions][9]' => '0',
                 'RoleBpm[rolePermissions][9]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -626,7 +624,6 @@ return [
                 'RoleBpm[rolePermissions][7]' => '0',
                 'RoleBpm[rolePermissions][8]' => '0',
                 'RoleBpm[rolePermissions][9]' => '0',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

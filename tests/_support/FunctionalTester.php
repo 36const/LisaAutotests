@@ -28,6 +28,7 @@ class FunctionalTester extends \Codeception\Actor
     public function loadDataForTest(Example $data, TestHelper $testHelper)
     {
         $I = $this;
+        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $testHelper->clearDB($I, $data);
         $testHelper->loadFixtureAndMock($I, $data);
         $I->wantTo($data['setting']['description']);
@@ -77,6 +78,31 @@ class FunctionalTester extends \Codeception\Actor
                     (!$dontSee) ?
                         $I->canSeeInDatabase($tableName, $tableRow) :
                         $I->cantSeeInDatabase($tableName, $tableRow);
+                }
+            }
+        }
+    }
+
+    public function checkObjectsOnPage($pageObjects)
+    {
+        $I = $this;
+
+        if (isset($pageObjects['canSee'])) {
+            foreach ($pageObjects['canSee'] as $objects) {
+                foreach ($objects as $object) {
+                    isset($object['value']) ?
+                        $I->canSee($object['value'], $object['selector']) :
+                        $I->canSeeElement($object['selector']);
+                }
+            }
+        }
+
+        if (isset($pageObjects['cantSee'])) {
+            foreach ($pageObjects['cantSee'] as $objects) {
+                foreach ($objects as $object) {
+                    isset($object['value']) ?
+                        $I->cantSee($object['value'], $object['selector']) :
+                        $I->cantSeeElement($object['selector']);
                 }
             }
         }

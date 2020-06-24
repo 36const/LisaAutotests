@@ -4,7 +4,6 @@ modules:
     enabled:
         - \lisa\Helper\Functional
         - Cli
-        - JsonSchema
         - Asserts
         - rzk\Database
         - PhpBrowser:
@@ -23,10 +22,6 @@ modules:
                   dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=lisa_auto_db'
                   user: 'lisa'
                   password: 'jw8s0F4'
-                gomer_fixtures:
-                  dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=gomer_db'
-                  user: 'gomer'
-                  password: '4c0EcmzAm28AeqbFFOb8N5RBw'
                 cooper_fixtures:
                   dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=cooper_mock_db'
                   user: 'gomer'

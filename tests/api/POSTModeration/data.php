@@ -30,10 +30,6 @@ return [
                     "id" => 1
                 ]
             ],
-            "seeNumRecords" => [
-                "requests" => 1,
-                "requests_fields" => 3
-            ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [
@@ -129,10 +125,6 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
                 "result" => [
                     "id" => 1
                 ]
-            ],
-            "seeNumRecords" => [
-                "requests" => 1,
-                "requests_fields" => 3
             ],
             'db' => [
                 'lisa_fixtures' => [

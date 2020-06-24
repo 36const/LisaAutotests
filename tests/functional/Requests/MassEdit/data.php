@@ -13,12 +13,11 @@ return [
                 'RequestField[30]' => '39',
                 'RequestField[32]' => '52',
                 'RequestField[3]' => '1',
-                'Request[supervisor_comment]' => 'Комментарий Супервайзера',
+                'Request[supervisor_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'keys' => '6,5,4,3,2,1',
                 'load_type' => '1',
                 'report_period_id' => '1',
                 'sv_report_periods[]' => '1',
-                '_csrf-backend' => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -53,12 +52,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-01 11:11:24",
                             "team_direction" => 3,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -90,12 +91,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-01 11:12:04",
                             "team_direction" => 2,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -127,12 +130,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-01 11:13:24",
                             "team_direction" => 4,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -164,12 +169,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-01 11:14:21",
                             "team_direction" => 6,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 5,
@@ -201,12 +208,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-01 11:16:27",
                             "team_direction" => 5,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 6,
@@ -238,12 +247,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-01 11:18:03",
                             "team_direction" => 6,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -326,6 +337,26 @@ return [
                             "request_id" => 1,
                             "field_id" => 122,
                             "value" => null
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
                         ],
                         [
                             "request_id" => 2,
@@ -411,6 +442,26 @@ return [
                             "request_id" => 2,
                             "field_id" => 122,
                             "value" => null
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
                         ],
                         [
                             "request_id" => 3,
@@ -468,6 +519,16 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 4,
                             "field_id" => 1,
                             "value" => "1"
@@ -533,6 +594,16 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 5,
                             "field_id" => 1,
                             "value" => "1"
@@ -588,6 +659,16 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 6,
                             "field_id" => 1,
                             "value" => "1"
@@ -641,7 +722,17 @@ return [
                             "request_id" => 6,
                             "field_id" => 122,
                             "value" => null
-                        ]
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
                     ]
                 ]
             ]
@@ -660,12 +751,11 @@ return [
                 'RequestField[30]' => '39',
                 'RequestField[32]' => '',
                 'RequestField[3]' => '0',
-                'Request[supervisor_comment]' => 'Комментарий Супервайзера',
+                'Request[supervisor_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'keys' => '7,6,5,4,3,2,1',
                 'load_type' => '0',
                 'report_period_id' => '',
                 'sv_report_periods[]' => '1',
-                '_csrf-backend' => null,
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -700,12 +790,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-01-01 00:00:01",
                             "team_direction" => 2,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -737,12 +829,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-02 19:33:25",
                             "team_direction" => 3,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -774,12 +868,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-02 19:34:18",
                             "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -811,12 +907,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-02 19:35:47",
                             "team_direction" => 5,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 5,
@@ -848,12 +946,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-02 19:36:10",
                             "team_direction" => 5,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 6,
@@ -885,12 +985,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => "Комментарий к результату задачи",
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-02 19:36:42",
                             "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ],
                         [
                             "id" => 7,
@@ -922,12 +1024,14 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => "Комментарий к результату задачи",
-                            "supervisor_comment" => "Комментарий Супервайзера",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
                             //"last_change_status_date" => "2020-05-02 19:36:59",
                             "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1007,6 +1111,26 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 2,
                             "field_id" => 1,
                             "value" => "1"
@@ -1077,6 +1201,26 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 3,
                             "field_id" => 1,
                             "value" => "1"
@@ -1132,6 +1276,16 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 3,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 4,
                             "field_id" => 1,
                             "value" => "1"
@@ -1177,6 +1331,16 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 4,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 5,
                             "field_id" => 2,
                             "value" => "1"
@@ -1220,6 +1384,16 @@ return [
                             "request_id" => 5,
                             "field_id" => 122,
                             "value" => null
+                        ],
+                        [
+                            'request_id' => 5,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 5,
+                            'field_id' => 158,
+                            'value' => null,
                         ],
                         [
                             "request_id" => 6,
@@ -1317,6 +1491,16 @@ return [
                             "value" => null
                         ],
                         [
+                            'request_id' => 6,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                        [
                             "request_id" => 7,
                             "field_id" => 2,
                             "value" => "1"
@@ -1375,7 +1559,17 @@ return [
                             "request_id" => 7,
                             "field_id" => 122,
                             "value" => null
-                        ]
+                        ],
+                        [
+                            'request_id' => 7,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 7,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
                     ]
                 ]
             ]

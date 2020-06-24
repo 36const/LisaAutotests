@@ -9,10 +9,9 @@ return [
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
-                'Request[correction_comment]' => 'Вернуть на проверку',
+                'Request[correction_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[reason_id]' => '15',
                 'Request[status]' => '1',
-                "_csrf-backend" => null,
                 'keys',
                 'keys',
             ],
@@ -30,7 +29,7 @@ return [
                             "priority" => 2,
                             "awaiting_correction" => 0,
                             "created_at" => '2020-01-01 00:00:00',
-                            "correction_comment" => 'Вернуть на проверку',
+                            "correction_comment" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
                             "amount_to_work" => 10,
                             "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "description" => 'description',
@@ -55,6 +54,8 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -113,12 +114,32 @@ return [
                             'field_id' => 122,
                             'value' => null,
                         ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
                     ],
                     'user_notifications' => [
                         [
                             "id" => 1,
                             "user_id" => 4,
-                            "notification" => 'Заявке <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Розетки)"</b>, количество в работу: <b>10</b> изменен статус с <b>"Требует изменений"</b> на <b>"Ожидает проверки условий"</b> пользователем <b>Константин Куцан</b>',
+                            "notification" => 'Заявка <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Розетки)"</b>, количество в работу: <b>10</b> с приоритетом <b>Товар-новинка/эксклюзив (трафикообразующий)</b> изменен статус с <b>"Требует изменений"</b> на <b>"Ожидает проверки условий"</b> пользователем <b>Константин Куцан</b>',
                             "status" => 0,
                             //"created_at" => '2020-01-01 00:00:01',
                             "request_id" => 1,
@@ -128,7 +149,7 @@ return [
                         [
                             "id" => 2,
                             "user_id" => 6,
-                            "notification" => 'Заявке <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Розетки)"</b>, количество в работу: <b>10</b> изменен статус с <b>"Требует изменений"</b> на <b>"Ожидает проверки условий"</b> пользователем <b>Константин Куцан</b>',
+                            "notification" => 'Заявка <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Розетки)"</b>, количество в работу: <b>10</b> с приоритетом <b>Товар-новинка/эксклюзив (трафикообразующий)</b> изменен статус с <b>"Требует изменений"</b> на <b>"Ожидает проверки условий"</b> пользователем <b>Константин Куцан</b>',
                             "status" => 0,
                             //"created_at" => '2020-01-01 00:00:01',
                             "request_id" => 1,
@@ -144,7 +165,7 @@ return [
                             "old_status" => 3,
                             "new_status" => 1,
                             "reason_id" => 15,
-                            "reason" => 'Вернуть на проверку',
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => null
                         ]
