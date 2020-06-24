@@ -1143,7 +1143,7 @@ return [
                 "Request[direction]" => 0,
                 "Request[parent_id]" => 1,
                 "Request[planned_finish_date]" => null,
-                "Request[priority]" => 9,
+                "Request[priority]" => 1,
                 "Request[subject]" => "Изменение существующих параметров/значений (Определяется типом задачи)",
                 "Request[type_id]" => 10,
                 "Request[supervisor_id]" => 37,
@@ -1200,7 +1200,7 @@ return [
                             "manager_id" => null,
                             "status" => 1,
                             "direction" => 0,
-                            "priority" => 9,
+                            "priority" => 1,
                             "awaiting_correction" => 0,
 //                            "created_at" => '2020-01-01 00:00:00',
                             "correction_comment" => null,
@@ -1327,7 +1327,7 @@ return [
                             "status" => 0,
                             //"created_at" => '2020-01-01 00:00:01',
                             "request_id" => 2,
-                            "priority" => 9,
+                            "priority" => 1,
                             "recipients" => "Константин Куцан, Супервайзер Проектенко 17"
                         ],
                         [
@@ -1337,7 +1337,7 @@ return [
                             "status" => 0,
                             //"created_at" => '2020-01-01 00:00:01',
                             "request_id" => 2,
-                            "priority" => 9,
+                            "priority" => 1,
                             "recipients" => "Константин Куцан, Супервайзер Проектенко 17"
                         ],
                     ],
