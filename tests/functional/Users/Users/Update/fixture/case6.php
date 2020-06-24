@@ -334,6 +334,11 @@ return [
                 "permission_name" => "takeToWork"
             ],
             [
+                //"id" => 2564,
+                "user_id" => 1,
+                "permission_name" => "priorityUpdate"
+            ],
+            [
                 //"id" => 2,
                 "user_id" => 2,
                 "permission_name" => "createUser"
@@ -629,6 +634,86 @@ return [
                 "permission_name" => "takeToWork"
             ],
             [
+                //"id" => 2562,
+                "user_id" => 2,
+                "permission_name" => "priorityUpdate"
+            ],
+            [
+                //"id" => 1048,
+                "user_id" => 4,
+                "permission_name" => "reportLoadAllUsers"
+            ],
+            [
+                //"id" => 1049,
+                "user_id" => 4,
+                "permission_name" => "reportLoadMarketUsers"
+            ],
+            [
+                //"id" => 1050,
+                "user_id" => 4,
+                "permission_name" => "reportLoadYourTeam"
+            ],
+            [
+                //"id" => 1051,
+                "user_id" => 4,
+                "permission_name" => "errorsUpdate"
+            ],
+            [
+                //"id" => 1052,
+                "user_id" => 4,
+                "permission_name" => "sellerUpdate"
+            ],
+            [
+                //"id" => 1053,
+                "user_id" => 4,
+                "permission_name" => "categoryUpdate"
+            ],
+            [
+                //"id" => 1054,
+                "user_id" => 4,
+                "permission_name" => "teamUpdate"
+            ],
+            [
+                //"id" => 1055,
+                "user_id" => 4,
+                "permission_name" => "coefUpdate"
+            ],
+            [
+                //"id" => 1056,
+                "user_id" => 4,
+                "permission_name" => "fieldsUpdate"
+            ],
+            [
+                //"id" => 1057,
+                "user_id" => 4,
+                "permission_name" => "reasonsUpdate"
+            ],
+            [
+                //"id" => 1058,
+                "user_id" => 4,
+                "permission_name" => "excludedFieldsUpdate"
+            ],
+            [
+                //"id" => 1059,
+                "user_id" => 4,
+                "permission_name" => "requestViewOwnRequests"
+            ],
+            [
+                //"id" => 1060,
+                "user_id" => 4,
+                "permission_name" => "requestViewDirectionRequests"
+            ],
+            [
+                //"id" => 1061,
+                "user_id" => 4,
+                "permission_name" => "requestViewTeamRequests"
+            ],
+            [
+                //"id" => 1062,
+                "user_id" => 4,
+                "permission_name" => "requestDeleteAttachments"
+            ],
+            [
                 //"id" => 1333,
                 "user_id" => 4,
                 "permission_name" => "createUser"
@@ -799,16 +884,6 @@ return [
                 "permission_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 1367,
-                "user_id" => 4,
-                "permission_name" => "requestViewOwnRequests"
-            ],
-            [
-                //"id" => 1368,
-                "user_id" => 4,
-                "permission_name" => "requestViewDirectionRequests"
-            ],
-            [
                 //"id" => 1369,
                 "user_id" => 4,
                 "permission_name" => "requestViewAllRequests"
@@ -824,74 +899,9 @@ return [
                 "permission_name" => "massEdit"
             ],
             [
-                //"id" => 1372,
-                "user_id" => 4,
-                "permission_name" => "requestViewTeamRequests"
-            ],
-            [
-                //"id" => 1374,
-                "user_id" => 4,
-                "permission_name" => "reportLoadAllUsers"
-            ],
-            [
-                //"id" => 1375,
-                "user_id" => 4,
-                "permission_name" => "reportLoadMarketUsers"
-            ],
-            [
-                //"id" => 1376,
-                "user_id" => 4,
-                "permission_name" => "reportLoadYourTeam"
-            ],
-            [
-                //"id" => 1377,
-                "user_id" => 4,
-                "permission_name" => "sellerUpdate"
-            ],
-            [
-                //"id" => 1378,
-                "user_id" => 4,
-                "permission_name" => "categoryUpdate"
-            ],
-            [
-                //"id" => 1379,
-                "user_id" => 4,
-                "permission_name" => "teamUpdate"
-            ],
-            [
-                //"id" => 1380,
-                "user_id" => 4,
-                "permission_name" => "coefUpdate"
-            ],
-            [
-                //"id" => 1381,
-                "user_id" => 4,
-                "permission_name" => "fieldsUpdate"
-            ],
-            [
-                //"id" => 1382,
-                "user_id" => 4,
-                "permission_name" => "reasonsUpdate"
-            ],
-            [
-                //"id" => 1383,
-                "user_id" => 4,
-                "permission_name" => "excludedFieldsUpdate"
-            ],
-            [
-                //"id" => 1384,
-                "user_id" => 4,
-                "permission_name" => "errorsUpdate"
-            ],
-            [
                 //"id" => 2223,
                 "user_id" => 4,
                 "permission_name" => "viewSplitterModerationRequests"
-            ],
-            [
-                //"id" => 2272,
-                "user_id" => 4,
-                "permission_name" => "requestDeleteAttachments"
             ],
             [
                 //"id" => 2328,
@@ -899,29 +909,94 @@ return [
                 "permission_name" => "takeToWork"
             ],
             [
-                //"id" => 1386,
+                //"id" => 2563,
+                "user_id" => 4,
+                "permission_name" => "priorityUpdate"
+            ],
+            [
+                //"id" => 1064,
                 "user_id" => 5,
                 "permission_name" => "createUser"
             ],
             [
-                //"id" => 1387,
+                //"id" => 1065,
                 "user_id" => 5,
                 "permission_name" => "updateUser"
             ],
             [
-                //"id" => 1388,
+                //"id" => 1066,
                 "user_id" => 5,
                 "permission_name" => "blockUser"
+            ],
+            [
+                //"id" => 1082,
+                "user_id" => 5,
+                "permission_name" => "massEdit"
+            ],
+            [
+                //"id" => 1083,
+                "user_id" => 5,
+                "permission_name" => "transferWaitCheckToInCheck"
+            ],
+            [
+                //"id" => 1084,
+                "user_id" => 5,
+                "permission_name" => "transferInCheckToRequireChange"
+            ],
+            [
+                //"id" => 1086,
+                "user_id" => 5,
+                "permission_name" => "transferRequireChangeToInCheck"
+            ],
+            [
+                //"id" => 1087,
+                "user_id" => 5,
+                "permission_name" => "transferInCheckToDeclined"
+            ],
+            [
+                //"id" => 1088,
+                "user_id" => 5,
+                "permission_name" => "transferWaitWorkToInWork"
+            ],
+            [
+                //"id" => 1089,
+                "user_id" => 5,
+                "permission_name" => "transferInWorkToOnHold"
+            ],
+            [
+                //"id" => 1090,
+                "user_id" => 5,
+                "permission_name" => "transferInWorkToPartialComplete"
+            ],
+            [
+                //"id" => 1091,
+                "user_id" => 5,
+                "permission_name" => "transferInWorkToCompleted"
+            ],
+            [
+                //"id" => 1092,
+                "user_id" => 5,
+                "permission_name" => "transferInWorkToDeclined"
+            ],
+            [
+                //"id" => 1093,
+                "user_id" => 5,
+                "permission_name" => "transferOnHoldToInWork"
+            ],
+            [
+                //"id" => 1094,
+                "user_id" => 5,
+                "permission_name" => "transferCompletedToRequireFix"
+            ],
+            [
+                //"id" => 1095,
+                "user_id" => 5,
+                "permission_name" => "transferCompletedToClosed"
             ],
             [
                 //"id" => 1389,
                 "user_id" => 5,
                 "permission_name" => "viewUser"
-            ],
-            [
-                //"id" => 1390,
-                "user_id" => 5,
-                "permission_name" => "requestAddNewItems"
             ],
             [
                 //"id" => 1391,
@@ -944,11 +1019,6 @@ return [
                 "permission_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 1395,
-                "user_id" => 5,
-                "permission_name" => "requestCheckHidden"
-            ],
-            [
                 //"id" => 1396,
                 "user_id" => 5,
                 "permission_name" => "requestAddFatPortalCat"
@@ -962,11 +1032,6 @@ return [
                 //"id" => 1398,
                 "user_id" => 5,
                 "permission_name" => "requestAddAttrOrValues"
-            ],
-            [
-                //"id" => 1399,
-                "user_id" => 5,
-                "permission_name" => "requestUpdateAttrOrValues"
             ],
             [
                 //"id" => 1400,
@@ -994,66 +1059,6 @@ return [
                 "permission_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 1405,
-                "user_id" => 5,
-                "permission_name" => "transferWaitCheckToInCheck"
-            ],
-            [
-                //"id" => 1406,
-                "user_id" => 5,
-                "permission_name" => "transferInCheckToRequireChange"
-            ],
-            [
-                //"id" => 1407,
-                "user_id" => 5,
-                "permission_name" => "transferInCheckToDeclined"
-            ],
-            [
-                //"id" => 1408,
-                "user_id" => 5,
-                "permission_name" => "transferRequireChangeToInCheck"
-            ],
-            [
-                //"id" => 1409,
-                "user_id" => 5,
-                "permission_name" => "transferWaitWorkToInWork"
-            ],
-            [
-                //"id" => 1410,
-                "user_id" => 5,
-                "permission_name" => "transferInWorkToOnHold"
-            ],
-            [
-                //"id" => 1411,
-                "user_id" => 5,
-                "permission_name" => "transferInWorkToPartialComplete"
-            ],
-            [
-                //"id" => 1412,
-                "user_id" => 5,
-                "permission_name" => "transferInWorkToCompleted"
-            ],
-            [
-                //"id" => 1413,
-                "user_id" => 5,
-                "permission_name" => "transferInWorkToDeclined"
-            ],
-            [
-                //"id" => 1414,
-                "user_id" => 5,
-                "permission_name" => "transferOnHoldToInWork"
-            ],
-            [
-                //"id" => 1415,
-                "user_id" => 5,
-                "permission_name" => "transferCompletedToRequireFix"
-            ],
-            [
-                //"id" => 1416,
-                "user_id" => 5,
-                "permission_name" => "transferCompletedToClosed"
-            ],
-            [
                 //"id" => 1417,
                 "user_id" => 5,
                 "permission_name" => "requestCreate"
@@ -1079,11 +1084,6 @@ return [
                 "permission_name" => "reportView"
             ],
             [
-                //"id" => 1422,
-                "user_id" => 5,
-                "permission_name" => "massEdit"
-            ],
-            [
                 //"id" => 1423,
                 "user_id" => 5,
                 "permission_name" => "reportLoadMarketUsers"
@@ -1098,6 +1098,20 @@ return [
                 "user_id" => 5,
                 "permission_name" => "takeToWork"
             ],
-        ]
+            [
+                //"id" => 2790,
+                "user_id" => 5,
+                "permission_name" => "requestAddNewItems"
+            ],
+            [
+                //"id" => 2791,
+                "user_id" => 5,
+                "permission_name" => "requestCheckHidden"
+            ],
+            [
+                //"id" => 2792,
+                "user_id" => 5,
+                "permission_name" => "requestUpdateAttrOrValues"
+            ],        ]
     ],
 ];
