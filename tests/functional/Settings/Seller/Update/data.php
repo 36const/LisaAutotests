@@ -10,7 +10,6 @@ return [
             'requestParameter' => 'update?id=83',
             'requestBody' => [
                 'MarketSupervisor[supervisor_id]' => '10',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -52,7 +51,6 @@ return [
                 'MarketSupervisor[supervisor_id]' => '10',
                 'keys' => '0,5,83',
                 'keys' => '0,5,83',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

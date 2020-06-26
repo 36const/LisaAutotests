@@ -58,12 +58,16 @@ return [
                 'RoleBpm[rolePermissions][54]' => '0',
                 'RoleBpm[rolePermissions][57]' => '0',
                 'RoleBpm[rolePermissions][58]' => '0',
+                'RoleBpm[rolePermissions][59]' => '0',
                 'RoleBpm[rolePermissions][5]' => '0',
+                'RoleBpm[rolePermissions][60]' => '0',
+                'RoleBpm[rolePermissions][61]' => '0',
+                'RoleBpm[rolePermissions][62]' => '0',
+                'RoleBpm[rolePermissions][63]' => '0',
                 'RoleBpm[rolePermissions][6]' => '0',
                 'RoleBpm[rolePermissions][7]' => '0',
                 'RoleBpm[rolePermissions][8]' => '0',
                 'RoleBpm[rolePermissions][9]' => '0',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -85,27 +89,27 @@ return [
                     ],
                     "default_role_permissions" => [
                         [
-                            "id" => 55,
+                            "id" => 60,
                             "role_id" => 2,
                             "permission_id" => 1
                         ],
                         [
-                            "id" => 56,
+                            "id" => 61,
                             "role_id" => 2,
                             "permission_id" => 2
                         ],
                         [
-                            "id" => 57,
+                            "id" => 62,
                             "role_id" => 2,
                             "permission_id" => 3
                         ],
                         [
-                            "id" => 58,
+                            "id" => 63,
                             "role_id" => 2,
                             "permission_id" => 4
                         ],
                         [
-                            "id" => 59,
+                            "id" => 64,
                             "role_id" => 2,
                             "permission_id" => 54
                         ],
@@ -221,8 +225,18 @@ return [
                 'RoleBpm[rolePermissions][57]' => '1',
                 'RoleBpm[rolePermissions][58]' => '0',
                 'RoleBpm[rolePermissions][58]' => '1',
+                'RoleBpm[rolePermissions][59]' => '0',
+                'RoleBpm[rolePermissions][59]' => '1',
                 'RoleBpm[rolePermissions][5]' => '0',
                 'RoleBpm[rolePermissions][5]' => '1',
+                'RoleBpm[rolePermissions][60]' => '0',
+                'RoleBpm[rolePermissions][60]' => '1',
+                'RoleBpm[rolePermissions][61]' => '0',
+                'RoleBpm[rolePermissions][61]' => '1',
+                'RoleBpm[rolePermissions][62]' => '0',
+                'RoleBpm[rolePermissions][62]' => '1',
+                'RoleBpm[rolePermissions][63]' => '0',
+                'RoleBpm[rolePermissions][63]' => '1',
                 'RoleBpm[rolePermissions][6]' => '0',
                 'RoleBpm[rolePermissions][6]' => '1',
                 'RoleBpm[rolePermissions][7]' => '0',
@@ -231,7 +245,6 @@ return [
                 'RoleBpm[rolePermissions][8]' => '1',
                 'RoleBpm[rolePermissions][9]' => '0',
                 'RoleBpm[rolePermissions][9]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -500,50 +513,75 @@ return [
                         [
                             "id" => 50,
                             "role_id" => 1,
-                            "permission_id" => 5
+                            "permission_id" => 59
                         ],
                         [
                             "id" => 51,
                             "role_id" => 1,
-                            "permission_id" => 6
+                            "permission_id" => 5
                         ],
                         [
                             "id" => 52,
                             "role_id" => 1,
-                            "permission_id" => 7
+                            "permission_id" => 60
                         ],
                         [
                             "id" => 53,
                             "role_id" => 1,
-                            "permission_id" => 8
+                            "permission_id" => 61
                         ],
                         [
                             "id" => 54,
                             "role_id" => 1,
-                            "permission_id" => 9
+                            "permission_id" => 62
                         ],
                         [
                             "id" => 55,
+                            "role_id" => 1,
+                            "permission_id" => 63
+                        ],
+                        [
+                            "id" => 56,
+                            "role_id" => 1,
+                            "permission_id" => 6
+                        ],
+                        [
+                            "id" => 57,
+                            "role_id" => 1,
+                            "permission_id" => 7
+                        ],
+                        [
+                            "id" => 58,
+                            "role_id" => 1,
+                            "permission_id" => 8
+                        ],
+                        [
+                            "id" => 59,
+                            "role_id" => 1,
+                            "permission_id" => 9
+                        ],
+                        [
+                            "id" => 60,
                             "role_id" => 2,
                             "permission_id" => 1
                         ],
                         [
-                            "id" => 56,
+                            "id" => 61,
                             "role_id" => 2,
                             "permission_id" => 2
                         ],
                         [
-                            "id" => 57,
+                            "id" => 62,
                             "role_id" => 2,
                             "permission_id" => 3
                         ],
                         [
-                            "id" => 58,
+                            "id" => 63,
                             "role_id" => 2,
                             "permission_id" => 4
                         ],
                         [
-                            "id" => 59,
+                            "id" => 64,
                             "role_id" => 2,
                             "permission_id" => 54
                         ],
@@ -621,12 +659,16 @@ return [
                 'RoleBpm[rolePermissions][54]' => '0',
                 'RoleBpm[rolePermissions][57]' => '0',
                 'RoleBpm[rolePermissions][58]' => '0',
+                'RoleBpm[rolePermissions][59]' => '0',
                 'RoleBpm[rolePermissions][5]' => '0',
+                'RoleBpm[rolePermissions][60]' => '0',
+                'RoleBpm[rolePermissions][61]' => '0',
+                'RoleBpm[rolePermissions][62]' => '0',
+                'RoleBpm[rolePermissions][63]' => '0',
                 'RoleBpm[rolePermissions][6]' => '0',
                 'RoleBpm[rolePermissions][7]' => '0',
                 'RoleBpm[rolePermissions][8]' => '0',
                 'RoleBpm[rolePermissions][9]' => '0',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -648,82 +690,82 @@ return [
                     ],
                     "default_role_permissions" => [
                         [
-                            "id" => 17,
+                            "id" => 18,
                             "role_id" => 2,
                             "permission_id" => 1
                         ],
                         [
-                            "id" => 18,
+                            "id" => 19,
                             "role_id" => 2,
                             "permission_id" => 2
                         ],
                         [
-                            "id" => 19,
+                            "id" => 20,
                             "role_id" => 2,
                             "permission_id" => 3
                         ],
                         [
-                            "id" => 20,
+                            "id" => 21,
                             "role_id" => 2,
                             "permission_id" => 4
                         ],
                         [
-                            "id" => 21,
+                            "id" => 22,
                             "role_id" => 2,
                             "permission_id" => 54
                         ],
                         [
-                            "id" => 22,
+                            "id" => 23,
                             "role_id" => 1,
                             "permission_id" => 40
                         ],
                         [
-                            "id" => 23,
+                            "id" => 24,
                             "role_id" => 1,
                             "permission_id" => 44
                         ],
                         [
-                            "id" => 24,
+                            "id" => 25,
                             "role_id" => 1,
                             "permission_id" => 45
                         ],
                         [
-                            "id" => 25,
+                            "id" => 26,
                             "role_id" => 1,
                             "permission_id" => 46
                         ],
                         [
-                            "id" => 26,
+                            "id" => 27,
                             "role_id" => 1,
                             "permission_id" => 47
                         ],
                         [
-                            "id" => 27,
+                            "id" => 28,
                             "role_id" => 1,
                             "permission_id" => 48
                         ],
                         [
-                            "id" => 28,
+                            "id" => 29,
                             "role_id" => 1,
                             "permission_id" => 49
                         ],
                         [
-                            "id" => 29,
+                            "id" => 30,
                             "role_id" => 1,
                             "permission_id" => 50
                         ],
                         [
-                            "id" => 30,
+                            "id" => 31,
                             "role_id" => 1,
                             "permission_id" => 51
                         ],
                         [
-                            "id" => 31,
+                            "id" => 32,
                             "role_id" => 1,
                             "permission_id" => 52
                         ],
                         [
-                            "id" => 32,
+                            "id" => 33,
                             "role_id" => 1,
                             "permission_id" => 53
                         ]

@@ -11,6 +11,8 @@ return [
             'requestBody' => [
                 'RequestField[111]' => '0',
                 'RequestField[121]' => '',
+                'RequestField[144]' => '0',
+                'RequestField[157]' => '',
                 'RequestField[1]' => '1',
                 'RequestField[20]' => '',
                 'RequestField[21]' => '',
@@ -38,6 +40,7 @@ return [
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
+                'Request[cross_check_manager_id]' => '',
                 'Request[deletedAttachments]' => '[]',
                 'Request[description]' => 'description',
                 'Request[manager_id]' => '',
@@ -52,7 +55,6 @@ return [
                 'Request[supervisor_id]' => '6',
                 'Request[uploadedFiles][]' => '',
                 'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
                 'newStatus' => '2',
             ],
             'db' => [
@@ -94,6 +96,8 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -150,6 +154,26 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
                             'value' => null,
                         ],
                     ],
@@ -204,7 +228,6 @@ return [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[reason_id]' => '15',
                 'Request[status]' => '3',
-                "_csrf-backend" => null,
                 'keys',
                 'keys',
             ],
@@ -247,7 +270,8 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "awaiting_correction" => 0,
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -304,6 +328,26 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
                             'value' => null,
                         ],
                     ],
@@ -358,7 +402,6 @@ return [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[reason_id]' => '11',
                 'Request[status]' => '4',
-                "_csrf-backend" => null,
                 'keys',
                 'keys',
             ],
@@ -401,6 +444,8 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -457,6 +502,26 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
                             'value' => null,
                         ],
                     ],
@@ -509,7 +574,6 @@ return [
             'requestParameter' => 'appoint-manager',
             'requestBody' => [
                 'Request[manager_id]' => '11',
-                "_csrf-backend" => null,
                 'keys',
             ],
             'db' => [
@@ -551,6 +615,8 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -607,6 +673,26 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
                             'value' => null,
                         ],
                     ],
@@ -680,7 +766,7 @@ return [
         ]
     ],
 
-    'case1_0' => [
+    'case1_0_sv' => [
         'setting' => [
             'description' => 'Изменение супервайзера в "Ожидает проверки условий"',
         ],
@@ -690,6 +776,8 @@ return [
             'requestBody' => [
                 'RequestField[111]' => '0',
                 'RequestField[121]' => '',
+                'RequestField[144]' => '0',
+                'RequestField[157]' => '',
                 'RequestField[1]' => '1',
                 'RequestField[20]' => '',
                 'RequestField[21]' => '',
@@ -717,6 +805,7 @@ return [
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
+                'Request[cross_check_manager_id]' => '',
                 'Request[deletedAttachments]' => '[]',
                 'Request[description]' => 'description',
                 'Request[manager_id]' => '',
@@ -731,7 +820,6 @@ return [
                 'Request[supervisor_id]' => '10',
                 'Request[uploadedFiles][]' => '',
                 'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
                 'newStatus' => '0',
             ],
             'db' => [
@@ -773,6 +861,8 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -829,6 +919,26 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
                             'value' => null,
                         ],
                     ],

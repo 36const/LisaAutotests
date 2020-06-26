@@ -11,6 +11,8 @@ return [
             'requestBody' => [
                 'RequestField[111]' => '0',
                 'RequestField[121]' => '',
+                'RequestField[144]' => '0',
+                'RequestField[157]' => '',
                 'RequestField[1]' => '1',
                 'RequestField[20]' => '',
                 'RequestField[21]' => '',
@@ -38,6 +40,7 @@ return [
                 'Request[author_id]' => '4',
                 'Request[category_id]' => '1',
                 'Request[correction_comment]' => '',
+                'Request[cross_check_manager_id]' => '',
                 'Request[deletedAttachments]' => '[]',
                 'Request[description]' => 'description',
                 'Request[manager_id]' => '11',
@@ -51,7 +54,6 @@ return [
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '6',
                 'Request[uploadedFiles][]' => '',
-                '_csrf-backend' => null,
                 'newStatus' => '6',
             ],
             'db' => [
@@ -93,6 +95,8 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -149,6 +153,26 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
                             'value' => null,
                         ],
                     ],

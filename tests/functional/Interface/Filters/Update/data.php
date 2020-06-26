@@ -62,7 +62,6 @@ return [
                 'request_field[sv_report_periods]' => ['1'],
                 'request_field[team_direction]' => ['1'],
                 'request_field[type_id]' => ['2', '7', '8', '9', '12', '13', '14', '15'],
-                '_csrf-backend' => null,
             ],
             "responseCode" => 200,
             'db' => [
@@ -127,7 +126,6 @@ return [
                 'date[planned_finish_date]' => '',
                 'date[planned_start_date]' => '',
                 'date[supervisor_process_date]' => '',
-                '_csrf-backend' => null,
             ],
             "responseCode" => 200,
             'db' => [
@@ -193,7 +191,6 @@ return [
                 'date[planned_finish_date]' => '',
                 'date[planned_start_date]' => '',
                 'date[supervisor_process_date]' => '',
-                '_csrf-backend' => null,
             ],
             "responseCode" => 200,
             'db' => [

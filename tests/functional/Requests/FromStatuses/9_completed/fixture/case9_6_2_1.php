@@ -38,6 +38,8 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}',
+                "cross_check_status" => '0',
+                "cross_check_manager_id" => null,
             ],
         ],
         'requests_fields' => [
@@ -191,6 +193,26 @@ return [
                 'field_id' => 122,
                 'value' => null,
             ],
+            [
+                'request_id' => 1,
+                'field_id' => 142,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 143,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 146,
+                'value' => null,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 158,
+                'value' => null,
+            ],
         ],
         "report_periods" => [[]],
         "request_errors" => [],
@@ -201,6 +223,7 @@ return [
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
         "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
         "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
-        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php'
+        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
+        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
     ]
 ];

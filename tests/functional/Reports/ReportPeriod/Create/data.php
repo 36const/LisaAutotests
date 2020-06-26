@@ -10,7 +10,6 @@ return [
             'requestBody' => [
                 'ReportPeriod[begin]' => '2020-05-01',
                 'ReportPeriod[end]' => '2020-05-31',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

@@ -115,6 +115,7 @@ return [
                 "status" => 1
             ]
         ],
+        "request_comments_history" => [],
         'notification_settings' => [],
         'observers' => [
             [
@@ -127,6 +128,7 @@ return [
             ]
         ],
         "user_notifications" => [],
-        "request_status_history" => []
+        "request_status_history" => [],
+        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
     ],
 ];

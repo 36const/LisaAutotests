@@ -11,7 +11,6 @@ return [
                 'Team[direction]' => '1',
                 'Team[name]' => 'Управление отделом',
                 'Team[status]' => '0',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -44,7 +43,6 @@ return [
                 'Team[direction]' => '1',
                 'Team[name]' => 'Управление отделом',
                 'Team[status]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -77,7 +75,6 @@ return [
                 'Team[direction]' => '3',
                 'Team[name]' => 'Управление отделом',
                 'Team[status]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -110,7 +107,6 @@ return [
                 'Team[direction]' => '1',
                 'Team[name]' => 'Управление отделом new',
                 'Team[status]' => '1',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -143,7 +139,6 @@ return [
                 'Team[direction]' => '4',
                 'Team[name]' => 'Управление отделом new',
                 'Team[status]' => '0',
-                '_csrf-backend' => null
             ],
             'db' => [
                 "lisa_fixtures" => [

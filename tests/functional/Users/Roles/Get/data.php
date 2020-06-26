@@ -1293,7 +1293,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?RolesSearch%5Bid%5D=&RolesSearch%5Bname%5D=&RolesSearch%5Bdescription%5D=&RolesSearch%5Bcreated_at%5D=%3D~%7D!%40%23%24%25%5E%26*()_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&RolesSearch%5Bupdated_at%5D=',
+            "url" => '?RolesSearch%5Bid%5D=&RolesSearch%5Bname%5D=&RolesSearch%5Bdescription%5D=&RolesSearch%5Bcreated_at%5D=2020-06-15%2000%3A00%3A00to2020-06-21%2023%3A59%3A00&RolesSearch%5Bupdated_at%5D=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1315,7 +1315,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?RolesSearch%5Bid%5D=&RolesSearch%5Bname%5D=&RolesSearch%5Bdescription%5D=&RolesSearch%5Bcreated_at%5D=&RolesSearch%5Bupdated_at%5D=%3D~%7D!%40%23%24%25%5E%26*()_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<',
+            "url" => '?RolesSearch%5Bid%5D=&RolesSearch%5Bname%5D=&RolesSearch%5Bdescription%5D=&RolesSearch%5Bcreated_at%5D=&RolesSearch%5Bupdated_at%5D=2020-06-15%2000%3A00%3A00to2020-06-21%2023%3A59%3A00',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [

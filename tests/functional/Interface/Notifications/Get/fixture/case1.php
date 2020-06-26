@@ -124,6 +124,7 @@ return [
                 "priority" => 2,
                 "recipients" => "Константин Куцан, Супервайзер Проектенко 14"
             ]
-        ]
-     ],
+        ],
+        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php'
+    ],
 ];

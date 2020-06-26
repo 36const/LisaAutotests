@@ -100,6 +100,11 @@ return [
                 "permission_id" => 58
             ],
             [
+                //"id" => 49,
+                "role_id" => 1,
+                "permission_id" => 59
+            ],
+            [
                 //"id" => 17,
                 "role_id" => 2,
                 "permission_id" => 1

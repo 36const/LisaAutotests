@@ -38,7 +38,9 @@ return [
                 "team_direction" => 3,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => null
+                "sv_report_periods" => null,
+                "cross_check_status" => '0',
+                "cross_check_manager_id" => null,
             ],
             [
 //                "id" => 2,
@@ -75,7 +77,9 @@ return [
                 "team_direction" => 2,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => null
+                "sv_report_periods" => null,
+                "cross_check_status" => '0',
+                "cross_check_manager_id" => null,
             ],
             [
 //                "id" => 3,
@@ -112,7 +116,9 @@ return [
                 "team_direction" => 4,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => null
+                "sv_report_periods" => null,
+                "cross_check_status" => '0',
+                "cross_check_manager_id" => null,
             ],
             [
 //                "id" => 4,
@@ -149,7 +155,9 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => null
+                "sv_report_periods" => null,
+                "cross_check_status" => '0',
+                "cross_check_manager_id" => null,
             ],
             [
 //                "id" => 5,
@@ -186,7 +194,9 @@ return [
                 "team_direction" => 5,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => null
+                "sv_report_periods" => null,
+                "cross_check_status" => '0',
+                "cross_check_manager_id" => null,
             ],
             [
 //                "id" => 6,
@@ -223,7 +233,9 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => null
+                "sv_report_periods" => null,
+                "cross_check_status" => '0',
+                "cross_check_manager_id" => null,
             ]
         ],
         "requests_fields" => [
@@ -281,6 +293,26 @@ return [
                 "request_id" => 1,
                 "field_id" => 122,
                 "value" => null
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 142,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 143,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 146,
+                'value' => null,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 158,
+                'value' => null,
             ],
             [
                 "request_id" => 2,
@@ -343,6 +375,26 @@ return [
                 "value" => null
             ],
             [
+                "request_id" => 2,
+                'field_id' => 142,
+                'value' => 0,
+            ],
+            [
+                "request_id" => 2,
+                'field_id' => 143,
+                'value' => 0,
+            ],
+            [
+                "request_id" => 2,
+                'field_id' => 146,
+                'value' => null,
+            ],
+            [
+                "request_id" => 2,
+                'field_id' => 158,
+                'value' => null,
+            ],
+            [
                 "request_id" => 3,
                 "field_id" => 2,
                 "value" => "1"
@@ -371,6 +423,16 @@ return [
                 "request_id" => 3,
                 "field_id" => 122,
                 "value" => null
+            ],
+            [
+                'request_id' => 3,
+                'field_id' => 146,
+                'value' => null,
+            ],
+            [
+                'request_id' => 3,
+                'field_id' => 158,
+                'value' => null,
             ],
             [
                 "request_id" => 4,
@@ -413,6 +475,16 @@ return [
                 "value" => null
             ],
             [
+                'request_id' => 4,
+                'field_id' => 146,
+                'value' => null,
+            ],
+            [
+                'request_id' => 4,
+                'field_id' => 158,
+                'value' => null,
+            ],
+            [
                 "request_id" => 5,
                 "field_id" => 1,
                 "value" => "1"
@@ -443,6 +515,16 @@ return [
                 "value" => null
             ],
             [
+                'request_id' => 5,
+                'field_id' => 146,
+                'value' => null,
+            ],
+            [
+                'request_id' => 5,
+                'field_id' => 158,
+                'value' => null,
+            ],
+            [
                 "request_id" => 6,
                 "field_id" => 2,
                 "value" => "1"
@@ -471,7 +553,17 @@ return [
                 "request_id" => 6,
                 "field_id" => 122,
                 "value" => null
-            ]
+            ],
+            [
+                'request_id' => 6,
+                'field_id' => 146,
+                'value' => null,
+            ],
+            [
+                'request_id' => 6,
+                'field_id' => 158,
+                'value' => null,
+            ],
         ],
         "report_periods" => [[]],
         "request_errors" => [],
@@ -479,6 +571,7 @@ return [
         "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
         "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
-        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php'
+        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
+        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
     ],
 ];
