@@ -265,9 +265,33 @@ return [
                 "permission_id" => 58
             ],
             [
+                //"id" => 49,
+                "role_id" => 1,
+                "permission_id" => 59
+            ],
+            [
                 //"id" => 50,
                 "role_id" => 1,
                 "permission_id" => 5
+            ],
+            [        //"id" => 292,
+                "role_id" => 1,
+                "permission_id" => 60
+            ],
+            [
+                //"id" => 293,
+                "role_id" => 1,
+                "permission_id" => 61
+            ],
+            [
+                //"id" => 294,
+                "role_id" => 1,
+                "permission_id" => 62
+            ],
+            [
+                //"id" => 295,
+                "role_id" => 1,
+                "permission_id" => 63
             ],
             [
                 //"id" => 51,

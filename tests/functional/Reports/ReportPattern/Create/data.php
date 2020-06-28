@@ -182,6 +182,7 @@ return [
                 'Fields[direction]' => 'on',
                 'Fields[id]' => 'on',
                 'Fields[last_change_status_date]' => 'on',
+                'Fields[manager_drfo]' => 'on',
                 'Fields[manager_id]' => 'on',
                 'Fields[parent_id]' => 'on',
                 'Fields[planned_finish_date]' => 'on',
@@ -197,6 +198,7 @@ return [
                 'Fields[subject]' => 'on',
                 'Fields[supervisor_check_date]' => 'on',
                 'Fields[supervisor_comment]' => 'on',
+                'Fields[supervisor_drfo]' => 'on',
                 'Fields[supervisor_id]' => 'on',
                 'Fields[supervisor_process_date]' => 'on',
                 'Fields[sv_report_periods]' => 'on',
@@ -210,7 +212,7 @@ return [
                         [
                             "id" => 1,
                             "title" => "Всё во всём",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => "[]",
                             "type" => 0
                         ]
@@ -401,6 +403,7 @@ return [
                 'Fields[direction]' => 'on',
                 'Fields[id]' => 'on',
                 'Fields[last_change_status_date]' => 'on',
+                'Fields[manager_drfo]' => 'on',
                 'Fields[manager_id]' => 'on',
                 'Fields[parent_id]' => 'on',
                 'Fields[planned_finish_date]' => 'on',
@@ -416,12 +419,13 @@ return [
                 'Fields[subject]' => 'on',
                 'Fields[supervisor_check_date]' => 'on',
                 'Fields[supervisor_comment]' => 'on',
+                'Fields[supervisor_drfo]' => 'on',
                 'Fields[supervisor_id]' => 'on',
                 'Fields[supervisor_process_date]' => 'on',
                 'Fields[sv_report_periods]' => 'on',
                 'Fields[team_direction]' => 'on',
                 'Fields[type_id]' => 'on',
-                'Report[conditions][team_direction]' => ['1','2','3','4','5','6'],
+                'Report[conditions][team_direction]' => ['1', '2', '3', '4', '5', '6'],
                 'Report[title]' => 'Всё во всём',
             ],
             'db' => [
@@ -430,7 +434,7 @@ return [
                         [
                             "id" => 1,
                             "title" => "Всё во всём",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"team_direction": ["1", "2", "3", "4", "5", "6"]}',
                             "type" => 0
                         ]
@@ -621,6 +625,7 @@ return [
                 'Fields[direction]' => 'on',
                 'Fields[id]' => 'on',
                 'Fields[last_change_status_date]' => 'on',
+                'Fields[manager_drfo]' => 'on',
                 'Fields[manager_id]' => 'on',
                 'Fields[parent_id]' => 'on',
                 'Fields[planned_finish_date]' => 'on',
@@ -636,12 +641,13 @@ return [
                 'Fields[subject]' => 'on',
                 'Fields[supervisor_check_date]' => 'on',
                 'Fields[supervisor_comment]' => 'on',
+                'Fields[supervisor_drfo]' => 'on',
                 'Fields[supervisor_id]' => 'on',
                 'Fields[supervisor_process_date]' => 'on',
                 'Fields[sv_report_periods]' => 'on',
                 'Fields[team_direction]' => 'on',
                 'Fields[type_id]' => 'on',
-                'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
+                'Report[conditions][type_id]' => ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15'],
                 'Report[title]' => 'Всё во всём',
             ],
             'db' => [
@@ -650,7 +656,7 @@ return [
                         [
                             "id" => 1,
                             "title" => "Всё во всём",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]}',
                             "type" => 0
                         ]
@@ -841,6 +847,7 @@ return [
                 'Fields[direction]' => 'on',
                 'Fields[id]' => 'on',
                 'Fields[last_change_status_date]' => 'on',
+                'Fields[manager_drfo]' => 'on',
                 'Fields[manager_id]' => 'on',
                 'Fields[parent_id]' => 'on',
                 'Fields[planned_finish_date]' => 'on',
@@ -856,13 +863,14 @@ return [
                 'Fields[subject]' => 'on',
                 'Fields[supervisor_check_date]' => 'on',
                 'Fields[supervisor_comment]' => 'on',
+                'Fields[supervisor_drfo]' => 'on',
                 'Fields[supervisor_id]' => 'on',
                 'Fields[supervisor_process_date]' => 'on',
                 'Fields[sv_report_periods]' => 'on',
                 'Fields[team_direction]' => 'on',
                 'Fields[type_id]' => 'on',
-                'Report[conditions][team_direction]' => ['1','2','3','4','5','6'],
-                'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
+                'Report[conditions][team_direction]' => ['1', '2', '3', '4', '5', '6'],
+                'Report[conditions][type_id]' => ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15'],
                 'Report[title]' => 'Всё во всём',
             ],
             'db' => [
@@ -871,7 +879,7 @@ return [
                         [
                             "id" => 1,
                             "title" => "Всё во всём",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
                             "type" => 0
                         ]
@@ -1062,6 +1070,7 @@ return [
                 'Fields[direction]' => 'on',
                 'Fields[id]' => 'on',
                 'Fields[last_change_status_date]' => 'on',
+                'Fields[manager_drfo]' => 'on',
                 'Fields[manager_id]' => 'on',
                 'Fields[parent_id]' => 'on',
                 'Fields[planned_finish_date]' => 'on',
@@ -1077,6 +1086,7 @@ return [
                 'Fields[subject]' => 'on',
                 'Fields[supervisor_check_date]' => 'on',
                 'Fields[supervisor_comment]' => 'on',
+                'Fields[supervisor_drfo]' => 'on',
                 'Fields[supervisor_id]' => 'on',
                 'Fields[supervisor_process_date]' => 'on',
                 'Fields[sv_report_periods]' => 'on',
@@ -1090,14 +1100,14 @@ return [
                         [
                             "id" => 1,
                             "title" => "Всё во всём",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => "[]",
                             "type" => 0
                         ],
                         [
                             "id" => 2,
                             "title" => "Всё во всём (сводный)",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => "[]",
                             "type" => 1
                         ],
@@ -1288,6 +1298,7 @@ return [
                 'Fields[direction]' => 'on',
                 'Fields[id]' => 'on',
                 'Fields[last_change_status_date]' => 'on',
+                'Fields[manager_drfo]' => 'on',
                 'Fields[manager_id]' => 'on',
                 'Fields[parent_id]' => 'on',
                 'Fields[planned_finish_date]' => 'on',
@@ -1303,6 +1314,7 @@ return [
                 'Fields[subject]' => 'on',
                 'Fields[supervisor_check_date]' => 'on',
                 'Fields[supervisor_comment]' => 'on',
+                'Fields[supervisor_drfo]' => 'on',
                 'Fields[supervisor_id]' => 'on',
                 'Fields[supervisor_process_date]' => 'on',
                 'Fields[sv_report_periods]' => 'on',
@@ -1317,14 +1329,14 @@ return [
                         [
                             "id" => 1,
                             "title" => "Всё во всём",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"team_direction": ["1", "2", "3", "4", "5", "6"]}',
                             "type" => 0
                         ],
                         [
                             "id" => 2,
                             "title" => "Всё во всём (сводный)",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"team_direction": ["1", "2", "3", "4", "5", "6"]}',
                             "type" => 1
                         ],
@@ -1515,6 +1527,7 @@ return [
                 'Fields[direction]' => 'on',
                 'Fields[id]' => 'on',
                 'Fields[last_change_status_date]' => 'on',
+                'Fields[manager_drfo]' => 'on',
                 'Fields[manager_id]' => 'on',
                 'Fields[parent_id]' => 'on',
                 'Fields[planned_finish_date]' => 'on',
@@ -1530,6 +1543,7 @@ return [
                 'Fields[subject]' => 'on',
                 'Fields[supervisor_check_date]' => 'on',
                 'Fields[supervisor_comment]' => 'on',
+                'Fields[supervisor_drfo]' => 'on',
                 'Fields[supervisor_id]' => 'on',
                 'Fields[supervisor_process_date]' => 'on',
                 'Fields[sv_report_periods]' => 'on',
@@ -1544,14 +1558,14 @@ return [
                         [
                             "id" => 1,
                             "title" => "Всё во всём",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]}',
                             "type" => 0
                         ],
                         [
                             "id" => 2,
                             "title" => "Всё во всём (сводный)",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]}',
                             "type" => 1
                         ],
@@ -1742,6 +1756,7 @@ return [
                 'Fields[direction]' => 'on',
                 'Fields[id]' => 'on',
                 'Fields[last_change_status_date]' => 'on',
+                'Fields[manager_drfo]' => 'on',
                 'Fields[manager_id]' => 'on',
                 'Fields[parent_id]' => 'on',
                 'Fields[planned_finish_date]' => 'on',
@@ -1757,6 +1772,7 @@ return [
                 'Fields[subject]' => 'on',
                 'Fields[supervisor_check_date]' => 'on',
                 'Fields[supervisor_comment]' => 'on',
+                'Fields[supervisor_drfo]' => 'on',
                 'Fields[supervisor_id]' => 'on',
                 'Fields[supervisor_process_date]' => 'on',
                 'Fields[sv_report_periods]' => 'on',
@@ -1772,14 +1788,14 @@ return [
                         [
                             "id" => 1,
                             "title" => "Всё во всём",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
                             "type" => 0
                         ],
                         [
                             "id" => 2,
                             "title" => "Всё во всём (сводный)",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
                             "type" => 1
                         ],
@@ -1970,6 +1986,7 @@ return [
                 'Fields[direction]' => 'on',
                 'Fields[id]' => 'on',
                 'Fields[last_change_status_date]' => 'on',
+                'Fields[manager_drfo]' => 'on',
                 'Fields[manager_id]' => 'on',
                 'Fields[parent_id]' => 'on',
                 'Fields[planned_finish_date]' => 'on',
@@ -1985,6 +2002,7 @@ return [
                 'Fields[subject]' => 'on',
                 'Fields[supervisor_check_date]' => 'on',
                 'Fields[supervisor_comment]' => 'on',
+                'Fields[supervisor_drfo]' => 'on',
                 'Fields[supervisor_id]' => 'on',
                 'Fields[supervisor_process_date]' => 'on',
                 'Fields[sv_report_periods]' => 'on',
@@ -2000,14 +2018,14 @@ return [
                         [
                             "id" => 1,
                             "title" => "Всё во всём",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
                             "type" => 0
                         ],
                         [
                             "id" => 2,
                             "title" => "Всё во всём (копия)",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
                             "type" => 0
                         ],
@@ -2198,6 +2216,7 @@ return [
                 'Fields[direction]' => 'on',
                 'Fields[id]' => 'on',
                 'Fields[last_change_status_date]' => 'on',
+                'Fields[manager_drfo]' => 'on',
                 'Fields[manager_id]' => 'on',
                 'Fields[parent_id]' => 'on',
                 'Fields[planned_finish_date]' => 'on',
@@ -2213,6 +2232,7 @@ return [
                 'Fields[subject]' => 'on',
                 'Fields[supervisor_check_date]' => 'on',
                 'Fields[supervisor_comment]' => 'on',
+                'Fields[supervisor_drfo]' => 'on',
                 'Fields[supervisor_id]' => 'on',
                 'Fields[supervisor_process_date]' => 'on',
                 'Fields[sv_report_periods]' => 'on',
@@ -2228,21 +2248,21 @@ return [
                         [
                             "id" => 1,
                             "title" => "Всё во всём",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
                             "type" => 0
                         ],
                         [
                             "id" => 2,
                             "title" => "Всё во всём (сводный)",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "created_at", "cross_check_manager_id", "cross_check_status", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
                             "type" => 1
                         ],
                         [
                             "id" => 3,
                             "title" => "Всё во всём (сводный) (копия)",
-                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "cross_check_manager_id", "cross_check_status", "created_at", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
+                            "fields" => '[100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 10, 110, 111, 112, 113, 114, 115, 116, 117, 118, 11, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 12, 13, 14, 15, 16, 17, 18, 19, 1, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9, "actual_finish_date", "actual_start_date", "amount_to_work", "attachments", "author_id", "awaiting_correction", "category_id", "correction_comment", "cross_check_manager_id", "cross_check_status", "created_at", "description", "difficulty", "direction", "id", "last_change_status_date", "manager_drfo", "manager_id", "parent_id", "planned_finish_date", "planned_start_date", "priority", "reason", "reason_id", "recommendations", "report_period_id", "result_comment", "seller_id", "status", "subject", "supervisor_check_date", "supervisor_comment", "supervisor_drfo", "supervisor_id", "supervisor_process_date", "sv_report_periods", "team_direction", "type_id"]',
                             "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
                             "type" => 0
                         ],
