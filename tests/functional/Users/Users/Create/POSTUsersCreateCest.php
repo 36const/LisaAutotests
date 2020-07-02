@@ -5,7 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\Roles;
+use lisa\Page\Functional\User;
 
 /**
  * @group lisa
@@ -37,26 +37,29 @@ class POSTUsersCreateCest
      * @param FunctionalTester $I
      * @param Example $data
      * @param Login $login
-     * @param Roles $roles
+     * @param User $user
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
      *
      */
-    public function POSTUsersCreate(FunctionalTester $I, Example $data, Login $login, Roles $roles)
+    public function POSTUsersCreate(FunctionalTester $I, Example $data, Login $login, User $user)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
-
-        $I->sendPOST('/bpm/roles/create', $providerData['requestBody']);
+//die();
+        $I->sendPOST('/bpm/user/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
-
+//die();
         $I->checkTablesInDB($providerData['db']);
 
-        $roles->amOnRoleUpdate(1);
-        $roles->checkCheckboxes($providerData['requestBody']);
+//        if (!empty($providerData['pageObjects'])) {
+//            $I->checkObjectsOnPage($providerData['pageObjects']);
+//        } else {
+//            $user->amOnUserUpdate(6);
+//            $user->checkCheckboxes($providerData['requestBody']);
+//        }
     }
 }

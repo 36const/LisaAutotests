@@ -7,7 +7,7 @@ return [
         "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
         "user_bpm" =>[
             [
-                "id" => 1,
+                //"id" => 1,
                 "name" => "Система",
                 "login" => "systemBPM",
                 "email" => "system@rozetka.com.ua",
@@ -17,10 +17,11 @@ return [
                 "status" => 1,
                 "create_ts" => "2020-05-19 13:36:22",
                 "created_by" => 0,
-                "change_date" => "2020-05-19 16:36:22"
+                "change_date" => "2020-05-19 16:36:22",
+                "drfo" => "0"
             ],
             [
-                "id" => 2,
+                //"id" => 2,
                 "name" => "Администратор",
                 "login" => "adminBPM",
                 "email" => "admin@admin.com",
@@ -30,10 +31,11 @@ return [
                 "status" => 1,
                 "create_ts" => "2020-05-19 13:36:22",
                 "created_by" => 0,
-                "change_date" => "2020-05-19 16:36:22"
+                "change_date" => "2020-05-19 16:36:22",
+                "drfo" => "0"
             ],
             [
-                "id" => 3,
+                //"id" => 3,
                 "name" => "Гость",
                 "login" => "guestBPM",
                 "email" => "guest@guest.com",
@@ -43,23 +45,25 @@ return [
                 "status" => 1,
                 "create_ts" => "2020-05-19 13:36:22",
                 "created_by" => 0,
-                "change_date" => "2020-05-19 16:36:22"
+                "change_date" => "2020-05-19 16:36:22",
+                "drfo" => "0"
             ],
             [
-                "id" => 4,
+                //"id" => 4,
                 "name" => "Константин Куцан",
                 "login" => "kutsan.k",
                 "email" => "kutsan.k@rozetka.com.ua",
                 "team" => 17,
                 "parent_id" => 1,
                 "position" => "admin",
-                "status" => 0,
+                "status" => 1,
                 "create_ts" => "2020-05-19 13:36:22",
                 "created_by" => 1,
-                "change_date" => "2020-05-19 16:36:22"
+                "change_date" => "2020-05-19 16:36:22",
+                "drfo" => "'000000004"
             ],
             [
-                "id" => 5,
+                //"id" => 5,
                 "name" => "Супервайзер Руководько 1",
                 "login" => "bpm_headSupervisor_1",
                 "email" => "bpm_headSupervisor_1@rozetka.com.ua",
@@ -69,7 +73,8 @@ return [
                 "status" => 1,
                 "create_ts" => "2020-05-19 13:36:22",
                 "created_by" => 1,
-                "change_date" => "2020-05-19 16:36:22"
+                "change_date" => "2020-05-19 16:36:22",
+                "drfo" => "'000000005"
             ],
         ],
         "user_permissions" => [
@@ -337,6 +342,11 @@ return [
                 //"id" => 2564,
                 "user_id" => 1,
                 "permission_name" => "priorityUpdate"
+            ],
+            [
+                //"id" => 3011,
+                "user_id" => 1,
+                "permission_name" => "viewAllDashboards"
             ],
             [
                 //"id" => 2,
@@ -639,6 +649,26 @@ return [
                 "permission_name" => "priorityUpdate"
             ],
             [
+                //"id" => 3009,
+                "user_id" => 2,
+                "permission_name" => "viewAllDashboards"
+            ],
+            [
+                //"id" => 3014,
+                "user_id" => 2,
+                "permission_name" => "viewDashboardsByDirection"
+            ],
+            [
+                //"id" => 3036,
+                "user_id" => 2,
+                "permission_name" => "viewDashboardsByCommand"
+            ],
+            [
+                //"id" => 3043,
+                "user_id" => 2,
+                "permission_name" => "viewOwnDashboards"
+            ],
+            [
                 //"id" => 1048,
                 "user_id" => 4,
                 "permission_name" => "reportLoadAllUsers"
@@ -914,6 +944,26 @@ return [
                 "permission_name" => "priorityUpdate"
             ],
             [
+                //"id" => 3010,
+                "user_id" => 4,
+                "permission_name" => "viewAllDashboards"
+            ],
+            [
+                //"id" => 3015,
+                "user_id" => 4,
+                "permission_name" => "viewDashboardsByDirection"
+            ],
+            [
+                //"id" => 3037,
+                "user_id" => 4,
+                "permission_name" => "viewDashboardsByCommand"
+            ],
+            [
+                //"id" => 3044,
+                "user_id" => 4,
+                "permission_name" => "viewOwnDashboards"
+            ],
+            [
                 //"id" => 1064,
                 "user_id" => 5,
                 "permission_name" => "createUser"
@@ -1112,6 +1162,12 @@ return [
                 //"id" => 2792,
                 "user_id" => 5,
                 "permission_name" => "requestUpdateAttrOrValues"
-            ],        ]
+            ],
+            [
+                //"id" => 3013,
+                "user_id" => 5,
+                "permission_name" => "viewAllDashboards"
+            ],
+        ]
     ],
 ];
