@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Перевод в статусе "Ожидает проверки условий" из типа 1 в 2 без изменений',
+            'description' => 'Перевод в статусе "Новая" из типа 1 в 2 без изменений',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -146,7 +146,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Перевод в статусе "На проверке" из типа 3 в 4 с изменением чек-боксов, категории, продавца',
+            'description' => 'Перевод в статусе "Готова для распределения" из типа 3 в 4 с изменением чек-боксов, категории, продавца',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
@@ -302,7 +302,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Перевод в статусе "Требует изменений" из типа 5 в 6 без изменений',
+            'description' => 'Перевод в статусе "На доработке" из типа 5 в 6 без изменений',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case3.php',
         'provider_data' => [

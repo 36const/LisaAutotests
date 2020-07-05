@@ -48,7 +48,7 @@ class POSTRelatedRequestCest
     public function POSTRelatedRequest(FunctionalTester $I, Example $data, Login $login,
                                        RequestCreate $create, RequestView $view)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $setting = $data['setting'];
         $providerData = $data['provider_data'];

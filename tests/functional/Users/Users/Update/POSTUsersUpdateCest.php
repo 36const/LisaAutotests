@@ -45,7 +45,7 @@ class POSTUsersUpdateCest
      */
     public function POSTUsersUpdate(FunctionalTester $I, Example $data, Login $login, User $user)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data, $this->testHelper, [], false);
 
         $providerData = $data['provider_data'];
 

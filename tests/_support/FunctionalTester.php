@@ -25,13 +25,15 @@ class FunctionalTester extends \Codeception\Actor
 {
     use _generated\FunctionalTesterActions;
 
-    public function loadDataForTest(Example $data, TestHelper $testHelper)
+    public function loadDataForTest(Example $data, TestHelper $testHelper,
+                                    array $globalFile = ['oneUser'],
+                                    bool $globalUsing = true, bool $localTrucate = true)
     {
         $I = $this;
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
-        $testHelper->clearDB($I, $data);
-        $testHelper->loadGlobalFixture($I, ['global']);
-        $testHelper->loadFixtureAndMock($I, $data);
+        $testHelper->clearDB($I, $data, $globalFile);
+        !$globalUsing ?: $testHelper->loadGlobalFixture($I, $globalFile);
+        $testHelper->loadFixtureAndMock($I, $data, $localTrucate);
         $I->wantTo($data['setting']['description']);
     }
 

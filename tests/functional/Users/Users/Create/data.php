@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Создание юзера без логина/почты',
+            'description' => 'Создание юзера без логина/почты (негативный)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1188,7 +1188,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Создание супервайзера без команды',
+            'description' => 'Создание супервайзера без команды (негативный)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2374,7 +2374,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Создание менеджера без команды',
+            'description' => 'Создание менеджера без команды (негативный)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -3560,7 +3560,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Создание супервайзера без руководителя',
+            'description' => 'Создание супервайзера без руководителя (негативный)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -4746,7 +4746,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Создание менеджера без руководителя',
+            'description' => 'Создание менеджера без руководителя (негативный)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -7192,43 +7192,43 @@ return [
                         [
                             "id" => 232,
                             "user_id" => 6,
-                            "permission_name" => "transferRequireChangeToInCheck"
+                            "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
                             "id" => 233,
                             "user_id" => 6,
-                            "permission_name" => "transferOnHoldToInWork"
+                            "permission_name" => "requestCreate"
                         ],
                         [
                             "id" => 234,
                             "user_id" => 6,
-                            "permission_name" => "requestCreate"
+                            "permission_name" => "requestCreateRelated"
                         ],
                         [
                             "id" => 235,
                             "user_id" => 6,
-                            "permission_name" => "requestCreateRelated"
+                            "permission_name" => "requestViewAllRequests"
                         ],
                         [
                             "id" => 236,
                             "user_id" => 6,
-                            "permission_name" => "requestViewAllRequests"
+                            "permission_name" => "requestViewTeamRequests"
                         ],
                         [
                             "id" => 237,
                             "user_id" => 6,
-                            "permission_name" => "requestViewTeamRequests"
+                            "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
                             "id" => 238,
                             "user_id" => 6,
-                            "permission_name" => "viewSplitterModerationRequests"
+                            "permission_name" => "viewDashboardsByCommand"
                         ],
                         [
                             "id" => 239,
                             "user_id" => 6,
-                            "permission_name" => "viewDashboardsByCommand"
-                        ]
+                            "permission_name" => "transferRequireChangeToInCheck"
+                        ],
                     ],
                     "notification_settings" => [
                         [
@@ -8506,38 +8506,38 @@ return [
                         [
                             "id" => 232,
                             "user_id" => 6,
-                            "permission_name" => "transferRequireChangeToInCheck"
+                            "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
                             "id" => 233,
                             "user_id" => 6,
-                            "permission_name" => "transferOnHoldToInWork"
+                            "permission_name" => "requestCreate"
                         ],
                         [
                             "id" => 234,
                             "user_id" => 6,
-                            "permission_name" => "requestCreate"
+                            "permission_name" => "requestCreateRelated"
                         ],
                         [
                             "id" => 235,
                             "user_id" => 6,
-                            "permission_name" => "requestCreateRelated"
+                            "permission_name" => "requestViewOwnRequests"
                         ],
                         [
                             "id" => 236,
                             "user_id" => 6,
-                            "permission_name" => "requestViewOwnRequests"
+                            "permission_name" => "requestViewTeamRequests"
                         ],
                         [
                             "id" => 237,
                             "user_id" => 6,
-                            "permission_name" => "requestViewTeamRequests"
+                            "permission_name" => "viewDashboardsByCommand"
                         ],
                         [
                             "id" => 238,
                             "user_id" => 6,
-                            "permission_name" => "viewDashboardsByCommand"
-                        ]
+                            "permission_name" => "transferRequireChangeToInCheck"
+                        ],
                     ],
                     "notification_settings" => [
                         [
@@ -9785,38 +9785,38 @@ return [
                         [
                             "id" => 226,
                             "user_id" => 6,
-                            "permission_name" => "transferRequireChangeToInCheck"
+                            "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
                             "id" => 227,
                             "user_id" => 6,
-                            "permission_name" => "transferOnHoldToInWork"
+                            "permission_name" => "requestCreate"
                         ],
                         [
                             "id" => 228,
                             "user_id" => 6,
-                            "permission_name" => "requestCreate"
+                            "permission_name" => "requestCreateRelated"
                         ],
                         [
                             "id" => 229,
                             "user_id" => 6,
-                            "permission_name" => "requestCreateRelated"
+                            "permission_name" => "requestViewOwnRequests"
                         ],
                         [
                             "id" => 230,
                             "user_id" => 6,
-                            "permission_name" => "requestViewOwnRequests"
+                            "permission_name" => "requestViewTeamRequests"
                         ],
                         [
                             "id" => 231,
                             "user_id" => 6,
-                            "permission_name" => "requestViewTeamRequests"
+                            "permission_name" => "viewDashboardsByCommand"
                         ],
                         [
                             "id" => 232,
                             "user_id" => 6,
-                            "permission_name" => "viewDashboardsByCommand"
-                        ]
+                            "permission_name" => "transferRequireChangeToInCheck"
+                        ],
                     ],
                     "notification_settings" => [
                         [
@@ -11034,38 +11034,39 @@ return [
                         [
                             "id" => 220,
                             "user_id" => 6,
-                            "permission_name" => "transferRequireChangeToInCheck"
+                            "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
                             "id" => 221,
                             "user_id" => 6,
-                            "permission_name" => "transferOnHoldToInWork"
+                            "permission_name" => "requestCreate"
                         ],
                         [
                             "id" => 222,
                             "user_id" => 6,
-                            "permission_name" => "requestCreate"
+                            "permission_name" => "requestCreateRelated"
                         ],
                         [
                             "id" => 223,
                             "user_id" => 6,
-                            "permission_name" => "requestCreateRelated"
+                            "permission_name" => "requestViewOwnRequests"
                         ],
                         [
                             "id" => 224,
                             "user_id" => 6,
-                            "permission_name" => "requestViewOwnRequests"
+                            "permission_name" => "requestViewTeamRequests"
                         ],
                         [
                             "id" => 225,
                             "user_id" => 6,
-                            "permission_name" => "requestViewTeamRequests"
+                            "permission_name" => "viewDashboardsByCommand"
                         ],
                         [
                             "id" => 226,
                             "user_id" => 6,
-                            "permission_name" => "viewDashboardsByCommand"
-                        ]
+                            "permission_name" => "transferRequireChangeToInCheck"
+                        ],
+
                     ],
                     "notification_settings" => [
                         [
@@ -13607,114 +13608,114 @@ return [
                         [
                             "id" => 235,
                             "user_id" => 6,
-                            "permission_name" => "transferWaitCheckToInCheck"
+                            "permission_name" => "transferWaitWorkToInWork"
                         ],
                         [
                             "id" => 236,
                             "user_id" => 6,
-                            "permission_name" => "transferInCheckToRequireChange"
+                            "permission_name" => "transferInWorkToOnHold"
                         ],
                         [
                             "id" => 237,
                             "user_id" => 6,
-                            "permission_name" => "transferInCheckToDeclined"
+                            "permission_name" => "transferInWorkToPartialComplete"
                         ],
                         [
                             "id" => 238,
                             "user_id" => 6,
-                            "permission_name" => "transferRequireChangeToInCheck"
+                            "permission_name" => "transferInWorkToCompleted"
                         ],
                         [
                             "id" => 239,
                             "user_id" => 6,
-                            "permission_name" => "transferWaitWorkToInWork"
+                            "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
                             "id" => 240,
                             "user_id" => 6,
-                            "permission_name" => "transferInWorkToOnHold"
+                            "permission_name" => "transferOnHoldToInWork"
                         ],
                         [
                             "id" => 241,
                             "user_id" => 6,
-                            "permission_name" => "transferInWorkToPartialComplete"
+                            "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
                             "id" => 242,
                             "user_id" => 6,
-                            "permission_name" => "transferInWorkToCompleted"
+                            "permission_name" => "transferCompletedToClosed"
                         ],
                         [
                             "id" => 243,
                             "user_id" => 6,
-                            "permission_name" => "transferInWorkToDeclined"
+                            "permission_name" => "requestCreate"
                         ],
                         [
                             "id" => 244,
                             "user_id" => 6,
-                            "permission_name" => "transferOnHoldToInWork"
+                            "permission_name" => "requestUpdate"
                         ],
                         [
                             "id" => 245,
                             "user_id" => 6,
-                            "permission_name" => "transferCompletedToRequireFix"
+                            "permission_name" => "requestCreateRelated"
                         ],
                         [
                             "id" => 246,
                             "user_id" => 6,
-                            "permission_name" => "transferCompletedToClosed"
+                            "permission_name" => "requestViewDirectionRequests"
                         ],
                         [
                             "id" => 247,
                             "user_id" => 6,
-                            "permission_name" => "requestCreate"
+                            "permission_name" => "reportView"
                         ],
                         [
                             "id" => 248,
                             "user_id" => 6,
-                            "permission_name" => "requestUpdate"
+                            "permission_name" => "massEdit"
                         ],
                         [
                             "id" => 249,
                             "user_id" => 6,
-                            "permission_name" => "requestCreateRelated"
+                            "permission_name" => "reportLoadYourTeam"
                         ],
                         [
                             "id" => 250,
                             "user_id" => 6,
-                            "permission_name" => "requestViewDirectionRequests"
+                            "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
                             "id" => 251,
                             "user_id" => 6,
-                            "permission_name" => "reportView"
+                            "permission_name" => "takeToWork"
                         ],
                         [
                             "id" => 252,
                             "user_id" => 6,
-                            "permission_name" => "massEdit"
+                            "permission_name" => "viewDashboardsByCommand"
                         ],
                         [
                             "id" => 253,
                             "user_id" => 6,
-                            "permission_name" => "reportLoadYourTeam"
+                            "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
                             "id" => 254,
                             "user_id" => 6,
-                            "permission_name" => "viewSplitterModerationRequests"
+                            "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
                             "id" => 255,
                             "user_id" => 6,
-                            "permission_name" => "takeToWork"
+                            "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
                             "id" => 256,
                             "user_id" => 6,
-                            "permission_name" => "viewDashboardsByCommand"
-                        ]
-                    ],
+                            "permission_name" => "transferRequireChangeToInCheck"
+                        ],
+                        ],
                     "notification_settings" => [
                         [
                             'id' => 1,

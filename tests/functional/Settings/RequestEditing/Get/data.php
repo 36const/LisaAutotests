@@ -42,7 +42,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[3]",
-                            "value" => "Ожидает проверки условий"
+                            "value" => "Новая"
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[4]",
@@ -63,7 +63,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[2]/td[3]",
-                            "value" => "Взята на проверку"
+                            "value" => "Готова для распределения"
                         ],
                         [
                             "selector" => "//tbody/tr[2]/td[4]",
@@ -84,7 +84,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[3]/td[3]",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[3]/td[4]",
@@ -252,7 +252,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[11]/td[3]",
-                            "value" => "Ожидает проверки условий"
+                            "value" => "Новая"
                         ],
                         [
                             "selector" => "//tbody/tr[11]/td[4]",
@@ -273,7 +273,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[12]/td[3]",
-                            "value" => "Взята на проверку"
+                            "value" => "Готова для распределения"
                         ],
                         [
                             "selector" => "//tbody/tr[12]/td[4]",
@@ -294,7 +294,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[13]/td[3]",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[13]/td[4]",
@@ -499,7 +499,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[3]",
-                            "value" => "Ожидает проверки условий"
+                            "value" => "Новая"
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[4]",
@@ -617,7 +617,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[3]",
-                            "value" => "Ожидает проверки условий"
+                            "value" => "Новая"
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[4]",
@@ -638,7 +638,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[2]/td[3]",
-                            "value" => "Взята на проверку"
+                            "value" => "Готова для распределения"
                         ],
                         [
                             "selector" => "//tbody/tr[2]/td[4]",
@@ -659,7 +659,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[3]/td[3]",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[3]/td[4]",
@@ -870,7 +870,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[3]",
-                            "value" => "Ожидает проверки условий"
+                            "value" => "Новая"
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[4]",
@@ -891,7 +891,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[2]/td[3]",
-                            "value" => "Ожидает проверки условий"
+                            "value" => "Новая"
                         ],
                         [
                             "selector" => "//tbody/tr[2]/td[4]",
@@ -910,7 +910,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody",
-                            "value" => "Взята на проверку"
+                            "value" => "Готова для распределения"
                         ],
                     ],
                     "Создатель 3" => [
@@ -920,7 +920,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                     ],
                     "Создатель 4" => [
@@ -1000,7 +1000,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody",
-                            "value" => "Взята на проверку"
+                            "value" => "Готова для распределения"
                         ],
                     ],
                     "Заголовок 3" => [
@@ -1010,7 +1010,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                     ],
                     "Заголовок 4" => [
@@ -1135,7 +1135,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[3]",
-                            "value" => "Ожидает проверки условий"
+                            "value" => "Новая"
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[4]",
@@ -1156,7 +1156,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[2]/td[3]",
-                            "value" => "Взята на проверку"
+                            "value" => "Готова для распределения"
                         ],
                         [
                             "selector" => "//tbody/tr[2]/td[4]",
@@ -1177,7 +1177,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[3]/td[3]",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[3]/td[4]",
@@ -1345,7 +1345,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[11]/td[3]",
-                            "value" => "Ожидает проверки условий"
+                            "value" => "Новая"
                         ],
                         [
                             "selector" => "//tbody/tr[11]/td[4]",
@@ -1366,7 +1366,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[12]/td[3]",
-                            "value" => "Взята на проверку"
+                            "value" => "Готова для распределения"
                         ],
                         [
                             "selector" => "//tbody/tr[12]/td[4]",
@@ -1387,7 +1387,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[13]/td[3]",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[13]/td[4]",
@@ -1598,7 +1598,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[3]",
-                            "value" => "Ожидает проверки условий"
+                            "value" => "Новая"
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[4]",
@@ -1619,7 +1619,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[2]/td[3]",
-                            "value" => "Взята на проверку"
+                            "value" => "Готова для распределения"
                         ],
                         [
                             "selector" => "//tbody/tr[2]/td[4]",
@@ -1640,7 +1640,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[3]/td[3]",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[3]/td[4]",
@@ -1808,7 +1808,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[11]/td[3]",
-                            "value" => "Ожидает проверки условий"
+                            "value" => "Новая"
                         ],
                         [
                             "selector" => "//tbody/tr[11]/td[4]",
@@ -1829,7 +1829,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[12]/td[3]",
-                            "value" => "Взята на проверку"
+                            "value" => "Готова для распределения"
                         ],
                         [
                             "selector" => "//tbody/tr[12]/td[4]",
@@ -1850,7 +1850,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[13]/td[3]",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[13]/td[4]",

@@ -1,7 +1,7 @@
 <?php
 
 $dirs = [
-    '/1_waiting-for-check',
+    '/1_new',
     '/2_in-check',
     '/3_require-changes',
     '/5_wait-work',

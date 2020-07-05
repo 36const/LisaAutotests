@@ -44,22 +44,20 @@ class POSTUsersCreateCest
      */
     public function POSTUsersCreate(FunctionalTester $I, Example $data, Login $login, User $user)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data, $this->testHelper, [], false);
 
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
-//die();
+
         $I->sendPOST('/bpm/user/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
-//die();
+
         $I->checkTablesInDB($providerData['db']);
 
-//        if (!empty($providerData['pageObjects'])) {
-//            $I->checkObjectsOnPage($providerData['pageObjects']);
-//        } else {
-//            $user->amOnUserUpdate(6);
-//            $user->checkCheckboxes($providerData['requestBody']);
-//        }
+        if (!stripos($data['setting']['description'], '(негативный)')) {
+            $user->amOnUserUpdate(6);
+            $user->checkCheckboxes($providerData['requestBody']);
+        }
     }
 }

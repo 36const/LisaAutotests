@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Типы 1/1, 2/2, 4, 8, 11, 14 в статусе "Ожидают проверки условий"',
+            'description' => 'Типы 1/1, 2/2, 4, 8, 11, 14 в статусе "Новая"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
