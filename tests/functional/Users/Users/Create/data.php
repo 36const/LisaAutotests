@@ -3,7 +3,8 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Создание юзера без логина/почты (негативный)',
+            'description' => 'Создание юзера без логина/почты',
+            'negative'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1188,7 +1189,8 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Создание супервайзера без команды (негативный)',
+            'description' => 'Создание супервайзера без команды',
+            'negative'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2374,7 +2376,8 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Создание менеджера без команды (негативный)',
+            'description' => 'Создание менеджера без команды',
+            'negative'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -3560,7 +3563,8 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Создание супервайзера без руководителя (негативный)',
+            'description' => 'Создание супервайзера без руководителя',
+            'negative'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -4746,7 +4750,8 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Создание менеджера без руководителя (негативный)',
+            'description' => 'Создание менеджера без руководителя',
+            'negative'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

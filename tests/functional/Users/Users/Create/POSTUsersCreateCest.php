@@ -55,7 +55,7 @@ class POSTUsersCreateCest
 
         $I->checkTablesInDB($providerData['db']);
 
-        if (!stripos($data['setting']['description'], '(негативный)')) {
+        if (!in_array('negative', $data['setting'])) {
             $user->amOnUserUpdate(6);
             $user->checkCheckboxes($providerData['requestBody']);
         }
