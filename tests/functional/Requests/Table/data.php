@@ -391,7 +391,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
@@ -449,7 +449,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
-                            "value" => "Взята на проверку"
+                            "value" => "Готова для распределения"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='9']",
@@ -487,7 +487,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Списки, вкладка На проверке',
+            'description' => 'Списки, вкладка Готова для распределения',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -879,7 +879,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
@@ -909,7 +909,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Текстовые поля, вкладка Требует изменений',
+            'description' => 'Текстовые поля, вкладка На доработке',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1618,7 +1618,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
@@ -2048,7 +2048,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
@@ -2494,7 +2494,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
@@ -2940,7 +2940,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
-                            "value" => "Требует изменений"
+                            "value" => "На доработке"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",

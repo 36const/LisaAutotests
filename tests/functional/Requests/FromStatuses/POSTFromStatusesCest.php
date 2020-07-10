@@ -51,7 +51,7 @@ class POSTFromStatusesCest
     public function POSTFromStatuses(FunctionalTester $I, Example $data, Login $login, RequestView $view,
                                     RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
 

@@ -45,7 +45,7 @@ class POSTFilterUpdateCest
      */
     public function POSTFilterUpdate(FunctionalTester $I, Example $data, Login $login, Filters $filter)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
 

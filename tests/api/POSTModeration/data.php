@@ -281,12 +281,12 @@ Media:
 
     'case5' => [
         'setting' => [
-            'description' => 'Заявка модерации с без названия товара',
+            'description' => 'Заявка модерации без названия товара',
         ],
         'provider_data' => [
             'requestURL' => '/bpm/api/create-request-by-client-comment',
             'requestBody' => [
-                "idComment" => 'qwer',
+                "idComment" => '1',
                 "sVisitorName" => "Михаил Михаил",
                 "sVisitorEmail" => "fishman@rozetka.com.ua",
                 "sVisitorMobilePhone" => "380993774442; 380660657036;",
