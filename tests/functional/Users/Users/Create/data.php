@@ -13658,65 +13658,60 @@ return [
                         [
                             "id" => 244,
                             "user_id" => 6,
-                            "permission_name" => "requestUpdate"
+                            "permission_name" => "requestCreateRelated"
                         ],
                         [
                             "id" => 245,
                             "user_id" => 6,
-                            "permission_name" => "requestCreateRelated"
+                            "permission_name" => "requestViewDirectionRequests"
                         ],
                         [
                             "id" => 246,
                             "user_id" => 6,
-                            "permission_name" => "requestViewDirectionRequests"
+                            "permission_name" => "reportView"
                         ],
                         [
                             "id" => 247,
                             "user_id" => 6,
-                            "permission_name" => "reportView"
+                            "permission_name" => "massEdit"
                         ],
                         [
                             "id" => 248,
                             "user_id" => 6,
-                            "permission_name" => "massEdit"
+                            "permission_name" => "reportLoadYourTeam"
                         ],
                         [
                             "id" => 249,
                             "user_id" => 6,
-                            "permission_name" => "reportLoadYourTeam"
+                            "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
                             "id" => 250,
                             "user_id" => 6,
-                            "permission_name" => "viewSplitterModerationRequests"
+                            "permission_name" => "takeToWork"
                         ],
                         [
                             "id" => 251,
                             "user_id" => 6,
-                            "permission_name" => "takeToWork"
+                            "permission_name" => "viewDashboardsByCommand"
                         ],
                         [
                             "id" => 252,
                             "user_id" => 6,
-                            "permission_name" => "viewDashboardsByCommand"
+                            "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
                             "id" => 253,
                             "user_id" => 6,
-                            "permission_name" => "transferWaitCheckToInCheck"
+                            "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
                             "id" => 254,
                             "user_id" => 6,
-                            "permission_name" => "transferInCheckToRequireChange"
-                        ],
-                        [
-                            "id" => 255,
-                            "user_id" => 6,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 256,
+                            "id" => 255,
                             "user_id" => 6,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
@@ -13734,6 +13729,4 @@ return [
             ],
         ]
     ],
-
-
 ];

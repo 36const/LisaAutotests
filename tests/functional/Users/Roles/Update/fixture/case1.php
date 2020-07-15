@@ -255,6 +255,16 @@ return [
                 "permission_id" => 54
             ],
             [
+                //"id" => 47,
+                "role_id" => 1,
+                "permission_id" => 55
+            ],
+            [
+                //"id" => 47,
+                "role_id" => 1,
+                "permission_id" => 56
+            ],
+            [
                 //"id" => 48,
                 "role_id" => 1,
                 "permission_id" => 57
@@ -282,16 +292,6 @@ return [
                 //"id" => 293,
                 "role_id" => 1,
                 "permission_id" => 61
-            ],
-            [
-                //"id" => 294,
-                "role_id" => 1,
-                "permission_id" => 62
-            ],
-            [
-                //"id" => 295,
-                "role_id" => 1,
-                "permission_id" => 63
             ],
             [
                 //"id" => 51,
