@@ -30,6 +30,10 @@ modules:
                   #repopulate: false
                   populate: true
                   dump: 'tests/dump_cooper.sql'
+                gomer_fixtures:
+                  dsn: 'mysql:host=172.20.20.23;port=3306;dbname=gomer_db'
+                  user: 'gomer'
+                  password: 'Ch3d5r74hcA1WpSELkDfdKGPOpo'
 
       #   - Yii2: # Интеграция с yii2
       #        part: [orm, email, fixtures]
