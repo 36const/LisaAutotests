@@ -423,4 +423,164 @@ return [
             ]
         ]
     ],
+
+    'case11' => [
+        'setting' => [
+            'description' => 'Создание детального отчёта с дублированием названия',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case10.php',
+        'provider_data' => [
+            'requestParameter' => 'create',
+            'requestBody' => [
+                'Fields' => '["id", "17", "3", "manager_drfo", "supervisor_process_date", "subject", "category_id", "amount_to_work", "98", "cross_check_manager_id", "cross_check_status", "direction", "125", "sv_report_periods", "46", "130", "attachments", "reason", "157", "status", "supervisor_id", "type_id", "actual_finish_date"]',
+                'Fields' => '["17","3","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","supervisor_id","type_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","supervisor_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","157","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","supervisor_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","157","98","cross_check_manager_id","attachments","direction","sv_report_periods","46","reason","supervisor_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","157","98","cross_check_manager_id","attachments","direction","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","cross_check_manager_id","attachments","direction","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","57","cross_check_manager_id","attachments","direction","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","57","cross_check_manager_id","attachments","direction","146","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","57","cross_check_manager_id","attachments","direction","146","sv_report_periods","46","supervisor_id","reason","recommendations"]',
+                'Report[conditions][team_direction]' => ['1','2','3','4','5','6'],
+                'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
+                'Report[title]' => 'Всё во всём',
+            ],
+            'db' => [
+                "lisa_fixtures" => [
+                    "reports" => [
+                        [
+                            "id" => 1,
+                            "title" => "Всё во всём",
+                            "fields" => '["id","17","3","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                            "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
+                            "type" => 0
+                        ],
+                        [
+                            "id" => 2,
+                            "title" => "Всё во всём (сводный)",
+                            "fields" => '["id","17","3","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                            "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
+                            "type" => 1
+                        ],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
+    'case12' => [
+        'setting' => [
+            'description' => 'Создание сводного отчёта с дублированием названия',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case10.php',
+        'provider_data' => [
+            'requestParameter' => 'create-total?id=1',
+            'requestBody' => [
+                'Fields' => '["id", "17", "3", "manager_drfo", "supervisor_process_date", "subject", "category_id", "amount_to_work", "98", "cross_check_manager_id", "cross_check_status", "direction", "125", "sv_report_periods", "46", "130", "attachments", "reason", "157", "status", "supervisor_id", "type_id", "actual_finish_date"]',
+                'Fields' => '["17","3","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","supervisor_id","type_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","supervisor_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","157","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","supervisor_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","157","98","cross_check_manager_id","attachments","direction","sv_report_periods","46","reason","supervisor_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","157","98","cross_check_manager_id","attachments","direction","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","cross_check_manager_id","attachments","direction","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","57","cross_check_manager_id","attachments","direction","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","57","cross_check_manager_id","attachments","direction","146","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","57","cross_check_manager_id","attachments","direction","146","sv_report_periods","46","supervisor_id","reason","recommendations"]',
+                'Report[conditions][team_direction]' => ['1','2','3','4','5','6'],
+                'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
+                'Report[title]' => 'Всё во всём (сводный)',
+            ],
+            'db' => [
+                "lisa_fixtures" => [
+                    "reports" => [
+                        [
+                            "id" => 1,
+                            "title" => "Всё во всём",
+                            "fields" => '["id","17","3","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                            "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
+                            "type" => 0
+                        ],
+                        [
+                            "id" => 2,
+                            "title" => "Всё во всём (сводный)",
+                            "fields" => '["id","17","3","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                            "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
+                            "type" => 1
+                        ],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
+    'case13' => [
+        'setting' => [
+            'description' => 'Создание копии отчёта с дублированием названия',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case10.php',
+        'provider_data' => [
+            'requestParameter' => 'copy?id=2',
+            'requestBody' => [
+                'Fields' => '["id", "17", "3", "manager_drfo", "supervisor_process_date", "subject", "category_id", "amount_to_work", "98", "cross_check_manager_id", "cross_check_status", "direction", "125", "sv_report_periods", "46", "130", "attachments", "reason", "157", "status", "supervisor_id", "type_id", "actual_finish_date"]',
+                'Fields' => '["17","3","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","supervisor_id","type_id","actual_finish_date"]',
+                'Fields' => '["17","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","supervisor_id","type_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","157","supervisor_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","157","98","cross_check_manager_id","direction","sv_report_periods","46","attachments","reason","supervisor_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","157","98","cross_check_manager_id","attachments","direction","sv_report_periods","46","reason","supervisor_id"]',
+                'Fields' => '["17","type_id","manager_drfo","subject","category_id","157","98","cross_check_manager_id","attachments","direction","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","cross_check_manager_id","attachments","direction","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","57","cross_check_manager_id","attachments","direction","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","57","cross_check_manager_id","attachments","direction","146","sv_report_periods","46","supervisor_id","reason"]',
+                'Fields' => '["17","type_id","manager_drfo","93","subject","category_id","157","98","57","cross_check_manager_id","attachments","direction","146","sv_report_periods","46","supervisor_id","reason","recommendations"]',
+                'Report[conditions][team_direction]' => ['1','2','3','4','5','6'],
+                'Report[conditions][type_id]' => ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
+                'Report[title]' => 'Всё во всём (сводный)',
+            ],
+            'db' => [
+                "lisa_fixtures" => [
+                    "reports" => [
+                        [
+                            "id" => 1,
+                            "title" => "Всё во всём",
+                            "fields" => '["id","17","3","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                            "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
+                            "type" => 0
+                        ],
+                        [
+                            "id" => 2,
+                            "title" => "Всё во всём (сводный)",
+                            "fields" => '["id","17","3","manager_drfo","supervisor_process_date","subject","category_id","amount_to_work","98","cross_check_manager_id","cross_check_status","direction","125","sv_report_periods","46","130","attachments","reason","157","status","supervisor_id","type_id","actual_finish_date"]',
+                            "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"], "team_direction": ["1", "2", "3", "4", "5", "6"]}',
+                            "type" => 1
+                        ],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
 ];
