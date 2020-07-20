@@ -1171,4 +1171,8 @@ return [
             ],
         ]
     ],
+
+    "gomer_fixtures" => [
+        "users" => include \rzk\FixtureController::getFixtureDir() . 'gomer_fixtures/users.php',
+    ],
 ];
