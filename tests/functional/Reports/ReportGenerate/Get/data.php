@@ -18,7 +18,7 @@ return [
                     ],
                     "Кнопка перехода в раздел зафиксированных данных по СВ" => [
                         [
-                            "selector" => "//div[@class='report-for-statistic col-md-4']//a[@href='/bpm/report/fixate']",
+                            "selector" => "//div[@class='report-for-statistic col-md-5']//a[@href='/bpm/report/fixate']",
                         ],
                     ],
                     "Список периодов" => [
@@ -44,6 +44,11 @@ return [
                     "Пункт 'Тип отчёта сводный'" => [
                         [
                             "selector" => "//div[@id='report-type']//input[@value='1']",
+                        ],
+                    ],
+                    "Список шаблонов" => [
+                        [
+                            "selector" => "//select[@id='report-detail_ids' and @size='1']//option[@value='1' and text()='Всё во всём']",
                         ],
                     ],
                     "Кнопка генерации отчёта" => [
