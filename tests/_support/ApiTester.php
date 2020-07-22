@@ -25,10 +25,13 @@ class ApiTester extends \Codeception\Actor
 {
     use _generated\ApiTesterActions;
 
-    public function loadDataForTest(Example $data, TestHelper $testHelper)
+    public function loadDataForTest(Example $data, TestHelper $testHelper,
+                                    array $globalFile = ['oneUser'], bool $globalUsing = true)
     {
         $I = $this;
-        $testHelper->clearDB($I, $data);
+        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
+        $testHelper->clearDB($I, $data, $globalFile);
+        !$globalUsing ?: $testHelper->loadGlobalFixture($I, $globalFile);
         $testHelper->loadFixtureAndMock($I, $data);
         $I->wantTo($data['setting']['description']);
     }
