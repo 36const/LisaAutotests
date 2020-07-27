@@ -22,6 +22,13 @@ return [
         "status" => 1
     ],
     [
+        //"id" => 3,
+        "type_id" => 1,
+        "field_ids" => "[1, 4]",
+        "difficulty_coef" => 4,
+        "status" => 1
+    ],
+    [
         //"id" => 4,
         "type_id" => 2,
         "field_ids" => "[1]",
@@ -43,6 +50,13 @@ return [
         "status" => 1
     ],
     [
+        //"id" => 6,
+        "type_id" => 2,
+        "field_ids" => "[2, 4]",
+        "difficulty_coef" => 4,
+        "status" => 1
+    ],
+    [
         //"id" => 7,
         "type_id" => 3,
         "field_ids" => "[1]",
@@ -61,6 +75,13 @@ return [
         "type_id" => 3,
         "field_ids" => "[8, 15, 19]",
         "difficulty_coef" => 3,
+        "status" => 1
+    ],
+    [
+        //"id" => 9,
+        "type_id" => 3,
+        "field_ids" => "[1, 4]",
+        "difficulty_coef" => 4,
         "status" => 1
     ],
     [
@@ -96,6 +117,13 @@ return [
         "type_id" => 5,
         "field_ids" => "[8, 15, 19]",
         "difficulty_coef" => 3,
+        "status" => 1
+    ],
+    [
+        //"id" => 14,
+        "type_id" => 5,
+        "field_ids" => "[2, 4]",
+        "difficulty_coef" => 4,
         "status" => 1
     ],
     [

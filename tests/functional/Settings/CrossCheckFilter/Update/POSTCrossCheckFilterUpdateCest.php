@@ -9,11 +9,11 @@ use lisa\Page\Functional\Login;
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_reports
- * @group POSTReportPattern
- * @group POSTReportPatternDelete
+ * @group lisa_functional_settings
+ * @group POSTCrossCheckFilter
+ * @group POSTCrossCheckFilterUpdate
  */
-class POSTReportPatternDeleteCest
+class POSTCrossCheckFilterUpdateCest
 {
     /**
      * @var TestHelper $testHelper
@@ -42,17 +42,17 @@ class POSTReportPatternDeleteCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTReportPatternDelete(FunctionalTester $I, Example $data, Login $login)
+    public function POSTCrossCheckFilterUpdate(FunctionalTester $I, Example $data, Login $login)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->sendPOST('/bpm/report/delete?id=1', $providerData['requestBody']);
+        $I->sendPOST('/bpm/cross-check-filter/update?teamId=1', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
-        $I->checkTablesInDB($providerData['db'], true);
+        $I->checkTablesInDB($providerData['db']);
     }
 }

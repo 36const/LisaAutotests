@@ -5,7 +5,6 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\Report;
 
 /**
  * @group lisa
@@ -38,13 +37,12 @@ class POSTReportPeriodCreateCest
      * @param FunctionalTester $I
      * @param Example $data
      * @param Login $login
-     * @param Report $report
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTReportPeriodCreate(FunctionalTester $I, Example $data, Login $login, Report $report)
+    public function POSTReportPeriodCreate(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
