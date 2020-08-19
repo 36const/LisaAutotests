@@ -97,12 +97,12 @@ return [
             [
                 //"id" => 16,
                 "role_id" => 1,
-                "permission_id" => 80
+                "permission_id" => 62
             ],
             [
                 //"id" => 49,
                 "role_id" => 1,
-                "permission_id" => 81
+                "permission_id" => 63
             ],
             [
                 //"id" => 17,
