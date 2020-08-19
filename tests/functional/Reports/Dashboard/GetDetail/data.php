@@ -1,34 +1,29 @@
 <?php
 
+use \lisa\Page\Functional\Dashboard;
+
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница детального дашборда без параметров',
+            'description' => 'Страница детального дашборда по-умолчанию',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             "url" => '',
             "pageObjects" => [
                 "canSee" => [
-                    "Заголовок" => [
+                    [
                         [
                             "selector" => "//h1[@class='global-caption']",
                             "value" => "Дашборды"
                         ],
-                    ],
-                    "Статус" => [
                         [
-                            "selector" => "//select[@name='Dashboard[status]']/option[1][@selected]",
+                            "selector" => Dashboard::status('Новые'),
+                            "value" => "Новые"
                         ],
-                    ],
-                    "Вариант отображения" => [
                         [
-                            "selector" => "//select[@name='Dashboard[display]']/option[1][@selected]",
-                        ],
-                    ],
-                    "Дата последнего изменения статуса" => [
-                        [
-                            "selector" => "//input[@name='Dashboard[date]']",
+                            "selector" => Dashboard::display(0),
+                            "value" => "По направлению и типу"
                         ],
                     ],
                 ],
@@ -40,36 +35,34 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница детального дашборда Новые / По направлению и типу',
+            'description' => 'Страница детального дашборда Ожидают взятия в работу / По направлению',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?type=undefined&status=Новые&display=0&date=2020-07-01',
+            "url" => '?status=Ожидают%20взятия%20в%20работу&display=1',
             "pageObjects" => [
                 "canSee" => [
-                    "Заголовок" => [
+                    [
                         [
                             "selector" => "//h1[@class='global-caption']",
                             "value" => "Дашборды"
                         ],
-                    ],
-                    "Статус" => [
                         [
-                            "selector" => "//select[@name='Dashboard[status]']/option[1][@selected]",
+                            "selector" => Dashboard::status('Ожидают взятия в работу'),
+                            "value" => "Ожидают взятия в работу"
                         ],
-                    ],
-                    "Вариант отображения" => [
                         [
-                            "selector" => "//select[@name='Dashboard[display]']/option[1][@selected]",
-                        ],
-                    ],
-                    "Дата последнего изменения статуса" => [
-                        [
-                            "selector" => "//input[@name='Dashboard[date]' and @value='2020-07-01']",
+                            "selector" => Dashboard::display(1),
+                            "value" => "По направлению"
                         ],
                     ],
                 ],
                 "cantSee" => [
+                    [
+                        [
+                            "selector" => Dashboard::member(),
+                        ],
+                    ]
                 ]
             ]
         ]
@@ -77,33 +70,30 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница детального дашборда Ожидают взятия в работу / По направлению',
+            'description' => 'Страница детального дашборда В работе / По менеджеру (по-умолчанию)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?type=undefined&status=Ожидают%20взятия%20в%20работу&display=1&date=2020-07-01',
+            "url" => '?status=В%20работе&display=3&member=manager_id&username=',
             "pageObjects" => [
                 "canSee" => [
-                    "Заголовок" => [
+                    [
                         [
                             "selector" => "//h1[@class='global-caption']",
                             "value" => "Дашборды"
                         ],
-                    ],
-                    "Статус" => [
                         [
-                            "selector" => "//select[@name='Dashboard[status]']/option[2][@selected]",
+                            "selector" => Dashboard::status('В работе'),
+                            "value" => "В работе"
                         ],
-                    ],
-                    "Вариант отображения" => [
                         [
-                            "selector" => "//select[@name='Dashboard[display]']/option[2][@selected]",
+                            "selector" => Dashboard::display(3),
+                            "value" => "По пользователям"
                         ],
-                    ],
-                    "Дата последнего изменения статуса" => [
                         [
-                            "selector" => "//input[@name='Dashboard[date]' and @value='2020-07-01']",
-                        ],
+                            "selector" => Dashboard::member('manager_id'),
+                            "value" => "менеджеру"
+                        ]
                     ],
                 ],
                 "cantSee" => [
@@ -114,33 +104,30 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница детального дашборда В работе / По командам',
+            'description' => 'Страница детального дашборда В работе / По автору',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?type=undefined&status=В%20работе&display=2&date=2020-07-01',
+            "url" => '?status=В%20работе&display=3&member=author_id&username=',
             "pageObjects" => [
                 "canSee" => [
-                    "Заголовок" => [
+                    [
                         [
                             "selector" => "//h1[@class='global-caption']",
                             "value" => "Дашборды"
                         ],
-                    ],
-                    "Статус" => [
                         [
-                            "selector" => "//select[@name='Dashboard[status]']/option[3][@selected]",
+                            "selector" => Dashboard::status('В работе'),
+                            "value" => "В работе"
                         ],
-                    ],
-                    "Вариант отображения" => [
                         [
-                            "selector" => "//select[@name='Dashboard[display]']/option[3][@selected]",
+                            "selector" => Dashboard::display(3),
+                            "value" => "По пользователям"
                         ],
-                    ],
-                    "Дата последнего изменения статуса" => [
                         [
-                            "selector" => "//input[@name='Dashboard[date]' and @value='2020-07-01']",
-                        ],
+                            "selector" => Dashboard::member('author_id'),
+                            "value" => "автору"
+                        ]
                     ],
                 ],
                 "cantSee" => [
@@ -151,33 +138,30 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница детального дашборда Ожидают / По себе как менеджеру',
+            'description' => 'Страница детального дашборда В работе / По супервайзеру',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?type=undefined&status=Ожидают&display=3&date=2020-07-01',
+            "url" => '?status=В%20работе&display=3&member=supervisor_id&username=',
             "pageObjects" => [
                 "canSee" => [
-                    "Заголовок" => [
+                    [
                         [
                             "selector" => "//h1[@class='global-caption']",
                             "value" => "Дашборды"
                         ],
-                    ],
-                    "Статус" => [
                         [
-                            "selector" => "//select[@name='Dashboard[status]']/option[4][@selected]",
+                            "selector" => Dashboard::status('В работе'),
+                            "value" => "В работе"
                         ],
-                    ],
-                    "Вариант отображения" => [
                         [
-                            "selector" => "//select[@name='Dashboard[display]']/option[4][@selected]",
+                            "selector" => Dashboard::display(3),
+                            "value" => "По пользователям"
                         ],
-                    ],
-                    "Дата последнего изменения статуса" => [
                         [
-                            "selector" => "//input[@name='Dashboard[date]' and @value='2020-07-01']",
-                        ],
+                            "selector" => Dashboard::member('supervisor_id'),
+                            "value" => "супервизору"
+                        ]
                     ],
                 ],
                 "cantSee" => [
@@ -188,33 +172,30 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница детального дашборда Ожидают взятия в работу / По направлению и типу',
+            'description' => 'Страница детального дашборда На доработке / По менеджеру (по-умолчанию)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?type=undefined&status=Выполнены&display=0&date=2020-07-01',
+            "url" => '?status=На%20доработке&display=4',
             "pageObjects" => [
                 "canSee" => [
-                    "Заголовок" => [
+                    [
                         [
                             "selector" => "//h1[@class='global-caption']",
                             "value" => "Дашборды"
                         ],
-                    ],
-                    "Статус" => [
                         [
-                            "selector" => "//select[@name='Dashboard[status]']/option[5][@selected]",
+                            "selector" => Dashboard::status('На доработке'),
+                            "value" => "На доработке"
                         ],
-                    ],
-                    "Вариант отображения" => [
                         [
-                            "selector" => "//select[@name='Dashboard[display]']/option[1][@selected]",
+                            "selector" => Dashboard::display(4),
+                            "value" => "По пользователям и типу"
                         ],
-                    ],
-                    "Дата последнего изменения статуса" => [
                         [
-                            "selector" => "//input[@name='Dashboard[date]' and @value='2020-07-01']",
-                        ],
+                            "selector" => Dashboard::member(),
+                            "value" => "менеджеру"
+                        ]
                     ],
                 ],
                 "cantSee" => [
@@ -225,33 +206,30 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница детального дашборда Отменены / По направлению',
+            'description' => 'Страница детального дашборда На доработке / По автору',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?type=undefined&status=Отменены&display=1&date=2020-07-01',
+            "url" => '?status=На%20доработке&display=4&member=author_id&username=',
             "pageObjects" => [
                 "canSee" => [
-                    "Заголовок" => [
+                    [
                         [
                             "selector" => "//h1[@class='global-caption']",
                             "value" => "Дашборды"
                         ],
-                    ],
-                    "Статус" => [
                         [
-                            "selector" => "//select[@name='Dashboard[status]']/option[6][@selected]",
+                            "selector" => Dashboard::status('На доработке'),
+                            "value" => "На доработке"
                         ],
-                    ],
-                    "Вариант отображения" => [
                         [
-                            "selector" => "//select[@name='Dashboard[display]']/option[2][@selected]",
+                            "selector" => Dashboard::display(4),
+                            "value" => "По пользователям и типу"
                         ],
-                    ],
-                    "Дата последнего изменения статуса" => [
                         [
-                            "selector" => "//input[@name='Dashboard[date]' and @value='2020-07-01']",
-                        ],
+                            "selector" => Dashboard::member('author_id'),
+                            "value" => "автору"
+                        ]
                     ],
                 ],
                 "cantSee" => [
@@ -262,33 +240,30 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница детального дашборда На доработке / По командам',
+            'description' => 'Страница детального дашборда На доработке / По супервайзеру',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?type=undefined&status=На%20доработке&display=2&date=2020-07-01',
+            "url" => '?status=На%20доработке&display=4&member=supervisor_id&username=',
             "pageObjects" => [
                 "canSee" => [
-                    "Заголовок" => [
+                    [
                         [
                             "selector" => "//h1[@class='global-caption']",
                             "value" => "Дашборды"
                         ],
-                    ],
-                    "Статус" => [
                         [
-                            "selector" => "//select[@name='Dashboard[status]']/option[7][@selected]",
+                            "selector" => Dashboard::status('На доработке'),
+                            "value" => "На доработке"
                         ],
-                    ],
-                    "Вариант отображения" => [
                         [
-                            "selector" => "//select[@name='Dashboard[display]']/option[3][@selected]",
+                            "selector" => Dashboard::display(4),
+                            "value" => "По пользователям и типу"
                         ],
-                    ],
-                    "Дата последнего изменения статуса" => [
                         [
-                            "selector" => "//input[@name='Dashboard[date]' and @value='2020-07-01']",
-                        ],
+                            "selector" => Dashboard::member('supervisor_id'),
+                            "value" => "супервизору"
+                        ]
                     ],
                 ],
                 "cantSee" => [
@@ -299,33 +274,270 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница детального дашборда Закрыты (проверены) / По себе как менеджеру',
+            'description' => 'Страница детального дашборда Ожидают / По командам',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?type=undefined&status=Закрыты%20(проверены)&display=3&date=2020-07-01',
+            "url" => '?status=Ожидают&display=2',
             "pageObjects" => [
                 "canSee" => [
-                    "Заголовок" => [
+                    [
                         [
                             "selector" => "//h1[@class='global-caption']",
                             "value" => "Дашборды"
                         ],
-                    ],
-                    "Статус" => [
                         [
-                            "selector" => "//select[@name='Dashboard[status]']/option[8][@selected]",
+                            "selector" => Dashboard::status('Ожидают'),
+                            "value" => "Ожидают"
+                        ],
+                        [
+                            "selector" => Dashboard::display(2),
+                            "value" => "По командам"
                         ],
                     ],
-                    "Вариант отображения" => [
+                ],
+                "cantSee" => [
+                    [
                         [
-                            "selector" => "//select[@name='Dashboard[display]']/option[4][@selected]",
+                            "selector" => Dashboard::member(),
+                        ],
+                    ]
+                ]
+            ]
+        ]
+    ],
+
+    'case10' => [
+        'setting' => [
+            'description' => 'Страница детального дашборда Ожидают / По команде и типу',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?status=Ожидают&display=6',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::status('Ожидают'),
+                            "value" => "Ожидают"
+                        ],
+                        [
+                            "selector" => Dashboard::display(6),
+                            "value" => "По команде и типу"
                         ],
                     ],
-                    "Дата последнего изменения статуса" => [
+                ],
+                "cantSee" => [
+                    [
                         [
-                            "selector" => "//input[@name='Dashboard[date]' and @value='2020-07-01']",
+                            "selector" => Dashboard::member(),
                         ],
+                    ]
+                ]
+            ]
+        ]
+    ],
+
+    'case11' => [
+        'setting' => [
+            'description' => 'Страница детального дашборда Выполнены / По команде и пользователям / По менеджеру (по-умолчанию)',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?status=Выполнены&display=5',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::status('Выполнены'),
+                            "value" => "Выполнены"
+                        ],
+                        [
+                            "selector" => Dashboard::display(5),
+                            "value" => "По команде и пользователям"
+                        ],
+                        [
+                            "selector" => Dashboard::member(),
+                            "value" => "менеджеру"
+                        ]
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
+
+    'case12' => [
+        'setting' => [
+            'description' => 'Страница детального дашборда Выполнены / По команде и пользователям / По автору',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?status=Выполнены&display=5&member=author_id',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::status('Выполнены'),
+                            "value" => "Выполнены"
+                        ],
+                        [
+                            "selector" => Dashboard::display(5),
+                            "value" => "По команде и пользователям"
+                        ],
+                        [
+                            "selector" => Dashboard::member('author_id'),
+                            "value" => "автору"
+                        ]
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
+
+    'case13' => [
+        'setting' => [
+            'description' => 'Страница детального дашборда Выполнены / По команде и пользователям / По супервайзеру',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?status=Выполнены&display=5&member=supervisor_id',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::status('Выполнены'),
+                            "value" => "Выполнены"
+                        ],
+                        [
+                            "selector" => Dashboard::display(5),
+                            "value" => "По команде и пользователям"
+                        ],
+                        [
+                            "selector" => Dashboard::member('supervisor_id'),
+                            "value" => "супервизору"
+                        ]
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
+
+    'case14' => [
+        'setting' => [
+            'description' => 'Страница детального дашборда Закрыты (проверены) / По команде, пользователям и типу / По менеджеру (по-умолчанию)',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?status=Закрыты%20(проверены)&display=7',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::status('Закрыты (проверены)'),
+                            "value" => "Закрыты (проверены)"
+                        ],
+                        [
+                            "selector" => Dashboard::display(7),
+                            "value" => "По команде, пользователям и типу"
+                        ],
+                        [
+                            "selector" => Dashboard::member(),
+                            "value" => "менеджеру"
+                        ]
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
+
+    'case15' => [
+        'setting' => [
+            'description' => 'Страница детального дашборда Закрыты (проверены) / По команде, пользователям и типу / По автору',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?status=Закрыты%20(проверены)&display=7&member=author_id',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::status('Закрыты (проверены)'),
+                            "value" => "Закрыты (проверены)"
+                        ],
+                        [
+                            "selector" => Dashboard::display(7),
+                            "value" => "По команде, пользователям и типу"
+                        ],
+                        [
+                            "selector" => Dashboard::member('author_id'),
+                            "value" => "автору"
+                        ]
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
+
+    'case16' => [
+        'setting' => [
+            'description' => 'Страница детального дашборда Закрыты (проверены) / По команде, пользователям и типу / По супервайзеру',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?status=Закрыты%20(проверены)&display=7&member=supervisor_id',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::status('Закрыты (проверены)'),
+                            "value" => "Закрыты (проверены)"
+                        ],
+                        [
+                            "selector" => Dashboard::display(7),
+                            "value" => "По команде, пользователям и типу"
+                        ],
+                        [
+                            "selector" => Dashboard::member('supervisor_id'),
+                            "value" => "супервизору"
+                        ]
                     ],
                 ],
                 "cantSee" => [

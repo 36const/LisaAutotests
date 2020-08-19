@@ -9,9 +9,10 @@ use lisa\Page\Functional\Login;
 /**
  * @group lisa
  * @group lisa_functional
- * @group GETPermissions
+ * @group lisa_functional_settings
+ * @group GETOtherFieldValues
  */
-class GETPermissionsCest
+class GETOtherFieldValuesCest
 {
     /**
      * @var TestHelper $testHelper
@@ -34,21 +35,19 @@ class GETPermissionsCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function GETPermissions(FunctionalTester $I, Example $data, Login $login)
+    public function GETOtherFieldValues(FunctionalTester $I, Example $data, Login $login)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['oneUserWithoutPermissionsTable']);
+        $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
 
         $login->login();
 
         $I->amOnPage($providerData['url']);
-        $I->seeResponseCodeIs(200);
 
         $I->checkObjectsOnPage($providerData['pageObjects']);
     }

@@ -2,41 +2,42 @@
 
 return [
     "lisa_fixtures" => [
-        "difficulty_coefs" => [
+        "field_values" => [
             [
                 //"id" => 1,
-                "type_id" => 1,
-                "field_ids" => "[1]",
-                "difficulty_coef" => 0.5,
-                "status" => 1
+                "field_id" => 21,
+                "value" => "Предоставлены продактом",
+                "status" => 0
             ],
             [
                 //"id" => 2,
-                "type_id" => 1,
-                "field_ids" => "[2]",
-                "difficulty_coef" => 2,
+                "field_id" => 21,
+                "value" => "Предоставлены продактом частично. Без дополнительного поиска.",
                 "status" => 1
             ],
             [
                 //"id" => 3,
-                "type_id" => 1,
-                "field_ids" => "[8, 15, 19]",
-                "difficulty_coef" => 3,
+                "field_id" => 21,
+                "value" => "Предоставлены продактом частично. С дополнительным поиском.",
                 "status" => 1
             ],
             [
-                //"id" => 3,
-                "type_id" => 1,
-                "field_ids" => "[1, 4]",
-                "difficulty_coef" => 4,
+                //"id" => 15,
+                "field_id" => 24,
+                "value" => "Без обработки (только кадрирование)",
                 "status" => 1
             ],
             [
-                //"id" => 4,
-                "type_id" => 2,
-                "field_ids" => "[1]",
-                "difficulty_coef" => 0.5,
+                //"id" => 16,
+                "field_id" => 24,
+                "value" => "Удаление теней/фона (простая обработка)",
                 "status" => 1
+            ],
+            [
+                //"id" => 17,
+                "field_id" => 24,
+                "value" => "Удаление теней/фона/ватермарков/цветокорекция",
+                "status" => 0
             ],
         ],
         "requests" => [
@@ -84,6 +85,11 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 1,
+                'value' => 1,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 21,
                 'value' => 1,
             ],
             [
@@ -158,9 +164,10 @@ return [
             ],
         ],
         "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
-        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
+        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
         "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
         "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
         "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
+
     ],
 ];
