@@ -101,6 +101,20 @@ return [
                 "drfo" => "'000000007"
             ],
             [
+                "id" => 8,
+                "name" => "Mobile Courier",
+                "login" => "mobile_courier",
+                "email" => "mobile_courier@rozetka.com.ua",
+                "team" => null,
+                "parent_id" => 0,
+                "position" => "system",
+                "status" => 1,
+                "create_ts" => "2020-04-13 13:17:20",
+                "created_by" => 1,
+                "change_date" => "2020-04-13 13:17:20",
+                "drfo" => "0"
+            ],
+            [
                 "id" => 10,
                 "name" => "Супервайзер Начальникович 2",
                 "login" => "bpm_supervisor_2",

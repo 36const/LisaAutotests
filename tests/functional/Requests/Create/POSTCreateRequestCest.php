@@ -73,7 +73,7 @@ class POSTCreateRequestCest
         $I->seeInTitle($setting['description']);
         $I->see($setting['description'], ['class' => 'global-caption']);
 
-        $I->assertEquals($I->grabMultiple(RequestCreate::$allCheckboxes), $providerData['checkboxes']);
+        $I->assertSame($I->grabMultiple(RequestCreate::$allCheckboxes), $providerData['checkboxes']);
 
         if ($setting['direction'] != 2 && $setting['type'] != 4) {
             $I->seeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
