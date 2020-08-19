@@ -7225,12 +7225,12 @@ return [
                             "permission_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 238,
+                            "id" => 239,
                             "user_id" => 6,
                             "permission_name" => "viewDashboardsByCommand"
                         ],
                         [
-                            "id" => 239,
+                            "id" => 238,
                             "user_id" => 6,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
@@ -8534,12 +8534,12 @@ return [
                             "permission_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 237,
+                            "id" => 238,
                             "user_id" => 6,
                             "permission_name" => "viewDashboardsByCommand"
                         ],
                         [
-                            "id" => 238,
+                            "id" => 237,
                             "user_id" => 6,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
@@ -9813,12 +9813,12 @@ return [
                             "permission_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 231,
+                            "id" => 232,
                             "user_id" => 6,
                             "permission_name" => "viewDashboardsByCommand"
                         ],
                         [
-                            "id" => 232,
+                            "id" => 231,
                             "user_id" => 6,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
@@ -11062,12 +11062,12 @@ return [
                             "permission_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 225,
+                            "id" => 226,
                             "user_id" => 6,
                             "permission_name" => "viewDashboardsByCommand"
                         ],
                         [
-                            "id" => 226,
+                            "id" => 225,
                             "user_id" => 6,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
@@ -13691,27 +13691,27 @@ return [
                             "permission_name" => "takeToWork"
                         ],
                         [
-                            "id" => 251,
+                            "id" => 255,
                             "user_id" => 6,
                             "permission_name" => "viewDashboardsByCommand"
                         ],
                         [
-                            "id" => 252,
+                            "id" => 251,
                             "user_id" => 6,
                             "permission_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 253,
+                            "id" => 252,
                             "user_id" => 6,
                             "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 254,
+                            "id" => 253,
                             "user_id" => 6,
                             "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 255,
+                            "id" => 254,
                             "user_id" => 6,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],

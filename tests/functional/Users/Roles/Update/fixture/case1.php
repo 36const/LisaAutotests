@@ -272,12 +272,12 @@ return [
             [
                 //"id" => 49,
                 "role_id" => 1,
-                "permission_id" => 58
+                "permission_id" => 80
             ],
             [
                 //"id" => 49,
                 "role_id" => 1,
-                "permission_id" => 59
+                "permission_id" => 81
             ],
             [
                 //"id" => 50,
@@ -286,12 +286,12 @@ return [
             ],
             [        //"id" => 292,
                 "role_id" => 1,
-                "permission_id" => 60
+                "permission_id" => 82
             ],
             [
                 //"id" => 293,
                 "role_id" => 1,
-                "permission_id" => 61
+                "permission_id" => 83
             ],
             [
                 //"id" => 51,

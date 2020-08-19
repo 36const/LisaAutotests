@@ -2,7 +2,6 @@
 
 namespace lisa;
 
-use Codeception\Util\HttpCode;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
@@ -55,6 +54,7 @@ class POSTCreateRequestCest
      * @param Example $data
      * @param Login $login
      * @param RequestCreate $create
+     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider

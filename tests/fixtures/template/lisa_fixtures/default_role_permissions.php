@@ -263,22 +263,22 @@ return [
     [
         //"id" => 53,
         "role_id" => 1,
-        "permission_id" => 58
+        "permission_id" => 80
     ],
     [
         //"id" => 54,
         "role_id" => 1,
-        "permission_id" => 59
+        "permission_id" => 81
     ],
     [
         //"id" => 55,
         "role_id" => 1,
-        "permission_id" => 60
+        "permission_id" => 82
     ],
     [
         //"id" => 56,
         "role_id" => 1,
-        "permission_id" => 61
+        "permission_id" => 83
     ],
     [
         //"id" => 57,
@@ -578,22 +578,22 @@ return [
     [
         //"id" => 116,
         "role_id" => 2,
-        "permission_id" => 58
+        "permission_id" => 80
     ],
     [
         //"id" => 117,
         "role_id" => 2,
-        "permission_id" => 59
+        "permission_id" => 81
     ],
     [
         //"id" => 118,
         "role_id" => 2,
-        "permission_id" => 60
+        "permission_id" => 82
     ],
     [
         //"id" => 119,
         "role_id" => 2,
-        "permission_id" => 61
+        "permission_id" => 83
     ],
     [
         //"id" => 120,
@@ -818,7 +818,7 @@ return [
     [
         //"id" => 172,
         "role_id" => 3,
-        "permission_id" => 58
+        "permission_id" => 80
     ],
     [
         //"id" => 176,
@@ -1023,7 +1023,7 @@ return [
     [
         //"id" => 297,
         "role_id" => 4,
-        "permission_id" => 60
+        "permission_id" => 82
     ],
     [
         //"id" => 219,
@@ -1068,7 +1068,7 @@ return [
     [
         //"id" => 298,
         "role_id" => 5,
-        "permission_id" => 61
+        "permission_id" => 83
     ],
     [
         //"id" => 227,
@@ -1178,7 +1178,7 @@ return [
     [
         //"id" => 296,
         "role_id" => 6,
-        "permission_id" => 60
+        "permission_id" => 82
     ],
     [
         //"id" => 250,
@@ -1283,7 +1283,7 @@ return [
     [
         //"id" => 299,
         "role_id" => 7,
-        "permission_id" => 60
+        "permission_id" => 82
     ],
     [
         //"id" => 270,
@@ -1328,7 +1328,7 @@ return [
     [
         //"id" => 300,
         "role_id" => 8,
-        "permission_id" => 60
+        "permission_id" => 82
     ],
     [
         //"id" => 278,
@@ -1403,7 +1403,7 @@ return [
     [
         //"id" => 301,
         "role_id" => 9,
-        "permission_id" => 60
+        "permission_id" => 82
     ],
     [
         //"id" => 292,

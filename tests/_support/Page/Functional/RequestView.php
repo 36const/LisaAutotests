@@ -126,7 +126,7 @@ class RequestView extends FunctionalTester
 
                         if ($tableName == 'requests') {
                             //перевести значение отчётного периода СВ из json
-                            ($column != 'sv_report_periods' && $value != null) ?:
+                            if ($column == 'sv_report_periods' && $value != null)
                                 $value = json_decode($value, true)['1'];
 
                             in_array($column, $this->unsetFields) ?:

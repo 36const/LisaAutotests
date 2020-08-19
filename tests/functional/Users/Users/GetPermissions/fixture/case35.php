@@ -2,6 +2,9 @@
 
 return [
     "lisa_fixtures" => [
+        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
+        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
+        "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
         "requests" => [
             [
 //                "id" => 1,
@@ -9,21 +12,21 @@ return [
                 "type_id" => 1,
                 "supervisor_id" => 6,
                 "manager_id" => null,
-                "status" => 1,
+                "status" => 3,
                 "direction" => 1,
                 "priority" => 2,
                 "awaiting_correction" => 0,
                 "created_at" => '2020-01-01 00:00:00',
-                "correction_comment" => null,
+                "correction_comment" => '',
                 "amount_to_work" => 10,
                 "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                 "description" => 'description',
                 "attachments" => '[]',
                 "category_id" => 1,
                 "seller_id" => 83,
-                "recommendations" => null,
-                "reason_id" => null,
-                "reason" => null,
+                "recommendations" => '',
+                "reason_id" => 15,
+                "reason" => 'Затребовать изменения',
                 "parent_id" => null,
                 "planned_start_date" => null,
                 "planned_finish_date" => null,
@@ -32,8 +35,8 @@ return [
                 "supervisor_process_date" => null,
                 "supervisor_check_date" => null,
                 "difficulty" => null,
-                "result_comment" => null,
-                "supervisor_comment" => null,
+                "result_comment" => '',
+                "supervisor_comment" => '',
                 "last_change_status_date" => "2020-01-01 00:00:01",
                 "team_direction" => 3,
                 "report_period_id" => null,
@@ -43,7 +46,7 @@ return [
                 "cross_check_manager_id" => null,
             ],
         ],
-        "requests_fields" => [
+        'requests_fields' => [
             [
                 'request_id' => 1,
                 'field_id' => 1,
@@ -120,8 +123,6 @@ return [
                 'value' => null,
             ],
         ],
-//        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
-//        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
         "user_permissions" => [
             [
                 //"id" => 1048,
@@ -310,8 +311,8 @@ return [
             ],
             [
                 //"id" => 1355,
-                "user_id" => 4,
-                "permission_name" => "transferRequireChangeToInCheck"
+//                "user_id" => 4,
+//                "permission_name" => "transferRequireChangeToInCheck"
             ],
             [
                 //"id" => 1356,
@@ -380,8 +381,8 @@ return [
             ],
             [
                 //"id" => 1371,
-//                "user_id" => 4,
-//                "permission_name" => "massEdit"
+                "user_id" => 4,
+                "permission_name" => "massEdit"
             ],
             [
                 //"id" => 2223,

@@ -5,22 +5,19 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_settings
- * @group POSTDifficultyCoef
- * @group POSTDifficultyCoefUpdate
+ * @group GETOtherTeam
  */
-class POSTDifficultyCoefUpdateCest
+class GETOtherTeamCest
 {
     /**
      * @var TestHelper $testHelper
      */
     private $testHelper;
-
 
     public function __construct()
     {
@@ -38,24 +35,21 @@ class POSTDifficultyCoefUpdateCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
-     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
+     *
      * @dataProvider pageProvider
      *
      */
-    public function POSTDifficultyCoefUpdate(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function GETOtherTeam(FunctionalTester $I, Example $data, Login $login)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
-
+        $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
 
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
+        $login->login();
 
-        $I->sendPOST('/bpm/difficulty-coef/update?id=1', $providerData['requestBody']);
+        $I->amOnPage($providerData['url']);
         $I->seeResponseCodeIs(200);
 
-        $I->checkTablesInDB($providerData['db']);
-        $view->checkFields($providerData['db']);
+        $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }
