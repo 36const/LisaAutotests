@@ -263,32 +263,22 @@ return [
     [
         //"id" => 53,
         "role_id" => 1,
-        "permission_id" => 80
+        "permission_id" => 62
     ],
     [
         //"id" => 54,
         "role_id" => 1,
-        "permission_id" => 81
+        "permission_id" => 63
     ],
     [
         //"id" => 55,
         "role_id" => 1,
-        "permission_id" => 82
+        "permission_id" => 64
     ],
     [
         //"id" => 56,
         "role_id" => 1,
-        "permission_id" => 83
-    ],
-    [
-        //"id" => 57,
-        "role_id" => 1,
-        "permission_id" => 62
-    ],
-    [
-        //"id" => 58,
-        "role_id" => 1,
-        "permission_id" => 63
+        "permission_id" => 65
     ],
     [
         //"id" => 59,
@@ -396,22 +386,22 @@ return [
         "permission_id" => 21
     ],
     [
-        //"id" => 80,
+        //"id" => 62,
         "role_id" => 2,
         "permission_id" => 22
     ],
     [
-        //"id" => 81,
+        //"id" => 63,
         "role_id" => 2,
         "permission_id" => 23
     ],
     [
-        //"id" => 82,
+        //"id" => 64,
         "role_id" => 2,
         "permission_id" => 24
     ],
     [
-        //"id" => 83,
+        //"id" => 65,
         "role_id" => 2,
         "permission_id" => 25
     ],
@@ -578,32 +568,22 @@ return [
     [
         //"id" => 116,
         "role_id" => 2,
-        "permission_id" => 80
+        "permission_id" => 62
     ],
     [
         //"id" => 117,
         "role_id" => 2,
-        "permission_id" => 81
+        "permission_id" => 63
     ],
     [
         //"id" => 118,
         "role_id" => 2,
-        "permission_id" => 82
+        "permission_id" => 64
     ],
     [
         //"id" => 119,
         "role_id" => 2,
-        "permission_id" => 83
-    ],
-    [
-        //"id" => 120,
-        "role_id" => 2,
-        "permission_id" => 62
-    ],
-    [
-        //"id" => 121,
-        "role_id" => 2,
-        "permission_id" => 63
+        "permission_id" => 65
     ],
     [
         //"id" => 122,
@@ -818,17 +798,7 @@ return [
     [
         //"id" => 172,
         "role_id" => 3,
-        "permission_id" => 80
-    ],
-    [
-        //"id" => 176,
-        "role_id" => 3,
         "permission_id" => 62
-    ],
-    [
-        //"id" => 177,
-        "role_id" => 3,
-        "permission_id" => 63
     ],
     [
         //"id" => 178,
@@ -1023,12 +993,7 @@ return [
     [
         //"id" => 297,
         "role_id" => 4,
-        "permission_id" => 82
-    ],
-    [
-        //"id" => 219,
-        "role_id" => 4,
-        "permission_id" => 62
+        "permission_id" => 64
     ],
     [
         //"id" => 220,
@@ -1068,12 +1033,7 @@ return [
     [
         //"id" => 298,
         "role_id" => 5,
-        "permission_id" => 83
-    ],
-    [
-        //"id" => 227,
-        "role_id" => 5,
-        "permission_id" => 63
+        "permission_id" => 65
     ],
     [
         //"id" => 228,
@@ -1178,12 +1138,7 @@ return [
     [
         //"id" => 296,
         "role_id" => 6,
-        "permission_id" => 82
-    ],
-    [
-        //"id" => 250,
-        "role_id" => 6,
-        "permission_id" => 62
+        "permission_id" => 64
     ],
     [
         //"id" => 251,
@@ -1283,12 +1238,7 @@ return [
     [
         //"id" => 299,
         "role_id" => 7,
-        "permission_id" => 82
-    ],
-    [
-        //"id" => 270,
-        "role_id" => 7,
-        "permission_id" => 62
+        "permission_id" => 64
     ],
     [
         //"id" => 271,
@@ -1328,12 +1278,7 @@ return [
     [
         //"id" => 300,
         "role_id" => 8,
-        "permission_id" => 82
-    ],
-    [
-        //"id" => 278,
-        "role_id" => 8,
-        "permission_id" => 62
+        "permission_id" => 64
     ],
     [
         //"id" => 279,
@@ -1403,12 +1348,7 @@ return [
     [
         //"id" => 301,
         "role_id" => 9,
-        "permission_id" => 82
-    ],
-    [
-        //"id" => 292,
-        "role_id" => 9,
-        "permission_id" => 62
+        "permission_id" => 64
     ],
     [
         //"id" => 293,
