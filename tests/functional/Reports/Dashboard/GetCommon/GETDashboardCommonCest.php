@@ -45,7 +45,7 @@ class GETDashboardCommonCest
      */
     public function GETDashboardCommon(FunctionalTester $I, Example $data, Login $login, Dashboard $dashboard)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
 
         $login->login();
