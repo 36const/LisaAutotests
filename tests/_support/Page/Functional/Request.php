@@ -6,14 +6,14 @@ use lisa\FunctionalTester;
 
 class Request extends FunctionalTester
 {
-    public static function onTab($tabName)
-    {
-        return "/bpm/request/$tabName";
-    }
-
     public static $tabs =
         ['index', 'new', 'in-check', 'require-changes', 'declined', 'wait-work',
             'in-work', 'on-hold', 'completed', '', '', 'closed', 'observable', 'cross-check'];
+
+    public static function onTab($tab)
+    {
+        return "/bpm/request/$tab";
+    }
 
     public static function globalPath()
     {
@@ -27,7 +27,12 @@ class Request extends FunctionalTester
 
     public static function tabCounter($tabs)
     {
-        return "//span[@class='tab-counter' and @request-status='$tabs']";
+        return "//ul[@id='w2']//span[@class='tab-counter' and @request-status='$tabs']";
+    }
+
+    public static function tabSummary()
+    {
+        return "//div[@class='summary']";
     }
 
 }

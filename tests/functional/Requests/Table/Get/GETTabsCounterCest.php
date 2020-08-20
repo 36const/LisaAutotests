@@ -10,9 +10,9 @@ use lisa\Page\Functional\Login;
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_requests
- * @group GETTabs
+ * @group GETTabsCounter
  */
-class GETTabsCest
+class GETTabsCounterCest
 {
     /**
      * @var TestHelper $testHelper
@@ -40,16 +40,15 @@ class GETTabsCest
      * @dataProvider pageProvider
      *
      */
-    public function GETTabs(FunctionalTester $I, Example $data, Login $login)
+    public function GETTabsCounter(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
 
         $login->login();
 
-        $I->amOnPage($providerData['url']);
+        $I->sendGET('/bpm/request/get-counters');
         $I->seeResponseCodeIs(200);
-
-        $I->checkObjectsOnPage($providerData['pageObjects']);
+        $I->seeResponseContainsJson($providerData['response']);
     }
 }
