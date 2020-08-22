@@ -29,7 +29,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Создание заблокированниой команды направления Маркетплейс',
+            'description' => 'Создание заблокированной команды направления Маркетплейс',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -81,7 +81,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Создание заблокированниой команды направления "Работа с группами"',
+            'description' => 'Создание заблокированной команды направления "Работа с группами"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -133,7 +133,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Создание заблокированниой команды направления "Работа с порталами, фат-меню, категориями"',
+            'description' => 'Создание заблокированной команды направления "Работа с порталами, фат-меню, категориями"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
