@@ -59,7 +59,7 @@ class Dashboard extends FunctionalTester
             'closed', 'in-day', 'not-in-day', 'active-managers'][$i];
     }
 
-    public static function amountColumn($i)
+    public static function amountColumns($i)
     {
         return ['begin-of-day', 'on-date', 'today'][$i];
     }
@@ -81,7 +81,7 @@ class Dashboard extends FunctionalTester
 
     public static function detail(int $row, int $amountCol, int $requestsOrGoods)
     {
-        return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='" . self::amountColumn($amountCol) . "[" . self::objectColumn($requestsOrGoods) . "]']";
+        return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='" . self::amountColumns($amountCol) . "[" . self::objectColumn($requestsOrGoods) . "]']";
     }
 
 }
