@@ -10,8 +10,8 @@ use lisa\Page\Functional\Filters;
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTFilters
- * @group POSTFiltersCreate
+ * @group POSTFilter
+ * @group POSTFilterCreate
  */
 class POSTFilterCreateCest
 {

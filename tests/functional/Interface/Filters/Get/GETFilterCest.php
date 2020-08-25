@@ -9,7 +9,7 @@ use lisa\Page\Functional\Login;
 /**
  * @group lisa
  * @group lisa_functional
- * @group GETFilters
+ * @group GETFilter
  */
 class GETFilterCest
 {

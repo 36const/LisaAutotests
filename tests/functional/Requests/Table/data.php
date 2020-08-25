@@ -74,6 +74,20 @@ return [
                             "value" => "Кросс-чек менеджер"
                         ],
                     ],
+                    "Выпадающие списки" => [
+                        [
+                            "selector" => "//select[@name='RequestSearch[priority][]']/option[1][@value='1']",
+                            "value" => "Информация необходима для склада"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[priority][]']/option[2][@value='3']",
+                            "value" => "Исправление критичной ошибки"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[priority][]']/option[3][@value='2']",
+                            "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
+                        ],
+                    ],
                     "Заявка 7" => [
                         [
                             "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
@@ -500,7 +514,7 @@ return [
             ],
             "pageObjects" => [
                 "canSee" => [
-                    [
+                    "Заголовки" => [
                         [
                             "selector" => "//thead/tr/th[@data-col-seq='2']",
                             "value" => "ID задачи"
@@ -548,6 +562,182 @@ return [
                         [
                             "selector" => "//thead/tr/th[@data-col-seq='13']",
                             "value" => "Язык информации"
+                        ],
+                    ],
+                    "Выпадающие списки" => [
+                        [
+                            "selector" => "//select[@name='RequestSearch[difficulty_level][]']/option[1][@value='61']",
+                            "value" => "1"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[difficulty_level][]']/option[2][@value='62']",
+                            "value" => "2"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[difficulty_level][]']/option[3][@value='63']",
+                            "value" => "3"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[difficulty_level][]']/option[4][@value='64']",
+                            "value" => "4"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[difficulty_level][]']/option[5][@value='65']",
+                            "value" => "5"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[difficulty_level][]']/option[6][@value='66']",
+                            "value" => "6"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[difficulty_level][]']/option[7][@value='-1']",
+                            "value" => "(не задано)"
+                        ],
+                        
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[1][@value='Все товары уже есть на сайте']",
+                            "value" => "Все товары уже есть на сайте"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[2][@value='Другое (описан в коментариях)']",
+                            "value" => "Другое (описан в коментариях)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[3][@value='Дубль задачи']",
+                            "value" => "Дубль задачи"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[4][@value='Изменен приоритет задачи']",
+                            "value" => "Изменен приоритет задачи"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[5][@value='Не получена запрошенная недостающая информация']",
+                            "value" => "Не получена запрошенная недостающая информация"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[6][@value='Ожидается загрузка товаров в систему']",
+                            "value" => "Ожидается загрузка товаров в систему"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[7][@value='Ожидается загрузка фото в товары']",
+                            "value" => "Ожидается загрузка фото в товары"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[8][@value='Товары ушли в ошибки']",
+                            "value" => "Товары ушли в ошибки"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[9][@value='Требуется уточнение информации по задаче']",
+                            "value" => "Требуется уточнение информации по задаче"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[10][@value='-1']",
+                            "value" => "(не задано)"
+                        ],
+
+                        [
+                            "selector" => "//select[@name='RequestSearch[author_clarifications][]']/option[1][@value='18']",
+                            "value" => "Без уточнений"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[author_clarifications][]']/option[2][@value='20']",
+                            "value" => "Более 5 уточнений"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[author_clarifications][]']/option[3][@value='19']",
+                            "value" => "Менее 5 уточнений"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[author_clarifications][]']/option[4][@value='-1']",
+                            "value" => "(не задано)"
+                        ],
+
+                        [
+                            "selector" => "//select[@name='RequestSearch[photos_available][]']/option[1][@value='9']",
+                            "value" => "Не предоставлены продактом. Выполнен поиск."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[photos_available][]']/option[2][@value='6']",
+                            "value" => "Предоставлены продактом"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[photos_available][]']/option[3][@value='7']",
+                            "value" => "Предоставлены продактом частично. Без дополнительного поиска."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[photos_available][]']/option[4][@value='8']",
+                            "value" => "Предоставлены продактом частично. С дополнительным поиском."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[photos_available][]']/option[5][@value='10']",
+                            "value" => "Фото предоставлены фотостудией"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[photos_available][]']/option[6][@value='-1']",
+                            "value" => "(не задано)"
+                        ],
+
+                        [
+                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[1][@value='4']",
+                            "value" => "Не предоставлены продактом. Выполнен поиск."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[2][@value='1']",
+                            "value" => "Предоставлены продактом"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[3][@value='2']",
+                            "value" => "Предоставлены продактом частично. Без дополнительного поиска."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[4][@value='3']",
+                            "value" => "Предоставлены продактом частично. С дополнительным поиском."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[5][@value='5']",
+                            "value" => "Характеристики добавлены с обновлением фото/описания"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[6][@value='-1']",
+                            "value" => "(не задано)"
+                        ],
+
+                        [
+                            "selector" => "//select[@name='RequestSearch[description_available][]']/option[1][@value='14']",
+                            "value" => "Не предоставлены продактом. Выполнен поиск."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[description_available][]']/option[2][@value='11']",
+                            "value" => "Предоставлены продактом"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[description_available][]']/option[3][@value='12']",
+                            "value" => "Предоставлены продактом частично. Без дополнительного поиска."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[description_available][]']/option[4][@value='13']",
+                            "value" => "Предоставлены продактом частично. С дополнительным поиском."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[description_available][]']/option[5][@value='-1']",
+                            "value" => "(не задано)"
+                        ],
+
+                        [
+                            "selector" => "//select[@name='RequestSearch[language][]']/option[1][@value='23']",
+                            "value" => "Английский"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[language][]']/option[2][@value='21']",
+                            "value" => "Русский"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[language][]']/option[3][@value='22']",
+                            "value" => "Украинский"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[language][]']/option[4][@value='-1']",
+                            "value" => "(не задано)"
                         ],
                     ],
                     "Заявка 1" => [
@@ -737,7 +927,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
-//                            "value" => "Работа с&nbsp;проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
@@ -787,7 +977,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
-//                            "value" => "Работа с проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
@@ -1127,7 +1317,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
-//                            "value" => "Работа с&nbsp;проектированием структур + фильтрами"
+                            "value" => "Работа с&nbsp;проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
@@ -1177,7 +1367,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
-//                            "value" => "Работа с проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
@@ -1526,7 +1716,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
-//                            "value" => "Работа с&nbsp;проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
@@ -1576,7 +1766,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
-//                            "value" => "Работа с проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
@@ -1765,6 +1955,49 @@ return [
                             "value" => "Отчетные периоды СВ"
                         ],
                     ],
+                    "Выпадающие списки" => [
+                        [
+                            "selector" => "//select[@name='RequestSearch[report_period_id][]']/option[1][@value='1']",
+                            "value" => "2020-01-01 - 2020-03-31"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[report_period_id][]']/option[2][@value='2']",
+                            "value" => "2020-04-01 - 2020-06-30"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[report_period_id][]']/option[3][@value='3']",
+                            "value" => "2020-07-01 - 2020-09-30"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[report_period_id][]']/option[4][@value='4']",
+                            "value" => "2020-10-01 - 2020-12-31"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[report_period_id][]']/option[5][@value='-1']",
+                            "value" => "(не задано)"
+                        ],
+
+                        [
+                            "selector" => "//select[@name='RequestSearch[sv_report_periods][]']/option[1][@value='1']",
+                            "value" => "2020-01-01 - 2020-03-31"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[sv_report_periods][]']/option[2][@value='2']",
+                            "value" => "2020-04-01 - 2020-06-30"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[sv_report_periods][]']/option[3][@value='3']",
+                            "value" => "2020-07-01 - 2020-09-30"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[sv_report_periods][]']/option[4][@value='4']",
+                            "value" => "2020-10-01 - 2020-12-31"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[sv_report_periods][]']/option[5][@value='-1']",
+                            "value" => "(не задано)"
+                        ],
+                    ],
                     "Заявка 4" => [
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
@@ -1816,7 +2049,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='14']",
-                            "value" => "2020-01-01 - 2020-12-31"
+                            "value" => "2020-01-01 - 2020-03-31"
                         ],
                     ],
                 ],
@@ -2583,7 +2816,7 @@ return [
                 '4-dynagrid' => '1',
                 'DynaGridConfig[theme]' => 'panel-danger',
                 'deleteFlag' => '0',
-                'visibleKeys' => 'f4f49851,329730bf,100af6ba,f3809f80,2cbe2443,29902e9a,e7f76e0d,5800ee87,07546bc1,43f73178,4c698919,80fd31f5',
+                'visibleKeys' => 'f4f49851,329730bf,100af6ba,f3809f80,2cbe2443,29902e9a,e7f76e0d,5800ee87,07546bc1,43f73178,4c698919,80fd31f5,817b5bc0',
             ],
             "pageObjects" => [
                 "canSee" => [
@@ -2648,6 +2881,10 @@ return [
                             "selector" => "//thead/tr/th[@data-col-seq='16']",
                             "value" => "С видео"
                         ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='17']",
+                            "value" => "По заявке с MobileCourier"
+                        ],
                     ],
                     "Заявка 6" => [
                         [
@@ -2699,15 +2936,19 @@ return [
                             "value" => "Нет"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='14']",
                             "value" => "Нет"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='15']",
                             "value" => "Нет"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='16']",
+                            "value" => "Нет"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='17']",
                             "value" => "Нет"
                         ],
                     ],
@@ -2758,6 +2999,22 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='13']",
+                            "value" => "Нет"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='14']",
+                            "value" => "Нет"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='15']",
+                            "value" => "Нет"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='16']",
+                            "value" => "Нет"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='17']",
                             "value" => "Нет"
                         ],
                     ],

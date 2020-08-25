@@ -33,7 +33,7 @@ return [
         "parent_status" => 6,
         "child_status" => 7,
         "reason" => "Ожидается загрузка обновлений в систему",
-        "status" => 1
+        "status" => 0
     ],
     [
         //"id" => 6,
@@ -54,7 +54,7 @@ return [
         "parent_status" => 6,
         "child_status" => 8,
         "reason" => "Часть товаров ушла в ошибки",
-        "status" => 1
+        "status" => 0
     ],
     [
         //"id" => 9,
@@ -104,5 +104,12 @@ return [
         "child_status" => 999,
         "reason" => "Другое (описан в коментариях)",
         "status" => 1
+    ],
+    [
+        //"id" => 16,
+        "parent_status" => 2,
+        "child_status" => 3,
+        "reason" => "Нинада",
+        "status" => 0
     ]
 ];
