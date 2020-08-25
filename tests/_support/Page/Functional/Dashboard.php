@@ -55,8 +55,18 @@ class Dashboard extends FunctionalTester
 
     public static function statusColumn($i)
     {
-        return ['new', 'wait-work', 'in-work', 'on-hold', 'completed', 'declined', 'require-changes',
-            'closed', 'in-day', 'not-in-day', 'active-managers'][$i];
+        return [
+            'new',
+            'wait-work',
+            'in-work',
+            'on-hold',
+            'completed',
+            'declined',
+            'require-changes',
+            'closed',
+            'in-day',
+            'not-in-day',
+            'active-managers'][$i];
     }
 
     public static function amountColumns($i)
@@ -76,12 +86,14 @@ class Dashboard extends FunctionalTester
 
     public static function common(int $row, int $statusCol, int $requestsOrGoods)
     {
-        return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='" . self::statusColumn($statusCol) . "[" . self::objectColumn($requestsOrGoods) . "]']";
+        return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='" . self::statusColumn($statusCol)
+            . "[" . self::objectColumn($requestsOrGoods) . "]']";
     }
 
     public static function detail(int $row, int $amountCol, int $requestsOrGoods)
     {
-        return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='" . self::amountColumns($amountCol) . "[" . self::objectColumn($requestsOrGoods) . "]']";
+        return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='" . self::amountColumns($amountCol)
+            . "[" . self::objectColumn($requestsOrGoods) . "]']";
     }
 
 }

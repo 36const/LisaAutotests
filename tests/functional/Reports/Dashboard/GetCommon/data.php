@@ -29,7 +29,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 0),
-                            "value" => "2"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 0),
@@ -45,7 +45,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 5, 0),
@@ -61,7 +61,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 9, 0),
@@ -69,17 +69,17 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(1),
-                            "value" => "4"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(2, 0, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 2, 0),
@@ -103,7 +103,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 8, 0),
@@ -121,7 +121,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 0),
@@ -129,7 +129,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 3, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 0),
@@ -155,10 +155,6 @@ return [
                             "selector" => Dashboard::common(3, 9, 0),
                             "value" => null
                         ],
-                        [
-                            "selector" => Dashboard::activeManagersColumn(3),
-                            "value" => "0"
-                        ],
                     ],
                     [
                         [
@@ -175,11 +171,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 3, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(4, 4, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(4, 5, 0),
@@ -191,7 +187,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 8, 0),
@@ -199,7 +195,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 9, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                     ],
                     [
@@ -209,15 +205,15 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 0),
-                            "value" => "2"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(5, 3, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 0),
@@ -245,13 +241,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(5),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(6, 0, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 0),
@@ -259,7 +255,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 0),
@@ -297,7 +293,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 0),
@@ -331,15 +327,11 @@ return [
                             "selector" => Dashboard::common(7, 9, 0),
                             "value" => null
                         ],
-                        [
-                            "selector" => Dashboard::activeManagersColumn(7),
-                            "value" => "0"
-                        ],
-                        ],
+                    ],
                     [
                         [
                             "selector" => Dashboard::common(8, 0, 0),
-                            "value" => "2"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(8, 1, 0),
@@ -377,15 +369,19 @@ return [
                             "selector" => Dashboard::common(8, 9, 0),
                             "value" => null
                         ],
+                        [
+                            "selector" => Dashboard::activeManagersColumn(8),
+                            "value" => 4
+                        ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(9, 0, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(9, 1, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 2, 0),
@@ -405,7 +401,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 7, 0),
@@ -423,7 +419,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(10, 0, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(10, 1, 0),
@@ -447,7 +443,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(10, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(10, 7, 0),
@@ -463,25 +459,25 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(10),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(11, 0, 0),
-                            "value" => "6"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(11, 1, 0),
-                            "value" => "3"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(11, 2, 0),
-                            "value" => "3"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(11, 3, 0),
-                            "value" => "2"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(11, 4, 0),
@@ -489,7 +485,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(11, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(11, 6, 0),
@@ -509,7 +505,95 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(11),
-                            "value" => "4"
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(12, 0, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 2, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 3, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 4, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 7, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 9, 0),
+                            "value" => 1
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(13, 0, 0),
+                            "value" => 6
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 1, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 2, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 3, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 4, 0),
+                            "value" => 4
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 5, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 6, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 7, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 8, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 9, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::activeManagersColumn(13),
+                            "value" => 4
                         ],
                     ],
                 ],
@@ -550,11 +634,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 1),
-                            "value" => "30"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 2, 1),
@@ -562,11 +646,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 3, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 4, 1),
-                            "value" => null
+                            "value" => 90
                         ],
                         [
                             "selector" => Dashboard::common(1, 5, 1),
@@ -578,29 +662,29 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 7, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                         [
                             "selector" => Dashboard::common(1, 8, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(1, 9, 1),
-                            "value" => null
+                            "value" => 60
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(1),
-                            "value" => "4"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(2, 0, 1),
-                            "value" => null
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 1),
-                            "value" => "10"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(2, 2, 1),
@@ -608,7 +692,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 3, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 1),
@@ -636,13 +720,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(2),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(3, 0, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 1),
@@ -650,11 +734,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 1),
-                            "value" => "30"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(3, 3, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 1),
@@ -666,7 +750,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(3, 7, 1),
@@ -682,17 +766,17 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(3),
-                            "value" => "0"
+                            "value" => 4
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 1),
-                            "value" => "20"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 1),
-                            "value" => "20"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 1),
@@ -712,7 +796,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(4, 7, 1),
@@ -728,13 +812,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(4),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(5, 0, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 1),
@@ -742,19 +826,19 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(5, 3, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                         [
                             "selector" => Dashboard::common(5, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 1),
@@ -770,57 +854,57 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 9, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(5),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(6, 0, 1),
-                            "value" => "60"
+                            "value" => 60
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 1),
-                            "value" => "30"
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 1),
-                            "value" => "30"
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(6, 4, 1),
-                            "value" => null
+                            "value" => 170
                         ],
                         [
                             "selector" => Dashboard::common(6, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(6, 6, 1),
-                            "value" => null
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(6, 7, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                         [
                             "selector" => Dashboard::common(6, 8, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(6, 9, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(6),
-                            "value" => "4"
+                            "value" => 4
                         ],
                     ],
                 ],
@@ -869,7 +953,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 2, 0),
@@ -877,11 +961,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 5, 0),
@@ -901,7 +985,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
@@ -911,7 +995,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 2, 1),
@@ -919,11 +1003,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 3, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 4, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(1, 5, 1),
@@ -943,7 +1027,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 9, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                     ],
                     [
@@ -953,11 +1037,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 2, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 3, 0),
@@ -965,11 +1049,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(2, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 6, 0),
@@ -981,11 +1065,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
@@ -995,11 +1079,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(2, 2, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(2, 3, 1),
@@ -1007,11 +1091,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 1),
-                            "value" => null
+                            "value" => 110
                         ],
                         [
                             "selector" => Dashboard::common(2, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(2, 6, 1),
@@ -1023,11 +1107,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 8, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(2, 9, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                     ],
                     [
@@ -1037,7 +1121,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 0),
@@ -1049,7 +1133,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 5, 0),
@@ -1061,7 +1145,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 8, 0),
@@ -1069,7 +1153,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
@@ -1079,7 +1163,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 1),
@@ -1091,7 +1175,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(3, 5, 1),
@@ -1103,7 +1187,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 7, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(3, 8, 1),
@@ -1111,7 +1195,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 9, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                     ],
                     [
@@ -1125,11 +1209,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(4, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 4, 0),
@@ -1145,7 +1229,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 8, 0),
@@ -1167,11 +1251,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(4, 3, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(4, 4, 1),
@@ -1187,7 +1271,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 7, 1),
-                            "value" => null
+                            "value" => 110
                         ],
                         [
                             "selector" => Dashboard::common(4, 8, 1),
@@ -1205,39 +1289,39 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 0),
-                            "value" => "3"
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 0),
-                            "value" => "3"
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::common(5, 3, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 0),
-                            "value" => null
+                            "value" => 4
                         ],
                         [
                             "selector" => Dashboard::common(5, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 0),
-                            "value" => null
+                            "value" => 0
                         ],
                         [
                             "selector" => Dashboard::common(5, 7, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(5, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 9, 0),
-                            "value" => null
+                            "value" => 3
                         ],
                     ],
                     [
@@ -1247,39 +1331,39 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 1),
-                            "value" => "30"
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 1),
-                            "value" => "30"
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(5, 3, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 1),
-                            "value" => null
+                            "value" => 170
                         ],
                         [
                             "selector" => Dashboard::common(5, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 1),
-                            "value" => null
+                            "value" => 0
                         ],
                         [
                             "selector" => Dashboard::common(5, 7, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                         [
                             "selector" => Dashboard::common(5, 8, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(5, 9, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                     ],
                 ],
@@ -1319,11 +1403,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 2, 0),
@@ -1335,19 +1419,19 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 8, 0),
@@ -1355,17 +1439,17 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 2, 1),
@@ -1377,19 +1461,19 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 4, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(1, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 7, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(1, 8, 1),
@@ -1397,13 +1481,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 9, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(2, 0, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 0),
@@ -1419,7 +1503,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 5, 0),
@@ -1439,13 +1523,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(2, 0, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 1),
@@ -1461,7 +1545,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(2, 5, 1),
@@ -1481,7 +1565,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 9, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                     ],
                     [
@@ -1495,7 +1579,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 3, 0),
@@ -1503,7 +1587,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 5, 0),
@@ -1523,7 +1607,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
@@ -1537,7 +1621,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(3, 3, 1),
@@ -1545,7 +1629,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                         [
                             "selector" => Dashboard::common(3, 5, 1),
@@ -1565,7 +1649,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 9, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                     ],
                     [
@@ -1579,11 +1663,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 4, 0),
@@ -1621,11 +1705,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(4, 3, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(4, 4, 1),
@@ -1659,7 +1743,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 0),
@@ -1671,7 +1755,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 5, 0),
@@ -1679,7 +1763,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 7, 0),
@@ -1687,7 +1771,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 9, 0),
@@ -1701,7 +1785,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 1),
@@ -1713,7 +1797,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(5, 5, 1),
@@ -1721,7 +1805,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(5, 7, 1),
@@ -1729,7 +1813,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 8, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(5, 9, 1),
@@ -1739,7 +1823,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(6, 0, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 0),
@@ -1747,11 +1831,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 4, 0),
@@ -1767,7 +1851,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 8, 0),
@@ -1781,7 +1865,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(6, 0, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 1),
@@ -1789,11 +1873,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(6, 4, 1),
@@ -1809,7 +1893,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 7, 1),
-                            "value" => null
+                            "value" => 110
                         ],
                         [
                             "selector" => Dashboard::common(6, 8, 1),
@@ -1823,85 +1907,85 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(7, 0, 0),
-                            "value" => "6"
+                            "value" => 6
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 0),
-                            "value" => "3"
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 0),
-                            "value" => "3"
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::common(7, 3, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(7, 4, 0),
-                            "value" => null
+                            "value" => 4
                         ],
                         [
                             "selector" => Dashboard::common(7, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 6, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(7, 7, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(7, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 9, 0),
-                            "value" => null
+                            "value" => 3
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(7, 0, 1),
-                            "value" => "60"
+                            "value" => 60
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 1),
-                            "value" => "30"
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 1),
-                            "value" => "30"
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(7, 3, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(7, 4, 1),
-                            "value" => null
+                            "value" => 170
                         ],
                         [
                             "selector" => Dashboard::common(7, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(7, 6, 1),
-                            "value" => null
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(7, 7, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                         [
                             "selector" => Dashboard::common(7, 8, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(7, 9, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                     ],
                 ],
@@ -1941,7 +2025,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 0),
@@ -1965,7 +2049,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 7, 0),
@@ -1983,7 +2067,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 1),
@@ -2007,7 +2091,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 7, 1),
@@ -2029,7 +2113,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 2, 0),
@@ -2041,7 +2125,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(2, 5, 0),
@@ -2053,7 +2137,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 7, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(2, 8, 0),
@@ -2061,7 +2145,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 9, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                     ],
                     [
@@ -2071,7 +2155,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(2, 2, 1),
@@ -2083,7 +2167,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 1),
-                            "value" => null
+                            "value" => 60
                         ],
                         [
                             "selector" => Dashboard::common(2, 5, 1),
@@ -2095,7 +2179,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 7, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                         [
                             "selector" => Dashboard::common(2, 8, 1),
@@ -2103,7 +2187,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 9, 1),
-                            "value" => null
+                            "value" => 60
                         ],
                     ],
                     [
@@ -2121,11 +2205,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 5, 0),
@@ -2141,7 +2225,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 9, 0),
@@ -2163,11 +2247,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 3, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(3, 5, 1),
@@ -2183,7 +2267,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 8, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(3, 9, 1),
@@ -2193,11 +2277,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 0),
@@ -2235,11 +2319,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 1),
@@ -2277,7 +2361,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(5, 0, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 0),
@@ -2301,7 +2385,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 7, 0),
@@ -2319,7 +2403,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(5, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 1),
@@ -2343,7 +2427,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(5, 7, 1),
@@ -2369,7 +2453,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 0),
@@ -2377,11 +2461,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 6, 0),
@@ -2397,7 +2481,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
@@ -2411,7 +2495,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 1),
@@ -2419,11 +2503,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 4, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                         [
                             "selector" => Dashboard::common(6, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(6, 6, 1),
@@ -2439,7 +2523,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 9, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                     ],
                     [
@@ -2453,11 +2537,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 4, 0),
@@ -2495,11 +2579,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(7, 3, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(7, 4, 1),
@@ -2529,7 +2613,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(8, 0, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(8, 1, 0),
@@ -2571,7 +2655,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(8, 0, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(8, 1, 1),
@@ -2613,85 +2697,85 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(9, 0, 0),
-                            "value" => "6"
+                            "value" => 6
                         ],
                         [
                             "selector" => Dashboard::common(9, 1, 0),
-                            "value" => "3"
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::common(9, 2, 0),
-                            "value" => "3"
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::common(9, 3, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(9, 4, 0),
-                            "value" => null
+                            "value" => 4
                         ],
                         [
                             "selector" => Dashboard::common(9, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 6, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(9, 7, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(9, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 9, 0),
-                            "value" => null
+                            "value" => 3
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(9, 0, 1),
-                            "value" => "60"
+                            "value" => 60
                         ],
                         [
                             "selector" => Dashboard::common(9, 1, 1),
-                            "value" => "30"
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(9, 2, 1),
-                            "value" => "30"
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(9, 3, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(9, 4, 1),
-                            "value" => null
+                            "value" => 170
                         ],
                         [
                             "selector" => Dashboard::common(9, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(9, 6, 1),
-                            "value" => null
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(9, 7, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                         [
                             "selector" => Dashboard::common(9, 8, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(9, 9, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                     ],
                 ],
@@ -2735,7 +2819,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 2, 0),
@@ -2785,7 +2869,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 0),
@@ -2819,7 +2903,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 0),
@@ -2831,7 +2915,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 5, 0),
@@ -2851,7 +2935,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
@@ -2861,11 +2945,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(4, 3, 0),
@@ -2903,11 +2987,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 3, 0),
@@ -2915,7 +2999,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 5, 0),
@@ -2935,7 +3019,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
@@ -2953,7 +3037,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(6, 4, 0),
@@ -2961,7 +3045,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 6, 0),
@@ -2991,7 +3075,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(7, 3, 0),
@@ -2999,7 +3083,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 5, 0),
@@ -3015,7 +3099,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 9, 0),
@@ -3029,11 +3113,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 1, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(8, 2, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(8, 3, 0),
@@ -3071,19 +3155,19 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 1, 0),
-                            "value" => "3"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 2, 0),
-                            "value" => "3"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 3, 0),
-                            "value" => "2"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 5, 0),
@@ -3095,7 +3179,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 8, 0),
@@ -3103,7 +3187,217 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 9, 0),
+                            "value" => 1
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(10, 0, 0),
                             "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 2, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 3, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 4, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 7, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(11, 0, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 2, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 3, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 4, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 7, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(12, 0, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 2, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 3, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 4, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 7, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(13, 0, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 2, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 3, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 4, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 7, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(14, 0, 0),
+                            "value" => 0
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 1, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 2, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 3, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 4, 0),
+                            "value" => 4
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 5, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 6, 0),
+                            "value" => 0
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 7, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 8, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 9, 0),
+                            "value" => 3
                         ],
                     ],
                 ],
@@ -3143,7 +3437,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 0),
@@ -3189,7 +3483,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(2, 2, 0),
@@ -3209,7 +3503,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 7, 0),
@@ -3227,7 +3521,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(3, 0, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 0),
@@ -3247,7 +3541,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 6, 0),
@@ -3269,11 +3563,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 0),
@@ -3319,7 +3613,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(5, 3, 0),
@@ -3327,7 +3621,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 5, 0),
@@ -3339,7 +3633,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 8, 0),
@@ -3347,13 +3641,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(6, 0, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 0),
@@ -3365,7 +3659,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(6, 4, 0),
@@ -3395,7 +3689,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(7, 0, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 0),
@@ -3403,7 +3697,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(7, 3, 0),
@@ -3441,7 +3735,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 1, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(8, 2, 0),
@@ -3453,7 +3747,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(8, 5, 0),
@@ -3473,7 +3767,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
@@ -3483,11 +3777,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 1, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 2, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 3, 0),
@@ -3495,7 +3789,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 5, 0),
@@ -3515,13 +3809,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(10, 0, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(10, 1, 0),
@@ -3529,7 +3823,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(10, 2, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(10, 3, 0),
@@ -3563,7 +3857,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(11, 0, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(11, 1, 0),
@@ -3575,7 +3869,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(11, 3, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(11, 4, 0),
@@ -3609,7 +3903,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 1, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(12, 2, 0),
@@ -3617,7 +3911,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 3, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(12, 4, 0),
@@ -3655,7 +3949,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(13, 2, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 3, 0),
@@ -3671,7 +3965,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(13, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(13, 7, 0),
@@ -3689,19 +3983,19 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(14, 0, 0),
-                            "value" => "6"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(14, 1, 0),
-                            "value" => "3"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(14, 2, 0),
-                            "value" => "3"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(14, 3, 0),
-                            "value" => "2"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(14, 4, 0),
@@ -3726,6 +4020,300 @@ return [
                         [
                             "selector" => Dashboard::common(14, 9, 0),
                             "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(15, 0, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 2, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 3, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 4, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 7, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 8, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(16, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 2, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 3, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 4, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 7, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(17, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 2, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 3, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 4, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 7, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(18, 0, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 2, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 3, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 4, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 7, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(19, 0, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 2, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 3, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 4, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 7, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(20, 0, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 2, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 3, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 4, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 7, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(21, 0, 0),
+                            "value" => 6
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 1, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 2, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 3, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 4, 0),
+                            "value" => 4
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 5, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 6, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 7, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 8, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 9, 0),
+                            "value" => 3
                         ],
                     ],
                 ],
@@ -3765,7 +4353,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 0),
@@ -3789,7 +4377,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 7, 0),
@@ -3811,7 +4399,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 2, 0),
@@ -3835,7 +4423,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 8, 0),
@@ -3861,11 +4449,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 3, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(3, 5, 0),
@@ -3877,7 +4465,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 8, 0),
@@ -3885,13 +4473,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 9, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 0),
-                            "value" => "2"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 0),
@@ -3907,7 +4495,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 5, 0),
@@ -3923,7 +4511,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 9, 0),
@@ -3937,7 +4525,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 0),
@@ -3945,7 +4533,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 3, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 0),
@@ -3979,7 +4567,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 0),
@@ -4017,7 +4605,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(7, 0, 0),
-                            "value" => "1"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 0),
@@ -4063,11 +4651,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 1, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(8, 2, 0),
-                            "value" => "2"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(8, 3, 0),
@@ -4101,7 +4689,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(9, 0, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 1, 0),
@@ -4113,7 +4701,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 3, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 4, 0),
@@ -4125,7 +4713,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 7, 0),
@@ -4151,7 +4739,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(10, 2, 0),
-                            "value" => "1"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(10, 3, 0),
@@ -4159,7 +4747,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(10, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(10, 5, 0),
@@ -4179,13 +4767,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(10, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(11, 0, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(11, 1, 0),
@@ -4205,7 +4793,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(11, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(11, 6, 0),
@@ -4227,7 +4815,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(12, 0, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(12, 1, 0),
@@ -4239,7 +4827,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 3, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(12, 4, 0),
@@ -4269,19 +4857,19 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(13, 0, 0),
-                            "value" => "6"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 1, 0),
-                            "value" => "3"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 2, 0),
-                            "value" => "3"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(13, 3, 0),
-                            "value" => "2"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 4, 0),
@@ -4306,6 +4894,132 @@ return [
                         [
                             "selector" => Dashboard::common(13, 9, 0),
                             "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(14, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 2, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 3, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 4, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 7, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(15, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 2, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 3, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 4, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 7, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 9, 0),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(16, 0, 0),
+                            "value" => 6
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 1, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 2, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 3, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 4, 0),
+                            "value" => 4
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 5, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 6, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 7, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 8, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 9, 0),
+                            "value" => 3
                         ],
                     ],
                 ],
@@ -4341,7 +5055,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 1),
@@ -4381,13 +5095,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(1),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(2, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 1),
@@ -4411,7 +5125,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(2, 7, 1),
@@ -4427,17 +5141,17 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(2),
-                            "value" => "2"
+                            "value" => 2
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(3, 0, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 1),
@@ -4473,13 +5187,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(3),
-                            "value" => "2"
+                            "value" => 2
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 1),
@@ -4503,7 +5217,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(4, 7, 1),
@@ -4519,7 +5233,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(4),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
@@ -4533,19 +5247,19 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 1),
-                            "value" => "30"
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(5, 3, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                         [
                             "selector" => Dashboard::common(5, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 1),
@@ -4561,11 +5275,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 9, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(5),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
@@ -4575,7 +5289,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 1),
@@ -4583,11 +5297,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(6, 4, 1),
-                            "value" => null
+                            "value" => 90
                         ],
                         [
                             "selector" => Dashboard::common(6, 5, 1),
@@ -4599,65 +5313,65 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 7, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                         [
                             "selector" => Dashboard::common(6, 8, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(6, 9, 1),
-                            "value" => null
+                            "value" => 60
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(6),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(7, 0, 1),
-                            "value" => "60"
+                            "value" => 60
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 1),
-                            "value" => "30"
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 1),
-                            "value" => "30"
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(7, 3, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(7, 4, 1),
-                            "value" => null
+                            "value" => 170
                         ],
                         [
                             "selector" => Dashboard::common(7, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(7, 6, 1),
-                            "value" => null
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(7, 7, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                         [
                             "selector" => Dashboard::common(7, 8, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(7, 9, 1),
-                            "value" => null
+                            "value" => 140
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(7),
-                            "value" => "4"
+                            "value" => 4
                         ],
                     ],
                 ],
@@ -4678,7 +5392,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?type=3&display=6',
+            "url" => '?type=3&display=6&show_all=1',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -4698,7 +5412,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 0),
@@ -4738,13 +5452,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(1),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 1),
@@ -4786,7 +5500,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(2, 0, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 0),
@@ -4828,7 +5542,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(2, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 1),
@@ -4870,7 +5584,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(3, 0, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 0),
@@ -4894,7 +5608,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 7, 0),
@@ -4910,13 +5624,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(3),
-                            "value" => "2"
+                            "value" => 2
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(3, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 1),
@@ -4940,7 +5654,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(3, 7, 1),
@@ -4958,11 +5672,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 0),
-                            "value" => "2"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 0),
@@ -4998,17 +5712,17 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(4),
-                            "value" => "2"
+                            "value" => 2
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 1),
-                            "value" => "20"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 1),
@@ -5046,11 +5760,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(5, 0, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 0),
@@ -5088,11 +5802,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(5, 0, 1),
-                            "value" => null
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 1),
@@ -5134,7 +5848,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 0),
@@ -5176,7 +5890,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 1),
@@ -5214,7 +5928,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(7, 0, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 0),
@@ -5238,7 +5952,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 7, 0),
@@ -5254,13 +5968,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(7),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(7, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 1),
@@ -5284,7 +5998,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(7, 7, 1),
@@ -5310,15 +6024,15 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 2, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(8, 3, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(8, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(8, 5, 0),
@@ -5338,11 +6052,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(8),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
@@ -5356,15 +6070,15 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 2, 1),
-                            "value" => null
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(8, 3, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(8, 4, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                         [
                             "selector" => Dashboard::common(8, 5, 1),
@@ -5384,7 +6098,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 9, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                     ],
                     [
@@ -5398,11 +6112,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 2, 0),
-                            "value" => "2"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 3, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 4, 0),
@@ -5440,11 +6154,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 2, 1),
-                            "value" => "20"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 3, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(9, 4, 1),
@@ -5482,7 +6196,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(10, 2, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(10, 3, 0),
@@ -5494,7 +6208,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(10, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(10, 6, 0),
@@ -5524,7 +6238,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(10, 2, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(10, 3, 1),
@@ -5536,7 +6250,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(10, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(10, 6, 1),
@@ -5562,7 +6276,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(11, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(11, 2, 0),
@@ -5586,7 +6300,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(11, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(11, 8, 0),
@@ -5598,7 +6312,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(11),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
@@ -5608,7 +6322,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(11, 1, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(11, 2, 1),
@@ -5632,7 +6346,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(11, 7, 1),
-                            "value" => null
+                            "value" => 110
                         ],
                         [
                             "selector" => Dashboard::common(11, 8, 1),
@@ -5658,11 +6372,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 3, 0),
-                            "value" => "1"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(12, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(12, 5, 0),
@@ -5678,7 +6392,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(12, 9, 0),
@@ -5700,11 +6414,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 3, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(12, 4, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(12, 5, 1),
@@ -5720,7 +6434,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 8, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(12, 9, 1),
@@ -5730,19 +6444,19 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(13, 0, 0),
-                            "value" => "6"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 1, 0),
-                            "value" => "3"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 2, 0),
-                            "value" => "3"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 3, 0),
-                            "value" => "2"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(13, 4, 0),
@@ -5768,27 +6482,23 @@ return [
                             "selector" => Dashboard::common(13, 9, 0),
                             "value" => null
                         ],
-                        [
-                            "selector" => Dashboard::activeManagersColumn(13),
-                            "value" => "4"
-                        ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(13, 0, 1),
-                            "value" => "60"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 1, 1),
-                            "value" => "30"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 2, 1),
-                            "value" => "30"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 3, 1),
-                            "value" => "20"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(13, 4, 1),
@@ -5813,6 +6523,262 @@ return [
                         [
                             "selector" => Dashboard::common(13, 9, 1),
                             "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(14, 0, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 1, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 2, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 3, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 4, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 5, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 6, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 7, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 8, 0),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 9, 0),
+                            "value" => 2
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(14, 0, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 2, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 3, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 4, 1),
+                            "value" => 60
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 7, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 8, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 9, 1),
+                            "value" => 60
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(15),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(16),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(17),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(18),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(19),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(20),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(21),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(22),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(23),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(24),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(25),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(26),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(27),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::activeManagersColumn(28),
+                            "value" => 0
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(29, 0, 0),
+                            "value" => 6
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 1, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 2, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 3, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 4, 0),
+                            "value" => 4
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 5, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 6, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 7, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 8, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 9, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::activeManagersColumn(29),
+                            "value" => 4
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(29, 0, 1),
+                            "value" => 60
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 1, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 2, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 3, 1),
+                            "value" => 20
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 4, 1),
+                            "value" => 170
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 5, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 6, 1),
+                            "value" => 20
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 7, 1),
+                            "value" => 140
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 8, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(29, 9, 1),
+                            "value" => 140
                         ],
                     ],
                 ],
@@ -5861,7 +6827,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 2, 0),
@@ -5885,7 +6851,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 8, 0),
@@ -5893,11 +6859,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(1),
-                            "value" => "2"
+                            "value" => 2
                         ],
                     ],
                     [
@@ -5911,11 +6877,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 2, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(2, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 0),
@@ -5931,7 +6897,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 8, 0),
@@ -5949,7 +6915,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 0),
@@ -5957,11 +6923,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 5, 0),
@@ -5981,11 +6947,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(3),
-                            "value" => "2"
+                            "value" => 2
                         ],
                     ],
                     [
@@ -5995,11 +6961,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 3, 0),
@@ -6007,11 +6973,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 4, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(4, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 6, 0),
@@ -6023,11 +6989,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
@@ -6037,43 +7003,43 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 0),
-                            "value" => "3"
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 0),
-                            "value" => "3"
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::common(5, 3, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 0),
-                            "value" => null
+                            "value" => 4
                         ],
                         [
                             "selector" => Dashboard::common(5, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 0),
-                            "value" => null
+                            "value" => 0
                         ],
                         [
                             "selector" => Dashboard::common(5, 7, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(5, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 9, 0),
-                            "value" => null
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(5),
-                            "value" => "4"
+                            "value" => 4
                         ],
                     ],
                 ],
@@ -6121,7 +7087,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 2, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 3, 0),
@@ -6129,7 +7095,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(1, 5, 0),
@@ -6153,7 +7119,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(1),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
@@ -6167,11 +7133,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 2, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 0),
@@ -6201,11 +7167,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(3, 0, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 0),
@@ -6217,19 +7183,19 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(3, 8, 0),
@@ -6237,17 +7203,17 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(3),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 0),
@@ -6263,7 +7229,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 5, 0),
@@ -6283,7 +7249,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                     ],
                     [
@@ -6293,7 +7259,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 0),
@@ -6305,7 +7271,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 5, 0),
@@ -6313,7 +7279,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 7, 0),
@@ -6321,7 +7287,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 9, 0),
@@ -6331,7 +7297,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(6, 0, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 0),
@@ -6339,11 +7305,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 4, 0),
@@ -6359,7 +7325,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 7, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 8, 0),
@@ -6373,47 +7339,47 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(7, 0, 0),
-                            "value" => "6"
+                            "value" => 6
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 0),
-                            "value" => "3"
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 0),
-                            "value" => "3"
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::common(7, 3, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(7, 4, 0),
-                            "value" => null
+                            "value" => 4
                         ],
                         [
                             "selector" => Dashboard::common(7, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 6, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(7, 7, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(7, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 9, 0),
-                            "value" => null
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(7),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                 ],
@@ -6453,7 +7419,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 0),
@@ -6493,13 +7459,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(1),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(2, 0, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 0),
@@ -6523,7 +7489,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(2, 7, 0),
@@ -6539,17 +7505,17 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(2),
-                            "value" => "2"
+                            "value" => 2
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(3, 0, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 0),
@@ -6585,13 +7551,13 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(3),
-                            "value" => "2"
+                            "value" => 2
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 0),
@@ -6615,7 +7581,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 6, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(4, 7, 0),
@@ -6631,7 +7597,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(4),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
@@ -6645,7 +7611,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(5, 3, 0),
@@ -6653,11 +7619,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 0),
@@ -6673,11 +7639,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 9, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(5),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
@@ -6691,11 +7657,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(6, 4, 0),
@@ -6729,7 +7695,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 0),
@@ -6741,7 +7707,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 4, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(7, 5, 0),
@@ -6753,7 +7719,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 7, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(7, 8, 0),
@@ -6761,11 +7727,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 9, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(7),
-                            "value" => "0"
+                            "value" => 0
                         ],
                     ],
                     [
@@ -6783,11 +7749,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 3, 0),
-                            "value" => "1"
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(8, 4, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(8, 5, 0),
@@ -6803,7 +7769,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(8, 9, 0),
@@ -6825,35 +7791,35 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 3, 0),
-                            "value" => "2"
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(9, 4, 0),
-                            "value" => null
+                            "value" => 4
                         ],
                         [
                             "selector" => Dashboard::common(9, 5, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 6, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(9, 7, 0),
-                            "value" => null
+                            "value" => 2
                         ],
                         [
                             "selector" => Dashboard::common(9, 8, 0),
-                            "value" => null
+                            "value" => 1
                         ],
                         [
                             "selector" => Dashboard::common(9, 9, 0),
-                            "value" => null
+                            "value" => 3
                         ],
                         [
                             "selector" => Dashboard::activeManagersColumn(9),
-                            "value" => "4"
+                            "value" => 4
                         ],
                     ],
                 ],
@@ -6897,7 +7863,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 2, 1),
@@ -6947,11 +7913,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 3, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(2, 5, 1),
@@ -6963,7 +7929,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 7, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(2, 8, 1),
@@ -6971,7 +7937,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 9, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                     ],
                     [
@@ -6985,7 +7951,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(3, 3, 1),
@@ -7005,7 +7971,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 7, 1),
-                            "value" => null
+                            "value" => 110
                         ],
                         [
                             "selector" => Dashboard::common(3, 8, 1),
@@ -7027,7 +7993,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(4, 3, 1),
@@ -7065,11 +8031,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(5, 3, 1),
@@ -7115,7 +8081,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 3, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(6, 4, 1),
@@ -7149,7 +8115,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 1),
@@ -7195,11 +8161,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 2, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(8, 3, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(8, 4, 1),
@@ -7233,19 +8199,19 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 1, 1),
-                            "value" => "30"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 2, 1),
-                            "value" => "30"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 3, 1),
-                            "value" => "20"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 4, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(9, 5, 1),
@@ -7265,7 +8231,217 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 9, 1),
+                            "value" => 30
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(10, 0, 1),
                             "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 1, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 2, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 3, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 4, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 7, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 8, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(10, 9, 1),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(11, 0, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 2, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 3, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 4, 1),
+                            "value" => 80
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 7, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 8, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(11, 9, 1),
+                            "value" => 80
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(12, 0, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 2, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 3, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 4, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 5, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 7, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 8, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(12, 9, 1),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(13, 0, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 2, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 3, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 4, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 7, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 8, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(13, 9, 1),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(14, 0, 1),
+                            "value" => 0
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 1, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 2, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 3, 1),
+                            "value" => 20
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 4, 1),
+                            "value" => 170
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 5, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 6, 1),
+                            "value" => 0
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 7, 1),
+                            "value" => 140
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 8, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 9, 1),
+                            "value" => 140
                         ],
                     ],
                 ],
@@ -7313,7 +8489,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 2, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 3, 1),
@@ -7321,7 +8497,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 4, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                         [
                             "selector" => Dashboard::common(1, 5, 1),
@@ -7341,7 +8517,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(1, 9, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                     ],
                     [
@@ -7355,11 +8531,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(2, 2, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(2, 3, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(2, 4, 1),
@@ -7397,11 +8573,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 2, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(3, 3, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(3, 4, 1),
@@ -7431,7 +8607,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 1),
@@ -7477,7 +8653,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 1),
@@ -7497,7 +8673,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(5, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(5, 7, 1),
@@ -7515,7 +8691,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(6, 0, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 1),
@@ -7535,7 +8711,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(6, 6, 1),
@@ -7557,11 +8733,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(7, 0, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(7, 2, 1),
@@ -7603,7 +8779,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 1, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(8, 2, 1),
@@ -7615,7 +8791,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 4, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(8, 5, 1),
@@ -7627,7 +8803,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 7, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(8, 8, 1),
@@ -7635,17 +8811,17 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 9, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                     ],
                     [
                         [
                             "selector" => Dashboard::common(9, 0, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(9, 1, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 2, 1),
@@ -7683,7 +8859,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(10, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(10, 1, 1),
@@ -7725,7 +8901,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(11, 0, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(11, 1, 1),
@@ -7741,7 +8917,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(11, 4, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(11, 5, 1),
@@ -7761,7 +8937,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(11, 9, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                     ],
                     [
@@ -7771,7 +8947,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 1, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(12, 2, 1),
@@ -7779,7 +8955,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 3, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(12, 4, 1),
@@ -7817,7 +8993,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(13, 2, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 3, 1),
@@ -7833,7 +9009,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(13, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(13, 7, 1),
@@ -7851,19 +9027,19 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(14, 0, 1),
-                            "value" => "60"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(14, 1, 1),
-                            "value" => "30"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(14, 2, 1),
-                            "value" => "30"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(14, 3, 1),
-                            "value" => "20"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(14, 4, 1),
@@ -7888,6 +9064,300 @@ return [
                         [
                             "selector" => Dashboard::common(14, 9, 1),
                             "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(15, 0, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 2, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 3, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 4, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 7, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 8, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 9, 1),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(16, 0, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 2, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 3, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 4, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 7, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 8, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 9, 1),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(17, 0, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 2, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 3, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 4, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 7, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 8, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(17, 9, 1),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(18, 0, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 2, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 3, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 4, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 7, 1),
+                            "value" => 110
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 8, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(18, 9, 1),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(19, 0, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 2, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 3, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 4, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 7, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 8, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(19, 9, 1),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(20, 0, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 2, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 3, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 4, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 7, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 8, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(20, 9, 1),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(21, 0, 1),
+                            "value" => 60
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 1, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 2, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 3, 1),
+                            "value" => 20
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 4, 1),
+                            "value" => 170
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 5, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 6, 1),
+                            "value" => 20
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 7, 1),
+                            "value" => 140
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 8, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(21, 9, 1),
+                            "value" => 140
                         ],
                     ],
                 ],
@@ -7927,7 +9397,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(1, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(1, 1, 1),
@@ -7969,7 +9439,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(2, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(2, 1, 1),
@@ -8011,7 +9481,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(3, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(3, 1, 1),
@@ -8035,7 +9505,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(3, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(3, 7, 1),
@@ -8053,11 +9523,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(4, 0, 1),
-                            "value" => "20"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(4, 1, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(4, 2, 1),
@@ -8095,11 +9565,11 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(5, 0, 1),
-                            "value" => null
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(5, 1, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(5, 2, 1),
@@ -8141,7 +9611,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(6, 1, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(6, 2, 1),
@@ -8179,7 +9649,7 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(7, 0, 1),
-                            "value" => "10"
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(7, 1, 1),
@@ -8203,7 +9673,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(7, 6, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(7, 7, 1),
@@ -8229,7 +9699,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 2, 1),
-                            "value" => "20"
+                            "value" => 20
                         ],
                         [
                             "selector" => Dashboard::common(8, 3, 1),
@@ -8237,7 +9707,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 4, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                         [
                             "selector" => Dashboard::common(8, 5, 1),
@@ -8257,7 +9727,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(8, 9, 1),
-                            "value" => null
+                            "value" => 80
                         ],
                     ],
                     [
@@ -8275,7 +9745,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 3, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(9, 4, 1),
@@ -8283,7 +9753,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(9, 5, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(9, 6, 1),
@@ -8313,11 +9783,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(10, 2, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(10, 3, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(10, 4, 1),
@@ -8351,11 +9821,11 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(11, 1, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(11, 2, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(11, 3, 1),
@@ -8393,7 +9863,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 1, 1),
-                            "value" => null
+                            "value" => 10
                         ],
                         [
                             "selector" => Dashboard::common(12, 2, 1),
@@ -8401,7 +9871,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 3, 1),
-                            "value" => "10"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(12, 4, 1),
@@ -8417,7 +9887,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(12, 7, 1),
-                            "value" => null
+                            "value" => 110
                         ],
                         [
                             "selector" => Dashboard::common(12, 8, 1),
@@ -8431,23 +9901,23 @@ return [
                     [
                         [
                             "selector" => Dashboard::common(13, 0, 1),
-                            "value" => "60"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 1, 1),
-                            "value" => "30"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 2, 1),
-                            "value" => "30"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 3, 1),
-                            "value" => "20"
+                            "value" => null
                         ],
                         [
                             "selector" => Dashboard::common(13, 4, 1),
-                            "value" => null
+                            "value" => 60
                         ],
                         [
                             "selector" => Dashboard::common(13, 5, 1),
@@ -8459,7 +9929,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(13, 7, 1),
-                            "value" => null
+                            "value" => 30
                         ],
                         [
                             "selector" => Dashboard::common(13, 8, 1),
@@ -8467,7 +9937,133 @@ return [
                         ],
                         [
                             "selector" => Dashboard::common(13, 9, 1),
+                            "value" => 60
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(14, 0, 1),
                             "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 2, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 3, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 4, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 7, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 8, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(14, 9, 1),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(15, 0, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 1, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 2, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 3, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 4, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 5, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 6, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 7, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 8, 1),
+                            "value" => null
+                        ],
+                        [
+                            "selector" => Dashboard::common(15, 9, 1),
+                            "value" => null
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::common(16, 0, 1),
+                            "value" => 60
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 1, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 2, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 3, 1),
+                            "value" => 20
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 4, 1),
+                            "value" => 170
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 5, 1),
+                            "value" => 10
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 6, 1),
+                            "value" => 20
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 7, 1),
+                            "value" => 140
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 8, 1),
+                            "value" => 30
+                        ],
+                        [
+                            "selector" => Dashboard::common(16, 9, 1),
+                            "value" => 140
                         ],
                     ],
                 ],
