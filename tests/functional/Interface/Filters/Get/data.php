@@ -229,16 +229,16 @@ return [
                 "canSee" => [
                     "Создатель" => [
                         [
-                            "selector" => "//select[@name='request_field[author_id][]']/option[1][@value='15']",
-                            "value" => "Тим Лидович 1"
-                        ],
-                        [
-                            "selector" => "//select[@name='request_field[author_id][]']/option[2][@value='17']",
+                            "selector" => "//select[@name='request_field[author_id][]']/option[1][@value='17']",
                             "value" => "Менеджер Продактович 1"
                         ],
                         [
-                            "selector" => "//select[@name='request_field[author_id][]']/option[3][@value='19']",
+                            "selector" => "//select[@name='request_field[author_id][]']/option[2][@value='19']",
                             "value" => "Сео Сеошевич 1"
+                        ],
+                        [
+                            "selector" => "//select[@name='request_field[author_id][]']/option[3][@value='15']",
+                            "value" => "Тим Лидович 1"
                         ],
                     ],
                     "Менеджер" => [
@@ -263,16 +263,16 @@ return [
                     ],
                     "Супервайзер" => [
                         [
-                            "selector" => "//select[@name='request_field[supervisor_id][]']/option[1][@value='6']",
-                            "value" => "Супервайзер Начальникович 1"
-                        ],
-                        [
-                            "selector" => "//select[@name='request_field[supervisor_id][]']/option[2][@value='33']",
+                            "selector" => "//select[@name='request_field[supervisor_id][]']/option[1][@value='33']",
                             "value" => "Супервайзер Групповушкин 13"
                         ],
                         [
-                            "selector" => "//select[@name='request_field[supervisor_id][]']/option[3][@value='35']",
+                            "selector" => "//select[@name='request_field[supervisor_id][]']/option[2][@value='35']",
                             "value" => "Супервайзер Категоркин 15"
+                        ],
+                        [
+                            "selector" => "//select[@name='request_field[supervisor_id][]']/option[3][@value='6']",
+                            "value" => "Супервайзер Начальникович 1"
                         ],
                     ],
                     "Продавец" => [
