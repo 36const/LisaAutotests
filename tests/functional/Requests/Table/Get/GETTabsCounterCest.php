@@ -5,15 +5,14 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\Filters;
 
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTFilter
- * @group POSTFilterUpdate
+ * @group lisa_functional_requests
+ * @group GETTabsCounter
  */
-class POSTFilterUpdateCest
+class GETTabsCounterCest
 {
     /**
      * @var TestHelper $testHelper
@@ -36,24 +35,20 @@ class POSTFilterUpdateCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
-     * @param Filters $filter
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTFilterUpdate(FunctionalTester $I, Example $data, Login $login, Filters $filter)
+    public function GETTabsCounter(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
-
         $providerData = $data['provider_data'];
 
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
+        $login->login();
 
-        $I->sendPOST('/bpm/filter/update?id=1', $providerData['requestBody']);
+        $I->sendGET('/bpm/request/get-counters');
         $I->seeResponseCodeIs(200);
-
-        $I->checkTablesInDB($providerData['db']);
+        $I->seeResponseContainsJson($providerData['response']);
     }
 }

@@ -5,15 +5,14 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
-use lisa\Page\Functional\Filters;
 
 /**
  * @group lisa
  * @group lisa_functional
- * @group POSTFilter
- * @group POSTFilterUpdate
+ * @group lisa_functional_requests
+ * @group POSTTable
  */
-class POSTFilterUpdateCest
+class POSTTableCest
 {
     /**
      * @var TestHelper $testHelper
@@ -37,13 +36,12 @@ class POSTFilterUpdateCest
      * @param FunctionalTester $I
      * @param Example $data
      * @param Login $login
-     * @param Filters $filter
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTFilterUpdate(FunctionalTester $I, Example $data, Login $login, Filters $filter)
+    public function POSTTable(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
@@ -51,9 +49,11 @@ class POSTFilterUpdateCest
 
         $providerData['requestBody']['_csrf-backend'] = $login->login();
 
-        $I->sendPOST('/bpm/filter/update?id=1', $providerData['requestBody']);
+        $I->sendPOST('/bpm/request', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
+//die();
+        $I->amOnPage('/bpm/request/' . $providerData['url']);
 
-        $I->checkTablesInDB($providerData['db']);
+        $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }
