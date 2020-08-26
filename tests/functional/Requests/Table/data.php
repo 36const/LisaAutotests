@@ -615,23 +615,35 @@ return [
                             "value" => "Не получена запрошенная недостающая информация"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[6][@value='Ожидается загрузка товаров в систему']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[6][@value='Нинада']",
+                            "value" => "Нинада"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[7][@value='Ожидается загрузка обновлений в систему']",
+                            "value" => "Ожидается загрузка обновлений в систему"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[8][@value='Ожидается загрузка товаров в систему']",
                             "value" => "Ожидается загрузка товаров в систему"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[7][@value='Ожидается загрузка фото в товары']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[9][@value='Ожидается загрузка фото в товары']",
                             "value" => "Ожидается загрузка фото в товары"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[8][@value='Товары ушли в ошибки']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[10][@value='Товары ушли в ошибки']",
                             "value" => "Товары ушли в ошибки"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[9][@value='Требуется уточнение информации по задаче']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[11][@value='Требуется уточнение информации по задаче']",
                             "value" => "Требуется уточнение информации по задаче"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[10][@value='-1']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[12][@value='Часть товаров ушла в ошибки']",
+                            "value" => "Часть товаров ушла в ошибки"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[13][@value='-1']",
                             "value" => "(не задано)"
                         ],
 
@@ -1317,7 +1329,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
-                            "value" => "Работа с&nbsp;проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
@@ -2189,7 +2201,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
-//                            "value" => "Работа с&nbsp;проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
@@ -2635,7 +2647,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
-//                            "value" => "Работа с проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
@@ -3055,7 +3067,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
-//                            "value" => "Работа с&nbsp;проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
@@ -3105,7 +3117,7 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
-//                            "value" => "Работа с проектированием структур + фильтрами"
+                            "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",

@@ -236,7 +236,36 @@ return [
                 "status" => 1
             ],
         ],
-        "report_periods" => [[]],
+        "report_periods" => [
+            [
+                //'id' => 1,
+                "begin" => '2020-01-01 00:00:00',
+                "end" => '2020-03-31 00:00:00',
+                "created_at" => '2020-01-01 00:00:01',
+                "updated_at" => null,
+            ],
+            [
+                //'id' => 2,
+                "begin" => '2020-04-01 00:00:00',
+                "end" => '2020-06-30 00:00:00',
+                "created_at" => '2020-01-01 00:00:04',
+                "updated_at" => null,
+            ],
+            [
+                //'id' => 3,
+                "begin" => '2020-07-01 00:00:00',
+                "end" => '2020-09-30 00:00:00',
+                "created_at" => '2020-01-01 00:00:02',
+                "updated_at" => null,
+            ],
+            [
+                //'id' => 4,
+                "begin" => '2020-10-01 00:00:00',
+                "end" => '2020-12-31 00:00:00',
+                "created_at" => '2020-01-01 00:00:03',
+                "updated_at" => null,
+            ],
+        ],
         "request_errors" => [],
         "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
         "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',

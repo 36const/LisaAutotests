@@ -464,7 +464,7 @@ return [
                     ],
                     "Дополнительные фильтры (названия)" => [
                         [
-                            "selector" => "//select[@id='filter-select2']/option[1][@value='id' and @selected and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[1][@value='id' and @selected]",
                             "value" => "ID задачи"
                         ],
                         [
@@ -543,6 +543,245 @@ return [
                             "selector" => "//select[@id='filter-select2']/option[20][@value='employee_code_1c' and @selected]",
                             "value" => "Код работника 1С"
                         ],
+                    ],
+                    "Дополнительные фильтры (значения)" => [
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[id]'][@value='10']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[status][]']/option[1][@value='1' and @selected]",
+                            "value" => "Новая"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[status][]']/option[2][@value='2' and @selected]",
+                            "value" => "Готова для распределения"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[status][]']/option[3][@value='3' and @selected]",
+                            "value" => "На доработке"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[status][]']/option[4][@value='4' and @selected]",
+                            "value" => "Отменена"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[status][]']/option[5][@value='5' and @selected]",
+                            "value" => "Ожидает взятия в работу"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[status][]']/option[6][@value='6' and @selected]",
+                            "value" => "В работе"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[status][]']/option[7][@value='7' and @selected]",
+                            "value" => "Ожидает"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[status][]']/option[8][@value='8' and @selected]",
+                            "value" => "Частично выполнена"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[status][]']/option[9][@value='9' and @selected]",
+                            "value" => "Выполнена"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[status][]']/option[10][@value='11' and @selected]",
+                            "value" => "Закрыта"
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[subject]'][@value='250~!@#$%^&*()_+`=-]/[;.,}\"?{:><|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[priority][]']/option[1][@value='1' and @selected]",
+                            "value" => "Информация необходима для склада"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[priority][]']/option[2][@value='3' and @selected]",
+                            "value" => "Исправление критичной ошибки"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[priority][]']/option[3][@value='2' and @selected]",
+                            "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[direction][]']/option[1][@value='0' and @selected]",
+                            "value" => "Определяется типом задачи"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[direction][]']/option[2][@value='1' and @selected]",
+                            "value" => "Работа с товарами Розетки"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[direction][]']/option[3][@value='2' and @selected]",
+                            "value" => "Работа с товарами Маркетплейса"
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[parent_id]'][@value='11']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[1][@value='12' and @selected]",
+                            "value" => "Все товары уже есть на сайте (Новая -> Отменена)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[2][@value='10' and @selected]",
+                            "value" => "Все товары уже есть на сайте (В работе -> Отменена)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[3][@value='14' and @selected]",
+                            "value" => "Все товары уже есть на сайте (Готова для распределения -> Отменена)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[4][@value='15' and @selected]",
+                            "value" => "Другое (описан в коментариях) (Все -> Все)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[5][@value='9' and @selected]",
+                            "value" => "Дубль задачи (В работе -> Отменена)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[6][@value='13' and @selected]",
+                            "value" => "Дубль задачи (Готова для распределения -> Отменена)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[7][@value='11' and @selected]",
+                            "value" => "Дубль задачи (Новая -> Отменена)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[8][@value='3' and @selected]",
+                            "value" => "Изменен приоритет задачи (В работе -> Ожидает)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[9][@value='6' and @selected]",
+                            "value" => "Не получена запрошенная недостающая информация (В работе -> Частично выполнена)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[10][@value='16']",
+                            "value" => "Нинада (Готова для распределения -> На доработке)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[11][@value='5' and @selected]",
+                            "value" => "Ожидается загрузка обновлений в систему (В работе -> Ожидает)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[12][@value='4' and @selected]",
+                            "value" => "Ожидается загрузка товаров в систему (В работе -> Ожидает)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[13][@value='1' and @selected]",
+                            "value" => "Ожидается загрузка фото в товары (В работе -> Ожидает)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[14][@value='7' and @selected]",
+                            "value" => "Товары ушли в ошибки (В работе -> Частично выполнена)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[15][@value='2' and @selected]",
+                            "value" => "Требуется уточнение информации по задаче (В работе -> Ожидает)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[16][@value='8' and @selected]",
+                            "value" => "Часть товаров ушла в ошибки (В работе -> Частично выполнена)"
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[description]'][@value='250~!@#$%^&*()_+`=-]/[;.,}\"?{:><|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[amount_to_work]'][@value='10']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[result_comment]'][@value='250~!@#$%^&*()_+`=-]/[;.,}\"?{:><|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[team_direction][]']/option[1][@value='1' and @selected]",
+                            "value" => "Управление отделом"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[team_direction][]']/option[2][@value='2' and @selected]",
+                            "value" => "Работа с товарами Маркетплейса"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[team_direction][]']/option[3][@value='3' and @selected]",
+                            "value" => "Работа с товарами Rozetka"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[team_direction][]']/option[4][@value='4' and @selected]",
+                            "value" => "Работа с группами"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[team_direction][]']/option[5][@value='5' and @selected]",
+                            "value" => "Работа с проектированием структур + фильтрами"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[team_direction][]']/option[6][@value='6' and @selected]",
+                            "value" => "Работа с порталами, фат-меню, категориями"
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[recommendations]'][@value='250~!@#$%^&*()_+`=-]/[;.,}\"?{:><|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[employee_code_1c]'][@value='012']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[report_period_id][]']/option[1][@value='1' and @selected]",
+                            "value" => "2020-01-01 - 2020-06-30"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[report_period_id][]']/option[2][@value='2' and @selected]",
+                            "value" => "2020-07-01 - 2020-12-31"
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[sv_report_periods][]']/option[1][@value='1' and @selected]",
+                            "value" => "2020-01-01 - 2020-06-30"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[sv_report_periods][]']/option[2][@value='2' and @selected]",
+                            "value" => "2020-07-01 - 2020-12-31"
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[correction_comment]'][@value='250~!@#$%^&*()_+`=-]/[;.,}\"?{:><|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[cross_check_status][]']/option[1][@value='0' and @selected]",
+                            "value" => "Не прошла кросс-чек"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[cross_check_status][]']/option[2][@value='1' and @selected]",
+                            "value" => "На кросс-чеке"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[cross_check_status][]']/option[3][@value='2']",
+                            "value" => "Кросс-чек пройден"
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[supervisor_comment]'][@value='250~!@#$%^&*()_+`=-]/[;.,}\"?{:><|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[awaiting_correction]']/option[1][@value='0' and not(@selected)]",
+                            "value" => "Нет"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[awaiting_correction]']/option[2][@value='1' and @selected]",
+                            "value" => "Да"
+                        ],
+
                     ]
                 ],
                 "cantSee" => [

@@ -226,6 +226,46 @@ return [
                             "value" => "Другое (описан в коментариях)"
                         ],
                     ],
+                    "Отчетный период КМ" => [
+                        [
+                            "selector" => "//select[@name='Request[report_period_id]']/option[1][@value]",
+                            "value" => "Отчетный период КМ не задан..."
+                        ],
+                        [
+                            "selector" => "//select[@name='Request[report_period_id]']/option[2][@value='1' and not(@selected)]",
+                            "value" => "2020-01-01 - 2020-03-31"
+                        ],
+                        [
+                            "selector" => "//select[@name='Request[report_period_id]']/option[3][@value='2' and not(@selected)]",
+                            "value" => "2020-04-01 - 2020-06-30"
+                        ],
+                        [
+                            "selector" => "//select[@name='Request[report_period_id]']/option[4][@value='3' and not(@selected)]",
+                            "value" => "2020-07-01 - 2020-09-30"
+                        ],
+                        [
+                            "selector" => "//select[@name='Request[report_period_id]']/option[5][@value='4' and not(@selected)]",
+                            "value" => "2020-10-01 - 2020-12-31"
+                        ],
+                    ],
+                    "Отчетный период СВ" => [
+                        [
+                            "selector" => "//select[@name='Request[sv_report_periods][]']/option[1][@value='1' and @selected]",
+                            "value" => "2020-01-01 - 2020-03-31"
+                        ],
+                        [
+                            "selector" => "//select[@name='Request[sv_report_periods][]']/option[2][@value='2' and not(@selected)]",
+                            "value" => "2020-04-01 - 2020-06-30"
+                        ],
+                        [
+                            "selector" => "//select[@name='Request[sv_report_periods][]']/option[3][@value='3' and not(@selected)]",
+                            "value" => "2020-07-01 - 2020-09-30"
+                        ],
+                        [
+                            "selector" => "//select[@name='Request[sv_report_periods][]']/option[4][@value='4' and not(@selected)]",
+                            "value" => "2020-10-01 - 2020-12-31"
+                        ],
+                    ],
                 ],
                 "cantSee" => [
                 ]
