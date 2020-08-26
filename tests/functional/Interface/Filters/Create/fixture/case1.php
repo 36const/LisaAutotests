@@ -5,6 +5,7 @@ return [
         "filters" => [],
         "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
+        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
         "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
         "report_periods" => [
             [
@@ -23,4 +24,7 @@ return [
             ],
         ]
     ],
+    "cooper_fixtures" => [
+        "market" => include \rzk\FixtureController::getFixtureDir() . 'cooper_fixtures/market.php',
+    ]
 ];

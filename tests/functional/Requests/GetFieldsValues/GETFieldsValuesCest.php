@@ -5,14 +5,15 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\Login;
+use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_requests
- * @group POSTTable
+ * @group GETFieldsValues
  */
-class POSTTableCest
+class GETFieldsValuesCest
 {
     /**
      * @var TestHelper $testHelper
@@ -36,23 +37,22 @@ class POSTTableCest
      * @param FunctionalTester $I
      * @param Example $data
      * @param Login $login
+     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTTable(FunctionalTester $I, Example $data, Login $login)
+    public function GETFieldsValues(FunctionalTester $I, Example $data, Login $login)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
 
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
+        $login->login();
 
-        $I->sendPOST('/bpm/request', $providerData['requestBody']);
+        $I->amOnPage($providerData['url']);
         $I->seeResponseCodeIs(200);
-//die();
-        $I->amOnPage('/bpm/request/' . $providerData['url']);
 
         $I->checkObjectsOnPage($providerData['pageObjects']);
     }

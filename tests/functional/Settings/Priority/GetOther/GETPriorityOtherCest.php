@@ -9,10 +9,10 @@ use lisa\Page\Functional\Login;
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_requests
- * @group POSTTable
+ * @group lisa_functional_settings
+ * @group GETPriorityOther
  */
-class POSTTableCest
+class GETPriorityOtherCest
 {
     /**
      * @var TestHelper $testHelper
@@ -35,24 +35,20 @@ class POSTTableCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTTable(FunctionalTester $I, Example $data, Login $login)
+    public function GETPriorityOther(FunctionalTester $I, Example $data, Login $login)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
-
+        $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
 
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
+        $login->login();
 
-        $I->sendPOST('/bpm/request', $providerData['requestBody']);
+        $I->amOnPage($providerData['url']);
         $I->seeResponseCodeIs(200);
-//die();
-        $I->amOnPage('/bpm/request/' . $providerData['url']);
 
         $I->checkObjectsOnPage($providerData['pageObjects']);
     }
