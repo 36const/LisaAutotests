@@ -85,6 +85,10 @@ class POSTCreateRequestCest
             $I->seeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
         }
 
+        if ($setting['direction'] == 1) {
+            $I->checkObjectsOnPage($providerData['pageObjects']);
+        }
+
         $I->sendPOST('/bpm/request/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
