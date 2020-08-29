@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 
 /**
  * @group lisa
@@ -40,13 +39,11 @@ class GETSellerCest
      * @dataProvider pageProvider
      *
      */
-    public function GETSeller(FunctionalTester $I, Example $data, Login $login)
+    public function GETSeller(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
-
-        $login->login();
 
         $I->amOnPage('bpm/seller/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);

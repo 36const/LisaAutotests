@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestCreate;
 use lisa\Page\Functional\RequestView;
 
@@ -52,7 +51,6 @@ class POSTCreateRequestCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @param RequestCreate $create
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -60,29 +58,27 @@ class POSTCreateRequestCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTCreateRequest(FunctionalTester $I, Example $data, Login $login, RequestCreate $create, RequestView $view)
+    public function POSTCreateRequest(FunctionalTester $I, Example $data, RequestCreate $create, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $setting = $data['setting'];
         $providerData = $data['provider_data'];
 
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
-
         $create->amOnRequestCreate($setting['type'], $setting['direction']);
-        $I->seeInTitle($setting['description']);
-        $I->see($setting['description'], ['class' => 'global-caption']);
+        $I->canSeeInTitle($setting['description']);
+        $I->canSee($setting['description'], ['class' => 'global-caption']);
 
         $I->assertSame($I->grabMultiple(RequestCreate::$allCheckboxes), $providerData['checkboxes']);
 
         if ($setting['direction'] != 2 && $setting['type'] != 4) {
-            $I->seeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
-            $I->dontSeeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
+            $I->canSeeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
+            $I->cantSeeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
         }
 
         if ($setting['type'] == 4) {
-            $I->dontSeeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
-            $I->seeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
+            $I->cantSeeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
+            $I->canSeeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
         }
 
         if ($setting['direction'] == 1) {

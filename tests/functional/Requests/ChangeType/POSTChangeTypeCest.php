@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestView;
 
 /**
@@ -37,20 +36,17 @@ class POSTChangeTypeCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTChangeType(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function POSTChangeType(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
-
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
 
         $I->changeType($providerData['requestParameter'], $providerData['requestBody']);
 

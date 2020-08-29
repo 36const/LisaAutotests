@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestCreate;
 use lisa\Page\Functional\RequestView;
 
@@ -37,7 +36,6 @@ class POSTRelatedRequestCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @param RequestCreate $create
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
@@ -45,7 +43,7 @@ class POSTRelatedRequestCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTRelatedRequest(FunctionalTester $I, Example $data, Login $login,
+    public function POSTRelatedRequest(FunctionalTester $I, Example $data,
                                        RequestCreate $create, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
@@ -53,7 +51,6 @@ class POSTRelatedRequestCest
         $setting = $data['setting'];
         $providerData = $data['provider_data'];
 
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
         $create->checkFields($providerData['db'], $setting['type'], $setting['direction'], $setting['id']);
 
         $I->sendPOST('/bpm/request/create', $providerData['requestBody']);

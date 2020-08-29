@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 
 /**
  * @group lisa
@@ -39,13 +38,11 @@ class GETFilterCest
      * @dataProvider pageProvider
      *
      */
-    public function GETFilter(FunctionalTester $I, Example $data, Login $login)
+    public function GETFilter(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
-
-        $login->login();
 
         $I->amOnPage('bpm/filter' . $providerData['url']);
         $I->seeResponseCodeIs(200);

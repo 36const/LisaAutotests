@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 
 /**
  * @group lisa
@@ -40,12 +39,10 @@ class GETDifficultyCoefCest
      * @dataProvider pageProvider
      *
      */
-    public function GETDifficultyCoef(FunctionalTester $I, Example $data, Login $login)
+    public function GETDifficultyCoef(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
-
-        $login->login();
 
         $I->amOnPage('bpm/difficulty-coef/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);

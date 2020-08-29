@@ -2,7 +2,6 @@
 
 namespace lisa;
 
-use Codeception\Util\HttpCode;
 use Codeception\Example;
 use rzk\TestHelper;
 
@@ -38,9 +37,14 @@ class FunctionalTester extends \Codeception\Actor
         $I = $this;
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $testHelper->clearDB($I, $data, $globalFile);
-        !$globalUsing ?: $testHelper->loadGlobalFixture($I, $globalFile);
+
+        if ($globalUsing)
+            $testHelper->loadGlobalFixture($I, $globalFile);
+
         $testHelper->loadFixtureAndMock($I, $data);
+
         $I->wantTo($data['setting']['description']);
+        $I->amOnPage('/');
     }
 
     public function changeStatus($requestParameter, $requestBody)
@@ -57,14 +61,6 @@ class FunctionalTester extends \Codeception\Actor
     {
         $I = $this;
         $url = '/bpm/request/change-type?typeId=' . $requestParameter['typeId'] . '&direction=' . $requestParameter['direction'] . '&id=1';
-        $I->sendPOST($url, $requestBody);
-        $I->seeResponseCodeIs(200);
-    }
-
-    public function massEdit($requestBody)
-    {
-        $I = $this;
-        $url = '/bpm/request/mass-edit';
         $I->sendPOST($url, $requestBody);
         $I->seeResponseCodeIs(200);
     }

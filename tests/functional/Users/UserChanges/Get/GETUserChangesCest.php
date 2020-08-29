@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 
 /**
  * @group lisa
@@ -34,18 +33,15 @@ class GETUserChangesCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function GETUserChanges(FunctionalTester $I, Example $data, Login $login)
+    public function GETUserChanges(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
-
-        $login->login();
 
         $I->amOnPage('bpm/user-changes/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);

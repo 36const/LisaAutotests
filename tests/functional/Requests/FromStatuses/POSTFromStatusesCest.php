@@ -2,10 +2,8 @@
 
 namespace lisa;
 
-use Codeception\Util\HttpCode;
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestView;
 use lisa\Page\Functional\RequestToCorrection;
 use lisa\Page\Functional\RequestCorrection;
@@ -39,7 +37,6 @@ class POSTFromStatusesCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @param RequestView $view
      * @param RequestToCorrection $toCorrection
      * @param RequestCorrection $correction
@@ -48,14 +45,12 @@ class POSTFromStatusesCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTFromStatuses(FunctionalTester $I, Example $data, Login $login, RequestView $view,
+    public function POSTFromStatuses(FunctionalTester $I, Example $data, RequestView $view,
                                     RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
-
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
 

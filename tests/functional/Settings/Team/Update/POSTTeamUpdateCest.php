@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 
 /**
  * @group lisa
@@ -36,19 +35,16 @@ class POSTTeamUpdateCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTCommentUpdate(FunctionalTester $I, Example $data, Login $login)
+    public function POSTCommentUpdate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
         $providerData = $data['provider_data'];
-
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
 
         $I->sendPOST('/bpm/team/update?id=1', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);

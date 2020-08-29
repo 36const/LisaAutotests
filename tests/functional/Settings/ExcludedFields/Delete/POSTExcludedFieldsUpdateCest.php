@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestView;
 
 /**
@@ -37,18 +36,15 @@ class POSTExcludedFieldsUpdateCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      *
      */
-    public function POSTExcludedFieldsDelete(FunctionalTester $I, Example $data, Login $login)
+    public function POSTExcludedFieldsDelete(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
         $providerData = $data['provider_data'];
-
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
 
         $I->sendPOST('/bpm/excluded-fields/delete?field_id=1&excluded_field_id=2', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);

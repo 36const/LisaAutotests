@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 
 /**
  * @group lisa
@@ -35,18 +34,15 @@ class GETReportPatternCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function GETReportPattern(FunctionalTester $I, Example $data, Login $login)
+    public function GETReportPattern(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
-
-        $login->login();
 
         $I->amOnPage('bpm/report/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);

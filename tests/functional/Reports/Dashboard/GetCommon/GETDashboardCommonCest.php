@@ -5,7 +5,6 @@ namespace lisa;
 use Codeception\Example;
 use lisa\Page\Functional\Dashboard;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 
 /**
  * @group lisa
@@ -36,19 +35,16 @@ class GETDashboardCommonCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @param Dashboard $dashboard
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function GETDashboardCommon(FunctionalTester $I, Example $data, Login $login, Dashboard $dashboard)
+    public function GETDashboardCommon(FunctionalTester $I, Example $data, Dashboard $dashboard)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
-
-        $login->login();
 
         $dashboard->amOnDashboardCommon($providerData['url']);
         $I->seeResponseCodeIs(200);

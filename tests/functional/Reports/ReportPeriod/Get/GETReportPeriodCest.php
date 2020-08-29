@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 use lisa\Page\Functional\Report;
 
 /**
@@ -36,19 +35,16 @@ class GETReportPeriodCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @param Report $report
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function GETReportPeriod(FunctionalTester $I, Example $data, Login $login, Report $report)
+    public function GETReportPeriod(FunctionalTester $I, Example $data, Report $report)
     {
         $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
-
-        $login->login();
 
         $report->amOnReportPeriod();
         $I->seeResponseCodeIs(200);

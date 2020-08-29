@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 
 /**
  * @group lisa
@@ -40,12 +39,10 @@ class GETFieldValuesCest
      * @dataProvider pageProvider
      *
      */
-    public function GETFieldValues(FunctionalTester $I, Example $data, Login $login)
+    public function GETFieldValues(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
-
-        $login->login();
 
         $I->amOnPage('bpm/field-values/index/' . $providerData['url']);
         $I->seeResponseCodeIs(200);

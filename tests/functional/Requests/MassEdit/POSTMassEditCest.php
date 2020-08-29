@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Login;
 use lisa\Page\Functional\RequestView;
 
 /**
@@ -36,22 +35,20 @@ class POSTMassEditCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Login $login
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTMassEdit(FunctionalTester $I, Example $data, Login $login, RequestView $view)
+    public function POSTMassEdit(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
 
-        $providerData['requestBody']['_csrf-backend'] = $login->login();
-
-        $I->massEdit($providerData['requestBody']);
+        $I->sendPOST('/bpm/request/mass-edit', $providerData['requestBody']);
+        $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);
 
