@@ -19,7 +19,7 @@ return [
                             "begin" => "2020-05-01 00:00:00",
                             "end" => "2020-06-30 00:00:00",
                             "created_at" => '2020-01-01 00:00:00',
-                            "updated_at" => null
+//                            "updated_at" => null
                         ]
                     ],
                 ],
