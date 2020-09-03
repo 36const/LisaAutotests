@@ -79,6 +79,11 @@ class Dashboard extends FunctionalTester
         return ['requests', 'goods'][$i];
     }
 
+    public static function dateColumn($i)
+    {
+        return ['oldest', 'newest', 'leg'][$i];
+    }
+
     public static function activeManagersColumn(int $row)
     {
         return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='active-managers']";
@@ -94,6 +99,17 @@ class Dashboard extends FunctionalTester
     {
         return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='" . self::amountColumns($amountCol)
             . "[" . self::objectColumn($requestsOrGoods) . "]']";
+    }
+
+    public static function commonDate(int $row, int $statusCol, int $age, int $requestId)
+    {
+        return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='" . self::statusColumn($statusCol)
+            . "[" . self::dateColumn($age) . "]']/a[@href='/bpm/request/view?id=$requestId']";
+    }
+
+    public static function commonDateLeg(int $row)
+    {
+        return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='new[lag]']";
     }
 
 }

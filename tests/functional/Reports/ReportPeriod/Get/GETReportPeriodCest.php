@@ -41,12 +41,12 @@ class GETReportPeriodCest
      * @dataProvider pageProvider
      *
      */
-    public function GETReportPeriod(FunctionalTester $I, Example $data, Report $report)
+    public function GETReportPeriod(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
 
-        $report->amOnReportPeriod();
+        $I->amOnPage('bpm/report-period/index' . $providerData['url']);
         $I->seeResponseCodeIs(200);
 
         $I->checkObjectsOnPage($providerData['pageObjects']);
