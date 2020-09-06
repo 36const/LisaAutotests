@@ -10769,7 +10769,7 @@ return [
 
     'case22' => [
         'setting' => [
-            'description' => 'Общий дашборд По датам / По направлению',
+            'description' => 'Общий дашборд По датам / По команде',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
