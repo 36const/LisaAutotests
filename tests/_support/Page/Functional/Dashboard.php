@@ -112,4 +112,9 @@ class Dashboard extends FunctionalTester
         return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='new[lag]']";
     }
 
+    public static function commonDateLegValue(string $oldest)
+    {
+        return round((strtotime(date("Y-m-d")) - strtotime($oldest))/60/60/24);
+    }
+
 }

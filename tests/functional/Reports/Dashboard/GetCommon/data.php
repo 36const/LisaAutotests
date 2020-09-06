@@ -10107,7 +10107,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::commonDateLeg(1),
-                            "value" => round((strtotime(date("Y-m-d")) - strtotime('2020-01-11'))/60/60/24)
+                            "value" => Dashboard::commonDateLegValue('2020-01-11')
                         ],
                         [
                             "selector" => Dashboard::commonDate(1, 6, 0, 12),
@@ -10129,7 +10129,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::commonDateLeg(2),
-                            "value" => round((strtotime(date("Y-m-d")) - strtotime('2020-01-9'))/60/60/24)
+                            "value" => Dashboard::commonDateLegValue('2020-01-09')
                         ],
                         [
                             "selector" => Dashboard::commonDate(2, 1, 0, 8),
@@ -10159,7 +10159,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::commonDateLeg(3),
-                            "value" => round((strtotime(date("Y-m-d")) - strtotime('2020-01-14'))/60/60/24)
+                            "value" => Dashboard::commonDateLegValue('2020-01-14')
                         ],
                         [
                             "selector" => Dashboard::commonDate(3, 6, 0, 15),
@@ -10252,7 +10252,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::commonDateLeg(1),
-                            "value" => round((strtotime(date("Y-m-d")) - strtotime('2020-01-11'))/60/60/24)
+                            "value" => Dashboard::commonDateLegValue('2020-01-11')
                         ],
                     ],
                     [
@@ -10277,7 +10277,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::commonDateLeg(3),
-                            "value" => round((strtotime(date("Y-m-d")) - strtotime('2020-02-01'))/60/60/24)
+                            "value" => Dashboard::commonDateLegValue('2020-02-01')
                         ],
                     ],
                     [
@@ -10301,7 +10301,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::commonDateLeg(5),
-                            "value" => round((strtotime(date("Y-m-d")) - strtotime('2020-01-09'))/60/60/24)
+                            "value" => Dashboard::commonDateLegValue('2020-01-09')
                         ],
                     ],
                     [
@@ -10315,7 +10315,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::commonDateLeg(6),
-                            "value" => round((strtotime(date("Y-m-d")) - strtotime('2020-02-10'))/60/60/24)
+                            "value" => Dashboard::commonDateLegValue('2020-02-10')
                         ],
                     ],
                     [
@@ -10349,7 +10349,7 @@ return [
                         ],
                         [
                             "selector" => Dashboard::commonDateLeg(9),
-                            "value" => round((strtotime(date("Y-m-d")) - strtotime('2020-01-14'))/60/60/24)
+                            "value" => Dashboard::commonDateLegValue('2020-01-14')
                         ],
                         [
                             "selector" => Dashboard::commonDate(9, 6, 0, 15),
@@ -10407,6 +10407,711 @@ return [
                         ],
                         [
                             "selector" => Dashboard::commonDate(14, 3, 1, 21),
+                            "value" => '2020-07-21 21'
+                        ],
+                    ],
+                ],
+                "cantSee" => [
+                    [
+                        [
+                            "selector" => Dashboard::member(),
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ],
+
+    'case19' => [
+        'setting' => [
+            'description' => 'Общий дашборд По датам / По пользователям / По менеджеру',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?type=2&display=3',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::type(2),
+                            "value" => "По датам"
+                        ],
+                        [
+                            "selector" => Dashboard::display(3),
+                            "value" => "По пользователям"
+                        ],
+                        [
+                            "selector" => Dashboard::member(),
+                        ]
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(1, 1, 0, 3),
+                            "value" => '2020-05-03 3'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 1, 1, 3),
+                            "value" => '2020-05-03 3'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 3, 0, 5),
+                            "value" => '2020-07-05 5'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 3, 1, 5),
+                            "value" => '2020-07-05 5'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(2, 1, 0, 8),
+                            "value" => '2020-05-08 8'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(2, 1, 1, 8),
+                            "value" => '2020-05-08 8'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(2, 2, 0, 4),
+                            "value" => '2020-06-04 4'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(2, 2, 1, 4),
+                            "value" => '2020-06-04 4'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(3, 1, 0, 16),
+                            "value" => '2020-05-16 16'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(3, 1, 1, 16),
+                            "value" => '2020-05-16 16'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(4, 2, 0, 17),
+                            "value" => '2020-06-17 17'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(4, 2, 1, 19),
+                            "value" => '2020-06-19 19'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(4, 3, 0, 21),
+                            "value" => '2020-07-21 21'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(4, 3, 1, 21),
+                            "value" => '2020-07-21 21'
+                        ],
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
+
+    'case20' => [
+        'setting' => [
+            'description' => 'Общий дашборд По датам / По пользователям / По автору',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?type=2&display=3&member=author_id&username=',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::type(2),
+                            "value" => "По датам"
+                        ],
+                        [
+                            "selector" => Dashboard::display(3),
+                            "value" => "По пользователям"
+                        ],
+                        [
+                            "selector" => Dashboard::member("author_id"),
+                        ]
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(1, 0, 0, 1),
+                            "value" => '2020-02-01 1'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 0, 1, 13),
+                            "value" => '2020-02-13 13'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 1, 0, 16),
+                            "value" => '2020-05-16 16'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 1, 1, 16),
+                            "value" => '2020-05-16 16'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 6, 0, 15),
+                            "value" => '2020-03-15 15'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 6, 1, 15),
+                            "value" => '2020-03-15 15'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(1),
+                            "value" => Dashboard::commonDateLegValue('2020-02-01')
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(2, 0, 0, 10),
+                            "value" => '2020-01-14 10'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(2, 0, 1, 14),
+                            "value" => '2020-02-10 14'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(2),
+                            "value" => Dashboard::commonDateLegValue('2020-01-14')
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(3, 6, 0, 2),
+                            "value" => '2020-03-02 2'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(3, 6, 1, 2),
+                            "value" => '2020-03-02 2'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(4, 2, 0, 4),
+                            "value" => '2020-06-04 4'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(4, 2, 1, 4),
+                            "value" => '2020-06-04 4'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(5, 2, 0, 17),
+                            "value" => '2020-06-17 17'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(5, 2, 1, 17),
+                            "value" => '2020-06-17 17'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(5, 3, 0, 5),
+                            "value" => '2020-07-05 5'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(5, 3, 1, 5),
+                            "value" => '2020-07-05 5'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(6, 1, 0, 3),
+                            "value" => '2020-05-03 3'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(6, 1, 1, 8),
+                            "value" => '2020-05-08 8'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(6, 6, 0, 12),
+                            "value" => '2020-03-12 12'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(6, 6, 1, 12),
+                            "value" => '2020-03-12 12'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(7, 0, 0, 9),
+                            "value" => '2020-01-09 9'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(7, 0, 1, 11),
+                            "value" => '2020-01-11 11'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(7, 2, 0, 19),
+                            "value" => '2020-06-19 19'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(7, 2, 1, 19),
+                            "value" => '2020-06-19 19'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(7, 3, 0, 21),
+                            "value" => '2020-07-21 21'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(7, 3, 1, 21),
+                            "value" => '2020-07-21 21'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(7),
+                            "value" => Dashboard::commonDateLegValue('2020-01-09')
+                        ],
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
+
+    'case21' => [
+        'setting' => [
+            'description' => 'Общий дашборд По датам / По пользователям / По супервайзеру с фильтром',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?type=2&display=3&member=supervisor_id&username=Начальник',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::type(2),
+                            "value" => "По датам"
+                        ],
+                        [
+                            "selector" => Dashboard::display(3),
+                            "value" => "По пользователям"
+                        ],
+                        [
+                            "selector" => Dashboard::member("supervisor_id"),
+                        ]
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(1, 0, 0, 1),
+                            "value" => '2020-02-01 1'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 0, 1, 10),
+                            "value" => '2020-02-10 10'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 1, 0, 8),
+                            "value" => '2020-05-08 8'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 1, 1, 16),
+                            "value" => '2020-05-16 16'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 6, 0, 2),
+                            "value" => '2020-03-02 2'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 6, 1, 2),
+                            "value" => '2020-03-02 2'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(1),
+                            "value" => Dashboard::commonDateLegValue('2020-02-01')
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(2, 0, 0, 9),
+                            "value" => '2020-01-09 9'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(2, 0, 1, 9),
+                            "value" => '2020-01-09 9'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(2, 6, 0, 12),
+                            "value" => '2020-03-12 12'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(2, 6, 1, 12),
+                            "value" => '2020-03-12 12'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(2),
+                            "value" => Dashboard::commonDateLegValue('2020-01-09')
+                        ],
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ]
+        ]
+    ],
+
+    'case22' => [
+        'setting' => [
+            'description' => 'Общий дашборд По датам / По направлению',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?type=2&display=2',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::type(2),
+                            "value" => "По датам"
+                        ],
+                        [
+                            "selector" => Dashboard::display(2),
+                            "value" => "По командам"
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(1, 0, 0, 11),
+                            "value" => '2020-01-11 11'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 0, 1, 13),
+                            "value" => '2020-02-13 13'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(1),
+                            "value" => Dashboard::commonDateLegValue('2020-01-11')
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(2, 0, 0, 9),
+                            "value" => '2020-01-09 9'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(2, 0, 1, 9),
+                            "value" => '2020-01-09 9'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(2),
+                            "value" => Dashboard::commonDateLegValue('2020-01-09')
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(2, 6, 0, 12),
+                            "value" => '2020-03-12 12'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(2, 6, 1, 12),
+                            "value" => '2020-03-12 12'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(3, 0, 0, 1),
+                            "value" => '2020-02-01 1'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(3, 0, 1, 10),
+                            "value" => '2020-02-10 10'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(3),
+                            "value" => Dashboard::commonDateLegValue('2020-02-01')
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(3, 1, 0, 8),
+                            "value" => '2020-05-08 8'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(3, 1, 1, 16),
+                            "value" => '2020-05-16 16'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(3, 6, 0, 2),
+                            "value" => '2020-03-02 2'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(3, 6, 1, 2),
+                            "value" => '2020-03-02 2'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(4, 0, 0, 14),
+                            "value" => '2020-01-14 14'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(4, 0, 1, 14),
+                            "value" => '2020-01-14 14'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(4, 6, 0, 15),
+                            "value" => '2020-03-15 15'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(4, 6, 1, 15),
+                            "value" => '2020-03-15 15'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(4),
+                            "value" => Dashboard::commonDateLegValue('2020-01-14')
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(5, 2, 0, 19),
+                            "value" => '2020-06-19 19'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(5, 2, 1, 19),
+                            "value" => '2020-06-19 19'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(5, 3, 0, 5),
+                            "value" => '2020-07-05 5'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(5, 3, 1, 5),
+                            "value" => '2020-07-05 5'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(6, 1, 0, 3),
+                            "value" => '2020-05-03 3'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(6, 1, 1, 3),
+                            "value" => '2020-05-03 3'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(6, 3, 0, 21),
+                            "value" => '2020-07-21 21'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(6, 3, 1, 21),
+                            "value" => '2020-07-21 21'
+                        ],
+                    ],
+                ],
+                "cantSee" => [
+                    [
+                        [
+                            "selector" => Dashboard::member(),
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ],
+
+    'case23' => [
+        'setting' => [
+            'description' => 'Общий дашборд По датам / По команде и типу',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '?type=2&display=6',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => "//h1[@class='global-caption']",
+                            "value" => "Дашборды"
+                        ],
+                        [
+                            "selector" => Dashboard::type(2),
+                            "value" => "По датам"
+                        ],
+                        [
+                            "selector" => Dashboard::display(6),
+                            "value" => "По команде и типу"
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(1, 0, 0, 11),
+                            "value" => '2020-01-11 11'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(1, 0, 1, 11),
+                            "value" => '2020-01-11 11'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(1),
+                            "value" => Dashboard::commonDateLegValue('2020-01-11')
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(2, 0, 0, 13),
+                            "value" => '2020-02-13 13'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(2, 0, 1, 13),
+                            "value" => '2020-02-13 13'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(2),
+                            "value" => Dashboard::commonDateLegValue('2020-02-13')
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(3, 0, 0, 9),
+                            "value" => '2020-01-09 9'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(3, 0, 1, 9),
+                            "value" => '2020-01-09 9'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(3),
+                            "value" => Dashboard::commonDateLegValue('2020-01-09')
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(3, 6, 0, 12),
+                            "value" => '2020-03-12 12	'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(3, 6, 1, 12),
+                            "value" => '2020-03-12 12	'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(4, 1, 0, 8),
+                            "value" => '2020-05-08 8'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(4, 1, 1, 8),
+                            "value" => '2020-05-08 8'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(5, 0, 0, 1),
+                            "value" => '2020-02-01 1'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(5, 0, 1, 10),
+                            "value" => '2020-02-10 10'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(5),
+                            "value" => Dashboard::commonDateLegValue('2020-02-01')
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(6, 6, 0, 2),
+                            "value" => '2020-03-02 2'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(6, 6, 1, 2),
+                            "value" => '2020-03-02 2'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(7, 1, 0, 16),
+                            "value" => '2020-05-16 16'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(7, 1, 1, 16),
+                            "value" => '2020-05-16 16'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(8, 0, 0, 14),
+                            "value" => '2020-01-14 14'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(8, 0, 1, 14),
+                            "value" => '2020-01-14 14'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDateLeg(8),
+                            "value" => Dashboard::commonDateLegValue('2020-01-14')
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(8, 6, 0, 15),
+                            "value" => '2020-03-15 15'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(8, 6, 1, 15),
+                            "value" => '2020-03-15 15'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(9, 2, 0, 4),
+                            "value" => '2020-06-04 4'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(9, 2, 1, 17),
+                            "value" => '2020-06-17 17'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(10, 3, 0, 5),
+                            "value" => '2020-07-05 5'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(10, 3, 1, 5),
+                            "value" => '2020-07-05 5'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(11, 2, 0, 19),
+                            "value" => '2020-06-19 19'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(11, 2, 1, 19),
+                            "value" => '2020-06-19 19'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(12, 1, 0, 3),
+                            "value" => '2020-05-03 3'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(12, 1, 1, 3),
+                            "value" => '2020-05-03 3'
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::commonDate(13, 3, 0, 21),
+                            "value" => '2020-07-21 21'
+                        ],
+                        [
+                            "selector" => Dashboard::commonDate(13, 3, 1, 21),
                             "value" => '2020-07-21 21'
                         ],
                     ],
