@@ -5,7 +5,7 @@ use \lisa\Page\Functional\Dashboard;
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Страница детального дашборда по-умолчанию',
+            'description' => 'Детальный дашборд по-умолчанию',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -35,7 +35,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Страница детального дашборда Ожидают взятия в работу / По направлению',
+            'description' => 'Детальный дашборд Ожидают взятия в работу / По направлению',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -70,7 +70,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Страница детального дашборда В работе / По менеджеру (по-умолчанию)',
+            'description' => 'Детальный дашборд В работе / По менеджеру (по-умолчанию)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -104,7 +104,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Страница детального дашборда В работе / По автору',
+            'description' => 'Детальный дашборд В работе / По автору',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -138,7 +138,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Страница детального дашборда В работе / По супервайзеру',
+            'description' => 'Детальный дашборд В работе / По супервайзеру',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -172,7 +172,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Страница детального дашборда На доработке / По менеджеру (по-умолчанию)',
+            'description' => 'Детальный дашборд На доработке / По менеджеру (по-умолчанию)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -206,7 +206,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Страница детального дашборда На доработке / По автору',
+            'description' => 'Детальный дашборд На доработке / По автору',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -240,7 +240,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Страница детального дашборда На доработке / По супервайзеру',
+            'description' => 'Детальный дашборд На доработке / По супервайзеру',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -274,7 +274,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Страница детального дашборда Ожидают / По командам',
+            'description' => 'Детальный дашборд Ожидают / По командам',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -309,7 +309,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Страница детального дашборда Ожидают / По команде и типу',
+            'description' => 'Детальный дашборд Ожидают / По команде и типу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -344,7 +344,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Страница детального дашборда Выполнены / По команде и пользователям / По менеджеру (по-умолчанию)',
+            'description' => 'Детальный дашборд Выполнены / По команде и пользователям / По менеджеру (по-умолчанию)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -378,7 +378,7 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Страница детального дашборда Выполнены / По команде и пользователям / По автору',
+            'description' => 'Детальный дашборд Выполнены / По команде и пользователям / По автору',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -412,7 +412,7 @@ return [
 
     'case13' => [
         'setting' => [
-            'description' => 'Страница детального дашборда Выполнены / По команде и пользователям / По супервайзеру',
+            'description' => 'Детальный дашборд Выполнены / По команде и пользователям / По супервайзеру',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -446,7 +446,7 @@ return [
 
     'case14' => [
         'setting' => [
-            'description' => 'Страница детального дашборда Закрыты (проверены) / По команде, пользователям и типу / По менеджеру (по-умолчанию)',
+            'description' => 'Детальный дашборд Закрыты (проверены) / По команде, пользователям и типу / По менеджеру (по-умолчанию)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -480,7 +480,7 @@ return [
 
     'case15' => [
         'setting' => [
-            'description' => 'Страница детального дашборда Закрыты (проверены) / По команде, пользователям и типу / По автору',
+            'description' => 'Детальный дашборд Закрыты (проверены) / По команде, пользователям и типу / По автору',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -514,7 +514,7 @@ return [
 
     'case16' => [
         'setting' => [
-            'description' => 'Страница детального дашборда Закрыты (проверены) / По команде, пользователям и типу / По супервайзеру',
+            'description' => 'Детальный дашборд Закрыты (проверены) / По команде, пользователям и типу / По супервайзеру',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
