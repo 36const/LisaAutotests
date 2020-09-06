@@ -47,7 +47,7 @@ class POSTTableCest
 
         $I->sendPOST('/bpm/request', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
-//die();
+
         $I->amOnPage('/bpm/request/' . $providerData['url']);
 
         $I->checkObjectsOnPage($providerData['pageObjects']);
