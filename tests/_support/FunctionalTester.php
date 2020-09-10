@@ -36,6 +36,8 @@ class FunctionalTester extends \Codeception\Actor
     {
         $I = $this;
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
+        $I->runShellCommand('./yii bpm/request/clear-temporary-files');
+        $I->purgeAllQueues();
         $testHelper->clearDB($I, $data, $globalFile);
 
         if ($globalUsing)
