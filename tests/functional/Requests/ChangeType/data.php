@@ -58,8 +58,10 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0
                         ]
                     ],
                     'requests_fields' => [
@@ -211,6 +213,8 @@ return [
                             "sv_report_periods" => null,
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0
                         ]
                     ],
                     "requests_fields" => [
@@ -359,8 +363,10 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0
                         ]
                     ],
                     "requests_fields" => [
@@ -507,8 +513,10 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0
                         ]
                     ],
                     "requests_fields" => [
@@ -615,8 +623,10 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0
                         ]
                     ],
                     "requests_fields" => [
@@ -776,8 +786,10 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0
                         ]
                     ],
                     "requests_fields" => [
@@ -1203,6 +1215,8 @@ return [
                             "sv_report_periods" => '{"1": 1}',
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
+"employee_code_1c" => null,
+"child_count" => 0
                         ]
                     ],
                     "requests_fields" => [

@@ -3286,4 +3286,67 @@ return [
             ]
         ]
     ],
+
+    'case8' => [
+        'setting' => [
+            'description' => 'Заблокированные значения в таблице',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case8.php',
+        'provider_data' => [
+            "url" => '',
+            'requestBody' => [
+                '4-dynagrid' => '1',
+                'DynaGridConfig[theme]' => 'panel-danger',
+                'deleteFlag' => '0',
+                'visibleKeys' => '6f4cf3ff,195c6167,7100d06f,9f3bab20,3a15b8f6,12fe4397,132cbbd2',
+            ],
+            "pageObjects" => [
+                "canSee" => [
+                    "Заявка 1" => [
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
+                            "value" => "1"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
+                            "value" => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "value" => "Добавление/изменение информации в существующих товарах"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='5']",
+                            "value" => "Исправление критичной ошибки"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='6']",
+                            "value" => "Нинада"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='7']",
+                            "value" => "Более 5 уточнений"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
+                            "value" => "Фото предоставлены фотостудией"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='9']",
+                            "value" => "Характеристики добавлены с обновлением фото/описания"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='10']",
+                            "value" => "Не предоставлены продактом. Выполнен поиск."
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='11']",
+                            "value" => "Английский"
+                        ],
+                    ],
+                ],
+                "cantSee" => []
+            ]
+        ]
+    ],
 ];

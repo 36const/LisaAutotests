@@ -2683,15 +2683,822 @@ return [
                 "updated_at" => '2020-09-01 19:01:01',
             ],
         ],
+        "report_period_request_fields" => [
+            [
+                "report_period_id" => 1,
+                "request_id" => 1,
+                "field_id" => 33,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 1,
+                "field_id" => 43,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 1,
+                "field_id" => 65,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 1,
+                "field_id" => 95,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 1,
+                "field_id" => 101,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 1,
+                "field_id" => 103,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 1,
+                "field_id" => 108,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 1,
+                "field_id" => 122,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 1,
+                "field_id" => 33,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 1,
+                "field_id" => 43,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 1,
+                "field_id" => 65,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 1,
+                "field_id" => 95,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 1,
+                "field_id" => 101,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 1,
+                "field_id" => 103,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 1,
+                "field_id" => 108,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 1,
+                "field_id" => 122,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 2,
+                "field_id" => 132,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 2,
+                "field_id" => 132,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 3,
+                "field_id" => 43,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 3,
+                "field_id" => 101,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 3,
+                "field_id" => 108,
+                "value" => 1000000
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 3,
+                "field_id" => 122,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 4,
+                "field_id" => 33,
+                "value" => 15
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 4,
+                "field_id" => 65,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 4,
+                "field_id" => 101,
+                "value" => 15
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 4,
+                "field_id" => 122,
+                "value" => 30
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 5,
+                "field_id" => 128,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 6,
+                "field_id" => 51,
+                "value" => 2400
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 6,
+                "field_id" => 65,
+                "value" => 800
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 6,
+                "field_id" => 128,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 6,
+                "field_id" => 51,
+                "value" => 2400
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 6,
+                "field_id" => 65,
+                "value" => 800
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 6,
+                "field_id" => 128,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 7,
+                "field_id" => 104,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 7,
+                "field_id" => 105,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 7,
+                "field_id" => 106,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 7,
+                "field_id" => 136,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 7,
+                "field_id" => 140,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 8,
+                "field_id" => 51,
+                "value" => 7.5
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 8,
+                "field_id" => 65,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 8,
+                "field_id" => 132,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 9,
+                "field_id" => 33,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 9,
+                "field_id" => 65,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 9,
+                "field_id" => 101,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 9,
+                "field_id" => 122,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 10,
+                "field_id" => 33,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 10,
+                "field_id" => 51,
+                "value" => 75
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 10,
+                "field_id" => 60,
+                "value" => 75
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 10,
+                "field_id" => 65,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 10,
+                "field_id" => 101,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 10,
+                "field_id" => 122,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 11,
+                "field_id" => 41,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 11,
+                "field_id" => 101,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 11,
+                "field_id" => 122,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 4,
+                "request_id" => 12,
+                "field_id" => 33,
+                "value" => 15
+            ],
+            [
+                "report_period_id" => 4,
+                "request_id" => 12,
+                "field_id" => 35,
+                "value" => 5
+            ],
+            [
+                "report_period_id" => 4,
+                "request_id" => 12,
+                "field_id" => 60,
+                "value" => 60
+            ],
+            [
+                "report_period_id" => 4,
+                "request_id" => 12,
+                "field_id" => 101,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 4,
+                "request_id" => 12,
+                "field_id" => 122,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 13,
+                "field_id" => 37,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 13,
+                "field_id" => 51,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 13,
+                "field_id" => 60,
+                "value" => 22
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 13,
+                "field_id" => 65,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 13,
+                "field_id" => 101,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 13,
+                "field_id" => 122,
+                "value" => 11
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 14,
+                "field_id" => 132,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 15,
+                "field_id" => 138,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 16,
+                "field_id" => 40,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 16,
+                "field_id" => 65,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 16,
+                "field_id" => 101,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 16,
+                "field_id" => 104,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 16,
+                "field_id" => 105,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 16,
+                "field_id" => 106,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 16,
+                "field_id" => 107,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 16,
+                "field_id" => 109,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 16,
+                "field_id" => 122,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 17,
+                "field_id" => 37,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 17,
+                "field_id" => 60,
+                "value" => 8
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 17,
+                "field_id" => 101,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 17,
+                "field_id" => 122,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 18,
+                "field_id" => 33,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 18,
+                "field_id" => 35,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 18,
+                "field_id" => 36,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 18,
+                "field_id" => 37,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 18,
+                "field_id" => 60,
+                "value" => 3300
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 18,
+                "field_id" => 101,
+                "value" => 60
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 18,
+                "field_id" => 122,
+                "value" => 60
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 19,
+                "field_id" => 33,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 19,
+                "field_id" => 51,
+                "value" => 15
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 19,
+                "field_id" => 60,
+                "value" => 30
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 19,
+                "field_id" => 65,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 19,
+                "field_id" => 101,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 19,
+                "field_id" => 122,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 20,
+                "field_id" => 40,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 20,
+                "field_id" => 101,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 20,
+                "field_id" => 122,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 20,
+                "field_id" => 40,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 20,
+                "field_id" => 101,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 20,
+                "field_id" => 122,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 21,
+                "field_id" => 37,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 21,
+                "field_id" => 51,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 21,
+                "field_id" => 60,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 21,
+                "field_id" => 65,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 21,
+                "field_id" => 101,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 21,
+                "field_id" => 122,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 22,
+                "field_id" => 37,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 22,
+                "field_id" => 60,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 22,
+                "field_id" => 101,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 22,
+                "field_id" => 122,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 23,
+                "field_id" => 40,
+                "value" => 15
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 23,
+                "field_id" => 41,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 23,
+                "field_id" => 42,
+                "value" => 9
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 23,
+                "field_id" => 65,
+                "value" => 5
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 23,
+                "field_id" => 101,
+                "value" => 34
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 23,
+                "field_id" => 104,
+                "value" => 5
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 23,
+                "field_id" => 105,
+                "value" => 5
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 23,
+                "field_id" => 106,
+                "value" => 5
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 23,
+                "field_id" => 107,
+                "value" => 5
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 23,
+                "field_id" => 109,
+                "value" => 5
+            ],
+            [
+                "report_period_id" => 1,
+                "request_id" => 23,
+                "field_id" => 122,
+                "value" => 24
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 24,
+                "field_id" => 33,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 24,
+                "field_id" => 34,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 24,
+                "field_id" => 35,
+                "value" => 5
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 24,
+                "field_id" => 37,
+                "value" => 15
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 24,
+                "field_id" => 60,
+                "value" => 50
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 24,
+                "field_id" => 101,
+                "value" => 50
+            ],
+            [
+                "report_period_id" => 2,
+                "request_id" => 24,
+                "field_id" => 122,
+                "value" => 50
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 24,
+                "field_id" => 33,
+                "value" => 10
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 24,
+                "field_id" => 34,
+                "value" => 20
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 24,
+                "field_id" => 35,
+                "value" => 5
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 24,
+                "field_id" => 37,
+                "value" => 15
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 24,
+                "field_id" => 60,
+                "value" => 50
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 24,
+                "field_id" => 101,
+                "value" => 50
+            ],
+            [
+                "report_period_id" => 3,
+                "request_id" => 24,
+                "field_id" => 122,
+                "value" => 50
+            ],
+        ],
         "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
         "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',
-        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
-        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
-        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
-        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
-        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
+//        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
+//        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
+//        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
+//        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
+//        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
+//        "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
     ],
-    "cooper_fixtures" => [
-        "market" => include \rzk\FixtureController::getFixtureDir() . 'cooper_fixtures/market.php',
-    ]
+//    "cooper_fixtures" => [
+//        "market" => include \rzk\FixtureController::getFixtureDir() . 'cooper_fixtures/market.php',
+//    ]
 ];

@@ -201,6 +201,7 @@ return [
         "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
         "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
         "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
+        "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
     ],
     "cooper_fixtures" => [
         "market" => include \rzk\FixtureController::getFixtureDir() . 'cooper_fixtures/market.php',
