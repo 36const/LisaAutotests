@@ -9,9 +9,10 @@ use rzk\TestHelper;
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_crons
- * @group CronSetReportPeriod
+ * @group CronMakeXls
+ * @group CronMakeXlsFixate
  */
-class CronSetReportPeriodCest
+class CronMakeXlsFixateCest
 {
     /**
      * @var TestHelper $testHelper
@@ -39,14 +40,18 @@ class CronSetReportPeriodCest
      * @dataProvider pageProvider
      *
      */
-    public function CronSetReportPeriod(FunctionalTester $I, Example $data)
+    public function CronMakeXlsFixate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
 
-        $I->runShellCommand('./yii bpm/request/set-report-period');
+        $I->sendGET('/bpm/report/export?q=' . $providerData['url']);
+        $I->seeResponseCodeIs(200);
+
+        $I->runShellCommand('./yii bpm/request/make-xls');
         $I->canSeeInShellOutput('');
 
-        $I->checkTablesInDB($providerData['db']);
+        $I->amOnPage('/bpm/export/index');
+        $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }
