@@ -8,11 +8,11 @@ use rzk\TestHelper;
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_crons
+ * @group lisa_functional_requests
  * @group CronMakeXls
- * @group CronMakeXlsTable
+ * @group CronTableMakeXls
  */
-class CronMakeXlsTableCest
+class CronTableMakeXlsCest
 {
     /**
      * @var TestHelper $testHelper
@@ -40,7 +40,7 @@ class CronMakeXlsTableCest
      * @dataProvider pageProvider
      *
      */
-    public function CronMakeXlsTable(FunctionalTester $I, Example $data)
+    public function CronTableMakeXls(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];

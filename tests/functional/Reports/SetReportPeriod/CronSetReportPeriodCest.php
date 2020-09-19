@@ -4,16 +4,14 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Roles;
 
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_users
- * @group POSTRoles
- * @group POSTRolesCreate
+ * @group lisa_functional_reports
+ * @group CronSetReportPeriod
  */
-class POSTRolesCreateCest
+class CronSetReportPeriodCest
 {
     /**
      * @var TestHelper $testHelper
@@ -36,24 +34,19 @@ class POSTRolesCreateCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Roles $roles
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTRolesCreate(FunctionalTester $I, Example $data, Roles $roles)
+    public function CronSetReportPeriod(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper);
-
+        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/roles/create', $providerData['requestBody']);
-        $I->seeResponseCodeIs(200);
+        $I->runShellCommand('./yii bpm/request/set-report-period');
+        $I->canSeeInShellOutput('');
 
         $I->checkTablesInDB($providerData['db']);
-
-        $roles->amOnRoleUpdate(1);
-        $roles->checkCheckboxes($providerData['requestBody']);
     }
 }

@@ -10,6 +10,7 @@ use lisa\Page\Functional\Roles;
 /**
  * @group lisa
  * @group lisa_functional
+ * @group lisa_functional_users
  * @group POSTRoles
  * @group POSTRolesUpdate
  */

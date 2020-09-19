@@ -9,6 +9,7 @@ use lisa\Page\Functional\User;
 /**
  * @group lisa
  * @group lisa_functional
+ * @group lisa_functional_users
  * @group POSTUsers
  * @group POSTUsersCreate
  */
