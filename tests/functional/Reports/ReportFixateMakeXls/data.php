@@ -9,7 +9,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'url' => '[]',
+            'url' => '?q=[]',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -38,7 +38,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'url' => '{"ReportPeriodRequestFieldSearch":{"report_period_id":"3","request_id":"","supervisor_id":"","field_id":""},"page":"7"}',
+            'url' => '?q={"ReportPeriodRequestFieldSearch":{"report_period_id":"3","request_id":"","supervisor_id":"","field_id":""},"page":"7"}',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -67,7 +67,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'url' => '{"ReportPeriodRequestFieldSearch":{"report_period_id":"","request_id":"10","supervisor_id":"","field_id":""}}',
+            'url' => '?q={"ReportPeriodRequestFieldSearch":{"report_period_id":"","request_id":"10","supervisor_id":"","field_id":""}}',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -96,7 +96,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'url' => '{"ReportPeriodRequestFieldSearch":{"report_period_id":"","request_id":"","supervisor_id":"35","field_id":""}}',
+            'url' => '?q={"ReportPeriodRequestFieldSearch":{"report_period_id":"","request_id":"","supervisor_id":"35","field_id":""}}',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -125,7 +125,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'url' => '{"ReportPeriodRequestFieldSearch":{"report_period_id":"","request_id":"","supervisor_id":"","field_id":"35"}}',
+            'url' => '?q={"ReportPeriodRequestFieldSearch":{"report_period_id":"","request_id":"","supervisor_id":"","field_id":"35"}}',
             "pageObjects" => [
                 "canSee" => [
                     [

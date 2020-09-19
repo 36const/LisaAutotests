@@ -4,16 +4,14 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\Roles;
 
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_users
- * @group POSTRoles
- * @group POSTRolesCreate
+ * @group lisa_functional_settings
+ * @group GETDifficultyCoefExport
  */
-class POSTRolesCreateCest
+class GETDifficultyCoefExportCest
 {
     /**
      * @var TestHelper $testHelper
@@ -36,24 +34,17 @@ class POSTRolesCreateCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Roles $roles
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTRolesCreate(FunctionalTester $I, Example $data, Roles $roles)
+    public function GETDifficultyCoefExport(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper);
-
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/roles/create', $providerData['requestBody']);
+        $I->amOnPage('bpm/difficulty-coef/export');
         $I->seeResponseCodeIs(200);
-
-        $I->checkTablesInDB($providerData['db']);
-
-        $roles->amOnRoleUpdate(1);
-        $roles->checkCheckboxes($providerData['requestBody']);
     }
 }

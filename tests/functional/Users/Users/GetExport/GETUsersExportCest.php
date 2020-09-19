@@ -8,10 +8,10 @@ use rzk\TestHelper;
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_crons
- * @group CronSetReportPeriod
+ * @group lisa_functional_users
+ * @group GETUsersExport
  */
-class CronSetReportPeriodCest
+class GETUsersExportCest
 {
     /**
      * @var TestHelper $testHelper
@@ -39,14 +39,12 @@ class CronSetReportPeriodCest
      * @dataProvider pageProvider
      *
      */
-    public function CronSetReportPeriod(FunctionalTester $I, Example $data)
+    public function GETUsersExport(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
 
-        $I->runShellCommand('./yii bpm/request/set-report-period');
-        $I->canSeeInShellOutput('');
-
-        $I->checkTablesInDB($providerData['db']);
+        $I->sendGET('bpm/user/export' . $providerData['url']);
+        $I->seeResponseCodeIs(200);
     }
 }

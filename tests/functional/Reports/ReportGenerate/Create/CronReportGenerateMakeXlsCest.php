@@ -8,11 +8,11 @@ use rzk\TestHelper;
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_crons
+ * @group lisa_functional_reports
  * @group CronMakeXls
- * @group CronMakeXlsFixate
+ * @group CronReportGenerateMakeXls
  */
-class CronMakeXlsFixateCest
+class CronReportGenerateMakeXlsCest
 {
     /**
      * @var TestHelper $testHelper
@@ -40,12 +40,12 @@ class CronMakeXlsFixateCest
      * @dataProvider pageProvider
      *
      */
-    public function CronMakeXlsFixate(FunctionalTester $I, Example $data)
+    public function CronReportGenerateMakeXls(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
 
-        $I->sendGET('/bpm/report/export?q=' . $providerData['url']);
+        $I->sendPOST('/bpm/report/generate', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->runShellCommand('./yii bpm/request/make-xls');
@@ -53,5 +53,6 @@ class CronMakeXlsFixateCest
 
         $I->amOnPage('/bpm/export/index');
         $I->checkObjectsOnPage($providerData['pageObjects']);
+        $I->checkTablesInDB($providerData['db']);
     }
 }
