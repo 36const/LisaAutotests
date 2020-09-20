@@ -47,9 +47,11 @@ class CronReportGenerateMakeXlsCest
 
         $I->sendPOST('/bpm/report/generate', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
+        $I->canSeeNumberOfMessagesInQueue('lisa_exportGenerating', 1);
 
         $I->runShellCommand('./yii bpm/request/make-xls');
         $I->canSeeInShellOutput('');
+        $I->canSeeNumberOfMessagesInQueue('lisa_exportGenerating', 0);
 
         $I->amOnPage('/bpm/export/index');
         $I->checkObjectsOnPage($providerData['pageObjects']);
