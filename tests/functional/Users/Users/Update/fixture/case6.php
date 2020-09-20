@@ -5,7 +5,7 @@ return [
         "default_role_permissions" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/default_role_permissions.php',
         "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
         "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
-        "user_bpm" =>[
+        "user_bpm" => [
             [
                 //"id" => 1,
                 "name" => "Система",
@@ -1168,7 +1168,8 @@ return [
                 "user_id" => 5,
                 "permission_name" => "viewAllDashboards"
             ],
-        ]
+        ],
+        "user_changing_history" => []
     ],
 
     "gomer_fixtures" => [
