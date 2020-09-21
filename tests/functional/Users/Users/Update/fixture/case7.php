@@ -1168,7 +1168,8 @@ return [
                 "user_id" => 5,
                 "permission_name" => "viewAllDashboards"
             ],
-        ]
+        ],
+        "user_changing_history" => []
     ],
 
     "gomer_fixtures" => [

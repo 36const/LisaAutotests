@@ -990,6 +990,613 @@ return [
                             "user_id" => 5,
                             "permission_name" => "viewAllDashboards"
                         ]
+                    ],
+                    "user_changing_history" => [
+                        [
+                            "id" => 1,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "team",
+                            "old_value" => "17",
+                            "new_value" => "1",
+//                            "date" => "2020-05-19 16:36:22"
+                        ],
+                        [
+                            "id" => 2,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "parent_id",
+                            "old_value" => "1. Система",
+                            "new_value" => "5. Супервайзер Руководько 1",
+//                            "date" => "2020-05-19 16:36:22"
+                        ],
+                        [
+                            "id" => 3,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "position",
+                            "old_value" => "admin",
+                            "new_value" => "contentManager",
+//                            "date" => "2020-05-19 16:36:22"
+                        ],
+                        [
+                            "id" => 4,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "drfo",
+                            "old_value" => "'000000004",
+                            "new_value" => "'000000099",
+//                            "date" => "2020-05-19 16:36:22"
+                        ],
+                        [
+                            "id" => 5,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "blockUser",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 6,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "categoryUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 7,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "coefUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 8,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "createUser",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 9,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "errorsUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 10,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "excludedFieldsUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 11,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "fieldsUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 12,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "massEdit",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 13,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "priorityUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 14,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "reasonsUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 15,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "reportLoadAllUsers",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 16,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "reportLoadMarketUsers",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 17,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "reportLoadYourTeam",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 18,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddAttrOrValues",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 19,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddFatPortalCat",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 20,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddNewItems",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 21,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddUpdateSC",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 22,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddUpdateSizeGrid",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 23,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddUpdateTags",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 24,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddUpdateVideo",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 25,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestCheckHidden",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 26,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestCreateRelated",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 27,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestCreate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 28,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestDeleteAttachments",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 29,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestGroupItems",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 30,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestStructureDesign",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 31,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestTransferItems",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 32,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestUpdateAttrOrValues",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 33,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestUpdateFatPortalCat",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 34,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestUpdateItems",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 35,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 36,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestUploadPhoto",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 37,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestViewAllRequests",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 38,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestViewDirectionRequests",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 39,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestViewTeamRequests",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 40,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "sellerUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 41,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "takeToWork",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 42,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "teamUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 43,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferCompletedToClosed",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 44,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferCompletedToRequireFix",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 45,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferInCheckToDeclined",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 46,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferInCheckToRequireChange",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 47,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferOnHoldToInWork",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 48,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferRequireChangeToInCheck",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 49,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferWaitCheckToInCheck",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 50,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "updateUser",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 51,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "viewAllDashboards",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 52,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "viewDashboardsByCommand",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 53,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "viewDashboardsByDirection",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 54,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "viewSplitterModerationRequests",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ],
+                        [
+                            "id" => 55,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "viewUser",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:05:12"
+                        ]
                     ]
                 ],
 
@@ -1985,6 +2592,580 @@ return [
                             "id" => 218,
                             "user_id" => 5,
                             "permission_name" => "viewAllDashboards"
+                        ]
+                    ],
+                    "user_changing_history" => [
+                        [
+                            "id" => 1,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "position",
+                            "old_value" => "admin",
+                            "new_value" => "contentManager",
+                            "date" => "2020-05-19 16:36:22"
+                        ],
+                        [
+                            "id" => 2,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "blockUser",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 3,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "categoryUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 4,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "coefUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 5,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "createUser",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 6,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "errorsUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 7,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "excludedFieldsUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 8,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "fieldsUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 9,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "massEdit",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 10,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "priorityUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 11,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "reasonsUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 12,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "reportLoadAllUsers",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 13,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "reportLoadMarketUsers",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 14,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "reportLoadYourTeam",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 15,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddAttrOrValues",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 16,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddFatPortalCat",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 17,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddNewItems",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 18,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddUpdateSC",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 19,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddUpdateSizeGrid",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 20,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddUpdateTags",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 21,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestAddUpdateVideo",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 22,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestCheckHidden",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 23,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestCreateRelated",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 24,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestCreate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 25,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestDeleteAttachments",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 26,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestGroupItems",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 27,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestStructureDesign",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 28,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestTransferItems",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 29,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestUpdateAttrOrValues",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 30,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestUpdateFatPortalCat",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 31,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestUpdateItems",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 32,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 33,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestUploadPhoto",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 34,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestViewAllRequests",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 35,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestViewDirectionRequests",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 36,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "requestViewTeamRequests",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 37,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "sellerUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 38,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "takeToWork",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 39,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "teamUpdate",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 40,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferCompletedToClosed",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 41,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferCompletedToRequireFix",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 42,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferInCheckToDeclined",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 43,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferInCheckToRequireChange",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 44,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferOnHoldToInWork",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 45,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferRequireChangeToInCheck",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 46,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "transferWaitCheckToInCheck",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 47,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "updateUser",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 48,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "viewAllDashboards",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 49,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "viewDashboardsByCommand",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 50,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "viewDashboardsByDirection",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 51,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "viewSplitterModerationRequests",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
+                        ],
+                        [
+                            "id" => 52,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "viewUser",
+                            "old_value" => "1",
+                            "new_value" => "0",
+                            //"date" => "2020-09-20 12:22:24"
                         ]
                     ]
                 ],
@@ -3288,9 +4469,21 @@ return [
                             "user_id" => 5,
                             "permission_name" => "viewAllDashboards"
                         ]
+                    ],
+                    "user_changing_history" => [
+                        [
+                            "id" => 1,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "team",
+                            "old_value" => "17",
+                            "new_value" => "1",
+//                            "date" => "2020-05-19 16:36:22"
+                        ]
                     ]
                 ],
-
             ]
         ]
     ],
@@ -4589,6 +5782,19 @@ return [
                             "id" => 218,
                             "user_id" => 5,
                             "permission_name" => "viewAllDashboards"
+                        ]
+                    ],
+                    "user_changing_history" => [
+                        [
+                            "id" => 1,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "drfo",
+                            "old_value" => "'000000004",
+                            "new_value" => "'000000099",
+//                            "date" => "2020-05-19 16:36:22"
                         ]
                     ]
                 ],
@@ -5890,6 +7096,19 @@ return [
                             "id" => 218,
                             "user_id" => 5,
                             "permission_name" => "viewAllDashboards"
+                        ]
+                    ],
+                    "user_changing_history" => [
+                        [
+                            "id" => 1,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "parent_id",
+                            "old_value" => "1. Система",
+                            "new_value" => "5. Супервайзер Руководько 1",
+//                            "date" => "2020-05-19 16:36:22"
                         ]
                     ]
                 ],
@@ -7193,6 +8412,19 @@ return [
                             "user_id" => 5,
                             "permission_name" => "viewAllDashboards"
                         ]
+                    ],
+                    "user_changing_history" => [
+                        [
+                            "id" => 1,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "status",
+                            "old_value" => "1",
+                            "new_value" => "0",
+//                            "date" => "2020-05-19 16:36:22"
+                        ]
                     ]
                 ],
             ]
@@ -8494,6 +9726,19 @@ return [
                             "id" => 218,
                             "user_id" => 5,
                             "permission_name" => "viewAllDashboards"
+                        ]
+                    ],
+                    "user_changing_history" => [
+                        [
+                            "id" => 1,
+                            "changed_user_id" => 4,
+                            "changed_user_login" => "kutsan.k",
+                            "changer_id" => 4,
+                            "changer_login" => "kutsan.k",
+                            "changed_field" => "status",
+                            "old_value" => "0",
+                            "new_value" => "1",
+//                            "date" => "2020-05-19 16:36:22"
                         ]
                     ]
                 ],

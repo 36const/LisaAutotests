@@ -3,16 +3,16 @@
 namespace lisa;
 
 use Codeception\Example;
+use lisa\Page\Functional\Request;
 use rzk\TestHelper;
 
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_reports
- * @group CronMakeXls
- * @group CronReportGenerateMakeXls
+ * @group lisa_functional_requests
+ * @group GETColumnsFilters
  */
-class CronReportGenerateMakeXlsCest
+class GETColumnsFiltersCest
 {
     /**
      * @var TestHelper $testHelper
@@ -35,26 +35,18 @@ class CronReportGenerateMakeXlsCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
+     * @param Request $request
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
-    public function CronReportGenerateMakeXls(FunctionalTester $I, Example $data)
+    public function GETColumnsFilters(FunctionalTester $I, Example $data, Request $request)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/report/generate', $providerData['requestBody']);
+        $request->table($providerData['url']);
         $I->seeResponseCodeIs(200);
-        $I->canSeeNumberOfMessagesInQueue('lisa_exportGenerating', 1);
 
-        $I->runShellCommand('./yii bpm/request/make-xls');
-        $I->canSeeInShellOutput('');
-        $I->canSeeNumberOfMessagesInQueue('lisa_exportGenerating', 0);
-
-        $I->amOnPage('/bpm/export/index');
         $I->checkObjectsOnPage($providerData['pageObjects']);
-        $I->checkTablesInDB($providerData['db']);
     }
 }
