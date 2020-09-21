@@ -10,9 +10,10 @@ class Request extends FunctionalTester
         ['index', 'new', 'in-check', 'require-changes', 'declined', 'wait-work',
             'in-work', 'on-hold', 'completed', '', '', 'closed', 'observable', 'cross-check'];
 
-    public static function onTab($tab)
+    public function table($filter)
     {
-        return "/bpm/request/$tab";
+        $I = $this;
+        $I->amOnPage("/bpm/request/$filter");
     }
 
     public static function globalPath()
@@ -25,14 +26,21 @@ class Request extends FunctionalTester
         return "//h1[@class='global-caption']";
     }
 
-    public static function tabCounter($tabs)
-    {
-        return "//ul[@id='w2']//span[@class='tab-counter' and @request-status='$tabs']";
-    }
-
     public static function tabSummary()
     {
-        return "//div[@class='summary']";
+        return "//div[@class='summary']/b[2]";
+    }
+
+    public static function emptyTable()
+    {
+        return '//table[@class="kv-grid-table table table-bordered table-striped"]' .
+                '/tbody//div[@class="empty" and text()="Ничего не найдено."]';
+    }
+
+    public static function requestInTable($lineNumber, $columnNumber, $text)
+    {
+        return '//table[@class="kv-grid-table table table-bordered table-striped"]' .
+                '/tbody/tr[' . $lineNumber . ']/td[@data-col-seq="' . $columnNumber . '"]//*[text()=' . $text . ']';
     }
 
 }
