@@ -43,8 +43,11 @@ class GETDashboardDetailCest
      */
     public function GETDashboardDetail(FunctionalTester $I, Example $data, Dashboard $dashboard)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
+
+        $I->runShellCommand('./yii bpm/request/count-for-dashboards');
+        $I->canSeeInShellOutput('');
 
         $dashboard->amOnDashboardDetail($providerData['url']);
         $I->seeResponseCodeIs(200);

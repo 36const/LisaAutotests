@@ -6,18 +6,6 @@ use lisa\FunctionalTester;
 
 class Dashboard extends FunctionalTester
 {
-    public function amOnDashboardCommon($url = '')
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/dashboard/common" . $url);
-    }
-
-    public function amOnDashboardDetail($url = '')
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/dashboard/detail" . $url);
-    }
-
     public static function type(string $option = null)
     {
         return $option == null ?
@@ -30,6 +18,13 @@ class Dashboard extends FunctionalTester
         return $option == null ?
             "//select[@name='Dashboard[display]']" :
             "//select[@name='Dashboard[display]']/option[@value='$option'][@selected]";
+    }
+
+    //общие дашборды
+    public function amOnDashboardCommon($url = '')
+    {
+        $I = $this;
+        $I->amOnPage("/bpm/dashboard/common" . $url);
     }
 
     public static function member(string $option = null)
@@ -69,21 +64,6 @@ class Dashboard extends FunctionalTester
             'active-managers'][$i];
     }
 
-    public static function amountColumns($i)
-    {
-        return ['begin-of-day', 'on-date', 'today'][$i];
-    }
-
-    public static function objectColumn($i)
-    {
-        return ['requests', 'goods'][$i];
-    }
-
-    public static function dateColumn($i)
-    {
-        return ['oldest', 'newest', 'leg'][$i];
-    }
-
     public static function activeManagersColumn(int $row)
     {
         return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='active-managers']";
@@ -95,10 +75,10 @@ class Dashboard extends FunctionalTester
             . "[" . self::objectColumn($requestsOrGoods) . "]']";
     }
 
-    public static function detail(int $row, int $amountCol, int $requestsOrGoods)
+    //общие дашборды по датам
+    public static function dateColumn($i)
     {
-        return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='" . self::amountColumns($amountCol)
-            . "[" . self::objectColumn($requestsOrGoods) . "]']";
+        return ['oldest', 'newest', 'leg'][$i];
     }
 
     public static function commonDate(int $row, int $statusCol, int $age, int $requestId)
@@ -115,6 +95,29 @@ class Dashboard extends FunctionalTester
     public static function commonDateLegValue(string $oldest)
     {
         return round((strtotime(date("Y-m-d")) - strtotime($oldest))/60/60/24);
+    }
+
+    //детальные дашборды
+    public function amOnDashboardDetail($url = '')
+    {
+        $I = $this;
+        $I->amOnPage("/bpm/dashboard/detail" . $url);
+    }
+
+    public static function amountColumns($i)
+    {
+        return ['begin-of-day', 'on-date', 'today'][$i];
+    }
+
+    public static function objectColumn($i)
+    {
+        return ['requests', 'goods'][$i];
+    }
+
+    public static function detail(int $row, int $amountCol, int $requestsOrGoods)
+    {
+        return "//table[@class='table table-bordered']/tbody/tr[$row]/td[@data-name='" . self::amountColumns($amountCol)
+            . "[" . self::objectColumn($requestsOrGoods) . "]']";
     }
 
 }

@@ -26,6 +26,56 @@ return [
                             "value" => "По направлению и типу"
                         ],
                     ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                            "value" => 20
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 20
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(4, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(4, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(5, 0, 0),
+                            "value" => 6
+                        ],
+                        [
+                            "selector" => Dashboard::detail(5, 0, 1),
+                            "value" => 60
+                        ],
+                    ],
                 ],
                 "cantSee" => [
                 ]
@@ -39,7 +89,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=Ожидают%20взятия%20в%20работу&display=1',
+            "url" => '?status=Ожидают взятия в работу&display=1&date=' . date('Y-m-d'),
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -56,6 +106,36 @@ return [
                             "value" => "По направлению"
                         ],
                     ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                            "value" => 20
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 30
+                        ],
+                    ],
                 ],
                 "cantSee" => [
                     [
@@ -70,11 +150,11 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Детальный дашборд В работе / По менеджеру (по-умолчанию)',
+            'description' => 'Детальный дашборд В работе / По пользователям / По менеджеру (по-умолчанию)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=В%20работе&display=3&member=manager_id&username=',
+            "url" => '?status=В работе&display=3&member=manager_id&date=' . date('Y-m-d'),
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -95,6 +175,36 @@ return [
                             "value" => "менеджеру"
                         ]
                     ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                            "value" => 20
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 30
+                        ],
+                    ],
                 ],
                 "cantSee" => [
                 ]
@@ -104,11 +214,11 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Детальный дашборд В работе / По автору',
+            'description' => 'Детальный дашборд В работе / По пользователям / По автору',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=В%20работе&display=3&member=author_id&username=',
+            "url" => '?status=В работе&display=3&member=author_id&date=' . date('Y-m-d') . '&username=',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -129,6 +239,46 @@ return [
                             "value" => "автору"
                         ]
                     ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(4, 0, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::detail(4, 0, 1),
+                            "value" => 30
+                        ],
+                    ],
                 ],
                 "cantSee" => [
                 ]
@@ -138,11 +288,11 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Детальный дашборд В работе / По супервайзеру',
+            'description' => 'Детальный дашборд В работе / По пользователям / По супервайзеру',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=В%20работе&display=3&member=supervisor_id&username=',
+            "url" => '?status=В работе&display=3&member=supervisor_id&date=' . date('Y-m-d') . '&username=',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -163,6 +313,36 @@ return [
                             "value" => "супервизору"
                         ]
                     ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                            "value" => 20
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 30
+                        ],
+                    ],
                 ],
                 "cantSee" => [
                 ]
@@ -172,11 +352,11 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Детальный дашборд На доработке / По менеджеру (по-умолчанию)',
+            'description' => 'Детальный дашборд На доработке / По пользователям и типу / По менеджеру (по-умолчанию)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=На%20доработке&display=4',
+            "url" => '?status=На доработке&display=4&date=' . date('Y-m-d'),
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -210,7 +390,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=На%20доработке&display=4&member=author_id&username=',
+            "url" => '?status=На доработке&display=4&member=author_id&date=' . date('Y-m-d') . '&username=',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -231,6 +411,46 @@ return [
                             "value" => "автору"
                         ]
                     ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(4, 0, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::detail(4, 0, 1),
+                            "value" => 30
+                        ],
+                    ],
                 ],
                 "cantSee" => [
                 ]
@@ -244,7 +464,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=На%20доработке&display=4&member=supervisor_id&username=',
+            "url" => '?status=На доработке&display=4&member=supervisor_id&date=' . date('Y-m-d') . '&username=',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -265,6 +485,46 @@ return [
                             "value" => "супервизору"
                         ]
                     ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(4, 0, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::detail(4, 0, 1),
+                            "value" => 30
+                        ],
+                    ],
                 ],
                 "cantSee" => [
                 ]
@@ -278,7 +538,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=Ожидают&display=2',
+            "url" => '?status=Ожидают&display=2&date=' . date('Y-m-d'),
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -293,6 +553,36 @@ return [
                         [
                             "selector" => Dashboard::display(2),
                             "value" => "По командам"
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 20
                         ],
                     ],
                 ],
@@ -313,7 +603,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=Ожидают&display=6',
+            "url" => '?status=Ожидают&display=6&date=' . date('Y-m-d'),
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -328,6 +618,36 @@ return [
                         [
                             "selector" => Dashboard::display(6),
                             "value" => "По команде и типу"
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 20
                         ],
                     ],
                 ],
@@ -348,7 +668,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=Выполнены&display=5',
+            "url" => '?status=Выполнены&display=5&date=' . date('Y-m-d'),
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -369,6 +689,46 @@ return [
                             "value" => "менеджеру"
                         ]
                     ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(4, 0, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::detail(4, 0, 1),
+                            "value" => 30
+                        ],
+                    ],
                 ],
                 "cantSee" => [
                 ]
@@ -382,7 +742,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=Выполнены&display=5&member=author_id',
+            "url" => '?status=Выполнены&display=5&member=author_id&date=' . date('Y-m-d') . '&username=',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -403,6 +763,52 @@ return [
                             "value" => "автору"
                         ]
                     ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 20
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(4, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(4, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(5, 0, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::detail(5, 0, 1),
+                            "value" => 30
+                        ],
+                    ],
                 ],
                 "cantSee" => [
                 ]
@@ -416,7 +822,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=Выполнены&display=5&member=supervisor_id',
+            "url" => '?status=Выполнены&display=5&member=supervisor_id&date=' . date('Y-m-d') . '&username=',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -437,6 +843,44 @@ return [
                             "value" => "супервизору"
                         ]
                     ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(1, 0, 0),
+                        ],
+                        [
+                            "selector" => Dashboard::detail(1, 0, 1),
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(2, 0, 0),
+                            "value" => 2
+                        ],
+                        [
+                            "selector" => Dashboard::detail(2, 0, 1),
+                            "value" => 20
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(3, 0, 0),
+                            "value" => 1
+                        ],
+                        [
+                            "selector" => Dashboard::detail(3, 0, 1),
+                            "value" => 10
+                        ],
+                    ],
+                    [
+                        [
+                            "selector" => Dashboard::detail(4, 0, 0),
+                            "value" => 3
+                        ],
+                        [
+                            "selector" => Dashboard::detail(4, 0, 1),
+                            "value" => 30
+                        ],
+                    ],
                 ],
                 "cantSee" => [
                 ]
@@ -450,7 +894,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=Закрыты%20(проверены)&display=7',
+            "url" => '?status=Закрыты (проверены)&display=7',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -484,7 +928,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=Закрыты%20(проверены)&display=7&member=author_id',
+            "url" => '?status=Закрыты (проверены)&display=7&member=author_id',
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -518,7 +962,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=Закрыты%20(проверены)&display=7&member=supervisor_id',
+            "url" => '?status=Закрыты (проверены)&display=7&member=supervisor_id',
             "pageObjects" => [
                 "canSee" => [
                     [
