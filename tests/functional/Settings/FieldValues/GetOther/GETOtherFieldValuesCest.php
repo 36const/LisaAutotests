@@ -45,6 +45,7 @@ class GETOtherFieldValuesCest
         $providerData = $data['provider_data'];
 
         $I->amOnPage($providerData['url']);
+        $I->seeResponseCodeIs(200);
 
         $I->checkObjectsOnPage($providerData['pageObjects']);
     }
