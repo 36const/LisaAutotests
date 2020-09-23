@@ -25,13 +25,23 @@ class ApiTester extends \Codeception\Actor
 {
     use _generated\ApiTesterActions;
 
+    /**
+     * @param Example $data - данные кейса из файла data.php
+     * @param TestHelper $testHelper
+     * @param array|string[] $globalFile - название файла глобальных фикстур
+     * @param bool $globalUsing - нужно ли использовать глобальные фикстуры
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
     public function loadDataForTest(Example $data, TestHelper $testHelper,
                                     array $globalFile = ['oneUser'], bool $globalUsing = true)
     {
         $I = $this;
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $testHelper->clearDB($I, $data, $globalFile);
-        !$globalUsing ?: $testHelper->loadGlobalFixture($I, $globalFile);
+
+        if ($globalUsing)
+            $testHelper->loadGlobalFixture($I, $globalFile);
+
         $testHelper->loadFixtureAndMock($I, $data);
         $I->wantTo($data['setting']['description']);
     }

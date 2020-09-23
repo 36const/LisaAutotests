@@ -25,7 +25,7 @@ modules:
                       'lisa_exportGenerating',
                       'lisa_makeAttachmentsArchive',
                       'lisa_sendMailNotifications' ]
-        - Db: # Подключение к базе вашего приложения (Именно в эту базу будут загружатся фикстуры)
+        - Db: # Подключение к базе вашего приложения (Именно в эту базу будут загружаться фикстуры)
               dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=lisa_auto_db'
               user: 'lisa' # Логин к базе
               password: 'jw8s0F4' # Пароль к базе
