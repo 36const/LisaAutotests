@@ -7,6 +7,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'url' => '/bpm/category/update?id=2',
             'requestBody' => [
                 'Category[difficulty]' => '10',
                 'Category[status]' => '0',
@@ -49,6 +50,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'url' => '/bpm/category/update?id=2',
             'requestBody' => [
                 'Category[difficulty]' => '10',
                 'Category[status]' => '1',
@@ -91,6 +93,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'url' => '/bpm/category/update?id=2',
             'requestBody' => [
                 'Category[difficulty]' => '3',
                 'Category[status]' => '0',
@@ -133,6 +136,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'url' => '/bpm/category/update?id=2',
             'requestBody' => [
                 'Category[difficulty]' => '3',
                 'Category[status]' => '1',
@@ -175,6 +179,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'url' => '/bpm/category/update?id=2',
             'requestBody' => [
                 'Category[difficulty]' => '3',
                 'Category[status]' => '1',
@@ -210,4 +215,47 @@ return [
             ]
         ]
     ],
+
+    'case6' => [
+        'setting' => [
+            'description' => 'Изменение супервайзеров (групповое)',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'url' => '/bpm/category/appoint-supervisor?model=gomer\bpm\models\references\Category',
+            'requestBody' => [
+                'Category[supervisor_id]' => '23',
+                'keys' => '1,2',
+                'keys' => '1,2'
+            ],
+            'db' => [
+                "lisa_fixtures" => [
+                    "categories" => [
+                        [
+                            "id" => 1,
+                            "title" => "Авиабилеты",
+                            "difficulty" => 2,
+                            "supervisor_id" => 23,
+                            "status" => 1
+                        ],
+                        [
+                            "id" => 2,
+                            "title" => "Видео к товару",
+                            "difficulty" => 3,
+                            "supervisor_id" => 23,
+                            "status" => 1
+                        ],
+                        [
+                            "id" => 3,
+                            "title" => "Добавление логотипов к производителям",
+                            "difficulty" => 4,
+                            "supervisor_id" => 6,
+                            "status" => 0
+                        ],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
 ];

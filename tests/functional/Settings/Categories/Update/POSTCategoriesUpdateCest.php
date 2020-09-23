@@ -41,11 +41,11 @@ class POSTCategoriesUpdateCest
      */
     public function POSTCategoriesUpdate(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/category/update?id=2', $providerData['requestBody']);
+        $I->sendPOST($providerData['url'], $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);
