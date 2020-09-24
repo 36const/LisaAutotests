@@ -3,23 +3,22 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
 use lisa\Page\Functional\RequestView;
+use rzk\TestHelper;
 
 /**
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_settings
  * @group POSTDifficultyCoef
- * @group POSTDifficultyCoefUpdateWithRequest
+ * @group POSTDifficultyCoefCreateWithRequest
  */
-class POSTDifficultyCoefUpdateWithRequestCest
+class POSTDifficultyCoefCreateWithRequestCest
 {
     /**
      * @var TestHelper $testHelper
      */
     private $testHelper;
-
 
     public function __construct()
     {
@@ -41,13 +40,13 @@ class POSTDifficultyCoefUpdateWithRequestCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTDifficultyCoefUpdateWithRequest(FunctionalTester $I, Example $data, RequestView $view)
+    public function POSTDifficultyCoefCreateWithRequest(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/difficulty-coef/update?id=1', $providerData['requestBody']);
+        $I->sendPOST('/bpm/difficulty-coef/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $view->changeStatus($providerData['requestParameter'], $providerData['requestBodyUpdate']);

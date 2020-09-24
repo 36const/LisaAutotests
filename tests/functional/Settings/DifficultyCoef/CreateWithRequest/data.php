@@ -3,12 +3,15 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Изменение коэффициента и изменение в заявке после пересохранения',
+            'description' => 'Проставление нового коэффициента в заявке после пересохранения',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
-                'DifficultyCoef[difficulty_coef]' => '2.5',
+                'DifficultyCoef[difficulty_coef]' => '0.5',
+                'DifficultyCoef[type_id]' => '1',
+                'DifficultyCoef[status]' => '1',
+                'fields[1]' => '1',
             ],
             'requestParameter' => 'update',
             'requestBodyUpdate' => [
@@ -64,35 +67,35 @@ return [
                 "lisa_fixtures" => [
                     "difficulty_coefs" => [
                         [
-                            "id" => 1,
+                            "id" => 5,
                             "type_id" => 1,
                             "field_ids" => "[1]",
-                            "difficulty_coef" => 2.5,
+                            "difficulty_coef" => 0.5,
                             "status" => 1
                         ],
                         [
-                            "id" => 2,
+                            "id" => 1,
                             "type_id" => 1,
                             "field_ids" => "[2]",
                             "difficulty_coef" => 2,
                             "status" => 1
                         ],
                         [
-                            "id" => 3,
+                            "id" => 2,
                             "type_id" => 1,
                             "field_ids" => "[8, 15, 19]",
                             "difficulty_coef" => 3,
                             "status" => 1
                         ],
                         [
-                            "id" => 4,
+                            "id" => 3,
                             "type_id" => 1,
                             "field_ids" => "[1, 4]",
                             "difficulty_coef" => 4,
                             "status" => 1
                         ],
                         [
-                            "id" => 5,
+                            "id" => 4,
                             "type_id" => 2,
                             "field_ids" => "[1]",
                             "difficulty_coef" => 0.5,
@@ -141,6 +144,45 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0
                         ],
+                        [
+                            "id" => 2,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 6,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 1,
+                            "priority" => 2,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "attachments" => '[]',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason_id" => null,
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+//                            "last_change_status_date" => "2020-01-01 00:00:01",
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
+                        ],
                     ],
                     "requests_fields" => [
                         [
@@ -171,7 +213,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 53,
-                            'value' => 2.5,
+                            'value' => 0.5,
                         ],
                         [
                             'request_id' => 1,
@@ -218,6 +260,81 @@ return [
                             'field_id' => 158,
                             'value' => null,
                         ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 1,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 49,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 50,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 51,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 52,
+                            'value' => 2,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 53,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 54,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 64,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 101,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 158,
+                            'value' => null,
+                        ]
                     ],
                 ],
             ]
@@ -226,12 +343,15 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Изменение коэффициента и изменение в заявке после изменения статуса',
+            'description' => 'Проставление нового коэффициента в заявке после изменения статуса',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
             'requestBody' => [
                 'DifficultyCoef[difficulty_coef]' => '2.5',
+                'DifficultyCoef[type_id]' => '1',
+                'DifficultyCoef[status]' => '1',
+                'fields[1]' => '1',
             ],
             'requestParameter' => 'complete',
             'requestBodyUpdate' => [
@@ -263,35 +383,35 @@ return [
                 "lisa_fixtures" => [
                     "difficulty_coefs" => [
                         [
-                            "id" => 1,
+                            "id" => 5,
                             "type_id" => 1,
                             "field_ids" => "[1]",
                             "difficulty_coef" => 2.5,
                             "status" => 1
                         ],
                         [
-                            "id" => 2,
+                            "id" => 1,
                             "type_id" => 1,
                             "field_ids" => "[2]",
                             "difficulty_coef" => 2,
                             "status" => 1
                         ],
                         [
-                            "id" => 3,
+                            "id" => 2,
                             "type_id" => 1,
                             "field_ids" => "[8, 15, 19]",
                             "difficulty_coef" => 3,
                             "status" => 1
                         ],
                         [
-                            "id" => 4,
+                            "id" => 3,
                             "type_id" => 1,
                             "field_ids" => "[1, 4]",
                             "difficulty_coef" => 4,
                             "status" => 1
                         ],
                         [
-                            "id" => 5,
+                            "id" => 4,
                             "type_id" => 2,
                             "field_ids" => "[1]",
                             "difficulty_coef" => 0.5,
@@ -339,7 +459,46 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0
-                        ]
+                        ],
+                        [
+                            "id" => 2,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 6,
+                            "manager_id" => 11,
+                            "status" => 6,
+                            "direction" => 1,
+                            "priority" => 2,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '',
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "attachments" => '[]',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => '',
+                            "reason_id" => null,
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => '2020-01-01 00:00:03',
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => '',
+                            "supervisor_comment" => '',
+//                            "last_change_status_date" => "2020-01-01 00:00:01",
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
+                        ],
                     ],
                     'requests_fields' => [
                         [
@@ -512,184 +671,78 @@ return [
                             'field_id' => 158,
                             'value' => null,
                         ],
-                    ],
-                ],
-            ]
-        ]
-    ],
-
-    'case3' => [
-        'setting' => [
-            'description' => 'Блокирование коэф-та и не-изменение в заявке после изменения статуса',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'DifficultyCoef[status]' => '0',
-            ],
-            'requestParameter' => 'change-reason',
-            'requestBodyUpdate' => [
-                'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[reason_id]' => '15',
-                'Request[status]' => '3',
-                'keys',
-                'keys',
-            ],
-            'db' => [
-                "lisa_fixtures" => [
-                    "difficulty_coefs" => [
                         [
-                            "id" => 1,
-                            "type_id" => 1,
-                            "field_ids" => "[1]",
-                            "difficulty_coef" => 0.5,
-                            "status" => 0
-                        ],
-                        [
-                            "id" => 2,
-                            "type_id" => 1,
-                            "field_ids" => "[2]",
-                            "difficulty_coef" => 2,
-                            "status" => 1
-                        ],
-                        [
-                            "id" => 3,
-                            "type_id" => 1,
-                            "field_ids" => "[8, 15, 19]",
-                            "difficulty_coef" => 3,
-                            "status" => 1
-                        ],
-                        [
-                            "id" => 4,
-                            "type_id" => 1,
-                            "field_ids" => "[1, 4]",
-                            "difficulty_coef" => 4,
-                            "status" => 1
-                        ],
-                        [
-                            "id" => 5,
-                            "type_id" => 2,
-                            "field_ids" => "[1]",
-                            "difficulty_coef" => 0.5,
-                            "status" => 1
-                        ],
-                    ],
-                    'requests' => [
-                        [
-                            "id" => 1,
-                            "author_id" => 4,
-                            "type_id" => 1,
-                            "supervisor_id" => 6,
-                            "manager_id" => null,
-                            "status" => 3,
-                            "direction" => 1,
-                            "priority" => 2,
-                            "awaiting_correction" => 0,
-                            "created_at" => '2020-01-01 00:00:00',
-                            "correction_comment" => null,
-                            "amount_to_work" => 10,
-                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
-                            "description" => 'description',
-                            "attachments" => '[]',
-                            "category_id" => 1,
-                            "seller_id" => 83,
-                            "recommendations" => null,
-                            "reason_id" => 15,
-                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
-                            "parent_id" => null,
-                            "planned_start_date" => null,
-                            "planned_finish_date" => null,
-                            "actual_start_date" => null,
-                            "actual_finish_date" => null,
-                            "supervisor_process_date" => null,
-                            "supervisor_check_date" => null,
-                            "difficulty" => null,
-                            "result_comment" => null,
-                            "supervisor_comment" => null,
-                            //"last_change_status_date" => "2020-01-01 00:00:01",
-                            "team_direction" => 3,
-                            "report_period_id" => null,
-                            "sync_source_id" => null,
-                            "sv_report_periods" => null,
-                            "cross_check_status" => '0',
-                            "cross_check_manager_id" => null,
-                            "employee_code_1c" => null,
-                            "child_count" => 0
-                        ]
-                    ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 1,
                             'value' => 1,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 49,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 50,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 51,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 52,
                             'value' => 2,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 53,
-                            'value' => 0.5,
+                            'value' => 0,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 54,
                             'value' => 1,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 60,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 64,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 101,
                             'value' => null,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 122,
                             'value' => null,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 142,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 143,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 146,
                             'value' => null,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 158,
                             'value' => null,
                         ],
@@ -699,183 +752,4 @@ return [
         ]
     ],
 
-    'case4' => [
-        'setting' => [
-            'description' => 'Изменение и блокировка коэфф-та и не-изменение в заявке после изменения статуса',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'DifficultyCoef[difficulty_coef]' => '2.5',
-                'DifficultyCoef[status]' => '0',
-            ],
-            'requestParameter' => 'appoint-manager',
-            'requestBodyUpdate' => [
-                'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[manager_id]' => '11',
-                'keys',
-            ],
-            'db' => [
-                "lisa_fixtures" => [
-                    "difficulty_coefs" => [
-                        [
-                            "id" => 1,
-                            "type_id" => 1,
-                            "field_ids" => "[1]",
-                            "difficulty_coef" => 2.5,
-                            "status" => 0
-                        ],
-                        [
-                            "id" => 2,
-                            "type_id" => 1,
-                            "field_ids" => "[2]",
-                            "difficulty_coef" => 2,
-                            "status" => 1
-                        ],
-                        [
-                            "id" => 3,
-                            "type_id" => 1,
-                            "field_ids" => "[8, 15, 19]",
-                            "difficulty_coef" => 3,
-                            "status" => 1
-                        ],
-                        [
-                            "id" => 4,
-                            "type_id" => 1,
-                            "field_ids" => "[1, 4]",
-                            "difficulty_coef" => 4,
-                            "status" => 1
-                        ],
-                        [
-                            "id" => 5,
-                            "type_id" => 2,
-                            "field_ids" => "[1]",
-                            "difficulty_coef" => 0.5,
-                            "status" => 1
-                        ],
-                    ],
-                    'requests' => [
-                        [
-                            "id" => 1,
-                            "author_id" => 4,
-                            "type_id" => 1,
-                            "supervisor_id" => 6,
-                            "manager_id" => 11,
-                            "status" => 5,
-                            "direction" => 1,
-                            "priority" => 2,
-                            "awaiting_correction" => 0,
-                            "created_at" => '2020-01-01 00:00:00',
-                            "correction_comment" => null,
-                            "amount_to_work" => 10,
-                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
-                            "description" => 'description',
-                            "attachments" => '[]',
-                            "category_id" => 1,
-                            "seller_id" => 83,
-                            "recommendations" => null,
-                            "reason_id" => null,
-                            "reason" => null,
-                            "parent_id" => null,
-                            "planned_start_date" => null,
-                            "planned_finish_date" => null,
-                            "actual_start_date" => null,
-                            "actual_finish_date" => null,
-                            "supervisor_process_date" => null,
-                            "supervisor_check_date" => null,
-                            "difficulty" => null,
-                            "result_comment" => null,
-                            "supervisor_comment" => null,
-                            //"last_change_status_date" => "2020-01-01 00:00:01",
-                            "team_direction" => 3,
-                            "report_period_id" => null,
-                            "sync_source_id" => null,
-                            "sv_report_periods" => null,
-                            "cross_check_status" => '0',
-                            "cross_check_manager_id" => null,
-                            "employee_code_1c" => null,
-                            "child_count" => 0
-                        ]
-                    ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 2,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0.5,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => null,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => null,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => null,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => null,
-                        ],
-                    ],
-                ],
-            ]
-        ]
-    ],
 ];
