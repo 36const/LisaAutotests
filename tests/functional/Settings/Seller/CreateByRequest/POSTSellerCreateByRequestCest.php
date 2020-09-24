@@ -3,6 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
+use lisa\Page\Functional\RequestView;
 use rzk\TestHelper;
 
 /**
@@ -10,9 +11,9 @@ use rzk\TestHelper;
  * @group lisa_functional
  * @group lisa_functional_settings
  * @group POSTSeller
- * @group POSTSellerCreate
+ * @group POSTSellerCreateByRequest
  */
-class POSTSellerCreateCest
+class POSTSellerCreateByRequestCest
 {
     /**
      * @var TestHelper $testHelper
@@ -35,19 +36,20 @@ class POSTSellerCreateCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
+     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
-    public function POSTSellerCreate(FunctionalTester $I, Example $data)
+    public function POSTSellerCreate(FunctionalTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
-
-        $I->runShellCommand('./yii bpm/seller/appoint-supervisors');
+//die();
+        $I->sendPOST($providerData['url'], $providerData['requestBody']);
+        $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);
+        $view->checkFields($providerData['db']);
     }
 }
