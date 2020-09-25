@@ -5,15 +5,14 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\RequestCreate;
-use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_requests
- * @group POSTRelatedRequest
+ * @group GETCreateRequest
  */
-class POSTRelatedRequestCest
+class GETCreateRequestCest
 {
     /**
      * @var TestHelper $testHelper
@@ -25,9 +24,6 @@ class POSTRelatedRequestCest
         $this->testHelper = new TestHelper(__DIR__);
     }
 
-    /**
-     * @return array
-     */
     protected function pageProvider()
     {
         return $this->testHelper->getDataProvider('');
@@ -37,26 +33,25 @@ class POSTRelatedRequestCest
      * @param FunctionalTester $I
      * @param Example $data
      * @param RequestCreate $create
-     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTRelatedRequest(FunctionalTester $I, Example $data,
-                                       RequestCreate $create, RequestView $view)
+    public function GETCreateRequest(FunctionalTester $I, Example $data, RequestCreate $create)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, $this->testHelper);
 
         $setting = $data['setting'];
         $providerData = $data['provider_data'];
 
-        $create->checkRelatedRequestFields($providerData['db'], $setting['type'], $setting['direction'], $setting['id']);
+        $create->amOnRequestCreate($setting['type'], $setting['direction']);
 
-        $I->sendPOST('/bpm/request/create', $providerData['requestBody']);
-        $I->seeResponseCodeIs(200);
+        $I->canSeeInTitle($setting['description']);
+        $I->canSee($setting['description'], ['class' => 'global-caption']);
 
-        $I->checkTablesInDB($providerData['db']);
-        $view->checkFields($providerData['db']);
+        $I->assertCount(count($I->grabMultiple(RequestCreate::$allCheckboxes)), $providerData['pageObjects']['canSee']['Чекбоксы']);
+
+        $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }

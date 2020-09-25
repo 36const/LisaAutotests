@@ -6,7 +6,15 @@ use lisa\FunctionalTester;
 
 class RequestCreate extends FunctionalTester
 {
-    public static $allCheckboxes = "//*[@class='attachments-update']//label";
+    public static $allCheckboxes = "//div[@class='attachments-update']//label";
+    public static $blockedCategory = "//select[@name='Request[category_id]' and @disabled]";
+
+    public static $subject = "//input[@name='Request[subject]']";
+    public static $description = "//textarea[@name='Request[description]']";
+    public static $amount = "//input[@name='Request[amount_to_work]']";
+    public static $plannedFinishDate = "//input[@name='Request[planned_finish_date]']";
+    public static $observers = "//select[@name='Request[observers][]']";
+    public static $priority = "//select[@name='Request[priority]']";
 
     public function amOnRequestCreate(int $type, int $direction)
     {
@@ -14,9 +22,11 @@ class RequestCreate extends FunctionalTester
         $I->amOnPage("/bpm/request/create-by-type?typeId=$type&direction=$direction");
     }
 
-    public function findCheckbox($name)
+    public static function findCheckbox(string $name, bool $checked = false)
     {
-        return "//*[@class='attachments-update']//*[text()=' $name']";
+        return $checked ?
+            "//div[@class='attachments-update']//label[text()='$name']/input[@checked]" :
+            "//div[@class='attachments-update']//label[text()='$name']";
     }
 
     public function amOnRelatedRequestCreate(int $type, int $direction, int $id)
@@ -26,7 +36,7 @@ class RequestCreate extends FunctionalTester
     }
 
     /**
-     * Колонки таблиц БД, значения которых нужно проверять в html
+     * Колонки таблиц БД, значения которых нужно проверять в html создания связанной заявки
      */
     public $pageFields = [
         'subject',
@@ -59,10 +69,11 @@ class RequestCreate extends FunctionalTester
         '125',
         '126',
         '127',
+        '159'
     ];
 
     /**
-     * Перевод массивов для проверки БД в массив полей для проверки html
+     * Перевод массивов для проверки БД в массив полей для проверки html создания связанной заявки
      * и исключение из него полей, не отображающихся на странице
      */
     public function convertDbArrays($dbTablesArray, $requestId)
@@ -94,9 +105,9 @@ class RequestCreate extends FunctionalTester
     }
 
     /**
-     * Проверка html-полей и их значений
+     * Проверка html-полей и их значений на странице создания связанной заявки
      */
-    public function checkFields($tableRow, int $type, int $direction, int $id)
+    public function checkRelatedRequestFields($tableRow, int $type, int $direction, int $id)
     {
         $I = $this;
         $request = $this->convertDbArrays($tableRow, $id);

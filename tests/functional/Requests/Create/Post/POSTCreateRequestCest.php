@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\RequestCreate;
 use lisa\Page\Functional\RequestView;
 
 /**
@@ -51,39 +50,17 @@ class POSTCreateRequestCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param RequestCreate $create
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function POSTCreateRequest(FunctionalTester $I, Example $data, RequestCreate $create, RequestView $view)
+    public function POSTCreateRequest(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
-        $setting = $data['setting'];
         $providerData = $data['provider_data'];
-
-        $create->amOnRequestCreate($setting['type'], $setting['direction']);
-        $I->canSeeInTitle($setting['description']);
-        $I->canSee($setting['description'], ['class' => 'global-caption']);
-
-        $I->assertSame($I->grabMultiple(RequestCreate::$allCheckboxes), $providerData['checkboxes']);
-
-        if ($setting['direction'] != 2 && $setting['type'] != 4) {
-            $I->canSeeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
-            $I->cantSeeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
-        }
-
-        if ($setting['type'] == 4) {
-            $I->cantSeeCheckboxIsChecked($create->findCheckbox('Ручная загрузка'));
-            $I->canSeeCheckboxIsChecked($create->findCheckbox('Пакетная загрузка'));
-        }
-
-        if ($setting['direction'] == 1) {
-            $I->checkObjectsOnPage($providerData['pageObjects']);
-        }
 
         $I->sendPOST('/bpm/request/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
