@@ -14,9 +14,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//header[@class='main-header']//a[@href='/bpm/request/index']"
-                        ]
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/request/index']"]
                     ]
                 ]
             ]
@@ -102,9 +100,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//header[@class='main-header']//a[@href='/bpm/user/create']"
-                        ]
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/user/create']"]
                     ]
                 ]
             ]
@@ -121,9 +117,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='col-md-4']//select[@id='userbpm-status' and @disabled]"
-                        ]
+                        ["selector" => "//div[@class='col-md-4']//select[@id='userbpm-status' and @disabled]"]
                     ]
                 ],
                 "cantSee" => [
@@ -144,9 +138,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//table[@class='table table-striped table-bordered']//a[@href='/bpm/user/update?id=4']"
-                        ]
+                        ["selector" => "//table[@class='table table-striped table-bordered']//a[@href='/bpm/user/update?id=4']"]
                     ]
                 ]
             ]
@@ -165,12 +157,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='user-bpm-view']//a[@href='/bpm/user/update?id=4']"
-                        ],
-                        [
-                            "selector" => "//div[@class='user-bpm-view']//a[@href='/bpm/user/refresh-name?login=kutsan.k']"
-                        ],
+                        ["selector" => "//div[@class='user-bpm-view']//a[@href='/bpm/user/update?id=4']"],
+                        ["selector" => "//div[@class='user-bpm-view']//a[@href='/bpm/user/refresh-name?login=kutsan.k']"],
                     ]
                 ]
             ]
@@ -188,9 +176,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [
-                            "selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"
-                        ],
+                        ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
                     ]
                 ],
                 "cantSee" => [
@@ -210,9 +196,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [
-                            "selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"
-                        ],
+                        ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
                     ]
                 ],
                 "cantSee" => [
@@ -231,12 +215,8 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [
-                            "selector" => "//table//input[@name='Errors[1][RequestError][errors_count]' and @disabled]"
-                        ],
-                        [
-                            "selector" => "//table//input[@name='Errors[1][RequestError][items_with_errors]' and @disabled]"
-                        ],
+                        ["selector" => "//table//input[@name='Errors[1][RequestError][errors_count]' and @disabled]"],
+                        ["selector" => "//table//input[@name='Errors[1][RequestError][items_with_errors]' and @disabled]"],
                     ]
                 ],
                 "cantSee" => [
@@ -258,12 +238,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//header[@class='main-header']//a[@href='/bpm/seller']"
-                        ],
-                        [
-                            "selector" => "//tbody//a[contains(@href, '/update?id')]",
-                        ],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/seller']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -282,15 +258,9 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//header[@class='main-header']//a[@href='/bpm/category/create']"
-                        ],
-                        [
-                            "selector" => "//header[@class='main-header']//a[@href='/bpm/category']"
-                        ],
-                        [
-                            "selector" => "//tbody//a[contains(@href, '/update?id')]",
-                        ],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/category/create']"],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/category']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -309,12 +279,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//header[@class='main-header']//a[@href='/bpm/team/create']"
-                        ],
-                        [
-                            "selector" => "//tbody//a[contains(@href, '/update?id')]",
-                        ],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/team/create']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -333,12 +299,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//header[@class='main-header']//a[@href='/bpm/difficulty-coef/create']"
-                        ],
-                        [
-                            "selector" => "//tbody//a[contains(@href, '/update?id')]",
-                        ],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/difficulty-coef/create']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -357,12 +319,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//header[@class='main-header']//a[@href='/bpm/field-values/create']"
-                        ],
-                        [
-                            "selector" => "//tbody//a[contains(@href, '/update?id')]",
-                        ],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/field-values/create']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -381,12 +339,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//header[@class='main-header']//a[@href='/bpm/reason/create']"
-                        ],
-                        [
-                            "selector" => "//tbody//a[contains(@href, '/update?id')]",
-                        ],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/reason/create']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -405,12 +359,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//header[@class='main-header']//a[@href='/bpm/priority/create']"
-                        ],
-                        [
-                            "selector" => "//tbody//a[contains(@href, '/update?id')]",
-                        ],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/priority/create']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -429,12 +379,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//header[@class='main-header']//a[@href='/bpm/excluded-fields']"
-                        ],
-                        [
-                            "selector" => "//tbody//a[contains(@href, '/update?id')]",
-                        ],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/excluded-fields']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -452,55 +398,25 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение информации в существующих товарах']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Группировка товаров']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Проверка скрытых товаров']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Изменение существующих параметров/значений']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Добавление новых СЦ/изменение существующих СЦ']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение размерной сетки']"
-                        ],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение информации в существующих товарах']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Группировка товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Проверка скрытых товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Изменение существующих параметров/значений']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление новых СЦ/изменение существующих СЦ']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение размерной сетки']"],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Добавление новых товаров']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Перенос товаров']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Заливка фото с фотостудии']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Добавление нового портала/раздела фат-меню/категории товаров']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Добавление параметров/значений']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Проектирование структуры']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение видео']"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение тегов']"
-                        ],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление новых товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Перенос товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Заливка фото с фотостудии']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление нового портала/раздела фат-меню/категории товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление параметров/значений']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Проектирование структуры']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение видео']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение тегов']"],
                     ]
                 ]
             ]
@@ -519,9 +435,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [
-                            "selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"
-                        ],
+                        ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
 
                     ],
                 ],
@@ -542,9 +456,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [
-                            "selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"
-                        ],
+                        ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
 
                     ],
                 ],
@@ -567,15 +479,9 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//ul[@class='nav nav-tabs']//a[@href='/bpm/request/new']"
-                        ],
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Готова для распределения']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Готова для распределения']"
-                        ],
+                        ["selector" => "//ul[@class='nav nav-tabs']//a[@href='/bpm/request/new']"],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Готова для распределения']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Готова для распределения']"],
                     ],
                 ]
             ]
@@ -594,9 +500,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Готова для распределения']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Готова для распределения']"],
                     ],
                 ]
             ]
@@ -615,12 +519,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' На доработке']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' На доработке']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' На доработке']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' На доработке']"],
                     ],
                 ]
             ]
@@ -639,9 +539,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' На доработке']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' На доработке']"],
                     ],
                 ]
             ]
@@ -660,12 +558,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' На доработке']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' На доработке']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' На доработке']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' На доработке']"],
                     ],
                 ]
             ]
@@ -684,9 +578,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' На доработке']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' На доработке']"],
                     ],
                 ]
             ]
@@ -705,12 +597,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Отменить']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Отменить']"],
                     ],
                 ]
             ]
@@ -729,9 +617,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"],
                     ],
                 ]
             ]
@@ -750,12 +636,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Отменить']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Отменить']"],
                     ],
                 ]
             ]
@@ -774,9 +656,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"],
                     ],
                 ]
             ]
@@ -795,12 +675,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Отменить']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Отменить']"],
                     ],
                 ]
             ]
@@ -819,9 +695,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"],
                     ],
                 ]
             ]
@@ -840,12 +714,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в новые']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Вернуть в новые']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в новые']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Вернуть в новые']"],
                     ],
                 ]
             ]
@@ -864,9 +734,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в новые']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в новые']"],
                     ],
                 ]
             ]
@@ -885,12 +753,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Взять в работу']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Взять в работу']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Взять в работу']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Взять в работу']"],
                     ],
                 ]
             ]
@@ -909,9 +773,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Взять в работу']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Взять в работу']"],
                     ],
                 ]
             ]
@@ -930,12 +792,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Ожидать']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Ожидать']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Ожидать']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Ожидать']"],
                     ],
                 ]
             ]
@@ -954,9 +812,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Ожидать']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Ожидать']"],
                     ],
                 ]
             ]
@@ -975,12 +831,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Частично выполнен']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Частично выполнен']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Частично выполнен']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Частично выполнен']"],
                     ],
                 ]
             ]
@@ -999,9 +851,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Частично выполнен']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Частично выполнен']"],
                     ],
                 ]
             ]
@@ -1020,12 +870,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Выполнен']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Выполнен']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Выполнен']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Выполнен']"],
                     ],
                 ]
             ]
@@ -1044,9 +890,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Выполнен']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Выполнен']"],
                     ],
                 ]
             ]
@@ -1065,12 +909,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Отменить']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Отменить']"],
                     ],
                 ]
             ]
@@ -1089,9 +929,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Отменить']"],
                     ],
                 ]
             ]
@@ -1110,12 +948,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Вернуть в работу']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Вернуть в работу']"],
                     ],
                 ]
             ]
@@ -1134,9 +968,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"],
                     ],
                 ]
             ]
@@ -1155,12 +987,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Вернуть в работу']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Вернуть в работу']"],
                     ],
                 ]
             ]
@@ -1179,9 +1007,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"],
                     ],
                 ]
             ]
@@ -1200,12 +1026,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Вернуть в работу']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Вернуть в работу']"],
                     ],
                 ]
             ]
@@ -1224,9 +1046,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Вернуть в работу']"],
                     ],
                 ]
             ]
@@ -1245,12 +1065,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Закрыть']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Закрыть']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Закрыть']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Закрыть']"],
                     ],
                 ]
             ]
@@ -1269,9 +1085,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Закрыть']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Закрыть']"],
                     ],
                 ]
             ]
@@ -1290,12 +1104,8 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Закрыть']"
-                        ],
-                        [
-                            "selector" => "//ul[@class='dropdown-menu']//*[text()=' Закрыть']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Закрыть']"],
+                        ["selector" => "//ul[@class='dropdown-menu']//*[text()=' Закрыть']"],
                     ],
                 ]
             ]
@@ -1314,9 +1124,7 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//div[@class='buttons-background']//*[text()=' Закрыть']"
-                        ],
+                        ["selector" => "//div[@class='buttons-background']//*[text()=' Закрыть']"],
                     ],
                 ]
             ]

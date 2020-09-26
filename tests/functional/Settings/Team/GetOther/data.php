@@ -11,28 +11,16 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Маркетплейс 1']"
-                        ],
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Fashion']"
-                        ],
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Группировка товаров']"
-                        ],
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Проектирование структур категорий + фильтры']"
-                        ],
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Изменения в категориях']"
-                        ],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Маркетплейс 1']"],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Fashion']"],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Группировка товаров']"],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Проектирование структур категорий + фильтры']"],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Изменения в категориях']"],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Административная команда']"
-                        ],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Административная команда']"],
                     ]
 
                 ]
@@ -50,28 +38,16 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Маркетплейс 1']"
-                        ],
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Fashion']"
-                        ],
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Группировка товаров']"
-                        ],
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Проектирование структур категорий + фильтры']"
-                        ],
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Изменения в категориях']"
-                        ],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Маркетплейс 1']"],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Fashion']"],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Группировка товаров']"],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Проектирование структур категорий + фильтры']"],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Изменения в категориях']"],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//select[@id='userbpm-team']//option[text()='Административная команда']"
-                        ],
+                        ["selector" => "//select[@id='userbpm-team']//option[text()='Административная команда']"],
                     ]
 
                 ]
@@ -94,9 +70,7 @@ return [
         В команде есть люди, будь человеком, не блочь.
         ']"
                         ],
-                        [
-                            "selector" => "//select[@id='team-status' and @disabled]"
-                        ],
+                        ["selector" => "//select[@id='team-status' and @disabled]"],
                     ],
                 ],
                 "cantSee" => [
