@@ -4,20 +4,22 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
+use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_settings
- * @group POSTSeller
- * @group POSTSellerCreate
+ * @group POSTDifficultyCoef
+ * @group POSTDifficultyCoefUpdateWithRequest
  */
-class POSTSellerCreateCest
+class POSTDifficultyCoefUpdateWithRequestCest
 {
     /**
      * @var TestHelper $testHelper
      */
     private $testHelper;
+
 
     public function __construct()
     {
@@ -35,19 +37,22 @@ class POSTSellerCreateCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
+     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
-    public function POSTSellerCreate(FunctionalTester $I, Example $data)
+    public function POSTDifficultyCoefUpdateWithRequest(FunctionalTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
         $providerData = $data['provider_data'];
 
-        $I->runShellCommand('./yii bpm/seller/appoint-supervisors');
+        $I->sendPOST('/bpm/difficulty-coef/update?id=1', $providerData['requestBody']);
+        $I->seeResponseCodeIs(200);
+
+        $view->changeStatus($providerData['requestParameter'], $providerData['requestBodyUpdate']);
 
         $I->checkTablesInDB($providerData['db']);
+        $view->checkFields($providerData['db']);
     }
 }

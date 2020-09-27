@@ -15,4 +15,7 @@ return [
         "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
         "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
     ],
+    "cooper_fixtures" => [
+        "market" => include \rzk\FixtureController::getFixtureDir() . 'cooper_fixtures/market.php',
+    ]
 ];

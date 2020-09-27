@@ -12,6 +12,17 @@ class RequestView extends FunctionalTester
         $I->amOnPage("/bpm/request/view?id=$id&forCrossCheck=$cc");
     }
 
+    public static $commonInformation =      "//table[@class='table table-bordered detail-view']//th[text()='Общая информация по задаче']";
+    public static $results =                "//table[@class='table table-bordered detail-view']//th[text()='Результат задачи']";
+    public static $errors =                 "//table[@class='table table-bordered detail-view']//th/a[text()='Ошибки']";
+    public static $errorsCrossCheck =       "//table[@class='table table-bordered detail-view']//th/a[text()='Ошибки (Кросс-чек)']";
+    public static $motivationManagers =     "//table[@class='table table-bordered detail-view']//th[text()='Мотивация контент-менеджеры']";
+    public static $motivationSupervisors =  "//table[@class='table table-bordered detail-view']//th[text()='Мотивация супервайзеры']/a[text()=' (Зафиксированные данные по отчётным периодам)']";
+    public static $motivationCcManagers =   "//table[@class='table table-bordered detail-view']//th[text()='Мотивация кросс-чек менеджера']";
+    public static $dates =                  "//table[@class='table table-bordered detail-view']//th[text()='Даты']";
+    public static $reportPeriodId =         "//table[@class='table table-bordered detail-view']//th[text()='Отчетный период КМ']";
+    public static $svReportPeriods =        "//table[@class='table table-bordered detail-view']//th[text()='Отчетный период СВ']";
+
     /**
      * Поля-чекбоксы, которые нужно проверять
      * не через canSeeInField, а через canSeeCheckboxIsChecked
@@ -41,6 +52,7 @@ class RequestView extends FunctionalTester
         'RequestField[125]',
         'RequestField[126]',
         'RequestField[127]',
+        'RequestField[159]',
     ];
 
     /**

@@ -80,7 +80,8 @@ return [
                         ],
                         [
                             "selector" => Export::exportsItem(1),
-                            "value" => 'Всё_во_всём_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week'))
+                            "value" => 'Всё_во_всём_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d")
                         ],
                         [
                             "selector" => Export::exportsReady(1),
@@ -177,7 +178,8 @@ return [
                         ],
                         [
                             "selector" => Export::exportsItem(1),
-                            "value" => 'Всё_во_всём_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week'))
+                            "value" => 'Всё_во_всём_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d")
                         ],
                         [
                             "selector" => Export::exportsReady(1),
@@ -334,7 +336,8 @@ return [
                         ],
                         [
                             "selector" => Export::exportsItem(1),
-                            "value" => 'Всё_во_всём_с_фиксацией_' . date('Y-m-d', strtotime('-6 days')) . '-2021-12-31__' . date('Y-m-d')
+                            "value" => 'Всё_во_всём_с_фиксацией_' . date('Y-m-d', strtotime('-6 days')) . '-2021-12-31' .
+                                '__' . date('Y-m-d')
                         ],
                         [
                             "selector" => Export::exportsReady(1),
@@ -359,7 +362,7 @@ return [
                 'Report[detail_ids]' => '',
                 'Report[report_period_id]' => '3',
                 'Report[total_ids]' => '',
-                'Report[total_ids]' => ['2'],
+                'Report[total_ids]' => ['5'],
                 'Report[type]' => '',
                 'Report[type]' => '1',
                 'Report[user_field]' => 'supervisor_id_fix_data'
@@ -426,7 +429,8 @@ return [
                         ],
                         [
                             "selector" => Export::exportsItem(1),
-                            "value" => 'Всё_во_всём_(сводный)_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week'))
+                            "value" => 'Всё_во_всём_(сводный)_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d")
                         ],
                         [
                             "selector" => Export::exportsReady(1),
@@ -523,7 +527,8 @@ return [
                         ],
                         [
                             "selector" => Export::exportsItem(1),
-                            "value" => 'Всё_во_всём_(сводный)_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week'))
+                            "value" => 'Всё_во_всём_(сводный)_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d")
                         ],
                         [
                             "selector" => Export::exportsReady(1),
@@ -680,7 +685,180 @@ return [
                         ],
                         [
                             "selector" => Export::exportsItem(1),
-                            "value" => 'Всё_во_всём_(сводный)_с_фиксацией_' . date('Y-m-d', strtotime('-6 days')) . '-2021-12-31__' . date('Y-m-d')
+                            "value" => 'Всё_во_всём_(сводный)_с_фиксацией_' . date('Y-m-d', strtotime('-6 days')) . '-2021-12-31' .
+                                '__' . date('Y-m-d')
+                        ],
+                        [
+                            "selector" => Export::exportsReady(1),
+                            "value" => 'Готов'
+                        ]
+                    ]
+                ],
+                "cantSee" => [
+                ],
+            ]
+        ]
+    ],
+
+
+    'case7' => [
+        'setting' => [
+            'description' => 'Выгрузка нескольких детальных по СВ',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'Report[detail_ids]' => '',
+                'Report[detail_ids]' => ['1', '2', '3', '4'],
+                'Report[report_period_id]' => '3',
+                'Report[total_ids]' => '',
+                'Report[type]' => '',
+                'Report[type]' => '0',
+                'Report[user_field]' => 'supervisor_id'
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "report_period_request_fields" => [],
+                ]
+            ],
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => Export::exportsAmount(1)
+                        ],
+                        [
+                            "selector" => Export::exportsItem(1),
+                            "value" => 'reports_4_' . date("Y-m-d")
+                        ],
+                        [
+                            "selector" => Export::exportsReady(1),
+                            "value" => 'Готов'
+                        ]
+                    ]
+                ],
+                "cantSee" => [
+                ],
+            ]
+        ]
+    ],
+
+    'case8' => [
+        'setting' => [
+            'description' => 'Выгрузка детального по исполнителю',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'Report[detail_ids]' => '',
+                'Report[detail_ids]' => ['1'],
+                'Report[report_period_id]' => '3',
+                'Report[total_ids]' => '',
+                'Report[type]' => '',
+                'Report[type]' => '0',
+                'Report[user_field]' => 'manager_id'
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "report_period_request_fields" => [],
+                ]
+            ],
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => Export::exportsAmount(1)
+                        ],
+                        [
+                            "selector" => Export::exportsItem(1),
+                            "value" => 'Всё_во_всём_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                    '__' . date("Y-m-d")
+                        ],
+                        [
+                            "selector" => Export::exportsReady(1),
+                            "value" => 'Готов'
+                        ]
+                    ]
+                ],
+                "cantSee" => [
+                ],
+            ]
+        ]
+    ],
+
+
+    'case9' => [
+        'setting' => [
+            'description' => 'Выгрузка сводного по СВ',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'Report[detail_ids]' => '',
+                'Report[report_period_id]' => '3',
+                'Report[total_ids]' => '',
+                'Report[total_ids]' => ['5'],
+                'Report[type]' => '',
+                'Report[type]' => '1',
+                'Report[user_field]' => 'supervisor_id'
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "report_period_request_fields" => [],
+                ]
+            ],
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => Export::exportsAmount(1)
+                        ],
+                        [
+                            "selector" => Export::exportsItem(1),
+                            "value" => 'Всё_во_всём_(сводный)_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d")
+                        ],
+                        [
+                            "selector" => Export::exportsReady(1),
+                            "value" => 'Готов'
+                        ]
+                    ]
+                ],
+                "cantSee" => [
+                ],
+            ]
+        ]
+    ],
+
+    'case10' => [
+        'setting' => [
+            'description' => 'Выгрузка нескольких сводных по исполнителю',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'Report[detail_ids]' => '',
+                'Report[report_period_id]' => '3',
+                'Report[total_ids]' => '',
+                'Report[total_ids]' => ['5', '6', '7', '8'],
+                'Report[type]' => '',
+                'Report[type]' => '1',
+                'Report[user_field]' => 'manager_id'
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "report_period_request_fields" => [],
+                ]
+            ],
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        [
+                            "selector" => Export::exportsAmount(1)
+                        ],
+                        [
+                            "selector" => Export::exportsItem(1),
+                            "value" => 'reports_4_' . date("Y-m-d")
                         ],
                         [
                             "selector" => Export::exportsReady(1),

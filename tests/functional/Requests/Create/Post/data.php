@@ -9,20 +9,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Добавление товаров в новую категорию',
-                ' Лоты',
-                ' На основе отзыва клиента на сайте',
-                ' Пакетная загрузка',
-                ' Промо-описание',
-                ' Ручная загрузка',
-                ' С видео',
-                ' С размерной сеткой',
-                ' С тегами к товарам',
-                ' С фотосъемкой',
-                ' Уценка',
-                ' Уценка 2'
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
@@ -219,28 +205,6 @@ return [
                     ],
                 ]
             ],
-            "pageObjects" => [
-                "canSee" => [
-                    [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
-                    ]
-                ]
-            ]
         ]
     ],
 
@@ -252,15 +216,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Автомодерация',
-                ' БУ, REF',
-                ' Жалоба на товар продавца маркета',
-                ' С видео',
-                ' С палитрой',
-                ' С размерной сеткой',
-                ' Стоп-бренды'
-            ],
             'requestBody' => [
                 "RequestField[8]" => 1,
                 "RequestField[15]" => 1,
@@ -474,23 +429,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Добавление/обновление инструкций',
-                ' На основе отзыва клиента на сайте',
-                ' Обновление описания',
-                ' Обновление фото',
-                ' Обновление характеристик',
-                ' Пакетная загрузка',
-                ' По заявке с MobileCourier',
-                ' Промо-описание',
-                ' Ручная загрузка',
-                ' С видео',
-                ' С размерной сеткой',
-                ' С тегами к товарам',
-                ' С фотосъемкой',
-                ' Уценка',
-                ' Уценка 2'
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
@@ -720,16 +658,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Автомодерация',
-                ' БУ, REF',
-                ' Жалоба на товар продавца маркета',
-                ' По заявке с MobileCourier',
-                ' С видео',
-                ' С палитрой',
-                ' С размерной сеткой',
-                ' Стоп-бренды'
-            ],
             'requestBody' => [
                 "RequestField[8]" => 1,
                 "RequestField[15]" => 1,
@@ -943,20 +871,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Добавление товаров в новую категорию',
-                ' Лоты',
-                ' На основе отзыва клиента на сайте',
-                ' Пакетная загрузка',
-                ' Промо-описание',
-                ' Ручная загрузка',
-                ' С видео',
-                ' С размерной сеткой',
-                ' С тегами к товарам',
-                ' С фотосъемкой',
-                ' Уценка',
-                ' Уценка 2'
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
@@ -1153,28 +1067,6 @@ return [
                     ],
                 ]
             ],
-            "pageObjects" => [
-                "canSee" => [
-                    [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
-                    ]
-                ]
-            ]
         ]
     ],
 
@@ -1186,15 +1078,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Автомодерация',
-                ' БУ, REF',
-                ' Жалоба на товар продавца маркета',
-                ' С видео',
-                ' С палитрой',
-                ' С размерной сеткой',
-                ' Стоп-бренды'
-            ],
             'requestBody' => [
                 "RequestField[8]" => 1,
                 "RequestField[15]" => 1,
@@ -1408,10 +1291,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Пакетная загрузка',
-                ' Ручная загрузка',
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
@@ -1584,20 +1463,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Добавление товаров в новую категорию',
-                ' Лоты',
-                ' На основе отзыва клиента на сайте',
-                ' Пакетная загрузка',
-                ' Промо-описание',
-                ' Ручная загрузка',
-                ' С видео',
-                ' С размерной сеткой',
-                ' С тегами к товарам',
-                ' С фотосъемкой',
-                ' Уценка',
-                ' Уценка 2'
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
@@ -1792,28 +1657,6 @@ return [
                     ],
                 ]
             ],
-            "pageObjects" => [
-                "canSee" => [
-                    [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
-                    ]
-                ]
-            ]
         ]
     ],
 
@@ -1825,15 +1668,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Автомодерация',
-                ' БУ, REF',
-                ' Жалоба на товар продавца маркета',
-                ' С видео',
-                ' С палитрой',
-                ' С размерной сеткой',
-                ' Стоп-бренды'
-            ],
             'requestBody' => [
                 "RequestField[8]" => 1,
                 "RequestField[15]" => 1,
@@ -2045,12 +1879,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Добавление графики',
-                ' Пакетная загрузка',
-                ' Ручная загрузка',
-                ' Точки входа'
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "RequestField[6]" => 1,
@@ -2233,12 +2061,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Добавление графики',
-                ' Пакетная загрузка',
-                ' Ручная загрузка',
-                ' Точки входа'
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "RequestField[6]" => 1,
@@ -2421,10 +2243,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Пакетная загрузка',
-                ' Ручная загрузка',
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
@@ -2595,10 +2413,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Пакетная загрузка',
-                ' Ручная загрузка',
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
@@ -2769,10 +2583,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Пакетная загрузка',
-                ' Ручная загрузка',
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
@@ -2933,20 +2743,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Добавление товаров в новую категорию',
-                ' Лоты',
-                ' На основе отзыва клиента на сайте',
-                ' Пакетная загрузка',
-                ' Промо-описание',
-                ' Ручная загрузка',
-                ' С видео',
-                ' С размерной сеткой',
-                ' С тегами к товарам',
-                ' С фотосъемкой',
-                ' Уценка',
-                ' Уценка 2'
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
@@ -3141,28 +2937,6 @@ return [
                     ],
                 ]
             ],
-            "pageObjects" => [
-                "canSee" => [
-                    [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
-                    ]
-                ]
-            ]
         ]
     ],
 
@@ -3174,10 +2948,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Пакетная загрузка',
-                ' Ручная загрузка',
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
@@ -3348,10 +3118,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Пакетная загрузка',
-                ' Ручная загрузка',
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
@@ -3522,10 +3288,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'checkboxes' => [
-                ' Пакетная загрузка',
-                ' Ручная загрузка',
-            ],
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,

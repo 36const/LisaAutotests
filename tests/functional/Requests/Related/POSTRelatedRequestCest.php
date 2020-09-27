@@ -51,7 +51,7 @@ class POSTRelatedRequestCest
         $setting = $data['setting'];
         $providerData = $data['provider_data'];
 
-        $create->checkFields($providerData['db'], $setting['type'], $setting['direction'], $setting['id']);
+        $create->checkRelatedRequestFields($providerData['db'], $setting['type'], $setting['direction'], $setting['id']);
 
         $I->sendPOST('/bpm/request/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);

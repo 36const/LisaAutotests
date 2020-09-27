@@ -4,15 +4,14 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\RequestView;
 
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_requests
- * @group GETFieldsValues
+ * @group lisa_functional_settings
+ * @group GETOtherReasons
  */
-class GETFieldsValuesCest
+class GETOtherReasonsCest
 {
     /**
      * @var TestHelper $testHelper
@@ -35,21 +34,19 @@ class GETFieldsValuesCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function GETFieldsValues(FunctionalTester $I, Example $data)
+    public function GETOtherReasons(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
-
         $providerData = $data['provider_data'];
 
         $I->amOnPage($providerData['url']);
         $I->seeResponseCodeIs(200);
-
+//die();
         $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }

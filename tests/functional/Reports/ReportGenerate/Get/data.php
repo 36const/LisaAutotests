@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница выгрузки отчёта',
+            'description' => 'Страница выгрузки отчёта',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -17,39 +17,25 @@ return [
                         ],
                     ],
                     "Кнопка перехода в раздел зафиксированных данных по СВ" => [
-                        [
-                            "selector" => "//div[@class='report-for-statistic col-md-5']//a[@href='/bpm/report/fixate']",
-                        ],
+                        ["selector" => "//div[@class='report-for-statistic col-md-5']//a[@href='/bpm/report/fixate']",],
                     ],
                     "Список периодов" => [
-                        [
-                            "selector" => "//select[@name='Report[report_period_id]']",
-                        ],
+                        ["selector" => "//select[@name='Report[report_period_id]']",],
                     ],
                     "Пункт 'Отчёт по супервизорам'" => [
-                        [
-                            "selector" => "//div[@id='report-user_field']//input[@value='supervisor_id']",
-                        ],
+                        ["selector" => "//div[@id='report-user_field']//input[@value='supervisor_id']",],
                     ],
                     "Пункт 'Отчёт по исполнителям'" => [
-                        [
-                            "selector" => "//div[@id='report-user_field']//input[@checked='checked']",
-                        ],
+                        ["selector" => "//div[@id='report-user_field']//input[@checked='checked']",],
                     ],
                     "Пункт 'Тип отчёта детальный'" => [
-                        [
-                            "selector" => "//div[@id='report-type']//input[@checked='checked']",
-                        ],
+                        ["selector" => "//div[@id='report-type']//input[@checked='checked']",],
                     ],
                     "Пункт 'Тип отчёта сводный'" => [
-                        [
-                            "selector" => "//div[@id='report-type']//input[@value='1']",
-                        ],
+                        ["selector" => "//div[@id='report-type']//input[@value='1']",],
                     ],
                     "Список шаблонов" => [
-                        [
-                            "selector" => "//select[@id='report-detail_ids' and @size='1']//option[@value='1' and text()='Всё во всём']",
-                        ],
+                        ["selector" => "//select[@id='report-detail_ids' and @size='1']//option[@value='1' and text()='Всё во всём']",],
                     ],
                     "Кнопка генерации отчёта" => [
                         [

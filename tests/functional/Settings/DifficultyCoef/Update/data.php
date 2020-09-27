@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Изменение коэффициента',
+            'description' => 'Изменение коэффициента и не-изменение в заявке без пересохранения',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -176,7 +176,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Изменение статуса',
+            'description' => 'Изменение статуса и не-изменение в заявке без пересохранения',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -349,7 +349,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Изменение коэффициента и статуса',
+            'description' => 'Изменение коэффициента и статуса и не-изменение в заявке без пересохранения',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
