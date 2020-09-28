@@ -13,3 +13,10 @@ actor_suffix: Tester
 extensions:
     enabled:
         - Codeception\Extension\RunFailed
+    config:
+        Yandex\Allure\Codeception\AllureCodeception:
+            deletePreviousResults: true
+            outputDirectory: allure-results # Результаты будут сохранены в tests/_output/allure-results
+            ignoredAnnotations:
+                - env
+                - dataprovider
