@@ -49,22 +49,33 @@ class AcceptanceTester extends \Codeception\Actor
         $I->amOnPage('/');
     }
 
-    public function changeStatus($requestParameter, $requestBody)
+    /**
+     * Метод авторизации без ввода login/pass. Авторизуемся путем проставления куки залогиненного юзера
+     * @param string $startUrl - урл, по которому авторизуемся и стартуем наш тест
+     */
+    private function setAuthorizationCookie(string $startUrl)
     {
         $I = $this;
-        $requestParameter == 'to-correction' ?
-            $url = '/bpm/request/' . "$requestParameter" . '?id=1&changeStatus=1' :
-            $url = '/bpm/request/' . "$requestParameter" . '?id=1';
-        $I->sendPOST($url, $requestBody);
-        $I->seeResponseCodeIs(200);
+        $I->amOnPage($startUrl);
+
+        $I->setCookie('_identity', file_get_contents(__DIR__ . '/_identityCookie.txt'));
+
+        //убеждаемся что куки проставлены
+        $I->seeCookie('_identity');
+        $I->seeCookie('advanced-backend');
+
+        //релоад страницы после того как засетились
+        $I->amOnPage($startUrl);
     }
 
-    public function changeType($requestParameter, $requestBody)
+    /**
+     * Метод получения куки залогиненного юзера, и отправки куки в файл для дальнейшего использования во всех последующих тестах.
+     */
+
+    public function getAuthorizationCookie()
     {
         $I = $this;
-        $url = '/bpm/request/change-type?typeId=' . $requestParameter['typeId'] . '&direction=' . $requestParameter['direction'] . '&id=1';
-        $I->sendPOST($url, $requestBody);
-        $I->seeResponseCodeIs(200);
+        file_put_contents(__DIR__ . '/_identityCookie.txt', $I->grabCookie('_identity') );
     }
 
     public function checkTablesInDB($dbTablesArray, bool $dontSee = false)
