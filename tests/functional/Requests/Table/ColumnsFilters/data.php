@@ -13,16 +13,13 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::requestInTable(1, 2, 1),],
-                        ["selector" => Request::requestInTable(2, 2, 3),],
-                        ["selector" => Request::requestInTable(3, 2, 5),],
-                        ["selector" => Request::requestInTable(4, 2, 7),],
-                        ["selector" => Request::requestInTable(5, 2, 9),],
-                        ["selector" => Request::requestInTable(6, 2, 11),],
-                        [
-                            "selector" => Request::tabSummary(),
-                            "value" => 6
-                        ],
+                        ["selector" => Request::requestInTable(1, 2, 1)],
+                        ["selector" => Request::requestInTable(2, 2, 3)],
+                        ["selector" => Request::requestInTable(3, 2, 5)],
+                        ["selector" => Request::requestInTable(4, 2, 7)],
+                        ["selector" => Request::requestInTable(5, 2, 9)],
+                        ["selector" => Request::requestInTable(6, 2, 11)],
+                        ["selector" => Request::tabSummary(6)],
                     ]
                 ],
                 "cantSee" => [
@@ -42,12 +39,9 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::requestInTable(1, 2, 13),],
-                        ["selector" => Request::requestInTable(2, 2, 1),],
-                        [
-                            "selector" => Request::tabSummary(),
-                            "value" => 2
-                        ],
+                        ["selector" => Request::requestInTable(1, 2, 13)],
+                        ["selector" => Request::requestInTable(2, 2, 1)],
+                        ["selector" => Request::tabSummary(2)],
                     ]
                 ],
                 "cantSee" => [
@@ -67,7 +61,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::emptyTable(),],
+                        ["selector" => Request::$emptyTable]
                     ]
                 ],
                 "cantSee" => [
@@ -87,12 +81,9 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::requestInTable(1, 2, 21),],
-                        ["selector" => Request::requestInTable(2, 2, 5),],
-                        [
-                            "selector" => Request::tabSummary(),
-                            "value" => 2
-                        ],
+                        ["selector" => Request::requestInTable(1, 2, 21)],
+                        ["selector" => Request::requestInTable(2, 2, 5)],
+                        ["selector" => Request::tabSummary(2)],
                     ]
                 ],
                 "cantSee" => [
@@ -112,11 +103,8 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::requestInTable(1, 2, 23),],
-                        [
-                            "selector" => Request::tabSummary(),
-                            "value" => 1
-                        ],
+                        ["selector" => Request::requestInTable(1, 2, 23)],
+                        ["selector" => Request::tabSummary(1)],
                     ]
                 ],
                 "cantSee" => [
