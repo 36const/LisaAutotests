@@ -22,7 +22,7 @@ use rzk\TestHelper;
  */
 class AcceptanceTester extends \Codeception\Actor
 {
-    use _generated\FunctionalTesterActions;
+    use _generated\AcceptanceTesterActions;
 
     /**
      * @param Example $data - данные кейса из файла data.php
@@ -46,36 +46,33 @@ class AcceptanceTester extends \Codeception\Actor
         $testHelper->loadFixtureAndMock($I, $data);
 
         $I->wantTo($data['setting']['description']);
+        $I->setAuthorizationCookie();
+    }
+
+    /**
+     * У
+     */
+    private function setAuthorizationCookie()
+    {
+        $I = $this;
         $I->amOnPage('/');
-    }
 
-    /**
-     * Метод авторизации без ввода login/pass. Авторизуемся путем проставления куки залогиненного юзера
-     * @param string $startUrl - урл, по которому авторизуемся и стартуем наш тест
-     */
-    private function setAuthorizationCookie(string $startUrl)
-    {
-        $I = $this;
-        $I->amOnPage($startUrl);
+        if (file_exists(__DIR__ . '/_identityCookie.txt')) {
+            $I->setCookie('_identity', file_get_contents(__DIR__ . '/_identityCookie.txt'));
+        } else {
+            $I->fillField("LoginForm[username]", 'kutsan.k');
+            $I->fillField("LoginForm[password]", '123qweASD!');
+            $I->checkOption(['id' => 'loginform-isbasicauth']);
+            $I->click("login-button");
+//            $I->waitForText("Добро пожаловать", 5);
+            file_put_contents(__DIR__ . '/_identityCookie.txt', $I->grabCookie('_identity'));
+        }
 
-        $I->setCookie('_identity', file_get_contents(__DIR__ . '/_identityCookie.txt'));
+        $I->setCookie('for_normal_people_4', '1');
 
-        //убеждаемся что куки проставлены
         $I->seeCookie('_identity');
-        $I->seeCookie('advanced-backend');
+        $I->seeCookie('for_normal_people_4');
 
-        //релоад страницы после того как засетились
-        $I->amOnPage($startUrl);
-    }
-
-    /**
-     * Метод получения куки залогиненного юзера, и отправки куки в файл для дальнейшего использования во всех последующих тестах.
-     */
-
-    public function getAuthorizationCookie()
-    {
-        $I = $this;
-        file_put_contents(__DIR__ . '/_identityCookie.txt', $I->grabCookie('_identity') );
     }
 
     public function checkTablesInDB($dbTablesArray, bool $dontSee = false)
