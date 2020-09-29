@@ -44,7 +44,7 @@ modules:
                   populate: true
                   dump: 'tests/dump_cooper.sql'
                 gomer_fixtures:
-                  dsn: 'mysql:host=172.20.20.23;port=3306;dbname=gomer_db'
+                  dsn: 'mysql:host=172.20.20.23;port=3306;dbname=gomer_auto_db'
                   user: 'gomer'
                   password: 'Ch3d5r74hcA1WpSELkDfdKGPOpo'
 
