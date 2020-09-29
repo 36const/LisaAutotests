@@ -164,8 +164,67 @@ return [
         'setting' => [
             'description' => 'Установка и изменение фильтра уточнений в таблице',
             'column' => 'author_clarifications',
-            'value' => '(не задано)',
-            'amount' => 7,
+            'value' => 'Более 5 уточнений',
+            'amount' => 22,
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'columnValueList' => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::columnValueList('Без уточнений')],
+                        ["selector" => Request::columnValueList('Более 5 уточнений')],
+                        ["selector" => Request::columnValueList('Менее 5 уточнений')],
+                        ["selector" => Request::columnValueList('(не задано)')],
+                    ]
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListAll' => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::searchValueList('author_clarifications','Без уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications','Более 5 уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications','Менее 5 уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications','(не задано)')],
+                    ]
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListNotAll' => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::searchValueList('author_clarifications','Без уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications','Менее 5 уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications','(не задано)')],
+                    ]
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => Request::searchValueList('author_clarifications','Более 5 уточнений')],
+                    ]
+                ],
+            ],
+            'searchValueListNotAnyone' => [
+                "canSee" => [],
+                "cantSee" => [
+                    [
+                        ["selector" => Request::searchValueList('author_clarifications','Без уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications','Более 5 уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications','Менее 5 уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications','(не задано)')],
+                    ]
+                ],
+            ],
+        ]
+    ],
+
+    'case4' => [
+        'setting' => [
+            'description' => 'Установка и изменение фильтра типов в таблице',
+            'column' => 'type_id',
+            'value' => '2',
+            'amount' => 22,
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -253,14 +312,6 @@ return [
                 ],
             ],
         ]
-    ],
-
-    'case4' => [
-        'setting' => [
-            'description' => 'Установка и изменение сразу нескольких фильтров',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => []
     ],
 
 ];

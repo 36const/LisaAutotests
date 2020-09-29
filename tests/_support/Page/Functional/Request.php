@@ -73,4 +73,10 @@ class Request extends FunctionalTester
         return "//thead//td//input[@name='RequestSearch[$fieldName]']/..//button[@title='Очистить']";
     }
 
+    /**Поле ввода значения для поиска*/
+    public static function columnSearch(string $fieldName)
+    {
+        return "//thead//td//input[@name='RequestSearch[$fieldName]']/..//span[@class='selection']//span[@class='select2-selection__rendered']";
+    }
+
 }
