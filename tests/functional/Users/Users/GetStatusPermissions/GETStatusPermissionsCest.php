@@ -50,9 +50,9 @@ class GETStatusPermissionsCest
         $I->amOnPage('/bpm/request/view?id=1&forCrossCheck=');
         $I->checkObjectsOnPage($providerData['requestPageObjects']);
 
-        if (isset($providerData['correctionPageObjects'])) {
+        if (isset($providerData['toCorrectionPageObjects'])) {
             $I->amOnPage('/bpm/request/to-correction?id=1');
-            $I->checkObjectsOnPage($providerData['correctionPageObjects']);
+            $I->checkObjectsOnPage($providerData['toCorrectionPageObjects']);
         }
     }
 }

@@ -5,7 +5,20 @@ return [
         "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
         "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
         "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
-        "request_errors" => [],
+        'request_errors' => [
+            [
+                'id' => 1,
+                'request_id' => 1,
+                'manager_id' => 11,
+                'errors_count' => 10,
+                'items_with_errors' => 10,
+                'field_value_id' => 142,
+                'comment' => 'comment',
+                'status' => 0,
+                //'create_ts' => null,
+                'correction_date' => null
+            ]
+        ],
         "requests" => [
             [
 //                "id" => 1,
@@ -16,7 +29,7 @@ return [
                 "status" => 6,
                 "direction" => 1,
                 "priority" => 2,
-                "awaiting_correction" => 0,
+                "awaiting_correction" => 1,
                 "created_at" => '2020-01-01 00:00:00',
                 "correction_comment" => '',
                 "amount_to_work" => 10,
@@ -532,8 +545,8 @@ return [
             ],
             [
                 //"id" => 3869,
-//                "user_id" => 4,
-//                "permission_name" => "transferInWorkToWaitWork"
+                "user_id" => 4,
+                "permission_name" => "transferInWorkToWaitWork"
             ],
             [
                 //"id" => 3893,
