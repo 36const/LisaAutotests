@@ -9,9 +9,9 @@ use rzk\TestHelper;
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_users
- * @group GETPermissions
+ * @group GETStatusPermissions
  */
-class GETPermissionsCest
+class GETStatusPermissionsCest
 {
     /**
      * @var TestHelper $testHelper
@@ -39,17 +39,20 @@ class GETPermissionsCest
      * @dataProvider pageProvider
      *
      */
-    public function GETPermissions(FunctionalTester $I, Example $data)
+    public function GETStatusPermissions(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper, ['oneUserWithoutPermissionsTable']);
         $providerData = $data['provider_data'];
 
         $I->amOnPage($providerData['url']);
+        $I->checkObjectsOnPage($providerData['tablePageObjects']);
 
-        isset($providerData['responseCode']) ?
-            $I->seeResponseCodeIs($providerData['responseCode']) :
-            $I->seeResponseCodeIs(200);
+        $I->amOnPage('/bpm/request/view?id=1&forCrossCheck=');
+        $I->checkObjectsOnPage($providerData['requestPageObjects']);
 
-        $I->checkObjectsOnPage($providerData['pageObjects']);
+        if (isset($providerData['correctionPageObjects'])) {
+            $I->amOnPage('/bpm/request/to-correction?id=1');
+            $I->checkObjectsOnPage($providerData['correctionPageObjects']);
+        }
     }
 }

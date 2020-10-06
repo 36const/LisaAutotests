@@ -276,11 +276,6 @@ return [
                 "permission_name" => "transferInCheckToDeclined"
             ],
             [
-                //"id" => 3289,
-                "user_id" => 4,
-                "permission_name" => "transferRequireChangeToInCheck"
-            ],
-            [
                 //"id" => 3290,
                 "user_id" => 4,
                 "permission_name" => "requestAddNewItems"

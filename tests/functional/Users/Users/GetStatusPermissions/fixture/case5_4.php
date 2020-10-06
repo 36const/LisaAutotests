@@ -2,17 +2,20 @@
 
 return [
     "lisa_fixtures" => [
-        'requests' => [
+        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
+        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
+        "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
+        "requests" => [
             [
-                "id" => 1,
+//                "id" => 1,
                 "author_id" => 4,
                 "type_id" => 1,
                 "supervisor_id" => 6,
                 "manager_id" => 11,
-                "status" => 6,
+                "status" => 5,
                 "direction" => 1,
                 "priority" => 2,
-                "awaiting_correction" => 1,
+                "awaiting_correction" => 0,
                 "created_at" => '2020-01-01 00:00:00',
                 "correction_comment" => '',
                 "amount_to_work" => 10,
@@ -22,26 +25,26 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => '',
-                "reason_id" => 15,
+                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
                 "planned_finish_date" => null,
-                "actual_start_date" => '2020-01-01 00:00:03',
-                "actual_finish_date" => '2020-01-01 00:00:04',
-                "supervisor_process_date" => '2020-01-01 00:00:02',
-                //"supervisor_check_date" => null,
+                "actual_start_date" => null,
+                "actual_finish_date" => null,
+                "supervisor_process_date" => null,
+                "supervisor_check_date" => null,
                 "difficulty" => null,
-                "result_comment" => 'Комментарий к результату задачи',
+                "result_comment" => '',
                 "supervisor_comment" => '',
-                //"last_change_status_date" => "2020-01-01 00:00:01",
+                "last_change_status_date" => "2020-01-01 00:00:01",
                 "team_direction" => 3,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}',
-                "cross_check_status" => '1',
-                "cross_check_manager_id" => 12,
-            ]
+                "sv_report_periods" => null,
+                "cross_check_status" => '0',
+                "cross_check_manager_id" => null,
+            ],
         ],
         'requests_fields' => [
             [
@@ -51,48 +54,8 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 21,
-                'value' => 1,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 22,
-                'value' => 6,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 23,
-                'value' => 11,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 24,
-                'value' => 15,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 25,
-                'value' => 18,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 26,
-                'value' => 22,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 27,
-                'value' => 24,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 31,
-                'value' => 48,
-            ],
-            [
-                'request_id' => 1,
                 'field_id' => 49,
-                'value' => 10.1,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
@@ -127,67 +90,12 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 64,
-                'value' => 10.1,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 66,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 68,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 69,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 70,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 71,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 76,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 77,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 88,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 93,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 94,
-                'value' => 10,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 101,
                 'value' => null,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 111,
-                'value' => 10,
             ],
             [
                 'request_id' => 1,
@@ -197,55 +105,24 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 142,
-                'value' => 10,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 143,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 144,
-                'value' => 10,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 146,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 157,
-                'value' => 'http://gomer.local/bpm/request/to-correction?id=1',
+                'value' => null,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 158,
-                'value' => 10,
+                'value' => null,
             ],
         ],
-        'request_errors' => [
-            [
-                'id' => 1,
-                'request_id' => 1,
-                'manager_id' => 11,
-                'errors_count' => 10,
-                'items_with_errors' => 10,
-                'field_value_id' => 142,
-                'comment' => 'comment',
-                'status' => 0,
-                //'create_ts' => null,
-                'correction_date' => null
-            ]
-        ],
-        "report_periods" => [[]],
-        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
-        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
-        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
-        "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
-        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
-        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
         "user_permissions" => [
             [
                 //"id" => 3143,
@@ -339,8 +216,8 @@ return [
             ],
             [
                 //"id" => 3264,
-//                "user_id" => 4,
-//                "permission_name" => "errorsUpdate"
+                "user_id" => 4,
+                "permission_name" => "errorsUpdate"
             ],
             [
                 //"id" => 3265,
@@ -609,8 +486,8 @@ return [
             ],
             [
                 //"id" => 3653,
-                "user_id" => 4,
-                "permission_name" => "transferWaitWorkToDeclined"
+//                "user_id" => 4,
+//                "permission_name" => "transferWaitWorkToDeclined"
             ],
             [
                 //"id" => 3677,
@@ -1032,11 +909,6 @@ return [
                 "user_id" => 4,
                 "permission_name" => "transferClosedToAny"
             ],
-            [
-                //"id" => 5715,
-                "user_id" => 4,
-                "permission_name" => "transferRequireChangeToWaitCheck"
-            ]
         ]
     ],
 ];
