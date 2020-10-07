@@ -595,12 +595,16 @@ return [
                         ["selector" => Request::contextMenu('Ожидать')],
                         ["selector" => Request::contextMenu('Выполнена')],
                         ["selector" => Request::contextMenu('Изменить супервайзера')],
+                        ["selector" => Request::contextMenu('Частично выполнена')],
                     ],
                 ],
                 "cantSee" => [
+//              чтобы уменьшить кол-во запросов, пока сделали что статус 8
+//              в конт. меню остаётся показываться даже после отключения пермишена 6->8
+//              а перестаёт показываться с отключением пермишена 6->9
                     [
                         ["selector" => Request::transferButton('Частично выполнена')],
-                        ["selector" => Request::contextMenu('Частично выполнена')],
+//                        ["selector" => Request::contextMenu('Частично выполнена')],
                     ],
                 ]
             ],
@@ -641,13 +645,14 @@ return [
                         ["selector" => Request::contextMenu('Изменить исполнителя')],
                         ["selector" => Request::contextMenu('Отменить')],
                         ["selector" => Request::contextMenu('Ожидать')],
-                        ["selector" => Request::contextMenu('Частично выполнена')],
+//                        ["selector" => Request::contextMenu('Частично выполнена')],
                         ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Выполнена')],
+                        ["selector" => Request::contextMenu('Частично выполнена')],
                         ["selector" => Request::contextMenu('Выполнена')],
                     ],
                 ]
