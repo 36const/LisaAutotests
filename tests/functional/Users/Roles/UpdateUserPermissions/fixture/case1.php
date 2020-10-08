@@ -8,4 +8,7 @@ return [
         "user_bpm" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/user_bpm.php',
         "user_permissions" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/user_permissions.php',
     ],
+    "gomer_fixtures" => [
+        "users" => include \rzk\FixtureController::getFixtureDir() . 'gomer_fixtures/users.php',
+    ],
 ];

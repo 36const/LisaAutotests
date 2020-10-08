@@ -43,4 +43,16 @@ class Request extends FunctionalTester
                 '/tbody/tr[' . $lineNumber . ']/td[@data-col-seq="' . $columnNumber . '"]//*[text()=' . $text . ']';
     }
 
+    /**Блок кнопок изменения статуса в таблице заявок и самой заявке*/
+    public static function transferButton(string $action)
+    {
+        return "//div[@class='buttons-background']//*[contains(text(), '$action')]";
+    }
+
+    /**Контекстное меню заявки*/
+    public static function contextMenu(string $action)
+    {
+        return "//tbody//ul[@class='dropdown-menu']//a[contains(text(), '$action')]";
+    }
+
 }

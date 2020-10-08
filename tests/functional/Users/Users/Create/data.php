@@ -7222,17 +7222,17 @@ return [
                         [
                             "id" => 237,
                             "user_id" => 6,
-                            "permission_name" => "viewSplitterModerationRequests"
-                        ],
-                        [
-                            "id" => 239,
-                            "user_id" => 6,
-                            "permission_name" => "viewDashboardsByCommand"
+                            "permission_name" => "transferRequireChangeToWaitCheck"
                         ],
                         [
                             "id" => 238,
                             "user_id" => 6,
                             "permission_name" => "transferRequireChangeToInCheck"
+                        ],
+                        [
+                            "id" => 239,
+                            "user_id" => 6,
+                            "permission_name" => "viewSplitterModerationRequests"
                         ],
                     ],
                     "notification_settings" => [
@@ -7241,7 +7241,7 @@ return [
                             "user_id" => 6,
                             "types_for_notification" => '{"create": 2, "comment": 2, "mention": 2, "manager_id": 2, "attachments": 2, "supervisor_id": 2}',
                             "fields_for_complete" => '[]',
-                            "statuses_for_notification" => '{"0": 2, "1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
+                            "statuses_for_notification" => '{"1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
                         ]
                     ]
                 ],
@@ -8536,12 +8536,12 @@ return [
                         [
                             "id" => 238,
                             "user_id" => 6,
-                            "permission_name" => "viewDashboardsByCommand"
+                            "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
                             "id" => 237,
                             "user_id" => 6,
-                            "permission_name" => "transferRequireChangeToInCheck"
+                            "permission_name" => "transferRequireChangeToWaitCheck"
                         ],
                     ],
                     "notification_settings" => [
@@ -8550,7 +8550,7 @@ return [
                             "user_id" => 6,
                             "types_for_notification" => '{"create": 2, "comment": 2, "mention": 2, "manager_id": 2, "attachments": 2, "supervisor_id": 2}',
                             "fields_for_complete" => '[]',
-                            "statuses_for_notification" => '{"0": 2, "1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
+                            "statuses_for_notification" => '{"1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
                         ]
                     ]
                 ],
@@ -9815,12 +9815,12 @@ return [
                         [
                             "id" => 232,
                             "user_id" => 6,
-                            "permission_name" => "viewDashboardsByCommand"
+                            "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
                             "id" => 231,
                             "user_id" => 6,
-                            "permission_name" => "transferRequireChangeToInCheck"
+                            "permission_name" => "transferRequireChangeToWaitCheck"
                         ],
                     ],
                     "notification_settings" => [
@@ -9829,7 +9829,7 @@ return [
                             "user_id" => 6,
                             "types_for_notification" => '{"create": 2, "comment": 2, "mention": 2, "manager_id": 2, "attachments": 2, "supervisor_id": 2}',
                             "fields_for_complete" => '[]',
-                            "statuses_for_notification" => '{"0": 2, "1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
+                            "statuses_for_notification" => '{"1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
                         ]
                     ]
                 ],
@@ -11064,14 +11064,13 @@ return [
                         [
                             "id" => 226,
                             "user_id" => 6,
-                            "permission_name" => "viewDashboardsByCommand"
+                            "permission_name" => "transferRequireChangeToInCheck"
                         ],
                         [
                             "id" => 225,
                             "user_id" => 6,
-                            "permission_name" => "transferRequireChangeToInCheck"
+                            "permission_name" => "transferRequireChangeToWaitCheck"
                         ],
-
                     ],
                     "notification_settings" => [
                         [
@@ -11079,7 +11078,7 @@ return [
                             "user_id" => 6,
                             "types_for_notification" => '{"create": 2, "comment": 2, "mention": 2, "manager_id": 2, "attachments": 2, "supervisor_id": 2}',
                             "fields_for_complete" => '[]',
-                            "statuses_for_notification" => '{"0": 2, "1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
+                            "statuses_for_notification" => '{"1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
                         ]
                     ]
                 ],
@@ -11089,7 +11088,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Создание менеджера с руководителем/комадой/дрфо',
+            'description' => 'Создание менеджера с руководителем/командой/дрфо',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -12319,8 +12318,18 @@ return [
                         [
                             "id" => 226,
                             "user_id" => 6,
+                            "permission_name" => "transferPartialCompleteToInWork"
+                        ],
+                        [
+                            "id" => 227,
+                            "user_id" => 6,
+                            "permission_name" => "transferCompletedToInWork"
+                        ],
+                        [
+                            "id" => 228,
+                            "user_id" => 6,
                             "permission_name" => "viewOwnDashboards"
-                        ]
+                        ],
                     ],
                     "notification_settings" => [
                         [
@@ -12328,7 +12337,7 @@ return [
                             "user_id" => 6,
                             "types_for_notification" => '{"create": 2, "comment": 2, "mention": 2, "manager_id": 2, "attachments": 2, "supervisor_id": 2}',
                             "fields_for_complete" => '[]',
-                            "statuses_for_notification" => '{"0": 2, "1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
+                            "statuses_for_notification" => '{"1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
                         ]
                     ]
                 ],
@@ -12338,7 +12347,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Создание супервайзера с руководителем/комадой/дрфо',
+            'description' => 'Создание супервайзера с руководителем/командой/дрфо',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -13643,17 +13652,17 @@ return [
                         [
                             "id" => 241,
                             "user_id" => 6,
-                            "permission_name" => "transferCompletedToRequireFix"
+                            "permission_name" => "transferCompletedToClosed"
                         ],
                         [
                             "id" => 242,
                             "user_id" => 6,
-                            "permission_name" => "transferCompletedToClosed"
+                            "permission_name" => "requestCreate"
                         ],
                         [
                             "id" => 243,
                             "user_id" => 6,
-                            "permission_name" => "requestCreate"
+                            "permission_name" => "requestUpdate"
                         ],
                         [
                             "id" => 244,
@@ -13678,51 +13687,551 @@ return [
                         [
                             "id" => 248,
                             "user_id" => 6,
-                            "permission_name" => "reportLoadYourTeam"
+                            "permission_name" => "transferCompletedToRequireFix"
                         ],
                         [
                             "id" => 249,
                             "user_id" => 6,
-                            "permission_name" => "viewSplitterModerationRequests"
+                            "permission_name" => "transferInCheckToRequireChange"
                         ],
                         [
                             "id" => 250,
                             "user_id" => 6,
-                            "permission_name" => "takeToWork"
-                        ],
-                        [
-                            "id" => 255,
-                            "user_id" => 6,
-                            "permission_name" => "viewDashboardsByCommand"
+                            "permission_name" => "transferInCheckToDeclined"
                         ],
                         [
                             "id" => 251,
                             "user_id" => 6,
-                            "permission_name" => "transferWaitCheckToInCheck"
+                            "permission_name" => "transferInCheckToWaitCheck"
                         ],
                         [
                             "id" => 252,
                             "user_id" => 6,
-                            "permission_name" => "transferInCheckToRequireChange"
+                            "permission_name" => "transferRequireChangeToWaitCheck"
                         ],
                         [
                             "id" => 253,
                             "user_id" => 6,
-                            "permission_name" => "transferInCheckToDeclined"
+                            "permission_name" => "transferWaitCheckToRequireChange"
                         ],
                         [
                             "id" => 254,
                             "user_id" => 6,
+                            "permission_name" => "transferDeclinedToWaitCheck"
+                        ],
+                        [
+                            "id" => 255,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitCheckToDeclined"
+                        ],
+                        [
+                            "id" => 256,
+                            "user_id" => 6,
+                            "permission_name" => "transferDeclinedToInCheck"
+                        ],
+                        [
+                            "id" => 257,
+                            "user_id" => 6,
+                            "permission_name" => "transferDeclinedToRequireChange"
+                        ],
+                        [
+                            "id" => 258,
+                            "user_id" => 6,
+                            "permission_name" => "transferRequireChangeToDeclined"
+                        ],
+                        [
+                            "id" => 259,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitWorkToWaitCheck"
+                        ],
+                        [
+                            "id" => 260,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitCheckToWaitWork"
+                        ],
+                        [
+                            "id" => 261,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitWorkToInCheck"
+                        ],
+                        [
+                            "id" => 262,
+                            "user_id" => 6,
+                            "permission_name" => "transferInCheckToWaitWork"
+                        ],
+                        [
+                            "id" => 263,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitWorkToRequireChange"
+                        ],
+                        [
+                            "id" => 264,
+                            "user_id" => 6,
+                            "permission_name" => "transferRequireChangeToWaitWork"
+                        ],
+                        [
+                            "id" => 265,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitWorkToDeclined"
+                        ],
+                        [
+                            "id" => 266,
+                            "user_id" => 6,
+                            "permission_name" => "transferDeclinedToWaitWork"
+                        ],
+                        [
+                            "id" => 267,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitCheckToInCheck"
+                        ],
+                        [
+                            "id" => 268,
+                            "user_id" => 6,
                             "permission_name" => "transferRequireChangeToInCheck"
                         ],
+                        [
+                            "id" => 269,
+                            "user_id" => 6,
+                            "permission_name" => "transferInWorkToWaitCheck"
                         ],
+                        [
+                            "id" => 270,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitCheckToInWork"
+                        ],
+                        [
+                            "id" => 271,
+                            "user_id" => 6,
+                            "permission_name" => "transferInWorkToInCheck"
+                        ],
+                        [
+                            "id" => 272,
+                            "user_id" => 6,
+                            "permission_name" => "transferInCheckToInWork"
+                        ],
+                        [
+                            "id" => 273,
+                            "user_id" => 6,
+                            "permission_name" => "transferInWorkToRequireChange"
+                        ],
+                        [
+                            "id" => 274,
+                            "user_id" => 6,
+                            "permission_name" => "transferRequireChangeToInWork"
+                        ],
+                        [
+                            "id" => 275,
+                            "user_id" => 6,
+                            "permission_name" => "transferDeclinedToInWork"
+                        ],
+                        [
+                            "id" => 276,
+                            "user_id" => 6,
+                            "permission_name" => "transferInWorkToWaitWork"
+                        ],
+                        [
+                            "id" => 277,
+                            "user_id" => 6,
+                            "permission_name" => "transferOnHoldToWaitCheck"
+                        ],
+                        [
+                            "id" => 278,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitCheckToOnHold"
+                        ],
+                        [
+                            "id" => 279,
+                            "user_id" => 6,
+                            "permission_name" => "transferOnHoldToInCheck"
+                        ],
+                        [
+                            "id" => 280,
+                            "user_id" => 6,
+                            "permission_name" => "transferInCheckToOnHold"
+                        ],
+                        [
+                            "id" => 281,
+                            "user_id" => 6,
+                            "permission_name" => "transferOnHoldToRequireChange"
+                        ],
+                        [
+                            "id" => 282,
+                            "user_id" => 6,
+                            "permission_name" => "transferRequireChangeToOnHold"
+                        ],
+                        [
+                            "id" => 283,
+                            "user_id" => 6,
+                            "permission_name" => "transferOnHoldToDeclined"
+                        ],
+                        [
+                            "id" => 284,
+                            "user_id" => 6,
+                            "permission_name" => "transferDeclinedToOnHold"
+                        ],
+                        [
+                            "id" => 285,
+                            "user_id" => 6,
+                            "permission_name" => "transferOnHoldToWaitWork"
+                        ],
+                        [
+                            "id" => 286,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitWorkToOnHold"
+                        ],
+                        [
+                            "id" => 287,
+                            "user_id" => 6,
+                            "permission_name" => "transferPartialCompleteToWaitCheck"
+                        ],
+                        [
+                            "id" => 288,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitCheckToPartialComplete"
+                        ],
+                        [
+                            "id" => 289,
+                            "user_id" => 6,
+                            "permission_name" => "transferPartialCompleteToInCheck"
+                        ],
+                        [
+                            "id" => 290,
+                            "user_id" => 6,
+                            "permission_name" => "transferInCheckToPartialComplete"
+                        ],
+                        [
+                            "id" => 291,
+                            "user_id" => 6,
+                            "permission_name" => "transferPartialCompleteToRequireChange"
+                        ],
+                        [
+                            "id" => 292,
+                            "user_id" => 6,
+                            "permission_name" => "transferRequireChangeToPartialComplete"
+                        ],
+                        [
+                            "id" => 293,
+                            "user_id" => 6,
+                            "permission_name" => "transferPartialCompleteToDeclined"
+                        ],
+                        [
+                            "id" => 294,
+                            "user_id" => 6,
+                            "permission_name" => "transferDeclinedToPartialComplete"
+                        ],
+                        [
+                            "id" => 295,
+                            "user_id" => 6,
+                            "permission_name" => "transferPartialCompleteToWaitWork"
+                        ],
+                        [
+                            "id" => 296,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitWorkToPartialComplete"
+                        ],
+                        [
+                            "id" => 297,
+                            "user_id" => 6,
+                            "permission_name" => "transferPartialCompleteToInWork"
+                        ],
+                        [
+                            "id" => 298,
+                            "user_id" => 6,
+                            "permission_name" => "transferPartialCompleteToOnHold"
+                        ],
+                        [
+                            "id" => 299,
+                            "user_id" => 6,
+                            "permission_name" => "transferOnHoldToPartialComplete"
+                        ],
+                        [
+                            "id" => 300,
+                            "user_id" => 6,
+                            "permission_name" => "transferCompletedToWaitCheck"
+                        ],
+                        [
+                            "id" => 301,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitCheckToCompleted"
+                        ],
+                        [
+                            "id" => 302,
+                            "user_id" => 6,
+                            "permission_name" => "transferCompletedToInCheck"
+                        ],
+                        [
+                            "id" => 303,
+                            "user_id" => 6,
+                            "permission_name" => "transferInCheckToCompleted"
+                        ],
+                        [
+                            "id" => 304,
+                            "user_id" => 6,
+                            "permission_name" => "transferCompletedToRequireChange"
+                        ],
+                        [
+                            "id" => 305,
+                            "user_id" => 6,
+                            "permission_name" => "transferRequireChangeToCompleted"
+                        ],
+                        [
+                            "id" => 306,
+                            "user_id" => 6,
+                            "permission_name" => "transferCompletedToDeclined"
+                        ],
+                        [
+                            "id" => 307,
+                            "user_id" => 6,
+                            "permission_name" => "transferDeclinedToCompleted"
+                        ],
+                        [
+                            "id" => 308,
+                            "user_id" => 6,
+                            "permission_name" => "transferCompletedToWaitWork"
+                        ],
+                        [
+                            "id" => 309,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitWorkToCompleted"
+                        ],
+                        [
+                            "id" => 310,
+                            "user_id" => 6,
+                            "permission_name" => "transferCompletedToInWork"
+                        ],
+                        [
+                            "id" => 311,
+                            "user_id" => 6,
+                            "permission_name" => "transferCompletedToOnHold"
+                        ],
+                        [
+                            "id" => 312,
+                            "user_id" => 6,
+                            "permission_name" => "transferOnHoldToCompleted"
+                        ],
+                        [
+                            "id" => 313,
+                            "user_id" => 6,
+                            "permission_name" => "transferCompletedToPartialComplete"
+                        ],
+                        [
+                            "id" => 314,
+                            "user_id" => 6,
+                            "permission_name" => "transferPartialCompleteToCompleted"
+                        ],
+                        [
+                            "id" => 315,
+                            "user_id" => 6,
+                            "permission_name" => "transferClosedToWaitCheck"
+                        ],
+                        [
+                            "id" => 316,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitCheckToClosed"
+                        ],
+                        [
+                            "id" => 317,
+                            "user_id" => 6,
+                            "permission_name" => "transferClosedToInCheck"
+                        ],
+                        [
+                            "id" => 318,
+                            "user_id" => 6,
+                            "permission_name" => "transferInCheckToClosed"
+                        ],
+                        [
+                            "id" => 319,
+                            "user_id" => 6,
+                            "permission_name" => "transferClosedToRequireChange"
+                        ],
+                        [
+                            "id" => 320,
+                            "user_id" => 6,
+                            "permission_name" => "transferRequireChangeToClosed"
+                        ],
+                        [
+                            "id" => 321,
+                            "user_id" => 6,
+                            "permission_name" => "transferClosedToDeclined"
+                        ],
+                        [
+                            "id" => 322,
+                            "user_id" => 6,
+                            "permission_name" => "transferDeclinedToClosed"
+                        ],
+                        [
+                            "id" => 323,
+                            "user_id" => 6,
+                            "permission_name" => "transferClosedToWaitWork"
+                        ],
+                        [
+                            "id" => 324,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitWorkToClosed"
+                        ],
+                        [
+                            "id" => 325,
+                            "user_id" => 6,
+                            "permission_name" => "transferClosedToInWork"
+                        ],
+                        [
+                            "id" => 326,
+                            "user_id" => 6,
+                            "permission_name" => "transferInWorkToClosed"
+                        ],
+                        [
+                            "id" => 327,
+                            "user_id" => 6,
+                            "permission_name" => "transferClosedToOnHold"
+                        ],
+                        [
+                            "id" => 328,
+                            "user_id" => 6,
+                            "permission_name" => "transferOnHoldToClosed"
+                        ],
+                        [
+                            "id" => 329,
+                            "user_id" => 6,
+                            "permission_name" => "transferClosedToPartialComplete"
+                        ],
+                        [
+                            "id" => 330,
+                            "user_id" => 6,
+                            "permission_name" => "transferPartialCompleteToClosed"
+                        ],
+                        [
+                            "id" => 331,
+                            "user_id" => 6,
+                            "permission_name" => "transferClosedToCompleted"
+                        ],
+                        [
+                            "id" => 332,
+                            "user_id" => 6,
+                            "permission_name" => "transferAnyToWaitCheck"
+                        ],
+                        [
+                            "id" => 333,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitCheckToAny"
+                        ],
+                        [
+                            "id" => 334,
+                            "user_id" => 6,
+                            "permission_name" => "transferAnyToInCheck"
+                        ],
+                        [
+                            "id" => 335,
+                            "user_id" => 6,
+                            "permission_name" => "transferInCheckToAny"
+                        ],
+                        [
+                            "id" => 336,
+                            "user_id" => 6,
+                            "permission_name" => "transferAnyToRequireChange"
+                        ],
+                        [
+                            "id" => 337,
+                            "user_id" => 6,
+                            "permission_name" => "transferRequireChangeToAny"
+                        ],
+                        [
+                            "id" => 338,
+                            "user_id" => 6,
+                            "permission_name" => "transferAnyToDeclined"
+                        ],
+                        [
+                            "id" => 339,
+                            "user_id" => 6,
+                            "permission_name" => "transferDeclinedToAny"
+                        ],
+                        [
+                            "id" => 340,
+                            "user_id" => 6,
+                            "permission_name" => "transferAnyToWaitWork"
+                        ],
+                        [
+                            "id" => 341,
+                            "user_id" => 6,
+                            "permission_name" => "transferWaitWorkToAny"
+                        ],
+                        [
+                            "id" => 342,
+                            "user_id" => 6,
+                            "permission_name" => "transferAnyToInWork"
+                        ],
+                        [
+                            "id" => 343,
+                            "user_id" => 6,
+                            "permission_name" => "transferInWorkToAny"
+                        ],
+                        [
+                            "id" => 344,
+                            "user_id" => 6,
+                            "permission_name" => "transferAnyToOnHold"
+                        ],
+                        [
+                            "id" => 345,
+                            "user_id" => 6,
+                            "permission_name" => "transferOnHoldToAny"
+                        ],
+                        [
+                            "id" => 346,
+                            "user_id" => 6,
+                            "permission_name" => "transferAnyToPartialComplete"
+                        ],
+                        [
+                            "id" => 347,
+                            "user_id" => 6,
+                            "permission_name" => "transferPartialCompleteToAny"
+                        ],
+                        [
+                            "id" => 348,
+                            "user_id" => 6,
+                            "permission_name" => "transferAnyToCompleted"
+                        ],
+                        [
+                            "id" => 349,
+                            "user_id" => 6,
+                            "permission_name" => "transferCompletedToAny"
+                        ],
+                        [
+                            "id" => 350,
+                            "user_id" => 6,
+                            "permission_name" => "transferAnyToClosed"
+                        ],
+                        [
+                            "id" => 351,
+                            "user_id" => 6,
+                            "permission_name" => "transferClosedToAny"
+                        ],
+                        [
+                            "id" => 352,
+                            "user_id" => 6,
+                            "permission_name" => "reportLoadYourTeam"
+                        ],
+                        [
+                            "id" => 353,
+                            "user_id" => 6,
+                            "permission_name" => "viewSplitterModerationRequests"
+                        ],
+                        [
+                            "id" => 354,
+                            "user_id" => 6,
+                            "permission_name" => "takeToWork"
+                        ],
+                        [
+                            "id" => 355,
+                            "user_id" => 6,
+                            "permission_name" => "viewDashboardsByCommand"
+                        ]
+                    ],
                     "notification_settings" => [
                         [
                             'id' => 1,
                             "user_id" => 6,
                             "types_for_notification" => '{"create": 2, "comment": 2, "mention": 2, "manager_id": 2, "attachments": 2, "supervisor_id": 2}',
                             "fields_for_complete" => '[]',
-                            "statuses_for_notification" => '{"0": 2, "1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
+                            "statuses_for_notification" => '{"1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
                         ]
                     ]
                 ],
