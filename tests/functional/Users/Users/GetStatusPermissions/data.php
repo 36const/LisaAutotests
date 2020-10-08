@@ -676,11 +676,11 @@ return [
         ]
     ],
 
-    'case6_correction' => [
+    'case6_before_correct' => [
         'setting' => [
-            'description' => '6 correction',
+            'description' => '6 before correction',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case6_correction.php',
+        'fixture_data' => include __DIR__ . '/fixture/case6_before_correct.php',
         'provider_data' => [
             "url" => '/bpm/request/in-work',
             "tablePageObjects" => [
@@ -721,7 +721,76 @@ return [
                         ["selector" => Request::transferButton('Выполнена')],
                     ],
                 ]
-            ]
+            ],
+            "correctionPageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::transferButton('Выполнена') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Частично выполнена') . '[@disabled]'],
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ],
+        ]
+    ],
+
+    'case6_after_correct' => [
+        'setting' => [
+            'description' => '6 after correction',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case6_after_correct.php',
+        'provider_data' => [
+            "url" => '/bpm/request/in-work',
+            "tablePageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::contextMenu('Отменить')],
+                        ["selector" => Request::contextMenu('Создать подзадачу')],
+                        ["selector" => Request::contextMenu('Ожидать')],
+                        ["selector" => Request::contextMenu('Внести исправления')],
+                        ["selector" => Request::contextMenu('Изменить супервайзера')],
+                        ["selector" => Request::contextMenu('Изменить исполнителя')],
+                        ["selector" => Request::contextMenu('Частично выполнена')],
+                        ["selector" => Request::contextMenu('Выполнена')],
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ],
+            "requestPageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::transferButton('Изменить исполнителя')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Внести исправления')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Частично выполнена')],
+                        ["selector" => Request::transferButton('Выполнена')],
+                    ],
+                ],
+                "cantSee" => [
+                ]
+            ],
+            "correctionPageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::transferButton('Выполнена')],
+                        ["selector" => Request::transferButton('Частично выполнена')],
+                    ],
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => Request::transferButton('Выполнена') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Частично выполнена') . '[@disabled]'],
+                    ],
+                ]
+            ],
         ]
     ],
 
@@ -808,11 +877,14 @@ return [
             "toCorrectionPageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление')],
                         ["selector" => Request::transferButton('Сохранить')],
                     ],
                 ],
                 "cantSee" => [
+                    [
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
+                    ]
                 ]
             ],
         ]
@@ -856,6 +928,19 @@ return [
                     [
                         ["selector" => Request::transferButton('Закрыть')],
                     ],
+                ]
+            ],
+            "toCorrectionPageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление')],
+                        ["selector" => Request::transferButton('Сохранить')],
+                    ],
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
+                    ]
                 ]
             ]
         ]
@@ -906,12 +991,15 @@ return [
             "toCorrectionPageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление')],
                         ["selector" => Request::transferButton('Сохранить')],
                     ],
-                    "cantSee" => [
-                    ]
                 ],
+                "cantSee" => [
+                    [
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
+                    ]
+                ]
             ]
         ],
     ],
@@ -954,6 +1042,19 @@ return [
                     [
                         ["selector" => Request::transferButton('Закрыть')],
                     ],
+                ]
+            ],
+            "toCorrectionPageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление')],
+                        ["selector" => Request::transferButton('Сохранить')],
+                    ],
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
+                    ]
                 ]
             ]
         ]

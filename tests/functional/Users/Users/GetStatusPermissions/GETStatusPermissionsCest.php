@@ -54,5 +54,10 @@ class GETStatusPermissionsCest
             $I->amOnPage('/bpm/request/to-correction?id=1');
             $I->checkObjectsOnPage($providerData['toCorrectionPageObjects']);
         }
+
+        if (isset($providerData['correctionPageObjects'])) {
+            $I->amOnPage('/bpm/request/correction?id=1');
+            $I->checkObjectsOnPage($providerData['correctionPageObjects']);
+        }
     }
 }

@@ -44,15 +44,15 @@ class Request extends FunctionalTester
     }
 
     /**Блок кнопок изменения статуса в таблице заявок и самой заявке*/
-    public static function transferButton(string $status)
+    public static function transferButton(string $action)
     {
-        return "//div[@class='buttons-background']//*[contains(text(), '$status')]";
+        return "//div[@class='buttons-background']//*[contains(text(), '$action')]";
     }
 
     /**Контекстное меню заявки*/
-    public static function contextMenu(string $status)
+    public static function contextMenu(string $action)
     {
-        return "//tbody//ul[@class='dropdown-menu']//a[contains(text(), '$status')]";
+        return "//tbody//ul[@class='dropdown-menu']//a[contains(text(), '$action')]";
     }
 
 }
