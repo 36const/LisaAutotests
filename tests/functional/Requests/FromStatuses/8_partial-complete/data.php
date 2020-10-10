@@ -79,7 +79,7 @@ return [
                             "attachments" => '[]',
                             "category_id" => 1,
                             "seller_id" => 83,
-                            "recommendations" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                            "recommendations" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "reason_id" => 15,
                             "reason" => null,
                             "parent_id" => null,

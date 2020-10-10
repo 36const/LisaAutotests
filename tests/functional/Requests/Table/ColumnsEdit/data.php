@@ -18,59 +18,59 @@ return [
                 "canSee" => [
                     "Заголовки" => [
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='2']",
+                            "selector" => "//thead/tr/th[@data-col-seq='1']",
                             "value" => "ID задачи"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='3']",
+                            "selector" => "//thead/tr/th[@data-col-seq='2']",
                             "value" => "Заголовок"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='4']",
+                            "selector" => "//thead/tr/th[@data-col-seq='3']",
                             "value" => "Тип"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='5']",
+                            "selector" => "//thead/tr/th[@data-col-seq='4']",
                             "value" => "Создатель заявки"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='6']",
+                            "selector" => "//thead/tr/th[@data-col-seq='5']",
                             "value" => "Супервайзер заявки"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='7']",
+                            "selector" => "//thead/tr/th[@data-col-seq='6']",
                             "value" => "Менеджер заявки"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='8']",
+                            "selector" => "//thead/tr/th[@data-col-seq='7']",
                             "value" => "Статус"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='9']",
+                            "selector" => "//thead/tr/th[@data-col-seq='8']",
                             "value" => "Направление задачи"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='10']",
+                            "selector" => "//thead/tr/th[@data-col-seq='9']",
                             "value" => "Направление команды"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='11']",
+                            "selector" => "//thead/tr/th[@data-col-seq='10']",
                             "value" => "Категория товаров"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='12']",
+                            "selector" => "//thead/tr/th[@data-col-seq='11']",
                             "value" => "Продавец"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='13']",
+                            "selector" => "//thead/tr/th[@data-col-seq='12']",
                             "value" => "Приоритет"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='14']",
+                            "selector" => "//thead/tr/th[@data-col-seq='13']",
                             "value" => "Кросс-чек статус"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='15']",
+                            "selector" => "//thead/tr/th[@data-col-seq='14']",
                             "value" => "Кросс-чек менеджер"
                         ],
                     ],
@@ -90,407 +90,407 @@ return [
                     ],
                     "Заявка 7" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='1']",
                             "value" => "7"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение тегов (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение тегов"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
                             "value" => "Выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='14']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='13']",
                             "value" => "Не прошла кросс-чек"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='15']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='14']",
                             "value" => "(не задано)"
                         ],
                     ],
                     "Заявка 6" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='1']",
                             "value" => "6"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение видео (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение видео"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 18"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
                             "value" => "Частично выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='14']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
                             "value" => "Не прошла кросс-чек"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='15']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='14']",
                             "value" => "(не задано)"
                         ],
                     ],
                     "Заявка 5" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='1']",
                             "value" => "5"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
                             "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
                             "value" => "Изменение существующих параметров/значений"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 17"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
                             "value" => "Ожидает"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='14']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
                             "value" => "Не прошла кросс-чек"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='15']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='14']",
                             "value" => "(не задано)"
                         ],
                     ],
                     "Заявка 4" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='1']",
                             "value" => "4"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
                             "value" => "Добавление параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
                             "value" => "Добавление параметров/значений  "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 14"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
                             "value" => "В работе"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='14']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='13']",
                             "value" => "Не прошла кросс-чек"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='15']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='14']",
                             "value" => "(не задано)"
                         ],
                     ],
                     "Заявка 3" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='1']",
                             "value" => "3"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15   "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
                             "value" => "Ожидает взятия в работу	    "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='14']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='13']",
                             "value" => "Не прошла кросс-чек"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='15']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='14']",
                             "value" => "(не задано)"
                         ],
                     ],
                     "Заявка 2" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='1']",
                             "value" => "2"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
                             "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
                             "value" => "Заливка фото с фотостудии"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
                             "value" => "(не задано)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
                             "value" => "На доработке"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
                             "value" => "Работа с товарами Розетки"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
                             "value" => "Работа с товарами Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
                             "value" => "Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='14']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='13']",
                             "value" => "Не прошла кросс-чек"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='15']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='14']",
                             "value" => "(не задано)"
                         ],
                     ],
                     "Заявка 1" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='1']",
                             "value" => "1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
                             "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
                             "value" => "Перенос товаров	"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='6']",
                             "value" => "(не задано)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='7']",
                             "value" => "Готова для распределения"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
                             "value" => "Работа с товарами Маркетплейса"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='9']",
                             "value" => "Работа с товарами Маркетплейса  "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='10']",
                             "value" => "(не задано)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='14']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='13']",
                             "value" => "Не прошла кросс-чек"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='15']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='14']",
                             "value" => "(не задано)"
                         ],
                     ],
@@ -516,51 +516,51 @@ return [
                 "canSee" => [
                     "Заголовки" => [
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='2']",
+                            "selector" => "//thead/tr/th[@data-col-seq='1']",
                             "value" => "ID задачи"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='3']",
+                            "selector" => "//thead/tr/th[@data-col-seq='2']",
                             "value" => "Заголовок"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='4']",
+                            "selector" => "//thead/tr/th[@data-col-seq='3']",
                             "value" => "Тип"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='5']",
+                            "selector" => "//thead/tr/th[@data-col-seq='4']",
                             "value" => "ID связанной задачи"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='6']",
+                            "selector" => "//thead/tr/th[@data-col-seq='5']",
                             "value" => "Уровень сложности задачи"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='7']",
+                            "selector" => "//thead/tr/th[@data-col-seq='6']",
                             "value" => "На исправление"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='8']",
+                            "selector" => "//thead/tr/th[@data-col-seq='7']",
                             "value" => "Причина"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='9']",
+                            "selector" => "//thead/tr/th[@data-col-seq='8']",
                             "value" => "Уточнения. Количество уточнений у автора"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='10']",
+                            "selector" => "//thead/tr/th[@data-col-seq='9']",
                             "value" => "Наличие фото к товарам"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='11']",
+                            "selector" => "//thead/tr/th[@data-col-seq='10']",
                             "value" => "Наличие характеристик к товарам"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='12']",
+                            "selector" => "//thead/tr/th[@data-col-seq='11']",
                             "value" => "Наличие описаний к товарам"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='13']",
+                            "selector" => "//thead/tr/th[@data-col-seq='12']",
                             "value" => "Язык информации"
                         ],
                     ],
@@ -754,16 +754,20 @@ return [
                     ],
                     "Заявка 1" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='1']",
                             "value" => "1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
                             "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
                             "value" => "Перенос товаров	"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='5']",
@@ -771,11 +775,11 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='6']",
-                            "value" => "(не задано)"
+                            "value" => "Нет"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='7']",
-                            "value" => "Нет"
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
@@ -797,310 +801,306 @@ return [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='12']",
                             "value" => "(не задано)"
                         ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='13']",
-                            "value" => "(не задано)"
-                        ],
                     ],
                 ],
                 "cantSee" => [
                     "Заявка 7" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='1']",
                             "value" => "7"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение тегов (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение тегов"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
                             "value" => "Выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 6" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='1']",
                             "value" => "6"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение видео (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение видео"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 18"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
                             "value" => "Частично выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 5" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='1']",
                             "value" => "5"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
                             "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
                             "value" => "Изменение существующих параметров/значений"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 17"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
                             "value" => "Ожидает"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 4" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='1']",
                             "value" => "4"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
                             "value" => "Добавление параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
                             "value" => "Добавление параметров/значений  "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 14"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
                             "value" => "В работе"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 3" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='1']",
                             "value" => "3"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15   "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
                             "value" => "Ожидает взятия в работу	    "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 2" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='1']",
                             "value" => "2"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
                             "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
                             "value" => "Заливка фото с фотостудии"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
                             "value" => "(не задано)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
                             "value" => "На доработке"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
                             "value" => "Работа с товарами Розетки"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
                             "value" => "Работа с товарами Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
                             "value" => "Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
@@ -1126,58 +1126,62 @@ return [
                 "canSee" => [
                     "Заголовки" => [
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='2']",
+                            "selector" => "//thead/tr/th[@data-col-seq='1']",
                             "value" => "ID задачи"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='3']",
+                            "selector" => "//thead/tr/th[@data-col-seq='2']",
                             "value" => "Заголовок"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='4']",
+                            "selector" => "//thead/tr/th[@data-col-seq='3']",
                             "value" => "Тип"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='5']",
+                            "selector" => "//thead/tr/th[@data-col-seq='4']",
                             "value" => "Описание"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='6']",
+                            "selector" => "//thead/tr/th[@data-col-seq='5']",
                             "value" => "Причина отмены/доработки"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='7']",
+                            "selector" => "//thead/tr/th[@data-col-seq='6']",
                             "value" => "Рекомендации"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='8']",
+                            "selector" => "//thead/tr/th[@data-col-seq='7']",
                             "value" => "Комментарий на исправление"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='9']",
+                            "selector" => "//thead/tr/th[@data-col-seq='8']",
                             "value" => "Комментарий к результату задачи"
                         ],
                     ],
                     "Заявка 2" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='1']",
                             "value" => "2"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
                             "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
                             "value" => "Заливка фото с фотостудии"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
                             "value" => "Описание"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
 //                            "value" => "(не задано)"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
@@ -1187,275 +1191,275 @@ return [
                             "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
                             "value" => "(не задано)"
                         ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
-                            "value" => "(не задано)"
-                        ],
                     ],
                 ],
                 "cantSee" => [
                     "Заявка 7" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='1']",
                             "value" => "7"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение тегов (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение тегов"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
                             "value" => "Выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 6" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='1']",
                             "value" => "6"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение видео (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение видео"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 18"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
                             "value" => "Частично выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 5" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='1']",
                             "value" => "5"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
                             "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
                             "value" => "Изменение существующих параметров/значений"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 17"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
                             "value" => "Ожидает"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 4" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='1']",
                             "value" => "4"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
                             "value" => "Добавление параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
                             "value" => "Добавление параметров/значений  "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 14"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
                             "value" => "В работе"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 3" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='1']",
                             "value" => "3"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15   "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
                             "value" => "Ожидает взятия в работу	    "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 1" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='1']",
                             "value" => "1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
                             "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
                             "value" => "Перенос товаров	"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='5']",
@@ -1463,11 +1467,11 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='6']",
-                            "value" => "(не задано)"
+                            "value" => "Нет"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='7']",
-                            "value" => "Нет"
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
@@ -1487,10 +1491,6 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='12']",
-                            "value" => "(не задано)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='13']",
                             "value" => "(не задано)"
                         ],
                     ],
@@ -1517,58 +1517,62 @@ return [
                 "canSee" => [
                     "Заголовки" => [
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='2']",
+                            "selector" => "//thead/tr/th[@data-col-seq='1']",
                             "value" => "ID задачи"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='3']",
+                            "selector" => "//thead/tr/th[@data-col-seq='2']",
                             "value" => "Заголовок"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='4']",
+                            "selector" => "//thead/tr/th[@data-col-seq='3']",
                             "value" => "Тип"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='5']",
+                            "selector" => "//thead/tr/th[@data-col-seq='4']",
                             "value" => "Количество в работу"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='6']",
+                            "selector" => "//thead/tr/th[@data-col-seq='5']",
                             "value" => "Количество добавленных товаров"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='7']",
+                            "selector" => "//thead/tr/th[@data-col-seq='6']",
                             "value" => "Количество измененных товаров"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='8']",
+                            "selector" => "//thead/tr/th[@data-col-seq='7']",
                             "value" => "Количество товаров, которые уже есть в БД"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='9']",
+                            "selector" => "//thead/tr/th[@data-col-seq='8']",
                             "value" => "Рассчитанное количество проверенных товаров"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='10']",
+                            "selector" => "//thead/tr/th[@data-col-seq='9']",
                             "value" => "Рассчитанное количество проверенных товаров с ошибками"
                         ],
                     ],
                     "Заявка 3" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='1']",
                             "value" => "3"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
                             "value" => "10"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
@@ -1586,275 +1590,275 @@ return [
                             "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
                             "value" => "(не задано)"
                         ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
-                            "value" => "(не задано)"
-                        ],
                     ],
                 ],
                 "cantSee" => [
                     "Заявка 7" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='1']",
                             "value" => "7"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение тегов (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение тегов"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
                             "value" => "Выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 6" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='1']",
                             "value" => "6"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение видео (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение видео"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 18"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
                             "value" => "Частично выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 5" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='1']",
                             "value" => "5"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
                             "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
                             "value" => "Изменение существующих параметров/значений"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 17"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
                             "value" => "Ожидает"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 4" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='1']",
                             "value" => "4"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
                             "value" => "Добавление параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
                             "value" => "Добавление параметров/значений  "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 14"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
                             "value" => "В работе"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 2" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='1']",
                             "value" => "2"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
                             "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
                             "value" => "Заливка фото с фотостудии"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
                             "value" => "(не задано)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
                             "value" => "На доработке"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
                             "value" => "Работа с товарами Розетки"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
                             "value" => "Работа с товарами Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
                             "value" => "Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 1" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='1']",
                             "value" => "1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
                             "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
                             "value" => "Перенос товаров	"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='5']",
@@ -1862,11 +1866,11 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='6']",
-                            "value" => "(не задано)"
+                            "value" => "Нет"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='7']",
-                            "value" => "Нет"
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
@@ -1886,10 +1890,6 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='12']",
-                            "value" => "(не задано)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='13']",
                             "value" => "(не задано)"
                         ],
                     ],
@@ -1915,55 +1915,55 @@ return [
                 "canSee" => [
                     "Заголовки" => [
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='2']",
+                            "selector" => "//thead/tr/th[@data-col-seq='1']",
                             "value" => "ID задачи"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='3']",
+                            "selector" => "//thead/tr/th[@data-col-seq='2']",
                             "value" => "Заголовок"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='4']",
+                            "selector" => "//thead/tr/th[@data-col-seq='3']",
                             "value" => "Тип"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='5']",
+                            "selector" => "//thead/tr/th[@data-col-seq='4']",
                             "value" => "Дата последнего изменения статуса"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='6']",
+                            "selector" => "//thead/tr/th[@data-col-seq='5']",
                             "value" => "Дата регистрации задачи в системе"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='7']",
+                            "selector" => "//thead/tr/th[@data-col-seq='6']",
                             "value" => "Дата обработки задачи супервайзером"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='8']",
+                            "selector" => "//thead/tr/th[@data-col-seq='7']",
                             "value" => "Дата проверки задачи супервайзером"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='9']",
+                            "selector" => "//thead/tr/th[@data-col-seq='8']",
                             "value" => "Плановая дата начала работ"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='10']",
+                            "selector" => "//thead/tr/th[@data-col-seq='9']",
                             "value" => "Плановая дата завершения"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='11']",
+                            "selector" => "//thead/tr/th[@data-col-seq='10']",
                             "value" => "Фактическая дата начала работ"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='12']",
+                            "selector" => "//thead/tr/th[@data-col-seq='11']",
                             "value" => "Фактическая дата завершения"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='13']",
+                            "selector" => "//thead/tr/th[@data-col-seq='12']",
                             "value" => "Отчетный период КМ"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='14']",
+                            "selector" => "//thead/tr/th[@data-col-seq='13']",
                             "value" => "Отчетные периоды СВ"
                         ],
                     ],
@@ -2012,28 +2012,32 @@ return [
                     ],
                     "Заявка 4" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='1']",
                             "value" => "4"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
                             "value" => "Добавление параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
                             "value" => "Добавление параметров/значений  "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
                             "value" => "2020-01-01 00:00:01"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
                             "value" => "2020-01-01 00:00:00"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
                             "value" => "2020-01-01 00:00:02"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
@@ -2045,11 +2049,11 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
-                            "value" => "(не задано)"
+                            "value" => "2020-01-01 00:00:03"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
-                            "value" => "2020-01-01 00:00:03"
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
@@ -2057,10 +2061,6 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='13']",
-                            "value" => "(не задано)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='14']",
                             "value" => "2020-01-01 - 2020-03-31"
                         ],
                     ],
@@ -2068,266 +2068,270 @@ return [
                 "cantSee" => [
                     "Заявка 7" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='1']",
                             "value" => "7"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение тегов (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение тегов"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
                             "value" => "Выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 6" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='1']",
                             "value" => "6"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение видео (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение видео"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 18"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
                             "value" => "Частично выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 5" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='1']",
                             "value" => "5"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
                             "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
                             "value" => "Изменение существующих параметров/значений"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 17"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
                             "value" => "Ожидает"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 3" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='1']",
                             "value" => "3"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15   "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
                             "value" => "Ожидает взятия в работу	    "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 2" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='1']",
                             "value" => "2"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
                             "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
                             "value" => "Заливка фото с фотостудии"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
                             "value" => "(не задано)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
                             "value" => "На доработке"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
                             "value" => "Работа с товарами Розетки"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
                             "value" => "Работа с товарами Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
                             "value" => "Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 1" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='1']",
                             "value" => "1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
                             "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
                             "value" => "Перенос товаров	"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='5']",
@@ -2335,11 +2339,11 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='6']",
-                            "value" => "(не задано)"
+                            "value" => "Нет"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='7']",
-                            "value" => "Нет"
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
@@ -2359,10 +2363,6 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='12']",
-                            "value" => "(не задано)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='13']",
                             "value" => "(не задано)"
                         ],
                     ],
@@ -2388,86 +2388,90 @@ return [
                 "canSee" => [
                     "Заголовки" => [
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='2']",
+                            "selector" => "//thead/tr/th[@data-col-seq='1']",
                             "value" => "ID задачи"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='3']",
+                            "selector" => "//thead/tr/th[@data-col-seq='2']",
                             "value" => "Заголовок"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='4']",
+                            "selector" => "//thead/tr/th[@data-col-seq='3']",
                             "value" => "Тип"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='5']",
+                            "selector" => "//thead/tr/th[@data-col-seq='4']",
                             "value" => "Ручная загрузка"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='6']",
+                            "selector" => "//thead/tr/th[@data-col-seq='5']",
                             "value" => "Пакетная загрузка"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='7']",
+                            "selector" => "//thead/tr/th[@data-col-seq='6']",
                             "value" => "Виза супервайзера"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='8']",
+                            "selector" => "//thead/tr/th[@data-col-seq='7']",
                             "value" => "С фотосъемкой"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='9']",
+                            "selector" => "//thead/tr/th[@data-col-seq='8']",
                             "value" => "Точки входа"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='10']",
+                            "selector" => "//thead/tr/th[@data-col-seq='9']",
                             "value" => "Добавление графики"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='11']",
+                            "selector" => "//thead/tr/th[@data-col-seq='10']",
                             "value" => "С размерной сеткой"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='12']",
+                            "selector" => "//thead/tr/th[@data-col-seq='11']",
                             "value" => "С тегами к товарам"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='13']",
+                            "selector" => "//thead/tr/th[@data-col-seq='12']",
                             "value" => "Уценка"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='14']",
+                            "selector" => "//thead/tr/th[@data-col-seq='13']",
                             "value" => "Уценка 2"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='15']",
+                            "selector" => "//thead/tr/th[@data-col-seq='14']",
                             "value" => "На основе отзыва клиента на сайте"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='16']",
+                            "selector" => "//thead/tr/th[@data-col-seq='15']",
                             "value" => "Жалоба на товар продавца маркета"
                         ],
                     ],
                     "Заявка 5" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='1']",
                             "value" => "5"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
                             "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
                             "value" => "Изменение существующих параметров/значений"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
                             "value" => "Нет"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
                             "value" => "Да"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
+                            "value" => "Нет"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
@@ -2494,19 +2498,15 @@ return [
                             "value" => "Нет"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
                             "value" => "Нет"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
                             "value" => "Нет"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
-                            "value" => "Нет"
-                        ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
                             "value" => "Нет"
                         ],
                     ],
@@ -2514,266 +2514,270 @@ return [
                 "cantSee" => [
                     "Заявка 7" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='1']",
                             "value" => "7"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение тегов (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение тегов"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='7']",
                             "value" => "Выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 6" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='1']",
                             "value" => "6"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение видео (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение видео"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 18"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='7']",
                             "value" => "Частично выполнена"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 4" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='1']",
                             "value" => "4"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
                             "value" => "Добавление параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
                             "value" => "Добавление параметров/значений  "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 14"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
                             "value" => "В работе"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 3" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='1']",
                             "value" => "3"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15   "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
                             "value" => "Ожидает взятия в работу	    "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 2" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='1']",
                             "value" => "2"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
                             "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
                             "value" => "Заливка фото с фотостудии"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
                             "value" => "(не задано)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
                             "value" => "На доработке"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
                             "value" => "Работа с товарами Розетки"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
                             "value" => "Работа с товарами Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
                             "value" => "Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 1" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='1']",
                             "value" => "1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
                             "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
                             "value" => "Перенос товаров	"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='5']",
@@ -2781,11 +2785,11 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='6']",
-                            "value" => "(не задано)"
+                            "value" => "Нет"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='7']",
-                            "value" => "Нет"
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
@@ -2805,10 +2809,6 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='12']",
-                            "value" => "(не задано)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='13']",
                             "value" => "(не задано)"
                         ],
                     ],
@@ -2834,82 +2834,86 @@ return [
                 "canSee" => [
                     "Заголовки" => [
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='2']",
+                            "selector" => "//thead/tr/th[@data-col-seq='1']",
                             "value" => "ID задачи"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='3']",
+                            "selector" => "//thead/tr/th[@data-col-seq='2']",
                             "value" => "Заголовок"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='4']",
+                            "selector" => "//thead/tr/th[@data-col-seq='3']",
                             "value" => "Тип"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='5']",
+                            "selector" => "//thead/tr/th[@data-col-seq='4']",
                             "value" => "Промо-описание"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='6']",
+                            "selector" => "//thead/tr/th[@data-col-seq='5']",
                             "value" => "Добавление товаров в новую категорию"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='7']",
+                            "selector" => "//thead/tr/th[@data-col-seq='6']",
                             "value" => "БУ, REF"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='8']",
+                            "selector" => "//thead/tr/th[@data-col-seq='7']",
                             "value" => "Обновление фото"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='9']",
+                            "selector" => "//thead/tr/th[@data-col-seq='8']",
                             "value" => "Обновление описания"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='10']",
+                            "selector" => "//thead/tr/th[@data-col-seq='9']",
                             "value" => "Обновление характеристик"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='11']",
+                            "selector" => "//thead/tr/th[@data-col-seq='10']",
                             "value" => "Автомодерация"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='12']",
+                            "selector" => "//thead/tr/th[@data-col-seq='11']",
                             "value" => "Добавление/обновление инструкций"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='13']",
+                            "selector" => "//thead/tr/th[@data-col-seq='12']",
                             "value" => "Стоп-бренды"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='14']",
+                            "selector" => "//thead/tr/th[@data-col-seq='13']",
                             "value" => "С палитрой"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='15']",
+                            "selector" => "//thead/tr/th[@data-col-seq='14']",
                             "value" => "Лоты"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='16']",
+                            "selector" => "//thead/tr/th[@data-col-seq='15']",
                             "value" => "С видео"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='17']",
+                            "selector" => "//thead/tr/th[@data-col-seq='16']",
                             "value" => "По заявке с MobileCourier"
                         ],
                     ],
                     "Заявка 6" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='1']",
                             "value" => "6"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение видео (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение видео"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='4']",
+                            "value" => "Нет"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='5']",
@@ -2959,23 +2963,23 @@ return [
                             "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='16']",
                             "value" => "Нет"
                         ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='17']",
-                            "value" => "Нет"
-                        ],
                     ],
                     "Заявка 7" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='1']",
                             "value" => "7"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение тегов (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение тегов"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='4']",
+                            "value" => "Нет"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='5']",
@@ -3010,7 +3014,7 @@ return [
                             "value" => "Нет"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='7']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='13']",
                             "value" => "Нет"
                         ],
                         [
@@ -3025,225 +3029,225 @@ return [
                             "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='16']",
                             "value" => "Нет"
                         ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='6']/td[@data-col-seq='17']",
-                            "value" => "Нет"
-                        ],
                     ],
                 ],
                 "cantSee" => [
                     "Заявка 5" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='1']",
                             "value" => "5"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='2']",
                             "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='3']",
                             "value" => "Изменение существующих параметров/значений"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 17"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='7']",
                             "value" => "Ожидает"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='5']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 4" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='1']",
                             "value" => "4"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='2']",
                             "value" => "Добавление параметров/значений (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='3']",
                             "value" => "Добавление параметров/значений  "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Проектенко 14"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='7']",
                             "value" => "В работе"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='9']",
                             "value" => "Работа с проектированием структур + фильтрами"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='4']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 3" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='1']",
                             "value" => "3"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='2']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='3']",
                             "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Категоркин 15   "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='6']",
                             "value" => "Менеджер Контентович 1А"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='7']",
                             "value" => "Ожидает взятия в работу	    "
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='8']",
                             "value" => "Определяется типом задачи"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='9']",
                             "value" => "Работа с порталами, фат-меню, категориями"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='11']",
                             "value" => "Euromart"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='3']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 2" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='1']",
                             "value" => "2"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='2']",
                             "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='3']",
                             "value" => "Заливка фото с фотостудии"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='4']",
                             "value" => "Константин Куцан"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='5']",
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='6']",
                             "value" => "(не задано)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='7']",
                             "value" => "На доработке"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='8']",
                             "value" => "Работа с товарами Розетки"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='9']",
                             "value" => "Работа с товарами Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='10']",
                             "value" => "Авиабилеты"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='11']",
                             "value" => "Rozetka"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='13']",
+                            "selector" => "//tbody/tr[@data-key='2']/td[@data-col-seq='12']",
                             "value" => "Товар-новинка/эксклюзив (трафикообразующий)"
                         ],
                     ],
                     "Заявка 1" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='1']",
                             "value" => "1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
                             "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
                             "value" => "Перенос товаров	"
+                        ],
+                        [
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='5']",
@@ -3251,11 +3255,11 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='6']",
-                            "value" => "(не задано)"
+                            "value" => "Нет"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='7']",
-                            "value" => "Нет"
+                            "value" => "(не задано)"
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
@@ -3275,10 +3279,6 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='12']",
-                            "value" => "(не задано)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='13']",
                             "value" => "(не задано)"
                         ],
                     ],
@@ -3304,43 +3304,43 @@ return [
                 "canSee" => [
                     "Заявка 1" => [
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='1']",
                             "value" => "1"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='2']",
                             "value" => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='3']",
                             "value" => "Добавление/изменение информации в существующих товарах"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='5']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='4']",
                             "value" => "Исправление критичной ошибки"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='6']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='5']",
                             "value" => "Нинада"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='7']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='6']",
                             "value" => "Более 5 уточнений"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='7']",
                             "value" => "Фото предоставлены фотостудией"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='9']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='8']",
                             "value" => "Характеристики добавлены с обновлением фото/описания"
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='10']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='9']",
                             "value" => "Не предоставлены продактом. Выполнен поиск."
                         ],
                         [
-                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='11']",
+                            "selector" => "//tbody/tr[@data-key='1']/td[@data-col-seq='10']",
                             "value" => "Английский"
                         ],
                     ],
