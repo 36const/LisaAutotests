@@ -14,16 +14,18 @@ return [
                 "canSee" => [
                     [
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
                         ["selector" => "//ul[@class='nav nav-tabs']//a[@href='/bpm/request/new']"],
                         ["selector" => Request::transferButton('Готова для распределения')],
-                        ["selector" => Request::contextMenu('Готова для распределения')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу'],
+                "cantSee" => ['Готова для распределения']
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -58,19 +60,17 @@ return [
                         ["selector" => Request::transferButton('Назначить исполнителя')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Готова для распределения')],
-                        ["selector" => Request::contextMenu('Отменить')],
-                        ["selector" => Request::contextMenu('Назначить исполнителя')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('На доработку')],
-                        ["selector" => Request::contextMenu('На доработку')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Готова для распределения', 'Отменить', 'Назначить исполнителя', 'Изменить супервайзера'],
+                "cantSee" => ['На доработку']
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -105,19 +105,17 @@ return [
                         ["selector" => Request::transferButton('Назначить исполнителя')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Готова для распределения')],
-                        ["selector" => Request::contextMenu('На доработку')],
-                        ["selector" => Request::contextMenu('Назначить исполнителя')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Отменить')],
-                        ["selector" => Request::contextMenu('Отменить')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Готова для распределения', 'На доработку', 'Назначить исполнителя', 'Изменить супервайзера'],
+                "cantSee" => ['Отменить']
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -152,19 +150,17 @@ return [
                         ["selector" => Request::transferButton('Отменить')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Готова для распределения')],
-                        ["selector" => Request::contextMenu('На доработку')],
-                        ["selector" => Request::contextMenu('Отменить')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Назначить исполнителя')],
-                        ["selector" => Request::contextMenu('Назначить исполнителя')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Готова для распределения', 'На доработку', 'Отменить', 'Изменить супервайзера'],
+                "cantSee" => ['Назначить исполнителя']
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -198,18 +194,17 @@ return [
                         ["selector" => Request::transferButton('Отменить')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Назначить исполнителя')],
-                        ["selector" => Request::contextMenu('Отменить')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('На доработку')],
-                        ["selector" => Request::contextMenu('На доработку')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Назначить исполнителя', 'Отменить', 'Изменить супервайзера'],
+                "cantSee" => ['На доработку']
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -242,18 +237,17 @@ return [
                         ["selector" => Request::transferButton('На доработку')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Назначить исполнителя')],
-                        ["selector" => Request::contextMenu('На доработку')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Отменить')],
-                        ["selector" => Request::contextMenu('Отменить')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Назначить исполнителя', 'На доработку', 'Изменить супервайзера'],
+                "cantSee" => ['Отменить']
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -286,18 +280,17 @@ return [
                         ["selector" => Request::transferButton('На доработку')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Отменить')],
-                        ["selector" => Request::contextMenu('На доработку')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Назначить исполнителя')],
-                        ["selector" => Request::contextMenu('Назначить исполнителя')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Отменить', 'На доработку', 'Изменить супервайзера'],
+                "cantSee" => ['Назначить исполнителя']
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -326,16 +319,17 @@ return [
                     [
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ]
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Вернуть в новые')],
-                        ["selector" => Request::contextMenu('Вернуть в новые')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Изменить супервайзера'],
+                "cantSee" => ['Вернуть в новые']
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -365,17 +359,17 @@ return [
                         ["selector" => Request::transferButton('В работу')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
-                        ["selector" => Request::contextMenu('В работу')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Отменить')],
-                        ["selector" => Request::contextMenu('Отменить')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Изменить супервайзера', 'В работу'],
+                "cantSee" => ['Отменить']
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -404,8 +398,6 @@ return [
                 "canSee" => [
                     [
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Отменить')],
                     ],
                 ],
                 "cantSee" => [
@@ -413,9 +405,12 @@ return [
                         //массовая отмена в статусе 5 невозможна в любом случае
                         ["selector" => Request::transferButton('Отменить')],
                         ["selector" => Request::transferButton('В работу')],
-                        ["selector" => Request::contextMenu('В работу')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Отменить'],
+                "cantSee" => ['В работу']
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -446,20 +441,17 @@ return [
                         ["selector" => Request::transferButton('Ожидать')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Ожидать')],
-                        ["selector" => Request::contextMenu('Частично выполнена')],
-                        ["selector" => Request::contextMenu('Выполнена')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
-                        ["selector" => Request::contextMenu('Изменить исполнителя')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Отменить')],
-                        ["selector" => Request::contextMenu('Отменить')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Ожидать', 'Частично выполнена', 'Выполнена', 'Изменить супервайзера', 'Изменить исполнителя'],
+                "cantSee" => ['Отменить'],
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -494,20 +486,17 @@ return [
                         ["selector" => Request::transferButton('Отменить')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Ожидать')],
-                        ["selector" => Request::contextMenu('Отменить')],
-                        ["selector" => Request::contextMenu('Частично выполнена')],
-                        ["selector" => Request::contextMenu('Выполнена')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Изменить исполнителя')],
-                        ["selector" => Request::contextMenu('Изменить исполнителя')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Ожидать', 'Частично выполнена', 'Выполнена', 'Изменить супервайзера', 'Отменить'],
+                "cantSee" => ['Изменить исполнителя'],
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -541,20 +530,17 @@ return [
                         ["selector" => Request::transferButton('Отменить')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Изменить исполнителя')],
-                        ["selector" => Request::contextMenu('Отменить')],
-                        ["selector" => Request::contextMenu('Частично выполнена')],
-                        ["selector" => Request::contextMenu('Выполнена')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Ожидать')],
-                        ["selector" => Request::contextMenu('Ожидать')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Изменить исполнителя', 'Частично выполнена', 'Выполнена', 'Изменить супервайзера', 'Отменить'],
+                "cantSee" => ['Ожидать'],
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -589,24 +575,20 @@ return [
                         ["selector" => Request::transferButton('Ожидать')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Изменить исполнителя')],
-                        ["selector" => Request::contextMenu('Отменить')],
-                        ["selector" => Request::contextMenu('Ожидать')],
-                        ["selector" => Request::contextMenu('Выполнена')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
-                        ["selector" => Request::contextMenu('Частично выполнена')],
                     ],
                 ],
                 "cantSee" => [
+                    [
+                        ["selector" => Request::transferButton('Частично выполнена')],
+                    ],
+                ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Изменить исполнителя', 'Ожидать', 'Частично выполнена', 'Выполнена', 'Изменить супервайзера', 'Отменить'],
 //              чтобы уменьшить кол-во запросов, пока сделали что статус 8
 //              в конт. меню остаётся показываться даже после отключения пермишена 6->8
 //              а перестаёт показываться с отключением пермишена 6->9
-                    [
-                        ["selector" => Request::transferButton('Частично выполнена')],
-//                        ["selector" => Request::contextMenu('Частично выполнена')],
-                    ],
-                ]
+                "cantSee" => [/*'Частично выполнена'*/],
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -641,21 +623,17 @@ return [
                         ["selector" => Request::transferButton('Ожидать')],
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Изменить исполнителя')],
-                        ["selector" => Request::contextMenu('Отменить')],
-                        ["selector" => Request::contextMenu('Ожидать')],
-//                        ["selector" => Request::contextMenu('Частично выполнена')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Выполнена')],
-                        ["selector" => Request::contextMenu('Частично выполнена')],
-                        ["selector" => Request::contextMenu('Выполнена')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Изменить исполнителя', 'Ожидать', 'Изменить супервайзера', 'Отменить'/*, 'Частично выполнена'*/],
+                "cantSee" => ['Частично выполнена', 'Выполнена'],
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -690,20 +668,13 @@ return [
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
                         ["selector" => Request::transferButton('Отменить')],
-                        ["selector" => Request::contextMenu('Отменить')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Ожидать')],
-                        ["selector" => Request::contextMenu('Внести исправления')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
-                        ["selector" => Request::contextMenu('Изменить исполнителя')],
                     ],
                 ],
-                "cantSee" => [
-                    [
-                        ["selector" => Request::contextMenu('Частично выполнена')],
-                        ["selector" => Request::contextMenu('Выполнена')],
-                    ],
-                ]
+                "cantSee" => []
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Внести исправления', 'Создать подзадачу', 'Изменить исполнителя', 'Ожидать', 'Изменить супервайзера', 'Отменить'],
+                "cantSee" => ['Частично выполнена', 'Выполнена'],
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -729,8 +700,7 @@ return [
                         ["selector" => Request::transferButton('Частично выполнена') . '[@disabled]'],
                     ],
                 ],
-                "cantSee" => [
-                ]
+                "cantSee" => []
             ],
         ]
     ],
@@ -749,18 +719,13 @@ return [
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
                         ["selector" => Request::transferButton('Отменить')],
-                        ["selector" => Request::contextMenu('Отменить')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Ожидать')],
-                        ["selector" => Request::contextMenu('Внести исправления')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
-                        ["selector" => Request::contextMenu('Изменить исполнителя')],
-                        ["selector" => Request::contextMenu('Частично выполнена')],
-                        ["selector" => Request::contextMenu('Выполнена')],
                     ],
                 ],
-                "cantSee" => [
-                ]
+                "cantSee" => []
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Внести исправления', 'Создать подзадачу', 'Изменить исполнителя', 'Ожидать', 'Изменить супервайзера', 'Отменить', 'Частично выполнена', 'Выполнена'],
+                "cantSee" => [],
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -774,8 +739,7 @@ return [
                         ["selector" => Request::transferButton('Выполнена')],
                     ],
                 ],
-                "cantSee" => [
-                ]
+                "cantSee" => []
             ],
             "correctionPageObjects" => [
                 "canSee" => [
@@ -806,16 +770,17 @@ return [
                     [
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
                     ]
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('В работу')],
-                        ["selector" => Request::contextMenu('В работу')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Изменить супервайзера'],
+                "cantSee" => ['В работу'],
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -844,19 +809,17 @@ return [
                     [
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
-                        ["selector" => Request::contextMenu('Взять на Кросс-чек')],
-                        ["selector" => Request::contextMenu('Закрыть')],
-                        ["selector" => Request::contextMenu('На исправление')],
                     ]
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('В работу')],
-                        ["selector" => Request::contextMenu('В работу')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Изменить супервайзера', 'Взять на Кросс-чек', 'Закрыть', 'На исправление'],
+                "cantSee" => ['В работу'],
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -902,18 +865,17 @@ return [
                     [
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
-                        ["selector" => Request::contextMenu('Взять на Кросс-чек')],
-                        ["selector" => Request::contextMenu('На исправление')],
                     ]
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Закрыть')],
-                        ["selector" => Request::contextMenu('Закрыть')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Изменить супервайзера', 'Взять на Кросс-чек', 'На исправление'],
+                "cantSee" => ['Закрыть'],
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -958,19 +920,17 @@ return [
                     [
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
-                        ["selector" => Request::contextMenu('Взять на Кросс-чек')],
-                        ["selector" => Request::contextMenu('Закрыть')],
-                        ["selector" => Request::contextMenu('На исправление')],
                     ]
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('В работу')],
-                        ["selector" => Request::contextMenu('В работу')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Изменить супервайзера', 'Взять на Кросс-чек', 'Закрыть', 'На исправление'],
+                "cantSee" => ['В работу'],
             ],
             "requestPageObjects" => [
                 "canSee" => [
@@ -1016,18 +976,17 @@ return [
                     [
                         ["selector" => Request::transferButton('Изменить супервайзера')],
                         ["selector" => Request::transferButton('Пакетное редактирование')],
-                        ["selector" => Request::contextMenu('Создать подзадачу')],
-                        ["selector" => Request::contextMenu('Изменить супервайзера')],
-                        ["selector" => Request::contextMenu('Взять на Кросс-чек')],
-                        ["selector" => Request::contextMenu('На исправление')],
                     ]
                 ],
                 "cantSee" => [
                     [
                         ["selector" => Request::transferButton('Закрыть')],
-                        ["selector" => Request::contextMenu('Закрыть')],
                     ],
                 ]
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу', 'Изменить супервайзера', 'Взять на Кросс-чек', 'На исправление'],
+                "cantSee" => ['Закрыть'],
             ],
             "requestPageObjects" => [
                 "canSee" => [

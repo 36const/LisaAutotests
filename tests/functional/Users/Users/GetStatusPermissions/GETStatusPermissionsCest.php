@@ -47,6 +47,9 @@ class GETStatusPermissionsCest
         $I->amOnPage($providerData['url']);
         $I->checkObjectsOnPage($providerData['tablePageObjects']);
 
+        $I->sendAjaxGetRequest('/bpm/request/get-context-menu?requestId=1');
+        $I->checkAjaxResponse($providerData['ajaxResponse']);
+
         $I->amOnPage('/bpm/request/view?id=1&forCrossCheck=');
         $I->checkObjectsOnPage($providerData['requestPageObjects']);
 

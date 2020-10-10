@@ -78,7 +78,7 @@ return [
                             "attachments" => '[]',
                             "category_id" => 1,
                             "seller_id" => 83,
-                            "recommendations" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                            "recommendations" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -259,7 +259,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 121,
-                            'value' => 'http://gomer.local/bpm/request/to-correction?id=1 =~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                            'value' => 'http://gomer.local/bpm/request/to-correction?id=1 =~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                         ],
                         [
                             'request_id' => 1,
