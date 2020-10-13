@@ -12,18 +12,18 @@ return [
                 "canSee" => [
                     [
                         [
-                            "selector" => "//div[@class='dropdown']//ul[@id='w1']/li[1]/a[@href='/bpm/filter/set-filters']",
+                            "selector" => "//div[@class='dropdown']//ul[@class='dropdown-menu']/li[1]/a[@href='/bpm/filter/set-filters']",
                             "value" => "Очистить фильтр"
                         ],
                         [
-                            "selector" => "//div[@class='dropdown']//ul[@id='w1']/li[2][@class='divider']",
+                            "selector" => "//div[@class='dropdown']//ul[@class='dropdown-menu']/li[2][@class='divider']",
                         ]
                     ]
                 ],
                 "cantSee" => [
                     [
                         [
-                            "selector" => "//div[@class='dropdown']//ul[@id='w1']/li[3]",
+                            "selector" => "//div[@class='dropdown']//ul[@class='dropdown-menu']/li[3]",
                         ]
                     ]
                 ]
@@ -42,18 +42,18 @@ return [
                 "canSee" => [
                     [
                         [
-                            "selector" => "//div[@class='dropdown']//ul[@id='w1']/li[1]/a[@href='/bpm/filter/set-filters']",
+                            "selector" => "//div[@class='dropdown']//ul[@class='dropdown-menu']/li[1]/a[@href='/bpm/filter/set-filters']",
                             "value" => "Очистить фильтр"
                         ],
                         [
-                            "selector" => "//div[@class='dropdown']//ul[@id='w1']/li[2][@class='divider']",
+                            "selector" => "//div[@class='dropdown']//ul[@class='dropdown-menu']/li[2][@class='divider']",
                         ],
                         [
-                            "selector" => "//div[@class='dropdown']//ul[@id='w1']/li[3]/a[@href='/bpm/filter/set-filters?filterId=1']",
+                            "selector" => "//div[@class='dropdown']//ul[@class='dropdown-menu']/li[3]/a[@href='/bpm/filter/set-filters?filterId=1']",
                             "value" => "Фильтр1"
                         ],
                         [
-                            "selector" => "//div[@class='dropdown']//ul[@id='w1']/li[4]/a[@href='/bpm/filter/set-filters?filterId=2']",
+                            "selector" => "//div[@class='dropdown']//ul[@class='dropdown-menu']/li[4]/a[@href='/bpm/filter/set-filters?filterId=2']",
                             "value" => "Фильтр2"
                         ],
                     ]
@@ -61,7 +61,7 @@ return [
                 "cantSee" => [
                     [
                         [
-                            "selector" => "//div[@class='dropdown']//ul[@id='w1']/li[5]",
+                            "selector" => "//div[@class='dropdown']//ul[@class='dropdown-menu']/li[5]",
                         ]
                     ]
                 ]
