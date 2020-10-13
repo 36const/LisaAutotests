@@ -45,6 +45,7 @@ class GETStatusPermissionsCest
         $providerData = $data['provider_data'];
 
         $I->amOnPage($providerData['url']);
+        $I->canSeeResponseCodeIs(200);
         $I->checkObjectsOnPage($providerData['tablePageObjects']);
 
         $I->sendAjaxGetRequest('/bpm/request/get-context-menu?requestId=1');
