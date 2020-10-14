@@ -10,6 +10,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
+                "created_at" => '2020-01-01 00:00:00',
             ],
             [
                 'id' => 2,
@@ -19,6 +20,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=2',
+                "created_at" => '2020-01-02 00:00:00',
             ],
             [
                 'id' => 3,
@@ -28,6 +30,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bchange_type%5D=sync_source_category_id',
+                "created_at" => '2020-01-03 00:00:00',
             ],
             [
                 'id' => 4,
@@ -37,6 +40,7 @@ return [
                 "seller_id" => 83,
                 "subject" => "Euromart. Источник №1",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=9',
+                "created_at" => '2020-01-04 00:00:00',
             ],
             [
                 'id' => 5,
@@ -46,6 +50,7 @@ return [
                 "seller_id" => 83,
                 "subject" => "Euromart. Источник №1",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
+                "created_at" => '2020-01-05 00:00:00',
             ],
             [
                 'id' => 6,
@@ -55,6 +60,7 @@ return [
                 "seller_id" => 83,
                 "subject" => "Euromart. Источник №1",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=2',
+                "created_at" => '2020-01-01 00:00:06',
             ],
             [
                 'id' => 7,
@@ -64,6 +70,7 @@ return [
                 "seller_id" => 83,
                 "subject" => "Euromart. Источник №1",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bchange_type%5D=sync_source_category_id',
+                "created_at" => '2020-01-01 00:00:07',
             ],
             [
                 'id' => 8,
@@ -73,6 +80,7 @@ return [
                 "seller_id" => 9423,
                 "subject" => "anytech. Источник №9423",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=9',
+                "created_at" => '2020-01-01 00:00:08',
             ],
             [
                 'id' => 9,
@@ -82,6 +90,7 @@ return [
                 "seller_id" => 9423,
                 "subject" => "anytech. Источник №9423",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
+                "created_at" => '2020-01-01 00:00:09',
             ],
             [
                 'id' => 10,
@@ -91,6 +100,7 @@ return [
                 "seller_id" => 9423,
                 "subject" => "anytech. Источник №9423",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=2',
+                "created_at" => '2020-01-01 00:00:10',
             ],
         ]
     ],
