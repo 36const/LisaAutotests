@@ -122,6 +122,9 @@ return [
         ],
         "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
         "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
+        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
+        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
+        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
         "user_permissions" => [
             [
                 //"id" => 3143,

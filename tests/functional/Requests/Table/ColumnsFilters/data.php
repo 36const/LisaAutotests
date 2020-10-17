@@ -19,10 +19,6 @@ return [
                         ["selector" => Request::requestInTable(4, 1, 7),],
                         ["selector" => Request::requestInTable(5, 1, 9),],
                         ["selector" => Request::requestInTable(6, 1, 11),],
-                        [
-                            "selector" => Request::tabSummary(),
-                            "value" => 6
-                        ],
                     ]
                 ],
                 "cantSee" => [
@@ -44,10 +40,6 @@ return [
                     [
                         ["selector" => Request::requestInTable(1, 1, 13),],
                         ["selector" => Request::requestInTable(2, 1, 1),],
-                        [
-                            "selector" => Request::tabSummary(),
-                            "value" => 2
-                        ],
                     ]
                 ],
                 "cantSee" => [
@@ -67,7 +59,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::emptyTable(),],
+                        ["selector" => Request::emptyTable()],
                     ]
                 ],
                 "cantSee" => [
@@ -89,10 +81,6 @@ return [
                     [
                         ["selector" => Request::requestInTable(1, 1, 21),],
                         ["selector" => Request::requestInTable(2, 1, 5),],
-                        [
-                            "selector" => Request::tabSummary(),
-                            "value" => 2
-                        ],
                     ]
                 ],
                 "cantSee" => [
@@ -113,10 +101,6 @@ return [
                 "canSee" => [
                     [
                         ["selector" => Request::requestInTable(1, 1, 23),],
-                        [
-                            "selector" => Request::tabSummary(),
-                            "value" => 1
-                        ],
                     ]
                 ],
                 "cantSee" => [
