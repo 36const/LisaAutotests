@@ -47,7 +47,6 @@ class GETReportPatternsAccessCest
         $providerData = $data['provider_data'];
 
         $report->amOnReportGenerate();
-        die();
         $I->seeResponseCodeIs(200);
 
         $I->checkObjectsOnPage($providerData['pageObjects']);

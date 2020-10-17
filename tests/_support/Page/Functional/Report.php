@@ -35,4 +35,10 @@ class Report extends FunctionalTester
         $I = $this;
         $I->amOnPage("/bpm/report/generate");
     }
+
+    public static function patternsList(int $size, string $name)
+    {
+        return "//select[@multiple='multiple' and @id='report-detail_ids' and @size='$size']//option[text()='$name']";
+    }
+
 }

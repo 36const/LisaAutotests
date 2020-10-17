@@ -16,14 +16,14 @@ return [
                 //"id" => 42,
                 "title" => "Детальный отчет по ошибкам контент-менеджеров команды Маркетплейс",
                 "fields" => '["id", "created_at", "amount_to_work", 93, 66, 67, "manager_id", 101, 122, "report_period_id", 36, 38, 33, 37, 39, 35, "priority", "seller_id", "author_id", "supervisor_id", "type_id", "actual_finish_date", "actual_start_date"]',
-                "conditions" => '{"type_id": ["1", "2", "3", "4", "6"], "team_direction": ["2"]}',
+                "conditions" => '{"type_id": ["1", "2", "3", "6"], "team_direction": ["2"]}',
                 "type" => 0
             ],
             [
                 //"id" => 43,
                 "title" => "Детальный отчет по работе контент-менеджера по добавлению видео",
                 "fields" => '["supervisor_team", "id", "27", "62", "supervisor_process_date", "supervisor_check_date", "created_at", "category_id", "amount_to_work", "63", "70", "100", "87", "88", "result_comment", "54", "manager_id", "report_period_id", "46", "2", "seller_id", "56", "86", "1", "author_id", "status", "47", "48", "supervisor_id", "type_id", "20", "25", "actual_finish_date", "actual_start_date", "89"]',
-                "conditions" => '{"type_id": ["13"], "team_direction": ["2", "3", "4", "5", "6"]}',
+                "conditions" => '{"type_id": ["13"], "team_direction": ["6"]}',
                 "type" => 0
             ],
             [
@@ -44,14 +44,14 @@ return [
                 //"id" => 39,
                 "title" => "Детальный отчет по работе контент-менеджеров  с товарами Rozetka",
                 "fields" => '["id", 27, 31, "created_at", 18, 76, "subject", 77, "category_id", "amount_to_work", 70, 93, 71, 66, 67, 94, 88, 111, "result_comment", 52, 53, 54, 16, "manager_id", 12, 23, 22, 21, 124, 123, 125, 24, 69, 101, 122, 64, "report_period_id", 36, 34, 33, 37, 35, 2, "priority", "seller_id", 14, 49, 50, 1, 15, 4, "author_id", 68, "supervisor_id", "type_id", 20, 25, 10, 11, "actual_finish_date", "actual_start_date", 89, 26]',
-                "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "12", "13"], "team_direction": ["3"]}',
+                "conditions" => '{"type_id": ["1", "2", "3", "5", "12"], "team_direction": ["3"]}',
                 "type" => 0
             ],
             [
                 //"id" => 38,
                 "title" => "Детальный отчет по работе контент-менеджеров  с товарами маркетплейс ",
                 "fields" => '["id", "manager_id", "supervisor_id", "type_id", "created_at", "report_period_id", "amount_to_work", "93", "66", "67", "75", "73", "74", "94", "72", "114", "53", "64", "36", "38", "33", "37", "39", "35", "priority", "seller_id", "49", "50", "author_id", "status", "25", "actual_finish_date", "actual_start_date", "89"]',
-                "conditions" => '{"type_id": ["1", "2", "3", "4", "6"], "team_direction": ["2"]}',
+                "conditions" => '{"type_id": ["1", "2", "3", "6"], "team_direction": ["2"]}',
                 "type" => 0
             ],
             [
@@ -65,7 +65,7 @@ return [
                 //"id" => 57,
                 "title" => "Детальный отчет по супервайзерам команды Группировка товаров",
                 "fields" => '["id", 31, "supervisor_process_date", "supervisor_check_date", "created_at", "category_id", "amount_to_work", 95, 93, 103, "manager_id", 101, "sv_report_periods", 36, "priority", 121, "seller_id", 32, "author_id", "status", "supervisor_id", "type_id", 20, "actual_finish_date", "actual_start_date"]',
-                "conditions" => '{"type_id": ["1", "2", "3", "4", "5"], "team_direction": ["4"]}',
+                "conditions" => '{"type_id": ["4"], "team_direction": ["4"]}',
                 "type" => 0
             ],
             [
@@ -100,14 +100,14 @@ return [
                 //"id" => 64,
                 "title" => "Сводный отчет по ошибкам контент-менеджеров команды Маркетплейс",
                 "fields" => '["id", "created_at", "amount_to_work", 93, 66, 67, "manager_id", 101, 122, "report_period_id", 36, 38, 33, 37, 39, 35, "priority", "seller_id", "author_id", "supervisor_id", "type_id", "actual_finish_date", "actual_start_date"]',
-                "conditions" => '{"type_id": ["1", "2", "3", "4", "6"], "team_direction": ["2"]}',
+                "conditions" => '{"type_id": ["1", "2", "3", "6"], "team_direction": ["2"]}',
                 "type" => 1
             ],
             [
                 //"id" => 49,
                 "title" => "Сводный  отчет по работе контент-менеджера по добавлению видео",
                 "fields" => '["id", 70, 100, 88, "manager_id", 101, 56]',
-                "conditions" => '{"type_id": ["13"], "team_direction": ["2", "3", "4", "5", "6"]}',
+                "conditions" => '{"type_id": ["13"], "team_direction": ["6"]}',
                 "type" => 1
             ],
             [
@@ -128,14 +128,14 @@ return [
                 //"id" => 44,
                 "title" => "Сводный отчет по работе контент-менеджеров  с товарами Rozetka",
                 "fields" => '[66, 67, "manager_id", 101, 122, 64, 49, 50]',
-                "conditions" => '{"type_id": ["1", "2", "3", "4", "5", "12", "13"], "team_direction": ["3"]}',
+                "conditions" => '{"type_id": ["1", "2", "3", "5", "12"], "team_direction": ["3"]}',
                 "type" => 1
             ],
             [
                 //"id" => 47,
                 "title" => "Сводный отчет по работе контент-менеджеров  с товарами маркетплейс",
                 "fields" => '["manager_id", "manager_team", "66", "67", "94", "101", "49", "50", "64"]',
-                "conditions" => '{"type_id": ["1", "2", "3", "4", "6"], "team_direction": ["2"]}',
+                "conditions" => '{"type_id": ["1", "2", "3", "6"], "team_direction": ["2"]}',
                 "type" => 1
             ],
             [
@@ -149,7 +149,7 @@ return [
                 //"id" => 58,
                 "title" => "Сводный отчет по супервайзерам команды Группировка товаров",
                 "fields" => '["id", 95, 93, 118, 103, 101, "supervisor_id"]',
-                "conditions" => '{"type_id": ["1", "2", "3", "4", "5"], "team_direction": ["4"]}',
+                "conditions" => '{"type_id": ["4"], "team_direction": ["4"]}',
                 "type" => 1
             ],
             [
@@ -315,18 +315,18 @@ return [
             ],
             [
                 //"id" => 3256,
-                "user_id" => 4,
-                "permission_name" => "reportLoadAllUsers"
+//                "user_id" => 4,
+//                "permission_name" => "reportLoadAllUsers"
             ],
             [
                 //"id" => 3257,
-                "user_id" => 4,
-                "permission_name" => "reportLoadMarketUsers"
+//                "user_id" => 4,
+//                "permission_name" => "reportLoadMarketUsers"
             ],
             [
                 //"id" => 3258,
-                "user_id" => 4,
-                "permission_name" => "reportLoadYourTeam"
+//                "user_id" => 4,
+//                "permission_name" => "reportLoadYourTeam"
             ],
             [
                 //"id" => 3259,
