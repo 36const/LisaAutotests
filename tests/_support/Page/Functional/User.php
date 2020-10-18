@@ -18,9 +18,7 @@ class User extends FunctionalTester
         $I->amOnPage("/bpm/user");
     }
 
-    /**
-     * Проверка чекбоксов пермишенов на странице пользователя
-     */
+    /**Проверка чекбоксов пермишенов на странице пользователя*/
     public function checkCheckboxes($requestBody)
     {
         $I = $this;
@@ -31,4 +29,18 @@ class User extends FunctionalTester
             }
         }
     }
+
+    /**Кнопка перехода на страницу незакрытых заявок менеджера*/
+    public static function requestsBlockingManagerButton(int $managerId)
+    {
+        return "//form//a[@href='/bpm/request/index?RequestSearch%5Bmanager_id%5D=$managerId&RequestSearch%5Bstatus%5D%5B0%5D=6&RequestSearch%5Bstatus%5D%5B1%5D=7&RequestSearch%5Bstatus%5D%5B2%5D=5']";
+    }
+
+    /**Сообщение об ограничениях*/
+    public static function warningAlert()
+    {
+        return "//div[@class='alert-warning alert fade in']//text()";
+    }
+
+    public static $userStatus = "//form//select[@id='userbpm-status']";
 }
