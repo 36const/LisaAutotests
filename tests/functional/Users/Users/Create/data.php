@@ -13685,11 +13685,6 @@ return [
                             "permission_name" => "massEdit"
                         ],
                         [
-                            //"id" => 248,
-                            "user_id" => 6,
-                            "permission_name" => "transferCompletedToRequireFix"
-                        ],
-                        [
                             //"id" => 249,
                             "user_id" => 6,
                             "permission_name" => "transferInCheckToRequireChange"
