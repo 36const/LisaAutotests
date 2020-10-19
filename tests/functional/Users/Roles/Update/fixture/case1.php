@@ -165,11 +165,6 @@ return [
                 "permission_id" => 29
             ],
             [
-                //"id" => 162,
-                "role_id" => 1,
-                "permission_id" => 30
-            ],
-            [
                 //"id" => 166,
                 "role_id" => 1,
                 "permission_id" => 31
