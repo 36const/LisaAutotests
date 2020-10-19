@@ -10,7 +10,7 @@ return [
         "direction" => 1,
         "priority" => null,
         "awaiting_correction" => 0,
-        //"created_at" => '2020-01-01 00:00:00',
+        "created_at" => '2020-01-01 00:00:00',
         "correction_comment" => null,
         "amount_to_work" => 10,
         "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
