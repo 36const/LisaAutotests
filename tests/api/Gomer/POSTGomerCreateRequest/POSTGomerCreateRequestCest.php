@@ -7,9 +7,10 @@ use rzk\TestHelper;
 /**
  * @group lisa
  * @group lisa_api
- * @group POSTGomer
+ * @group lisa_api_gomer
+ * @group POSTGomerCreateRequest
  */
-class POSTGomerCest
+class POSTGomerCreateRequestCest
 {
     /**
      * @var TestHelper $testHelper
