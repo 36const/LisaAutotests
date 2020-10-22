@@ -5,7 +5,7 @@ return [
             [
                 //'id' => 1,
                 "type_id" => 1,
-                "status" => 2,
+                "status" => 4,
                 "direction" => 1,
                 "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                 "category_id" => 1,

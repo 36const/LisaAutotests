@@ -849,7 +849,18 @@ return [
                 //"id" => 5715,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToWaitCheck"
-            ]
+            ],
+
+            [
+                //"id" => 3274,
+                "user_id" => 2,
+                "permission_name" => "requestUpdate"
+            ],
+            [
+                //"id" => 3283,
+                "user_id" => 2,
+                "permission_name" => "transferOnHoldToInWork"
+            ],
         ]
     ],
 

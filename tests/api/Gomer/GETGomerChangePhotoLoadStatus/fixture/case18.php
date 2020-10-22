@@ -4,13 +4,11 @@ return [
         "requests" => [
             [
                 //'id' => 1,
-                "type_id" => 1,
-                "status" => 2,
-                "direction" => 1,
-                "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
-                "category_id" => 1,
-                "seller_id" => null,
-                "team_direction" => 3,
+                "type_id" => 3,
+                "status" => 3,
+                "direction" => 2,
+                "category_id" => null,
+                "seller_id" => 83,
                 "photo_load_status" => 0
             ],
         ],
