@@ -113,6 +113,7 @@ class RequestView extends FunctionalTester
         'sync_source_id',
         'employee_code_1c',
         'child_count',
+        'photo_load_status',
 
         'planned_start_date',
         'planned_finish_date',

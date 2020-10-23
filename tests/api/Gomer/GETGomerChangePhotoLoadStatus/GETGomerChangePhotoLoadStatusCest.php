@@ -8,9 +8,9 @@ use rzk\TestHelper;
  * @group lisa
  * @group lisa_api
  * @group lisa_api_gomer
- * @group PUTGomer
+ * @group GETGomerChangePhotoLoadStatus
  */
-class PUTGomerCest
+class GETGomerChangePhotoLoadStatusCest
 {
     /**
      * @var TestHelper $testHelper
@@ -38,12 +38,12 @@ class PUTGomerCest
      * @dataProvider pageProvider
      *
      */
-    public function PUTGomer(ApiTester $I, Example $data)
+    public function GETGomerChangePhotoLoadStatus(ApiTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
 
-        $I->sendPUT($providerData['requestURL'], $providerData['requestBody']);
+        $I->sendGET('/bpm/api/change-photo-load-status', $providerData['requestParameters']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);

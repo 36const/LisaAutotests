@@ -84,6 +84,11 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0
                         ]
                     ],
                     "requests_fields" => [
@@ -180,6 +185,11 @@ Media:
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0
                         ]
                     ],
                     "requests_fields" => [
