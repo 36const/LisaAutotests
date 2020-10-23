@@ -61,6 +61,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
                             "employee_code_1c" => 978654132,
+                            "child_count" => 0,
+                            "photo_load_status" => 0
                         ]
                     ],
                     "requests_fields" => [
@@ -145,6 +147,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
                             "employee_code_1c" => 978654132,
+                            "child_count" => 0,
+                            "photo_load_status" => 0
                         ]
                     ],
                     "requests_fields" => [
@@ -220,6 +224,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
                             "employee_code_1c" => 978654132,
+                            "child_count" => 0,
+                            "photo_load_status" => 0
                         ]
                     ],
                     "requests_fields" => [
