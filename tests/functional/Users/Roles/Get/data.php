@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница должностей',
+            'description' => 'Страница должностей',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -154,7 +154,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница должностей с обратной сортировкой по ID должности',
+            'description' => 'Страница должностей с обратной сортировкой по ID должности',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -305,7 +305,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница должностей с сортировкой по названию должности',
+            'description' => 'Страница должностей с сортировкой по названию должности',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -456,7 +456,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница должностей с сортировкой по описанию должности',
+            'description' => 'Страница должностей с сортировкой по описанию должности',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -607,7 +607,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница должностей с сортировкой по дате создания',
+            'description' => 'Страница должностей с сортировкой по дате создания',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -758,7 +758,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница должностей с обратной сортировкой по дате обновления',
+            'description' => 'Страница должностей с обратной сортировкой по дате обновления',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -909,7 +909,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница должностей с фильтром по id > 999 999 999',
+            'description' => 'Страница должностей с фильтром по id > 999 999 999',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1066,7 +1066,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница должностей с нечисловым фильтром по id',
+            'description' => 'Страница должностей с нечисловым фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1223,7 +1223,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница должностей с несуществующим фильтром по id',
+            'description' => 'Страница должностей с несуществующим фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1245,7 +1245,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Cтраница должностей с несуществующим фильтром по названию должности',
+            'description' => 'Страница должностей с несуществующим фильтром по названию должности',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1267,7 +1267,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Cтраница должностей с несуществующим фильтром по описанию должности',
+            'description' => 'Страница должностей с несуществующим фильтром по описанию должности',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1289,7 +1289,7 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Cтраница должностей с несуществующим фильтром по дате создания',
+            'description' => 'Страница должностей с несуществующим фильтром по дате создания',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1311,7 +1311,7 @@ return [
 
     'case13' => [
         'setting' => [
-            'description' => 'Cтраница должностей с несуществующим фильтром по дате обновления',
+            'description' => 'Страница должностей с несуществующим фильтром по дате обновления',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

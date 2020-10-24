@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница приоритетов',
+            'description' => 'Страница приоритетов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -87,7 +87,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница приоритетов c обратной сортировкой по id',
+            'description' => 'Страница приоритетов c обратной сортировкой по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -171,7 +171,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница приоритетов c сортировкой по названию приоритета',
+            'description' => 'Страница приоритетов c сортировкой по названию приоритета',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -255,7 +255,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница приоритетов c обратной сортировкой по статусу',
+            'description' => 'Страница приоритетов c обратной сортировкой по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -339,7 +339,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница приоритетов c фильтром по id',
+            'description' => 'Страница приоритетов c фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -411,7 +411,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница приоритетов c фильтром по названию приоритета',
+            'description' => 'Страница приоритетов c фильтром по названию приоритета',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -479,7 +479,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница приоритетов c фильтром по статусу',
+            'description' => 'Страница приоритетов c фильтром по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -555,7 +555,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница приоритетов с фильтром по id > 999 999 999',
+            'description' => 'Страница приоритетов с фильтром по id > 999 999 999',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -645,7 +645,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница приоритетов с нечисловым фильтром по id',
+            'description' => 'Страница приоритетов с нечисловым фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -735,7 +735,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Cтраница приоритетов с несуществующим фильтром по id',
+            'description' => 'Страница приоритетов с несуществующим фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

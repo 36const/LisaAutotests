@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница категорий',
+            'description' => 'Страница категорий',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -119,7 +119,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница категорий с обратной сортировкой по id',
+            'description' => 'Страница категорий с обратной сортировкой по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -235,7 +235,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница категорий с обратной сортировкой по названию',
+            'description' => 'Страница категорий с обратной сортировкой по названию',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -351,7 +351,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница категорий с прямой сортировкой по супервайзеру',
+            'description' => 'Страница категорий с прямой сортировкой по супервайзеру',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -467,7 +467,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница категорий с обратной сортировкой по статусу',
+            'description' => 'Страница категорий с обратной сортировкой по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -583,7 +583,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница категорий с фильтром по id',
+            'description' => 'Страница категорий с фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -661,7 +661,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница категорий с фильтром по названию',
+            'description' => 'Страница категорий с фильтром по названию',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -739,7 +739,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница категорий с фильтром по супервайзеру',
+            'description' => 'Страница категорий с фильтром по супервайзеру',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -836,7 +836,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница категорий с фильтром по статусу',
+            'description' => 'Страница категорий с фильтром по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -914,7 +914,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Cтраница категорий с фильтром по id > 999 999 999',
+            'description' => 'Страница категорий с фильтром по id > 999 999 999',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1036,7 +1036,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Cтраница категорий с нечисловым фильтром по id',
+            'description' => 'Страница категорий с нечисловым фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1158,7 +1158,7 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Cтраница категорий с несуществующим фильтром по id',
+            'description' => 'Страница категорий с несуществующим фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1180,7 +1180,7 @@ return [
 
     'case13' => [
         'setting' => [
-            'description' => 'Cтраница категорий с несуществующим фильтром по названию',
+            'description' => 'Страница категорий с несуществующим фильтром по названию',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

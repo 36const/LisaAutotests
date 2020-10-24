@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций',
+            'description' => 'Страница нотификаций',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -164,7 +164,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с сортировкой по номеру заявки',
+            'description' => 'Страница нотификаций с сортировкой по номеру заявки',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -325,7 +325,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с сортировкой по тексту',
+            'description' => 'Страница нотификаций с сортировкой по тексту',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -486,7 +486,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с сортировкой по статусу',
+            'description' => 'Страница нотификаций с сортировкой по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -647,7 +647,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с обратной сортировкой по дате',
+            'description' => 'Страница нотификаций с обратной сортировкой по дате',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -808,7 +808,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с обратной сортировкой по приоритету',
+            'description' => 'Страница нотификаций с обратной сортировкой по приоритету',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -969,7 +969,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с обратной сортировкой по получателям',
+            'description' => 'Страница нотификаций с обратной сортировкой по получателям',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1130,7 +1130,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с фильтром по номеру заявки',
+            'description' => 'Страница нотификаций с фильтром по номеру заявки',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1251,7 +1251,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с фильтром по тексту',
+            'description' => 'Страница нотификаций с фильтром по тексту',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1352,7 +1352,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с фильтром по статусу',
+            'description' => 'Страница нотификаций с фильтром по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1453,7 +1453,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с фильтром по дате',
+            'description' => 'Страница нотификаций с фильтром по дате',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1574,7 +1574,7 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с фильтром по приоритету',
+            'description' => 'Страница нотификаций с фильтром по приоритету',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1735,7 +1735,7 @@ return [
 
     'case13' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с фильтром по получателям',
+            'description' => 'Страница нотификаций с фильтром по получателям',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1856,7 +1856,7 @@ return [
 
     'case14' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с фильтром по номеру заявки > 999 999 999',
+            'description' => 'Страница нотификаций с фильтром по номеру заявки > 999 999 999',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2023,7 +2023,7 @@ return [
 
     'case15' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с нечисловым фильтром по номеру заявки',
+            'description' => 'Страница нотификаций с нечисловым фильтром по номеру заявки',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2190,7 +2190,7 @@ return [
 
     'case16' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с несуществующим фильтром по номеру заявки',
+            'description' => 'Страница нотификаций с несуществующим фильтром по номеру заявки',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2212,7 +2212,7 @@ return [
 
     'case17' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с несуществующим фильтром по тексту',
+            'description' => 'Страница нотификаций с несуществующим фильтром по тексту',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2234,7 +2234,7 @@ return [
 
     'case18' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с несуществующим фильтром по дате',
+            'description' => 'Страница нотификаций с несуществующим фильтром по дате',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2256,7 +2256,7 @@ return [
 
     'case19' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с несуществующим фильтром по приоритету',
+            'description' => 'Страница нотификаций с несуществующим фильтром по приоритету',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2278,7 +2278,7 @@ return [
 
     'case20' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с несуществующим фильтром по получателям',
+            'description' => 'Страница нотификаций с несуществующим фильтром по получателям',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2300,7 +2300,7 @@ return [
 
     'case21' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с фильтром по тексту > 100',
+            'description' => 'Страница нотификаций с фильтром по тексту > 100',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2467,7 +2467,7 @@ return [
 
     'case22' => [
         'setting' => [
-            'description' => 'Cтраница нотификаций с фильтром по получателю > 100',
+            'description' => 'Страница нотификаций с фильтром по получателю > 100',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

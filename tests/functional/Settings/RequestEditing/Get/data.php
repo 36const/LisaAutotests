@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница прав редактирования полей заявок',
+            'description' => 'Страница прав редактирования полей заявок',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -460,7 +460,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница прав редактирования полей заявок с фильтром id',
+            'description' => 'Страница прав редактирования полей заявок с фильтром id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -578,7 +578,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница прав редактирования полей заявок с фильтром поля заявки',
+            'description' => 'Страница прав редактирования полей заявок с фильтром поля заявки',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -831,7 +831,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница прав редактирования полей заявок с фильтром статуса заявки',
+            'description' => 'Страница прав редактирования полей заявок с фильтром статуса заявки',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1090,7 +1090,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница прав редактирования полей заявок с фильтром по id > 999 999 999',
+            'description' => 'Страница прав редактирования полей заявок с фильтром по id > 999 999 999',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1553,7 +1553,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница прав редактирования полей заявок с нечисловым фильтром по id',
+            'description' => 'Страница прав редактирования полей заявок с нечисловым фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2016,7 +2016,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница прав редактирования полей заявок с несуществующим фильтром по id',
+            'description' => 'Страница прав редактирования полей заявок с несуществующим фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

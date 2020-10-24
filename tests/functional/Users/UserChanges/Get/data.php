@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница истории изменений пользователя',
+            'description' => 'Страница истории изменений пользователя',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -155,7 +155,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница истории изменений c сортировкой по ID пользователя',
+            'description' => 'Страница истории изменений c сортировкой по ID пользователя',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -307,7 +307,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница истории изменений c сортировкой по логину пользователя',
+            'description' => 'Страница истории изменений c сортировкой по логину пользователя',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -459,7 +459,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница истории изменений c обратной сортировкой по ID внесшего изменения',
+            'description' => 'Страница истории изменений c обратной сортировкой по ID внесшего изменения',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -611,7 +611,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница истории изменений c обратной сортировкой по логину внесшего изменения	',
+            'description' => 'Страница истории изменений c обратной сортировкой по логину внесшего изменения	',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -763,7 +763,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница истории изменений c сортировкой по названию поля',
+            'description' => 'Страница истории изменений c сортировкой по названию поля',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -915,7 +915,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница истории изменений c сортировкой по старому значению',
+            'description' => 'Страница истории изменений c сортировкой по старому значению',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1067,7 +1067,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница истории изменений c обратной сортировкой по новому значению',
+            'description' => 'Страница истории изменений c обратной сортировкой по новому значению',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1219,7 +1219,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница истории изменений c сортировкой по дате',
+            'description' => 'Страница истории изменений c сортировкой по дате',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
