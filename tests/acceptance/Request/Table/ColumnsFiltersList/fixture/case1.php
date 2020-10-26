@@ -2494,12 +2494,42 @@ return [
                 "value" => "1.5"
             ]
         ],
-        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
-        "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',
+        "report_periods" => [
+            [
+                //'id' => 1,
+                "begin" => '2020-01-01 00:00:00',
+                "end" => '2020-03-31 00:00:00',
+                "created_at" => '2020-01-01 00:00:00',
+                "updated_at" => null,
+            ],
+            [
+                //'id' => 2,
+                "begin" => '2020-04-01 00:00:00',
+                "end" => '2020-06-30 00:00:00',
+                "created_at" => '2020-01-01 00:00:00',
+                "updated_at" => null,
+            ],
+            [
+                //'id' => 3,
+                "begin" => '2020-07-01 00:00:00',
+                "end" => date('Y-m-d', strtotime('+1 week')) . ' 00:00:00',
+                "created_at" => '2020-02-01 00:00:00',
+                "updated_at" => '2020-07-01 17:01:01',
+            ],
+            [
+                //'id' => 4,
+                "begin" => date('Y-m-d', strtotime('+8 days')) . ' 00:00:00',
+                "end" => '2021-12-31 00:00:00',
+                "created_at" => '2020-03-01 00:00:00',
+                "updated_at" => '2020-09-01 19:01:01',
+            ],
+        ],
+//        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
+//        "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
-        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
-        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
-        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
+//        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
+//        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
+//        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
         "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
     ],
     "cooper_fixtures" => [

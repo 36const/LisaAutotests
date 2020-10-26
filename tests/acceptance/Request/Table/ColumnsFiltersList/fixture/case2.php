@@ -915,6 +915,11 @@ return [
             ],
             [
                 "request_id" => 1,
+                "field_id" => 25,
+                "value" => "18"
+            ],
+            [
+                "request_id" => 1,
                 "field_id" => 49,
                 "value" => "0"
             ],
@@ -967,6 +972,11 @@ return [
                 "request_id" => 2,
                 "field_id" => 3,
                 "value" => "1"
+            ],
+            [
+                "request_id" => 2,
+                "field_id" => 25,
+                "value" => "19"
             ],
             [
                 "request_id" => 2,
@@ -1280,6 +1290,11 @@ return [
             ],
             [
                 "request_id" => 8,
+                "field_id" => 25,
+                "value" => "20"
+            ],
+            [
+                "request_id" => 8,
                 "field_id" => 101,
                 "value" => null
             ],
@@ -1357,6 +1372,11 @@ return [
                 "request_id" => 9,
                 "field_id" => 1,
                 "value" => "1"
+            ],
+            [
+                "request_id" => 9,
+                "field_id" => 25,
+                "value" => "18"
             ],
             [
                 "request_id" => 9,
@@ -1450,6 +1470,11 @@ return [
             ],
             [
                 "request_id" => 10,
+                "field_id" => 25,
+                "value" => "19"
+            ],
+            [
+                "request_id" => 10,
                 "field_id" => 101,
                 "value" => null
             ],
@@ -1527,6 +1552,11 @@ return [
                 "request_id" => 11,
                 "field_id" => 19,
                 "value" => "1"
+            ],
+            [
+                "request_id" => 11,
+                "field_id" => 25,
+                "value" => "20"
             ],
             [
                 "request_id" => 11,
@@ -1625,6 +1655,11 @@ return [
             ],
             [
                 "request_id" => 12,
+                "field_id" => 25,
+                "value" => "19"
+            ],
+            [
+                "request_id" => 12,
                 "field_id" => 53,
                 "value" => "0"
             ],
@@ -1697,6 +1732,11 @@ return [
                 "request_id" => 13,
                 "field_id" => 114,
                 "value" => "3"
+            ],
+            [
+                "request_id" => 13,
+                "field_id" => 25,
+                "value" => "19"
             ],
             [
                 "request_id" => 13,
@@ -1837,6 +1877,11 @@ return [
                 "request_id" => 16,
                 "field_id" => 158,
                 "value" => null
+            ],
+            [
+                "request_id" => 16,
+                "field_id" => 25,
+                "value" => "19"
             ],
             [
                 "request_id" => 16,
@@ -2479,13 +2524,12 @@ return [
                 "updated_at" => '2020-09-01 19:01:01',
             ],
         ],
-        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
-        "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',
+//        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
+//        "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
-        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
-        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
-        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
-        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
+//        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
+//        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
+//        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
         "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
     ],
     "cooper_fixtures" => [

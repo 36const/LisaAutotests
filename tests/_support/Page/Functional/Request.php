@@ -24,13 +24,13 @@ class Request extends FunctionalTester
     /**Общее количество заявок в названии вкладки*/
     public static function statusTabsCounter(int $tabNumber, int $tabCounter)
     {
-        return "//ul[@id='w2']/li[$tabNumber]/a/span[@class='tab-counter'][text()=' ($tabCounter)']";
+        return "//ul[@class='nav nav-tabs']/li[$tabNumber]/a/span[@class='tab-counter'][text()=' ($tabCounter)']";
     }
 
     /**Общее количество отфильтрованных заявок*/
     public static function tabSummary($summary)
     {
-        return "//div[@class='summary']/b[2][text()='$summary']";
+        return "//div[@class='summary']/b/..//*[text()='$summary']";
     }
 
     /**Строка заявки в таблице*/

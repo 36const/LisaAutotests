@@ -46,7 +46,8 @@ class TabsCounterCest
 
         $request->amOnTable();
         $I->canSeeElement(Request::statusTabsCounter(1, 24));
-        $I->canSeeElement(Request::tabSummary(24));
+        $I->canSeeElement(Request::tabSummary('......'));
+//        $I->canSeeElement(Request::tabSummary(24));
 
         $request->amOnTable('new?RequestSearch[id]=&RequestSearch[subject]=&RequestSearch[type_id]=&RequestSearch[type_id][]=4&RequestSearch[author_id]=&RequestSearch[supervisor_id]=&RequestSearch[manager_id]=&RequestSearch[cross_check_manager_id]=&RequestSearch[cross_check_status]=&RequestSearch[awaiting_correction]=&RequestSearch[amount_to_work]=');
         $I->canSeeElement(Request::statusTabsCounter(2, 3));
@@ -69,7 +70,7 @@ class TabsCounterCest
         $I->canSeeElement(Request::tabSummary(2));
 
         $request->amOnTable('on-hold?RequestSearch[subject]=Добавление/изменение размерной сетки (Определяется типом задачи)&');
-        $I->canSeeElement(Request::statusTabsCounter(7, 1));
+        $I->canSeeElement(Request::statusTabsCounter(7, 2));
         $I->canSeeElement(Request::tabSummary(1));
 
         $request->amOnTable('completed?RequestSearch[id]=&RequestSearch[subject]=&RequestSearch[type_id]=&RequestSearch[author_id]=&RequestSearch[supervisor_id]=&RequestSearch[manager_id]=&RequestSearch[cross_check_manager_id]=&RequestSearch[status]=&RequestSearch[cross_check_status]=&RequestSearch[awaiting_correction]=0&RequestSearch[amount_to_work]=');

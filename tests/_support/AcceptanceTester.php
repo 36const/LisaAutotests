@@ -35,15 +35,16 @@ class AcceptanceTester extends \Codeception\Actor
                                     array $globalFile = ['oneUser'], bool $globalUsing = true)
     {
         $I = $this;
-        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
-        $I->runShellCommand('./yii bpm/request/clear-temporary-files');
-        $I->purgeAllQueues();
         $testHelper->clearDB($I, $data, $globalFile);
 
         if ($globalUsing)
             $testHelper->loadGlobalFixture($I, $globalFile);
 
         $testHelper->loadFixtureAndMock($I, $data);
+
+        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
+        $I->runShellCommand('./yii bpm/request/clear-temporary-files');
+        $I->purgeAllQueues();
 
         $I->wantTo($data['setting']['description']);
         $I->setAuthorizationCookie();
@@ -64,7 +65,7 @@ class AcceptanceTester extends \Codeception\Actor
             $I->fillField("LoginForm[password]", '123qweASD!');
             $I->checkOption(['id' => 'loginform-isbasicauth']);
             $I->click("login-button");
-//            $I->waitForText("Добро пожаловать", 5);
+            $I->waitForText("Добро пожаловать", 5);
             file_put_contents(__DIR__ . '/_identityCookie.txt', $I->grabCookie('_identity'));
         }
 
