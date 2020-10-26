@@ -4,22 +4,22 @@ return [
         'requests' => [
             [
                 "id" => 1,
-                "author_id" => 4,
-                "type_id" => 7,
+                "author_id" => 1,
+                "type_id" => 1,
                 "supervisor_id" => 2,
-                "manager_id" => null,
-                "status" => 1,
-                "direction" => 0,
+                "manager_id" => 2,
+                "status" => 5,
+                "direction" => 1,
                 "priority" => 2,
                 "awaiting_correction" => 0,
                 "created_at" => '2020-01-01 00:00:01',
                 "correction_comment" => null,
                 "amount_to_work" => 10,
-                "subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
+                "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                 "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
                 "attachments" => '[]',
                 "category_id" => 1,
-                "seller_id" => '0',
+                "seller_id" => 83,
                 "recommendations" => null,
                 "reason_id" => null,
                 "reason" => null,
@@ -34,12 +34,14 @@ return [
                 "result_comment" => null,
                 "supervisor_comment" => null,
                 "last_change_status_date" => "2020-01-01 00:00:01",
-                "team_direction" => 6,
+                "team_direction" => 3,
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
                 "cross_check_status" => '0',
-                "cross_check_manager_id" => null,
+                "cross_check_manager_id" => 4,
+                "employee_code_1c" => null,
+                "child_count" => 0
             ]
         ],
         'requests_fields' => [
@@ -50,18 +52,28 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 6,
-                'value' => 1,
+                'field_id' => 49,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 7,
-                'value' => 1,
+                'field_id' => 50,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 51,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 52,
+                'value' => 2,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 53,
-                'value' => 3,
+                'value' => 0.5,
             ],
             [
                 'request_id' => 1,
@@ -70,7 +82,12 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 55,
+                'field_id' => 60,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 64,
                 'value' => 0,
             ],
             [
@@ -82,6 +99,16 @@ return [
                 'request_id' => 1,
                 'field_id' => 122,
                 'value' => null,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 142,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 143,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
@@ -148,7 +175,7 @@ return [
                 "email" => "kutsan.k@rozetka.com.ua",
                 "team" => 17,
                 "parent_id" => 1,
-                "position" => "productManager",
+                "position" => "contentManager",
                 "status" => 1,
                 "create_ts" => "2020-05-19 13:36:22",
                 "created_by" => 1,
@@ -160,102 +187,52 @@ return [
             [
                 //"id" => 219,
                 "user_id" => 4,
-                "permission_name" => "requestAddNewItems"
+                "permission_name" => "transferWaitWorkToInWork"
             ],
             [
                 //"id" => 220,
                 "user_id" => 4,
-                "permission_name" => "requestUpdateItems"
+                "permission_name" => "transferInWorkToOnHold"
             ],
             [
                 //"id" => 221,
                 "user_id" => 4,
-                "permission_name" => "requestTransferItems"
+                "permission_name" => "transferInWorkToPartialComplete"
             ],
             [
                 //"id" => 222,
                 "user_id" => 4,
-                "permission_name" => "requestGroupItems"
+                "permission_name" => "transferInWorkToCompleted"
             ],
             [
                 //"id" => 223,
                 "user_id" => 4,
-                "permission_name" => "requestUploadPhoto"
+                "permission_name" => "transferInWorkToDeclined"
             ],
             [
                 //"id" => 224,
                 "user_id" => 4,
-                "permission_name" => "requestCheckHidden"
+                "permission_name" => "requestViewOwnRequests"
             ],
             [
                 //"id" => 225,
                 "user_id" => 4,
-                "permission_name" => "requestAddFatPortalCat"
+                "permission_name" => "reportView"
             ],
             [
                 //"id" => 226,
                 "user_id" => 4,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "permission_name" => "transferPartialCompleteToInWork"
             ],
             [
                 //"id" => 227,
                 "user_id" => 4,
-                "permission_name" => "requestStructureDesign"
+                "permission_name" => "transferCompletedToInWork"
             ],
             [
                 //"id" => 228,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateSC"
-            ],
-            [
-                //"id" => 229,
-                "user_id" => 4,
-                "permission_name" => "requestAddUpdateVideo"
-            ],
-            [
-                //"id" => 230,
-                "user_id" => 4,
-                "permission_name" => "requestAddUpdateSizeGrid"
-            ],
-            [
-                //"id" => 231,
-                "user_id" => 4,
-                "permission_name" => "requestAddUpdateTags"
-            ],
-            [
-                //"id" => 232,
-                "user_id" => 4,
-                "permission_name" => "transferOnHoldToInWork"
-            ],
-            [
-                //"id" => 233,
-                "user_id" => 4,
-                "permission_name" => "requestCreate"
-            ],
-            [
-                //"id" => 234,
-                "user_id" => 4,
-                "permission_name" => "requestCreateRelated"
-            ],
-            [
-                //"id" => 235,
-                "user_id" => 4,
-                "permission_name" => "requestViewOwnRequests"
-            ],
-            [
-                //"id" => 236,
-                "user_id" => 4,
-                "permission_name" => "requestViewTeamRequests"
-            ],
-            [
-                //"id" => 238,
-                "user_id" => 4,
-                "permission_name" => "transferRequireChangeToInCheck"
-            ],
-            [
-                //"id" => 237,
-                "user_id" => 4,
-                "permission_name" => "transferRequireChangeToWaitCheck"
+                "permission_name" => "viewOwnDashboards"
             ],
         ]
     ],

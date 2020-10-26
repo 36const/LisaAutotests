@@ -3,6 +3,35 @@
 use lisa\Page\Functional\RequestView;
 
 return [
+    'case1_1_сс_manager' => [
+        'setting' => [
+            'description' => 'Заявка на Добавление новых товаров (Работа с товарами Розетки) из профиля кч-менеджера',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1_1_cc_manager.php',
+        'provider_data' => [
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => RequestView::$commonInformation],
+                        ["selector" => RequestView::$results],
+                        ["selector" => RequestView::$errors],
+                        ["selector" => RequestView::$errorsCrossCheck],
+                        ["selector" => RequestView::$motivationCcManagers],
+                        ["selector" => RequestView::$dates],
+                        ["selector" => RequestView::$reportPeriodId],
+                    ]
+            ],
+                "cantSee" => [
+                    [
+                        ["selector" => RequestView::$motivationManagers],
+                        ["selector" => RequestView::$motivationSupervisors],
+                        ["selector" => RequestView::$svReportPeriods],
+                    ]
+                ]
+            ]
+        ]
+    ],
+
     'case1_1_manager' => [
         'setting' => [
             'description' => 'Заявка на Добавление новых товаров (Работа с товарами Розетки) из профиля менеджера',
@@ -83,6 +112,35 @@ return [
                     ]
                 ],
                 "cantSee" => []
+            ]
+        ]
+    ],
+
+    'case1_2_cc_manager' => [
+        'setting' => [
+            'description' => 'Заявка на Добавление новых товаров (Работа с товарами Маркетплейса) из профиля кч-менеджера',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1_2_cc_manager.php',
+        'provider_data' => [
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => RequestView::$commonInformation],
+                        ["selector" => RequestView::$results],
+                        ["selector" => RequestView::$errors],
+                        ["selector" => RequestView::$errorsCrossCheck],
+                        ["selector" => RequestView::$motivationCcManagers],
+                        ["selector" => RequestView::$dates],
+                        ["selector" => RequestView::$reportPeriodId],
+                    ]
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => RequestView::$motivationManagers],
+                        ["selector" => RequestView::$motivationSupervisors],
+                        ["selector" => RequestView::$svReportPeriods],
+                    ]
+                ]
             ]
         ]
     ],
