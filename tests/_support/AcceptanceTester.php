@@ -50,9 +50,7 @@ class AcceptanceTester extends \Codeception\Actor
         $I->setAuthorizationCookie();
     }
 
-    /**
-     * У
-     */
+    /**Установка куки авторизации*/
     private function setAuthorizationCookie()
     {
         $I = $this;
