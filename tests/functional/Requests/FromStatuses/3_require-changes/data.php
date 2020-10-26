@@ -29,7 +29,7 @@ return [
                             "priority" => 2,
                             "awaiting_correction" => 0,
                             "created_at" => '2020-01-01 00:00:00',
-                            "correction_comment" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                            "correction_comment" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "amount_to_work" => 10,
                             "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "description" => 'description',
@@ -57,7 +57,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ]
                     ],
                     'requests_fields' => [
@@ -167,7 +168,7 @@ return [
                             "old_status" => 3,
                             "new_status" => 1,
                             "reason_id" => 15,
-                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => null
                         ]

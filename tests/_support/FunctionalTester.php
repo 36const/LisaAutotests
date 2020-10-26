@@ -78,7 +78,7 @@ class FunctionalTester extends \Codeception\Actor
 
                 $expectedNumber = count($tableData);
 
-                ($dontSee) ?:
+                if (!$dontSee)
                     $I->canSeeNumRecords($expectedNumber, $tableName);
 
                 foreach ($tableData as $tableRow) {
@@ -111,6 +111,23 @@ class FunctionalTester extends \Codeception\Actor
                         $I->cantSee($object['value'], $object['selector']) :
                         $I->cantSeeElement($object['selector']);
                 }
+            }
+        }
+    }
+
+    public function checkAjaxResponse($ajaxResponse)
+    {
+        $I = $this;
+
+        if (isset($ajaxResponse['canSee'])) {
+            foreach ($ajaxResponse['canSee'] as $text) {
+                $I->canSeeResponseContains($text);
+            }
+        }
+
+        if (isset($ajaxResponse['cantSee'])) {
+            foreach ($ajaxResponse['cantSee'] as $text) {
+                $I->cantSeeResponseContains($text);
             }
         }
     }

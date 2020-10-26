@@ -3,7 +3,7 @@ return [
     "lisa_fixtures" => [
         "user_bpm" => [
             [
-                "id" => 1,
+//                "id" => 1,
                 "name" => "Система",
                 "login" => "systemBPM",
                 "email" => "system@rozetka.com.ua",
@@ -17,7 +17,7 @@ return [
                 "drfo" => "0"
             ],
             [
-                "id" => 2,
+//                "id" => 2,
                 "name" => "Администратор",
                 "login" => "adminBPM",
                 "email" => "admin@admin.com",
@@ -31,7 +31,7 @@ return [
                 "drfo" => "0"
             ],
             [
-                "id" => 3,
+//                "id" => 3,
                 "name" => "Гость",
                 "login" => "guestBPM",
                 "email" => "guest@guest.com",
@@ -45,7 +45,7 @@ return [
                 "drfo" => "0"
             ],
             [
-                "id" => 4,
+//                "id" => 4,
                 "name" => "Константин Куцан",
                 "login" => "kutsan.k",
                 "email" => "kutsan.k@rozetka.com.ua",

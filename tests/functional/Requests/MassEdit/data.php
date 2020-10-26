@@ -52,7 +52,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-01 11:11:24",
                             "team_direction" => 3,
                             "report_period_id" => 1,
@@ -61,7 +61,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 2,
@@ -93,7 +94,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-01 11:12:04",
                             "team_direction" => 2,
                             "report_period_id" => 1,
@@ -102,7 +103,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 3,
@@ -134,7 +136,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-01 11:13:24",
                             "team_direction" => 4,
                             "report_period_id" => 1,
@@ -143,7 +145,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 4,
@@ -175,7 +178,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-01 11:14:21",
                             "team_direction" => 6,
                             "report_period_id" => 1,
@@ -184,7 +187,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 5,
@@ -216,7 +220,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-01 11:16:27",
                             "team_direction" => 5,
                             "report_period_id" => 1,
@@ -225,7 +229,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 6,
@@ -257,7 +262,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-01 11:18:03",
                             "team_direction" => 6,
                             "report_period_id" => 1,
@@ -266,7 +271,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ]
                     ],
                     'requests_fields' => [
@@ -802,7 +808,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-01-01 00:00:01",
                             "team_direction" => 2,
                             "report_period_id" => null,
@@ -811,7 +817,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 2,
@@ -843,7 +850,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-02 19:33:25",
                             "team_direction" => 3,
                             "report_period_id" => null,
@@ -852,7 +859,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 3,
@@ -884,7 +892,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-02 19:34:18",
                             "team_direction" => 6,
                             "report_period_id" => null,
@@ -893,7 +901,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 4,
@@ -925,7 +934,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-02 19:35:47",
                             "team_direction" => 5,
                             "report_period_id" => null,
@@ -934,7 +943,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 5,
@@ -966,7 +976,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => null,
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-02 19:36:10",
                             "team_direction" => 5,
                             "report_period_id" => null,
@@ -975,7 +985,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 6,
@@ -1007,7 +1018,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => "Комментарий к результату задачи",
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-02 19:36:42",
                             "team_direction" => 6,
                             "report_period_id" => null,
@@ -1016,7 +1027,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 7,
@@ -1048,7 +1060,7 @@ return [
                             "supervisor_check_date" => null,
                             "difficulty" => null,
                             "result_comment" => "Комментарий к результату задачи",
-                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|",
+                            "supervisor_comment" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             //"last_change_status_date" => "2020-05-02 19:36:59",
                             "team_direction" => 6,
                             "report_period_id" => null,
@@ -1057,7 +1069,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ]
                     ],
                     'requests_fields' => [

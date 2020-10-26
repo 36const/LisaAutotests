@@ -7,6 +7,7 @@ use rzk\TestHelper;
 /**
  * @group lisa
  * @group lisa_api
+ * @group lisa_api_gomer
  * @group GETGomerSyncSourceIdTypeId
  */
 class GETGomerSyncSourceIdTypeIdCest

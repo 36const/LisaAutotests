@@ -48,7 +48,7 @@ class POSTUpdateUserPermissionsCest
 
         $providerData = $data['provider_data'];
 
-        $I->sendPOST($providerData['url'], $providerData['requestBody']);
+        $I->sendPOST('/bpm/roles/update?id=5', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);

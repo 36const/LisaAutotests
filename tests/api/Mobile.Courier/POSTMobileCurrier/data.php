@@ -37,7 +37,8 @@ return [
                             "correction_comment" => null,
                             "amount_to_work" => 1,
                             "subject" => "Исправление ошибки на основе запроса из MobileCourier",
-                            "description" => "<br>http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-options-logistic",
+                            "description" => " 
+http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-options-logistic",
                             "attachments" => '[]',
                             "category_id" => 3,
                             "seller_id" => 9423,
@@ -60,6 +61,8 @@ return [
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
                             "employee_code_1c" => 978654132,
+                            "child_count" => 0,
+                            "photo_load_status" => 0
                         ]
                     ],
                     "requests_fields" => [
@@ -110,7 +113,7 @@ return [
                             "id" => 1,
                             "author_id" => 8,
                             "type_id" => 2,
-                            //"supervisor_id" => 4,
+                            "supervisor_id" => 10,
                             "manager_id" => null,
                             "status" => 1,
                             "direction" => 2,
@@ -120,7 +123,8 @@ return [
                             "correction_comment" => null,
                             "amount_to_work" => 1,
                             "subject" => "Исправление ошибки на основе запроса из MobileCourier",
-                            "description" => "<br>http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-options-logistic",
+                            "description" => " 
+http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-options-logistic",
                             "attachments" => '[]',
                             "category_id" => 3,
                             "seller_id" => 9423,
@@ -143,6 +147,8 @@ return [
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
                             "employee_code_1c" => 978654132,
+                            "child_count" => 0,
+                            "photo_load_status" => 0
                         ]
                     ],
                     "requests_fields" => [
@@ -194,7 +200,8 @@ return [
                             "correction_comment" => null,
                             "amount_to_work" => 1,
                             "subject" => "Исправление ошибки на основе запроса из MobileCourier",
-                            "description" => "~!@#$%^&*()_+`=-\]'/[;.,|}\"?{:><<br>http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-options-logistic",
+                            "description" => "~!@#$%^&*()_+`=-\]'/[;.,|}\"?{:>< 
+http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-options-logistic",
                             "attachments" => '[]',
                             "category_id" => 3,
                             "seller_id" => 9423,
@@ -217,6 +224,8 @@ return [
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
                             "employee_code_1c" => 978654132,
+                            "child_count" => 0,
+                            "photo_load_status" => 0
                         ]
                     ],
                     "requests_fields" => [

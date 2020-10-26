@@ -46,7 +46,7 @@ return [
                             "correction_comment" => null,
                             "amount_to_work" => 10,
                             "subject" => "Добавление новых товаров (Работа с товарами Маркетплейса)",
-                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "attachments" => '[]',
                             "category_id" => null,
                             "seller_id" => '1332',
@@ -71,7 +71,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ]
                     ],
                     'requests_fields' => [
@@ -283,7 +284,7 @@ return [
                             "correction_comment" => null,
                             "amount_to_work" => 10,
                             "subject" => "Группировка товаров (Определяется типом задачи)",
-                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "attachments" => '[]',
                             "category_id" => 1,
                             "seller_id" => '1332',
@@ -308,7 +309,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ]
                     ],
                     'requests_fields' => [
@@ -476,7 +478,7 @@ return [
                             "correction_comment" => null,
                             "amount_to_work" => 10,
                             "subject" => "Группировка товаров (Определяется типом задачи)",
-                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "attachments" => '[]',
                             "category_id" => 1,
                             "seller_id" => '1332',
@@ -501,7 +503,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ]
                     ],
                     'requests_fields' => [
@@ -671,7 +674,7 @@ return [
                             "correction_comment" => null,
                             "amount_to_work" => 10,
                             "subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
-                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "attachments" => '[]',
                             "category_id" => 1,
                             "seller_id" => '1332',
@@ -858,7 +861,7 @@ return [
                 'Request[correction_comment]' => '',
                 'Request[cross_check_manager_id]' => '',
                 'Request[deletedAttachments]' => '[]',
-                'Request[description]' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                'Request[description]' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                 'Request[manager_id]' => '',
                 'Request[planned_start_date]' => '',
                 'Request[priority]' => '2',
@@ -890,7 +893,7 @@ return [
                             "correction_comment" => '',
                             "amount_to_work" => 10,
                             "subject" => "Добавление новых товаров (Работа с товарами Маркетплейса)",
-                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "attachments" => '[]',
                             "category_id" => null,
                             "seller_id" => '1332',
@@ -915,7 +918,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ]
                     ],
                     'requests_fields' => [
@@ -1059,7 +1063,7 @@ return [
                 'Request[correction_comment]' => '',
                 'Request[cross_check_manager_id]' => '',
                 'Request[deletedAttachments]' => '[]',
-                'Request[description]' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                'Request[description]' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                 'Request[manager_id]' => '',
                 'Request[planned_start_date]' => '',
                 'Request[priority]' => '2',
@@ -1091,7 +1095,7 @@ return [
                             "correction_comment" => '',
                             "amount_to_work" => 10,
                             "subject" => "Группировка товаров (Определяется типом задачи)",
-                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
+                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "attachments" => '[]',
                             "category_id" => 1,
                             "seller_id" => '1332',
@@ -1116,7 +1120,8 @@ return [
                             "cross_check_status" => '0',
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
-                            "child_count" => 0
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ]
                     ],
                     'requests_fields' => [

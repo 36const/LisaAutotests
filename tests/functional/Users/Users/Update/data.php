@@ -13,6 +13,7 @@ return [
                 'UserBpm[position]' => 'contentManager',
                 'UserBpm[team]' => '1',
                 'UserBpm[userPermissions][blockUser]' => '0',
+                'UserBpm[userPermissions][blockUser]' => '0',
                 'UserBpm[userPermissions][categoryUpdate]' => '0',
                 'UserBpm[userPermissions][coefUpdate]' => '0',
                 'UserBpm[userPermissions][createUser]' => '0',
@@ -55,9 +56,11 @@ return [
                 'UserBpm[userPermissions][takeToWork]' => '0',
                 'UserBpm[userPermissions][teamUpdate]' => '0',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '0',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '0',
+                'UserBpm[userPermissions][transferCompletedToInWork]' => '0',
+                'UserBpm[userPermissions][transferCompletedToInWork]' => '1',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '0',
+                'UserBpm[userPermissions][transferInCheckToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '1',
                 'UserBpm[userPermissions][transferInWorkToDeclined]' => '0',
@@ -66,9 +69,17 @@ return [
                 'UserBpm[userPermissions][transferInWorkToOnHold]' => '1',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '0',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '1',
+                'UserBpm[userPermissions][transferInWorkToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '0',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '0',
+                'UserBpm[userPermissions][transferPartialCompleteToClosed]' => '0',
+                'UserBpm[userPermissions][transferPartialCompleteToInWork]' => '0',
+                'UserBpm[userPermissions][transferPartialCompleteToInWork]' => '1',
+                'UserBpm[userPermissions][transferRequireChangeToWaitCheck]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToRequireChange]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToWaitWork]' => '0',
+                'UserBpm[userPermissions][transferWaitWorkToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '1',
                 'UserBpm[userPermissions][updateUser]' => '0',
@@ -78,8 +89,8 @@ return [
                 'UserBpm[userPermissions][viewOwnDashboards]' => '0',
                 'UserBpm[userPermissions][viewOwnDashboards]' => '1',
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '0',
-                'UserBpm[userPermissions][viewUser]' => '0',
-            ],
+                'UserBpm[userPermissions][viewUser]' => '0'
+           ],
             'db' => [
                 "lisa_fixtures" => [
                     "user_bpm" => [
@@ -751,6 +762,11 @@ return [
                             "permission_name" => "requestViewOwnRequests"
                         ],
                         [
+                            "id" => 156,
+                            "user_id" => 4,
+                            "permission_name" => "transferRequireChangeToInCheck"
+                        ],
+                        [
                             "id" => 157,
                             "user_id" => 4,
                             "permission_name" => "transferWaitWorkToInWork"
@@ -776,6 +792,11 @@ return [
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
+                            "id" => 163,
+                            "user_id" => 4,
+                            "permission_name" => "transferCompletedToRequireFix"
+                        ],
+                        [
                             "id" => 169,
                             "user_id" => 4,
                             "permission_name" => "reportView"
@@ -784,6 +805,16 @@ return [
                             "id" => 177,
                             "user_id" => 4,
                             "permission_name" => "viewOwnDashboards"
+                        ],
+                        [
+                            "id" => 219,
+                            "user_id" => 4,
+                            "permission_name" => "transferCompletedToInWork"
+                        ],
+                        [
+                            "id" => 220,
+                            "user_id" => 4,
+                            "permission_name" => "transferPartialCompleteToInWork"
                         ],
                         [
                             "id" => 178,
@@ -1001,7 +1032,7 @@ return [
                             "changed_field" => "team",
                             "old_value" => "17",
                             "new_value" => "1",
-//                            "date" => "2020-05-19 16:36:22"
+                            //"date" => "2020-05-19 16:36:22"
                         ],
                         [
                             "id" => 2,
@@ -1012,7 +1043,7 @@ return [
                             "changed_field" => "parent_id",
                             "old_value" => "1. Система",
                             "new_value" => "5. Супервайзер Руководько 1",
-//                            "date" => "2020-05-19 16:36:22"
+                            //"date" => "2020-05-19 16:36:22"
                         ],
                         [
                             "id" => 3,
@@ -1023,7 +1054,7 @@ return [
                             "changed_field" => "position",
                             "old_value" => "admin",
                             "new_value" => "contentManager",
-//                            "date" => "2020-05-19 16:36:22"
+                            //"date" => "2020-05-19 16:36:22"
                         ],
                         [
                             "id" => 4,
@@ -1034,7 +1065,7 @@ return [
                             "changed_field" => "drfo",
                             "old_value" => "'000000004",
                             "new_value" => "'000000099",
-//                            "date" => "2020-05-19 16:36:22"
+                            //"date" => "2020-05-19 16:36:22"
                         ],
                         [
                             "id" => 5,
@@ -1045,7 +1076,7 @@ return [
                             "changed_field" => "blockUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 6,
@@ -1056,7 +1087,7 @@ return [
                             "changed_field" => "categoryUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 7,
@@ -1067,7 +1098,7 @@ return [
                             "changed_field" => "coefUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 8,
@@ -1078,7 +1109,7 @@ return [
                             "changed_field" => "createUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 9,
@@ -1089,7 +1120,7 @@ return [
                             "changed_field" => "errorsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 10,
@@ -1100,7 +1131,7 @@ return [
                             "changed_field" => "excludedFieldsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 11,
@@ -1111,7 +1142,7 @@ return [
                             "changed_field" => "fieldsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 12,
@@ -1122,7 +1153,7 @@ return [
                             "changed_field" => "massEdit",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 13,
@@ -1133,7 +1164,7 @@ return [
                             "changed_field" => "priorityUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 14,
@@ -1144,7 +1175,7 @@ return [
                             "changed_field" => "reasonsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 15,
@@ -1155,7 +1186,7 @@ return [
                             "changed_field" => "reportLoadAllUsers",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 16,
@@ -1166,7 +1197,7 @@ return [
                             "changed_field" => "reportLoadMarketUsers",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 17,
@@ -1177,7 +1208,7 @@ return [
                             "changed_field" => "reportLoadYourTeam",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 18,
@@ -1188,7 +1219,7 @@ return [
                             "changed_field" => "requestAddAttrOrValues",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 19,
@@ -1199,7 +1230,7 @@ return [
                             "changed_field" => "requestAddFatPortalCat",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 20,
@@ -1210,7 +1241,7 @@ return [
                             "changed_field" => "requestAddNewItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 21,
@@ -1221,7 +1252,7 @@ return [
                             "changed_field" => "requestAddUpdateSC",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 22,
@@ -1232,7 +1263,7 @@ return [
                             "changed_field" => "requestAddUpdateSizeGrid",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 23,
@@ -1243,7 +1274,7 @@ return [
                             "changed_field" => "requestAddUpdateTags",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 24,
@@ -1254,7 +1285,7 @@ return [
                             "changed_field" => "requestAddUpdateVideo",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 25,
@@ -1265,7 +1296,7 @@ return [
                             "changed_field" => "requestCheckHidden",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 26,
@@ -1276,7 +1307,7 @@ return [
                             "changed_field" => "requestCreateRelated",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 27,
@@ -1287,7 +1318,7 @@ return [
                             "changed_field" => "requestCreate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 28,
@@ -1298,7 +1329,7 @@ return [
                             "changed_field" => "requestDeleteAttachments",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 29,
@@ -1309,7 +1340,7 @@ return [
                             "changed_field" => "requestGroupItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 30,
@@ -1320,7 +1351,7 @@ return [
                             "changed_field" => "requestStructureDesign",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 31,
@@ -1331,7 +1362,7 @@ return [
                             "changed_field" => "requestTransferItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 32,
@@ -1342,7 +1373,7 @@ return [
                             "changed_field" => "requestUpdateAttrOrValues",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 33,
@@ -1353,7 +1384,7 @@ return [
                             "changed_field" => "requestUpdateFatPortalCat",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 34,
@@ -1364,7 +1395,7 @@ return [
                             "changed_field" => "requestUpdateItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 35,
@@ -1375,7 +1406,7 @@ return [
                             "changed_field" => "requestUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 36,
@@ -1386,7 +1417,7 @@ return [
                             "changed_field" => "requestUploadPhoto",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 37,
@@ -1397,7 +1428,7 @@ return [
                             "changed_field" => "requestViewAllRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 38,
@@ -1408,7 +1439,7 @@ return [
                             "changed_field" => "requestViewDirectionRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 39,
@@ -1419,7 +1450,7 @@ return [
                             "changed_field" => "requestViewTeamRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 40,
@@ -1430,7 +1461,7 @@ return [
                             "changed_field" => "sellerUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 41,
@@ -1441,7 +1472,7 @@ return [
                             "changed_field" => "takeToWork",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 42,
@@ -1452,7 +1483,7 @@ return [
                             "changed_field" => "teamUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 43,
@@ -1463,7 +1494,7 @@ return [
                             "changed_field" => "transferCompletedToClosed",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 44,
@@ -1471,10 +1502,10 @@ return [
                             "changed_user_login" => "kutsan.k",
                             "changer_id" => 4,
                             "changer_login" => "kutsan.k",
-                            "changed_field" => "transferCompletedToRequireFix",
-                            "old_value" => "1",
-                            "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            "changed_field" => "transferCompletedToInWork",
+                            "old_value" => "0",
+                            "new_value" => "1",
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 45,
@@ -1485,7 +1516,7 @@ return [
                             "changed_field" => "transferInCheckToDeclined",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 46,
@@ -1496,7 +1527,7 @@ return [
                             "changed_field" => "transferInCheckToRequireChange",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 47,
@@ -1507,7 +1538,7 @@ return [
                             "changed_field" => "transferOnHoldToInWork",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 48,
@@ -1515,10 +1546,10 @@ return [
                             "changed_user_login" => "kutsan.k",
                             "changer_id" => 4,
                             "changer_login" => "kutsan.k",
-                            "changed_field" => "transferRequireChangeToInCheck",
-                            "old_value" => "1",
-                            "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            "changed_field" => "transferPartialCompleteToInWork",
+                            "old_value" => "0",
+                            "new_value" => "1",
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 49,
@@ -1529,7 +1560,7 @@ return [
                             "changed_field" => "transferWaitCheckToInCheck",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 50,
@@ -1540,7 +1571,7 @@ return [
                             "changed_field" => "updateUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 51,
@@ -1551,7 +1582,7 @@ return [
                             "changed_field" => "viewAllDashboards",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 52,
@@ -1562,7 +1593,7 @@ return [
                             "changed_field" => "viewDashboardsByCommand",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 53,
@@ -1573,7 +1604,7 @@ return [
                             "changed_field" => "viewDashboardsByDirection",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 54,
@@ -1584,7 +1615,7 @@ return [
                             "changed_field" => "viewSplitterModerationRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ],
                         [
                             "id" => 55,
@@ -1595,7 +1626,7 @@ return [
                             "changed_field" => "viewUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:05:12"
+                            //"date" => "2020-10-03 18:26:11"
                         ]
                     ]
                 ],
@@ -1615,6 +1646,7 @@ return [
                 'UserBpm[parent_id]' => '1',
                 'UserBpm[position]' => 'contentManager',
                 'UserBpm[team]' => '17',
+                'UserBpm[userPermissions][blockUser]' => '0',
                 'UserBpm[userPermissions][blockUser]' => '0',
                 'UserBpm[userPermissions][categoryUpdate]' => '0',
                 'UserBpm[userPermissions][coefUpdate]' => '0',
@@ -1658,9 +1690,11 @@ return [
                 'UserBpm[userPermissions][takeToWork]' => '0',
                 'UserBpm[userPermissions][teamUpdate]' => '0',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '0',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '0',
+                'UserBpm[userPermissions][transferCompletedToInWork]' => '0',
+                'UserBpm[userPermissions][transferCompletedToInWork]' => '1',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '0',
+                'UserBpm[userPermissions][transferInCheckToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '1',
                 'UserBpm[userPermissions][transferInWorkToDeclined]' => '0',
@@ -1669,9 +1703,17 @@ return [
                 'UserBpm[userPermissions][transferInWorkToOnHold]' => '1',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '0',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '1',
+                'UserBpm[userPermissions][transferInWorkToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '0',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '0',
+                'UserBpm[userPermissions][transferPartialCompleteToClosed]' => '0',
+                'UserBpm[userPermissions][transferPartialCompleteToInWork]' => '0',
+                'UserBpm[userPermissions][transferPartialCompleteToInWork]' => '1',
+                'UserBpm[userPermissions][transferRequireChangeToWaitCheck]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToRequireChange]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToWaitWork]' => '0',
+                'UserBpm[userPermissions][transferWaitWorkToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '1',
                 'UserBpm[userPermissions][updateUser]' => '0',
@@ -1681,7 +1723,7 @@ return [
                 'UserBpm[userPermissions][viewOwnDashboards]' => '0',
                 'UserBpm[userPermissions][viewOwnDashboards]' => '1',
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '0',
-                'UserBpm[userPermissions][viewUser]' => '0',
+                'UserBpm[userPermissions][viewUser]' => '0'
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -2354,6 +2396,11 @@ return [
                             "permission_name" => "requestViewOwnRequests"
                         ],
                         [
+                            "id" => 156,
+                            "user_id" => 4,
+                            "permission_name" => "transferRequireChangeToInCheck"
+                        ],
+                        [
                             "id" => 157,
                             "user_id" => 4,
                             "permission_name" => "transferWaitWorkToInWork"
@@ -2379,6 +2426,11 @@ return [
                             "permission_name" => "transferInWorkToDeclined"
                         ],
                         [
+                            "id" => 163,
+                            "user_id" => 4,
+                            "permission_name" => "transferCompletedToRequireFix"
+                        ],
+                        [
                             "id" => 169,
                             "user_id" => 4,
                             "permission_name" => "reportView"
@@ -2387,6 +2439,16 @@ return [
                             "id" => 177,
                             "user_id" => 4,
                             "permission_name" => "viewOwnDashboards"
+                        ],
+                        [
+                            "id" => 219,
+                            "user_id" => 4,
+                            "permission_name" => "transferCompletedToInWork"
+                        ],
+                        [
+                            "id" => 220,
+                            "user_id" => 4,
+                            "permission_name" => "transferPartialCompleteToInWork"
                         ],
                         [
                             "id" => 178,
@@ -2604,7 +2666,7 @@ return [
                             "changed_field" => "position",
                             "old_value" => "admin",
                             "new_value" => "contentManager",
-                            "date" => "2020-05-19 16:36:22"
+                            //"date" => "2020-05-19 16:36:22"
                         ],
                         [
                             "id" => 2,
@@ -2615,7 +2677,7 @@ return [
                             "changed_field" => "blockUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 3,
@@ -2626,7 +2688,7 @@ return [
                             "changed_field" => "categoryUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 4,
@@ -2637,7 +2699,7 @@ return [
                             "changed_field" => "coefUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 5,
@@ -2648,7 +2710,7 @@ return [
                             "changed_field" => "createUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 6,
@@ -2659,7 +2721,7 @@ return [
                             "changed_field" => "errorsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 7,
@@ -2670,7 +2732,7 @@ return [
                             "changed_field" => "excludedFieldsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 8,
@@ -2681,7 +2743,7 @@ return [
                             "changed_field" => "fieldsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 9,
@@ -2692,7 +2754,7 @@ return [
                             "changed_field" => "massEdit",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 10,
@@ -2703,7 +2765,7 @@ return [
                             "changed_field" => "priorityUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 11,
@@ -2714,7 +2776,7 @@ return [
                             "changed_field" => "reasonsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 12,
@@ -2725,7 +2787,7 @@ return [
                             "changed_field" => "reportLoadAllUsers",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 13,
@@ -2736,7 +2798,7 @@ return [
                             "changed_field" => "reportLoadMarketUsers",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 14,
@@ -2747,7 +2809,7 @@ return [
                             "changed_field" => "reportLoadYourTeam",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 15,
@@ -2758,7 +2820,7 @@ return [
                             "changed_field" => "requestAddAttrOrValues",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 16,
@@ -2769,7 +2831,7 @@ return [
                             "changed_field" => "requestAddFatPortalCat",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 17,
@@ -2780,7 +2842,7 @@ return [
                             "changed_field" => "requestAddNewItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 18,
@@ -2791,7 +2853,7 @@ return [
                             "changed_field" => "requestAddUpdateSC",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 19,
@@ -2802,7 +2864,7 @@ return [
                             "changed_field" => "requestAddUpdateSizeGrid",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 20,
@@ -2813,7 +2875,7 @@ return [
                             "changed_field" => "requestAddUpdateTags",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 21,
@@ -2824,7 +2886,7 @@ return [
                             "changed_field" => "requestAddUpdateVideo",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 22,
@@ -2835,7 +2897,7 @@ return [
                             "changed_field" => "requestCheckHidden",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 23,
@@ -2846,7 +2908,7 @@ return [
                             "changed_field" => "requestCreateRelated",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 24,
@@ -2857,7 +2919,7 @@ return [
                             "changed_field" => "requestCreate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 25,
@@ -2868,7 +2930,7 @@ return [
                             "changed_field" => "requestDeleteAttachments",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 26,
@@ -2879,7 +2941,7 @@ return [
                             "changed_field" => "requestGroupItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 27,
@@ -2890,7 +2952,7 @@ return [
                             "changed_field" => "requestStructureDesign",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 28,
@@ -2901,7 +2963,7 @@ return [
                             "changed_field" => "requestTransferItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 29,
@@ -2912,7 +2974,7 @@ return [
                             "changed_field" => "requestUpdateAttrOrValues",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 30,
@@ -2923,7 +2985,7 @@ return [
                             "changed_field" => "requestUpdateFatPortalCat",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 31,
@@ -2934,7 +2996,7 @@ return [
                             "changed_field" => "requestUpdateItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 32,
@@ -2945,7 +3007,7 @@ return [
                             "changed_field" => "requestUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 33,
@@ -2956,7 +3018,7 @@ return [
                             "changed_field" => "requestUploadPhoto",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 34,
@@ -2967,7 +3029,7 @@ return [
                             "changed_field" => "requestViewAllRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 35,
@@ -2978,7 +3040,7 @@ return [
                             "changed_field" => "requestViewDirectionRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 36,
@@ -2989,7 +3051,7 @@ return [
                             "changed_field" => "requestViewTeamRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 37,
@@ -3000,7 +3062,7 @@ return [
                             "changed_field" => "sellerUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 38,
@@ -3011,7 +3073,7 @@ return [
                             "changed_field" => "takeToWork",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 39,
@@ -3022,7 +3084,7 @@ return [
                             "changed_field" => "teamUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 40,
@@ -3033,7 +3095,7 @@ return [
                             "changed_field" => "transferCompletedToClosed",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 41,
@@ -3041,10 +3103,10 @@ return [
                             "changed_user_login" => "kutsan.k",
                             "changer_id" => 4,
                             "changer_login" => "kutsan.k",
-                            "changed_field" => "transferCompletedToRequireFix",
-                            "old_value" => "1",
-                            "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            "changed_field" => "transferCompletedToInWork",
+                            "old_value" => "0",
+                            "new_value" => "1",
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 42,
@@ -3055,7 +3117,7 @@ return [
                             "changed_field" => "transferInCheckToDeclined",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 43,
@@ -3066,7 +3128,7 @@ return [
                             "changed_field" => "transferInCheckToRequireChange",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 44,
@@ -3077,7 +3139,7 @@ return [
                             "changed_field" => "transferOnHoldToInWork",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 45,
@@ -3085,10 +3147,10 @@ return [
                             "changed_user_login" => "kutsan.k",
                             "changer_id" => 4,
                             "changer_login" => "kutsan.k",
-                            "changed_field" => "transferRequireChangeToInCheck",
-                            "old_value" => "1",
-                            "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            "changed_field" => "transferPartialCompleteToInWork",
+                            "old_value" => "0",
+                            "new_value" => "1",
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 46,
@@ -3099,7 +3161,7 @@ return [
                             "changed_field" => "transferWaitCheckToInCheck",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 47,
@@ -3110,7 +3172,7 @@ return [
                             "changed_field" => "updateUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 48,
@@ -3121,7 +3183,7 @@ return [
                             "changed_field" => "viewAllDashboards",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 49,
@@ -3132,7 +3194,7 @@ return [
                             "changed_field" => "viewDashboardsByCommand",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 50,
@@ -3143,7 +3205,7 @@ return [
                             "changed_field" => "viewDashboardsByDirection",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 51,
@@ -3154,7 +3216,7 @@ return [
                             "changed_field" => "viewSplitterModerationRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ],
                         [
                             "id" => 52,
@@ -3165,7 +3227,7 @@ return [
                             "changed_field" => "viewUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-09-20 12:22:24"
+                            //"date" => "2020-10-03 18:46:29"
                         ]
                     ]
                 ],
@@ -3267,12 +3329,12 @@ return [
                 'UserBpm[userPermissions][teamUpdate]' => '1',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '0',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '1',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '0',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '1',
+                'UserBpm[userPermissions][transferCompletedToInWork]' => '0',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '1',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '0',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '1',
+                'UserBpm[userPermissions][transferInCheckToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '1',
                 'UserBpm[userPermissions][transferInWorkToDeclined]' => '0',
@@ -3281,12 +3343,18 @@ return [
                 'UserBpm[userPermissions][transferInWorkToOnHold]' => '1',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '0',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '1',
+                'UserBpm[userPermissions][transferInWorkToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '1',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '0',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '1',
+                'UserBpm[userPermissions][transferPartialCompleteToClosed]' => '0',
+                'UserBpm[userPermissions][transferPartialCompleteToInWork]' => '0',
+                'UserBpm[userPermissions][transferRequireChangeToWaitCheck]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '1',
+                'UserBpm[userPermissions][transferWaitCheckToRequireChange]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToWaitWork]' => '0',
+                'UserBpm[userPermissions][transferWaitWorkToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '1',
                 'UserBpm[userPermissions][updateUser]' => '0',
@@ -3302,7 +3370,7 @@ return [
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '0',
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '1',
                 'UserBpm[userPermissions][viewUser]' => '0',
-                'UserBpm[userPermissions][viewUser]' => '1',
+                'UserBpm[userPermissions][viewUser]' => '1'
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -4581,12 +4649,12 @@ return [
                 'UserBpm[userPermissions][teamUpdate]' => '1',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '0',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '1',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '0',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '1',
+                'UserBpm[userPermissions][transferCompletedToInWork]' => '0',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '1',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '0',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '1',
+                'UserBpm[userPermissions][transferInCheckToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '1',
                 'UserBpm[userPermissions][transferInWorkToDeclined]' => '0',
@@ -4595,12 +4663,18 @@ return [
                 'UserBpm[userPermissions][transferInWorkToOnHold]' => '1',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '0',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '1',
+                'UserBpm[userPermissions][transferInWorkToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '1',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '0',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '1',
+                'UserBpm[userPermissions][transferPartialCompleteToClosed]' => '0',
+                'UserBpm[userPermissions][transferPartialCompleteToInWork]' => '0',
+                'UserBpm[userPermissions][transferRequireChangeToWaitCheck]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '1',
+                'UserBpm[userPermissions][transferWaitCheckToRequireChange]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToWaitWork]' => '0',
+                'UserBpm[userPermissions][transferWaitWorkToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '1',
                 'UserBpm[userPermissions][updateUser]' => '0',
@@ -4616,7 +4690,7 @@ return [
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '0',
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '1',
                 'UserBpm[userPermissions][viewUser]' => '0',
-                'UserBpm[userPermissions][viewUser]' => '1',
+                'UserBpm[userPermissions][viewUser]' => '1'
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -5895,12 +5969,12 @@ return [
                 'UserBpm[userPermissions][teamUpdate]' => '1',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '0',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '1',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '0',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '1',
+                'UserBpm[userPermissions][transferCompletedToInWork]' => '0',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '1',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '0',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '1',
+                'UserBpm[userPermissions][transferInCheckToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '1',
                 'UserBpm[userPermissions][transferInWorkToDeclined]' => '0',
@@ -5909,12 +5983,18 @@ return [
                 'UserBpm[userPermissions][transferInWorkToOnHold]' => '1',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '0',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '1',
+                'UserBpm[userPermissions][transferInWorkToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '1',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '0',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '1',
+                'UserBpm[userPermissions][transferPartialCompleteToClosed]' => '0',
+                'UserBpm[userPermissions][transferPartialCompleteToInWork]' => '0',
+                'UserBpm[userPermissions][transferRequireChangeToWaitCheck]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '1',
+                'UserBpm[userPermissions][transferWaitCheckToRequireChange]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToWaitWork]' => '0',
+                'UserBpm[userPermissions][transferWaitWorkToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '1',
                 'UserBpm[userPermissions][updateUser]' => '0',
@@ -5930,7 +6010,7 @@ return [
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '0',
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '1',
                 'UserBpm[userPermissions][viewUser]' => '0',
-                'UserBpm[userPermissions][viewUser]' => '1',
+                'UserBpm[userPermissions][viewUser]' => '1'
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -7210,12 +7290,12 @@ return [
                 'UserBpm[userPermissions][teamUpdate]' => '1',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '0',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '1',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '0',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '1',
+                'UserBpm[userPermissions][transferCompletedToInWork]' => '0',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '1',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '0',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '1',
+                'UserBpm[userPermissions][transferInCheckToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '1',
                 'UserBpm[userPermissions][transferInWorkToDeclined]' => '0',
@@ -7224,12 +7304,18 @@ return [
                 'UserBpm[userPermissions][transferInWorkToOnHold]' => '1',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '0',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '1',
+                'UserBpm[userPermissions][transferInWorkToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '1',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '0',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '1',
+                'UserBpm[userPermissions][transferPartialCompleteToClosed]' => '0',
+                'UserBpm[userPermissions][transferPartialCompleteToInWork]' => '0',
+                'UserBpm[userPermissions][transferRequireChangeToWaitCheck]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '1',
+                'UserBpm[userPermissions][transferWaitCheckToRequireChange]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToWaitWork]' => '0',
+                'UserBpm[userPermissions][transferWaitWorkToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '1',
                 'UserBpm[userPermissions][updateUser]' => '0',
@@ -7245,7 +7331,7 @@ return [
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '0',
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '1',
                 'UserBpm[userPermissions][viewUser]' => '0',
-                'UserBpm[userPermissions][viewUser]' => '1',
+                'UserBpm[userPermissions][viewUser]' => '1'
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -8525,12 +8611,12 @@ return [
                 'UserBpm[userPermissions][teamUpdate]' => '1',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '0',
                 'UserBpm[userPermissions][transferCompletedToClosed]' => '1',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '0',
-                'UserBpm[userPermissions][transferCompletedToRequireFix]' => '1',
+                'UserBpm[userPermissions][transferCompletedToInWork]' => '0',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferInCheckToDeclined]' => '1',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '0',
                 'UserBpm[userPermissions][transferInCheckToRequireChange]' => '1',
+                'UserBpm[userPermissions][transferInCheckToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '0',
                 'UserBpm[userPermissions][transferInWorkToCompleted]' => '1',
                 'UserBpm[userPermissions][transferInWorkToDeclined]' => '0',
@@ -8539,12 +8625,18 @@ return [
                 'UserBpm[userPermissions][transferInWorkToOnHold]' => '1',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '0',
                 'UserBpm[userPermissions][transferInWorkToPartialComplete]' => '1',
+                'UserBpm[userPermissions][transferInWorkToWaitWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '0',
                 'UserBpm[userPermissions][transferOnHoldToInWork]' => '1',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '0',
-                'UserBpm[userPermissions][transferRequireChangeToInCheck]' => '1',
+                'UserBpm[userPermissions][transferPartialCompleteToClosed]' => '0',
+                'UserBpm[userPermissions][transferPartialCompleteToInWork]' => '0',
+                'UserBpm[userPermissions][transferRequireChangeToWaitCheck]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '0',
                 'UserBpm[userPermissions][transferWaitCheckToInCheck]' => '1',
+                'UserBpm[userPermissions][transferWaitCheckToRequireChange]' => '0',
+                'UserBpm[userPermissions][transferWaitCheckToWaitWork]' => '0',
+                'UserBpm[userPermissions][transferWaitWorkToDeclined]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '0',
                 'UserBpm[userPermissions][transferWaitWorkToInWork]' => '1',
                 'UserBpm[userPermissions][updateUser]' => '0',
@@ -8560,7 +8652,7 @@ return [
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '0',
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '1',
                 'UserBpm[userPermissions][viewUser]' => '0',
-                'UserBpm[userPermissions][viewUser]' => '1',
+                'UserBpm[userPermissions][viewUser]' => '1'
             ],
             'db' => [
                 "lisa_fixtures" => [

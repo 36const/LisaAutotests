@@ -79,4 +79,16 @@ class Request extends FunctionalTester
         return "//thead//td//input[@name='RequestSearch[$fieldName]']/..//span[@class='selection']//span[@class='select2-selection__rendered']";
     }
 
+    /**Блок кнопок изменения статуса в таблице заявок и самой заявке*/
+    public static function transferButton(string $action)
+    {
+        return "//div[@class='buttons-background']//*[contains(text(), '$action')]";
+    }
+
+    /**Контекстное меню заявки*/
+    public static function contextMenu(string $action)
+    {
+        return "//tbody//ul[@class='dropdown-menu']//a[contains(text(), '$action')]";
+    }
+
 }

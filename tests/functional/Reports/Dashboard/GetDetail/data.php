@@ -154,7 +154,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?status=В работе&display=3&member=manager_id&date=' . date('Y-m-d'),
+            "url" => '?status=В работе&display=3&date=' . date('Y-m-d'),
             "pageObjects" => [
                 "canSee" => [
                     [
@@ -171,7 +171,7 @@ return [
                             "value" => "По пользователям"
                         ],
                         [
-                            "selector" => Dashboard::member('manager_id'),
+                            "selector" => Dashboard::member(),
                             "value" => "менеджеру"
                         ]
                     ],

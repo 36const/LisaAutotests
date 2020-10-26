@@ -47,6 +47,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 11,
@@ -84,6 +89,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 14,
@@ -121,6 +131,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         //2
                         [
@@ -158,7 +173,12 @@ return [
                             "team_direction" => 2,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 10,
@@ -196,6 +216,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 13,
@@ -233,6 +258,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         //5
                         [
@@ -270,7 +300,12 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 8,
@@ -308,6 +343,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 16,
@@ -345,6 +385,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         //6
                         [
@@ -382,7 +427,12 @@ return [
                             "team_direction" => 5,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 17,
@@ -420,6 +470,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 19,
@@ -457,6 +512,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         //7
                         [
@@ -494,7 +554,12 @@ return [
                             "team_direction" => 5,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 21,
@@ -532,6 +597,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         //3
                         [
@@ -569,7 +639,12 @@ return [
                             "team_direction" => 3,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 12,
@@ -607,6 +682,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 15,
@@ -644,6 +724,11 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                     ],
                 ]
@@ -696,7 +781,12 @@ return [
                             "team_direction" => 5,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         //11
                         [
@@ -734,7 +824,12 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         //8,9
                         [
@@ -772,7 +867,12 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 20,
@@ -809,7 +909,12 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                     ],
                 ]
@@ -863,6 +968,11 @@ return [
                             "report_period_id" => 2,
                             "sync_source_id" => null,
                             "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         //11
                         [
@@ -900,7 +1010,12 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => 2,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         //8,9
                         [
@@ -938,7 +1053,12 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => 2,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 7,
@@ -975,7 +1095,12 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => 2,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                     ],
                 ]
@@ -1029,6 +1154,11 @@ return [
                             "report_period_id" => 1,
                             "sync_source_id" => null,
                             "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         //11
                         [
@@ -1066,7 +1196,12 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1", "2": "2", "3": "3", "4": "4"}'
+                            "sv_report_periods" => '{"1": "1", "2": "2", "3": "3", "4": "4"}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         //8,9
                         [
@@ -1104,7 +1239,12 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": 1}'
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                         [
                             "id" => 7,
@@ -1141,7 +1281,12 @@ return [
                             "team_direction" => 6,
                             "report_period_id" => 1,
                             "sync_source_id" => null,
-                            "sv_report_periods" => '{"1": "1"}'
+                            "sv_report_periods" => '{"1": "1"}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
                         ],
                     ],
                 ]
