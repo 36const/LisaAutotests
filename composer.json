@@ -1,7 +1,7 @@
 {
     "name": "gomer-tests/lisa",
-    "description": "API, Functional and Acceptance tests for lisa",
-    "type": "project",
+    "description": "API tests for lisa",
+    "type": "poject",
     "license": "Open Source",
     "minimum-stability": "stable",
     "repositories": [
