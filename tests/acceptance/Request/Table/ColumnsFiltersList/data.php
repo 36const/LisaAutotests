@@ -7,7 +7,7 @@ return [
         'setting' => [
             'description' => 'Установка и изменение фильтра колонки приоритета',
             'column' => 'priority',
-            'value' => 'Информация необходима для склада',
+            'value' => 'Товар-новинка/эксклюзив (трафикообразующий)',
             'amount' => 14,
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -39,13 +39,13 @@ return [
                 "canSee" => [
                     [
                         ["selector" => Request::searchValueList('priority', 'Исправление критичной ошибки')],
-                        ["selector" => Request::searchValueList('priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
+                        ["selector" => Request::searchValueList('priority', 'Информация необходима для склада')],
                         ["selector" => Request::searchValueList('priority', '(не задано)')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => Request::searchValueList('priority', 'Информация необходима для склада')],
+                        ["selector" => Request::searchValueList('priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
                     ]
                 ],
             ],
@@ -97,19 +97,19 @@ return [
             'searchValueListAll' => [
                 "canSee" => [
                     [
-                        ["selector" => Request::searchValueList('reason_id','Все товары уже есть на сайте')],
-                        ["selector" => Request::searchValueList('reason_id','Другое (описан в коментариях)')],
-                        ["selector" => Request::searchValueList('reason_id','Дубль задачи')],
-                        ["selector" => Request::searchValueList('reason_id','Изменен приоритет задачи')],
-                        ["selector" => Request::searchValueList('reason_id','Не получена запрошенная недостающая информация')],
-                        ["selector" => Request::searchValueList('reason_id','Нинада')],
-                        ["selector" => Request::searchValueList('reason_id','Ожидается загрузка обновлений в систему')],
-                        ["selector" => Request::searchValueList('reason_id','Ожидается загрузка товаров в систему')],
-                        ["selector" => Request::searchValueList('reason_id','Ожидается загрузка фото в товары')],
-                        ["selector" => Request::searchValueList('reason_id','Товары ушли в ошибки')],
-                        ["selector" => Request::searchValueList('reason_id','Требуется уточнение информации по задаче')],
-                        ["selector" => Request::searchValueList('reason_id','Часть товаров ушла в ошибки')],
-                        ["selector" => Request::searchValueList('reason_id','(не задано)')],
+                        ["selector" => Request::searchValueList('reason_id', 'Все товары уже есть на сайте')],
+                        ["selector" => Request::searchValueList('reason_id', 'Другое (описан в коментариях)')],
+                        ["selector" => Request::searchValueList('reason_id', 'Дубль задачи')],
+                        ["selector" => Request::searchValueList('reason_id', 'Изменен приоритет задачи')],
+                        ["selector" => Request::searchValueList('reason_id', 'Не получена запрошенная недостающая информация')],
+                        ["selector" => Request::searchValueList('reason_id', 'Нинада')],
+                        ["selector" => Request::searchValueList('reason_id', 'Ожидается загрузка обновлений в систему')],
+                        ["selector" => Request::searchValueList('reason_id', 'Ожидается загрузка товаров в систему')],
+                        ["selector" => Request::searchValueList('reason_id', 'Ожидается загрузка фото в товары')],
+                        ["selector" => Request::searchValueList('reason_id', 'Товары ушли в ошибки')],
+                        ["selector" => Request::searchValueList('reason_id', 'Требуется уточнение информации по задаче')],
+                        ["selector" => Request::searchValueList('reason_id', 'Часть товаров ушла в ошибки')],
+                        ["selector" => Request::searchValueList('reason_id', '(не задано)')],
                     ]
                 ],
                 "cantSee" => [],
@@ -117,23 +117,23 @@ return [
             'searchValueListNotAll' => [
                 "canSee" => [
                     [
-                        ["selector" => Request::searchValueList('reason_id','Все товары уже есть на сайте')],
-                        ["selector" => Request::searchValueList('reason_id','Другое (описан в коментариях)')],
-                        ["selector" => Request::searchValueList('reason_id','Дубль задачи')],
-                        ["selector" => Request::searchValueList('reason_id','Изменен приоритет задачи')],
-                        ["selector" => Request::searchValueList('reason_id','Не получена запрошенная недостающая информация')],
-                        ["selector" => Request::searchValueList('reason_id','Нинада')],
-                        ["selector" => Request::searchValueList('reason_id','Ожидается загрузка обновлений в систему')],
-                        ["selector" => Request::searchValueList('reason_id','Ожидается загрузка товаров в систему')],
-                        ["selector" => Request::searchValueList('reason_id','Ожидается загрузка фото в товары')],
-                        ["selector" => Request::searchValueList('reason_id','Товары ушли в ошибки')],
-                        ["selector" => Request::searchValueList('reason_id','Требуется уточнение информации по задаче')],
-                        ["selector" => Request::searchValueList('reason_id','Часть товаров ушла в ошибки')],
+                        ["selector" => Request::searchValueList('reason_id', 'Все товары уже есть на сайте')],
+                        ["selector" => Request::searchValueList('reason_id', 'Другое (описан в коментариях)')],
+                        ["selector" => Request::searchValueList('reason_id', 'Дубль задачи')],
+                        ["selector" => Request::searchValueList('reason_id', 'Изменен приоритет задачи')],
+                        ["selector" => Request::searchValueList('reason_id', 'Не получена запрошенная недостающая информация')],
+                        ["selector" => Request::searchValueList('reason_id', 'Нинада')],
+                        ["selector" => Request::searchValueList('reason_id', 'Ожидается загрузка обновлений в систему')],
+                        ["selector" => Request::searchValueList('reason_id', 'Ожидается загрузка товаров в систему')],
+                        ["selector" => Request::searchValueList('reason_id', 'Ожидается загрузка фото в товары')],
+                        ["selector" => Request::searchValueList('reason_id', 'Товары ушли в ошибки')],
+                        ["selector" => Request::searchValueList('reason_id', 'Требуется уточнение информации по задаче')],
+                        ["selector" => Request::searchValueList('reason_id', 'Часть товаров ушла в ошибки')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => Request::searchValueList('reason_id','(не задано)')],
+                        ["selector" => Request::searchValueList('reason_id', '(не задано)')],
                     ]
                 ],
             ],
@@ -141,19 +141,19 @@ return [
                 "canSee" => [],
                 "cantSee" => [
                     [
-                        ["selector" => Request::searchValueList('reason_id','Все товары уже есть на сайте')],
-                        ["selector" => Request::searchValueList('reason_id','Другое (описан в коментариях)')],
-                        ["selector" => Request::searchValueList('reason_id','Дубль задачи')],
-                        ["selector" => Request::searchValueList('reason_id','Изменен приоритет задачи')],
-                        ["selector" => Request::searchValueList('reason_id','Не получена запрошенная недостающая информация')],
-                        ["selector" => Request::searchValueList('reason_id','Нинада')],
-                        ["selector" => Request::searchValueList('reason_id','Ожидается загрузка обновлений в систему')],
-                        ["selector" => Request::searchValueList('reason_id','Ожидается загрузка товаров в систему')],
-                        ["selector" => Request::searchValueList('reason_id','Ожидается загрузка фото в товары')],
-                        ["selector" => Request::searchValueList('reason_id','Товары ушли в ошибки')],
-                        ["selector" => Request::searchValueList('reason_id','Требуется уточнение информации по задаче')],
-                        ["selector" => Request::searchValueList('reason_id','Часть товаров ушла в ошибки')],
-                        ["selector" => Request::searchValueList('reason_id','(не задано)')],
+                        ["selector" => Request::searchValueList('reason_id', 'Все товары уже есть на сайте')],
+                        ["selector" => Request::searchValueList('reason_id', 'Другое (описан в коментариях)')],
+                        ["selector" => Request::searchValueList('reason_id', 'Дубль задачи')],
+                        ["selector" => Request::searchValueList('reason_id', 'Изменен приоритет задачи')],
+                        ["selector" => Request::searchValueList('reason_id', 'Не получена запрошенная недостающая информация')],
+                        ["selector" => Request::searchValueList('reason_id', 'Нинада')],
+                        ["selector" => Request::searchValueList('reason_id', 'Ожидается загрузка обновлений в систему')],
+                        ["selector" => Request::searchValueList('reason_id', 'Ожидается загрузка товаров в систему')],
+                        ["selector" => Request::searchValueList('reason_id', 'Ожидается загрузка фото в товары')],
+                        ["selector" => Request::searchValueList('reason_id', 'Товары ушли в ошибки')],
+                        ["selector" => Request::searchValueList('reason_id', 'Требуется уточнение информации по задаче')],
+                        ["selector" => Request::searchValueList('reason_id', 'Часть товаров ушла в ошибки')],
+                        ["selector" => Request::searchValueList('reason_id', '(не задано)')],
                     ]
                 ],
             ],
@@ -183,10 +183,10 @@ return [
             'searchValueListAll' => [
                 "canSee" => [
                     [
-                        ["selector" => Request::searchValueList('author_clarifications','Без уточнений')],
-                        ["selector" => Request::searchValueList('author_clarifications','Более 5 уточнений')],
-                        ["selector" => Request::searchValueList('author_clarifications','Менее 5 уточнений')],
-                        ["selector" => Request::searchValueList('author_clarifications','(не задано)')],
+                        ["selector" => Request::searchValueList('author_clarifications', 'Без уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications', 'Более 5 уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications', 'Менее 5 уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications', '(не задано)')],
                     ]
                 ],
                 "cantSee" => [],
@@ -194,14 +194,14 @@ return [
             'searchValueListNotAll' => [
                 "canSee" => [
                     [
-                        ["selector" => Request::searchValueList('author_clarifications','Без уточнений')],
-                        ["selector" => Request::searchValueList('author_clarifications','Менее 5 уточнений')],
-                        ["selector" => Request::searchValueList('author_clarifications','(не задано)')],
+                        ["selector" => Request::searchValueList('author_clarifications', 'Без уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications', 'Менее 5 уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications', '(не задано)')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => Request::searchValueList('author_clarifications','Более 5 уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications', 'Более 5 уточнений')],
                     ]
                 ],
             ],
@@ -209,10 +209,10 @@ return [
                 "canSee" => [],
                 "cantSee" => [
                     [
-                        ["selector" => Request::searchValueList('author_clarifications','Без уточнений')],
-                        ["selector" => Request::searchValueList('author_clarifications','Более 5 уточнений')],
-                        ["selector" => Request::searchValueList('author_clarifications','Менее 5 уточнений')],
-                        ["selector" => Request::searchValueList('author_clarifications','(не задано)')],
+                        ["selector" => Request::searchValueList('author_clarifications', 'Без уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications', 'Более 5 уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications', 'Менее 5 уточнений')],
+                        ["selector" => Request::searchValueList('author_clarifications', '(не задано)')],
                     ]
                 ],
             ],

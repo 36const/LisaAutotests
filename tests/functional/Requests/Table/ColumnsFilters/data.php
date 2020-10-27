@@ -59,7 +59,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::emptyTable()],
+                        ["selector" => Request::$emptyTable],
                     ]
                 ],
                 "cantSee" => [
