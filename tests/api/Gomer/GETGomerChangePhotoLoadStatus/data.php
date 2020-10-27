@@ -1873,7 +1873,7 @@ return [
 
     'case17' => [
         'setting' => [
-            'description' => 'Заявка тип 2 направление 0',
+            'description' => 'Заявка тип 2 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case17.php',
         'provider_data' => [
@@ -1940,7 +1940,7 @@ return [
 
     'case18' => [
         'setting' => [
-            'description' => 'Заявка тип 3 направление 0',
+            'description' => 'Заявка тип 3 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case18.php',
         'provider_data' => [
@@ -2074,7 +2074,7 @@ return [
 
     'case20' => [
         'setting' => [
-            'description' => 'Заявка тип 5 направление 0',
+            'description' => 'Заявка тип 5 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case20.php',
         'provider_data' => [
@@ -2141,7 +2141,7 @@ return [
 
     'case21' => [
         'setting' => [
-            'description' => 'Заявка тип 6 направление 0',
+            'description' => 'Заявка тип 6 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case21.php',
         'provider_data' => [
@@ -2543,7 +2543,7 @@ return [
 
     'case27' => [
         'setting' => [
-            'description' => 'Заявка тип 12 направление 0',
+            'description' => 'Заявка тип 12 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case27.php',
         'provider_data' => [
