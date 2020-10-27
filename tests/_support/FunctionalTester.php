@@ -35,15 +35,16 @@ class FunctionalTester extends \Codeception\Actor
                                     array $globalFile = ['oneUser'], bool $globalUsing = true)
     {
         $I = $this;
-        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
-        $I->runShellCommand('./yii bpm/request/clear-temporary-files');
-        $I->purgeAllQueues();
         $testHelper->clearDB($I, $data, $globalFile);
 
         if ($globalUsing)
             $testHelper->loadGlobalFixture($I, $globalFile);
 
         $testHelper->loadFixtureAndMock($I, $data);
+
+        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
+        $I->runShellCommand('./yii bpm/request/clear-temporary-files');
+        $I->purgeAllQueues();
 
         $I->wantTo($data['setting']['description']);
         $I->amOnPage('/');

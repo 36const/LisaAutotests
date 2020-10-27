@@ -36,13 +36,13 @@ class ApiTester extends \Codeception\Actor
                                     array $globalFile = ['oneUser'], bool $globalUsing = true)
     {
         $I = $this;
-        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $testHelper->clearDB($I, $data, $globalFile);
 
         if ($globalUsing)
             $testHelper->loadGlobalFixture($I, $globalFile);
 
         $testHelper->loadFixtureAndMock($I, $data);
+        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $I->wantTo($data['setting']['description']);
     }
 
