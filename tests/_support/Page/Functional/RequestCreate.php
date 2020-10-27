@@ -16,22 +16,6 @@ class RequestCreate extends FunctionalTester
     public static $observers = "//select[@name='Request[observers][]']";
     public static $priority = "//select[@name='Request[priority]']";
 
-    public static $createModal = "//div[@id='create_modal']";
-    public static $createButton = "//a[@href='/bpm/request']";
-    public static $typesList = "//select[@id='types-select' and @name='RequestType']";
-
-    public static function typeSelect($typeId)
-    {
-        return static::$typesList . "//option[@value=$typeId]";
-    }
-
-    public static function checkboxesDirection(int $directionId)
-    {
-        return "//div[@id='checkboxes-direction']//input[@name='direction' and @value='$directionId']";
-    }
-
-    public static $createButtonModal = "//div[@id='create_modal']//button[@id='create-button' and text()='Создать']";
-
     public function amOnRequestCreate(int $type, int $direction)
     {
         $I = $this;

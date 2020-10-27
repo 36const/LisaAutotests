@@ -44,7 +44,7 @@ class GETColumnsFiltersCest
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
 
-        $request->amOnTable($providerData['url']);
+        $request->table($providerData['url']);
         $I->seeResponseCodeIs(200);
 
         $I->checkObjectsOnPage($providerData['pageObjects']);

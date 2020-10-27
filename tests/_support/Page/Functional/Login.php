@@ -45,7 +45,4 @@ class Login extends FunctionalTester
         return $I->grabCsrfToken();
     }
 
-    public static $user = "kutsan.k";
-    public static $password  = "123qweASD!";
-
 }

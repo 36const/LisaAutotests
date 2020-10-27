@@ -29,7 +29,6 @@ phpunit.phar
 
 tests/_output/*
 tests/_support/_generated
-tests/_support/_identityCookie.txt
 
 #vagrant folder
 /.vagrant
