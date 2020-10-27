@@ -1,19 +1,19 @@
 {
     "name": "gomer-tests/lisa",
-    "description": "API tests for lisa",
-    "type": "poject",
+    "description": "API, Functional and Acceptance tests for Lisa",
+    "type": "project",
     "license": "Open Source",
     "minimum-stability": "stable",
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@gitlab-ce.local:autotests/codeception-test-helper.git"
+            "url": "git@gitlab.rozetka.company:autotests/codeception-test-helper.git"
         }
     ],
     "require": {
         "codeception/codeception": "4.1.5",
         "phpunit/phpunit": "^7.0",
-        "mvadzim/allure-codeception": "^2.0",
+        "mvadzim/allure-codeception": "^2.1",
         "cweagans/composer-patches": "^1.6",
         "rzk/codeception-test-helper" : "*"
     },

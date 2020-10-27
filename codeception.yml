@@ -14,7 +14,7 @@ extensions:
     enabled:
         - Codeception\Extension\RunFailed
         - Yandex\Allure\Codeception\AllureCodeception
-config:
+    config:
         Yandex\Allure\Codeception\AllureCodeception:
             deletePreviousResults: true
             outputDirectory: allure-results # Результаты будут сохранены в tests/_output/allure-results
