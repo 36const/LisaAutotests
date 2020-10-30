@@ -13,7 +13,8 @@
     "require": {
         "codeception/codeception": "4.1.5",
         "phpunit/phpunit": "^7.0",
-        "mvadzim/allure-codeception": "^2.1",
+        "automation-testing-tools/allure-codeception": "^2.1.0",
+        "automation-testing-tools/module-db": "^1.06",
         "cweagans/composer-patches": "^1.6",
         "rzk/codeception-test-helper" : "*"
     },
