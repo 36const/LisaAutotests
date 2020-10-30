@@ -7,7 +7,7 @@ use rzk\TestHelper;
 /**
  * @group lisa
  * @group lisa_api
- * @group POSTMobileCurrier
+ * @group POSTComi
  */
 class POSTComiCest
 {
@@ -37,12 +37,12 @@ class POSTComiCest
      * @dataProvider pageProvider
      *
      */
-    public function POSTMobileCurrier(ApiTester $I, Example $data)
+    public function POSTComi(ApiTester $I, Example $data)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/api/create-request-by-mobile-courier', $providerData['requestBody']);
+        $I->sendPOST('/bpm/api/jira-request' . $providerData['requestParameters'], $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);

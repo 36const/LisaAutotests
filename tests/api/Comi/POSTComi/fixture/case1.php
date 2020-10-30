@@ -22,11 +22,11 @@ return [
                 "status" => 1
             ],
             [
-                //"id" => 3,
-                "title" => "Внесение изменений на основе запроса из MobileCourier",
-                "difficulty" => 4,
-                "supervisor_id" => 6,
-                "status" => 0
+                "id" => 437,
+                "title" => "Внесение данных в товар по замерам со склада",
+                "difficulty" => 1,
+                "supervisor_id" => 23,
+                "status" => 1
             ],
         ],
         "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',

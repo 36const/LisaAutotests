@@ -3,51 +3,44 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Заявка с обязательными полями, направление Розетка',
+            'description' => 'Заявка Jira COMI',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
             'JIRA' => [
-                'request' => [
-                    'method' => 'PUT',
-                    'path' => '/v1.1/Goods/',
+                'httpRequest' => [
+                    'method' => 'GET',
+                    'path' => 'https://sd.local/rest/api/2/issue/COMI-17063',
 //                    'queryStringParameters' => [
 //                        'record_type' => ["0"]
 //                    ]
                 ],
-                'response' => [
+                'httpResponse' => [
                     'headers' => [
                         'content-type' => [
-                            "text/xml;charset=UTF-8"
+                            "application/json;charset=UTF-8"
                         ]
                     ],
-                    'body' => file_get_contents(__DIR__ . '/mock/JIRA/case1.xml'),
+                    'body' => file_get_contents(__DIR__ . '/mock/JIRA/case1.json'),
                     'statusCode' => 200
                 ],
             ],
         ],
         'provider_data' => [
-            'requestBody' => [
-                'item_id' => '123123123',
-                'market_id' => '9423',
-                'employee_code_1c' => '978654132',
-                'direction' => '1',
-            ],
+            'requestBody' => [],
+            "requestParameters" => "?issueKey=COMI-17063",
             "responseCode" => 200,
             "responseBody" => [
-                "status" => 200,
-                "result" => [
-                    "id" => 1
-                ]
+                "status" => 200
             ],
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => [
                         [
                             "id" => 1,
-                            "author_id" => 8,
+                            "author_id" => 9,
                             "type_id" => 2,
-                            "supervisor_id" => 6,
+                            "supervisor_id" => 23,
                             "manager_id" => null,
                             "status" => 1,
                             "direction" => 1,
@@ -56,12 +49,41 @@ return [
                             //"created_at" =>
                             "correction_comment" => null,
                             "amount_to_work" => 1,
-                            "subject" => "Исправление ошибки на основе запроса из MobileCourier",
-                            "description" => " 
-http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-options-logistic",
+                            "subject" => "COMI-17063 замеры Зимний комбинезон Be easy Ликки 20SD2-19V12 80 см Светло-розовый (2200000054517)",
+                            "description" => "Ссылка на JIRA: https://sd.local/servicedesk/customer/portal/106/COMI-17063 
+ Описание: Добрый деньпросьба уточнить замеры по 2м товарам&nbsp;Зимний комбинезон Be easy Ликки 20SD2-19V12 80 см Светло-розовый (2200000054517) и&nbsp;Зимний комбинезон Be easy Ликки 20SD2-19V12 86 см Светло-розовый (2200000054524)Длина (от шеи до низа)Длина (от шеи до шагового узла)Длина внутреннего шва брюк Длина рукаваПОТ 
+
+ Комментарии: 
+Закружная Виктория (2020-09-22 12:48:48): 
+ &nbsp;Зимний комбинезон Be easy Ликки 20SD2-19V12 86 см Светло-розовый (2200000054524)
+
+Длина (от шеи до низа)-76 см
+
+Длина (от шеи до шагового узла)-48 см
+
+Длина внутреннего шва брюк-32 см
+
+Длина рукава-38 от шеи
+
+ПОТ-34 см
+
+Зимний комбинезон Be easy Ликки 20SD2-19V12 80 см Светло-розовый (2200000054517)
+&nbsp;
+
+Длина (от шеи до низа)-74см
+
+Длина (от шеи до шагового узла)-45&nbsp;см
+
+Длина внутреннего шва брюк-30&nbsp;см
+
+Длина рукава-35&nbsp;от шеи
+
+ПОТ-34 см
+ 
+",
                             "attachments" => '[]',
-                            "category_id" => 3,
-                            "seller_id" => 9423,
+                            "category_id" => 437,
+                            "seller_id" => 5,
                             "recommendations" => null,
                             "reason_id" => null,
                             "reason" => null,
@@ -80,7 +102,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "employee_code_1c" => 978654132,
+                            "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0
                         ]
@@ -96,493 +118,10 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'field_id' => 20,
                             'value' => 61,
                         ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 159,
-                            'value' => 1,
-                        ]
                     ]
                 ]
             ]
         ]
     ],
 
-    'case2' => [
-        'setting' => [
-            'description' => 'Заявка с обязательными полями, направление Маркетплейс',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'item_id' => '123123123',
-                'market_id' => '9423',
-                'employee_code_1c' => '978654132',
-                'direction' => '2',
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 200,
-                "result" => [
-                    "id" => 1
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [
-                        [
-                            "id" => 1,
-                            "author_id" => 8,
-                            "type_id" => 2,
-                            "supervisor_id" => 10,
-                            "manager_id" => null,
-                            "status" => 1,
-                            "direction" => 2,
-                            "priority" => null,
-                            "awaiting_correction" => 0,
-                            //"created_at" =>
-                            "correction_comment" => null,
-                            "amount_to_work" => 1,
-                            "subject" => "Исправление ошибки на основе запроса из MobileCourier",
-                            "description" => " 
-http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-options-logistic",
-                            "attachments" => '[]',
-                            "category_id" => 3,
-                            "seller_id" => 9423,
-                            "recommendations" => null,
-                            "reason_id" => null,
-                            "reason" => null,
-                            "parent_id" => null,
-                            "planned_start_date" => null,
-                            "planned_finish_date" => null,
-                            "actual_start_date" => null,
-                            "actual_finish_date" => null,
-                            "supervisor_process_date" => null,
-                            "supervisor_check_date" => null,
-                            "difficulty" => null,
-                            "result_comment" => null,
-                            "supervisor_comment" => null,
-                            //"last_change_status_date" =>
-                            "team_direction" => 2,
-                            "report_period_id" => null,
-                            "sync_source_id" => null,
-                            "sv_report_periods" => null,
-                            "employee_code_1c" => 978654132,
-                            "child_count" => 0,
-                            "photo_load_status" => 0
-                        ]
-                    ],
-                    "requests_fields" => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 159,
-                            'value' => 1,
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ],
-
-    'case3' => [
-        'setting' => [
-            'description' => 'Заявка с обязательными полями и описанием, направление Розетка',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'item_id' => '123123123',
-                'market_id' => '9423',
-                'employee_code_1c' => '978654132',
-                'direction' => '1',
-                'description' => '~!@#$%^&*()_+`=-\\]\'/[;.,|}"?{:><'
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 200,
-                "result" => [
-                    "id" => 1
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [
-                        [
-                            "id" => 1,
-                            "author_id" => 8,
-                            "type_id" => 2,
-                            "supervisor_id" => 6,
-                            "manager_id" => null,
-                            "status" => 1,
-                            "direction" => 1,
-                            "priority" => null,
-                            "awaiting_correction" => 0,
-                            //"created_at" =>
-                            "correction_comment" => null,
-                            "amount_to_work" => 1,
-                            "subject" => "Исправление ошибки на основе запроса из MobileCourier",
-                            "description" => "~!@#$%^&*()_+`=-\]'/[;.,|}\"?{:>< 
-http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-options-logistic",
-                            "attachments" => '[]',
-                            "category_id" => 3,
-                            "seller_id" => 9423,
-                            "recommendations" => null,
-                            "reason_id" => null,
-                            "reason" => null,
-                            "parent_id" => null,
-                            "planned_start_date" => null,
-                            "planned_finish_date" => null,
-                            "actual_start_date" => null,
-                            "actual_finish_date" => null,
-                            "supervisor_process_date" => null,
-                            "supervisor_check_date" => null,
-                            "difficulty" => null,
-                            "result_comment" => null,
-                            "supervisor_comment" => null,
-                            //"last_change_status_date" =>
-                            "team_direction" => 3,
-                            "report_period_id" => null,
-                            "sync_source_id" => null,
-                            "sv_report_periods" => null,
-                            "employee_code_1c" => 978654132,
-                            "child_count" => 0,
-                            "photo_load_status" => 0
-                        ]
-                    ],
-                    "requests_fields" => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 20,
-                            'value' => 61,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 159,
-                            'value' => 1,
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ],
-
-    'case4' => [
-        'setting' => [
-            'description' => 'Пустой item_id',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'item_id' => '',
-                'market_id' => '9423',
-                'employee_code_1c' => '978654132',
-                'direction' => '1',
-//                'files' => '',
-                'description' => '~!@#$%^&*()_+`=-\\]\'/[;.,|}"?{:><'
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "Не передано поле item_id",
-                    "item_id: поле должно быть числом",
-                    "Ошибки валидации входящих параметров."
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [],
-                    "requests_fields" => []
-                ]
-            ]
-        ]
-    ],
-
-    'case5' => [
-        'setting' => [
-            'description' => 'Пустой market_id',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'item_id' => '123123123',
-                'market_id' => '',
-                'employee_code_1c' => '978654132',
-                'direction' => '1',
-//                'files' => '',
-//                'description' => '~!@#$%^&*()_+`=-\\]\'/[;.,|}"?{:><'
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "Не передано поле market_id",
-                    "market_id: поле должно быть числом",
-                    "Ошибки валидации входящих параметров."
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [],
-                    "requests_fields" => []
-                ]
-            ]
-        ]
-    ],
-
-    'case6' => [
-        'setting' => [
-            'description' => 'Пустой employee_code_1c',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'item_id' => '123123123',
-                'market_id' => '9423',
-                'employee_code_1c' => '',
-                'direction' => '1',
-//                'files' => '',
-                'description' => '~!@#$%^&*()_+`=-\\]\'/[;.,|}"?{:><'
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "Не передано поле employee_code_1c",
-                    "employee_code_1c: поле должно быть числом",
-                    "Ошибки валидации входящих параметров."
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [],
-                    "requests_fields" => []
-                ]
-            ]
-        ]
-    ],
-
-    'case7' => [
-        'setting' => [
-            'description' => 'Пустой direction',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'item_id' => '123123123',
-                'market_id' => '9423',
-                'employee_code_1c' => '978654132',
-                'direction' => '',
-//                'files' => '',
-//                'description' => '~!@#$%^&*()_+`=-\\]\'/[;.,|}"?{:><'
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "Не передано поле direction",
-                    "direction: поле должно быть числом",
-                    "Ошибки валидации входящих параметров."
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [],
-                    "requests_fields" => []
-                ]
-            ]
-        ]
-    ],
-
-    'case8' => [
-        'setting' => [
-            'description' => 'Без item_id',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-//                'item_id' => '',
-                'market_id' => '9423',
-                'employee_code_1c' => '978654132',
-                'direction' => '1',
-//                'files' => '',
-                'description' => '~!@#$%^&*()_+`=-\\]\'/[;.,|}"?{:><'
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "Не передано поле item_id",
-                    "Ошибки валидации входящих параметров."
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [],
-                    "requests_fields" => []
-                ]
-            ]
-        ]
-    ],
-
-    'case9' => [
-        'setting' => [
-            'description' => 'Без market_id',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'item_id' => '123123123',
-//                'market_id' => '',
-                'employee_code_1c' => '978654132',
-                'direction' => '1',
-//                'files' => '',
-//                'description' => '~!@#$%^&*()_+`=-\\]\'/[;.,|}"?{:><'
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "Не передано поле market_id",
-                    "Ошибки валидации входящих параметров."
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [],
-                    "requests_fields" => []
-                ]
-            ]
-        ]
-    ],
-
-    'case10' => [
-        'setting' => [
-            'description' => 'Без employee_code_1c',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'item_id' => '123123123',
-                'market_id' => '9423',
-//                'employee_code_1c' => '',
-                'direction' => '1',
-//                'files' => '',
-                'description' => '~!@#$%^&*()_+`=-\\]\'/[;.,|}"?{:><'
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "Не передано поле employee_code_1c",
-                    "Ошибки валидации входящих параметров."
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [],
-                    "requests_fields" => []
-                ]
-            ]
-        ]
-    ],
-
-    'case11' => [
-        'setting' => [
-            'description' => 'Без direction',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'item_id' => '123123123',
-                'market_id' => '9423',
-                'employee_code_1c' => '978654132',
-//                'direction' => '',
-//                'files' => '',
-//                'description' => '~!@#$%^&*()_+`=-\\]\'/[;.,|}"?{:><'
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "Не передано поле direction",
-                    "Ошибки валидации входящих параметров."
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [],
-                    "requests_fields" => []
-                ]
-            ]
-        ]
-    ],
-
-    'case12' => [
-        'setting' => [
-            'description' => 'Значение direction - число кроме 1 и 2',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'item_id' => '123123123',
-                'market_id' => '9423',
-                'employee_code_1c' => '978654132',
-                'direction' => '3',
-//                'files' => '',
-                'description' => '~!@#$%^&*()_+`=-\\]\'/[;.,|}"?{:><'
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "В поле direction переданы не валидные данные. Direction может быть равен только 1 и 2"
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [],
-                    "requests_fields" => []
-                ]
-            ]
-        ]
-    ],
-
-    'case13' => [
-        'setting' => [
-            'description' => 'Текстовые значения вместо числовых',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'item_id' => 'йцук',
-                'market_id' => 'asdf',
-                'employee_code_1c' => '!@#$',
-                'direction' => 'ZXCR',
-//                'files' => '',
-//                'description' => '~!@#$%^&*()_+`=-\\]\'/[;.,|}"?{:><'
-            ],
-            "responseCode" => 200,
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "item_id: поле должно быть числом",
-                    "market_id: поле должно быть числом",
-                    "employee_code_1c: поле должно быть числом",
-                    "direction: поле должно быть числом",
-                    "Ошибки валидации входящих параметров."
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => [],
-                    "requests_fields" => []
-                ]
-            ]
-        ]
-    ],
 ];
