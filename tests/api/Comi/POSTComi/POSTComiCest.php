@@ -42,7 +42,7 @@ class POSTComiCest
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/api/jira-request' . $providerData['requestParameters'], $providerData['requestBody']);
+        $I->sendPOST('/bpm/api/jira-request' . $providerData['requestParameters'], []);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
