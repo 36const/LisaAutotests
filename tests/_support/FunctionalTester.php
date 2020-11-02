@@ -35,6 +35,7 @@ class FunctionalTester extends \Codeception\Actor
                                     array $globalFile = ['oneUser'], bool $globalUsing = true)
     {
         $I = $this;
+        $testHelper->resetMock();
         $testHelper->clearDB($I, $data, $globalFile);
 
         if ($globalUsing)
