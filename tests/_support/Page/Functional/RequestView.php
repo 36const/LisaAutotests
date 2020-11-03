@@ -121,6 +121,7 @@ class RequestView extends FunctionalTester
         'actual_finish_date',
         'supervisor_process_date',
         'supervisor_check_date',
+        'last_change_status_date',
 
         'request_id',
         '64',
