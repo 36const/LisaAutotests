@@ -171,6 +171,7 @@ return [
         "report_periods" => [[]],
         "request_errors" => [],
         'notification_settings' => [],
+        'observers' => [],
         "user_notifications" => [],
         'request_status_history' => [],
         'transition_info' => [
