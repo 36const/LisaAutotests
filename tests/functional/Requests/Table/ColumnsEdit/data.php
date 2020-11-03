@@ -619,31 +619,35 @@ return [
                             "value" => "Нинада"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[7][@value='Ожидается загрузка обновлений в систему']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[7][@value='Ожидает группировки']",
+                            "value" => "Ожидает группировки"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[8][@value='Ожидается загрузка обновлений в систему']",
                             "value" => "Ожидается загрузка обновлений в систему"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[8][@value='Ожидается загрузка товаров в систему']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[9][@value='Ожидается загрузка товаров в систему']",
                             "value" => "Ожидается загрузка товаров в систему"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[9][@value='Ожидается загрузка фото в товары']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[10][@value='Ожидается загрузка фото в товары']",
                             "value" => "Ожидается загрузка фото в товары"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[10][@value='Товары ушли в ошибки']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[11][@value='Товары ушли в ошибки']",
                             "value" => "Товары ушли в ошибки"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[11][@value='Требуется уточнение информации по задаче']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[12][@value='Требуется уточнение информации по задаче']",
                             "value" => "Требуется уточнение информации по задаче"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[12][@value='Часть товаров ушла в ошибки']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[13][@value='Часть товаров ушла в ошибки']",
                             "value" => "Часть товаров ушла в ошибки"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[13][@value='-1']",
+                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[14][@value='-1']",
                             "value" => "(не задано)"
                         ],
 

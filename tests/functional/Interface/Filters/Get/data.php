@@ -611,32 +611,32 @@ return [
                         ],
 
                         [
-                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[1][@value='12' and @selected]",
-                            "value" => "Все товары уже есть на сайте (Новая -> Отменена)"
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[1][@value='14' and @selected]",
+                            "value" => "Все товары уже есть на сайте (Готова для распределения -> Отменена)"
                         ],
                         [
                             "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[2][@value='10' and @selected]",
                             "value" => "Все товары уже есть на сайте (В работе -> Отменена)"
                         ],
                         [
-                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[3][@value='14' and @selected]",
-                            "value" => "Все товары уже есть на сайте (Готова для распределения -> Отменена)"
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[3][@value='12' and @selected]",
+                            "value" => "Все товары уже есть на сайте (Новая -> Отменена)"
                         ],
                         [
                             "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[4][@value='15' and @selected]",
                             "value" => "Другое (описан в коментариях) (Все -> Все)"
                         ],
                         [
-                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[5][@value='9' and @selected]",
-                            "value" => "Дубль задачи (В работе -> Отменена)"
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[5][@value='11' and @selected]",
+                            "value" => "Дубль задачи (Новая -> Отменена)"
                         ],
                         [
                             "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[6][@value='13' and @selected]",
                             "value" => "Дубль задачи (Готова для распределения -> Отменена)"
                         ],
                         [
-                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[7][@value='11' and @selected]",
-                            "value" => "Дубль задачи (Новая -> Отменена)"
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[7][@value='9' and @selected]",
+                            "value" => "Дубль задачи (В работе -> Отменена)"
                         ],
                         [
                             "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[8][@value='3' and @selected]",
@@ -647,31 +647,35 @@ return [
                             "value" => "Не получена запрошенная недостающая информация (В работе -> Частично выполнена)"
                         ],
                         [
-                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[10][@value='16']",
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[10][@value='16' and not(@selected)]",
                             "value" => "Нинада (Готова для распределения -> На доработке)"
                         ],
                         [
-                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[11][@value='5' and @selected]",
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[11][@value='17' and not(@selected)]",
+                            "value" => "Ожидает группировки (В работе -> Ожидает)"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[12][@value='5' and @selected]",
                             "value" => "Ожидается загрузка обновлений в систему (В работе -> Ожидает)"
                         ],
                         [
-                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[12][@value='4' and @selected]",
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[13][@value='4' and @selected]",
                             "value" => "Ожидается загрузка товаров в систему (В работе -> Ожидает)"
                         ],
                         [
-                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[13][@value='1' and @selected]",
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[14][@value='1' and @selected]",
                             "value" => "Ожидается загрузка фото в товары (В работе -> Ожидает)"
                         ],
                         [
-                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[14][@value='7' and @selected]",
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[15][@value='7' and @selected]",
                             "value" => "Товары ушли в ошибки (В работе -> Частично выполнена)"
                         ],
                         [
-                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[15][@value='2' and @selected]",
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[16][@value='2' and @selected]",
                             "value" => "Требуется уточнение информации по задаче (В работе -> Ожидает)"
                         ],
                         [
-                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[16][@value='8' and @selected]",
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[reason_id][]']/option[17][@value='8' and @selected]",
                             "value" => "Часть товаров ушла в ошибки (В работе -> Частично выполнена)"
                         ],
 

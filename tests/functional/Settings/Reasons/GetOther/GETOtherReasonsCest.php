@@ -46,7 +46,7 @@ class GETOtherReasonsCest
 
         $I->amOnPage($providerData['url']);
         $I->seeResponseCodeIs(200);
-//die();
+
         $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }
