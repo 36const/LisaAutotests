@@ -20,7 +20,7 @@ extensions:
             outputDirectory: allure-results # Результаты будут сохранены в tests/_output/allure-results
             enabledAttach:
                 - PhpBrowserLog           # Запрос и ответ для тестов апи
-                - stepScreenshot          # Для selenium тестов будет делать скриншот после каждого шага теста
+#                - stepScreenshot          # Для selenium тестов будет делать скриншот после каждого шага теста
 #                - stepBrowserLog          # Для selenium тестов будет аттачить логи консоли браузера. Не работает для firefox, phpbrowser
                 - failedStepPageSource    # Для selenium тестов будет аттачить исходный код страницы на которой упал тест
                 - visualceptionScreenshot # Интеграция с visualception
