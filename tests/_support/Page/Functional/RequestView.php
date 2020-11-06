@@ -23,6 +23,13 @@ class RequestView extends FunctionalTester
     public static $reportPeriodId =         "//table[@class='table table-bordered detail-view']//th[text()='Отчетный период КМ']";
     public static $svReportPeriods =        "//table[@class='table table-bordered detail-view']//th[text()='Отчетный период СВ']";
 
+    public static $saveButton = "//button[@id='update-form-save']";
+
+    public static function findCheckbox(string $name)
+    {
+        return "//td[@class='checkboxes']//label[text()='$name']/input[@type='checkbox']";
+    }
+
     /**
      * Поля-чекбоксы, которые нужно проверять
      * не через canSeeInField, а через canSeeCheckboxIsChecked

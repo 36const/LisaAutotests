@@ -38,13 +38,18 @@ class RequestCreate extends FunctionalTester
         $I->amOnPage("/bpm/request/create-by-type?typeId=$type&direction=$direction");
     }
 
-    public static function findCheckbox(string $name, bool $checked = false)
+    public static function findCheckbox(string $name)
     {
-        return $checked ?
-            "//div[@class='attachments-update']//label[text()='$name']/input[@checked]" :
-            "//div[@class='attachments-update']//label[text()='$name']";
+        return "//div[@class='attachments-update']//label[text()='$name']/input[@type='checkbox']";
     }
 
+//    public static function findCheckbox(string $name, bool $checked = false)
+//    {
+//        return $checked ?
+//            "//div[@class='attachments-update']//label[text()='$name']/input[@checked]" :
+//            "//div[@class='attachments-update']//label[text()='$name']";
+//    }
+//
     public function amOnRelatedRequestCreate(int $type, int $direction, int $id)
     {
         $I = $this;

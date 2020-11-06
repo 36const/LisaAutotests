@@ -119,4 +119,21 @@ class AcceptanceTester extends \Codeception\Actor
             }
         }
     }
+
+    public function checkCheckboxesOnPage($pageObjects)
+    {
+        $I = $this;
+
+        if (isset($pageObjects['canSee'])) {
+            foreach ($pageObjects['canSee'] as $checkbox) {
+                $I->canSeeCheckboxIsChecked($checkbox);
+            }
+        }
+
+        if (isset($pageObjects['cantSee'])) {
+            foreach ($pageObjects['cantSee'] as $checkbox) {
+                $I->cantSeeCheckboxIsChecked($checkbox);
+            }
+        }
+    }
 }
