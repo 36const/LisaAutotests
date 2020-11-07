@@ -8,7 +8,7 @@ use rzk\TestHelper;
 
 /**
  * @group lisa
- * @group lisa_acceptance
+// * @group lisa_acceptance
  * @group lisa_acceptance_requests
  * @group ColumnsFiltersList
  */
@@ -52,22 +52,22 @@ class ColumnsFiltersListCest
 
         //открыть список значений в фильтре колонки
         $I->click(Request::columnSearchField($setting['column']));
-        $I->canSeeElement(Request::tabSummary(24));
+        $I->canSeeElement(Request::tableSummary(24));
         $I->checkObjectsOnPage($provider_data['columnValueList']);
 
         //выбрать все значения из выпадающего списка значений колонки
         $I->click(Request::$columnSelectAll);
-        $I->canSeeElement(Request::tabSummary(24));
+        $I->canSeeElement(Request::tableSummary(24));
         $I->checkObjectsOnPage($provider_data['searchValueListAll']);
 
         //удалить одно из выбранных значений колонки
         $I->click(Request::searchValueRemove($setting['column'], $setting['value']));
-        $I->canSeeElement(Request::tabSummary($setting['amount']));
+        $I->canSeeElement(Request::tableSummary($setting['amount']));
         $I->checkObjectsOnPage($provider_data['searchValueListNotAll']);
 
         //удалить все оставшиеся значения колонки (очистить фильтр колонки)
         $I->click(Request::searchClearButton($setting['column']));
-        $I->canSeeElement(Request::tabSummary(24));
+        $I->canSeeElement(Request::tableSummary(24));
         $I->checkObjectsOnPage($provider_data['searchValueListNotAnyone']);
     }
 }

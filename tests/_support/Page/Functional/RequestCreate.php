@@ -43,13 +43,6 @@ class RequestCreate extends FunctionalTester
         return "//div[@class='attachments-update']//label[text()='$name']/input[@type='checkbox']";
     }
 
-//    public static function findCheckbox(string $name, bool $checked = false)
-//    {
-//        return $checked ?
-//            "//div[@class='attachments-update']//label[text()='$name']/input[@checked]" :
-//            "//div[@class='attachments-update']//label[text()='$name']";
-//    }
-//
     public function amOnRelatedRequestCreate(int $type, int $direction, int $id)
     {
         $I = $this;

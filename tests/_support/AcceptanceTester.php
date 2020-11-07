@@ -66,9 +66,11 @@ class AcceptanceTester extends \Codeception\Actor
         }
 
         $I->setCookie('for_normal_people_4', '1');
+        $I->setCookie('requestsPerPage', '7bab5e6b3cd55b1ddf5a0d641017b292f3cb48c7cb5eeba7801e54bb1478711da%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22requestsPerPage%22%3Bi%3A1%3Bi%3A20%3B%7D');
 
         $I->seeCookie('_identity');
         $I->seeCookie('for_normal_people_4');
+        $I->seeCookie('requestsPerPage');
 
     }
 
@@ -100,21 +102,21 @@ class AcceptanceTester extends \Codeception\Actor
         $I = $this;
 
         if (isset($pageObjects['canSee'])) {
-            foreach ($pageObjects['canSee'] as $objects) {
-                foreach ($objects as $object) {
-                    isset($object['value']) ?
-                        $I->canSee($object['value'], $object['selector']) :
-                        $I->canSeeElement($object['selector']);
+            foreach ($pageObjects['canSee'] as $object) {
+                try {
+                    $I->waitForElementVisible($object, 2);
+                } catch (\Exception $e) {
+                    $I->canSeeElement($object);
                 }
             }
         }
 
         if (isset($pageObjects['cantSee'])) {
-            foreach ($pageObjects['cantSee'] as $objects) {
-                foreach ($objects as $object) {
-                    isset($object['value']) ?
-                        $I->cantSee($object['value'], $object['selector']) :
-                        $I->cantSeeElement($object['selector']);
+            foreach ($pageObjects['cantSee'] as $object) {
+                try {
+                    $I->waitForElementNotVisible($object, 2);
+                } catch (\Exception $e) {
+                    $I->cantSeeElement($object);
                 }
             }
         }
