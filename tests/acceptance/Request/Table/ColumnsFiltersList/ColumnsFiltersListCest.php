@@ -8,7 +8,6 @@ use rzk\TestHelper;
 
 /**
  * @group lisa
-// * @group lisa_acceptance
  * @group lisa_acceptance_requests
  * @group ColumnsFiltersList
  */
