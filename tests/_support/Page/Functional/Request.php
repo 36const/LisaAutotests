@@ -10,7 +10,7 @@ class Request extends FunctionalTester
         ['index', 'new', 'in-check', 'require-changes', 'declined', 'wait-work',
             'in-work', 'on-hold', 'completed', '', '', 'closed', 'observable', 'cross-check'];
 
-    public function amOnTable($filter = null)
+    public function amOnTable(string $filter = null)
     {
         $I = $this;
         $I->amOnPage("/bpm/request/$filter");

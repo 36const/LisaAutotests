@@ -44,7 +44,7 @@ class TabsCounterCest
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
-        $request->amOnTable();
+        $request->amOnTable('index');
         $I->canSeeElement(Request::statusTabsCounter(1, 24));
         $I->canSeeElement(Request::tableSummary('......'));
 
