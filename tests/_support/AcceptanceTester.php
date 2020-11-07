@@ -48,7 +48,6 @@ class AcceptanceTester extends \Codeception\Actor
         $I->setAuthorizationCookie();
     }
 
-    /**Установка куки авторизации*/
     private function setAuthorizationCookie()
     {
         $I = $this;
@@ -71,7 +70,6 @@ class AcceptanceTester extends \Codeception\Actor
         $I->seeCookie('_identity');
         $I->seeCookie('for_normal_people_4');
         $I->seeCookie('requestsPerPage');
-
     }
 
     public function checkTablesInDB($dbTablesArray, bool $dontSee = false)
