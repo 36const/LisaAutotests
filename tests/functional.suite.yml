@@ -19,6 +19,7 @@ modules:
             password: 'splitter'
             vhost: '/'
             cleanup: false
+            single_channel: true
             queues: [ 'lisa_attachmentsCopy',
                       'lisa_elastic_sync',
                       'lisa_elastic_sync_crash',
