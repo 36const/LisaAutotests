@@ -43,7 +43,7 @@ class POSTUsersCreateCest
      */
     public function POSTUsersCreate(FunctionalTester $I, Example $data, User $user)
     {
-        $I->loadDataForTest($data, $this->testHelper, [], false);
+        $I->loadDataForTest($data, $this->testHelper, []);
 
         $providerData = $data['provider_data'];
 

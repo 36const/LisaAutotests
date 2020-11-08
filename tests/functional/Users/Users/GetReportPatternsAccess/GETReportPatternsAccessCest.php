@@ -43,7 +43,7 @@ class GETReportPatternsAccessCest
      */
     public function GETReportPatternsAccess(FunctionalTester $I, Example $data, Report $report)
     {
-        $I->loadDataForTest($data, $this->testHelper, [], false);
+        $I->loadDataForTest($data, $this->testHelper, []);
         $providerData = $data['provider_data'];
 
         $report->amOnReportGenerate();

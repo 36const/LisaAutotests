@@ -44,7 +44,7 @@ class POSTUpdateUserPermissionsCest
      */
     public function POSTUpdateUserPermissions(FunctionalTester $I, Example $data, Roles $roles)
     {
-        $I->loadDataForTest($data, $this->testHelper, [], false);
+        $I->loadDataForTest($data, $this->testHelper, []);
 
         $providerData = $data['provider_data'];
 

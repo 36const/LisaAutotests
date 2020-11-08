@@ -41,7 +41,7 @@ class GETUsersCest
      */
     public function GETUsers(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper, [], false);
+        $I->loadDataForTest($data, $this->testHelper, []);
         $providerData = $data['provider_data'];
 
         $I->amOnPage('bpm/user/index/' . $providerData['url']);

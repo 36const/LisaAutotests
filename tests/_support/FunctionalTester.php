@@ -27,17 +27,15 @@ class FunctionalTester extends \Codeception\Actor
     /**
      * @param Example $data - данные кейса из файла data.php
      * @param TestHelper $testHelper
-     * @param array|string[] $globalFile - название файла глобальных фикстур
-     * @param bool $globalUsing - нужно ли использовать глобальные фикстуры
+     * @param array|string[] $globalFile - название файла глобальных фикстур, при значении [] глобальные фикстуры не используются
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function loadDataForTest(Example $data, TestHelper $testHelper,
-                                    array $globalFile = ['oneUser'], bool $globalUsing = true)
+    public function loadDataForTest(Example $data, TestHelper $testHelper, array $globalFile = ['oneUser'])
     {
         $I = $this;
         $testHelper->clearDB($I, $data, $globalFile);
 
-        if ($globalUsing)
+        if (isset($globalFile))
             $testHelper->loadGlobalFixture($I, $globalFile);
 
         $testHelper->loadFixtureAndMock($I, $data);
