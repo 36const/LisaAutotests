@@ -6,6 +6,7 @@ use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\RequestView;
 use lisa\Page\Functional\User;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -31,7 +32,8 @@ class POSTUsersUpdateCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+//        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require ('data.php'));
     }
 
     /**
@@ -44,7 +46,7 @@ class POSTUsersUpdateCest
      */
     public function POSTUsersUpdate(FunctionalTester $I, Example $data, User $user)
     {
-        $I->loadDataForTest($data, $this->testHelper, []);
+        $I->loadDataForTest($data, null);
 
         $providerData = $data['provider_data'];
 

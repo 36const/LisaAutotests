@@ -5,6 +5,7 @@ modules:
         - \lisa\Helper\Functional
         - Cli
         - Asserts
+        - TestHelper
         - rzk\Database
         - PhpBrowser:
               url: http://gomer.local # Domen вашего приложения
