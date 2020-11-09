@@ -1,17 +1,21 @@
 suite_namespace: lisa
-actor: FunctionalTester
+actor: AcceptanceTester
 modules:
     enabled:
-        - \lisa\Helper\Functional
+        - \lisa\Helper\Acceptance
         - Cli
         - Asserts
         - rzk\Database
-        - PhpBrowser:
-              url: http://gomer.local # Domen вашего приложения
-              auth: ['kutsan.k', '123qweASD!']
-        - REST:
-              depends: PhpBrowser
-              url: http://gomer.local # Domen вашего приложения, должен быть такой же как и выше
+        - WebDriver:
+            url: http://gomer.local
+            browser: chrome
+            window_size: 1600x900
+            wait: 3
+            capabilities:
+              enableVNC: true
+              sessionTimeout: 1m
+            host: selenoid #172.20.20.35 #хост внутри докера selenoid
+            port: 4444
         - AMQP:
             host: 'rabbit-mq'
             port: '5672'

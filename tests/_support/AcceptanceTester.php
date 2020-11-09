@@ -20,23 +20,24 @@ use rzk\TestHelper;
  *
  * @SuppressWarnings(PHPMD)
  */
-class FunctionalTester extends \Codeception\Actor
+class AcceptanceTester extends \Codeception\Actor
 {
-    use _generated\FunctionalTesterActions;
+    use _generated\AcceptanceTesterActions;
 
     /**
      * @param Example $data - данные кейса из файла data.php
      * @param TestHelper $testHelper
-     * @param array|string[] $globalFile - название файла глобальных фикстур, при значении [] глобальные фикстуры не используются
+     * @param array|string[] $globalFile - название файла глобальных фикстур
+     * @param bool $globalUsing - нужно ли использовать глобальные фикстуры
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function loadDataForTest(Example $data, TestHelper $testHelper, array $globalFile = ['oneUser'])
+    public function loadDataForTest(Example $data, TestHelper $testHelper,
+                                    array $globalFile = ['oneUser'], bool $globalUsing = true)
     {
         $I = $this;
-        $testHelper->resetMock();
         $testHelper->clearDB($I, $data, $globalFile);
 
-        if (isset($globalFile))
+        if ($globalUsing)
             $testHelper->loadGlobalFixture($I, $globalFile);
 
         $testHelper->loadFixtureAndMock($I, $data);
@@ -46,25 +47,31 @@ class FunctionalTester extends \Codeception\Actor
         $I->purgeAllQueues();
 
         $I->wantTo($data['setting']['description']);
+        $I->setAuthorizationCookie();
+    }
+
+    /**Установка куки авторизации*/
+    private function setAuthorizationCookie()
+    {
+        $I = $this;
         $I->amOnPage('/');
-    }
 
-    public function changeStatus($requestParameter, $requestBody)
-    {
-        $I = $this;
-        $requestParameter == 'to-correction' ?
-            $url = '/bpm/request/' . "$requestParameter" . '?id=1&changeStatus=1' :
-            $url = '/bpm/request/' . "$requestParameter" . '?id=1';
-        $I->sendPOST($url, $requestBody);
-        $I->seeResponseCodeIs(200);
-    }
+        if (file_exists(__DIR__ . '/_identityCookie.txt')) {
+            $I->setCookie('_identity', file_get_contents(__DIR__ . '/_identityCookie.txt'));
+        } else {
+            $I->fillField("LoginForm[username]", 'kutsan.k');
+            $I->fillField("LoginForm[password]", '123qweASD!');
+            $I->checkOption(['id' => 'loginform-isbasicauth']);
+            $I->click("login-button");
+            $I->waitForText("Добро пожаловать", 5);
+            file_put_contents(__DIR__ . '/_identityCookie.txt', $I->grabCookie('_identity'));
+        }
 
-    public function changeType($requestParameter, $requestBody)
-    {
-        $I = $this;
-        $url = '/bpm/request/change-type?typeId=' . $requestParameter['typeId'] . '&direction=' . $requestParameter['direction'] . '&id=1';
-        $I->sendPOST($url, $requestBody);
-        $I->seeResponseCodeIs(200);
+        $I->setCookie('for_normal_people_4', '1');
+
+        $I->seeCookie('_identity');
+        $I->seeCookie('for_normal_people_4');
+
     }
 
     public function checkTablesInDB($dbTablesArray, bool $dontSee = false)
@@ -78,7 +85,7 @@ class FunctionalTester extends \Codeception\Actor
 
                 $expectedNumber = count($tableData);
 
-                if (!$dontSee)
+                ($dontSee) ?:
                     $I->canSeeNumRecords($expectedNumber, $tableName);
 
                 foreach ($tableData as $tableRow) {
@@ -111,23 +118,6 @@ class FunctionalTester extends \Codeception\Actor
                         $I->cantSee($object['value'], $object['selector']) :
                         $I->cantSeeElement($object['selector']);
                 }
-            }
-        }
-    }
-
-    public function checkAjaxResponse($ajaxResponse)
-    {
-        $I = $this;
-
-        if (isset($ajaxResponse['canSee'])) {
-            foreach ($ajaxResponse['canSee'] as $text) {
-                $I->canSeeResponseContains($text);
-            }
-        }
-
-        if (isset($ajaxResponse['cantSee'])) {
-            foreach ($ajaxResponse['cantSee'] as $text) {
-                $I->cantSeeResponseContains($text);
             }
         }
     }

@@ -44,6 +44,7 @@ class ApiTester extends \Codeception\Actor
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
 
         $testHelper->loadFixtureAndMock($I, $data);
+        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $I->wantTo($data['setting']['description']);
     }
 
