@@ -1,0 +1,949 @@
+{
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "422620",
+    "self": "https://sd.local/rest/api/2/issue/422620",
+    "key": "COMI-17063",
+    "fields": {
+        "resolution": {
+            "self": "https://sd.local/rest/api/2/resolution/10209",
+            "id": "10209",
+            "description": "Задача решена",
+            "name": "Выполнено"
+        },
+        "customfield_10500": null,
+        "customfield_10501": null,
+        "customfield_11710": null,
+        "customfield_10502": null,
+        "customfield_10503": {
+            "id": "246",
+            "name": "Время до решения",
+            "_links": {
+                "self": "https://sd.local/rest/servicedeskapi/request/422620/sla/246"
+            },
+            "completedCycles": [
+                {
+                    "startTime": {
+                        "iso8601": "2020-09-22T08:54:33+0300",
+                        "jira": "2020-09-22T08:54:33.337+0300",
+                        "friendly": "22/сен/20 8:54",
+                        "epochMillis": 1600754073337
+                    },
+                    "stopTime": {
+                        "iso8601": "2020-09-22T12:49:03+0300",
+                        "jira": "2020-09-22T12:49:03.753+0300",
+                        "friendly": "22/сен/20 12:49",
+                        "epochMillis": 1600768143753
+                    },
+                    "breached": false,
+                    "goalDuration": {
+                        "millis": 14400000,
+                        "friendly": "4ч"
+                    },
+                    "elapsedTime": {
+                        "millis": 13743753,
+                        "friendly": "3ч 49м"
+                    },
+                    "remainingTime": {
+                        "millis": 656247,
+                        "friendly": "10м"
+                    }
+                }
+            ]
+        },
+        "customfield_10504": null,
+        "customfield_10505": null,
+        "customfield_10506": null,
+        "lastViewed": "2020-10-30T11:53:33.023+0200",
+        "customfield_11700": null,
+        "customfield_11704": null,
+        "aggregatetimeoriginalestimate": null,
+        "customfield_11706": null,
+        "customfield_11708": null,
+        "customfield_11707": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/11902",
+            "value": "Модификация",
+            "id": "11902"
+        },
+        "issuelinks": [],
+        "customfield_11709": null,
+        "assignee": {
+            "self": "https://sd.local/rest/api/2/user?username=zakruzhna",
+            "name": "zakruzhna",
+            "key": "zakruzhna",
+            "emailAddress": "zakruzhna@rozetka.com.ua",
+            "avatarUrls": {
+                "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Закружная Виктория",
+            "active": true,
+            "timeZone": "Europe/Kiev"
+        },
+        "subtasks": [],
+        "customfield_11801": null,
+        "customfield_11800": null,
+        "customfield_11802": null,
+        "customfield_11804": null,
+        "votes": {
+            "self": "https://sd.local/rest/api/2/issue/COMI-17063/votes",
+            "votes": 0,
+            "hasVoted": false
+        },
+        "worklog": {
+            "startAt": 0,
+            "maxResults": 20,
+            "total": 0,
+            "worklogs": []
+        },
+        "issuetype": {
+            "self": "https://sd.local/rest/api/2/issuetype/10401",
+            "id": "10401",
+            "description": "Задание для выполнения.",
+            "iconUrl": "https://sd.local/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+            "name": "Задача",
+            "subtask": false,
+            "avatarId": 10318
+        },
+        "customfield_10700": null,
+        "customfield_11900": "{valueMap={1={adTitle=Доп. информация о пользователе, userAttr={Department=Центр обслуговування клієнтів, Имя=Копаница (Андриянова) Елизавета, Position=Спеціаліст, Telephone Number=2281, Team=Підрозділ письмових комунікацій з клієнтами}, fields=[AO_9BFD01_FIELD_AD {ID = 1}, AO_9BFD01_FIELD_AD {ID = 4}, AO_9BFD01_FIELD_AD {ID = 3}, AO_9BFD01_FIELD_AD {ID = 2}]}}}",
+        "customfield_11902": null,
+        "customfield_10813": null,
+        "customfield_11901": null,
+        "customfield_11904": null,
+        "customfield_11903": null,
+        "timetracking": {},
+        "customfield_10807": null,
+        "environment": null,
+        "duedate": null,
+        "customfield_10110": null,
+        "customfield_10111": null,
+        "customfield_11200": null,
+        "customfield_13500": null,
+        "customfield_14711": null,
+        "customfield_10112": null,
+        "customfield_10113": null,
+        "customfield_13501": "{}",
+        "customfield_13614": null,
+        "customfield_14704": null,
+        "customfield_13613": null,
+        "customfield_14705": null,
+        "customfield_14702": null,
+        "customfield_10107": null,
+        "customfield_14703": null,
+        "customfield_10108": "2|zx7i5s:",
+        "customfield_13618": null,
+        "customfield_14708": null,
+        "customfield_10109": null,
+        "customfield_14709": null,
+        "customfield_14706": null,
+        "customfield_13619": null,
+        "customfield_10100": null,
+        "customfield_13610": null,
+        "customfield_14700": null,
+        "customfield_10101": "com.atlassian.servicedesk.internal.api.customfields.feedback.RequestFeedbackCFValue@d3f24",
+        "customfield_14701": null,
+        "customfield_10102": "2020-09-22T13:33:54.913+0300",
+        "customfield_10103": null,
+        "customfield_13611": null,
+        "customfield_13603": null,
+        "customfield_13724": null,
+        "customfield_13602": null,
+        "customfield_13723": null,
+        "customfield_13726": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/24645",
+            "value": "КЦ",
+            "id": "24645"
+        },
+        "customfield_13604": null,
+        "customfield_13725": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/24659",
+            "value": "Контент",
+            "id": "24659",
+            "child": {
+                "self": "https://sd.local/rest/api/2/customFieldOption/25942",
+                "value": "Замер на складе",
+                "id": "25942"
+            }
+        },
+        "customfield_13607": null,
+        "timeestimate": null,
+        "customfield_13727": {
+            "self": "https://sd.local/rest/api/2/user?username=sadlovskiy",
+            "name": "sadlovskiy",
+            "key": "sadlovskiy",
+            "emailAddress": "sadlovskiy@rozetka.com.ua",
+            "avatarUrls": {
+                "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Садловский Андрей",
+            "active": true,
+            "timeZone": "Europe/Kiev"
+        },
+        "customfield_13609": null,
+        "customfield_13608": null,
+        "status": {
+            "self": "https://sd.local/rest/api/2/status/10001",
+            "description": "",
+            "iconUrl": "https://sd.local/images/icons/status_generic.gif",
+            "name": "Выполнен",
+            "id": "10001",
+            "statusCategory": {
+                "self": "https://sd.local/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "В работе"
+            }
+        },
+        "customfield_12510": null,
+        "customfield_13720": null,
+        "customfield_13601": null,
+        "customfield_13722": null,
+        "customfield_11302": null,
+        "customfield_13600": null,
+        "customfield_13721": null,
+        "customfield_12503": null,
+        "customfield_13713": null,
+        "customfield_10204": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/25302",
+            "value": "Не заполнено",
+            "id": "25302"
+        },
+        "customfield_12502": null,
+        "customfield_13712": null,
+        "customfield_10205": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/25303",
+            "value": "Не заполнено",
+            "id": "25303"
+        },
+        "customfield_12505": null,
+        "customfield_13715": null,
+        "customfield_13714": null,
+        "customfield_13717": null,
+        "aggregatetimeestimate": null,
+        "customfield_13716": null,
+        "customfield_12509": null,
+        "customfield_13719": null,
+        "customfield_12508": null,
+        "customfield_13718": null,
+        "creator": {
+            "self": "https://sd.local/rest/api/2/user?username=andriyanova",
+            "name": "andriyanova",
+            "key": "andriyanova",
+            "emailAddress": "andriyanova@rozetka.com.ua",
+            "avatarUrls": {
+                "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Копаница (Андриянова) Елизавета",
+            "active": true,
+            "timeZone": "Europe/Kiev"
+        },
+        "customfield_12501": null,
+        "customfield_13711": null,
+        "customfield_12500": null,
+        "customfield_13710": null,
+        "customfield_13702": "Не заполнено",
+        "customfield_13704": null,
+        "customfield_13703": null,
+        "customfield_13706": null,
+        "customfield_13705": null,
+        "customfield_13707": null,
+        "customfield_13709": null,
+        "timespent": null,
+        "aggregatetimespent": null,
+        "customfield_13812": null,
+        "customfield_13813": null,
+        "workratio": -1,
+        "customfield_10300": null,
+        "customfield_13810": null,
+        "customfield_11502": null,
+        "customfield_12712": null,
+        "customfield_13801": null,
+        "customfield_13922": null,
+        "customfield_11501": null,
+        "customfield_12711": null,
+        "customfield_13800": null,
+        "customfield_11503": null,
+        "customfield_11506": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/11606",
+            "value": "No",
+            "id": "11606"
+        },
+        "customfield_11505": null,
+        "customfield_11508": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/11608",
+            "value": "No",
+            "id": "11608"
+        },
+        "customfield_13807": null,
+        "customfield_11507": 100.0,
+        "customfield_13809": null,
+        "customfield_13808": null,
+        "customfield_12710": null,
+        "customfield_10401": [
+            {
+                "self": "https://sd.local/rest/api/2/user?username=%D0%BD%D0%B5%D0%BD%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BE",
+                "name": "неназначено",
+                "key": "неназначено",
+                "emailAddress": "noreplay@example.com",
+                "avatarUrls": {
+                    "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                    "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                    "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                    "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+                },
+                "displayName": "Не назначено",
+                "active": true,
+                "timeZone": "Europe/Kiev"
+            }
+        ],
+        "customfield_12701": null,
+        "customfield_13911": "2020-09-22",
+        "customfield_10402": [
+            {
+                "self": "https://sd.local/rest/api/2/user?username=%D0%BD%D0%B5%D0%BD%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BE",
+                "name": "неназначено",
+                "key": "неназначено",
+                "emailAddress": "noreplay@example.com",
+                "avatarUrls": {
+                    "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                    "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                    "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                    "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+                },
+                "displayName": "Не назначено",
+                "active": true,
+                "timeZone": "Europe/Kiev"
+            }
+        ],
+        "customfield_12700": null,
+        "customfield_13910": null,
+        "customfield_12703": null,
+        "customfield_13913": null,
+        "customfield_12702": null,
+        "customfield_13912": null,
+        "customfield_12705": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/22520",
+            "value": "Нет",
+            "id": "22520"
+        },
+        "customfield_13915": null,
+        "customfield_12704": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/22518",
+            "value": "Нет",
+            "id": "22518"
+        },
+        "customfield_13914": null,
+        "customfield_12707": null,
+        "customfield_13917": null,
+        "customfield_13916": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/24840",
+            "value": "Главная страница",
+            "id": "24840"
+        },
+        "customfield_12708": null,
+        "customfield_10400": [
+            {
+                "self": "https://sd.local/rest/api/2/user?username=%D0%BD%D0%B5%D0%BD%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BE",
+                "name": "неназначено",
+                "key": "неназначено",
+                "emailAddress": "noreplay@example.com",
+                "avatarUrls": {
+                    "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                    "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                    "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                    "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+                },
+                "displayName": "Не назначено",
+                "active": true,
+                "timeZone": "Europe/Kiev"
+            }
+        ],
+        "customfield_13900": null,
+        "customfield_13902": "{}",
+        "customfield_13901": null,
+        "customfield_13904": null,
+        "customfield_13903": null,
+        "customfield_13905": null,
+        "customfield_13909": null,
+        "customfield_14311": null,
+        "customfield_14312": null,
+        "customfield_14310": null,
+        "customfield_14315": null,
+        "customfield_14316": null,
+        "customfield_14313": null,
+        "customfield_14314": null,
+        "customfield_14308": null,
+        "customfield_14309": null,
+        "customfield_14306": null,
+        "customfield_14307": null,
+        "customfield_13331": null,
+        "customfield_14300": null,
+        "customfield_14301": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/25415",
+            "value": "Не заполнено",
+            "id": "25415"
+        },
+        "customfield_13333": null,
+        "customfield_13332": null,
+        "customfield_13335": null,
+        "customfield_14304": null,
+        "customfield_13334": null,
+        "customfield_14305": null,
+        "customfield_13337": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/23835",
+            "value": "Средняя",
+            "id": "23835"
+        },
+        "labels": [],
+        "customfield_14303": null,
+        "customfield_13328": null,
+        "customfield_13327": null,
+        "customfield_13329": null,
+        "components": [],
+        "customfield_13320": null,
+        "customfield_13322": null,
+        "customfield_13321": null,
+        "customfield_13203": null,
+        "customfield_13324": null,
+        "customfield_13323": null,
+        "customfield_13202": null,
+        "customfield_13326": null,
+        "customfield_13205": null,
+        "customfield_13204": null,
+        "customfield_13325": null,
+        "customfield_13317": null,
+        "customfield_13316": null,
+        "customfield_13319": null,
+        "customfield_13318": null,
+        "customfield_14400": null,
+        "reporter": {
+            "self": "https://sd.local/rest/api/2/user?username=andriyanova",
+            "name": "andriyanova",
+            "key": "andriyanova",
+            "emailAddress": "andriyanova@rozetka.com.ua",
+            "avatarUrls": {
+                "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Копаница (Андриянова) Елизавета",
+            "active": true,
+            "timeZone": "Europe/Kiev"
+        },
+        "customfield_12101": null,
+        "customfield_13311": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/23738",
+            "value": "Стандарт",
+            "id": "23738"
+        },
+        "customfield_12100": null,
+        "customfield_13310": null,
+        "customfield_13313": null,
+        "customfield_13312": null,
+        "customfield_13315": null,
+        "customfield_14401": null,
+        "customfield_13314": null,
+        "customfield_12104": null,
+        "customfield_12217": null,
+        "customfield_12216": null,
+        "customfield_12219": null,
+        "customfield_13308": null,
+        "customfield_12218": null,
+        "customfield_13309": null,
+        "progress": {
+            "progress": 0,
+            "total": 0
+        },
+        "project": {
+            "self": "https://sd.local/rest/api/2/project/13607",
+            "id": "13607",
+            "key": "COMI",
+            "name": "Запрос продакт-менеджеру",
+            "projectTypeKey": "service_desk",
+            "avatarUrls": {
+                "48x48": "https://sd.local/secure/projectavatar?pid=13607&avatarId=10207",
+                "24x24": "https://sd.local/secure/projectavatar?size=small&pid=13607&avatarId=10207",
+                "16x16": "https://sd.local/secure/projectavatar?size=xsmall&pid=13607&avatarId=10207",
+                "32x32": "https://sd.local/secure/projectavatar?size=medium&pid=13607&avatarId=10207"
+            }
+        },
+        "customfield_12210": null,
+        "customfield_13302": null,
+        "customfield_12213": null,
+        "customfield_13301": null,
+        "customfield_12212": null,
+        "customfield_12215": null,
+        "customfield_12214": null,
+        "customfield_13303": null,
+        "customfield_12208": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/12400",
+            "value": "Собственный",
+            "id": "12400"
+        },
+        "customfield_12207": null,
+        "customfield_13419": null,
+        "resolutiondate": "2020-09-22T12:49:03.707+0300",
+        "watches": {
+            "self": "https://sd.local/rest/api/2/issue/COMI-17063/watchers",
+            "watchCount": 1,
+            "isWatching": false
+        },
+        "customfield_13410": null,
+        "customfield_13412": null,
+        "customfield_13411": null,
+        "customfield_13414": null,
+        "customfield_14500": null,
+        "customfield_12203": null,
+        "customfield_13413": null,
+        "customfield_14501": null,
+        "customfield_11105": null,
+        "customfield_11106": null,
+        "customfield_11107": null,
+        "customfield_13407": null,
+        "customfield_11108": null,
+        "customfield_13406": null,
+        "customfield_13409": null,
+        "updated": "2020-09-24T14:20:16.283+0300",
+        "timeoriginalestimate": null,
+        "description": "<p>Добрый день</p>\r\n\r\n<p>просьба уточнить замеры по 2м товарам&nbsp;Зимний комбинезон Be easy Ликки 20SD2-19V12 80 см Светло-розовый (2200000054517) и&nbsp;Зимний комбинезон Be easy Ликки 20SD2-19V12 86 см Светло-розовый (2200000054524)</p>\r\n\r\n<div>Длина (от шеи до низа)</div>\r\n\r\n<div>Длина (от шеи до шагового узла)</div>\r\n\r\n<div>Длина внутреннего шва брюк<span style=\"white-space:pre\"> </span></div>\r\n\r\n<div>Длина рукава</div>\r\n\r\n<div>ПОТ</div>\r\n",
+        "customfield_10130": null,
+        "customfield_13400": null,
+        "customfield_11103": null,
+        "customfield_11104": null,
+        "customfield_10126": null,
+        "customfield_14726": null,
+        "customfield_10127": null,
+        "customfield_12304": null,
+        "customfield_14727": null,
+        "customfield_10128": null,
+        "customfield_14724": null,
+        "customfield_10129": null,
+        "customfield_14725": null,
+        "customfield_14728": null,
+        "summary": "замеры Зимний комбинезон Be easy Ликки 20SD2-19V12 80 см Светло-розовый (2200000054517)",
+        "customfield_10120": null,
+        "customfield_10000": [
+            {
+                "self": "https://sd.local/rest/api/2/user?username=gura.j",
+                "name": "gura.j",
+                "key": "gura.j",
+                "emailAddress": "gura.j@rozetka.com.ua",
+                "avatarUrls": {
+                    "48x48": "https://sd.local/secure/useravatar?ownerId=gura.j&avatarId=14910",
+                    "24x24": "https://sd.local/secure/useravatar?size=small&ownerId=gura.j&avatarId=14910",
+                    "16x16": "https://sd.local/secure/useravatar?size=xsmall&ownerId=gura.j&avatarId=14910",
+                    "32x32": "https://sd.local/secure/useravatar?size=medium&ownerId=gura.j&avatarId=14910"
+                },
+                "displayName": "Гура Юлия",
+                "active": true,
+                "timeZone": "Europe/Kiev"
+            },
+            {
+                "self": "https://sd.local/rest/api/2/user?username=tibilov",
+                "name": "tibilov",
+                "key": "tibilov",
+                "emailAddress": "tibilov@rozetka.com.ua",
+                "avatarUrls": {
+                    "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                    "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                    "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                    "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+                },
+                "displayName": "Тибилов Алексей",
+                "active": true,
+                "timeZone": "Europe/Kiev"
+            },
+            {
+                "self": "https://sd.local/rest/api/2/user?username=cherkasov",
+                "name": "cherkasov",
+                "key": "cherkasov",
+                "emailAddress": "cherkasov@rozetka.com.ua",
+                "avatarUrls": {
+                    "48x48": "https://sd.local/secure/useravatar?ownerId=cherkasov&avatarId=12007",
+                    "24x24": "https://sd.local/secure/useravatar?size=small&ownerId=cherkasov&avatarId=12007",
+                    "16x16": "https://sd.local/secure/useravatar?size=xsmall&ownerId=cherkasov&avatarId=12007",
+                    "32x32": "https://sd.local/secure/useravatar?size=medium&ownerId=cherkasov&avatarId=12007"
+                },
+                "displayName": "Черкасов Олег",
+                "active": true,
+                "timeZone": "Europe/Kiev"
+            },
+            {
+                "self": "https://sd.local/rest/api/2/user?username=miglovets",
+                "name": "miglovets",
+                "key": "miglovets",
+                "emailAddress": "miglovets@rozetka.com.ua",
+                "avatarUrls": {
+                    "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                    "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                    "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                    "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+                },
+                "displayName": "Мигловец Наталья",
+                "active": true,
+                "timeZone": "Europe/Kiev"
+            },
+            {
+                "self": "https://sd.local/rest/api/2/user?username=romanova",
+                "name": "romanova",
+                "key": "romanova",
+                "emailAddress": "romanova@rozetka.com.ua",
+                "avatarUrls": {
+                    "48x48": "https://sd.local/secure/useravatar?ownerId=romanova&avatarId=12706",
+                    "24x24": "https://sd.local/secure/useravatar?size=small&ownerId=romanova&avatarId=12706",
+                    "16x16": "https://sd.local/secure/useravatar?size=xsmall&ownerId=romanova&avatarId=12706",
+                    "32x32": "https://sd.local/secure/useravatar?size=medium&ownerId=romanova&avatarId=12706"
+                },
+                "displayName": "Романова Юлия",
+                "active": true,
+                "timeZone": "Europe/Kiev"
+            },
+            {
+                "self": "https://sd.local/rest/api/2/user?username=bevz",
+                "name": "bevz",
+                "key": "bevz",
+                "emailAddress": "bevz@rozetka.com.ua",
+                "avatarUrls": {
+                    "48x48": "https://sd.local/secure/useravatar?ownerId=bevz&avatarId=11506",
+                    "24x24": "https://sd.local/secure/useravatar?size=small&ownerId=bevz&avatarId=11506",
+                    "16x16": "https://sd.local/secure/useravatar?size=xsmall&ownerId=bevz&avatarId=11506",
+                    "32x32": "https://sd.local/secure/useravatar?size=medium&ownerId=bevz&avatarId=11506"
+                },
+                "displayName": "Бевз Анна",
+                "active": true,
+                "timeZone": "Europe/Kiev"
+            },
+            {
+                "self": "https://sd.local/rest/api/2/user?username=poet",
+                "name": "poet",
+                "key": "poet",
+                "emailAddress": "poet@rozetka.com.ua",
+                "avatarUrls": {
+                    "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                    "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                    "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                    "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+                },
+                "displayName": "Поэт Ольга",
+                "active": true,
+                "timeZone": "Europe/Kiev"
+            },
+            {
+                "self": "https://sd.local/rest/api/2/user?username=poldyaev",
+                "name": "poldyaev",
+                "key": "poldyaev",
+                "emailAddress": "poldyaev@rozetka.com.ua",
+                "avatarUrls": {
+                    "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                    "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                    "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                    "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+                },
+                "displayName": "Польдяев Андрей",
+                "active": true,
+                "timeZone": "Europe/Kiev"
+            }
+        ],
+        "customfield_10121": null,
+        "customfield_10001": {
+            "_links": {
+                "jiraRest": "https://sd.local/rest/api/2/issue/422620",
+                "web": "https://sd.local/servicedesk/customer/portal/106/COMI-17063",
+                "self": "https://sd.local/rest/servicedeskapi/request/422620"
+            },
+            "requestType": {
+                "id": "1074",
+                "_links": {
+                    "self": "https://sd.local/rest/servicedeskapi/servicedesk/106/requesttype/1074"
+                },
+                "name": "Запрос продакт-менеджеру",
+                "description": "",
+                "helpText": "",
+                "serviceDeskId": "106",
+                "groupIds": [
+                    "315"
+                ],
+                "icon": {
+                    "id": "10532",
+                    "_links": {
+                        "iconUrls": {
+                            "48x48": "https://sd.local/secure/viewavatar?avatarType=SD_REQTYPE&size=large&avatarId=10532",
+                            "24x24": "https://sd.local/secure/viewavatar?avatarType=SD_REQTYPE&size=small&avatarId=10532",
+                            "16x16": "https://sd.local/secure/viewavatar?avatarType=SD_REQTYPE&size=xsmall&avatarId=10532",
+                            "32x32": "https://sd.local/secure/viewavatar?avatarType=SD_REQTYPE&size=medium&avatarId=10532"
+                        }
+                    }
+                }
+            },
+            "currentStatus": {
+                "status": "Выполнен",
+                "statusDate": {
+                    "iso8601": "2020-09-22T12:49:03+0300",
+                    "jira": "2020-09-22T12:49:03.753+0300",
+                    "friendly": "22/сен/20 12:49",
+                    "epochMillis": 1600768143753
+                }
+            }
+        },
+        "customfield_10122": null,
+        "customfield_12301": null,
+        "customfield_14722": null,
+        "customfield_10002": [],
+        "customfield_10123": null,
+        "customfield_14723": null,
+        "customfield_10124": null,
+        "customfield_12303": null,
+        "customfield_14720": null,
+        "customfield_10125": null,
+        "customfield_14600": null,
+        "customfield_14721": null,
+        "customfield_10115": null,
+        "customfield_14715": null,
+        "customfield_10116": null,
+        "customfield_14716": null,
+        "customfield_10117": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/10022",
+            "value": "Средняя",
+            "id": "10022"
+        },
+        "customfield_14713": null,
+        "customfield_14714": null,
+        "customfield_14719": null,
+        "customfield_14717": null,
+        "customfield_14718": null,
+        "comment": {
+            "comments": [
+                {
+                    "self": "https://sd.local/rest/api/2/issue/422620/comment/742507",
+                    "id": "742507",
+                    "author": {
+                        "self": "https://sd.local/rest/api/2/user?username=zakruzhna",
+                        "name": "zakruzhna",
+                        "key": "zakruzhna",
+                        "emailAddress": "zakruzhna@rozetka.com.ua",
+                        "avatarUrls": {
+                            "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                            "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                            "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                            "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+                        },
+                        "displayName": "Закружная Виктория",
+                        "active": true,
+                        "timeZone": "Europe/Kiev"
+                    },
+                    "body": "<p>&nbsp;Зимний комбинезон Be easy Ликки 20SD2-19V12 86 см Светло-розовый (2200000054524)</p>\n\n<p>Длина (от шеи до низа)-76 см</p>\n\n<p>Длина (от шеи до шагового узла)-48 см</p>\n\n<p>Длина внутреннего шва брюк-32 см</p>\n\n<p>Длина рукава-38 от шеи</p>\n\n<p>ПОТ-34 см<br>\n<br>\nЗимний комбинезон Be easy Ликки 20SD2-19V12 80 см Светло-розовый (2200000054517)<br>\n&nbsp;</p>\n\n<p>Длина (от шеи до низа)-74см</p>\n\n<p>Длина (от шеи до шагового узла)-45&nbsp;см</p>\n\n<p>Длина внутреннего шва брюк-30&nbsp;см</p>\n\n<p>Длина рукава-35&nbsp;от шеи</p>\n\n<p>ПОТ-34 см</p>\n",
+                    "updateAuthor": {
+                        "self": "https://sd.local/rest/api/2/user?username=zakruzhna",
+                        "name": "zakruzhna",
+                        "key": "zakruzhna",
+                        "emailAddress": "zakruzhna@rozetka.com.ua",
+                        "avatarUrls": {
+                            "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                            "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                            "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                            "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+                        },
+                        "displayName": "Закружная Виктория",
+                        "active": true,
+                        "timeZone": "Europe/Kiev"
+                    },
+                    "created": "2020-09-22T12:48:48.840+0300",
+                    "updated": "2020-09-22T12:48:48.840+0300"
+                }
+            ],
+            "maxResults": 1,
+            "total": 1,
+            "startAt": 0
+        },
+        "fixVersions": [],
+        "customfield_10901": null,
+        "customfield_10902": null,
+        "customfield_14260": null,
+        "customfield_14263": null,
+        "customfield_14264": null,
+        "customfield_14261": null,
+        "customfield_14262": null,
+        "customfield_14265": null,
+        "priority": {
+            "self": "https://sd.local/rest/api/2/priority/10311",
+            "iconUrl": "https://sd.local/images/icons/priorities/medium.svg",
+            "name": "Medium",
+            "id": "10311"
+        },
+        "versions": [],
+        "customfield_14131": null,
+        "customfield_14252": null,
+        "customfield_14253": null,
+        "customfield_14250": null,
+        "customfield_14130": null,
+        "customfield_14256": null,
+        "customfield_14257": null,
+        "customfield_14254": null,
+        "customfield_14255": null,
+        "customfield_14258": null,
+        "customfield_14259": null,
+        "customfield_14120": null,
+        "customfield_14241": null,
+        "customfield_14362": null,
+        "customfield_14121": null,
+        "customfield_14363": null,
+        "customfield_14242": null,
+        "customfield_14360": null,
+        "customfield_14240": null,
+        "customfield_14361": null,
+        "customfield_14245": "129985763 и 130796307",
+        "customfield_14367": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/25572",
+            "value": "Да",
+            "id": "25572"
+        },
+        "customfield_14246": null,
+        "customfield_14122": null,
+        "customfield_14364": null,
+        "customfield_14243": null,
+        "customfield_14123": null,
+        "customfield_14365": null,
+        "customfield_14244": null,
+        "aggregateprogress": {
+            "progress": 0,
+            "total": 0
+        },
+        "customfield_14128": null,
+        "customfield_14249": null,
+        "customfield_14129": null,
+        "customfield_14126": null,
+        "customfield_14247": null,
+        "customfield_14127": null,
+        "customfield_14119": null,
+        "customfield_14110": null,
+        "customfield_14231": null,
+        "customfield_14113": null,
+        "customfield_14355": null,
+        "customfield_14234": null,
+        "customfield_14114": null,
+        "customfield_14356": null,
+        "customfield_14235": null,
+        "customfield_14232": null,
+        "customfield_14112": null,
+        "customfield_14233": null,
+        "customfield_14117": null,
+        "customfield_14238": null,
+        "customfield_14359": null,
+        "customfield_14118": null,
+        "customfield_14239": null,
+        "customfield_14115": null,
+        "customfield_14236": null,
+        "customfield_14357": null,
+        "customfield_14116": null,
+        "customfield_14358": null,
+        "customfield_14229": null,
+        "customfield_14108": null,
+        "customfield_14109": null,
+        "customfield_14340": null,
+        "customfield_14220": null,
+        "customfield_14341": null,
+        "created": "2020-09-22T08:54:32.647+0300",
+        "customfield_14102": "Внешний тренер",
+        "customfield_14223": null,
+        "customfield_14344": null,
+        "customfield_14103": null,
+        "customfield_14224": {
+            "self": "https://sd.local/rest/api/2/user?username=%D0%BD%D0%B5%D0%BD%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BE",
+            "name": "неназначено",
+            "key": "неназначено",
+            "emailAddress": "noreplay@example.com",
+            "avatarUrls": {
+                "48x48": "https://sd.local/secure/useravatar?avatarId=10122",
+                "24x24": "https://sd.local/secure/useravatar?size=small&avatarId=10122",
+                "16x16": "https://sd.local/secure/useravatar?size=xsmall&avatarId=10122",
+                "32x32": "https://sd.local/secure/useravatar?size=medium&avatarId=10122"
+            },
+            "displayName": "Не назначено",
+            "active": true,
+            "timeZone": "Europe/Kiev"
+        },
+        "customfield_14221": null,
+        "customfield_14100": null,
+        "customfield_14342": null,
+        "customfield_14222": null,
+        "customfield_14101": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/25100",
+            "value": "Тренинг",
+            "id": "25100"
+        },
+        "customfield_14343": null,
+        "customfield_14106": null,
+        "customfield_14227": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/25310",
+            "value": "Трейд от маркета",
+            "id": "25310"
+        },
+        "customfield_14348": "Не заполнено",
+        "customfield_14228": null,
+        "customfield_14107": null,
+        "customfield_14349": "Не заполнено",
+        "customfield_14225": null,
+        "customfield_14104": null,
+        "customfield_14346": {
+            "self": "https://sd.local/rest/api/2/customFieldOption/25469",
+            "value": "Нет",
+            "id": "25469"
+        },
+        "customfield_14105": null,
+        "customfield_14226": null,
+        "customfield_14347": "Не заполнено",
+        "customfield_14218": null,
+        "customfield_14339": null,
+        "customfield_14219": null,
+        "customfield_14330": null,
+        "customfield_13001": null,
+        "customfield_14212": null,
+        "customfield_14333": null,
+        "customfield_14213": null,
+        "customfield_14334": null,
+        "customfield_14210": null,
+        "customfield_14331": null,
+        "customfield_14211": null,
+        "customfield_14332": null,
+        "customfield_14216": null,
+        "customfield_14337": null,
+        "customfield_14217": null,
+        "customfield_14338": null,
+        "customfield_14214": null,
+        "customfield_14335": null,
+        "customfield_14215": null,
+        "customfield_14336": null,
+        "customfield_14209": null,
+        "customfield_14207": null,
+        "customfield_14328": null,
+        "customfield_14208": null,
+        "customfield_14329": null,
+        "attachment": [],
+        "customfield_14201": null,
+        "customfield_14322": null,
+        "customfield_14202": null,
+        "customfield_14323": null,
+        "customfield_14320": null,
+        "customfield_14321": null,
+        "customfield_14205": null,
+        "customfield_14326": null,
+        "customfield_14206": null,
+        "customfield_14327": null,
+        "customfield_14203": null,
+        "customfield_14324": null,
+        "customfield_14204": null,
+        "customfield_14325": null,
+        "customfield_14319": null,
+        "customfield_14318": null
+    }
+}

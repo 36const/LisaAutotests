@@ -10,7 +10,7 @@ class Request extends FunctionalTester
         ['index', 'new', 'in-check', 'require-changes', 'declined', 'wait-work',
             'in-work', 'on-hold', 'completed', '', '', 'closed', 'observable', 'cross-check'];
 
-    public function amOnTable($filter = null)
+    public function amOnTable(string $filter = null)
     {
         $I = $this;
         $I->amOnPage("/bpm/request/$filter");
@@ -20,6 +20,7 @@ class Request extends FunctionalTester
     public static $globalCaption = "//h1[@class='global-caption']";
     public static $emptyTable = '//table[@class="kv-grid-table table table-bordered table-striped"]' .
                                 '/tbody//div[@class="empty" and text()="Ничего не найдено."]';
+    public static $paginator = '//ul[@class="pagination"]';
 
     /**Общее количество заявок в названии вкладки*/
     public static function statusTabsCounter(int $tabNumber, int $tabCounter)
@@ -28,9 +29,15 @@ class Request extends FunctionalTester
     }
 
     /**Общее количество отфильтрованных заявок*/
-    public static function tabSummary($summary)
+    public static function tableSummary($summary)
     {
         return "//div[@class='summary']/b/..//*[text()='$summary']";
+    }
+
+    /**Диапазон количества показанных заявок*/
+    public static function tableFromTo(string $diapason)
+    {
+        return "//div[@class='summary']/b[text()='$diapason']";
     }
 
     /**Строка заявки в таблице*/
@@ -73,7 +80,7 @@ class Request extends FunctionalTester
         return "//thead//td//input[@name='RequestSearch[$fieldName]']/..//button[@title='Очистить']";
     }
 
-    /**Поле ввода значения для поиска*/
+    /**Поле ввода значения для поиска в колонке*/
     public static function columnSearch(string $fieldName)
     {
         return "//thead//td//input[@name='RequestSearch[$fieldName]']/..//span[@class='selection']//span[@class='select2-selection__rendered']";
@@ -89,6 +96,12 @@ class Request extends FunctionalTester
     public static function contextMenu(string $action)
     {
         return "//tbody//ul[@class='dropdown-menu']//a[contains(text(), '$action')]";
+    }
+
+    /**Страница таблицы*/
+    public static function tablePage($page)
+    {
+        return "//ul[@class='pagination']//li/a[text() = '$page']";
     }
 
 }

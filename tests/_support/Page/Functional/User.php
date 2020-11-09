@@ -37,10 +37,7 @@ class User extends FunctionalTester
     }
 
     /**Сообщение об ограничениях*/
-    public static function warningAlert()
-    {
-        return "//div[@class='alert-warning alert fade in']//text()";
-    }
+    public static $warningAlert = "//div[@class='alert-warning alert fade in']//text()";
 
     public static $userStatus = "//form//select[@id='userbpm-status']";
 }

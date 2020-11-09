@@ -45,7 +45,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
                         ["selector" => RequestCreate::findCheckbox(' Промо-описание')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка', true)],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                         ["selector" => RequestCreate::findCheckbox(' С видео')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' С тегами к товарам')],
@@ -161,7 +161,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
                         ["selector" => RequestCreate::findCheckbox(' По заявке с MobileCourier')],
                         ["selector" => RequestCreate::findCheckbox(' Промо-описание')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка', true)],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                         ["selector" => RequestCreate::findCheckbox(' С видео')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' С тегами к товарам')],
@@ -275,7 +275,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
                         ["selector" => RequestCreate::findCheckbox(' Промо-описание')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка', true)],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                         ["selector" => RequestCreate::findCheckbox(' С видео')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' С тегами к товарам')],
@@ -365,7 +365,7 @@ return [
                 ],
                 "canSee" => [
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка'), true],
+                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка') . '[@checked]'],
                         ["selector" => RequestCreate::findCheckbox(' Ручная загрузка')],
                     ]
                 ],
@@ -420,7 +420,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
                         ["selector" => RequestCreate::findCheckbox(' Промо-описание')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка', true)],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка')  . '[@checked]'],
                         ["selector" => RequestCreate::findCheckbox(' С видео')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' С тегами к товарам')],
@@ -512,7 +512,7 @@ return [
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Добавление графики')],
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка'), true],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                         ["selector" => RequestCreate::findCheckbox(' Точки входа')],
                     ]
                 ],
@@ -546,7 +546,7 @@ return [
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Добавление графики')],
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка'), true],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                         ["selector" => RequestCreate::findCheckbox(' Точки входа')],
                     ]
                 ],
@@ -579,7 +579,7 @@ return [
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка'), true],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [
@@ -611,7 +611,7 @@ return [
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка'), true],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [
@@ -643,7 +643,7 @@ return [
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка'), true],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [
@@ -697,7 +697,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
                         ["selector" => RequestCreate::findCheckbox(' Промо-описание')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка', true)],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                         ["selector" => RequestCreate::findCheckbox(' С видео')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' С тегами к товарам')],
@@ -735,7 +735,7 @@ return [
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка'), true],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [
@@ -767,7 +767,7 @@ return [
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка'), true],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [
@@ -799,7 +799,7 @@ return [
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка'), true],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [

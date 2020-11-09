@@ -27,17 +27,15 @@ class AcceptanceTester extends \Codeception\Actor
     /**
      * @param Example $data - данные кейса из файла data.php
      * @param TestHelper $testHelper
-     * @param array|string[] $globalFile - название файла глобальных фикстур
-     * @param bool $globalUsing - нужно ли использовать глобальные фикстуры
+     * @param array|string[] $globalFile - название файла глобальных фикстур, по-умолчанию oneUser, при значении [] глобальные фикстуры не используются
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function loadDataForTest(Example $data, TestHelper $testHelper,
-                                    array $globalFile = ['oneUser'], bool $globalUsing = true)
+    public function loadDataForTest(Example $data, TestHelper $testHelper, array $globalFile = ['oneUser'])
     {
         $I = $this;
         $testHelper->clearDB($I, $data, $globalFile);
 
-        if ($globalUsing)
+        if (isset($globalFile))
             $testHelper->loadGlobalFixture($I, $globalFile);
 
         $testHelper->loadFixtureAndMock($I, $data);
@@ -50,7 +48,6 @@ class AcceptanceTester extends \Codeception\Actor
         $I->setAuthorizationCookie();
     }
 
-    /**Установка куки авторизации*/
     private function setAuthorizationCookie()
     {
         $I = $this;
@@ -68,10 +65,11 @@ class AcceptanceTester extends \Codeception\Actor
         }
 
         $I->setCookie('for_normal_people_4', '1');
+        $I->setCookie('requestsPerPage', '7bab5e6b3cd55b1ddf5a0d641017b292f3cb48c7cb5eeba7801e54bb1478711da%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22requestsPerPage%22%3Bi%3A1%3Bi%3A20%3B%7D');
 
         $I->seeCookie('_identity');
         $I->seeCookie('for_normal_people_4');
-
+        $I->seeCookie('requestsPerPage');
     }
 
     public function checkTablesInDB($dbTablesArray, bool $dontSee = false)
@@ -102,22 +100,39 @@ class AcceptanceTester extends \Codeception\Actor
         $I = $this;
 
         if (isset($pageObjects['canSee'])) {
-            foreach ($pageObjects['canSee'] as $objects) {
-                foreach ($objects as $object) {
-                    isset($object['value']) ?
-                        $I->canSee($object['value'], $object['selector']) :
-                        $I->canSeeElement($object['selector']);
+            foreach ($pageObjects['canSee'] as $object) {
+                try {
+                    $I->waitForElementVisible($object, 2);
+                } catch (\Exception $e) {
+                    $I->canSeeElement($object);
                 }
             }
         }
 
         if (isset($pageObjects['cantSee'])) {
-            foreach ($pageObjects['cantSee'] as $objects) {
-                foreach ($objects as $object) {
-                    isset($object['value']) ?
-                        $I->cantSee($object['value'], $object['selector']) :
-                        $I->cantSeeElement($object['selector']);
+            foreach ($pageObjects['cantSee'] as $object) {
+                try {
+                    $I->waitForElementNotVisible($object, 2);
+                } catch (\Exception $e) {
+                    $I->cantSeeElement($object);
                 }
+            }
+        }
+    }
+
+    public function checkCheckboxesOnPage($pageObjects)
+    {
+        $I = $this;
+
+        if (isset($pageObjects['canSee'])) {
+            foreach ($pageObjects['canSee'] as $checkbox) {
+                $I->canSeeCheckboxIsChecked($checkbox);
+            }
+        }
+
+        if (isset($pageObjects['cantSee'])) {
+            foreach ($pageObjects['cantSee'] as $checkbox) {
+                $I->cantSeeCheckboxIsChecked($checkbox);
             }
         }
     }

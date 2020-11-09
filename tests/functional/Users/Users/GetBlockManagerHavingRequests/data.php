@@ -14,7 +14,7 @@ return [
                     [
                         ["selector" => User::$userStatus . '[@disabled]'],
                         ["selector" => User::requestsBlockingManagerButton(11)],
-                        ["selector" => User::warningAlert()],
+                        ["selector" => User::$warningAlert],
                     ]
                 ],
                 "cantSee" => [
@@ -34,7 +34,7 @@ return [
                 [
                     ["selector" => User::$userStatus . '[@disabled]'],
                     ["selector" => User::requestsBlockingManagerButton(11)],
-                    ["selector" => User::warningAlert()],
+                    ["selector" => User::$warningAlert],
                 ]
             ],
             "cantSee" => [
@@ -54,7 +54,7 @@ return [
                     [
                         ["selector" => User::$userStatus . '[@disabled]'],
                         ["selector" => User::requestsBlockingManagerButton(11)],
-                        ["selector" => User::warningAlert()],
+                        ["selector" => User::$warningAlert],
                     ]
                 ],
                 "cantSee" => [
@@ -78,7 +78,7 @@ return [
                 "cantSee" => [
                     [
                         ["selector" => User::requestsBlockingManagerButton(11)],
-                        ["selector" => User::warningAlert()],
+                        ["selector" => User::$warningAlert],
                     ]
                 ]
             ]
