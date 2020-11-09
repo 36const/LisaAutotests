@@ -127,6 +127,7 @@ return [
         "user_notifications" => [],
         'notification_settings' => [],
         "request_status_history" => [],
+        "excluded_fields" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/excluded_fields.php',
         "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
         "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
         "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',

@@ -8,6 +8,7 @@ return [
         "user_notifications" => [],
         'notification_settings' => [],
         "request_status_history" => [],
+        "excluded_fields" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/excluded_fields.php',
         "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
     ],
     "cooper_fixtures" => [
