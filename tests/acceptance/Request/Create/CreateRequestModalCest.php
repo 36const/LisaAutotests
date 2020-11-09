@@ -12,7 +12,7 @@ use lisa\Page\Functional\RequestCreate;
  * @group lisa_acceptance_requests
  * @group CreateRequestModal
  */
-class CreateRequestCest
+class CreateRequestModalCest
 {
     /**
      * @var TestHelper $testHelper
@@ -38,7 +38,7 @@ class CreateRequestCest
      * @dataProvider pageProvider
      *
      */
-    public function CreateRequest(AcceptanceTester $I, Example $data, RequestCreate $create)
+    public function CreateRequestModal(AcceptanceTester $I, Example $data, RequestCreate $create)
     {
         $I->loadDataForTest($data, $this->testHelper);
 
