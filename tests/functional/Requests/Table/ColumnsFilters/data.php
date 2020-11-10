@@ -13,12 +13,12 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::requestInTable(1, 'id', 1),],
-                        ["selector" => Request::requestInTable(2, 'id', 3),],
-                        ["selector" => Request::requestInTable(3, 'id', 5),],
-                        ["selector" => Request::requestInTable(4, 'id', 7),],
-                        ["selector" => Request::requestInTable(5, 'id', 9),],
-                        ["selector" => Request::requestInTable(6, 'id', 11),],
+                        ["selector" => Request::requestInTable(1, 'id', 1)],
+                        ["selector" => Request::requestInTable(2, 'id', 3)],
+                        ["selector" => Request::requestInTable(3, 'id', 5)],
+                        ["selector" => Request::requestInTable(4, 'id', 7)],
+                        ["selector" => Request::requestInTable(5, 'id', 9)],
+                        ["selector" => Request::requestInTable(6, 'id', 11)],
                     ]
                 ],
                 "cantSee" => [
@@ -38,8 +38,8 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::requestInTable(1, 'id', 13),],
-                        ["selector" => Request::requestInTable(2, 'id', 1),],
+                        ["selector" => Request::requestInTable(1, 'id', 13)],
+                        ["selector" => Request::requestInTable(2, 'id', 1)],
                     ]
                 ],
                 "cantSee" => [
@@ -79,8 +79,8 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::requestInTable(1, 'id', 21),],
-                        ["selector" => Request::requestInTable(2, 'id', 5),],
+                        ["selector" => Request::requestInTable(1, 'id', 21)],
+                        ["selector" => Request::requestInTable(2, 'id', 5)],
                     ]
                 ],
                 "cantSee" => [
@@ -100,7 +100,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::requestInTable(1, 'id', 23),],
+                        ["selector" => Request::requestInTable(1, 'id', 23)],
                     ]
                 ],
                 "cantSee" => [
