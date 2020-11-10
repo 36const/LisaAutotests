@@ -41,10 +41,10 @@ class Request extends FunctionalTester
     }
 
     /**Строка заявки в таблице*/
-    public static function requestInTable($lineNumber, $columnNumber, $text)
+    public static function requestInTable(int $lineNumber, string $columnName, string $text)
     {
         return '//table[@class="kv-grid-table table table-bordered table-striped"]' .
-            '/tbody/tr[' . $lineNumber . ']/td[@data-col-seq="' . $columnNumber . '"]//*[text()=' . $text . ']';
+            '/tbody/tr[' . $lineNumber . ']/td[@data-col-seq="' . $columnName . '"]//*[text()=' . $text . ']';
     }
 
     /**Поле поиска в заголовке колонки*/

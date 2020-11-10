@@ -676,6 +676,7 @@ return [
             ],
         ],
         "request_errors" => [],
+        "grid_settings" => [],
         "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
         "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',

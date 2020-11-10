@@ -194,6 +194,7 @@ return [
                 "updated_at" => '2020-09-01 19:01:01',
             ],
         ],
+        "grid_settings" => [],
         "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
         "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',

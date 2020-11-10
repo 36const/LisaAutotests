@@ -45,11 +45,12 @@ class POSTTableCest
 
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/request', $providerData['requestBody']);
+        $I->sendPOST('/bpm/grid-settings/save-columns', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->amOnPage('/bpm/request/' . $providerData['url']);
 
+        $I->checkTablesInDB($providerData['db']);
         $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }
