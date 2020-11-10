@@ -33,6 +33,7 @@ class FunctionalTester extends \Codeception\Actor
     public function loadDataForTest(Example $data, TestHelper $testHelper, array $globalFile = ['oneUser'])
     {
         $I = $this;
+        $testHelper->resetMock();
         $testHelper->clearDB($I, $data, $globalFile);
 
         if (isset($globalFile))

@@ -1339,7 +1339,23 @@ return [
                 //"id" => 5715,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToWaitCheck"
-            ]
+            ],
+
+            [
+                //"id" => 3274,
+                "user_id" => 2,
+                "permission_name" => "requestUpdate"
+            ],
+            [
+                //"id" => 4421,
+                "user_id" => 2,
+                "permission_name" => "transferOnHoldToPartialComplete"
+            ],
+            [
+                //"id" => 4733,
+                "user_id" => 2,
+                "permission_name" => "transferOnHoldToCompleted"
+            ],
         ]
     ],
 

@@ -111,5 +111,12 @@ return [
         "child_status" => 3,
         "reason" => "Нинада",
         "status" => 0
-    ]
+    ],
+    [
+        //"id" => 17,
+        "parent_status" => 6,
+        "child_status" => 7,
+        "reason" => "Ожидает группировки",
+        "status" => 1
+    ],
 ];

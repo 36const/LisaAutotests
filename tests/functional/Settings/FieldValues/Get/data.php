@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок',
+            'description' => 'Страница значений полей заявок',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -166,7 +166,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок с сортировкой по id',
+            'description' => 'Страница значений полей заявок с сортировкой по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -329,7 +329,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок с сортировкой по полю',
+            'description' => 'Страница значений полей заявок с сортировкой по полю',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -492,7 +492,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок с сортировкой по значению',
+            'description' => 'Страница значений полей заявок с сортировкой по значению',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -655,7 +655,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок по статусу',
+            'description' => 'Страница значений полей заявок по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -818,7 +818,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок с фильтром по id',
+            'description' => 'Страница значений полей заявок с фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -906,7 +906,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок с фильтром по полю',
+            'description' => 'Страница значений полей заявок с фильтром по полю',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1036,7 +1036,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок с фильтром по значению',
+            'description' => 'Страница значений полей заявок с фильтром по значению',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1151,7 +1151,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок по статусу',
+            'description' => 'Страница значений полей заявок по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1251,7 +1251,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок с фильтром по id > 999 999 999',
+            'description' => 'Страница значений полей заявок с фильтром по id > 999 999 999',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1420,7 +1420,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок с нечисловым фильтром по id',
+            'description' => 'Страница значений полей заявок с нечисловым фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1589,7 +1589,7 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок с несуществующим фильтром по id',
+            'description' => 'Страница значений полей заявок с несуществующим фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1611,7 +1611,7 @@ return [
 
     'case13' => [
         'setting' => [
-            'description' => 'Cтраница значений полей заявок с несуществующим фильтром по значению поля',
+            'description' => 'Страница значений полей заявок с несуществующим фильтром по значению поля',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

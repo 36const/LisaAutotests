@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница команд',
+            'description' => 'Страница команд',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -166,7 +166,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница команд с обратной сортировкой по id',
+            'description' => 'Страница команд с обратной сортировкой по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -329,7 +329,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница команд с прямой сортировкой по названию',
+            'description' => 'Страница команд с прямой сортировкой по названию',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -492,7 +492,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница команд с прямой сортировкой по статусу',
+            'description' => 'Страница команд с прямой сортировкой по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -655,7 +655,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница команд с фильтром по id',
+            'description' => 'Страница команд с фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -763,7 +763,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница команд с фильтром по названию',
+            'description' => 'Страница команд с фильтром по названию',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -871,7 +871,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница команд с фильтром по направлению',
+            'description' => 'Страница команд с фильтром по направлению',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -979,7 +979,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница команд с фильтром по статусу',
+            'description' => 'Страница команд с фильтром по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1131,7 +1131,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница команд с фильтром по id > 999 999 999',
+            'description' => 'Страница команд с фильтром по id > 999 999 999',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1300,7 +1300,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Cтраница команд с нечисловым фильтром по id',
+            'description' => 'Страница команд с нечисловым фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1469,7 +1469,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Cтраница команд с несуществующим фильтром по id',
+            'description' => 'Страница команд с несуществующим фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1491,7 +1491,7 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Cтраница команд с несуществующим фильтром по названию',
+            'description' => 'Страница команд с несуществующим фильтром по названию',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

@@ -182,7 +182,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -386,7 +387,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 12
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -573,7 +575,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -761,7 +764,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -769,7 +773,7 @@ return [
 
     'case6_7_1_2_photoload_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Ожидает (ризоны)"',
+            'description' => 'Перевод из "В работе" в "Ожидает (ризоны)" c ранее загруженными фото, причина 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload_2.php',
         'provider_data' => [
@@ -949,15 +953,16 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
     ],
 
-    'case6_8' => [
+    'case6_8_1_1' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Частично выполнен"',
+            'description' => 'Перевод из "В работе" в "Частично выполнен" тип 1 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
@@ -1249,6 +1254,540 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
+                    ],
+                    'transition_info' => []
+                ]
+            ]
+        ]
+    ],
+
+    'case6_8_1_2' => [
+        'setting' => [
+            'description' => 'Перевод из "В работе" в "Частично выполнен" тип 1 направление 2 без "Ждёт группировки" в Гомере',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case6_9_1_2.php',
+        'mock_data' => [
+            'Gomer' => [
+                'httpRequest' => [
+                    'method' => 'GET',
+                    'path' => '/new-items/check-bpm',
+                    'queryStringParameters' => [
+                        'bpm_number' => [
+                            '1'
+                        ]
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            "application/json; charset=UTF-8"
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Gomer/case_not_on-hold.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
+        'provider_data' => [
+            'requestParameter' => 'complete',
+            'requestBody' => [
+                'RequestField[25]' => '18',
+                'RequestField[66]' => '10',
+                'RequestField[72]' => '10',
+                'RequestField[73]' => '10',
+                'RequestField[74]' => '10',
+                'RequestField[75]' => '10',
+                'RequestField[93]' => '10',
+                'RequestField[94]' => '5',
+                'Request[awaiting_correction]' => '0',
+                'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'Request[status]' => '8',
+                'Request[reason_id]' => '7',
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            "id" => 1,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 6,
+                            "manager_id" => 11,
+                            "status" => 8,
+                            "direction" => 2,
+                            "priority" => 2,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '',
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Маркета)",
+                            "description" => 'description',
+                            "attachments" => '[]',
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => '',
+                            "reason_id" => 7,
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => '2020-01-01 00:00:03',
+//                            "actual_finish_date" => null,
+//                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "supervisor_comment" => '',
+                            //"last_change_status_date" => "2020-01-01 00:00:01",
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                        ]
+                    ],
+                    'requests_fields' => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 8,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 15,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 19,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 25,
+                            'value' => 18,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 49,
+                            'value' => 60,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 50,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 51,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 60,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 66,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 72,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 73,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 74,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 75,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 93,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 94,
+                            'value' => 5,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 114,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                    ],
+                    'user_notifications' => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "notification" => 'Заявка <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Маркета)"</b>, количество в работу: <b>10</b> с приоритетом <b>Товар-новинка/эксклюзив (трафикообразующий)</b> изменен статус с <b>"В работе"</b> на <b>"Частично выполнена"</b> пользователем <b>Константин Куцан</b>',
+                            "status" => 0,
+                            //"created_at" => '2020-01-01 00:00:01',
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                        ],
+                        [
+                            "id" => 2,
+                            "user_id" => 6,
+                            "notification" => 'Заявка <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Маркета)"</b>, количество в работу: <b>10</b> с приоритетом <b>Товар-новинка/эксклюзив (трафикообразующий)</b> изменен статус с <b>"В работе"</b> на <b>"Частично выполнена"</b> пользователем <b>Константин Куцан</b>',
+                            "status" => 0,
+                            //"created_at" => '2020-01-01 00:00:01',
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                        ],
+                        [
+                            "id" => 3,
+                            "user_id" => 11,
+                            "notification" => 'Заявка <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Маркета)"</b>, количество в работу: <b>10</b> с приоритетом <b>Товар-новинка/эксклюзив (трафикообразующий)</b> изменен статус с <b>"В работе"</b> на <b>"Частично выполнена"</b> пользователем <b>Константин Куцан</b>',
+                            "status" => 0,
+                            //"created_at" => '2020-01-01 00:00:01',
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                        ],
+                    ],
+                    'request_status_history' => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 6,
+                            "new_status" => 8,
+                            "reason_id" => 7,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            //"created_at" => "2020-01-01 00:00:01",
+                            "manager_id" => 11
+                        ]
+                    ],
+                    'transition_info' => []
+                ]
+            ]
+        ]
+    ],
+
+    'case6_8_1_2_on-hold' => [
+        'setting' => [
+            'description' => 'Перевод из "В работе" в "Частично выполнен" тип 1 направление 2 с "Ждёт группировки" в Гомере',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case6_9_1_2.php',
+        'mock_data' => [
+            'Gomer' => [
+                'httpRequest' => [
+                    'method' => 'GET',
+                    'path' => '/new-items/check-bpm',
+                    'queryStringParameters' => [
+                        'bpm_number' => [
+                            '1'
+                        ]
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            "application/json; charset=UTF-8"
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Gomer/case_on-hold.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
+        'provider_data' => [
+            'requestParameter' => 'complete',
+            'requestBody' => [
+                'RequestField[25]' => '18',
+                'RequestField[66]' => '10',
+                'RequestField[72]' => '10',
+                'RequestField[73]' => '10',
+                'RequestField[74]' => '10',
+                'RequestField[75]' => '10',
+                'RequestField[93]' => '10',
+                'RequestField[94]' => '5',
+                'Request[awaiting_correction]' => '0',
+                'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'Request[status]' => '8',
+                'Request[reason_id]' => '7',
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            "id" => 1,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 6,
+                            "manager_id" => 11,
+                            "status" => 7,
+                            "direction" => 2,
+                            "priority" => 2,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '',
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Маркета)",
+                            "description" => 'description',
+                            "attachments" => '[]',
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => '',
+                            "reason_id" => 17,
+                            "reason" => 'Заявка переведена в статус "Ожидает",
+             так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => '2020-01-01 00:00:03',
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "supervisor_comment" => '',
+                            //"last_change_status_date" => "2020-01-01 00:00:01",
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                        ]
+                    ],
+                    'requests_fields' => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 8,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 15,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 19,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 25,
+                            'value' => 18,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 49,
+                            'value' => 60,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 50,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 51,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 60,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 66,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 72,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 73,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 74,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 75,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 93,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 94,
+                            'value' => 5,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 114,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                    ],
+                    'user_notifications' => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "notification" => 'Заявка <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Маркета)"</b>, количество в работу: <b>10</b> с приоритетом <b>Товар-новинка/эксклюзив (трафикообразующий)</b> изменен статус с <b>"В работе"</b> на <b>"Ожидает"</b> пользователем <b>Константин Куцан</b> по причине <b>Ожидает группировки </b>',
+                            "status" => 0,
+                            //"created_at" => '2020-01-01 00:00:01',
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                        ],
+                        [
+                            "id" => 2,
+                            "user_id" => 6,
+                            "notification" => 'Заявка <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Маркета)"</b>, количество в работу: <b>10</b> с приоритетом <b>Товар-новинка/эксклюзив (трафикообразующий)</b> изменен статус с <b>"В работе"</b> на <b>"Ожидает"</b> пользователем <b>Константин Куцан</b> по причине <b>Ожидает группировки </b>',
+                            "status" => 0,
+                            //"created_at" => '2020-01-01 00:00:01',
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                        ],
+                        [
+                            "id" => 3,
+                            "user_id" => 11,
+                            "notification" => 'Заявка <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Маркета)"</b>, количество в работу: <b>10</b> с приоритетом <b>Товар-новинка/эксклюзив (трафикообразующий)</b> изменен статус с <b>"В работе"</b> на <b>"Ожидает"</b> пользователем <b>Константин Куцан</b> по причине <b>Ожидает группировки </b>',
+                            "status" => 0,
+                            //"created_at" => '2020-01-01 00:00:01',
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                        ],
+                    ],
+                    'request_status_history' => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 6,
+                            "new_status" => 7,
+                            "reason_id" => 17,
+                            "reason" => 'Заявка переведена в статус "Ожидает",
+             так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
+                            //"created_at" => "2020-01-01 00:00:01",
+                            "manager_id" => 11
+                        ]
+                    ],
+                    'transition_info' => [
+                        [
+                            "request_id" => 1,
+                            "status" => 8,
+                            "reason_id" => 7,
+                            "reason" => null
+                        ],
                     ]
                 ]
             ]
@@ -1548,7 +2087,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -1556,9 +2096,31 @@ return [
 
     'case6_9_1_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 1 направление 2',
+            'description' => 'Перевод из "В работе" в "Выполнен" тип 1 направление 2 без "Ждёт группировки" в Гомере',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_1_2.php',
+        'mock_data' => [
+            'Gomer' => [
+                'httpRequest' => [
+                    'method' => 'GET',
+                    'path' => '/new-items/check-bpm',
+                    'queryStringParameters' => [
+                        'bpm_number' => [
+                            '1'
+                        ]
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            "application/json; charset=UTF-8"
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Gomer/case_not_on-hold.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
         'provider_data' => [
             'requestParameter' => 'complete',
             'requestBody' => [
@@ -1786,6 +2348,277 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
+                    ],
+                    'transition_info' => []
+                ]
+            ]
+        ]
+    ],
+
+    'case6_9_1_2_on-hold' => [
+        'setting' => [
+            'description' => 'Перевод из "В работе" в "Выполнен" тип 1 направление 2 с "Ждёт группировки" в Гомере',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case6_9_1_2.php',
+        'mock_data' => [
+            'Gomer' => [
+                'httpRequest' => [
+                    'method' => 'GET',
+                    'path' => '/new-items/check-bpm',
+                    'queryStringParameters' => [
+                        'bpm_number' => [
+                            '1'
+                        ]
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            "application/json; charset=UTF-8"
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Gomer/case_on-hold.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
+        'provider_data' => [
+            'requestParameter' => 'complete',
+            'requestBody' => [
+                'RequestField[25]' => '18',
+                'RequestField[66]' => '10',
+                'RequestField[72]' => '10',
+                'RequestField[73]' => '10',
+                'RequestField[74]' => '10',
+                'RequestField[75]' => '10',
+                'RequestField[93]' => '10',
+                'RequestField[94]' => '5',
+                'Request[awaiting_correction]' => '0',
+                'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'Request[status]' => '9',
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            "id" => 1,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 6,
+                            "manager_id" => 11,
+                            "status" => 7,
+                            "direction" => 2,
+                            "priority" => 2,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '',
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Маркета)",
+                            "description" => 'description',
+                            "attachments" => '[]',
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => '',
+                            "reason_id" => 17,
+                            "reason" => 'Заявка переведена в статус "Ожидает",
+             так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => '2020-01-01 00:00:03',
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "difficulty" => null,
+                            "result_comment" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "supervisor_comment" => '',
+                            //"last_change_status_date" => "2020-01-01 00:00:01",
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => '0',
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                        ]
+                    ],
+                    'requests_fields' => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 8,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 15,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 19,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 25,
+                            'value' => 18,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 49,
+                            'value' => 60,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 50,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 51,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 60,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 66,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 72,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 73,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 74,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 75,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 93,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 94,
+                            'value' => 5,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 114,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => null,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => null,
+                        ],
+                    ],
+                    'user_notifications' => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "notification" => 'Заявка <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Маркета)"</b>, количество в работу: <b>10</b> с приоритетом <b>Товар-новинка/эксклюзив (трафикообразующий)</b> изменен статус с <b>"В работе"</b> на <b>"Ожидает"</b> пользователем <b>Константин Куцан</b> по причине <b>Ожидает группировки </b>',
+                            "status" => 0,
+                            //"created_at" => '2020-01-01 00:00:01',
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                        ],
+                        [
+                            "id" => 2,
+                            "user_id" => 6,
+                            "notification" => 'Заявка <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Маркета)"</b>, количество в работу: <b>10</b> с приоритетом <b>Товар-новинка/эксклюзив (трафикообразующий)</b> изменен статус с <b>"В работе"</b> на <b>"Ожидает"</b> пользователем <b>Константин Куцан</b> по причине <b>Ожидает группировки </b>',
+                            "status" => 0,
+                            //"created_at" => '2020-01-01 00:00:01',
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                        ],
+                        [
+                            "id" => 3,
+                            "user_id" => 11,
+                            "notification" => 'Заявка <b>№1</b> <b>"Добавление новых товаров (Работа с товарами Маркета)"</b>, количество в работу: <b>10</b> с приоритетом <b>Товар-новинка/эксклюзив (трафикообразующий)</b> изменен статус с <b>"В работе"</b> на <b>"Ожидает"</b> пользователем <b>Константин Куцан</b> по причине <b>Ожидает группировки </b>',
+                            "status" => 0,
+                            //"created_at" => '2020-01-01 00:00:01',
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                        ],
+                    ],
+                    'request_status_history' => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 6,
+                            "new_status" => 7,
+                            "reason_id" => 17,
+                            "reason" => 'Заявка переведена в статус "Ожидает",
+             так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
+                            //"created_at" => "2020-01-01 00:00:01",
+                            "manager_id" => 11
+                        ]
+                    ],
+                    'transition_info' => [
+                        [
+                            "request_id" => 1,
+                            "status" => 9,
+                            "reason_id" => null,
+                            "reason" => null
+                        ],
                     ]
                 ]
             ]
@@ -2085,7 +2918,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -2323,7 +3157,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -2622,7 +3457,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -2860,7 +3696,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -3020,7 +3857,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -3319,7 +4157,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -3557,7 +4396,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -3795,7 +4635,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -4033,7 +4874,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -4231,7 +5073,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -4429,7 +5272,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -4627,7 +5471,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -4926,7 +5771,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -5136,7 +5982,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -5304,7 +6151,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -5472,7 +6320,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -5675,7 +6524,8 @@ return [
                             "recipients" => "Супервайзер Начальникович 1, Супервайзер Начальникович 2"
                         ]
                     ],
-                    'request_status_history' => []
+                    'request_status_history' => [],
+                    'transition_info' => []
                 ]
             ]
         ]
@@ -5920,7 +6770,8 @@ return [
                             //"created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 12
                         ]
-                    ]
+                    ],
+                    'transition_info' => []
                 ]
             ]
         ]

@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница шаблонов отчётов',
+            'description' => 'Страница шаблонов отчётов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -128,7 +128,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница шаблонов отчётов с обратной сортировкой по названию',
+            'description' => 'Страница шаблонов отчётов с обратной сортировкой по названию',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -253,7 +253,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница шаблонов отчётов с обратной сортировкой по типу',
+            'description' => 'Страница шаблонов отчётов с обратной сортировкой по типу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

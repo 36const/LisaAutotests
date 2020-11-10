@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов',
+            'description' => 'Страница причин изменения статусов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -144,7 +144,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с сортировкой по id',
+            'description' => 'Страница причин изменения статусов с сортировкой по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -285,7 +285,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с сортировкой по начал. статусу',
+            'description' => 'Страница причин изменения статусов с сортировкой по начал. статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -426,7 +426,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с сортировкой по конеч. статусу',
+            'description' => 'Страница причин изменения статусов с сортировкой по конеч. статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -567,7 +567,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с сортировкой по причине',
+            'description' => 'Страница причин изменения статусов с сортировкой по причине',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -708,7 +708,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с сортировкой по статусу',
+            'description' => 'Страница причин изменения статусов с сортировкой по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -849,7 +849,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с фильтром по id',
+            'description' => 'Страница причин изменения статусов с фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -945,7 +945,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с фильтром по начал. статусу',
+            'description' => 'Страница причин изменения статусов с фильтром по начал. статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1056,7 +1056,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с фильтром по конеч. статусу',
+            'description' => 'Страница причин изменения статусов с фильтром по конеч. статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1167,7 +1167,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с фильтром по причине',
+            'description' => 'Страница причин изменения статусов с фильтром по причине',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1263,7 +1263,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с фильтром по статусу',
+            'description' => 'Страница причин изменения статусов с фильтром по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1359,7 +1359,7 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с фильтром по id > 999 999 999',
+            'description' => 'Страница причин изменения статусов с фильтром по id > 999 999 999',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1506,7 +1506,7 @@ return [
 
     'case13' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с нечисловым фильтром по id',
+            'description' => 'Страница причин изменения статусов с нечисловым фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1653,7 +1653,7 @@ return [
 
     'case14' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с несуществующим фильтром по id',
+            'description' => 'Страница причин изменения статусов с несуществующим фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1675,7 +1675,7 @@ return [
 
     'case15' => [
         'setting' => [
-            'description' => 'Cтраница причин изменения статусов с несуществующим фильтром по причине',
+            'description' => 'Страница причин изменения статусов с несуществующим фильтром по причине',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

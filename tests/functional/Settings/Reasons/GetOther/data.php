@@ -55,15 +55,19 @@ return [
                             "value" => "Изменен приоритет задачи"
                         ],
                         [
-                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[4][@value=4]",
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[4][@value=17]",
+                            "value" => "Ожидает группировки"
+                        ],
+                        [
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[5][@value=4]",
                             "value" => "Ожидается загрузка товаров в систему"
                         ],
                         [
-                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[5][@value=1]",
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[6][@value=1]",
                             "value" => "Ожидается загрузка фото в товары"
                         ],
                         [
-                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[6][@value=2]",
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[7][@value=2]",
                             "value" => "Требуется уточнение информации по задаче"
                         ],
                     ]

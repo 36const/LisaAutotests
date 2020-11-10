@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница коэффициентов',
+            'description' => 'Страница коэффициентов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -182,7 +182,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница коэффициентов с обратной сортировкой по типу',
+            'description' => 'Страница коэффициентов с обратной сортировкой по типу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -361,7 +361,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница коэффициентов с сортировкой по полям',
+            'description' => 'Страница коэффициентов с сортировкой по полям',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -540,7 +540,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница коэффициентов с сортировкой по коэффициенту',
+            'description' => 'Страница коэффициентов с сортировкой по коэффициенту',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -719,7 +719,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница коэффициентов с сортировкой по статусу',
+            'description' => 'Страница коэффициентов с сортировкой по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -898,7 +898,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница коэффициентов c фильтром по типу',
+            'description' => 'Страница коэффициентов c фильтром по типу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1012,7 +1012,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница коэффициентов c фильтром по коэффициенту',
+            'description' => 'Страница коэффициентов c фильтром по коэффициенту',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1103,7 +1103,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница коэффициентов c фильтром по статусу Заблокированный',
+            'description' => 'Страница коэффициентов c фильтром по статусу Заблокированный',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1230,7 +1230,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница коэффициентов с фильтром по коэффициенту > 999 999 999',
+            'description' => 'Страница коэффициентов с фильтром по коэффициенту > 999 999 999',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1415,7 +1415,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Cтраница коэффициентов с нечисловым фильтром по коэффициенту',
+            'description' => 'Страница коэффициентов с нечисловым фильтром по коэффициенту',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1600,7 +1600,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Cтраница коэффициентов с несуществующим фильтром по коэффициенту',
+            'description' => 'Страница коэффициентов с несуществующим фильтром по коэффициенту',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

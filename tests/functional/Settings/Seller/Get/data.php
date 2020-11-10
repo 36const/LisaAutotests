@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница магазинов',
+            'description' => 'Страница магазинов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -150,7 +150,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница магазинов с обратной сортировкой по owox id',
+            'description' => 'Страница магазинов с обратной сортировкой по owox id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -297,7 +297,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница магазинов с прямой сортировкой по супервайзеру',
+            'description' => 'Страница магазинов с прямой сортировкой по супервайзеру',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -444,7 +444,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница магазинов с фильтром по owox id',
+            'description' => 'Страница магазинов с фильтром по owox id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -542,7 +542,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница магазинов с фильтром по названию магазина',
+            'description' => 'Страница магазинов с фильтром по названию магазина',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -640,7 +640,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница магазинов с фильтром по супервайзеру',
+            'description' => 'Страница магазинов с фильтром по супервайзеру',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -749,7 +749,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница магазинов с фильтром по id > 999 999',
+            'description' => 'Страница магазинов с фильтром по id > 999 999',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -902,7 +902,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница магазинов с нечисловым фильтром по id',
+            'description' => 'Страница магазинов с нечисловым фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1055,7 +1055,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница магазинов с несуществующим фильтром по id',
+            'description' => 'Страница магазинов с несуществующим фильтром по id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1077,7 +1077,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Cтраница магазинов с несуществующим фильтром по названию',
+            'description' => 'Страница магазинов с несуществующим фильтром по названию',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница пользователей',
+            'description' => 'Страница пользователей',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -175,7 +175,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница пользователей с фильтром по ID',
+            'description' => 'Страница пользователей с фильтром по ID',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -324,7 +324,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница пользователей с фильтром по имени',
+            'description' => 'Страница пользователей с фильтром по имени',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -473,7 +473,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Cтраница пользователей с фильтром по логину',
+            'description' => 'Страница пользователей с фильтром по логину',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -622,7 +622,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Cтраница пользователей с фильтром по несуществующей команде',
+            'description' => 'Страница пользователей с фильтром по несуществующей команде',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -752,7 +752,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Cтраница пользователей с фильтром по несуществующей должности',
+            'description' => 'Страница пользователей с фильтром по несуществующей должности',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -882,7 +882,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Cтраница пользователей с фильтром по ДРФО',
+            'description' => 'Страница пользователей с фильтром по ДРФО',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1031,7 +1031,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Cтраница пользователей с фильтром по дате создания',
+            'description' => 'Страница пользователей с фильтром по дате создания',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1203,7 +1203,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Cтраница пользователей с фильтром по руководителю',
+            'description' => 'Страница пользователей с фильтром по руководителю',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1352,7 +1352,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Cтраница пользователей с фильтром по дате последнего обновления',
+            'description' => 'Страница пользователей с фильтром по дате последнего обновления',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1482,7 +1482,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Cтраница пользователей с фильтром по статусу',
+            'description' => 'Страница пользователей с фильтром по статусу',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

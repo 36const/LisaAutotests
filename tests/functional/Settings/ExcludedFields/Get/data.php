@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Cтраница взаимоисключающих чекбоксов',
+            'description' => 'Страница взаимоисключающих чекбоксов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -98,7 +98,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Cтраница взаимоисключающих чекбоксов с сортировкой по полю',
+            'description' => 'Страница взаимоисключающих чекбоксов с сортировкой по полю',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -193,7 +193,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Cтраница взаимоисключающих чекбоксов с сортировкой по исключ. полю',
+            'description' => 'Страница взаимоисключающих чекбоксов с сортировкой по исключ. полю',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
