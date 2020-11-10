@@ -5,6 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use lisa\Page\Functional\RequestView;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -26,7 +27,8 @@ class ExcludedFieldsInRequestViewCest
 
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+//        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require ('data.php'));
     }
 
     /**
@@ -40,7 +42,7 @@ class ExcludedFieldsInRequestViewCest
      */
     public function ExcludedFieldsInRequestView(AcceptanceTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
         $view->amOnView(1);

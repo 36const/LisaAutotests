@@ -6,6 +6,7 @@ use Codeception\Example;
 use lisa\Page\Functional\UserCreate;
 use lisa\Page\Functional\UserView;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -30,7 +31,8 @@ class CreateUserWithExistingNameCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+//        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require ('data.php'));
     }
 
     /**
@@ -44,7 +46,7 @@ class CreateUserWithExistingNameCest
      */
     public function CreateUserWithExistingName(AcceptanceTester $I, Example $data, UserCreate $user)
     {
-        $I->loadDataForTest($data, $this->testHelper, []);
+        $I->loadDataForTest($data, null);
 
         $user->amOnUserCreate();
 

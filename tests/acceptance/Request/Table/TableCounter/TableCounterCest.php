@@ -5,6 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use lisa\Page\Functional\Request;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -29,7 +30,8 @@ class TableCounterCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+//        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require ('data.php'));
     }
 
     /**
@@ -42,7 +44,7 @@ class TableCounterCest
      */
     public function TableCounter(AcceptanceTester $I, Example $data, Request $request)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
         $request->amOnTable();

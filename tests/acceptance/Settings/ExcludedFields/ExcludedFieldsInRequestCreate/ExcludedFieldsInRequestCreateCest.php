@@ -5,6 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\RequestCreate;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -26,7 +27,8 @@ class ExcludedFieldsInRequestCreateCest
 
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+//        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require ('data.php'));
     }
 
     /**
@@ -40,7 +42,7 @@ class ExcludedFieldsInRequestCreateCest
      */
     public function ExcludedFieldsInRequestCreate(AcceptanceTester $I, Example $data, RequestCreate $create)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
         $create->amOnRequestCreate(2, 2);
