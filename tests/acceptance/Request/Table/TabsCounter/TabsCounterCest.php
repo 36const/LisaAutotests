@@ -43,7 +43,7 @@ class TabsCounterCest
     public function TabsCounter(AcceptanceTester $I, Example $data, Request $request)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
-
+        $I->wait(30);
         $request->amOnTable('index');
         $I->canSeeElement(Request::statusTabsCounter(1, 24));
         $I->canSeeElement(Request::tableSummary('......'));

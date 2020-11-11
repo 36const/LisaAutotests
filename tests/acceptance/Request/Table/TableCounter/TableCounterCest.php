@@ -44,7 +44,7 @@ class TableCounterCest
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
-
+        $I->wait(30);
         $request->amOnTable();
         $I->checkObjectsOnPage($providerData['pageObjects_1']);
 
