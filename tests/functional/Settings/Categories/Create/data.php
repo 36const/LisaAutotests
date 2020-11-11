@@ -40,7 +40,7 @@ return [
                         [
                             "id" => 4,
                             "title" => "Котикгория",
-                            "difficulty" => 5  ,
+                            "difficulty" => 5,
                             "supervisor_id" => 10,
                             "status" => 1
                         ],
@@ -89,7 +89,7 @@ return [
                         [
                             "id" => 4,
                             "title" => "Котикгория",
-                            "difficulty" => 5  ,
+                            "difficulty" => 5,
                             "supervisor_id" => 10,
                             "status" => 0
                         ],

@@ -138,12 +138,12 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 "request_id" => 2,
@@ -228,12 +228,12 @@ return [
             [
                 'request_id' => 2,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 2,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
         ],
         "report_periods" => [[]],

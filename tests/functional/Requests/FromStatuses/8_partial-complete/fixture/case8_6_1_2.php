@@ -131,7 +131,7 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 101,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
@@ -141,7 +141,7 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 122,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
@@ -156,12 +156,12 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
         ],
         "report_periods" => [[]],

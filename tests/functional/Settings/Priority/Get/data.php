@@ -78,7 +78,7 @@ return [
                             "selector" => "//tbody/tr[3]/td[4]/a[@href='/bpm/priority/update?id=3']",
                         ],
                     ],
-                  ],
+                ],
                 "cantSee" => [
                 ]
             ]

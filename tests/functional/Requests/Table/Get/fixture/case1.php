@@ -261,7 +261,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-],
+            ],
             [
                 //"id" => 8,
                 "author_id" => 4,
@@ -298,7 +298,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 9,
                 "author_id" => 4,
@@ -335,7 +335,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 10,
                 "author_id" => 4,
@@ -372,7 +372,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 11,
                 "author_id" => 4,
@@ -409,7 +409,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 12,
                 "author_id" => 4,
@@ -446,7 +446,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 13,
                 "author_id" => 4,
@@ -483,7 +483,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 14,
                 "author_id" => 4,
@@ -520,7 +520,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 15,
                 "author_id" => 4,
@@ -557,7 +557,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 16,
                 "author_id" => 4,
@@ -594,7 +594,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 17,
                 "author_id" => 4,
@@ -631,7 +631,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 18,
                 "author_id" => 4,
@@ -668,7 +668,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-],
+            ],
             [
                 //"id" => 19,
                 "author_id" => 4,
@@ -705,7 +705,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 20,
                 "author_id" => 4,
@@ -742,7 +742,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-],
+            ],
             [
                 //"id" => 21,
                 "author_id" => 4,
@@ -779,7 +779,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 22,
                 "author_id" => 4,
@@ -816,7 +816,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-],
+            ],
             [
                 //"id" => 23,
                 "author_id" => 4,
@@ -853,7 +853,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-],
+            ],
             [
                 //"id" => 24,
                 "author_id" => 4,
@@ -890,7 +890,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-]
+            ]
         ],
         "requests_fields" => [
             [

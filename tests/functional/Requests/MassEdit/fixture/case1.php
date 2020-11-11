@@ -307,12 +307,12 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 "request_id" => 2,
@@ -387,12 +387,12 @@ return [
             [
                 "request_id" => 2,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 "request_id" => 2,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 "request_id" => 3,
@@ -427,12 +427,12 @@ return [
             [
                 'request_id' => 3,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 3,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 "request_id" => 4,
@@ -477,12 +477,12 @@ return [
             [
                 'request_id' => 4,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 4,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 "request_id" => 5,
@@ -517,12 +517,12 @@ return [
             [
                 'request_id' => 5,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 5,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 "request_id" => 6,
@@ -557,12 +557,12 @@ return [
             [
                 'request_id' => 6,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 6,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
         ],
         "report_periods" => [[]],

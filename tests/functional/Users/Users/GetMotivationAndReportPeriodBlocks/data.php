@@ -20,7 +20,7 @@ return [
                         ["selector" => RequestView::$dates],
                         ["selector" => RequestView::$reportPeriodId],
                     ]
-            ],
+                ],
                 "cantSee" => [
                     [
                         ["selector" => RequestView::$motivationManagers],

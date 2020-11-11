@@ -118,12 +118,12 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 101,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
                             'field_id' => 122,
-                            'value' => null,
+                            'value' => 0,
                         ],
                     ],
                     "request_comments" => [
@@ -302,12 +302,12 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 101,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
                             'field_id' => 122,
-                            'value' => null,
+                            'value' => 0,
                         ],
                     ],
                     "request_comments" => [
@@ -496,12 +496,12 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 101,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
                             'field_id' => 122,
-                            'value' => null,
+                            'value' => 0,
                         ],
                     ],
                     "request_comments" => [
