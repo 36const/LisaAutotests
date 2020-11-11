@@ -45,34 +45,34 @@ return [
         ],
         "requests_fields" => [
             [
-                "request_id" => 1,
-                "field_id" => 1,
-                "value" => "1"
+                'request_id' => 1,
+                'field_id' => 1,
+                'value' => "1"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 53,
-                "value" => "0.5"
+                'request_id' => 1,
+                'field_id' => 53,
+                'value' => "0.5"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 54,
-                "value" => "1"
+                'request_id' => 1,
+                'field_id' => 54,
+                'value' => "1"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 59,
-                "value" => "0"
+                'request_id' => 1,
+                'field_id' => 59,
+                'value' => "0"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 101,
-                "value" => null
+                'request_id' => 1,
+                'field_id' => 101,
+                'value' => 0
             ],
             [
-                "request_id" => 1,
-                "field_id" => 122,
-                "value" => null
+                'request_id' => 1,
+                'field_id' => 122,
+                'value' => 0
             ],
             [
                 'request_id' => 1,

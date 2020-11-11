@@ -45,54 +45,54 @@ return [
         ],
         "requests_fields" => [
             [
-                "request_id" => 1,
-                "field_id" => 2,
-                "value" => "1"
+                'request_id' => 1,
+                'field_id' => 2,
+                'value' => "1"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 20,
-                "value" => "66"
+                'request_id' => 1,
+                'field_id' => 20,
+                'value' => "66"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 53,
-                "value" => "2"
+                'request_id' => 1,
+                'field_id' => 53,
+                'value' => "2"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 54,
-                "value" => "2"
+                'request_id' => 1,
+                'field_id' => 54,
+                'value' => "2"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 58,
-                "value" => "120"
+                'request_id' => 1,
+                'field_id' => 58,
+                'value' => "120"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 83,
-                "value" => "10"
+                'request_id' => 1,
+                'field_id' => 83,
+                'value' => "10"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 92,
-                "value" => "10"
+                'request_id' => 1,
+                'field_id' => 92,
+                'value' => "10"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 101,
-                "value" => null
+                'request_id' => 1,
+                'field_id' => 101,
+                'value' => 0
             ],
             [
-                "request_id" => 1,
-                "field_id" => 110,
-                "value" => "10"
+                'request_id' => 1,
+                'field_id' => 110,
+                'value' => "10"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 122,
-                "value" => null
+                'request_id' => 1,
+                'field_id' => 122,
+                'value' => 0
             ],
             [
                 'request_id' => 1,

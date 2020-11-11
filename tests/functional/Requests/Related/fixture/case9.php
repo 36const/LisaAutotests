@@ -128,54 +128,54 @@ return [
         ],
         "requests_fields" => [
             [
-                "request_id" => 1,
-                "field_id" => 2,
-                "value" => "1"
+                'request_id' => 1,
+                'field_id' => 2,
+                'value' => "1"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 20,
-                "value" => "66"
+                'request_id' => 1,
+                'field_id' => 20,
+                'value' => "66"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 53,
-                "value" => "2"
+                'request_id' => 1,
+                'field_id' => 53,
+                'value' => "2"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 54,
-                "value" => "2"
+                'request_id' => 1,
+                'field_id' => 54,
+                'value' => "2"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 58,
-                "value" => "120"
+                'request_id' => 1,
+                'field_id' => 58,
+                'value' => "120"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 83,
-                "value" => "10"
+                'request_id' => 1,
+                'field_id' => 83,
+                'value' => "10"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 92,
-                "value" => "10"
+                'request_id' => 1,
+                'field_id' => 92,
+                'value' => "10"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 101,
-                "value" => null
+                'request_id' => 1,
+                'field_id' => 101,
+                'value' => 0
             ],
             [
-                "request_id" => 1,
-                "field_id" => 110,
-                "value" => "10"
+                'request_id' => 1,
+                'field_id' => 110,
+                'value' => "10"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 122,
-                "value" => null
+                'request_id' => 1,
+                'field_id' => 122,
+                'value' => 0
             ],
             [
                 'request_id' => 1,
@@ -188,74 +188,74 @@ return [
                 'value' => 0,
             ],
             [
-                "request_id" => 2,
-                "field_id" => 2,
-                "value" => "1"
+                'request_id' => 2,
+                'field_id' => 2,
+                'value' => "1"
             ],
             [
-                "request_id" => 2,
-                "field_id" => 49,
-                "value" => "0"
+                'request_id' => 2,
+                'field_id' => 49,
+                'value' => "0"
             ],
             [
-                "request_id" => 2,
-                "field_id" => 50,
-                "value" => "0"
+                'request_id' => 2,
+                'field_id' => 50,
+                'value' => "0"
             ],
             [
-                "request_id" => 2,
-                "field_id" => 51,
-                "value" => "0"
+                'request_id' => 2,
+                'field_id' => 51,
+                'value' => "0"
             ],
             [
-                "request_id" => 2,
-                "field_id" => 52,
-                "value" => "2"
+                'request_id' => 2,
+                'field_id' => 52,
+                'value' => "2"
             ],
             [
-                "request_id" => 2,
-                "field_id" => 53,
-                "value" => "0"
+                'request_id' => 2,
+                'field_id' => 53,
+                'value' => "0"
             ],
             [
-                "request_id" => 2,
-                "field_id" => 54,
-                "value" => "1"
+                'request_id' => 2,
+                'field_id' => 54,
+                'value' => "1"
             ],
             [
-                "request_id" => 2,
-                "field_id" => 60,
-                "value" => "0"
+                'request_id' => 2,
+                'field_id' => 60,
+                'value' => "0"
             ],
             [
-                "request_id" => 2,
-                "field_id" => 64,
-                "value" => "0"
+                'request_id' => 2,
+                'field_id' => 64,
+                'value' => "0"
             ],
             [
-                "request_id" => 2,
-                "field_id" => 101,
-                "value" => null
+                'request_id' => 2,
+                'field_id' => 101,
+                'value' => 0
             ],
             [
-                "request_id" => 2,
-                "field_id" => 122,
-                "value" => null
+                'request_id' => 2,
+                'field_id' => 122,
+                'value' => 0
             ],
             [
-                "request_id" => 2,
-                "field_id" => 123,
-                "value" => "1"
+                'request_id' => 2,
+                'field_id' => 123,
+                'value' => "1"
             ],
             [
-                "request_id" => 2,
-                "field_id" => 124,
-                "value" => "1"
+                'request_id' => 2,
+                'field_id' => 124,
+                'value' => "1"
             ],
             [
-                "request_id" => 2,
-                "field_id" => 125,
-                "value" => "1"
+                'request_id' => 2,
+                'field_id' => 125,
+                'value' => "1"
             ],
             [
                 'request_id' => 2,
@@ -278,44 +278,44 @@ return [
                 'value' => 0,
             ],
             [
-                "request_id" => 3,
-                "field_id" => 2,
-                "value" => "1"
+                'request_id' => 3,
+                'field_id' => 2,
+                'value' => "1"
             ],
             [
-                "request_id" => 3,
-                "field_id" => 53,
-                "value" => "2"
+                'request_id' => 3,
+                'field_id' => 53,
+                'value' => "2"
             ],
             [
-                "request_id" => 3,
-                "field_id" => 54,
-                "value" => "1"
+                'request_id' => 3,
+                'field_id' => 54,
+                'value' => "1"
             ],
             [
-                "request_id" => 3,
-                "field_id" => 55,
-                "value" => "0"
+                'request_id' => 3,
+                'field_id' => 55,
+                'value' => "0"
             ],
             [
-                "request_id" => 3,
-                "field_id" => 101,
-                "value" => null
+                'request_id' => 3,
+                'field_id' => 101,
+                'value' => 0
             ],
             [
-                "request_id" => 3,
-                "field_id" => 122,
-                "value" => null
+                'request_id' => 3,
+                'field_id' => 122,
+                'value' => 0
             ],
             [
-                "request_id" => 3,
-                "field_id" => 146,
-                "value" => null
+                'request_id' => 3,
+                'field_id' => 146,
+                'value' => null
             ],
             [
-                "request_id" => 3,
-                "field_id" => 158,
-                "value" => null
+                'request_id' => 3,
+                'field_id' => 158,
+                'value' => null
             ]],
         "report_periods" => [[]],
         "request_errors" => [],
@@ -327,7 +327,7 @@ return [
                 "notification" => 'Из заявки <b>№1 "Добавление/изменение тегов (Определяется типом задачи)" </b>, количество в работу: <b>10</b> с приоритетом: <b>Товар-новинка/эксклюзив (трафикообразующий)</b> создана связанная заявка <b>№2 "!@#$%^&*()_+`-]\'/[;.,}"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"</b>',
                 "status" => 0,
                 "created_at" => '2020-01-01 00:00:01',
-                "request_id" => 2,
+                'request_id' => 2,
                 "priority" => 2,
                 "recipients" => "Константин Куцан, Супервайзер Начальникович 1"
             ],
@@ -337,7 +337,7 @@ return [
                 "notification" => 'Из заявки <b>№1 "Добавление/изменение тегов (Определяется типом задачи)" </b>, количество в работу: <b>10</b> с приоритетом: <b>Товар-новинка/эксклюзив (трафикообразующий)</b> создана связанная заявка <b>№2 "!@#$%^&*()_+`-]\'/[;.,}"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"</b>',
                 "status" => 0,
                 "created_at" => '2020-01-01 00:00:01',
-                "request_id" => 2,
+                'request_id' => 2,
                 "priority" => 2,
                 "recipients" => "Константин Куцан, Супервайзер Начальникович 1"
             ],
@@ -347,7 +347,7 @@ return [
                 "notification" => 'Из заявки <b>№1 "Добавление/изменение тегов (Определяется типом задачи)" </b>, количество в работу: <b>10</b> с приоритетом: <b>Товар-новинка/эксклюзив (трафикообразующий)</b> создана связанная заявка <b>№3 "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"</b>',
                 "status" => 0,
                 "created_at" => '2020-01-02 00:00:01',
-                "request_id" => 3,
+                'request_id' => 3,
                 "priority" => 2,
                 "recipients" => "Константин Куцан, Супервайзер Категоркин 15"
             ],
@@ -357,7 +357,7 @@ return [
                 "notification" => 'Из заявки <b>№1 "Добавление/изменение тегов (Определяется типом задачи)" </b>, количество в работу: <b>10</b> с приоритетом: <b>Товар-новинка/эксклюзив (трафикообразующий)</b> создана связанная заявка <b>№3 "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"</b>',
                 "status" => 0,
                 "created_at" => '2020-01-02 00:00:01',
-                "request_id" => 3,
+                'request_id' => 3,
                 "priority" => 2,
                 "recipients" => "Константин Куцан, Супервайзер Категоркин 15"
             ]

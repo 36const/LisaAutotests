@@ -277,84 +277,84 @@ return [
                     ],
                     'requests_fields' => [
                         [
-                            "request_id" => 1,
-                            "field_id" => 1,
-                            "value" => "1"
+                            'request_id' => 1,
+                            'field_id' => 1,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 3,
-                            "value" => "1"
+                            'request_id' => 1,
+                            'field_id' => 3,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 20,
-                            "value" => "66"
+                            'request_id' => 1,
+                            'field_id' => 20,
+                            'value' => "66"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 1,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 1,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 32,
-                            "value" => "52"
+                            'request_id' => 1,
+                            'field_id' => 32,
+                            'value' => "52"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 49,
-                            "value" => "0"
+                            'request_id' => 1,
+                            'field_id' => 49,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 50,
-                            "value" => "0"
+                            'request_id' => 1,
+                            'field_id' => 50,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 51,
-                            "value" => "0"
+                            'request_id' => 1,
+                            'field_id' => 51,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 52,
-                            "value" => "2"
+                            'request_id' => 1,
+                            'field_id' => 52,
+                            'value' => "2"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 53,
-                            "value" => "0.5"
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => "0.5"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 54,
-                            "value" => "2"
+                            'request_id' => 1,
+                            'field_id' => 54,
+                            'value' => "2"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 60,
-                            "value" => "0"
+                            'request_id' => 1,
+                            'field_id' => 60,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 64,
-                            "value" => "0"
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => 0
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 1,
@@ -377,89 +377,89 @@ return [
                             'value' => 0,
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 3,
-                            "value" => "1"
+                            'request_id' => 2,
+                            'field_id' => 3,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 8,
-                            "value" => "1"
+                            'request_id' => 2,
+                            'field_id' => 8,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 15,
-                            "value" => "1"
+                            'request_id' => 2,
+                            'field_id' => 15,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 19,
-                            "value" => "1"
+                            'request_id' => 2,
+                            'field_id' => 19,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 20,
-                            "value" => "66"
+                            'request_id' => 2,
+                            'field_id' => 20,
+                            'value' => "66"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 2,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 2,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 32,
-                            "value" => "52"
+                            'request_id' => 2,
+                            'field_id' => 32,
+                            'value' => "52"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 49,
-                            "value" => "0"
+                            'request_id' => 2,
+                            'field_id' => 49,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 50,
-                            "value" => "0"
+                            'request_id' => 2,
+                            'field_id' => 50,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 51,
-                            "value" => "0"
+                            'request_id' => 2,
+                            'field_id' => 51,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 53,
-                            "value" => "3"
+                            'request_id' => 2,
+                            'field_id' => 53,
+                            'value' => "3"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 60,
-                            "value" => "0"
+                            'request_id' => 2,
+                            'field_id' => 60,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 64,
-                            "value" => "0"
+                            'request_id' => 2,
+                            'field_id' => 64,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 2,
+                            'field_id' => 101,
+                            'value' => 0
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 114,
-                            "value" => "3"
+                            'request_id' => 2,
+                            'field_id' => 114,
+                            'value' => "3"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 2,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 1,
@@ -482,134 +482,59 @@ return [
                             'value' => 0,
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 1,
-                            "value" => "1"
+                            'request_id' => 3,
+                            'field_id' => 1,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 3,
-                            "value" => "1"
+                            'request_id' => 3,
+                            'field_id' => 3,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 20,
-                            "value" => "66"
+                            'request_id' => 3,
+                            'field_id' => 20,
+                            'value' => "66"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 3,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 3,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 32,
-                            "value" => "52"
+                            'request_id' => 3,
+                            'field_id' => 32,
+                            'value' => "52"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 53,
-                            "value" => "0.5"
+                            'request_id' => 3,
+                            'field_id' => 53,
+                            'value' => "0.5"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 54,
-                            "value" => "2"
+                            'request_id' => 3,
+                            'field_id' => 54,
+                            'value' => "2"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 61,
-                            "value" => "0"
+                            'request_id' => 3,
+                            'field_id' => 61,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 3,
+                            'field_id' => 101,
+                            'value' => 0
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 122,
-                            "value" => null
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 1,
-                            "value" => "1"
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 3,
-                            "value" => "1"
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 6,
-                            "value" => "1"
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 7,
-                            "value" => "1"
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 20,
-                            "value" => "66"
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 29,
-                            "value" => "30"
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 30,
-                            "value" => "39"
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 32,
-                            "value" => "52"
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 53,
-                            "value" => "3"
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 54,
-                            "value" => "2"
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 55,
-                            "value" => "0"
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 101,
-                            "value" => null
-                        ],
-                        [
-                            "request_id" => 4,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 3,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 1,
@@ -622,59 +547,69 @@ return [
                             'value' => 0,
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 1,
-                            "value" => "1"
+                            'request_id' => 4,
+                            'field_id' => 1,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 3,
-                            "value" => "1"
+                            'request_id' => 4,
+                            'field_id' => 3,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 20,
-                            "value" => "66"
+                            'request_id' => 4,
+                            'field_id' => 6,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 4,
+                            'field_id' => 7,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 4,
+                            'field_id' => 20,
+                            'value' => "66"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 32,
-                            "value" => "52"
+                            'request_id' => 4,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 53,
-                            "value" => "0.5"
+                            'request_id' => 4,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 54,
-                            "value" => "2"
+                            'request_id' => 4,
+                            'field_id' => 32,
+                            'value' => "52"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 59,
-                            "value" => "0"
+                            'request_id' => 4,
+                            'field_id' => 53,
+                            'value' => "3"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 4,
+                            'field_id' => 54,
+                            'value' => "2"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 4,
+                            'field_id' => 55,
+                            'value' => "0"
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 101,
+                            'value' => 0
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 1,
@@ -687,59 +622,124 @@ return [
                             'value' => 0,
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 1,
-                            "value" => "1"
+                            'request_id' => 5,
+                            'field_id' => 1,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 3,
-                            "value" => "1"
+                            'request_id' => 5,
+                            'field_id' => 3,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 20,
-                            "value" => "66"
+                            'request_id' => 5,
+                            'field_id' => 20,
+                            'value' => "66"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 5,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 5,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 32,
-                            "value" => "52"
+                            'request_id' => 5,
+                            'field_id' => 32,
+                            'value' => "52"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 53,
-                            "value" => "0.5"
+                            'request_id' => 5,
+                            'field_id' => 53,
+                            'value' => "0.5"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 54,
-                            "value" => "2"
+                            'request_id' => 5,
+                            'field_id' => 54,
+                            'value' => "2"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 57,
-                            "value" => "0"
+                            'request_id' => 5,
+                            'field_id' => 59,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 5,
+                            'field_id' => 101,
+                            'value' => 0
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 5,
+                            'field_id' => 122,
+                            'value' => 0
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 1,
+                            'value' => "1"
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 3,
+                            'value' => "1"
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 20,
+                            'value' => "66"
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 29,
+                            'value' => "30"
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 30,
+                            'value' => "39"
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 32,
+                            'value' => "52"
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 53,
+                            'value' => "0.5"
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 54,
+                            'value' => "2"
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 57,
+                            'value' => "0"
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 101,
+                            'value' => 0
+                        ],
+                        [
+                            'request_id' => 6,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 1,
@@ -1075,79 +1075,79 @@ return [
                     ],
                     'requests_fields' => [
                         [
-                            "request_id" => 1,
-                            "field_id" => 8,
-                            "value" => "1"
+                            'request_id' => 1,
+                            'field_id' => 8,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 15,
-                            "value" => "1"
+                            'request_id' => 1,
+                            'field_id' => 15,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 19,
-                            "value" => "1"
+                            'request_id' => 1,
+                            'field_id' => 19,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 20,
-                            "value" => "65"
+                            'request_id' => 1,
+                            'field_id' => 20,
+                            'value' => "65"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 1,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 1,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 49,
-                            "value" => "0"
+                            'request_id' => 1,
+                            'field_id' => 49,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 50,
-                            "value" => "0"
+                            'request_id' => 1,
+                            'field_id' => 50,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 51,
-                            "value" => "0"
+                            'request_id' => 1,
+                            'field_id' => 51,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 53,
-                            "value" => "3"
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => "3"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 60,
-                            "value" => "0"
+                            'request_id' => 1,
+                            'field_id' => 60,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 64,
-                            "value" => "0"
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => 0
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 114,
-                            "value" => "3"
+                            'request_id' => 1,
+                            'field_id' => 114,
+                            'value' => "3"
                         ],
                         [
-                            "request_id" => 1,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 1,
@@ -1170,74 +1170,74 @@ return [
                             'value' => 0,
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 1,
-                            "value" => "1"
+                            'request_id' => 2,
+                            'field_id' => 1,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 20,
-                            "value" => "65"
+                            'request_id' => 2,
+                            'field_id' => 20,
+                            'value' => "65"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 2,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 2,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 49,
-                            "value" => "0"
+                            'request_id' => 2,
+                            'field_id' => 49,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 50,
-                            "value" => "0"
+                            'request_id' => 2,
+                            'field_id' => 50,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 51,
-                            "value" => "0"
+                            'request_id' => 2,
+                            'field_id' => 51,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 52,
-                            "value" => "2"
+                            'request_id' => 2,
+                            'field_id' => 52,
+                            'value' => "2"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 53,
-                            "value" => "0.5"
+                            'request_id' => 2,
+                            'field_id' => 53,
+                            'value' => "0.5"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 54,
-                            "value" => "1.5"
+                            'request_id' => 2,
+                            'field_id' => 54,
+                            'value' => "1.5"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 60,
-                            "value" => "0"
+                            'request_id' => 2,
+                            'field_id' => 60,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 64,
-                            "value" => "0"
+                            'request_id' => 2,
+                            'field_id' => 64,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 2,
+                            'field_id' => 101,
+                            'value' => 0
                         ],
                         [
-                            "request_id" => 2,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 2,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 1,
@@ -1260,59 +1260,59 @@ return [
                             'value' => 0,
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 1,
-                            "value" => "1"
+                            'request_id' => 3,
+                            'field_id' => 1,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 6,
-                            "value" => "1"
+                            'request_id' => 3,
+                            'field_id' => 6,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 7,
-                            "value" => "1"
+                            'request_id' => 3,
+                            'field_id' => 7,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 20,
-                            "value" => "65"
+                            'request_id' => 3,
+                            'field_id' => 20,
+                            'value' => "65"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 3,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 3,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 53,
-                            "value" => "3"
+                            'request_id' => 3,
+                            'field_id' => 53,
+                            'value' => "3"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 54,
-                            "value" => "1.5"
+                            'request_id' => 3,
+                            'field_id' => 54,
+                            'value' => "1.5"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 55,
-                            "value" => "0"
+                            'request_id' => 3,
+                            'field_id' => 55,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 3,
+                            'field_id' => 101,
+                            'value' => 0
                         ],
                         [
-                            "request_id" => 3,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 3,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 3,
@@ -1325,49 +1325,49 @@ return [
                             'value' => 0,
                         ],
                         [
-                            "request_id" => 4,
-                            "field_id" => 1,
-                            "value" => "1"
+                            'request_id' => 4,
+                            'field_id' => 1,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 4,
-                            "field_id" => 20,
-                            "value" => "65"
+                            'request_id' => 4,
+                            'field_id' => 20,
+                            'value' => "65"
                         ],
                         [
-                            "request_id" => 4,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 4,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 4,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 4,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 4,
-                            "field_id" => 53,
-                            "value" => "0.5"
+                            'request_id' => 4,
+                            'field_id' => 53,
+                            'value' => "0.5"
                         ],
                         [
-                            "request_id" => 4,
-                            "field_id" => 54,
-                            "value" => "1.5"
+                            'request_id' => 4,
+                            'field_id' => 54,
+                            'value' => "1.5"
                         ],
                         [
-                            "request_id" => 4,
-                            "field_id" => 59,
-                            "value" => "0"
+                            'request_id' => 4,
+                            'field_id' => 59,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 4,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 4,
+                            'field_id' => 101,
+                            'value' => 0
                         ],
                         [
-                            "request_id" => 4,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 4,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 4,
@@ -1380,49 +1380,49 @@ return [
                             'value' => 0,
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 2,
-                            "value" => "1"
+                            'request_id' => 5,
+                            'field_id' => 2,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 20,
-                            "value" => "65"
+                            'request_id' => 5,
+                            'field_id' => 20,
+                            'value' => "65"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 5,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 5,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 53,
-                            "value" => "2"
+                            'request_id' => 5,
+                            'field_id' => 53,
+                            'value' => "2"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 54,
-                            "value" => "1.5"
+                            'request_id' => 5,
+                            'field_id' => 54,
+                            'value' => "1.5"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 59,
-                            "value" => "0"
+                            'request_id' => 5,
+                            'field_id' => 59,
+                            'value' => "0"
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 5,
+                            'field_id' => 101,
+                            'value' => 0
                         ],
                         [
-                            "request_id" => 5,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 5,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 5,
@@ -1435,99 +1435,99 @@ return [
                             'value' => 0,
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 2,
-                            "value" => "1"
+                            'request_id' => 6,
+                            'field_id' => 2,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 20,
-                            "value" => "65"
+                            'request_id' => 6,
+                            'field_id' => 20,
+                            'value' => "65"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 27,
-                            "value" => "24"
+                            'request_id' => 6,
+                            'field_id' => 27,
+                            'value' => "24"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 6,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 6,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 47,
-                            "value" => "10"
+                            'request_id' => 6,
+                            'field_id' => 47,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 48,
-                            "value" => "10"
+                            'request_id' => 6,
+                            'field_id' => 48,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 53,
-                            "value" => "2"
+                            'request_id' => 6,
+                            'field_id' => 53,
+                            'value' => "2"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 54,
-                            "value" => "1.5"
+                            'request_id' => 6,
+                            'field_id' => 54,
+                            'value' => "1.5"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 56,
-                            "value" => "60"
+                            'request_id' => 6,
+                            'field_id' => 56,
+                            'value' => "60"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 62,
-                            "value" => "10"
+                            'request_id' => 6,
+                            'field_id' => 62,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 63,
-                            "value" => "10"
+                            'request_id' => 6,
+                            'field_id' => 63,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 70,
-                            "value" => "10"
+                            'request_id' => 6,
+                            'field_id' => 70,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 86,
-                            "value" => "10"
+                            'request_id' => 6,
+                            'field_id' => 86,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 87,
-                            "value" => "10"
+                            'request_id' => 6,
+                            'field_id' => 87,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 88,
-                            "value" => "10"
+                            'request_id' => 6,
+                            'field_id' => 88,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 100,
-                            "value" => "10"
+                            'request_id' => 6,
+                            'field_id' => 100,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 6,
+                            'field_id' => 101,
+                            'value' => 0
                         ],
                         [
-                            "request_id" => 6,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 6,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 6,
@@ -1540,64 +1540,64 @@ return [
                             'value' => 0,
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 2,
-                            "value" => "1"
+                            'request_id' => 7,
+                            'field_id' => 2,
+                            'value' => "1"
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 20,
-                            "value" => "65"
+                            'request_id' => 7,
+                            'field_id' => 20,
+                            'value' => "65"
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 29,
-                            "value" => "30"
+                            'request_id' => 7,
+                            'field_id' => 29,
+                            'value' => "30"
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 30,
-                            "value" => "39"
+                            'request_id' => 7,
+                            'field_id' => 30,
+                            'value' => "39"
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 53,
-                            "value" => "2"
+                            'request_id' => 7,
+                            'field_id' => 53,
+                            'value' => "2"
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 54,
-                            "value" => "1.5"
+                            'request_id' => 7,
+                            'field_id' => 54,
+                            'value' => "1.5"
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 58,
-                            "value" => "90"
+                            'request_id' => 7,
+                            'field_id' => 58,
+                            'value' => "90"
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 83,
-                            "value" => "10"
+                            'request_id' => 7,
+                            'field_id' => 83,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 92,
-                            "value" => "10"
+                            'request_id' => 7,
+                            'field_id' => 92,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 101,
-                            "value" => null
+                            'request_id' => 7,
+                            'field_id' => 101,
+                            'value' => 0
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 110,
-                            "value" => "10"
+                            'request_id' => 7,
+                            'field_id' => 110,
+                            'value' => "10"
                         ],
                         [
-                            "request_id" => 7,
-                            "field_id" => 122,
-                            "value" => null
+                            'request_id' => 7,
+                            'field_id' => 122,
+                            'value' => 0
                         ],
                         [
                             'request_id' => 7,
