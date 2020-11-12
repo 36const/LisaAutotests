@@ -54,9 +54,9 @@ class FunctionalTester extends \Codeception\Actor
     {
         $I = $this;
 
-        $I->cantSeeCookie('viewTabsEnabled', ['be4b81fa34475189d2826748619c3246a9c3829df5c6554d072ea6c0e760ac55a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22viewTabsEnabled%22%3Bi%3A1%3Bb%3A1%3B%7D']);
+        $I->cantSeeCookie('viewTabsEnabled');
         $I->sendGET('/bpm/request/enable-tabs');
-        $I->canSeeCookie('viewTabsEnabled', ['be4b81fa34475189d2826748619c3246a9c3829df5c6554d072ea6c0e760ac55a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22viewTabsEnabled%22%3Bi%3A1%3Bb%3A1%3B%7D']);
+        $I->canSeeCookie('viewTabsEnabled');
     }
 
     public function changeStatus($requestParameter, $requestBody)

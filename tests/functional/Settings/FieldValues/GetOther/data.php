@@ -32,7 +32,7 @@ return [
                             "value" => "Предоставлены продактом частично. С дополнительным поиском."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[6][@value='5' and @disabled]",
+                            "selector" => "//select[@name='RequestField[21]']/option[6][@value='5']",
                             "value" => "Характеристики добавлены с обновлением фото/описания"
                         ],
                     ],
@@ -42,7 +42,7 @@ return [
                             "value" => "не задано"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[23]']/option[2][@value='14' and @disabled]",
+                            "selector" => "//select[@name='RequestField[23]']/option[2][@value='14']",
                             "value" => "Не предоставлены продактом. Выполнен поиск."
                         ],
                         [
@@ -80,7 +80,7 @@ return [
                             "value" => "Предоставлены продактом частично. С дополнительным поиском."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[22]']/option[6][@value='10' and @disabled]",
+                            "selector" => "//select[@name='RequestField[22]']/option[6][@value='10']",
                             "value" => "Фото предоставлены фотостудией"
                         ],
                     ],
@@ -94,7 +94,7 @@ return [
                             "value" => "Без обработки (только кадрирование)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[24]']/option[3][@value='17' and @disabled]",
+                            "selector" => "//select[@name='RequestField[24]']/option[3][@value='17']",
                             "value" => "Удаление теней/фона/ватермарков/цветокорекция"
                         ],
                         [
@@ -116,7 +116,7 @@ return [
                             "value" => "Предоставлено продактом"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[27]']/option[4][@value='26' and @disabled]",
+                            "selector" => "//select[@name='RequestField[27]']/option[4][@value='26']",
                             "value" => "Предоставлено продактом, в плохом качестве (производился поиск)"
                         ],
                     ],
@@ -138,7 +138,7 @@ return [
                             "value" => "Один варьируемый параметр"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[31]']/option[5][@value='51' and @disabled]",
+                            "selector" => "//select[@name='RequestField[31]']/option[5][@value='51']",
                             "value" => "Три варьируемых параметра"
                         ],
                     ],
@@ -152,7 +152,7 @@ return [
                             "value" => "Без уточнений"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[25]']/option[3][@value='20' and @disabled]",
+                            "selector" => "//select[@name='RequestField[25]']/option[3][@value='20']",
                             "value" => "Более 5 уточнений"
                         ],
                         [
@@ -166,7 +166,7 @@ return [
                             "value" => "не задано"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[26]']/option[2][@value='23' and @disabled]",
+                            "selector" => "//select[@name='RequestField[26]']/option[2][@value='23']",
                             "value" => "Английский"
                         ],
                         [
