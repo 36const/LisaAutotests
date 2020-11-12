@@ -112,11 +112,9 @@ class RequestView extends FunctionalTester
     public $unsetFields = [
         'direction',
         'awaiting_correction',
-        'attachments',
         'reason_id',
         'reason',
         'parent_id',
-        'difficulty',
         'team_direction',
         'sync_source_id',
         'employee_code_1c',
