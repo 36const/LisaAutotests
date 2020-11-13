@@ -115,7 +115,6 @@ return [
                             "amount_to_work" => 10,
                             "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "description" => 'description',
-                            "attachments" => '[]',
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
@@ -128,7 +127,6 @@ return [
                             "actual_finish_date" => null,
                             "supervisor_process_date" => null,
                             "supervisor_check_date" => null,
-                            "difficulty" => null,
                             "result_comment" => '',
                             "supervisor_comment" => '',
 //                            "last_change_status_date" => "2020-01-01 00:00:01",
@@ -192,12 +190,12 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 101,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
                             'field_id' => 122,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
@@ -212,12 +210,12 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 146,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
                             'field_id' => 158,
-                            'value' => null,
+                            'value' => 0,
                         ],
                     ],
                 ],
@@ -315,7 +313,6 @@ return [
                             "amount_to_work" => 10,
                             "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "description" => 'description',
-                            "attachments" => '[]',
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
@@ -328,7 +325,6 @@ return [
                             //"actual_finish_date" => null,
                             //"supervisor_process_date" => '2020-01-01 00:00:02',
                             "supervisor_check_date" => null,
-                            "difficulty" => null,
                             "result_comment" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "supervisor_comment" => '',
                             //"last_change_status_date" => "2020-01-01 00:00:01",
@@ -482,7 +478,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 101,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
@@ -492,7 +488,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 122,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
@@ -507,12 +503,12 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 146,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
                             'field_id' => 158,
-                            'value' => null,
+                            'value' => 0,
                         ],
                     ],
                 ],
@@ -592,7 +588,6 @@ return [
                             "amount_to_work" => 10,
                             "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "description" => 'description',
-                            "attachments" => '[]',
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
@@ -605,7 +600,6 @@ return [
                             "actual_finish_date" => null,
                             "supervisor_process_date" => null,
                             "supervisor_check_date" => null,
-                            "difficulty" => null,
                             "result_comment" => null,
                             "supervisor_comment" => null,
                             //"last_change_status_date" => "2020-01-01 00:00:01",
@@ -669,12 +663,12 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 101,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
                             'field_id' => 122,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
@@ -689,12 +683,12 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 146,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
                             'field_id' => 158,
-                            'value' => null,
+                            'value' => 0,
                         ],
                     ],
                 ],
@@ -773,7 +767,6 @@ return [
                             "amount_to_work" => 10,
                             "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "description" => 'description',
-                            "attachments" => '[]',
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
@@ -786,7 +779,6 @@ return [
                             "actual_finish_date" => null,
                             "supervisor_process_date" => null,
                             "supervisor_check_date" => null,
-                            "difficulty" => null,
                             "result_comment" => null,
                             "supervisor_comment" => null,
                             //"last_change_status_date" => "2020-01-01 00:00:01",
@@ -850,12 +842,12 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 101,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
                             'field_id' => 122,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
@@ -870,12 +862,12 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 146,
-                            'value' => null,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
                             'field_id' => 158,
-                            'value' => null,
+                            'value' => 0,
                         ],
                     ],
                 ],

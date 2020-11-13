@@ -63,7 +63,6 @@ Email клієнта: fishman@rozetka.com.ua
 Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395acaa4d6c3?_g=(refreshInterval:(pause:!t,value:0),time:(from:now%2FM,mode:quick,to:now%2FM))&_a=(description:\'\',filters:!(),fullScreenMode:!f,options:(darkTheme:!f,hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(),gridData:(h:15,i:\'6\',w:24,x:24,y:30),id:\'7ba18f80-2238-11ea-a052-1d55fc41757c\',panelIndex:\'6\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'7\',w:24,x:0,y:0),id:e8db8c70-21ae-11ea-825a-395acaa4d6c3,panelIndex:\'7\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'8\',w:24,x:24,y:0),id:bd6c7d00-223b-11ea-a052-1d55fc41757c,panelIndex:\'8\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'9\',w:12,x:0,y:15),id:fd87de60-2241-11ea-a052-1d55fc41757c,panelIndex:\'9\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'10\',w:12,x:12,y:15),id:b8a458e0-2283-11ea-a052-1d55fc41757c,panelIndex:\'10\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'11\',w:24,x:24,y:45),id:\'1e605320-2287-11ea-825a-395acaa4d6c3\',panelIndex:\'11\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'12\',w:24,x:0,y:45),id:f280c580-228d-11ea-825a-395acaa4d6c3,panelIndex:\'12\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'13\',w:24,x:24,y:15),id:\'36fe2110-24bb-11ea-a052-1d55fc41757c\',panelIndex:\'13\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'14\',w:24,x:0,y:30),id:\'6f8eba80-24ca-11ea-825a-395acaa4d6c3\',panelIndex:\'14\',type:visualization,version:\'6.4.2\')),query:(language:kuery,query:\'\'),timeRestore:!t,title:\'Goods%20Experimental%20Copy\',viewMode:view); https://comments-images.rozetka.com.ua/private/goods_comments/0/0/7/717/7717585.jpg;
 
 Службова інформація: нужно исправить характеристики↵Представитель компании [a.buryma@mobiking.com.ua] (2020-02-28 11:45:54):↵Добрый день, приносим свои извинения, за опечатку в характеристиках, в данной модели нет разъема 3.5-AUX.',
-                            "attachments" => '[]',
                             "category_id" => 339,
                             "seller_id" => 5,
                             "recommendations" => null,
@@ -76,7 +75,6 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
                             "actual_finish_date" => null,
                             "supervisor_process_date" => null,
                             "supervisor_check_date" => null,
-                            "difficulty" => null,
                             "result_comment" => null,
                             "supervisor_comment" => null,
                             //"last_change_status_date" =>
@@ -164,7 +162,6 @@ Email клієнта:
 Media: 
 
 Службова інформація: ',
-                            "attachments" => '[]',
                             "category_id" => 339,
                             "seller_id" => 5,
                             "recommendations" => null,
@@ -177,7 +174,6 @@ Media:
                             "actual_finish_date" => null,
                             "supervisor_process_date" => null,
                             "supervisor_check_date" => null,
-                            "difficulty" => null,
                             "result_comment" => null,
                             "supervisor_comment" => null,
                             //"last_change_status_date" =>

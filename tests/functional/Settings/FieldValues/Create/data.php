@@ -55,7 +55,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Создание значения Наличие описаний к товарам	 к товарам, Активное',
+            'description' => 'Создание значения Наличие описаний к товарам, Активное',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

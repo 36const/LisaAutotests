@@ -17,7 +17,6 @@ return [
                 "amount_to_work" => 10,
                 "subject" => "Проверка скрытых товаров (Работа с товарами Маркета)",
                 "description" => 'description',
-                "attachments" => '[]',
                 "category_id" => null,
                 "seller_id" => 83,
                 "recommendations" => '',
@@ -30,7 +29,6 @@ return [
                 "actual_finish_date" => '2020-01-01 00:00:04',
                 "supervisor_process_date" => '2020-01-01 00:00:02',
                 "supervisor_check_date" => null,
-                "difficulty" => null,
                 "result_comment" => 'Комментарий к результату задачи',
                 "supervisor_comment" => '',
                 //"last_change_status_date" => "2020-01-01 00:00:01",
@@ -131,7 +129,7 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 101,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
@@ -141,7 +139,7 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 122,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
@@ -156,12 +154,12 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
         ],
         "report_periods" => [[]],

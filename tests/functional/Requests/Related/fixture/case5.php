@@ -18,7 +18,6 @@ return [
                 "amount_to_work" => 10,
                 "subject" => "Изменение существующих параметров/значений (Определяется типом задачи)",
                 "description" => "Описание",
-                "attachments" => "[]",
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => null,
@@ -31,7 +30,6 @@ return [
                 "actual_finish_date" => null,
                 "supervisor_process_date" => '2020-01-01 00:00:02',
                 "supervisor_check_date" => null,
-                "difficulty" => null,
                 "result_comment" => null,
                 "supervisor_comment" => 'Комментарий',
                 "last_change_status_date" => "2020-01-01 00:00:01",
@@ -45,49 +43,49 @@ return [
         ],
         "requests_fields" => [
             [
-                "request_id" => 1,
-                "field_id" => 2,
-                "value" => "1"
+                'request_id' => 1,
+                'field_id' => 2,
+                'value' => "1"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 20,
-                "value" => "66"
+                'request_id' => 1,
+                'field_id' => 20,
+                'value' => "66"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 53,
-                "value" => "2"
+                'request_id' => 1,
+                'field_id' => 53,
+                'value' => "2"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 54,
-                "value" => "2"
+                'request_id' => 1,
+                'field_id' => 54,
+                'value' => "2"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 59,
-                "value" => "0"
+                'request_id' => 1,
+                'field_id' => 59,
+                'value' => "0"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 101,
-                "value" => null
+                'request_id' => 1,
+                'field_id' => 101,
+                'value' => 0
             ],
             [
-                "request_id" => 1,
-                "field_id" => 122,
-                "value" => null
+                'request_id' => 1,
+                'field_id' => 122,
+                'value' => 0
             ],
             [
                 'request_id' => 1,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
         ],
         "report_periods" => [[]],

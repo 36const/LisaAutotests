@@ -47,10 +47,10 @@ return [
                         ["selector" => "//div[@id='report-user_field']"],
 
                     ]
+                ]
             ]
         ]
-    ]
-],
+    ],
 
     'case2' => [
         'setting' => [

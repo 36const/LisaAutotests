@@ -44,9 +44,19 @@ class FunctionalTester extends \Codeception\Actor
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $I->runShellCommand('./yii bpm/request/clear-temporary-files');
         $I->purgeAllQueues();
+        $I->resetCookie('viewTabsEnabled');
 
         $I->wantTo($data['setting']['description']);
         $I->amOnPage('/');
+    }
+
+    public function setViewTabs()
+    {
+        $I = $this;
+
+        $I->cantSeeCookie('viewTabsEnabled');
+        $I->sendGET('/bpm/request/enable-tabs');
+        $I->canSeeCookie('viewTabsEnabled');
     }
 
     public function changeStatus($requestParameter, $requestBody)

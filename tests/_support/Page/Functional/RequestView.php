@@ -24,6 +24,7 @@ class RequestView extends FunctionalTester
     public static $svReportPeriods =        "//table[@class='table table-bordered detail-view']//th[text()='Отчетный период СВ']";
 
     public static $saveButton = "//button[@id='update-form-save']";
+    public static $tabsCheckbox = "//input[@id='tabs-toggle-button']";
 
     public static function findCheckbox(string $name)
     {
@@ -111,11 +112,9 @@ class RequestView extends FunctionalTester
     public $unsetFields = [
         'direction',
         'awaiting_correction',
-        'attachments',
         'reason_id',
         'reason',
         'parent_id',
-        'difficulty',
         'team_direction',
         'sync_source_id',
         'employee_code_1c',
@@ -188,9 +187,9 @@ class RequestView extends FunctionalTester
                         unset($request[$otherTypesField]);
                 }
             }
-
-            return $requests;
         }
+
+        return $requests;
     }
 
     /**

@@ -30,17 +30,17 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
             "pageObjects" => [
-            "canSee" => [
-                [
-                    ["selector" => User::$userStatus . '[@disabled]'],
-                    ["selector" => User::requestsBlockingManagerButton(11)],
-                    ["selector" => User::$warningAlert],
+                "canSee" => [
+                    [
+                        ["selector" => User::$userStatus . '[@disabled]'],
+                        ["selector" => User::requestsBlockingManagerButton(11)],
+                        ["selector" => User::$warningAlert],
+                    ]
+                ],
+                "cantSee" => [
                 ]
-            ],
-            "cantSee" => [
             ]
         ]
-            ]
     ],
 
     'case3' => [

@@ -90,7 +90,7 @@ return [
                 'UserBpm[userPermissions][viewOwnDashboards]' => '1',
                 'UserBpm[userPermissions][viewSplitterModerationRequests]' => '0',
                 'UserBpm[userPermissions][viewUser]' => '0'
-           ],
+            ],
             'db' => [
                 "lisa_fixtures" => [
                     "user_bpm" => [

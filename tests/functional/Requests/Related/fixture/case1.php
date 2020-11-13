@@ -18,7 +18,6 @@ return [
                 "amount_to_work" => 10,
                 "subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
                 "description" => "Описание",
-                "attachments" => "[]",
                 "category_id" => null,
                 "seller_id" => 83,
                 "recommendations" => null,
@@ -31,7 +30,6 @@ return [
                 "actual_finish_date" => null,
                 "supervisor_process_date" => '2020-01-01 00:00:02',
                 "supervisor_check_date" => null,
-                "difficulty" => null,
                 "result_comment" => null,
                 "supervisor_comment" => null,
                 "last_change_status_date" => "2020-01-01 00:00:01",
@@ -45,69 +43,69 @@ return [
         ],
         "requests_fields" => [
             [
-                "request_id" => 1,
-                "field_id" => 3,
-                "value" => "1"
+                'request_id' => 1,
+                'field_id' => 3,
+                'value' => "1"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 8,
-                "value" => "1"
+                'request_id' => 1,
+                'field_id' => 8,
+                'value' => "1"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 15,
-                "value" => "1"
+                'request_id' => 1,
+                'field_id' => 15,
+                'value' => "1"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 19,
-                "value" => "1"
+                'request_id' => 1,
+                'field_id' => 19,
+                'value' => "1"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 49,
-                "value" => "0"
+                'request_id' => 1,
+                'field_id' => 49,
+                'value' => "0"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 50,
-                "value" => "0"
+                'request_id' => 1,
+                'field_id' => 50,
+                'value' => "0"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 51,
-                "value" => "0"
+                'request_id' => 1,
+                'field_id' => 51,
+                'value' => "0"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 53,
-                "value" => "3"
+                'request_id' => 1,
+                'field_id' => 53,
+                'value' => "3"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 60,
-                "value" => "0"
+                'request_id' => 1,
+                'field_id' => 60,
+                'value' => "0"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 64,
-                "value" => "0"
+                'request_id' => 1,
+                'field_id' => 64,
+                'value' => "0"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 101,
-                "value" => null
+                'request_id' => 1,
+                'field_id' => 101,
+                'value' => 0
             ],
             [
-                "request_id" => 1,
-                "field_id" => 114,
-                "value" => "3"
+                'request_id' => 1,
+                'field_id' => 114,
+                'value' => "3"
             ],
             [
-                "request_id" => 1,
-                "field_id" => 122,
-                "value" => null
+                'request_id' => 1,
+                'field_id' => 122,
+                'value' => 0
             ],
             [
                 'request_id' => 1,
@@ -122,12 +120,12 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 146,
-                'value' => null,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 158,
-                'value' => null,
+                'value' => 0,
             ],
         ],
         "report_periods" => [[]],
@@ -137,11 +135,11 @@ return [
         "request_status_history" => [],
         "observers" => [
             [
-                "request_id" => 1,
+                'request_id' => 1,
                 "user_id" => 15
             ],
             [
-                "request_id" => 1,
+                'request_id' => 1,
                 "user_id" => 17
             ],
         ],

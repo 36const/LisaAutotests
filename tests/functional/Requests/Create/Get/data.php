@@ -420,7 +420,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
                         ["selector" => RequestCreate::findCheckbox(' Промо-описание')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка')  . '[@checked]'],
+                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                         ["selector" => RequestCreate::findCheckbox(' С видео')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' С тегами к товарам')],

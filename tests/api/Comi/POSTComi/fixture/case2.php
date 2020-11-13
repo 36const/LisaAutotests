@@ -47,7 +47,6 @@ return [
 ПОТ-34 см
  
 ",
-                "attachments" => '[]',
                 "category_id" => 437,
                 "seller_id" => 5,
                 "recommendations" => null,
@@ -60,7 +59,6 @@ return [
                 "actual_finish_date" => null,
                 "supervisor_process_date" => null,
                 "supervisor_check_date" => null,
-                "difficulty" => null,
                 "result_comment" => null,
                 "supervisor_comment" => null,
                 "last_change_status_date" => "2020-01-01 00:00:01",

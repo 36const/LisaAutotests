@@ -46,7 +46,7 @@ class POSTFromStatusesCest
      *
      */
     public function POSTFromStatuses(FunctionalTester $I, Example $data, RequestView $view,
-                                    RequestToCorrection $toCorrection, RequestCorrection $correction)
+                                     RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
 
@@ -66,5 +66,9 @@ class POSTFromStatusesCest
             $correction->amOnCorrection(1);
             $correction->checkFields($providerData['requestBody']);
         }
+
+        $I->setViewTabs();
+
+        $view->checkFields($providerData['db']);
     }
 }
