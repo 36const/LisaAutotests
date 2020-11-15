@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Перевод из "Ожидает (ризоны)" в "Частично выполнено / Выполнено" при ответе false',
+            'description' => 'Перевод из "Ожидает (ризоны)" в "Частично выполнено / Выполнено" при ответе false в "Ждёт группировки"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
@@ -248,7 +248,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Невозможность перевода из "Ожидает (ризоны)" в "Выполнена" при ответе true',
+            'description' => 'Невозможность перевода из "Ожидает (ризоны)" в "Выполнена" при ответе true в "Ждёт группировки"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'mock_data' => [
