@@ -26,20 +26,20 @@ class FunctionalTester extends \Codeception\Actor
 
     /**
      * @param Example $data - данные кейса из файла data.php
-     * @param TestHelper $testHelper
-     * @param array|string[] $globalFile - название файла глобальных фикстур, при значении [] глобальные фикстуры не используются
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @param string|null $globalFile - название файла глобальных фикстур, при значении [] глобальные фикстуры не используются
      */
-    public function loadDataForTest(Example $data, TestHelper $testHelper, array $globalFile = ['oneUser'])
+    public function loadDataForTest(Example $data, ?string $globalFile = 'oneUser')
     {
         $I = $this;
-        $testHelper->resetMock();
-        $testHelper->clearDB($I, $data, $globalFile);
-
+//        $testHelper->clearDB($I, $data, $globalFile);
+//        $testHelper->resetMock();
         if (isset($globalFile))
-            $testHelper->loadGlobalFixture($I, $globalFile);
-
-        $testHelper->loadFixtureAndMock($I, $data);
+//            $testHelper->loadGlobalFixture($I, $globalFile);
+            $I->insertFixtureToDatabase($globalFile);
+//
+//        $testHelper->loadFixtureAndMock($I, $data);
+//        $I->insertFixtureToDatabase($globalFile);
+        $I->loadFixtureFromDataprovider();
 
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $I->runShellCommand('./yii bpm/request/clear-temporary-files');

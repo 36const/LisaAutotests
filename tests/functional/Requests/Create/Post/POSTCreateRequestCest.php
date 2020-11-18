@@ -5,6 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\RequestView;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -44,7 +45,8 @@ class POSTCreateRequestCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+//        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require ('data.php'));
     }
 
     /**
@@ -58,7 +60,7 @@ class POSTCreateRequestCest
      */
     public function POSTCreateRequest(FunctionalTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
 
         $providerData = $data['provider_data'];
 

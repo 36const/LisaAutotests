@@ -5,6 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use rzk\TestHelper;
 use lisa\Page\Functional\RequestCreate;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -26,7 +27,8 @@ class CreateRequestModalCest
 
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+//        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require ('data.php'));
     }
 
     /**
@@ -40,7 +42,7 @@ class CreateRequestModalCest
      */
     public function CreateRequestModal(AcceptanceTester $I, Example $data, RequestCreate $create)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
 
         $create->amOnPage('/bpm/request');
         $I->cantSeeElement(RequestCreate::$createModal);

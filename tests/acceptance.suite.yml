@@ -5,6 +5,7 @@ modules:
         - \lisa\Helper\Acceptance
         - Cli
         - Asserts
+        - TestHelper
         - rzk\Database
         - WebDriver:
             url: http://gomer.local
