@@ -5,8 +5,10 @@ modules:
         - \lisa\Helper\Acceptance
         - Cli
         - Asserts
-        - TestHelper
         - rzk\Database
+        - TestHelper:
+            fixture:
+              autoload: true  # По-умолчанию false. Загружать автоматически фикстуры и моки с датапровайдера?
         - WebDriver:
             url: http://gomer.local
             browser: chrome

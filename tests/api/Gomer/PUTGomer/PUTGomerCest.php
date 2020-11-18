@@ -3,6 +3,7 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -27,7 +28,8 @@ class PUTGomerCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+//        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -40,7 +42,7 @@ class PUTGomerCest
      */
     public function PUTGomer(ApiTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->sendPUT($providerData['requestURL'], $providerData['requestBody']);

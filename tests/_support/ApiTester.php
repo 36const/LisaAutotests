@@ -32,22 +32,31 @@ class ApiTester extends \Codeception\Actor
      * @param bool $globalUsing - нужно ли использовать глобальные фикстуры
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function loadDataForTest(Example $data, TestHelper $testHelper,
-                                    array $globalFile = ['oneUser'], bool $globalUsing = true)
+    public function loadDataForTest(Example $data, ?string $globalFile = 'oneUser')
     {
         $I = $this;
-        $testHelper->resetMock();
-        $testHelper->clearDB($I, $data, $globalFile);
 
-        if ($globalUsing)
-            $testHelper->loadGlobalFixture($I, $globalFile);
+        if (isset($globalFile))
+            $I->insertFixtureToDatabase($globalFile);
 
-        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
-
-        $testHelper->loadFixtureAndMock($I, $data);
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $I->wantTo($data['setting']['description']);
     }
+
+//    public function loadDataForTest(Example $data, TestHelper $testHelper,
+//                                    array $globalFile = ['oneUser'], bool $globalUsing = true)
+//    {
+//        $I = $this;
+//        $testHelper->resetMock();
+//        $testHelper->clearDB($I, $data, $globalFile);
+//
+//        if ($globalUsing)
+//            $testHelper->loadGlobalFixture($I, $globalFile);
+//
+//        $testHelper->loadFixtureAndMock($I, $data);
+//        $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
+//        $I->wantTo($data['setting']['description']);
+//    }
 
     public function checkTablesInDB($dbTablesArray)
     {

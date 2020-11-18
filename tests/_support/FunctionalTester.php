@@ -39,7 +39,6 @@ class FunctionalTester extends \Codeception\Actor
 //
 //        $testHelper->loadFixtureAndMock($I, $data);
 //        $I->insertFixtureToDatabase($globalFile);
-        $I->loadFixtureFromDataprovider();
 
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $I->runShellCommand('./yii bpm/request/clear-temporary-files');

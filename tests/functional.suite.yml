@@ -5,8 +5,13 @@ modules:
         - \lisa\Helper\Functional
         - Cli
         - Asserts
-        - TestHelper
         - rzk\Database
+        - TestHelper:
+            fixture:
+              autoload: true            # По-умолчанию false. Загружать автоматически фикстуры и моки с датапровайдера?
+            mockserver:
+              clear_before_suite: true  # По-умолчанию false, то есть не чистим моки перед стартом всех тестов сюита
+              clear_before_test: true   # По-умолчанию false, то есть не чистим моки перед стартом каждого тестa
         - PhpBrowser:
               url: http://gomer.local # Domen вашего приложения
               auth: ['kutsan.k', '123qweASD!']

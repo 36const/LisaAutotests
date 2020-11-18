@@ -39,7 +39,7 @@ class AcceptanceTester extends \Codeception\Actor
             $I->insertFixtureToDatabase($globalFile);
 
 //        $testHelper->loadFixtureAndMock($I, $data);
-        $I->loadFixtureFromDataprovider();
+//        $I->loadFixtureFromDataprovider();
 
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $I->runShellCommand('./yii bpm/request/clear-temporary-files');

@@ -3,6 +3,7 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -26,7 +27,8 @@ class POSTModerationCest
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+//        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -39,7 +41,7 @@ class POSTModerationCest
      */
     public function POSTModeration(ApiTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);

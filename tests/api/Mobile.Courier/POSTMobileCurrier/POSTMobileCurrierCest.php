@@ -3,6 +3,7 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -27,6 +28,7 @@ class POSTMobileCurrierCest
     protected function pageProvider()
     {
         return $this->testHelper->getDataProvider('');
+//        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -39,6 +41,7 @@ class POSTMobileCurrierCest
      */
     public function POSTMobileCurrier(ApiTester $I, Example $data)
     {
+//        $I->loadDataForTest($data, 'allUsers');
         $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
         $providerData = $data['provider_data'];
 
