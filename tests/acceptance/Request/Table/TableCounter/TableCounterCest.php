@@ -18,7 +18,6 @@ class TableCounterCest
     /**@return array*/
     protected function pageProvider()
     {
-//        return $this->testHelper->getDataProvider('');
         return Vadim::prepareDataprovider(require 'data.php');
     }
 

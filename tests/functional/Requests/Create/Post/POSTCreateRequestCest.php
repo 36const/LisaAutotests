@@ -46,7 +46,7 @@ class POSTCreateRequestCest
     protected function pageProvider()
     {
 //        return $this->testHelper->getDataProvider('');
-        return Vadim::prepareDataprovider(require 'data.php', 'case1');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**

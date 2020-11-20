@@ -16,7 +16,7 @@ class GETFilterCest
     /**@return array*/
     protected function pageProvider()
     {
-        return Vadim::prepareDataprovider(require 'data.php', 'case7');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
