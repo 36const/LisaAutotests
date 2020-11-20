@@ -5,6 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use lisa\Page\Functional\Dashboard;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -14,22 +15,10 @@ use rzk\TestHelper;
  */
 class GETDashboardCommonCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -43,7 +32,7 @@ class GETDashboardCommonCest
      */
     public function GETDashboardCommon(FunctionalTester $I, Example $data, Dashboard $dashboard)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
         $dashboard->amOnDashboardCommon($providerData['url']);

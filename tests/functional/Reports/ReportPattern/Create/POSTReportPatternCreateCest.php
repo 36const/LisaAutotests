@@ -4,6 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -14,22 +15,10 @@ use rzk\TestHelper;
  */
 class POSTReportPatternCreateCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -42,7 +31,7 @@ class POSTReportPatternCreateCest
      */
     public function POSTReportPatternCreate(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
 
         $providerData = $data['provider_data'];
 

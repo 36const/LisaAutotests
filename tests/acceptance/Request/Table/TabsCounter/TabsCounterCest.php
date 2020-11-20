@@ -15,23 +15,11 @@ use Codeception\Module\TestHelper as Vadim;
  */
 class TabsCounterCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
 //        return $this->testHelper->getDataProvider('');
-        return Vadim::prepareDataprovider(require ('data.php'));
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**

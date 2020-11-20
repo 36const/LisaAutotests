@@ -13,19 +13,7 @@ use Codeception\Module\TestHelper as Vadim;
  */
 class POSTGomerCreateRequestCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
 //        return $this->testHelper->getDataProvider('');

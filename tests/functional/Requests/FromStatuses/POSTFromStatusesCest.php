@@ -4,6 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 use lisa\Page\Functional\RequestView;
 use lisa\Page\Functional\RequestToCorrection;
 use lisa\Page\Functional\RequestCorrection;
@@ -16,22 +17,10 @@ use lisa\Page\Functional\RequestCorrection;
  */
 class POSTFromStatusesCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -48,7 +37,7 @@ class POSTFromStatusesCest
     public function POSTFromStatuses(FunctionalTester $I, Example $data, RequestView $view,
                                      RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
 
         $providerData = $data['provider_data'];
 

@@ -2,8 +2,8 @@
 
 return [
     "lisa_fixtures" => [
-        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
-        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
+        "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
+        "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
         "user_bpm" => [
             [
                 //"id" => 1,
@@ -1171,6 +1171,6 @@ return [
     ],
 
     "gomer_fixtures" => [
-        "users" => include \rzk\FixtureController::getFixtureDir() . 'gomer_fixtures/users.php',
+        "users" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'gomer_fixtures/users.php',
     ],
 ];

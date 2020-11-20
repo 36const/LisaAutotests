@@ -4,6 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -13,22 +14,10 @@ use rzk\TestHelper;
  */
 class GETBlockManagerHavingRequestsCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -41,7 +30,7 @@ class GETBlockManagerHavingRequestsCest
      */
     public function GETBlockManagerHavingRequests(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
         $I->amOnPage('bpm/user/update?id=11');

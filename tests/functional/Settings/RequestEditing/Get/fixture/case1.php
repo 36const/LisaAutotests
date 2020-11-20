@@ -2,7 +2,7 @@
 
 return [
     "lisa_fixtures" => [
-        "request_editing" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/request_editing.php',
-        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
+        "request_editing" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/request_editing.php',
+        "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
     ],
 ];

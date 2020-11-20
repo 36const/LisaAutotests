@@ -5,6 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use lisa\Page\Functional\RequestView;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -15,22 +16,10 @@ use rzk\TestHelper;
  */
 class POSTDifficultyCoefCreateWithRequestCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -42,7 +31,7 @@ class POSTDifficultyCoefCreateWithRequestCest
      */
     public function POSTDifficultyCoefCreateWithRequest(FunctionalTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
 
         $providerData = $data['provider_data'];
 

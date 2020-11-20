@@ -4,6 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 use lisa\Page\Functional\Report;
 
 /**
@@ -14,22 +15,10 @@ use lisa\Page\Functional\Report;
  */
 class GETReportPeriodCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -43,7 +32,7 @@ class GETReportPeriodCest
      */
     public function GETReportPeriod(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->amOnPage('bpm/report-period/index' . $providerData['url']);

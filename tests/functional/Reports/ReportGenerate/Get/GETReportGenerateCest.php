@@ -5,6 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use lisa\Page\Functional\Report;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -14,22 +15,10 @@ use rzk\TestHelper;
  */
 class GETReportGenerateCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -43,7 +32,7 @@ class GETReportGenerateCest
      */
     public function GETReportGenerate(FunctionalTester $I, Example $data, Report $report)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $report->amOnReportGenerate();

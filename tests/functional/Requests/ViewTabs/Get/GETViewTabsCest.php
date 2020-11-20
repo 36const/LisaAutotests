@@ -5,6 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use lisa\Page\Functional\RequestView;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 
 /**
  * @group lisa
@@ -26,7 +27,7 @@ class GETViewTabsCest
 
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -40,7 +41,7 @@ class GETViewTabsCest
      */
     public function GETViewTabs(FunctionalTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
 
         $providerData = $data['provider_data'];
 

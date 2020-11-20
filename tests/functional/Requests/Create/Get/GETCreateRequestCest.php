@@ -4,8 +4,8 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
-use lisa\Page\Functional\RequestCreate;
 use Codeception\Module\TestHelper as Vadim;
+use lisa\Page\Functional\RequestCreate;
 
 /**
  * @group lisa
@@ -28,7 +28,7 @@ class GETCreateRequestCest
     protected function pageProvider()
     {
 //        return $this->testHelper->getDataProvider('');
-        return Vadim::prepareDataprovider(require ('data.php'));
+                return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**

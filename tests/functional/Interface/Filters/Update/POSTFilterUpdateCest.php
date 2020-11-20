@@ -4,6 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use rzk\TestHelper;
+use Codeception\Module\TestHelper as Vadim;
 use lisa\Page\Functional\Filters;
 
 /**
@@ -14,22 +15,10 @@ use lisa\Page\Functional\Filters;
  */
 class POSTFilterUpdateCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return Vadim::prepareDataprovider(require 'data.php');
     }
 
     /**
@@ -43,7 +32,7 @@ class POSTFilterUpdateCest
      */
     public function POSTFilterUpdate(FunctionalTester $I, Example $data, Filters $filter)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
 
         $providerData = $data['provider_data'];
 

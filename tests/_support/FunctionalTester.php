@@ -26,16 +26,16 @@ class FunctionalTester extends \Codeception\Actor
 
     /**
      * @param Example $data - данные кейса из файла data.php
-     * @param string|null $globalFile - название файла глобальных фикстур, при значении [] глобальные фикстуры не используются
+     * @param string|null $globalFixture - название файла глобальных фикстур, при значении [] глобальные фикстуры не используются
      */
-    public function loadDataForTest(Example $data, ?string $globalFile = 'oneUser')
+    public function loadDataForTest(Example $data, ?string $globalFixture = 'oneUser')
     {
         $I = $this;
 //        $testHelper->clearDB($I, $data, $globalFile);
 //        $testHelper->resetMock();
-        if (isset($globalFile))
+        if (isset($globalFixture))
 //            $testHelper->loadGlobalFixture($I, $globalFile);
-            $I->insertFixtureToDatabase($globalFile);
+            $I->insertFixtureToDatabase($globalFixture);
 //
 //        $testHelper->loadFixtureAndMock($I, $data);
 //        $I->insertFixtureToDatabase($globalFile);

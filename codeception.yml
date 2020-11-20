@@ -12,7 +12,6 @@ settings:
 actor_suffix: Tester
 extensions:
     enabled:
-        - Codeception\Extension\RunFailed
         - Yandex\Allure\Codeception\AllureCodeception
     config:
         Yandex\Allure\Codeception\AllureCodeception:
