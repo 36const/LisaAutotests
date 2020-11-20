@@ -17,5 +17,5 @@
         "rzk/codeception-test-helper" : "*"
     },
     "require-dev": {
-    },
+    }
 }
