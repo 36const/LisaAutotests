@@ -3,9 +3,8 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
 use lisa\Page\Functional\RequestCreate;
-use Codeception\Module\TestHelper as Vadim;
+use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
@@ -17,7 +16,7 @@ class ExcludedFieldsInRequestCreateCest
 {
     protected function pageProvider()
     {
-        return Vadim::prepareDataprovider(require 'data.php');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**

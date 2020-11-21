@@ -3,7 +3,6 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
 
 /**
  * Inherited Methods
@@ -31,14 +30,12 @@ class FunctionalTester extends \Codeception\Actor
     public function loadDataForTest(Example $data, ?string $globalFixture = 'oneUser')
     {
         $I = $this;
-//        $testHelper->clearDB($I, $data, $globalFile);
-//        $testHelper->resetMock();
+
         if (isset($globalFixture))
-//            $testHelper->loadGlobalFixture($I, $globalFile);
             $I->insertFixtureToDatabase($globalFixture);
-//
-//        $testHelper->loadFixtureAndMock($I, $data);
-//        $I->insertFixtureToDatabase($globalFile);
+
+        $I->loadFixtureFromDataprovider();
+        $I->loadMockFromDataprovider();
 
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $I->runShellCommand('./yii bpm/request/clear-temporary-files');

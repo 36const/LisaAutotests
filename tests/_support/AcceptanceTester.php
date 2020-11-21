@@ -3,7 +3,6 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
 
 /**
  * Inherited Methods
@@ -26,20 +25,17 @@ class AcceptanceTester extends \Codeception\Actor
 
     /**
      * @param Example $data - данные кейса из файла data.php
-//     * @param TestHelper $testHelper
-     * @param string|null $globalFile - название файла глобальных фикстур, при значении [] глобальные фикстуры не используются
+     * @param string|null $globalFixture - название файла глобальных фикстур, при значении [] глобальные фикстуры не используются
      */
-    public function loadDataForTest(Example $data, ?string $globalFile = 'oneUser')
+    public function loadDataForTest(Example $data, ?string $globalFixture = 'oneUser')
     {
         $I = $this;
-//        $testHelper->clearDB($I, $data, $globalFile);
 
-        if (isset($globalFile))
-//            $testHelper->loadGlobalFixture($I, $globalFile);
-            $I->insertFixtureToDatabase($globalFile);
+        if (isset($globalFixture))
+            $I->insertFixtureToDatabase($globalFixture);
 
-//        $testHelper->loadFixtureAndMock($I, $data);
-//        $I->loadFixtureFromDataprovider();
+        $I->loadFixtureFromDataprovider();
+        $I->loadMockFromDataprovider();
 
         $I->runShellCommand('./yii bpm/request/clear-lisa-redis');
         $I->runShellCommand('./yii bpm/request/clear-temporary-files');

@@ -3,8 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
-use Codeception\Module\TestHelper as Vadim;
+use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
@@ -17,7 +16,7 @@ class GETOtherReasonsCest
     /**@return array*/
     protected function pageProvider()
     {
-        return Vadim::prepareDataprovider(require 'data.php');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**

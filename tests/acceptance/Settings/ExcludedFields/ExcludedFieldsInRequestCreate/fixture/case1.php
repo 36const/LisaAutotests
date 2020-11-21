@@ -8,10 +8,10 @@ return [
         "user_notifications" => [],
         'notification_settings' => [],
         "request_status_history" => [],
-        "excluded_fields" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/excluded_fields.php',
-        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
+        "excluded_fields" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/excluded_fields.php',
+        "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
     ],
     "cooper_fixtures" => [
-        "market" => include \rzk\FixtureController::getFixtureDir() . 'cooper_fixtures/market.php',
+        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
     ]
 ];

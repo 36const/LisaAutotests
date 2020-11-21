@@ -2,8 +2,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
-use Codeception\Module\TestHelper as Vadim;
+use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
@@ -16,7 +15,7 @@ class POSTGomerCreateRequestCest
     /**@return array*/
     protected function pageProvider()
     {
-        return Vadim::prepareDataprovider(require 'data.php', 'case1');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -30,15 +29,13 @@ class POSTGomerCreateRequestCest
     public function POSTGomer(ApiTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-//        $I->loadDataForTest($data, $this->testHelper);
         $providerData = $data['provider_data'];
 
         $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
-sleep(20);
+
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
-        die();
     }
 }

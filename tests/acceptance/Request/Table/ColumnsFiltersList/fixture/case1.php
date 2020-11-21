@@ -247,7 +247,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-],
+            ],
             [
                 //"id" => 8,
                 "author_id" => 4,
@@ -282,7 +282,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 9,
                 "author_id" => 4,
@@ -317,7 +317,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 10,
                 "author_id" => 4,
@@ -352,7 +352,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 11,
                 "author_id" => 4,
@@ -387,7 +387,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 12,
                 "author_id" => 4,
@@ -422,7 +422,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 13,
                 "author_id" => 4,
@@ -457,7 +457,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 14,
                 "author_id" => 4,
@@ -492,7 +492,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 15,
                 "author_id" => 4,
@@ -527,7 +527,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 16,
                 "author_id" => 4,
@@ -562,7 +562,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 17,
                 "author_id" => 4,
@@ -597,7 +597,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 18,
                 "author_id" => 4,
@@ -632,7 +632,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-],
+            ],
             [
                 //"id" => 19,
                 "author_id" => 4,
@@ -667,7 +667,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 20,
                 "author_id" => 4,
@@ -702,7 +702,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-],
+            ],
             [
                 //"id" => 21,
                 "author_id" => 4,
@@ -737,7 +737,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-],
+            ],
             [
                 //"id" => 22,
                 "author_id" => 4,
@@ -772,7 +772,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-],
+            ],
             [
                 //"id" => 23,
                 "author_id" => 4,
@@ -807,7 +807,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-],
+            ],
             [
                 //"id" => 24,
                 "author_id" => 4,
@@ -842,7 +842,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}'
-]
+            ]
         ],
         "requests_fields" => [
             [
@@ -2476,15 +2476,23 @@ return [
                 "updated_at" => '2020-09-01 19:01:01',
             ],
         ],
-//        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
-//        "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',
-        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
-//        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
-//        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
-//        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
-        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
+        "grid_settings" => [
+            [
+                //        "id" => 1,
+                "user_id" => 4,
+                "columns_list" => '["priority", "reason_id", "author_clarifications", "type_id", "report_period_id", "sv_report_periods", "cross_check_status", "direction", "team_direction", "difficulty_level"]'
+            ]
+        ],
+//        "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
+//        "markets_supervisors" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
+        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
+//        "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
+        "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
+//        "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
+        "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
+        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
     ],
     "cooper_fixtures" => [
-        "market" => include \rzk\FixtureController::getFixtureDir() . 'cooper_fixtures/market.php',
+        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
     ]
 ];

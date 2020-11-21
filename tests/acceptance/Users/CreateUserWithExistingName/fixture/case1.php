@@ -2,9 +2,9 @@
 
 return [
     "lisa_fixtures" => [
-        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
-        "roles" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/roles.php',
-        "notification_settings" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/notification_settings.php',
+        "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
+        "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
+        "notification_settings" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/notification_settings.php',
         "user_bpm" => [
             [
 //                "id" => 1,

@@ -3,8 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
-use Codeception\Module\TestHelper as Vadim;
+use Codeception\Module\TestHelper;
 use lisa\Page\Functional\RequestCreate;
 
 /**
@@ -14,19 +13,10 @@ use lisa\Page\Functional\RequestCreate;
  */
 class UserSelectingCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -40,7 +30,7 @@ class UserSelectingCest
      */
     public function UserSelecting(AcceptanceTester $I, Example $data, RequestCreate $create)
     {
-        $I->loadDataForTest($data, $this->testHelper, []);
+        $I->loadDataForTest($data, null);
 
         $create->amOnPage('/bpm/request');
         $I->cantSeeElement(RequestCreate::$createModal);

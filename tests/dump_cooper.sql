@@ -1,4 +1,4 @@
--- DROP TABLE IF EXISTS "market" CASCADE; комментим дроп, если в suite.yml значение cleanup: true
+DROP TABLE IF EXISTS "market" CASCADE; --комментим дроп, если в suite.yml значение cleanup: true
 create table market
 (
     id serial not null
@@ -163,6 +163,7 @@ create index market_owox_id_history_idx
 create unique index primary_sellermarketparams_idx
     on market (id);
 
+DROP TABLE IF EXISTS "admin_market_link" CASCADE;
 create table admin_market_link
 (
     account_id integer not null,
@@ -179,7 +180,7 @@ create index idx_account_id
 create index idx_admin_market_id
     on admin_market_link (market_id);
 
--- DROP TABLE IF EXISTS "admin" CASCADE;
+DROP TABLE IF EXISTS "admin" CASCADE;
 create table admin
 (
     id serial not null

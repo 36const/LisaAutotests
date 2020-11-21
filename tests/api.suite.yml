@@ -5,12 +5,9 @@ modules:
         - \lisa\Helper\Api
         - Cli
         - Asserts
-        - rzk\Database
+#        - rzk\Database
         - TestHelper:
-            fixture:
-              autoload: true            # По-умолчанию false. Загружать автоматически фикстуры и моки с датапровайдера?
             mockserver:
-              clear_before_suite: true  # По-умолчанию false, то есть не чистим моки перед стартом всех тестов сюита
               clear_before_test: true   # По-умолчанию false, то есть не чистим моки перед стартом каждого тестa
         - PhpBrowser:
               url: http://gomer.local # Domen вашего приложения
@@ -32,8 +29,6 @@ modules:
                   dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=cooper_mock_db'
                   user: 'gomer'
                   password: '4c0EcmzAm28AeqbFFOb8N5RBw'
-                  cleanup: true
-                  #repopulate: false
                   populate: true
                   dump: 'tests/dump_cooper.sql'
                 gomer_fixtures:
