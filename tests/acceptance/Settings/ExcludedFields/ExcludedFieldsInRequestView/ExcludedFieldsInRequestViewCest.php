@@ -61,6 +61,7 @@ class ExcludedFieldsInRequestViewCest
         $I->checkCheckboxesOnPage($providerData['pageObjects_5']);
 
         $I->click(RequestView::$saveButton);
+        $I->wait(3);
         $I->checkCheckboxesOnPage($providerData['pageObjects_5']);
     }
 }
