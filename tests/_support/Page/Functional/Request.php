@@ -104,4 +104,32 @@ class Request extends FunctionalTester
         return "//ul[@class='pagination']//li/a[text() = '$page']";
     }
 
+    /**Иконка родительской заявки*/
+    public static function parentRequest(int $tableRow, string $page = null)
+    {
+        return $page == null ?
+            "//tbody/tr[$tableRow]//td/a[@title='Родительская заявка']" :
+            "//tbody/tr[$tableRow]//td/a[@href='$page' and @title='Родительская заявка']" ;
+    }
+
+    /**Иконка дочерних заявок*/
+    public static function childRequest(int $tableRow, string $page = null)
+    {
+        return $page == null ?
+            "//tbody/tr[$tableRow]//td/a[@title='Дочерние заявки']" :
+            "//tbody/tr[$tableRow]//td/a[@href='$page' and @title='Дочерние заявки']";
+    }
+
+    /**Фото загружены*/
+    public static function photoLoadStatus($tableRow)
+    {
+        return "//tbody/tr[$tableRow]//td/i[@title='Фото загружены']";
+    }
+
+    /**Вложения*/
+    public static function attachments($tableRow)
+    {
+        return "//tbody/tr[$tableRow]//td/i[@title='В заявке есть прикрепленные файлы']";
+    }
+
 }
