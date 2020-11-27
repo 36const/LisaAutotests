@@ -233,19 +233,8 @@ return [
                 "value" => "0"
             ],
         ],
-        "request_attachments" => [
-            [
-                //"id" => 1,
-                "request_id" => 8,
-                "file_name" => "223839_jpg.jpg",
-                "alias" => "jpg.jpg",
-                "status" => 0,
-                "uploaded_by" => "Константин Куцан",
-                "uploaded_at" => "2020-07-25 19:38:43",
-                "deleted_by" => "Константин Куцан",
-                "deleted_at" => "2020-10-25 19:38:43"
-            ]
-        ],
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
+        "grid_settings" => [],
+        "request_attachments" => []
     ],
 ];
