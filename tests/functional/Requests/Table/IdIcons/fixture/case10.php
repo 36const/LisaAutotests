@@ -9,7 +9,7 @@ return [
                 "type_id" => 1,
                 "supervisor_id" => 6,
                 "manager_id" => 4,
-                "status" => 5,
+                "status" => 6,
                 "direction" => 1,
                 "priority" => 1,
                 "awaiting_correction" => 0,
@@ -37,7 +37,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-                "photo_load_status" => 1
+                "photo_load_status" => 0
             ],
             [
                 "id" => 11,
@@ -45,7 +45,7 @@ return [
                 "type_id" => 1,
                 "supervisor_id" => 5,
                 "manager_id" => null,
-                "status" => 1,
+                "status" => 6,
                 "direction" => 2,
                 "priority" => 1,
                 "awaiting_correction" => 0,
@@ -73,7 +73,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-                "photo_load_status" => 1
+                "photo_load_status" => 0
             ],
         ],
         "requests_fields" => [
@@ -232,6 +232,19 @@ return [
                 "field_id" => 143,
                 "value" => "0"
             ],
+        ],
+        "request_attachments" => [
+            [
+                //"id" => 1,
+                "request_id" => 8,
+                "file_name" => "223839_jpg.jpg",
+                "alias" => "jpg.jpg",
+                "status" => 2,
+                "uploaded_by" => "Константин Куцан",
+                "uploaded_at" => "2020-07-25 19:38:43",
+                "deleted_by" => null,
+                "deleted_at" => null
+            ]
         ],
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
     ],
