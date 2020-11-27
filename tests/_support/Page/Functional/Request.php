@@ -132,4 +132,9 @@ class Request extends FunctionalTester
         return "//tbody/tr[$tableRow]//td/i[@title='В заявке есть прикрепленные файлы']";
     }
 
+    /**Подсвечивающаяся запись*/
+    public static function toCorrection($tableRow)
+    {
+        return "//tbody/tr[$tableRow][@class='border-hover correction-color request-grid']";
+    }
 }
