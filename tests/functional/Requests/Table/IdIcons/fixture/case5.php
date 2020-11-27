@@ -123,5 +123,6 @@ return [
             ],
         ],
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
+        "grid_settings" => []
     ],
 ];

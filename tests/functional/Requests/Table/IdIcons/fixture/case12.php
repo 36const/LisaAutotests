@@ -48,7 +48,7 @@ return [
                 "status" => 6,
                 "direction" => 2,
                 "priority" => 1,
-                "awaiting_correction" => 0,
+                "awaiting_correction" => 1,
                 "created_at" => "2020-01-01 00:00:00",
                 "correction_comment" => null,
                 "amount_to_work" => 10,
@@ -247,6 +247,5 @@ return [
             ]
         ],
         "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
-        "grid_settings" => []
     ],
 ];

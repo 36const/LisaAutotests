@@ -279,4 +279,35 @@ return [
         ]
     ],
 
+    'case12' => [
+        'setting' => [
+            'description' => 'Выделение заявки, переведённой на исправление, при отсутствии колонки "На исправление"',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case12.php',
+        'provider_data' => [
+            'url' => '',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => "//tbody/tr[1][@class='border-hover correction-color request-grid']"],
+                        ["selector" => "//tbody/tr[2][@class='border-hover request-grid']"],
+                    ]
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => "//tbody/tr[2][@class='border-hover correction-color request-grid']"],
+                        ["selector" => Request::attachments(1)],
+                        ["selector" => Request::attachments(2)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
+                    ]
+                ],
+            ],
+        ]
+    ],
+
 ];
