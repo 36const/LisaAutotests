@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
+use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
@@ -13,22 +13,10 @@ use rzk\TestHelper;
  */
 class GETPermissionsCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -41,7 +29,7 @@ class GETPermissionsCest
      */
     public function GETPermissions(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['oneUserWithoutPermissionsTable']);
+        $I->loadDataForTest($data, 'oneUserWithoutPermissionsTable');
         $providerData = $data['provider_data'];
 
         $I->amOnPage($providerData['url']);

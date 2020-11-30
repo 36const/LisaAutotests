@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
+use Codeception\Module\TestHelper;
 use lisa\Page\Functional\RequestView;
 
 /**
@@ -15,23 +15,10 @@ use lisa\Page\Functional\RequestView;
  */
 class POSTDifficultyCoefUpdateCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -44,7 +31,7 @@ class POSTDifficultyCoefUpdateCest
      */
     public function POSTDifficultyCoefUpdate(FunctionalTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
 
         $providerData = $data['provider_data'];
 

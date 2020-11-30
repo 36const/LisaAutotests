@@ -3,8 +3,8 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
 use lisa\Page\Functional\RequestCreate;
+use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
@@ -14,19 +14,10 @@ use lisa\Page\Functional\RequestCreate;
  */
 class CreateRequestModalCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -40,7 +31,7 @@ class CreateRequestModalCest
      */
     public function CreateRequestModal(AcceptanceTester $I, Example $data, RequestCreate $create)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
 
         $create->amOnPage('/bpm/request');
         $I->cantSeeElement(RequestCreate::$createModal);

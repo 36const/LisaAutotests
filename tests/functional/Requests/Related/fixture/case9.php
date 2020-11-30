@@ -318,52 +318,75 @@ return [
             [
 //                "id" => 1,
                 "user_id" => 4,
-                "notification" => 'Из заявки <b>№1 "Добавление/изменение тегов (Определяется типом задачи)" </b>, количество в работу: <b>10</b> с приоритетом: <b>Товар-новинка/эксклюзив (трафикообразующий)</b> создана связанная заявка <b>№2 "!@#$%^&*()_+`-]\'/[;.,}"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"</b>',
+                "notification" => '',
                 "status" => 0,
                 "created_at" => '2020-01-01 00:00:01',
                 'request_id' => 2,
                 "priority" => 2,
-                "recipients" => "Константин Куцан, Супервайзер Начальникович 1"
+                //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
+                "amount_to_work" => 20,
+                "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                "fields_for_complete" => "[]",
+                "triggered_by" => "Константин Куцан",
+                "event" => "create",
+                "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
             ],
             [
 //                "id" => 2,
                 "user_id" => 6,
-                "notification" => 'Из заявки <b>№1 "Добавление/изменение тегов (Определяется типом задачи)" </b>, количество в работу: <b>10</b> с приоритетом: <b>Товар-новинка/эксклюзив (трафикообразующий)</b> создана связанная заявка <b>№2 "!@#$%^&*()_+`-]\'/[;.,}"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"</b>',
+                "notification" => '',
                 "status" => 0,
                 "created_at" => '2020-01-01 00:00:01',
                 'request_id' => 2,
                 "priority" => 2,
-                "recipients" => "Константин Куцан, Супервайзер Начальникович 1"
+                //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
+                "amount_to_work" => 20,
+                "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                "fields_for_complete" => "[]",
+                "triggered_by" => "Константин Куцан",
+                "event" => "create",
+                "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
             ],
             [
 //                "id" => 3,
                 "user_id" => 4,
-                "notification" => 'Из заявки <b>№1 "Добавление/изменение тегов (Определяется типом задачи)" </b>, количество в работу: <b>10</b> с приоритетом: <b>Товар-новинка/эксклюзив (трафикообразующий)</b> создана связанная заявка <b>№3 "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"</b>',
+                "notification" => '',
                 "status" => 0,
                 "created_at" => '2020-01-02 00:00:01',
                 'request_id' => 3,
                 "priority" => 2,
-                "recipients" => "Константин Куцан, Супервайзер Категоркин 15"
+                //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
+                "amount_to_work" => 10,
+                "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
+                "fields_for_complete" => "[]",
+                "triggered_by" => "Константин Куцан",
+                "event" => "create",
+                "changed_fields" => '{"newValue": 3, "oldValue": "1"}'
             ],
             [
 //                "id" => 4,
                 "user_id" => 35,
-                "notification" => 'Из заявки <b>№1 "Добавление/изменение тегов (Определяется типом задачи)" </b>, количество в работу: <b>10</b> с приоритетом: <b>Товар-новинка/эксклюзив (трафикообразующий)</b> создана связанная заявка <b>№3 "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"</b>',
+                "notification" => '',
                 "status" => 0,
                 "created_at" => '2020-01-02 00:00:01',
                 'request_id' => 3,
                 "priority" => 2,
-                "recipients" => "Константин Куцан, Супервайзер Категоркин 15"
+                //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
+                "amount_to_work" => 10,
+                "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
+                "fields_for_complete" => "[]",
+                "triggered_by" => "Константин Куцан",
+                "event" => "create",
+                "changed_fields" => '{"newValue": 3, "oldValue": "1"}'
             ]
-
         ],
         "request_status_history" => [],
         "observers" => [],
-        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
-        "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',
-        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
-        "difficulty_coefs" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/difficulty_coefs.php',
-        "teams" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/teams.php',
-        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
+        "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
+        "markets_supervisors" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
+        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
+        "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
+        "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
+        "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
     ],
 ];

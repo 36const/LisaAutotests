@@ -4,7 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use lisa\Page\Functional\Report;
-use rzk\TestHelper;
+use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
@@ -14,22 +14,10 @@ use rzk\TestHelper;
  */
 class GETReportPatternsAccessCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -43,7 +31,7 @@ class GETReportPatternsAccessCest
      */
     public function GETReportPatternsAccess(FunctionalTester $I, Example $data, Report $report)
     {
-        $I->loadDataForTest($data, $this->testHelper, []);
+        $I->loadDataForTest($data, null);
         $providerData = $data['provider_data'];
 
         $report->amOnReportGenerate();

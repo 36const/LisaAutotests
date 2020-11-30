@@ -62,7 +62,7 @@ return [
             'value' => '(не задано)',
             'amount' => 7,
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case2.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'columnValueList' => [
                 "canSee" => [
@@ -147,7 +147,7 @@ return [
             'value' => 'Более 5 уточнений',
             'amount' => 22,
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case3.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'columnValueList' => [
                 "canSee" => [
@@ -196,7 +196,7 @@ return [
             'value' => 'Добавление/изменение информации в существующих товарах',
             'amount' => 22,
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case4.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'columnValueList' => [
                 "canSee" => [
@@ -293,7 +293,7 @@ return [
             'value' => '2020-04-01 - 2020-06-30',
             'amount' => 24,
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'columnValueList' => [
                 "canSee" => [
@@ -346,7 +346,7 @@ return [
             'value' => '(не задано)',
             'amount' => 12,
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'columnValueList' => [
                 "canSee" => [
@@ -391,5 +391,217 @@ return [
             ],
         ]
     ],
+
+//    'case7' => [
+//        'setting' => [
+//            'description' => 'Установка и изменение фильтра колонки кросс-чек статуса',
+//            'column' => 'sv_report_periods',
+//            'value' => '(не задано)',
+//            'amount' => 12,
+//        ],
+//        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+//        'provider_data' => [
+//            'columnValueList' => [
+//                "canSee" => [
+//                    Request::columnValueList('2020-01-01 - 2020-03-31'),
+//                    Request::columnValueList('2020-04-01 - 2020-06-30'),
+//                    Request::columnValueList('2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::columnValueList(date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::columnValueList('(не задано)'),
+//                ],
+//                "cantSee" => [],
+//            ],
+//            'searchValueListAll' => [
+//                "canSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//                "cantSee" => [],
+//            ],
+//            'searchValueListNotAll' => [
+//                "canSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                ],
+//                "cantSee" => [
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//            ],
+//            'searchValueListNotAnyone' => [
+//                "canSee" => [],
+//                "cantSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//            ],
+//        ]
+//    ],
+//
+//    'case8' => [
+//        'setting' => [
+//            'description' => 'Установка и изменение фильтра колонки направления задачи',
+//            'column' => 'sv_report_periods',
+//            'value' => '(не задано)',
+//            'amount' => 12,
+//        ],
+//        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+//        'provider_data' => [
+//            'columnValueList' => [
+//                "canSee" => [
+//                    Request::columnValueList('2020-01-01 - 2020-03-31'),
+//                    Request::columnValueList('2020-04-01 - 2020-06-30'),
+//                    Request::columnValueList('2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::columnValueList(date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::columnValueList('(не задано)'),
+//                ],
+//                "cantSee" => [],
+//            ],
+//            'searchValueListAll' => [
+//                "canSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//                "cantSee" => [],
+//            ],
+//            'searchValueListNotAll' => [
+//                "canSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                ],
+//                "cantSee" => [
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//            ],
+//            'searchValueListNotAnyone' => [
+//                "canSee" => [],
+//                "cantSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//            ],
+//        ]
+//    ],
+//
+//    'case9' => [
+//        'setting' => [
+//            'description' => 'Установка и изменение фильтра колонки направления команды',
+//            'column' => 'sv_report_periods',
+//            'value' => '(не задано)',
+//            'amount' => 12,
+//        ],
+//        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+//        'provider_data' => [
+//            'columnValueList' => [
+//                "canSee" => [
+//                    Request::columnValueList('2020-01-01 - 2020-03-31'),
+//                    Request::columnValueList('2020-04-01 - 2020-06-30'),
+//                    Request::columnValueList('2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::columnValueList(date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::columnValueList('(не задано)'),
+//                ],
+//                "cantSee" => [],
+//            ],
+//            'searchValueListAll' => [
+//                "canSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//                "cantSee" => [],
+//            ],
+//            'searchValueListNotAll' => [
+//                "canSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                ],
+//                "cantSee" => [
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//            ],
+//            'searchValueListNotAnyone' => [
+//                "canSee" => [],
+//                "cantSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//            ],
+//        ]
+//    ],
+//
+//    'case10' => [
+//        'setting' => [
+//            'description' => 'Установка и изменение фильтра колонки уровня сложности',
+//            'column' => 'sv_report_periods',
+//            'value' => '(не задано)',
+//            'amount' => 12,
+//        ],
+//        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+//        'provider_data' => [
+//            'columnValueList' => [
+//                "canSee" => [
+//                    Request::columnValueList('2020-01-01 - 2020-03-31'),
+//                    Request::columnValueList('2020-04-01 - 2020-06-30'),
+//                    Request::columnValueList('2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::columnValueList(date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::columnValueList('(не задано)'),
+//                ],
+//                "cantSee" => [],
+//            ],
+//            'searchValueListAll' => [
+//                "canSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//                "cantSee" => [],
+//            ],
+//            'searchValueListNotAll' => [
+//                "canSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                ],
+//                "cantSee" => [
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//            ],
+//            'searchValueListNotAnyone' => [
+//                "canSee" => [],
+//                "cantSee" => [
+//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
+//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
+//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
+//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
+//                    Request::searchValueList('sv_report_periods', '(не задано)'),
+//                ],
+//            ],
+//        ]
+//    ],
 
 ];

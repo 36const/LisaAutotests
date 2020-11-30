@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
+use Codeception\Module\TestHelper;
 use lisa\Page\Functional\RequestCreate;
 
 /**
@@ -14,19 +14,10 @@ use lisa\Page\Functional\RequestCreate;
  */
 class GETCreateRequestCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -40,7 +31,7 @@ class GETCreateRequestCest
      */
     public function GETCreateRequest(FunctionalTester $I, Example $data, RequestCreate $create)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
 
         $setting = $data['setting'];
         $providerData = $data['provider_data'];

@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
+use Codeception\Module\TestHelper;
 use lisa\Page\Functional\RequestView;
 use lisa\Page\Functional\Roles;
 
@@ -16,22 +16,10 @@ use lisa\Page\Functional\Roles;
  */
 class POSTUpdateUserPermissionsCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -44,7 +32,7 @@ class POSTUpdateUserPermissionsCest
      */
     public function POSTUpdateUserPermissions(FunctionalTester $I, Example $data, Roles $roles)
     {
-        $I->loadDataForTest($data, $this->testHelper, []);
+        $I->loadDataForTest($data, null);
 
         $providerData = $data['provider_data'];
 

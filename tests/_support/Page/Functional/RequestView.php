@@ -22,6 +22,7 @@ class RequestView extends FunctionalTester
     public static $dates =                  "//table[@class='table table-bordered detail-view']//th[text()='Даты']";
     public static $reportPeriodId =         "//table[@class='table table-bordered detail-view']//th[text()='Отчетный период КМ']";
     public static $svReportPeriods =        "//table[@class='table table-bordered detail-view']//th[text()='Отчетный период СВ']";
+    public static $supervisor_comment =     "//table[@class='table table-bordered detail-view']//*[@name='Request[supervisor_comment]']";
 
     public static $saveButton = "//button[@id='update-form-save']";
     public static $tabsCheckbox = "//input[@id='tabs-toggle-button']";

@@ -26,6 +26,7 @@ return [
                         ["selector" => RequestView::$motivationManagers],
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -55,6 +56,7 @@ return [
                         ["selector" => RequestView::$motivationCcManagers],
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -84,6 +86,7 @@ return [
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
                         ["selector" => RequestView::$reportPeriodId],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -109,6 +112,7 @@ return [
                         ["selector" => RequestView::$dates],
                         ["selector" => RequestView::$reportPeriodId],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -139,6 +143,7 @@ return [
                         ["selector" => RequestView::$motivationManagers],
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -168,6 +173,7 @@ return [
                         ["selector" => RequestView::$motivationCcManagers],
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -197,6 +203,7 @@ return [
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
                         ["selector" => RequestView::$reportPeriodId],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -222,6 +229,7 @@ return [
                         ["selector" => RequestView::$dates],
                         ["selector" => RequestView::$reportPeriodId],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -252,6 +260,7 @@ return [
                         ["selector" => RequestView::$motivationCcManagers],
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -281,6 +290,7 @@ return [
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
                         ["selector" => RequestView::$reportPeriodId],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -306,6 +316,7 @@ return [
                         ["selector" => RequestView::$dates],
                         ["selector" => RequestView::$reportPeriodId],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -336,6 +347,7 @@ return [
                         ["selector" => RequestView::$motivationCcManagers],
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -365,6 +377,7 @@ return [
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
                         ["selector" => RequestView::$reportPeriodId],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -390,6 +403,7 @@ return [
                         ["selector" => RequestView::$dates],
                         ["selector" => RequestView::$reportPeriodId],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -420,6 +434,7 @@ return [
                         ["selector" => RequestView::$motivationCcManagers],
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -449,6 +464,7 @@ return [
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
                         ["selector" => RequestView::$reportPeriodId],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -474,6 +490,7 @@ return [
                         ["selector" => RequestView::$dates],
                         ["selector" => RequestView::$reportPeriodId],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -504,6 +521,7 @@ return [
                         ["selector" => RequestView::$motivationCcManagers],
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -533,6 +551,7 @@ return [
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
                         ["selector" => RequestView::$reportPeriodId],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -558,6 +577,7 @@ return [
                         ["selector" => RequestView::$dates],
                         ["selector" => RequestView::$reportPeriodId],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -588,6 +608,7 @@ return [
                         ["selector" => RequestView::$motivationCcManagers],
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -617,6 +638,7 @@ return [
                         ["selector" => RequestView::$motivationSupervisors],
                         ["selector" => RequestView::$svReportPeriods],
                         ["selector" => RequestView::$reportPeriodId],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -642,6 +664,7 @@ return [
                         ["selector" => RequestView::$dates],
                         ["selector" => RequestView::$reportPeriodId],
                         ["selector" => RequestView::$svReportPeriods],
+                        ["selector" => RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []

@@ -3,8 +3,8 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
 use lisa\Page\Functional\RequestView;
+use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
@@ -15,36 +15,17 @@ use lisa\Page\Functional\RequestView;
 class POSTCreateRequestCest
 {
     /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    /**
-     * GetMainCest constructor.
-     * Конструктор класса GetMainCest
-     *
-     * TestHelper через него идет создание фикстур моков, обработка файла data.php,
-     * возможность очистки кеша вашего приложения
-     * (Очистка кеша работает не из коробки, возможно вам нужна будет индивидуальная настройка данной функции)
-     *
-     */
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * GETItemsFinish dataProvider
-     * Дата провайдер теста GETItemsFinish
+     * POSTCreateRequest dataProvider
+     * Дата провайдер теста POSTCreateRequest
      *
      * В данной функции реализуется дата провайдер который возвращает все кейсы с data.php
-     * Далее функция GETItemsFinish обрабатывает каждый кейс
+     * Далее функция POSTCreateRequest обрабатывает каждый кейс
      *
      * @return array
      */
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -58,7 +39,7 @@ class POSTCreateRequestCest
      */
     public function POSTCreateRequest(FunctionalTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
 
         $providerData = $data['provider_data'];
 
