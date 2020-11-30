@@ -4,7 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use lisa\Page\Functional\Request;
-use rzk\TestHelper;
+use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
@@ -14,22 +14,10 @@ use rzk\TestHelper;
  */
 class TabsCounterCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -42,7 +30,7 @@ class TabsCounterCest
      */
     public function TabsCounter(AcceptanceTester $I, Example $data, Request $request)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
         $I->wait(30);
         $request->amOnTable('index');
         $I->canSeeElement(Request::statusTabsCounter(1, 24));

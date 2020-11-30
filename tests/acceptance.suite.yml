@@ -5,7 +5,8 @@ modules:
         - \lisa\Helper\Acceptance
         - Cli
         - Asserts
-        - rzk\Database
+#        - rzk\Database
+        - TestHelper
         - WebDriver:
             url: http://gomer.local
             browser: chrome
@@ -44,8 +45,6 @@ modules:
                   dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=cooper_mock_db'
                   user: 'gomer'
                   password: '4c0EcmzAm28AeqbFFOb8N5RBw'
-                  cleanup: true
-                  #repopulate: false
                   populate: true
                   dump: 'tests/dump_cooper.sql'
                 gomer_fixtures:

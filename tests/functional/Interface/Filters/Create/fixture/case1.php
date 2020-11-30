@@ -3,10 +3,10 @@
 return [
     "lisa_fixtures" => [
         "filters" => [],
-        "categories" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/categories.php',
-        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
-        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php',
-        "reasons" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/reasons.php',
+        "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
+        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
+        "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
+        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
         "report_periods" => [
             [
                 //'id' => 1,
@@ -25,6 +25,6 @@ return [
         ]
     ],
     "cooper_fixtures" => [
-        "market" => include \rzk\FixtureController::getFixtureDir() . 'cooper_fixtures/market.php',
+        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
     ]
 ];

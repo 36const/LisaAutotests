@@ -2,6 +2,6 @@
 
 return [
     "lisa_fixtures" => [
-        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php'
+        "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php'
     ],
 ];

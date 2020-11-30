@@ -197,6 +197,6 @@ return [
                 "changed_fields" => '{"newValue": "@bpm_teamLead_2  ~!@#$%^&amp;*()_+`]&#039;/[;.,|}}&quot;?{:&gt;&lt;\n@bpm_teamLead_1  ", "oldValue": ""}'
             ]
         ],
-        "priorities" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/priorities.php'
+        "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php'
     ],
 ];

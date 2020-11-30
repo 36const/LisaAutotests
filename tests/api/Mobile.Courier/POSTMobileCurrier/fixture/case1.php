@@ -1,7 +1,7 @@
 <?php
 return [
     "cooper_fixtures" => [
-        "market" => include \rzk\FixtureController::getFixtureDir() . 'cooper_fixtures/market.php',
+        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
     ],
     "lisa_fixtures" => [
         "requests" => [],
@@ -29,6 +29,6 @@ return [
                 "status" => 0
             ],
         ],
-        "markets_supervisors" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/markets_supervisors.php',
+        "markets_supervisors" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
     ],
 ];

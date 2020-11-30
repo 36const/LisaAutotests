@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
+use Codeception\Module\TestHelper;
 use lisa\Page\Functional\User;
 
 /**
@@ -15,22 +15,10 @@ use lisa\Page\Functional\User;
  */
 class POSTUsersCreateCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -43,7 +31,7 @@ class POSTUsersCreateCest
      */
     public function POSTUsersCreate(FunctionalTester $I, Example $data, User $user)
     {
-        $I->loadDataForTest($data, $this->testHelper, []);
+        $I->loadDataForTest($data, null);
 
         $providerData = $data['provider_data'];
 

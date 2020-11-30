@@ -4,7 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use lisa\Page\Functional\RequestView;
-use rzk\TestHelper;
+use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
@@ -14,19 +14,10 @@ use rzk\TestHelper;
  */
 class GETViewTabsCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -40,7 +31,7 @@ class GETViewTabsCest
      */
     public function GETViewTabs(FunctionalTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
 
         $providerData = $data['provider_data'];
 

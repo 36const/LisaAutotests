@@ -3,31 +3,20 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
+use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
  * @group lisa_functional
+ * @group lisa_functional_interface
  * @group POSTNotificationSettings
  */
 class POSTNotificationSettingsCreateCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -40,7 +29,7 @@ class POSTNotificationSettingsCreateCest
      */
     public function POSTNotificationSettings(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
 
         $providerData = $data['provider_data'];
 

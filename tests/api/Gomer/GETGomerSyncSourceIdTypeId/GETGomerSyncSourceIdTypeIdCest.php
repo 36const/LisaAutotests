@@ -2,7 +2,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
+use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
@@ -12,22 +12,10 @@ use rzk\TestHelper;
  */
 class GETGomerSyncSourceIdTypeIdCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -40,7 +28,7 @@ class GETGomerSyncSourceIdTypeIdCest
      */
     public function GETGomerSyncSourceIdTypeId(ApiTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper);
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->sendGET('/bpm/api/get-request-by-sync-source-id-and-type-id', $providerData['requestParameters']);
