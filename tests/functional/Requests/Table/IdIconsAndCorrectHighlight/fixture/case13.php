@@ -661,7 +661,7 @@ return [
                 "value" => "0"
             ],
         ],
-        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
+        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "grid_settings" => [],
         "request_attachments" => []
     ],

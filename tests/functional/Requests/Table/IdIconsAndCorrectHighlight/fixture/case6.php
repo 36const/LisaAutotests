@@ -9,7 +9,7 @@ return [
                 "type_id" => 1,
                 "supervisor_id" => 5,
                 "manager_id" => null,
-                "status" => 4,
+                "status" => 7,
                 "direction" => 2,
                 "priority" => 1,
                 "awaiting_correction" => 0,
@@ -122,7 +122,7 @@ return [
                 "value" => "0"
             ],
         ],
-        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
+        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "grid_settings" => [],
         "request_attachments" => []
     ],

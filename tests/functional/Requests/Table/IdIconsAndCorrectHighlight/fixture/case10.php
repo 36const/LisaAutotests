@@ -37,7 +37,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-                "photo_load_status" => 1
+                "photo_load_status" => 0
             ],
             [
                 "id" => 11,
@@ -233,8 +233,20 @@ return [
                 "value" => "0"
             ],
         ],
-        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
+        "request_attachments" => [
+            [
+                //"id" => 1,
+                "request_id" => 8,
+                "file_name" => "223839_jpg.jpg",
+                "alias" => "jpg.jpg",
+                "status" => 2,
+                "uploaded_by" => "Константин Куцан",
+                "uploaded_at" => "2020-07-25 19:38:43",
+                "deleted_by" => null,
+                "deleted_at" => null
+            ]
+        ],
+        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "grid_settings" => [],
-        "request_attachments" => []
     ],
 ];

@@ -3,8 +3,8 @@
 namespace lisa;
 
 use Codeception\Example;
-use rzk\TestHelper;
-use lisa\Page\Functional\RequestView;
+use Codeception\Module\TestHelper;
+
 
 /**
  * @group lisa
@@ -14,22 +14,10 @@ use lisa\Page\Functional\RequestView;
  */
 class POSTNotesCest
 {
-    /**
-     * @var TestHelper $testHelper
-     */
-    private $testHelper;
-
-    public function __construct()
-    {
-        $this->testHelper = new TestHelper(__DIR__);
-    }
-
-    /**
-     * @return array
-     */
+    /**@return array*/
     protected function pageProvider()
     {
-        return $this->testHelper->getDataProvider('');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -42,7 +30,7 @@ class POSTNotesCest
      */
     public function POSTNotes(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, $this->testHelper, ['allUsers']);
+        $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/request/save-note', $providerData['requestBody']);

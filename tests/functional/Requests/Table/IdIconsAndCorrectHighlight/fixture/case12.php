@@ -9,7 +9,7 @@ return [
                 "type_id" => 1,
                 "supervisor_id" => 6,
                 "manager_id" => 4,
-                "status" => 5,
+                "status" => 6,
                 "direction" => 1,
                 "priority" => 1,
                 "awaiting_correction" => 0,
@@ -37,7 +37,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-                "photo_load_status" => 1
+                "photo_load_status" => 0
             ],
             [
                 "id" => 11,
@@ -45,10 +45,10 @@ return [
                 "type_id" => 1,
                 "supervisor_id" => 5,
                 "manager_id" => null,
-                "status" => 1,
+                "status" => 6,
                 "direction" => 2,
                 "priority" => 1,
-                "awaiting_correction" => 0,
+                "awaiting_correction" => 1,
                 "created_at" => "2020-01-01 00:00:00",
                 "correction_comment" => null,
                 "amount_to_work" => 10,
@@ -73,7 +73,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-                "photo_load_status" => 1
+                "photo_load_status" => 0
             ],
         ],
         "requests_fields" => [
@@ -233,7 +233,7 @@ return [
                 "value" => "0"
             ],
         ],
-        "field_values" => include \rzk\FixtureController::getFixtureDir() . 'lisa_fixtures/field_values.php',
+        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "grid_settings" => [],
         "request_attachments" => []
     ],
