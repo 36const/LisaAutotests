@@ -245,6 +245,12 @@ return [
                 'request_id' => 2,
                 "priority" => 2,
                 //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
+                "amount_to_work" => 20,
+                "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                "fields_for_complete" => "[]",
+                "triggered_by" => "Константин Куцан",
+                "event" => "create",
+                "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
             ],
             [
 //                "id" => 2,
@@ -255,6 +261,12 @@ return [
                 'request_id' => 2,
                 "priority" => 2,
                 //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
+                "amount_to_work" => 20,
+                "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                "fields_for_complete" => "[]",
+                "triggered_by" => "Константин Куцан",
+                "event" => "create",
+                "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
             ],
         ],
         "request_status_history" => [],

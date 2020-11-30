@@ -159,6 +159,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -169,6 +175,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -179,6 +191,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -189,6 +207,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -370,6 +394,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -380,6 +410,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -390,6 +426,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -400,6 +442,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -575,6 +623,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -585,6 +639,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -595,6 +655,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -605,6 +671,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -808,6 +880,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -818,6 +896,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -828,6 +912,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -838,6 +928,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -1013,6 +1109,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -1023,6 +1125,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -1033,6 +1141,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -1043,6 +1157,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -1224,6 +1344,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -1234,6 +1360,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -1244,6 +1376,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -1254,6 +1392,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -1394,6 +1538,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Групповушкин 13, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Группировка товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -1404,6 +1554,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Групповушкин 13, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Группировка товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -1414,6 +1570,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Групповушкин 13, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Группировка товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -1424,6 +1586,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Групповушкин 13, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Группировка товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -1596,6 +1764,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Заливка фото с фотостудии (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -1606,6 +1780,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Заливка фото с фотостудии (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -1616,6 +1796,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Заливка фото с фотостудии (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -1626,6 +1812,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Заливка фото с фотостудии (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -1804,6 +1996,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Проверка скрытых товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -1814,6 +2012,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Проверка скрытых товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -1824,6 +2028,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Проверка скрытых товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -1834,6 +2044,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Руководько 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Проверка скрытых товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -1983,6 +2199,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -1993,6 +2215,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -2003,6 +2231,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -2013,6 +2247,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -2162,6 +2402,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -2172,6 +2418,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -2182,6 +2434,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -2192,6 +2450,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -2329,6 +2593,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление параметров/значений (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -2339,6 +2609,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление параметров/значений (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -2349,6 +2625,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление параметров/значений (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -2359,6 +2641,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление параметров/значений (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -2496,6 +2784,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Изменение существующих параметров/значений (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -2506,6 +2800,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Изменение существующих параметров/значений (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -2516,6 +2816,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Изменение существующих параметров/значений (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -2526,6 +2832,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Изменение существующих параметров/значений (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -2663,6 +2975,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Проектирование структуры (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -2673,6 +2991,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Проектирование структуры (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -2683,6 +3007,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Проектирование структуры (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -2693,6 +3023,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Проектенко 14, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Проектирование структуры (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ]
                 ]
@@ -2855,6 +3191,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -2865,6 +3207,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -2875,6 +3223,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -2885,6 +3239,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -3022,6 +3382,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение видео (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -3032,6 +3398,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение видео (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -3042,6 +3414,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение видео (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -3052,6 +3430,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение видео (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -3189,6 +3573,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение размерной сетки (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -3199,6 +3589,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение размерной сетки (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -3209,6 +3605,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение размерной сетки (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -3219,6 +3621,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение размерной сетки (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [
@@ -3356,6 +3764,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение тегов (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 2,
@@ -3366,6 +3780,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение тегов (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 3,
@@ -3376,6 +3796,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение тегов (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                         [
                             "id" => 4,
@@ -3386,6 +3812,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Категоркин 15, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление/изменение тегов (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
                         ],
                     ],
                     'observers' => [

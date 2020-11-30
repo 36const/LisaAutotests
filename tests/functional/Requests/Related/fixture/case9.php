@@ -324,6 +324,12 @@ return [
                 'request_id' => 2,
                 "priority" => 2,
                 //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
+                "amount_to_work" => 20,
+                "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                "fields_for_complete" => "[]",
+                "triggered_by" => "Константин Куцан",
+                "event" => "create",
+                "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
             ],
             [
 //                "id" => 2,
@@ -334,6 +340,12 @@ return [
                 'request_id' => 2,
                 "priority" => 2,
                 //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
+                "amount_to_work" => 20,
+                "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                "fields_for_complete" => "[]",
+                "triggered_by" => "Константин Куцан",
+                "event" => "create",
+                "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
             ],
             [
 //                "id" => 3,
@@ -344,6 +356,12 @@ return [
                 'request_id' => 3,
                 "priority" => 2,
                 //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
+                "amount_to_work" => 10,
+                "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
+                "fields_for_complete" => "[]",
+                "triggered_by" => "Константин Куцан",
+                "event" => "create",
+                "changed_fields" => '{"newValue": 3, "oldValue": "1"}'
             ],
             [
 //                "id" => 4,
@@ -354,8 +372,13 @@ return [
                 'request_id' => 3,
                 "priority" => 2,
                 //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
+                "amount_to_work" => 10,
+                "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
+                "fields_for_complete" => "[]",
+                "triggered_by" => "Константин Куцан",
+                "event" => "create",
+                "changed_fields" => '{"newValue": 3, "oldValue": "1"}'
             ]
-
         ],
         "request_status_history" => [],
         "observers" => [],
