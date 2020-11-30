@@ -5,7 +5,6 @@ modules:
         - \lisa\Helper\Api
         - Cli
         - Asserts
-#        - rzk\Database
         - TestHelper:
             mockserver:
               clear_before_test: true   # По-умолчанию false, то есть не чистим моки перед стартом каждого тестa
