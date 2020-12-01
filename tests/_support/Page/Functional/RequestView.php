@@ -24,6 +24,7 @@ class RequestView extends FunctionalTester
     public static $svReportPeriods =        "//table[@class='table table-bordered detail-view']//th[text()='Отчетный период СВ']";
     public static $supervisor_comment =     "//table[@class='table table-bordered detail-view']//*[@name='Request[supervisor_comment]']";
 
+    public static $createChangeTypeButton = "//a[@href='/bpm/request/view?id=1&forCrossCheck=0']";
     public static $saveButton = "//button[@id='update-form-save']";
     public static $tabsCheckbox = "//input[@id='tabs-toggle-button']";
 

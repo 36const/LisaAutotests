@@ -13,6 +13,8 @@ return [
                 "canSee" => [
                     RequestCreate::$subject,
                     RequestCreate::$description,
+                    RequestCreate::$seller,
+                    RequestCreate::$category,
                     RequestCreate::$amount,
                     RequestCreate::$plannedFinishDate,
                     RequestCreate::$priority,

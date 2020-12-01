@@ -25,7 +25,7 @@ class AcceptanceTester extends \Codeception\Actor
 
     /**
      * @param Example $data - данные кейса из файла data.php
-     * @param string|null $globalFixture - название файла глобальных фикстур, при значении [] глобальные фикстуры не используются
+     * @param string|null $globalFixture - название файла глобальных фикстур, при значении null глобальные фикстуры не используются
      */
     public function loadDataForTest(Example $data, ?string $globalFixture = 'oneUser')
     {

@@ -11,6 +11,8 @@ class RequestCreate extends FunctionalTester
 
     public static $subject = "//input[@name='Request[subject]']";
     public static $description = "//textarea[@name='Request[description]']";
+    public static $category = "//div[contains(@class, 'field-request-category_id required')]/label[text()='Категория товаров']";
+    public static $seller = "//div[contains(@class, 'field-request-seller_id required')]/label[text()='Продавец']";
     public static $amount = "//input[@name='Request[amount_to_work]']";
     public static $plannedFinishDate = "//input[@name='Request[planned_finish_date]']";
     public static $observers = "//select[@name='Request[observers][]']";
@@ -19,7 +21,7 @@ class RequestCreate extends FunctionalTester
     public static $createModal = "//div[@id='create_modal']";
     public static $createButton = "//a[@href='/bpm/request']";
     public static $typesList = "//select[@id='types-select' and @name='RequestType']";
-    public static $createModalButton = "//button[@id='create-button']";
+    public static $createButtonModal = "//button[@id='create-button' and text()='Создать']";
 
     public static function typeSelect($typeId)
     {
@@ -30,8 +32,6 @@ class RequestCreate extends FunctionalTester
     {
         return "//div[@id='checkboxes-direction']//input[@name='direction' and @value='$directionId']";
     }
-
-    public static $createButtonModal = "//div[@id='create_modal']//button[@id='create-button' and text()='Создать']";
 
     public function amOnRequestCreate(int $type, int $direction)
     {

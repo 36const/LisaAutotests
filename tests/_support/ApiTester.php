@@ -25,7 +25,7 @@ class ApiTester extends \Codeception\Actor
 
     /**
      * @param Example $data - данные кейса из файла data.php
-     * @param array|string[] $globalFixture - название файла глобальных фикстур
+     * @param string|null $globalFixture - название файла глобальных фикстур, при значении null глобальные фикстуры не используются
      */
     public function loadDataForTest(Example $data, ?string $globalFixture = 'oneUser')
     {
