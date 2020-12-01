@@ -6456,6 +6456,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Супервайзер Начальникович 1, Супервайзер Начальникович 2"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '[]',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "supervisor_id",
+                            "changed_fields" => '{"newValue": 10, "oldValue": 6}'
                         ],
                         [
                             "id" => 2,
@@ -6466,7 +6472,13 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Супервайзер Начальникович 1, Супервайзер Начальникович 2"
-                        ]
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '[]',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "supervisor_id",
+                            "changed_fields" => '{"newValue": 10, "oldValue": 6}'
+                        ],
                     ],
                     'request_status_history' => [],
                     'transition_info' => []
@@ -6658,6 +6670,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Менеджер Контентович 1Б, Супервайзер Начальникович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '[]',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "manager_id",
+                            "changed_fields" => '{"newValue": "12", "oldValue": 11}'
                         ],
                         [
                             "id" => 2,
@@ -6668,6 +6686,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Менеджер Контентович 1Б, Супервайзер Начальникович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '[]',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "manager_id",
+                            "changed_fields" => '{"newValue": "12", "oldValue": 11}'
                         ],
                         [
                             "id" => 3,
@@ -6678,6 +6702,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Контентович 1Б, Супервайзер Начальникович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '[]',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 5, "oldValue": 6}'
                         ],
                         [
                             "id" => 4,
@@ -6688,6 +6718,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Контентович 1Б, Супервайзер Начальникович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '[]',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 5, "oldValue": 6}'
                         ],
                         [
                             "id" => 5,
@@ -6698,6 +6734,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Контентович 1Б, Супервайзер Начальникович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '[]',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 5, "oldValue": 6}'
                         ],
                     ],
                     'request_status_history' => [

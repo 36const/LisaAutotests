@@ -6668,11 +6668,11 @@ return [
         ]
     ],
 
-    'case9_0_1_1_checkbox' => [
+    'case9_6_1_1_checkbox' => [
         'setting' => [
             'description' => 'Перевод из "Выполнена" во "В работе (на исправление)" тип 1 направление 1 с чекбоксом "С фотосъёмкой"',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case9_0_1_1_checkbox.php',
+        'fixture_data' => include __DIR__ . '/fixture/case9_6_1_1_checkbox.php',
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [
@@ -7147,11 +7147,11 @@ return [
         ]
     ],
 
-    'case9_0_2_1_checkbox' => [
+    'case9_6_2_1_checkbox' => [
         'setting' => [
             'description' => 'Перевод из "Выполнена" во "В работе (на исправление)" тип 2 направление 1 с чекбоксом "С фотосъёмкой"',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case9_0_2_1_checkbox.php',
+        'fixture_data' => include __DIR__ . '/fixture/case9_6_2_1_checkbox.php',
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [
@@ -7626,11 +7626,11 @@ return [
         ]
     ],
 
-    'case9_0_3_1_checkbox' => [
+    'case9_6_3_1_checkbox' => [
         'setting' => [
             'description' => 'Перевод из "Выполнена" во "В работе (на исправление)" тип 3 направление 1 с чекбоксом "С фотосъёмкой"',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case9_0_3_1_checkbox.php',
+        'fixture_data' => include __DIR__ . '/fixture/case9_6_3_1_checkbox.php',
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [
@@ -8105,11 +8105,11 @@ return [
         ]
     ],
 
-    'case9_0_5_1_checkbox' => [
+    'case9_6_5_1_checkbox' => [
         'setting' => [
             'description' => 'Перевод из "Выполнена" во "В работе (на исправление)" тип 5 направление 1 с чекбоксом "С фотосъёмкой"',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case9_0_5_1_checkbox.php',
+        'fixture_data' => include __DIR__ . '/fixture/case9_6_5_1_checkbox.php',
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [

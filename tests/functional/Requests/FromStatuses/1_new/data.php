@@ -957,6 +957,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Супервайзер Начальникович 1, Супервайзер Начальникович 2"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '[]',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "supervisor_id",
+                            "changed_fields" => '{"newValue": 10, "oldValue": 6}'
                         ],
                         [
                             "id" => 2,
@@ -967,6 +973,12 @@ return [
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Супервайзер Начальникович 1, Супервайзер Начальникович 2"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '[]',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "supervisor_id",
+                            "changed_fields" => '{"newValue": 10, "oldValue": 6}'
                         ]
                     ],
                     'request_status_history' => []
