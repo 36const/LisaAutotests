@@ -32,6 +32,7 @@ class CreateRequestModalCest
     public function CreateRequestModal(AcceptanceTester $I, Example $data, RequestCreate $create)
     {
         $I->loadDataForTest($data);
+        $provider_data = $data['provider_data'];
 
         $create->amOnPage('/bpm/request');
         $I->cantSeeElement(RequestCreate::$createModal);
@@ -72,5 +73,8 @@ class CreateRequestModalCest
                     break;
             }
         }
+
+        $I->click(RequestCreate::$createButtonModal);
+        $I->checkObjectsOnPage($provider_data['pageObjects']);
     }
 }

@@ -19,6 +19,7 @@ class RequestCreate extends FunctionalTester
     public static $createModal = "//div[@id='create_modal']";
     public static $createButton = "//a[@href='/bpm/request']";
     public static $typesList = "//select[@id='types-select' and @name='RequestType']";
+    public static $createModalButton = "//button[@id='create-button']";
 
     public static function typeSelect($typeId)
     {
