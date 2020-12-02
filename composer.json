@@ -1,5 +1,5 @@
 {
-    "name": "gomer-tests/lisa",
+    "name": "lisa-tests/lisa",
     "description": "API, Functional and Acceptance tests for Lisa",
     "type": "project",
     "license": "Open Source",
