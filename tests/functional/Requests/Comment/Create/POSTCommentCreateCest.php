@@ -39,5 +39,8 @@ class POSTCommentCreateCest
         $I->canSeeResponseContainsJson($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
+
+        if (isset($providerData['RabbitMQ']))
+            $I->checkRabbitMQ($providerData['RabbitMQ']);
     }
 }
