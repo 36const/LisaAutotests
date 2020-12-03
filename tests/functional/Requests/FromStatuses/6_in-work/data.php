@@ -6277,7 +6277,7 @@ return [
         'setting' => [
             'description' => 'Изменение супервайзера во "В работе"',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'fixture_data' => include __DIR__ . '/fixture/case6_0_sv.php',
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -6483,7 +6483,12 @@ return [
                     'request_status_history' => [],
                     'transition_info' => []
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [
+                    '{"notificationId":1,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 \"Добавление новых товаров (Работа с товарами Розетки)\" [Товар-новинка/эксклюзив (трафикообразующий)]: назначен новый супервайзер Супервайзер Начальникович 2","notification":"Константин Куцан <b>назначил(а) супервайзером заявки</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] пользователя Супервайзер Начальникович 2</br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                ],
+            ],
         ]
     ],
 
@@ -6491,7 +6496,7 @@ return [
         'setting' => [
             'description' => 'Изменение контент-менеджера во "В работе"',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'fixture_data' => include __DIR__ . '/fixture/case6_0_cm.php',
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -6757,7 +6762,16 @@ return [
                     ],
                     'transition_info' => []
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [
+                    '{"notificationId":1,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 \"Добавление новых товаров (Работа с товарами Розетки)\"  [Товар-новинка/эксклюзив (трафикообразующий)]: назначен новый исполнитель Менеджер Контентович 1Б","notification":"Константин Куцан <b>назначил(а) исполнителем заявки</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] пользователя Менеджер Контентович 1Б</br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":2,"userId":12,"attachments":"[]","subject":"[LISA] Заявка №1 \"Добавление новых товаров (Работа с товарами Розетки)\"  [Товар-новинка/эксклюзив (трафикообразующий)]: назначен новый исполнитель Менеджер Контентович 1Б","notification":"Константин Куцан <b>назначил(а) исполнителем заявки</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=2\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] Вас</br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":3,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 \"Добавление новых товаров (Работа с товарами Розетки)\" [Товар-новинка/эксклюзив (трафикообразующий)] перешла в статус \"Ожидает взятия в работу\"","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Ожидает взятия в работу\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":4,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 \"Добавление новых товаров (Работа с товарами Розетки)\" [Товар-новинка/эксклюзив (трафикообразующий)] перешла в статус \"Ожидает взятия в работу\"","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=4\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Ожидает взятия в работу\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                ],
+            ],
+
         ]
     ],
 ];

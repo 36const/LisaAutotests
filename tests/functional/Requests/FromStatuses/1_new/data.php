@@ -774,7 +774,7 @@ return [
         'setting' => [
             'description' => 'Изменение супервайзера в "Новая"',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1_0_sv.php',
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -983,7 +983,13 @@ return [
                     ],
                     'request_status_history' => []
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [
+                    '{"notificationId":1,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 \"Добавление новых товаров (Работа с товарами Розетки)\" [Товар-новинка/эксклюзив (трафикообразующий)]: назначен новый супервайзер Супервайзер Начальникович 2","notification":"Константин Куцан <b>назначил(а) супервайзером заявки</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] пользователя Супервайзер Начальникович 2</br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":2,"userId":10,"attachments":"[]","subject":"[LISA] Заявка №1 \"Добавление новых товаров (Работа с товарами Розетки)\" [Товар-новинка/эксклюзив (трафикообразующий)]: назначен новый супервайзер Супервайзер Начальникович 2","notification":"Константин Куцан <b>назначил(а) супервайзером заявки</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=2\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] Вас</br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                ],
+            ],
         ]
     ],
 
