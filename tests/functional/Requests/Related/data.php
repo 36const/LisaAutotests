@@ -950,7 +950,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Связанная заявка тип 9 статус 6',
+            'description' => 'Связанная заявка тип 9 статус 6 + нотификации',
             'type' => 9,
             'direction' => 0,
             'id' => 1
@@ -967,6 +967,7 @@ return [
                 "Request[category_id]" => 1,
                 "Request[description]" => "Описание",
                 "Request[direction]" => 0,
+                "Request[observers]" => [15, 17],
                 "Request[parent_id]" => 1,
                 "Request[planned_finish_date]" => null,
                 "Request[priority]" => 2,
@@ -1174,10 +1175,66 @@ return [
                             "event" => "create",
                             "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
                         ],
+                        [
+                            "id" => 3,
+                            "user_id" => 15,
+                            "notification" => '',
+                            "status" => 0,
+                            //"created_at" => '2020-01-01 00:00:01',
+                            'request_id' => 2,
+                            "priority" => 2,
+                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление параметров/значений (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
+                        ],
+                        [
+                            "id" => 4,
+                            "user_id" => 17,
+                            "notification" => '',
+                            "status" => 0,
+                            //"created_at" => '2020-01-01 00:00:01',
+                            'request_id' => 2,
+                            "priority" => 2,
+                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление параметров/значений (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
+                        ],
                     ],
-                    'observers' => [],
+                    'observers' => [
+                        [
+                            'request_id' => 1,
+                            "user_id" => 15
+                        ],
+                        [
+                            'request_id' => 1,
+                            "user_id" => 17
+                        ],
+                        [
+                            'request_id' => 2,
+                            "user_id" => 15
+                        ],
+                        [
+                            'request_id' => 2,
+                            "user_id" => 17
+                        ],
+                    ],
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [
+                    '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Создана новая заявка №2 \"Добавление параметров/значений (Определяется типом задачи)\" [Товар-новинка/эксклюзив (трафикообразующий)]","notification":"Константин Куцан <b>создал(а) связанную заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=2&amp;notifId=1\">№2 Добавление параметров/значений (Определяется типом задачи)</a>\n [Товар-новинка/эксклюзив (трафикообразующий)]\n</br><b>Количество в работу:</b> 10</br> из заявки <a href=\"http://gomer.local/bpm/request/view?id=1\">№1</a>","requestId":2}',
+                    '{"notificationId":2,"userId":34,"attachments":"[]","subject":"[LISA] Создана новая заявка №2 \"Добавление параметров/значений (Определяется типом задачи)\" [Товар-новинка/эксклюзив (трафикообразующий)]","notification":"Константин Куцан <b>создал(а) связанную заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=2&amp;notifId=2\">№2 Добавление параметров/значений (Определяется типом задачи)</a>\n [Товар-новинка/эксклюзив (трафикообразующий)]\n</br><b>Количество в работу:</b> 10</br> из заявки <a href=\"http://gomer.local/bpm/request/view?id=1\">№1</a>","requestId":2}',
+                    '{"notificationId":4,"userId":17,"attachments":"[]","subject":"[LISA] Создана новая заявка №2 \"Добавление параметров/значений (Определяется типом задачи)\" [Товар-новинка/эксклюзив (трафикообразующий)]","notification":"Константин Куцан <b>создал(а) связанную заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=2&amp;notifId=4\">№2 Добавление параметров/значений (Определяется типом задачи)</a>\n [Товар-новинка/эксклюзив (трафикообразующий)]\n</br><b>Количество в работу:</b> 10</br> из заявки <a href=\"http://gomer.local/bpm/request/view?id=1\">№1</a>","requestId":2}',
+                ],
+            ],
         ]
     ],
 
