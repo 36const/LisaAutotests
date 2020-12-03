@@ -264,7 +264,6 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                 "errors" => [
                     "Не передано поле item_id",
                     "item_id: поле должно быть числом",
-                    "Ошибки валидации входящих параметров."
                 ]
             ],
             'db' => [
@@ -296,7 +295,6 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                 "errors" => [
                     "Не передано поле market_id",
                     "market_id: поле должно быть числом",
-                    "Ошибки валидации входящих параметров."
                 ]
             ],
             'db' => [
@@ -328,7 +326,6 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                 "errors" => [
                     "Не передано поле employee_code_1c",
                     "employee_code_1c: поле должно быть числом",
-                    "Ошибки валидации входящих параметров."
                 ]
             ],
             'db' => [
@@ -360,7 +357,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                 "errors" => [
                     "Не передано поле direction",
                     "direction: поле должно быть числом",
-                    "Ошибки валидации входящих параметров."
+                    "direction: значение может быть равно только 1 или 2",
                 ]
             ],
             'db' => [
@@ -391,7 +388,6 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                 "status" => 400,
                 "errors" => [
                     "Не передано поле item_id",
-                    "Ошибки валидации входящих параметров."
                 ]
             ],
             'db' => [
@@ -422,7 +418,6 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                 "status" => 400,
                 "errors" => [
                     "Не передано поле market_id",
-                    "Ошибки валидации входящих параметров."
                 ]
             ],
             'db' => [
@@ -453,7 +448,6 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                 "status" => 400,
                 "errors" => [
                     "Не передано поле employee_code_1c",
-                    "Ошибки валидации входящих параметров."
                 ]
             ],
             'db' => [
@@ -484,7 +478,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                 "status" => 400,
                 "errors" => [
                     "Не передано поле direction",
-                    "Ошибки валидации входящих параметров."
+                    "direction: значение может быть равно только 1 или 2",
                 ]
             ],
             'db' => [
@@ -514,7 +508,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "В поле direction переданы не валидные данные. Direction может быть равен только 1 и 2"
+                    "direction: значение может быть равно только 1 или 2",
                 ]
             ],
             'db' => [
@@ -548,7 +542,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                     "market_id: поле должно быть числом",
                     "employee_code_1c: поле должно быть числом",
                     "direction: поле должно быть числом",
-                    "Ошибки валидации входящих параметров."
+                    "direction: значение может быть равно только 1 или 2",
                 ]
             ],
             'db' => [
