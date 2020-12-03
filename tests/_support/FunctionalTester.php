@@ -137,4 +137,19 @@ class FunctionalTester extends \Codeception\Actor
             }
         }
     }
+
+    public function checkRabbitMQ($rabbit)
+    {
+        $I = $this;
+
+        foreach ($rabbit as $queueName => $queueMessages) {
+
+            $expectedNumber = count($queueMessages);
+            $I->canSeeNumberOfMessagesInQueue($queueName, $expectedNumber);
+
+            foreach ($queueMessages as $message) {
+                $I->canSeeMessageInQueueContainsText($queueName, $message);
+            }
+        }
+    }
 }
