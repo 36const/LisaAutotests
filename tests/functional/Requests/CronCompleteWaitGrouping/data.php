@@ -476,7 +476,10 @@ return [
                         ],
                     ]
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [],
+            ],
         ]
     ],
 
