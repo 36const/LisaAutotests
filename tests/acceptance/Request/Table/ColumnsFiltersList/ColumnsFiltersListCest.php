@@ -17,7 +17,7 @@ class ColumnsFiltersListCest
     /**@return array*/
     protected function pageProvider()
     {
-        return TestHelper::prepareDataprovider(require 'data.php', '');
+        return TestHelper::prepareDataprovider(require 'data.php', 'case1');
     }
 
     /**
@@ -27,12 +27,10 @@ class ColumnsFiltersListCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function ColumnsFilters(AcceptanceTester $I, Example $data, Request $request)
+    public function ColumnsFiltersList(AcceptanceTester $I, Example $data, Request $request)
     {
         $I->loadDataForTest($data, 'allUsers');
-//        $I->setCookie('requestsPerPage', '745688fb3b86d06ebc0ee1a556f012a84444ebb268c977c7fc0a1000b3a2174aa%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22requestsPerPage%22%3Bi%3A1%3Bi%3A50%3B%7D');
-        $I->setCookie('requestsPerPage', 'a1a7feab0135f5a13336c2e4cc14b4fe943ed55a7057d90deb41b1ecb5f88ba9a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22requestsPerPage%22%3Bi%3A1%3Bi%3A50%3B%7D');
-        $I->seeCookie('requestsPerPage');
+        $I->setRequestPerPageCookie(50);
         $setting = $data['setting'];
         $provider_data = $data['provider_data'];
         $request->amOnTable();

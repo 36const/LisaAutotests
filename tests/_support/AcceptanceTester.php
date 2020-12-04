@@ -62,10 +62,21 @@ class AcceptanceTester extends \Codeception\Actor
         }
 
         $I->setCookie('for_normal_people_4', '1');
-        $I->setCookie('requestsPerPage', '7bab5e6b3cd55b1ddf5a0d641017b292f3cb48c7cb5eeba7801e54bb1478711da%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22requestsPerPage%22%3Bi%3A1%3Bi%3A20%3B%7D');
 
         $I->seeCookie('_identity');
         $I->seeCookie('for_normal_people_4');
+    }
+
+    public function setRequestPerPageCookie(int $amount)
+    {
+        $I = $this;
+        $I->resetCookie('requestsPerPage');
+        $I->amOnPage('/bpm/request');
+
+        $I->scrollTo('//div[@id="toolbar"]//ul[@class="dropdown-menu"]');
+        $I->click('//div[@id="toolbar"]//a[@id="drop5"]');
+        $I->click('//div[@id="toolbar"]//ul[@class="dropdown-menu"]//li//a[text()="'. $amount. '"]');
+
         $I->seeCookie('requestsPerPage');
     }
 
