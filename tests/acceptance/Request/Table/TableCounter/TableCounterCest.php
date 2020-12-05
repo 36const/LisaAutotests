@@ -36,27 +36,27 @@ class TableCounterCest
         $request->amOnTable();
         $I->checkObjectsOnPage($providerData['pageObjects_1']);
 
-        $I->scrollTo(Request::$paginator, -400);
+        $I->scrollTo(Request::$paginator);
         $I->waitForElementNotVisible(Request::tablePage(5));
         $I->checkObjectsOnPage($providerData['pageObjects_2']);
 
-        $I->scrollTo(Request::$globalCaption, -400);
+        $I->scrollTo(Request::$globalCaption);
         $I->checkObjectsOnPage($providerData['pageObjects_3']);
 
-        $I->scrollTo(Request::$paginator, -400);
+        $I->scrollTo(Request::$paginator);
         $I->checkObjectsOnPage($providerData['pageObjects_2']);
 
 
         $I->clickWithLeftButton(Request::tablePage('»'));
         $I->checkObjectsOnPage($providerData['pageObjects_4']);
 
-        $I->scrollTo(Request::$paginator, -400);
+        $I->scrollTo(Request::$paginator);
         $I->checkObjectsOnPage($providerData['pageObjects_2']);
 
-        $I->scrollTo(Request::$globalCaption, -400);
+        $I->scrollTo(Request::$globalCaption);
         $I->checkObjectsOnPage($providerData['pageObjects_5']);
 
-        $I->scrollTo(Request::$paginator, -400);
+        $I->scrollTo(Request::$paginator);
         $I->checkObjectsOnPage($providerData['pageObjects_2']);
 
 
