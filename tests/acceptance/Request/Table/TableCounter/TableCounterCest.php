@@ -37,6 +37,7 @@ class TableCounterCest
         $I->checkObjectsOnPage($providerData['pageObjects_1']);
 
         $I->scrollTo(Request::$paginator, -400);
+        $I->waitForElementNotVisible(Request::tablePage(5));
         $I->checkObjectsOnPage($providerData['pageObjects_2']);
 
         $I->scrollTo(Request::$globalCaption, -400);

@@ -114,21 +114,13 @@ class AcceptanceTester extends \Codeception\Actor
 
         if (isset($pageObjects['canSee'])) {
             foreach ($pageObjects['canSee'] as $object) {
-                try {
-                    $I->waitForElementVisible($object, 2);
-                } catch (\Exception $e) {
                     $I->canSeeElement($object);
-                }
             }
         }
 
         if (isset($pageObjects['cantSee'])) {
             foreach ($pageObjects['cantSee'] as $object) {
-                try {
-                    $I->waitForElementNotVisible($object, 2);
-                } catch (\Exception $e) {
                     $I->cantSeeElement($object);
-                }
             }
         }
     }
