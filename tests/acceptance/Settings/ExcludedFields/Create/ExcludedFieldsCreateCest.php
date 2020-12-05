@@ -76,7 +76,7 @@ class ExcludedFieldsCreateCest
         $I->click(ExcludedFields::$addButton);
         $I->cantSeeElement(ExcludedFields::$errorDuplicate);
         $I->cantSee('Такая комбинация уже существует');
-        $I->wait(1); //без этого доп. ожидания, при проверке таблицы не обнаруживается новая запись
+        $I->wait(1); //без этого доп. ожидания, при проверке таблицы в БД не обнаруживается новая запись
         $I->checkTablesInDB($providerData['db_2']);
     }
 }
