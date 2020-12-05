@@ -611,4 +611,82 @@ return [
             ],
         ]
     ],
+
+    'case11' => [
+        'setting' => [
+            'description' => 'Установка и изменение фильтра колонки уровня сложности',
+            'column' => 'status',
+            'value' => 'В работе',
+            'amount' => 21,
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case7.php',
+        'provider_data' => [
+            'columnValueList' => [
+                "canSee" => [
+                    Request::columnValueList('Новая'),
+                    Request::columnValueList('Готова для распределения'),
+                    Request::columnValueList('На доработке'),
+                    Request::columnValueList('Отменена'),
+                    Request::columnValueList('Ожидает взятия в работу'),
+                    Request::columnValueList('В работе'),
+                    Request::columnValueList('Ожидает'),
+                    Request::columnValueList('Частично выполнена'),
+                    Request::columnValueList('Выполнена'),
+                    Request::columnValueList('Закрыта'),
+                    Request::columnValueList('(не задано)'),
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListAll' => [
+                "canSee" => [
+                    Request::searchValueList('status', 'Новая'),
+                    Request::searchValueList('status', 'Готова для распределения'),
+                    Request::searchValueList('status', 'На доработке'),
+                    Request::searchValueList('status', 'Отменена'),
+                    Request::searchValueList('status', 'Ожидает взятия в работу'),
+                    Request::searchValueList('status', 'В работе'),
+                    Request::searchValueList('status', 'Ожидает'),
+                    Request::searchValueList('status', 'Частично выполнена'),
+                    Request::searchValueList('status', 'Выполнена'),
+                    Request::searchValueList('status', 'Закрыта'),
+                    Request::searchValueList('status', '(не задано)'),
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListNotAll' => [
+                "canSee" => [
+                    Request::searchValueList('status', 'Новая'),
+                    Request::searchValueList('status', 'Готова для распределения'),
+                    Request::searchValueList('status', 'На доработке'),
+                    Request::searchValueList('status', 'Отменена'),
+                    Request::searchValueList('status', 'Ожидает взятия в работу'),
+                    Request::searchValueList('status', 'Ожидает'),
+                    Request::searchValueList('status', 'Частично выполнена'),
+                    Request::searchValueList('status', 'Выполнена'),
+                    Request::searchValueList('status', 'Закрыта'),
+                    Request::searchValueList('status', '(не задано)'),
+                ],
+                "cantSee" => [
+                    Request::searchValueList('status', 'В работе'),
+                ],
+            ],
+            'searchValueListNotAnyone' => [
+                "canSee" => [],
+                "cantSee" => [
+                    Request::searchValueList('status', 'Новая'),
+                    Request::searchValueList('status', 'Готова для распределения'),
+                    Request::searchValueList('status', 'На доработке'),
+                    Request::searchValueList('status', 'Отменена'),
+                    Request::searchValueList('status', 'Ожидает взятия в работу'),
+                    Request::searchValueList('status', 'В работе'),
+                    Request::searchValueList('status', 'Ожидает'),
+                    Request::searchValueList('status', 'Частично выполнена'),
+                    Request::searchValueList('status', 'Выполнена'),
+                    Request::searchValueList('status', 'Закрыта'),
+                    Request::searchValueList('status', '(не задано)'),
+                ],
+            ],
+        ]
+    ],
+
 ];
