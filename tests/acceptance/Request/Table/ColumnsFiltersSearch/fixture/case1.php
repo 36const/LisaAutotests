@@ -5,7 +5,7 @@ return [
         "requests" => [
             [
                 //"id" => 1,
-                "author_id" => 4,
+                "author_id" => 5,
                 "type_id" => 3,
                 "supervisor_id" => 6,
                 "manager_id" => null,
@@ -143,7 +143,7 @@ return [
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}',
                 "cross_check_status" => 1,
-                "cross_check_manager_id" => 11,
+                "cross_check_manager_id" => 12,
             ],
             [
                 //"id" => 5,
@@ -2448,46 +2448,18 @@ return [
                 "value" => "1.5"
             ]
         ],
-        "report_periods" => [
-            [
-                //'id' => 1,
-                "begin" => '2020-01-01 00:00:00',
-                "end" => '2020-03-31 00:00:00',
-                "created_at" => '2020-01-01 00:00:00',
-                "updated_at" => null,
-            ],
-            [
-                //'id' => 2,
-                "begin" => '2020-04-01 00:00:00',
-                "end" => '2020-06-30 00:00:00',
-                "created_at" => '2020-01-01 00:00:00',
-                "updated_at" => null,
-            ],
-            [
-                //'id' => 3,
-                "begin" => '2020-07-01 00:00:00',
-                "end" => date('Y-m-d', strtotime('+1 week')) . ' 00:00:00',
-                "created_at" => '2020-02-01 00:00:00',
-                "updated_at" => '2020-07-01 17:01:01',
-            ],
-            [
-                //'id' => 4,
-                "begin" => date('Y-m-d', strtotime('+8 days')) . ' 00:00:00',
-                "end" => '2021-12-31 00:00:00',
-                "created_at" => '2020-03-01 00:00:00',
-                "updated_at" => '2020-09-01 19:01:01',
-            ],
-        ],
         "grid_settings" => [
             [
                 //"id" => 1,
                 "user_id" => 4,
-                "columns_list" => '["priority", "reason_id", "author_clarifications", "type_id", "report_period_id", "sv_report_periods", "cross_check_status", "direction", "team_direction", "difficulty_level"]'
+                "columns_list" => '["author_id", "supervisor_id", "manager_id", "cross_check_manager_id", "category_id", "seller_id"]'
             ]
         ],
+        "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
-        "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
-        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
     ],
+    "cooper_fixtures" => [
+        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
+    ]
 ];

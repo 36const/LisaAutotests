@@ -47,7 +47,7 @@ class Request extends FunctionalTester
             '/tbody/tr[' . $tableRow . ']/td[@data-col-seq="' . $columnName . '"]//*[contains(text(),"' . $text . '")]';
     }
 
-    /**Поле поиска в заголовке колонки*/
+    /**Поле поиска в заголовке колонки с готовым списком вариантов*/
     public static function columnSearchField(string $fieldName)
     {
         return "//thead//td//select[@name='RequestSearch[$fieldName][]']/..//ul";
@@ -80,11 +80,26 @@ class Request extends FunctionalTester
         return "//thead//td//input[@name='RequestSearch[$fieldName]']/..//button[@title='Очистить']";
     }
 
-    /**Поле ввода значения для поиска в колонке*/
-    public static function columnSearch(string $fieldName)
+    /**Поле поиска в заголовке колонки без готового списка вариантов*/
+    public static function columnSearchFieldNotList(string $fieldName)
     {
-        return "//thead//td//input[@name='RequestSearch[$fieldName]']/..//span[@class='selection']//span[@class='select2-selection__rendered']";
+        return "//thead//td//select[@name='RequestSearch[$fieldName]']/..//span[@role='combobox']";
     }
+
+    /**Поле поиска в заголовке колонки без готового списка вариантов после выбора результата*/
+    public static function columnSearchFieldNotListAfterResult(string $fieldName, string $result)
+    {
+        return Request::columnSearchFieldNotList($fieldName) . "/span[@title='$result' and text()='$result']";
+    }
+
+    /**Кнопка сброса фильтра в заголовке колонки*/
+    public static function searchNotListClearButton(string $fieldName, string $result)
+    {
+        return Request::columnSearchFieldNotListAfterResult($fieldName, $result) . "/span[@title='Удалить все элементы' and text()='×']";
+    }
+
+    /**Поле ввода текста для поиска в заголовке колонки без готового списка вариантов*/
+    public static $search = '//span/input[@class="select2-search__field"]';
 
     /**Блок кнопок изменения статуса в таблице заявок и самой заявке*/
     public static function transferButton(string $action)
