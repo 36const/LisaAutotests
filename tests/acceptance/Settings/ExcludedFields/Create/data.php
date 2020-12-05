@@ -5,7 +5,7 @@ use lisa\Page\Functional\RequestCreate;
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Взаимоисключающие чек-боксы при создании заявки',
+            'description' => 'Создание пары взаимоисключающих чек-боксов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

@@ -30,6 +30,7 @@ phpunit.phar
 tests/_output/*
 tests/_support/_generated
 tests/_support/_identityCookie.txt
+tests/_support/_requestsPerPage.txt
 
 #vagrant folder
 /.vagrant

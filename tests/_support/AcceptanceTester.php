@@ -70,12 +70,17 @@ class AcceptanceTester extends \Codeception\Actor
     public function setRequestPerPageCookie(int $amount)
     {
         $I = $this;
-        $I->resetCookie('requestsPerPage');
-        $I->amOnPage('/bpm/request');
 
-        $I->scrollTo('//div[@id="toolbar"]//ul[@class="dropdown-menu"]');
-        $I->click('//div[@id="toolbar"]//a[@id="drop5"]');
-        $I->click('//div[@id="toolbar"]//ul[@class="dropdown-menu"]//li//a[text()="'. $amount. '"]');
+        if (file_exists(__DIR__ . '/_requestsPerPage.txt')) {
+            $I->setCookie('requestsPerPage', file_get_contents(__DIR__ . '/_requestsPerPage.txt'));
+        } else {
+            $I->resetCookie('requestsPerPage');
+            $I->amOnPage('/bpm/request');
+            $I->scrollTo('//div[@id="toolbar"]//ul[@class="dropdown-menu"]');
+            $I->click('//div[@id="toolbar"]//a[@id="drop5"]');
+            $I->click('//div[@id="toolbar"]//ul[@class="dropdown-menu"]//li//a[text()="' . $amount . '"]');
+            file_put_contents(__DIR__ . '/_requestsPerPage.txt', $I->grabCookie('requestsPerPage'));
+        }
 
         $I->seeCookie('requestsPerPage');
     }
