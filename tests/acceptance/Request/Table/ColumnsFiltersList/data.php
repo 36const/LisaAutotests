@@ -392,216 +392,223 @@ return [
         ]
     ],
 
-//    'case7' => [
-//        'setting' => [
-//            'description' => 'Установка и изменение фильтра колонки кросс-чек статуса',
-//            'column' => 'sv_report_periods',
-//            'value' => '(не задано)',
-//            'amount' => 12,
-//        ],
-//        'fixture_data' => include __DIR__ . '/fixture/case5.php',
-//        'provider_data' => [
-//            'columnValueList' => [
-//                "canSee" => [
-//                    Request::columnValueList('2020-01-01 - 2020-03-31'),
-//                    Request::columnValueList('2020-04-01 - 2020-06-30'),
-//                    Request::columnValueList('2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::columnValueList(date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::columnValueList('(не задано)'),
-//                ],
-//                "cantSee" => [],
-//            ],
-//            'searchValueListAll' => [
-//                "canSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//                "cantSee" => [],
-//            ],
-//            'searchValueListNotAll' => [
-//                "canSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                ],
-//                "cantSee" => [
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//            ],
-//            'searchValueListNotAnyone' => [
-//                "canSee" => [],
-//                "cantSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//            ],
-//        ]
-//    ],
-//
-//    'case8' => [
-//        'setting' => [
-//            'description' => 'Установка и изменение фильтра колонки направления задачи',
-//            'column' => 'sv_report_periods',
-//            'value' => '(не задано)',
-//            'amount' => 12,
-//        ],
-//        'fixture_data' => include __DIR__ . '/fixture/case5.php',
-//        'provider_data' => [
-//            'columnValueList' => [
-//                "canSee" => [
-//                    Request::columnValueList('2020-01-01 - 2020-03-31'),
-//                    Request::columnValueList('2020-04-01 - 2020-06-30'),
-//                    Request::columnValueList('2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::columnValueList(date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::columnValueList('(не задано)'),
-//                ],
-//                "cantSee" => [],
-//            ],
-//            'searchValueListAll' => [
-//                "canSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//                "cantSee" => [],
-//            ],
-//            'searchValueListNotAll' => [
-//                "canSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                ],
-//                "cantSee" => [
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//            ],
-//            'searchValueListNotAnyone' => [
-//                "canSee" => [],
-//                "cantSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//            ],
-//        ]
-//    ],
-//
-//    'case9' => [
-//        'setting' => [
-//            'description' => 'Установка и изменение фильтра колонки направления команды',
-//            'column' => 'sv_report_periods',
-//            'value' => '(не задано)',
-//            'amount' => 12,
-//        ],
-//        'fixture_data' => include __DIR__ . '/fixture/case5.php',
-//        'provider_data' => [
-//            'columnValueList' => [
-//                "canSee" => [
-//                    Request::columnValueList('2020-01-01 - 2020-03-31'),
-//                    Request::columnValueList('2020-04-01 - 2020-06-30'),
-//                    Request::columnValueList('2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::columnValueList(date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::columnValueList('(не задано)'),
-//                ],
-//                "cantSee" => [],
-//            ],
-//            'searchValueListAll' => [
-//                "canSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//                "cantSee" => [],
-//            ],
-//            'searchValueListNotAll' => [
-//                "canSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                ],
-//                "cantSee" => [
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//            ],
-//            'searchValueListNotAnyone' => [
-//                "canSee" => [],
-//                "cantSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//            ],
-//        ]
-//    ],
-//
-//    'case10' => [
-//        'setting' => [
-//            'description' => 'Установка и изменение фильтра колонки уровня сложности',
-//            'column' => 'sv_report_periods',
-//            'value' => '(не задано)',
-//            'amount' => 12,
-//        ],
-//        'fixture_data' => include __DIR__ . '/fixture/case5.php',
-//        'provider_data' => [
-//            'columnValueList' => [
-//                "canSee" => [
-//                    Request::columnValueList('2020-01-01 - 2020-03-31'),
-//                    Request::columnValueList('2020-04-01 - 2020-06-30'),
-//                    Request::columnValueList('2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::columnValueList(date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::columnValueList('(не задано)'),
-//                ],
-//                "cantSee" => [],
-//            ],
-//            'searchValueListAll' => [
-//                "canSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//                "cantSee" => [],
-//            ],
-//            'searchValueListNotAll' => [
-//                "canSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                ],
-//                "cantSee" => [
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//            ],
-//            'searchValueListNotAnyone' => [
-//                "canSee" => [],
-//                "cantSee" => [
-//                    Request::searchValueList('sv_report_periods', '2020-01-01 - 2020-03-31'),
-//                    Request::searchValueList('sv_report_periods', '2020-04-01 - 2020-06-30'),
-//                    Request::searchValueList('sv_report_periods', '2020-07-01 - ' . date('Y-m-d', strtotime('+1 week'))),
-//                    Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
-//                    Request::searchValueList('sv_report_periods', '(не задано)'),
-//                ],
-//            ],
-//        ]
-//    ],
+    'case7' => [
+        'setting' => [
+            'description' => 'Установка и изменение фильтра колонки кросс-чек статуса',
+            'column' => 'cross_check_status',
+            'value' => 'Не прошла кросс-чек',
+            'amount' => 1,
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case7.php',
+        'provider_data' => [
+            'columnValueList' => [
+                "canSee" => [
+                    Request::columnValueList('Не прошла кросс-чек'),
+                    Request::columnValueList('На кросс-чеке'),
+                    Request::columnValueList('Кросс-чек пройден'),
+                    Request::columnValueList('(не задано)'),
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListAll' => [
+                "canSee" => [
+                    Request::searchValueList('cross_check_status', 'Не прошла кросс-чек'),
+                    Request::searchValueList('cross_check_status', 'На кросс-чеке'),
+                    Request::searchValueList('cross_check_status', 'Кросс-чек пройден'),
+                    Request::searchValueList('cross_check_status', '(не задано)'),
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListNotAll' => [
+                "canSee" => [
+                    Request::searchValueList('cross_check_status', 'На кросс-чеке'),
+                    Request::searchValueList('cross_check_status', 'Кросс-чек пройден'),
+                    Request::searchValueList('cross_check_status', '(не задано)'),
+                ],
+                "cantSee" => [
+                    Request::searchValueList('cross_check_status', 'Не прошла кросс-чек'),
+                ],
+            ],
+            'searchValueListNotAnyone' => [
+                "canSee" => [],
+                "cantSee" => [
+                    Request::searchValueList('cross_check_status', 'Не прошла кросс-чек'),
+                    Request::searchValueList('cross_check_status', 'На кросс-чеке'),
+                    Request::searchValueList('cross_check_status', 'Кросс-чек пройден'),
+                    Request::searchValueList('cross_check_status', '(не задано)'),
+                ],
+            ],
+        ]
+    ],
 
+    'case8' => [
+        'setting' => [
+            'description' => 'Установка и изменение фильтра колонки направления задачи',
+            'column' => 'direction',
+            'value' => 'Работа с товарами Розетки',
+            'amount' => 19,
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case7.php',
+        'provider_data' => [
+            'columnValueList' => [
+                "canSee" => [
+                    Request::columnValueList('Определяется типом задачи'),
+                    Request::columnValueList('Работа с товарами Розетки'),
+                    Request::columnValueList('Работа с товарами Маркетплейса'),
+                    Request::columnValueList('(не задано)'),
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListAll' => [
+                "canSee" => [
+                    Request::searchValueList('direction', 'Определяется типом задачи'),
+                    Request::searchValueList('direction', 'Работа с товарами Розетки'),
+                    Request::searchValueList('direction', 'Работа с товарами Маркетплейса'),
+                    Request::searchValueList('direction', '(не задано)'),
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListNotAll' => [
+                "canSee" => [
+                    Request::searchValueList('direction', 'Определяется типом задачи'),
+                    Request::searchValueList('direction', 'Работа с товарами Маркетплейса'),
+                    Request::searchValueList('direction', '(не задано)'),
+                ],
+                "cantSee" => [
+                    Request::searchValueList('direction', 'Работа с товарами Розетки'),
+                ],
+            ],
+            'searchValueListNotAnyone' => [
+                "canSee" => [],
+                "cantSee" => [
+                    Request::searchValueList('direction', 'Определяется типом задачи'),
+                    Request::searchValueList('direction', 'Работа с товарами Розетки'),
+                    Request::searchValueList('direction', 'Работа с товарами Маркетплейса'),
+                    Request::searchValueList('direction', '(не задано)'),
+                ],
+            ],
+        ]
+    ],
+
+    'case9' => [
+        'setting' => [
+            'description' => 'Установка и изменение фильтра колонки направления команды',
+            'column' => 'team_direction',
+            'value' => 'Работа с проектированием структур + фильтрами',
+            'amount' => 19,
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case7.php',
+        'provider_data' => [
+            'columnValueList' => [
+                "canSee" => [
+                    Request::columnValueList('Управление отделом'),
+                    Request::columnValueList('Работа с товарами Маркетплейса'),
+                    Request::columnValueList('Работа с товарами Rozetka'),
+                    Request::columnValueList('Работа с группами'),
+                    Request::columnValueList('Работа с проектированием структур + фильтрами'),
+                    Request::columnValueList('Работа с порталами, фат-меню, категориями'),
+                    Request::columnValueList('(не задано)'),
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListAll' => [
+                "canSee" => [
+                    Request::searchValueList('team_direction', 'Управление отделом'),
+                    Request::searchValueList('team_direction', 'Работа с товарами Маркетплейса'),
+                    Request::searchValueList('team_direction', 'Работа с товарами Rozetka'),
+                    Request::searchValueList('team_direction', 'Работа с группами'),
+                    Request::searchValueList('team_direction', 'Работа с проектированием структур + фильтрами'),
+                    Request::searchValueList('team_direction', 'Работа с порталами, фат-меню, категориями'),
+                    Request::searchValueList('team_direction', '(не задано)'),
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListNotAll' => [
+                "canSee" => [
+                    Request::searchValueList('team_direction', 'Управление отделом'),
+                    Request::searchValueList('team_direction', 'Работа с товарами Маркетплейса'),
+                    Request::searchValueList('team_direction', 'Работа с товарами Rozetka'),
+                    Request::searchValueList('team_direction', 'Работа с группами'),
+                    Request::searchValueList('team_direction', 'Работа с порталами, фат-меню, категориями'),
+                    Request::searchValueList('team_direction', '(не задано)'),
+                ],
+                "cantSee" => [
+                    Request::searchValueList('team_direction', 'Работа с проектированием структур + фильтрами'),
+                ],
+            ],
+            'searchValueListNotAnyone' => [
+                "canSee" => [],
+                "cantSee" => [
+                    Request::searchValueList('team_direction', 'Управление отделом'),
+                    Request::searchValueList('team_direction', 'Работа с товарами Маркетплейса'),
+                    Request::searchValueList('team_direction', 'Работа с товарами Rozetka'),
+                    Request::searchValueList('team_direction', 'Работа с группами'),
+                    Request::searchValueList('team_direction', 'Работа с проектированием структур + фильтрами'),
+                    Request::searchValueList('team_direction', 'Работа с порталами, фат-меню, категориями'),
+                    Request::searchValueList('team_direction', '(не задано)'),
+                ],
+            ],
+        ]
+    ],
+
+    'case10' => [
+        'setting' => [
+            'description' => 'Установка и изменение фильтра колонки уровня сложности',
+            'column' => 'difficulty_level',
+            'value' => '5',
+            'amount' => 23,
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case7.php',
+        'provider_data' => [
+            'columnValueList' => [
+                "canSee" => [
+                    Request::columnValueList('1'),
+                    Request::columnValueList('2'),
+                    Request::columnValueList('3'),
+                    Request::columnValueList('4'),
+                    Request::columnValueList('5'),
+                    Request::columnValueList('6'),
+                    Request::columnValueList('(не задано)'),
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListAll' => [
+                "canSee" => [
+                    Request::searchValueList('difficulty_level', '1'),
+                    Request::searchValueList('difficulty_level', '2'),
+                    Request::searchValueList('difficulty_level', '3'),
+                    Request::searchValueList('difficulty_level', '4'),
+                    Request::searchValueList('difficulty_level', '5'),
+                    Request::searchValueList('difficulty_level', '6'),
+                    Request::searchValueList('difficulty_level', '(не задано)'),
+                ],
+                "cantSee" => [],
+            ],
+            'searchValueListNotAll' => [
+                "canSee" => [
+                    Request::searchValueList('difficulty_level', '1'),
+                    Request::searchValueList('difficulty_level', '2'),
+                    Request::searchValueList('difficulty_level', '3'),
+                    Request::searchValueList('difficulty_level', '4'),
+                    Request::searchValueList('difficulty_level', '6'),
+                    Request::searchValueList('difficulty_level', '(не задано)'),
+                ],
+                "cantSee" => [
+                    Request::searchValueList('difficulty_level', '5'),
+                ],
+            ],
+            'searchValueListNotAnyone' => [
+                "canSee" => [],
+                "cantSee" => [
+                    Request::searchValueList('difficulty_level', '1'),
+                    Request::searchValueList('difficulty_level', '2'),
+                    Request::searchValueList('difficulty_level', '3'),
+                    Request::searchValueList('difficulty_level', '4'),
+                    Request::searchValueList('difficulty_level', '5'),
+                    Request::searchValueList('difficulty_level', '6'),
+                    Request::searchValueList('difficulty_level', '(не задано)'),
+                ],
+            ],
+        ]
+    ],
 ];

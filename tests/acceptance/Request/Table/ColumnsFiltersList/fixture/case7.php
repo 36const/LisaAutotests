@@ -2482,7 +2482,7 @@ return [
             [
                 //        "id" => 1,
                 "user_id" => 4,
-                "columns_list" => '["priority", "reason_id", "author_clarifications", "type_id", "report_period_id", "sv_report_periods", "cross_check_status", "direction", "team_direction", "difficulty_level"]'
+                "columns_list" => '["cross_check_status", "direction", "team_direction", "difficulty_level"]'
             ]
         ],
 //        "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
