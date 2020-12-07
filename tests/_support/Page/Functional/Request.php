@@ -92,7 +92,7 @@ class Request extends FunctionalTester
         return Request::columnSearchFieldNotList($fieldName) . "/span[@title='$result' and text()='$result']";
     }
 
-    /**Кнопка сброса фильтра в заголовке колонки*/
+    /**Кнопка сброса фильтра в заголовке колонки без готового списка вариантов*/
     public static function searchNotListClearButton(string $fieldName, string $result)
     {
         return Request::columnSearchFieldNotListAfterResult($fieldName, $result) . "/span[@title='Удалить все элементы' and text()='×']";
@@ -100,6 +100,39 @@ class Request extends FunctionalTester
 
     /**Поле ввода текста для поиска в заголовке колонки без готового списка вариантов*/
     public static $search = '//span/input[@class="select2-search__field"]';
+
+    /**Поле поиска по диапазону дат*/
+    public static function columnSearchFieldDates(string $fieldName)
+    {
+        return "//input[@name='RequestSearch[$fieldName]']";
+    }
+
+    /**Дата*/
+    public static function dateSetting(int $day)
+    {
+        return "//div[@class='daterangepicker ltr show-calendar opensright'][@style]//tbody//td[text()='$day']";
+    }
+
+    /**Итоговый диапазон внизу выпадающего календаря*/
+    public static function calendarDateRange()
+    {
+        return "//div[@class='daterangepicker ltr show-calendar opensright'][@style]//div[@class='drp-buttons']//span[text()='" . date("Y-m") . "-01 00:00:00to" . date("Y-m") . "-14 23:59:00']";
+    }
+
+    /**Итоговый диапазон в поле поиска*/
+    public static function searchDateRange(string $fieldName)
+    {
+        return "//input[@name='RequestSearch[$fieldName]' and @value='" . date("Y-m") . "-01 00:00:00to" . date("Y-m") . "-14 23:59:00']";
+    }
+
+    /**Кнопка подтверждения выбранного диапазона дат*/
+    public static $searchDatesApplyButton = "//div[@class='daterangepicker ltr show-calendar opensright'][@style]//div[@class='drp-buttons']//button[text()='Подтвердить']";
+
+    /**Кнопка сброса фильтра даты в заголовке колонки*/
+    public static function searchDatesClearButton(string $fieldName)
+    {
+        return "//a[@id='clear-date' and @value='RequestSearch[$fieldName]']";
+    }
 
     /**Блок кнопок изменения статуса в таблице заявок и самой заявке*/
     public static function transferButton(string $action)
