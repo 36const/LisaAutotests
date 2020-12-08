@@ -99,6 +99,7 @@ class RequestView extends FunctionalTester
         'RequestField[59]',
         'RequestField[60]',
         'RequestField[61]',
+        'RequestField[89]',
         'RequestField[142]',
         'RequestField[143]',
         //общие количества ошибок

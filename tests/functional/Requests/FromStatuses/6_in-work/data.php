@@ -107,6 +107,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0,
                         ],
@@ -171,6 +176,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -290,6 +306,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0,
                         ],
@@ -374,6 +395,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -496,6 +528,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0,
                         ],
@@ -560,6 +597,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -678,6 +726,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0,
                         ],
@@ -747,6 +800,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -865,6 +929,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0,
                         ],
@@ -934,6 +1003,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -1114,6 +1194,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 66,
                             'value' => 10,
                         ],
@@ -1233,6 +1318,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -1389,6 +1485,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 118,
                             'value' => 10,
                         ],
@@ -1493,6 +1594,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -1650,6 +1762,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 118,
                             'value' => 10,
                         ],
@@ -1754,6 +1871,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -1941,6 +2069,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 66,
                             'value' => 10,
                         ],
@@ -2060,6 +2193,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -2215,6 +2359,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 118,
                             'value' => 10,
                         ],
@@ -2319,6 +2468,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -2475,6 +2635,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 118,
                             'value' => 10,
                         ],
@@ -2579,6 +2744,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -2766,6 +2942,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value >=' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 67,
                             'value' => 10,
                         ],
@@ -2885,6 +3066,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -3018,6 +3210,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value >=' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 67,
                             'value' => 10,
                         ],
@@ -3122,6 +3319,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -3301,6 +3509,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 67,
                             'value' => 10,
                         ],
@@ -3420,6 +3633,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -3553,6 +3777,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 67,
                             'value' => 10,
                         ],
@@ -3657,6 +3886,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -3769,6 +4009,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 91,
                             'value' => 10,
                         ],
@@ -3816,6 +4061,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -3995,6 +4251,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 67,
                             'value' => 10,
                         ],
@@ -4114,6 +4375,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -4247,6 +4519,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 67,
                             'value' => 10,
                         ],
@@ -4351,6 +4628,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -4499,6 +4787,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 90,
                             'value' => 10,
                         ],
@@ -4588,6 +4881,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -4736,6 +5040,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 90,
                             'value' => 10,
                         ],
@@ -4825,6 +5134,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -4943,6 +5263,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 91,
                             'value' => 10,
                         ],
@@ -5022,6 +5347,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -5140,6 +5476,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 91,
                             'value' => 10,
                         ],
@@ -5219,6 +5560,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -5337,6 +5689,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 91,
                             'value' => 10,
                         ],
@@ -5416,6 +5773,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -5635,6 +6003,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 93,
                             'value' => 10,
                         ],
@@ -5714,6 +6087,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -5864,6 +6248,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 100,
                             'value' => 10,
                         ],
@@ -5923,6 +6312,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -6036,6 +6436,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0,
                         ],
@@ -6090,6 +6495,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -6193,6 +6609,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 92,
                             'value' => 10,
                         ],
@@ -6257,6 +6678,17 @@ return [
                     'request_status_history' => [
                         [
                             "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
                             "request_id" => 1,
                             "user_id" => 4,
                             "old_status" => 6,
@@ -6414,6 +6846,11 @@ return [
                             'request_id' => 1,
                             'field_id' => 64,
                             'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -6636,6 +7073,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0,
                         ],
@@ -6752,6 +7194,17 @@ return [
                             "id" => 1,
                             "request_id" => 1,
                             "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                        [
+                            "id" => 2,
+                            "request_id" => 1,
+                            "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 5,
                             "reason_id" => null,
@@ -6771,7 +7224,6 @@ return [
                     '{"notificationId":4,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 \"Добавление новых товаров (Работа с товарами Розетки)\" [Товар-новинка/эксклюзив (трафикообразующий)] перешла в статус \"Ожидает взятия в работу\"","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=4\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Ожидает взятия в работу\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
                 ],
             ],
-
         ]
     ],
 ];
