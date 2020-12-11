@@ -49,7 +49,7 @@ return [
                             "value" => "Супервайзер Руководько 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            "selector" => "//tbody/tr[1]/td[6]/a[@href='/bpm/seller/update?id=0']",
                         ],
                     ],
                     "Магазин 5" => [
@@ -137,13 +137,7 @@ return [
                         ],
                     ],
                 ],
-                "cantSee" => [
-                    "Магазин 0" => [
-                        [
-                            "selector" => "//tbody/tr[1]/td[6]/a[@href='/bpm/seller/update?id=0']",
-                        ]
-                    ]
-                ]
+                "cantSee" => []
             ]
         ]
     ],
@@ -280,17 +274,11 @@ return [
                             "value" => "Супервайзер Руководько 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[5]/td[6]",
+                            "selector" => "//tbody/tr[5]/td[6]/a[@href='/bpm/seller/update?id=0']",
                         ],
                     ],
                 ],
-                "cantSee" => [
-                    "Магазин 0" => [
-                        [
-                            "selector" => "//tbody/tr[5]/td[6]/a[@href='/bpm/seller/update?id=0']",
-                        ]
-                    ]
-                ]
+                "cantSee" => []
             ]
         ]
     ],
@@ -427,17 +415,11 @@ return [
                             "value" => "Супервайзер Руководько 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[5]/td[6]",
+                            "selector" => "//tbody/tr[5]/td[6]/a[@href='/bpm/seller/update?id=0']",
                         ],
                     ],
                 ],
-                "cantSee" => [
-                    "Магазин 0" => [
-                        [
-                            "selector" => "//tbody/tr[5]/td[6]/a[@href='/bpm/seller/update?id=0']",
-                        ]
-                    ]
-                ]
+                "cantSee" => []
             ]
         ]
     ],
@@ -801,7 +783,7 @@ return [
                             "value" => "Супервайзер Руководько 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            "selector" => "//tbody/tr[1]/td[6]/a[@href='/bpm/seller/update?id=0']",
                         ],
                     ],
                     "Магазин 5" => [
@@ -889,13 +871,7 @@ return [
                         ],
                     ],
                 ],
-                "cantSee" => [
-                    "Магазин 0" => [
-                        [
-                            "selector" => "//tbody/tr[1]/td[6]/a[@href='/bpm/seller/update?id=0']",
-                        ]
-                    ]
-                ]
+                "cantSee" => []
             ]
         ]
     ],
@@ -954,7 +930,7 @@ return [
                             "value" => "Супервайзер Руководько 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            "selector" => "//tbody/tr[1]/td[6]/a[@href='/bpm/seller/update?id=0']",
                         ],
                     ],
                     "Магазин 5" => [
@@ -1042,13 +1018,7 @@ return [
                         ],
                     ],
                 ],
-                "cantSee" => [
-                    "Магазин 0" => [
-                        [
-                            "selector" => "//tbody/tr[1]/td[6]/a[@href='/bpm/seller/update?id=0']",
-                        ]
-                    ]
-                ]
+                "cantSee" => []
             ]
         ]
     ],
