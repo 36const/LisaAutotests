@@ -659,7 +659,7 @@ return [
             [
                 "request_id" => 1,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 1,
@@ -669,7 +669,7 @@ return [
             [
                 "request_id" => 1,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 2,
@@ -724,12 +724,12 @@ return [
             [
                 "request_id" => 2,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 2,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 3,
@@ -779,12 +779,12 @@ return [
             [
                 "request_id" => 3,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 3,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 4,
@@ -849,7 +849,7 @@ return [
             [
                 "request_id" => 4,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 4,
@@ -859,17 +859,17 @@ return [
             [
                 "request_id" => 4,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 4,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 4,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 5,
@@ -899,12 +899,12 @@ return [
             [
                 "request_id" => 5,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 5,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 8,
@@ -914,22 +914,22 @@ return [
             [
                 "request_id" => 8,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 8,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 8,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 8,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 8,
@@ -994,22 +994,22 @@ return [
             [
                 "request_id" => 9,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 9,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 9,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 9,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 9,
@@ -1084,22 +1084,22 @@ return [
             [
                 "request_id" => 10,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 10,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 10,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 10,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 10,
@@ -1169,22 +1169,22 @@ return [
             [
                 "request_id" => 11,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 11,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 11,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 11,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 11,
@@ -1239,22 +1239,22 @@ return [
             [
                 "request_id" => 12,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 12,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 12,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 12,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 12,
@@ -1304,22 +1304,22 @@ return [
             [
                 "request_id" => 13,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 13,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 13,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 13,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 13,
@@ -1374,22 +1374,22 @@ return [
             [
                 "request_id" => 14,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 14,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 14,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 14,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 14,
@@ -1414,22 +1414,22 @@ return [
             [
                 "request_id" => 15,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 15,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 15,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 15,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 15,
@@ -1454,22 +1454,22 @@ return [
             [
                 "request_id" => 16,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 16,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 16,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 16,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 16,
@@ -1529,22 +1529,22 @@ return [
             [
                 "request_id" => 17,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 17,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 17,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 17,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 17,
@@ -1569,22 +1569,22 @@ return [
             [
                 "request_id" => 19,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 19,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 19,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 19,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 19,
@@ -1609,22 +1609,22 @@ return [
             [
                 "request_id" => 21,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 21,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 21,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 21,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 21,
@@ -1649,12 +1649,12 @@ return [
             [
                 "request_id" => 1,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 1,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 1,

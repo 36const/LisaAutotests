@@ -11,11 +11,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "reports" => [
-                        [
-                            "id" => 1
-                        ]
-                    ],
+                    "reports" => [],
                 ],
             ]
         ]

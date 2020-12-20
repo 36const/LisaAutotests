@@ -6,9 +6,9 @@ $dirs = [
     '/3_require-changes',
     '/5_wait-work',
     '/6_in-work',
-    '/7_on-hold',
-    '/8_partial-complete',
-    '/9_completed',
+//    '/7_on-hold',
+//    '/8_partial-complete',
+//    '/9_completed',
 ];
 
 $data = [];

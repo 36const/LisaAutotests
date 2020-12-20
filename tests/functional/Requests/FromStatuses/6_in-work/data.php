@@ -108,7 +108,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -307,7 +307,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -529,7 +529,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -727,7 +727,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -930,7 +930,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -1195,7 +1195,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -1486,7 +1486,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -1763,7 +1763,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -2070,7 +2070,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -2360,7 +2360,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -2636,7 +2636,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -3510,7 +3510,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -3778,7 +3778,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -4010,7 +4010,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -4252,7 +4252,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -4520,7 +4520,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -4788,7 +4788,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -5041,7 +5041,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -5264,7 +5264,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -5477,7 +5477,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -5690,7 +5690,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -6004,7 +6004,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -6249,7 +6249,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -6437,7 +6437,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -6610,7 +6610,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -6849,11 +6849,6 @@ return [
                         ],
                         [
                             'request_id' => 1,
-                            'field_id' => 89,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0,
                         ],
@@ -6917,7 +6912,19 @@ return [
                             "changed_fields" => '{"newValue": 10, "oldValue": 6}'
                         ],
                     ],
-                    'request_status_history' => [],
+                    'request_status_history' => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 5,
+                            "new_status" => 6,
+                            "reason_id" => 11,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
+                            "manager_id" => 11
+                        ],
+                    ],
                     'transition_info' => []
                 ]
             ],
@@ -7074,7 +7081,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 89,
-                            'value' => 3,
+                            'value >=' => 3,
                         ],
                         [
                             'request_id' => 1,

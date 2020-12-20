@@ -298,12 +298,12 @@ return [
             [
                 "request_id" => 3,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 3,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 4,
@@ -328,12 +328,12 @@ return [
             [
                 "request_id" => 4,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 4,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 5,
@@ -363,12 +363,12 @@ return [
             [
                 "request_id" => 5,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 5,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 6,
@@ -448,12 +448,12 @@ return [
             [
                 "request_id" => 6,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 6,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 7,
@@ -493,7 +493,7 @@ return [
             [
                 "request_id" => 7,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 7,
@@ -503,7 +503,7 @@ return [
             [
                 "request_id" => 7,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 8,
@@ -513,22 +513,22 @@ return [
             [
                 "request_id" => 8,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 8,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 8,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 8,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 8,
@@ -593,22 +593,22 @@ return [
             [
                 "request_id" => 9,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 9,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 9,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 9,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 9,
