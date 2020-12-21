@@ -15,6 +15,7 @@ return [
         "fields_for_complete" => '[]',
         "triggered_by" => "Менеджер Продактович 1",
         "event" => "create",
-        "changed_fields" => '{"newValue": 1, "oldValue": null}'
+        "changed_fields" => '{"newValue": 1, "oldValue": null}',
+        "notify_service_id" => null,
     ],
 ];
