@@ -31,7 +31,7 @@ return [
                 "supervisor_check_date" => null,
                 "result_comment" => 'Комментарий к результату задачи',
                 "supervisor_comment" => '',
-                //"last_change_status_date" => "2020-01-01 00:00:01",
+                "last_change_status_date" => "2020-01-01 00:00:01",
                 "team_direction" => 4,
                 "report_period_id" => null,
                 "sync_source_id" => null,

@@ -42,7 +42,7 @@ return [
                             "direction" => 1,
                             "priority" => null,
                             "awaiting_correction" => 0,
-                            //"created_at" =>
+                            "created_at >=" => date("Y-m-d"),
                             "correction_comment" => null,
                             "amount_to_work" => 1,
                             "subject" => "COMI-17063 замеры Зимний комбинезон Be easy Ликки 20SD2-19V12 80 см Светло-розовый (2200000054517)",
@@ -91,7 +91,7 @@ return [
                             "supervisor_check_date" => null,
                             "result_comment" => null,
                             "supervisor_comment" => null,
-                            //"last_change_status_date" =>
+                            "last_change_status_date >=" => date("Y-m-d"),
                             "team_direction" => 3,
                             "report_period_id" => null,
                             "sync_source_id" => null,
@@ -227,7 +227,7 @@ return [
                             "direction" => 1,
                             "priority" => null,
                             "awaiting_correction" => 0,
-                            //"created_at" =>
+                            "created_at >=" => date("Y-m-d"),
                             "correction_comment" => null,
                             "amount_to_work" => 1,
                             "subject" => "COMI-17063 замеры Зимний комбинезон Be easy Ликки 20SD2-19V12 80 см Светло-розовый (2200000054517) (Дополнение)",
@@ -276,7 +276,7 @@ return [
                             "supervisor_check_date" => null,
                             "result_comment" => null,
                             "supervisor_comment" => null,
-                            //"last_change_status_date" =>
+                            "last_change_status_date >=" => date("Y-m-d"),
                             "team_direction" => 3,
                             "report_period_id" => null,
                             "sync_source_id" => null,
@@ -422,7 +422,7 @@ return [
                             "direction" => 1,
                             "priority" => null,
                             "awaiting_correction" => 0,
-//                            "created_at" => "2020-11-04 08:20:28",
+                            "created_at >=" => date("Y-m-d"),
                             "correction_comment" => null,
                             "amount_to_work" => 1,
                             "subject" => "COMI-22605 Комбинезон одноразовый Вива-Трейд с капюшоном ХХL Белый (2000014659810)",
@@ -454,7 +454,7 @@ return [
                             "supervisor_check_date" => null,
                             "result_comment" => null,
                             "supervisor_comment" => null,
-//                            "last_change_status_date" => "2020-11-04 10:20:28",
+                            "last_change_status_date >=" => date("Y-m-d"),
                             "team_direction" => 3,
                             "report_period_id" => null,
                             "sync_source_id" => null,

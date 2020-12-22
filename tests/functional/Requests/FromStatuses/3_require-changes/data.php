@@ -47,7 +47,7 @@ return [
                             "supervisor_check_date" => null,
                             "result_comment" => '',
                             "supervisor_comment" => '',
-                            //"last_change_status_date" => "2020-01-01 00:00:01",
+                            "last_change_status_date >=" => date("Y-m-d"),
                             "team_direction" => 3,
                             "report_period_id" => null,
                             "sync_source_id" => null,
@@ -142,7 +142,7 @@ return [
                             "user_id" => 4,
                             "notification" => '',
                             "status" => 0,
-                            //"created_at" => '2020-01-01 00:00:01',
+                            "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
@@ -152,7 +152,7 @@ return [
                             "user_id" => 6,
                             "notification" => '',
                             "status" => 0,
-                            //"created_at" => '2020-01-01 00:00:01',
+                            "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
@@ -167,7 +167,7 @@ return [
                             "new_status" => 1,
                             "reason_id" => 15,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            //"created_at" => "2020-01-01 00:00:01",
+                            "created_at >=" => date("Y-m-d"),
                             "manager_id" => null
                         ]
                     ]

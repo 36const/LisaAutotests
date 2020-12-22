@@ -56,12 +56,12 @@ return [
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
                             "actual_start_date" => '2020-01-01 00:00:03',
-//                            "actual_finish_date" => null,
-//                            "supervisor_process_date" => null,
+                            "actual_finish_date >=" => date("Y-m-d"),
+                            "supervisor_process_date >=" => date("Y-m-d"),
                             "supervisor_check_date" => null,
                             "result_comment" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "supervisor_comment" => '',
-                            //"last_change_status_date" => "2020-01-01 00:00:01",
+                            "last_change_status_date" => "2020-01-01 00:00:01",
                             "team_direction" => 2,
                             "report_period_id" => null,
                             "sync_source_id" => null,
@@ -259,7 +259,7 @@ return [
                             "new_status" => 8,
                             "reason_id" => 7,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            //"created_at" => "2020-01-01 00:00:01",
+                            "created_at >=" => date("Y-m-d"),
                             "manager_id" => 11
                         ],
                     ],
@@ -899,7 +899,7 @@ return [
 //                            "new_status" => 8,
 //                            "reason_id" => 7,
 //                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-//                            //"created_at" => "2020-01-01 00:00:01",
+//                            "created_at >=" => date("Y-m-d"),
 //                            "manager_id" => 2
 //                        ],
 //                        [
@@ -910,7 +910,7 @@ return [
 //                            "new_status" => 8,
 //                            "reason_id" => null,
 //                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-//                            //"created_at" => "2020-01-01 00:00:01",
+//                            "created_at >=" => date("Y-m-d"),
 //                            "manager_id" => 2
 //                        ]
 //                    ],

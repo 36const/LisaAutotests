@@ -33,7 +33,7 @@ return [
                             "direction" => 1,
                             "priority" => null,
                             "awaiting_correction" => 0,
-                            //"created_at" =>
+                            "created_at >=" => date("Y-m-d"),
                             "correction_comment" => null,
                             "amount_to_work" => 1,
                             "subject" => "Исправление ошибки на основе запроса из MobileCourier",
@@ -53,7 +53,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             "supervisor_check_date" => null,
                             "result_comment" => null,
                             "supervisor_comment" => null,
-                            //"last_change_status_date" =>
+                            "last_change_status_date >=" => date("Y-m-d"),
                             "team_direction" => 3,
                             "report_period_id" => null,
                             "sync_source_id" => null,
@@ -117,7 +117,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             "direction" => 2,
                             "priority" => null,
                             "awaiting_correction" => 0,
-                            //"created_at" =>
+                            "created_at >=" => date("Y-m-d"),
                             "correction_comment" => null,
                             "amount_to_work" => 1,
                             "subject" => "Исправление ошибки на основе запроса из MobileCourier",
@@ -137,7 +137,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             "supervisor_check_date" => null,
                             "result_comment" => null,
                             "supervisor_comment" => null,
-                            //"last_change_status_date" =>
+                            "last_change_status_date >=" => date("Y-m-d"),
                             "team_direction" => 2,
                             "report_period_id" => null,
                             "sync_source_id" => null,
@@ -192,7 +192,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             "direction" => 1,
                             "priority" => null,
                             "awaiting_correction" => 0,
-                            //"created_at" =>
+                            "created_at >=" => date("Y-m-d"),
                             "correction_comment" => null,
                             "amount_to_work" => 1,
                             "subject" => "Исправление ошибки на основе запроса из MobileCourier",
@@ -212,7 +212,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             "supervisor_check_date" => null,
                             "result_comment" => null,
                             "supervisor_comment" => null,
-                            //"last_change_status_date" =>
+                            "last_change_status_date >=" => date("Y-m-d"),
                             "team_direction" => 3,
                             "report_period_id" => null,
                             "sync_source_id" => null,

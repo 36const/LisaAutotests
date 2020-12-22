@@ -124,6 +124,7 @@ class RequestView extends FunctionalTester
         'child_count',
         'photo_load_status',
 
+        'created_at',
         'planned_start_date',
         'planned_finish_date',
         'actual_start_date',
