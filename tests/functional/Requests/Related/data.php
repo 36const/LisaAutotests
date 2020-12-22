@@ -1376,6 +1376,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0
                         ],
@@ -1658,6 +1663,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 100,
                             'value' => "10"
                         ],
@@ -1925,6 +1935,11 @@ return [
                             'request_id' => 1,
                             'field_id' => 83,
                             'value' => "10"
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -2267,6 +2282,11 @@ return [
                             'request_id' => 1,
                             'field_id' => 83,
                             'value' => "10"
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
                         ],
                         [
                             'request_id' => 1,
@@ -2719,6 +2739,11 @@ return [
                             'request_id' => 1,
                             'field_id' => 83,
                             'value' => "10"
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
                         ],
                         [
                             'request_id' => 1,

@@ -25,7 +25,7 @@ class POSTCreateRequestCest
      */
     protected function pageProvider()
     {
-        return TestHelper::prepareDataprovider(require 'data.php', 'case1');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**

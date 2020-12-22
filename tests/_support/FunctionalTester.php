@@ -34,18 +34,6 @@ class FunctionalTester extends \Codeception\Actor
         if (isset($globalFixture))
             $I->insertFixtureToDatabase($globalFixture);
 
-//        if (isset($data['fixture_data']['lisa_fixtures']['request_status_history'][0]['created_at'])) {
-//
-//            $element = $data['fixture_data']['lisa_fixtures']['request_status_history'][0];
-//            var_dump($element);
-//            $element['created_at'] = date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes'));
-//            var_dump($element);
-//            $data['fixture_data']['lisa_fixtures']['request_status_history'][0] = $element;
-//            var_dump($data['fixture_data']['lisa_fixtures']['request_status_history'][0]);
-//            $data['fixture_data']['lisa_fixtures']['request_status_history'][0]['created_at'] = date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes'));
-//            print_r($data['fixture_data']['lisa_fixtures']['request_status_history'][0]['created_at']);
-//        }
-
         $I->loadFixtureFromDataprovider();
         $I->loadMockFromDataprovider();
 
