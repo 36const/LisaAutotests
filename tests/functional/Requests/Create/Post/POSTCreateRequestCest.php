@@ -25,7 +25,7 @@ class POSTCreateRequestCest
      */
     protected function pageProvider()
     {
-        return TestHelper::prepareDataprovider(require 'data.php', '');
+        return TestHelper::prepareDataprovider(require 'data.php', 'case1');
     }
 
     /**
@@ -49,7 +49,6 @@ class POSTCreateRequestCest
         $I->checkTablesInDB($providerData['db']);
         $view->checkFields($providerData['db']);
 
-        if (isset($providerData['RabbitMQ']))
-            $I->checkRabbitMQ($providerData['RabbitMQ']);
+        $I->checkRabbitMQ($providerData);
     }
 }

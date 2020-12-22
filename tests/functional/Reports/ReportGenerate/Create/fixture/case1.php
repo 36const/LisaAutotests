@@ -163,12 +163,12 @@ return [
             [
                 "request_id" => 11,
                 "field_id" => 146,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 11,
                 "field_id" => 158,
-                "value" => null
+                "value" => 0
             ],
         ],
         "request_errors" => [

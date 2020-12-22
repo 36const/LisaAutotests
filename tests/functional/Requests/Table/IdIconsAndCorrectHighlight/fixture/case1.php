@@ -202,7 +202,7 @@ return [
             [
                 "request_id" => 1,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 1,
@@ -212,7 +212,7 @@ return [
             [
                 "request_id" => 1,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 2,
@@ -267,12 +267,12 @@ return [
             [
                 "request_id" => 2,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 2,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 3,
@@ -322,12 +322,12 @@ return [
             [
                 "request_id" => 3,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 3,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 4,
@@ -352,12 +352,12 @@ return [
             [
                 "request_id" => 4,
                 "field_id" => 101,
-                "value" => null
+                "value" => 0
             ],
             [
                 "request_id" => 4,
                 "field_id" => 122,
-                "value" => null
+                "value" => 0
             ],
         ],
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',

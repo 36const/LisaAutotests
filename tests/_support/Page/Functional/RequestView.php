@@ -99,6 +99,7 @@ class RequestView extends FunctionalTester
         'RequestField[59]',
         'RequestField[60]',
         'RequestField[61]',
+        'RequestField[89]',
         'RequestField[142]',
         'RequestField[143]',
         //общие количества ошибок
@@ -132,7 +133,8 @@ class RequestView extends FunctionalTester
         'last_change_status_date',
 
         'request_id',
-        '64',
+        '64', //Общее рассчитанное количество показателей
+        '89' //Фактические затраты КМ, мин
     ];
 
     /**
@@ -148,6 +150,12 @@ class RequestView extends FunctionalTester
                 foreach ($tableData as $tableRow) {
                     foreach ($tableRow as $column => $value) {
 
+                        //убрать из названия колонки лишние символы
+                        if (strpos($column, ' ')) {
+                            $column = str_replace([' ', '>', '<', '='], '', $column);
+                            $tableRow[$column] = $value;
+                        }
+
                         if ($tableName == 'requests') {
                             //перевести значение отчётного периода СВ из json
                             if ($column == 'sv_report_periods' && $value != null)
@@ -158,15 +166,13 @@ class RequestView extends FunctionalTester
                                     $requests[$tableRow['id']]['Request[' . $column . '][]'] = $value :
                                     $requests[$tableRow['id']]['Request[' . $column . ']'] = $value);
                         }
-
-                        if ($tableName == 'requests_fields') {
-                            //перевести значения параметров null в 0
-                            $tableRow['value'] != null ?: $tableRow['value'] = 0;
-
-                            in_array($tableRow['field_id'], $this->unsetFields) ?:
-                                $requests[$tableRow['request_id']]['RequestField[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
-                        }
                     }
+
+                    if ($tableName == 'requests_fields') {
+                        in_array($tableRow['field_id'], $this->unsetFields) ?:
+                            $requests[$tableRow['request_id']]['RequestField[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
+                    }
+
                     //исключить поле category для направления Маркет
                     if ($tableName == 'requests' && $tableRow['direction'] == 2)
                         unset($requests[$tableRow['id']]['Request[category_id]']);

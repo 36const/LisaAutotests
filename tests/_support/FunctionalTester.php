@@ -34,6 +34,18 @@ class FunctionalTester extends \Codeception\Actor
         if (isset($globalFixture))
             $I->insertFixtureToDatabase($globalFixture);
 
+//        if (isset($data['fixture_data']['lisa_fixtures']['request_status_history'][0]['created_at'])) {
+//
+//            $element = $data['fixture_data']['lisa_fixtures']['request_status_history'][0];
+//            var_dump($element);
+//            $element['created_at'] = date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes'));
+//            var_dump($element);
+//            $data['fixture_data']['lisa_fixtures']['request_status_history'][0] = $element;
+//            var_dump($data['fixture_data']['lisa_fixtures']['request_status_history'][0]);
+//            $data['fixture_data']['lisa_fixtures']['request_status_history'][0]['created_at'] = date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes'));
+//            print_r($data['fixture_data']['lisa_fixtures']['request_status_history'][0]['created_at']);
+//        }
+
         $I->loadFixtureFromDataprovider();
         $I->loadMockFromDataprovider();
 
@@ -73,7 +85,7 @@ class FunctionalTester extends \Codeception\Actor
         $I->seeResponseCodeIs(200);
     }
 
-    public function checkTablesInDB($dbTablesArray, bool $dontSee = false)
+    public function checkTablesInDB($dbTablesArray)
     {
         $I = $this;
 
@@ -81,16 +93,10 @@ class FunctionalTester extends \Codeception\Actor
             $I->amConnectedToDatabase($dbName);
 
             foreach ($dbData as $tableName => $tableData) {
-
-                $expectedNumber = count($tableData);
-
-                if (!$dontSee)
-                    $I->canSeeNumRecords($expectedNumber, $tableName);
+                $I->canSeeNumRecords(count($tableData), $tableName);
 
                 foreach ($tableData as $tableRow) {
-                    (!$dontSee) ?
-                        $I->canSeeInDatabase($tableName, $tableRow) :
-                        $I->cantSeeInDatabase($tableName, $tableRow);
+                    $I->canSeeInDatabase($tableName, $tableRow);
                 }
             }
         }
@@ -138,17 +144,18 @@ class FunctionalTester extends \Codeception\Actor
         }
     }
 
-    public function checkRabbitMQ($rabbit)
+    public function checkRabbitMQ($providerData)
     {
         $I = $this;
 
-        foreach ($rabbit as $queueName => $queueMessages) {
+        if (isset($providerData['RabbitMQ'])) {
 
-            $expectedNumber = count($queueMessages);
-            $I->canSeeNumberOfMessagesInQueue($queueName, $expectedNumber);
+            foreach ($providerData['RabbitMQ'] as $queueName => $queueMessages) {
+                $I->canSeeNumberOfMessagesInQueue($queueName, count($queueMessages));
 
-            foreach ($queueMessages as $message) {
-                $I->canSeeMessageInQueueContainsText($queueName, $message);
+                foreach ($queueMessages as $message) {
+                    $I->canSeeMessageInQueueContainsText($queueName, $message);
+                }
             }
         }
     }

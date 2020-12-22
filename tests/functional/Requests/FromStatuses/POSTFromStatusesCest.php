@@ -59,7 +59,6 @@ class POSTFromStatusesCest
 
         $view->checkFields($providerData['db']);
 
-        if (isset($providerData['RabbitMQ']))
-            $I->checkRabbitMQ($providerData['RabbitMQ']);
+        $I->checkRabbitMQ($providerData);
     }
 }

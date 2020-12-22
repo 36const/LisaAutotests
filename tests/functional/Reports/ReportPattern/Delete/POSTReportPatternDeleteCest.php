@@ -37,6 +37,6 @@ class POSTReportPatternDeleteCest
         $I->sendPOST('/bpm/report/delete?id=1', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
-        $I->checkTablesInDB($providerData['db'], true);
+        $I->checkTablesInDB($providerData['db']);
     }
 }
