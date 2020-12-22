@@ -319,17 +319,17 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => Request::toCorrection(1)],
                         ["selector" => Request::toCorrection(3)],
                         ["selector" => Request::toCorrection(4)],
                         ["selector" => Request::toCorrection(5)],
                         ["selector" => Request::toCorrection(6)],
                         ["selector" => Request::toCorrection(7)],
-                        ["selector" => Request::toCorrection(2)],
                     ]
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => Request::toCorrection(1)],
+                        ["selector" => Request::toCorrection(2)],
                         ["selector" => Request::attachments(1)],
                         ["selector" => Request::attachments(2)],
                         ["selector" => Request::parentRequest(1)],
