@@ -2487,7 +2487,7 @@ return [
                             "user_id" => 4,
                             "notification" => '',
                             "status" => 0,
-                            //"created_at" => "2020-09-08 09:12:25",
+                            "created_at >=" => date("Y-m-d"),
                             'request_id' => 3,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
@@ -2503,7 +2503,7 @@ return [
                             "user_id" => 35,
                             "notification" => '',
                             "status" => 0,
-                            //"created_at" => "2020-09-08 09:12:25",
+                            "created_at >=" => date("Y-m-d"),
                             'request_id' => 3,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
@@ -3017,7 +3017,7 @@ return [
                             "user_id" => 4,
                             "notification" => '',
                             "status" => 0,
-                            //"created_at" => "2020-09-08 16:47:40",
+                            "created_at >=" => date("Y-m-d"),
                             'request_id' => 4,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
@@ -3033,7 +3033,7 @@ return [
                             "user_id" => 35,
                             "notification" => '',
                             "status" => 0,
-                            //"created_at" => "2020-09-08 16:47:40",
+                            "created_at >=" => date("Y-m-d"),
                             'request_id' => 4,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"

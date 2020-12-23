@@ -206,7 +206,7 @@ return [
                             "user_id" => 4,
                             "notification" => '',
                             "status" => 0,
-                            //"created_at" => '2020-01-01 00:00:01',
+                            "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
@@ -222,7 +222,7 @@ return [
                             "user_id" => 6,
                             "notification" => '',
                             "status" => 0,
-                            //"created_at" => '2020-01-01 00:00:01',
+                            "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
@@ -238,7 +238,7 @@ return [
                             "user_id" => 11,
                             "notification" => '',
                             "status" => 0,
-                            //"created_at" => '2020-01-01 00:00:01',
+                            "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
                             //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"

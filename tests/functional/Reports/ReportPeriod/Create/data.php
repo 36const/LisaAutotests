@@ -25,7 +25,7 @@ return [
                             "id" => 2,
                             "begin" => "2020-05-01 00:00:00",
                             "end" => "2020-05-31 00:00:00",
-                            //"created_at" => "2020-05-04 10:24:53",
+                            "created_at >=" => date("Y-m-d"),
                             "updated_at" => null
                         ]
                     ],

@@ -84,14 +84,14 @@ return [
                             "id" => 1,
                             "name" => "Должность",
                             "description" => "Изменяшки",
-                            //"created_at" => "2020-03-10 12:07:48",
-                            //"updated_at" => null
+                            "created_at" => "2020-03-10 12:07:48",
+                            "updated_at >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 2,
                             "name" => "Управление пользователями",
                             "description" => "Управление пользователями",
-                            //"created_at" => "2020-03-10 12:07:48",
+                            "created_at" => "2020-03-10 12:07:48",
                             "updated_at" => null
                         ],
                     ],
@@ -277,14 +277,14 @@ return [
                             "id" => 1,
                             "name" => "Должность",
                             "description" => "Изменяшки",
-                            //"created_at" => "2020-03-10 12:07:48",
-                            //"updated_at" => null
+                            "created_at" => "2020-03-10 12:07:48",
+                            "updated_at >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 2,
                             "name" => "Управление пользователями",
                             "description" => "Управление пользователями",
-                            //"created_at" => "2020-03-10 12:07:48",
+                            "created_at" => "2020-03-10 12:07:48",
                             "updated_at" => null
                         ],
                     ],
@@ -759,14 +759,14 @@ return [
                             "id" => 1,
                             "name" => "Должность",
                             "description" => "Описание описания",
-                            //"created_at" => "2020-03-10 12:07:48",
-                            //"updated_at" => null
+                            "created_at" => "2020-03-10 12:07:48",
+                            "updated_at >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 2,
                             "name" => "Управление пользователями",
                             "description" => "Управление пользователями",
-                            //"created_at" => "2020-03-10 12:07:48",
+                            "created_at" => "2020-03-10 12:07:48",
                             "updated_at" => null
                         ],
                     ],

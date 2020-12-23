@@ -152,7 +152,7 @@ return [
                             "id" => 1,
                             "name" => "Должность",
                             "description" => "Описание описания",
-                            //"created_at" => "2020-03-10 12:07:48",
+                            "created_at >=" => date("Y-m-d"),
                             "updated_at" => null
                         ],
                     ],
@@ -587,7 +587,7 @@ return [
                             "id" => 1,
                             "name" => "Управление пользователями",
                             "description" => "Управление пользователями",
-                            //"created_at" => "2020-03-10 12:07:48",
+                            "created_at >=" => date("Y-m-d"),
                             "updated_at" => null
                         ],
                     ],
@@ -722,7 +722,7 @@ return [
                             "id" => 1,
                             "name" => "Заявки",
                             "description" => "Заявки",
-                            //"created_at" => "2020-03-10 12:07:48",
+                            "created_at >=" => date("Y-m-d"),
                             "updated_at" => null
                         ],
                     ],
@@ -912,7 +912,7 @@ return [
                             "id" => 1,
                             "name" => "Переходы по статусам",
                             "description" => "Переходы по статусам",
-                            //"created_at" => "2020-03-10 12:07:48",
+                            "created_at >=" => date("Y-m-d"),
                             "updated_at" => null
                         ],
                     ],
@@ -1118,7 +1118,7 @@ return [
                             "id" => 1,
                             "name" => "Управление заявками",
                             "description" => "Управление заявками",
-                            //"created_at" => "2020-03-10 12:07:48",
+                            "created_at >=" => date("Y-m-d"),
                             "updated_at" => null
                         ],
                     ],
@@ -1272,7 +1272,7 @@ return [
                             "id" => 1,
                             "name" => "Отчеты",
                             "description" => "Отчеты",
-                            //"created_at" => "2020-03-10 12:07:48",
+                            "created_at >=" => date("Y-m-d"),
                             "updated_at" => null
                         ],
                     ],
@@ -1395,7 +1395,7 @@ return [
                             "id" => 1,
                             "name" => "Управление настройками",
                             "description" => "Управление настройками",
-                            //"created_at" => "2020-03-10 12:07:48",
+                            "created_at >=" => date("Y-m-d"),
                             "updated_at" => null
                         ],
                     ],
@@ -1534,7 +1534,7 @@ return [
                             "id" => 1,
                             "name" => "Дашборды",
                             "description" => "Дашборды",
-                            //"created_at" => "2020-03-10 12:07:48",
+                            "created_at >=" => date("Y-m-d"),
                             "updated_at" => null
                         ],
                     ],
