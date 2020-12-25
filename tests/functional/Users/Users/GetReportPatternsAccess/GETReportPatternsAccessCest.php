@@ -9,7 +9,7 @@ use Codeception\Module\TestHelper;
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_reports
+ * @group lisa_functional_users
  * @group GETReportPatternsAccess
  */
 class GETReportPatternsAccessCest
