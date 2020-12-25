@@ -29,23 +29,23 @@ modules:
                       'lisa_makeAttachmentsArchive',
                       'lisa_sendMailNotifications' ]
         - Db: # Подключение к базе вашего приложения (Именно в эту базу будут загружаться фикстуры)
-              dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=lisa_auto_db'
+              dsn: 'pgsql:host=postgres;port=5432;dbname=lisa_auto_db'
               user: 'lisa' # Логин к базе
               password: 'jw8s0F4' # Пароль к базе
               cleanup: false
               databases:
                 lisa_fixtures:
-                  dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=lisa_auto_db'
+                  dsn: 'pgsql:host=postgres;port=5432;dbname=lisa_auto_db'
                   user: 'lisa'
                   password: 'jw8s0F4'
                 cooper_fixtures:
-                  dsn: 'pgsql:host=172.20.20.22;port=5432;dbname=cooper_mock_db'
+                  dsn: 'pgsql:host=postgres;port=5432;dbname=cooper_mock_db'
                   user: 'gomer'
                   password: '4c0EcmzAm28AeqbFFOb8N5RBw'
                   populate: true
                   dump: 'tests/dump_cooper.sql'
                 gomer_fixtures:
-                  dsn: 'mysql:host=172.20.20.23;port=3306;dbname=gomer_auto_db'
+                  dsn: 'mysql:host=mysql;port=3306;dbname=gomer_auto_db'
                   user: 'gomer'
                   password: 'Ch3d5r74hcA1WpSELkDfdKGPOpo'
 
