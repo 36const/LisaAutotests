@@ -1,7 +1,5 @@
 <?php
 
-use lisa\Page\Functional\RequestCreate;
-
 return [
     'case1' => [
         'setting' => [

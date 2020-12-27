@@ -1,13 +1,6 @@
 <?php
 return [
     "lisa_fixtures" => [
-        "requests" => [],
-        'requests_fields' => [],
-        "observers" => [],
-        "request_errors" => [],
-        "user_notifications" => [],
-        'notification_settings' => [],
-        "request_status_history" => [],
         "excluded_fields" => [
             [
                 "field_id" => 1,
@@ -31,7 +24,4 @@ return [
             ],
         ],
     ],
-    "cooper_fixtures" => [
-        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
-    ]
 ];
