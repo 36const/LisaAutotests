@@ -53,12 +53,12 @@ class TeamCreateCest
         $I->click(Team::$saveButton);
         $I->canSeeElement(Team::errorField('Значение «Маркетплейс 2» для «Название» уже занято.'));
 
-        sleep(1);   //без слипа выдаёт ошибку element is not attached to the page document
+        $I->wait(1);     //без ожидания выдаёт ошибку element is not attached to the page document
         $I->selectOption(Team::$teamDirection, 'Работа с товарами Маркетплейса');
         $I->click(Team::$saveButton);
         $I->canSeeElement(Team::errorField('Значение «Маркетплейс 2» для «Название» уже занято.'));
 
-        sleep(1);   //без слипа выдаёт ошибку, что нет кнопки "Сохранить"
+        $I->wait(1);     //без ожидания выдаёт ошибку, что нет кнопки "Сохранить"
         $I->pressKey(Team::$teamName, '-');
         $I->click(Team::$saveButton);
         $I->waitForElement(Team::$createButton);

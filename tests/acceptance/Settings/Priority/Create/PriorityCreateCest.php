@@ -53,7 +53,7 @@ class PriorityCreateCest
         $I->click(Priority::$saveButton);
         $I->canSeeElement(Priority::errorField('Значение «Исправление критичной ошибки» для «Название приоритета» уже занято.'));
 
-        sleep(1);   //без слипа выдаёт ошибку, что нет кнопки "Сохранить"
+        $I->wait(1);     //без ожидания выдаёт ошибку, что нет кнопки "Сохранить"
         $I->pressKey(Priority::$priorityName, '-');
         $I->click(Priority::$saveButton);
         $I->waitForElement(Priority::$createButton);

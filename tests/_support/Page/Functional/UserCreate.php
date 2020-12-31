@@ -15,7 +15,7 @@ class UserCreate extends FunctionalTester
     public static $saveButton = '//button[@type="submit" and text()=" Сохранить"]';
 
     /**Список результатов поиска пользователя*/
-    public static function searchResult($login)
+    public static function searchResult(string $login)
     {
         return "//ul[@class='select2-results__options']//li[contains(text(), '$login')]";
     }
@@ -36,5 +36,4 @@ class UserCreate extends FunctionalTester
                                         '//p[text()="Необходимо заполнить «Должность пользователя»."]';
     public static $divUserTeamError = '//div[@class="form-group field-userbpm-team required has-error"]' .
                                         '//p[text()="Необходимо заполнить «Команда пользователя»."]';
-
 }
