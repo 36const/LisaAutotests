@@ -895,7 +895,7 @@ return [
                             "supervisor_process_date" => null,
                             "supervisor_check_date" => null,
                             "result_comment" => '',
-                            "supervisor_comment" => '',
+                            "supervisor_comment" => null,
                             "last_change_status_date" => "2020-01-01 00:00:01",
                             "team_direction" => 2,
                             "report_period_id" => null,
