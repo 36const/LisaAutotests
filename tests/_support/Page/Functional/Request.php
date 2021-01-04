@@ -22,6 +22,9 @@ class Request extends FunctionalTester
                                 '/tbody//div[@class="empty" and text()="Ничего не найдено."]';
     public static $paginator = '//ul[@class="pagination"]';
 
+    public static $modal_supervisor_id = "//form[@id='appoint-supervisor-form']//*[@name='Request[supervisor_id]']/..//span";
+    public static $modal_manager_id = "//form[@id='appoint-manager-form']//*[@name='Request[manager_id]']/..//span";
+
     /**Общее количество заявок в названии вкладки*/
     public static function statusTabsCounter(int $tabNumber, int $tabCounter)
     {
@@ -47,13 +50,34 @@ class Request extends FunctionalTester
             '/tbody/tr[' . $tableRow . ']/td[@data-col-seq="' . $columnName . '"]//*[contains(text(),"' . $text . '")]';
     }
 
+    /**Блок кнопок изменения статуса в таблице заявок и самой заявке*/
+    public static function transferButton(string $action)
+    {
+        return "//div[@class='buttons-background']//*[contains(@class, 'btn')][contains(text(), '$action')]";
+    }
+
+    /**Контекстное меню заявки*/
+    public static function contextMenu(string $action)
+    {
+        return "//tbody//ul[@class='dropdown-menu']//a[contains(text(), '$action')]";
+    }
+
+    /**Страница таблицы*/
+    public static function tablePage($page)
+    {
+        return "//ul[@class='pagination']//li/a[text() = '$page']";
+    }
+
+
+    //****** Колонки с готовым списком значений ******//
+
     /**Поле поиска в заголовке колонки с готовым списком вариантов*/
     public static function columnSearchField(string $fieldName)
     {
         return "//thead//td//select[@name='RequestSearch[$fieldName][]']/..//ul";
     }
 
-    /**Чекбокс "Выбрать все"*/
+    /**Чекбокс "Выбрать все" в заголовке колонки с готовым списком вариантов*/
     public static $columnSelectAll = "//span[@class='select2-dropdown select2-dropdown--below']//span[text()='Выбрать все']";
 
     /**Значение в выпадающем списке значений в заголовке колонки*/
@@ -80,6 +104,9 @@ class Request extends FunctionalTester
         return "//thead//td//input[@name='RequestSearch[$fieldName]']/..//button[@title='Очистить']";
     }
 
+
+    //****** Колонки с поиском значений, без готового списка ******//
+
     /**Поле поиска в заголовке колонки без готового списка вариантов*/
     public static function columnSearchFieldNotList(string $fieldName)
     {
@@ -100,6 +127,9 @@ class Request extends FunctionalTester
 
     /**Поле ввода текста для поиска в заголовке колонки без готового списка вариантов*/
     public static $search = '//span/input[@class="select2-search__field"]';
+
+
+    //****** Колонки с поиском значений, без готового списка ******//
 
     /**Поле поиска по диапазону дат*/
     public static function columnSearchFieldDates(string $fieldName)
@@ -134,23 +164,8 @@ class Request extends FunctionalTester
         return "//a[@id='clear-date' and @value='RequestSearch[$fieldName]']";
     }
 
-    /**Блок кнопок изменения статуса в таблице заявок и самой заявке*/
-    public static function transferButton(string $action)
-    {
-        return "//div[@class='buttons-background']//*[contains(@class, 'btn')][contains(text(), '$action')]";
-    }
 
-    /**Контекстное меню заявки*/
-    public static function contextMenu(string $action)
-    {
-        return "//tbody//ul[@class='dropdown-menu']//a[contains(text(), '$action')]";
-    }
-
-    /**Страница таблицы*/
-    public static function tablePage($page)
-    {
-        return "//ul[@class='pagination']//li/a[text() = '$page']";
-    }
+    //****** Иконки в колонке id заявки ******//
 
     /**Иконка родительской заявки*/
     public static function parentRequest(int $tableRow, string $page = null)
@@ -185,6 +200,9 @@ class Request extends FunctionalTester
     {
         return "//tbody/tr[$tableRow][@class='border-hover correction-color request-grid']";
     }
+
+
+    //****** Настройки таблицы ******//
 
     /**Кнопка настроек таблицы*/
     public static $personalSettings = "//div[@class='buttons-background']//button[@title='Персонализировать настройки таблицы']";

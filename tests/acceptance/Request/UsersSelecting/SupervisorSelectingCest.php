@@ -1,0 +1,90 @@
+<?php
+
+namespace lisa;
+
+use Codeception\Example;
+use Codeception\Module\TestHelper;
+use lisa\Page\Functional\RequestView;
+use lisa\Page\Functional\Request;
+
+/**
+ * @group lisa
+ * @group lisa_acceptance
+ * @group lisa_acceptance_requests
+ * @group SupervisorSelecting
+ */
+class SupervisorSelectingCest
+{
+    /**@return array*/
+    protected function pageProvider()
+    {
+        return TestHelper::prepareDataprovider(require 'data.php', '');
+    }
+
+    /**
+     * @param AcceptanceTester $I
+     * @param Example $data
+     * @param RequestView $view
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     *
+     * @dataProvider pageProvider
+     *
+     */
+    public function SupervisorSelecting(AcceptanceTester $I, Example $data, RequestView $view, Request $request)
+    {
+        $I->loadDataForTest($data, null);
+        $providerData = $data['provider_data'];
+
+        //в форме заявки
+        $view->amOnView(1);
+        $I->click(RequestView::$supervisor_id);
+        $I->waitForElementVisible(RequestView::searchSVResult(1, 'Пожалуйста, введите ещё хотя бы 2 символa'));
+        $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
+
+        $I->pressKey(RequestView::$search, 'М', 'е');
+        $I->canSeeElement(RequestView::searchSVResult(1, 'Совпадений не найдено'));
+        $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
+
+        $I->pressKey(RequestView::$search, ['ctrl', 'a'], 'Т', 'и');
+        $I->canSeeElement(RequestView::searchSVResult(1, 'Константин Куцан'));
+        $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
+
+        $I->pressKey(RequestView::$search, ['ctrl', 'a'], 'С', 'у');
+
+        $i = 1;
+        foreach ($providerData['pageObjectsSV'] as $object) {
+            $I->canSeeElement(RequestView::searchSVResult($i, $object));
+            $i++;
+        }
+
+        $I->canSeeNumberOfElements(RequestView::$searchResults, 19);
+
+        //в модалке из таблицы
+        $request->amOnTable('in-check');
+        $I->click(Request::transferButton('Изменить супервайзера'));
+        $I->waitForElementVisible(Request::$modal_supervisor_id);
+
+        $I->click(Request::$modal_supervisor_id);
+        $I->waitForElementVisible(RequestView::searchSVResult(1, 'Пожалуйста, введите ещё хотя бы 2 символa'));
+        $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
+
+        $I->pressKey(RequestView::$search, 'М', 'е');
+        $I->canSeeElement(RequestView::searchSVResult(1, 'Совпадений не найдено'));
+        $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
+
+        $I->pressKey(RequestView::$search, ['ctrl', 'a'], 'Т', 'и');
+        $I->canSeeElement(RequestView::searchSVResult(1, 'Константин Куцан'));
+        $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
+
+        $I->pressKey(RequestView::$search, ['ctrl', 'a'], 'С', 'у');
+
+        $i = 1;
+        foreach ($providerData['pageObjectsSV'] as $object) {
+            $I->canSeeElement(RequestView::searchSVResult($i, $object));
+            $i++;
+        }
+
+        $I->canSeeNumberOfElements(RequestView::$searchResults, 19);
+
+    }
+}

@@ -30,10 +30,22 @@ class RequestView extends FunctionalTester
     public static $saveButton = "//button[@id='update-form-save']";
     public static $tabsCheckbox = "//input[@id='tabs-toggle-button']";
 
-    /**Список результатов поиска пользователя*/
-    public static function searchResult(int $number, string $name)
+    /**Строка поиска в активном поле*/
+    public static $search = '//span[@class="select2-dropdown select2-dropdown--below"]//input[@class="select2-search__field"]';
+
+    /**Блок результатов поиска в активном поле*/
+    public static $searchResults = "//ul[@class='select2-results__options']//li";
+
+    /**Список результатов поиска менеджера*/
+    public static function searchCMResult(int $number, string $name)
     {
-        return "//ul[@class='select2-results__options']//li[$number]//span[text() = '$name']";
+        return RequestView::$searchResults . "[$number]//span[text() = '$name']";
+    }
+
+    /**Список результатов поиска супервайзера*/
+    public static function searchSVResult(int $number, string $name)
+    {
+        return RequestView::$searchResults . "[$number][text() = '$name']";
     }
 
     public static function findCheckbox(string $name)
