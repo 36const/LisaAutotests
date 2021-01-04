@@ -97,11 +97,6 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 89,
-                'value' => 3,
-            ],
-            [
-                'request_id' => 1,
                 'field_id' => 118,
                 'value' => 10,
             ],
@@ -119,6 +114,11 @@ return [
                 'request_id' => 1,
                 'field_id' => 74,
                 'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 89,
+                'value' => 3,
             ],
             [
                 'request_id' => 1,
@@ -235,7 +235,6 @@ return [
             [
                 "request_id" => 1,
                 "status" => 8,
-//                "reason_id" => 7,
                 "reason" => null,
                 "reasons_list" => '["14"]'
             ],

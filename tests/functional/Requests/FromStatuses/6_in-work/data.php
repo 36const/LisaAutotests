@@ -1954,7 +1954,7 @@ return [
                         [
                             "request_id" => 1,
                             "status" => 8,
-                            //"reason_id" => 7,
+                            "reason_id" => null,
                             "reason" => null,
                             "reasons_list" => '["7"]'
                         ],
@@ -2842,7 +2842,6 @@ return [
                         [
                             "request_id" => 1,
                             "status" => 9,
-//                            "reason_id" => null,
                             "reason" => null,
                             "reasons_list" => '[]'
                         ],
