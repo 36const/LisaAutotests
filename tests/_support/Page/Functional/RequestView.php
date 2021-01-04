@@ -23,10 +23,18 @@ class RequestView extends FunctionalTester
     public static $reportPeriodId =         "//table[@class='table table-bordered detail-view']//th[text()='Отчетный период КМ']";
     public static $svReportPeriods =        "//table[@class='table table-bordered detail-view']//th[text()='Отчетный период СВ']";
     public static $supervisor_comment =     "//table[@class='table table-bordered detail-view']//*[@name='Request[supervisor_comment]']";
+    public static $supervisor_id =          "//table[@class='table table-bordered detail-view']//*[@name='Request[supervisor_id]']/..//span";
+    public static $manager_id =             "//table[@class='table table-bordered detail-view']//*[@name='Request[manager_id]']/..//span";
 
     public static $createChangeTypeButton = "//a[@href='/bpm/request/view?id=1&forCrossCheck=0']";
     public static $saveButton = "//button[@id='update-form-save']";
     public static $tabsCheckbox = "//input[@id='tabs-toggle-button']";
+
+    /**Список результатов поиска пользователя*/
+    public static function searchResult(int $number, string $name)
+    {
+        return "//ul[@class='select2-results__options']//li[$number]//span[text() = '$name']";
+    }
 
     public static function findCheckbox(string $name)
     {

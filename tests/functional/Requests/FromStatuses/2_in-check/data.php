@@ -10,10 +10,8 @@ return [
             'requestParameter' => 'change-reason',
             'requestBody' => [
                 'Request[reason]' => 'Затребовать изменения',
-                'Request[reason_id]' => '15',
+                'reasons' => ['11'],
                 'Request[status]' => '3',
-                'keys',
-                'keys',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -36,7 +34,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 15,
+                            //"reason_id" => 11,
                             "reason" => 'Затребовать изменения',
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -165,11 +163,18 @@ return [
                             "user_id" => 4,
                             "old_status" => 2,
                             "new_status" => 3,
-                            "reason_id" => 15,
+                            "reason_id" => null,
                             "reason" => 'Затребовать изменения',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => null
+                            "manager_id" => null,
+                            "reasons" => 'Другое (описан в коментариях)'
                         ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 11
+                        ],
                     ]
                 ]
             ]
@@ -185,10 +190,8 @@ return [
             'requestParameter' => 'change-reason',
             'requestBody' => [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[reason_id]' => '11',
                 'Request[status]' => '4',
-                'keys',
-                'keys',
+                'reasons' => ['11'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -211,7 +214,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 11,
+                            //"reason_id" => 9,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -340,11 +343,18 @@ return [
                             "user_id" => 4,
                             "old_status" => 2,
                             "new_status" => 4,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => null
+                            "manager_id" => null,
+                            "reasons" => 'Другое (описан в коментариях)'
                         ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 11
+                        ],
                     ]
                 ]
             ]
@@ -360,7 +370,6 @@ return [
             'requestParameter' => 'appoint-manager',
             'requestBody' => [
                 'Request[manager_id]' => '11',
-                'keys',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -383,7 +392,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -545,9 +554,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => []
                 ]
             ]
         ]

@@ -78,7 +78,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -336,9 +336,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -549,7 +551,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -815,9 +817,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -905,7 +909,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -1121,9 +1125,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -1334,7 +1340,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -1600,9 +1606,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -1738,7 +1746,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -1954,9 +1962,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -2167,7 +2177,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -2433,9 +2443,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -2571,7 +2583,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -2787,9 +2799,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -2858,7 +2872,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -3034,9 +3048,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -3247,7 +3263,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -3513,9 +3529,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -3651,7 +3669,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -3867,9 +3885,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -4051,7 +4071,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -4287,9 +4307,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -4471,7 +4493,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -4707,9 +4729,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -4813,7 +4837,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -4999,9 +5023,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -5105,7 +5131,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -5291,9 +5317,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -5397,7 +5425,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -5583,9 +5611,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -5796,7 +5826,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6062,9 +6092,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -6118,7 +6150,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6309,9 +6341,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -6381,7 +6415,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6532,9 +6566,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -6599,7 +6635,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6755,9 +6791,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -6968,7 +7006,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -7239,9 +7277,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -7452,7 +7492,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -7723,9 +7763,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -7936,7 +7978,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -8207,9 +8249,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]
@@ -8420,7 +8464,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -8691,9 +8735,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]

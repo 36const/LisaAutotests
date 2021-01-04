@@ -20,7 +20,7 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => '',
-                "reason_id" => 15,
+                //"reason_id" => 11,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -111,6 +111,20 @@ return [
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
         "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
+        "request_reason" => [
+            [
+                "request_id" => 1,
+                "reason_id" => 14
+            ],
+            [
+                "request_id" => 1,
+                "reason_id" => 6
+            ],
+            [
+                "request_id" => 1,
+                "reason_id" => 7
+            ],
+        ],
         "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
     ]

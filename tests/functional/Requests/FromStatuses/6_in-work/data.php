@@ -10,10 +10,8 @@ return [
             'requestParameter' => 'change-reason',
             'requestBody' => [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[reason_id]' => '11',
                 'Request[status]' => '4',
-                'keys',
-                'keys',
+                'reasons' => ['11', '10', '9'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -36,7 +34,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 11,
+                            //"reason_id" => 9,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -180,10 +178,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -191,12 +190,29 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 4,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => 'Все товары уже есть на сайте, Другое (описан в коментариях), Дубль задачи'
                         ]
                     ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 10
+                        ],
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 11
+                        ],
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 9
+                        ]
+                    ],
+                    'request_reason' => [],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -212,7 +228,6 @@ return [
             'requestParameter' => 'appoint-manager',
             'requestBody' => [
                 'Request[manager_id]' => '12',
-                'keys',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -235,7 +250,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -399,10 +414,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -413,9 +429,13 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 12
+                            "manager_id" => 12,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
+                    'request_reason' => [],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -431,10 +451,8 @@ return [
             'requestParameter' => 'change-reason',
             'requestBody' => [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[reason_id]' => '1',
                 'Request[status]' => '7',
-                'keys',
-                'keys',
+                'reasons' => ['1'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -457,7 +475,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 1,
+                            //"reason_id" => 1,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -601,10 +619,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -612,11 +631,18 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 7,
-                            "reason_id" => 1,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => 'Ожидается загрузка фото в товары'
                         ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 1
+                        ],
                     ],
                     'transition_info' => []
                 ]
@@ -633,10 +659,8 @@ return [
             'requestParameter' => 'change-reason',
             'requestBody' => [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[reason_id]' => '1',
                 'Request[status]' => '7',
-                'keys',
-                'keys',
+                'reasons' => ['1'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -659,7 +683,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 1,
+                            //"reason_id" => 1,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -804,10 +828,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -815,11 +840,18 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 7,
-                            "reason_id" => 1,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => 'Ожидается загрузка фото в товары'
                         ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 1
+                        ],
                     ],
                     'transition_info' => []
                 ]
@@ -836,10 +868,8 @@ return [
             'requestParameter' => 'change-reason',
             'requestBody' => [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[reason_id]' => '2',
                 'Request[status]' => '7',
-                'keys',
-                'keys',
+                'reasons' => ['2'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -862,7 +892,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 2,
+                            //"reason_id" => 2,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -1007,10 +1037,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -1018,11 +1049,18 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 7,
-                            "reason_id" => 2,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => 'Требуется уточнение информации по задаче'
                         ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 2
+                        ],
                     ],
                     'transition_info' => []
                 ]
@@ -1058,7 +1096,7 @@ return [
                 'RequestField[93]' => '10',
                 'RequestField[94]' => '10',
                 'Request[awaiting_correction]' => '0',
-                'Request[reason_id]' => '15',
+                'reasons' => ['11'],
                 'Request[status]' => '8',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
             ],
@@ -1083,7 +1121,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 15,
+                            //"reason_id" => 11,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -1322,10 +1360,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -1333,11 +1372,18 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 8,
-                            "reason_id" => 15,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => 'Другое (описан в коментариях)'
                         ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 11
+                        ],
                     ],
                     'transition_info' => []
                 ]
@@ -1386,7 +1432,7 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '8',
-                'Request[reason_id]' => '7',
+                'reasons' => ['7'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1409,7 +1455,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 7,
+                            //"reason_id" => 7,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -1598,10 +1644,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -1609,10 +1656,17 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 8,
-                            "reason_id" => 7,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => 'Товары ушли в ошибки'
+                        ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 7
                         ]
                     ],
                     'transition_info' => []
@@ -1662,7 +1716,7 @@ return [
                 'Request[awaiting_correction]' => '0',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[status]' => '8',
-                'Request[reason_id]' => '7',
+                'reasons' => ['7'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1685,7 +1739,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 17,
+                            //"reason_id" => 14,
                             "reason" => 'Заявка переведена в статус "Ожидает",
              так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
                             "parent_id" => null,
@@ -1875,10 +1929,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -1886,19 +1941,27 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 7,
-                            "reason_id" => 17,
+                            "reason_id" => null,
                             "reason" => 'Заявка переведена в статус "Ожидает",
              так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => 'Ожидает группировки'
+                        ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 14
                         ]
                     ],
                     'transition_info' => [
                         [
                             "request_id" => 1,
                             "status" => 8,
-                            "reason_id" => 7,
-                            "reason" => null
+                            //"reason_id" => 7,
+                            "reason" => null,
+                            "reasons_list" => '["7"]'
                         ],
                     ]
                 ]
@@ -1958,7 +2021,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -2197,10 +2260,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -2211,9 +2275,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -2283,7 +2349,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -2472,10 +2538,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -2486,9 +2553,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -2558,7 +2627,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 17,
+                            //"reason_id" => 14,
                             "reason" => 'Заявка переведена в статус "Ожидает",
              так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
                             "parent_id" => null,
@@ -2748,10 +2817,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -2759,19 +2829,27 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 7,
-                            "reason_id" => 17,
+                            "reason_id" => null,
                             "reason" => 'Заявка переведена в статус "Ожидает",
              так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => 'Ожидает группировки'
+                        ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 14
                         ]
                     ],
                     'transition_info' => [
                         [
                             "request_id" => 1,
                             "status" => 9,
-                            "reason_id" => null,
-                            "reason" => null
+//                            "reason_id" => null,
+                            "reason" => null,
+                            "reasons_list" => '[]'
                         ],
                     ]
                 ]
@@ -2831,7 +2909,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -3070,10 +3148,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -3084,9 +3163,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -3134,7 +3215,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -3323,10 +3404,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -3337,9 +3419,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -3398,7 +3482,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -3637,10 +3721,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -3651,9 +3736,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -3701,7 +3788,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -3890,10 +3977,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -3904,9 +3992,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -3953,7 +4043,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -4065,10 +4155,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -4079,9 +4170,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -4140,7 +4233,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -4379,10 +4472,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -4393,9 +4487,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -4443,7 +4539,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -4632,10 +4728,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -4646,9 +4743,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -4701,7 +4800,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -4885,10 +4984,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -4899,9 +4999,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -4954,7 +5056,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -5138,10 +5240,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -5152,9 +5255,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -5202,7 +5307,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -5351,10 +5456,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -5365,9 +5471,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -5415,7 +5523,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -5564,10 +5672,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -5578,9 +5687,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -5628,7 +5739,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -5777,10 +5888,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -5791,9 +5903,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -5852,7 +5966,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6091,10 +6205,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -6105,9 +6220,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -6157,7 +6274,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6316,10 +6433,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -6330,9 +6448,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -6375,7 +6495,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6499,10 +6619,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -6513,9 +6634,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -6558,7 +6681,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6682,10 +6805,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -6696,9 +6820,11 @@ return [
                             "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ]
@@ -6781,7 +6907,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6925,6 +7051,7 @@ return [
                             "manager_id" => 11
                         ],
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ],
@@ -7012,7 +7139,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -7203,10 +7330,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 5,
                             "new_status" => 6,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ],
                         [
                             "id" => 2,
@@ -7217,9 +7345,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 12
+                            "manager_id" => 12,
+                            "reasons" => null
                         ]
                     ],
+                    'request_reason' => [],
                     'transition_info' => []
                 ]
             ],

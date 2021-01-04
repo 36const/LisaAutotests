@@ -50,7 +50,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 7,
+                            //"reason_id" => 7,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -254,15 +254,29 @@ return [
                         [
                             "id" => 1,
                             "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 6,
+                            "new_status" => 7,
+                            "reason_id" => null,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => "2020-01-01 00:00:01",
+                            "manager_id" => 11,
+                            "reasons" => 'Ожидает группировки'
+                        ],
+                        [
+                            "id" => 2,
+                            "request_id" => 1,
                             "user_id" => 2,
                             "old_status" => 7,
                             "new_status" => 8,
-                            "reason_id" => 7,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => 'Ожидает группировки'
                         ],
                     ],
+                    'request_reason' => [],//узнать должно ли оно тут оставаться, сейчас остаётся
                     'transition_info' => []
                 ]
             ],
@@ -324,7 +338,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 17,
+                            //"reason_id" => 14,
                             "reason" => 'Заявка переведена в статус "Ожидает",
              так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
                             "parent_id" => null,
@@ -476,15 +490,35 @@ return [
                         ],
                     ],
                     'user_notifications' => [],
-                    'request_status_history' => [],
+                    'request_status_history' => [
+                        [
+                            //"id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 4,
+                            "old_status" => 6,
+                            "new_status" => 7,
+                            "reason_id" => null,
+                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "created_at" => "2020-01-01 00:00:01",
+                            "manager_id" => 11,
+                            "reasons" => 'Ожидает группировки'
+                        ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 14,
+                        ]
+                    ],
                     'transition_info' => [
                         [
                             "request_id" => 1,
-                            "status" => 9,
-                            "reason_id" => null,
-                            "reason" => null
+                            "status" => 8,
+//                "reason_id" => 7,
+                            "reason" => null,
+                            "reasons_list" => '["14"]'
                         ],
-                    ]
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -897,7 +931,7 @@ return [
 //                            "user_id" => 4,
 //                            "old_status" => 7,
 //                            "new_status" => 8,
-//                            "reason_id" => 7,
+//                            "reason_id" => null,
 //                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
 //                            "created_at >=" => date("Y-m-d"),
 //                            "manager_id" => 2

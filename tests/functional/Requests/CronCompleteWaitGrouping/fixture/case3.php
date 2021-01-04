@@ -20,7 +20,7 @@ return [
                 "category_id" => null,
                 "seller_id" => 83,
                 "recommendations" => '',
-                "reason_id" => 17,
+                //"reason_id" => 14,
                 "reason" => 'Заявка переведена в статус "Ожидает",
              так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
                 "parent_id" => null,
@@ -61,7 +61,7 @@ return [
                 "category_id" => null,
                 "seller_id" => 83,
                 "recommendations" => '',
-                "reason_id" => 17,
+                //"reason_id" => 14,
                 "reason" => 'Заявка переведена в статус "Ожидает",
              так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
                 "parent_id" => null,
@@ -344,24 +344,36 @@ return [
         'observers' => [],
         "user_notifications" => [],
         'request_status_history' => [],
+        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
+        'request_reason' => [
+            [
+                "request_id" => 1,
+                "reason_id" => 14,
+            ],
+            [
+                "request_id" => 2,
+                "reason_id" => 14,
+            ]
+        ],
         'transition_info' => [
             [
                 "request_id" => 1,
                 "status" => 8,
-                "reason_id" => 7,
-                "reason" => null
+                //"reason_id" => 7,
+                "reason" => null,
+                "reasons_list" => '["14"]'
             ],
             [
                 "request_id" => 2,
                 "status" => 9,
-                "reason_id" => null,
-                "reason" => null
+                //"reason_id" => null,
+                "reason" => null,
+                "reasons_list" => '["14"]'
             ],
         ],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
-        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
         "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
     ]

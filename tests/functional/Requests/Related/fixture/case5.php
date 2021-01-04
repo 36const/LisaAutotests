@@ -21,7 +21,7 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => null,
-                "reason_id" => 5,
+                //"reason_id" => 5,
                 "reason" => "Ожидать",
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -99,6 +99,13 @@ return [
         "user_notifications" => [],
         "request_status_history" => [],
         "observers" => [],
+        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
+        "request_reason" => [
+            [
+                "request_id" => 1,
+                "reason_id" => 5,
+            ],
+        ],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "markets_supervisors" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',

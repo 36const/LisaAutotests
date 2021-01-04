@@ -7,7 +7,7 @@ return [
                 "type_id" => 1,
                 "status" => 7,
                 "direction" => 2,
-                "reason_id" => 2,
+                //"reason_id" => 2,
                 "subject" => "Добавление новых товаров (Работа с товарами Маркета)",
                 "category_id" => null,
                 "seller_id" => 83,
@@ -19,19 +19,25 @@ return [
         "reasons" => [
             [
                 //"id" => 1,
-                "parent_status" => 6,
+                //"parent_status" => 6,
                 "child_status" => 7,
                 "reason" => "Ожидается загрузка фото в товары",
                 "status" => 1
             ],
             [
                 //"id" => 2,
-                "parent_status" => 6,
+                //"parent_status" => 6,
                 "child_status" => 7,
                 "reason" => "Требуется уточнение информации по задаче",
                 "status" => 1
             ],
-        ]
+        ],
+        'request_reason' => [
+            [
+                "request_id" => 1,
+                "reason_id" => 2
+            ]
+        ],
     ],
     "cooper_fixtures" => [
         "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',

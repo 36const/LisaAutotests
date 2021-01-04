@@ -4,6 +4,7 @@ return [
     'case1' => [
         'setting' => [
             'description' => 'Значения выпадающих списков полей результатов задачи в алфавитном порядке + показываются заблоченные',
+            //пока сделали, что заблоченные ничем не отличаются от активных
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -178,16 +179,6 @@ return [
                             "value" => "Украинский"
                         ],
                     ],
-                    "На доработку" => [
-                        [
-                            "selector" => "//form[@id='reason-form-status-3']//select[@name='Request[reason_id]']/option[1][@value]",
-                            "value" => "Выберите причину из списка.."
-                        ],
-                        [
-                            "selector" => "//form[@id='reason-form-status-3']//select[@name='Request[reason_id]']/option[2][@value='15']",
-                            "value" => "Другое (описан в коментариях)"
-                        ],
-                    ],
                     "Отчетный период КМ" => [
                         [
                             "selector" => "//select[@name='Request[report_period_id]']/option[1][@value]",
@@ -229,8 +220,6 @@ return [
                         ],
                     ],
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],

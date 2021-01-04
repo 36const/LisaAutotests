@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Не показываются заблоченные причины 2 -> 3',
+            'description' => 'Не показываются заблоченные причины статуса 3',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -14,6 +14,10 @@ return [
                         [
                             "selector" => "//form[@id='reason-form-status-3']//select[@name='Request[reason_id]']/option[1][@value]",
                             "value" => "Выберите причину из списка..."
+                        ],
+                        [
+                            "selector" => "//form[@id='reason-form-status-3']//select[@name='Request[reason_id]']/option[2][@value]",
+                            "value" => "Другое (описан в коментариях)"
                         ],
                         [
                             "selector" => "//form[@id='reason-form-status-3']//select[@name='Request[reason_id]']/option[2][@value]",

@@ -55,6 +55,7 @@ return [
                 'Request[supervisor_id]' => '6',
                 'Request[uploadedFiles][]' => '',
                 'newStatus' => '6',
+                'reasons' => ['1', '2'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -77,8 +78,8 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            "reason_id" => null,
-                            "reason" => null,
+                            //"reason_id" => null,
+                            "reason" => null, //раньше становился null а теперь остаётся такой же как в фикстуре
                             "parent_id" => null,
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
@@ -218,10 +219,11 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 7,
-                            "reason_id" => 1,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => "2020-01-01 00:00:01",
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => 'Другое (описан в коментариях), Требуется уточнение информации по задаче'
                         ],
                         [
                             //"id" => 1,
@@ -232,9 +234,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => [],
                 ]
             ]
         ]

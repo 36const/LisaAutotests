@@ -20,7 +20,7 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => '',
-                "reason_id" => 1,
+                //"reason_id" => 1,
                 "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -133,16 +133,27 @@ return [
                 "user_id" => 4,
                 "old_status" => 6,
                 "new_status" => 7,
-                "reason_id" => 1,
+                "reason_id" => null,
                 "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                 "created_at" => "2020-01-01 00:00:01",
-                "manager_id" => 11
+                "manager_id" => 11,
+                "reasons" => 'Другое (описан в коментариях), Требуется уточнение информации по задаче'
             ]
+        ],
+        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
+        'request_reason' => [
+            [
+                "request_id" => 1,
+                "reason_id" => 1,
+            ],
+            [
+                "request_id" => 1,
+                "reason_id" => 2,
+            ],
         ],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
-        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
         "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
     ]

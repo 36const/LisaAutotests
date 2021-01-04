@@ -33,7 +33,7 @@ class POSTSellerCreateByRequestCest
         $I->loadDataForTest($data, 'allUsers');
 
         $providerData = $data['provider_data'];
-//die();
+
         $I->sendPOST($providerData['url'], $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 

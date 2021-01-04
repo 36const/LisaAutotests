@@ -21,7 +21,7 @@ return [
                 "category_id" => null,
                 "seller_id" => 0,
                 "recommendations" => null,
-                "reason_id" => null,
+                //"reason_id" => null,
                 "reason" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\|<\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ ~!@#$%^&*(250",
                 "parent_id" => null,
                 "planned_start_date" => null,

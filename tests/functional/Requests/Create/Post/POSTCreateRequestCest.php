@@ -49,6 +49,6 @@ class POSTCreateRequestCest
         $I->checkTablesInDB($providerData['db']);
         $view->checkFields($providerData['db']);
 
-        $I->checkRabbitMQ($providerData);
+//        $I->checkRabbitMQ($providerData);
     }
 }

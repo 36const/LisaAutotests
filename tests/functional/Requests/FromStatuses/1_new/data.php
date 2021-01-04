@@ -78,7 +78,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -222,9 +222,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => null
+                            "manager_id" => null,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => []
                 ]
             ],
             'RabbitMQ' => [
@@ -244,10 +246,8 @@ return [
             'requestParameter' => 'change-reason',
             'requestBody' => [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[reason_id]' => '15',
                 'Request[status]' => '3',
-                'keys',
-                'keys',
+                'reasons' => ['11', '13'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -270,7 +270,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
-                            "reason_id" => 15,
+                            //"reason_id" => 11,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -411,11 +411,22 @@ return [
                             "user_id" => 4,
                             "old_status" => 1,
                             "new_status" => 3,
-                            "reason_id" => 15,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => null
+                            "manager_id" => null,
+                            "reasons" => 'Другое (описан в коментариях), Нада'
                         ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 11
+                        ],
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 13
+                        ],
                     ]
                 ]
             ],
@@ -437,10 +448,8 @@ return [
             'requestParameter' => 'change-reason',
             'requestBody' => [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[reason_id]' => '11',
                 'Request[status]' => '4',
-                'keys',
-                'keys',
+                'reasons' => ['11', '10', '9'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -463,7 +472,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
-                            "reason_id" => 11,
+                            //"reason_id" => 9,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -604,10 +613,25 @@ return [
                             "user_id" => 4,
                             "old_status" => 1,
                             "new_status" => 4,
-                            "reason_id" => 11,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => null
+                            "manager_id" => null,
+                            "reasons" => 'Все товары уже есть на сайте, Другое (описан в коментариях), Дубль задачи'
+                        ]
+                    ],
+                    'request_reason' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 10
+                        ],
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 11
+                        ],
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 9
                         ]
                     ]
                 ]
@@ -630,7 +654,6 @@ return [
             'requestParameter' => 'appoint-manager',
             'requestBody' => [
                 'Request[manager_id]' => '11',
-                'keys',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -653,7 +676,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -826,9 +849,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'request_reason' => []
                 ]
             ],
             'RabbitMQ' => [
@@ -917,7 +942,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -1051,7 +1076,8 @@ return [
                             "changed_fields" => '{"newValue": 10, "oldValue": 6}'
                         ]
                     ],
-                    'request_status_history' => []
+                    'request_status_history' => [],
+                    'request_reason' => []
                 ]
             ],
             'RabbitMQ' => [

@@ -41,9 +41,7 @@ class POSTFromStatusesCest
         $providerData = $data['provider_data'];
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
-
         $I->checkTablesInDB($providerData['db']);
-
         $view->checkFields($providerData['db']);
 
         if ($providerData['requestParameter'] == 'to-correction') {
@@ -56,7 +54,6 @@ class POSTFromStatusesCest
         }
 
         $I->setViewTabs();
-
         $view->checkFields($providerData['db']);
 
         $I->checkRabbitMQ($providerData);

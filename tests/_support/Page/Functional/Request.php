@@ -137,7 +137,7 @@ class Request extends FunctionalTester
     /**Блок кнопок изменения статуса в таблице заявок и самой заявке*/
     public static function transferButton(string $action)
     {
-        return "//div[@class='buttons-background']//*[contains(text(), '$action')]";
+        return "//div[@class='buttons-background']//*[contains(@class, 'btn')][contains(text(), '$action')]";
     }
 
     /**Контекстное меню заявки*/
@@ -168,21 +168,54 @@ class Request extends FunctionalTester
             "//tbody/tr[$tableRow]//td/a[@href='$page' and @title='Дочерние заявки']";
     }
 
-    /**Фото загружены*/
-    public static function photoLoadStatus($tableRow)
+    /**Иконка фото загружены*/
+    public static function photoLoadStatus(int $tableRow)
     {
         return "//tbody/tr[$tableRow]//td/i[@title='Фото загружены']";
     }
 
-    /**Вложения*/
-    public static function attachments($tableRow)
+    /**Иконка вложений*/
+    public static function attachments(int $tableRow)
     {
         return "//tbody/tr[$tableRow]//td/i[@title='В заявке есть прикрепленные файлы']";
     }
 
     /**Подсвечивающаяся запись*/
-    public static function toCorrection($tableRow)
+    public static function toCorrection(int $tableRow)
     {
         return "//tbody/tr[$tableRow][@class='border-hover correction-color request-grid']";
     }
+
+    /**Кнопка настроек таблицы*/
+    public static $personalSettings = "//div[@class='buttons-background']//button[@title='Персонализировать настройки таблицы']";
+
+    /**Поле поиска колонок*/
+    public static $searchColumns = "//div[@id='lisa-grid-config-form']//input[@id='column-search']";
+
+    /**Скрытые колонки*/
+    public static $hiddenColumns = "//div[@id='lisa-grid-config-form']//ul[contains(@class, 'sortable-hidden')]//li";
+
+    /**Видимые колонки*/
+    public static $visibleColumns = "//div[@id='lisa-grid-config-form']//ul[contains(@class, 'sortable-visible')]//li";
+
+    /**Кнопка перевода колонки из скрытых в видимые*/
+    public static function hiddenToVisible(string $columnName)
+    {
+        return Request::$hiddenColumns . "[@value='$columnName']//button[@class='btn btn-default sort-vis-button pull-left']";
+    }
+
+    /**Кнопка перевода колонки из видимых в скрытые*/
+    public static function visibleToHidden(string $columnName)
+    {
+        return Request::$visibleColumns . "[@value='$columnName']//button[@class='btn btn-default sort-hid-button pull-right']";
+    }
+
+    /**Кнопка сохранения настроек*/
+    public static $submitSettings = "//div[@class='modal-footer']//button[@id='lisa-grid-submit']";
+
+    /**Кнопка сброса настроек*/
+    public static $deleteSettings = "//div[@class='modal-footer']//button[@id='lisa-grid-delete']";
+
+    /**Чекбокс открытия заявки в новой вкладке*/
+    public static $checkboxNewTab = "//div[@class='modal-footer']//input[@id='new-window-opening']";
 }
