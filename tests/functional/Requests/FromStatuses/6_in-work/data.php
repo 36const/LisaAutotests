@@ -211,8 +211,6 @@ return [
                             "reason_id" => 9
                         ]
                     ],
-                    'requests_reasons' => [],
-                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -433,9 +431,6 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'requests_reasons' => [],
-                    'requests_reasons' => [],
-                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
