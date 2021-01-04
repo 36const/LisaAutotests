@@ -226,7 +226,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => []
+                    'requests_reasons' => []
                 ]
             ],
             'RabbitMQ' => [
@@ -418,7 +418,7 @@ return [
                             "reasons" => 'Другое (описан в коментариях), Нада'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 11
@@ -620,7 +620,7 @@ return [
                             "reasons" => 'Все товары уже есть на сайте, Другое (описан в коментариях), Дубль задачи'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 10
@@ -853,7 +853,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => []
+                    'requests_reasons' => []
                 ]
             ],
             'RabbitMQ' => [
@@ -1077,7 +1077,7 @@ return [
                         ]
                     ],
                     'request_status_history' => [],
-                    'request_reason' => []
+                    'requests_reasons' => []
                 ]
             ],
             'RabbitMQ' => [

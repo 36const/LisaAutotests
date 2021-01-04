@@ -96,7 +96,7 @@ return [
         "request_errors" => [],
         'notification_settings' => [],
         "user_notifications" => [],
-        "request_reason" => [],
+        "requests_reasons" => [],
         "request_status_history" => [
             [
 //                "id" => 1,

@@ -170,7 +170,7 @@ return [
                             "reasons" => 'Другое (описан в коментариях)'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 11
@@ -350,7 +350,7 @@ return [
                             "reasons" => 'Другое (описан в коментариях)'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 11
@@ -558,7 +558,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => []
+                    'requests_reasons' => []
                 ]
             ]
         ]

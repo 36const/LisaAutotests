@@ -1475,7 +1475,7 @@ return [
                         ],
                     ],
                     'observers' => [],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 5,

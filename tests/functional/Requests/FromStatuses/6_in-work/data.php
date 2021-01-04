@@ -197,7 +197,7 @@ return [
                             "reasons" => 'Все товары уже есть на сайте, Другое (описан в коментариях), Дубль задачи'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 10
@@ -211,8 +211,8 @@ return [
                             "reason_id" => 9
                         ]
                     ],
-                    'request_reason' => [],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -433,9 +433,9 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
-                    'request_reason' => [],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
+                    'requests_reasons' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -638,7 +638,7 @@ return [
                             "reasons" => 'Ожидается загрузка фото в товары'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 1
@@ -847,7 +847,7 @@ return [
                             "reasons" => 'Ожидается загрузка фото в товары'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 1
@@ -1056,7 +1056,7 @@ return [
                             "reasons" => 'Требуется уточнение информации по задаче'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 2
@@ -1379,7 +1379,7 @@ return [
                             "reasons" => 'Другое (описан в коментариях)'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 11
@@ -1663,7 +1663,7 @@ return [
                             "reasons" => 'Товары ушли в ошибки'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 7
@@ -1949,7 +1949,7 @@ return [
                             "reasons" => 'Ожидает группировки'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 14
@@ -2279,7 +2279,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -2557,7 +2557,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -2837,7 +2837,7 @@ return [
                             "reasons" => 'Ожидает группировки'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 14
@@ -3167,7 +3167,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -3423,7 +3423,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -3740,7 +3740,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -3996,7 +3996,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -4174,7 +4174,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -4491,7 +4491,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -4747,7 +4747,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -5003,7 +5003,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -5259,7 +5259,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -5475,7 +5475,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -5691,7 +5691,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -5907,7 +5907,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -6224,7 +6224,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -6452,7 +6452,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -6638,7 +6638,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -6824,7 +6824,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ]
@@ -7051,7 +7051,7 @@ return [
                             "manager_id" => 11
                         ],
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ],
@@ -7349,7 +7349,7 @@ return [
                             "reasons" => null
                         ]
                     ],
-                    'request_reason' => [],
+                    'requests_reasons' => [],
                     'transition_info' => []
                 ]
             ],

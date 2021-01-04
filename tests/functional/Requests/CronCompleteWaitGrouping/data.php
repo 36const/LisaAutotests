@@ -276,7 +276,7 @@ return [
                             "reasons" => 'Ожидает группировки'
                         ],
                     ],
-                    'request_reason' => [],//узнать должно ли оно тут оставаться, сейчас остаётся
+                    'requests_reasons' => [],//узнать должно ли оно тут оставаться, сейчас остаётся
                     'transition_info' => []
                 ]
             ],
@@ -504,7 +504,7 @@ return [
                             "reasons" => 'Ожидает группировки'
                         ]
                     ],
-                    'request_reason' => [
+                    'requests_reasons' => [
                         [
                             "request_id" => 1,
                             "reason_id" => 14,

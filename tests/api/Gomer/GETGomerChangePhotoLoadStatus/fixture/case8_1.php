@@ -32,7 +32,7 @@ return [
                 "status" => 1
             ],
         ],
-        'request_reason' => [
+        'requests_reasons' => [
             [
                 "request_id" => 1,
                 "reason_id" => 1
