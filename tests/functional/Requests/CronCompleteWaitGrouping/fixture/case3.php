@@ -212,7 +212,7 @@ return [
         "user_notifications" => [],
         'request_status_history' => [
             [
-                "id" => 1,
+//                "id" => 1,
                 "request_id" => 1,
                 "user_id" => 4,
                 "old_status" => 6,
@@ -240,7 +240,7 @@ return [
                 "request_id" => 1,
                 "status" => 8,
                 "reason" => null,
-                "reasons_list" => '["14", "3"]'
+                "reasons_list" => '["6", "7"]'
             ],
         ],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',

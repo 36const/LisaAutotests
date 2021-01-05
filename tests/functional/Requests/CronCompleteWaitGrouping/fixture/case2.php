@@ -202,7 +202,7 @@ return [
                 "request_id" => 1,
                 "status" => 8,
                 "reason" => null,
-                "reasons_list" => '["14"]'
+                "reasons_list" => '["7", "6"]'
             ],
         ],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
