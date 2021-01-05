@@ -273,10 +273,15 @@ return [
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
                             "manager_id" => 11,
-                            "reasons" => 'Ожидает группировки'
+                            "reasons" => 'Товары ушли в ошибки'
                         ],
                     ],
-                    'requests_reasons' => [],
+                    'requests_reasons' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 7,
+                        ]
+                    ],
                     'transition_info' => []
                 ]
             ],
