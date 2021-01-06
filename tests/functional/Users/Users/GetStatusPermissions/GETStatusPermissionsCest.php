@@ -35,12 +35,20 @@ class GETStatusPermissionsCest
         $I->amOnPage($providerData['url']);
         $I->canSeeResponseCodeIs(200);
         $I->checkObjectsOnPage($providerData['tablePageObjects']);
+        $I->canSeeNumberOfElements(
+            "//div[@class='buttons-background']/button",
+            count($providerData['tablePageObjects']['canSee'][0]) + 2
+        );
 
         $I->sendAjaxGetRequest('/bpm/request/get-context-menu?requestId=1');
         $I->checkAjaxResponse($providerData['ajaxResponse']);
 
         $I->amOnPage('/bpm/request/view?id=1&forCrossCheck=');
         $I->checkObjectsOnPage($providerData['requestPageObjects']);
+        $I->canSeeNumberOfElements(
+            "//div[@class='buttons-background']/div/div/button | //div[@class='buttons-background']/div/div/a",
+            count($providerData['requestPageObjects']['canSee'][0])
+        );
 
         if (isset($providerData['toCorrectionPageObjects'])) {
             $I->amOnPage('/bpm/request/to-correction?id=1');

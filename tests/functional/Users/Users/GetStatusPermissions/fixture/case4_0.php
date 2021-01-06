@@ -15,20 +15,20 @@ return [
                 "type_id" => 1,
                 "supervisor_id" => 6,
                 "manager_id" => null,
-                "status" => 2,
+                "status" => 4,
                 "direction" => 1,
                 "priority" => 2,
                 "awaiting_correction" => 0,
                 "created_at" => '2020-01-01 00:00:00',
-                "correction_comment" => null,
+                "correction_comment" => '',
                 "amount_to_work" => 10,
                 "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                 "description" => 'description',
                 "category_id" => 1,
                 "seller_id" => 83,
-                "recommendations" => null,
-                //"reason_id" => null,
-                "reason" => null,
+                "recommendations" => '',
+                "reason_id" => 15,
+                "reason" => 'Затребовать изменения',
                 "parent_id" => null,
                 "planned_start_date" => null,
                 "planned_finish_date" => null,
@@ -36,8 +36,8 @@ return [
                 "actual_finish_date" => null,
                 "supervisor_process_date" => null,
                 "supervisor_check_date" => null,
-                "result_comment" => null,
-                "supervisor_comment" => null,
+                "result_comment" => '',
+                "supervisor_comment" => '',
                 "last_change_status_date" => "2020-01-01 00:00:01",
                 "team_direction" => 3,
                 "report_period_id" => null,
@@ -47,7 +47,7 @@ return [
                 "cross_check_manager_id" => null,
             ],
         ],
-        "requests_fields" => [
+        'requests_fields' => [
             [
                 'request_id' => 1,
                 'field_id' => 1,
@@ -332,8 +332,8 @@ return [
             ],
             [
                 //"id" => 3287,
-//                "user_id" => 4,
-//                "permission_name" => "transferInCheckToRequireChange"
+                "user_id" => 4,
+                "permission_name" => "transferInCheckToRequireChange"
             ],
             [
                 //"id" => 3288,
