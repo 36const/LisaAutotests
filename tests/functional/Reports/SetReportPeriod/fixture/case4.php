@@ -147,264 +147,32 @@ return [
                 "sv_report_periods" => '{"1": "1"}'
             ],
         ],
-        "requests_fields" => [
-            [
-                "request_id" => 6,
-                "field_id" => 2,
-                "value" => "1"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 20,
-                "value" => "66"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 27,
-                "value" => "24"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 47,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 48,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 53,
-                "value" => "2"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 54,
-                "value" => "2"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 56,
-                "value" => "80"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 62,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 63,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 70,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 86,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 87,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 88,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 100,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 101,
-                "value" => 0
-            ],
-            [
-                "request_id" => 6,
-                "field_id" => 122,
-                "value" => 0
-            ],
-            [
-                "request_id" => 7,
-                "field_id" => 2,
-                "value" => "1"
-            ],
-            [
-                "request_id" => 7,
-                "field_id" => 20,
-                "value" => "66"
-            ],
-            [
-                "request_id" => 7,
-                "field_id" => 53,
-                "value" => "2"
-            ],
-            [
-                "request_id" => 7,
-                "field_id" => 54,
-                "value" => "2"
-            ],
-            [
-                "request_id" => 7,
-                "field_id" => 58,
-                "value" => "120"
-            ],
-            [
-                "request_id" => 7,
-                "field_id" => 83,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 7,
-                "field_id" => 92,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 7,
-                "field_id" => 101,
-                "value" => 0
-            ],
-            [
-                "request_id" => 7,
-                "field_id" => 110,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 7,
-                "field_id" => 122,
-                "value" => 0
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 2,
-                "value" => "1"
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 101,
-                "value" => 0
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 146,
-                "value" => 0
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 122,
-                "value" => 0
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 158,
-                "value" => 0
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 53,
-                "value" => "2"
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 83,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 92,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 110,
-                "value" => "10"
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 20,
-                "value" => "66"
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 54,
-                "value" => "2"
-            ],
-            [
-                "request_id" => 22,
-                "field_id" => 58,
-                "value" => "120"
-            ],
-            [
-                "request_id" => 25,
-                "field_id" => 53,
-                "value" => "0"
-            ],
-            [
-                "request_id" => 25,
-                "field_id" => 54,
-                "value" => "1"
-            ],
-            [
-                "request_id" => 25,
-                "field_id" => 59,
-                "value" => "0"
-            ],
-            [
-                "request_id" => 25,
-                "field_id" => 101,
-                "value" => 0
-            ],
-            [
-                "request_id" => 25,
-                "field_id" => 122,
-                "value" => 0
-            ],
-            [
-                "request_id" => 25,
-                "field_id" => 146,
-                "value" => 0
-            ],
-            [
-                "request_id" => 25,
-                "field_id" => 158,
-                "value" => 0
-            ],
-        ],
         "report_periods" => [
             [
                 //'id' => 1,
-                "begin" => '2020-01-01 00:00:00',
-                "end" => '2020-06-30 00:00:00',
+                "begin" => date('Y-m-01 00:00:00', strtotime('-2 month')),
+                "end" => date('Y-m-t 00:00:00', strtotime('-2 month')),
                 "created_at" => '2020-01-01 00:00:00',
                 "updated_at" => null,
             ],
             [
                 //'id' => 2,
-                "begin" => '2020-07-01 00:00:00',
-                "end" => '2020-12-31 00:00:00',
+                "begin" => date('Y-m-01 00:00:00', strtotime('-1 month')),
+                "end" => date('Y-m-t 00:00:00', strtotime('-1 month')),
                 "created_at" => '2020-01-01 00:00:00',
                 "updated_at" => null,
             ],
             [
                 //'id' => 3,
-                "begin" => '2021-01-01 00:00:00',
-                "end" => '2021-06-30 00:00:00',
+                "begin" => date('Y-m-01 00:00:00'),
+                "end" => date('Y-m-t 00:00:00'),
                 "created_at" => '2020-01-01 00:00:00',
                 "updated_at" => '2020-07-01 17:01:01',
             ],
             [
                 //'id' => 4,
-                "begin" => '2021-07-01 00:00:00',
-                "end" => '2021-12-31 00:00:00',
+                "begin" => date('Y-m-01 00:00:00', strtotime('+1 month')),
+                "end" => date('Y-m-t 00:00:00', strtotime('+1 month')),
                 "created_at" => '2020-01-01 00:00:00',
                 "updated_at" => '2020-09-01 19:01:01',
             ],
