@@ -4,8 +4,8 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\RequestView;
-use lisa\Page\Functional\Roles;
+use lisa\Page\Requests\RequestView;
+use lisa\Page\Users\Roles;
 
 /**
  * @group lisa

@@ -1,6 +1,6 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Requests;
 
 use lisa\FunctionalTester;
 
@@ -19,9 +19,7 @@ class RequestToCorrection extends FunctionalTester
     {
         $I = $this;
 
-        foreach ($requestBody as $field => $value) {
-            ($field == '_csrf-backend') ?:
-                $I->canSeeInField($field, $value);
-        }
+        foreach ($requestBody as $field => $value)
+            $I->canSeeInField($field, $value);
     }
 }

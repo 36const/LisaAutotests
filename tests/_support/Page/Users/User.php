@@ -1,6 +1,6 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Users;
 
 use lisa\FunctionalTester;
 
@@ -10,12 +10,6 @@ class User extends FunctionalTester
     {
         $I = $this;
         $I->amOnPage("/bpm/user/update?id=$id");
-    }
-
-    public function amOnUsers()
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/user");
     }
 
     /**Проверка чекбоксов пермишенов на странице пользователя*/

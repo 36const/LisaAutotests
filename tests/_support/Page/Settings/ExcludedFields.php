@@ -1,17 +1,9 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Settings;
 
-use lisa\FunctionalTester;
-
-class ExcludedFields extends FunctionalTester
+class ExcludedFields
 {
-    public function amOnExcludedFields()
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/excluded-fields");
-    }
-
     public static $createButton = '//a[@href="/bpm/excluded-fields" and @title="Добавить взаимоисключающий чекбокс"]/span[text()="Добавить взаимоисключающий чекбокс"]';
 
     public static $modal = '//div[@class="fade modal in" and @style="display: block;"]//form[@action="/bpm/excluded-fields/create"]';

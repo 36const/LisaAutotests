@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\Request;
+use lisa\Page\Requests\Request;
 use Codeception\Module\TestHelper;
 
 /**

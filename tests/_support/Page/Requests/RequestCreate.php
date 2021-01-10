@@ -1,6 +1,6 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Requests;
 
 use lisa\FunctionalTester;
 
@@ -123,7 +123,7 @@ class RequestCreate extends FunctionalTester
     public function checkRelatedRequestFields($tableRow, int $type, int $direction, int $id)
     {
         $I = $this;
-        $request = $this->convertDbArrays($tableRow, $id);
+        $request = $I->convertDbArrays($tableRow, $id);
 
         $I->amOnRelatedRequestCreate($type, $direction, $id);
 

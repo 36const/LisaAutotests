@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\Priority;
+use lisa\Page\Settings\Priority;
 use Codeception\Module\TestHelper;
 
 /**
@@ -22,18 +22,17 @@ class PriorityCreateCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param Priority $priority
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function PriorityCreate(AcceptanceTester $I, Example $data, Priority $priority)
+    public function PriorityCreate(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $priority->amOnPriority();
+        $I->amOnPage("/bpm/priority");
 
         $I->click(Priority::$createButton);
         $I->waitForElement(Priority::$saveButton);

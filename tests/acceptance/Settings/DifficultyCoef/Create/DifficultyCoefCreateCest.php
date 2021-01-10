@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\DifficultyCoef;
+use lisa\Page\Settings\DifficultyCoef;
 use Codeception\Module\TestHelper;
 
 /**
@@ -22,18 +22,17 @@ class DifficultyCoefCreateCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param DifficultyCoef $difficultyCoef
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function DifficultyCoefCreate(AcceptanceTester $I, Example $data, DifficultyCoef $difficultyCoef)
+    public function DifficultyCoefCreate(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $difficultyCoef->amOnDifficultyCoef();
+        $I->amOnPage("/bpm/difficulty-coef");
 
         $I->click(DifficultyCoef::$createButton);
         $I->waitForElement(DifficultyCoef::$saveButton);

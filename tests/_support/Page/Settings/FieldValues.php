@@ -1,17 +1,9 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Settings;
 
-use lisa\FunctionalTester;
-
-class FieldValues extends FunctionalTester
+class FieldValues
 {
-    public function amOnFieldValues()
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/field-values");
-    }
-
     public static $createButton = '//a[@href="/bpm/field-values/create" and @title="Добавить значение"]/span[text()="Добавить значение"]';
 
     public static $fieldId = '//select[@id="fieldvalue-field_id"]';

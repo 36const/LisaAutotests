@@ -1,17 +1,9 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Settings;
 
-use lisa\FunctionalTester;
-
-class Team extends FunctionalTester
+class Team
 {
-    public function amOnTeam()
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/team");
-    }
-
     public static $createButton = '//a[@href="/bpm/team/create" and @title="Добавить команду"]/span[text()="Добавить команду"]';
 
     public static $teamName = '//input[@id="team-name"]';

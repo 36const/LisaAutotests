@@ -4,8 +4,8 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\RequestCreate;
-use lisa\Page\Functional\RequestView;
+use lisa\Page\Requests\RequestCreate;
+use lisa\Page\Requests\RequestView;
 
 /**
  * @group lisa

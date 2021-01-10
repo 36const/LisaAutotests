@@ -4,7 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\User;
+use lisa\Page\Users\User;
 
 /**
  * @group lisa

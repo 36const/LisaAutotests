@@ -1,26 +1,10 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Users;
 
-use lisa\FunctionalTester;
-
-class UserCreate extends FunctionalTester
+class UserCreate
 {
-    public function amOnUserCreate()
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/user/create");
-    }
-
     public static $saveButton = '//button[@type="submit" and text()=" Сохранить"]';
-
-    /**Список результатов поиска пользователя*/
-    public static function searchResult(string $login)
-    {
-        return "//ul[@class='select2-results__options']//li[contains(text(), '$login')]";
-    }
-
-    public static $search = '//input[@class="select2-search__field"]';
 
     public static $loginField = '//span[@id="select2-userbpm-login-container"]';
     public static $parentField = '//span[@id="select2-userbpm-parent_id-container"]';

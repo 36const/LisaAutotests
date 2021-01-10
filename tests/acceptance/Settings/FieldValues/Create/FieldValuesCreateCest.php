@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\FieldValues;
+use lisa\Page\Settings\FieldValues;
 use Codeception\Module\TestHelper;
 
 /**
@@ -22,18 +22,17 @@ class FieldValuesCreateCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param FieldValues $fieldValues
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function FieldValuesCreate(AcceptanceTester $I, Example $data, FieldValues $fieldValues)
+    public function FieldValuesCreate(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $fieldValues->amOnFieldValues();
+        $I->amOnPage("/bpm/field-values");
 
         $I->click(FieldValues::$createButton);
         $I->waitForElement(FieldValues::$saveButton);

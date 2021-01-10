@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\Reason;
+use lisa\Page\Settings\Reason;
 use Codeception\Module\TestHelper;
 
 /**
@@ -22,18 +22,17 @@ class ReasonCreateCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param Reason $reason
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function ReasonCreate(AcceptanceTester $I, Example $data, Reason $reason)
+    public function ReasonCreate(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $reason->amOnReason();
+        $I->amOnPage("/bpm/reason");
 
         $I->click(Reason::$createButton);
         $I->waitForElement(Reason::$saveButton);

@@ -1,6 +1,6 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Requests;
 
 use lisa\FunctionalTester;
 
@@ -29,9 +29,6 @@ class RequestView extends FunctionalTester
     public static $createChangeTypeButton = "//a[@href='/bpm/request/view?id=1&forCrossCheck=0']";
     public static $saveButton = "//button[@id='update-form-save']";
     public static $tabsCheckbox = "//input[@id='tabs-toggle-button']";
-
-    /**Строка поиска в активном поле*/
-    public static $search = '//span[@class="select2-dropdown select2-dropdown--below"]//input[@class="select2-search__field"]';
 
     /**Блок результатов поиска в активном поле*/
     public static $searchResults = "//ul[@class='select2-results__options']//li";
@@ -130,6 +127,14 @@ class RequestView extends FunctionalTester
     ];
 
     /**
+     * Поля с множественными значениями, которые нужно проверять через canSeeInField в foreach
+     */
+    public $multipleFields = [
+        'Request[observers][]',
+        'reasons[]'
+    ];
+
+    /**
      * Колонки таблиц БД, значения которых не нужно проверять в html
      */
     public $unsetFields = [
@@ -186,6 +191,10 @@ class RequestView extends FunctionalTester
                                 ($column == 'sv_report_periods' ?
                                     $requests[$tableRow['id']]['Request[' . $column . '][]'] = $value :
                                     $requests[$tableRow['id']]['Request[' . $column . ']'] = $value);
+
+                            //исключить поле category для направления Маркет
+                            if ($tableRow['direction'] == 2)
+                                unset($requests[$tableRow['id']]['Request[category_id]']);
                         }
                     }
 
@@ -194,9 +203,11 @@ class RequestView extends FunctionalTester
                             $requests[$tableRow['request_id']]['RequestField[' . $tableRow['field_id'] . ']'] = $tableRow['value'];
                     }
 
-                    //исключить поле category для направления Маркет
-                    if ($tableName == 'requests' && $tableRow['direction'] == 2)
-                        unset($requests[$tableRow['id']]['Request[category_id]']);
+                    if ($tableName == 'requests_reasons')
+                        $requests[$tableRow['request_id']]['reasons[]'][] = $tableRow['reason_id'];
+
+                    if ($tableName == 'observers')
+                        $requests[$tableRow['request_id']]['Request[observers][]'][] = $tableRow['user_id'];
                 }
             }
 
@@ -227,7 +238,7 @@ class RequestView extends FunctionalTester
     public function checkFields($dbTablesArray, $otherTypesFields = [])
     {
         $I = $this;
-        $requests = $this->convertDbArrays($dbTablesArray, $otherTypesFields);
+        $requests = $I->convertDbArrays($dbTablesArray, $otherTypesFields);
 
         foreach ($requests as $id => $request) {
             $I->amOnView($id);
@@ -238,6 +249,9 @@ class RequestView extends FunctionalTester
                     $I->canSeeCheckboxIsChecked($field);
                 } elseif (in_array($field, $this->textFields)) {
                     $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => (string)$value]);
+                } elseif (in_array($field, $this->multipleFields)) {
+                    foreach ($value as $option)
+                        $I->canSeeInField($field, $option);
                 } else {
                     $I->canSeeInField($field, $value);
                 }
@@ -252,7 +266,7 @@ class RequestView extends FunctionalTester
     public function checkFieldsForMassEditing($dbTablesArray)
     {
         $I = $this;
-        $requests = $this->convertDbArrays($dbTablesArray, []);
+        $requests = $I->convertDbArrays($dbTablesArray, []);
 
         foreach ($requests as $id => $request) {
             $I->amOnView($id);
@@ -265,6 +279,9 @@ class RequestView extends FunctionalTester
                         $I->canSeeCheckboxIsChecked($field);
                     } elseif (in_array($field, $this->textFields)) {
                         $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => (string)$value]);
+                    } elseif (in_array($field, $this->multipleFields)) {
+                        foreach ($value as $option)
+                            $I->canSeeInField($field, $option);
                     } else {
                         $I->canSeeInField($field, $value);
                     }

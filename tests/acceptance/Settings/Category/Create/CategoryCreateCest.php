@@ -3,7 +3,8 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\Category;
+use lisa\Page\Settings\Category;
+use lisa\Page\Other\SearchField;
 use Codeception\Module\TestHelper;
 
 /**
@@ -22,18 +23,17 @@ class CategoryCreateCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param Category $category
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function CategoryCreate(AcceptanceTester $I, Example $data, Category $category)
+    public function CategoryCreate(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $category->amOnCategory();
+        $I->amOnPage("/bpm/category");
 
         $I->click(Category::$createButton);
         $I->waitForElement(Category::$saveButton);
@@ -64,9 +64,9 @@ class CategoryCreateCest
 
         $I->reloadPage();
         $I->click(Category::$categorySV);
-        $I->click(Category::$search);
-        $I->pressKey(Category::$search, 'К', 'у');
-        $I->click(Category::searchResult('Константин Куцан'));
+        $I->click(SearchField::$search);
+        $I->pressKey(SearchField::$search, 'К', 'у');
+        $I->click(SearchField::searchResult('Константин Куцан'));
         $I->click(Category::$saveButton);
         $I->canSeeElement(Category::errorField('Значение «Авиабилеты» для «Название категории» уже занято.'));
         $I->checkTablesInDB($providerData['db_1']);

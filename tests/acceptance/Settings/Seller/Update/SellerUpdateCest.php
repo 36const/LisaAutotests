@@ -3,7 +3,8 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\Seller;
+use lisa\Page\Other\SearchField;
+use lisa\Page\Settings\Seller;
 use Codeception\Module\TestHelper;
 
 /**
@@ -22,18 +23,17 @@ class SellerUpdateCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param Seller $seller
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function SellerUpdate(AcceptanceTester $I, Example $data, Seller $seller)
+    public function SellerUpdate(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
-        $seller->amOnSeller();
+        $I->amOnPage("/bpm/seller");
         $I->click(Seller::$updateButton);
 
         $I->click(Seller::$clearButton);
@@ -42,9 +42,9 @@ class SellerUpdateCest
         $I->checkTablesInDB($providerData['db_1']);
 
         $I->click(Seller::$sellerSV);
-        $I->click(Seller::$search);
-        $I->pressKey(Seller::$search, 'С', 'у');
-        $I->click(Seller::searchResult('Супервайзер Начальникович 10'));
+        $I->click(SearchField::$search);
+        $I->pressKey(SearchField::$search, 'С', 'у');
+        $I->click(SearchField::searchResult('Супервайзер Начальникович 10'));
         $I->wait(1);     //без ожидания выдаёт ошибку, что сообщение есть
         $I->cantSeeElement(Seller::errorField('Необходимо заполнить «ID супервайзера».'));
         $I->click(Seller::$saveButton);

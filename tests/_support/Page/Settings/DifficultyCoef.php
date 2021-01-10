@@ -1,17 +1,9 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Settings;
 
-use lisa\FunctionalTester;
-
-class DifficultyCoef extends FunctionalTester
+class DifficultyCoef
 {
-    public function amOnDifficultyCoef()
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/difficulty-coef");
-    }
-
     public static $createButton = '//a[@href="/bpm/difficulty-coef/create" and @title="Добавить коэффициент"]/span[text()="Добавить коэффициент"]';
 
     public static $requestType = '//select[@id="difficultycoef-type_id"]';
@@ -24,7 +16,8 @@ class DifficultyCoef extends FunctionalTester
         return "//div[@class='difficulty-coef-form']//table//input[@name='fields[$id]']/..";
     }
 
-    public static function errorField(string $text) {
+    public static function errorField(string $text)
+    {
         return "//div[@class='difficulty-coef-form']//div[@class='help-block' and text()='$text']";
     }
 }

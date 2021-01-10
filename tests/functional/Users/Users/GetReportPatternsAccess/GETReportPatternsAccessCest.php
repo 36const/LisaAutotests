@@ -3,7 +3,6 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\Report;
 use Codeception\Module\TestHelper;
 
 /**
@@ -23,18 +22,17 @@ class GETReportPatternsAccessCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Report $report
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
      *
      */
-    public function GETReportPatternsAccess(FunctionalTester $I, Example $data, Report $report)
+    public function GETReportPatternsAccess(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, null);
         $providerData = $data['provider_data'];
 
-        $report->amOnReportGenerate();
+        $I->amOnPage("/bpm/report/generate");
         $I->seeResponseCodeIs(200);
 
         $I->checkObjectsOnPage($providerData['pageObjects']);

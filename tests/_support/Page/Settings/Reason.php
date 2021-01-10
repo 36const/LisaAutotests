@@ -1,17 +1,9 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Settings;
 
-use lisa\FunctionalTester;
-
-class Reason extends FunctionalTester
+class Reason
 {
-    public function amOnReason()
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/reason");
-    }
-
     public static $createButton = '//a[@href="/bpm/reason/create" and @title="Добавить новую причину"]/span[text()="Добавить новую причину"]';
 
     public static $childStatus = '//select[@id="reason-child_status"]';

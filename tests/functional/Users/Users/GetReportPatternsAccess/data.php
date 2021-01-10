@@ -1,6 +1,6 @@
 <?php
 
-use lisa\Page\Functional\Report;
+use lisa\Page\Reports\Report;
 
 return [
     'case1' => [

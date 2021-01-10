@@ -1,6 +1,6 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Requests;
 
 use lisa\FunctionalTester;
 
@@ -16,7 +16,6 @@ class RequestCorrection extends FunctionalTester
      * Поля мотивации СВ, не отображаемые на странице correction
      */
     public $uncheckingSVFields = [
-        '_csrf-backend',
         //типы 1, 2, 3, 5, 6, 12
         'RequestField[121]',
         'RequestField[65]',
@@ -54,7 +53,6 @@ class RequestCorrection extends FunctionalTester
 
     /**
      * Проверка html-полей и их значений в форме ошибок для менеджера
-     * @param $requestBody
      */
     public function checkFields($requestBody)
     {

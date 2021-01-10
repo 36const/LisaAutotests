@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\Request;
+use lisa\Page\Requests\Request;
 use Codeception\Module\TestHelper;
 
 /**
@@ -23,7 +23,7 @@ class TabsCounterCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param Request $request
+     * @param \lisa\Page\Requests\Request $request
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws \Exception
      * @dataProvider pageProvider

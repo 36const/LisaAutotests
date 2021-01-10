@@ -4,9 +4,9 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\RequestView;
-use lisa\Page\Functional\RequestToCorrection;
-use lisa\Page\Functional\RequestCorrection;
+use lisa\Page\Requests\RequestView;
+use lisa\Page\Requests\RequestToCorrection;
+use lisa\Page\Requests\RequestCorrection;
 
 /**
  * @group lisa

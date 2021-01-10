@@ -1,17 +1,9 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Settings;
 
-use lisa\FunctionalTester;
-
-class Priority extends FunctionalTester
+class Priority
 {
-    public function amOnPriority()
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/priority");
-    }
-
     public static $createButton = '//a[@href="/bpm/priority/create" and @title="Добавить приоритет"]/span[text()="Добавить приоритет"]';
 
     public static $priorityStatus = '//select[@id="priority-status"]';

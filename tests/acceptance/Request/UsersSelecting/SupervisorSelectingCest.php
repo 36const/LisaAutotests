@@ -4,8 +4,9 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\RequestView;
-use lisa\Page\Functional\Request;
+use lisa\Page\Requests\RequestView;
+use lisa\Page\Requests\Request;
+use lisa\Page\Other\SearchField;
 
 /**
  * @group lisa
@@ -41,15 +42,15 @@ class SupervisorSelectingCest
         $I->waitForElementVisible(RequestView::searchSVResult(1, 'Пожалуйста, введите ещё хотя бы 2 символa'));
         $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
 
-        $I->pressKey(RequestView::$search, 'М', 'е');
+        $I->pressKey(SearchField::$search, 'М', 'е');
         $I->canSeeElement(RequestView::searchSVResult(1, 'Совпадений не найдено'));
         $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
 
-        $I->pressKey(RequestView::$search, ['ctrl', 'a'], 'Т', 'и');
+        $I->pressKey(SearchField::$search, ['ctrl', 'a'], 'Т', 'и');
         $I->canSeeElement(RequestView::searchSVResult(1, 'Константин Куцан'));
         $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
 
-        $I->pressKey(RequestView::$search, ['ctrl', 'a'], 'С', 'у');
+        $I->pressKey(SearchField::$search, ['ctrl', 'a'], 'С', 'у');
 
         $i = 1;
         foreach ($providerData['pageObjectsSV'] as $object) {
@@ -68,15 +69,15 @@ class SupervisorSelectingCest
         $I->waitForElementVisible(RequestView::searchSVResult(1, 'Пожалуйста, введите ещё хотя бы 2 символa'));
         $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
 
-        $I->pressKey(RequestView::$search, 'М', 'е');
+        $I->pressKey(SearchField::$search, 'М', 'е');
         $I->canSeeElement(RequestView::searchSVResult(1, 'Совпадений не найдено'));
         $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
 
-        $I->pressKey(RequestView::$search, ['ctrl', 'a'], 'Т', 'и');
+        $I->pressKey(SearchField::$search, ['ctrl', 'a'], 'Т', 'и');
         $I->canSeeElement(RequestView::searchSVResult(1, 'Константин Куцан'));
         $I->canSeeNumberOfElements(RequestView::$searchResults, 1);
 
-        $I->pressKey(RequestView::$search, ['ctrl', 'a'], 'С', 'у');
+        $I->pressKey(SearchField::$search, ['ctrl', 'a'], 'С', 'у');
 
         $i = 1;
         foreach ($providerData['pageObjectsSV'] as $object) {

@@ -3,7 +3,7 @@
 return [
     'case1_2' => [
         'setting' => [
-            'description' => 'Перевод из "Новая" в "Готова для распределения"',
+            'description' => 'Перевод из "Новая" в "Готова для распределения" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
@@ -239,7 +239,7 @@ return [
 
     'case1_3' => [
         'setting' => [
-            'description' => 'Перевод из "Новая" в "На доработке"',
+            'description' => 'Перевод из "Новая" в "На доработке" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
@@ -441,7 +441,7 @@ return [
 
     'case1_4' => [
         'setting' => [
-            'description' => 'Перевод из "Новая" в "Отменена"',
+            'description' => 'Перевод из "Новая" в "Отменена" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
@@ -647,7 +647,7 @@ return [
 
     'case1_5' => [
         'setting' => [
-            'description' => 'Перевод из "Новая" в "Ожидает взятия в работу"',
+            'description' => 'Перевод из "Новая" в "Ожидает взятия в работу" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
@@ -867,7 +867,7 @@ return [
 
     'case1_0_sv' => [
         'setting' => [
-            'description' => 'Изменение супервайзера в "Новая"',
+            'description' => 'Изменение супервайзера в "Новая" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1_0_sv.php',
         'provider_data' => [

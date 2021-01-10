@@ -1,10 +1,8 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Reports;
 
-use lisa\FunctionalTester;
-
-class Dashboard extends FunctionalTester
+class Dashboard
 {
     public static function type(string $option = null)
     {
@@ -21,12 +19,6 @@ class Dashboard extends FunctionalTester
     }
 
     //общие дашборды
-    public function amOnDashboardCommon($url = '')
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/dashboard/common" . $url);
-    }
-
     public static function member(string $option = null)
     {
         return $option == null ?
@@ -98,12 +90,6 @@ class Dashboard extends FunctionalTester
     }
 
     //детальные дашборды
-    public function amOnDashboardDetail($url = '')
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/dashboard/detail" . $url);
-    }
-
     public static function amountColumns($i)
     {
         return ['begin-of-day', 'on-date', 'today'][$i];

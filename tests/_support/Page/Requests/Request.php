@@ -1,15 +1,11 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Requests;
 
 use lisa\FunctionalTester;
 
 class Request extends FunctionalTester
 {
-    public static $tabs =
-        ['index', 'new', 'in-check', 'require-changes', 'declined', 'wait-work',
-            'in-work', 'on-hold', 'completed', '', '', 'closed', 'observable', 'cross-check'];
-
     public function amOnTable(string $filter = null)
     {
         $I = $this;
@@ -124,9 +120,6 @@ class Request extends FunctionalTester
     {
         return Request::columnSearchFieldNotListAfterResult($fieldName, $result) . "/span[@title='Удалить все элементы' and text()='×']";
     }
-
-    /**Поле ввода текста для поиска в заголовке колонки без готового списка вариантов*/
-    public static $search = '//span/input[@class="select2-search__field"]';
 
 
     //****** Колонки с поиском значений, без готового списка ******//

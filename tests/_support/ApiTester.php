@@ -49,9 +49,7 @@ class ApiTester extends \Codeception\Actor
             $I->amConnectedToDatabase($dbName);
 
             foreach ($dbData as $tableName => $tableData) {
-
-                $expectedNumber = count($tableData);
-                $I->canSeeNumRecords($expectedNumber, $tableName);
+                $I->canSeeNumRecords(count($tableData), $tableName);
 
                 foreach ($tableData as $tableRow) {
                     $I->canSeeInDatabase($tableName, $tableRow);

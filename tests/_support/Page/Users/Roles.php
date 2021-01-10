@@ -1,6 +1,6 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Users;
 
 use lisa\FunctionalTester;
 
@@ -10,12 +10,6 @@ class Roles extends FunctionalTester
     {
         $I = $this;
         $I->amOnPage("/bpm/roles/update?id=$id");
-    }
-
-    public function amOnRoles()
-    {
-        $I = $this;
-        $I->amOnPage("/bpm/roles");
     }
 
     /**

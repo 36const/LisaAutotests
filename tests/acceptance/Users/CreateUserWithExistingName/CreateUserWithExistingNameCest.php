@@ -3,8 +3,9 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\UserCreate;
-use lisa\Page\Functional\UserView;
+use lisa\Page\Users\UserCreate;
+use lisa\Page\Users\UserView;
+use lisa\Page\Other\SearchField;
 use Codeception\Module\TestHelper;
 
 /**
@@ -24,17 +25,15 @@ class CreateUserWithExistingNameCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param UserCreate $user
-     * @param UserView $userView
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws \Exception
      * @dataProvider pageProvider
      */
-    public function CreateUserWithExistingName(AcceptanceTester $I, Example $data, UserCreate $user)
+    public function CreateUserWithExistingName(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data, null);
 
-        $user->amOnUserCreate();
+        $I->amOnPage("/bpm/user/create");
 
         $I->click(UserCreate::$saveButton);
         $I->canSeeElement(UserCreate::$divUserLoginError);
@@ -42,12 +41,12 @@ class CreateUserWithExistingNameCest
         $I->canSeeElement(UserCreate::$divUserPositionError);
         $I->cantSeeElement(UserCreate::$divUserTeamError);
 
-        $user->amOnUserCreate();
+        $I->amOnPage("/bpm/user/create");
 
         $I->click(UserCreate::$loginField);
-        $I->click(UserCreate::$search);
-        $I->pressKey(UserCreate::$search, 'К', 'у');
-        $I->click(UserCreate::searchResult('Куцан  Константин  (kutsan)'));
+        $I->click(SearchField::$search);
+        $I->pressKey(SearchField::$search, 'К', 'у');
+        $I->click(SearchField::searchResult('Куцан  Константин  (kutsan)'));
 
         $I->canSeeElement(UserCreate::$divUserName . "[contains(text(), 'Константин Куцан')]");
         $I->canSeeElement(UserCreate::$divUserName . "[contains(text(), 'Значение «Константин Куцан» для «Имя пользователя» уже занято.')]");
@@ -61,9 +60,9 @@ class CreateUserWithExistingNameCest
         $I->selectOption('//select[@name="UserBpm[team]"]', 'Маркетплейс Freelance');
 
         $I->click(UserCreate::$parentField);
-        $I->click(UserCreate::$search);
-        $I->pressKey(UserCreate::$search, 'С', 'у');
-        $I->click(UserCreate::searchResult('Супервайзер Руководько 1'));
+        $I->click(SearchField::$search);
+        $I->pressKey(SearchField::$search, 'С', 'у');
+        $I->click(SearchField::searchResult('Супервайзер Руководько 1'));
         $I->click(UserCreate::$saveButton);
 
         $I->canSeeElement(UserView::viewUserTable(1, 'Константин Куцан'));

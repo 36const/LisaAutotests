@@ -1,6 +1,6 @@
 <?php
 
-use \lisa\Page\Functional\User;
+use lisa\Page\Users\User;
 
 return [
     'case1' => [

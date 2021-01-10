@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\RequestView;
+use lisa\Page\Requests\RequestView;
 use Codeception\Module\TestHelper;
 
 /**
@@ -49,6 +49,6 @@ class POSTCreateRequestCest
         $I->checkTablesInDB($providerData['db']);
         $view->checkFields($providerData['db']);
 
-//        $I->checkRabbitMQ($providerData);
+        $I->checkRabbitMQ($providerData);
     }
 }

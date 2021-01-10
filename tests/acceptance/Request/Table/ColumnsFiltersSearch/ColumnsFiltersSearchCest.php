@@ -3,7 +3,8 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\Request;
+use lisa\Page\Requests\Request;
+use lisa\Page\Other\SearchField;
 use Codeception\Module\TestHelper;
 
 /**
@@ -41,7 +42,7 @@ class ColumnsFiltersSearchCest
         $I->canSeeElement(Request::columnValueList('Пожалуйста, введите ещё хотя бы 2 символa'));
 
         //ввести первые две буквы и проверить выпавшие результаты
-        $I->pressKey(Request::$search, $setting['symbol_1'], $setting['symbol_2']);
+        $I->pressKey(SearchField::$search, $setting['symbol_1'], $setting['symbol_2']);
         $I->canSeeElement(Request::columnValueList($setting['value']));
 
         //кликнуть на один из результатов и проверить применение в таблице

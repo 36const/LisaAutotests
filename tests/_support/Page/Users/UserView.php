@@ -1,10 +1,8 @@
 <?php
 
-namespace lisa\Page\Functional;
+namespace lisa\Page\Users;
 
-use lisa\FunctionalTester;
-
-class UserView extends FunctionalTester
+class UserView
 {
     /**Таблица с информацией об учётной записи после успешного создания пользователя*/
     public static function viewUserTable(int $tr, string $text)
