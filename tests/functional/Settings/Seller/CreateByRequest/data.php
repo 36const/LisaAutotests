@@ -858,7 +858,7 @@ return [
                 'Request[result_comment]' => '',
                 'Request[seller_id]' => '1332',
                 'Request[subject]' => 'Добавление новых товаров (Работа с товарами Маркетплейса)',
-                'Request[supervisor_commen0t]' => '',
+                'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '5',
                 'Request[uploadedFiles][]' => '',
                 'Request[uploadedFiles][]' => '',

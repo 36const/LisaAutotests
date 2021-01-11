@@ -9,10 +9,9 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_settings
- * @group POSTSeller
- * @group POSTSellerCreateByCron
+ * @group CronSellerCreate
  */
-class POSTSellerCreateByCronCest
+class CronSellerCreateCest
 {
     /**@return array*/
     protected function pageProvider()
@@ -26,13 +25,14 @@ class POSTSellerCreateByCronCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTSellerCreate(FunctionalTester $I, Example $data)
+    public function CronSellerCreate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
 
         $providerData = $data['provider_data'];
 
         $I->runShellCommand('./yii bpm/seller/appoint-supervisors');
+        $I->canSeeResultCodeIs(0);
 
         $I->checkTablesInDB($providerData['db']);
     }

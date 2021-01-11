@@ -32,6 +32,7 @@ class GETDashboardDetailCest
 
         $I->runShellCommand('./yii bpm/request/count-for-dashboards');
         $I->canSeeInShellOutput('');
+        $I->canSeeResultCodeIs(0);
 
         $I->amOnPage("/bpm/dashboard/detail" . $providerData['url']);
         $I->seeResponseCodeIs(200);

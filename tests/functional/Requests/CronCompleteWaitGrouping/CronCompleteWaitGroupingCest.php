@@ -33,6 +33,7 @@ class CronCompleteWaitGroupingCest
         $providerData = $data['provider_data'];
 
         $I->runShellCommand('./yii bpm/request/complete-wait-grouping');
+        $I->canSeeResultCodeIs(0);
 
         $I->checkTablesInDB($providerData['db']);
         $view->checkFields($providerData['db']);

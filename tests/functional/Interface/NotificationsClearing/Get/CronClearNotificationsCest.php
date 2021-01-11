@@ -32,6 +32,7 @@ class CronClearNotificationsCest
 
         $I->runShellCommand('./yii bpm/request/clear-notifications');
         $I->canSeeInShellOutput("Удалены нотификации до " . date("Y-m-d 00:00:00", strtotime("-1 month")));
+        $I->canSeeResultCodeIs(0);
 
         $I->checkTablesInDB($providerData['db']);
     }

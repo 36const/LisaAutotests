@@ -10,10 +10,9 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_settings
- * @group POSTSeller
- * @group POSTSellerCreateByRequest
+ * @group POSTSellerCreate
  */
-class POSTSellerCreateByRequestCest
+class POSTSellerCreateCest
 {
     /**@return array*/
     protected function pageProvider()

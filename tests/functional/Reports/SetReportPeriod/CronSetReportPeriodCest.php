@@ -32,6 +32,7 @@ class CronSetReportPeriodCest
 
         $I->runShellCommand('./yii bpm/request/set-report-period');
         $I->canSeeInShellOutput('');
+        $I->canSeeResultCodeIs(0);
 
         $I->checkTablesInDB($providerData['db']);
     }
