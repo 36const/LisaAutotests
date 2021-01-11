@@ -41,6 +41,10 @@ class FieldValuesCreateCest
         $I->selectOption(FieldValues::$fieldId, 'Наличие характеристик к товарам');
         $I->pressKey(FieldValues::$fieldValue, 'П', 'р', 'е', 'д', 'о', 'с', 'т', 'а', 'в', 'л', 'е', 'н', 'ы', ' ', 'п', 'р', 'о', 'д', 'а', 'к', 'т', 'о', 'м');
         $I->click(FieldValues::$saveButton);
+        $I->canSeeElement(FieldValues::errorField('Такая комбинация поля и значения уже существует.'));
+
+        $I->selectOption(FieldValues::$fieldId, 'Наличие описаний к товарам');
+        $I->click(FieldValues::$saveButton);
 
         $I->waitForElement(FieldValues::$createButton);
         $I->checkTablesInDB($providerData['db']);
