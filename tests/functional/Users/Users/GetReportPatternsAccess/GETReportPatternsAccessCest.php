@@ -23,9 +23,7 @@ class GETReportPatternsAccessCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETReportPatternsAccess(FunctionalTester $I, Example $data)
     {

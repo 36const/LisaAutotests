@@ -25,9 +25,7 @@ class CreateRequestModalCest
      * @param Example $data
      * @param RequestCreate $create
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function CreateRequestModal(AcceptanceTester $I, Example $data, RequestCreate $create)
     {

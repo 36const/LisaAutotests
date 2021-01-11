@@ -26,9 +26,7 @@ class POSTCommentUpdateCest
      * @param Example $data
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTCommentUpdate(FunctionalTester $I, Example $data, RequestView $view)
     {

@@ -24,9 +24,7 @@ class POSTNotesCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTNotes(FunctionalTester $I, Example $data)
     {

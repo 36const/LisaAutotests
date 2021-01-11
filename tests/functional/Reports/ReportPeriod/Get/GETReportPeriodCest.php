@@ -25,9 +25,7 @@ class GETReportPeriodCest
      * @param Example $data
      * @param Report $report
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETReportPeriod(FunctionalTester $I, Example $data)
     {

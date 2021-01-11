@@ -23,9 +23,7 @@ class GETRequestEditingCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETRequestEditing(FunctionalTester $I, Example $data)
     {

@@ -26,9 +26,7 @@ class POSTRolesCreateCest
      * @param Example $data
      * @param Roles $roles
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTRolesCreate(FunctionalTester $I, Example $data, Roles $roles)
     {

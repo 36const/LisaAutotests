@@ -25,9 +25,7 @@ class GETMotivationAndReportPeriodBlocksCest
      * @param Example $data
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETMotivationAndReportPeriodBlocks(FunctionalTester $I, Example $data, RequestView $view)
     {

@@ -25,9 +25,7 @@ class GETViewTabsCest
      * @param Example $data
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETViewTabs(FunctionalTester $I, Example $data, RequestView $view)
     {

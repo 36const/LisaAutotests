@@ -26,9 +26,7 @@ class ManagerSelectingCest
      * @param Example $data
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function ManagerSelecting(AcceptanceTester $I, Example $data, RequestView $view, Request $request)
     {

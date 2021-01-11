@@ -24,9 +24,7 @@ class POSTFilterUpdateCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTFilterUpdate(FunctionalTester $I, Example $data)
     {

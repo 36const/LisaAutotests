@@ -29,9 +29,7 @@ class POSTFromStatusesCest
      * @param RequestToCorrection $toCorrection
      * @param RequestCorrection $correction
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTFromStatuses(FunctionalTester $I, Example $data, RequestView $view,
                                      RequestToCorrection $toCorrection, RequestCorrection $correction)

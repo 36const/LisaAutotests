@@ -25,9 +25,7 @@ class GETCreateRequestCest
      * @param Example $data
      * @param RequestCreate $create
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETCreateRequest(FunctionalTester $I, Example $data, RequestCreate $create)
     {

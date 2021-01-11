@@ -23,9 +23,7 @@ class ExcludedFieldsCreateCest
      * @param AcceptanceTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function ExcludedFieldsCreate(AcceptanceTester $I, Example $data)
     {

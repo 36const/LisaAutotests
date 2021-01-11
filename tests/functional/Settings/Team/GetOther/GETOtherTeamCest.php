@@ -23,9 +23,7 @@ class GETOtherTeamCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETOtherTeam(FunctionalTester $I, Example $data)
     {

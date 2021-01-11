@@ -45,6 +45,12 @@ class RequestView extends FunctionalTester
         return RequestView::$searchResults . "[$number][text() = '$name']";
     }
 
+    /**Список готовых значений поля*/
+    public static function listField(string $name)
+    {
+        return "//select[@name='$name']/..//ul[@class='select2-selection__rendered']";
+    }
+
     public static function findCheckbox(string $name)
     {
         return "//td[@class='checkboxes']//label[text()='$name']/input[@type='checkbox']";

@@ -22,9 +22,7 @@ class PUTGomerCest
      * @param ApiTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function PUTGomer(ApiTester $I, Example $data)
     {

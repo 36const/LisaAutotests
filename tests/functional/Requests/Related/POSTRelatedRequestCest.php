@@ -27,9 +27,7 @@ class POSTRelatedRequestCest
      * @param RequestCreate $create
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTRelatedRequest(FunctionalTester $I, Example $data,
                                        RequestCreate $create, RequestView $view)

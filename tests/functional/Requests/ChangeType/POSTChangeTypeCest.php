@@ -25,9 +25,7 @@ class POSTChangeTypeCest
      * @param Example $data
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTChangeType(FunctionalTester $I, Example $data, RequestView $view)
     {

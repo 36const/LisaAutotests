@@ -24,9 +24,7 @@ class POSTSellerCreateByCronCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTSellerCreate(FunctionalTester $I, Example $data)
     {

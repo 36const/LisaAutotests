@@ -27,9 +27,7 @@ class SupervisorSelectingCest
      * @param Example $data
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function SupervisorSelecting(AcceptanceTester $I, Example $data, RequestView $view, Request $request)
     {

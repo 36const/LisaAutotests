@@ -23,9 +23,7 @@ class GETPriorityOtherCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETPriorityOther(FunctionalTester $I, Example $data)
     {

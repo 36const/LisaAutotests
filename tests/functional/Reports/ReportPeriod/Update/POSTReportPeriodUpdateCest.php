@@ -24,9 +24,7 @@ class POSTReportPeriodUpdateCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTReportPeriodUpdate(FunctionalTester $I, Example $data)
     {

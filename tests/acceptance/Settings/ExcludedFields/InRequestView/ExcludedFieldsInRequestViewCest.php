@@ -24,9 +24,7 @@ class ExcludedFieldsInRequestViewCest
      * @param Example $data
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function ExcludedFieldsInRequestView(AcceptanceTester $I, Example $data, RequestView $view)
     {

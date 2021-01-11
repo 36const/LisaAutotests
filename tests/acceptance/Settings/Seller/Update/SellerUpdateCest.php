@@ -24,9 +24,7 @@ class SellerUpdateCest
      * @param AcceptanceTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function SellerUpdate(AcceptanceTester $I, Example $data)
     {

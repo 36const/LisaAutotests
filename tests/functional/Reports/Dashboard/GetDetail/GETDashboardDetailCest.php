@@ -23,9 +23,7 @@ class GETDashboardDetailCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETDashboardDetail(FunctionalTester $I, Example $data)
     {

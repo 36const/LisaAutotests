@@ -22,9 +22,7 @@ class GETGomerSyncSourceIdTypeIdCest
      * @param ApiTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETGomerSyncSourceIdTypeId(ApiTester $I, Example $data)
     {

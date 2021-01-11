@@ -23,9 +23,7 @@ class FieldValuesCreateCest
      * @param AcceptanceTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function FieldValuesCreate(AcceptanceTester $I, Example $data)
     {

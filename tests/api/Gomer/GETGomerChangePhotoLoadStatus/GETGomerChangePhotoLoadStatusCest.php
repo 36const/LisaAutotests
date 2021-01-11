@@ -22,9 +22,7 @@ class GETGomerChangePhotoLoadStatusCest
      * @param ApiTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETGomerChangePhotoLoadStatus(ApiTester $I, Example $data)
     {

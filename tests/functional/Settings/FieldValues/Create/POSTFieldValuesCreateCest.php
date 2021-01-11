@@ -24,9 +24,7 @@ class POSTFieldValuesCreateCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTFieldValuesCreate(FunctionalTester $I, Example $data)
     {

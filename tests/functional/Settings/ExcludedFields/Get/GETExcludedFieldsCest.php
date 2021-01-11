@@ -23,9 +23,7 @@ class GETExcludedFieldsCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETExcludedFields(FunctionalTester $I, Example $data)
     {

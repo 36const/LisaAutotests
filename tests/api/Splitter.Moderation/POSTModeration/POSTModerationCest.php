@@ -21,9 +21,7 @@ class POSTModerationCest
      * @param ApiTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTModeration(ApiTester $I, Example $data)
     {

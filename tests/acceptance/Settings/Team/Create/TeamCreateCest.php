@@ -23,9 +23,7 @@ class TeamCreateCest
      * @param AcceptanceTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function TeamCreate(AcceptanceTester $I, Example $data)
     {

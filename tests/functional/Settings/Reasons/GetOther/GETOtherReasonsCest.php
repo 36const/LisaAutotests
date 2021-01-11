@@ -23,9 +23,7 @@ class GETOtherReasonsCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETOtherReasons(FunctionalTester $I, Example $data)
     {
