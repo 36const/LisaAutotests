@@ -1,6 +1,6 @@
 <?php
 
-use lisa\Page\Functional\Request;
+use lisa\Page\Requests\Request;
 
 return [
     'case1' => [
@@ -223,7 +223,7 @@ return [
         'provider_data' => [
             "url" => 'in-check',
             'requestBody' => [
-                'visibleColumns' => ['parent_id', 'difficulty_level', 'awaiting_correction', 'reason_id', 'author_clarifications', 'photos_available', 'characteristics_available', 'description_available', 'language'],
+                'visibleColumns' => ['parent_id', 'difficulty_level', 'awaiting_correction', 'reasons', 'author_clarifications', 'photos_available', 'characteristics_available', 'description_available', 'language'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -231,7 +231,7 @@ return [
                         [
                             "id" => 1,
                             "user_id" => 4,
-                            "columns_list" => '["parent_id", "difficulty_level", "awaiting_correction", "reason_id", "author_clarifications", "photos_available", "characteristics_available", "description_available", "language"]'
+                            "columns_list" => '["parent_id", "difficulty_level", "awaiting_correction", "reasons", "author_clarifications", "photos_available", "characteristics_available", "description_available", "language"]'
                         ]
                     ],
                 ]
@@ -264,8 +264,8 @@ return [
                             "value" => "На исправление"
                         ],
                         [
-                            "selector" => "//thead/tr/th[@data-col-seq='reason_id']",
-                            "value" => "Причина"
+                            "selector" => "//thead/tr/th[@data-col-seq='reasons']",
+                            "value" => "Причины"
                         ],
                         [
                             "selector" => "//thead/tr/th[@data-col-seq='author_clarifications']",
@@ -319,59 +319,63 @@ return [
                         ],
 
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[1][@value='Все товары уже есть на сайте']",
-                            "value" => "Все товары уже есть на сайте"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[1]",
+                            "value" => "Все товары уже есть на сайте (Отменена)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[2][@value='Другое (описан в коментариях)']",
-                            "value" => "Другое (описан в коментариях)"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[2]",
+                            "value" => "Другое (описан в коментариях) (Все)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[3][@value='Дубль задачи']",
-                            "value" => "Дубль задачи"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[3]",
+                            "value" => "Дубль задачи (Отменена)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[4][@value='Изменен приоритет задачи']",
-                            "value" => "Изменен приоритет задачи"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[4]",
+                            "value" => "Изменен приоритет задачи (Ожидает)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[5][@value='Не получена запрошенная недостающая информация']",
-                            "value" => "Не получена запрошенная недостающая информация"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[5]",
+                            "value" => "Нада (На доработке)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[6][@value='Нинада']",
-                            "value" => "Нинада"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[6]",
+                            "value" => "Не получена запрошенная недостающая информация (Частично выполнена)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[7][@value='Ожидает группировки']",
-                            "value" => "Ожидает группировки"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[7]",
+                            "value" => "Нинада (На доработке)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[8][@value='Ожидается загрузка обновлений в систему']",
-                            "value" => "Ожидается загрузка обновлений в систему"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[8]",
+                            "value" => "Ожидает группировки (Ожидает)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[9][@value='Ожидается загрузка товаров в систему']",
-                            "value" => "Ожидается загрузка товаров в систему"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[9]",
+                            "value" => "Ожидается загрузка обновлений в систему (Ожидает)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[10][@value='Ожидается загрузка фото в товары']",
-                            "value" => "Ожидается загрузка фото в товары"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[10]",
+                            "value" => "Ожидается загрузка товаров в систему (Ожидает)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[11][@value='Товары ушли в ошибки']",
-                            "value" => "Товары ушли в ошибки"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[11]",
+                            "value" => "Ожидается загрузка фото в товары (Ожидает)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[12][@value='Требуется уточнение информации по задаче']",
-                            "value" => "Требуется уточнение информации по задаче"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[12]",
+                            "value" => "Товары ушли в ошибки (Частично выполнена)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[13][@value='Часть товаров ушла в ошибки']",
-                            "value" => "Часть товаров ушла в ошибки"
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[13]",
+                            "value" => "Требуется уточнение информации по задаче (Ожидает)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[reason_id][]']/option[14][@value='-1']",
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[14]",
+                            "value" => "Часть товаров ушла в ошибки (Частично выполнена)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[15]",
                             "value" => "(не задано)"
                         ],
 
@@ -487,7 +491,7 @@ return [
                         ["selector" => Request::requestInTable(1, 'parent_id', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'difficulty_level', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'awaiting_correction', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'reason_id', '(не задано)')],
+                        ["selector" => Request::requestInTable(1, 'reasons', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'author_clarifications', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'photos_available', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'characteristics_available', '(не задано)')],
@@ -1547,7 +1551,7 @@ return [
         'provider_data' => [
             "url" => '',
             'requestBody' => [
-                'visibleColumns' => ['priority', 'reason_id', 'author_clarifications', 'photos_available', 'characteristics_available', 'description_available', 'language'],
+                'visibleColumns' => ['priority', 'reasons', 'author_clarifications', 'photos_available', 'characteristics_available', 'description_available', 'language'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1555,7 +1559,7 @@ return [
                         [
                             "id" => 1,
                             "user_id" => 4,
-                            "columns_list" => '["priority", "reason_id", "author_clarifications", "photos_available", "characteristics_available", "description_available", "language"]'
+                            "columns_list" => '["priority", "reasons", "author_clarifications", "photos_available", "characteristics_available", "description_available", "language"]'
                         ]
                     ],
                 ]
@@ -1567,7 +1571,7 @@ return [
                         ["selector" => Request::requestInTable(1, 'subject', 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)')],
                         ["selector" => Request::requestInTable(1, 'type_id', 'Добавление/изменение информации в существующих товарах')],
                         ["selector" => Request::requestInTable(1, 'priority', 'Исправление критичной ошибки')],
-                        ["selector" => Request::requestInTable(1, 'reason_id', 'Нинада')],
+                        ["selector" => Request::requestInTable(1, 'reasons', 'Нинада')],
                         ["selector" => Request::requestInTable(1, 'author_clarifications', 'Более 5 уточнений')],
                         ["selector" => Request::requestInTable(1, 'photos_available', 'Фото предоставлены фотостудией')],
                         ["selector" => Request::requestInTable(1, 'characteristics_available', 'Характеристики добавлены с обновлением фото/описания')],

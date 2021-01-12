@@ -61,10 +61,10 @@ class AcceptanceTester extends \Codeception\Actor
             file_put_contents(__DIR__ . '/_identityCookie.txt', $I->grabCookie('_identity'));
         }
 
-        $I->setCookie('for_normal_people_4', '1');
+        $I->setCookie('newTabOpening', 'false');
 
         $I->seeCookie('_identity');
-        $I->seeCookie('for_normal_people_4');
+        $I->seeCookie('newTabOpening');
     }
 
     public function setRequestPerPageCookie(int $amount)
@@ -85,7 +85,7 @@ class AcceptanceTester extends \Codeception\Actor
         $I->seeCookie('requestsPerPage');
     }
 
-    public function checkTablesInDB($dbTablesArray, bool $dontSee = false)
+    public function checkTablesInDB($dbTablesArray)
     {
         $I = $this;
 
@@ -93,16 +93,10 @@ class AcceptanceTester extends \Codeception\Actor
             $I->amConnectedToDatabase($dbName);
 
             foreach ($dbData as $tableName => $tableData) {
-
-                $expectedNumber = count($tableData);
-
-                ($dontSee) ?:
-                    $I->canSeeNumRecords($expectedNumber, $tableName);
+                $I->canSeeNumRecords(count($tableData), $tableName);
 
                 foreach ($tableData as $tableRow) {
-                    (!$dontSee) ?
-                        $I->canSeeInDatabase($tableName, $tableRow) :
-                        $I->cantSeeInDatabase($tableName, $tableRow);
+                    $I->canSeeInDatabase($tableName, $tableRow);
                 }
             }
         }
@@ -114,13 +108,13 @@ class AcceptanceTester extends \Codeception\Actor
 
         if (isset($pageObjects['canSee'])) {
             foreach ($pageObjects['canSee'] as $object) {
-                    $I->canSeeElement($object);
+                $I->canSeeElement($object);
             }
         }
 
         if (isset($pageObjects['cantSee'])) {
             foreach ($pageObjects['cantSee'] as $object) {
-                    $I->cantSeeElement($object);
+                $I->cantSeeElement($object);
             }
         }
     }

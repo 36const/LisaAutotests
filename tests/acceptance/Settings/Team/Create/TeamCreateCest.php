@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\Team;
+use lisa\Page\Settings\Team;
 use Codeception\Module\TestHelper;
 
 /**
@@ -22,18 +22,15 @@ class TeamCreateCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param Team $team
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
-    public function TeamCreate(AcceptanceTester $I, Example $data, Team $team)
+    public function TeamCreate(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $team->amOnTeam();
+        $I->amOnPage("/bpm/team");
 
         $I->click(Team::$createButton);
         $I->waitForElement(Team::$saveButton);

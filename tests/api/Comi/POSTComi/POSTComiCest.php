@@ -21,9 +21,7 @@ class POSTComiCest
      * @param ApiTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTComi(ApiTester $I, Example $data)
     {

@@ -4,8 +4,8 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\RequestView;
-use lisa\Page\Functional\User;
+use lisa\Page\Requests\RequestView;
+use lisa\Page\Users\User;
 
 /**
  * @group lisa
@@ -19,8 +19,7 @@ class POSTUsersUpdateCest
     /**@return array*/
     protected function pageProvider()
     {
-//        return $this->testHelper->getDataProvider('');
-                return TestHelper::prepareDataprovider(require 'data.php', '');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**

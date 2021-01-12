@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\ExcludedFields;
+use lisa\Page\Settings\ExcludedFields;
 use Codeception\Module\TestHelper;
 
 /**
@@ -22,18 +22,15 @@ class ExcludedFieldsCreateCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param ExcludedFields $excluded
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
-    public function ExcludedFieldsCreate(AcceptanceTester $I, Example $data, ExcludedFields $excluded)
+    public function ExcludedFieldsCreate(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $excluded->amOnExcludedFields();
+        $I->amOnPage("/bpm/excluded-fields");
 
         $I->click(ExcludedFields::$createButton);
         $I->waitForElementClickable(ExcludedFields::$addButton);
@@ -65,7 +62,7 @@ class ExcludedFieldsCreateCest
         $I->click(ExcludedFields::$deleteOkButton);
         $I->checkTablesInDB($providerData['db_1']);
 
-        $excluded->amOnExcludedFields();
+        $I->amOnPage("/bpm/excluded-fields");
 
         $I->click(ExcludedFields::$createButton);
         $I->waitForElementClickable(ExcludedFields::$addButton);

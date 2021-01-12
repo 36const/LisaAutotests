@@ -1,6 +1,6 @@
 <?php
 
-use lisa\Page\Functional\Request;
+use lisa\Page\Requests\Request;
 
 return [
     'case1_2' => [
@@ -14,10 +14,15 @@ return [
                 "canSee" => [
                     [
                         ["selector" => Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
                     ]
                 ],
                 "cantSee" => [
                     [
+                        //без пермишена 1->2 не показывается вкладка "Новые"
                         ["selector" => "//ul[@class='nav nav-tabs']//a[@href='/bpm/request/new']"],
                         ["selector" => Request::transferButton('Готова для распределения')],
                     ],
@@ -296,6 +301,8 @@ return [
                 "canSee" => [
                     [
                         ["selector" => Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('На доработку')],
                     ]
                 ],
                 "cantSee" => [
@@ -342,6 +349,35 @@ return [
                         ["selector" => Request::transferButton('Вернуть в новые')],
                     ],
                 ]
+            ]
+        ]
+    ],
+
+    'case4_0' => [
+        'setting' => [
+            'description' => '4 - declined',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case4_0.php',
+        'provider_data' => [
+            "url" => '/bpm/request/declined',
+            "tablePageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
+                    ]
+                ],
+                "cantSee" => []
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу'],
+            ],
+            "requestPageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::transferButton('Создать подзадачу')],
+                    ]
+                ],
+                "cantSee" => []
             ]
         ]
     ],
@@ -398,6 +434,7 @@ return [
                 "canSee" => [
                     [
                         ["selector" => Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
@@ -1012,6 +1049,35 @@ return [
                         ["selector" => Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
                     ]
                 ]
+            ]
+        ]
+    ],
+
+    'case11_0' => [
+        'setting' => [
+            'description' => '11 - closed',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case11_0.php',
+        'provider_data' => [
+            "url" => '/bpm/request/closed',
+            "tablePageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
+                    ]
+                ],
+                "cantSee" => []
+            ],
+            "ajaxResponse" => [
+                "canSee" => ['Создать подзадачу'],
+            ],
+            "requestPageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => Request::transferButton('Создать подзадачу')],
+                    ]
+                ],
+                "cantSee" => []
             ]
         ]
     ],

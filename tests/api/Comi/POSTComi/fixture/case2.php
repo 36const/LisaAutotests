@@ -50,7 +50,6 @@ return [
                 "category_id" => 437,
                 "seller_id" => 5,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,

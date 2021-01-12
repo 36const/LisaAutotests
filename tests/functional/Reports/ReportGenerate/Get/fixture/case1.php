@@ -16,9 +16,6 @@ return [
                 "type" => 1
             ],
         ],
-        "report_periods" => [
-            [
-            ]
-        ]
+        "report_periods" => [[]]
     ]
 ];

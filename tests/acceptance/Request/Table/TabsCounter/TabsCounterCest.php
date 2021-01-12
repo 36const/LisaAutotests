@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\Request;
+use lisa\Page\Requests\Request;
 use Codeception\Module\TestHelper;
 
 /**
@@ -23,7 +23,7 @@ class TabsCounterCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param Request $request
+     * @param \lisa\Page\Requests\Request $request
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws \Exception
      * @dataProvider pageProvider
@@ -40,11 +40,11 @@ class TabsCounterCest
         $I->canSeeElement(Request::statusTabsCounter(2, 3));
         $I->canSeeElement(Request::tableSummary(1));
 
-        $request->amOnTable('in-check?RequestSearch[id]=&RequestSearch[subject]=&RequestSearch[type_id]=&RequestSearch[author_id]=&RequestSearch[supervisor_id]=6&RequestSearch[manager_id]=&RequestSearch[cross_check_manager_id]=&RequestSearch[reason_id]=&RequestSearch[cross_check_status]=&RequestSearch[awaiting_correction]=&RequestSearch[amount_to_work]=');
+        $request->amOnTable('in-check?RequestSearch[id]=&RequestSearch[subject]=&RequestSearch[type_id]=&RequestSearch[author_id]=&RequestSearch[supervisor_id]=6&RequestSearch[manager_id]=&RequestSearch[cross_check_manager_id]=&RequestSearch[reasons]=&RequestSearch[cross_check_status]=&RequestSearch[awaiting_correction]=&RequestSearch[amount_to_work]=');
         $I->canSeeElement(Request::statusTabsCounter(3, 3));
         $I->canSeeElement(Request::tableSummary(2));
 
-        $request->amOnTable('require-changes?RequestSearch[id]=&RequestSearch[subject]=&RequestSearch[type_id]=&RequestSearch[author_id]=&RequestSearch[supervisor_id]=&RequestSearch[manager_id]=&RequestSearch[cross_check_manager_id]=&RequestSearch[reason_id]=&RequestSearch[reason_id][]=Ожидается загрузка фото в товары&RequestSearch[cross_check_status]=&RequestSearch[awaiting_correction]=&RequestSearch[amount_to_work]=');
+        $request->amOnTable('require-changes?RequestSearch[id]=&RequestSearch[subject]=&RequestSearch[type_id]=&RequestSearch[author_id]=&RequestSearch[supervisor_id]=&RequestSearch[manager_id]=&RequestSearch[cross_check_manager_id]=&RequestSearch[reasons]=&RequestSearch[reasons][]=1&RequestSearch[cross_check_status]=&RequestSearch[awaiting_correction]=&RequestSearch[amount_to_work]=');
         $I->canSeeElement(Request::statusTabsCounter(4, 3));
         $I->canSeeElement(Request::tableSummary(2));
 

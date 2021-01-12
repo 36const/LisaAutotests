@@ -4,7 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\Roles;
+use lisa\Page\Users\Roles;
 
 /**
  * @group lisa
@@ -26,9 +26,7 @@ class POSTRolesCreateCest
      * @param Example $data
      * @param Roles $roles
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTRolesCreate(FunctionalTester $I, Example $data, Roles $roles)
     {

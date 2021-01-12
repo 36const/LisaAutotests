@@ -3,7 +3,7 @@
 return [
     'case9_11' => [
         'setting' => [
-            'description' => 'Перевод из "Выполнена" в "Закрыта"',
+            'description' => 'Перевод из "Выполнена" в "Закрыта" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
@@ -44,6 +44,7 @@ return [
                 'Request[deletedAttachments]' => '[]',
                 'Request[description]' => 'description',
                 'Request[manager_id]' => '11',
+                'Request[observers]' => ['15', '17'],
                 'Request[planned_start_date]' => '',
                 'Request[priority]' => '2',
                 'Request[recommendations]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
@@ -78,7 +79,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -86,7 +87,7 @@ return [
                             "actual_start_date" => '2020-01-01 00:00:03',
                             "actual_finish_date" => '2020-01-01 00:00:04',
                             "supervisor_process_date" => '2020-01-01 00:00:02',
-//                            "supervisor_check_date >=" => date("Y-m-d"),
+                            "supervisor_check_date >=" => date("Y-m-d"),
                             "result_comment" => 'Комментарий к результату задачи',
                             "supervisor_comment" => 'Комментарий супервайзера',
                             "last_change_status_date >=" => date("Y-m-d"),
@@ -298,33 +299,67 @@ return [
                         [
                             "id" => 1,
                             "user_id" => 4,
-                            "notification" => '',
+                            "notification" => "",
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '{"Вид структуры": "(не указан)", "Ручная загрузка": "Да", "Пакетная загрузка": "(не указан)", "Сложность структуры": "(не указан)", "Коэффициент типа задачи": "0.5", "Общее количество ошибок": "0", "Уровень сложности задачи": "6", "Количество изменённых товаров": "(не указан)", "Общее количество товаров с ошибками": "0", "Коэффициент уровня сложности задачи": "2"}',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 11, "oldValue": 9}',
+                            "notify_service_id" => null
                         ],
                         [
                             "id" => 2,
                             "user_id" => 6,
-                            "notification" => '',
+                            "notification" => "",
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '{"Вид структуры": "(не указан)", "Ручная загрузка": "Да", "Пакетная загрузка": "(не указан)", "Сложность структуры": "(не указан)", "Коэффициент типа задачи": "0.5", "Общее количество ошибок": "0", "Уровень сложности задачи": "6", "Количество изменённых товаров": "(не указан)", "Общее количество товаров с ошибками": "0", "Коэффициент уровня сложности задачи": "2"}',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 11, "oldValue": 9}',
+                            "notify_service_id" => null
                         ],
                         [
                             "id" => 3,
-                            "user_id" => 11,
-                            "notification" => '',
+                            "user_id" => 15,
+                            "notification" => "",
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '{"Вид структуры": "(не указан)", "Ручная загрузка": "Да", "Пакетная загрузка": "(не указан)", "Сложность структуры": "(не указан)", "Коэффициент типа задачи": "0.5", "Общее количество ошибок": "0", "Уровень сложности задачи": "6", "Количество изменённых товаров": "(не указан)", "Общее количество товаров с ошибками": "0", "Коэффициент уровня сложности задачи": "2"}',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 11, "oldValue": 9}',
+                            "notify_service_id" => null
                         ],
+                        [
+                            "id" => 4,
+                            "user_id" => 17,
+                            "notification" => "",
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => '{"Вид структуры": "(не указан)", "Ручная загрузка": "Да", "Пакетная загрузка": "(не указан)", "Сложность структуры": "(не указан)", "Коэффициент типа задачи": "0.5", "Общее количество ошибок": "0", "Уровень сложности задачи": "6", "Количество изменённых товаров": "(не указан)", "Общее количество товаров с ошибками": "0", "Коэффициент уровня сложности задачи": "2"}',
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 11, "oldValue": 9}',
+                            "notify_service_id" => null
+                        ]
                     ],
                     'request_status_history' => [
                         [
@@ -336,17 +371,25 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [
+                    '{"notificationId":2,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` [Товар-новинка/эксклюзив (трафикообразующий)] перешла в статус `Закрыта`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=2\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Закрыта\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> Да </br><b>Пакетная загрузка:</b> (не указан) </br><b>Уровень сложности задачи:</b> 6 </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 0.5 </br><b>Коэффициент уровня сложности задачи:</b> 2 </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
+                    '{"notificationId":3,"userId":15,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` [Товар-новинка/эксклюзив (трафикообразующий)] перешла в статус `Закрыта`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Закрыта\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> Да </br><b>Пакетная загрузка:</b> (не указан) </br><b>Уровень сложности задачи:</b> 6 </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 0.5 </br><b>Коэффициент уровня сложности задачи:</b> 2 </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
+                ],
             ]
         ]
     ],
 
     'case9_6_1_1' => [
         'setting' => [
-            'description' => 'Перевод из "Выполнена" во "В работе (на исправление)" тип 1 направление 1',
+            'description' => 'Перевод из "Выполнена" во "В работе (на исправление)" тип 1 направление 1 + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
@@ -549,7 +592,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -557,7 +600,7 @@ return [
                             "actual_start_date" => '2020-01-01 00:00:03',
                             "actual_finish_date" => '2020-01-01 00:00:04',
                             "supervisor_process_date" => '2020-01-01 00:00:02',
-//                            "supervisor_check_date >=" => date("Y-m-d"),
+                            "supervisor_check_date >=" => date("Y-m-d"),
                             "result_comment" => 'Комментарий к результату задачи',
                             "supervisor_comment" => '',
                             "last_change_status_date >=" => date("Y-m-d"),
@@ -777,33 +820,67 @@ return [
                         [
                             "id" => 1,
                             "user_id" => 4,
-                            "notification" => '',
+                            "notification" => "",
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 6, "oldValue": 9}',
+                            "notify_service_id" => null
                         ],
                         [
                             "id" => 2,
                             "user_id" => 6,
-                            "notification" => '',
+                            "notification" => "",
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 6, "oldValue": 9}',
+                            "notify_service_id" => null
                         ],
                         [
                             "id" => 3,
-                            "user_id" => 11,
-                            "notification" => '',
+                            "user_id" => 15,
+                            "notification" => "",
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 6, "oldValue": 9}',
+                            "notify_service_id" => null
                         ],
+                        [
+                            "id" => 4,
+                            "user_id" => 17,
+                            "notification" => "",
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 6, "oldValue": 9}',
+                            "notify_service_id" => null
+                        ]
                     ],
                     'request_status_history' => [
                         [
@@ -815,10 +892,18 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [
+                    '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` [Товар-новинка/эксклюзив (трафикообразующий)] перешла в статус `В работе`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"В работе\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":3,"userId":15,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` [Товар-новинка/эксклюзив (трафикообразующий)] перешла в статус `В работе`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"В работе\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                ],
             ]
         ]
     ],
@@ -905,7 +990,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -1121,9 +1206,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -1334,7 +1421,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -1600,9 +1687,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -1738,7 +1827,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -1954,9 +2043,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -2167,7 +2258,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -2433,9 +2524,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -2571,7 +2664,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -2787,9 +2880,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -2858,7 +2953,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -3034,9 +3129,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -3247,7 +3344,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -3513,9 +3610,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -3651,7 +3750,7 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -3867,9 +3966,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -4051,7 +4152,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -4287,9 +4388,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -4471,7 +4574,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -4707,9 +4810,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -4813,7 +4918,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -4999,9 +5104,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -5105,7 +5212,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -5291,9 +5398,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -5397,7 +5506,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -5583,9 +5692,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -5796,7 +5907,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6062,9 +6173,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -6118,7 +6231,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6309,9 +6422,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -6381,7 +6496,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6532,9 +6647,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -6599,7 +6716,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -6755,9 +6872,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -6968,7 +7087,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -7239,9 +7358,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -7452,7 +7573,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -7723,9 +7844,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -7936,7 +8059,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -8207,9 +8330,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]
@@ -8420,7 +8545,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -8691,9 +8816,11 @@ return [
                             "reason_id" => null,
                             "reason" => null,
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => 11
+                            "manager_id" => 11,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]

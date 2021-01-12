@@ -118,7 +118,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -254,9 +254,9 @@ return [
                 'RequestField[93]' => '10',
                 'RequestField[94]' => '10',
                 'Request[awaiting_correction]' => '0',
-                'Request[reason_id]' => '15',
                 'Request[status]' => '8',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'reasons' => ['11'],
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -316,7 +316,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 15,
+                            //"reason_id" => 15,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -511,7 +511,13 @@ return [
                             'value' => 0,
                         ],
                     ],
-                ],
+                    'requests_reasons' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 11
+                        ]
+                    ]
+                ]
             ]
         ]
     ],
@@ -528,10 +534,8 @@ return [
             'requestParameter' => 'change-reason',
             'requestBodyUpdate' => [
                 'Request[reason]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[reason_id]' => '15',
                 'Request[status]' => '3',
-                'keys',
-                'keys',
+                'reasons' => ['11'],
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -591,7 +595,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
-                            "reason_id" => 15,
+                            //"reason_id" => 15,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -691,7 +695,13 @@ return [
                             'value' => 0,
                         ],
                     ],
-                ],
+                    'requests_reasons' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 11
+                        ]
+                    ]
+                ]
             ]
         ]
     ],
@@ -770,7 +780,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -870,7 +880,7 @@ return [
                             'value' => 0,
                         ],
                     ],
-                ],
+                ]
             ]
         ]
     ],

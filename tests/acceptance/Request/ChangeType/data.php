@@ -1,6 +1,6 @@
 <?php
 
-use lisa\Page\Functional\RequestCreate;
+use lisa\Page\Requests\RequestCreate;
 
 return [
     'case1' => [

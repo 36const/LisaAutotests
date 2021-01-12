@@ -1,6 +1,6 @@
 <?php
 
-use lisa\Page\Functional\Export;
+use lisa\Page\Other\Export;
 
 return [
     'case1' => [

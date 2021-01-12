@@ -22,9 +22,7 @@ class GETZendeskRequestsByMarketCest
      * @param ApiTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETZendeskRequestsByMarket(ApiTester $I, Example $data)
     {

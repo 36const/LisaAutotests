@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\Filters;
 
 /**
  * @group lisa
@@ -24,13 +23,10 @@ class POSTFilterCreateCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Filters $filter
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
-    public function POSTFilterCreate(FunctionalTester $I, Example $data, Filters $filter)
+    public function POSTFilterCreate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
 

@@ -3,7 +3,6 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\Dashboard;
 use Codeception\Module\TestHelper;
 
 /**
@@ -23,18 +22,15 @@ class GETDashboardCommonCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param Dashboard $dashboard
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
-    public function GETDashboardCommon(FunctionalTester $I, Example $data, Dashboard $dashboard)
+    public function GETDashboardCommon(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
-        $dashboard->amOnDashboardCommon($providerData['url']);
+        $I->amOnPage("/bpm/dashboard/common" . $providerData['url']);
         $I->seeResponseCodeIs(200);
 
         $I->checkObjectsOnPage($providerData['pageObjects']);

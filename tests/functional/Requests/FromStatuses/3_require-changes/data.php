@@ -10,10 +10,7 @@ return [
             'requestParameter' => 'change-reason',
             'requestBody' => [
                 'Request[correction_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[reason_id]' => '15',
                 'Request[status]' => '1',
-                'keys',
-                'keys',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -36,7 +33,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 15,
+                            //"reason_id" => 11,
                             "reason" => 'Затребовать изменения',
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -165,12 +162,14 @@ return [
                             "user_id" => 4,
                             "old_status" => 3,
                             "new_status" => 1,
-                            "reason_id" => 15,
+                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
-                            "manager_id" => null
+                            "manager_id" => null,
+                            "reasons" => null
                         ]
-                    ]
+                    ],
+                    'requests_reasons' => [],
                 ]
             ]
         ]

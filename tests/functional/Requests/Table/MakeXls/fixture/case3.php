@@ -22,7 +22,7 @@ return [
                 "category_id" => null,
                 "seller_id" => 0,
                 "recommendations" => "",
-                "reason_id" => null,
+                //"reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,

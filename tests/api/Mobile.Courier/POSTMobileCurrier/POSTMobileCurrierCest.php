@@ -21,9 +21,7 @@ class POSTMobileCurrierCest
      * @param ApiTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTMobileCurrier(ApiTester $I, Example $data)
     {

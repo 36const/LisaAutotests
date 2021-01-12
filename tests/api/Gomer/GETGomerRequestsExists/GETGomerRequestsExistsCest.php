@@ -23,9 +23,7 @@ class GETGomerRequestsExistsCest
      * @param ApiTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETGomerRequestsExists(ApiTester $I, Example $data)
     {

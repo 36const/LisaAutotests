@@ -4,8 +4,8 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\RequestCreate;
-use lisa\Page\Functional\RequestView;
+use lisa\Page\Requests\RequestCreate;
+use lisa\Page\Requests\RequestView;
 
 /**
  * @group lisa
@@ -27,9 +27,7 @@ class POSTRelatedRequestCest
      * @param RequestCreate $create
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTRelatedRequest(FunctionalTester $I, Example $data,
                                        RequestCreate $create, RequestView $view)

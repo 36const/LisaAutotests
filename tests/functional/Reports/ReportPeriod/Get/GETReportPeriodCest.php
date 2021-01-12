@@ -4,7 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\Report;
+use lisa\Page\Reports\Report;
 
 /**
  * @group lisa
@@ -25,9 +25,7 @@ class GETReportPeriodCest
      * @param Example $data
      * @param Report $report
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETReportPeriod(FunctionalTester $I, Example $data)
     {

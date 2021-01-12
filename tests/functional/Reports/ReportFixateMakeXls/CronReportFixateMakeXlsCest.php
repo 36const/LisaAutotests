@@ -24,9 +24,7 @@ class CronReportFixateMakeXlsCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function CronReportFixateMakeXls(FunctionalTester $I, Example $data)
     {
@@ -39,6 +37,7 @@ class CronReportFixateMakeXlsCest
 
         $I->runShellCommand('./yii bpm/request/make-xls');
         $I->canSeeInShellOutput('');
+        $I->canSeeResultCodeIs(0);
         $I->canSeeNumberOfMessagesInQueue('lisa_exportGenerating', 0);
 
         $I->amOnPage('/bpm/export/index');

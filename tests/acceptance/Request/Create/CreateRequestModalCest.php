@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\RequestCreate;
+use lisa\Page\Requests\RequestCreate;
 use Codeception\Module\TestHelper;
 
 /**
@@ -25,9 +25,7 @@ class CreateRequestModalCest
      * @param Example $data
      * @param RequestCreate $create
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function CreateRequestModal(AcceptanceTester $I, Example $data, RequestCreate $create)
     {

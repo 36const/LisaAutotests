@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\RequestCreate;
+use lisa\Page\Requests\RequestCreate;
 use Codeception\Module\TestHelper;
 
 /**
@@ -24,9 +24,7 @@ class ExcludedFieldsInRequestCreateCest
      * @param Example $data
      * @param RequestCreate $create
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function ExcludedFieldsInRequestCreate(AcceptanceTester $I, Example $data, RequestCreate $create)
     {

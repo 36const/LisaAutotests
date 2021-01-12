@@ -4,7 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\RequestView;
+use lisa\Page\Requests\RequestView;
 
 /**
  * @group lisa
@@ -25,9 +25,7 @@ class CronCompleteWaitGroupingCest
      * @param Example $data
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function CronCompleteWaitGrouping(FunctionalTester $I, Example $data, RequestView $view)
     {
@@ -35,6 +33,7 @@ class CronCompleteWaitGroupingCest
         $providerData = $data['provider_data'];
 
         $I->runShellCommand('./yii bpm/request/complete-wait-grouping');
+        $I->canSeeResultCodeIs(0);
 
         $I->checkTablesInDB($providerData['db']);
         $view->checkFields($providerData['db']);

@@ -9,6 +9,7 @@ return [
         "reason_id" => null,
         "reason" => null,
         "created_at" => "2020-01-01 00:00:01",
-        "manager_id" => 11
+        "manager_id" => 11,
+        "reasons" => 'Все товары уже есть на сайте, Другое (описан в коментариях), Дубль задачи'
     ]
 ];

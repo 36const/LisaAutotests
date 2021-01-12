@@ -121,7 +121,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -161,7 +161,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
-                            "reason_id" => null,
+                            //"reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -372,9 +372,9 @@ return [
                 'RequestField[93]' => '10',
                 'RequestField[94]' => '10',
                 'Request[awaiting_correction]' => '0',
-                'Request[reason_id]' => '15',
                 'Request[status]' => '8',
                 'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'reasons' => ['11'],
             ],
             'db' => [
                 "lisa_fixtures" => [
@@ -434,7 +434,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => 15,
+//                            "reason_id" => 15,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -474,7 +474,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            "reason_id" => null,
+//                            "reason_id" => null,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -740,6 +740,12 @@ return [
                             'field_id' => 158,
                             'value' => 0,
                         ],
+                    ],
+                    'requests_reasons' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 11
+                        ]
                     ],
                 ],
             ]

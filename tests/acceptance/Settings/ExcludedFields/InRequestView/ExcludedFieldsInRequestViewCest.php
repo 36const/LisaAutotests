@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\RequestView;
+use lisa\Page\Requests\RequestView;
 use Codeception\Module\TestHelper;
 
 /**
@@ -24,9 +24,7 @@ class ExcludedFieldsInRequestViewCest
      * @param Example $data
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function ExcludedFieldsInRequestView(AcceptanceTester $I, Example $data, RequestView $view)
     {

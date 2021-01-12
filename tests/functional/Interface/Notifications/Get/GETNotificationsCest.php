@@ -23,9 +23,7 @@ class GETNotificationsCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETNotifications(FunctionalTester $I, Example $data)
     {

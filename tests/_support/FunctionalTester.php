@@ -49,7 +49,6 @@ class FunctionalTester extends \Codeception\Actor
     public function setViewTabs()
     {
         $I = $this;
-
         $I->cantSeeCookie('viewTabsEnabled');
         $I->sendGET('/bpm/request/enable-tabs');
         $I->canSeeCookie('viewTabsEnabled');
@@ -59,8 +58,8 @@ class FunctionalTester extends \Codeception\Actor
     {
         $I = $this;
         $requestParameter == 'to-correction' ?
-            $url = '/bpm/request/' . "$requestParameter" . '?id=1&changeStatus=1' :
-            $url = '/bpm/request/' . "$requestParameter" . '?id=1';
+            $url = '/bpm/request/' . $requestParameter . '?id=1&changeStatus=1' :
+            $url = '/bpm/request/' . $requestParameter . '?id=1';
         $I->sendPOST($url, $requestBody);
         $I->seeResponseCodeIs(200);
     }

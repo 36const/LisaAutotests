@@ -22,7 +22,7 @@ return [
                 "category_id" => 2,
                 "seller_id" => 9423,
                 "recommendations" => null,
-                "reason_id" => 16,
+                //"reason_id" => 12,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -200,6 +200,12 @@ return [
         "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
         "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
+        'requests_reasons' => [
+            [
+                "request_id" => 1,
+                "reason_id" => 12
+            ]
+        ],
     ],
     "cooper_fixtures" => [
         "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',

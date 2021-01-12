@@ -20,7 +20,6 @@ return [
                 "category_id" => null,
                 "seller_id" => 83,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -55,7 +54,7 @@ return [
                 "category_id" => 1,
                 "seller_id" => 5,
                 "recommendations" => null,
-                "reason_id" => 15,
+                //"reason_id" => 15,
                 "reason" => "Затребовать изменения",
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -90,7 +89,6 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -125,7 +123,6 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -160,7 +157,7 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => null,
-                "reason_id" => 5,
+                //"reason_id" => 5,
                 "reason" => "Ожидать",
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -195,7 +192,7 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => null,
-                "reason_id" => 6,
+                //"reason_id" => 6,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -230,7 +227,6 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -265,7 +261,6 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -300,7 +295,6 @@ return [
                 "category_id" => 2,
                 "seller_id" => 9423,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -335,7 +329,6 @@ return [
                 "category_id" => 1,
                 "seller_id" => 5,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -370,7 +363,6 @@ return [
                 "category_id" => null,
                 "seller_id" => 0,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -405,7 +397,7 @@ return [
                 "category_id" => null,
                 "seller_id" => 9423,
                 "recommendations" => null,
-                "reason_id" => 1,
+                //"reason_id" => 1,
                 "reason" => "Дубль задачи",
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -440,7 +432,6 @@ return [
                 "category_id" => null,
                 "seller_id" => 0,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -475,7 +466,6 @@ return [
                 "category_id" => null,
                 "seller_id" => 0,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -510,7 +500,7 @@ return [
                 "category_id" => 1,
                 "seller_id" => null,
                 "recommendations" => "",
-                "reason_id" => 1,
+                //"reason_id" => 1,
                 "reason" => "На доработку",
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -545,7 +535,6 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -580,7 +569,6 @@ return [
                 "category_id" => 2,
                 "seller_id" => 0,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -615,7 +603,7 @@ return [
                 "category_id" => null,
                 "seller_id" => 0,
                 "recommendations" => null,
-                "reason_id" => 2,
+                //"reason_id" => 2,
                 "reason" => "Отменить",
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -650,7 +638,6 @@ return [
                 "category_id" => 1,
                 "seller_id" => null,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -685,7 +672,6 @@ return [
                 "category_id" => 2,
                 "seller_id" => 9423,
                 "recommendations" => null,
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -720,7 +706,7 @@ return [
                 "category_id" => 1,
                 "seller_id" => null,
                 "recommendations" => null,
-                "reason_id" => 3,
+                //"reason_id" => 3,
                 "reason" => "Ожидать",
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -755,7 +741,6 @@ return [
                 "category_id" => null,
                 "seller_id" => 0,
                 "recommendations" => "",
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -790,7 +775,6 @@ return [
                 "category_id" => 1,
                 "seller_id" => null,
                 "recommendations" => "",
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -825,7 +809,6 @@ return [
                 "category_id" => 2,
                 "seller_id" => 0,
                 "recommendations" => "",
-                "reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -2438,7 +2421,7 @@ return [
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "markets_supervisors" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
-        "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
+        "default_role_permissions" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/default_role_permissions.php',
         "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
         "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
@@ -2589,7 +2572,7 @@ return [
                 "login" => "bpm_contentManager_1a",
                 "email" => "bpm_contentManager_1a@rozetka.com.ua",
                 "team" => 1,
-                "parent_id" => 6,
+                "parent_id" => 4,
                 "position" => "contentManager",
                 "status" => 1,
                 "create_ts" => "2020-04-13 13:15:34",
@@ -2603,7 +2586,7 @@ return [
                 "login" => "bpm_contentManager_1b",
                 "email" => "bpm_contentManager_1b@rozetka.com.ua",
                 "team" => 1,
-                "parent_id" => 6,
+                "parent_id" => 4,
                 "position" => "contentManager",
                 "status" => 1,
                 "create_ts" => "2020-04-13 13:15:35",
@@ -2992,798 +2975,1850 @@ return [
         ],
         "user_permissions" => [
             [
-                //"id" => 3143,
-                "user_id" => 4,
-                "permission_name" => "updateUser"
-            ],
-            [
-                //"id" => 3144,
+                //"id" => 2,
                 "user_id" => 4,
                 "permission_name" => "reportView"
             ],
             [
-                //"id" => 3151,
+                //"id" => 3,
                 "user_id" => 4,
                 "permission_name" => "viewUser"
             ],
             [
-                //"id" => 3162,
-                "user_id" => 4,
-                "permission_name" => "requestViewOwnRequests"
-            ],
-            [
-                //"id" => 3167,
+                //"id" => 5,
                 "user_id" => 4,
                 "permission_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 3168,
+                //"id" => 6,
                 "user_id" => 4,
                 "permission_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 3169,
+                //"id" => 7,
                 "user_id" => 4,
                 "permission_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 3170,
+                //"id" => 8,
                 "user_id" => 4,
                 "permission_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 3171,
+                //"id" => 9,
                 "user_id" => 4,
                 "permission_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 3214,
-                "user_id" => 4,
-                "permission_name" => "viewOwnDashboards"
-            ],
-            [
-                //"id" => 3256,
-                "user_id" => 4,
-                "permission_name" => "reportLoadAllUsers"
-            ],
-            [
-                //"id" => 3257,
-                "user_id" => 4,
-                "permission_name" => "reportLoadMarketUsers"
-            ],
-            [
-                //"id" => 3258,
+                //"id" => 13,
                 "user_id" => 4,
                 "permission_name" => "reportLoadYourTeam"
             ],
             [
-                //"id" => 3259,
-                "user_id" => 4,
-                "permission_name" => "viewAllDashboards"
-            ],
-            [
-                //"id" => 3260,
-                "user_id" => 4,
-                "permission_name" => "viewDashboardsByDirection"
-            ],
-            [
-                //"id" => 3261,
+                //"id" => 16,
                 "user_id" => 4,
                 "permission_name" => "viewDashboardsByCommand"
             ],
             [
-                //"id" => 3262,
-                "user_id" => 4,
-                "permission_name" => "createUser"
-            ],
-            [
-                //"id" => 3263,
-                "user_id" => 4,
-                "permission_name" => "blockUser"
-            ],
-            [
-                //"id" => 3264,
-                "user_id" => 4,
-                "permission_name" => "errorsUpdate"
-            ],
-            [
-                //"id" => 3265,
-                "user_id" => 4,
-                "permission_name" => "sellerUpdate"
-            ],
-            [
-                //"id" => 3266,
-                "user_id" => 4,
-                "permission_name" => "categoryUpdate"
-            ],
-            [
-                //"id" => 3267,
-                "user_id" => 4,
-                "permission_name" => "teamUpdate"
-            ],
-            [
-                //"id" => 3268,
-                "user_id" => 4,
-                "permission_name" => "coefUpdate"
-            ],
-            [
-                //"id" => 3269,
-                "user_id" => 4,
-                "permission_name" => "fieldsUpdate"
-            ],
-            [
-                //"id" => 3270,
-                "user_id" => 4,
-                "permission_name" => "reasonsUpdate"
-            ],
-            [
-                //"id" => 3271,
-                "user_id" => 4,
-                "permission_name" => "excludedFieldsUpdate"
-            ],
-            [
-                //"id" => 3272,
-                "user_id" => 4,
-                "permission_name" => "priorityUpdate"
-            ],
-            [
-                //"id" => 3273,
+                //"id" => 28,
                 "user_id" => 4,
                 "permission_name" => "requestCreate"
             ],
             [
-                //"id" => 3274,
+                //"id" => 29,
                 "user_id" => 4,
                 "permission_name" => "requestUpdate"
             ],
             [
-                //"id" => 3275,
+                //"id" => 30,
                 "user_id" => 4,
                 "permission_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 3276,
+                //"id" => 31,
                 "user_id" => 4,
                 "permission_name" => "requestViewDirectionRequests"
             ],
             [
-                //"id" => 3277,
-                "user_id" => 4,
-                "permission_name" => "requestViewAllRequests"
-            ],
-            [
-                //"id" => 3278,
+                //"id" => 33,
                 "user_id" => 4,
                 "permission_name" => "massEdit"
             ],
             [
-                //"id" => 3279,
-                "user_id" => 4,
-                "permission_name" => "requestViewTeamRequests"
-            ],
-            [
-                //"id" => 3280,
-                "user_id" => 4,
-                "permission_name" => "requestDeleteAttachments"
-            ],
-            [
-                //"id" => 3281,
+                //"id" => 36,
                 "user_id" => 4,
                 "permission_name" => "viewSplitterModerationRequests"
             ],
             [
-                //"id" => 3282,
+                //"id" => 37,
                 "user_id" => 4,
                 "permission_name" => "takeToWork"
             ],
             [
-                //"id" => 3283,
+                //"id" => 38,
                 "user_id" => 4,
                 "permission_name" => "transferOnHoldToInWork"
             ],
             [
-                //"id" => 3284,
+                //"id" => 39,
                 "user_id" => 4,
                 "permission_name" => "transferCompletedToRequireFix"
             ],
             [
-                //"id" => 3285,
+                //"id" => 40,
                 "user_id" => 4,
                 "permission_name" => "transferCompletedToClosed"
             ],
             [
-                //"id" => 3286,
+                //"id" => 41,
                 "user_id" => 4,
                 "permission_name" => "transferWaitCheckToInCheck"
             ],
             [
-                //"id" => 3287,
+                //"id" => 42,
                 "user_id" => 4,
                 "permission_name" => "transferInCheckToRequireChange"
             ],
             [
-                //"id" => 3288,
+                //"id" => 43,
                 "user_id" => 4,
                 "permission_name" => "transferInCheckToDeclined"
             ],
             [
-                //"id" => 3290,
+                //"id" => 44,
                 "user_id" => 4,
                 "permission_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 3291,
+                //"id" => 45,
                 "user_id" => 4,
                 "permission_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 3292,
+                //"id" => 46,
                 "user_id" => 4,
                 "permission_name" => "requestTransferItems"
             ],
             [
-                //"id" => 3293,
+                //"id" => 47,
                 "user_id" => 4,
                 "permission_name" => "requestGroupItems"
             ],
             [
-                //"id" => 3294,
+                //"id" => 48,
                 "user_id" => 4,
                 "permission_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 3295,
+                //"id" => 49,
                 "user_id" => 4,
                 "permission_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 3296,
+                //"id" => 50,
                 "user_id" => 4,
                 "permission_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 3297,
+                //"id" => 51,
                 "user_id" => 4,
                 "permission_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 3298,
+                //"id" => 52,
                 "user_id" => 4,
                 "permission_name" => "requestAddAttrOrValues"
             ],
             [
-                //"id" => 3299,
+                //"id" => 53,
                 "user_id" => 4,
                 "permission_name" => "requestUpdateAttrOrValues"
             ],
             [
-                //"id" => 3300,
+                //"id" => 54,
                 "user_id" => 4,
                 "permission_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 3301,
+                //"id" => 55,
                 "user_id" => 4,
                 "permission_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 3302,
+                //"id" => 56,
                 "user_id" => 4,
                 "permission_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 3303,
+                //"id" => 57,
                 "user_id" => 4,
                 "permission_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 3304,
+                //"id" => 58,
                 "user_id" => 4,
                 "permission_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 3317,
+                //"id" => 59,
                 "user_id" => 4,
                 "permission_name" => "transferInCheckToWaitCheck"
             ],
             [
-                //"id" => 3341,
+                //"id" => 60,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToWaitCheck"
             ],
             [
-                //"id" => 3365,
+                //"id" => 61,
                 "user_id" => 4,
                 "permission_name" => "transferWaitCheckToRequireChange"
             ],
             [
-                //"id" => 3389,
+                //"id" => 62,
                 "user_id" => 4,
                 "permission_name" => "transferDeclinedToWaitCheck"
             ],
             [
-                //"id" => 3413,
+                //"id" => 63,
                 "user_id" => 4,
                 "permission_name" => "transferWaitCheckToDeclined"
             ],
             [
-                //"id" => 3437,
+                //"id" => 64,
                 "user_id" => 4,
                 "permission_name" => "transferDeclinedToInCheck"
             ],
             [
-                //"id" => 3461,
+                //"id" => 65,
                 "user_id" => 4,
                 "permission_name" => "transferDeclinedToRequireChange"
             ],
             [
-                //"id" => 3485,
+                //"id" => 66,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToDeclined"
             ],
             [
-                //"id" => 3509,
+                //"id" => 67,
                 "user_id" => 4,
                 "permission_name" => "transferWaitWorkToWaitCheck"
             ],
             [
-                //"id" => 3533,
+                //"id" => 68,
                 "user_id" => 4,
                 "permission_name" => "transferWaitCheckToWaitWork"
             ],
             [
-                //"id" => 3557,
+                //"id" => 69,
                 "user_id" => 4,
                 "permission_name" => "transferWaitWorkToInCheck"
             ],
             [
-                //"id" => 3581,
+                //"id" => 70,
                 "user_id" => 4,
                 "permission_name" => "transferInCheckToWaitWork"
             ],
             [
-                //"id" => 3605,
+                //"id" => 71,
                 "user_id" => 4,
                 "permission_name" => "transferWaitWorkToRequireChange"
             ],
             [
-                //"id" => 3629,
+                //"id" => 72,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToWaitWork"
             ],
             [
-                //"id" => 3653,
+                //"id" => 73,
                 "user_id" => 4,
                 "permission_name" => "transferWaitWorkToDeclined"
             ],
             [
-                //"id" => 3677,
+                //"id" => 74,
                 "user_id" => 4,
                 "permission_name" => "transferDeclinedToWaitWork"
             ],
             [
-                //"id" => 3701,
+                //"id" => 75,
                 "user_id" => 4,
                 "permission_name" => "transferInWorkToWaitCheck"
             ],
             [
-                //"id" => 3725,
+                //"id" => 76,
                 "user_id" => 4,
                 "permission_name" => "transferWaitCheckToInWork"
             ],
             [
-                //"id" => 3749,
+                //"id" => 77,
                 "user_id" => 4,
                 "permission_name" => "transferInWorkToInCheck"
             ],
             [
-                //"id" => 3773,
+                //"id" => 78,
                 "user_id" => 4,
                 "permission_name" => "transferInCheckToInWork"
             ],
             [
-                //"id" => 3797,
+                //"id" => 79,
                 "user_id" => 4,
                 "permission_name" => "transferInWorkToRequireChange"
             ],
             [
-                //"id" => 3821,
+                //"id" => 80,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToInWork"
             ],
             [
-                //"id" => 3845,
+                //"id" => 81,
                 "user_id" => 4,
                 "permission_name" => "transferDeclinedToInWork"
             ],
             [
-                //"id" => 3869,
+                //"id" => 82,
                 "user_id" => 4,
                 "permission_name" => "transferInWorkToWaitWork"
             ],
             [
-                //"id" => 3893,
+                //"id" => 83,
                 "user_id" => 4,
                 "permission_name" => "transferOnHoldToWaitCheck"
             ],
             [
-                //"id" => 3917,
+                //"id" => 84,
                 "user_id" => 4,
                 "permission_name" => "transferWaitCheckToOnHold"
             ],
             [
-                //"id" => 3941,
+                //"id" => 85,
                 "user_id" => 4,
                 "permission_name" => "transferOnHoldToInCheck"
             ],
             [
-                //"id" => 3965,
+                //"id" => 86,
                 "user_id" => 4,
                 "permission_name" => "transferInCheckToOnHold"
             ],
             [
-                //"id" => 3989,
+                //"id" => 87,
                 "user_id" => 4,
                 "permission_name" => "transferOnHoldToRequireChange"
             ],
             [
-                //"id" => 4013,
+                //"id" => 88,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToOnHold"
             ],
             [
-                //"id" => 4037,
+                //"id" => 89,
                 "user_id" => 4,
                 "permission_name" => "transferOnHoldToDeclined"
             ],
             [
-                //"id" => 4061,
+                //"id" => 90,
                 "user_id" => 4,
                 "permission_name" => "transferDeclinedToOnHold"
             ],
             [
-                //"id" => 4085,
+                //"id" => 91,
                 "user_id" => 4,
                 "permission_name" => "transferOnHoldToWaitWork"
             ],
             [
-                //"id" => 4109,
+                //"id" => 92,
                 "user_id" => 4,
                 "permission_name" => "transferWaitWorkToOnHold"
             ],
             [
-                //"id" => 4133,
+                //"id" => 93,
                 "user_id" => 4,
                 "permission_name" => "transferPartialCompleteToWaitCheck"
             ],
             [
-                //"id" => 4157,
+                //"id" => 94,
                 "user_id" => 4,
                 "permission_name" => "transferWaitCheckToPartialComplete"
             ],
             [
-                //"id" => 4181,
+                //"id" => 95,
                 "user_id" => 4,
                 "permission_name" => "transferPartialCompleteToInCheck"
             ],
             [
-                //"id" => 4205,
+                //"id" => 96,
                 "user_id" => 4,
                 "permission_name" => "transferInCheckToPartialComplete"
             ],
             [
-                //"id" => 4229,
+                //"id" => 97,
                 "user_id" => 4,
                 "permission_name" => "transferPartialCompleteToRequireChange"
             ],
             [
-                //"id" => 4253,
+                //"id" => 98,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToPartialComplete"
             ],
             [
-                //"id" => 4277,
+                //"id" => 99,
                 "user_id" => 4,
                 "permission_name" => "transferPartialCompleteToDeclined"
             ],
             [
-                //"id" => 4301,
+                //"id" => 100,
                 "user_id" => 4,
                 "permission_name" => "transferDeclinedToPartialComplete"
             ],
             [
-                //"id" => 4325,
+                //"id" => 101,
                 "user_id" => 4,
                 "permission_name" => "transferPartialCompleteToWaitWork"
             ],
             [
-                //"id" => 4349,
+                //"id" => 102,
                 "user_id" => 4,
                 "permission_name" => "transferWaitWorkToPartialComplete"
             ],
             [
-                //"id" => 4373,
+                //"id" => 103,
                 "user_id" => 4,
                 "permission_name" => "transferPartialCompleteToInWork"
             ],
             [
-                //"id" => 4397,
+                //"id" => 104,
                 "user_id" => 4,
                 "permission_name" => "transferPartialCompleteToOnHold"
             ],
             [
-                //"id" => 4421,
+                //"id" => 105,
                 "user_id" => 4,
                 "permission_name" => "transferOnHoldToPartialComplete"
             ],
             [
-                //"id" => 4445,
+                //"id" => 106,
                 "user_id" => 4,
                 "permission_name" => "transferCompletedToWaitCheck"
             ],
             [
-                //"id" => 4469,
+                //"id" => 107,
                 "user_id" => 4,
                 "permission_name" => "transferWaitCheckToCompleted"
             ],
             [
-                //"id" => 4493,
+                //"id" => 108,
                 "user_id" => 4,
                 "permission_name" => "transferCompletedToInCheck"
             ],
             [
-                //"id" => 4517,
+                //"id" => 109,
                 "user_id" => 4,
                 "permission_name" => "transferInCheckToCompleted"
             ],
             [
-                //"id" => 4541,
+                //"id" => 110,
                 "user_id" => 4,
                 "permission_name" => "transferCompletedToRequireChange"
             ],
             [
-                //"id" => 4565,
+                //"id" => 111,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToCompleted"
             ],
             [
-                //"id" => 4589,
+                //"id" => 112,
                 "user_id" => 4,
                 "permission_name" => "transferCompletedToDeclined"
             ],
             [
-                //"id" => 4613,
+                //"id" => 113,
                 "user_id" => 4,
                 "permission_name" => "transferDeclinedToCompleted"
             ],
             [
-                //"id" => 4637,
+                //"id" => 114,
                 "user_id" => 4,
                 "permission_name" => "transferCompletedToWaitWork"
             ],
             [
-                //"id" => 4661,
+                //"id" => 115,
                 "user_id" => 4,
                 "permission_name" => "transferWaitWorkToCompleted"
             ],
             [
-                //"id" => 4685,
+                //"id" => 116,
                 "user_id" => 4,
                 "permission_name" => "transferCompletedToInWork"
             ],
             [
-                //"id" => 4709,
+                //"id" => 117,
                 "user_id" => 4,
                 "permission_name" => "transferCompletedToOnHold"
             ],
             [
-                //"id" => 4733,
+                //"id" => 118,
                 "user_id" => 4,
                 "permission_name" => "transferOnHoldToCompleted"
             ],
             [
-                //"id" => 4757,
+                //"id" => 119,
                 "user_id" => 4,
                 "permission_name" => "transferCompletedToPartialComplete"
             ],
             [
-                //"id" => 4781,
+                //"id" => 120,
                 "user_id" => 4,
                 "permission_name" => "transferPartialCompleteToCompleted"
             ],
             [
-                //"id" => 4805,
+                //"id" => 121,
                 "user_id" => 4,
                 "permission_name" => "transferClosedToWaitCheck"
             ],
             [
-                //"id" => 4829,
+                //"id" => 122,
                 "user_id" => 4,
                 "permission_name" => "transferWaitCheckToClosed"
             ],
             [
-                //"id" => 4853,
+                //"id" => 123,
                 "user_id" => 4,
                 "permission_name" => "transferClosedToInCheck"
             ],
             [
-                //"id" => 4877,
+                //"id" => 124,
                 "user_id" => 4,
                 "permission_name" => "transferInCheckToClosed"
             ],
             [
-                //"id" => 4901,
+                //"id" => 125,
                 "user_id" => 4,
                 "permission_name" => "transferClosedToRequireChange"
             ],
             [
-                //"id" => 4925,
+                //"id" => 126,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToClosed"
             ],
             [
-                //"id" => 4949,
+                //"id" => 127,
                 "user_id" => 4,
                 "permission_name" => "transferClosedToDeclined"
             ],
             [
-                //"id" => 4973,
+                //"id" => 128,
                 "user_id" => 4,
                 "permission_name" => "transferDeclinedToClosed"
             ],
             [
-                //"id" => 4997,
+                //"id" => 129,
                 "user_id" => 4,
                 "permission_name" => "transferClosedToWaitWork"
             ],
             [
-                //"id" => 5021,
+                //"id" => 130,
                 "user_id" => 4,
                 "permission_name" => "transferWaitWorkToClosed"
             ],
             [
-                //"id" => 5045,
+                //"id" => 131,
                 "user_id" => 4,
                 "permission_name" => "transferClosedToInWork"
             ],
             [
-                //"id" => 5069,
+                //"id" => 132,
                 "user_id" => 4,
                 "permission_name" => "transferInWorkToClosed"
             ],
             [
-                //"id" => 5093,
+                //"id" => 133,
                 "user_id" => 4,
                 "permission_name" => "transferClosedToOnHold"
             ],
             [
-                //"id" => 5117,
+                //"id" => 134,
                 "user_id" => 4,
                 "permission_name" => "transferOnHoldToClosed"
             ],
             [
-                //"id" => 5141,
+                //"id" => 135,
                 "user_id" => 4,
                 "permission_name" => "transferClosedToPartialComplete"
             ],
             [
-                //"id" => 5165,
+                //"id" => 136,
                 "user_id" => 4,
                 "permission_name" => "transferPartialCompleteToClosed"
             ],
             [
-                //"id" => 5189,
+                //"id" => 137,
                 "user_id" => 4,
                 "permission_name" => "transferClosedToCompleted"
             ],
             [
-                //"id" => 5213,
+                //"id" => 138,
                 "user_id" => 4,
                 "permission_name" => "transferAnyToWaitCheck"
             ],
             [
-                //"id" => 5237,
+                //"id" => 139,
                 "user_id" => 4,
                 "permission_name" => "transferWaitCheckToAny"
             ],
             [
-                //"id" => 5261,
+                //"id" => 140,
                 "user_id" => 4,
                 "permission_name" => "transferAnyToInCheck"
             ],
             [
-                //"id" => 5285,
+                //"id" => 141,
                 "user_id" => 4,
                 "permission_name" => "transferInCheckToAny"
             ],
             [
-                //"id" => 5309,
+                //"id" => 142,
                 "user_id" => 4,
                 "permission_name" => "transferAnyToRequireChange"
             ],
             [
-                //"id" => 5333,
+                //"id" => 143,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToAny"
             ],
             [
-                //"id" => 5357,
+                //"id" => 144,
                 "user_id" => 4,
                 "permission_name" => "transferAnyToDeclined"
             ],
             [
-                //"id" => 5381,
+                //"id" => 145,
                 "user_id" => 4,
                 "permission_name" => "transferDeclinedToAny"
             ],
             [
-                //"id" => 5405,
+                //"id" => 146,
                 "user_id" => 4,
                 "permission_name" => "transferAnyToWaitWork"
             ],
             [
-                //"id" => 5429,
+                //"id" => 147,
                 "user_id" => 4,
                 "permission_name" => "transferWaitWorkToAny"
             ],
             [
-                //"id" => 5453,
+                //"id" => 148,
                 "user_id" => 4,
                 "permission_name" => "transferAnyToInWork"
             ],
             [
-                //"id" => 5477,
+                //"id" => 149,
                 "user_id" => 4,
                 "permission_name" => "transferInWorkToAny"
             ],
             [
-                //"id" => 5501,
+                //"id" => 150,
                 "user_id" => 4,
                 "permission_name" => "transferAnyToOnHold"
             ],
             [
-                //"id" => 5525,
+                //"id" => 151,
                 "user_id" => 4,
                 "permission_name" => "transferOnHoldToAny"
             ],
             [
-                //"id" => 5549,
+                //"id" => 152,
                 "user_id" => 4,
                 "permission_name" => "transferAnyToPartialComplete"
             ],
             [
-                //"id" => 5573,
+                //"id" => 153,
                 "user_id" => 4,
                 "permission_name" => "transferPartialCompleteToAny"
             ],
             [
-                //"id" => 5597,
+                //"id" => 154,
                 "user_id" => 4,
                 "permission_name" => "transferAnyToCompleted"
             ],
             [
-                //"id" => 5621,
+                //"id" => 155,
                 "user_id" => 4,
                 "permission_name" => "transferCompletedToAny"
             ],
             [
-                //"id" => 5645,
+                //"id" => 156,
                 "user_id" => 4,
                 "permission_name" => "transferAnyToClosed"
             ],
             [
-                //"id" => 5669,
+                //"id" => 157,
                 "user_id" => 4,
                 "permission_name" => "transferClosedToAny"
             ],
             [
-                //"id" => 5715,
+                //"id" => 158,
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToWaitCheck"
+            ],
+            [
+                //"id" => 335,
+                "user_id" => 5,
+                "permission_name" => "reportLoadMarketUsers"
+            ],
+            [
+                //"id" => 336,
+                "user_id" => 5,
+                "permission_name" => "reportView"
+            ],
+            [
+                //"id" => 337,
+                "user_id" => 5,
+                "permission_name" => "viewDashboardsByDirection"
+            ],
+            [
+                //"id" => 338,
+                "user_id" => 5,
+                "permission_name" => "blockUser"
+            ],
+            [
+                //"id" => 339,
+                "user_id" => 5,
+                "permission_name" => "updateUser"
+            ],
+            [
+                //"id" => 340,
+                "user_id" => 5,
+                "permission_name" => "viewUser"
+            ],
+            [
+                //"id" => 341,
+                "user_id" => 5,
+                "permission_name" => "createUser"
+            ],
+            [
+                //"id" => 342,
+                "user_id" => 5,
+                "permission_name" => "takeToWork"
+            ],
+            [
+                //"id" => 343,
+                "user_id" => 5,
+                "permission_name" => "requestUpdate"
+            ],
+            [
+                //"id" => 344,
+                "user_id" => 5,
+                "permission_name" => "massEdit"
+            ],
+            [
+                //"id" => 345,
+                "user_id" => 5,
+                "permission_name" => "requestViewAllRequests"
+            ],
+            [
+                //"id" => 346,
+                "user_id" => 5,
+                "permission_name" => "viewSplitterModerationRequests"
+            ],
+            [
+                //"id" => 347,
+                "user_id" => 5,
+                "permission_name" => "requestCreate"
+            ],
+            [
+                //"id" => 348,
+                "user_id" => 5,
+                "permission_name" => "requestCreateRelated"
+            ],
+            [
+                //"id" => 349,
+                "user_id" => 5,
+                "permission_name" => "requestGroupItems"
+            ],
+            [
+                //"id" => 350,
+                "user_id" => 5,
+                "permission_name" => "requestAddUpdateVideo"
+            ],
+            [
+                //"id" => 351,
+                "user_id" => 5,
+                "permission_name" => "requestUpdateFatPortalCat"
+            ],
+            [
+                //"id" => 352,
+                "user_id" => 5,
+                "permission_name" => "requestUpdateItems"
+            ],
+            [
+                //"id" => 353,
+                "user_id" => 5,
+                "permission_name" => "requestAddUpdateSizeGrid"
+            ],
+            [
+                //"id" => 354,
+                "user_id" => 5,
+                "permission_name" => "requestAddUpdateTags"
+            ],
+            [
+                //"id" => 355,
+                "user_id" => 5,
+                "permission_name" => "requestAddFatPortalCat"
+            ],
+            [
+                //"id" => 356,
+                "user_id" => 5,
+                "permission_name" => "requestAddUpdateSC"
+            ],
+            [
+                //"id" => 357,
+                "user_id" => 5,
+                "permission_name" => "requestAddNewItems"
+            ],
+            [
+                //"id" => 358,
+                "user_id" => 5,
+                "permission_name" => "requestAddAttrOrValues"
+            ],
+            [
+                //"id" => 359,
+                "user_id" => 5,
+                "permission_name" => "requestUploadPhoto"
+            ],
+            [
+                //"id" => 360,
+                "user_id" => 5,
+                "permission_name" => "requestUpdateAttrOrValues"
+            ],
+            [
+                //"id" => 361,
+                "user_id" => 5,
+                "permission_name" => "requestTransferItems"
+            ],
+            [
+                //"id" => 362,
+                "user_id" => 5,
+                "permission_name" => "requestCheckHidden"
+            ],
+            [
+                //"id" => 363,
+                "user_id" => 5,
+                "permission_name" => "requestStructureDesign"
+            ],
+            [
+                //"id" => 364,
+                "user_id" => 5,
+                "permission_name" => "transferInWorkToCompleted"
+            ],
+            [
+                //"id" => 365,
+                "user_id" => 5,
+                "permission_name" => "transferInWorkToWaitWork"
+            ],
+            [
+                //"id" => 366,
+                "user_id" => 5,
+                "permission_name" => "transferInWorkToOnHold"
+            ],
+            [
+                //"id" => 367,
+                "user_id" => 5,
+                "permission_name" => "transferInWorkToDeclined"
+            ],
+            [
+                //"id" => 368,
+                "user_id" => 5,
+                "permission_name" => "transferInWorkToPartialComplete"
+            ],
+            [
+                //"id" => 369,
+                "user_id" => 5,
+                "permission_name" => "transferCompletedToInWork"
+            ],
+            [
+                //"id" => 370,
+                "user_id" => 5,
+                "permission_name" => "transferCompletedToClosed"
+            ],
+            [
+                //"id" => 371,
+                "user_id" => 5,
+                "permission_name" => "transferInCheckToRequireChange"
+            ],
+            [
+                //"id" => 372,
+                "user_id" => 5,
+                "permission_name" => "transferInCheckToWaitWork"
+            ],
+            [
+                //"id" => 373,
+                "user_id" => 5,
+                "permission_name" => "transferInCheckToDeclined"
+            ],
+            [
+                //"id" => 374,
+                "user_id" => 5,
+                "permission_name" => "transferRequireChangeToWaitCheck"
+            ],
+            [
+                //"id" => 375,
+                "user_id" => 5,
+                "permission_name" => "transferWaitCheckToRequireChange"
+            ],
+            [
+                //"id" => 376,
+                "user_id" => 5,
+                "permission_name" => "transferWaitCheckToWaitWork"
+            ],
+            [
+                //"id" => 377,
+                "user_id" => 5,
+                "permission_name" => "transferWaitCheckToDeclined"
+            ],
+            [
+                //"id" => 378,
+                "user_id" => 5,
+                "permission_name" => "transferWaitCheckToInCheck"
+            ],
+            [
+                //"id" => 379,
+                "user_id" => 5,
+                "permission_name" => "transferWaitWorkToInWork"
+            ],
+            [
+                //"id" => 380,
+                "user_id" => 5,
+                "permission_name" => "transferWaitWorkToDeclined"
+            ],
+            [
+                //"id" => 381,
+                "user_id" => 5,
+                "permission_name" => "transferOnHoldToCompleted"
+            ],
+            [
+                //"id" => 382,
+                "user_id" => 5,
+                "permission_name" => "transferOnHoldToInWork"
+            ],
+            [
+                //"id" => 383,
+                "user_id" => 5,
+                "permission_name" => "transferOnHoldToPartialComplete"
+            ],
+            [
+                //"id" => 384,
+                "user_id" => 5,
+                "permission_name" => "transferPartialCompleteToInWork"
+            ],
+            [
+                //"id" => 385,
+                "user_id" => 5,
+                "permission_name" => "transferPartialCompleteToClosed"
+            ],
+            [
+                //"id" => 287,
+                "user_id" => 6,
+                "permission_name" => "reportLoadYourTeam"
+            ],
+            [
+                //"id" => 288,
+                "user_id" => 6,
+                "permission_name" => "reportView"
+            ],
+            [
+                //"id" => 289,
+                "user_id" => 6,
+                "permission_name" => "viewDashboardsByCommand"
+            ],
+            [
+                //"id" => 290,
+                "user_id" => 6,
+                "permission_name" => "viewUser"
+            ],
+            [
+                //"id" => 291,
+                "user_id" => 6,
+                "permission_name" => "takeToWork"
+            ],
+            [
+                //"id" => 292,
+                "user_id" => 6,
+                "permission_name" => "requestUpdate"
+            ],
+            [
+                //"id" => 293,
+                "user_id" => 6,
+                "permission_name" => "massEdit"
+            ],
+            [
+                //"id" => 294,
+                "user_id" => 6,
+                "permission_name" => "viewSplitterModerationRequests"
+            ],
+            [
+                //"id" => 295,
+                "user_id" => 6,
+                "permission_name" => "requestViewDirectionRequests"
+            ],
+            [
+                //"id" => 296,
+                "user_id" => 6,
+                "permission_name" => "requestCreate"
+            ],
+            [
+                //"id" => 297,
+                "user_id" => 6,
+                "permission_name" => "requestCreateRelated"
+            ],
+            [
+                //"id" => 298,
+                "user_id" => 6,
+                "permission_name" => "requestGroupItems"
+            ],
+            [
+                //"id" => 299,
+                "user_id" => 6,
+                "permission_name" => "requestAddUpdateVideo"
+            ],
+            [
+                //"id" => 300,
+                "user_id" => 6,
+                "permission_name" => "requestUpdateFatPortalCat"
+            ],
+            [
+                //"id" => 301,
+                "user_id" => 6,
+                "permission_name" => "requestUpdateItems"
+            ],
+            [
+                //"id" => 302,
+                "user_id" => 6,
+                "permission_name" => "requestAddUpdateSizeGrid"
+            ],
+            [
+                //"id" => 303,
+                "user_id" => 6,
+                "permission_name" => "requestAddUpdateTags"
+            ],
+            [
+                //"id" => 304,
+                "user_id" => 6,
+                "permission_name" => "requestAddFatPortalCat"
+            ],
+            [
+                //"id" => 305,
+                "user_id" => 6,
+                "permission_name" => "requestAddUpdateSC"
+            ],
+            [
+                //"id" => 306,
+                "user_id" => 6,
+                "permission_name" => "requestAddNewItems"
+            ],
+            [
+                //"id" => 307,
+                "user_id" => 6,
+                "permission_name" => "requestAddAttrOrValues"
+            ],
+            [
+                //"id" => 308,
+                "user_id" => 6,
+                "permission_name" => "requestUploadPhoto"
+            ],
+            [
+                //"id" => 309,
+                "user_id" => 6,
+                "permission_name" => "requestUpdateAttrOrValues"
+            ],
+            [
+                //"id" => 310,
+                "user_id" => 6,
+                "permission_name" => "requestTransferItems"
+            ],
+            [
+                //"id" => 311,
+                "user_id" => 6,
+                "permission_name" => "requestCheckHidden"
+            ],
+            [
+                //"id" => 312,
+                "user_id" => 6,
+                "permission_name" => "requestStructureDesign"
+            ],
+            [
+                //"id" => 313,
+                "user_id" => 6,
+                "permission_name" => "transferInWorkToCompleted"
+            ],
+            [
+                //"id" => 314,
+                "user_id" => 6,
+                "permission_name" => "transferInWorkToWaitWork"
+            ],
+            [
+                //"id" => 315,
+                "user_id" => 6,
+                "permission_name" => "transferInWorkToOnHold"
+            ],
+            [
+                //"id" => 316,
+                "user_id" => 6,
+                "permission_name" => "transferInWorkToDeclined"
+            ],
+            [
+                //"id" => 317,
+                "user_id" => 6,
+                "permission_name" => "transferInWorkToPartialComplete"
+            ],
+            [
+                //"id" => 318,
+                "user_id" => 6,
+                "permission_name" => "transferCompletedToInWork"
+            ],
+            [
+                //"id" => 319,
+                "user_id" => 6,
+                "permission_name" => "transferCompletedToClosed"
+            ],
+            [
+                //"id" => 320,
+                "user_id" => 6,
+                "permission_name" => "transferInCheckToRequireChange"
+            ],
+            [
+                //"id" => 321,
+                "user_id" => 6,
+                "permission_name" => "transferInCheckToWaitWork"
+            ],
+            [
+                //"id" => 322,
+                "user_id" => 6,
+                "permission_name" => "transferInCheckToDeclined"
+            ],
+            [
+                //"id" => 323,
+                "user_id" => 6,
+                "permission_name" => "transferRequireChangeToWaitCheck"
+            ],
+            [
+                //"id" => 324,
+                "user_id" => 6,
+                "permission_name" => "transferWaitCheckToRequireChange"
+            ],
+            [
+                //"id" => 325,
+                "user_id" => 6,
+                "permission_name" => "transferWaitCheckToWaitWork"
+            ],
+            [
+                //"id" => 326,
+                "user_id" => 6,
+                "permission_name" => "transferWaitCheckToDeclined"
+            ],
+            [
+                //"id" => 327,
+                "user_id" => 6,
+                "permission_name" => "transferWaitCheckToInCheck"
+            ],
+            [
+                //"id" => 328,
+                "user_id" => 6,
+                "permission_name" => "transferWaitWorkToInWork"
+            ],
+            [
+                //"id" => 329,
+                "user_id" => 6,
+                "permission_name" => "transferWaitWorkToDeclined"
+            ],
+            [
+                //"id" => 330,
+                "user_id" => 6,
+                "permission_name" => "transferOnHoldToCompleted"
+            ],
+            [
+                //"id" => 331,
+                "user_id" => 6,
+                "permission_name" => "transferOnHoldToInWork"
+            ],
+            [
+                //"id" => 332,
+                "user_id" => 6,
+                "permission_name" => "transferOnHoldToPartialComplete"
+            ],
+            [
+                //"id" => 333,
+                "user_id" => 6,
+                "permission_name" => "transferPartialCompleteToInWork"
+            ],
+            [
+                //"id" => 334,
+                "user_id" => 6,
+                "permission_name" => "transferPartialCompleteToClosed"
+            ],
+            [
+                //"id" => 239,
+                "user_id" => 10,
+                "permission_name" => "reportLoadYourTeam"
+            ],
+            [
+                //"id" => 240,
+                "user_id" => 10,
+                "permission_name" => "reportView"
+            ],
+            [
+                //"id" => 241,
+                "user_id" => 10,
+                "permission_name" => "viewDashboardsByCommand"
+            ],
+            [
+                //"id" => 242,
+                "user_id" => 10,
+                "permission_name" => "viewUser"
+            ],
+            [
+                //"id" => 243,
+                "user_id" => 10,
+                "permission_name" => "takeToWork"
+            ],
+            [
+                //"id" => 244,
+                "user_id" => 10,
+                "permission_name" => "requestUpdate"
+            ],
+            [
+                //"id" => 245,
+                "user_id" => 10,
+                "permission_name" => "massEdit"
+            ],
+            [
+                //"id" => 246,
+                "user_id" => 10,
+                "permission_name" => "viewSplitterModerationRequests"
+            ],
+            [
+                //"id" => 247,
+                "user_id" => 10,
+                "permission_name" => "requestViewDirectionRequests"
+            ],
+            [
+                //"id" => 248,
+                "user_id" => 10,
+                "permission_name" => "requestCreate"
+            ],
+            [
+                //"id" => 249,
+                "user_id" => 10,
+                "permission_name" => "requestCreateRelated"
+            ],
+            [
+                //"id" => 250,
+                "user_id" => 10,
+                "permission_name" => "requestGroupItems"
+            ],
+            [
+                //"id" => 251,
+                "user_id" => 10,
+                "permission_name" => "requestAddUpdateVideo"
+            ],
+            [
+                //"id" => 252,
+                "user_id" => 10,
+                "permission_name" => "requestUpdateFatPortalCat"
+            ],
+            [
+                //"id" => 253,
+                "user_id" => 10,
+                "permission_name" => "requestUpdateItems"
+            ],
+            [
+                //"id" => 254,
+                "user_id" => 10,
+                "permission_name" => "requestAddUpdateSizeGrid"
+            ],
+            [
+                //"id" => 255,
+                "user_id" => 10,
+                "permission_name" => "requestAddUpdateTags"
+            ],
+            [
+                //"id" => 256,
+                "user_id" => 10,
+                "permission_name" => "requestAddFatPortalCat"
+            ],
+            [
+                //"id" => 257,
+                "user_id" => 10,
+                "permission_name" => "requestAddUpdateSC"
+            ],
+            [
+                //"id" => 258,
+                "user_id" => 10,
+                "permission_name" => "requestAddNewItems"
+            ],
+            [
+                //"id" => 259,
+                "user_id" => 10,
+                "permission_name" => "requestAddAttrOrValues"
+            ],
+            [
+                //"id" => 260,
+                "user_id" => 10,
+                "permission_name" => "requestUploadPhoto"
+            ],
+            [
+                //"id" => 261,
+                "user_id" => 10,
+                "permission_name" => "requestUpdateAttrOrValues"
+            ],
+            [
+                //"id" => 262,
+                "user_id" => 10,
+                "permission_name" => "requestTransferItems"
+            ],
+            [
+                //"id" => 263,
+                "user_id" => 10,
+                "permission_name" => "requestCheckHidden"
+            ],
+            [
+                //"id" => 264,
+                "user_id" => 10,
+                "permission_name" => "requestStructureDesign"
+            ],
+            [
+                //"id" => 265,
+                "user_id" => 10,
+                "permission_name" => "transferInWorkToCompleted"
+            ],
+            [
+                //"id" => 266,
+                "user_id" => 10,
+                "permission_name" => "transferInWorkToWaitWork"
+            ],
+            [
+                //"id" => 267,
+                "user_id" => 10,
+                "permission_name" => "transferInWorkToOnHold"
+            ],
+            [
+                //"id" => 268,
+                "user_id" => 10,
+                "permission_name" => "transferInWorkToDeclined"
+            ],
+            [
+                //"id" => 269,
+                "user_id" => 10,
+                "permission_name" => "transferInWorkToPartialComplete"
+            ],
+            [
+                //"id" => 270,
+                "user_id" => 10,
+                "permission_name" => "transferCompletedToInWork"
+            ],
+            [
+                //"id" => 271,
+                "user_id" => 10,
+                "permission_name" => "transferCompletedToClosed"
+            ],
+            [
+                //"id" => 272,
+                "user_id" => 10,
+                "permission_name" => "transferInCheckToRequireChange"
+            ],
+            [
+                //"id" => 273,
+                "user_id" => 10,
+                "permission_name" => "transferInCheckToWaitWork"
+            ],
+            [
+                //"id" => 274,
+                "user_id" => 10,
+                "permission_name" => "transferInCheckToDeclined"
+            ],
+            [
+                //"id" => 275,
+                "user_id" => 10,
+                "permission_name" => "transferRequireChangeToWaitCheck"
+            ],
+            [
+                //"id" => 276,
+                "user_id" => 10,
+                "permission_name" => "transferWaitCheckToRequireChange"
+            ],
+            [
+                //"id" => 277,
+                "user_id" => 10,
+                "permission_name" => "transferWaitCheckToWaitWork"
+            ],
+            [
+                //"id" => 278,
+                "user_id" => 10,
+                "permission_name" => "transferWaitCheckToDeclined"
+            ],
+            [
+                //"id" => 279,
+                "user_id" => 10,
+                "permission_name" => "transferWaitCheckToInCheck"
+            ],
+            [
+                //"id" => 280,
+                "user_id" => 10,
+                "permission_name" => "transferWaitWorkToInWork"
+            ],
+            [
+                //"id" => 281,
+                "user_id" => 10,
+                "permission_name" => "transferWaitWorkToDeclined"
+            ],
+            [
+                //"id" => 282,
+                "user_id" => 10,
+                "permission_name" => "transferOnHoldToCompleted"
+            ],
+            [
+                //"id" => 283,
+                "user_id" => 10,
+                "permission_name" => "transferOnHoldToInWork"
+            ],
+            [
+                //"id" => 284,
+                "user_id" => 10,
+                "permission_name" => "transferOnHoldToPartialComplete"
+            ],
+            [
+                //"id" => 285,
+                "user_id" => 10,
+                "permission_name" => "transferPartialCompleteToInWork"
+            ],
+            [
+                //"id" => 286,
+                "user_id" => 10,
+                "permission_name" => "transferPartialCompleteToClosed"
+            ],
+            [
+                //"id" => 229,
+                "user_id" => 11,
+                "permission_name" => "reportView"
+            ],
+            [
+                //"id" => 230,
+                "user_id" => 11,
+                "permission_name" => "viewOwnDashboards"
+            ],
+            [
+                //"id" => 231,
+                "user_id" => 11,
+                "permission_name" => "requestViewOwnRequests"
+            ],
+            [
+                //"id" => 232,
+                "user_id" => 11,
+                "permission_name" => "transferInWorkToCompleted"
+            ],
+            [
+                //"id" => 233,
+                "user_id" => 11,
+                "permission_name" => "transferInWorkToOnHold"
+            ],
+            [
+                //"id" => 234,
+                "user_id" => 11,
+                "permission_name" => "transferInWorkToDeclined"
+            ],
+            [
+                //"id" => 235,
+                "user_id" => 11,
+                "permission_name" => "transferInWorkToPartialComplete"
+            ],
+            [
+                //"id" => 236,
+                "user_id" => 11,
+                "permission_name" => "transferCompletedToInWork"
+            ],
+            [
+                //"id" => 237,
+                "user_id" => 11,
+                "permission_name" => "transferWaitWorkToInWork"
+            ],
+            [
+                //"id" => 238,
+                "user_id" => 11,
+                "permission_name" => "transferPartialCompleteToInWork"
+            ],
+            [
+                //"id" => 219,
+                "user_id" => 12,
+                "permission_name" => "reportView"
+            ],
+            [
+                //"id" => 220,
+                "user_id" => 12,
+                "permission_name" => "viewOwnDashboards"
+            ],
+            [
+                //"id" => 221,
+                "user_id" => 12,
+                "permission_name" => "requestViewOwnRequests"
+            ],
+            [
+                //"id" => 222,
+                "user_id" => 12,
+                "permission_name" => "transferInWorkToCompleted"
+            ],
+            [
+                //"id" => 223,
+                "user_id" => 12,
+                "permission_name" => "transferInWorkToOnHold"
+            ],
+            [
+                //"id" => 224,
+                "user_id" => 12,
+                "permission_name" => "transferInWorkToDeclined"
+            ],
+            [
+                //"id" => 225,
+                "user_id" => 12,
+                "permission_name" => "transferInWorkToPartialComplete"
+            ],
+            [
+                //"id" => 226,
+                "user_id" => 12,
+                "permission_name" => "transferCompletedToInWork"
+            ],
+            [
+                //"id" => 227,
+                "user_id" => 12,
+                "permission_name" => "transferWaitWorkToInWork"
+            ],
+            [
+                //"id" => 228,
+                "user_id" => 12,
+                "permission_name" => "transferPartialCompleteToInWork"
+            ],
+            [
+                //"id" => 209,
+                "user_id" => 13,
+                "permission_name" => "reportView"
+            ],
+            [
+                //"id" => 210,
+                "user_id" => 13,
+                "permission_name" => "viewOwnDashboards"
+            ],
+            [
+                //"id" => 211,
+                "user_id" => 13,
+                "permission_name" => "requestViewOwnRequests"
+            ],
+            [
+                //"id" => 212,
+                "user_id" => 13,
+                "permission_name" => "transferInWorkToCompleted"
+            ],
+            [
+                //"id" => 213,
+                "user_id" => 13,
+                "permission_name" => "transferInWorkToOnHold"
+            ],
+            [
+                //"id" => 214,
+                "user_id" => 13,
+                "permission_name" => "transferInWorkToDeclined"
+            ],
+            [
+                //"id" => 215,
+                "user_id" => 13,
+                "permission_name" => "transferInWorkToPartialComplete"
+            ],
+            [
+                //"id" => 216,
+                "user_id" => 13,
+                "permission_name" => "transferCompletedToInWork"
+            ],
+            [
+                //"id" => 217,
+                "user_id" => 13,
+                "permission_name" => "transferWaitWorkToInWork"
+            ],
+            [
+                //"id" => 218,
+                "user_id" => 13,
+                "permission_name" => "transferPartialCompleteToInWork"
+            ],
+            [
+                //"id" => 199,
+                "user_id" => 14,
+                "permission_name" => "reportView"
+            ],
+            [
+                //"id" => 200,
+                "user_id" => 14,
+                "permission_name" => "viewOwnDashboards"
+            ],
+            [
+                //"id" => 201,
+                "user_id" => 14,
+                "permission_name" => "requestViewOwnRequests"
+            ],
+            [
+                //"id" => 202,
+                "user_id" => 14,
+                "permission_name" => "transferInWorkToCompleted"
+            ],
+            [
+                //"id" => 203,
+                "user_id" => 14,
+                "permission_name" => "transferInWorkToOnHold"
+            ],
+            [
+                //"id" => 204,
+                "user_id" => 14,
+                "permission_name" => "transferInWorkToDeclined"
+            ],
+            [
+                //"id" => 205,
+                "user_id" => 14,
+                "permission_name" => "transferInWorkToPartialComplete"
+            ],
+            [
+                //"id" => 206,
+                "user_id" => 14,
+                "permission_name" => "transferCompletedToInWork"
+            ],
+            [
+                //"id" => 207,
+                "user_id" => 14,
+                "permission_name" => "transferWaitWorkToInWork"
+            ],
+            [
+                //"id" => 208,
+                "user_id" => 14,
+                "permission_name" => "transferPartialCompleteToInWork"
+            ],
+            [
+                //"id" => 179,
+                "user_id" => 15,
+                "permission_name" => "requestViewAllRequests"
+            ],
+            [
+                //"id" => 180,
+                "user_id" => 15,
+                "permission_name" => "requestViewTeamRequests"
+            ],
+            [
+                //"id" => 181,
+                "user_id" => 15,
+                "permission_name" => "viewSplitterModerationRequests"
+            ],
+            [
+                //"id" => 182,
+                "user_id" => 15,
+                "permission_name" => "requestCreate"
+            ],
+            [
+                //"id" => 183,
+                "user_id" => 15,
+                "permission_name" => "requestCreateRelated"
+            ],
+            [
+                //"id" => 184,
+                "user_id" => 15,
+                "permission_name" => "requestGroupItems"
+            ],
+            [
+                //"id" => 185,
+                "user_id" => 15,
+                "permission_name" => "requestAddUpdateVideo"
+            ],
+            [
+                //"id" => 186,
+                "user_id" => 15,
+                "permission_name" => "requestUpdateFatPortalCat"
+            ],
+            [
+                //"id" => 187,
+                "user_id" => 15,
+                "permission_name" => "requestUpdateItems"
+            ],
+            [
+                //"id" => 188,
+                "user_id" => 15,
+                "permission_name" => "requestAddUpdateSizeGrid"
+            ],
+            [
+                //"id" => 189,
+                "user_id" => 15,
+                "permission_name" => "requestAddUpdateTags"
+            ],
+            [
+                //"id" => 190,
+                "user_id" => 15,
+                "permission_name" => "requestAddFatPortalCat"
+            ],
+            [
+                //"id" => 191,
+                "user_id" => 15,
+                "permission_name" => "requestAddUpdateSC"
+            ],
+            [
+                //"id" => 192,
+                "user_id" => 15,
+                "permission_name" => "requestAddNewItems"
+            ],
+            [
+                //"id" => 193,
+                "user_id" => 15,
+                "permission_name" => "requestUploadPhoto"
+            ],
+            [
+                //"id" => 194,
+                "user_id" => 15,
+                "permission_name" => "requestTransferItems"
+            ],
+            [
+                //"id" => 195,
+                "user_id" => 15,
+                "permission_name" => "requestCheckHidden"
+            ],
+            [
+                //"id" => 196,
+                "user_id" => 15,
+                "permission_name" => "requestStructureDesign"
+            ],
+            [
+                //"id" => 197,
+                "user_id" => 15,
+                "permission_name" => "transferRequireChangeToWaitCheck"
+            ],
+            [
+                //"id" => 198,
+                "user_id" => 15,
+                "permission_name" => "transferOnHoldToInWork"
+            ],
+            [
+                //"id" => 159,
+                "user_id" => 16,
+                "permission_name" => "requestViewAllRequests"
+            ],
+            [
+                //"id" => 160,
+                "user_id" => 16,
+                "permission_name" => "requestViewTeamRequests"
+            ],
+            [
+                //"id" => 161,
+                "user_id" => 16,
+                "permission_name" => "viewSplitterModerationRequests"
+            ],
+            [
+                //"id" => 162,
+                "user_id" => 16,
+                "permission_name" => "requestCreate"
+            ],
+            [
+                //"id" => 163,
+                "user_id" => 16,
+                "permission_name" => "requestCreateRelated"
+            ],
+            [
+                //"id" => 164,
+                "user_id" => 16,
+                "permission_name" => "requestGroupItems"
+            ],
+            [
+                //"id" => 165,
+                "user_id" => 16,
+                "permission_name" => "requestAddUpdateVideo"
+            ],
+            [
+                //"id" => 166,
+                "user_id" => 16,
+                "permission_name" => "requestUpdateFatPortalCat"
+            ],
+            [
+                //"id" => 167,
+                "user_id" => 16,
+                "permission_name" => "requestUpdateItems"
+            ],
+            [
+                //"id" => 168,
+                "user_id" => 16,
+                "permission_name" => "requestAddUpdateSizeGrid"
+            ],
+            [
+                //"id" => 169,
+                "user_id" => 16,
+                "permission_name" => "requestAddUpdateTags"
+            ],
+            [
+                //"id" => 170,
+                "user_id" => 16,
+                "permission_name" => "requestAddFatPortalCat"
+            ],
+            [
+                //"id" => 171,
+                "user_id" => 16,
+                "permission_name" => "requestAddUpdateSC"
+            ],
+            [
+                //"id" => 172,
+                "user_id" => 16,
+                "permission_name" => "requestAddNewItems"
+            ],
+            [
+                //"id" => 173,
+                "user_id" => 16,
+                "permission_name" => "requestUploadPhoto"
+            ],
+            [
+                //"id" => 174,
+                "user_id" => 16,
+                "permission_name" => "requestTransferItems"
+            ],
+            [
+                //"id" => 175,
+                "user_id" => 16,
+                "permission_name" => "requestCheckHidden"
+            ],
+            [
+                //"id" => 176,
+                "user_id" => 16,
+                "permission_name" => "requestStructureDesign"
+            ],
+            [
+                //"id" => 177,
+                "user_id" => 16,
+                "permission_name" => "transferRequireChangeToWaitCheck"
+            ],
+            [
+                //"id" => 178,
+                "user_id" => 16,
+                "permission_name" => "transferOnHoldToInWork"
             ]
         ]
     ],
     "cooper_fixtures" => [
         "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
-    ]
+    ],
+    "gomer_fixtures" => [
+        "users" => [
+            [
+                "id" => 1,
+                "username" => "kutsan.k",
+                "auth_key" => "WXkN0YPJ3zjiyIptDy4NzCYQnSn4Qejo",
+                "password_hash" => '$2y$13$C9087r6ipKg6Q9Q.2ykXHuHFsBriKMGAbpGCqs6ezLpNWatKnTxPi',
+                "password_reset_token" => null,
+                "email" => "kutsan.k@rozetka.com.ua",
+                "created_at" => 1584396309,
+                "updated_at" => 1584475046,
+                "status" => 1,
+                "color" => null,
+                "first_name" => "Куцан",
+                "second_name" => "Константин",
+                "avatar_image" => null,
+                "reason_for_edit" => "kutsan.k kutsan.k kutsan.k kutsan.k kutsan.k",
+                "ldap_sync_code" => null,
+                "site_theme" => null
+            ],
+        ],
+    ],
 ];

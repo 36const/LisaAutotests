@@ -24,9 +24,7 @@ class POSTReasonsCreateCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTReasonsCreate(FunctionalTester $I, Example $data)
     {

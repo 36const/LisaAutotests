@@ -5,12 +5,12 @@ namespace lisa;
 use Codeception\Example;
 use Codeception\Module\TestHelper;
 
-/**
- * @group lisa
- * @group lisa_functional
- * @group lisa_functional_settings
- * @group GETOtherReasons
- */
+///**
+// * @group lisa
+// * @group lisa_functional
+// * @group lisa_functional_settings
+// * @group GETOtherReasons
+// */
 class GETOtherReasonsCest
 {
     /**@return array*/
@@ -23,9 +23,7 @@ class GETOtherReasonsCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETOtherReasons(FunctionalTester $I, Example $data)
     {

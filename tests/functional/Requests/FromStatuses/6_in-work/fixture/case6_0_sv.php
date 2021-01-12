@@ -20,7 +20,7 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => '',
-                "reason_id" => null,
+                //"reason_id" => null,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
@@ -156,6 +156,7 @@ return [
             ]
         ],
         "user_notifications" => [],
+        "requests_reasons" => [],
         "request_status_history" => [
             [
 //                "id" => 1,
@@ -163,10 +164,11 @@ return [
                 "user_id" => 4,
                 "old_status" => 5,
                 "new_status" => 6,
-                "reason_id" => 11,
+                "reason_id" => null,
                 "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                 "created_at" => date("Y-m-d H:i:s", strtotime('- 3 hours 58 minutes')),
-                "manager_id" => 11
+                "manager_id" => 11,
+                "reasons" => null
             ]
         ],
         "transition_info" => [],

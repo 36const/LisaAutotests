@@ -23,9 +23,7 @@ class GETUsersCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETUsers(FunctionalTester $I, Example $data)
     {

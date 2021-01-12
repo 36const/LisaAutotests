@@ -3,7 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
-use lisa\Page\Functional\RequestView;
+use lisa\Page\Requests\RequestView;
 use Codeception\Module\TestHelper;
 
 /**
@@ -33,9 +33,7 @@ class POSTCreateRequestCest
      * @param Example $data
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTCreateRequest(FunctionalTester $I, Example $data, RequestView $view)
     {

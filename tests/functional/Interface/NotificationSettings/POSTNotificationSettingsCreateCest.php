@@ -23,9 +23,7 @@ class POSTNotificationSettingsCreateCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTNotificationSettings(FunctionalTester $I, Example $data)
     {

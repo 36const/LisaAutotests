@@ -4,9 +4,9 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\RequestView;
-use lisa\Page\Functional\RequestToCorrection;
-use lisa\Page\Functional\RequestCorrection;
+use lisa\Page\Requests\RequestView;
+use lisa\Page\Requests\RequestToCorrection;
+use lisa\Page\Requests\RequestCorrection;
 
 /**
  * @group lisa
@@ -29,9 +29,7 @@ class POSTFromStatusesCest
      * @param RequestToCorrection $toCorrection
      * @param RequestCorrection $correction
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTFromStatuses(FunctionalTester $I, Example $data, RequestView $view,
                                      RequestToCorrection $toCorrection, RequestCorrection $correction)
@@ -41,9 +39,7 @@ class POSTFromStatusesCest
         $providerData = $data['provider_data'];
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
-
         $I->checkTablesInDB($providerData['db']);
-
         $view->checkFields($providerData['db']);
 
         if ($providerData['requestParameter'] == 'to-correction') {
@@ -56,7 +52,6 @@ class POSTFromStatusesCest
         }
 
         $I->setViewTabs();
-
         $view->checkFields($providerData['db']);
 
         $I->checkRabbitMQ($providerData);

@@ -23,9 +23,7 @@ class CronSetReportPeriodCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function CronSetReportPeriod(FunctionalTester $I, Example $data)
     {
@@ -34,6 +32,7 @@ class CronSetReportPeriodCest
 
         $I->runShellCommand('./yii bpm/request/set-report-period');
         $I->canSeeInShellOutput('');
+        $I->canSeeResultCodeIs(0);
 
         $I->checkTablesInDB($providerData['db']);
     }

@@ -24,9 +24,7 @@ class POSTCrossCheckFilterUpdateCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function POSTCrossCheckFilterUpdate(FunctionalTester $I, Example $data)
     {

@@ -4,7 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Functional\RequestCreate;
+use lisa\Page\Requests\RequestCreate;
 
 /**
  * @group lisa
@@ -25,9 +25,7 @@ class GETCreateRequestCest
      * @param Example $data
      * @param RequestCreate $create
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
     public function GETCreateRequest(FunctionalTester $I, Example $data, RequestCreate $create)
     {
