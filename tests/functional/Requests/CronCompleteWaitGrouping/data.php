@@ -50,7 +50,6 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            //"reason_id" => 7,
                             "reason" => null,
                             "parent_id" => null,
                             "planned_start_date" => null,
@@ -257,7 +256,6 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 7,
-                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11,
@@ -269,7 +267,6 @@ return [
                             "user_id" => 2,
                             "old_status" => 7,
                             "new_status" => 8,
-                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at >=" => date("Y-m-d"),
                             "manager_id" => 11,
@@ -343,7 +340,6 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            //"reason_id" => 14,
                             "reason" => 'Заявка переведена в статус "Ожидает",
              так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
                             "parent_id" => null,
@@ -502,7 +498,6 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 7,
-                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11,
@@ -519,7 +514,6 @@ return [
                         [
                             "request_id" => 1,
                             "status" => 8,
-                            "reason_id" => null,
                             "reason" => null,
                             "reasons_list" => '["7", "6"]'
                         ],
@@ -581,7 +575,6 @@ return [
 //                            "category_id" => null,
 //                            "seller_id" => 83,
 //                            "recommendations" => '',
-//                            //"reason_id" => 14,
 //                            "reason" => 'Заявка переведена в статус "Ожидает",
 //             так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
 //                            "parent_id" => null,
@@ -740,7 +733,6 @@ return [
 //                            "user_id" => 4,
 //                            "old_status" => 6,
 //                            "new_status" => 7,
-//                            "reason_id" => null,
 //                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
 //                            "created_at" => "2020-01-01 00:00:01",
 //                            "manager_id" => 11,
@@ -757,7 +749,6 @@ return [
 //                        [
 //                            "request_id" => 1,
 //                            "status" => 8,
-//                            "reason_id" => null,
 //                            "reason" => null,
 //                            "reasons_list" => '["7", "6"]'
 //                        ],
@@ -819,7 +810,6 @@ return [
                             "category_id" => null,
                             "seller_id" => 83,
                             "recommendations" => '',
-                            //"reason_id" => 14,
                             "reason" => 'Заявка переведена в статус "Ожидает",
              так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
                             "parent_id" => null,
@@ -978,7 +968,6 @@ return [
                             "user_id" => 4,
                             "old_status" => 6,
                             "new_status" => 7,
-                            "reason_id" => null,
                             "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "created_at" => "2020-01-01 00:00:01",
                             "manager_id" => 11,
@@ -988,7 +977,6 @@ return [
                     'requests_reasons' => [
                         [
                             "request_id" => 1,
-                            "reason_id" => 3,
                         ]
                     ],
                     'transition_info' => []
@@ -1049,7 +1037,6 @@ return [
 //                            //                            "category_id" => null,
 //                            "seller_id" => 83,
 //                            "recommendations" => '',
-//                            "reason_id" => 7,
 //                            "reason" => null,
 //                            "parent_id" => null,
 //                            "planned_start_date" => null,
@@ -1089,7 +1076,6 @@ return [
 //                            //                            "category_id" => null,
 //                            "seller_id" => 83,
 //                            "recommendations" => '',
-//                            "reason_id" => null,
 //                            "reason" => null,
 //                            "parent_id" => null,
 //                            "planned_start_date" => null,
@@ -1404,7 +1390,6 @@ return [
 //                            "user_id" => 4,
 //                            "old_status" => 7,
 //                            "new_status" => 8,
-//                            "reason_id" => null,
 //                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
 //                            "created_at >=" => date("Y-m-d"),
 //                            "manager_id" => 2
@@ -1415,7 +1400,6 @@ return [
 //                            "user_id" => 4,
 //                            "old_status" => 7,
 //                            "new_status" => 8,
-//                            "reason_id" => null,
 //                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
 //                            "created_at >=" => date("Y-m-d"),
 //                            "manager_id" => 2

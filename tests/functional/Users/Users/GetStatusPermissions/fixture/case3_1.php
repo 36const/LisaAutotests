@@ -27,7 +27,6 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => '',
-                //"reason_id" => 11,
                 "reason" => 'Затребовать изменения',
                 "parent_id" => null,
                 "planned_start_date" => null,

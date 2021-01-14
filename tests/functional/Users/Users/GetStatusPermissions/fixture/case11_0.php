@@ -27,7 +27,6 @@ return [
                 "category_id" => 1,
                 "seller_id" => 83,
                 "recommendations" => '',
-                //"reason_id" => 15,
                 "reason" => null,
                 "parent_id" => null,
                 "planned_start_date" => null,
