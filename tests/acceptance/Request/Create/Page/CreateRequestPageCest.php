@@ -80,6 +80,7 @@ class CreateRequestPageCest
         $I->checkObjectsOnPage($provider_data['pageForm_4']);
 
         //заполнен заголовок, описание, категория/продавец и количество
+        $I->wait(1);
         $I->pressKey(RequestCreate::$amount, '9', '9', '9', '9', '9', '9', '9', '9', '9');
         $I->click(RequestCreate::$createButtonForm);
         $I->waitForElement('//div[contains(@class, "alert-success")]');

@@ -127,7 +127,7 @@ class RequestCreate extends FunctionalTester
     /**
      * Проверка html-полей и их значений на странице создания связанной заявки
      */
-    public function checkRelatedRequestFields(string $tableRow, int $type, int $direction, int $id)
+    public function checkRelatedRequestFields(array $tableRow, int $type, int $direction, int $id)
     {
         $I = $this;
         $request = $I->convertDbArrays($tableRow, $id);
