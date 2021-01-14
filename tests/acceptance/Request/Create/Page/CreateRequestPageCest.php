@@ -75,12 +75,11 @@ class CreateRequestPageCest
             $I->pressKey(SearchField::$search, 'М', 'а');
             $I->click(SearchField::searchResult('Маркетплейс (общий)'));
         }
-        $I->wait(1);
         $I->click(RequestCreate::$createButtonForm);
+        $I->wait(1);
         $I->checkObjectsOnPage($provider_data['pageForm_4']);
 
         //заполнен заголовок, описание, категория/продавец и количество
-        $I->wait(1);
         $I->pressKey(RequestCreate::$amount, '9', '9', '9', '9', '9', '9', '9', '9', '9');
         $I->click(RequestCreate::$createButtonForm);
         $I->waitForElement('//div[contains(@class, "alert-success")]');
