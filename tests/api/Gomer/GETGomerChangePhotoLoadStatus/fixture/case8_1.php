@@ -7,7 +7,6 @@ return [
                 "type_id" => 1,
                 "status" => 7,
                 "direction" => 2,
-                //"reason_id" => 1,
                 "subject" => "Добавление новых товаров (Работа с товарами Маркета)",
                 "category_id" => null,
                 "seller_id" => 83,
