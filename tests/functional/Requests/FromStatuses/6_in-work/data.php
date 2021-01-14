@@ -944,7 +944,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -954,7 +953,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -964,7 +962,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -1150,7 +1147,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -1160,7 +1156,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -1170,7 +1165,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -1795,7 +1789,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -1805,7 +1798,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -1815,7 +1807,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -2077,7 +2068,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -2087,7 +2077,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -2097,7 +2086,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -2719,7 +2707,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -2729,7 +2716,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -2739,7 +2725,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -2995,7 +2980,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -3005,7 +2989,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -3015,7 +2998,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -3322,7 +3304,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -3332,7 +3313,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -3342,7 +3322,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -3575,7 +3554,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -3585,7 +3563,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -3595,7 +3572,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -3889,7 +3865,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -3899,7 +3874,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -3909,7 +3883,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -4142,7 +4115,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -4152,7 +4124,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -4162,7 +4133,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -4631,7 +4601,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -4641,7 +4610,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -4651,7 +4619,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -4884,7 +4851,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -4894,7 +4860,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -4904,7 +4869,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -5137,7 +5101,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                         [
                             "id" => 2,
@@ -5147,7 +5110,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                         [
                             "id" => 3,
@@ -5157,7 +5119,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                     ],
                     'request_status_history' => [
@@ -5390,7 +5351,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                         [
                             "id" => 2,
@@ -5400,7 +5360,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                         [
                             "id" => 3,
@@ -5410,7 +5369,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                     ],
                     'request_status_history' => [
@@ -5603,7 +5561,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Проектенко 14"
                         ],
                         [
                             "id" => 2,
@@ -5613,7 +5570,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Проектенко 14"
                         ],
                         [
                             "id" => 3,
@@ -5623,7 +5579,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Проектенко 14"
                         ],
                     ],
                     'request_status_history' => [
@@ -5816,7 +5771,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Проектенко 14"
                         ],
                         [
                             "id" => 2,
@@ -5826,7 +5780,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Проектенко 14"
                         ],
                         [
                             "id" => 3,
@@ -5836,7 +5789,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Проектенко 14"
                         ],
                     ],
                     'request_status_history' => [
@@ -6029,7 +5981,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Проектенко 14"
                         ],
                         [
                             "id" => 2,
@@ -6039,7 +5990,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Проектенко 14"
                         ],
                         [
                             "id" => 3,
@@ -6049,7 +5999,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Проектенко 14"
                         ],
                     ],
                     'request_status_history' => [
@@ -6343,7 +6292,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 2,
@@ -6353,7 +6301,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                         [
                             "id" => 3,
@@ -6363,7 +6310,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Начальникович 1"
                         ],
                     ],
                     'request_status_history' => [
@@ -6568,7 +6514,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                         [
                             "id" => 2,
@@ -6578,7 +6523,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                         [
                             "id" => 3,
@@ -6588,7 +6532,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                     ],
                     'request_status_history' => [
@@ -6751,7 +6694,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                         [
                             "id" => 2,
@@ -6761,7 +6703,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                         [
                             "id" => 3,
@@ -6771,7 +6712,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                     ],
                     'request_status_history' => [
@@ -6934,7 +6874,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                         [
                             "id" => 2,
@@ -6944,7 +6883,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                         [
                             "id" => 3,
@@ -6954,7 +6892,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Супервайзер Категоркин 15"
                         ],
                     ],
                     'request_status_history' => [
@@ -7169,7 +7106,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Супервайзер Начальникович 1, Супервайзер Начальникович 2"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => '[]',
@@ -7185,7 +7121,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Супервайзер Начальникович 1, Супервайзер Начальникович 2"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => '[]',
@@ -7404,7 +7339,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Менеджер Контентович 1Б, Супервайзер Начальникович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => '[]',
@@ -7420,7 +7354,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Менеджер Контентович 1Б, Супервайзер Начальникович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => '[]',
@@ -7436,7 +7369,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1Б, Супервайзер Начальникович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => '[]',
@@ -7452,7 +7384,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1Б, Супервайзер Начальникович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => '[]',
@@ -7468,7 +7399,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1Б, Супервайзер Начальникович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => '[]',

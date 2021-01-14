@@ -9,7 +9,6 @@ return [
         "created_at" => "2020-01-01 00:00:01",
         "request_id" => 1,
         "priority" => 2,
-        //"recipients" => "Константин Куцан, Супервайзер Начальникович 1",
         "amount_to_work" => 10,
         "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\\№ Тема",
         "fields_for_complete" => '[]',

@@ -18,14 +18,12 @@ return [
         "reasons" => [
             [
                 //"id" => 1,
-                //"parent_status" => 6,
                 "child_status" => 7,
                 "reason" => "Ожидается загрузка фото в товары",
                 "status" => 1
             ],
             [
                 //"id" => 2,
-                //"parent_status" => 6,
                 "child_status" => 7,
                 "reason" => "Требуется уточнение информации по задаче",
                 "status" => 1

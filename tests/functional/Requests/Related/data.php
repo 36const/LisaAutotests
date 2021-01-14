@@ -288,7 +288,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
                             "fields_for_complete" => "[]",
@@ -304,7 +303,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
                             "fields_for_complete" => "[]",
@@ -320,7 +318,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
                             "fields_for_complete" => "[]",
@@ -336,7 +333,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
                             "fields_for_complete" => "[]",
@@ -643,7 +639,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Заливка фото с фотостудии (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -659,7 +654,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Заливка фото с фотостудии (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -911,7 +905,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -927,7 +920,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -1143,7 +1135,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Проектенко 14"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление параметров/значений (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -1159,7 +1150,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Проектенко 14"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление параметров/значений (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -1175,7 +1165,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление параметров/значений (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -1191,7 +1180,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление параметров/значений (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -1439,7 +1427,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 1,
-                            //"recipients" => "Константин Куцан, Супервайзер Проектенко 17"
                             "amount_to_work" => 10,
                             "request_subject" => "Изменение существующих параметров/значений (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -1455,7 +1442,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 1,
-                            //"recipients" => "Константин Куцан, Супервайзер Проектенко 17"
                             "amount_to_work" => 10,
                             "request_subject" => "Изменение существующих параметров/значений (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -1468,6 +1454,7 @@ return [
                     'requests_reasons' => [
                         [
                             "request_id" => 1,
+                            "reason_id" => 5,
                         ],
                     ],
                 ]
@@ -1734,7 +1721,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Сео Сеошевич 1, Супервайзер Категоркин 18"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление/изменение видео (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -1750,7 +1736,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Сео Сеошевич 1, Супервайзер Категоркин 18"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление/изменение видео (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -1766,7 +1751,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Сео Сеошевич 1, Супервайзер Категоркин 18"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление/изменение видео (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -2062,7 +2046,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
                             "amount_to_work" => 20,
                             "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             "fields_for_complete" => "[]",
@@ -2078,7 +2061,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
                             "amount_to_work" => 20,
                             "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             "fields_for_complete" => "[]",
@@ -2446,7 +2428,6 @@ return [
                             "created_at" => '2020-01-01 00:00:01',
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
                             "amount_to_work" => 20,
                             "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             "fields_for_complete" => "[]",
@@ -2462,7 +2443,6 @@ return [
                             "created_at" => '2020-01-01 00:00:01',
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
                             "amount_to_work" => 20,
                             "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             "fields_for_complete" => "[]",
@@ -2478,7 +2458,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 3,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -2494,7 +2473,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 3,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -2940,7 +2918,6 @@ return [
                             "created_at" => '2020-01-01 00:00:01',
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
                             "amount_to_work" => 20,
                             "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             "fields_for_complete" => "[]",
@@ -2956,7 +2933,6 @@ return [
                             "created_at" => '2020-01-01 00:00:01',
                             'request_id' => 2,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Начальникович 1"
                             "amount_to_work" => 20,
                             "request_subject" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
                             "fields_for_complete" => "[]",
@@ -2972,7 +2948,6 @@ return [
                             "created_at" => '2020-01-02 00:00:01',
                             'request_id' => 3,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -2988,7 +2963,6 @@ return [
                             "created_at" => '2020-01-02 00:00:01',
                             'request_id' => 3,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -3004,7 +2978,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 4,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
@@ -3020,7 +2993,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             'request_id' => 4,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Супервайзер Категоркин 15"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",

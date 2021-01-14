@@ -11,7 +11,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s"),
                 "request_id" => 1,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Начальникович 1, Тим Лидович 1, Менеджер Продактович 1"
             ],
             [
                 //"id" => 2,
@@ -21,7 +20,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s", strtotime('-1 day')),
                 "request_id" => 1,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Начальникович 1, Тим Лидович 1, Менеджер Продактович 1"
             ],
             [
                 //"id" => 3,
@@ -31,7 +29,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s", strtotime('-1 week')),
                 "request_id" => 1,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Начальникович 1, Тим Лидович 1, Менеджер Продактович 1"
             ],
             [
                 //"id" => 4,
@@ -41,7 +38,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s", strtotime('-2 week')),
                 "request_id" => 1,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Начальникович 1, Тим Лидович 1, Менеджер Продактович 1"
             ],
             [
                 //"id" => 5,
@@ -51,7 +47,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s", strtotime('-3 week')),
                 "request_id" => 1,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Начальникович 1, Тим Лидович 1, Менеджер Продактович 1"
             ],
             [
                 //"id" => 6,
@@ -61,7 +56,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s", strtotime('-1 month')),
                 "request_id" => 1,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Начальникович 1, Тим Лидович 1, Менеджер Продактович 1"
             ],
             [
                 //"id" => 7,
@@ -71,7 +65,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s", strtotime('-1 month +1 day')),
                 "request_id" => 1,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Начальникович 1, Тим Лидович 1, Менеджер Продактович 1"
             ],
             [
                 //"id" => 8,
@@ -81,7 +74,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s", strtotime('-1 month -1 week')),
                 "request_id" => 1,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Начальникович 1, Тим Лидович 1, Менеджер Продактович 1"
             ],
             [
                 //"id" => 9,
@@ -91,7 +83,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s", strtotime('-1 month -2 week')),
                 "request_id" => 2,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Проектенко 14"
             ],
             [
                 //"id" => 10,
@@ -101,7 +92,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s", strtotime('-2 month')),
                 "request_id" => 2,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Проектенко 14"
             ],
             [
                 //"id" => 11,
@@ -111,7 +101,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s", strtotime('-3 month')),
                 "request_id" => 2,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Проектенко 14"
             ],
             [
                 //"id" => 12,
@@ -121,7 +110,6 @@ return [
                 "created_at" => date("Y-m-d H:i:s", strtotime('-1 minute')),
                 "request_id" => 2,
                 "priority" => 2,
-                //"recipients" => "Константин Куцан, Супервайзер Проектенко 14"
             ]
         ],
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php'

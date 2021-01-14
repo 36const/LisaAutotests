@@ -144,7 +144,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -160,7 +159,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -176,7 +174,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -192,7 +189,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -367,7 +363,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -383,7 +378,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -399,7 +393,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -415,7 +408,6 @@ return [
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -573,7 +565,6 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -589,7 +580,6 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Супервайзер Начальникович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -605,7 +595,6 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Менеджер Контентович 1А"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -621,7 +610,6 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Менеджер Продактович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -637,7 +625,6 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Супервайзер Начальникович 10"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -653,7 +640,6 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -669,7 +655,6 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -685,7 +670,6 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -701,7 +685,6 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
@@ -717,7 +700,6 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                             "created_at >=" => date("Y-m-d"),
                             "request_id" => 1,
                             "priority" => 2,
-                            //"recipients" => "Константин Куцан, Менеджер Контентович 1А, Менеджер Продактович 1, Супервайзер Начальникович 1, Тим Лидович 1"
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
                             "fields_for_complete" => "[]",
