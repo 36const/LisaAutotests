@@ -18,6 +18,8 @@ class RequestCreate extends FunctionalTester
     public static $observers = "//select[@name='Request[observers][]']";
     public static $priority = "//select[@name='Request[priority]']";
 
+    public static $createButtonForm = "//button[@id='request-create-submit' and text()=' Сохранить']";
+
     public static $createModal = "//div[@id='create_modal']";
     public static $createButton = "//a[@href='/bpm/request']";
     public static $typesList = "//select[@id='types-select' and @name='RequestType']";
@@ -31,6 +33,11 @@ class RequestCreate extends FunctionalTester
     public static function checkboxesDirection(int $directionId)
     {
         return "//div[@id='checkboxes-direction']//input[@name='direction' and @value='$directionId']";
+    }
+
+    public static function errorFieldMessage($field, $text)
+    {
+        return $field . "/../div[@class='help-block' and contains(text(),'$text')]";
     }
 
     public function amOnRequestCreate(int $type, int $direction)
@@ -120,7 +127,7 @@ class RequestCreate extends FunctionalTester
     /**
      * Проверка html-полей и их значений на странице создания связанной заявки
      */
-    public function checkRelatedRequestFields($tableRow, int $type, int $direction, int $id)
+    public function checkRelatedRequestFields(string $tableRow, int $type, int $direction, int $id)
     {
         $I = $this;
         $request = $I->convertDbArrays($tableRow, $id);

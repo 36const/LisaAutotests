@@ -1,7 +1,9 @@
 {
   "status": 200,
   "bpm": {
-    "1": false,
-    "2": false
+    "1": {
+      "on-moderation": true,
+      "wait-for-grouping": false
+    }
   }
 }
