@@ -54,11 +54,13 @@ class CreateRequestPageCest
         //заполнен заголовок
         $I->pressKey(RequestCreate::$subject, '!', '"', '№', ';', '%', ':', '?', '*', '(', ')');
         $I->click(RequestCreate::$createButtonForm);
+        $I->wait(1);
         $I->checkObjectsOnPage($provider_data['pageForm_2']);
 
         //заполнен заголовок и описание
         $I->pressKey(RequestCreate::$description, '!', '"', '№', ';', '%', ':', '?', '*', '(', ')');
         $I->click(RequestCreate::$createButtonForm);
+        $I->wait(1);
         $I->checkObjectsOnPage($provider_data['pageForm_3']);
 
         //заполнен заголовок, описание и категория/продавец
@@ -73,6 +75,7 @@ class CreateRequestPageCest
             $I->pressKey(SearchField::$search, 'М', 'а');
             $I->click(SearchField::searchResult('Маркетплейс (общий)'));
         }
+        $I->wait(1);
         $I->click(RequestCreate::$createButtonForm);
         $I->checkObjectsOnPage($provider_data['pageForm_4']);
 
