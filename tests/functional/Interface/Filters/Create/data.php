@@ -41,7 +41,7 @@ return [
                 'fields[7]' => '1',
                 'fields[8]' => '1',
                 'fields[9]' => '1',
-                'filter-select2' => ['id', 'status', 'awaiting_correction', 'subject', 'description', 'direction', 'amount_to_work', 'recommendations', /*'reasons', */'parent_id', 'supervisor_check_date', 'result_comment', 'supervisor_comment', 'report_period_id', 'team_direction', 'correction_comment', 'priority', 'sv_report_periods', 'cross_check_status', 'employee_code_1c'],
+                'filter-select2' => ['id', 'status', 'awaiting_correction', 'subject', 'description', 'direction', 'amount_to_work', 'recommendations', 'parent_id', 'supervisor_check_date', 'result_comment', 'supervisor_comment', 'report_period_id', 'team_direction', 'correction_comment', 'priority', 'sv_report_periods', 'cross_check_status', 'employee_code_1c'],
                 'request_field[amount_to_work]' => '10',
                 'request_field[author_id]' => ['15', '19', '17'],
                 'request_field[awaiting_correction]' => '1',
@@ -56,7 +56,6 @@ return [
                 'request_field[manager_id]' => ['11', '13'],
                 'request_field[parent_id]' => '11',
                 'request_field[priority]' => ['1', '2', '3'],
-                //'request_field[reasons]' => ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14'], - у нас больше не будет фильтра с причиной
                 'request_field[recommendations]' => '250~!@#$%^&*()_+`=-]\'/[;.,}"?{:><|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
                 'request_field[report_period_id]' => ['1', '2'],
                 'request_field[result_comment]' => '250~!@#$%^&*()_+`=-]\'/[;.,}"?{:><|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
