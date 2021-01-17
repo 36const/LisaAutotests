@@ -22,6 +22,7 @@ use Codeception\Example;
 class AcceptanceTester extends \Codeception\Actor
 {
     use _generated\AcceptanceTesterActions;
+    use \Codeception\Lib\Actor\Shared\Retry;
 
     /**
      * @param Example $data - данные кейса из файла data.php
@@ -43,6 +44,7 @@ class AcceptanceTester extends \Codeception\Actor
 
         $I->wantTo($data['setting']['description']);
         $I->setAuthorizationCookie();
+        $I->retry(3);
     }
 
     private function setAuthorizationCookie()
@@ -132,6 +134,19 @@ class AcceptanceTester extends \Codeception\Actor
         if (isset($pageObjects['cantSee'])) {
             foreach ($pageObjects['cantSee'] as $checkbox) {
                 $I->cantSeeCheckboxIsChecked($checkbox);
+            }
+        }
+    }
+
+    public function checkRabbitMQ($rabbitQueuesArray)
+    {
+        $I = $this;
+
+        foreach ($rabbitQueuesArray as $queueName => $queueMessages) {
+            $I->canSeeNumberOfMessagesInQueue($queueName, count($queueMessages));
+
+            foreach ($queueMessages as $message) {
+                $I->canSeeMessageInQueueContainsText($queueName, $message);
             }
         }
     }

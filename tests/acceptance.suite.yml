@@ -1,5 +1,9 @@
 suite_namespace: lisa
 actor: AcceptanceTester
+step_decorators:
+  - \Codeception\Step\Retry
+  - \Codeception\Step\TryTo
+  - \Codeception\Step\ConditionalAssertion
 modules:
     enabled:
         - \lisa\Helper\Acceptance

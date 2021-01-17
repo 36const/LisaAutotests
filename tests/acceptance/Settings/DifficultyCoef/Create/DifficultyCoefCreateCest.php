@@ -46,8 +46,7 @@ class DifficultyCoefCreateCest
         $I->click(DifficultyCoef::checkbox(1));
         $I->pressKey(DifficultyCoef::$coef, '2', ',', '5');
         $I->click(DifficultyCoef::$saveButton);
-        $I->wait(1);
-        $I->canSee('Такая комбинация Типа заявки и выбраных полей уже существует');
+        $I->retrySee('Такая комбинация Типа заявки и выбраных полей уже существует');
         $I->checkTablesInDB($providerData['db_1']);
 
         $I->selectOption(DifficultyCoef::$requestType, 'Добавление новых товаров');

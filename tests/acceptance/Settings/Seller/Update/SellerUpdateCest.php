@@ -34,6 +34,9 @@ class SellerUpdateCest
         $I->amOnPage("/bpm/seller");
         $I->click(Seller::$updateButton);
 
+        while ($I->tryToSeeElement(SearchField::$search)) {
+            $I->reloadPage();
+        }
         $I->click(Seller::$clearButton);
         $I->canSeeElement(Seller::errorField('Необходимо заполнить «ID супервайзера».'));
         $I->click(Seller::$saveButton);
@@ -43,13 +46,11 @@ class SellerUpdateCest
         $I->click(SearchField::$search);
         $I->pressKey(SearchField::$search, 'С', 'у');
         $I->click(SearchField::searchResult('Супервайзер Начальникович 10'));
-        $I->wait(1);     //без ожидания выдаёт ошибку, что сообщение есть
-        $I->cantSeeElement(Seller::errorField('Необходимо заполнить «ID супервайзера».'));
+        $I->retrySeeElement(Seller::errorField('Необходимо заполнить «ID супервайзера».'));
         $I->click(Seller::$saveButton);
 
         $I->waitForElement(Seller::$updateButton);
-        $I->wait(1);     //без ожидания выдаёт ошибку, что плашки нет
-        $I->canSee('Продавец Маркетплейс (общий) успешно обновлен');
+        $I->retrySee('Продавец Маркетплейс (общий) успешно обновлен');
         $I->checkTablesInDB($providerData['db_2']);
     }
 }
