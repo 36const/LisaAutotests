@@ -55,21 +55,20 @@ class BlockedReasonInRequestCest
 
         //сохранение заявки после удаления активного значения
         $I->click(RequestView::$saveButton);
-        $I->wait(1);
-        $I->cantSeeInField('reasons[]', '4');
-        $I->canSeeInField('reasons[]', '5');
+        $I->retryDontSeeInField('reasons[]', '4');
+        $I->retrySeeInField('reasons[]', '5');
         $I->checkTablesInDB($providerData['db_1']);
 
         //удаление заблокированного значения
         $I->click(RequestView::listField('reasons[]') . '//li[text()="Ожидается загрузка обновлений в систему"]/span');
-        $I->cantSeeInField('reasons[]', '4');
+        $I->retryDontSeeInField('reasons[]', '4');
         $I->cantSeeInField('reasons[]', '5');
 
         //сохранение заявки после удаления заблокированного значения и автоперевод 7->6
         $I->click(RequestView::$saveButton);
-        $I->wait(1);
-        $I->cantSeeInField('reasons[]', '4');
-        $I->cantSeeInField('reasons[]', '5');
+        $I->retryDontSeeInField('reasons[]', '4');
+        $I->retryDontSeeInField('reasons[]', '5');
+        $I->wait(1);    //без ожидания иногда не проходит проверка таблицы в БД
         $I->checkTablesInDB($providerData['db_2']);
     }
 }

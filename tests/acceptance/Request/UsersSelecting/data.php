@@ -1,11 +1,9 @@
 <?php
 
-use lisa\Page\Requests\RequestView;
-
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Доступные в заявке для выбора супервайзеры и менеджеры',
+            'description' => 'Доступные для выбора супервайзеры и менеджеры и их сортировка',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

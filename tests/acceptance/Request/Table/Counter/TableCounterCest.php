@@ -25,14 +25,13 @@ class TableCounterCest
      * @param Example $data
      * @param Request $request
      * @throws \GuzzleHttp\Exception\GuzzleException
-     * @throws \Exception
      * @dataProvider pageProvider
      */
     public function TableCounter(AcceptanceTester $I, Example $data, Request $request)
     {
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
-        $I->wait(30);
+        $I->wait(5);
         $request->amOnTable();
         $I->checkObjectsOnPage($providerData['pageObjects_1']);
 

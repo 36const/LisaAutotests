@@ -23,15 +23,14 @@ class TabsCounterCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param \lisa\Page\Requests\Request $request
+     * @param Request $request
      * @throws \GuzzleHttp\Exception\GuzzleException
-     * @throws \Exception
      * @dataProvider pageProvider
      */
     public function TabsCounter(AcceptanceTester $I, Example $data, Request $request)
     {
         $I->loadDataForTest($data, 'allUsers');
-        $I->wait(30);
+        $I->wait(7);
         $request->amOnTable('index');
         $I->canSeeElement(Request::statusTabsCounter(1, 24));
         $I->canSeeElement(Request::tableSummary('......'));
