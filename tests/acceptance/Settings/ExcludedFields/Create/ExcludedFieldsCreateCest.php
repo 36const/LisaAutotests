@@ -34,7 +34,6 @@ class ExcludedFieldsCreateCest
 
         $I->click(ExcludedFields::$createButton);
         $I->waitForElementClickable(ExcludedFields::$addButton);
-        $I->canSeeElement(ExcludedFields::$modal);
 
         $I->click(ExcludedFields::$addButton);
         $I->canSeeElement(ExcludedFields::$errorField);
@@ -66,7 +65,7 @@ class ExcludedFieldsCreateCest
 
         $I->click(ExcludedFields::$createButton);
         $I->waitForElementClickable(ExcludedFields::$addButton);
-        $I->canSeeElement(ExcludedFields::$modal);
+        $I->waitForElement(ExcludedFields::$modal);
 
         $I->selectOption(ExcludedFields::$fieldId, 'Ручная загрузка');
         $I->selectOption(ExcludedFields::$excludedFieldId, 'Пакетная загрузка');

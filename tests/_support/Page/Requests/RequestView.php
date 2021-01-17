@@ -30,6 +30,10 @@ class RequestView extends FunctionalTester
     public static $saveButton = "//button[@id='update-form-save']";
     public static $tabsCheckbox = "//input[@id='tabs-toggle-button']";
 
+    public static $savedFileTableRow = '//div[@class="attachment-overflow"]/div[@class="col-md-12 border-1 display-flex"]';
+    public static $downloadArchiveButton = '//a[@id="archive-button" and @href="/bpm/request/download-archive?requestId=1"]';
+    public static $attachedFiles = '//div[@class="attachment-overflow"]';
+
     /**Блок результатов поиска в активном поле*/
     public static $searchResults = "//ul[@class='select2-results__options']//li";
 
@@ -54,6 +58,11 @@ class RequestView extends FunctionalTester
     public static function findCheckbox(string $name)
     {
         return "//td[@class='checkboxes']//label[text()='$name']/input[@type='checkbox']";
+    }
+
+    public static function downloadedFile(int $id)
+    {
+        return "//div[contains(@class,'file-input')]//div[@id='thumb-request-uploadedfiles-init-$id']";
     }
 
     /**
