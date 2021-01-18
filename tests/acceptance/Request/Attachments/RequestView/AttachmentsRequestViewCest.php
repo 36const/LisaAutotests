@@ -43,7 +43,7 @@ class AttachmentsRequestViewCest
         $I->cantSeeElement('//div[@class="file-preview"]//div[@class="kv-fileinput-error file-error-message"]');
 
         //добавляем второй файл с неподходящим расширением
-        $I->attachFile('//input[@id="request-uploadedfiles"]', 'Attachments/255exeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexe.exe');
+        $I->attachFile('//input[@id="request-uploadedfiles"]', 'Attachments/255exeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexee.exe');
         $I->waitForElement('//div[@class="file-preview"]//div[@class="kv-fileinput-error file-error-message"]');
         $I->waitForElement(RequestView::downloadedFile(0));
         $I->cantSeeElement(RequestView::downloadedFile(1));
