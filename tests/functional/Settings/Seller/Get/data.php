@@ -882,7 +882,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?SellerSearch%5Bowox_id%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&SellerSearch%5Bname%5D=&SellerSearch%5Bsupervisor_id%5D=',
+            "url" => '?SellerSearch%5Bowox_id%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>\%7C<&SellerSearch%5Bname%5D=&SellerSearch%5Bsupervisor_id%5D=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1051,7 +1051,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?SellerSearch%5Bowox_id%5D=&SellerSearch%5Bname%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&SellerSearch%5Bsupervisor_id%5D=',
+            "url" => '?SellerSearch%5Bowox_id%5D=&SellerSearch%5Bname%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>\%7C<&SellerSearch%5Bsupervisor_id%5D=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [

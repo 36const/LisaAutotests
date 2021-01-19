@@ -46,7 +46,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestParameter' => 'appoint-supervisor?model=gomer%5Cbpm%5Cmodels%5Creferences%5CMarketSupervisor',
+            'requestParameter' => 'appoint-supervisor?model=gomer\bpm\models\references\MarketSupervisor',
             'requestBody' => [
                 'MarketSupervisor[supervisor_id]' => '10',
                 'keys' => '0,5,83',
