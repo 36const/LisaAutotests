@@ -300,6 +300,8 @@ return [
                 "type" => 1
             ],
         ],
+        "exports_logs" => [],
+        "user_exports" => [],
         "report_period_request_fields" => [],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
