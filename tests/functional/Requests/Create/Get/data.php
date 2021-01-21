@@ -89,6 +89,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' С палитрой')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
+                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [
@@ -206,6 +207,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' С палитрой')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
+                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [
@@ -319,6 +321,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' С палитрой')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
+                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [
@@ -464,6 +467,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' С палитрой')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
+                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [

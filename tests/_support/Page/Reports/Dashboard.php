@@ -6,38 +6,38 @@ class Dashboard
 {
     public static function type(string $option = null)
     {
-        return $option == null ?
-            "//select[@name='Dashboard[type]']" :
-            "//select[@name='Dashboard[type]']/option[@value='$option'][@selected]";
+        return $option ?
+            "//select[@name='Dashboard[type]']/option[@value='$option'][@selected]" :
+            "//select[@name='Dashboard[type]']";
     }
 
     public static function display(string $option = null)
     {
-        return $option == null ?
-            "//select[@name='Dashboard[display]']" :
-            "//select[@name='Dashboard[display]']/option[@value='$option'][@selected]";
+        return $option ?
+            "//select[@name='Dashboard[display]']/option[@value='$option'][@selected]" :
+            "//select[@name='Dashboard[display]']";
     }
 
     //общие дашборды
     public static function member(string $option = null)
     {
-        return $option == null ?
-            "//select[@name='Dashboard[member]']" :
-            "//select[@name='Dashboard[member]']/option[@value='$option'][@selected]";
+        return $option ?
+            "//select[@name='Dashboard[member]']/option[@value='$option'][@selected]" :
+            "//select[@name='Dashboard[member]']";
     }
 
     public static function status(string $option = null)
     {
-        return $option == null ?
-            "//select[@name='Dashboard[status]']" :
-            "//select[@name='Dashboard[status]']/option[@value='$option'][@selected]";
+        return $option ?
+            "//select[@name='Dashboard[status]']/option[@value='$option'][@selected]" :
+            "//select[@name='Dashboard[status]']";
     }
 
     public static function date(string $value = null)
     {
-        return $value == null ?
-            "//input[@name='Dashboard[date]']" :
-            "//input[@name='Dashboard[date]' and @value='$value']";
+        return $value ?
+            "//input[@name='Dashboard[date]' and @value='$value']" :
+            "//input[@name='Dashboard[date]']";
     }
 
     public static function statusColumn($i)
@@ -53,7 +53,8 @@ class Dashboard
             'closed',
             'in-day',
             'not-in-day',
-            'active-managers'][$i];
+            'active-managers'
+        ][$i];
     }
 
     public static function activeManagersColumn(int $row)
