@@ -85,12 +85,12 @@ class AttachmentsRequestCreateCest
         $I->canSeeElement(RequestView::$savedFileTableRow . '/div[contains(text(), "Константин Куцан")]');
 
         //создаём и скачиваем архив
-        $I->click(RequestView::$downloadArchiveButton);
-        $I->waitForElement(RequestView::$downloadArchiveButton . '[text()=" Архив генерируется"]');
-        $I->runShellCommand('./yii bpm/request/make-archive', false);
-        $I->canSeeResultCodeIs(1);
-        $I->canSeeInShellOutput(' успешно сгенерирован.');
-        $I->waitForElement(RequestView::$downloadArchiveButton . '[text()=" Скачать архив"]');
+        //$I->click(RequestView::$downloadArchiveButton);
+        //$I->waitForElement(RequestView::$downloadArchiveButton . '[text()=" Архив генерируется"]');
+        //$I->runShellCommand('./yii bpm/request/make-archive', false);
+        //$I->canSeeResultCodeIs(1);
+        //$I->canSeeInShellOutput(' успешно сгенерирован.');
+        //$I->waitForElement(RequestView::$downloadArchiveButton . '[text()=" Скачать архив"]');
 
         //удаляем первый файл
         $I->click(RequestView::$savedFileTableRow . '//a[@href="#" and @title="Удалить файл"]');
