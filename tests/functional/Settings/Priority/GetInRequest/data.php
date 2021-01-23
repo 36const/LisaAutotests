@@ -51,7 +51,7 @@ return [
                             "selector" => "//select[@name='Request[priority]']//*",
                             "value" => "Неправильные/Битые ссылки (порталы и фат-меню)"
                         ]
-                    ],
+                    ]
                 ]
             ]
         ]
@@ -105,8 +105,6 @@ return [
                         ],
                     ],
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],

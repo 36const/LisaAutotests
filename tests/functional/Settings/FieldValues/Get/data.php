@@ -822,7 +822,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?FieldValueSearch%5Bid%5D=6&FieldValueSearch%5Bfield_id%5D=&FieldValueSearch%5Bvalue%5D=&FieldValueSearch%5Bstatus%5D=',
+            "url" => '?FieldValueSearch[id]=6&FieldValueSearch[field_id]=&FieldValueSearch[value]=&FieldValueSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -910,7 +910,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?FieldValueSearch%5Bid%5D=&FieldValueSearch%5Bfield_id%5D=21&FieldValueSearch%5Bvalue%5D=&FieldValueSearch%5Bstatus%5D=',
+            "url" => '?FieldValueSearch[id]=&FieldValueSearch[field_id]=21&FieldValueSearch[value]=&FieldValueSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1040,7 +1040,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?FieldValueSearch%5Bid%5D=&FieldValueSearch%5Bfield_id%5D=&FieldValueSearch%5Bvalue%5D=удал&FieldValueSearch%5Bstatus%5D=',
+            "url" => '?FieldValueSearch[id]=&FieldValueSearch[field_id]=&FieldValueSearch[value]=удал&FieldValueSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1155,7 +1155,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?FieldValueSearch%5Bid%5D=&FieldValueSearch%5Bfield_id%5D=&FieldValueSearch%5Bvalue%5D=&FieldValueSearch%5Bstatus%5D=0',
+            "url" => '?FieldValueSearch[id]=&FieldValueSearch[field_id]=&FieldValueSearch[value]=&FieldValueSearch[status]=0',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1255,7 +1255,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?FieldValueSearch%5Bid%5D=9999999999&FieldValueSearch%5Bfield_id%5D=&FieldValueSearch%5Bvalue%5D=&FieldValueSearch%5Bstatus%5D=',
+            "url" => '?FieldValueSearch[id]=9999999999&FieldValueSearch[field_id]=&FieldValueSearch[value]=&FieldValueSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1424,7 +1424,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?FieldValueSearch%5Bid%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&FieldValueSearch%5Bfield_id%5D=&FieldValueSearch%5Bvalue%5D=&FieldValueSearch%5Bstatus%5D=',
+            "url" => '?FieldValueSearch[id]==~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<&FieldValueSearch[field_id]=&FieldValueSearch[value]=&FieldValueSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1593,7 +1593,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?FieldValueSearch%5Bid%5D=999&FieldValueSearch%5Bfield_id%5D=&FieldValueSearch%5Bvalue%5D=&FieldValueSearch%5Bstatus%5D=',
+            "url" => '?FieldValueSearch[id]=999&FieldValueSearch[field_id]=&FieldValueSearch[value]=&FieldValueSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [

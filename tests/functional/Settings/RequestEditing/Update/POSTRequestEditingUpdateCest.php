@@ -31,7 +31,6 @@ class POSTRequestEditingUpdateCest
     public function POSTRequestEditingUpdate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/request-editing/update?id=2', $providerData['requestBody']);

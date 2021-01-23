@@ -587,7 +587,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?CategorySearch%5Bid%5D=2&CategorySearch%5Btitle%5D=&CategorySearch%5Bdifficulty%5D=&CategorySearch%5Bsupervisor_id%5D=&CategorySearch%5Bstatus%5D=',
+            "url" => '?CategorySearch[id]=2&CategorySearch[title]=&CategorySearch[difficulty]=&CategorySearch[supervisor_id]=&CategorySearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -665,7 +665,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?CategorySearch%5Bid%5D=&CategorySearch%5Btitle%5D=Видео&CategorySearch%5Bdifficulty%5D=&CategorySearch%5Bsupervisor_id%5D=&CategorySearch%5Bstatus%5D=',
+            "url" => '?CategorySearch[id]=&CategorySearch[title]=Видео&CategorySearch[difficulty]=&CategorySearch[supervisor_id]=&CategorySearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -743,7 +743,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?CategorySearch%5Bid%5D=&CategorySearch%5Btitle%5D=&CategorySearch%5Bdifficulty%5D=&CategorySearch%5Bsupervisor_id%5D=6&CategorySearch%5Bstatus%5D=',
+            "url" => '?CategorySearch[id]=&CategorySearch[title]=&CategorySearch[difficulty]=&CategorySearch[supervisor_id]=6&CategorySearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -840,7 +840,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?CategorySearch%5Bid%5D=&CategorySearch%5Btitle%5D=&CategorySearch%5Bdifficulty%5D=&CategorySearch%5Bsupervisor_id%5D=&CategorySearch%5Bstatus%5D=0',
+            "url" => '?CategorySearch[id]=&CategorySearch[title]=&CategorySearch[difficulty]=&CategorySearch[supervisor_id]=&CategorySearch[status]=0',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -918,7 +918,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?CategorySearch%5Bid%5D=9999999999999&CategorySearch%5Btitle%5D=&CategorySearch%5Bdifficulty%5D=&CategorySearch%5Bsupervisor_id%5D=&CategorySearch%5Bstatus%5D=',
+            "url" => '?CategorySearch[id]=9999999999999&CategorySearch[title]=&CategorySearch[difficulty]=&CategorySearch[supervisor_id]=&CategorySearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1040,7 +1040,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?CategorySearch%5Bid%5D=%3D%7E%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D%22%3F%7B%3A%3E%5C%7C%3C&CategorySearch%5Btitle%5D=&CategorySearch%5Bdifficulty%5D=&CategorySearch%5Bsupervisor_id%5D=&CategorySearch%5Bstatus%5D=',
+            "url" => '?CategorySearch[id]=%3D%7E%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-]%27%2F[%3B.%2C%7D%22%3F%7B%3A%3E%5C%7C%3C&CategorySearch[title]=&CategorySearch[difficulty]=&CategorySearch[supervisor_id]=&CategorySearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1162,7 +1162,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?CategorySearch%5Bid%5D=999&CategorySearch%5Btitle%5D=&CategorySearch%5Bdifficulty%5D=&CategorySearch%5Bsupervisor_id%5D=&CategorySearch%5Bstatus%5D=',
+            "url" => '?CategorySearch[id]=999&CategorySearch[title]=&CategorySearch[difficulty]=&CategorySearch[supervisor_id]=&CategorySearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1184,7 +1184,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?CategorySearch%5Bid%5D=&CategorySearch%5Btitle%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&CategorySearch%5Bdifficulty%5D=&CategorySearch%5Bsupervisor_id%5D=&CategorySearch%5Bstatus%5D=',
+            "url" => '?CategorySearch[id]=&CategorySearch[title]==~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<&CategorySearch[difficulty]=&CategorySearch[supervisor_id]=&CategorySearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [

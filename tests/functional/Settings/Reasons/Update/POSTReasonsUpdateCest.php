@@ -31,7 +31,6 @@ class POSTReasonsUpdateCest
     public function POSTReasonsUpdate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/reason/update?id=1', $providerData['requestBody']);

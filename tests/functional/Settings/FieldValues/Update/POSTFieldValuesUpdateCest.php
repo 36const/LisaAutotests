@@ -31,7 +31,6 @@ class POSTFieldValuesUpdateCest
     public function POSTFieldValuesUpdate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/field-values/update?id=1', $providerData['requestBody']);

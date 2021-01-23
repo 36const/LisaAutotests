@@ -9,9 +9,9 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_settings
- * @group GETOtherFieldValues
+ * @group GETFieldValuesInRequest
  */
-class GETOtherFieldValuesCest
+class GETFieldValuesInRequestCest
 {
     /**@return array*/
     protected function pageProvider()
@@ -25,7 +25,7 @@ class GETOtherFieldValuesCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function GETOtherFieldValues(FunctionalTester $I, Example $data)
+    public function GETFieldValuesInRequest(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];

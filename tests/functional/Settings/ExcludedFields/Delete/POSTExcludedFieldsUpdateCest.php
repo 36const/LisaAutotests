@@ -31,7 +31,6 @@ class POSTExcludedFieldsUpdateCest
     public function POSTExcludedFieldsDelete(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/excluded-fields/delete?field_id=1&excluded_field_id=2', $providerData['requestBody']);

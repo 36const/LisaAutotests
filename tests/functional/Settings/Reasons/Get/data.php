@@ -612,7 +612,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?ReasonSearch%5Bid%5D=4&ReasonSearch%5Bparent_status%5D=&ReasonSearch%5Bchild_status%5D=&ReasonSearch%5Breason%5D=&ReasonSearch%5Bstatus%5D=',
+            "url" => '?ReasonSearch[id]=4&ReasonSearch[parent_status]=&ReasonSearch[child_status]=&ReasonSearch[reason]=&ReasonSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -700,7 +700,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?ReasonSearch%5Bid%5D=&ReasonSearch%5Bparent_status%5D=&ReasonSearch%5Bchild_status%5D=4&ReasonSearch%5Breason%5D=&ReasonSearch%5Bstatus%5D=',
+            "url" => '?ReasonSearch[id]=&ReasonSearch[parent_status]=&ReasonSearch[child_status]=4&ReasonSearch[reason]=&ReasonSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -799,7 +799,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?ReasonSearch%5Bid%5D=&ReasonSearch%5Bparent_status%5D=&ReasonSearch%5Bchild_status%5D=&ReasonSearch%5Breason%5D=Дубль&ReasonSearch%5Bstatus%5D=',
+            "url" => '?ReasonSearch[id]=&ReasonSearch[parent_status]=&ReasonSearch[child_status]=&ReasonSearch[reason]=Дубль&ReasonSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -887,7 +887,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?ReasonSearch%5Bid%5D=&ReasonSearch%5Bparent_status%5D=&ReasonSearch%5Bchild_status%5D=&ReasonSearch%5Breason%5D=&ReasonSearch%5Bstatus%5D=0',
+            "url" => '?ReasonSearch[id]=&ReasonSearch[parent_status]=&ReasonSearch[child_status]=&ReasonSearch[reason]=&ReasonSearch[status]=0',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -975,7 +975,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?ReasonSearch%5Bid%5D=9999999999&ReasonSearch%5Bparent_status%5D=&ReasonSearch%5Bchild_status%5D=&ReasonSearch%5Breason%5D=&ReasonSearch%5Bstatus%5D=',
+            "url" => '?ReasonSearch[id]=9999999999&ReasonSearch[parent_status]=&ReasonSearch[child_status]=&ReasonSearch[reason]=&ReasonSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1102,7 +1102,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?ReasonSearch%5Bid%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&ReasonSearch%5Bparent_status%5D=&ReasonSearch%5Bchild_status%5D=&ReasonSearch%5Breason%5D=&ReasonSearch%5Bstatus%5D=',
+            "url" => '?ReasonSearch[id]==~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<&ReasonSearch[parent_status]=&ReasonSearch[child_status]=&ReasonSearch[reason]=&ReasonSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1225,7 +1225,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?ReasonSearch%5Bid%5D=999&ReasonSearch%5Bparent_status%5D=&ReasonSearch%5Bchild_status%5D=&ReasonSearch%5Breason%5D=&ReasonSearch%5Bstatus%5D=',
+            "url" => '?ReasonSearch[id]=999&ReasonSearch[parent_status]=&ReasonSearch[child_status]=&ReasonSearch[reason]=&ReasonSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1247,7 +1247,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?ReasonSearch%5Bid%5D=&ReasonSearch%5Bparent_status%5D=&ReasonSearch%5Bchild_status%5D=&ReasonSearch%5Breason%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&ReasonSearch%5Bstatus%5D=',
+            "url" => '?ReasonSearch[id]=&ReasonSearch[parent_status]=&ReasonSearch[child_status]=&ReasonSearch[reason]==~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<&ReasonSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [

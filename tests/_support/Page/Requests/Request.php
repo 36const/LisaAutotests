@@ -163,17 +163,17 @@ class Request extends FunctionalTester
     /**Иконка родительской заявки*/
     public static function parentRequest(int $tableRow, string $page = null)
     {
-        return $page == null ?
-            "//tbody/tr[$tableRow]//td/a[@title='Родительская заявка']" :
-            "//tbody/tr[$tableRow]//td/a[@href='$page' and @title='Родительская заявка']" ;
+        return $page ?
+            "//tbody/tr[$tableRow]//td/a[@href='$page' and @title='Родительская заявка']" :
+            "//tbody/tr[$tableRow]//td/a[@title='Родительская заявка']";
     }
 
     /**Иконка дочерних заявок*/
     public static function childRequest(int $tableRow, string $page = null)
     {
-        return $page == null ?
-            "//tbody/tr[$tableRow]//td/a[@title='Дочерние заявки']" :
-            "//tbody/tr[$tableRow]//td/a[@href='$page' and @title='Дочерние заявки']";
+        return $page ?
+            "//tbody/tr[$tableRow]//td/a[@href='$page' and @title='Дочерние заявки']" :
+            "//tbody/tr[$tableRow]//td/a[@title='Дочерние заявки']";
     }
 
     /**Иконка фото загружены*/

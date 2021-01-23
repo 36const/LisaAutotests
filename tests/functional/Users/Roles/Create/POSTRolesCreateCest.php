@@ -31,7 +31,6 @@ class POSTRolesCreateCest
     public function POSTRolesCreate(FunctionalTester $I, Example $data, Roles $roles)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/roles/create', $providerData['requestBody']);

@@ -8,10 +8,10 @@ use Codeception\Module\TestHelper;
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_requests
- * @group POSTTable
+ * @group lisa_functional_settings
+ * @group GETPriorityInRequest
  */
-class POSTTableCest
+class GETPriorityInRequestCest
 {
     /**@return array*/
     protected function pageProvider()
@@ -25,18 +25,14 @@ class POSTTableCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTTable(FunctionalTester $I, Example $data)
+    public function GETPriorityInRequest(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
-
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/grid-settings/save-columns', $providerData['requestBody']);
+        $I->amOnPage($providerData['url']);
         $I->seeResponseCodeIs(200);
 
-        $I->amOnPage('/bpm/request/' . $providerData['url']);
-
-        $I->checkTablesInDB($providerData['db']);
         $I->checkObjectsOnPage($providerData['pageObjects']);
     }
 }

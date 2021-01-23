@@ -12,23 +12,19 @@ return [
                 "canSee" => [
                     [
                         [
-                            "selector" => "//form[@id='reason-form-status-3']//select[@name='Request[reason_id]']/option[1][@value]",
-                            "value" => "Выберите причину из списка..."
-                        ],
-                        [
-                            "selector" => "//form[@id='reason-form-status-3']//select[@name='Request[reason_id]']/option[2][@value]",
+                            "selector" => "//form[@id='reason-form-status-3']//select[@name='reasons[]']/option[1][@value]",
                             "value" => "Другое (описан в коментариях)"
                         ],
                         [
-                            "selector" => "//form[@id='reason-form-status-3']//select[@name='Request[reason_id]']/option[2][@value]",
-                            "value" => "Другое (описан в коментариях)"
+                            "selector" => "//form[@id='reason-form-status-3']//select[@name='reasons[]']/option[2][@value]",
+                            "value" => "Нада"
                         ],
                     ]
                 ],
                 "cantSee" => [
                     [
                         [
-                            "selector" => "//form[@id='reason-form-status-3']//select[@name='Request[reason_id]']/option[3]",
+                            "selector" => "//form[@id='reason-form-status-3']//select[@name='reasons[]']/option[3]",
                         ]
                     ]
                 ]
@@ -38,7 +34,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Не показываются заблоченные причины 6 -> 7',
+            'description' => 'Не показываются заблоченные причины статуса 7',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
@@ -47,31 +43,27 @@ return [
                 "canSee" => [
                     [
                         [
-                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[1][@value]",
-                            "value" => "Выберите причину из списка..."
-                        ],
-                        [
-                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[2][@value=15]",
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='reasons[]']/option[1][@value=11]",
                             "value" => "Другое (описан в коментариях)"
                         ],
                         [
-                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[3][@value=3]",
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='reasons[]']/option[2][@value=3]",
                             "value" => "Изменен приоритет задачи"
                         ],
                         [
-                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[4][@value=17]",
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='reasons[]']/option[3][@value=14]",
                             "value" => "Ожидает группировки"
                         ],
                         [
-                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[5][@value=4]",
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='reasons[]']/option[4][@value=4]",
                             "value" => "Ожидается загрузка товаров в систему"
                         ],
                         [
-                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[6][@value=1]",
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='reasons[]']/option[5][@value=1]",
                             "value" => "Ожидается загрузка фото в товары"
                         ],
                         [
-                            "selector" => "//form[@id='reason-form-status-7']//select[@name='Request[reason_id]']/option[7][@value=2]",
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='reasons[]']/option[6][@value=2]",
                             "value" => "Требуется уточнение информации по задаче"
                         ],
                     ]
@@ -79,7 +71,7 @@ return [
                 "cantSee" => [
                     [
                         [
-                            "selector" => "//form[@id='reason-form-status-3']//select[@name='Request[reason_id]']/option[7]",
+                            "selector" => "//form[@id='reason-form-status-3']//select[@name='reasons[]']/option[7]",
                         ]
                     ]
                 ]
@@ -89,7 +81,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Не показываются заблоченные причины 6 -> 8',
+            'description' => 'Не показываются заблоченные причины статуса 8',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
@@ -98,19 +90,15 @@ return [
                 "canSee" => [
                     [
                         [
-                            "selector" => "//form[@id='complete-modal-form-8']//select[@name='Request[reason_id]']/option[1][@value]",
-                            "value" => "Выберите причину из списка.."
-                        ],
-                        [
-                            "selector" => "//form[@id='complete-modal-form-8']//select[@name='Request[reason_id]']/option[2][@value='15']",
+                            "selector" => "//form[@id='complete-modal-form-8']//select[@name='reasons[]']/option[1][@value='11']",
                             "value" => "Другое (описан в коментариях)"
                         ],
                         [
-                            "selector" => "//form[@id='complete-modal-form-8']//select[@name='Request[reason_id]']/option[3][@value='6']",
+                            "selector" => "//form[@id='complete-modal-form-8']//select[@name='reasons[]']/option[2][@value='6']",
                             "value" => "Не получена запрошенная недостающая информация"
                         ],
                         [
-                            "selector" => "//form[@id='complete-modal-form-8']//select[@name='Request[reason_id]']/option[4][@value='7']",
+                            "selector" => "//form[@id='complete-modal-form-8']//select[@name='reasons[]']/option[3][@value='7']",
                             "value" => "Товары ушли в ошибки"
                         ],
                     ]
@@ -118,7 +106,7 @@ return [
                 "cantSee" => [
                     [
                         [
-                            "selector" => "//form[@id='reason-form-status-3']//select[@name='Request[reason_id]']/option[5]",
+                            "selector" => "//form[@id='reason-form-status-3']//select[@name='reasons[]']/option[4]",
                         ]
                     ]
                 ]

@@ -3414,8 +3414,6 @@ return [
                 "value" => 50
             ],
         ],
-        "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
-        "markets_supervisors" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
         "exports_logs" => [],
         "user_exports" => [],
     ],

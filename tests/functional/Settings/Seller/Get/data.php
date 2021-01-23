@@ -430,7 +430,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?SellerSearch%5Bowox_id%5D=83&SellerSearch%5Bname%5D=&SellerSearch%5Bsupervisor_id%5D=',
+            "url" => '?SellerSearch[owox_id]=83&SellerSearch[name]=&SellerSearch[supervisor_id]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -528,7 +528,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?SellerSearch%5Bowox_id%5D=&SellerSearch%5Bname%5D=Маркет&SellerSearch%5Bsupervisor_id%5D=',
+            "url" => '?SellerSearch[owox_id]=&SellerSearch[name]=Маркет&SellerSearch[supervisor_id]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -626,7 +626,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?SellerSearch%5Bowox_id%5D=&SellerSearch%5Bname%5D=&SellerSearch%5Bsupervisor_id%5D=6',
+            "url" => '?SellerSearch[owox_id]=&SellerSearch[name]=&SellerSearch[supervisor_id]=6',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -735,7 +735,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?SellerSearch%5Bowox_id%5D=999999999999&SellerSearch%5Bname%5D=&SellerSearch%5Bsupervisor_id%5D=',
+            "url" => '?SellerSearch[owox_id]=999999999999&SellerSearch[name]=&SellerSearch[supervisor_id]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -882,7 +882,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?SellerSearch%5Bowox_id%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>\%7C<&SellerSearch%5Bname%5D=&SellerSearch%5Bsupervisor_id%5D=',
+            "url" => '?SellerSearch[owox_id]==~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<&SellerSearch[name]=&SellerSearch[supervisor_id]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1029,7 +1029,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?SellerSearch%5Bowox_id%5D=999&SellerSearch%5Bname%5D=&SellerSearch%5Bsupervisor_id%5D=',
+            "url" => '?SellerSearch[owox_id]=999&SellerSearch[name]=&SellerSearch[supervisor_id]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1051,7 +1051,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?SellerSearch%5Bowox_id%5D=&SellerSearch%5Bname%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>\%7C<&SellerSearch%5Bsupervisor_id%5D=',
+            "url" => '?SellerSearch[owox_id]=&SellerSearch[name]==~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<&SellerSearch[supervisor_id]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [

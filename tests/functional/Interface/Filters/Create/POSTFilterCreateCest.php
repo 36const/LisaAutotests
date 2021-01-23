@@ -29,7 +29,6 @@ class POSTFilterCreateCest
     public function POSTFilterCreate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/filter/create', $providerData['requestBody']);

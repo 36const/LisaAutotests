@@ -35,7 +35,6 @@ class POSTFromStatusesCest
                                      RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);

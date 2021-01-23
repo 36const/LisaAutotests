@@ -30,7 +30,6 @@ class POSTAutochangeCategorySVCest
     public function POSTAutochangeCategorySV(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/request/update?id=1', $providerData['requestBody']);

@@ -31,7 +31,6 @@ class POSTDifficultyCoefCreateWithRequestCest
     public function POSTDifficultyCoefCreateWithRequest(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/difficulty-coef/create', $providerData['requestBody']);

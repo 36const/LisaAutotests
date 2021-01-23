@@ -14,7 +14,7 @@ return [
                 "priority" => 1,
                 "awaiting_correction" => 0,
                 "created_at" => "2020-01-11 00:00:00",
-                "correction_comment" => "https://zabbix3.local/latest.php?groupids%5B%5D=251&hostids%5B%5D=12686&hostids%5B%5D=16666&hostids%5B%5D=16728&hostids%5B%5D=17592&hostids%5B%5D=17607&hostids%5B%5D=17714&hostids%5B%5D=17720&hostids%5B%5D=18537&hostids%5B%5D=19198&application=Memory",
+                "correction_comment" => "https://zabbix3.local/latest.php?groupids[%5D=251&hostids[%5D=12686&hostids[%5D=16666&hostids[%5D=16728&hostids[%5D=17592&hostids[%5D=17607&hostids[%5D=17714&hostids[%5D=17720&hostids[%5D=18537&hostids[%5D=19198&application=Memory",
                 "amount_to_work" => 10,
                 "subject" => "Добавление новых товаров (Работа с товарами Маркетплейса)",
                 "description" => "Описание",
@@ -153,15 +153,8 @@ return [
         "exports_logs" => [],
         "user_exports" => [],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
-        "markets_supervisors" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
-        "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
-        "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
-        "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
         "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
     ],
-    "cooper_fixtures" => [
-        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
-    ]
 ];

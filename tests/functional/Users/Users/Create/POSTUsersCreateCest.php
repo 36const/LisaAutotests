@@ -32,7 +32,6 @@ class POSTUsersCreateCest
     public function POSTUsersCreate(FunctionalTester $I, Example $data, User $user)
     {
         $I->loadDataForTest($data, null);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/user/create', $providerData['requestBody']);

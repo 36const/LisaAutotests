@@ -29,7 +29,6 @@ class POSTCommentCreateCest
     public function POSTCommentCreate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/request-comments/create', $providerData['requestBody']);

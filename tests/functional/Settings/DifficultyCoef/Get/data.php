@@ -902,7 +902,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?DifficultyCoefSearch%5Btype_id%5D=1&DifficultyCoefSearch%5Bdifficulty_coef%5D=',
+            "url" => '?DifficultyCoefSearch[type_id]=1&DifficultyCoefSearch[difficulty_coef]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1016,7 +1016,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?DifficultyCoefSearch%5Btype_id%5D=&DifficultyCoefSearch%5Bdifficulty_coef%5D=2',
+            "url" => '?DifficultyCoefSearch[type_id]=&DifficultyCoefSearch[difficulty_coef]=2',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1107,7 +1107,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?DifficultyCoefSearch%5Btype_id%5D=&DifficultyCoefSearch%5Bdifficulty_coef%5D=&DifficultyCoefSearch%5Bstatus%5D=0',
+            "url" => '?DifficultyCoefSearch[type_id]=&DifficultyCoefSearch[difficulty_coef]=&DifficultyCoefSearch[status]=0',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1234,7 +1234,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?DifficultyCoefSearch%5Btype_id%5D=&DifficultyCoefSearch%5Bdifficulty_coef%5D=9999999999',
+            "url" => '?DifficultyCoefSearch[type_id]=&DifficultyCoefSearch[difficulty_coef]=9999999999',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1419,7 +1419,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?DifficultyCoefSearch%5Btype_id%5D=&DifficultyCoefSearch%5Bdifficulty_coef%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<',
+            "url" => '?DifficultyCoefSearch[type_id]=&DifficultyCoefSearch[difficulty_coef]=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-]%27%2F[%3B.%2C%7D"%3F%7B%3A>%5C%7C<',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1604,7 +1604,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?DifficultyCoefSearch%5Btype_id%5D=&DifficultyCoefSearch%5Bdifficulty_coef%5D=999',
+            "url" => '?DifficultyCoefSearch[type_id]=&DifficultyCoefSearch[difficulty_coef]=999',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [

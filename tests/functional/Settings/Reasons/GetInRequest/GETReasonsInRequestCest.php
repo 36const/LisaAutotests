@@ -9,9 +9,9 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_settings
- * @group GETPriorityOther
+ * @group GETReasonsInRequest
  */
-class GETPriorityOtherCest
+class GETReasonsInRequestCest
 {
     /**@return array*/
     protected function pageProvider()
@@ -25,9 +25,9 @@ class GETPriorityOtherCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function GETPriorityOther(FunctionalTester $I, Example $data)
+    public function GETReasonsInRequest(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data);
+        $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
         $I->amOnPage($providerData['url']);

@@ -29,7 +29,6 @@ class POSTSellerDistributionUpdateCest
     public function POSTSellerDistributionUpdate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/seller/distribution', $providerData['requestBody']);

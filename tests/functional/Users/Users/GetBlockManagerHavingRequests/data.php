@@ -17,8 +17,6 @@ return [
                         ["selector" => User::$warningAlert],
                     ]
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],
@@ -37,8 +35,6 @@ return [
                         ["selector" => User::$warningAlert],
                     ]
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],
@@ -57,8 +53,6 @@ return [
                         ["selector" => User::$warningAlert],
                     ]
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],

@@ -30,7 +30,6 @@ class POSTMassEditCest
     public function POSTMassEdit(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/request/mass-edit', $providerData['requestBody']);
