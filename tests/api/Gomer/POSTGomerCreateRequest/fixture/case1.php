@@ -6,6 +6,5 @@ return [
     ],
     "cooper_fixtures" => [
         "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
-//        "market" => [[]],
     ]
 ];
