@@ -52,8 +52,6 @@ class ExcludedFieldsCreateCest
 
         $I->selectOption(ExcludedFields::$fieldId, 'Ручная загрузка');
         $I->click(ExcludedFields::$addButton);
-        $I->cantSee(ExcludedFields::$errorField);
-        $I->cantSee(ExcludedFields::$errorExcludedField);
         $I->canSeeElement(ExcludedFields::$errorDuplicate);
         $I->canSee('Такая комбинация уже существует');
 
