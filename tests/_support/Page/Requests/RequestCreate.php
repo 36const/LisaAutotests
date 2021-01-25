@@ -46,6 +46,12 @@ class RequestCreate extends FunctionalTester
         $I->amOnPage("/bpm/request/create-by-type?typeId=$type&direction=$direction");
     }
 
+    public function amOnRequestChangeType(int $type, int $direction, int $id)
+    {
+        $I = $this;
+        $I->amOnPage("/bpm/request/change-type?typeId=$type&direction=$direction&id=$id");
+    }
+
     public static function findCheckbox(string $name)
     {
         return "//div[@class='attachments-update']//label[text()='$name']/input[@type='checkbox']";
