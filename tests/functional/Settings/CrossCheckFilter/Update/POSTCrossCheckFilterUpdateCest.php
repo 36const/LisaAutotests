@@ -29,7 +29,6 @@ class POSTCrossCheckFilterUpdateCest
     public function POSTCrossCheckFilterUpdate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/cross-check-filter/update?teamId=1', $providerData['requestBody']);

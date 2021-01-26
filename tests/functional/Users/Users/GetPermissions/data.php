@@ -10,8 +10,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/request/index',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/request/index']"]
@@ -29,8 +27,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/request/new',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         [
@@ -51,8 +47,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/request/new',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         [
@@ -73,8 +67,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/request/new',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         [
@@ -96,8 +88,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/user',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/user/create']"]
@@ -120,8 +110,6 @@ return [
                         ["selector" => "//div[@class='col-md-4']//select[@id='userbpm-status' and @disabled]"]
                     ]
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],
@@ -134,8 +122,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/user',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//table[@class='table table-striped table-bordered']//a[@href='/bpm/user/update?id=4']"]
@@ -153,8 +139,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/user/view?id=4',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//div[@class='user-bpm-view']//a[@href='/bpm/user/update?id=4']"],
@@ -179,8 +163,6 @@ return [
                         ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
                     ]
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],
@@ -199,8 +181,6 @@ return [
                         ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
                     ]
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],
@@ -219,8 +199,6 @@ return [
                         ["selector" => "//table//input[@name='Errors[1][RequestError][items_with_errors]' and @disabled]"],
                     ]
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],
@@ -234,8 +212,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/seller',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/seller']"],
@@ -254,8 +230,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/category',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/category/create']"],
@@ -275,8 +249,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/team',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/team/create']"],
@@ -295,8 +267,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/difficulty-coef',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/difficulty-coef/create']"],
@@ -315,8 +285,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/field-values',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/field-values/create']"],
@@ -335,8 +303,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/reason',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/reason/create']"],
@@ -355,8 +321,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/priority',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/priority/create']"],
@@ -375,8 +339,6 @@ return [
         'provider_data' => [
             "url" => '/bpm/excluded-fields',
             "pageObjects" => [
-                "canSee" => [
-                ],
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/excluded-fields']"],
@@ -439,8 +401,6 @@ return [
 
                     ],
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],
@@ -460,8 +420,6 @@ return [
 
                     ],
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],

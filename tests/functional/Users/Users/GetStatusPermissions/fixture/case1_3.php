@@ -2,9 +2,6 @@
 
 return [
     "lisa_fixtures" => [
-        "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
-        "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
-        "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
         "request_errors" => [],
@@ -44,83 +41,6 @@ return [
                 "sv_report_periods" => null,
                 "cross_check_status" => '0',
                 "cross_check_manager_id" => null,
-            ],
-        ],
-        "requests_fields" => [
-            [
-                'request_id' => 1,
-                'field_id' => 1,
-                'value' => 1,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 49,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 50,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 51,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 52,
-                'value' => 2,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 53,
-                'value' => 0.5,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 54,
-                'value' => 1,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 60,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 64,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 101,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 122,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 142,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 143,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 146,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 158,
-                'value' => 0,
             ],
         ],
         "user_permissions" => [

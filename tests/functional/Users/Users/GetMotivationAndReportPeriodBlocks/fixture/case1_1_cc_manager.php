@@ -41,87 +41,9 @@ return [
                 "child_count" => 0
             ]
         ],
-        'requests_fields' => [
-            [
-                'request_id' => 1,
-                'field_id' => 1,
-                'value' => 1,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 49,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 50,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 51,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 52,
-                'value' => 2,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 53,
-                'value' => 0.5,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 54,
-                'value' => 1,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 60,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 64,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 101,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 122,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 142,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 143,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 146,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 158,
-                'value' => 0,
-            ],
-        ],
         "observers" => [],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
-        "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
         "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
         "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
         "user_bpm" => [
@@ -234,9 +156,6 @@ return [
                 "permission_name" => "viewOwnDashboards"
             ],
         ]
-    ],
-    "cooper_fixtures" => [
-        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
     ],
     "gomer_fixtures" => [
         "users" => [

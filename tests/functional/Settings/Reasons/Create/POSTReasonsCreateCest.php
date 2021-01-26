@@ -7,7 +7,7 @@ use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
- * @group lisa_functional
+ * @group _lisa_functional
  * @group lisa_functional_settings
  * @group POSTReasons
  * @group POSTReasonsCreate
@@ -29,7 +29,6 @@ class POSTReasonsCreateCest
     public function POSTReasonsCreate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/reason/create', $providerData['requestBody']);

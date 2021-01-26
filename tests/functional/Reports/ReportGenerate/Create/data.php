@@ -18,7 +18,30 @@ return [
                 'Report[type]' => '0',
                 'Report[user_field]' => 'supervisor_id_fix_data'
             ],
-            'db' => [
+            'db_1' => [
+                'lisa_fixtures' => [
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["1"], "userField": "supervisor_id_fix_data", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at" => null,
+                            "generation_time" => null,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
                 'lisa_fixtures' => [
                     "report_period_request_fields" => [
                         [
@@ -70,6 +93,25 @@ return [
                             "value" => 10
                         ]
                     ],
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["1"], "userField": "supervisor_id_fix_data", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at >=" => date("Y-m-d"),
+                            "generation_time >" => 0,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 2,
+                        ]
+                    ]
                 ]
             ],
             "pageObjects" => [
@@ -88,8 +130,6 @@ return [
                             "value" => 'Готов'
                         ]
                     ]
-                ],
-                "cantSee" => [
                 ],
             ]
         ]
@@ -110,7 +150,30 @@ return [
                 'Report[type]' => '0',
                 'Report[user_field]' => 'supervisor_id_fix_data'
             ],
-            'db' => [
+            'db_1' => [
+                'lisa_fixtures' => [
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["1"], "userField": "supervisor_id_fix_data", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at" => null,
+                            "generation_time" => null,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
                 'lisa_fixtures' => [
                     "report_period_request_fields" => [
                         [
@@ -168,6 +231,25 @@ return [
                             "value" => 20
                         ]
                     ],
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["1"], "userField": "supervisor_id_fix_data", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at >=" => date("Y-m-d"),
+                            "generation_time >" => 0,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 2,
+                        ]
+                    ]
                 ]
             ],
             "pageObjects" => [
@@ -186,8 +268,6 @@ return [
                             "value" => 'Готов'
                         ]
                     ]
-                ],
-                "cantSee" => [
                 ],
             ]
         ]
@@ -208,7 +288,30 @@ return [
                 'Report[type]' => '0',
                 'Report[user_field]' => 'supervisor_id_fix_data'
             ],
-            'db' => [
+            'db_1' => [
+                'lisa_fixtures' => [
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["1"], "userField": "supervisor_id_fix_data", "reportPeriodId": "4", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at" => null,
+                            "generation_time" => null,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_с_фиксацией_' . date('Y-m-d', strtotime('-6 days')) . '-2021-12-31' .
+                                '__' . date('Y-m-d'),
+                            "status" => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
                 'lisa_fixtures' => [
                     "report_period_request_fields" => [
                         [
@@ -326,6 +429,25 @@ return [
                             "value" => 30
                         ]
                     ],
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["1"], "userField": "supervisor_id_fix_data", "reportPeriodId": "4", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at >=" => date("Y-m-d"),
+                            "generation_time >" => 0,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_с_фиксацией_' . date('Y-m-d', strtotime('-6 days')) . '-2021-12-31' .
+                                '__' . date('Y-m-d'),
+                            "status" => 2,
+                        ]
+                    ]
                 ]
             ],
             "pageObjects" => [
@@ -344,8 +466,6 @@ return [
                             "value" => 'Готов'
                         ]
                     ]
-                ],
-                "cantSee" => [
                 ],
             ]
         ]
@@ -367,7 +487,30 @@ return [
                 'Report[type]' => '1',
                 'Report[user_field]' => 'supervisor_id_fix_data'
             ],
-            'db' => [
+            'db_1' => [
+                'lisa_fixtures' => [
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["5"], "userField": "supervisor_id_fix_data", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at" => null,
+                            "generation_time" => null,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_(сводный)_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
                 'lisa_fixtures' => [
                     "report_period_request_fields" => [
                         [
@@ -419,6 +562,25 @@ return [
                             "value" => 10
                         ]
                     ],
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["5"], "userField": "supervisor_id_fix_data", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at >=" => date("Y-m-d"),
+                            "generation_time >" => 0,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_(сводный)_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 2,
+                        ]
+                    ]
                 ]
             ],
             "pageObjects" => [
@@ -437,8 +599,6 @@ return [
                             "value" => 'Готов'
                         ]
                     ]
-                ],
-                "cantSee" => [
                 ],
             ]
         ]
@@ -459,7 +619,30 @@ return [
                 'Report[type]' => '1',
                 'Report[user_field]' => 'supervisor_id_fix_data'
             ],
-            'db' => [
+            'db_1' => [
+                'lisa_fixtures' => [
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["2"], "userField": "supervisor_id_fix_data", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at" => null,
+                            "generation_time" => null,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_(сводный)_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
                 'lisa_fixtures' => [
                     "report_period_request_fields" => [
                         [
@@ -517,6 +700,25 @@ return [
                             "value" => 20
                         ]
                     ],
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["2"], "userField": "supervisor_id_fix_data", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at >=" => date("Y-m-d"),
+                            "generation_time >" => 0,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_(сводный)_с_фиксацией_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 2,
+                        ]
+                    ]
                 ]
             ],
             "pageObjects" => [
@@ -535,8 +737,6 @@ return [
                             "value" => 'Готов'
                         ]
                     ]
-                ],
-                "cantSee" => [
                 ],
             ]
         ]
@@ -557,7 +757,30 @@ return [
                 'Report[type]' => '1',
                 'Report[user_field]' => 'supervisor_id_fix_data'
             ],
-            'db' => [
+            'db_1' => [
+                'lisa_fixtures' => [
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["2"], "userField": "supervisor_id_fix_data", "reportPeriodId": "4", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at" => null,
+                            "generation_time" => null,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_(сводный)_с_фиксацией_' . date('Y-m-d', strtotime('-6 days')) . '-2021-12-31' .
+                                '__' . date('Y-m-d'),
+                            "status" => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
                 'lisa_fixtures' => [
                     "report_period_request_fields" => [
                         [
@@ -675,6 +898,25 @@ return [
                             "value" => 30
                         ]
                     ],
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["2"], "userField": "supervisor_id_fix_data", "reportPeriodId": "4", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at >=" => date("Y-m-d"),
+                            "generation_time >" => 0,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_(сводный)_с_фиксацией_' . date('Y-m-d', strtotime('-6 days')) . '-2021-12-31' .
+                                '__' . date('Y-m-d'),
+                            "status" => 2,
+                        ]
+                    ]
                 ]
             ],
             "pageObjects" => [
@@ -693,8 +935,6 @@ return [
                             "value" => 'Готов'
                         ]
                     ]
-                ],
-                "cantSee" => [
                 ],
             ]
         ]
@@ -716,9 +956,49 @@ return [
                 'Report[type]' => '0',
                 'Report[user_field]' => 'supervisor_id'
             ],
-            'db' => [
+            'db_1' => [
+                'lisa_fixtures' => [
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["1", "2", "3", "4"], "userField": "supervisor_id", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at" => null,
+                            "generation_time" => null,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'reports_4_' . date('Y-m-d'),
+                            "status" => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
                 'lisa_fixtures' => [
                     "report_period_request_fields" => [],
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["1", "2", "3", "4"], "userField": "supervisor_id", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at >=" => date("Y-m-d"),
+                            "generation_time >" => 0,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'reports_4_' . date('Y-m-d'),
+                            "status" => 2,
+                        ]
+                    ]
                 ]
             ],
             "pageObjects" => [
@@ -736,8 +1016,6 @@ return [
                             "value" => 'Готов'
                         ]
                     ]
-                ],
-                "cantSee" => [
                 ],
             ]
         ]
@@ -758,9 +1036,51 @@ return [
                 'Report[type]' => '0',
                 'Report[user_field]' => 'manager_id'
             ],
-            'db' => [
+            'db_1' => [
+                'lisa_fixtures' => [
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["1"], "userField": "manager_id", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at" => null,
+                            "generation_time" => null,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
                 'lisa_fixtures' => [
                     "report_period_request_fields" => [],
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["1"], "userField": "manager_id", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at >=" => date("Y-m-d"),
+                            "generation_time >" => 0,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 2,
+                        ]
+                    ]
                 ]
             ],
             "pageObjects" => [
@@ -779,8 +1099,6 @@ return [
                             "value" => 'Готов'
                         ]
                     ]
-                ],
-                "cantSee" => [
                 ],
             ]
         ]
@@ -802,9 +1120,51 @@ return [
                 'Report[type]' => '1',
                 'Report[user_field]' => 'supervisor_id'
             ],
-            'db' => [
+            'db_1' => [
+                'lisa_fixtures' => [
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["5"], "userField": "supervisor_id", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at" => null,
+                            "generation_time" => null,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_(сводный)_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
                 'lisa_fixtures' => [
                     "report_period_request_fields" => [],
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["5"], "userField": "supervisor_id", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at >=" => date("Y-m-d"),
+                            "generation_time >" => 0,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'Всё_во_всём_(сводный)_2020-07-01-' . date("Y-m-d", strtotime('+1 week')) .
+                                '__' . date("Y-m-d"),
+                            "status" => 2,
+                        ]
+                    ]
                 ]
             ],
             "pageObjects" => [
@@ -823,8 +1183,6 @@ return [
                             "value" => 'Готов'
                         ]
                     ]
-                ],
-                "cantSee" => [
                 ],
             ]
         ]
@@ -845,9 +1203,49 @@ return [
                 'Report[type]' => '1',
                 'Report[user_field]' => 'manager_id'
             ],
-            'db' => [
+            'db_1' => [
+                'lisa_fixtures' => [
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["5", "6", "7", "8"], "userField": "manager_id", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at" => null,
+                            "generation_time" => null,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'reports_4_' . date('Y-m-d'),
+                            "status" => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
                 'lisa_fixtures' => [
                     "report_period_request_fields" => [],
+                    "exports_logs" => [
+                        [
+                            "export_id" => 1,
+                            "user_id" => 4,
+                            "conditions" => '{"teamId": 17, "reportIds": ["5", "6", "7", "8"], "userField": "manager_id", "reportPeriodId": "3", "reportLoadAllUsers": true, "reportLoadYourTeam": true, "reportLoadMarketUsers": true}',
+                            "created_at >=" => date("Y-m-d"),
+                            "generated_at >=" => date("Y-m-d"),
+                            "generation_time >" => 0,
+                        ]
+                    ],
+                    "user_exports" => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "title >" => 'reports_4_' . date('Y-m-d'),
+                            "status" => 2,
+                        ]
+                    ]
                 ]
             ],
             "pageObjects" => [
@@ -865,8 +1263,6 @@ return [
                             "value" => 'Готов'
                         ]
                     ]
-                ],
-                "cantSee" => [
                 ],
             ]
         ]

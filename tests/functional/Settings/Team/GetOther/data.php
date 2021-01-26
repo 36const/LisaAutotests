@@ -49,7 +49,6 @@ return [
                     [
                         ["selector" => "//select[@id='userbpm-team']//option[text()='Административная команда']"],
                     ]
-
                 ]
             ]
         ]
@@ -73,8 +72,6 @@ return [
                         ["selector" => "//select[@id='team-status' and @disabled]"],
                     ],
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],

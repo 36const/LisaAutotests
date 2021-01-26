@@ -35,7 +35,6 @@ class POSTFromStatusesCest
                                      RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
@@ -50,9 +49,6 @@ class POSTFromStatusesCest
             $correction->amOnCorrection(1);
             $correction->checkFields($providerData['requestBody']);
         }
-
-        $I->setViewTabs();
-        $view->checkFields($providerData['db']);
 
         $I->checkRabbitMQ($providerData);
     }

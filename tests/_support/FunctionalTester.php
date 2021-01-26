@@ -46,14 +46,6 @@ class FunctionalTester extends \Codeception\Actor
         $I->amOnPage('/');
     }
 
-    public function setViewTabs()
-    {
-        $I = $this;
-        $I->cantSeeCookie('viewTabsEnabled');
-        $I->sendGET('/bpm/request/enable-tabs');
-        $I->canSeeCookie('viewTabsEnabled');
-    }
-
     public function changeStatus($requestParameter, $requestBody)
     {
         $I = $this;
@@ -143,6 +135,24 @@ class FunctionalTester extends \Codeception\Actor
                 foreach ($queueMessages as $message) {
                     $I->canSeeMessageInQueueContainsText($queueName, $message);
                 }
+            }
+        }
+    }
+
+    public function checkRedis($redis)
+    {
+        $I = $this;
+
+        if (isset($redis['canSee'])) {
+            foreach ($redis['canSee'] as $key => $value) {
+                $I->assertEquals(1, \Yii::$app->redis->exists($key));
+                $I->assertSame($value, \Yii::$app->redis->get($key));
+            }
+        }
+
+        if (isset($redis['cantSee'])) {
+            foreach ($redis['cantSee'] as $key => $value) {
+                $I->assertEquals(0, \Yii::$app->redis->exists($key));
             }
         }
     }

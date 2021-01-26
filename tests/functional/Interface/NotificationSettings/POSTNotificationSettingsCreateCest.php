@@ -28,7 +28,6 @@ class POSTNotificationSettingsCreateCest
     public function POSTNotificationSettings(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/notification-settings/update', $providerData['requestBody']);

@@ -29,7 +29,6 @@ class POSTFieldValuesCreateCest
     public function POSTFieldValuesCreate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/field-values/create', $providerData['requestBody']);

@@ -33,7 +33,6 @@ class POSTRolesUpdateCest
     public function POSTRolesUpdate(FunctionalTester $I, Example $data, Roles $roles)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/roles/update?id=1', $providerData['requestBody']);

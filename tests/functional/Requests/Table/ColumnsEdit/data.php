@@ -1347,7 +1347,7 @@ return [
         'provider_data' => [
             "url" => 'completed',
             'requestBody' => [
-                'visibleColumns' => ['promo_desc', 'adding_goods_to_new_category', 'used_ref', 'updating_photos', 'updating_description', 'updating_characteristics', 'automoderation', 'adding_instructions', 'stop_brands', 'with_pallets', 'lots', 'with_video', 'mobile_courier'],
+                'visibleColumns' => ['promo_desc', 'adding_goods_to_new_category', 'used_ref', 'updating_photos', 'updating_description', 'updating_characteristics', 'automoderation', 'adding_instructions', 'stop_brands', 'with_pallets', 'lots', 'with_video', 'mobile_courier', 'ua_fields'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1355,7 +1355,7 @@ return [
                         [
                             "id" => 1,
                             "user_id" => 4,
-                            "columns_list" => '["promo_desc", "adding_goods_to_new_category", "used_ref", "updating_photos", "updating_description", "updating_characteristics", "automoderation", "adding_instructions", "stop_brands", "with_pallets", "lots", "with_video", "mobile_courier"]'
+                            "columns_list" => '["promo_desc", "adding_goods_to_new_category", "used_ref", "updating_photos", "updating_description", "updating_characteristics", "automoderation", "adding_instructions", "stop_brands", "with_pallets", "lots", "with_video", "mobile_courier", "ua_fields"]'
                         ]
                     ],
                 ]
@@ -1427,6 +1427,10 @@ return [
                             "selector" => "//thead/tr/th[@data-col-seq='mobile_courier']",
                             "value" => "По заявке с MobileCourier"
                         ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='ua_fields']",
+                            "value" => "Укр. поля"
+                        ],
                     ],
                     "Заявка 6" => [
                         ["selector" => Request::requestInTable(1, 'id', 7)],
@@ -1446,6 +1450,7 @@ return [
                         ["selector" => Request::requestInTable(1, 'lots', 'Нет')],
                         ["selector" => Request::requestInTable(1, 'with_video', 'Нет')],
                         ["selector" => Request::requestInTable(1, 'mobile_courier', 'Нет')],
+                        ["selector" => Request::requestInTable(1, 'ua_fields', 'Нет')],
                     ],
                     "Заявка 7" => [
                         ["selector" => Request::requestInTable(2, 'id', 6)],
@@ -1465,6 +1470,7 @@ return [
                         ["selector" => Request::requestInTable(2, 'lots', 'Нет')],
                         ["selector" => Request::requestInTable(2, 'with_video', 'Нет')],
                         ["selector" => Request::requestInTable(2, 'mobile_courier', 'Нет')],
+                        ["selector" => Request::requestInTable(2, 'ua_fields', 'Нет')],
                     ],
                 ],
                 "cantSee" => [

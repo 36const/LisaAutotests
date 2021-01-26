@@ -30,7 +30,6 @@ class GETViewTabsCest
     public function GETViewTabs(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->cantSeeCookie('viewTabsEnabled');
@@ -39,7 +38,9 @@ class GETViewTabsCest
         $I->canSeeResponseCodeIs(200);
 
         $I->canSeeCookie('viewTabsEnabled');
+
         $view->amOnView(1);
         $I->checkObjectsOnPage($providerData['pageObjects']);
+        $view->checkFields($providerData['db']);
     }
 }

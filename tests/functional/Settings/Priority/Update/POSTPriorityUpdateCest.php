@@ -31,7 +31,6 @@ class POSTPriorityUpdateCest
     public function POSTPriorityUpdateCest(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/priority/update?id=1', $providerData['requestBody']);

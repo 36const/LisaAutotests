@@ -464,7 +464,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?RequestEditingSearch%5Bid%5D=11&RequestEditingSearch%5Brequest_field%5D=&RequestEditingSearch%5Brequest_status%5D=',
+            "url" => '?RequestEditingSearch[id]=11&RequestEditingSearch[request_field]=&RequestEditingSearch[request_status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -582,7 +582,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?RequestEditingSearch%5Bid%5D=&RequestEditingSearch%5Brequest_field%5D=subject&RequestEditingSearch%5Brequest_status%5D=',
+            "url" => '?RequestEditingSearch[id]=&RequestEditingSearch[request_field]=subject&RequestEditingSearch[request_status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -835,7 +835,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?RequestEditingSearch%5Bid%5D=&RequestEditingSearch%5Brequest_field%5D=&RequestEditingSearch%5Brequest_status%5D=1',
+            "url" => '?RequestEditingSearch[id]=&RequestEditingSearch[request_field]=&RequestEditingSearch[request_status]=1',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1094,7 +1094,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?RequestEditingSearch%5Bid%5D=9999999999&RequestEditingSearch%5Brequest_field%5D=&RequestEditingSearch%5Brequest_status%5D=',
+            "url" => '?RequestEditingSearch[id]=9999999999&RequestEditingSearch[request_field]=&RequestEditingSearch[request_status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1557,7 +1557,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?RequestEditingSearch%5Bid%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&RequestEditingSearch%5Brequest_field%5D=&RequestEditingSearch%5Brequest_status%5D=',
+            "url" => '?RequestEditingSearch[id]==~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<&RequestEditingSearch[request_field]=&RequestEditingSearch[request_status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -2020,7 +2020,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?RequestEditingSearch%5Bid%5D=999&RequestEditingSearch%5Brequest_field%5D=&RequestEditingSearch%5Brequest_status%5D=',
+            "url" => '?RequestEditingSearch[id]=999&RequestEditingSearch[request_field]=&RequestEditingSearch[request_status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [

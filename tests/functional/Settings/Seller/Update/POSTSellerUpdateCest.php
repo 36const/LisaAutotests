@@ -30,7 +30,6 @@ class POSTSellerUpdateCest
     public function POSTSellerUpdate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/seller/' . $providerData['requestParameter'], $providerData['requestBody']);

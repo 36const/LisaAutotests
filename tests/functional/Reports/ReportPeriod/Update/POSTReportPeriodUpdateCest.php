@@ -29,7 +29,6 @@ class POSTReportPeriodUpdateCest
     public function POSTReportPeriodUpdate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/report-period/update?id=1', $providerData['requestBody']);

@@ -30,7 +30,6 @@ class POSTSellerCreateCest
     public function POSTSellerCreate(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST($providerData['url'], $providerData['requestBody']);

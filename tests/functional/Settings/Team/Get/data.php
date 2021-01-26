@@ -659,7 +659,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?TeamSearch%5Bid%5D=6&TeamSearch%5Bname%5D=&TeamSearch%5Bdirection%5D=&TeamSearch%5Bstatus%5D=',
+            "url" => '?TeamSearch[id]=6&TeamSearch[name]=&TeamSearch[direction]=&TeamSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -767,7 +767,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?TeamSearch%5Bid%5D=&TeamSearch%5Bname%5D=Fash&TeamSearch%5Bdirection%5D=&TeamSearch%5Bstatus%5D=',
+            "url" => '?TeamSearch[id]=&TeamSearch[name]=Fash&TeamSearch[direction]=&TeamSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -875,7 +875,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?TeamSearch%5Bid%5D=&TeamSearch%5Bname%5D=&TeamSearch%5Bdirection%5D=2&TeamSearch%5Bstatus%5D=',
+            "url" => '?TeamSearch[id]=&TeamSearch[name]=&TeamSearch[direction]=2&TeamSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -983,7 +983,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?TeamSearch%5Bid%5D=&TeamSearch%5Bname%5D=&TeamSearch%5Bdirection%5D=&TeamSearch%5Bstatus%5D=1',
+            "url" => '?TeamSearch[id]=&TeamSearch[name]=&TeamSearch[direction]=&TeamSearch[status]=1',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1135,7 +1135,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?TeamSearch%5Bid%5D=9999999999&TeamSearch%5Bname%5D=&TeamSearch%5Bdirection%5D=&TeamSearch%5Bstatus%5D=',
+            "url" => '?TeamSearch[id]=9999999999&TeamSearch[name]=&TeamSearch[direction]=&TeamSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1304,7 +1304,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?TeamSearch%5Bid%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&TeamSearch%5Bname%5D=&TeamSearch%5Bdirection%5D=&TeamSearch%5Bstatus%5D=',
+            "url" => '?TeamSearch[id]=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-]%27%2F[%3B.%2C%7D"%3F%7B%3A>%5C%7C<&TeamSearch[name]=&TeamSearch[direction]=&TeamSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1473,7 +1473,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?TeamSearch%5Bid%5D=999&TeamSearch%5Bname%5D=&TeamSearch%5Bdirection%5D=&TeamSearch%5Bstatus%5D=',
+            "url" => '?TeamSearch[id]=999&TeamSearch[name]=&TeamSearch[direction]=&TeamSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [
@@ -1495,7 +1495,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?TeamSearch%5Bid%5D=&TeamSearch%5Bname%5D=%3D~%7D%21%40%23%24%25%5E%26*%28%29_%2B%60-%5D%27%2F%5B%3B.%2C%7D"%3F%7B%3A>%5C%7C<&TeamSearch%5Bdirection%5D=&TeamSearch%5Bstatus%5D=',
+            "url" => '?TeamSearch[id]=&TeamSearch[name]==~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<&TeamSearch[direction]=&TeamSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Ошибка" => [

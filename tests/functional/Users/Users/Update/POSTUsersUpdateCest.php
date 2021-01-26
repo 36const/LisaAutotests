@@ -33,7 +33,6 @@ class POSTUsersUpdateCest
     public function POSTUsersUpdate(FunctionalTester $I, Example $data, User $user)
     {
         $I->loadDataForTest($data, null);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/user/update?id=4', $providerData['requestBody']);

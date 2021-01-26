@@ -21,10 +21,7 @@ return [
                         ["selector" => Request::requestInTable(6, 'id', 11)],
                     ]
                 ],
-                "cantSee" => [
-                ],
             ],
-
         ]
     ],
 
@@ -42,10 +39,7 @@ return [
                         ["selector" => Request::requestInTable(2, 'id', 1)],
                     ]
                 ],
-                "cantSee" => [
-                ],
             ],
-
         ]
     ],
 
@@ -62,10 +56,7 @@ return [
                         ["selector" => Request::$emptyTable],
                     ]
                 ],
-                "cantSee" => [
-                ],
             ],
-
         ]
     ],
 
@@ -83,10 +74,7 @@ return [
                         ["selector" => Request::requestInTable(2, 'id', 5)],
                     ]
                 ],
-                "cantSee" => [
-                ],
             ],
-
         ]
     ],
 
@@ -103,10 +91,7 @@ return [
                         ["selector" => Request::requestInTable(1, 'id', 23)],
                     ]
                 ],
-                "cantSee" => [
-                ],
             ],
-
         ]
     ],
 

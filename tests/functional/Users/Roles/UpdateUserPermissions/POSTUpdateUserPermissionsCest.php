@@ -33,7 +33,6 @@ class POSTUpdateUserPermissionsCest
     public function POSTUpdateUserPermissions(FunctionalTester $I, Example $data, Roles $roles)
     {
         $I->loadDataForTest($data, null);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/roles/update?id=5', $providerData['requestBody']);

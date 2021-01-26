@@ -29,7 +29,6 @@ class POSTReportPatternUpdateCest
     public function POSTReportPatternUpdate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/report/update?id=1', $providerData['requestBody']);

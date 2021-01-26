@@ -30,7 +30,6 @@ class GETMotivationAndReportPeriodBlocksCest
     public function GETMotivationAndReportPeriodBlocks(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, null);
-
         $providerData = $data['provider_data'];
 
         $view->amOnView(1);

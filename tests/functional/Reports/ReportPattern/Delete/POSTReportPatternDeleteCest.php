@@ -29,7 +29,6 @@ class POSTReportPatternDeleteCest
     public function POSTReportPatternDelete(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/report/delete?id=1', $providerData['requestBody']);

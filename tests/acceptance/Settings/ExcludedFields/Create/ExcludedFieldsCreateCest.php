@@ -52,8 +52,6 @@ class ExcludedFieldsCreateCest
 
         $I->selectOption(ExcludedFields::$fieldId, 'Ручная загрузка');
         $I->click(ExcludedFields::$addButton);
-        $I->cantSee(ExcludedFields::$errorField);
-        $I->cantSee(ExcludedFields::$errorExcludedField);
         $I->canSeeElement(ExcludedFields::$errorDuplicate);
         $I->canSee('Такая комбинация уже существует');
 
@@ -72,7 +70,7 @@ class ExcludedFieldsCreateCest
         $I->click(ExcludedFields::$addButton);
         $I->cantSeeElement(ExcludedFields::$errorDuplicate);
         $I->cantSee('Такая комбинация уже существует');
-        $I->wait(1); //без этого доп. ожидания, при проверке таблицы в БД не обнаруживается новая запись
+        $I->wait(2); //без этого доп. ожидания, при проверке таблицы в БД не обнаруживается новая запись
         $I->checkTablesInDB($providerData['db_2']);
     }
 }

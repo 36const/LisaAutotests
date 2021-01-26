@@ -45,7 +45,6 @@ return [
 
                         //Пункты 'Отчёт по супервизорам / Отчёт по исполнителям'
                         ["selector" => "//div[@id='report-user_field']"],
-
                     ]
                 ]
             ]
@@ -96,7 +95,6 @@ return [
                     [
                         //Кнопка перехода в раздел зафиксированных данных по СВ
                         ["selector" => "//a[@href='/bpm/report/fixate']"],
-
                     ]
                 ]
             ]
@@ -144,7 +142,6 @@ return [
 
                         //Пункты 'Отчёт по супервизорам / Отчёт по исполнителям'
                         ["selector" => "//div[@id='report-user_field']"],
-
                     ]
                 ]
             ]
@@ -195,7 +192,6 @@ return [
                     [
                         //Кнопка перехода в раздел зафиксированных данных по СВ
                         ["selector" => "//a[@href='/bpm/report/fixate']"],
-
                     ]
                 ]
             ]
@@ -244,7 +240,6 @@ return [
 
                         //Пункты 'Отчёт по супервизорам / Отчёт по исполнителям'
                         ["selector" => "//div[@id='report-user_field']"],
-
                     ]
                 ]
             ]
@@ -299,7 +294,6 @@ return [
                             "selector" => "//button[@class='btn btn-primary']",
                             "value" => "Сгенерировать отчет"
                         ],
-
                     ]
                 ],
                 "cantSee" => [

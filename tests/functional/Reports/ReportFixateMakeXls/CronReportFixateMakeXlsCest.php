@@ -34,6 +34,7 @@ class CronReportFixateMakeXlsCest
         $I->sendGET('/bpm/report/export' . $providerData['url']);
         $I->seeResponseCodeIs(200);
         $I->canSeeNumberOfMessagesInQueue('lisa_exportGenerating', 1);
+        $I->checkTablesInDB($providerData['db_1']);
 
         $I->runShellCommand('./yii bpm/request/make-xls');
         $I->canSeeInShellOutput('');
@@ -42,5 +43,6 @@ class CronReportFixateMakeXlsCest
 
         $I->amOnPage('/bpm/export/index');
         $I->checkObjectsOnPage($providerData['pageObjects']);
+        $I->checkTablesInDB($providerData['db_2']);
     }
 }

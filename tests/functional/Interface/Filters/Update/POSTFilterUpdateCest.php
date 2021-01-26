@@ -29,7 +29,6 @@ class POSTFilterUpdateCest
     public function POSTFilterUpdate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/filter/update?id=1', $providerData['requestBody']);

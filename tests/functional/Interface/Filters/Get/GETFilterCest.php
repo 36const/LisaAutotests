@@ -28,7 +28,6 @@ class GETFilterCest
     public function GETFilter(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->amOnPage('bpm/filter' . $providerData['url']);

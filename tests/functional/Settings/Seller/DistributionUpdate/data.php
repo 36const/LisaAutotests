@@ -11,7 +11,12 @@ return [
                 'positions' => ['headSupervisor', 'supervisor'],
                 'teamDirections' => ['2', '3']
             ],
-            "pageObjects" => 'Настройки распределения успешно сохранены!'
+            "pageObjects" => 'Настройки распределения успешно сохранены!',
+            'redis' => [
+                "canSee" => [
+                    'lisa_lisaSellerDistribution' => 'a:2:{i:0;s:110:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":[],"excludedUsers":[]}";i:1;N;}'
+                ]
+            ]
         ]
     ],
 
@@ -26,7 +31,12 @@ return [
                 'teamDirections' => ['2', '3'],
                 'includedUsers' => ['4']
             ],
-            "pageObjects" => 'Настройки распределения успешно сохранены!'
+            "pageObjects" => 'Настройки распределения успешно сохранены!',
+            'redis' => [
+                "canSee" => [
+                    'lisa_lisaSellerDistribution' => 'a:2:{i:0;s:113:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":["4"],"excludedUsers":[]}";i:1;N;}'
+                ]
+            ]
         ]
     ],
 
@@ -41,7 +51,12 @@ return [
                 'teamDirections' => ['2', '3'],
                 'excludedUsers' => ['4']
             ],
-            "pageObjects" => 'Настройки распределения успешно сохранены!'
+            "pageObjects" => 'Настройки распределения успешно сохранены!',
+            'redis' => [
+                "canSee" => [
+                    'lisa_lisaSellerDistribution' => 'a:2:{i:0;s:113:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":[],"excludedUsers":["4"]}";i:1;N;}'
+                ]
+            ]
         ]
     ],
 
@@ -57,23 +72,12 @@ return [
                 'includedUsers' => ['4', '6'],
                 'excludedUsers' => ['21', '24']
             ],
-            "pageObjects" => 'Настройки распределения успешно сохранены!'
-        ]
-    ],
-
-    'case4' => [
-        'setting' => [
-            'description' => 'Изменение правил распределения с дополнительными и исключёнными пользователями',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'positions' => ['headSupervisor', 'supervisor'],
-                'teamDirections' => ['2', '3'],
-                'includedUsers' => ['4', '6'],
-                'excludedUsers' => ['21', '24']
-            ],
-            "pageObjects" => 'Настройки распределения успешно сохранены!'
+            "pageObjects" => 'Настройки распределения успешно сохранены!',
+            'redis' => [
+                "canSee" => [
+                    'lisa_lisaSellerDistribution' => 'a:2:{i:0;s:126:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":["4","6"],"excludedUsers":["21","24"]}";i:1;N;}'
+                ]
+            ]
         ]
     ],
 
@@ -89,6 +93,11 @@ return [
                 'excludedUsers' => ['21', '24']
             ],
             "pageObjects" => 'Поле "Должности" не может быть пустым.',
+            'redis' => [
+                "cantSee" => [
+                    'lisa_lisaSellerDistribution' => ''
+                ]
+            ]
         ]
     ],
 
@@ -104,6 +113,11 @@ return [
                 'excludedUsers' => ['21', '24']
             ],
             "pageObjects" => 'Поле "Направления команд" не может быть пустым.',
+            'redis' => [
+                "cantSee" => [
+                    'lisa_lisaSellerDistribution' => ''
+                ]
+            ]
         ]
     ],
 ];

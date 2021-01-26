@@ -28,7 +28,6 @@ class CronSellerCreateCest
     public function CronSellerCreate(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-
         $providerData = $data['provider_data'];
 
         $I->runShellCommand('./yii bpm/seller/appoint-supervisors');

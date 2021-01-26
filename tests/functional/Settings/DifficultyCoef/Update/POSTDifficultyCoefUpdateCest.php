@@ -32,7 +32,6 @@ class POSTDifficultyCoefUpdateCest
     public function POSTDifficultyCoefUpdate(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, 'allUsers');
-
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/difficulty-coef/update?id=1', $providerData['requestBody']);

@@ -20,6 +20,7 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
                         [
@@ -80,6 +81,8 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$blockedCategory],
+                        ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Автомодерация')],
@@ -89,6 +92,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' С палитрой')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
+                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [
@@ -111,7 +115,6 @@ return [
                         ],
                     ]
                 ],
-
             ]
         ]
     ],
@@ -133,6 +136,7 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
                         [
@@ -196,6 +200,8 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$blockedCategory],
+                        ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Автомодерация')],
@@ -206,6 +212,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' С палитрой')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
+                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [
@@ -250,6 +257,7 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
                         [
@@ -302,15 +310,17 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             "pageObjects" => [
-                "Общие" => [
-                    ["selector" => RequestCreate::$subject],
-                    ["selector" => RequestCreate::$description],
-                    ["selector" => RequestCreate::$amount],
-                    ["selector" => RequestCreate::$plannedFinishDate],
-                    ["selector" => RequestCreate::$observers],
-                    ["selector" => RequestCreate::$priority],
-                ],
                 "canSee" => [
+                    "Общие" => [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$blockedCategory],
+                        ["selector" => RequestCreate::$seller]
+                    ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Автомодерация')],
                         ["selector" => RequestCreate::findCheckbox(' БУ, REF')],
@@ -319,6 +329,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' С палитрой')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
+                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [
@@ -341,7 +352,6 @@ return [
                         ],
                     ]
                 ],
-
             ]
         ]
     ],
@@ -355,15 +365,15 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             "pageObjects" => [
-                "Общие" => [
-                    ["selector" => RequestCreate::$subject],
-                    ["selector" => RequestCreate::$description],
-                    ["selector" => RequestCreate::$amount],
-                    ["selector" => RequestCreate::$plannedFinishDate],
-                    ["selector" => RequestCreate::$observers],
-                    ["selector" => RequestCreate::$priority],
-                ],
                 "canSee" => [
+                    "Общие" => [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
+                    ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка') . '[@checked]'],
                         ["selector" => RequestCreate::findCheckbox(' Ручная загрузка')],
@@ -395,6 +405,7 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
                         [
@@ -455,6 +466,7 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$blockedCategory]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Автомодерация')],
@@ -464,6 +476,7 @@ return [
                         ["selector" => RequestCreate::findCheckbox(' С палитрой')],
                         ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
                         ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
+                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [
@@ -486,7 +499,6 @@ return [
                         ],
                     ]
                 ],
-
             ]
         ]
     ],
@@ -508,6 +520,8 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
+                        ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Добавление графики')],
@@ -542,6 +556,8 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
+                        ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Добавление графики')],
@@ -576,6 +592,8 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
+                        ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
@@ -608,6 +626,8 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
+                        ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
@@ -640,6 +660,8 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
+                        ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
@@ -672,6 +694,7 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
                         [
@@ -732,6 +755,8 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
+                        ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
@@ -764,6 +789,8 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
+                        ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
@@ -796,6 +823,8 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
+                        ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
