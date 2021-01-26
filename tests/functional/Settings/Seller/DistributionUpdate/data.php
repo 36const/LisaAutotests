@@ -14,7 +14,7 @@ return [
             "pageObjects" => 'Настройки распределения успешно сохранены!',
             'redis' => [
                 "canSee" => [
-                    'lisa_lisaSellerDistribution' => 'a:2:{i:0;s:110:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":[],"excludedUsers":[]}";i:1;N;}'
+                    'lisaSellerDistribution' => 'a:2:{i:0;s:110:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":[],"excludedUsers":[]}";i:1;N;}'
                 ]
             ]
         ]
@@ -34,7 +34,7 @@ return [
             "pageObjects" => 'Настройки распределения успешно сохранены!',
             'redis' => [
                 "canSee" => [
-                    'lisa_lisaSellerDistribution' => 'a:2:{i:0;s:113:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":["4"],"excludedUsers":[]}";i:1;N;}'
+                    'lisaSellerDistribution' => 'a:2:{i:0;s:113:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":["4"],"excludedUsers":[]}";i:1;N;}'
                 ]
             ]
         ]
@@ -54,7 +54,7 @@ return [
             "pageObjects" => 'Настройки распределения успешно сохранены!',
             'redis' => [
                 "canSee" => [
-                    'lisa_lisaSellerDistribution' => 'a:2:{i:0;s:113:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":[],"excludedUsers":["4"]}";i:1;N;}'
+                    'lisaSellerDistribution' => 'a:2:{i:0;s:113:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":[],"excludedUsers":["4"]}";i:1;N;}'
                 ]
             ]
         ]
@@ -75,7 +75,7 @@ return [
             "pageObjects" => 'Настройки распределения успешно сохранены!',
             'redis' => [
                 "canSee" => [
-                    'lisa_lisaSellerDistribution' => 'a:2:{i:0;s:126:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":["4","6"],"excludedUsers":["21","24"]}";i:1;N;}'
+                    'lisaSellerDistribution' => 'a:2:{i:0;s:126:"{"positions":["headSupervisor","supervisor"],"teamDirections":["2","3"],"includedUsers":["4","6"],"excludedUsers":["21","24"]}";i:1;N;}'
                 ]
             ]
         ]
@@ -95,7 +95,7 @@ return [
             "pageObjects" => 'Поле "Должности" не может быть пустым.',
             'redis' => [
                 "cantSee" => [
-                    'lisa_lisaSellerDistribution' => ''
+                    'lisaSellerDistribution' => ''
                 ]
             ]
         ]
@@ -115,7 +115,7 @@ return [
             "pageObjects" => 'Поле "Направления команд" не может быть пустым.',
             'redis' => [
                 "cantSee" => [
-                    'lisa_lisaSellerDistribution' => ''
+                    'lisaSellerDistribution' => ''
                 ]
             ]
         ]
