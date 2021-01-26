@@ -1,7 +1,7 @@
 <?php
 return [
     "lisa_fixtures" => [
-        "requests" => [
+        'requests' => [
             [
 //                "id" => 1,
                 "author_id" => 4,
@@ -9,15 +9,15 @@ return [
                 "supervisor_id" => 6,
                 "manager_id" => 11,
                 "status" => 9,
-                "direction" => 1,
+                "direction" => 2,
                 "priority" => 2,
                 "awaiting_correction" => 0,
                 "created_at" => '2020-01-01 00:00:00',
                 "correction_comment" => '',
                 "amount_to_work" => 10,
-                "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                "subject" => "Добавление новых товаров (Работа с товарами Маркета)",
                 "description" => 'description',
-                "category_id" => 1,
+                "category_id" => null,
                 "seller_id" => 83,
                 "recommendations" => '',
                 "reason" => null,
@@ -31,39 +31,29 @@ return [
                 "result_comment" => 'Комментарий к результату задачи',
                 "supervisor_comment" => '',
                 "last_change_status_date" => "2020-01-01 00:00:01",
-                "team_direction" => 3,
+                "team_direction" => 2,
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}',
                 "cross_check_status" => '0',
                 "cross_check_manager_id" => null,
-            ],
+            ]
         ],
         'requests_fields' => [
             [
                 'request_id' => 1,
-                'field_id' => 1,
+                'field_id' => 8,
                 'value' => 1,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 21,
+                'field_id' => 15,
                 'value' => 1,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 22,
-                'value' => 6,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 23,
-                'value' => 11,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 24,
-                'value' => 15,
+                'field_id' => 19,
+                'value' => 1,
             ],
             [
                 'request_id' => 1,
@@ -72,23 +62,8 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 26,
-                'value' => 22,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 27,
-                'value' => 24,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 31,
-                'value' => 48,
-            ],
-            [
-                'request_id' => 1,
                 'field_id' => 49,
-                'value' => 10.1,
+                'value' => 60,
             ],
             [
                 'request_id' => 1,
@@ -102,18 +77,8 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 52,
-                'value' => 2,
-            ],
-            [
-                'request_id' => 1,
                 'field_id' => 53,
-                'value' => 0.5,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 54,
-                'value' => 1,
+                'value' => 3,
             ],
             [
                 'request_id' => 1,
@@ -123,46 +88,31 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 64,
-                'value' => 10.1,
+                'value' => 60,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 66,
+                'field_id' => 118,
                 'value' => 10,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 68,
+                'field_id' => 72,
                 'value' => 10,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 69,
+                'field_id' => 73,
                 'value' => 10,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 70,
+                'field_id' => 74,
                 'value' => 10,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 71,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 76,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 77,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 88,
+                'field_id' => 75,
                 'value' => 10,
             ],
             [
@@ -178,7 +128,7 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 94,
-                'value' => 10,
+                'value' => 5,
             ],
             [
                 'request_id' => 1,
@@ -187,8 +137,8 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 111,
-                'value' => 10,
+                'field_id' => 114,
+                'value' => 3,
             ],
             [
                 'request_id' => 1,
@@ -220,7 +170,9 @@ return [
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
+        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
+        "requests_reasons" => [],
         "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
-    ],
+    ]
 ];

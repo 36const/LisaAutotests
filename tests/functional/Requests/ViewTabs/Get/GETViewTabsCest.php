@@ -38,7 +38,9 @@ class GETViewTabsCest
         $I->canSeeResponseCodeIs(200);
 
         $I->canSeeCookie('viewTabsEnabled');
+
         $view->amOnView(1);
         $I->checkObjectsOnPage($providerData['pageObjects']);
+        $view->checkFields($providerData['db']);
     }
 }

@@ -50,9 +50,6 @@ class POSTFromStatusesCest
             $correction->checkFields($providerData['requestBody']);
         }
 
-        $I->setViewTabs();
-        $view->checkFields($providerData['db']);
-
         $I->checkRabbitMQ($providerData);
     }
 }
