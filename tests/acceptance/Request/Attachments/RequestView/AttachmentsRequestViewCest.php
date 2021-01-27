@@ -67,12 +67,12 @@ class AttachmentsRequestViewCest
         $I->checkRabbitMQ($provider_data['RabbitMQ_1']);
 
         //создаём и скачиваем архив
-        //$I->click(RequestView::$downloadArchiveButton);
-        //$I->waitForElement(RequestView::$downloadArchiveButton . '[text()=" Архив генерируется"]');
-        //$I->runShellCommand('./yii bpm/request/make-archive', false);
-        //$I->canSeeResultCodeIs(1);
-        //$I->canSeeInShellOutput(' успешно сгенерирован.');
-        //$I->waitForElement(RequestView::$downloadArchiveButton . '[text()=" Скачать архив"]');
+        $I->click(RequestView::$downloadArchiveButton);
+        $I->waitForElement(RequestView::$downloadArchiveButton . '[text()=" Архив генерируется"]');
+        $I->runShellCommand('./yii bpm/request/make-archive', false);
+        $I->canSeeResultCodeIs(1);
+        $I->canSeeInShellOutput(' успешно сгенерирован.');
+        $I->waitForElement(RequestView::$downloadArchiveButton . '[text()=" Скачать архив"]');
 
         //удаляем первый файл
         $I->click(RequestView::$savedFileTableRow . '//a[@href="#" and @title="Удалить файл"]');

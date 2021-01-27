@@ -6,17 +6,17 @@ return [
             [
                 //"id" => 1,
                 "author_id" => 4,
-                "type_id" => 5,
+                "type_id" => 12,
                 "supervisor_id" => 6,
                 "manager_id" => 11,
-                "status" => 9,
+                "status" => 8,
                 "direction" => 1,
                 "priority" => 2,
                 "awaiting_correction" => 0,
                 "created_at" => '2020-01-01 00:00:00',
                 "correction_comment" => '',
                 "amount_to_work" => 10,
-                "subject" => "Заливка фото с фотостудии (Работа с товарами Розетки)",
+                "subject" => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
                 "description" => 'description',
                 "category_id" => 1,
                 "seller_id" => 5,
@@ -127,6 +127,17 @@ return [
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
+        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
+        'requests_reasons' => [
+            [
+                "request_id" => 1,
+                "reason_id" => 6,
+            ],
+            [
+                "request_id" => 1,
+                "reason_id" => 7,
+            ],
+        ],
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
     ],
 ];
