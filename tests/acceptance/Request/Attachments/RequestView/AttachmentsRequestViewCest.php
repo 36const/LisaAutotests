@@ -32,6 +32,7 @@ class AttachmentsRequestViewCest
     {
         $I->loadDataForTest($data, 'allUsers');
         $provider_data = $data['provider_data'];
+        $I->cleanDir(FunctionalTester::BPM_UPLOADS);
 
         $view->amOnView(1);
         $I->scrollTo('//input[@name="RequestField[3]"]');
@@ -41,6 +42,7 @@ class AttachmentsRequestViewCest
         $I->waitForElement(RequestView::downloadedFile(0));
         $I->cantSeeElement(RequestView::downloadedFile(1));
         $I->cantSeeElement('//div[@class="file-preview"]//div[@class="kv-fileinput-error file-error-message"]');
+        $I->canSeeFileFound('*-.doc', FunctionalTester::BPM_UPLOADS);
 
         //добавляем второй файл с неподходящим расширением
         $I->attachFile('//input[@id="request-uploadedfiles"]', 'Attachments/255exeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexee.exe');
@@ -48,11 +50,15 @@ class AttachmentsRequestViewCest
         $I->waitForElement(RequestView::downloadedFile(0));
         $I->cantSeeElement(RequestView::downloadedFile(1));
         $I->cantSeeElement(RequestView::downloadedFile(2));
+        $I->canSeeFileFound('*-.doc', FunctionalTester::BPM_UPLOADS);
+        $I->cantSeeFileFound('*.exe', FunctionalTester::BPM_UPLOADS);
 
         //удаляем второй файл
         $I->click('//div[contains(@class, "file-preview-error")]//button[@title="Удалить файл"]');
         $I->waitForElement(RequestView::downloadedFile(0));
         $I->cantSeeElement(RequestView::downloadedFile(1));
+        $I->canSeeFileFound('*-.doc', FunctionalTester::BPM_UPLOADS);
+        $I->cantSeeFileFound('*.exe', FunctionalTester::BPM_UPLOADS);
 
         //сохраняем заявку
         $I->wait(1);    //без ожидания иногда не нажимает на кнопку "Сохранить"
@@ -73,6 +79,7 @@ class AttachmentsRequestViewCest
         $I->canSeeResultCodeIs(1);
         $I->canSeeInShellOutput(' успешно сгенерирован.');
         $I->waitForElement(RequestView::$downloadArchiveButton . '[text()=" Скачать архив"]');
+        $I->canSeeFileFound('lisa_*.zip', FunctionalTester::BPM_UPLOADS);
 
         //удаляем первый файл
         $I->click(RequestView::$savedFileTableRow . '//a[@href="#" and @title="Удалить файл"]');

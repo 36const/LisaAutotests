@@ -46,7 +46,7 @@ class CronReportFixateMakeXlsCest
         $I->checkObjectsOnPage($providerData['pageObjects']);
         $I->checkTablesInDB($providerData['db_2']);
         $I->canSeeFileFound(
-            $providerData['db_2']['lisa_fixtures']['user_exports'][0]['title >'] . '*',
+            $providerData['db_2']['lisa_fixtures']['user_exports'][0]['title >'] . '*.xls',
             FunctionalTester::BPM_UPLOADS
         );
     }
