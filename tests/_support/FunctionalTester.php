@@ -46,6 +46,8 @@ class FunctionalTester extends \Codeception\Actor
         $I->amOnPage('/');
     }
 
+    public const BPM_UPLOADS = '/var/www/gomer.local/www/backend/web/tmp/bpm_uploads';
+
     public function changeStatus($requestParameter, $requestBody)
     {
         $I = $this;
