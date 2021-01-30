@@ -29,7 +29,7 @@ class ManagerAndSupervisorSelectingCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function ManagerRequestSelecting(AcceptanceTester $I, Example $data, RequestView $view, Request $request)
+    public function ManagerRequestSelecting(AcceptanceTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, null);
         $I->wantTo('Выбор менеджера в заявке');
@@ -60,11 +60,11 @@ class ManagerAndSupervisorSelectingCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param RequestView $view
+     * @param Request $request
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function ManagerTableSelecting(AcceptanceTester $I, Example $data, RequestView $view, Request $request)
+    public function ManagerTableSelecting(AcceptanceTester $I, Example $data, Request $request)
     {
         $I->loadDataForTest($data, null);
         $I->wantTo('Выбор менеджера в модалке из таблицы');
@@ -90,7 +90,7 @@ class ManagerAndSupervisorSelectingCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function SupervisorRequestSelecting(AcceptanceTester $I, Example $data, RequestView $view, Request $request)
+    public function SupervisorRequestSelecting(AcceptanceTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, null);
         $I->wantTo('Выбор супервайзера в заявке');
@@ -124,11 +124,11 @@ class ManagerAndSupervisorSelectingCest
     /**
      * @param AcceptanceTester $I
      * @param Example $data
-     * @param RequestView $view
+     * @param Request $request
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function SupervisorTableSelecting(AcceptanceTester $I, Example $data, RequestView $view, Request $request)
+    public function SupervisorTableSelecting(AcceptanceTester $I, Example $data, Request $request)
     {
         $I->loadDataForTest($data, null);
         $I->wantTo('Выбор супервайзера в модалке из таблицы');

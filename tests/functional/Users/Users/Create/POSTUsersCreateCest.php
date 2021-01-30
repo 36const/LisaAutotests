@@ -27,7 +27,6 @@ class POSTUsersCreateCest
      * @param User $user
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
-     *
      */
     public function POSTUsersCreate(FunctionalTester $I, Example $data, User $user)
     {

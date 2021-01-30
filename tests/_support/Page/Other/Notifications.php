@@ -4,7 +4,7 @@ namespace lisa\Page\Other;
 
 class Notifications
 {
-    public static function toogleStatusButton(int $id, string $okOrRepeat)
+    public static function toggleStatusButton(int $id, string $okOrRepeat): string
     {
         return "//a[@class='glyphicon glyphicon-$okOrRepeat fa-2x' and @href='/bpm/notification/toggle-status?id=$id']";
     }
@@ -15,22 +15,22 @@ class Notifications
     public static $notifMenu = '//li[@id="lisa-notify-dropdown"]';
     public static $notifAllIsRead = "//li[@id='lisa-notify-dropdown']//ul[text()='Новых нотификаций нет. Дотыкались.']";
 
-    public static function notifMenuTotal(int $count)
+    public static function notifMenuTotal(int $count): string
     {
         return "//span[@id='total-notifications-small' and text()=$count]";
     }
 
-    public static function notifMenuMessage(int $id)
+    public static function notifMenuMessage(int $id): string
     {
         return self::$notifMenu . "//ul//div[@id='notification-$id']";
     }
 
-    public static function notifMenuMessageAction(int $id)
+    public static function notifMenuMessageAction(int $id): string
     {
         return self::notifMenuMessage($id) . "//div[@class='lisa-notification-actions']/a";
     }
 
-    public static function notifMenuFootButton(string $button)
+    public static function notifMenuFootButton(string $button): string
     {
         return self::$notifMenu . "//li[@class='footer no-padding']//a[text()='$button']";
     }

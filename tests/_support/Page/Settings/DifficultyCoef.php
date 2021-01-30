@@ -11,12 +11,12 @@ class DifficultyCoef
     public static $coefStatus = '//select[@id="difficultycoef-status"]';
     public static $saveButton = '//div[@class="difficulty-coef-form"]//button[text()=" Сохранить"]';
 
-    public static function checkbox(int $id)
+    public static function checkbox(int $id): string
     {
         return "//div[@class='difficulty-coef-form']//table//input[@name='fields[$id]']/..";
     }
 
-    public static function errorField(string $text)
+    public static function errorField(string $text): string
     {
         return "//div[@class='difficulty-coef-form']//div[@class='help-block' and text()='$text']";
     }

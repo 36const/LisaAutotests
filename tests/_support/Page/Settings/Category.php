@@ -12,7 +12,8 @@ class Category
     public static $categorySV = '//select[@id="category-supervisor_id"]/../span';
     public static $saveButton = '//div[@class="category-form"]//button[text()=" Сохранить"]';
 
-    public static function errorField(string $text) {
+    public static function errorField(string $text): string
+    {
         return "//div[@class='category-form']//div[@class='help-block' and text()='$text']";
     }
 }

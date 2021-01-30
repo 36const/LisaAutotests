@@ -5,7 +5,7 @@ use lisa\Page\Requests\RequestCreate;
 return [
     'case1_1' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление новых товаров (Работа с товарами Розетки)',
+            'description' => 'Изменение типа на Добавление новых товаров (Работа с товарами Розетки)',
             'type' => 1,
             'direction' => 1
         ],
@@ -14,12 +14,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
@@ -57,6 +51,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -66,7 +66,7 @@ return [
 
     'case1_2' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление новых товаров (Работа с товарами Маркетплейса)',
+            'description' => 'Изменение типа на Добавление новых товаров (Работа с товарами Маркетплейса)',
             'type' => 1,
             'direction' => 2
         ],
@@ -75,12 +75,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -97,6 +91,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         [
                             "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
                             "value" => "anytech"
@@ -121,7 +121,7 @@ return [
 
     'case2_1' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
+            'description' => 'Изменение типа на Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
             'type' => 2,
             'direction' => 1
         ],
@@ -130,12 +130,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
@@ -176,6 +170,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -185,7 +185,7 @@ return [
 
     'case2_2' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
+            'description' => 'Изменение типа на Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
             'type' => 2,
             'direction' => 2
         ],
@@ -194,12 +194,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -217,6 +211,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         [
                             "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
                             "value" => "anytech"
@@ -242,7 +242,7 @@ return [
 
     'case3_1' => [
         'setting' => [
-            'description' => 'Новая заявка на Перенос товаров (Работа с товарами Розетки)',
+            'description' => 'Изменение типа на Перенос товаров (Работа с товарами Розетки)',
             'type' => 3,
             'direction' => 1
         ],
@@ -251,12 +251,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
@@ -294,6 +288,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -303,7 +303,7 @@ return [
 
     'case3_2' => [
         'setting' => [
-            'description' => 'Новая заявка на Перенос товаров (Работа с товарами Маркетплейса)',
+            'description' => 'Изменение типа на Перенос товаров (Работа с товарами Маркетплейса)',
             'type' => 3,
             'direction' => 2
         ],
@@ -312,12 +312,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -334,6 +328,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         [
                             "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
                             "value" => "anytech"
@@ -358,7 +358,7 @@ return [
 
     'case4_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Группировка товаров (Определяется типом задачи)',
+            'description' => 'Изменение типа на Группировка товаров (Определяется типом задачи)',
             'type' => 4,
             'direction' => 0
         ],
@@ -367,12 +367,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -383,6 +377,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -392,7 +392,7 @@ return [
 
     'case5_1' => [
         'setting' => [
-            'description' => 'Новая заявка на Заливка фото с фотостудии (Работа с товарами Розетки)',
+            'description' => 'Изменение типа на Заливка фото с фотостудии (Работа с товарами Розетки)',
             'type' => 5,
             'direction' => 1
         ],
@@ -401,12 +401,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
@@ -444,6 +438,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -453,7 +453,7 @@ return [
 
     'case6_2' => [
         'setting' => [
-            'description' => 'Новая заявка на Проверка скрытых товаров (Работа с товарами Маркетплейса)',
+            'description' => 'Изменение типа на Проверка скрытых товаров (Работа с товарами Маркетплейса)',
             'type' => 6,
             'direction' => 2
         ],
@@ -462,12 +462,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ],
                     "Чекбоксы" => [
@@ -483,6 +477,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         [
                             "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
                             "value" => "anytech"
@@ -507,7 +507,7 @@ return [
 
     'case7_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
+            'description' => 'Изменение типа на Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
             'type' => 7,
             'direction' => 0
         ],
@@ -516,12 +516,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -534,6 +528,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -543,7 +543,7 @@ return [
 
     'case8_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
+            'description' => 'Изменение типа на Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
             'type' => 8,
             'direction' => 0
         ],
@@ -552,12 +552,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -570,6 +564,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -579,7 +579,7 @@ return [
 
     'case9_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление параметров/значений (Определяется типом задачи)',
+            'description' => 'Изменение типа на Добавление параметров/значений (Определяется типом задачи)',
             'type' => 9,
             'direction' => 0
         ],
@@ -588,12 +588,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -604,6 +598,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -613,7 +613,7 @@ return [
 
     'case10_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Изменение существующих параметров/значений (Определяется типом задачи)',
+            'description' => 'Изменение типа на Изменение существующих параметров/значений (Определяется типом задачи)',
             'type' => 10,
             'direction' => 0
         ],
@@ -622,12 +622,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -638,6 +632,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -647,7 +647,7 @@ return [
 
     'case11_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Проектирование структуры (Определяется типом задачи)',
+            'description' => 'Изменение типа на Проектирование структуры (Определяется типом задачи)',
             'type' => 11,
             'direction' => 0
         ],
@@ -656,12 +656,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -672,6 +666,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -681,7 +681,7 @@ return [
 
     'case12_1' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
+            'description' => 'Изменение типа на Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
             'type' => 12,
             'direction' => 1
         ],
@@ -690,12 +690,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
@@ -733,6 +727,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -742,7 +742,7 @@ return [
 
     'case13_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение видео (Определяется типом задачи)',
+            'description' => 'Изменение типа на Добавление/изменение видео (Определяется типом задачи)',
             'type' => 13,
             'direction' => 0
         ],
@@ -751,12 +751,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -767,6 +761,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -776,7 +776,7 @@ return [
 
     'case14_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение размерной сетки (Определяется типом задачи)',
+            'description' => 'Изменение типа на Добавление/изменение размерной сетки (Определяется типом задачи)',
             'type' => 14,
             'direction' => 0
         ],
@@ -785,12 +785,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -801,6 +795,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]
@@ -810,7 +810,7 @@ return [
 
     'case15_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение тегов (Определяется типом задачи)',
+            'description' => 'Изменение типа на Добавление/изменение тегов (Определяется типом задачи)',
             'type' => 15,
             'direction' => 0
         ],
@@ -819,12 +819,6 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$category],
                         ["selector" => RequestCreate::$seller]
                     ],
@@ -835,6 +829,12 @@ return [
                 ],
                 "cantSee" => [
                     [
+                        ["selector" => RequestCreate::$subject],
+                        ["selector" => RequestCreate::$description],
+                        ["selector" => RequestCreate::$amount],
+                        ["selector" => RequestCreate::$plannedFinishDate],
+                        ["selector" => RequestCreate::$observers],
+                        ["selector" => RequestCreate::$priority],
                         ["selector" => RequestCreate::$blockedCategory]
                     ]
                 ]

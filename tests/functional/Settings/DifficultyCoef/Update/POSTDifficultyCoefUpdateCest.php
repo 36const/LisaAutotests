@@ -27,7 +27,6 @@ class POSTDifficultyCoefUpdateCest
      * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
-     *
      */
     public function POSTDifficultyCoefUpdate(FunctionalTester $I, Example $data, RequestView $view)
     {

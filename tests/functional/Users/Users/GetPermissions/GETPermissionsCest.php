@@ -25,7 +25,6 @@ class GETPermissionsCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @dataProvider pageProvider
-     *
      */
     public function GETPermissions(FunctionalTester $I, Example $data)
     {

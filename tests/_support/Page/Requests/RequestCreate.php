@@ -25,17 +25,17 @@ class RequestCreate extends FunctionalTester
     public static $typesList = "//select[@id='types-select' and @name='RequestType']";
     public static $createButtonModal = "//button[@id='create-button' and text()='Создать']";
 
-    public static function typeSelect($typeId)
+    public static function typeSelect($typeId): string
     {
         return static::$typesList . "//option[@value=$typeId]";
     }
 
-    public static function checkboxesDirection(int $directionId)
+    public static function checkboxesDirection(int $directionId): string
     {
         return "//div[@id='checkboxes-direction']//input[@name='direction' and @value='$directionId']";
     }
 
-    public static function errorFieldMessage($field, $text)
+    public static function errorFieldMessage($field, $text): string
     {
         return $field . "/../div[@class='help-block' and contains(text(),'$text')]";
     }
@@ -52,7 +52,7 @@ class RequestCreate extends FunctionalTester
         $I->amOnPage("/bpm/request/change-type?typeId=$type&direction=$direction&id=$id");
     }
 
-    public static function findCheckbox(string $name)
+    public static function findCheckbox(string $name): string
     {
         return "//div[@class='attachments-update']//label[text()='$name']/input[@type='checkbox']";
     }
@@ -102,7 +102,7 @@ class RequestCreate extends FunctionalTester
      * Перевод массивов для проверки БД в массив полей для проверки html создания связанной заявки
      * и исключение из него полей, не отображающихся на странице
      */
-    public function convertDbArrays($dbTablesArray, $requestId)
+    public function convertDbArrays($dbTablesArray, $requestId): array
     {
         $requests = [];
 

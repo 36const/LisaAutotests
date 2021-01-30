@@ -2,6 +2,7 @@
 
 namespace lisa\Page\Requests;
 
+use Exception;
 use lisa\FunctionalTester;
 
 class RequestView extends FunctionalTester
@@ -38,29 +39,29 @@ class RequestView extends FunctionalTester
     public static $searchResults = "//ul[@class='select2-results__options']//li";
 
     /**Список результатов поиска менеджера*/
-    public static function searchCMResult(int $number, string $name)
+    public static function searchCMResult(int $number, string $name): string
     {
         return RequestView::$searchResults . "[$number]//span[text() = '$name']";
     }
 
     /**Список результатов поиска супервайзера*/
-    public static function searchSVResult(int $number, string $name)
+    public static function searchSVResult(int $number, string $name): string
     {
         return RequestView::$searchResults . "[$number][text() = '$name']";
     }
 
     /**Список готовых значений поля*/
-    public static function listField(string $name)
+    public static function listField(string $name): string
     {
         return "//select[@name='$name']/..//ul[@class='select2-selection__rendered']";
     }
 
-    public static function findCheckbox(string $name)
+    public static function findCheckbox(string $name): string
     {
         return "//td[@class='checkboxes']//label[text()='$name']/input[@type='checkbox']";
     }
 
-    public static function downloadedFile(int $id)
+    public static function downloadedFile(int $id): string
     {
         return "//div[contains(@class,'file-input')]//div[@id='thumb-request-uploadedfiles-init-$id']";
     }
@@ -182,7 +183,7 @@ class RequestView extends FunctionalTester
      * Перевод массивов для проверки БД в массив полей для проверки html
      * и исключение из него полей, не отображающихся на странице
      */
-    public function convertDbArrays($dbTablesArray, $otherTypesFields)
+    public function convertDbArrays($dbTablesArray, $otherTypesFields): array
     {
         $requests = [];
 
@@ -301,7 +302,7 @@ class RequestView extends FunctionalTester
                         $I->canSeeInField($field, $value);
                     }
 
-                } catch (\Exception $exception) {
+                } catch (Exception $exception) {
                     continue;
                 }
             }

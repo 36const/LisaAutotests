@@ -10,9 +10,9 @@ use lisa\Page\Requests\RequestCreate;
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_requests
- * @group GETCreateRequest
+ * @group GETChangeType
  */
-class GETCreateRequestCest
+class GETChangeTypeCest
 {
     /**@return array*/
     protected function pageProvider()
@@ -27,13 +27,13 @@ class GETCreateRequestCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function GETCreateRequest(FunctionalTester $I, Example $data, RequestCreate $create)
+    public function GETChangeType(FunctionalTester $I, Example $data, RequestCreate $create)
     {
         $I->loadDataForTest($data);
         $setting = $data['setting'];
         $providerData = $data['provider_data'];
 
-        $create->amOnRequestCreate($setting['type'], $setting['direction']);
+        $create->amOnRequestChangeType($setting['type'], $setting['direction'], 1);
 
         $I->canSeeInTitle($setting['description']);
         $I->canSee($setting['description'], ['class' => 'global-caption']);

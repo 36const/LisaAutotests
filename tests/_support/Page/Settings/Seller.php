@@ -11,7 +11,8 @@ class Seller
     public static $saveButton = '//div[@class="sellers-form"]//button[text()=" Сохранить"]';
     public static $clearButton = '//div[@class="form-group field-marketsupervisor-supervisor_id required"]//span[@class="select2-selection__clear"][text()="×"]';
 
-    public static function errorField(string $text) {
+    public static function errorField(string $text): string
+    {
         return "//div[@class='sellers-form']//div[@class='help-block' and text()='$text']";
     }
 }

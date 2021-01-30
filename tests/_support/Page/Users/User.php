@@ -25,7 +25,7 @@ class User extends FunctionalTester
     }
 
     /**Кнопка перехода на страницу незакрытых заявок менеджера*/
-    public static function requestsBlockingManagerButton(int $managerId)
+    public static function requestsBlockingManagerButton(int $managerId): string
     {
         return "//form//a[@href='/bpm/request/index?RequestSearch%5Bmanager_id%5D=$managerId&RequestSearch%5Bstatus%5D%5B0%5D=6&RequestSearch%5Bstatus%5D%5B1%5D=7&RequestSearch%5Bstatus%5D%5B2%5D=5']";
     }

@@ -120,7 +120,6 @@ return [
         "request_errors" => [],
         'notification_settings' => [],
         "user_notifications" => [],
-        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
         'requests_reasons' => [],
         "request_status_history" => [],
         "observers" => [],

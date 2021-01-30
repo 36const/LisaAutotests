@@ -10,7 +10,8 @@ class Priority
     public static $priorityName = '//input[@id="priority-name"]';
     public static $saveButton = '//div[@class="priority-form"]//button[text()=" Сохранить"]';
 
-    public static function errorField(string $text) {
+    public static function errorField(string $text): string
+    {
         return "//div[@class='priority-form']//div[@class='help-block' and text()='$text']";
     }
 }

@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Requests\RequestView;
 
 /**
  * @group lisa
@@ -26,7 +25,6 @@ class POSTReasonsUpdateCest
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
-     *
      */
     public function POSTReasonsUpdate(FunctionalTester $I, Example $data)
     {

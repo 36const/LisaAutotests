@@ -121,7 +121,6 @@ return [
         "request_errors" => [],
         'notification_settings' => [],
         "user_notifications" => [],
-        "request_status_history" => [],
         'requests_reasons' => [],
         "request_status_history" => [],
         "observers" => [],
