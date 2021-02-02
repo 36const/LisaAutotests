@@ -22,11 +22,6 @@ return [
                         ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
                         ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
                         ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
-                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
-                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
-                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
-                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
-                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
