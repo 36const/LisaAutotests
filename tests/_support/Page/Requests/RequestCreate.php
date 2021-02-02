@@ -57,6 +57,11 @@ class RequestCreate extends FunctionalTester
         return "//div[@class='attachments-update']//label[text()='$name']/input[@type='checkbox']";
     }
 
+    public static function rozetkaSellers(int $option, int $id, string $name): string
+    {
+        return "//select[@name='Request[seller_id]']/option[$option][@value='$id'][text()='$name']";
+    }
+
     public function amOnRelatedRequestCreate(int $type, int $direction, int $id)
     {
         $I = $this;
