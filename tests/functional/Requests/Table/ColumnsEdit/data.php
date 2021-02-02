@@ -755,7 +755,7 @@ return [
         'provider_data' => [
             "url" => 'wait-work',
             'requestBody' => [
-                'visibleColumns' => ['amount_to_work', 'added_goods', 'changed_goods', 'goods_in_db', 'calc_quantity_of_checked_goods', 'calc_quantity_of_checked_goods_with_errors', 'calc_quantity_of_checked_goods_cc', 'calc_quantity_of_checked_goods_with_errors_cc'],
+                'visibleColumns' => ['amount_to_work', 'added_goods', 'handled_goods','changed_goods', 'goods_in_db', 'calc_quantity_of_checked_goods', 'calc_quantity_of_checked_goods_with_errors', 'calc_quantity_of_checked_goods_cc', 'calc_quantity_of_checked_goods_with_errors_cc'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -763,7 +763,7 @@ return [
                         [
                             "id" => 1,
                             "user_id" => 4,
-                            "columns_list" => '["amount_to_work", "added_goods", "changed_goods", "goods_in_db", "calc_quantity_of_checked_goods", "calc_quantity_of_checked_goods_with_errors", "calc_quantity_of_checked_goods_cc", "calc_quantity_of_checked_goods_with_errors_cc"]'
+                            "columns_list" => '["amount_to_work", "added_goods", "handled_goods", "changed_goods", "goods_in_db", "calc_quantity_of_checked_goods", "calc_quantity_of_checked_goods_with_errors", "calc_quantity_of_checked_goods_cc", "calc_quantity_of_checked_goods_with_errors_cc"]'
                         ]
                     ],
                 ]
@@ -790,6 +790,10 @@ return [
                         [
                             "selector" => "//thead/tr/th[@data-col-seq='added_goods']",
                             "value" => "Количество добавленных товаров"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='handled_goods']",
+                            "value" => "Количество обработанных товаров"
                         ],
                         [
                             "selector" => "//thead/tr/th[@data-col-seq='changed_goods']",
@@ -822,6 +826,7 @@ return [
                         ["selector" => Request::requestInTable(1, 'type_id', 'Добавление нового портала/раздела фат-меню/категории товаров')],
                         ["selector" => Request::requestInTable(1, 'amount_to_work', '10')],
                         ["selector" => Request::requestInTable(1, 'added_goods', '(не задано)')],
+                        ["selector" => Request::requestInTable(1, 'handled_goods', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'changed_goods', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'goods_in_db', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'calc_quantity_of_checked_goods', '(не задано)')],
