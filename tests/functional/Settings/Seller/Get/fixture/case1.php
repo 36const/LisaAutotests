@@ -24,10 +24,6 @@ return [
                 "owox_id" => 67757,
                 "supervisor_id" => 10
             ],
-            [
-                "owox_id" => 1332,
-                "supervisor_id" => 6
-            ]
         ],
     ],
     "cooper_fixtures" => [
