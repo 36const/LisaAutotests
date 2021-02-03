@@ -406,6 +406,44 @@ return [
                             "value" => "Средней сложности (физические + функциональные характеристики) несколько видов товара"
                         ],
                     ],
+                    "Сложность группировки в заявках" => [
+                        [
+                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[1][@value]",
+                            "value" => "Выберите Сложность группировки в заявках..."
+                        ],
+                        [
+                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[2][@value='52']",
+                            "value" => "Готовый файл для группировки"
+                        ],
+                        [
+                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[3][@value='54']",
+                            "value" => "Очевидные товары для группировки (больше 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[4][@value='53']",
+                            "value" => "Очевидные товары для группировки (до 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[5][@value='58']",
+                            "value" => "Очевидные товары для группировки + Наличие товаров без необходимых варьируемых параметров (больше 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[6][@value='57']",
+                            "value" => "Очевидные товары для группировки + Наличие товаров без необходимых варьируемых параметров (до 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[7][@value='56']",
+                            "value" => "Сложные товары для группировки (больше 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[8][@value='55']",
+                            "value" => "Сложные товары для группировки (до 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[9][@value='59']",
+                            "value" => "Сложные товары для группировки + Наличие товаров без необходимых варьируемых параметров (до 3-х категорий)"
+                        ],
+                    ],
                 ],
             ]
         ]
