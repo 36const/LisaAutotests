@@ -332,115 +332,115 @@ return [
                 "canSee" => [
                     "Вид структуры" => [
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[29]']/option[1][@value]",
+                            "selector" => "//select[@name='RequestField[29]']/option[1][@value]",
                             "value" => "Выберите Вид структуры..."
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[29]']/option[2][@value='31']",
+                            "selector" => "//select[@name='RequestField[29]']/option[2][@value='31']",
                             "value" => "Новые категории промежуточных уровней/автопорталы"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[29]']/option[3][@value='32']",
+                            "selector" => "//select[@name='RequestField[29]']/option[3][@value='32']",
                             "value" => "Новые конечные категории"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[29]']/option[4][@value='30']",
+                            "selector" => "//select[@name='RequestField[29]']/option[4][@value='30']",
                             "value" => "Новые разделы (категории верхнего уровня, второго за верхним уровня)"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[29]']/option[5][@value='34']",
+                            "selector" => "//select[@name='RequestField[29]']/option[5][@value='34']",
                             "value" => "Существующие категории промежуточных уровней/автопорталы"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[29]']/option[6][@value='37']",
+                            "selector" => "//select[@name='RequestField[29]']/option[6][@value='37']",
                             "value" => "Существующие категории промежуточных уровней/автопорталы + перенос информации"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[29]']/option[7][@value='35']",
+                            "selector" => "//select[@name='RequestField[29]']/option[7][@value='35']",
                             "value" => "Существующие конечные категории"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[29]']/option[8][@value='33']",
+                            "selector" => "//select[@name='RequestField[29]']/option[8][@value='33']",
                             "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня)"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[29]']/option[9][@value='36']",
+                            "selector" => "//select[@name='RequestField[29]']/option[9][@value='36']",
                             "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня) + перенос информации"
                         ],
                     ],
                     "Сложность структуры" => [
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[30]']/option[1][@value]",
+                            "selector" => "//select[@name='RequestField[30]']/option[1][@value]",
                             "value" => "Выберите Сложность структуры..."
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[30]']/option[2][@value='39']",
+                            "selector" => "//select[@name='RequestField[30]']/option[2][@value='39']",
                             "value" => "Простые (физические характеристики)"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[30]']/option[3][@value='40']",
+                            "selector" => "//select[@name='RequestField[30]']/option[3][@value='40']",
                             "value" => "Простые (физические характеристики) 1 вид товара"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[30]']/option[4][@value='41']",
+                            "selector" => "//select[@name='RequestField[30]']/option[4][@value='41']",
                             "value" => "Простые (физические характеристики) несколько видов товара"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[30]']/option[5][@value='45']",
+                            "selector" => "//select[@name='RequestField[30]']/option[5][@value='45']",
                             "value" => "Сложные (физические + функциональные + технологические характеристики)"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[30]']/option[6][@value='46']",
+                            "selector" => "//select[@name='RequestField[30]']/option[6][@value='46']",
                             "value" => "Сложные (физические + функциональные + технологические характеристики) 1 вид товара"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[30]']/option[7][@value='42']",
+                            "selector" => "//select[@name='RequestField[30]']/option[7][@value='42']",
                             "value" => "Средней сложности (физические + функциональные характеристики)"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[30]']/option[8][@value='43']",
+                            "selector" => "//select[@name='RequestField[30]']/option[8][@value='43']",
                             "value" => "Средней сложности (физические + функциональные характеристики) 1 вид товара"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[30]']/option[9][@value='44']",
+                            "selector" => "//select[@name='RequestField[30]']/option[9][@value='44']",
                             "value" => "Средней сложности (физические + функциональные характеристики) несколько видов товара"
                         ],
                     ],
                     "Сложность группировки в заявках" => [
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[1][@value]",
+                            "selector" => "//select[@name='RequestField[32]']/option[1][@value]",
                             "value" => "Выберите Сложность группировки в заявках..."
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[2][@value='52']",
+                            "selector" => "//select[@name='RequestField[32]']/option[2][@value='52']",
                             "value" => "Готовый файл для группировки"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[3][@value='54']",
+                            "selector" => "//select[@name='RequestField[32]']/option[3][@value='54']",
                             "value" => "Очевидные товары для группировки (больше 3-х категорий)"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[4][@value='53']",
+                            "selector" => "//select[@name='RequestField[32]']/option[4][@value='53']",
                             "value" => "Очевидные товары для группировки (до 3-х категорий)"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[5][@value='58']",
+                            "selector" => "//select[@name='RequestField[32]']/option[5][@value='58']",
                             "value" => "Очевидные товары для группировки + Наличие товаров без необходимых варьируемых параметров (больше 3-х категорий)"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[6][@value='57']",
+                            "selector" => "//select[@name='RequestField[32]']/option[6][@value='57']",
                             "value" => "Очевидные товары для группировки + Наличие товаров без необходимых варьируемых параметров (до 3-х категорий)"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[7][@value='56']",
+                            "selector" => "//select[@name='RequestField[32]']/option[7][@value='56']",
                             "value" => "Сложные товары для группировки (больше 3-х категорий)"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[8][@value='55']",
+                            "selector" => "//select[@name='RequestField[32]']/option[8][@value='55']",
                             "value" => "Сложные товары для группировки (до 3-х категорий)"
                         ],
                         [
-                            "selector" => "//form[@id='mass-edit-form']//select[@name='RequestField[32]']/option[9][@value='59']",
+                            "selector" => "//select[@name='RequestField[32]']/option[9][@value='59']",
                             "value" => "Сложные товары для группировки + Наличие товаров без необходимых варьируемых параметров (до 3-х категорий)"
                         ],
                     ],
