@@ -4,7 +4,6 @@ return [
     'case1' => [
         'setting' => [
             'description' => 'Значения выпадающих списков полей результатов задачи в алфавитном порядке + показываются заблоченные',
-            //пока сделали, что заблоченные ничем не отличаются от активных
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -33,7 +32,7 @@ return [
                             "value" => "Предоставлены продактом частично. С дополнительным поиском."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[6][@value='5']",
+                            "selector" => "//select[@name='RequestField[21]']/option[6][@value='5' and @disabled]",
                             "value" => "Характеристики добавлены с обновлением фото/описания"
                         ],
                     ],
@@ -43,7 +42,7 @@ return [
                             "value" => "не задано"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[23]']/option[2][@value='14']",
+                            "selector" => "//select[@name='RequestField[23]']/option[2][@value='14' and @disabled]",
                             "value" => "Не предоставлены продактом. Выполнен поиск."
                         ],
                         [
@@ -81,7 +80,7 @@ return [
                             "value" => "Предоставлены продактом частично. С дополнительным поиском."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[22]']/option[6][@value='10']",
+                            "selector" => "//select[@name='RequestField[22]']/option[6][@value='10' and @disabled]",
                             "value" => "Фото предоставлены фотостудией"
                         ],
                     ],
@@ -95,7 +94,7 @@ return [
                             "value" => "Без обработки (только кадрирование)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[24]']/option[3][@value='17']",
+                            "selector" => "//select[@name='RequestField[24]']/option[3][@value='17' and @disabled]",
                             "value" => "Удаление теней/фона/ватермарков/цветокорекция"
                         ],
                         [
@@ -117,7 +116,7 @@ return [
                             "value" => "Предоставлено продактом"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[27]']/option[4][@value='26']",
+                            "selector" => "//select[@name='RequestField[27]']/option[4][@value='26' and @disabled]",
                             "value" => "Предоставлено продактом, в плохом качестве (производился поиск)"
                         ],
                     ],
@@ -139,7 +138,7 @@ return [
                             "value" => "Один варьируемый параметр"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[31]']/option[5][@value='51']",
+                            "selector" => "//select[@name='RequestField[31]']/option[5][@value='51' and @disabled]",
                             "value" => "Три варьируемых параметра"
                         ],
                     ],
@@ -153,7 +152,7 @@ return [
                             "value" => "Без уточнений"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[25]']/option[3][@value='20']",
+                            "selector" => "//select[@name='RequestField[25]']/option[3][@value='20' and @disabled]",
                             "value" => "Более 5 уточнений"
                         ],
                         [
@@ -167,7 +166,7 @@ return [
                             "value" => "не задано"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[26]']/option[2][@value='23']",
+                            "selector" => "//select[@name='RequestField[26]']/option[2][@value='23' and @disabled]",
                             "value" => "Английский"
                         ],
                         [
