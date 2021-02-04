@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Значения выпадающих списков полей результатов задачи в алфавитном порядке + показываются заблоченные',
+            'description' => 'Значения выпадающих списков полей результатов задачи в настроенном/алфавитном порядке + показываются заблоченные',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -16,23 +16,23 @@ return [
                             "value" => "не задано"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[2][@value='4']",
+                            "selector" => "//select[@name='RequestField[21]']/option[3][@value='4']",
                             "value" => "Не предоставлены продактом. Выполнен поиск."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[3][@value='1']",
+                            "selector" => "//select[@name='RequestField[21]']/option[4][@value='1']",
                             "value" => "Предоставлены продактом"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[4][@value='2']",
+                            "selector" => "//select[@name='RequestField[21]']/option[5][@value='2']",
                             "value" => "Предоставлены продактом частично. Без дополнительного поиска."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[5][@value='3']",
+                            "selector" => "//select[@name='RequestField[21]']/option[6][@value='3']",
                             "value" => "Предоставлены продактом частично. С дополнительным поиском."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[6][@value='5' and @disabled]",
+                            "selector" => "//select[@name='RequestField[21]']/option[2][@value='5' and @disabled]",
                             "value" => "Характеристики добавлены с обновлением фото/описания"
                         ],
                     ],
@@ -225,7 +225,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Значения выпадающих списков полей структуры и сложности в алфавитном порядке + показываются заблоченные',
+            'description' => 'Значения выпадающих списков полей структуры и сложности в настроенном/алфавитном порядке + показываются заблоченные',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -238,40 +238,40 @@ return [
                             "value" => "не задано"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[29]']/option[2][@value='31']",
-                            "value" => "Новые категории промежуточных уровней/автопорталы"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestField[29]']/option[3][@value='32']",
-                            "value" => "Новые конечные категории"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestField[29]']/option[4][@value='30']",
+                            "selector" => "//select[@name='RequestField[29]']/option[2][@value='30']",
                             "value" => "Новые разделы (категории верхнего уровня, второго за верхним уровня)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[29]']/option[5][@value='34']",
-                            "value" => "Существующие категории промежуточных уровней/автопорталы"
+                            "selector" => "//select[@name='RequestField[29]']/option[3][@value='31']",
+                            "value" => "Новые категории промежуточных уровней/автопорталы"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[29]']/option[6][@value='37']",
-                            "value" => "Существующие категории промежуточных уровней/автопорталы + перенос информации"
+                            "selector" => "//select[@name='RequestField[29]']/option[4][@value='32']",
+                            "value" => "Новые конечные категории"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[5][@value='33']",
+                            "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[6][@value='34']",
+                            "value" => "Существующие категории промежуточных уровней/автопорталы"
                         ],
                         [
                             "selector" => "//select[@name='RequestField[29]']/option[7][@value='35']",
                             "value" => "Существующие конечные категории"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[29]']/option[8][@value='38' and @disabled]",
-                            "value" => "Существующие конечные категории + перенос информации"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestField[29]']/option[9][@value='33']",
-                            "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня)"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestField[29]']/option[10][@value='36']",
+                            "selector" => "//select[@name='RequestField[29]']/option[8][@value='36']",
                             "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня) + перенос информации"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[9][@value='37']",
+                            "value" => "Существующие категории промежуточных уровней/автопорталы + перенос информации"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[10][@value='38' and @disabled]",
+                            "value" => "Существующие конечные категории + перенос информации"
                         ],
                     ],
                     "Сложность структуры" => [
@@ -323,7 +323,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Значения выпадающих списков пакетного редактирования в алфавитном порядке + не показываются заблоченные',
+            'description' => 'Значения выпадающих списков пакетного редактирования в настроенном/алфавитном порядке + не показываются заблоченные',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -336,36 +336,36 @@ return [
                             "value" => "Выберите Вид структуры..."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[29]']/option[2][@value='31']",
-                            "value" => "Новые категории промежуточных уровней/автопорталы"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestField[29]']/option[3][@value='32']",
-                            "value" => "Новые конечные категории"
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestField[29]']/option[4][@value='30']",
+                            "selector" => "//select[@name='RequestField[29]']/option[2][@value='30']",
                             "value" => "Новые разделы (категории верхнего уровня, второго за верхним уровня)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[29]']/option[5][@value='34']",
-                            "value" => "Существующие категории промежуточных уровней/автопорталы"
+                            "selector" => "//select[@name='RequestField[29]']/option[3][@value='31']",
+                            "value" => "Новые категории промежуточных уровней/автопорталы"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[29]']/option[6][@value='37']",
-                            "value" => "Существующие категории промежуточных уровней/автопорталы + перенос информации"
+                            "selector" => "//select[@name='RequestField[29]']/option[4][@value='32']",
+                            "value" => "Новые конечные категории"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[5][@value='33']",
+                            "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[6][@value='34']",
+                            "value" => "Существующие категории промежуточных уровней/автопорталы"
                         ],
                         [
                             "selector" => "//select[@name='RequestField[29]']/option[7][@value='35']",
                             "value" => "Существующие конечные категории"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[29]']/option[8][@value='33']",
-                            "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня)"
+                            "selector" => "//select[@name='RequestField[29]']/option[8][@value='36']",
+                            "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня) + перенос информации"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[29]']/option[9][@value='36']",
-                            "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня) + перенос информации"
+                            "selector" => "//select[@name='RequestField[29]']/option[9][@value='37']",
+                            "value" => "Существующие категории промежуточных уровней/автопорталы + перенос информации"
                         ],
                     ],
                     "Сложность структуры" => [

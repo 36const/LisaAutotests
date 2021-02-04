@@ -1356,7 +1356,8 @@ return [
                 "user_id" => 2,
                 "permission_name" => "transferOnHoldToCompleted"
             ],
-        ]
+        ],
+        "request_errors" => []
     ],
 
     "gomer_fixtures" => [
