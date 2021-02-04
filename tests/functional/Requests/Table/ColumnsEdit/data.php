@@ -422,24 +422,24 @@ return [
                         ],
 
                         [
-                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[1][@value='4']",
+                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[1][@value='5']",
+                            "value" => "Характеристики добавлены с обновлением фото/описания"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[2][@value='4']",
                             "value" => "Не предоставлены продактом. Выполнен поиск."
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[2][@value='1']",
+                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[3][@value='1']",
                             "value" => "Предоставлены продактом"
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[3][@value='2']",
+                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[4][@value='2']",
                             "value" => "Предоставлены продактом частично. Без дополнительного поиска."
                         ],
                         [
-                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[4][@value='3']",
+                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[5][@value='3']",
                             "value" => "Предоставлены продактом частично. С дополнительным поиском."
-                        ],
-                        [
-                            "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[5][@value='5']",
-                            "value" => "Характеристики добавлены с обновлением фото/описания"
                         ],
                         [
                             "selector" => "//select[@name='RequestSearch[characteristics_available][]']/option[6][@value='-1']",
