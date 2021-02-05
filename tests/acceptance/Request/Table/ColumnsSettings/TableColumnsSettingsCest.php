@@ -36,7 +36,7 @@ class TableColumnsSettingsCest
         $I->click(Request::$personalSettings);
         $I->waitForElementVisible("//div[@id='lisa-grid-config-form']");
         $I->canSeeNumberOfElements(Request::$visibleColumns, 1);
-        $I->canSeeNumberOfElements(Request::$hiddenColumns, 75);
+        $I->canSeeNumberOfElements(Request::$hiddenColumns, 76);
         $I->canSeeNumberOfElements(Request::$hiddenColumns . '[@class="disabled"]', 5);
 
         //перевести 20 колонок в видимые
@@ -44,14 +44,14 @@ class TableColumnsSettingsCest
             $I->click(Request::hiddenToVisible($column));
 
         $I->canSeeNumberOfElements(Request::$visibleColumns, 21);
-        $I->canSeeNumberOfElements(Request::$hiddenColumns, 55);
+        $I->canSeeNumberOfElements(Request::$hiddenColumns, 56);
 
         //перевести 3 колонки назад в скрытые
         foreach ($provider_data['columns_2'] as $column)
             $I->click(Request::visibleToHidden($column));
 
         $I->canSeeNumberOfElements(Request::$visibleColumns, 18);
-        $I->canSeeNumberOfElements(Request::$hiddenColumns, 58);
+        $I->canSeeNumberOfElements(Request::$hiddenColumns, 59);
 
         //ввести символы в строку поиска колонки
         $I->pressKey(Request::$searchColumns, 'я', ' ');
@@ -62,7 +62,7 @@ class TableColumnsSettingsCest
         foreach ($provider_data['columns_3'] as $column)
             $I->click(Request::hiddenToVisible($column));
 
-//        $I->dragAndDrop(Request::$hiddenColumns . "[@value='$column']", "//div[@id='lisa-grid-config-form']//ul[contains(@class, 'sortable-visible')]");
+        //$I->dragAndDrop(Request::$hiddenColumns . "[@value='$column']", "//div[@id='lisa-grid-config-form']//ul[contains(@class, 'sortable-visible')]");
 
         $I->canSeeNumberOfElements(Request::$visibleColumns, 21);
         $I->canSeeNumberOfElements(Request::$hiddenColumns, 3);
@@ -78,7 +78,7 @@ class TableColumnsSettingsCest
         $I->click(Request::$personalSettings);
         $I->waitForElementVisible("//div[@id='lisa-grid-config-form']");
         $I->canSeeNumberOfElements(Request::$visibleColumns, 21);
-        $I->canSeeNumberOfElements(Request::$hiddenColumns, 55);
+        $I->canSeeNumberOfElements(Request::$hiddenColumns, 56);
         $I->canSeeNumberOfElements(Request::$hiddenColumns . '[@class="disabled"]', 5);
 
         //вернуть чекбокс с сбросить все изменения

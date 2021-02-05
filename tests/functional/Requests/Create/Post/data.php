@@ -683,28 +683,6 @@ return [
                     ],
                 ]
             ],
-            "pageObjects" => [
-                "canSee" => [
-                    [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
-                    ]
-                ]
-            ]
         ]
     ],
 

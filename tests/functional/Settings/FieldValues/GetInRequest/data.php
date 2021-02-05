@@ -3,8 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Значения выпадающих списков полей результатов задачи в алфавитном порядке + показываются заблоченные',
-            //пока сделали, что заблоченные ничем не отличаются от активных
+            'description' => 'Значения выпадающих списков полей результатов задачи в настроенном/алфавитном порядке + показываются заблоченные',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -17,23 +16,23 @@ return [
                             "value" => "не задано"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[2][@value='4']",
+                            "selector" => "//select[@name='RequestField[21]']/option[3][@value='4']",
                             "value" => "Не предоставлены продактом. Выполнен поиск."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[3][@value='1']",
+                            "selector" => "//select[@name='RequestField[21]']/option[4][@value='1']",
                             "value" => "Предоставлены продактом"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[4][@value='2']",
+                            "selector" => "//select[@name='RequestField[21]']/option[5][@value='2']",
                             "value" => "Предоставлены продактом частично. Без дополнительного поиска."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[5][@value='3']",
+                            "selector" => "//select[@name='RequestField[21]']/option[6][@value='3']",
                             "value" => "Предоставлены продактом частично. С дополнительным поиском."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[21]']/option[6][@value='5']",
+                            "selector" => "//select[@name='RequestField[21]']/option[2][@value='5' and @disabled]",
                             "value" => "Характеристики добавлены с обновлением фото/описания"
                         ],
                     ],
@@ -43,7 +42,7 @@ return [
                             "value" => "не задано"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[23]']/option[2][@value='14']",
+                            "selector" => "//select[@name='RequestField[23]']/option[2][@value='14' and @disabled]",
                             "value" => "Не предоставлены продактом. Выполнен поиск."
                         ],
                         [
@@ -81,7 +80,7 @@ return [
                             "value" => "Предоставлены продактом частично. С дополнительным поиском."
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[22]']/option[6][@value='10']",
+                            "selector" => "//select[@name='RequestField[22]']/option[6][@value='10' and @disabled]",
                             "value" => "Фото предоставлены фотостудией"
                         ],
                     ],
@@ -95,7 +94,7 @@ return [
                             "value" => "Без обработки (только кадрирование)"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[24]']/option[3][@value='17']",
+                            "selector" => "//select[@name='RequestField[24]']/option[3][@value='17' and @disabled]",
                             "value" => "Удаление теней/фона/ватермарков/цветокорекция"
                         ],
                         [
@@ -117,7 +116,7 @@ return [
                             "value" => "Предоставлено продактом"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[27]']/option[4][@value='26']",
+                            "selector" => "//select[@name='RequestField[27]']/option[4][@value='26' and @disabled]",
                             "value" => "Предоставлено продактом, в плохом качестве (производился поиск)"
                         ],
                     ],
@@ -139,7 +138,7 @@ return [
                             "value" => "Один варьируемый параметр"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[31]']/option[5][@value='51']",
+                            "selector" => "//select[@name='RequestField[31]']/option[5][@value='51' and @disabled]",
                             "value" => "Три варьируемых параметра"
                         ],
                     ],
@@ -153,7 +152,7 @@ return [
                             "value" => "Без уточнений"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[25]']/option[3][@value='20']",
+                            "selector" => "//select[@name='RequestField[25]']/option[3][@value='20' and @disabled]",
                             "value" => "Более 5 уточнений"
                         ],
                         [
@@ -167,7 +166,7 @@ return [
                             "value" => "не задано"
                         ],
                         [
-                            "selector" => "//select[@name='RequestField[26]']/option[2][@value='23']",
+                            "selector" => "//select[@name='RequestField[26]']/option[2][@value='23' and @disabled]",
                             "value" => "Английский"
                         ],
                         [
@@ -217,6 +216,232 @@ return [
                         [
                             "selector" => "//select[@name='Request[sv_report_periods][]']/option[4][@value='4' and not(@selected)]",
                             "value" => "2020-10-01 - 2020-12-31"
+                        ],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
+    'case2' => [
+        'setting' => [
+            'description' => 'Значения выпадающих списков полей структуры и сложности в настроенном/алфавитном порядке + показываются заблоченные',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => 'bpm/request/view?id=1&forCrossCheck=0',
+            "pageObjects" => [
+                "canSee" => [
+                    "Вид структуры" => [
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[1][@value]",
+                            "value" => "не задано"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[2][@value='30']",
+                            "value" => "Новые разделы (категории верхнего уровня, второго за верхним уровня)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[3][@value='31']",
+                            "value" => "Новые категории промежуточных уровней/автопорталы"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[4][@value='32']",
+                            "value" => "Новые конечные категории"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[5][@value='33']",
+                            "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[6][@value='34']",
+                            "value" => "Существующие категории промежуточных уровней/автопорталы"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[7][@value='35']",
+                            "value" => "Существующие конечные категории"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[8][@value='36']",
+                            "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня) + перенос информации"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[9][@value='37']",
+                            "value" => "Существующие категории промежуточных уровней/автопорталы + перенос информации"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[10][@value='38' and @disabled]",
+                            "value" => "Существующие конечные категории + перенос информации"
+                        ],
+                    ],
+                    "Сложность структуры" => [
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[1][@value]",
+                            "value" => "не задано"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[2][@value='39']",
+                            "value" => "Простые (физические характеристики)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[3][@value='40']",
+                            "value" => "Простые (физические характеристики) 1 вид товара"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[4][@value='41']",
+                            "value" => "Простые (физические характеристики) несколько видов товара"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[5][@value='45']",
+                            "value" => "Сложные (физические + функциональные + технологические характеристики)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[6][@value='46']",
+                            "value" => "Сложные (физические + функциональные + технологические характеристики) 1 вид товара"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[7][@value='47' and @disabled]",
+                            "value" => "Сложные (физические + функциональные + технологические характеристики) несколько видов товара"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[8][@value='42']",
+                            "value" => "Средней сложности (физические + функциональные характеристики)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[9][@value='43']",
+                            "value" => "Средней сложности (физические + функциональные характеристики) 1 вид товара"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[10][@value='44']",
+                            "value" => "Средней сложности (физические + функциональные характеристики) несколько видов товара"
+                        ],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
+    'case3' => [
+        'setting' => [
+            'description' => 'Значения выпадающих списков пакетного редактирования в настроенном/алфавитном порядке + не показываются заблоченные',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => 'bpm/request/in-check',
+            "pageObjects" => [
+                "canSee" => [
+                    "Вид структуры" => [
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[1][@value]",
+                            "value" => "Выберите Вид структуры..."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[2][@value='30']",
+                            "value" => "Новые разделы (категории верхнего уровня, второго за верхним уровня)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[3][@value='31']",
+                            "value" => "Новые категории промежуточных уровней/автопорталы"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[4][@value='32']",
+                            "value" => "Новые конечные категории"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[5][@value='33']",
+                            "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[6][@value='34']",
+                            "value" => "Существующие категории промежуточных уровней/автопорталы"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[7][@value='35']",
+                            "value" => "Существующие конечные категории"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[8][@value='36']",
+                            "value" => "Существующие разделы (категории верхнего уровня, второго за верхним уровня) + перенос информации"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[29]']/option[9][@value='37']",
+                            "value" => "Существующие категории промежуточных уровней/автопорталы + перенос информации"
+                        ],
+                    ],
+                    "Сложность структуры" => [
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[1][@value]",
+                            "value" => "Выберите Сложность структуры..."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[2][@value='39']",
+                            "value" => "Простые (физические характеристики)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[3][@value='40']",
+                            "value" => "Простые (физические характеристики) 1 вид товара"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[4][@value='41']",
+                            "value" => "Простые (физические характеристики) несколько видов товара"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[5][@value='45']",
+                            "value" => "Сложные (физические + функциональные + технологические характеристики)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[6][@value='46']",
+                            "value" => "Сложные (физические + функциональные + технологические характеристики) 1 вид товара"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[7][@value='42']",
+                            "value" => "Средней сложности (физические + функциональные характеристики)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[8][@value='43']",
+                            "value" => "Средней сложности (физические + функциональные характеристики) 1 вид товара"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[30]']/option[9][@value='44']",
+                            "value" => "Средней сложности (физические + функциональные характеристики) несколько видов товара"
+                        ],
+                    ],
+                    "Сложность группировки в заявках" => [
+                        [
+                            "selector" => "//select[@name='RequestField[32]']/option[1][@value]",
+                            "value" => "Выберите Сложность группировки в заявках..."
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[32]']/option[2][@value='52']",
+                            "value" => "Готовый файл для группировки"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[32]']/option[3][@value='54']",
+                            "value" => "Очевидные товары для группировки (больше 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[32]']/option[4][@value='53']",
+                            "value" => "Очевидные товары для группировки (до 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[32]']/option[5][@value='58']",
+                            "value" => "Очевидные товары для группировки + Наличие товаров без необходимых варьируемых параметров (больше 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[32]']/option[6][@value='57']",
+                            "value" => "Очевидные товары для группировки + Наличие товаров без необходимых варьируемых параметров (до 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[32]']/option[7][@value='56']",
+                            "value" => "Сложные товары для группировки (больше 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[32]']/option[8][@value='55']",
+                            "value" => "Сложные товары для группировки (до 3-х категорий)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestField[32]']/option[9][@value='59']",
+                            "value" => "Сложные товары для группировки + Наличие товаров без необходимых варьируемых параметров (до 3-х категорий)"
                         ],
                     ],
                 ],

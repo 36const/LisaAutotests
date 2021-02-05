@@ -6,7 +6,7 @@ return [
             [
 //                "id" => 1,
                 "author_id" => 4,
-                "type_id" => 9,
+                "type_id" => 11,
                 "supervisor_id" => 34,
                 "manager_id" => 11,
                 "status" => 6,

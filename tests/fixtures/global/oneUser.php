@@ -861,7 +861,8 @@ return [
                 "user_id" => 2,
                 "permission_name" => "transferOnHoldToInWork"
             ],
-        ]
+        ],
+        "request_errors" => []
     ],
 
     "gomer_fixtures" => [
