@@ -681,7 +681,7 @@ return [
                 "planned_start_date" => null,
                 "planned_finish_date" => null,
                 "actual_start_date" => "2020-08-20 14:48:20",
-                "actual_finish_date" => date("Y-m-d H:i:s", strtotime('-1 HOUR')),
+                "actual_finish_date" => date("Y-m-d H:i:s", strtotime('-1 hour')),
                 "supervisor_process_date" => "2020-08-20 14:49:03",
                 "supervisor_check_date" => "2020-08-20 14:51:53",
                 "result_comment" => "Выполнена",
@@ -2641,6 +2641,48 @@ return [
             [
                 "request_id" => 6,
                 "reason_id" => 6
+            ]
+        ],
+        "grid_settings" => [
+            [
+                //"id" => 1,
+                "user_id" => 4,
+                "columns_list" => '["author_id","supervisor_id","manager_id","cross_check_manager_id","status","cross_check_status","with_grid","used_ref","updating_photos","automoderation","mobile_courier","hand_load","enter_points","with_tags","by_client_review","updating_characteristics","stop_brands","adding_instructions","updating_description","markdown_2","with_video","with_pallets","adding_goods_to_new_category","lots","promo_desc","complaint_for_good","visa","markdown","difficulty_level","photos_available","with_photo","adding_graphics","calc_quantity_of_checked_goods","changed_goods","added_goods","pack_load","goods_in_db","language","description_available","characteristics_available","calc_quantity_of_checked_goods_with_errors_cc","author_clarifications","calc_quantity_of_checked_goods_cc","awaiting_correction","calc_quantity_of_checked_goods_with_errors","result_comment","team_direction","last_change_status_date","amount_to_work","sv_report_periods","supervisor_check_date","category_id","priority","actual_start_date","report_period_id","supervisor_process_date","actual_finish_date","planned_finish_date","recommendations","planned_start_date","created_at","parent_id","seller_id","description","reasons","correction_comment","reason","direction","ua_fields","handled_goods"]'
+            ]
+        ],
+        "request_status_history" => [
+            [
+                //"id" => 1,
+                "request_id" => 11,
+                "user_id" => 4,
+                "old_status" => 1,
+                "new_status" => 3,
+                "reason" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                "created_at" => "2021-02-05 13:47:33",
+                "manager_id" => null,
+                "reasons" => "Другое (описан в коментариях) | Нада"
+            ],
+            [
+                //"id" => 2,
+                "request_id" => 11,
+                "user_id" => 4,
+                "old_status" => 3,
+                "new_status" => 1,
+                "reason" => "https://zabbix3.local/latest.php?groupids[%5D=251&hostids[%5D=12686&hostids[%5D=16666&hostids[%5D=16728&hostids[%5D=17592&hostids[%5D=17607&hostids[%5D=17714&hostids[%5D=17720&hostids[%5D=18537&hostids[%5D=19198&application=Memory",
+                "created_at" => "2021-02-05 13:50:33",
+                "manager_id" => null,
+                "reasons" => null
+            ],
+            [
+                //"id" => 3,
+                "request_id" => 11,
+                "user_id" => 4,
+                "old_status" => 1,
+                "new_status" => 4,
+                "reason" => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                "created_at" => "2021-02-05 13:51:26",
+                "manager_id" => null,
+                "reasons" => "Все товары уже есть на сайте | Дубль задачи"
             ]
         ],
         "exports_logs" => [],
