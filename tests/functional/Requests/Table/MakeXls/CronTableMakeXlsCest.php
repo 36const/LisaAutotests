@@ -48,10 +48,11 @@ class CronTableMakeXlsCest
         $I->checkTablesInDB($providerData['db_2']);
 
         if (!isset($setting['count'])) {
-            $I->canSeeFileFound(
+            $I->seeFileFound(
                 $providerData['db_2']['lisa_fixtures']['user_exports'][0]['title >'] . '*.xlsx',
                 FunctionalTester::BPM_UPLOADS
             );
         }
+        $I->checkXlsFile($providerData['fileContent'] ?? null, $setting['rows'] ?? null);
     }
 }
