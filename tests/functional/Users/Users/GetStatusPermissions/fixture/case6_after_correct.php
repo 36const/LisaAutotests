@@ -2,7 +2,7 @@
 
 return [
     "lisa_fixtures" => [
-        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
+        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values_errors.php',
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
         "user_bpm" => [
             [
@@ -222,7 +222,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
-                "cross_check_status" => '0',
+                "cross_check_status" => 0,
                 "cross_check_manager_id" => null,
             ],
         ],

@@ -681,7 +681,7 @@ return [
                 "planned_start_date" => null,
                 "planned_finish_date" => null,
                 "actual_start_date" => "2020-08-20 14:48:20",
-                "actual_finish_date" => date("Y-m-d H:i:s", strtotime('-1 HOUR')),
+                "actual_finish_date" => date("Y-m-d H:i:s", strtotime('-1 hour')),
                 "supervisor_process_date" => "2020-08-20 14:49:03",
                 "supervisor_check_date" => "2020-08-20 14:51:53",
                 "result_comment" => "Выполнена",

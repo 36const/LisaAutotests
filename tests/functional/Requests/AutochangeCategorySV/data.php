@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Автоизменение СВ при изменении категории и переводе 1->2 (тип 1, направление 1, статус 2)',
+            'description' => 'Автоизменение СВ при изменении категории и переводе 1->2 (статус 2, тип 1, направление 1)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -92,7 +92,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -183,7 +183,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Автоизменение СВ при изменении категории и сохранении (тип 3, направление 1, статус 5)',
+            'description' => 'Автоизменение СВ при изменении категории и сохранении (статус 3, тип 5, направление 1)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
@@ -230,7 +230,7 @@ return [
                 'Request[report_period_id]' => '',
                 'Request[result_comment]' => '',
                 'Request[seller_id]' => '5',
-                'Request[subject]' => 'Перенос товаров (Работа с товарами Розетки)',
+                'Request[subject]' => 'Заливка фото с фотостудии (Работа с товарами Розетки)',
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '6',
                 'Request[uploadedFiles][]' => '',
@@ -242,22 +242,22 @@ return [
                         [
                             "id" => 1,
                             "author_id" => 4,
-                            "type_id" => 3,
+                            "type_id" => 5,
                             "supervisor_id" => 10,
                             "manager_id" => null,
-                            "status" => 5,
+                            "status" => 3,
                             "direction" => 1,
                             "priority" => 2,
                             "awaiting_correction" => 0,
                             "created_at" => '2020-01-01 00:00:00',
                             "correction_comment" => '',
                             "amount_to_work" => 10,
-                            "subject" => "Перенос товаров (Работа с товарами Розетки)",
+                            "subject" => "Заливка фото с фотостудии (Работа с товарами Розетки)",
                             "description" => 'description',
                             "category_id" => 2,
                             "seller_id" => 5,
                             "recommendations" => '',
-                            "reason" => '',
+                            "reason" => 'Комментарий',
                             "parent_id" => null,
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
@@ -272,7 +272,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -368,7 +368,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Автоизменение СВ при изменении категории и сохранении (тип 5, направление 1, статус 3)',
+            'description' => 'Автоизменение СВ при изменении категории и сохранении (статус 5, тип 3, направление 1)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case3.php',
         'provider_data' => [
@@ -415,7 +415,7 @@ return [
                 'Request[report_period_id]' => '',
                 'Request[result_comment]' => '',
                 'Request[seller_id]' => '5',
-                'Request[subject]' => 'Заливка фото с фотостудии (Работа с товарами Розетки)',
+                'Request[subject]' => 'Перенос товаров (Работа с товарами Розетки)',
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '6',
                 'Request[uploadedFiles][]' => '',
@@ -427,22 +427,22 @@ return [
                         [
                             "id" => 1,
                             "author_id" => 4,
-                            "type_id" => 5,
+                            "type_id" => 3,
                             "supervisor_id" => 10,
                             "manager_id" => null,
-                            "status" => 3,
+                            "status" => 5,
                             "direction" => 1,
                             "priority" => 2,
                             "awaiting_correction" => 0,
                             "created_at" => '2020-01-01 00:00:00',
                             "correction_comment" => '',
                             "amount_to_work" => 10,
-                            "subject" => "Заливка фото с фотостудии (Работа с товарами Розетки)",
+                            "subject" => "Перенос товаров (Работа с товарами Розетки)",
                             "description" => 'description',
                             "category_id" => 2,
                             "seller_id" => 5,
                             "recommendations" => '',
-                            "reason" => 'Комментарий',
+                            "reason" => '',
                             "parent_id" => null,
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
@@ -457,7 +457,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -553,7 +553,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Автоизменение СВ при изменении категории и сохранении (тип 2, направление 1, статус 6)',
+            'description' => 'Автоизменение СВ при изменении категории и сохранении (статус 6, тип 2, направление 1)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4.php',
         'provider_data' => [
@@ -642,7 +642,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -738,7 +738,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Автоизменение СВ при изменении категории и переводе 7->6 (тип 12, направление 1, статус 7)',
+            'description' => 'Автоизменение СВ при изменении категории и переводе 7->6 (статус 7, тип 12, направление 1)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case5.php',
         'provider_data' => [
@@ -829,7 +829,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -925,7 +925,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Не-изменение СВ при изменении категории и сохранении (тип 12, направление 1, статус 8)',
+            'description' => 'Не-изменение СВ при изменении категории и сохранении (статус 4, тип 2, направление 1)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6.php',
         'provider_data' => [
@@ -972,13 +972,13 @@ return [
                 'Request[report_period_id]' => '',
                 'Request[result_comment]' => '',
                 'Request[seller_id]' => '5',
-                'Request[subject]' => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
+                'Request[subject]' => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '6',
                 'Request[uploadedFiles][]' => '',
                 'Request[uploadedFiles][]' => '',
                 'newStatus' => '0',
-                'reasons' => ['6', '7'],
+                'reasons' => ['9'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -986,22 +986,22 @@ return [
                         [
                             "id" => 1,
                             "author_id" => 4,
-                            "type_id" => 12,
+                            "type_id" => 2,
                             "supervisor_id" => 6,
                             "manager_id" => 11,
-                            "status" => 8,
+                            "status" => 4,
                             "direction" => 1,
                             "priority" => 2,
                             "awaiting_correction" => 0,
                             "created_at" => '2020-01-01 00:00:00',
                             "correction_comment" => '',
                             "amount_to_work" => 10,
-                            "subject" => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
+                            "subject" => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
                             "description" => 'description',
                             "category_id" => 2,
                             "seller_id" => 5,
                             "recommendations" => '',
-                            "reason" => '',
+                            "reason" => 'йцук',
                             "parent_id" => null,
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
@@ -1016,7 +1016,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -1112,7 +1112,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Не-изменение СВ при изменении категории и сохранении (тип 5, направление 1, статус 9)',
+            'description' => 'Не-изменение СВ при изменении категории и сохранении (статус 8, тип 12, направление 1)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case7.php',
         'provider_data' => [
@@ -1159,12 +1159,13 @@ return [
                 'Request[report_period_id]' => '',
                 'Request[result_comment]' => '',
                 'Request[seller_id]' => '5',
-                'Request[subject]' => "Заливка фото с фотостудии (Работа с товарами Розетки)",
+                'Request[subject]' => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '6',
                 'Request[uploadedFiles][]' => '',
                 'Request[uploadedFiles][]' => '',
                 'newStatus' => '0',
+                'reasons' => ['6', '7'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1172,17 +1173,17 @@ return [
                         [
                             "id" => 1,
                             "author_id" => 4,
-                            "type_id" => 5,
+                            "type_id" => 12,
                             "supervisor_id" => 6,
                             "manager_id" => 11,
-                            "status" => 9,
+                            "status" => 8,
                             "direction" => 1,
                             "priority" => 2,
                             "awaiting_correction" => 0,
                             "created_at" => '2020-01-01 00:00:00',
                             "correction_comment" => '',
                             "amount_to_work" => 10,
-                            "subject" => "Заливка фото с фотостудии (Работа с товарами Розетки)",
+                            "subject" => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
                             "description" => 'description',
                             "category_id" => 2,
                             "seller_id" => 5,
@@ -1202,7 +1203,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -1298,7 +1299,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Не-изменение СВ при изменении категории и сохранении (тип 2, направление 1, статус 4)',
+            'description' => 'Не-изменение СВ при изменении категории и сохранении (статус 9, тип 5, направление 1)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case8.php',
         'provider_data' => [
@@ -1345,13 +1346,12 @@ return [
                 'Request[report_period_id]' => '',
                 'Request[result_comment]' => '',
                 'Request[seller_id]' => '5',
-                'Request[subject]' => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
+                'Request[subject]' => "Заливка фото с фотостудии (Работа с товарами Розетки)",
                 'Request[supervisor_comment]' => '',
                 'Request[supervisor_id]' => '6',
                 'Request[uploadedFiles][]' => '',
                 'Request[uploadedFiles][]' => '',
                 'newStatus' => '0',
-                'reasons' => ['9'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1359,22 +1359,22 @@ return [
                         [
                             "id" => 1,
                             "author_id" => 4,
-                            "type_id" => 2,
+                            "type_id" => 5,
                             "supervisor_id" => 6,
                             "manager_id" => 11,
-                            "status" => 4,
+                            "status" => 9,
                             "direction" => 1,
                             "priority" => 2,
                             "awaiting_correction" => 0,
                             "created_at" => '2020-01-01 00:00:00',
                             "correction_comment" => '',
                             "amount_to_work" => 10,
-                            "subject" => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
+                            "subject" => "Заливка фото с фотостудии (Работа с товарами Розетки)",
                             "description" => 'description',
                             "category_id" => 2,
                             "seller_id" => 5,
                             "recommendations" => '',
-                            "reason" => 'йцук',
+                            "reason" => '',
                             "parent_id" => null,
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
@@ -1389,7 +1389,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -1485,7 +1485,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Не-изменение СВ при изменении категории и сохранении (тип 1, направление 1, статус 11)',
+            'description' => 'Не-изменение СВ при изменении категории и сохранении (статус 11, тип 1, направление 1)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case9.php',
         'provider_data' => [
@@ -1575,7 +1575,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,

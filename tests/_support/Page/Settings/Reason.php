@@ -11,7 +11,8 @@ class Reason
     public static $status = '//select[@id="reason-status"]';
     public static $saveButton = '//div[@class="reason-form"]//button[text()=" Сохранить"]';
 
-    public static function errorField(string $text) {
+    public static function errorField(string $text): string
+    {
         return "//div[@class='reason-form']//div[@class='help-block' and text()='$text']";
     }
 }

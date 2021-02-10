@@ -6,7 +6,7 @@ return [
             [
 //                "id" => 1,
                 "author_id" => 4,
-                "type_id" => 9,
+                "type_id" => 11,
                 "supervisor_id" => 34,
                 "manager_id" => 11,
                 "status" => 6,
@@ -36,7 +36,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}',
-                "cross_check_status" => '0',
+                "cross_check_status" => 0,
                 "cross_check_manager_id" => null,
             ],
             [
@@ -72,7 +72,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}',
-                "cross_check_status" => '0',
+                "cross_check_status" => 0,
                 "cross_check_manager_id" => null,
             ],
         ],

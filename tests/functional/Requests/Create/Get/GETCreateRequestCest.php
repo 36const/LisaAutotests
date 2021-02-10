@@ -30,7 +30,6 @@ class GETCreateRequestCest
     public function GETCreateRequest(FunctionalTester $I, Example $data, RequestCreate $create)
     {
         $I->loadDataForTest($data);
-
         $setting = $data['setting'];
         $providerData = $data['provider_data'];
 

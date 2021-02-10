@@ -30,6 +30,7 @@ class POSTSellerDistributionUpdateCest
     {
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
+        \Yii::$app->redis->flushall();
 
         $I->sendPOST('/bpm/seller/distribution', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);

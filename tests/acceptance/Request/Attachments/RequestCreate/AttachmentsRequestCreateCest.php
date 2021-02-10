@@ -34,6 +34,7 @@ class AttachmentsRequestCreateCest
     {
         $I->loadDataForTest($data, 'allUsers');
         $provider_data = $data['provider_data'];
+        $I->cleanDir(FunctionalTester::BPM_UPLOADS);
 
         $I->amOnPage('bpm/request/create-by-type?typeId=1&direction=2');
 
@@ -52,6 +53,7 @@ class AttachmentsRequestCreateCest
         $I->waitForElement(RequestView::downloadedFile(0));
         $I->cantSeeElement(RequestView::downloadedFile(1));
         $I->cantSeeElement('//div[@class="file-preview"]//div[@class="kv-fileinput-error file-error-message"]');
+        $I->canSeeFileFound('*-.doc', FunctionalTester::BPM_UPLOADS);
 
         //добавляем второй файл с неподходящим расширением
         $I->attachFile('//input[@id="request-uploadedfiles"]', 'Attachments/255exeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexee.exe');
@@ -59,11 +61,15 @@ class AttachmentsRequestCreateCest
         $I->waitForElement(RequestView::downloadedFile(0));
         $I->cantSeeElement(RequestView::downloadedFile(1));
         $I->cantSeeElement(RequestView::downloadedFile(2));
+        $I->canSeeFileFound('*-.doc', FunctionalTester::BPM_UPLOADS);
+        $I->cantSeeFileFound('*.exe', FunctionalTester::BPM_UPLOADS);
 
         //удаляем второй файл
         $I->click('//div[contains(@class, "file-preview-error")]//button[@title="Удалить файл"]');
         $I->waitForElement(RequestView::downloadedFile(0));
         $I->cantSeeElement(RequestView::downloadedFile(1));
+        $I->canSeeFileFound('*-.doc', FunctionalTester::BPM_UPLOADS);
+        $I->cantSeeFileFound('*.exe', FunctionalTester::BPM_UPLOADS);
 
         //создаём заявку
         $I->scrollTo(RequestCreate::$createButtonForm, null, 100);
@@ -73,6 +79,7 @@ class AttachmentsRequestCreateCest
         $I->canSee('Ваша заявка успешно создана.');
         $I->checkTablesInDB($provider_data['db_1']);
         $I->checkRabbitMQ($provider_data['RabbitMQ_1']);
+        $I->cantSeeFileFound('*-.doc', FunctionalTester::BPM_UPLOADS);
 
         //заходим в заявку
         $view->amOnView(1);
@@ -91,6 +98,7 @@ class AttachmentsRequestCreateCest
         $I->canSeeResultCodeIs(1);
         $I->canSeeInShellOutput(' успешно сгенерирован.');
         $I->waitForElement(RequestView::$downloadArchiveButton . '[text()=" Скачать архив"]');
+        $I->canSeeFileFound('lisa_*.zip', FunctionalTester::BPM_UPLOADS);
 
         //удаляем первый файл
         $I->click(RequestView::$savedFileTableRow . '//a[@href="#" and @title="Удалить файл"]');

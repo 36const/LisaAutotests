@@ -3,6 +3,7 @@
 namespace lisa;
 
 use Codeception\Example;
+use PhpOffice\PhpSpreadsheet\IOFactory;
 
 /**
  * Inherited Methods
@@ -46,6 +47,8 @@ class FunctionalTester extends \Codeception\Actor
         $I->amOnPage('/');
     }
 
+    public const BPM_UPLOADS = '/var/www/gomer.local/www/backend/web/tmp/bpm_uploads/';
+
     public function changeStatus($requestParameter, $requestBody)
     {
         $I = $this;
@@ -69,8 +72,6 @@ class FunctionalTester extends \Codeception\Actor
         $I = $this;
 
         foreach ($dbTablesArray as $dbName => $dbData) {
-            $I->amConnectedToDatabase($dbName);
-
             foreach ($dbData as $tableName => $tableData) {
                 $I->canSeeNumRecords(count($tableData), $tableName);
 
@@ -154,6 +155,55 @@ class FunctionalTester extends \Codeception\Actor
             foreach ($redis['cantSee'] as $key => $value) {
                 $I->assertEquals(0, \Yii::$app->redis->exists($key));
             }
+        }
+    }
+
+    public function checkXlsFile(?array $fileContent, ?int $rowCount = null, string $format = 'Xlsx', int $sheetCount = 1)
+    {
+        $I = $this;
+
+        if ($fileContent) {
+
+            $file = IOFactory::createReader($format)
+                ->load(FunctionalTester::BPM_UPLOADS . scandir(FunctionalTester::BPM_UPLOADS, 1)[0]);
+            $tableArray = $file->getSheet(0)->toArray(null, true, true, true);
+            $exceptions = null;
+
+            try {
+                $I->assertEquals($sheetCount, $file->getSheetCount());
+            } catch (\Exception $exception) {
+                $exceptions[] = [
+                    "actual" => $sheetCount,
+                    "expected" => $file->getSheetCount(),
+                    $exception->getMessage()
+                ];
+            }
+
+            try {
+                $I->assertEquals($rowCount, count($tableArray));
+            } catch (\Exception $exception) {
+                $exceptions[] = [
+                    "actual" => $rowCount,
+                    "expected" => count($tableArray),
+                    $exception->getMessage()
+                ];
+            }
+
+            $i = 1;
+            foreach ($fileContent as $row) {
+                try {
+                    $I->assertEquals($row, $tableArray[$i]);
+                } catch (\Exception $exception) {
+                    $exceptions[] = [
+                        "actual" => $row,
+                        "expected" => $tableArray[$i],
+                        $exception->getMessage()
+                    ];
+                }
+                $i++;
+            }
+
+            $I->assertNull($exceptions);
         }
     }
 }

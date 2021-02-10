@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Requests\RequestView;
 use lisa\Page\Users\Roles;
 
 /**
@@ -28,7 +27,6 @@ class POSTRolesUpdateCest
      * @param Roles $roles
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
-     *
      */
     public function POSTRolesUpdate(FunctionalTester $I, Example $data, Roles $roles)
     {

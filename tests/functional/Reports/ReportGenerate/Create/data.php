@@ -944,6 +944,7 @@ return [
     'case7' => [
         'setting' => [
             'description' => 'Выгрузка нескольких детальных по СВ',
+            'format' => '*.zip'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1191,6 +1192,7 @@ return [
     'case10' => [
         'setting' => [
             'description' => 'Выгрузка нескольких сводных по исполнителю',
+            'format' => '*.zip'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

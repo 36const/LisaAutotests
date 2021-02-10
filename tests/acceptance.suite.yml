@@ -10,6 +10,7 @@ modules:
         - Cli
         - Asserts
         - TestHelper
+        - Filesystem
         - WebDriver:
             url: http://gomer.local
             browser: chrome

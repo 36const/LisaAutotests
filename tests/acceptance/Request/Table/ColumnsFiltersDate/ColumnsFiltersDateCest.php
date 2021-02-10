@@ -32,7 +32,6 @@ class ColumnsFiltersDateCest
         $I->loadDataForTest($data, 'allUsers');
         $I->setRequestPerPageCookie(50);
         $setting = $data['setting'];
-        $provider_data = $data['provider_data'];
         $request->amOnTable();
 
         //открыть календарь

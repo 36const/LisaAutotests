@@ -11,7 +11,8 @@ class Team
     public static $teamStatus = '//select[@id="team-status"]';
     public static $saveButton = '//div[@class="team-form"]//button[text()=" Сохранить"]';
 
-    public static function errorField(string $text) {
+    public static function errorField(string $text): string
+    {
         return "//div[@class='team-form']//div[@class='help-block' and text()='$text']";
     }
 }

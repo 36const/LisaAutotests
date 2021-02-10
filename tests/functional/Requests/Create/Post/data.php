@@ -64,7 +64,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -224,9 +224,9 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [
-                    '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` [Товар-новинка/эксклюзив (трафикообразующий)]","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br>","requestId":1}',
-                    '{"notificationId":3,"userId":15,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` [Товар-новинка/эксклюзив (трафикообразующий)]","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br>","requestId":1}',
-                    '{"notificationId":4,"userId":17,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` [Товар-новинка/эксклюзив (трафикообразующий)]","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=4\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":3,"userId":15,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":4,"userId":17,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=4\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br>","requestId":1}',
                 ],
             ],
         ]
@@ -296,7 +296,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -525,7 +525,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -683,28 +683,6 @@ return [
                     ],
                 ]
             ],
-            "pageObjects" => [
-                "canSee" => [
-                    [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
-                    ]
-                ]
-            ]
         ]
     ],
 
@@ -772,7 +750,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -1001,7 +979,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -1226,7 +1204,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -1455,7 +1433,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -1644,7 +1622,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],
@@ -1866,7 +1844,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],
@@ -2094,7 +2072,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],
@@ -2292,7 +2270,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],
@@ -2488,7 +2466,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],
@@ -2674,7 +2652,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],
@@ -2860,7 +2838,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],
@@ -3036,7 +3014,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],
@@ -3257,7 +3235,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],
@@ -3443,7 +3421,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],
@@ -3629,7 +3607,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],

@@ -1,7 +1,5 @@
 <?php
 
-use lisa\Page\Requests\Request;
-
 return [
     'case1' => [
         'setting' => [

@@ -23,22 +23,11 @@ return [
                         ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
+                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
@@ -97,22 +86,11 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
+                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ]
                 ],
             ]
@@ -139,22 +117,11 @@ return [
                         ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
+                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Добавление/обновление инструкций')],
@@ -217,22 +184,11 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
+                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ]
                 ],
 
@@ -260,22 +216,11 @@ return [
                         ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
+                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
@@ -334,22 +279,11 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
+                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ]
                 ],
             ]
@@ -373,6 +307,8 @@ return [
                         ["selector" => RequestCreate::$plannedFinishDate],
                         ["selector" => RequestCreate::$observers],
                         ["selector" => RequestCreate::$priority],
+                        ["selector" => RequestCreate::$category],
+                        ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка') . '[@checked]'],
@@ -408,22 +344,11 @@ return [
                         ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
+                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
@@ -481,22 +406,11 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
+                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ]
                 ],
             ]
@@ -697,22 +611,11 @@ return [
                         ["selector" => RequestCreate::$category],
                     ],
                     "Продавец" => [
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[1][@value='9423']",
-                            "value" => "anytech"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[2][@value='67757']",
-                            "value" => "iTook"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[3][@value='83']",
-                            "value" => "Euromart"
-                        ],
-                        [
-                            "selector" => "//select[@name='Request[seller_id]']/option[4][@value='5' and @selected]",
-                            "value" => "Rozetka"
-                        ],
+                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ],
                     "Чекбоксы" => [
                         ["selector" => RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],

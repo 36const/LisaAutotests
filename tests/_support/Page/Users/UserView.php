@@ -5,7 +5,7 @@ namespace lisa\Page\Users;
 class UserView
 {
     /**Таблица с информацией об учётной записи после успешного создания пользователя*/
-    public static function viewUserTable(int $tr, string $text)
+    public static function viewUserTable(int $tr, string $text): string
     {
         return "//table/tbody/tr[$tr]//*[contains(text(), '$text')]";
     }

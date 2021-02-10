@@ -6,17 +6,17 @@ return [
             [
                 //"id" => 1,
                 "author_id" => 4,
-                "type_id" => 13,
+                "type_id" => 15,
                 "supervisor_id" => 35,
                 "manager_id" => 11,
-                "status" => 8,
+                "status" => 9,
                 "direction" => 0,
                 "priority" => 2,
                 "awaiting_correction" => 0,
                 "created_at" => '2020-01-01 00:00:00',
                 "correction_comment" => '',
                 "amount_to_work" => 10,
-                "subject" => "Добавление/изменение видео (Определяется типом задачи)",
+                "subject" => "Добавление/изменение тегов (Определяется типом задачи)",
                 "description" => 'description',
                 "category_id" => 1,
                 "seller_id" => 83,
@@ -29,7 +29,7 @@ return [
                 "actual_finish_date" => '2020-01-01 00:00:04',
                 "supervisor_process_date" => '2020-01-01 00:00:02',
                 "supervisor_check_date" => null,
-                "result_comment" => 'Частично выполнена',
+                "result_comment" => 'Выполнена',
                 "supervisor_comment" => '',
                 "last_change_status_date" => "2020-01-01 00:00:01",
                 "team_direction" => 6,
@@ -53,21 +53,6 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 27,
-                'value' => 24,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 47,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 48,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
                 'field_id' => 53,
                 'value' => 0.5,
             ],
@@ -78,18 +63,8 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 56,
-                'value' => 50,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 62,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 63,
-                'value' => 10,
+                'field_id' => 58,
+                'value' => 30,
             ],
             [
                 'request_id' => 1,
@@ -98,22 +73,7 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 70,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 86,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 87,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 88,
+                'field_id' => 83,
                 'value' => 10,
             ],
             [
@@ -123,7 +83,7 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 100,
+                'field_id' => 92,
                 'value' => 10,
             ],
             [
@@ -133,7 +93,12 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 102,
+                'field_id' => 110,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 117,
                 'value' => 10,
             ],
             [
@@ -165,7 +130,7 @@ return [
                 'manager_id' => 11,
                 'errors_count' => 10,
                 'items_with_errors' => 10,
-                'field_value_id' => 138,
+                'field_value_id' => 122,
                 'comment' => 'comment',
                 'status' => 0,
                 'create_ts' => '2020-01-01 00:00:10',
@@ -173,7 +138,7 @@ return [
             ]
         ],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
-        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
+        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values_errors.php',
         "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
         "markets_supervisors" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
         "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',

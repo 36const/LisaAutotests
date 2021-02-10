@@ -64,7 +64,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -203,6 +203,10 @@ return [
                     ],
                     "markets_supervisors" => [
                         [
+                            "owox_id" => -2,
+                            "supervisor_id" => 5
+                        ],
+                        [
                             "owox_id" => 0,
                             "supervisor_id" => 5
                         ],
@@ -294,7 +298,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -393,6 +397,10 @@ return [
                     ],
                     "markets_supervisors" => [
                         [
+                            "owox_id" => -2,
+                            "supervisor_id" => 5
+                        ],
+                        [
                             "owox_id" => 0,
                             "supervisor_id" => 5
                         ],
@@ -482,7 +490,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                         ]
                     ],
@@ -587,6 +595,10 @@ return [
                         ],
                     ],
                     "markets_supervisors" => [
+                        [
+                            "owox_id" => -2,
+                            "supervisor_id" => 5
+                        ],
                         [
                             "owox_id" => 0,
                             "supervisor_id" => 5
@@ -694,7 +706,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -785,6 +797,10 @@ return [
                     ],
                     'user_notifications' => [],
                     "markets_supervisors" => [
+                        [
+                            "owox_id" => -2,
+                            "supervisor_id" => 5
+                        ],
                         [
                             "owox_id" => 0,
                             "supervisor_id" => 5
@@ -893,7 +909,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -944,6 +960,10 @@ return [
                     ],
                     'user_notifications' => [],
                     "markets_supervisors" => [
+                        [
+                            "owox_id" => -2,
+                            "supervisor_id" => 5
+                        ],
                         [
                             "owox_id" => 0,
                             "supervisor_id" => 5

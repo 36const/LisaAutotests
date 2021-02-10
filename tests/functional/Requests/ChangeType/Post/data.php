@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Перевод в статусе "Новая" из типа 1 в 2 без изменений',
+            'description' => 'Изменение типа в статусе "Новая" с 1 на 2 без изменений полей',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -146,7 +146,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Перевод в статусе "Готова для распределения" из типа 3 в 4 с изменением чек-боксов, категории, продавца',
+            'description' => 'Изменение типа в статусе "Готова для распределения" с 3 на 4 с изменением чек-боксов, категории, продавца',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
@@ -206,7 +206,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
@@ -302,7 +302,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Перевод в статусе "На доработке" из типа 5 в 6 без изменений',
+            'description' => 'Изменение типа в статусе "На доработке" с 5 на 6 без изменений полей',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case3.php',
         'provider_data' => [
@@ -452,7 +452,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Перевод в статусе "Ожидает взятия в работу" из типа 7 в 8 с изменением чек-боксов',
+            'description' => 'Изменение типа в статусе "Ожидает взятия в работу" с 7 на 8 с изменением чек-боксов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4.php',
         'provider_data' => [
@@ -560,7 +560,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Перевод в статусе "В работе" из типа 9 в 10 с изменением категории и продавца',
+            'description' => 'Изменение типа в статусе "В работе" с 9 на 10 с изменением категории и продавца',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case5.php',
         'provider_data' => [
@@ -708,7 +708,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Перевод в статусе "Ожидает" из типа 11 в 12 с изменением чек-бокса и продавца',
+            'description' => 'Изменение типа в статусе "Ожидает" с 11 на 12 с изменением чек-бокса и продавца',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6.php',
         'provider_data' => [
@@ -929,7 +929,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Перевод в статусе "Частично выполнен" из типа 13 в 14 без изменений',
+            'description' => 'Изменение типа в статусе "Частично выполнен" с 13 на 14 без изменений полей',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case7.php',
         'provider_data' => [
@@ -1143,7 +1143,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Перевод в статусе "Выполнены" из типа 15 в 1 с изменением чек-боксов и продавца',
+            'description' => 'Изменение типа в статусе "Выполнены" с 15 на 1 с изменением чек-боксов и продавца',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case8.php',
         'provider_data' => [
@@ -1205,7 +1205,7 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => '{"1": 1}',
-                            "cross_check_status" => '0',
+                            "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,

@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Requests\RequestView;
 
 /**
  * @group lisa
@@ -23,11 +22,10 @@ class POSTAutochangeCategorySVCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTAutochangeCategorySV(FunctionalTester $I, Example $data, RequestView $view)
+    public function POSTAutochangeCategorySV(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];

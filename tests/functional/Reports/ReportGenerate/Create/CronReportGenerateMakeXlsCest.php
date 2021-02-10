@@ -30,6 +30,7 @@ class CronReportGenerateMakeXlsCest
     {
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
+        $I->cleanDir(FunctionalTester::BPM_UPLOADS);
 
         $I->sendPOST('/bpm/report/generate', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
@@ -44,5 +45,9 @@ class CronReportGenerateMakeXlsCest
         $I->amOnPage('/bpm/export/index');
         $I->checkObjectsOnPage($providerData['pageObjects']);
         $I->checkTablesInDB($providerData['db_2']);
+        $I->canSeeFileFound(
+            $providerData['db_2']['lisa_fixtures']['user_exports'][0]['title >'] . ($data['setting']['format'] ?? '*.xlsx'),
+            FunctionalTester::BPM_UPLOADS
+        );
     }
 }

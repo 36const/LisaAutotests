@@ -5,6 +5,7 @@ modules:
         - \lisa\Helper\Functional
         - Cli
         - Asserts
+        - Filesystem
         - TestHelper:
             mockserver:
               clear_before_test: true   # По-умолчанию false, то есть не чистим моки перед стартом каждого тестa

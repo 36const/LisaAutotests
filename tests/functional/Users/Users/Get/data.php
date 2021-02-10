@@ -179,7 +179,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?UserSearch%5Bid%5D=4&UserSearch%5Bname%5D=&UserSearch%5Blogin%5D=&UserSearch%5Bteam%5D=&UserSearch%5Bposition%5D=&UserSearch%5Bdrfo%5D=&UserSearch%5Bcreate_ts%5D=&UserSearch%5Bparent_id%5D=&UserSearch%5Bchange_date%5D=&UserSearch%5Bstatus%5D=',
+            "url" => '?UserSearch[id]=4&UserSearch[name]=&UserSearch[login]=&UserSearch[team]=&UserSearch[position]=&UserSearch[drfo]=&UserSearch[create_ts]=&UserSearch[parent_id]=&UserSearch[change_date]=&UserSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -314,7 +314,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=5']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=5']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=5']",
                         ],
                     ],
                 ]
@@ -328,7 +328,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?UserSearch%5Bid%5D=&UserSearch%5Bname%5D=Куцан&UserSearch%5Blogin%5D=&UserSearch%5Bteam%5D=&UserSearch%5Bposition%5D=&UserSearch%5Bdrfo%5D=&UserSearch%5Bcreate_ts%5D=&UserSearch%5Bparent_id%5D=&UserSearch%5Bchange_date%5D=&UserSearch%5Bstatus%5D=',
+            "url" => '?UserSearch[id]=&UserSearch[name]=Куцан&UserSearch[login]=&UserSearch[team]=&UserSearch[position]=&UserSearch[drfo]=&UserSearch[create_ts]=&UserSearch[parent_id]=&UserSearch[change_date]=&UserSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -463,7 +463,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=5']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=5']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=5']",
                         ],
                     ],
                 ]
@@ -477,7 +477,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?UserSearch%5Bid%5D=&UserSearch%5Bname%5D=&UserSearch%5Blogin%5D=kutsan&UserSearch%5Bteam%5D=&UserSearch%5Bposition%5D=&UserSearch%5Bdrfo%5D=&UserSearch%5Bcreate_ts%5D=&UserSearch%5Bparent_id%5D=&UserSearch%5Bchange_date%5D=&UserSearch%5Bstatus%5D=',
+            "url" => '?UserSearch[id]=&UserSearch[name]=&UserSearch[login]=kutsan&UserSearch[team]=&UserSearch[position]=&UserSearch[drfo]=&UserSearch[create_ts]=&UserSearch[parent_id]=&UserSearch[change_date]=&UserSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -612,7 +612,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=5']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=5']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=5']",
                         ],
                     ],
                 ]
@@ -626,7 +626,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?UserSearch%5Bid%5D=&UserSearch%5Bname%5D=&UserSearch%5Blogin%5D=&UserSearch%5Bteam%5D=14&UserSearch%5Bposition%5D=&UserSearch%5Bdrfo%5D=&UserSearch%5Bcreate_ts%5D=&UserSearch%5Bparent_id%5D=&UserSearch%5Bchange_date%5D=&UserSearch%5Bstatus%5D=',
+            "url" => '?UserSearch[id]=&UserSearch[name]=&UserSearch[login]=&UserSearch[team]=14&UserSearch[position]=&UserSearch[drfo]=&UserSearch[create_ts]=&UserSearch[parent_id]=&UserSearch[change_date]=&UserSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -711,7 +711,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=4']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=4']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=4']",
                         ],
                     ],
                     "Руководитель супервайзеров" => [
@@ -742,7 +742,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=5']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=5']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=5']",
                         ],
                     ],
                 ]
@@ -756,7 +756,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?UserSearch%5Bid%5D=&UserSearch%5Bname%5D=&UserSearch%5Blogin%5D=&UserSearch%5Bteam%5D=&UserSearch%5Bposition%5D=supervisor&UserSearch%5Bdrfo%5D=&UserSearch%5Bcreate_ts%5D=&UserSearch%5Bparent_id%5D=&UserSearch%5Bchange_date%5D=&UserSearch%5Bstatus%5D=',
+            "url" => '?UserSearch[id]=&UserSearch[name]=&UserSearch[login]=&UserSearch[team]=&UserSearch[position]=supervisor&UserSearch[drfo]=&UserSearch[create_ts]=&UserSearch[parent_id]=&UserSearch[change_date]=&UserSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -841,7 +841,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=4']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=4']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=4']",
                         ],
                     ],
                     "Руководитель супервайзеров" => [
@@ -872,7 +872,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=5']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=5']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=5']",
                         ],
                     ],
                 ]
@@ -886,7 +886,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?UserSearch%5Bid%5D=&UserSearch%5Bname%5D=&UserSearch%5Blogin%5D=&UserSearch%5Bteam%5D=&UserSearch%5Bposition%5D=&UserSearch%5Bdrfo%5D=%27000000005&UserSearch%5Bcreate_ts%5D=&UserSearch%5Bparent_id%5D=&UserSearch%5Bchange_date%5D=&UserSearch%5Bstatus%5D=',
+            "url" => '?UserSearch[id]=&UserSearch[name]=&UserSearch[login]=&UserSearch[team]=&UserSearch[position]=&UserSearch[drfo]=%27000000005&UserSearch[create_ts]=&UserSearch[parent_id]=&UserSearch[change_date]=&UserSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1021,7 +1021,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=4']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=4']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=4']",
                         ],
                     ],
                 ]
@@ -1035,7 +1035,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?UserSearch%5Bid%5D=&UserSearch%5Bname%5D=&UserSearch%5Blogin%5D=&UserSearch%5Bteam%5D=&UserSearch%5Bposition%5D=&UserSearch%5Bdrfo%5D=&UserSearch%5Bcreate_ts%5D=2020-05-18+00%3A00%3A00to2020-05-20+23%3A59%3A00&UserSearch%5Bparent_id%5D=&UserSearch%5Bchange_date%5D=&UserSearch%5Bstatus%5D=',
+            "url" => '?UserSearch[id]=&UserSearch[name]=&UserSearch[login]=&UserSearch[team]=&UserSearch[position]=&UserSearch[drfo]=&UserSearch[create_ts]=2020-05-18+00%3A00%3A00to2020-05-20+23%3A59%3A00&UserSearch[parent_id]=&UserSearch[change_date]=&UserSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1207,7 +1207,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?UserSearch%5Bid%5D=&UserSearch%5Bname%5D=&UserSearch%5Blogin%5D=&UserSearch%5Bteam%5D=&UserSearch%5Bposition%5D=&UserSearch%5Bdrfo%5D=&UserSearch%5Bcreate_ts%5D=&UserSearch%5Bparent_id%5D=4&UserSearch%5Bchange_date%5D=&UserSearch%5Bstatus%5D=',
+            "url" => '?UserSearch[id]=&UserSearch[name]=&UserSearch[login]=&UserSearch[team]=&UserSearch[position]=&UserSearch[drfo]=&UserSearch[create_ts]=&UserSearch[parent_id]=4&UserSearch[change_date]=&UserSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1342,7 +1342,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=4']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=4']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=4']",
                         ],
                     ],
                 ]
@@ -1356,7 +1356,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?UserSearch%5Bid%5D=&UserSearch%5Bname%5D=&UserSearch%5Blogin%5D=&UserSearch%5Bteam%5D=&UserSearch%5Bposition%5D=&UserSearch%5Bdrfo%5D=&UserSearch%5Bcreate_ts%5D=&UserSearch%5Bparent_id%5D=&UserSearch%5Bchange_date%5D=2020-07-01+00%3A00%3A00to2020-07-07+23%3A59%3A00&UserSearch%5Bstatus%5D=',
+            "url" => '?UserSearch[id]=&UserSearch[name]=&UserSearch[login]=&UserSearch[team]=&UserSearch[position]=&UserSearch[drfo]=&UserSearch[create_ts]=&UserSearch[parent_id]=&UserSearch[change_date]=2020-07-01+00%3A00%3A00to2020-07-07+23%3A59%3A00&UserSearch[status]=',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1441,7 +1441,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=4']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=4']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=4']",
                         ],
                     ],
                     "Руководитель супервайзеров" => [
@@ -1472,7 +1472,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=5']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=5']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=5']",
                         ],
                     ],
                 ]
@@ -1486,7 +1486,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            "url" => '?UserSearch%5Bid%5D=&UserSearch%5Bname%5D=&UserSearch%5Blogin%5D=&UserSearch%5Bteam%5D=&UserSearch%5Bposition%5D=&UserSearch%5Bdrfo%5D=&UserSearch%5Bcreate_ts%5D=&UserSearch%5Bparent_id%5D=&UserSearch%5Bchange_date%5D=&UserSearch%5Bstatus%5D=0',
+            "url" => '?UserSearch[id]=&UserSearch[name]=&UserSearch[login]=&UserSearch[team]=&UserSearch[position]=&UserSearch[drfo]=&UserSearch[create_ts]=&UserSearch[parent_id]=&UserSearch[change_date]=&UserSearch[status]=0',
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
@@ -1621,7 +1621,7 @@ return [
                             "selector" => "//tbody//a[@href='/bpm/user/update?id=4']",
                         ],
                         [
-                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch%5Bchanged_user_id%5D=4']",
+                            "selector" => "//tbody//a[@href='/bpm/user-changes?UserChangesSearch[changed_user_id]=4']",
                         ],
                     ],
                 ]

@@ -59,6 +59,7 @@ return [
                 "drfo" => "'000000004"
             ],
         ],
+        "request_errors" => []
     ],
 
     "gomer_fixtures" => [

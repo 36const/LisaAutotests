@@ -25,7 +25,6 @@ class POSTSellerUpdateCest
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
-     *
      */
     public function POSTSellerUpdate(FunctionalTester $I, Example $data)
     {

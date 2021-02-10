@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use lisa\Page\Other\Notifications;
-use lisa\Page\Other\SearchField;
 use lisa\Page\Requests\Request;
 use Codeception\Module\TestHelper;
 
@@ -36,10 +35,10 @@ class NotificationsCest
         $I->canSeeElement(Notifications::notifMenuTotal(3));
 
         //отметить одну прочитанной через таблицу
-        $I->click(Notifications::toogleStatusButton(1, 'ok'));
-        $I->waitForElement(Notifications::toogleStatusButton(1, 'repeat'));
-        $I->canSeeElement(Notifications::toogleStatusButton(3, 'ok'));
-        $I->canSeeElement(Notifications::toogleStatusButton(5, 'ok'));
+        $I->click(Notifications::toggleStatusButton(1, 'ok'));
+        $I->waitForElement(Notifications::toggleStatusButton(1, 'repeat'));
+        $I->canSeeElement(Notifications::toggleStatusButton(3, 'ok'));
+        $I->canSeeElement(Notifications::toggleStatusButton(5, 'ok'));
         $I->canSeeElement(Notifications::notifMenuTotal(2));
         $I->click(Notifications::$notifMenu);
         $I->cantSeeElement(Notifications::notifMenuMessage(1));
@@ -57,28 +56,28 @@ class NotificationsCest
 
         //перейти в раздел нотификаций через кнопку в модалке
         $I->click(Notifications::notifMenuFootButton('Просмотреть все'));
-        $I->waitForElement(Notifications::toogleStatusButton(3, 'repeat'));
-        $I->canSeeElement(Notifications::toogleStatusButton(1, 'repeat'));
-        $I->canSeeElement(Notifications::toogleStatusButton(5, 'ok'));
+        $I->waitForElement(Notifications::toggleStatusButton(3, 'repeat'));
+        $I->canSeeElement(Notifications::toggleStatusButton(1, 'repeat'));
+        $I->canSeeElement(Notifications::toggleStatusButton(5, 'ok'));
         $I->canSeeElement(Notifications::notifMenuTotal(1));
         $I->checkTablesInDB($providerData['db_2']);
 
         //пометить все прочитанными через модалку
         $I->click(Notifications::$notifMenu);
         $I->click(Notifications::notifMenuFootButton('Пометить прочитанными все'));
-        $I->waitForElement(Notifications::toogleStatusButton(5, 'repeat'));
-        $I->canSeeElement(Notifications::toogleStatusButton(1, 'repeat'));
-        $I->canSeeElement(Notifications::toogleStatusButton(3, 'repeat'));
+        $I->waitForElement(Notifications::toggleStatusButton(5, 'repeat'));
+        $I->canSeeElement(Notifications::toggleStatusButton(1, 'repeat'));
+        $I->canSeeElement(Notifications::toggleStatusButton(3, 'repeat'));
         $I->click(Notifications::$notifMenu);
         $I->click(Notifications::$notifAllIsRead);
         $I->checkTablesInDB($providerData['db_3']);
 
         //пометить два не прочитанными через таблицу
-        $I->click(Notifications::toogleStatusButton(1, 'repeat'));
-        $I->waitForElement(Notifications::toogleStatusButton(1, 'ok'));
-        $I->click(Notifications::toogleStatusButton(3, 'repeat'));
-        $I->waitForElement(Notifications::toogleStatusButton(3, 'ok'));
-        $I->canSeeElement(Notifications::toogleStatusButton(5, 'repeat'));
+        $I->click(Notifications::toggleStatusButton(1, 'repeat'));
+        $I->waitForElement(Notifications::toggleStatusButton(1, 'ok'));
+        $I->click(Notifications::toggleStatusButton(3, 'repeat'));
+        $I->waitForElement(Notifications::toggleStatusButton(3, 'ok'));
+        $I->canSeeElement(Notifications::toggleStatusButton(5, 'repeat'));
         $I->click(Notifications::$notifMenu);
         $I->canSeeElement(Notifications::notifMenuTotal(2));
         $I->canSeeElement(Notifications::notifMenuMessage(1));
@@ -88,9 +87,9 @@ class NotificationsCest
 
         //пометить все прочитанными через таблицу
         $I->click(Notifications::$markAllButton);
-        $I->waitForElement(Notifications::toogleStatusButton(5, 'repeat'));
-        $I->canSeeElement(Notifications::toogleStatusButton(1, 'repeat'));
-        $I->canSeeElement(Notifications::toogleStatusButton(3, 'repeat'));
+        $I->waitForElement(Notifications::toggleStatusButton(5, 'repeat'));
+        $I->canSeeElement(Notifications::toggleStatusButton(1, 'repeat'));
+        $I->canSeeElement(Notifications::toggleStatusButton(3, 'repeat'));
         $I->click(Notifications::$notifMenu);
         $I->cantSeeElement(Notifications::notifMenuMessage(1));
         $I->cantSeeElement(Notifications::notifMenuMessage(3));
@@ -99,10 +98,10 @@ class NotificationsCest
         $I->checkTablesInDB($providerData['db_5']);
 
         //пометить два не прочитанными через таблицу
-        $I->click(Notifications::toogleStatusButton(1, 'repeat'));
-        $I->waitForElement(Notifications::toogleStatusButton(1, 'ok'));
-        $I->click(Notifications::toogleStatusButton(3, 'repeat'));
-        $I->waitForElement(Notifications::toogleStatusButton(3, 'ok'));
+        $I->click(Notifications::toggleStatusButton(1, 'repeat'));
+        $I->waitForElement(Notifications::toggleStatusButton(1, 'ok'));
+        $I->click(Notifications::toggleStatusButton(3, 'repeat'));
+        $I->waitForElement(Notifications::toggleStatusButton(3, 'ok'));
         $I->canSeeElement(Notifications::notifMenuTotal(2));
 
         //перейти в заявку через ссылку в таблице
@@ -132,9 +131,9 @@ class NotificationsCest
 
         //переход в настройки через таблицу
         $I->amOnPage('/bpm/notification');
-        $I->waitForElement(Notifications::toogleStatusButton(5, 'repeat'));
-        $I->canSeeElement(Notifications::toogleStatusButton(1, 'repeat'));
-        $I->canSeeElement(Notifications::toogleStatusButton(3, 'repeat'));
+        $I->waitForElement(Notifications::toggleStatusButton(5, 'repeat'));
+        $I->canSeeElement(Notifications::toggleStatusButton(1, 'repeat'));
+        $I->canSeeElement(Notifications::toggleStatusButton(3, 'repeat'));
         $I->click(Notifications::$settingsButton);
         $I->canSeeElement(Request::$globalCaption . '[text()="Изменение личных настроек"]');
     }

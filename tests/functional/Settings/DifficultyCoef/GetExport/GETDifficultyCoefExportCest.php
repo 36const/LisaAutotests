@@ -28,7 +28,6 @@ class GETDifficultyCoefExportCest
     public function GETDifficultyCoefExport(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data);
-        $providerData = $data['provider_data'];
 
         $I->amOnPage('bpm/difficulty-coef/export');
         $I->seeResponseCodeIs(200);
