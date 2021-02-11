@@ -158,13 +158,13 @@ class FunctionalTester extends \Codeception\Actor
         }
     }
 
-    public function checkXlsFile(?array $fileContent, ?int $rowCount = null, string $format = 'Xlsx', int $sheetCount = 1)
+    public function checkXlsxFile(?array $fileContent, ?int $rowCount = null, int $sheetCount = 1)
     {
         $I = $this;
 
         if ($fileContent) {
 
-            $file = IOFactory::createReader($format)
+            $file = IOFactory::createReader('Xlsx')
                 ->load(FunctionalTester::BPM_UPLOADS . scandir(FunctionalTester::BPM_UPLOADS, 1)[0]);
             $tableArray = $file->getSheet(0)->toArray(null, true, true, true);
             $exceptions = null;
@@ -173,8 +173,8 @@ class FunctionalTester extends \Codeception\Actor
                 $I->assertEquals($sheetCount, $file->getSheetCount());
             } catch (\Exception $exception) {
                 $exceptions[] = [
-                    "actual" => $sheetCount,
-                    "expected" => $file->getSheetCount(),
+                    "expected" => $sheetCount,
+                    "actual" => $file->getSheetCount(),
                     $exception->getMessage()
                 ];
             }
@@ -183,8 +183,8 @@ class FunctionalTester extends \Codeception\Actor
                 $I->assertEquals($rowCount, count($tableArray));
             } catch (\Exception $exception) {
                 $exceptions[] = [
-                    "actual" => $rowCount,
-                    "expected" => count($tableArray),
+                    "expected" => $rowCount,
+                    "actual" => count($tableArray),
                     $exception->getMessage()
                 ];
             }
@@ -195,8 +195,8 @@ class FunctionalTester extends \Codeception\Actor
                     $I->assertEquals($row, $tableArray[$i]);
                 } catch (\Exception $exception) {
                     $exceptions[] = [
-                        "actual" => $row,
-                        "expected" => $tableArray[$i],
+                        "expected" => $row,
+                        "actual" => $tableArray[$i],
                         $exception->getMessage()
                     ];
                 }
