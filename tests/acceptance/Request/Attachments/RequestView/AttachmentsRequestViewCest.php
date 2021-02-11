@@ -71,6 +71,7 @@ class AttachmentsRequestViewCest
         $I->canSeeElement(RequestView::$savedFileTableRow . '/div[contains(text(), "Константин Куцан")]');
         $I->checkTablesInDB($provider_data['db_1']);
         $I->checkRabbitMQ($provider_data['RabbitMQ_1']);
+        $I->canSeeFileFound('*-.doc', FunctionalTester::BPM_UPLOADS);
 
         //создаём и скачиваем архив
         $I->click(RequestView::$downloadArchiveButton);

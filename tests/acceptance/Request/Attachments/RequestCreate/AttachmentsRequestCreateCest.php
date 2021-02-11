@@ -79,7 +79,7 @@ class AttachmentsRequestCreateCest
         $I->canSee('Ваша заявка успешно создана.');
         $I->checkTablesInDB($provider_data['db_1']);
         $I->checkRabbitMQ($provider_data['RabbitMQ_1']);
-        $I->cantSeeFileFound('*-.doc', FunctionalTester::BPM_UPLOADS);
+        $I->canSeeFileFound('*-.doc', FunctionalTester::BPM_UPLOADS);
 
         //заходим в заявку
         $view->amOnView(1);
