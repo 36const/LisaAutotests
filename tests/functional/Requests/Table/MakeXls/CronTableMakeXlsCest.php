@@ -53,6 +53,6 @@ class CronTableMakeXlsCest
                 FunctionalTester::BPM_UPLOADS
             );
         }
-        $I->checkXlsFile($providerData['fileContent'] ?? null, $setting['rows'] ?? null);
+        $I->checkXlsxFile($providerData['fileContent'] ?? null, $setting['rows'] ?? null);
     }
 }
