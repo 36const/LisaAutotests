@@ -87,15 +87,8 @@ return [
     [
         //"id" => 10,
         "type_id" => 4,
-        "field_ids" => "[1]",
+        "field_ids" => "[170]",
         "difficulty_coef" => 0.5,
-        "status" => 1
-    ],
-    [
-        //"id" => 11,
-        "type_id" => 4,
-        "field_ids" => "[2]",
-        "difficulty_coef" => 2,
         "status" => 1
     ],
     [

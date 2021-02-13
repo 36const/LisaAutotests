@@ -305,8 +305,7 @@ return [
                         ["selector" => RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка') . '[@checked]'],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка')],
+                        ["selector" => RequestCreate::findCheckbox(' Алгоритм')],
                     ]
                 ],
                 "cantSee" => [

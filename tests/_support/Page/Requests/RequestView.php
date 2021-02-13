@@ -96,6 +96,8 @@ class RequestView extends FunctionalTester
         'RequestField[126]',
         'RequestField[127]',
         'RequestField[159]',
+        'RequestField[160]',
+        'RequestField[170]',
     ];
 
     /**
@@ -121,6 +123,10 @@ class RequestView extends FunctionalTester
         'RequestField[53]',
         'RequestField[54]',
         'RequestField[114]',
+        'RequestField[171]',
+        'RequestField[172]',
+        'RequestField[173]',
+        'RequestField[174]',
         //рассчитанные количества
         'RequestField[49]',
         'RequestField[50]',
@@ -135,6 +141,12 @@ class RequestView extends FunctionalTester
         'RequestField[89]',
         'RequestField[142]',
         'RequestField[143]',
+        'RequestField[164]',
+        'RequestField[165]',
+        'RequestField[166]',
+        'RequestField[167]',
+        'RequestField[168]',
+        'RequestField[169]',
         //общие количества ошибок
         'RequestField[101]',
         'RequestField[122]',
