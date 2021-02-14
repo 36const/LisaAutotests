@@ -4175,7 +4175,9 @@ return [
             'requestParameter' => 'complete',
             'requestBody' => [
                 'RequestField[116]' => '10',
-                'RequestField[118]' => '10',
+                'RequestField[161]' => '10',
+                'RequestField[162]' => '10',
+                'RequestField[163]' => '10',
                 'RequestField[31]' => '48',
                 'RequestField[32]' => '52',
                 'RequestField[91]' => '10',
@@ -4231,11 +4233,6 @@ return [
                     'requests_fields' => [
                         [
                             'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
                             'field_id' => 31,
                             'value' => 48,
                         ],
@@ -4257,7 +4254,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 61,
-                            'value' => 6,
+                            'value' => 10,
                         ],
                         [
                             'request_id' => 1,
@@ -4291,11 +4288,6 @@ return [
                         ],
                         [
                             'request_id' => 1,
-                            'field_id' => 118,
-                            'value' => 10,
-                        ],
-                        [
-                            'request_id' => 1,
                             'field_id' => 122,
                             'value' => 0,
                         ],
@@ -4308,6 +4300,76 @@ return [
                             'request_id' => 1,
                             'field_id' => 158,
                             'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 161,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 162,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 163,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 164,
+                            'value' => 11.6,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 165,
+                            'value' => 0.7,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 166,
+                            'value' => 1.5,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 167,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 168,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 169,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 170,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 171,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 172,
+                            'value' => 0.07,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 173,
+                            'value' => 0.15,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 174,
+                            'value' => 0.1,
                         ],
                     ],
                     'request_status_history' => [

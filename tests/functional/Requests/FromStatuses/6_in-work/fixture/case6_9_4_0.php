@@ -42,11 +42,6 @@ return [
         'requests_fields' => [
             [
                 'request_id' => 1,
-                'field_id' => 1,
-                'value' => 1,
-            ],
-            [
-                'request_id' => 1,
                 'field_id' => 53,
                 'value' => 0.5,
             ],
@@ -79,6 +74,61 @@ return [
                 'request_id' => 1,
                 'field_id' => 158,
                 'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 164,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 165,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 166,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 167,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 168,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 169,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 170,
+                'value' => 1,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 171,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 172,
+                'value' => 0.07,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 173,
+                'value' => 0.15,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 174,
+                'value' => 0.1,
             ],
         ],
         "report_periods" => [[]],
