@@ -13,13 +13,14 @@ return [
                         [
                             "id" => 1,
                             "request_id" => 1,
-                            "file_name >" => "0",
+                            "file_name_old" => null,
                             "alias" => "~!@#$%^&*()_+`-=][;.|}{:?><.doc",
                             "status" => 2,
                             "uploaded_by" => "Константин Куцан",
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
-                            "deleted_at" => null
+                            "deleted_at" => null,
+                            "file_name >" => "0",
                         ]
                     ],
                     "user_notifications" => [
@@ -69,13 +70,14 @@ return [
                         [
                             "id" => 1,
                             "request_id" => 1,
-                            "file_name >" => "0",
+                            "file_name_old" => null,
                             "alias" => "~!@#$%^&*()_+`-=][;.|}{:?><.doc",
                             "status" => 0,
                             "uploaded_by" => "Константин Куцан",
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => "Константин Куцан",
                             "deleted_at >=" => date("Y-m-d"),
+                            "file_name >" => "0",
                         ]
                     ],
                     "user_notifications" => [
