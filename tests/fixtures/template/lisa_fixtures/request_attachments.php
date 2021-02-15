@@ -3,7 +3,7 @@ return [
     [
 //        "id" => 1,
         "request_id" => 1,
-        "file_name_old" => null,
+        "file_name_old" => "",
         "alias" => "jpg.jpg",
         "status" => 2,
         "uploaded_by" => "Константин Куцан",
