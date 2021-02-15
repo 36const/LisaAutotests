@@ -13,7 +13,7 @@ return [
                         [
                             "id" => 1,
                             "request_id" => 1,
-                            //"file_name like" => "_doc.doc",
+                            "file_name >" => "0",
                             "alias" => "~!@#$%^&*()_+`-=][;.|}{:?><.doc",
                             "status" => 2,
                             "uploaded_by" => "Константин Куцан",
@@ -69,7 +69,7 @@ return [
                         [
                             "id" => 1,
                             "request_id" => 1,
-                            //"file_name like" => "_doc.doc",
+                            "file_name >" => "0",
                             "alias" => "~!@#$%^&*()_+`-=][;.|}{:?><.doc",
                             "status" => 0,
                             "uploaded_by" => "Константин Куцан",

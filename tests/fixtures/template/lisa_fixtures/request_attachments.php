@@ -9,6 +9,7 @@ return [
         "uploaded_by" => "Константин Куцан",
         "uploaded_at" => "2020-07-25 19:38:43",
         "deleted_by" => null,
-        "deleted_at" => null
+        "deleted_at" => null,
+        "file_name_translit" => '223839_jpg.jpg'
     ],
 ];
