@@ -155,7 +155,7 @@ return [
                 'direction' => 0,
             ],
             'requestBody' => [
-                'RequestField[170]' => '1',
+                'RequestField[169]' => '1',
                 'Request[category_id]' => '1',
                 'Request[direction]' => '0',
                 'Request[seller_id]' => '5',

@@ -244,7 +244,7 @@ return [
         'provider_data' => [
             'url' => '/bpm/request/create',
             'requestBody' => [
-                "RequestField[170]" => 1,
+                "RequestField[169]" => 1,
                 "Request[amount_to_work]" => 10,
                 "Request[attachment_folder]" => '18ac118ec8919dcb3ad0d7ddd129d88a',
                 "Request[addedAttachments]" => '[]',
@@ -895,7 +895,7 @@ return [
                 'RequestField[161]' => '0',
                 'RequestField[162]' => '0',
                 'RequestField[163]' => '0',
-                'RequestField[170]' => '1',
+                'RequestField[169]' => '1',
                 'RequestField[20]' => '',
                 'RequestField[31]' => '',
                 'RequestField[32]' => '',
