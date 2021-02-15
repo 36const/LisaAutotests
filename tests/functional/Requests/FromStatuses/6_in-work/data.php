@@ -4318,23 +4318,28 @@ return [
                         ],
                         [
                             'request_id' => 1,
-                            'field_id' => 164,
+                            'field_id' => 64,
                             'value' => 11.6,
                         ],
                         [
                             'request_id' => 1,
-                            'field_id' => 165,
+                            'field_id' => 164,
                             'value' => 0.7,
                         ],
                         [
                             'request_id' => 1,
-                            'field_id' => 166,
+                            'field_id' => 165,
                             'value' => 1.5,
                         ],
                         [
                             'request_id' => 1,
-                            'field_id' => 167,
+                            'field_id' => 166,
                             'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 167,
+                            'value' => 1,
                         ],
                         [
                             'request_id' => 1,
@@ -4354,21 +4359,16 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 171,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 172,
                             'value' => 0.07,
                         ],
                         [
                             'request_id' => 1,
-                            'field_id' => 173,
+                            'field_id' => 172,
                             'value' => 0.15,
                         ],
                         [
                             'request_id' => 1,
-                            'field_id' => 174,
+                            'field_id' => 173,
                             'value' => 0.1,
                         ],
                     ],

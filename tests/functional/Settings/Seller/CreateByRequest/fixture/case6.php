@@ -85,6 +85,11 @@ return [
             ],
             [
                 'request_id' => 1,
+                'field_id' => 64,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
                 'field_id' => 164,
                 'value' => 0,
             ],
@@ -111,31 +116,26 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 169,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 170,
                 'value' => 1,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 171,
+                'field_id' => 170,
                 'value' => 0,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 172,
+                'field_id' => 171,
                 'value' => 0.07,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 173,
+                'field_id' => 172,
                 'value' => 0.15,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 174,
+                'field_id' => 173,
                 'value' => 0.1,
             ],
         ],
