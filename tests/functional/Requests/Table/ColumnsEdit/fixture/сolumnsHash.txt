@@ -1,81 +1,92 @@
 Все
-ef6ef760 author_id Создатель заявки
-50cd524a supervisor_id Супервайзер заявки
-bf04724b manager_id Менеджер заявки
-4a16cdfb status Статус
-2187abd1 cross_check_manager_id Кросс-чек менеджер
-0e27ac6a cross_check_status Кросс-чек статус
-805bbc04 direction Направление задачи
-3d33757d team_direction Направление команды
-ddcc7b4a category_id Категория товаров
-54eab21f seller_id Продавец
-6f4cf3ff priority Приоритет
+author_id               Создатель заявки
+supervisor_id           Супервайзер заявки
+manager_id              Менеджер заявки
+status                  Статус
+cross_check_manager_id  Кросс-чек менеджер
+cross_check_status      Кросс-чек статус
+direction               Направление задачи
+team_direction          Направление команды
+category_id             Категория товаров
+seller_id               Продавец
+priority                Приоритет
 
 Статус 2
-d82b34cd parent_id ID связанной задачи
-7551a25e difficulty_level Уровень сложности задачи
-216af811 awaiting_correction На исправление
-195c6167 reason_id Причина
-7100d06f author_clarifications Уточнения. Количество уточнений у автора
-9f3bab20 photos_available Наличие фото к товарам
-3a15b8f6 characteristics_available Наличие характеристик к товарам
-12fe4397 description_available Наличие описаний к товарам
-132cbbd2 language Язык информации
+parent_id               ID связанной задачи
+difficulty_level        Уровень сложности задачи
+awaiting_correction     На исправление
+reason_id               Причина
+author_clarifications   Уточнения. Количество уточнений у автора
+photos_available        Наличие фото к товарам
+characteristics_available Наличие характеристик к товарам
+description_available   Наличие описаний к товарам
+language                Язык информации
 
 Статус 3
-f237cb47 description Описание
-cb2e0668 reason Причина отмены/доработки
-f5a35a47 recommendations Рекомендации
-a5480d6b correction_comment Комментарий на исправление
-00bab8f4 result_comment Комментарий к результату задачи
+description             Описание
+reason                  Причина отмены/доработки
+recommendations         Рекомендации
+correction_comment      Комментарий на исправление
+result_comment          Комментарий к результату задачи
 
 Статус 5
-45671659 amount_to_work Количество в работу
-9cf76095 added_goods Количество добавленных товаров
-4017ea5d changed_goods Количество измененных товаров
-fdd5e993 goods_in_db Количество товаров, которые уже есть в БД
-f69e93e9 calc_quantity_of_checked_goods Рассчитанное количество проверенных товаров
-e7ee29ab calc_quantity_of_checked_goods_with_errors Рассчитанное количество проверенных товаров с ошибками кросс-чек
-f69e93e9 calc_quantity_of_checked_goods_cc Рассчитанное количество проверенных товаров
-e7ee29ab calc_quantity_of_checked_goods_with_errors_cc Рассчитанное количество проверенных товаров с ошибками кросс-чек
+amount_to_work                      Количество в работу
+added_goods                         Количество добавленных товаров
+changed_goods                       Количество измененных товаров
+goods_in_db                         Количество товаров, которые уже есть в БД
+quantity_of_handled_but_not_grouped Количество обработанных, но не сгруппированных товаров
+group_settings                      Количество настроек групп (управление группами)
+quantity_of_words_in_dictionaries   Количество слов в словарях
+calc_quantity_of_indicators         Общее рассчитанное количество показателей
+calc_quantity_of_not_grouped        Рассчитанное количество не сгруппированных товаров
+calc_quantity_of_sent_emails        Рассчитанное количество отправленных писем
+calc_quantity_of_child_requests     Рассчитанное количество созданных подзадач
+calc_quantity_of_words_in_dictionaries Рассчитанное количество слов в словарях
+average_amount_of_goods_in_group    Среднее количество товаров в группе
+calc_quantity_of_checked_goods      Рассчитанное количество проверенных товаров
+calc_quantity_of_checked_goods_with_errors Рассчитанное количество проверенных товаров с ошибками кросс-чек
+calc_quantity_of_checked_goods_cc   Рассчитанное количество проверенных товаров
+calc_quantity_of_checked_goods_with_errors_cc Рассчитанное количество проверенных товаров с ошибками кросс-чек
 
 Статус 6
-4e9f52f3 last_change_status_date Дата последнего изменения статуса
-92daa30a created_at Дата регистрации задачи в системе
-4c0599eb supervisor_process_date Дата обработки задачи супервайзером
-4173aa0a supervisor_check_date Дата проверки задачи супервайзером
-0c4a481f planned_start_date Плановая дата начала работ
-3190e8ed planned_finish_date Плановая дата завершения
-c23b3887 actual_start_date Фактическая дата начала работ
-17888c9e actual_finish_date Фактическая дата завершения
-9052d997 report_period_id Отчетный период КМ
-450d4c53 sv_report_periods Отчетные периоды СВ
+last_change_status_date Дата последнего изменения статуса
+created_at              Дата регистрации задачи в системе
+supervisor_process_date Дата обработки задачи супервайзером
+supervisor_check_date   Дата проверки задачи супервайзером
+planned_start_date      Плановая дата начала работ
+planned_finish_date     Плановая дата завершения
+actual_start_date       Фактическая дата начала работ
+actual_finish_date      Фактическая дата завершения
+report_period_id        Отчетный период КМ
+sv_report_periods       Отчетные периоды СВ
 
 Статус 7
-d4c95f87 hand_load Ручная загрузка
-9036328c pack_load Пакетная загрузка
-4a81e2dd visa Виза супервайзера
-d0e05655 with_photo С фотосъемкой
-41125d67 enter_points Точки входа
-5e00cc71 adding_graphics Добавление графики
-93b970aa with_grid С размерной сеткой
-266c381f with_tags С тегами к товарам
-0788d3f1 markdown Уценка
-06b2967b markdown_2 Уценка 2
-67b74568 by_client_review На основе отзыва клиента на сайте
-ee469705 complaint_for_good Жалоба на товар продавца маркета
+hand_load               Ручная загрузка
+pack_load               Пакетная загрузка
+visa                    Виза супервайзера
+with_photo              С фотосъемкой
+enter_points            Точки входа
+adding_graphics         Добавление графики
+with_grid               С размерной сеткой
+with_tags               С тегами к товарам
+markdown                Уценка
+markdown_2              Уценка 2
+by_client_review        На основе отзыва клиента на сайте
+complaint_for_good      Жалоба на товар продавца маркета
 
 Статус 8
-f4f49851 promo_desc Промо-описание
-329730bf adding_goods_to_new_category Добавление товаров в новую категорию
-100af6ba used_ref БУ, REF
-f3809f80 updating_photos Обновление фото
-2cbe2443 updating_description Обновление описания
-29902e9a updating_characteristics Обновление характеристик
-e7f76e0d automoderation Автомодерация
-5800ee87 adding_instructions Добавление/обновление инструкций
-07546bc1 stop_brands Стоп-бренды
-43f73178 with_pallets С палитрой
-4c698919 lots Лоты
-80fd31f5 with_video С видео
-817b5bc0 mobile_courier По заявке с MobileCourier
+promo_desc              Промо-описание
+adding_goods_to_new_category Добавление товаров в новую категорию
+used_ref                БУ, REF
+updating_photos         Обновление фото
+updating_description    Обновление описания
+updating_characteristics Обновление характеристик
+automoderation          Автомодерация
+adding_instructions     Добавление/обновление инструкций
+stop_brands             Стоп-бренды
+with_pallets            С палитрой
+lots                    Лоты
+with_video              С видео
+mobile_courier          По заявке с MobileCourier
+ua_fields               Укр. поля
+algorithm               Алгоритм

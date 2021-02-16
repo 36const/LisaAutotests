@@ -755,7 +755,7 @@ return [
         'provider_data' => [
             "url" => 'wait-work',
             'requestBody' => [
-                'visibleColumns' => ['amount_to_work', 'added_goods', 'handled_goods','changed_goods', 'goods_in_db', 'calc_quantity_of_checked_goods', 'calc_quantity_of_checked_goods_with_errors', 'calc_quantity_of_checked_goods_cc', 'calc_quantity_of_checked_goods_with_errors_cc'],
+                'visibleColumns' => ['amount_to_work', 'added_goods', 'handled_goods','changed_goods', 'goods_in_db', 'quantity_of_handled_but_not_grouped', 'group_settings', 'quantity_of_words_in_dictionaries', 'calc_quantity_of_indicators', 'calc_quantity_of_not_grouped', 'calc_quantity_of_sent_emails', 'calc_quantity_of_child_requests', 'calc_quantity_of_words_in_dictionaries', 'average_amount_of_goods_in_group', 'calc_quantity_of_checked_goods', 'calc_quantity_of_checked_goods_with_errors', 'calc_quantity_of_checked_goods_cc', 'calc_quantity_of_checked_goods_with_errors_cc'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -763,7 +763,7 @@ return [
                         [
                             "id" => 1,
                             "user_id" => 4,
-                            "columns_list" => '["amount_to_work", "added_goods", "handled_goods", "changed_goods", "goods_in_db", "calc_quantity_of_checked_goods", "calc_quantity_of_checked_goods_with_errors", "calc_quantity_of_checked_goods_cc", "calc_quantity_of_checked_goods_with_errors_cc"]'
+                            "columns_list" => '["amount_to_work", "added_goods", "handled_goods", "changed_goods", "goods_in_db", "quantity_of_handled_but_not_grouped", "group_settings", "quantity_of_words_in_dictionaries", "calc_quantity_of_indicators", "calc_quantity_of_not_grouped", "calc_quantity_of_sent_emails", "calc_quantity_of_child_requests", "calc_quantity_of_words_in_dictionaries", "average_amount_of_goods_in_group", "calc_quantity_of_checked_goods", "calc_quantity_of_checked_goods_with_errors", "calc_quantity_of_checked_goods_cc", "calc_quantity_of_checked_goods_with_errors_cc"]'
                         ]
                     ],
                 ]
@@ -804,6 +804,42 @@ return [
                             "value" => "Количество товаров, которые уже есть в БД"
                         ],
                         [
+                            "selector" => "//thead/tr/th[@data-col-seq='quantity_of_handled_but_not_grouped']",
+                            "value" => "Количество обработанных, но не сгруппированных товаров"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='group_settings']",
+                            "value" => "Количество настроек групп (управление группами)"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='quantity_of_words_in_dictionaries']",
+                            "value" => "Количество слов в словарях"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_indicators']",
+                            "value" => "Общее рассчитанное количество показателей"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_not_grouped']",
+                            "value" => "Рассчитанное количество не сгруппированных товаров"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_sent_emails']",
+                            "value" => "Рассчитанное количество отправленных писем"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_child_requests']",
+                            "value" => "Рассчитанное количество созданных подзадач"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_words_in_dictionaries']",
+                            "value" => "Рассчитанное количество слов в словарях"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='average_amount_of_goods_in_group']",
+                            "value" => "Среднее количество товаров в группе"
+                        ],
+                        [
                             "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_checked_goods']",
                             "value" => "Рассчитанное количество проверенных товаров"
                         ],
@@ -829,6 +865,15 @@ return [
                         ["selector" => Request::requestInTable(1, 'handled_goods', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'changed_goods', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'goods_in_db', '(не задано)')],
+                        ["selector" => Request::requestInTable(1, 'quantity_of_handled_but_not_grouped', '(не задано)')],
+                        ["selector" => Request::requestInTable(1, 'group_settings', '(не задано)')],
+                        ["selector" => Request::requestInTable(1, 'quantity_of_words_in_dictionaries', '(не задано)')],
+                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_indicators', '(не задано)')],
+                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_not_grouped', '(не задано)')],
+                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_sent_emails', '(не задано)')],
+                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_child_requests', '(не задано)')],
+                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_words_in_dictionaries', '(не задано)')],
+                        ["selector" => Request::requestInTable(1, 'average_amount_of_goods_in_group', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'calc_quantity_of_checked_goods', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'calc_quantity_of_checked_goods_with_errors', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'calc_quantity_of_checked_goods_cc', '(не задано)')],
@@ -1352,7 +1397,7 @@ return [
         'provider_data' => [
             "url" => 'completed',
             'requestBody' => [
-                'visibleColumns' => ['promo_desc', 'adding_goods_to_new_category', 'used_ref', 'updating_photos', 'updating_description', 'updating_characteristics', 'automoderation', 'adding_instructions', 'stop_brands', 'with_pallets', 'lots', 'with_video', 'mobile_courier', 'ua_fields'],
+                'visibleColumns' => ['promo_desc', 'adding_goods_to_new_category', 'used_ref', 'updating_photos', 'updating_description', 'updating_characteristics', 'automoderation', 'adding_instructions', 'stop_brands', 'with_pallets', 'lots', 'with_video', 'mobile_courier', 'ua_fields', 'algorithm'],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -1360,7 +1405,7 @@ return [
                         [
                             "id" => 1,
                             "user_id" => 4,
-                            "columns_list" => '["promo_desc", "adding_goods_to_new_category", "used_ref", "updating_photos", "updating_description", "updating_characteristics", "automoderation", "adding_instructions", "stop_brands", "with_pallets", "lots", "with_video", "mobile_courier", "ua_fields"]'
+                            "columns_list" => '["promo_desc", "adding_goods_to_new_category", "used_ref", "updating_photos", "updating_description", "updating_characteristics", "automoderation", "adding_instructions", "stop_brands", "with_pallets", "lots", "with_video", "mobile_courier", "ua_fields", "algorithm"]'
                         ]
                     ],
                 ]
@@ -1436,6 +1481,10 @@ return [
                             "selector" => "//thead/tr/th[@data-col-seq='ua_fields']",
                             "value" => "Укр. поля"
                         ],
+                        [
+                            "selector" => "//thead/tr/th[@data-col-seq='algorithm']",
+                            "value" => "Алгоритм"
+                        ],
                     ],
                     "Заявка 6" => [
                         ["selector" => Request::requestInTable(1, 'id', 7)],
@@ -1456,6 +1505,7 @@ return [
                         ["selector" => Request::requestInTable(1, 'with_video', 'Нет')],
                         ["selector" => Request::requestInTable(1, 'mobile_courier', 'Нет')],
                         ["selector" => Request::requestInTable(1, 'ua_fields', 'Нет')],
+                        ["selector" => Request::requestInTable(1, 'algorithm', 'Нет')],
                     ],
                     "Заявка 7" => [
                         ["selector" => Request::requestInTable(2, 'id', 6)],
@@ -1476,6 +1526,7 @@ return [
                         ["selector" => Request::requestInTable(2, 'with_video', 'Нет')],
                         ["selector" => Request::requestInTable(2, 'mobile_courier', 'Нет')],
                         ["selector" => Request::requestInTable(2, 'ua_fields', 'Нет')],
+                        ["selector" => Request::requestInTable(2, 'algorithm', 'Нет')],
                     ],
                 ],
                 "cantSee" => [
