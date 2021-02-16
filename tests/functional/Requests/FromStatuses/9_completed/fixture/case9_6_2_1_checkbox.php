@@ -127,11 +127,6 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 64,
-                'value' => 10.1,
-            ],
-            [
-                'request_id' => 1,
                 'field_id' => 67,
                 'value' => 10,
             ],

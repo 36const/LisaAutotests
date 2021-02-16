@@ -222,11 +222,6 @@ return [
                         ],
                         [
                             'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0,
                         ],
@@ -570,11 +565,6 @@ return [
                             'request_id' => 1,
                             'field_id' => 60,
                             'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 50.1,
                         ],
                         [
                             'request_id' => 1,
