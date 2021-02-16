@@ -78,13 +78,14 @@ return [
             [
                 //"id" => 1,
                 "request_id" => 8,
-                "file_name" => "223839_jpg.jpg",
+                "file_name_old" => '',
                 "alias" => "jpg.jpg",
                 "status" => 0,
                 "uploaded_by" => "Константин Куцан",
                 "uploaded_at" => "2020-07-25 19:38:43",
                 "deleted_by" => "Константин Куцан",
-                "deleted_at" => "2020-10-25 19:38:43"
+                "deleted_at" => "2020-10-25 19:38:43",
+                "file_name" => "223839_jpg.jpg",
             ]
         ],
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
