@@ -10,7 +10,6 @@ use Codeception\Module\TestHelper;
  * @group lisa_functional
  * @group lisa_functional_settings
  * @group POSTFormulaCoef
- * @group POSTFormulaCoefUpdate
  */
 class POSTFormulaCoefUpdateCest
 {
@@ -31,7 +30,7 @@ class POSTFormulaCoefUpdateCest
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/formula-coef/update', $providerData['requestBody']);
+        $I->sendPOST($providerData['url'] ?? '/bpm/formula-coef/update', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);
