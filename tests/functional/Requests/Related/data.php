@@ -2982,4 +2982,418 @@ return [
         ]
     ],
 
+    'case10' => [
+        'setting' => [
+            'description' => 'Связанная заявка тип 4 статус 8 с изменением типа (и пересчёт показателей в типе 4)',
+            'type' => 3,
+            'direction' => 2,
+            'id' => 1
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case10.php',
+        'provider_data' => [
+            'requestBody' => [
+                "RequestField[8]" => 1,
+                "RequestField[15]" => 1,
+                "RequestField[19]" => 1,
+                "Request[amount_to_work]" => 10,
+                "Request[attachment_folder]" => "de7ac59cf8587229fedf727f5b5bfa62",
+                "Request[addedAttachments]" => "[]",
+                "Request[deletedAttachments]" => "[]",
+                "Request[seller_id]" => 83,
+                "Request[description]" => "Описание",
+                "Request[observers]" => [15, 17],
+                "Request[direction]" => 2,
+                "Request[parent_id]" => 1,
+                "Request[planned_finish_date]" => null,
+                "Request[priority]" => 2,
+                "Request[subject]" => "Перенос товаров (Работа с товарами Маркетплейса)",
+                "Request[type_id]" => 3,
+                "Request[supervisor_id]" => 33,
+                "Request[uploadedFiles][]" => null,
+                "Request[uploadedFiles][]" => null,
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 4,
+                            "type_id" => 4,
+                            "supervisor_id" => 33,
+                            "manager_id" => 11,
+                            "status" => 8,
+                            "direction" => 0,
+                            "priority" => 2,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '',
+                            "amount_to_work" => 10,
+                            "subject" => "Группировка товаров (Определяется типом задачи)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => '',
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => '2020-01-01 00:00:03',
+                            "actual_finish_date" => '2020-01-01 00:00:04',
+                            "supervisor_process_date" => '2020-01-01 00:00:02',
+                            "supervisor_check_date" => null,
+                            "result_comment" => 'Комментарий к результату задачи',
+                            "supervisor_comment" => '',
+                            "last_change_status_date" => "2020-01-01 00:00:01",
+                            "team_direction" => 4,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => '1',
+                            "cross_check_manager_id" => 12,
+                            "child_count" => 1,
+                            "photo_load_status" => 0,
+                        ],
+                        [
+                            "id" => 2,
+                            "author_id" => 4,
+                            "type_id" => 3,
+                            "supervisor_id" => 10,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 2,
+                            "priority" => 2,
+                            "awaiting_correction" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
+                            "description" => "Описание",
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => null,
+                            "parent_id" => 1,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                        ],
+                    ],
+                    "requests_fields" => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 31,
+                            'value' => 48,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 32,
+                            'value' => 52,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => 0.5,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 54,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 61,
+                            'value' => 210,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 89,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 91,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 93,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 94,
+                            'value' => 300,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 116,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 161,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 162,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 163,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 111.675,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 164,
+                            'value' => 0.7,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 165,
+                            'value' => 1.5,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 166,
+                            'value' => 0.15,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 167,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 168,
+                            'value' => 30,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 169,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 170,
+                            'value' => 0.7,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 171,
+                            'value' => 0.07,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 172,
+                            'value' => 0.15,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 173,
+                            'value' => 0.1,
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 8,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 15,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 19,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 49,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 50,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 51,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 53,
+                            "value" => 3
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 60,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 101,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 114,
+                            "value" => 3
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 122,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 142,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 143,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 146,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 158,
+                            "value" => 0
+                        ]
+                    ],
+                    'user_notifications' => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            'request_id' => 2,
+                            "priority" => 2,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
+                        ],
+                        [
+                            "id" => 2,
+                            "user_id" => 10,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            'request_id' => 2,
+                            "priority" => 2,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
+                        ],
+                        [
+                            "id" => 3,
+                            "user_id" => 15,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            'request_id' => 2,
+                            "priority" => 2,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
+                        ],
+                        [
+                            "id" => 4,
+                            "user_id" => 17,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            'request_id' => 2,
+                            "priority" => 2,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 2, "oldValue": "1"}'
+                        ],
+                    ],
+                    'observers' => [
+                        [
+                            'request_id' => 1,
+                            "user_id" => 15
+                        ],
+                        [
+                            'request_id' => 1,
+                            "user_id" => 17
+                        ],
+                        [
+                            'request_id' => 2,
+                            "user_id" => 15
+                        ],
+                        [
+                            'request_id' => 2,
+                            "user_id" => 17
+                        ],
+                    ],
+                ]
+            ]
+        ]
+    ],
+
+
 ];
