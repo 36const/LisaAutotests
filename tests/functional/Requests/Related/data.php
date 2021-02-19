@@ -3057,7 +3057,7 @@ return [
                             "id" => 2,
                             "author_id" => 4,
                             "type_id" => 3,
-                            "supervisor_id" => 10,
+                            "supervisor_id" => 6,
                             "manager_id" => null,
                             "status" => 1,
                             "direction" => 2,
@@ -3328,7 +3328,7 @@ return [
                         ],
                         [
                             "id" => 2,
-                            "user_id" => 10,
+                            "user_id" => 6,
                             "notification" => '',
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
