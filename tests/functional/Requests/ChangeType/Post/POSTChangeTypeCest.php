@@ -32,7 +32,7 @@ class POSTChangeTypeCest
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
-        $I->changeType($providerData['requestParameter'], $providerData['requestBody']);
+        $view->changeType($providerData['requestParameter'], $providerData['requestBody']);
 
         $I->checkTablesInDB($providerData['db']);
 

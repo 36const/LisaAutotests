@@ -49,24 +49,6 @@ class FunctionalTester extends \Codeception\Actor
 
     public const BPM_UPLOADS = '/var/www/gomer.local/www/backend/web/tmp/bpm_uploads/';
 
-    public function changeStatus($requestParameter, $requestBody)
-    {
-        $I = $this;
-        $requestParameter == 'to-correction' ?
-            $url = '/bpm/request/' . $requestParameter . '?id=1&changeStatus=1' :
-            $url = '/bpm/request/' . $requestParameter . '?id=1';
-        $I->sendPOST($url, $requestBody);
-        $I->seeResponseCodeIs(200);
-    }
-
-    public function changeType($requestParameter, $requestBody)
-    {
-        $I = $this;
-        $url = '/bpm/request/change-type?typeId=' . $requestParameter['typeId'] . '&direction=' . $requestParameter['direction'] . '&id=1';
-        $I->sendPOST($url, $requestBody);
-        $I->seeResponseCodeIs(200);
-    }
-
     public function checkTablesInDB($dbTablesArray)
     {
         $I = $this;

@@ -66,6 +66,24 @@ class RequestView extends FunctionalTester
         return "//div[contains(@class,'file-input')]//div[@id='thumb-request-uploadedfiles-init-$id']";
     }
 
+    public function changeStatus($requestParameter, $requestBody)
+    {
+        $I = $this;
+        $url = ($requestParameter == 'to-correction') ?
+            '/bpm/request/' . $requestParameter . '?id=1&changeStatus=1' :
+            '/bpm/request/' . $requestParameter . '?id=1';
+        $I->sendPOST($url, $requestBody);
+        $I->seeResponseCodeIs(200);
+    }
+
+    public function changeType($requestParameter, $requestBody)
+    {
+        $I = $this;
+        $url = '/bpm/request/change-type?typeId=' . $requestParameter['typeId'] . '&direction=' . $requestParameter['direction'] . '&id=1';
+        $I->sendPOST($url, $requestBody);
+        $I->seeResponseCodeIs(200);
+    }
+
     /**
      * Поля-чекбоксы, которые нужно проверять
      * не через canSeeInField, а через canSeeCheckboxIsChecked
