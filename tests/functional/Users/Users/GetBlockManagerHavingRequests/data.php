@@ -12,9 +12,9 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => User::$userStatus . '[@disabled]'],
-                        ["selector" => User::requestsBlockingManagerButton(11)],
-                        ["selector" => User::$warningAlert],
+                        [User::$userStatus . '[@disabled]'],
+                        [User::requestsBlockingManagerButton(11)],
+                        [User::$warningAlert],
                     ]
                 ],
             ]
@@ -30,9 +30,9 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => User::$userStatus . '[@disabled]'],
-                        ["selector" => User::requestsBlockingManagerButton(11)],
-                        ["selector" => User::$warningAlert],
+                        [User::$userStatus . '[@disabled]'],
+                        [User::requestsBlockingManagerButton(11)],
+                        [User::$warningAlert],
                     ]
                 ],
             ]
@@ -48,9 +48,9 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => User::$userStatus . '[@disabled]'],
-                        ["selector" => User::requestsBlockingManagerButton(11)],
-                        ["selector" => User::$warningAlert],
+                        [User::$userStatus . '[@disabled]'],
+                        [User::requestsBlockingManagerButton(11)],
+                        [User::$warningAlert],
                     ]
                 ],
             ]
@@ -66,13 +66,13 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => User::$userStatus . '[not(@disabled)]'],
+                        [User::$userStatus . '[not(@disabled)]'],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => User::requestsBlockingManagerButton(11)],
-                        ["selector" => User::$warningAlert],
+                        [User::requestsBlockingManagerButton(11)],
+                        [User::$warningAlert],
                     ]
                 ]
             ]

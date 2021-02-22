@@ -73,7 +73,7 @@ class FunctionalTester extends \Codeception\Actor
                 foreach ($objects as $object) {
                     isset($object['value']) ?
                         $I->canSee($object['value'], $object['selector']) :
-                        $I->canSeeElement($object['selector']);
+                        $I->canSeeElement($object[0]);
                 }
             }
         }
@@ -83,7 +83,7 @@ class FunctionalTester extends \Codeception\Actor
                 foreach ($objects as $object) {
                     isset($object['value']) ?
                         $I->cantSee($object['value'], $object['selector']) :
-                        $I->cantSeeElement($object['selector']);
+                        $I->cantSeeElement($object[0]);
                 }
             }
         }

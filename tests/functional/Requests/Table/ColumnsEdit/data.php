@@ -27,62 +27,20 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='author_id']",
-                            "value" => "Создатель заявки"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='supervisor_id']",
-                            "value" => "Супервайзер заявки"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='manager_id']",
-                            "value" => "Менеджер заявки"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='status']",
-                            "value" => "Статус"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='direction']",
-                            "value" => "Направление задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='team_direction']",
-                            "value" => "Направление команды"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='category_id']",
-                            "value" => "Категория товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='seller_id']",
-                            "value" => "Продавец"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='priority']",
-                            "value" => "Приоритет"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='cross_check_status']",
-                            "value" => "Кросс-чек статус"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='cross_check_manager_id']",
-                            "value" => "Кросс-чек менеджер"
-                        ],
+                        [Request::columnName('id', 'ID задачи')],
+                        [Request::columnName('subject', 'Заголовок')],
+                        [Request::columnName('type_id', 'Тип')],
+                        [Request::columnName('author_id', 'Создатель заявки')],
+                        [Request::columnName('supervisor_id', 'Супервайзер заявки')],
+                        [Request::columnName('manager_id', 'Менеджер заявки')],
+                        [Request::columnName('status', 'Статус')],
+                        [Request::columnName('direction', 'Направление задачи')],
+                        [Request::columnName('team_direction', 'Направление команды')],
+                        [Request::columnName('category_id', 'Категория товаров')],
+                        [Request::columnName('seller_id', 'Продавец')],
+                        [Request::columnName('priority', 'Приоритет')],
+                        [Request::columnName('cross_check_status', 'Кросс-чек статус')],
+                        [Request::columnName('cross_check_manager_id', 'Кросс-чек менеджер')],
                     ],
                     "Выпадающие списки" => [
                         [
@@ -99,116 +57,116 @@ return [
                         ],
                     ],
                     "Заявка 7" => [
-                        ["selector" => Request::requestInTable(1, 'id', 7)],
-                        ["selector" => Request::requestInTable(1, 'subject', 'Добавление/изменение тегов (Определяется типом задачи)')],
-                        ["selector" => Request::requestInTable(1, 'type_id', 'Добавление/изменение тегов')],
-                        ["selector" => Request::requestInTable(1, 'author_id', 'Константин Куцан')],
-                        ["selector" => Request::requestInTable(1, 'supervisor_id', 'Супервайзер Категоркин 15')],
-                        ["selector" => Request::requestInTable(1, 'manager_id', 'Менеджер Контентович 1А')],
-                        ["selector" => Request::requestInTable(1, 'status', 'Выполнена')],
-                        ["selector" => Request::requestInTable(1, 'direction', 'Определяется типом задачи')],
-                        ["selector" => Request::requestInTable(1, 'team_direction', 'Работа с порталами, фат-меню, категориями')],
-                        ["selector" => Request::requestInTable(1, 'category_id', 'Авиабилеты')],
-                        ["selector" => Request::requestInTable(1, 'seller_id', 'Euromart')],
-                        ["selector" => Request::requestInTable(1, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
-                        ["selector" => Request::requestInTable(1, 'cross_check_status', 'Не прошла кросс-чек')],
-                        ["selector" => Request::requestInTable(1, 'cross_check_manager_id', '(не задано)')],
+                        [Request::requestInTable(1, 'id', 7)],
+                        [Request::requestInTable(1, 'subject', 'Добавление/изменение тегов (Определяется типом задачи)')],
+                        [Request::requestInTable(1, 'type_id', 'Добавление/изменение тегов')],
+                        [Request::requestInTable(1, 'author_id', 'Константин Куцан')],
+                        [Request::requestInTable(1, 'supervisor_id', 'Супервайзер Категоркин 15')],
+                        [Request::requestInTable(1, 'manager_id', 'Менеджер Контентович 1А')],
+                        [Request::requestInTable(1, 'status', 'Выполнена')],
+                        [Request::requestInTable(1, 'direction', 'Определяется типом задачи')],
+                        [Request::requestInTable(1, 'team_direction', 'Работа с порталами, фат-меню, категориями')],
+                        [Request::requestInTable(1, 'category_id', 'Авиабилеты')],
+                        [Request::requestInTable(1, 'seller_id', 'Euromart')],
+                        [Request::requestInTable(1, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
+                        [Request::requestInTable(1, 'cross_check_status', 'Не прошла кросс-чек')],
+                        [Request::requestInTable(1, 'cross_check_manager_id', '(не задано)')],
                     ],
                     "Заявка 6" => [
-                        ["selector" => Request::requestInTable(2, 'id', 6)],
-                        ["selector" => Request::requestInTable(2, 'subject', 'Добавление/изменение видео (Определяется типом задачи)')],
-                        ["selector" => Request::requestInTable(2, 'type_id', 'Добавление/изменение видео')],
-                        ["selector" => Request::requestInTable(2, 'author_id', 'Константин Куцан')],
-                        ["selector" => Request::requestInTable(2, 'supervisor_id', 'Супервайзер Категоркин 18')],
-                        ["selector" => Request::requestInTable(2, 'manager_id', 'Менеджер Контентович 1А')],
-                        ["selector" => Request::requestInTable(2, 'status', 'Частично выполнена')],
-                        ["selector" => Request::requestInTable(2, 'direction', 'Определяется типом задачи')],
-                        ["selector" => Request::requestInTable(2, 'team_direction', 'Работа с порталами, фат-меню, категориями')],
-                        ["selector" => Request::requestInTable(2, 'category_id', 'Авиабилеты')],
-                        ["selector" => Request::requestInTable(2, 'seller_id', 'Euromart')],
-                        ["selector" => Request::requestInTable(2, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
-                        ["selector" => Request::requestInTable(2, 'cross_check_status', 'Не прошла кросс-чек')],
-                        ["selector" => Request::requestInTable(2, 'cross_check_manager_id', '(не задано)')],
+                        [Request::requestInTable(2, 'id', 6)],
+                        [Request::requestInTable(2, 'subject', 'Добавление/изменение видео (Определяется типом задачи)')],
+                        [Request::requestInTable(2, 'type_id', 'Добавление/изменение видео')],
+                        [Request::requestInTable(2, 'author_id', 'Константин Куцан')],
+                        [Request::requestInTable(2, 'supervisor_id', 'Супервайзер Категоркин 18')],
+                        [Request::requestInTable(2, 'manager_id', 'Менеджер Контентович 1А')],
+                        [Request::requestInTable(2, 'status', 'Частично выполнена')],
+                        [Request::requestInTable(2, 'direction', 'Определяется типом задачи')],
+                        [Request::requestInTable(2, 'team_direction', 'Работа с порталами, фат-меню, категориями')],
+                        [Request::requestInTable(2, 'category_id', 'Авиабилеты')],
+                        [Request::requestInTable(2, 'seller_id', 'Euromart')],
+                        [Request::requestInTable(2, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
+                        [Request::requestInTable(2, 'cross_check_status', 'Не прошла кросс-чек')],
+                        [Request::requestInTable(2, 'cross_check_manager_id', '(не задано)')],
                     ],
                     "Заявка 5" => [
-                        ["selector" => Request::requestInTable(3, 'id', 5)],
-                        ["selector" => Request::requestInTable(3, 'subject', 'Изменение существующих параметров/значений (Определяется типом задачи)')],
-                        ["selector" => Request::requestInTable(3, 'type_id', 'Изменение существующих параметров/значений')],
-                        ["selector" => Request::requestInTable(3, 'author_id', 'Константин Куцан')],
-                        ["selector" => Request::requestInTable(3, 'supervisor_id', 'Супервайзер Проектенко 17')],
-                        ["selector" => Request::requestInTable(3, 'manager_id', 'Менеджер Контентович 1А')],
-                        ["selector" => Request::requestInTable(3, 'status', 'Ожидает')],
-                        ["selector" => Request::requestInTable(3, 'direction', 'Определяется типом задачи')],
-                        ["selector" => Request::requestInTable(3, 'team_direction', 'Работа с проектированием структур + фильтрами')],
-                        ["selector" => Request::requestInTable(3, 'category_id', 'Авиабилеты')],
-                        ["selector" => Request::requestInTable(3, 'seller_id', 'Euromart')],
-                        ["selector" => Request::requestInTable(3, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
-                        ["selector" => Request::requestInTable(3, 'cross_check_status', 'Не прошла кросс-чек')],
-                        ["selector" => Request::requestInTable(3, 'cross_check_manager_id', '(не задано)')],
+                        [Request::requestInTable(3, 'id', 5)],
+                        [Request::requestInTable(3, 'subject', 'Изменение существующих параметров/значений (Определяется типом задачи)')],
+                        [Request::requestInTable(3, 'type_id', 'Изменение существующих параметров/значений')],
+                        [Request::requestInTable(3, 'author_id', 'Константин Куцан')],
+                        [Request::requestInTable(3, 'supervisor_id', 'Супервайзер Проектенко 17')],
+                        [Request::requestInTable(3, 'manager_id', 'Менеджер Контентович 1А')],
+                        [Request::requestInTable(3, 'status', 'Ожидает')],
+                        [Request::requestInTable(3, 'direction', 'Определяется типом задачи')],
+                        [Request::requestInTable(3, 'team_direction', 'Работа с проектированием структур + фильтрами')],
+                        [Request::requestInTable(3, 'category_id', 'Авиабилеты')],
+                        [Request::requestInTable(3, 'seller_id', 'Euromart')],
+                        [Request::requestInTable(3, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
+                        [Request::requestInTable(3, 'cross_check_status', 'Не прошла кросс-чек')],
+                        [Request::requestInTable(3, 'cross_check_manager_id', '(не задано)')],
                     ],
                     "Заявка 4" => [
-                        ["selector" => Request::requestInTable(4, 'id', 4)],
-                        ["selector" => Request::requestInTable(4, 'subject', 'Добавление параметров/значений (Определяется типом задачи)')],
-                        ["selector" => Request::requestInTable(4, 'type_id', 'Добавление параметров/значений')],
-                        ["selector" => Request::requestInTable(4, 'author_id', 'Константин Куцан')],
-                        ["selector" => Request::requestInTable(4, 'supervisor_id', 'Супервайзер Проектенко 14')],
-                        ["selector" => Request::requestInTable(4, 'manager_id', 'Менеджер Контентович 1А')],
-                        ["selector" => Request::requestInTable(4, 'status', 'В работе')],
-                        ["selector" => Request::requestInTable(4, 'direction', 'Определяется типом задачи')],
-                        ["selector" => Request::requestInTable(4, 'team_direction', 'Работа с проектированием структур + фильтрами')],
-                        ["selector" => Request::requestInTable(4, 'category_id', 'Авиабилеты')],
-                        ["selector" => Request::requestInTable(4, 'seller_id', 'Euromart')],
-                        ["selector" => Request::requestInTable(4, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
-                        ["selector" => Request::requestInTable(4, 'cross_check_status', 'Не прошла кросс-чек')],
-                        ["selector" => Request::requestInTable(4, 'cross_check_manager_id', '(не задано)')],
+                        [Request::requestInTable(4, 'id', 4)],
+                        [Request::requestInTable(4, 'subject', 'Добавление параметров/значений (Определяется типом задачи)')],
+                        [Request::requestInTable(4, 'type_id', 'Добавление параметров/значений')],
+                        [Request::requestInTable(4, 'author_id', 'Константин Куцан')],
+                        [Request::requestInTable(4, 'supervisor_id', 'Супервайзер Проектенко 14')],
+                        [Request::requestInTable(4, 'manager_id', 'Менеджер Контентович 1А')],
+                        [Request::requestInTable(4, 'status', 'В работе')],
+                        [Request::requestInTable(4, 'direction', 'Определяется типом задачи')],
+                        [Request::requestInTable(4, 'team_direction', 'Работа с проектированием структур + фильтрами')],
+                        [Request::requestInTable(4, 'category_id', 'Авиабилеты')],
+                        [Request::requestInTable(4, 'seller_id', 'Euromart')],
+                        [Request::requestInTable(4, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
+                        [Request::requestInTable(4, 'cross_check_status', 'Не прошла кросс-чек')],
+                        [Request::requestInTable(4, 'cross_check_manager_id', '(не задано)')],
                     ],
                     "Заявка 3" => [
-                        ["selector" => Request::requestInTable(5, 'id', 3)],
-                        ["selector" => Request::requestInTable(5, 'subject', 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)')],
-                        ["selector" => Request::requestInTable(5, 'type_id', 'Добавление нового портала/раздела фат-меню/категории товаров')],
-                        ["selector" => Request::requestInTable(5, 'author_id', 'Константин Куцан')],
-                        ["selector" => Request::requestInTable(5, 'supervisor_id', 'Супервайзер Категоркин 15')],
-                        ["selector" => Request::requestInTable(5, 'manager_id', 'Менеджер Контентович 1А')],
-                        ["selector" => Request::requestInTable(5, 'status', 'Ожидает взятия в работу')],
-                        ["selector" => Request::requestInTable(5, 'direction', 'Определяется типом задачи')],
-                        ["selector" => Request::requestInTable(5, 'team_direction', 'Работа с порталами, фат-меню, категориями')],
-                        ["selector" => Request::requestInTable(5, 'category_id', 'Авиабилеты')],
-                        ["selector" => Request::requestInTable(5, 'seller_id', 'Euromart')],
-                        ["selector" => Request::requestInTable(5, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
-                        ["selector" => Request::requestInTable(5, 'cross_check_status', 'Не прошла кросс-чек')],
-                        ["selector" => Request::requestInTable(5, 'cross_check_manager_id', '(не задано)')],
+                        [Request::requestInTable(5, 'id', 3)],
+                        [Request::requestInTable(5, 'subject', 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)')],
+                        [Request::requestInTable(5, 'type_id', 'Добавление нового портала/раздела фат-меню/категории товаров')],
+                        [Request::requestInTable(5, 'author_id', 'Константин Куцан')],
+                        [Request::requestInTable(5, 'supervisor_id', 'Супервайзер Категоркин 15')],
+                        [Request::requestInTable(5, 'manager_id', 'Менеджер Контентович 1А')],
+                        [Request::requestInTable(5, 'status', 'Ожидает взятия в работу')],
+                        [Request::requestInTable(5, 'direction', 'Определяется типом задачи')],
+                        [Request::requestInTable(5, 'team_direction', 'Работа с порталами, фат-меню, категориями')],
+                        [Request::requestInTable(5, 'category_id', 'Авиабилеты')],
+                        [Request::requestInTable(5, 'seller_id', 'Euromart')],
+                        [Request::requestInTable(5, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
+                        [Request::requestInTable(5, 'cross_check_status', 'Не прошла кросс-чек')],
+                        [Request::requestInTable(5, 'cross_check_manager_id', '(не задано)')],
                     ],
                     "Заявка 2" => [
-                        ["selector" => Request::requestInTable(6, 'id', 2)],
-                        ["selector" => Request::requestInTable(6, 'subject', 'Заливка фото с фотостудии (Работа с товарами Розетки)')],
-                        ["selector" => Request::requestInTable(6, 'type_id', 'Заливка фото с фотостудии')],
-                        ["selector" => Request::requestInTable(6, 'author_id', 'Константин Куцан')],
-                        ["selector" => Request::requestInTable(6, 'supervisor_id', 'Супервайзер Начальникович 1')],
-                        ["selector" => Request::requestInTable(6, 'manager_id', '(не задано)')],
-                        ["selector" => Request::requestInTable(6, 'status', 'На доработке')],
-                        ["selector" => Request::requestInTable(6, 'direction', 'Работа с товарами Розетки')],
-                        ["selector" => Request::requestInTable(6, 'team_direction', 'Работа с товарами Rozetka')],
-                        ["selector" => Request::requestInTable(6, 'category_id', 'Авиабилеты')],
-                        ["selector" => Request::requestInTable(6, 'seller_id', 'Rozetka')],
-                        ["selector" => Request::requestInTable(6, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
-                        ["selector" => Request::requestInTable(6, 'cross_check_status', 'Не прошла кросс-чек')],
-                        ["selector" => Request::requestInTable(6, 'cross_check_manager_id', '(не задано)')],
+                        [Request::requestInTable(6, 'id', 2)],
+                        [Request::requestInTable(6, 'subject', 'Заливка фото с фотостудии (Работа с товарами Розетки)')],
+                        [Request::requestInTable(6, 'type_id', 'Заливка фото с фотостудии')],
+                        [Request::requestInTable(6, 'author_id', 'Константин Куцан')],
+                        [Request::requestInTable(6, 'supervisor_id', 'Супервайзер Начальникович 1')],
+                        [Request::requestInTable(6, 'manager_id', '(не задано)')],
+                        [Request::requestInTable(6, 'status', 'На доработке')],
+                        [Request::requestInTable(6, 'direction', 'Работа с товарами Розетки')],
+                        [Request::requestInTable(6, 'team_direction', 'Работа с товарами Rozetka')],
+                        [Request::requestInTable(6, 'category_id', 'Авиабилеты')],
+                        [Request::requestInTable(6, 'seller_id', 'Rozetka')],
+                        [Request::requestInTable(6, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
+                        [Request::requestInTable(6, 'cross_check_status', 'Не прошла кросс-чек')],
+                        [Request::requestInTable(6, 'cross_check_manager_id', '(не задано)')],
                     ],
                     "Заявка 1" => [
-                        ["selector" => Request::requestInTable(7, 'id', 1)],
-                        ["selector" => Request::requestInTable(7, 'subject', 'Перенос товаров (Работа с товарами Маркетплейса)')],
-                        ["selector" => Request::requestInTable(7, 'type_id', 'Перенос товаров')],
-                        ["selector" => Request::requestInTable(7, 'author_id', 'Константин Куцан')],
-                        ["selector" => Request::requestInTable(7, 'supervisor_id', 'Супервайзер Начальникович 1')],
-                        ["selector" => Request::requestInTable(7, 'manager_id', '(не задано)')],
-                        ["selector" => Request::requestInTable(7, 'status', 'Готова для распределения')],
-                        ["selector" => Request::requestInTable(7, 'direction', 'Работа с товарами Маркетплейса')],
-                        ["selector" => Request::requestInTable(7, 'team_direction', 'Работа с товарами Маркетплейса')],
-                        ["selector" => Request::requestInTable(7, 'category_id', '(не задано)')],
-                        ["selector" => Request::requestInTable(7, 'seller_id', 'Euromart')],
-                        ["selector" => Request::requestInTable(7, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
-                        ["selector" => Request::requestInTable(7, 'cross_check_status', 'Не прошла кросс-чек')],
-                        ["selector" => Request::requestInTable(7, 'cross_check_manager_id', '(не задано)')],
+                        [Request::requestInTable(7, 'id', 1)],
+                        [Request::requestInTable(7, 'subject', 'Перенос товаров (Работа с товарами Маркетплейса)')],
+                        [Request::requestInTable(7, 'type_id', 'Перенос товаров')],
+                        [Request::requestInTable(7, 'author_id', 'Константин Куцан')],
+                        [Request::requestInTable(7, 'supervisor_id', 'Супервайзер Начальникович 1')],
+                        [Request::requestInTable(7, 'manager_id', '(не задано)')],
+                        [Request::requestInTable(7, 'status', 'Готова для распределения')],
+                        [Request::requestInTable(7, 'direction', 'Работа с товарами Маркетплейса')],
+                        [Request::requestInTable(7, 'team_direction', 'Работа с товарами Маркетплейса')],
+                        [Request::requestInTable(7, 'category_id', '(не задано)')],
+                        [Request::requestInTable(7, 'seller_id', 'Euromart')],
+                        [Request::requestInTable(7, 'priority', 'Товар-новинка/эксклюзив (трафикообразующий)')],
+                        [Request::requestInTable(7, 'cross_check_status', 'Не прошла кросс-чек')],
+                        [Request::requestInTable(7, 'cross_check_manager_id', '(не задано)')],
                     ],
                 ]
             ]
@@ -239,54 +197,18 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='parent_id']",
-                            "value" => "ID связанной задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='difficulty_level']",
-                            "value" => "Уровень сложности задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='awaiting_correction']",
-                            "value" => "На исправление"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='reasons']",
-                            "value" => "Причины"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='author_clarifications']",
-                            "value" => "Уточнения. Количество уточнений у автора"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='photos_available']",
-                            "value" => "Наличие фото к товарам"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='characteristics_available']",
-                            "value" => "Наличие характеристик к товарам"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='description_available']",
-                            "value" => "Наличие описаний к товарам"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='language']",
-                            "value" => "Язык информации"
-                        ],
+                        [Request::columnName('id', 'ID задачи')],
+                        [Request::columnName('subject', 'Заголовок')],
+                        [Request::columnName('type_id', 'Тип')],
+                        [Request::columnName('parent_id', 'ID связанной задачи')],
+                        [Request::columnName('difficulty_level', 'Уровень сложности задачи')],
+                        [Request::columnName('awaiting_correction', 'На исправление')],
+                        [Request::columnName('reasons', 'Причины')],
+                        [Request::columnName('author_clarifications', 'Уточнения. Количество уточнений у автора')],
+                        [Request::columnName('photos_available', 'Наличие фото к товарам')],
+                        [Request::columnName('characteristics_available', 'Наличие характеристик к товарам')],
+                        [Request::columnName('description_available', 'Наличие описаний к товарам')],
+                        [Request::columnName('language', 'Язык информации')],
                     ],
                     "Выпадающие списки" => [
                         [
@@ -485,18 +407,18 @@ return [
                         ],
                     ],
                     "Заявка 1" => [
-                        ["selector" => Request::requestInTable(1, 'id', 1)],
-                        ["selector" => Request::requestInTable(1, 'subject', 'Перенос товаров (Работа с товарами Маркетплейса)')],
-                        ["selector" => Request::requestInTable(1, 'type_id', 'Перенос товаров')],
-                        ["selector" => Request::requestInTable(1, 'parent_id', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'difficulty_level', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'awaiting_correction', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'reasons', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'author_clarifications', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'photos_available', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'characteristics_available', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'description_available', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'language', '(не задано)')],
+                        [Request::requestInTable(1, 'id', 1)],
+                        [Request::requestInTable(1, 'subject', 'Перенос товаров (Работа с товарами Маркетплейса)')],
+                        [Request::requestInTable(1, 'type_id', 'Перенос товаров')],
+                        [Request::requestInTable(1, 'parent_id', '(не задано)')],
+                        [Request::requestInTable(1, 'difficulty_level', '(не задано)')],
+                        [Request::requestInTable(1, 'awaiting_correction', 'Нет')],
+                        [Request::requestInTable(1, 'reasons', '(не задано)')],
+                        [Request::requestInTable(1, 'author_clarifications', '(не задано)')],
+                        [Request::requestInTable(1, 'photos_available', '(не задано)')],
+                        [Request::requestInTable(1, 'characteristics_available', '(не задано)')],
+                        [Request::requestInTable(1, 'description_available', '(не задано)')],
+                        [Request::requestInTable(1, 'language', '(не задано)')],
                     ],
                 ],
                 "cantSee" => [
@@ -613,48 +535,24 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='description']",
-                            "value" => "Описание"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='reason']",
-                            "value" => "Причина отмены/доработки"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='recommendations']",
-                            "value" => "Рекомендации"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='correction_comment']",
-                            "value" => "Комментарий на исправление"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='result_comment']",
-                            "value" => "Комментарий к результату задачи"
-                        ],
+                        [Request::columnName('id', 'ID задачи')],
+                        [Request::columnName('subject', 'Заголовок')],
+                        [Request::columnName('type_id', 'Тип')],
+                        [Request::columnName('description', 'Описание')],
+                        [Request::columnName('reason', 'Причина отмены/доработки')],
+                        [Request::columnName('recommendations', 'Рекомендации')],
+                        [Request::columnName('correction_comment', 'Комментарий на исправление')],
+                        [Request::columnName('result_comment', 'Комментарий к результату задачи')],
                     ],
                     "Заявка 2" => [
-                        ["selector" => Request::requestInTable(1, 'id', 2)],
-                        ["selector" => Request::requestInTable(1, 'subject', 'Заливка фото с фотостудии (Работа с товарами Розетки)')],
-                        ["selector" => Request::requestInTable(1, 'type_id', 'Заливка фото с фотостудии')],
-                        ["selector" => Request::requestInTable(1, 'description', 'Описание')],
-                        ["selector" => "//tbody/tr/td[@data-col-seq='reason']"],
-                        ["selector" => Request::requestInTable(1, 'recommendations', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'correction_comment', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'result_comment', '(не задано)')],
+                        [Request::requestInTable(1, 'id', 2)],
+                        [Request::requestInTable(1, 'subject', 'Заливка фото с фотостудии (Работа с товарами Розетки)')],
+                        [Request::requestInTable(1, 'type_id', 'Заливка фото с фотостудии')],
+                        [Request::requestInTable(1, 'description', 'Описание')],
+                        ["//tbody/tr/td[@data-col-seq='reason']"],
+                        [Request::requestInTable(1, 'recommendations', '(не задано)')],
+                        [Request::requestInTable(1, 'correction_comment', '(не задано)')],
+                        [Request::requestInTable(1, 'result_comment', '(не задано)')],
                     ],
                 ],
                 "cantSee" => [
@@ -771,113 +669,50 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='amount_to_work']",
-                            "value" => "Количество в работу"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='added_goods']",
-                            "value" => "Количество добавленных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='handled_goods']",
-                            "value" => "Количество обработанных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='changed_goods']",
-                            "value" => "Количество измененных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='goods_in_db']",
-                            "value" => "Количество товаров, которые уже есть в БД"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='quantity_of_handled_but_not_grouped']",
-                            "value" => "Количество обработанных, но не сгруппированных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='group_settings']",
-                            "value" => "Количество настроек групп (управление группами)"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='quantity_of_words_in_dictionaries']",
-                            "value" => "Количество слов в словарях"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_indicators']",
-                            "value" => "Общее рассчитанное количество показателей"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_not_grouped']",
-                            "value" => "Рассчитанное количество не сгруппированных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_sent_emails']",
-                            "value" => "Рассчитанное количество отправленных писем"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_child_requests']",
-                            "value" => "Рассчитанное количество созданных подзадач"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_words_in_dictionaries']",
-                            "value" => "Рассчитанное количество слов в словарях"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='average_amount_of_goods_in_group']",
-                            "value" => "Среднее количество товаров в группе"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_checked_goods']",
-                            "value" => "Рассчитанное количество проверенных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_checked_goods_with_errors']",
-                            "value" => "Рассчитанное количество проверенных товаров с ошибками"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_checked_goods_cc']",
-                            "value" => "Рассчитанное количество проверенных товаров (Кросс-чек)"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_checked_goods_with_errors_cc']",
-                            "value" => "Рассчитанное количество проверенных товаров с ошибками (Кросс-чек)"
-                        ],
+                        [Request::columnName('id', 'ID задачи')],
+                        [Request::columnName('subject', 'Заголовок')],
+                        [Request::columnName('type_id', 'Тип')],
+                        [Request::columnName('amount_to_work', 'Количество в работу')],
+                        [Request::columnName('added_goods', 'Количество добавленных товаров')],
+                        [Request::columnName('handled_goods', 'Количество обработанных товаров')],
+                        [Request::columnName('changed_goods', 'Количество измененных товаров')],
+                        [Request::columnName('goods_in_db', 'Количество товаров, которые уже есть в БД')],
+                        [Request::columnName('quantity_of_handled_but_not_grouped', 'Количество обработанных, но не сгруппированных товаров')],
+                        [Request::columnName('group_settings', 'Количество настроек групп (управление группами)')],
+                        [Request::columnName('quantity_of_words_in_dictionaries', 'Количество слов в словарях')],
+                        [Request::columnName('calc_quantity_of_indicators', 'Общее рассчитанное количество показателей')],
+                        [Request::columnName('calc_quantity_of_not_grouped', 'Рассчитанное количество не сгруппированных товаров')],
+                        [Request::columnName('calc_quantity_of_sent_emails', 'Рассчитанное количество отправленных писем')],
+                        [Request::columnName('calc_quantity_of_child_requests', 'Рассчитанное количество созданных подзадач')],
+                        [Request::columnName('calc_quantity_of_words_in_dictionaries', 'Рассчитанное количество слов в словарях')],
+                        [Request::columnName('average_amount_of_goods_in_group', 'Среднее количество товаров в группе')],
+                        [Request::columnName('calc_quantity_of_checked_goods', 'Рассчитанное количество проверенных товаров')],
+                        [Request::columnName('calc_quantity_of_checked_goods_with_errors', 'Рассчитанное количество проверенных товаров с ошибками')],
+                        [Request::columnName('calc_quantity_of_checked_goods_cc', 'Рассчитанное количество проверенных товаров (Кросс-чек)')],
+                        [Request::columnName('calc_quantity_of_checked_goods_with_errors_cc', 'Рассчитанное количество проверенных товаров с ошибками (Кросс-чек)')],
                     ],
                     "Заявка 3" => [
-                        ["selector" => Request::requestInTable(1, 'id', 3)],
-                        ["selector" => Request::requestInTable(1, 'subject', 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)')],
-                        ["selector" => Request::requestInTable(1, 'type_id', 'Добавление нового портала/раздела фат-меню/категории товаров')],
-                        ["selector" => Request::requestInTable(1, 'amount_to_work', '10')],
-                        ["selector" => Request::requestInTable(1, 'added_goods', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'handled_goods', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'changed_goods', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'goods_in_db', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'quantity_of_handled_but_not_grouped', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'group_settings', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'quantity_of_words_in_dictionaries', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_indicators', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_not_grouped', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_sent_emails', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_child_requests', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_words_in_dictionaries', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'average_amount_of_goods_in_group', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_checked_goods', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_checked_goods_with_errors', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_checked_goods_cc', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'calc_quantity_of_checked_goods_with_errors_cc', '(не задано)')],
+                        [Request::requestInTable(1, 'id', 3)],
+                        [Request::requestInTable(1, 'subject', 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)')],
+                        [Request::requestInTable(1, 'type_id', 'Добавление нового портала/раздела фат-меню/категории товаров')],
+                        [Request::requestInTable(1, 'amount_to_work', '10')],
+                        [Request::requestInTable(1, 'added_goods', '(не задано)')],
+                        [Request::requestInTable(1, 'handled_goods', '(не задано)')],
+                        [Request::requestInTable(1, 'changed_goods', '(не задано)')],
+                        [Request::requestInTable(1, 'goods_in_db', '(не задано)')],
+                        [Request::requestInTable(1, 'quantity_of_handled_but_not_grouped', '(не задано)')],
+                        [Request::requestInTable(1, 'group_settings', '(не задано)')],
+                        [Request::requestInTable(1, 'quantity_of_words_in_dictionaries', '(не задано)')],
+                        [Request::requestInTable(1, 'calc_quantity_of_indicators', '(не задано)')],
+                        [Request::requestInTable(1, 'calc_quantity_of_not_grouped', '(не задано)')],
+                        [Request::requestInTable(1, 'calc_quantity_of_sent_emails', '(не задано)')],
+                        [Request::requestInTable(1, 'calc_quantity_of_child_requests', '(не задано)')],
+                        [Request::requestInTable(1, 'calc_quantity_of_words_in_dictionaries', '(не задано)')],
+                        [Request::requestInTable(1, 'average_amount_of_goods_in_group', '(не задано)')],
+                        [Request::requestInTable(1, 'calc_quantity_of_checked_goods', '(не задано)')],
+                        [Request::requestInTable(1, 'calc_quantity_of_checked_goods_with_errors', '(не задано)')],
+                        [Request::requestInTable(1, 'calc_quantity_of_checked_goods_cc', '(не задано)')],
+                        [Request::requestInTable(1, 'calc_quantity_of_checked_goods_with_errors_cc', '(не задано)')],
                     ],
                 ],
                 "cantSee" => [
@@ -994,58 +829,19 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='last_change_status_date']",
-                            "value" => "Дата последнего изменения статуса"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='created_at']",
-                            "value" => "Дата регистрации задачи в системе"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='supervisor_process_date']",
-                            "value" => "Дата обработки задачи супервайзером"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='supervisor_check_date']",
-                            "value" => "Дата проверки задачи супервайзером"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='planned_start_date']",
-                            "value" => "Плановая дата начала работ"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='planned_finish_date']",
-                            "value" => "Плановая дата завершения"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='actual_start_date']",
-                            "value" => "Фактическая дата начала работ"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='actual_finish_date']",
-                            "value" => "Фактическая дата завершения"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='report_period_id']",
-                            "value" => "Отчетный период КМ"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='sv_report_periods']",
-                            "value" => "Отчетные периоды СВ"
-                        ],
+                        [Request::columnName('id', 'ID задачи')],
+                        [Request::columnName('subject', 'Заголовок')],
+                        [Request::columnName('type_id', 'Тип')],
+                        [Request::columnName('last_change_status_date', 'Дата последнего изменения статуса')],
+                        [Request::columnName('created_at', 'Дата регистрации задачи в системе')],
+                        [Request::columnName('supervisor_process_date', 'Дата обработки задачи супервайзером')],
+                        [Request::columnName('supervisor_check_date', 'Дата проверки задачи супервайзером')],
+                        [Request::columnName('planned_start_date', 'Плановая дата начала работ')],
+                        [Request::columnName('planned_finish_date', 'Плановая дата завершения')],
+                        [Request::columnName('actual_start_date', 'Фактическая дата начала работ')],
+                        [Request::columnName('actual_finish_date', 'Фактическая дата завершения')],
+                        [Request::columnName('report_period_id', 'Отчетный период КМ')],
+                        [Request::columnName('sv_report_periods', 'Отчетные периоды СВ')],
                     ],
                     "Выпадающие списки" => [
                         [
@@ -1091,19 +887,19 @@ return [
                         ],
                     ],
                     "Заявка 4" => [
-                        ["selector" => Request::requestInTable(1, 'id', 4)],
-                        ["selector" => Request::requestInTable(1, 'subject', 'Добавление параметров/значений (Определяется типом задачи)')],
-                        ["selector" => Request::requestInTable(1, 'type_id', 'Добавление параметров/значений')],
-                        ["selector" => Request::requestInTable(1, 'last_change_status_date', '2020-01-01 00:00:01')],
-                        ["selector" => Request::requestInTable(1, 'created_at', '2020-01-01 00:00:00')],
-                        ["selector" => Request::requestInTable(1, 'supervisor_process_date', '2020-01-01 00:00:02')],
-                        ["selector" => Request::requestInTable(1, 'supervisor_check_date', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'planned_start_date', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'planned_finish_date', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'actual_start_date', '2020-01-01 00:00:03')],
-                        ["selector" => Request::requestInTable(1, 'actual_finish_date', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'report_period_id', '(не задано)')],
-                        ["selector" => Request::requestInTable(1, 'sv_report_periods', '2020-01-01 - 2020-03-31')],
+                        [Request::requestInTable(1, 'id', 4)],
+                        [Request::requestInTable(1, 'subject', 'Добавление параметров/значений (Определяется типом задачи)')],
+                        [Request::requestInTable(1, 'type_id', 'Добавление параметров/значений')],
+                        [Request::requestInTable(1, 'last_change_status_date', '2020-01-01 00:00:01')],
+                        [Request::requestInTable(1, 'created_at', '2020-01-01 00:00:00')],
+                        [Request::requestInTable(1, 'supervisor_process_date', '2020-01-01 00:00:02')],
+                        [Request::requestInTable(1, 'supervisor_check_date', '(не задано)')],
+                        [Request::requestInTable(1, 'planned_start_date', '(не задано)')],
+                        [Request::requestInTable(1, 'planned_finish_date', '(не задано)')],
+                        [Request::requestInTable(1, 'actual_start_date', '2020-01-01 00:00:03')],
+                        [Request::requestInTable(1, 'actual_finish_date', '(не задано)')],
+                        [Request::requestInTable(1, 'report_period_id', '(не задано)')],
+                        [Request::requestInTable(1, 'sv_report_periods', '2020-01-01 - 2020-03-31')],
                     ],
                 ],
                 "cantSee" => [
@@ -1220,83 +1016,38 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='hand_load']",
-                            "value" => "Ручная загрузка"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='pack_load']",
-                            "value" => "Пакетная загрузка"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='visa']",
-                            "value" => "Виза супервайзера"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='with_photo']",
-                            "value" => "С фотосъемкой"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='enter_points']",
-                            "value" => "Точки входа"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='adding_graphics']",
-                            "value" => "Добавление графики"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='with_grid']",
-                            "value" => "С размерной сеткой"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='with_tags']",
-                            "value" => "С тегами к товарам"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='markdown']",
-                            "value" => "Уценка"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='markdown_2']",
-                            "value" => "Уценка 2"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='by_client_review']",
-                            "value" => "На основе отзыва клиента на сайте"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='complaint_for_good']",
-                            "value" => "Жалоба на товар продавца маркета"
-                        ],
+                        [Request::columnName('id', 'ID задачи')],
+                        [Request::columnName('subject', 'Заголовок')],
+                        [Request::columnName('type_id', 'Тип')],
+                        [Request::columnName('hand_load', 'Ручная загрузка')],
+                        [Request::columnName('pack_load', 'Пакетная загрузка')],
+                        [Request::columnName('visa', 'Виза супервайзера')],
+                        [Request::columnName('with_photo', 'С фотосъемкой')],
+                        [Request::columnName('enter_points', 'Точки входа')],
+                        [Request::columnName('adding_graphics', 'Добавление графики')],
+                        [Request::columnName('with_grid', 'С размерной сеткой')],
+                        [Request::columnName('with_tags', 'С тегами к товарам')],
+                        [Request::columnName('markdown', 'Уценка')],
+                        [Request::columnName('markdown_2', 'Уценка 2')],
+                        [Request::columnName('by_client_review', 'На основе отзыва клиента на сайте')],
+                        [Request::columnName('complaint_for_good', 'Жалоба на товар продавца маркета')],
                     ],
                     "Заявка 5" => [
-                        ["selector" => Request::requestInTable(1, 'id', 5)],
-                        ["selector" => Request::requestInTable(1, 'subject', 'Изменение существующих параметров/значений (Определяется типом задачи)')],
-                        ["selector" => Request::requestInTable(1, 'type_id', 'Изменение существующих параметров/значений')],
-                        ["selector" => Request::requestInTable(1, 'hand_load', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'pack_load', 'Да')],
-                        ["selector" => Request::requestInTable(1, 'visa', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'with_photo', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'enter_points', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'adding_graphics', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'with_grid', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'with_tags', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'markdown', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'markdown_2', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'by_client_review', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'complaint_for_good', 'Нет')],
+                        [Request::requestInTable(1, 'id', 5)],
+                        [Request::requestInTable(1, 'subject', 'Изменение существующих параметров/значений (Определяется типом задачи)')],
+                        [Request::requestInTable(1, 'type_id', 'Изменение существующих параметров/значений')],
+                        [Request::requestInTable(1, 'hand_load', 'Нет')],
+                        [Request::requestInTable(1, 'pack_load', 'Да')],
+                        [Request::requestInTable(1, 'visa', 'Нет')],
+                        [Request::requestInTable(1, 'with_photo', 'Нет')],
+                        [Request::requestInTable(1, 'enter_points', 'Нет')],
+                        [Request::requestInTable(1, 'adding_graphics', 'Нет')],
+                        [Request::requestInTable(1, 'with_grid', 'Нет')],
+                        [Request::requestInTable(1, 'with_tags', 'Нет')],
+                        [Request::requestInTable(1, 'markdown', 'Нет')],
+                        [Request::requestInTable(1, 'markdown_2', 'Нет')],
+                        [Request::requestInTable(1, 'by_client_review', 'Нет')],
+                        [Request::requestInTable(1, 'complaint_for_good', 'Нет')],
                     ],
                 ],
                 "cantSee" => [
@@ -1413,120 +1164,66 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='promo_desc']",
-                            "value" => "Промо-описание"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='adding_goods_to_new_category']",
-                            "value" => "Добавление товаров в новую категорию"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='used_ref']",
-                            "value" => "БУ, REF"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='updating_photos']",
-                            "value" => "Обновление фото"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='updating_description']",
-                            "value" => "Обновление описания"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='updating_characteristics']",
-                            "value" => "Обновление характеристик"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='automoderation']",
-                            "value" => "Автомодерация"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='adding_instructions']",
-                            "value" => "Добавление/обновление инструкций"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='stop_brands']",
-                            "value" => "Стоп-бренды"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='with_pallets']",
-                            "value" => "С палитрой"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='lots']",
-                            "value" => "Лоты"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='with_video']",
-                            "value" => "С видео"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='mobile_courier']",
-                            "value" => "По заявке с MobileCourier"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='ua_fields']",
-                            "value" => "Укр. поля"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='algorithm']",
-                            "value" => "Алгоритм"
-                        ],
+                        [Request::columnName('id', 'ID задачи')],
+                        [Request::columnName('subject', 'Заголовок')],
+                        [Request::columnName('type_id', 'Тип')],
+                        [Request::columnName('promo_desc', 'Промо-описание')],
+                        [Request::columnName('adding_goods_to_new_category', 'Добавление товаров в новую категорию')],
+                        [Request::columnName('used_ref', 'БУ, REF')],
+                        [Request::columnName('updating_photos', 'Обновление фото')],
+                        [Request::columnName('updating_description', 'Обновление описания')],
+                        [Request::columnName('updating_characteristics', 'Обновление характеристик')],
+                        [Request::columnName('automoderation', 'Автомодерация')],
+                        [Request::columnName('adding_instructions', 'Добавление/обновление инструкций')],
+                        [Request::columnName('stop_brands', 'Стоп-бренды')],
+                        [Request::columnName('with_pallets', 'С палитрой')],
+                        [Request::columnName('lots', 'Лоты')],
+                        [Request::columnName('with_video', 'С видео')],
+                        [Request::columnName('mobile_courier', 'По заявке с MobileCourier')],
+                        [Request::columnName('ua_fields', 'Укр. поля')],
+                        [Request::columnName('algorithm', 'Алгоритм')],
                     ],
                     "Заявка 6" => [
-                        ["selector" => Request::requestInTable(1, 'id', 7)],
-                        ["selector" => Request::requestInTable(1, 'subject', 'Добавление/изменение тегов (Определяется типом задачи)')],
-                        ["selector" => Request::requestInTable(1, 'type_id', 'Добавление/изменение тегов')],
-                        ["selector" => Request::requestInTable(1, 'promo_desc', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'adding_goods_to_new_category', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'used_ref', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'updating_photos', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'updating_description', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'updating_characteristics', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'automoderation', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'adding_instructions', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'adding_instructions', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'stop_brands', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'with_pallets', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'lots', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'with_video', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'mobile_courier', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'ua_fields', 'Нет')],
-                        ["selector" => Request::requestInTable(1, 'algorithm', 'Нет')],
+                        [Request::requestInTable(1, 'id', 7)],
+                        [Request::requestInTable(1, 'subject', 'Добавление/изменение тегов (Определяется типом задачи)')],
+                        [Request::requestInTable(1, 'type_id', 'Добавление/изменение тегов')],
+                        [Request::requestInTable(1, 'promo_desc', 'Нет')],
+                        [Request::requestInTable(1, 'adding_goods_to_new_category', 'Нет')],
+                        [Request::requestInTable(1, 'used_ref', 'Нет')],
+                        [Request::requestInTable(1, 'updating_photos', 'Нет')],
+                        [Request::requestInTable(1, 'updating_description', 'Нет')],
+                        [Request::requestInTable(1, 'updating_characteristics', 'Нет')],
+                        [Request::requestInTable(1, 'automoderation', 'Нет')],
+                        [Request::requestInTable(1, 'adding_instructions', 'Нет')],
+                        [Request::requestInTable(1, 'adding_instructions', 'Нет')],
+                        [Request::requestInTable(1, 'stop_brands', 'Нет')],
+                        [Request::requestInTable(1, 'with_pallets', 'Нет')],
+                        [Request::requestInTable(1, 'lots', 'Нет')],
+                        [Request::requestInTable(1, 'with_video', 'Нет')],
+                        [Request::requestInTable(1, 'mobile_courier', 'Нет')],
+                        [Request::requestInTable(1, 'ua_fields', 'Нет')],
+                        [Request::requestInTable(1, 'algorithm', 'Нет')],
                     ],
                     "Заявка 7" => [
-                        ["selector" => Request::requestInTable(2, 'id', 6)],
-                        ["selector" => Request::requestInTable(2, 'subject', 'Добавление/изменение видео (Определяется типом задачи)')],
-                        ["selector" => Request::requestInTable(2, 'type_id', 'Добавление/изменение видео')],
-                        ["selector" => Request::requestInTable(2, 'promo_desc', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'adding_goods_to_new_category', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'used_ref', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'updating_photos', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'updating_description', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'updating_characteristics', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'automoderation', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'adding_instructions', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'adding_instructions', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'stop_brands', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'with_pallets', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'lots', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'with_video', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'mobile_courier', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'ua_fields', 'Нет')],
-                        ["selector" => Request::requestInTable(2, 'algorithm', 'Нет')],
+                        [Request::requestInTable(2, 'id', 6)],
+                        [Request::requestInTable(2, 'subject', 'Добавление/изменение видео (Определяется типом задачи)')],
+                        [Request::requestInTable(2, 'type_id', 'Добавление/изменение видео')],
+                        [Request::requestInTable(2, 'promo_desc', 'Нет')],
+                        [Request::requestInTable(2, 'adding_goods_to_new_category', 'Нет')],
+                        [Request::requestInTable(2, 'used_ref', 'Нет')],
+                        [Request::requestInTable(2, 'updating_photos', 'Нет')],
+                        [Request::requestInTable(2, 'updating_description', 'Нет')],
+                        [Request::requestInTable(2, 'updating_characteristics', 'Нет')],
+                        [Request::requestInTable(2, 'automoderation', 'Нет')],
+                        [Request::requestInTable(2, 'adding_instructions', 'Нет')],
+                        [Request::requestInTable(2, 'adding_instructions', 'Нет')],
+                        [Request::requestInTable(2, 'stop_brands', 'Нет')],
+                        [Request::requestInTable(2, 'with_pallets', 'Нет')],
+                        [Request::requestInTable(2, 'lots', 'Нет')],
+                        [Request::requestInTable(2, 'with_video', 'Нет')],
+                        [Request::requestInTable(2, 'mobile_courier', 'Нет')],
+                        [Request::requestInTable(2, 'ua_fields', 'Нет')],
+                        [Request::requestInTable(2, 'algorithm', 'Нет')],
                     ],
                 ],
                 "cantSee" => [
@@ -1629,16 +1326,16 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заявка 1" => [
-                        ["selector" => Request::requestInTable(1, 'id', 1)],
-                        ["selector" => Request::requestInTable(1, 'subject', 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)')],
-                        ["selector" => Request::requestInTable(1, 'type_id', 'Добавление/изменение информации в существующих товарах')],
-                        ["selector" => Request::requestInTable(1, 'priority', 'Исправление критичной ошибки')],
-                        ["selector" => Request::requestInTable(1, 'reasons', 'Нинада')],
-                        ["selector" => Request::requestInTable(1, 'author_clarifications', 'Более 5 уточнений')],
-                        ["selector" => Request::requestInTable(1, 'photos_available', 'Фото предоставлены фотостудией')],
-                        ["selector" => Request::requestInTable(1, 'characteristics_available', 'Характеристики добавлены с обновлением фото/описания')],
-                        ["selector" => Request::requestInTable(1, 'description_available', 'Не предоставлены продактом. Выполнен поиск.')],
-                        ["selector" => Request::requestInTable(1, 'language', 'Английский')],
+                        [Request::requestInTable(1, 'id', 1)],
+                        [Request::requestInTable(1, 'subject', 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)')],
+                        [Request::requestInTable(1, 'type_id', 'Добавление/изменение информации в существующих товарах')],
+                        [Request::requestInTable(1, 'priority', 'Исправление критичной ошибки')],
+                        [Request::requestInTable(1, 'reasons', 'Нинада')],
+                        [Request::requestInTable(1, 'author_clarifications', 'Более 5 уточнений')],
+                        [Request::requestInTable(1, 'photos_available', 'Фото предоставлены фотостудией')],
+                        [Request::requestInTable(1, 'characteristics_available', 'Характеристики добавлены с обновлением фото/описания')],
+                        [Request::requestInTable(1, 'description_available', 'Не предоставлены продактом. Выполнен поиск.')],
+                        [Request::requestInTable(1, 'language', 'Английский')],
                     ],
                 ],
                 "cantSee" => []

@@ -12,21 +12,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -42,21 +42,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -72,21 +72,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$dates],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$dates],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -102,17 +102,17 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -129,21 +129,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -159,21 +159,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -189,21 +189,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$dates],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$dates],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -219,17 +219,17 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -246,21 +246,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -276,21 +276,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$dates],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$dates],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -306,17 +306,17 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -333,21 +333,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -363,21 +363,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$dates],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$dates],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -393,17 +393,17 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -420,21 +420,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -450,21 +450,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$dates],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$dates],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -480,17 +480,17 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -507,21 +507,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -537,21 +537,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$dates],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$dates],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -567,17 +567,17 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []
@@ -594,21 +594,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -624,21 +624,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$dates],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$dates],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$supervisor_comment],
                     ]
                 ]
             ]
@@ -654,17 +654,17 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$commonInformation],
-                        ["selector" => RequestView::$results],
-                        ["selector" => RequestView::$errors],
-                        ["selector" => RequestView::$errorsCrossCheck],
-                        ["selector" => RequestView::$motivationSupervisors],
-                        ["selector" => RequestView::$motivationManagers],
-                        ["selector" => RequestView::$motivationCcManagers],
-                        ["selector" => RequestView::$dates],
-                        ["selector" => RequestView::$reportPeriodId],
-                        ["selector" => RequestView::$svReportPeriods],
-                        ["selector" => RequestView::$supervisor_comment],
+                        [RequestView::$commonInformation],
+                        [RequestView::$results],
+                        [RequestView::$errors],
+                        [RequestView::$errorsCrossCheck],
+                        [RequestView::$motivationSupervisors],
+                        [RequestView::$motivationManagers],
+                        [RequestView::$motivationCcManagers],
+                        [RequestView::$dates],
+                        [RequestView::$reportPeriodId],
+                        [RequestView::$svReportPeriods],
+                        [RequestView::$supervisor_comment],
                     ]
                 ],
                 "cantSee" => []

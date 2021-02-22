@@ -45,6 +45,12 @@ class Request extends FunctionalTester
             '/tbody/tr[' . $tableRow . ']/td[@data-col-seq="' . $columnName . '"]//*[contains(text(),"' . $text . '")]';
     }
 
+    /**Заголовки колонок таблицы*/
+    public static function columnName(string $columnName, string $text): string
+    {
+        return "//thead/tr/th[@data-col-seq='$columnName']/..//*[contains(text(),'$text')]";
+    }
+
     /**Блок кнопок изменения статуса в таблице заявок и самой заявке*/
     public static function transferButton(string $action): string
     {
@@ -52,7 +58,7 @@ class Request extends FunctionalTester
     }
 
     /**Страница таблицы*/
-    public static function tablePage($page): string
+    public static function tablePage(string $page): string
     {
         return "//ul[@class='pagination']//li/a[text() = '$page']";
     }
@@ -115,7 +121,7 @@ class Request extends FunctionalTester
     }
 
 
-    //****** Колонки датами ******//
+    //****** Колонки c датами ******//
 
     /**Поле поиска по диапазону дат*/
     public static function columnSearchFieldDates(string $fieldName): string

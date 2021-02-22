@@ -14,39 +14,39 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
                     ],
                     "Продавец" => [
-                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
-                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
-                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
-                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
-                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
+                        [RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        [RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        [RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        [RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        [RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
-                        ["selector" => RequestCreate::findCheckbox(' Лоты')],
-                        ["selector" => RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Промо-описание')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
-                        ["selector" => RequestCreate::findCheckbox(' С видео')],
-                        ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
-                        ["selector" => RequestCreate::findCheckbox(' С тегами к товарам')],
-                        ["selector" => RequestCreate::findCheckbox(' С фотосъемкой')],
-                        ["selector" => RequestCreate::findCheckbox(' Уценка')],
-                        ["selector" => RequestCreate::findCheckbox(' Уценка 2')],
+                        [RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
+                        [RequestCreate::findCheckbox(' Лоты')],
+                        [RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Промо-описание')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' С видео')],
+                        [RequestCreate::findCheckbox(' С размерной сеткой')],
+                        [RequestCreate::findCheckbox(' С тегами к товарам')],
+                        [RequestCreate::findCheckbox(' С фотосъемкой')],
+                        [RequestCreate::findCheckbox(' Уценка')],
+                        [RequestCreate::findCheckbox(' Уценка 2')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -64,33 +64,33 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$blockedCategory],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$blockedCategory],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Автомодерация')],
-                        ["selector" => RequestCreate::findCheckbox(' БУ, REF')],
-                        ["selector" => RequestCreate::findCheckbox(' Жалоба на товар продавца маркета')],
-                        ["selector" => RequestCreate::findCheckbox(' С видео')],
-                        ["selector" => RequestCreate::findCheckbox(' С палитрой')],
-                        ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
-                        ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
-                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
+                        [RequestCreate::findCheckbox(' Автомодерация')],
+                        [RequestCreate::findCheckbox(' БУ, REF')],
+                        [RequestCreate::findCheckbox(' Жалоба на товар продавца маркета')],
+                        [RequestCreate::findCheckbox(' С видео')],
+                        [RequestCreate::findCheckbox(' С палитрой')],
+                        [RequestCreate::findCheckbox(' С размерной сеткой')],
+                        [RequestCreate::findCheckbox(' Стоп-бренды')],
+                        [RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
-                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
-                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
-                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
-                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
+                        [RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        [RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        [RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        [RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        [RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ]
                 ],
             ]
@@ -108,42 +108,42 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
                     ],
                     "Продавец" => [
-                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
-                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
-                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
-                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
-                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
+                        [RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        [RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        [RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        [RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        [RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Добавление/обновление инструкций')],
-                        ["selector" => RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
-                        ["selector" => RequestCreate::findCheckbox(' Обновление описания')],
-                        ["selector" => RequestCreate::findCheckbox(' Обновление фото')],
-                        ["selector" => RequestCreate::findCheckbox(' Обновление характеристик')],
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' По заявке с MobileCourier')],
-                        ["selector" => RequestCreate::findCheckbox(' Промо-описание')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
-                        ["selector" => RequestCreate::findCheckbox(' С видео')],
-                        ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
-                        ["selector" => RequestCreate::findCheckbox(' С тегами к товарам')],
-                        ["selector" => RequestCreate::findCheckbox(' С фотосъемкой')],
-                        ["selector" => RequestCreate::findCheckbox(' Уценка')],
-                        ["selector" => RequestCreate::findCheckbox(' Уценка 2')],
+                        [RequestCreate::findCheckbox(' Добавление/обновление инструкций')],
+                        [RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
+                        [RequestCreate::findCheckbox(' Обновление описания')],
+                        [RequestCreate::findCheckbox(' Обновление фото')],
+                        [RequestCreate::findCheckbox(' Обновление характеристик')],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' По заявке с MobileCourier')],
+                        [RequestCreate::findCheckbox(' Промо-описание')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' С видео')],
+                        [RequestCreate::findCheckbox(' С размерной сеткой')],
+                        [RequestCreate::findCheckbox(' С тегами к товарам')],
+                        [RequestCreate::findCheckbox(' С фотосъемкой')],
+                        [RequestCreate::findCheckbox(' Уценка')],
+                        [RequestCreate::findCheckbox(' Уценка 2')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -161,34 +161,34 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$blockedCategory],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$blockedCategory],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Автомодерация')],
-                        ["selector" => RequestCreate::findCheckbox(' БУ, REF')],
-                        ["selector" => RequestCreate::findCheckbox(' Жалоба на товар продавца маркета')],
-                        ["selector" => RequestCreate::findCheckbox(' По заявке с MobileCourier')],
-                        ["selector" => RequestCreate::findCheckbox(' С видео')],
-                        ["selector" => RequestCreate::findCheckbox(' С палитрой')],
-                        ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
-                        ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
-                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
+                        [RequestCreate::findCheckbox(' Автомодерация')],
+                        [RequestCreate::findCheckbox(' БУ, REF')],
+                        [RequestCreate::findCheckbox(' Жалоба на товар продавца маркета')],
+                        [RequestCreate::findCheckbox(' По заявке с MobileCourier')],
+                        [RequestCreate::findCheckbox(' С видео')],
+                        [RequestCreate::findCheckbox(' С палитрой')],
+                        [RequestCreate::findCheckbox(' С размерной сеткой')],
+                        [RequestCreate::findCheckbox(' Стоп-бренды')],
+                        [RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
-                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
-                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
-                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
-                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
+                        [RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        [RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        [RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        [RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        [RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ]
                 ],
 
@@ -207,39 +207,39 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
                     ],
                     "Продавец" => [
-                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
-                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
-                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
-                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
-                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
+                        [RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        [RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        [RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        [RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        [RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
-                        ["selector" => RequestCreate::findCheckbox(' Лоты')],
-                        ["selector" => RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Промо-описание')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
-                        ["selector" => RequestCreate::findCheckbox(' С видео')],
-                        ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
-                        ["selector" => RequestCreate::findCheckbox(' С тегами к товарам')],
-                        ["selector" => RequestCreate::findCheckbox(' С фотосъемкой')],
-                        ["selector" => RequestCreate::findCheckbox(' Уценка')],
-                        ["selector" => RequestCreate::findCheckbox(' Уценка 2')],
+                        [RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
+                        [RequestCreate::findCheckbox(' Лоты')],
+                        [RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Промо-описание')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' С видео')],
+                        [RequestCreate::findCheckbox(' С размерной сеткой')],
+                        [RequestCreate::findCheckbox(' С тегами к товарам')],
+                        [RequestCreate::findCheckbox(' С фотосъемкой')],
+                        [RequestCreate::findCheckbox(' Уценка')],
+                        [RequestCreate::findCheckbox(' Уценка 2')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -257,33 +257,33 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$blockedCategory],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$blockedCategory],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Автомодерация')],
-                        ["selector" => RequestCreate::findCheckbox(' БУ, REF')],
-                        ["selector" => RequestCreate::findCheckbox(' Жалоба на товар продавца маркета')],
-                        ["selector" => RequestCreate::findCheckbox(' С видео')],
-                        ["selector" => RequestCreate::findCheckbox(' С палитрой')],
-                        ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
-                        ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
-                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
+                        [RequestCreate::findCheckbox(' Автомодерация')],
+                        [RequestCreate::findCheckbox(' БУ, REF')],
+                        [RequestCreate::findCheckbox(' Жалоба на товар продавца маркета')],
+                        [RequestCreate::findCheckbox(' С видео')],
+                        [RequestCreate::findCheckbox(' С палитрой')],
+                        [RequestCreate::findCheckbox(' С размерной сеткой')],
+                        [RequestCreate::findCheckbox(' Стоп-бренды')],
+                        [RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
-                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
-                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
-                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
-                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
+                        [RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        [RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        [RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        [RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        [RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ]
                 ],
             ]
@@ -301,22 +301,22 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Алгоритм')],
+                        [RequestCreate::findCheckbox(' Алгоритм')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -334,39 +334,39 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
                     ],
                     "Продавец" => [
-                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
-                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
-                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
-                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
-                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
+                        [RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        [RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        [RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        [RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        [RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
-                        ["selector" => RequestCreate::findCheckbox(' Лоты')],
-                        ["selector" => RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Промо-описание')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
-                        ["selector" => RequestCreate::findCheckbox(' С видео')],
-                        ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
-                        ["selector" => RequestCreate::findCheckbox(' С тегами к товарам')],
-                        ["selector" => RequestCreate::findCheckbox(' С фотосъемкой')],
-                        ["selector" => RequestCreate::findCheckbox(' Уценка')],
-                        ["selector" => RequestCreate::findCheckbox(' Уценка 2')],
+                        [RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
+                        [RequestCreate::findCheckbox(' Лоты')],
+                        [RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Промо-описание')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' С видео')],
+                        [RequestCreate::findCheckbox(' С размерной сеткой')],
+                        [RequestCreate::findCheckbox(' С тегами к товарам')],
+                        [RequestCreate::findCheckbox(' С фотосъемкой')],
+                        [RequestCreate::findCheckbox(' Уценка')],
+                        [RequestCreate::findCheckbox(' Уценка 2')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -384,32 +384,32 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$blockedCategory]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Автомодерация')],
-                        ["selector" => RequestCreate::findCheckbox(' БУ, REF')],
-                        ["selector" => RequestCreate::findCheckbox(' Жалоба на товар продавца маркета')],
-                        ["selector" => RequestCreate::findCheckbox(' С видео')],
-                        ["selector" => RequestCreate::findCheckbox(' С палитрой')],
-                        ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
-                        ["selector" => RequestCreate::findCheckbox(' Стоп-бренды')],
-                        ["selector" => RequestCreate::findCheckbox(' Укр. поля')],
+                        [RequestCreate::findCheckbox(' Автомодерация')],
+                        [RequestCreate::findCheckbox(' БУ, REF')],
+                        [RequestCreate::findCheckbox(' Жалоба на товар продавца маркета')],
+                        [RequestCreate::findCheckbox(' С видео')],
+                        [RequestCreate::findCheckbox(' С палитрой')],
+                        [RequestCreate::findCheckbox(' С размерной сеткой')],
+                        [RequestCreate::findCheckbox(' Стоп-бренды')],
+                        [RequestCreate::findCheckbox(' Укр. поля')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
-                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
-                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
-                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
-                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
+                        [RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        [RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        [RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        [RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        [RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ]
                 ],
             ]
@@ -427,25 +427,25 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Добавление графики')],
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
-                        ["selector" => RequestCreate::findCheckbox(' Точки входа')],
+                        [RequestCreate::findCheckbox(' Добавление графики')],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' Точки входа')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -463,25 +463,25 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Добавление графики')],
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
-                        ["selector" => RequestCreate::findCheckbox(' Точки входа')],
+                        [RequestCreate::findCheckbox(' Добавление графики')],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' Точки входа')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -499,23 +499,23 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -533,23 +533,23 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -567,23 +567,23 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -601,39 +601,39 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
                     ],
                     "Продавец" => [
-                        ["selector" => RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
-                        ["selector" => RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
-                        ["selector" => RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
-                        ["selector" => RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
-                        ["selector" => RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
+                        [RequestCreate::rozetkaSellers(1, 9423, 'anytech')],
+                        [RequestCreate::rozetkaSellers(2, 67757, 'iTook')],
+                        [RequestCreate::rozetkaSellers(3, 83, 'Euromart')],
+                        [RequestCreate::rozetkaSellers(4, 5, 'Rozetka') . '[@selected]'],
+                        [RequestCreate::rozetkaSellers(5, -2, 'Все продавцы')],
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
-                        ["selector" => RequestCreate::findCheckbox(' Лоты')],
-                        ["selector" => RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Промо-описание')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
-                        ["selector" => RequestCreate::findCheckbox(' С видео')],
-                        ["selector" => RequestCreate::findCheckbox(' С размерной сеткой')],
-                        ["selector" => RequestCreate::findCheckbox(' С тегами к товарам')],
-                        ["selector" => RequestCreate::findCheckbox(' С фотосъемкой')],
-                        ["selector" => RequestCreate::findCheckbox(' Уценка')],
-                        ["selector" => RequestCreate::findCheckbox(' Уценка 2')],
+                        [RequestCreate::findCheckbox(' Добавление товаров в новую категорию')],
+                        [RequestCreate::findCheckbox(' Лоты')],
+                        [RequestCreate::findCheckbox(' На основе отзыва клиента на сайте')],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Промо-описание')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' С видео')],
+                        [RequestCreate::findCheckbox(' С размерной сеткой')],
+                        [RequestCreate::findCheckbox(' С тегами к товарам')],
+                        [RequestCreate::findCheckbox(' С фотосъемкой')],
+                        [RequestCreate::findCheckbox(' Уценка')],
+                        [RequestCreate::findCheckbox(' Уценка 2')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -651,23 +651,23 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -685,23 +685,23 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]
@@ -719,23 +719,23 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Общие" => [
-                        ["selector" => RequestCreate::$subject],
-                        ["selector" => RequestCreate::$description],
-                        ["selector" => RequestCreate::$amount],
-                        ["selector" => RequestCreate::$plannedFinishDate],
-                        ["selector" => RequestCreate::$observers],
-                        ["selector" => RequestCreate::$priority],
-                        ["selector" => RequestCreate::$category],
-                        ["selector" => RequestCreate::$seller]
+                        [RequestCreate::$subject],
+                        [RequestCreate::$description],
+                        [RequestCreate::$amount],
+                        [RequestCreate::$plannedFinishDate],
+                        [RequestCreate::$observers],
+                        [RequestCreate::$priority],
+                        [RequestCreate::$category],
+                        [RequestCreate::$seller]
                     ],
                     "Чекбоксы" => [
-                        ["selector" => RequestCreate::findCheckbox(' Пакетная загрузка')],
-                        ["selector" => RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
+                        [RequestCreate::findCheckbox(' Пакетная загрузка')],
+                        [RequestCreate::findCheckbox(' Ручная загрузка') . '[@checked]'],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["selector" => RequestCreate::$blockedCategory]
+                        [RequestCreate::$blockedCategory]
                     ]
                 ]
             ]

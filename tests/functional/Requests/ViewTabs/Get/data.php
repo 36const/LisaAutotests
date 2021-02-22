@@ -231,7 +231,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$tabsCheckbox . '[@checked]'],
+                        [RequestView::$tabsCheckbox . '[@checked]'],
                     ],
                 ]
             ]
@@ -416,7 +416,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$tabsCheckbox . '[@checked]'],
+                        [RequestView::$tabsCheckbox . '[@checked]'],
                     ],
                 ]
             ]
@@ -601,7 +601,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$tabsCheckbox . '[@checked]'],
+                        [RequestView::$tabsCheckbox . '[@checked]'],
                     ],
                 ]
             ]
@@ -781,7 +781,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$tabsCheckbox . '[@checked]'],
+                        [RequestView::$tabsCheckbox . '[@checked]'],
                     ],
                 ]
             ]
@@ -926,7 +926,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["selector" => RequestView::$tabsCheckbox . '[@checked]'],
+                        [RequestView::$tabsCheckbox . '[@checked]'],
                     ],
                 ]
             ]
