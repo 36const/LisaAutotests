@@ -12,7 +12,7 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//header[@class='main-header']//a[@href='/bpm/request/index']"]
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/request/index']"]
                     ]
                 ]
             ]
@@ -90,7 +90,7 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//header[@class='main-header']//a[@href='/bpm/user/create']"]
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/user/create']"]
                     ]
                 ]
             ]
@@ -107,7 +107,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["//div[@class='col-md-4']//select[@id='userbpm-status' and @disabled]"]
+                        ["selector" => "//div[@class='col-md-4']//select[@id='userbpm-status' and @disabled]"]
                     ]
                 ],
             ]
@@ -124,7 +124,7 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//table[@class='table table-striped table-bordered']//a[@href='/bpm/user/update?id=4']"]
+                        ["selector" => "//table[@class='table table-striped table-bordered']//a[@href='/bpm/user/update?id=4']"]
                     ]
                 ]
             ]
@@ -141,8 +141,8 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//div[@class='user-bpm-view']//a[@href='/bpm/user/update?id=4']"],
-                        ["//div[@class='user-bpm-view']//a[@href='/bpm/user/refresh-name?login=kutsan.k']"],
+                        ["selector" => "//div[@class='user-bpm-view']//a[@href='/bpm/user/update?id=4']"],
+                        ["selector" => "//div[@class='user-bpm-view']//a[@href='/bpm/user/refresh-name?login=kutsan.k']"],
                     ]
                 ]
             ]
@@ -160,7 +160,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["//section[@class='content']//*[text() = 'Forbidden (#403)']"],
+                        ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
                     ]
                 ],
             ]
@@ -178,7 +178,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["//section[@class='content']//*[text() = 'Forbidden (#403)']"],
+                        ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
                     ]
                 ],
             ]
@@ -195,8 +195,8 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["//table//input[@name='Errors[1][RequestError][errors_count]' and @disabled]"],
-                        ["//table//input[@name='Errors[1][RequestError][items_with_errors]' and @disabled]"],
+                        ["selector" => "//table//input[@name='Errors[1][RequestError][errors_count]' and @disabled]"],
+                        ["selector" => "//table//input[@name='Errors[1][RequestError][items_with_errors]' and @disabled]"],
                     ]
                 ],
             ]
@@ -214,8 +214,8 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//header[@class='main-header']//a[@href='/bpm/seller']"],
-                        ["//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/seller']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -232,9 +232,9 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//header[@class='main-header']//a[@href='/bpm/category/create']"],
-                        ["//header[@class='main-header']//a[@href='/bpm/category']"],
-                        ["//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/category/create']"],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/category']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -251,8 +251,8 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//header[@class='main-header']//a[@href='/bpm/team/create']"],
-                        ["//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/team/create']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -269,8 +269,8 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//header[@class='main-header']//a[@href='/bpm/difficulty-coef/create']"],
-                        ["//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/difficulty-coef/create']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -287,8 +287,8 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//header[@class='main-header']//a[@href='/bpm/field-values/create']"],
-                        ["//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/field-values/create']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -305,8 +305,8 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//header[@class='main-header']//a[@href='/bpm/reason/create']"],
-                        ["//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/reason/create']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -323,8 +323,8 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//header[@class='main-header']//a[@href='/bpm/priority/create']"],
-                        ["//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/priority/create']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -341,8 +341,8 @@ return [
             "pageObjects" => [
                 "cantSee" => [
                     [
-                        ["//header[@class='main-header']//a[@href='/bpm/excluded-fields']"],
-                        ["//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//header[@class='main-header']//a[@href='/bpm/excluded-fields']"],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
                     ]
                 ]
             ]
@@ -360,25 +360,25 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["//select[@name='RequestType']//option[text()='Добавление новых товаров']"],
-                        ["//select[@name='RequestType']//option[text()='Перенос товаров']"],
-                        ["//select[@name='RequestType']//option[text()='Заливка фото с фотостудии']"],
-                        ["//select[@name='RequestType']//option[text()='Добавление нового портала/раздела фат-меню/категории товаров']"],
-                        ["//select[@name='RequestType']//option[text()='Добавление параметров/значений']"],
-                        ["//select[@name='RequestType']//option[text()='Проектирование структуры']"],
-                        ["//select[@name='RequestType']//option[text()='Добавление/изменение видео']"],
-                        ["//select[@name='RequestType']//option[text()='Добавление/изменение тегов']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление новых товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Перенос товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Заливка фото с фотостудии']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление нового портала/раздела фат-меню/категории товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление параметров/значений']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Проектирование структуры']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение видео']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение тегов']"],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        ["//select[@name='RequestType']//option[text()='Добавление/изменение информации в существующих товарах']"],
-                        ["//select[@name='RequestType']//option[text()='Группировка товаров']"],
-                        ["//select[@name='RequestType']//option[text()='Проверка скрытых товаров']"],
-                        ["//select[@name='RequestType']//option[text()='Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров']"],
-                        ["//select[@name='RequestType']//option[text()='Изменение существующих параметров/значений']"],
-                        ["//select[@name='RequestType']//option[text()='Добавление новых СЦ/изменение существующих СЦ']"],
-                        ["//select[@name='RequestType']//option[text()='Добавление/изменение размерной сетки']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение информации в существующих товарах']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Группировка товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Проверка скрытых товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Изменение существующих параметров/значений']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление новых СЦ/изменение существующих СЦ']"],
+                        ["selector" => "//select[@name='RequestType']//option[text()='Добавление/изменение размерной сетки']"],
                     ]
                 ]
             ]
@@ -397,7 +397,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["//section[@class='content']//*[text() = 'Forbidden (#403)']"],
+                        ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
 
                     ],
                 ],
@@ -416,7 +416,7 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        ["//section[@class='content']//*[text() = 'Forbidden (#403)']"],
+                        ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
 
                     ],
                 ],

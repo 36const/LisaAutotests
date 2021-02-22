@@ -17,25 +17,25 @@ return [
                         ],
                     ],
                     "Кнопка перехода в раздел зафиксированных данных по СВ" => [
-                        ["//div[@class='report-for-statistic col-md-5']//a[@href='/bpm/report/fixate']",],
+                        ["selector" => "//div[@class='report-for-statistic col-md-5']//a[@href='/bpm/report/fixate']",],
                     ],
                     "Список периодов" => [
-                        ["//select[@name='Report[report_period_id]']",],
+                        ["selector" => "//select[@name='Report[report_period_id]']",],
                     ],
                     "Пункт 'Отчёт по супервизорам'" => [
-                        ["//div[@id='report-user_field']//input[@value='supervisor_id']",],
+                        ["selector" => "//div[@id='report-user_field']//input[@value='supervisor_id']",],
                     ],
                     "Пункт 'Отчёт по исполнителям'" => [
-                        ["//div[@id='report-user_field']//input[@checked='checked']",],
+                        ["selector" => "//div[@id='report-user_field']//input[@checked='checked']",],
                     ],
                     "Пункт 'Тип отчёта детальный'" => [
-                        ["//div[@id='report-type']//input[@checked='checked']",],
+                        ["selector" => "//div[@id='report-type']//input[@checked='checked']",],
                     ],
                     "Пункт 'Тип отчёта сводный'" => [
-                        ["//div[@id='report-type']//input[@value='1']",],
+                        ["selector" => "//div[@id='report-type']//input[@value='1']",],
                     ],
                     "Список шаблонов" => [
-                        ["//select[@id='report-detail_ids' and @size='1']//option[@value='1' and text()='Всё во всём']",],
+                        ["selector" => "//select[@id='report-detail_ids' and @size='1']//option[@value='1' and text()='Всё во всём']",],
                     ],
                     "Кнопка генерации отчёта" => [
                         [

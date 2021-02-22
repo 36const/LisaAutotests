@@ -444,13 +444,13 @@ return [
                         ],
                     ],
                     "Даты" => [
-                        ["//div[@class='col-md-6 attachments-update'][2]//input[@name='date[created_at]' and @value='2020-04-27 00:00to2020-05-03 23:59']",],
-                        ["//div[@class='col-md-6 attachments-update'][2]//input[@name='date[planned_start_date]' and @value='2020-05-04 00:00to2020-05-10 23:59']",],
-                        ["//div[@class='col-md-6 attachments-update'][2]//input[@name='date[planned_finish_date]' and @value='2020-05-11 00:00to2020-05-17 23:59']",],
-                        ["//div[@class='col-md-6 attachments-update'][2]//input[@name='date[actual_start_date]' and @value='2020-05-18 00:00to2020-05-24 23:59']",],
-                        ["//div[@class='col-md-6 attachments-update'][2]//input[@name='date[actual_finish_date]' and @value='2020-05-25 00:00to2020-05-31 23:59']",],
-                        ["//div[@class='col-md-6 attachments-update'][2]//input[@name='date[supervisor_process_date]' and @value='2020-06-01 00:00to2020-06-07 23:59']",],
-                        ["//div[@class='col-md-6 attachments-update'][2]//input[@name='date[last_change_status_date]' and @value='2020-06-08 00:00to2020-06-14 23:59']",],
+                        ["selector" => "//div[@class='col-md-6 attachments-update'][2]//input[@name='date[created_at]' and @value='2020-04-27 00:00to2020-05-03 23:59']",],
+                        ["selector" => "//div[@class='col-md-6 attachments-update'][2]//input[@name='date[planned_start_date]' and @value='2020-05-04 00:00to2020-05-10 23:59']",],
+                        ["selector" => "//div[@class='col-md-6 attachments-update'][2]//input[@name='date[planned_finish_date]' and @value='2020-05-11 00:00to2020-05-17 23:59']",],
+                        ["selector" => "//div[@class='col-md-6 attachments-update'][2]//input[@name='date[actual_start_date]' and @value='2020-05-18 00:00to2020-05-24 23:59']",],
+                        ["selector" => "//div[@class='col-md-6 attachments-update'][2]//input[@name='date[actual_finish_date]' and @value='2020-05-25 00:00to2020-05-31 23:59']",],
+                        ["selector" => "//div[@class='col-md-6 attachments-update'][2]//input[@name='date[supervisor_process_date]' and @value='2020-06-01 00:00to2020-06-07 23:59']",],
+                        ["selector" => "//div[@class='col-md-6 attachments-update'][2]//input[@name='date[last_change_status_date]' and @value='2020-06-08 00:00to2020-06-14 23:59']",],
                     ],
                     "Дополнительные фильтры (названия)" => [
                         [

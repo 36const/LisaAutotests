@@ -13,22 +13,22 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [Request::parentRequest(1, '/bpm/request/view?id=2')],
-                        [Request::parentRequest(2, '/bpm/request/view?id=1')],
-                        [Request::parentRequest(3, '/bpm/request/view?id=1')],
-                        [Request::childRequest(3, '/bpm/request/index?RequestSearch%5Bparent_id%5D=2')],
-                        [Request::childRequest(4, '/bpm/request/index?RequestSearch%5Bparent_id%5D=1')],
+                        ["selector" => Request::parentRequest(1, '/bpm/request/view?id=2')],
+                        ["selector" => Request::parentRequest(2, '/bpm/request/view?id=1')],
+                        ["selector" => Request::parentRequest(3, '/bpm/request/view?id=1')],
+                        ["selector" => Request::childRequest(3, '/bpm/request/index?RequestSearch%5Bparent_id%5D=2')],
+                        ["selector" => Request::childRequest(4, '/bpm/request/index?RequestSearch%5Bparent_id%5D=1')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::parentRequest(4)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
-                        [Request::photoLoadStatus(3)],
-                        [Request::photoLoadStatus(4)],
+                        ["selector" => Request::parentRequest(4)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
+                        ["selector" => Request::photoLoadStatus(3)],
+                        ["selector" => Request::photoLoadStatus(4)],
                     ]
                 ],
             ],
@@ -45,16 +45,16 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
                     ]
                 ],
             ],
@@ -71,16 +71,16 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
                     ]
                 ],
             ],
@@ -98,12 +98,12 @@ return [
                 "canSee" => [],
                 "cantSee" => [
                     [
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
             ],
@@ -121,12 +121,12 @@ return [
                 "canSee" => [],
                 "cantSee" => [
                     [
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
             ],
@@ -144,12 +144,12 @@ return [
                 "canSee" => [],
                 "cantSee" => [
                     [
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
             ],
@@ -167,12 +167,12 @@ return [
                 "canSee" => [],
                 "cantSee" => [
                     [
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
             ],
@@ -190,12 +190,12 @@ return [
                 "canSee" => [],
                 "cantSee" => [
                     [
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
             ],
@@ -213,12 +213,12 @@ return [
                 "canSee" => [],
                 "cantSee" => [
                     [
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
             ],
@@ -235,18 +235,18 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [Request::attachments(2)],
+                        ["selector" => Request::attachments(2)],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::attachments(1)],
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::attachments(1)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
             ],
@@ -265,14 +265,14 @@ return [
                 ],
                 "cantSee" => [
                     [
-                        [Request::attachments(1)],
-                        [Request::attachments(2)],
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::attachments(1)],
+                        ["selector" => Request::attachments(2)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
             ],
@@ -289,20 +289,20 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [Request::toCorrection(1)],
+                        ["selector" => Request::toCorrection(1)],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::toCorrection(2)],
-                        [Request::attachments(1)],
-                        [Request::attachments(2)],
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::toCorrection(2)],
+                        ["selector" => Request::attachments(1)],
+                        ["selector" => Request::attachments(2)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
             ],
@@ -319,25 +319,25 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     [
-                        [Request::toCorrection(3)],
-                        [Request::toCorrection(4)],
-                        [Request::toCorrection(5)],
-                        [Request::toCorrection(6)],
-                        [Request::toCorrection(7)],
+                        ["selector" => Request::toCorrection(3)],
+                        ["selector" => Request::toCorrection(4)],
+                        ["selector" => Request::toCorrection(5)],
+                        ["selector" => Request::toCorrection(6)],
+                        ["selector" => Request::toCorrection(7)],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::toCorrection(1)],
-                        [Request::toCorrection(2)],
-                        [Request::attachments(1)],
-                        [Request::attachments(2)],
-                        [Request::parentRequest(1)],
-                        [Request::parentRequest(2)],
-                        [Request::childRequest(1)],
-                        [Request::childRequest(2)],
-                        [Request::photoLoadStatus(1)],
-                        [Request::photoLoadStatus(2)],
+                        ["selector" => Request::toCorrection(1)],
+                        ["selector" => Request::toCorrection(2)],
+                        ["selector" => Request::attachments(1)],
+                        ["selector" => Request::attachments(2)],
+                        ["selector" => Request::parentRequest(1)],
+                        ["selector" => Request::parentRequest(2)],
+                        ["selector" => Request::childRequest(1)],
+                        ["selector" => Request::childRequest(2)],
+                        ["selector" => Request::photoLoadStatus(1)],
+                        ["selector" => Request::photoLoadStatus(2)],
                     ]
                 ],
             ],

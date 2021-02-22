@@ -13,18 +13,18 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Пакетное редактирование')],
-                        [Request::transferButton('На доработку')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Назначить исполнителя')],
-                        [Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
                     ]
                 ],
                 "cantSee" => [
                     [
                         //без пермишена 1->2 не показывается вкладка "Новые"
-                        ["//ul[@class='nav nav-tabs']//a[@href='/bpm/request/new']"],
-                        [Request::transferButton('Готова для распределения')],
+                        ["selector" => "//ul[@class='nav nav-tabs']//a[@href='/bpm/request/new']"],
+                        ["selector" => Request::transferButton('Готова для распределения')],
                     ],
                 ]
             ],
@@ -35,15 +35,15 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('На доработку')],
-                        [Request::transferButton('Назначить исполнителя')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Готова для распределения')],
+                        ["selector" => Request::transferButton('Готова для распределения')],
                     ],
                 ]
             ]
@@ -60,16 +60,16 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Готова для распределения')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Назначить исполнителя')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Готова для распределения')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('На доработку')],
                     ],
                 ]
             ],
@@ -80,15 +80,15 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Готова для распределения')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Назначить исполнителя')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Готова для распределения')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('На доработку')],
                     ],
                 ]
             ]
@@ -105,16 +105,16 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Готова для распределения')],
-                        [Request::transferButton('На доработку')],
-                        [Request::transferButton('Назначить исполнителя')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Готова для распределения')],
+                        ["selector" => Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Отменить')],
                     ],
                 ]
             ],
@@ -125,15 +125,15 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Готова для распределения')],
-                        [Request::transferButton('На доработку')],
-                        [Request::transferButton('Назначить исполнителя')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Готова для распределения')],
+                        ["selector" => Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Отменить')],
                     ],
                 ]
             ]
@@ -150,16 +150,16 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Готова для распределения')],
-                        [Request::transferButton('На доработку')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Готова для распределения')],
+                        ["selector" => Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
                     ],
                 ]
             ],
@@ -170,15 +170,15 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Готова для распределения')],
-                        [Request::transferButton('На доработку')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Готова для распределения')],
+                        ["selector" => Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
                     ],
                 ]
             ]
@@ -195,15 +195,15 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Назначить исполнителя')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('На доработку')],
                     ],
                 ]
             ],
@@ -214,14 +214,14 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Назначить исполнителя')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('На доработку')],
                     ],
                 ]
             ]
@@ -238,15 +238,15 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Назначить исполнителя')],
-                        [Request::transferButton('На доработку')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Отменить')],
                     ],
                 ]
             ],
@@ -257,14 +257,14 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Назначить исполнителя')],
-                        [Request::transferButton('На доработку')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Отменить')],
                     ],
                 ]
             ]
@@ -281,15 +281,15 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('На доработку')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
                     ],
                 ]
             ],
@@ -300,14 +300,14 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Создать подзадачу')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('На доработку')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('На доработку')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Назначить исполнителя')],
+                        ["selector" => Request::transferButton('Назначить исполнителя')],
                     ],
                 ]
             ]
@@ -324,13 +324,13 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Вернуть в новые')],
+                        ["selector" => Request::transferButton('Вернуть в новые')],
                     ],
                 ]
             ],
@@ -341,12 +341,12 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Вернуть в новые')],
+                        ["selector" => Request::transferButton('Вернуть в новые')],
                     ],
                 ]
             ]
@@ -363,7 +363,7 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ]
                 ],
                 "cantSee" => []
@@ -374,7 +374,7 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => []
@@ -392,14 +392,14 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('В работу')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('В работу')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Отменить')],
                     ],
                 ]
             ],
@@ -410,13 +410,13 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('В работу')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('В работу')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Отменить')],
                     ],
                 ]
             ]
@@ -433,15 +433,15 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Пакетное редактирование')],
-                        [Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
                     ],
                 ],
                 "cantSee" => [
                     [
                         //массовая отмена в статусе 5 невозможна в любом случае
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('В работу')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('В работу')],
                     ],
                 ]
             ],
@@ -452,13 +452,13 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('В работу')],
+                        ["selector" => Request::transferButton('В работу')],
                     ],
                 ]
             ]
@@ -475,14 +475,14 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Отменить')],
                     ],
                 ]
             ],
@@ -493,16 +493,16 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить исполнителя')],
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Частично выполнена')],
-                        [Request::transferButton('Выполнена')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Изменить исполнителя')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Частично выполнена')],
+                        ["selector" => Request::transferButton('Выполнена')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Отменить')],
                     ],
                 ]
             ]
@@ -519,15 +519,15 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Изменить исполнителя')],
+                        ["selector" => Request::transferButton('Изменить исполнителя')],
                     ],
                 ]
             ],
@@ -538,16 +538,16 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Частично выполнена')],
-                        [Request::transferButton('Выполнена')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Частично выполнена')],
+                        ["selector" => Request::transferButton('Выполнена')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Изменить исполнителя')],
+                        ["selector" => Request::transferButton('Изменить исполнителя')],
                     ],
                 ]
             ]
@@ -564,14 +564,14 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Ожидать')],
                     ],
                 ]
             ],
@@ -582,16 +582,16 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить исполнителя')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Частично выполнена')],
-                        [Request::transferButton('Выполнена')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Изменить исполнителя')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Частично выполнена')],
+                        ["selector" => Request::transferButton('Выполнена')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Ожидать')],
                     ],
                 ]
             ]
@@ -608,15 +608,15 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Частично выполнена')],
+                        ["selector" => Request::transferButton('Частично выполнена')],
                     ],
                 ]
             ],
@@ -627,16 +627,16 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить исполнителя')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Выполнена')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Изменить исполнителя')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Выполнена')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Частично выполнена')],
+                        ["selector" => Request::transferButton('Частично выполнена')],
                     ],
                 ]
             ]
@@ -653,15 +653,15 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Выполнена')],
+                        ["selector" => Request::transferButton('Выполнена')],
                     ],
                 ]
             ],
@@ -672,16 +672,16 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить исполнителя')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Частично выполнена')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Изменить исполнителя')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Частично выполнена')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Выполнена')],
+                        ["selector" => Request::transferButton('Выполнена')],
                     ],
                 ]
             ]
@@ -698,10 +698,10 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
-                        [Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Отменить')],
                     ],
                 ],
                 "cantSee" => []
@@ -713,25 +713,25 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить исполнителя')],
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Внести исправления')],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Изменить исполнителя')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Внести исправления')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Частично выполнена')],
-                        [Request::transferButton('Выполнена')],
+                        ["selector" => Request::transferButton('Частично выполнена')],
+                        ["selector" => Request::transferButton('Выполнена')],
                     ],
                 ]
             ],
             "correctionPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Выполнена') . '[@disabled]'],
-                        [Request::transferButton('Частично выполнена') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Выполнена') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Частично выполнена') . '[@disabled]'],
                     ],
                 ],
                 "cantSee" => []
@@ -749,10 +749,10 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
-                        [Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Отменить')],
                     ],
                 ],
                 "cantSee" => []
@@ -764,13 +764,13 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить исполнителя')],
-                        [Request::transferButton('Ожидать')],
-                        [Request::transferButton('Отменить')],
-                        [Request::transferButton('Внести исправления')],
-                        [Request::transferButton('Создать подзадачу')],
-                        [Request::transferButton('Частично выполнена')],
-                        [Request::transferButton('Выполнена')],
+                        ["selector" => Request::transferButton('Изменить исполнителя')],
+                        ["selector" => Request::transferButton('Ожидать')],
+                        ["selector" => Request::transferButton('Отменить')],
+                        ["selector" => Request::transferButton('Внести исправления')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Частично выполнена')],
+                        ["selector" => Request::transferButton('Выполнена')],
                     ],
                 ],
                 "cantSee" => []
@@ -778,14 +778,14 @@ return [
             "correctionPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Выполнена')],
-                        [Request::transferButton('Частично выполнена')],
+                        ["selector" => Request::transferButton('Выполнена')],
+                        ["selector" => Request::transferButton('Частично выполнена')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Выполнена') . '[@disabled]'],
-                        [Request::transferButton('Частично выполнена') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Выполнена') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Частично выполнена') . '[@disabled]'],
                     ],
                 ]
             ],
@@ -802,13 +802,13 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('В работу')],
+                        ["selector" => Request::transferButton('В работу')],
                     ],
                 ]
             ],
@@ -819,12 +819,12 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('В работу')],
+                        ["selector" => Request::transferButton('В работу')],
                     ],
                 ]
             ]
@@ -841,13 +841,13 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('В работу')],
+                        ["selector" => Request::transferButton('В работу')],
                     ],
                 ]
             ],
@@ -858,29 +858,29 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Закрыть')],
-                        [Request::transferButton('На исправление')],
-                        [Request::transferButton('Взять на Кросс-чек')],
-                        [Request::transferButton('Завершить Кросс-чек') . '[@disabled]'],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Закрыть')],
+                        ["selector" => Request::transferButton('На исправление')],
+                        ["selector" => Request::transferButton('Взять на Кросс-чек')],
+                        ["selector" => Request::transferButton('Завершить Кросс-чек') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('В работу')],
+                        ["selector" => Request::transferButton('В работу')],
                     ],
                 ]
             ],
             "toCorrectionPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Сохранить и отправить на исправление')],
-                        [Request::transferButton('Сохранить')],
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление')],
+                        ["selector" => Request::transferButton('Сохранить')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
                     ]
                 ]
             ],
@@ -897,13 +897,13 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Закрыть')],
+                        ["selector" => Request::transferButton('Закрыть')],
                     ],
                 ]
             ],
@@ -914,28 +914,28 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('На исправление')],
-                        [Request::transferButton('Взять на Кросс-чек')],
-                        [Request::transferButton('Завершить Кросс-чек') . '[@disabled]'],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('На исправление')],
+                        ["selector" => Request::transferButton('Взять на Кросс-чек')],
+                        ["selector" => Request::transferButton('Завершить Кросс-чек') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Закрыть')],
+                        ["selector" => Request::transferButton('Закрыть')],
                     ],
                 ]
             ],
             "toCorrectionPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Сохранить и отправить на исправление')],
-                        [Request::transferButton('Сохранить')],
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление')],
+                        ["selector" => Request::transferButton('Сохранить')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
                     ]
                 ]
             ]
@@ -952,13 +952,13 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('В работу')],
+                        ["selector" => Request::transferButton('В работу')],
                     ],
                 ]
             ],
@@ -969,29 +969,29 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Закрыть')],
-                        [Request::transferButton('На исправление')],
-                        [Request::transferButton('Взять на Кросс-чек')],
-                        [Request::transferButton('Завершить Кросс-чек') . '[@disabled]'],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Закрыть')],
+                        ["selector" => Request::transferButton('На исправление')],
+                        ["selector" => Request::transferButton('Взять на Кросс-чек')],
+                        ["selector" => Request::transferButton('Завершить Кросс-чек') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('В работу')],
+                        ["selector" => Request::transferButton('В работу')],
                     ],
                 ]
             ],
             "toCorrectionPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Сохранить и отправить на исправление')],
-                        [Request::transferButton('Сохранить')],
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление')],
+                        ["selector" => Request::transferButton('Сохранить')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
                     ]
                 ]
             ]
@@ -1008,13 +1008,13 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Изменить супервайзера')],
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Изменить супервайзера')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Закрыть')],
+                        ["selector" => Request::transferButton('Закрыть')],
                     ],
                 ]
             ],
@@ -1025,28 +1025,28 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('На исправление')],
-                        [Request::transferButton('Взять на Кросс-чек')],
-                        [Request::transferButton('Завершить Кросс-чек') . '[@disabled]'],
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('На исправление')],
+                        ["selector" => Request::transferButton('Взять на Кросс-чек')],
+                        ["selector" => Request::transferButton('Завершить Кросс-чек') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Закрыть')],
+                        ["selector" => Request::transferButton('Закрыть')],
                     ],
                 ]
             ],
             "toCorrectionPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Сохранить и отправить на исправление')],
-                        [Request::transferButton('Сохранить')],
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление')],
+                        ["selector" => Request::transferButton('Сохранить')],
                     ],
                 ],
                 "cantSee" => [
                     [
-                        [Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
+                        ["selector" => Request::transferButton('Сохранить и отправить на исправление') . '[@disabled]'],
                     ]
                 ]
             ]
@@ -1063,7 +1063,7 @@ return [
             "tablePageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Пакетное редактирование')],
+                        ["selector" => Request::transferButton('Пакетное редактирование')],
                     ]
                 ],
                 "cantSee" => []
@@ -1074,7 +1074,7 @@ return [
             "requestPageObjects" => [
                 "canSee" => [
                     [
-                        [Request::transferButton('Создать подзадачу')],
+                        ["selector" => Request::transferButton('Создать подзадачу')],
                     ]
                 ],
                 "cantSee" => []
