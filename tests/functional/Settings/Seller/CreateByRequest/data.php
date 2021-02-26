@@ -678,6 +678,7 @@ return [
         'provider_data' => [
             'url' => '/bpm/request/update?id=1',
             'requestBody' => [
+                'RequestField[118]' => '0',
                 'RequestField[121]' => '',
                 'RequestField[144]' => '0',
                 'RequestField[157]' => '',
@@ -685,7 +686,6 @@ return [
                 'RequestField[19]' => '1',
                 'RequestField[25]' => '',
                 'RequestField[65]' => '0',
-                'RequestField[66]' => '0',
                 'RequestField[72]' => '0',
                 'RequestField[73]' => '0',
                 'RequestField[74]' => '0',
@@ -801,6 +801,41 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 65,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 72,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 73,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 74,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 75,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 93,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 94,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0,
                         ],
@@ -808,6 +843,11 @@ return [
                             'request_id' => 1,
                             'field_id' => 114,
                             'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 118,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,
@@ -822,6 +862,11 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 144,
                             'value' => 0,
                         ],
                         [
@@ -877,7 +922,6 @@ return [
             'requestBody' => [
                 'RequestField[103]' => '0',
                 'RequestField[116]' => '0',
-                'RequestField[118]' => '0',
                 'RequestField[121]' => '',
                 'RequestField[145]' => '0',
                 'RequestField[148]' => '0',
@@ -977,7 +1021,42 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 91,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 93,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 94,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 95,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 103,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 116,
                             'value' => 0,
                         ],
                         [
@@ -987,7 +1066,17 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 145,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 148,
                             'value' => 0,
                         ],
                         [
@@ -997,7 +1086,17 @@ return [
                         ],
                         [
                             'request_id' => 1,
-                            'field_id' => 64,
+                            'field_id' => 161,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 162,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 163,
                             'value' => 0,
                         ],
                         [

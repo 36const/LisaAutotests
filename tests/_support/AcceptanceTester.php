@@ -2,7 +2,9 @@
 
 namespace lisa;
 
+use Codeception\Actor;
 use Codeception\Example;
+use Codeception\Lib\Actor\Shared\Retry;
 
 /**
  * Inherited Methods
@@ -19,10 +21,10 @@ use Codeception\Example;
  *
  * @SuppressWarnings(PHPMD)
  */
-class AcceptanceTester extends \Codeception\Actor
+class AcceptanceTester extends Actor
 {
     use _generated\AcceptanceTesterActions;
-    use \Codeception\Lib\Actor\Shared\Retry;
+    use Retry;
 
     /**
      * @param Example $data - данные кейса из файла data.php
@@ -92,8 +94,6 @@ class AcceptanceTester extends \Codeception\Actor
         $I = $this;
 
         foreach ($dbTablesArray as $dbName => $dbData) {
-            $I->amConnectedToDatabase($dbName);
-
             foreach ($dbData as $tableName => $tableData) {
                 $I->canSeeNumRecords(count($tableData), $tableName);
 

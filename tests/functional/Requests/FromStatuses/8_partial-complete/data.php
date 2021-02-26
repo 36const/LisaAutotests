@@ -274,6 +274,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 144,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 146,
                             'value' => 0,
                         ],

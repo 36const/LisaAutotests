@@ -2,8 +2,11 @@
 
 namespace lisa;
 
+use Codeception\Actor;
 use Codeception\Example;
 use PhpOffice\PhpSpreadsheet\IOFactory;
+use Exception;
+use Yii;
 
 /**
  * Inherited Methods
@@ -20,7 +23,7 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
  *
  * @SuppressWarnings(PHPMD)
  */
-class FunctionalTester extends \Codeception\Actor
+class FunctionalTester extends Actor
 {
     use _generated\FunctionalTesterActions;
 
@@ -128,14 +131,14 @@ class FunctionalTester extends \Codeception\Actor
 
         if (isset($redis['canSee'])) {
             foreach ($redis['canSee'] as $key => $value) {
-                $I->assertEquals(1, \Yii::$app->redis->exists($key));
-                $I->assertSame($value, \Yii::$app->redis->get($key));
+                $I->assertEquals(1, Yii::$app->redis->exists($key));
+                $I->assertSame($value, Yii::$app->redis->get($key));
             }
         }
 
         if (isset($redis['cantSee'])) {
             foreach ($redis['cantSee'] as $key => $value) {
-                $I->assertEquals(0, \Yii::$app->redis->exists($key));
+                $I->assertEquals(0, Yii::$app->redis->exists($key));
             }
         }
     }
@@ -153,7 +156,7 @@ class FunctionalTester extends \Codeception\Actor
 
             try {
                 $I->assertEquals($sheetCount, $file->getSheetCount());
-            } catch (\Exception $exception) {
+            } catch (Exception $exception) {
                 $exceptions[] = [
                     "expected" => $sheetCount,
                     "actual" => $file->getSheetCount(),
@@ -163,7 +166,7 @@ class FunctionalTester extends \Codeception\Actor
 
             try {
                 $I->assertEquals($rowCount, count($tableArray));
-            } catch (\Exception $exception) {
+            } catch (Exception $exception) {
                 $exceptions[] = [
                     "expected" => $rowCount,
                     "actual" => count($tableArray),
@@ -175,7 +178,7 @@ class FunctionalTester extends \Codeception\Actor
             foreach ($fileContent as $row) {
                 try {
                     $I->assertEquals($row, $tableArray[$i]);
-                } catch (\Exception $exception) {
+                } catch (Exception $exception) {
                     $exceptions[] = [
                         "expected" => $row,
                         "actual" => $tableArray[$i],

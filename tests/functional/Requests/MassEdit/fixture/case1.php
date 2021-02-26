@@ -224,378 +224,753 @@ return [
             [
                 "request_id" => 1,
                 "field_id" => 1,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 1,
                 "field_id" => 49,
-                "value" => "0"
+                "value" => 0,
             ],
             [
                 "request_id" => 1,
                 "field_id" => 50,
-                "value" => "0"
+                "value" => 0,
             ],
             [
                 "request_id" => 1,
                 "field_id" => 51,
-                "value" => "0"
+                "value" => 0,
             ],
             [
                 "request_id" => 1,
                 "field_id" => 52,
-                "value" => "2"
+                "value" => 2,
             ],
             [
                 "request_id" => 1,
                 "field_id" => 53,
-                "value" => "0.5"
+                "value" => 0.5,
             ],
             [
                 "request_id" => 1,
                 "field_id" => 54,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 1,
                 "field_id" => 60,
-                "value" => "10"
+                "value" => 0,
             ],
             [
                 "request_id" => 1,
                 "field_id" => 64,
-                "value" => "0"
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 65,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 66,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 68,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 69,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 70,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 71,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 76,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 77,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 88,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 93,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 94,
+                "value" => 0,
             ],
             [
                 "request_id" => 1,
                 "field_id" => 101,
-                "value" => 0
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 111,
+                "value" => 0,
             ],
             [
                 "request_id" => 1,
                 "field_id" => 122,
-                "value" => 0
+                "value" => 0,
             ],
             [
-                'request_id' => 1,
-                'field_id' => 142,
-                'value' => 0,
+                "request_id" => 1,
+                "field_id" => 142,
+                "value" => 0,
             ],
             [
-                'request_id' => 1,
-                'field_id' => 143,
-                'value' => 0,
+                "request_id" => 1,
+                "field_id" => 143,
+                "value" => 0,
             ],
             [
-                'request_id' => 1,
-                'field_id' => 146,
-                'value' => 0,
+                "request_id" => 1,
+                "field_id" => 144,
+                "value" => 0,
             ],
             [
-                'request_id' => 1,
-                'field_id' => 158,
-                'value' => 0,
+                "request_id" => 1,
+                "field_id" => 146,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 1,
+                "field_id" => 158,
+                "value" => 0,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 8,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 15,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 19,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 49,
-                "value" => "0"
+                "value" => 0,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 50,
-                "value" => "0"
+                "value" => 0,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 51,
-                "value" => "0"
+                "value" => 0,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 53,
-                "value" => "3"
+                "value" => 3,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 60,
-                "value" => 0
+                "value" => 0,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 64,
-                "value" => "0"
+                "value" => 0,
+            ],
+            [
+                "request_id" => 2,
+                "field_id" => 65,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 2,
+                "field_id" => 67,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 2,
+                "field_id" => 72,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 2,
+                "field_id" => 73,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 2,
+                "field_id" => 74,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 2,
+                "field_id" => 75,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 2,
+                "field_id" => 93,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 2,
+                "field_id" => 94,
+                "value" => 0,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 101,
-                "value" => 0
+                "value" => 0,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 114,
-                "value" => "3"
+                "value" => 3,
             ],
             [
                 "request_id" => 2,
                 "field_id" => 122,
-                "value" => 0
+                "value" => 0,
             ],
             [
                 "request_id" => 2,
-                'field_id' => 142,
-                'value' => 0,
+                "field_id" => 142,
+                "value" => 0,
             ],
             [
                 "request_id" => 2,
-                'field_id' => 143,
-                'value' => 0,
+                "field_id" => 143,
+                "value" => 0,
             ],
             [
                 "request_id" => 2,
-                'field_id' => 146,
-                'value' => 0,
+                "field_id" => 144,
+                "value" => 0,
             ],
             [
                 "request_id" => 2,
-                'field_id' => 158,
-                'value' => 0,
+                "field_id" => 146,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 2,
+                "field_id" => 158,
+                "value" => 0,
             ],
             [
                 "request_id" => 3,
                 "field_id" => 53,
-                "value" => "2"
+                "value" => 0.5,
             ],
             [
                 "request_id" => 3,
                 "field_id" => 54,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 3,
                 "field_id" => 61,
-                "value" => "0"
+                "value" => 0,
+            ],
+            [
+                "request_id" => 3,
+                "field_id" => 64,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 3,
+                "field_id" => 91,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 3,
+                "field_id" => 93,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 3,
+                "field_id" => 94,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 3,
+                "field_id" => 95,
+                "value" => 0,
             ],
             [
                 "request_id" => 3,
                 "field_id" => 101,
-                "value" => 0
+                "value" => 0,
+            ],
+            [
+                "request_id" => 3,
+                "field_id" => 103,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 3,
+                "field_id" => 116,
+                "value" => 0,
             ],
             [
                 "request_id" => 3,
                 "field_id" => 122,
-                "value" => 0
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 146,
-                'value' => 0,
+                "request_id" => 3,
+                "field_id" => 145,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 158,
-                'value' => 0,
+                "request_id" => 3,
+                "field_id" => 146,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 64,
-                'value' => 0,
+                "request_id" => 3,
+                "field_id" => 148,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 164,
-                'value' => 0,
+                "request_id" => 3,
+                "field_id" => 158,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 165,
-                'value' => 0,
+                "request_id" => 3,
+                "field_id" => 161,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 166,
-                'value' => 0,
+                "request_id" => 3,
+                "field_id" => 162,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 167,
-                'value' => 0,
+                "request_id" => 3,
+                "field_id" => 163,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 168,
-                'value' => 0,
+                "request_id" => 3,
+                "field_id" => 164,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 169,
-                'value' => 1,
+                "request_id" => 3,
+                "field_id" => 165,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 170,
-                'value' => 0,
+                "request_id" => 3,
+                "field_id" => 166,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 171,
-                'value' => 0.07,
+                "request_id" => 3,
+                "field_id" => 167,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 172,
-                'value' => 0.15,
+                "request_id" => 3,
+                "field_id" => 168,
+                "value" => 0,
             ],
             [
-                'request_id' => 3,
-                'field_id' => 173,
-                'value' => 0.1,
+                "request_id" => 3,
+                "field_id" => 169,
+                "value" => 1,
+            ],
+            [
+                "request_id" => 3,
+                "field_id" => 170,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 3,
+                "field_id" => 171,
+                "value" => 0.07,
+            ],
+            [
+                "request_id" => 3,
+                "field_id" => 172,
+                "value" => 0.15,
+            ],
+            [
+                "request_id" => 3,
+                "field_id" => 173,
+                "value" => 0.1,
             ],
             [
                 "request_id" => 4,
                 "field_id" => 1,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 4,
                 "field_id" => 6,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 4,
                 "field_id" => 7,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 4,
                 "field_id" => 53,
-                "value" => "3"
+                "value" => 3,
             ],
             [
                 "request_id" => 4,
                 "field_id" => 54,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 4,
                 "field_id" => 55,
-                "value" => "0"
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 65,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 79,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 80,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 81,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 84,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 85,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 90,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 97,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 98,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 99,
+                "value" => 0,
             ],
             [
                 "request_id" => 4,
                 "field_id" => 101,
-                "value" => 0
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 104,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 105,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 106,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 107,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 109,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 112,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 113,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 115,
+                "value" => 0,
             ],
             [
                 "request_id" => 4,
                 "field_id" => 122,
-                "value" => 0
+                "value" => 0,
             ],
             [
-                'request_id' => 4,
-                'field_id' => 146,
-                'value' => 0,
+                "request_id" => 4,
+                "field_id" => 144,
+                "value" => 0,
             ],
             [
-                'request_id' => 4,
-                'field_id' => 158,
-                'value' => 0,
+                "request_id" => 4,
+                "field_id" => 146,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 149,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 150,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 151,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 152,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 154,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 4,
+                "field_id" => 158,
+                "value" => 0,
             ],
             [
                 "request_id" => 5,
                 "field_id" => 1,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 5,
                 "field_id" => 53,
-                "value" => "0.5"
+                "value" => 0.5,
             ],
             [
                 "request_id" => 5,
                 "field_id" => 54,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 5,
                 "field_id" => 59,
-                "value" => "0"
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 79,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 80,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 84,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 91,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 97,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 98,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 99,
+                "value" => 0,
             ],
             [
                 "request_id" => 5,
                 "field_id" => 101,
-                "value" => 0
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 104,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 105,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 106,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 113,
+                "value" => 0,
             ],
             [
                 "request_id" => 5,
                 "field_id" => 122,
-                "value" => 0
+                "value" => 0,
             ],
             [
-                'request_id' => 5,
-                'field_id' => 146,
-                'value' => 0,
+                "request_id" => 5,
+                "field_id" => 146,
+                "value" => 0,
             ],
             [
-                'request_id' => 5,
-                'field_id' => 158,
-                'value' => 0,
+                "request_id" => 5,
+                "field_id" => 149,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 150,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 151,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 5,
+                "field_id" => 158,
+                "value" => 0,
             ],
             [
                 "request_id" => 6,
                 "field_id" => 2,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 6,
                 "field_id" => 53,
-                "value" => "2"
+                "value" => 2,
             ],
             [
                 "request_id" => 6,
                 "field_id" => 54,
-                "value" => "1"
+                "value" => 1,
             ],
             [
                 "request_id" => 6,
                 "field_id" => 57,
-                "value" => "0"
+                "value" => 0,
+            ],
+            [
+                "request_id" => 6,
+                "field_id" => 80,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 6,
+                "field_id" => 82,
+                "value" => 0,
             ],
             [
                 "request_id" => 6,
                 "field_id" => 101,
-                "value" => 0
+                "value" => 0,
+            ],
+            [
+                "request_id" => 6,
+                "field_id" => 108,
+                "value" => 0,
             ],
             [
                 "request_id" => 6,
                 "field_id" => 122,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 6,
+                "field_id" => 146,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 6,
+                "field_id" => 153,
+                "value" => 0,
+            ],
+            [
+                "request_id" => 6,
+                "field_id" => 158,
                 "value" => 0
-            ],
-            [
-                'request_id' => 6,
-                'field_id' => 146,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 6,
-                'field_id' => 158,
-                'value' => 0,
-            ],
+            ]
         ],
         "report_periods" => [[]],
         "request_errors" => [],
