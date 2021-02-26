@@ -290,8 +290,10 @@ class RequestView extends FunctionalTester
 
             foreach ($request as $field => $value) {
 
-                if (in_array($field, $this->checkboxes)) {
+                if (in_array($field, $this->checkboxes) && $value === 1) {
                     $I->canSeeCheckboxIsChecked($field);
+                } elseif (in_array($field, $this->checkboxes) && $value === 0) {
+                    $I->cantSeeCheckboxIsChecked($field);
                 } elseif (in_array($field, $this->textFields)) {
                     $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => (string)$value]);
                 } elseif (in_array($field, $this->multipleFields)) {
@@ -320,8 +322,10 @@ class RequestView extends FunctionalTester
                 try {
                     $I->seeElement('//form[@id="update_form"]//*', ['name' => $field]);
 
-                    if (in_array($field, $this->checkboxes)) {
+                    if (in_array($field, $this->checkboxes) && $value === 1) {
                         $I->canSeeCheckboxIsChecked($field);
+                    } elseif (in_array($field, $this->checkboxes) && $value === 0) {
+                        $I->cantSeeCheckboxIsChecked($field);
                     } elseif (in_array($field, $this->textFields)) {
                         $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => (string)$value]);
                     } elseif (in_array($field, $this->multipleFields)) {

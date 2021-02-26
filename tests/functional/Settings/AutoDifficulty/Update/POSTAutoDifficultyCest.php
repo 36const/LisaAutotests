@@ -9,9 +9,9 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_settings
- * @group POSTFormulaCoefUpdate
+ * @group POSTAutoDifficulty
  */
-class POSTFormulaCoefUpdateCest
+class POSTAutoDifficultyCest
 {
     /**@return array*/
     protected function pageProvider()
@@ -25,12 +25,12 @@ class POSTFormulaCoefUpdateCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTDifficultyCoefUpdate(FunctionalTester $I, Example $data)
+    public function POSTAutoDifficulty(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST($providerData['url'] ?? '/bpm/formula-coef/update', $providerData['requestBody']);
+        $I->sendPOST('/bpm/auto-difficulty/update?id=' . $providerData['id'], $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);

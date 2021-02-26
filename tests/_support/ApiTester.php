@@ -2,6 +2,7 @@
 
 namespace lisa;
 
+use Codeception\Actor;
 use Codeception\Example;
 
 /**
@@ -19,7 +20,7 @@ use Codeception\Example;
  *
  * @SuppressWarnings(PHPMD)
  */
-class ApiTester extends \Codeception\Actor
+class ApiTester extends Actor
 {
     use _generated\ApiTesterActions;
 

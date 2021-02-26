@@ -4,14 +4,15 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
+use lisa\Page\Requests\RequestView;
 
 /**
  * @group lisa
  * @group lisa_functional
- * @group lisa_functional_settings
- * @group POSTFormulaCoefUpdate
+ * @group lisa_functional_requests
+ * @group CronSetAutoDifficulty
  */
-class POSTFormulaCoefUpdateCest
+class CronSetAutoDifficultyCest
 {
     /**@return array*/
     protected function pageProvider()
@@ -22,17 +23,19 @@ class POSTFormulaCoefUpdateCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
+     * @param RequestView $view
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTDifficultyCoefUpdate(FunctionalTester $I, Example $data)
+    public function CronSetAutoDifficulty(FunctionalTester $I, Example $data, RequestView $view)
     {
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
-        $I->sendPOST($providerData['url'] ?? '/bpm/formula-coef/update', $providerData['requestBody']);
-        $I->seeResponseCodeIs(200);
+        $I->runShellCommand('./yii bpm/request/set-auto-difficulty');
+        $I->canSeeResultCodeIs(0);
 
         $I->checkTablesInDB($providerData['db']);
+        $view->checkFields($providerData['db']);
     }
 }
