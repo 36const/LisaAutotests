@@ -158,13 +158,13 @@ return [
             [
                 //'id' => 2,
                 "begin" => date('Y-m-01 00:00:00', strtotime('-1 month')),
-                "end" => date('Y-m-t 00:00:00', strtotime('-1 month')),
+                "end" => date('Y-m-d 00:00:00', strtotime('-2 day')),
                 "created_at" => '2020-01-01 00:00:00',
                 "updated_at" => null,
             ],
             [
                 //'id' => 3,
-                "begin" => date('Y-m-01 00:00:00'),
+                "begin" => date('Y-m-d 00:00:00', strtotime('-1 day')),
                 "end" => date('Y-m-t 00:00:00'),
                 "created_at" => '2020-01-01 00:00:00',
                 "updated_at" => '2020-07-01 17:01:01',
