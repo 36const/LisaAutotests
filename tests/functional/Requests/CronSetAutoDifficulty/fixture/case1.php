@@ -16,6 +16,7 @@ return [
                 "seller_id" => 0,
                 "last_change_status_date" => date("Y-m-d H:i:s", strtotime('-1 day')),
                 "team_direction" => 4,
+                "previous_status" => null,
             ],
             [
 //                "id" => 2,
@@ -31,6 +32,7 @@ return [
                 "seller_id" => 0,
                 "last_change_status_date" => date("Y-m-d H:i:s", strtotime('-1 day')),
                 "team_direction" => 4,
+                "previous_status" => 1,
             ],
             [
 //                "id" => 3,
@@ -45,6 +47,7 @@ return [
                 "seller_id" => null,
                 "last_change_status_date" => date("Y-m-d H:i:s", strtotime('-1 day')),
                 "team_direction" => 4,
+                "previous_status" => 1,
             ],
             [
 //                "id" => 4,
@@ -59,6 +62,7 @@ return [
                 "seller_id" => null,
                 "last_change_status_date" => date("Y-m-d H:i:s", strtotime('-1 day')),
                 "team_direction" => 4,
+                "previous_status" => 1,
             ],
             [
 //                "id" => 5,
@@ -73,6 +77,7 @@ return [
                 "seller_id" => null,
                 "last_change_status_date" => date("Y-m-d H:i:s", strtotime('-1 day')),
                 "team_direction" => 4,
+                "previous_status" => 2,
             ],
             [
 //                "id" => 6,
@@ -87,6 +92,7 @@ return [
                 "seller_id" => null,
                 "last_change_status_date" => date("Y-m-d H:i:s", strtotime('-1 day')),
                 "team_direction" => 4,
+                "previous_status" => 5,
             ],
             [
 //                "id" => 7,
@@ -101,6 +107,7 @@ return [
                 "seller_id" => null,
                 "last_change_status_date" => date("Y-m-d H:i:s", strtotime('-1 day')),
                 "team_direction" => 4,
+                "previous_status" => 6,
             ],
             [
 //                "id" => 8,
@@ -115,6 +122,7 @@ return [
                 "seller_id" => null,
                 "last_change_status_date" => date("Y-m-d H:i:s", strtotime('-1 day')),
                 "team_direction" => 4,
+                "previous_status" => 6,
             ],
             [
 //                "id" => 9,
@@ -129,6 +137,7 @@ return [
                 "seller_id" => null,
                 "last_change_status_date" => date("Y-m-d H:i:s", strtotime('-1 day')),
                 "team_direction" => 4,
+                "previous_status" => 6,
             ],
             [
 //                "id" => 10,
@@ -143,6 +152,7 @@ return [
                 "seller_id" => null,
                 "last_change_status_date" => date("Y-m-d H:i:s", strtotime('-1 day')),
                 "team_direction" => 4,
+                "previous_status" => 9,
             ],
         ],
         'requests_fields' => [

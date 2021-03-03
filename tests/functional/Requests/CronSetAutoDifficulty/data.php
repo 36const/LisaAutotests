@@ -47,7 +47,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
                         ],
                         [
                             "id" => 2,
@@ -85,7 +86,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ],
                         [
                             "id" => 3,
@@ -124,7 +126,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ],
                         [
                             "id" => 4,
@@ -163,7 +166,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ],
                         [
                             "id" => 5,
@@ -202,7 +206,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 2,
                         ],
                         [
                             "id" => 6,
@@ -241,7 +246,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 5,
                         ],
                         [
                             "id" => 7,
@@ -280,7 +286,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ],
                         [
                             "id" => 8,
@@ -319,7 +326,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ],
                         [
                             "id" => 9,
@@ -358,7 +366,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ],
                         [
                             "id" => 10,
@@ -397,7 +406,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 9,
                         ],
                     ],
                     'requests_fields' => [

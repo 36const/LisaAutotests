@@ -1223,6 +1223,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ],
                         [
                             "id" => 2,
@@ -1262,6 +1263,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ],
                         [
                             "id" => 3,
@@ -1301,6 +1303,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 2,
                         ],
                         [
                             "id" => 4,
@@ -1340,6 +1343,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 5,
                         ],
                         [
                             "id" => 5,
@@ -1379,6 +1383,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ],
                         [
                             "id" => 6,
@@ -1418,6 +1423,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ],
                         [
                             "id" => 7,
@@ -1457,6 +1463,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [

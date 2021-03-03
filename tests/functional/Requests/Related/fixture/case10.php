@@ -40,6 +40,7 @@ return [
                 "cross_check_manager_id" => 12,
                 "child_count" => 0,
                 "photo_load_status" => 0,
+                "previous_status" => 6,
             ]
         ],
         'requests_fields' => [

@@ -38,7 +38,8 @@ return [
                 "sv_report_periods" => '{"1": 1}',
                 "cross_check_status" => 0,
                 "cross_check_manager_id" => null,
-                "child_count" => 1
+                "child_count" => 1,
+                "previous_status" => 6,
             ],
             [
 //                "id" => 2,
