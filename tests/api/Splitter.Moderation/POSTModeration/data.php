@@ -37,7 +37,7 @@ return [
                             "id" => 1,
                             "author_id" => 7,
                             "type_id" => 2,
-                            //"supervisor_id" => 4,
+                            "supervisor_id" => 6,
                             "manager_id" => null,
                             "status" => 1,
                             "direction" => 1,
@@ -85,7 +85,8 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
                         ]
                     ],
                     "requests_fields" => [
@@ -135,7 +136,7 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
                             "id" => 1,
                             "author_id" => 7,
                             "type_id" => 2,
-                            //"supervisor_id" => 4,
+                            "supervisor_id" => 6,
                             "manager_id" => null,
                             "status" => 1,
                             "direction" => 1,
@@ -183,7 +184,8 @@ Media:
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
                         ]
                     ],
                     "requests_fields" => [
