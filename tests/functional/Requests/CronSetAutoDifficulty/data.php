@@ -909,7 +909,7 @@ return [
                         [
                             "request_id" => 8,
                             "field_id" => 64,
-                            "value" => 133.92,
+                            "value" => 141.84,
                         ],
                         [
                             "request_id" => 8,
@@ -1054,7 +1054,7 @@ return [
                         [
                             "request_id" => 9,
                             "field_id" => 64,
-                            "value" => 145.08,
+                            "value" => 153.66,
                         ],
                         [
                             "request_id" => 9,
@@ -1199,7 +1199,7 @@ return [
                         [
                             "request_id" => 10,
                             "field_id" => 64,
-                            "value" => 167.4,
+                            "value" => 177.3,
                         ],
                         [
                             "request_id" => 10,

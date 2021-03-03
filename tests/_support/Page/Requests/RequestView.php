@@ -156,6 +156,7 @@ class RequestView extends FunctionalTester
         'RequestField[59]',
         'RequestField[60]',
         'RequestField[61]',
+        'RequestField[64]',
         'RequestField[89]',
         'RequestField[142]',
         'RequestField[143]',
@@ -204,7 +205,6 @@ class RequestView extends FunctionalTester
         'last_change_status_date',
 
         'request_id',
-        '64', //Общее рассчитанное количество показателей
         '89' //Фактические затраты КМ, мин
     ];
 
@@ -258,13 +258,13 @@ class RequestView extends FunctionalTester
 
             foreach ($requests as &$request) {
 
-                //исключить поле "Кол-во изменённых товаров" для типа 1
+                //исключить поле "Кол-во изменённых товаров" и "Общее рассчитанное количество показателей" для типа 1
                 if ($request['Request[type_id]'] == 1)
-                    unset($request['RequestField[50]']);
+                    unset($request['RequestField[50]'], $request['RequestField[64]']);
 
-                //исключить поле "Кол-во добавленных товаров" для типов 2, 3, 5, 6, 12
+                //исключить поле "Кол-во добавленных товаров" и "Общее рассчитанное количество показателей" для типов 2, 3, 5, 6, 12
                 if (in_array($request['Request[type_id]'], [2, 3, 5, 6, 12]))
-                    unset($request['RequestField[49]']);
+                    unset($request['RequestField[49]'], $request['RequestField[64]']);
 
                 //исключить поля, не отображаемые в новом типе заявки (для кейсов POSTChangeType)
                 if (!empty($otherTypesFields)) {
