@@ -163,6 +163,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => "0"
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0
                         ],
@@ -234,6 +239,11 @@ return [
                         [
                             'request_id' => 2,
                             'field_id' => 60,
+                            'value' => "0"
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 64,
                             'value' => "0"
                         ],
                         [
@@ -517,6 +527,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => "0"
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0
                         ],
@@ -583,6 +598,11 @@ return [
                         [
                             'request_id' => 2,
                             'field_id' => 60,
+                            'value' => "0"
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 64,
                             'value' => "0"
                         ],
                         [
@@ -1989,6 +2009,11 @@ return [
                         ],
                         [
                             'request_id' => 2,
+                            'field_id' => 64,
+                            'value' => "0"
+                        ],
+                        [
+                            'request_id' => 2,
                             'field_id' => 101,
                             'value' => 0
                         ],
@@ -3213,7 +3238,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 64,
-                            'value' => 111.675,
+                            'value' => 118.35,
                         ],
                         [
                             'request_id' => 1,
@@ -3303,6 +3328,11 @@ return [
                         [
                             "request_id" => 2,
                             "field_id" => 60,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 64,
                             "value" => 0
                         ],
                         [
