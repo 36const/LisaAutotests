@@ -22,7 +22,6 @@ return [
                     RequestCreate::$priority,
                     RequestCreate::$allCheckboxes,
                 ],
-                "cantSee" => [],
             ],
             'pageForm_1' => [
                 "canSee" => [
@@ -164,7 +163,6 @@ return [
                     RequestCreate::$priority,
                     RequestCreate::$allCheckboxes,
                 ],
-                "cantSee" => [],
             ],
             'pageForm_1' => [
                 "canSee" => [
@@ -305,7 +303,6 @@ return [
                     RequestCreate::$priority,
                     RequestCreate::$allCheckboxes,
                 ],
-                "cantSee" => [],
             ],
             'pageForm_1' => [
                 "canSee" => [

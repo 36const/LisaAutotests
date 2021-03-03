@@ -19,7 +19,6 @@ return [
                     Request::columnValueList('Товар-новинка/эксклюзив (трафикообразующий)'),
                     Request::columnValueList('(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListAll' => [
                 "canSee" => [
@@ -28,7 +27,6 @@ return [
                     Request::searchValueList('priority', 'Товар-новинка/эксклюзив (трафикообразующий)'),
                     Request::searchValueList('priority', '(не задано)'),
                 ],
-                "cantSee" => [],
             ],
 
             'searchValueListNotAll' => [
@@ -82,7 +80,6 @@ return [
                     Request::columnValueList('Часть товаров ушла в ошибки (Частично выполнена)'),
                     Request::columnValueList('(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListAll' => [ //при выборе "Все товары уже есть на сайте" вторая заявка перестаёт показываться
                 "canSee" => [
@@ -102,7 +99,6 @@ return [
                     Request::searchValueList('reasons', 'Часть товаров ушла в ошибки (Частично выполнена)'),
                     Request::searchValueList('reasons', '(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListNotAll' => [
                 "canSee" => [
@@ -164,7 +160,6 @@ return [
                     Request::columnValueList('Менее 5 уточнений'),
                     Request::columnValueList('(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListAll' => [
                 "canSee" => [
@@ -173,7 +168,6 @@ return [
                     Request::searchValueList('author_clarifications', 'Менее 5 уточнений'),
                     Request::searchValueList('author_clarifications', '(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListNotAll' => [
                 "canSee" => [
@@ -225,7 +219,6 @@ return [
                     Request::columnValueList('Добавление/изменение тегов'),
                     Request::columnValueList('(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListAll' => [
                 "canSee" => [
@@ -246,7 +239,6 @@ return [
                     Request::searchValueList('type_id', 'Добавление/изменение тегов'),
                     Request::searchValueList('type_id', '(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListNotAll' => [
                 "canSee" => [
@@ -311,7 +303,6 @@ return [
                     Request::columnValueList(date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
                     Request::columnValueList('(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListAll' => [
                 "canSee" => [
@@ -321,7 +312,6 @@ return [
                     Request::searchValueList('report_period_id', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
                     Request::searchValueList('report_period_id', '(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListNotAll' => [
                 "canSee" => [
@@ -364,7 +354,6 @@ return [
                     Request::columnValueList(date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
                     Request::columnValueList('(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListAll' => [
                 "canSee" => [
@@ -374,7 +363,6 @@ return [
                     Request::searchValueList('sv_report_periods', date('Y-m-d', strtotime('+8 days')) . ' - 2021-12-31'),
                     Request::searchValueList('sv_report_periods', '(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListNotAll' => [
                 "canSee" => [
@@ -416,7 +404,6 @@ return [
                     Request::columnValueList('Кросс-чек пройден'),
                     Request::columnValueList('(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListAll' => [
                 "canSee" => [
@@ -425,7 +412,6 @@ return [
                     Request::searchValueList('cross_check_status', 'Кросс-чек пройден'),
                     Request::searchValueList('cross_check_status', '(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListNotAll' => [
                 "canSee" => [
@@ -465,7 +451,6 @@ return [
                     Request::columnValueList('Работа с товарами Маркетплейса'),
                     Request::columnValueList('(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListAll' => [
                 "canSee" => [
@@ -474,7 +459,6 @@ return [
                     Request::searchValueList('direction', 'Работа с товарами Маркетплейса'),
                     Request::searchValueList('direction', '(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListNotAll' => [
                 "canSee" => [
@@ -517,7 +501,6 @@ return [
                     Request::columnValueList('Работа с порталами, фат-меню, категориями'),
                     Request::columnValueList('(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListAll' => [
                 "canSee" => [
@@ -529,7 +512,6 @@ return [
                     Request::searchValueList('team_direction', 'Работа с порталами, фат-меню, категориями'),
                     Request::searchValueList('team_direction', '(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListNotAll' => [
                 "canSee" => [
@@ -578,7 +560,6 @@ return [
                     Request::columnValueList('6'),
                     Request::columnValueList('(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListAll' => [
                 "canSee" => [
@@ -590,7 +571,6 @@ return [
                     Request::searchValueList('difficulty_level', '6'),
                     Request::searchValueList('difficulty_level', '(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListNotAll' => [
                 "canSee" => [
@@ -643,7 +623,6 @@ return [
                     Request::columnValueList('Закрыта'),
                     Request::columnValueList('(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListAll' => [
                 "canSee" => [
@@ -659,7 +638,6 @@ return [
                     Request::searchValueList('status', 'Закрыта'),
                     Request::searchValueList('status', '(не задано)'),
                 ],
-                "cantSee" => [],
             ],
             'searchValueListNotAll' => [
                 "canSee" => [
@@ -692,6 +670,81 @@ return [
                     Request::searchValueList('status', 'Выполнена'),
                     Request::searchValueList('status', 'Закрыта'),
                     Request::searchValueList('status', '(не задано)'),
+                ],
+            ],
+        ]
+    ],
+
+    'case12' => [
+        'setting' => [
+            'description' => 'Установка и изменение фильтра колонки предыдущего статуса',
+            'column' => 'previous_status',
+            'value' => 'В работе',
+            'amount' => 19,
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case7.php',
+        'provider_data' => [
+            'columnValueList' => [
+                "canSee" => [
+                    Request::columnValueList('Новая'),
+                    Request::columnValueList('Готова для распределения'),
+                    Request::columnValueList('На доработке'),
+                    Request::columnValueList('Отменена'),
+                    Request::columnValueList('Ожидает взятия в работу'),
+                    Request::columnValueList('В работе'),
+                    Request::columnValueList('Ожидает'),
+                    Request::columnValueList('Частично выполнена'),
+                    Request::columnValueList('Выполнена'),
+                    Request::columnValueList('Закрыта'),
+                    Request::columnValueList('(не задано)'),
+                ],
+            ],
+            'searchValueListAll' => [
+                "canSee" => [
+                    Request::searchValueList('previous_status', 'Новая'),
+                    Request::searchValueList('previous_status', 'Готова для распределения'),
+                    Request::searchValueList('previous_status', 'На доработке'),
+                    Request::searchValueList('previous_status', 'Отменена'),
+                    Request::searchValueList('previous_status', 'Ожидает взятия в работу'),
+                    Request::searchValueList('previous_status', 'В работе'),
+                    Request::searchValueList('previous_status', 'Ожидает'),
+                    Request::searchValueList('previous_status', 'Частично выполнена'),
+                    Request::searchValueList('previous_status', 'Выполнена'),
+                    Request::searchValueList('previous_status', 'Закрыта'),
+                    Request::searchValueList('previous_status', '(не задано)'),
+                ],
+            ],
+            'searchValueListNotAll' => [
+                "canSee" => [
+                    Request::searchValueList('previous_status', 'Новая'),
+                    Request::searchValueList('previous_status', 'Готова для распределения'),
+                    Request::searchValueList('previous_status', 'На доработке'),
+                    Request::searchValueList('previous_status', 'Отменена'),
+                    Request::searchValueList('previous_status', 'Ожидает взятия в работу'),
+                    Request::searchValueList('previous_status', 'Ожидает'),
+                    Request::searchValueList('previous_status', 'Частично выполнена'),
+                    Request::searchValueList('previous_status', 'Выполнена'),
+                    Request::searchValueList('previous_status', 'Закрыта'),
+                    Request::searchValueList('previous_status', '(не задано)'),
+                ],
+                "cantSee" => [
+                    Request::searchValueList('previous_status', 'В работе'),
+                ],
+            ],
+            'searchValueListNotAnyone' => [
+                "canSee" => [],
+                "cantSee" => [
+                    Request::searchValueList('previous_status', 'Новая'),
+                    Request::searchValueList('previous_status', 'Готова для распределения'),
+                    Request::searchValueList('previous_status', 'На доработке'),
+                    Request::searchValueList('previous_status', 'Отменена'),
+                    Request::searchValueList('previous_status', 'Ожидает взятия в работу'),
+                    Request::searchValueList('previous_status', 'В работе'),
+                    Request::searchValueList('previous_status', 'Ожидает'),
+                    Request::searchValueList('previous_status', 'Частично выполнена'),
+                    Request::searchValueList('previous_status', 'Выполнена'),
+                    Request::searchValueList('previous_status', 'Закрыта'),
+                    Request::searchValueList('previous_status', '(не задано)'),
                 ],
             ],
         ]

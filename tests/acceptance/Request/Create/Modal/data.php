@@ -20,7 +20,6 @@ return [
                     RequestCreate::$priority,
                     RequestCreate::$allCheckboxes,
                 ],
-                "cantSee" => [],
             ],
         ]
     ],
