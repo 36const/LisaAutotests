@@ -189,6 +189,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 20.1,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 65,
                             'value' => 10,
                         ],
@@ -695,6 +700,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 10.1,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 65,
                             'value' => 10,
                         ],
@@ -1053,6 +1063,11 @@ return [
                             'request_id' => 1,
                             'field_id' => 60,
                             'value' => 30,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 60,
                         ],
                         [
                             'request_id' => 1,
@@ -1517,6 +1532,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 10.1,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 65,
                             'value' => 10,
                         ],
@@ -1880,6 +1900,11 @@ return [
                             'request_id' => 1,
                             'field_id' => 60,
                             'value' => 30,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 60,
                         ],
                         [
                             'request_id' => 1,
@@ -2344,6 +2369,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 10.1,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 65,
                             'value' => 10,
                         ],
@@ -2710,6 +2740,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 60,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 65,
                             'value' => 10,
                         ],
@@ -3060,7 +3095,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 64,
-                            'value' => 111.6,
+                            'value' => 118.2,
                         ],
                         [
                             'request_id' => 1,
@@ -3485,6 +3520,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 10.1,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 65,
                             'value' => 10,
                         ],
@@ -3848,6 +3888,11 @@ return [
                             'request_id' => 1,
                             'field_id' => 60,
                             'value' => 30,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 60,
                         ],
                         [
                             'request_id' => 1,
@@ -6118,6 +6163,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 10.1,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 65,
                             'value' => 10,
                         ],
@@ -7303,6 +7353,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 80.1,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 65,
                             'value' => 10,
                         ],
@@ -7781,6 +7836,11 @@ return [
                             'request_id' => 1,
                             'field_id' => 60,
                             'value' => 20,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 80.1,
                         ],
                         [
                             'request_id' => 1,
@@ -8265,6 +8325,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 80.1,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 65,
                             'value' => 10,
                         ],
@@ -8743,6 +8808,11 @@ return [
                             'request_id' => 1,
                             'field_id' => 60,
                             'value' => 20,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 80.1,
                         ],
                         [
                             'request_id' => 1,

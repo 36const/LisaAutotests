@@ -131,7 +131,7 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 64,
-                'value' => 111.6,
+                'value' => 118.4,
             ],
             [
                 'request_id' => 1,
