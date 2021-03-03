@@ -138,13 +138,13 @@ class Request extends FunctionalTester
     /**Итоговый диапазон внизу выпадающего календаря*/
     public static function calendarDateRange(): string
     {
-        return "//div[@class='daterangepicker ltr show-calendar opensright'][@style]//div[@class='drp-buttons']//span[text()='" . date("Y-m") . "-01 00:00:00to" . date("Y-m") . "-14 23:59:00']";
+        return "//div[@class='daterangepicker ltr show-calendar opensright'][@style]//div[@class='drp-buttons']//span[text()='" . date("Y-m-01 00:00:00") . "to" . date("Y-m-14 23:59:00") . "']";
     }
 
     /**Итоговый диапазон в поле поиска*/
     public static function searchDateRange(string $fieldName): string
     {
-        return "//input[@name='RequestSearch[$fieldName]' and @value='" . date("Y-m") . "-01 00:00:00to" . date("Y-m") . "-14 23:59:00']";
+        return "//input[@name='RequestSearch[$fieldName]' and @value='" . date("Y-m-01 00:00:00") . "to" . date("Y-m-14 23:59:00") . "']";
     }
 
     /**Кнопка подтверждения выбранного диапазона дат*/
