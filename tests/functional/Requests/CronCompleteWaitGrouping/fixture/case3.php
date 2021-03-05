@@ -186,14 +186,14 @@ return [
                 "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                 "created_at" => "2020-01-01 00:00:01",
                 "manager_id" => 11,
-                "reasons" => 'Ожидает группировки'
+                "reasons" => 'Товары на модерации'
             ]
         ],
         "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
         'requests_reasons' => [
             [
                 "request_id" => 1,
-                "reason_id" => 14,
+                "reason_id" => 15,
             ]
         ],
         'transition_info' => [
