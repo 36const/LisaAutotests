@@ -63,7 +63,11 @@ return [
                             "value" => "Ожидается загрузка фото в товары"
                         ],
                         [
-                            "selector" => "//form[@id='reason-form-status-7']//select[@name='reasons[]']/option[6][@value=2]",
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='reasons[]']/option[6][@value=15]",
+                            "value" => "Товары на модерации"
+                        ],
+                        [
+                            "selector" => "//form[@id='reason-form-status-7']//select[@name='reasons[]']/option[7][@value=2]",
                             "value" => "Требуется уточнение информации по задаче"
                         ],
                     ]

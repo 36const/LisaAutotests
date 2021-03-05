@@ -253,9 +253,50 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Невозможность перевода 7->8 при ответе false/false в "Ждёт группировки", но оставшемся другом ризоне статуса 7',
+            'description' => 'Невозможность перевода 7->8 при ответе true/true on-mod/wait-group',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4.php',
+        'mock_data' => [
+            'Gomer' => [
+                'httpRequest' => [
+                    'method' => 'GET',
+                    'path' => '/new-items/check-bpm',
+                    'queryStringParameters' => [
+                        'bpm_number' => [
+                            '1,2'
+                        ]
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            "application/json; charset=UTF-8"
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Gomer/case4.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
+        'provider_data' => [
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => (include __DIR__ . '/fixture/case4.php')['lisa_fixtures']['requests'],
+                    "requests_fields" => (include __DIR__ . '/fixture/case4.php')['lisa_fixtures']['requests_fields'],
+                    'user_notifications' => [],
+                    'request_status_history' => (include __DIR__ . '/fixture/case4.php')['lisa_fixtures']['request_status_history'],
+                    'requests_reasons' => (include __DIR__ . '/fixture/case4.php')['lisa_fixtures']['requests_reasons'],
+                    'transition_info' => (include __DIR__ . '/fixture/case4.php')['lisa_fixtures']['transition_info'],
+                ]
+            ]
+        ]
+    ],
+
+    'case5' => [
+        'setting' => [
+            'description' => 'Невозможность перевода 7->8 при ответе false/false on-mod/wait-group, но оставшемся другом ризоне статуса 7',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case5.php',
         'mock_data' => [
             'Gomer' => [
                 'httpRequest' => [
@@ -281,22 +322,10 @@ return [
         'provider_data' => [
             'db' => [
                 'lisa_fixtures' => [
-                    "requests" => (include __DIR__ . '/fixture/case4.php')['lisa_fixtures']['requests'],
-                    "requests_fields" => (include __DIR__ . '/fixture/case4.php')['lisa_fixtures']['requests_fields'],
+                    "requests" => (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['requests'],
+                    "requests_fields" => (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
-                    'request_status_history' => [
-                        [
-                            "id" => 1,
-                            "request_id" => 1,
-                            "user_id" => 4,
-                            "old_status" => 6,
-                            "new_status" => 7,
-                            "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            "created_at" => "2020-01-01 00:00:01",
-                            "manager_id" => 11,
-                            "reasons" => 'Ожидает группировки, Изменен приоритет задачи'
-                        ],
-                    ],
+                    'request_status_history' => (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['request_status_history'],
                     'requests_reasons' => [
                         [
                             "request_id" => 1,
@@ -304,6 +333,104 @@ return [
                         ]
                     ],
                     'transition_info' => []
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [],
+            ],
+        ]
+    ],
+
+    'case6' => [
+        'setting' => [
+            'description' => 'Автоизменение ризона при ответе true/false on-mod/wait-group, с изначально установленным ризоном wait-group',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case2.php',
+        'mock_data' => [
+            'Gomer' => [
+                'httpRequest' => [
+                    'method' => 'GET',
+                    'path' => '/new-items/check-bpm',
+                    'queryStringParameters' => [
+                        'bpm_number' => [
+                            '1'
+                        ]
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            "application/json; charset=UTF-8"
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Gomer/case3.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
+        'provider_data' => [
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => (include __DIR__ . '/fixture/case2.php')['lisa_fixtures']['requests'],
+                    "requests_fields" => (include __DIR__ . '/fixture/case2.php')['lisa_fixtures']['requests_fields'],
+                    'user_notifications' => [],
+                    'request_status_history' => (include __DIR__ . '/fixture/case2.php')['lisa_fixtures']['request_status_history'],
+                    'requests_reasons' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 15,
+                        ]
+                    ],
+                    'transition_info' => (include __DIR__ . '/fixture/case2.php')['lisa_fixtures']['transition_info'],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [],
+            ],
+        ]
+    ],
+
+    'case7' => [
+        'setting' => [
+            'description' => 'Автоизменение ризона при ответе false/true on-mod/wait-group, с изначально установленным ризоном on-mod',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case3.php',
+        'mock_data' => [
+            'Gomer' => [
+                'httpRequest' => [
+                    'method' => 'GET',
+                    'path' => '/new-items/check-bpm',
+                    'queryStringParameters' => [
+                        'bpm_number' => [
+                            '1'
+                        ]
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            "application/json; charset=UTF-8"
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Gomer/case2.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
+        'provider_data' => [
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => (include __DIR__ . '/fixture/case3.php')['lisa_fixtures']['requests'],
+                    "requests_fields" => (include __DIR__ . '/fixture/case3.php')['lisa_fixtures']['requests_fields'],
+                    'user_notifications' => [],
+                    'request_status_history' => (include __DIR__ . '/fixture/case3.php')['lisa_fixtures']['request_status_history'],
+                    'requests_reasons' => [
+                        [
+                            "request_id" => 1,
+                            "reason_id" => 14,
+                        ]
+                    ],
+                    'transition_info' => (include __DIR__ . '/fixture/case3.php')['lisa_fixtures']['transition_info'],
                 ]
             ],
             'RabbitMQ' => [
@@ -731,44 +858,4 @@ return [
 //            ]
 //        ]
 //    ],
-    'case5' => [
-        'setting' => [
-            'description' => 'Невозможность перевода 7->8 при ответе true/true on-mod/wait-group',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case5.php',
-        'mock_data' => [
-            'Gomer' => [
-                'httpRequest' => [
-                    'method' => 'GET',
-                    'path' => '/new-items/check-bpm',
-                    'queryStringParameters' => [
-                        'bpm_number' => [
-                            '1,2'
-                        ]
-                    ]
-                ],
-                'httpResponse' => [
-                    'headers' => [
-                        'content-type' => [
-                            "application/json; charset=UTF-8"
-                        ]
-                    ],
-                    'body' => file_get_contents(__DIR__ . '/mock/Gomer/case5.json'),
-                    'statusCode' => 200
-                ],
-            ],
-        ],
-        'provider_data' => [
-            'db' => [
-                'lisa_fixtures' => [
-                    "requests" => (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['requests'],
-                    "requests_fields" => (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['requests_fields'],
-                    'user_notifications' => [],
-                    'request_status_history' => (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['request_status_history'],
-                    'requests_reasons' => (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['requests_reasons'],
-                    'transition_info' => (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['transition_info'],
-                ]
-            ]
-        ]
-    ],
 ];

@@ -42,7 +42,7 @@ return [
                 "child_count" => 0,
                 "photo_load_status" => 0,
                 "previous_status" => 6,
-            ]
+            ],
         ],
         'requests_fields' => [
             [
@@ -97,6 +97,11 @@ return [
             ],
             [
                 'request_id' => 1,
+                'field_id' => 89,
+                'value' => 3,
+            ],
+            [
+                'request_id' => 1,
                 'field_id' => 118,
                 'value' => 10,
             ],
@@ -114,11 +119,6 @@ return [
                 'request_id' => 1,
                 'field_id' => 74,
                 'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 89,
-                'value' => 3,
             ],
             [
                 'request_id' => 1,
@@ -173,12 +173,46 @@ return [
         ],
         "report_periods" => [[]],
         "request_errors" => [],
-        'notification_settings' => [],
-        'observers' => [],
+        'notification_settings' => [
+            [
+                //'id' => 1,
+                "user_id" => 4,
+                "types_for_notification" => '{"create": 2, "comment": 2, "mention": "2", "manager_id": 2, "attachments": 2, "supervisor_id": 2}',
+                "fields_for_complete" => '["1", "8", "19", "29", "49", "53", "54", "94", "101", "122"]',
+                "statuses_for_notification" => '{"1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
+            ],
+            [
+                //'id' => 1,
+                "user_id" => 6,
+                "types_for_notification" => '{"create": 1, "comment": 2, "mention": "2", "manager_id": 2, "attachments": 2, "supervisor_id": 2}',
+                "fields_for_complete" => '["1", "2", "20", "29", "30", "53", "54", "67", "101", "122"]',
+                "statuses_for_notification" => '{"1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2, "11": 2}'
+            ],
+            [
+                //'id' => 1,
+                "user_id" => 11,
+                "types_for_notification" => '{"create": 2, "comment": 2, "mention": "2", "manager_id": 2, "attachments": 2, "supervisor_id": 2}',
+                "fields_for_complete" => '["1", "2", "20", "29", "30", "53", "54", "67", "101", "122"]',
+                "statuses_for_notification" => '{"1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 1, "9": 2, "11": 2}'
+            ],
+            [
+                //'id' => 1,
+                "user_id" => 15,
+                "types_for_notification" => '{"create": 1, "comment": 2, "mention": "1", "manager_id": 0, "attachments": 1, "supervisor_id": 0}',
+                "fields_for_complete" => '["1", "2", "20", "29", "30", "53", "54", "67", "101", "122"]',
+                "statuses_for_notification" => '{"1": 1, "2": 1, "3": 2, "4": 2, "5": 1, "6": 1, "7": 1, "8": 0, "9": 1, "11": 1}'
+            ],
+        ],
+        'observers' => [
+            [
+                "request_id" => 1,
+                "user_id" => 15
+            ],
+        ],
         "user_notifications" => [],
         'request_status_history' => [
             [
-                "id" => 1,
+//                "id" => 1,
                 "request_id" => 1,
                 "user_id" => 4,
                 "old_status" => 6,
@@ -186,8 +220,8 @@ return [
                 "reason" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                 "created_at" => "2020-01-01 00:00:01",
                 "manager_id" => 11,
-                "reasons" => 'Ожидает группировки, Товары на модерации'
-            ]
+                "reasons" => 'Ожидает группировки, Изменен приоритет задачи'
+            ],
         ],
         "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
         'requests_reasons' => [
@@ -197,7 +231,7 @@ return [
             ],
             [
                 "request_id" => 1,
-                "reason_id" => 15,
+                "reason_id" => 3,
             ]
         ],
         'transition_info' => [
@@ -205,7 +239,7 @@ return [
                 "request_id" => 1,
                 "status" => 8,
                 "reason" => null,
-                "reasons_list" => '["7", "6"]'
+                "reasons_list" => '["6", "7"]'
             ],
         ],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',

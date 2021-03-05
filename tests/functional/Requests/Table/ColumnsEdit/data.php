@@ -286,18 +286,22 @@ return [
                         ],
                         [
                             "selector" => "//select[@name='RequestSearch[reasons][]']/option[12]",
-                            "value" => "Товары ушли в ошибки (Частично выполнена)"
+                            "value" => "Товары на модерации (Ожидает)"
                         ],
                         [
                             "selector" => "//select[@name='RequestSearch[reasons][]']/option[13]",
-                            "value" => "Требуется уточнение информации по задаче (Ожидает)"
+                            "value" => "Товары ушли в ошибки (Частично выполнена)"
                         ],
                         [
                             "selector" => "//select[@name='RequestSearch[reasons][]']/option[14]",
-                            "value" => "Часть товаров ушла в ошибки (Частично выполнена)"
+                            "value" => "Требуется уточнение информации по задаче (Ожидает)"
                         ],
                         [
                             "selector" => "//select[@name='RequestSearch[reasons][]']/option[15]",
+                            "value" => "Часть товаров ушла в ошибки (Частично выполнена)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[16]",
                             "value" => "(не задано)"
                         ],
 
