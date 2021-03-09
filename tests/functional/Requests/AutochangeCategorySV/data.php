@@ -1,5 +1,153 @@
 <?php
 
+$requests_fields = [
+    [
+        'request_id' => 1,
+        'field_id' => 1,
+        'value' => 1,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 8,
+        'value' => 1,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 49,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 50,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 51,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 52,
+        'value' => 3,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 53,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 54,
+        'value' => 1,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 60,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 64,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 65,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 66,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 68,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 69,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 70,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 71,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 76,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 77,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 88,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 93,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 94,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 101,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 111,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 122,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 142,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 143,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 144,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 146,
+        'value' => 0,
+    ],
+    [
+        'request_id' => 1,
+        'field_id' => 158,
+        'value' => 0,
+    ]
+];
+
 return [
     'case1' => [
         'setting' => [
@@ -31,6 +179,7 @@ return [
                 'RequestField[76]' => '0',
                 'RequestField[77]' => '0',
                 'RequestField[88]' => '0',
+                'RequestField[8]' => '1',
                 'RequestField[93]' => '0',
                 'RequestField[94]' => '0',
                 'Request[addedAttachments]' => '[]',
@@ -97,85 +246,10 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ]
                     ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0.5,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                    ]
+                    'requests_fields' => $requests_fields
                 ]
             ]
         ]
@@ -277,90 +351,10 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ]
                     ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 8,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                    ]
+                    'requests_fields' => $requests_fields
                 ]
             ]
         ]
@@ -462,90 +456,10 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ]
                     ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 8,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                    ]
+                    'requests_fields' => $requests_fields
                 ]
             ]
         ]
@@ -647,90 +561,10 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 5,
                         ]
                     ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 8,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                    ]
+                    'requests_fields' => $requests_fields
                 ]
             ]
         ]
@@ -834,90 +668,10 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 7,
                         ]
                     ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 8,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                    ]
+                    'requests_fields' => $requests_fields
                 ]
             ]
         ]
@@ -1021,90 +775,10 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 8,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                    ]
+                    'requests_fields' => $requests_fields
                 ]
             ]
         ]
@@ -1208,90 +882,10 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 8,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                    ]
+                    'requests_fields' => $requests_fields
                 ]
             ]
         ]
@@ -1394,90 +988,10 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 8,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                    ]
+                    'requests_fields' => $requests_fields
                 ]
             ]
         ]
@@ -1580,90 +1094,10 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 9,
                         ]
                     ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 8,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                    ]
+                    'requests_fields' => $requests_fields
                 ]
             ]
         ]

@@ -147,7 +147,7 @@ return [
                             "status" => 1,
                             "create_ts" => "2020-05-19 13:36:22",
                             "created_by" => 1,
-                            //"change_date" => "2020-05-19 16:36:22",
+                            "change_date >=" => date("Y-m-d"),
                             "drfo" => "'000000099"
                         ],
                         [
@@ -1032,7 +1032,7 @@ return [
                             "changed_field" => "team",
                             "old_value" => "17",
                             "new_value" => "1",
-                            //"date" => "2020-05-19 16:36:22"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 2,
@@ -1043,7 +1043,7 @@ return [
                             "changed_field" => "parent_id",
                             "old_value" => "1. Система",
                             "new_value" => "5. Супервайзер Руководько 1",
-                            //"date" => "2020-05-19 16:36:22"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 3,
@@ -1054,7 +1054,7 @@ return [
                             "changed_field" => "position",
                             "old_value" => "admin",
                             "new_value" => "contentManager",
-                            //"date" => "2020-05-19 16:36:22"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 4,
@@ -1065,7 +1065,7 @@ return [
                             "changed_field" => "drfo",
                             "old_value" => "'000000004",
                             "new_value" => "'000000099",
-                            //"date" => "2020-05-19 16:36:22"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 5,
@@ -1076,7 +1076,7 @@ return [
                             "changed_field" => "blockUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 6,
@@ -1087,7 +1087,7 @@ return [
                             "changed_field" => "categoryUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 7,
@@ -1098,7 +1098,7 @@ return [
                             "changed_field" => "coefUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 8,
@@ -1109,7 +1109,7 @@ return [
                             "changed_field" => "createUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 9,
@@ -1120,7 +1120,7 @@ return [
                             "changed_field" => "errorsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 10,
@@ -1131,7 +1131,7 @@ return [
                             "changed_field" => "excludedFieldsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 11,
@@ -1142,7 +1142,7 @@ return [
                             "changed_field" => "fieldsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 12,
@@ -1153,7 +1153,7 @@ return [
                             "changed_field" => "massEdit",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 13,
@@ -1164,7 +1164,7 @@ return [
                             "changed_field" => "priorityUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 14,
@@ -1175,7 +1175,7 @@ return [
                             "changed_field" => "reasonsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 15,
@@ -1186,7 +1186,7 @@ return [
                             "changed_field" => "reportLoadAllUsers",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 16,
@@ -1197,7 +1197,7 @@ return [
                             "changed_field" => "reportLoadMarketUsers",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 17,
@@ -1208,7 +1208,7 @@ return [
                             "changed_field" => "reportLoadYourTeam",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 18,
@@ -1219,7 +1219,7 @@ return [
                             "changed_field" => "requestAddAttrOrValues",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 19,
@@ -1230,7 +1230,7 @@ return [
                             "changed_field" => "requestAddFatPortalCat",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 20,
@@ -1241,7 +1241,7 @@ return [
                             "changed_field" => "requestAddNewItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 21,
@@ -1252,7 +1252,7 @@ return [
                             "changed_field" => "requestAddUpdateSC",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 22,
@@ -1263,7 +1263,7 @@ return [
                             "changed_field" => "requestAddUpdateSizeGrid",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 23,
@@ -1274,7 +1274,7 @@ return [
                             "changed_field" => "requestAddUpdateTags",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 24,
@@ -1285,7 +1285,7 @@ return [
                             "changed_field" => "requestAddUpdateVideo",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 25,
@@ -1296,7 +1296,7 @@ return [
                             "changed_field" => "requestCheckHidden",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 26,
@@ -1307,7 +1307,7 @@ return [
                             "changed_field" => "requestCreateRelated",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 27,
@@ -1318,7 +1318,7 @@ return [
                             "changed_field" => "requestCreate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 28,
@@ -1329,7 +1329,7 @@ return [
                             "changed_field" => "requestDeleteAttachments",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 29,
@@ -1340,7 +1340,7 @@ return [
                             "changed_field" => "requestGroupItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 30,
@@ -1351,7 +1351,7 @@ return [
                             "changed_field" => "requestStructureDesign",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 31,
@@ -1362,7 +1362,7 @@ return [
                             "changed_field" => "requestTransferItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 32,
@@ -1373,7 +1373,7 @@ return [
                             "changed_field" => "requestUpdateAttrOrValues",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 33,
@@ -1384,7 +1384,7 @@ return [
                             "changed_field" => "requestUpdateFatPortalCat",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 34,
@@ -1395,7 +1395,7 @@ return [
                             "changed_field" => "requestUpdateItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 35,
@@ -1406,7 +1406,7 @@ return [
                             "changed_field" => "requestUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 36,
@@ -1417,7 +1417,7 @@ return [
                             "changed_field" => "requestUploadPhoto",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 37,
@@ -1428,7 +1428,7 @@ return [
                             "changed_field" => "requestViewAllRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 38,
@@ -1439,7 +1439,7 @@ return [
                             "changed_field" => "requestViewDirectionRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 39,
@@ -1450,7 +1450,7 @@ return [
                             "changed_field" => "requestViewTeamRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 40,
@@ -1461,7 +1461,7 @@ return [
                             "changed_field" => "sellerUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 41,
@@ -1472,7 +1472,7 @@ return [
                             "changed_field" => "takeToWork",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 42,
@@ -1483,7 +1483,7 @@ return [
                             "changed_field" => "teamUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 43,
@@ -1494,7 +1494,7 @@ return [
                             "changed_field" => "transferCompletedToClosed",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 44,
@@ -1505,7 +1505,7 @@ return [
                             "changed_field" => "transferCompletedToInWork",
                             "old_value" => "0",
                             "new_value" => "1",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 45,
@@ -1516,7 +1516,7 @@ return [
                             "changed_field" => "transferInCheckToDeclined",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 46,
@@ -1527,7 +1527,7 @@ return [
                             "changed_field" => "transferInCheckToRequireChange",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 47,
@@ -1538,7 +1538,7 @@ return [
                             "changed_field" => "transferOnHoldToInWork",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 48,
@@ -1549,7 +1549,7 @@ return [
                             "changed_field" => "transferPartialCompleteToInWork",
                             "old_value" => "0",
                             "new_value" => "1",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 49,
@@ -1560,7 +1560,7 @@ return [
                             "changed_field" => "transferWaitCheckToInCheck",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 50,
@@ -1571,7 +1571,7 @@ return [
                             "changed_field" => "updateUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 51,
@@ -1582,7 +1582,7 @@ return [
                             "changed_field" => "viewAllDashboards",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 52,
@@ -1593,7 +1593,7 @@ return [
                             "changed_field" => "viewDashboardsByCommand",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 53,
@@ -1604,7 +1604,7 @@ return [
                             "changed_field" => "viewDashboardsByDirection",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 54,
@@ -1615,7 +1615,7 @@ return [
                             "changed_field" => "viewSplitterModerationRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 55,
@@ -1626,11 +1626,10 @@ return [
                             "changed_field" => "viewUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:26:11"
+                            "date >=" => date("Y-m-d"),
                         ]
                     ]
                 ],
-
             ]
         ]
     ],
@@ -1781,7 +1780,7 @@ return [
                             "status" => 1,
                             "create_ts" => "2020-05-19 13:36:22",
                             "created_by" => 1,
-                            //"change_date" => "2020-05-19 16:36:22",
+                            "change_date >=" => date("Y-m-d"),
                             "drfo" => "'000000004"
                         ],
                         [
@@ -2666,7 +2665,7 @@ return [
                             "changed_field" => "position",
                             "old_value" => "admin",
                             "new_value" => "contentManager",
-                            //"date" => "2020-05-19 16:36:22"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 2,
@@ -2677,7 +2676,7 @@ return [
                             "changed_field" => "blockUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 3,
@@ -2688,7 +2687,7 @@ return [
                             "changed_field" => "categoryUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 4,
@@ -2699,7 +2698,7 @@ return [
                             "changed_field" => "coefUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 5,
@@ -2710,7 +2709,7 @@ return [
                             "changed_field" => "createUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 6,
@@ -2721,7 +2720,7 @@ return [
                             "changed_field" => "errorsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 7,
@@ -2732,7 +2731,7 @@ return [
                             "changed_field" => "excludedFieldsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 8,
@@ -2743,7 +2742,7 @@ return [
                             "changed_field" => "fieldsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 9,
@@ -2754,7 +2753,7 @@ return [
                             "changed_field" => "massEdit",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 10,
@@ -2765,7 +2764,7 @@ return [
                             "changed_field" => "priorityUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 11,
@@ -2776,7 +2775,7 @@ return [
                             "changed_field" => "reasonsUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 12,
@@ -2787,7 +2786,7 @@ return [
                             "changed_field" => "reportLoadAllUsers",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 13,
@@ -2798,7 +2797,7 @@ return [
                             "changed_field" => "reportLoadMarketUsers",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 14,
@@ -2809,7 +2808,7 @@ return [
                             "changed_field" => "reportLoadYourTeam",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 15,
@@ -2820,7 +2819,7 @@ return [
                             "changed_field" => "requestAddAttrOrValues",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 16,
@@ -2831,7 +2830,7 @@ return [
                             "changed_field" => "requestAddFatPortalCat",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 17,
@@ -2842,7 +2841,7 @@ return [
                             "changed_field" => "requestAddNewItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 18,
@@ -2853,7 +2852,7 @@ return [
                             "changed_field" => "requestAddUpdateSC",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 19,
@@ -2864,7 +2863,7 @@ return [
                             "changed_field" => "requestAddUpdateSizeGrid",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 20,
@@ -2875,7 +2874,7 @@ return [
                             "changed_field" => "requestAddUpdateTags",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 21,
@@ -2886,7 +2885,7 @@ return [
                             "changed_field" => "requestAddUpdateVideo",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 22,
@@ -2897,7 +2896,7 @@ return [
                             "changed_field" => "requestCheckHidden",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 23,
@@ -2908,7 +2907,7 @@ return [
                             "changed_field" => "requestCreateRelated",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 24,
@@ -2919,7 +2918,7 @@ return [
                             "changed_field" => "requestCreate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 25,
@@ -2930,7 +2929,7 @@ return [
                             "changed_field" => "requestDeleteAttachments",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 26,
@@ -2941,7 +2940,7 @@ return [
                             "changed_field" => "requestGroupItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 27,
@@ -2952,7 +2951,7 @@ return [
                             "changed_field" => "requestStructureDesign",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 28,
@@ -2963,7 +2962,7 @@ return [
                             "changed_field" => "requestTransferItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 29,
@@ -2974,7 +2973,7 @@ return [
                             "changed_field" => "requestUpdateAttrOrValues",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 30,
@@ -2985,7 +2984,7 @@ return [
                             "changed_field" => "requestUpdateFatPortalCat",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 31,
@@ -2996,7 +2995,7 @@ return [
                             "changed_field" => "requestUpdateItems",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 32,
@@ -3007,7 +3006,7 @@ return [
                             "changed_field" => "requestUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 33,
@@ -3018,7 +3017,7 @@ return [
                             "changed_field" => "requestUploadPhoto",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 34,
@@ -3029,7 +3028,7 @@ return [
                             "changed_field" => "requestViewAllRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 35,
@@ -3040,7 +3039,7 @@ return [
                             "changed_field" => "requestViewDirectionRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 36,
@@ -3051,7 +3050,7 @@ return [
                             "changed_field" => "requestViewTeamRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 37,
@@ -3062,7 +3061,7 @@ return [
                             "changed_field" => "sellerUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 38,
@@ -3073,7 +3072,7 @@ return [
                             "changed_field" => "takeToWork",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 39,
@@ -3084,7 +3083,7 @@ return [
                             "changed_field" => "teamUpdate",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 40,
@@ -3095,7 +3094,7 @@ return [
                             "changed_field" => "transferCompletedToClosed",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 41,
@@ -3106,7 +3105,7 @@ return [
                             "changed_field" => "transferCompletedToInWork",
                             "old_value" => "0",
                             "new_value" => "1",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 42,
@@ -3117,7 +3116,7 @@ return [
                             "changed_field" => "transferInCheckToDeclined",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 43,
@@ -3128,7 +3127,7 @@ return [
                             "changed_field" => "transferInCheckToRequireChange",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 44,
@@ -3139,7 +3138,7 @@ return [
                             "changed_field" => "transferOnHoldToInWork",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 45,
@@ -3150,7 +3149,7 @@ return [
                             "changed_field" => "transferPartialCompleteToInWork",
                             "old_value" => "0",
                             "new_value" => "1",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 46,
@@ -3161,7 +3160,7 @@ return [
                             "changed_field" => "transferWaitCheckToInCheck",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 47,
@@ -3172,7 +3171,7 @@ return [
                             "changed_field" => "updateUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 48,
@@ -3183,7 +3182,7 @@ return [
                             "changed_field" => "viewAllDashboards",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 49,
@@ -3194,7 +3193,7 @@ return [
                             "changed_field" => "viewDashboardsByCommand",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 50,
@@ -3205,7 +3204,7 @@ return [
                             "changed_field" => "viewDashboardsByDirection",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 51,
@@ -3216,7 +3215,7 @@ return [
                             "changed_field" => "viewSplitterModerationRequests",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ],
                         [
                             "id" => 52,
@@ -3227,7 +3226,7 @@ return [
                             "changed_field" => "viewUser",
                             "old_value" => "1",
                             "new_value" => "0",
-                            //"date" => "2020-10-03 18:46:29"
+                            "date >=" => date("Y-m-d"),
                         ]
                     ]
                 ],
@@ -3428,7 +3427,7 @@ return [
                             "status" => 1,
                             "create_ts" => "2020-05-19 13:36:22",
                             "created_by" => 1,
-                            //"change_date" => "2020-05-19 16:36:22",
+                            "change_date >=" => date("Y-m-d"),
                             "drfo" => "'000000004"
                         ],
                         [
@@ -4548,7 +4547,7 @@ return [
                             "changed_field" => "team",
                             "old_value" => "17",
                             "new_value" => "1",
-//                            "date" => "2020-05-19 16:36:22"
+                            "date >=" => date("Y-m-d"),
                         ]
                     ]
                 ],
@@ -4748,7 +4747,7 @@ return [
                             "status" => 1,
                             "create_ts" => "2020-05-19 13:36:22",
                             "created_by" => 1,
-                            //"change_date" => "2020-05-19 16:36:22",
+                            "change_date >=" => date("Y-m-d"),
                             "drfo" => "'000000099"
                         ],
                         [
@@ -5868,7 +5867,7 @@ return [
                             "changed_field" => "drfo",
                             "old_value" => "'000000004",
                             "new_value" => "'000000099",
-//                            "date" => "2020-05-19 16:36:22"
+                            "date >=" => date("Y-m-d"),
                         ]
                     ]
                 ],
@@ -6068,7 +6067,7 @@ return [
                             "status" => 1,
                             "create_ts" => "2020-05-19 13:36:22",
                             "created_by" => 1,
-                            //"change_date" => "2020-05-19 16:36:22",
+                            "change_date >=" => date("Y-m-d"),
                             "drfo" => "'000000004"
                         ],
                         [
@@ -7188,7 +7187,7 @@ return [
                             "changed_field" => "parent_id",
                             "old_value" => "1. Система",
                             "new_value" => "5. Супервайзер Руководько 1",
-//                            "date" => "2020-05-19 16:36:22"
+                            "date >=" => date("Y-m-d"),
                         ]
                     ]
                 ],
@@ -7389,7 +7388,7 @@ return [
                             "status" => 0,
                             "create_ts" => "2020-05-19 13:36:22",
                             "created_by" => 1,
-//                            "change_date" => "2020-05-19 16:36:22",
+                            "change_date >=" => date("Y-m-d"),
                             "drfo" => "'000000004"
                         ],
                         [
@@ -8509,7 +8508,7 @@ return [
                             "changed_field" => "status",
                             "old_value" => "1",
                             "new_value" => "0",
-//                            "date" => "2020-05-19 16:36:22"
+                            "date >=" => date("Y-m-d"),
                         ]
                     ]
                 ],
@@ -8710,7 +8709,7 @@ return [
                             "status" => 1,
                             "create_ts" => "2020-05-19 13:36:22",
                             "created_by" => 1,
-//                            "change_date" => "2020-05-19 16:36:22",
+                            "change_date >=" => date("Y-m-d"),
                             "drfo" => "'000000004"
                         ],
                         [
@@ -9830,7 +9829,7 @@ return [
                             "changed_field" => "status",
                             "old_value" => "0",
                             "new_value" => "1",
-//                            "date" => "2020-05-19 16:36:22"
+                            "date >=" => date("Y-m-d"),
                         ]
                     ]
                 ],

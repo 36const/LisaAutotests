@@ -37,7 +37,7 @@ class POSTFromStatusesCest
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
-        $I->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
+        $view->changeStatus($providerData['requestParameter'], $providerData['requestBody']);
         $I->checkTablesInDB($providerData['db']);
         $view->checkFields($providerData['db']);
 

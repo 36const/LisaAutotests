@@ -35,7 +35,8 @@ return [
                 "team_direction" => 2,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 1,
             ],
             [
                 //"id" => 2,
@@ -69,7 +70,8 @@ return [
                 "team_direction" => 3,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 2,
             ],
             [
                 //"id" => 3,
@@ -103,7 +105,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 2,
             ],
             [
                 //"id" => 4,
@@ -140,6 +143,7 @@ return [
                 "sv_report_periods" => '{"1": 1}',
                 "cross_check_status" => 1,
                 "cross_check_manager_id" => 11,
+                "previous_status" => 5,
             ],
             [
                 //"id" => 5,
@@ -173,7 +177,8 @@ return [
                 "team_direction" => 5,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 6,
             ],
             [
                 //"id" => 6,
@@ -207,7 +212,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 6,
             ],
             [
                 //"id" => 7,
@@ -241,7 +247,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 6,
             ],
             [
                 //"id" => 8,
@@ -276,6 +283,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 2,
             ],
             [
                 //"id" => 9,
@@ -310,6 +318,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => null,
             ],
             [
                 //"id" => 10,
@@ -344,6 +353,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 1,
             ],
             [
                 //"id" => 11,
@@ -378,6 +388,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => null,
             ],
             [
                 //"id" => 12,
@@ -412,6 +423,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 1,
             ],
             [
                 //"id" => 13,
@@ -446,6 +458,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 1,
             ],
             [
                 //"id" => 14,
@@ -480,6 +493,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => null,
             ],
             [
                 //"id" => 15,
@@ -514,6 +528,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 1,
             ],
             [
                 //"id" => 16,
@@ -548,6 +563,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 1,
             ],
             [
                 //"id" => 17,
@@ -582,6 +598,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 5,
             ],
             [
                 //"id" => 18,
@@ -615,7 +632,8 @@ return [
                 "team_direction" => 5,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 2,
             ],
             [
                 //"id" => 19,
@@ -650,6 +668,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 5,
             ],
             [
                 //"id" => 20,
@@ -683,7 +702,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 6,
             ],
             [
                 //"id" => 21,
@@ -718,6 +738,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 6,
             ],
             [
                 //"id" => 22,
@@ -751,7 +772,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 9,
             ],
             [
                 //"id" => 23,
@@ -785,7 +807,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 8,
             ],
             [
                 //"id" => 24,
@@ -819,7 +842,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 9,
             ]
         ],
         "requests_fields" => [
@@ -2458,7 +2482,7 @@ return [
             [
                 //"id" => 1,
                 "user_id" => 4,
-                "columns_list" => '["cross_check_status", "direction", "team_direction", "difficulty_level", "status"]'
+                "columns_list" => '["cross_check_status", "direction", "team_direction", "difficulty_level", "status", "previous_status"]'
             ]
         ],
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',

@@ -27,62 +27,20 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='author_id']",
-                            "value" => "Создатель заявки"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='supervisor_id']",
-                            "value" => "Супервайзер заявки"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='manager_id']",
-                            "value" => "Менеджер заявки"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='status']",
-                            "value" => "Статус"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='direction']",
-                            "value" => "Направление задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='team_direction']",
-                            "value" => "Направление команды"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='category_id']",
-                            "value" => "Категория товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='seller_id']",
-                            "value" => "Продавец"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='priority']",
-                            "value" => "Приоритет"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='cross_check_status']",
-                            "value" => "Кросс-чек статус"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='cross_check_manager_id']",
-                            "value" => "Кросс-чек менеджер"
-                        ],
+                        ["selector" => Request::columnName('id', 'ID задачи')],
+                        ["selector" => Request::columnName('subject', 'Заголовок')],
+                        ["selector" => Request::columnName('type_id', 'Тип')],
+                        ["selector" => Request::columnName('author_id', 'Создатель заявки')],
+                        ["selector" => Request::columnName('supervisor_id', 'Супервайзер заявки')],
+                        ["selector" => Request::columnName('manager_id', 'Менеджер заявки')],
+                        ["selector" => Request::columnName('status', 'Статус')],
+                        ["selector" => Request::columnName('direction', 'Направление задачи')],
+                        ["selector" => Request::columnName('team_direction', 'Направление команды')],
+                        ["selector" => Request::columnName('category_id', 'Категория товаров')],
+                        ["selector" => Request::columnName('seller_id', 'Продавец')],
+                        ["selector" => Request::columnName('priority', 'Приоритет')],
+                        ["selector" => Request::columnName('cross_check_status', 'Кросс-чек статус')],
+                        ["selector" => Request::columnName('cross_check_manager_id', 'Кросс-чек менеджер')],
                     ],
                     "Выпадающие списки" => [
                         [
@@ -239,54 +197,18 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='parent_id']",
-                            "value" => "ID связанной задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='difficulty_level']",
-                            "value" => "Уровень сложности задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='awaiting_correction']",
-                            "value" => "На исправление"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='reasons']",
-                            "value" => "Причины"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='author_clarifications']",
-                            "value" => "Уточнения. Количество уточнений у автора"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='photos_available']",
-                            "value" => "Наличие фото к товарам"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='characteristics_available']",
-                            "value" => "Наличие характеристик к товарам"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='description_available']",
-                            "value" => "Наличие описаний к товарам"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='language']",
-                            "value" => "Язык информации"
-                        ],
+                        ["selector" => Request::columnName('id', 'ID задачи')],
+                        ["selector" => Request::columnName('subject', 'Заголовок')],
+                        ["selector" => Request::columnName('type_id', 'Тип')],
+                        ["selector" => Request::columnName('parent_id', 'ID связанной задачи')],
+                        ["selector" => Request::columnName('difficulty_level', 'Уровень сложности задачи')],
+                        ["selector" => Request::columnName('awaiting_correction', 'На исправление')],
+                        ["selector" => Request::columnName('reasons', 'Причины')],
+                        ["selector" => Request::columnName('author_clarifications', 'Уточнения. Количество уточнений у автора')],
+                        ["selector" => Request::columnName('photos_available', 'Наличие фото к товарам')],
+                        ["selector" => Request::columnName('characteristics_available', 'Наличие характеристик к товарам')],
+                        ["selector" => Request::columnName('description_available', 'Наличие описаний к товарам')],
+                        ["selector" => Request::columnName('language', 'Язык информации')],
                     ],
                     "Выпадающие списки" => [
                         [
@@ -364,18 +286,22 @@ return [
                         ],
                         [
                             "selector" => "//select[@name='RequestSearch[reasons][]']/option[12]",
-                            "value" => "Товары ушли в ошибки (Частично выполнена)"
+                            "value" => "Товары на модерации (Ожидает)"
                         ],
                         [
                             "selector" => "//select[@name='RequestSearch[reasons][]']/option[13]",
-                            "value" => "Требуется уточнение информации по задаче (Ожидает)"
+                            "value" => "Товары ушли в ошибки (Частично выполнена)"
                         ],
                         [
                             "selector" => "//select[@name='RequestSearch[reasons][]']/option[14]",
-                            "value" => "Часть товаров ушла в ошибки (Частично выполнена)"
+                            "value" => "Требуется уточнение информации по задаче (Ожидает)"
                         ],
                         [
                             "selector" => "//select[@name='RequestSearch[reasons][]']/option[15]",
+                            "value" => "Часть товаров ушла в ошибки (Частично выполнена)"
+                        ],
+                        [
+                            "selector" => "//select[@name='RequestSearch[reasons][]']/option[16]",
                             "value" => "(не задано)"
                         ],
 
@@ -501,88 +427,34 @@ return [
                 ],
                 "cantSee" => [
                     "Заявка 7" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "7"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление/изменение тегов (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление/изменение тегов"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '7')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление/изменение тегов (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление/изменение тегов')],
                     ],
                     "Заявка 6" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "6"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление/изменение видео (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление/изменение видео"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '6')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление/изменение видео (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление/изменение видео')],
                     ],
                     "Заявка 5" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "5"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Изменение существующих параметров/значений"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '5')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Изменение существующих параметров/значений (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Изменение существующих параметров/значений')],
                     ],
                     "Заявка 4" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "4"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление параметров/значений (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление параметров/значений"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '4')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление параметров/значений (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление параметров/значений')],
                     ],
                     "Заявка 3" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "3"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '3')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление нового портала/раздела фат-меню/категории товаров')],
                     ],
                     "Заявка 2" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "2"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Заливка фото с фотостудии"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '2')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Заливка фото с фотостудии (Работа с товарами Розетки)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Заливка фото с фотостудии')],
                     ],
                 ]
             ]
@@ -613,45 +485,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='description']",
-                            "value" => "Описание"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='reason']",
-                            "value" => "Причина отмены/доработки"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='recommendations']",
-                            "value" => "Рекомендации"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='correction_comment']",
-                            "value" => "Комментарий на исправление"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='result_comment']",
-                            "value" => "Комментарий к результату задачи"
-                        ],
+                        ["selector" => Request::columnName('id', 'ID задачи')],
+                        ["selector" => Request::columnName('subject', 'Заголовок')],
+                        ["selector" => Request::columnName('type_id', 'Тип')],
+                        ["selector" => Request::columnName('description', 'Описание')],
+                        ["selector" => Request::columnName('reason', 'Причина отмены/доработки')],
+                        ["selector" => Request::columnName('recommendations', 'Рекомендации')],
+                        ["selector" => Request::columnName('correction_comment', 'Комментарий на исправление')],
+                        ["selector" => Request::columnName('result_comment', 'Комментарий к результату задачи')],
                     ],
                     "Заявка 2" => [
                         ["selector" => Request::requestInTable(1, 'id', 2)],
                         ["selector" => Request::requestInTable(1, 'subject', 'Заливка фото с фотостудии (Работа с товарами Розетки)')],
                         ["selector" => Request::requestInTable(1, 'type_id', 'Заливка фото с фотостудии')],
                         ["selector" => Request::requestInTable(1, 'description', 'Описание')],
-                        ["selector" => "//tbody/tr/td[@data-col-seq='reason']"],
+                        ["selector" => "//tbody/tr/td[@data-col-seq='reason']"], //особое поле "Причина отмены/доработки"
                         ["selector" => Request::requestInTable(1, 'recommendations', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'correction_comment', '(не задано)')],
                         ["selector" => Request::requestInTable(1, 'result_comment', '(не задано)')],
@@ -659,88 +507,34 @@ return [
                 ],
                 "cantSee" => [
                     "Заявка 7" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "7"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление/изменение тегов (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление/изменение тегов"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '7')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление/изменение тегов (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление/изменение тегов')],
                     ],
                     "Заявка 6" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "6"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление/изменение видео (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление/изменение видео"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '6')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление/изменение видео (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление/изменение видео')],
                     ],
                     "Заявка 5" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "5"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Изменение существующих параметров/значений"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '5')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Изменение существующих параметров/значений (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Изменение существующих параметров/значений')],
                     ],
                     "Заявка 4" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "4"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление параметров/значений (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление параметров/значений  "
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '4')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление параметров/значений (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление параметров/значений  ')],
                     ],
                     "Заявка 3" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "3"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '3')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление нового портала/раздела фат-меню/категории товаров')],
                     ],
                     "Заявка 1" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "1"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Перенос товаров	"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '1')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Перенос товаров (Работа с товарами Маркетплейса)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Перенос товаров	')],
                     ],
                 ]
             ]
@@ -771,90 +565,27 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='amount_to_work']",
-                            "value" => "Количество в работу"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='added_goods']",
-                            "value" => "Количество добавленных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='handled_goods']",
-                            "value" => "Количество обработанных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='changed_goods']",
-                            "value" => "Количество измененных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='goods_in_db']",
-                            "value" => "Количество товаров, которые уже есть в БД"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='quantity_of_handled_but_not_grouped']",
-                            "value" => "Количество обработанных, но не сгруппированных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='group_settings']",
-                            "value" => "Количество настроек групп (управление группами)"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='quantity_of_words_in_dictionaries']",
-                            "value" => "Количество слов в словарях"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_indicators']",
-                            "value" => "Общее рассчитанное количество показателей"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_not_grouped']",
-                            "value" => "Рассчитанное количество не сгруппированных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_sent_emails']",
-                            "value" => "Рассчитанное количество отправленных писем"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_child_requests']",
-                            "value" => "Рассчитанное количество созданных подзадач"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_words_in_dictionaries']",
-                            "value" => "Рассчитанное количество слов в словарях"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='average_amount_of_goods_in_group']",
-                            "value" => "Среднее количество товаров в группе"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_checked_goods']",
-                            "value" => "Рассчитанное количество проверенных товаров"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_checked_goods_with_errors']",
-                            "value" => "Рассчитанное количество проверенных товаров с ошибками"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_checked_goods_cc']",
-                            "value" => "Рассчитанное количество проверенных товаров (Кросс-чек)"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='calc_quantity_of_checked_goods_with_errors_cc']",
-                            "value" => "Рассчитанное количество проверенных товаров с ошибками (Кросс-чек)"
-                        ],
+                        ["selector" => Request::columnName('id', 'ID задачи')],
+                        ["selector" => Request::columnName('subject', 'Заголовок')],
+                        ["selector" => Request::columnName('type_id', 'Тип')],
+                        ["selector" => Request::columnName('amount_to_work', 'Количество в работу')],
+                        ["selector" => Request::columnName('added_goods', 'Количество добавленных товаров')],
+                        ["selector" => Request::columnName('handled_goods', 'Количество обработанных товаров')],
+                        ["selector" => Request::columnName('changed_goods', 'Количество измененных товаров')],
+                        ["selector" => Request::columnName('goods_in_db', 'Количество товаров, которые уже есть в БД')],
+                        ["selector" => Request::columnName('quantity_of_handled_but_not_grouped', 'Количество обработанных, но не сгруппированных товаров')],
+                        ["selector" => Request::columnName('group_settings', 'Количество настроек групп (управление группами)')],
+                        ["selector" => Request::columnName('quantity_of_words_in_dictionaries', 'Количество слов в словарях')],
+                        ["selector" => Request::columnName('calc_quantity_of_indicators', 'Общее рассчитанное количество показателей')],
+                        ["selector" => Request::columnName('calc_quantity_of_not_grouped', 'Рассчитанное количество не сгруппированных товаров')],
+                        ["selector" => Request::columnName('calc_quantity_of_sent_emails', 'Рассчитанное количество отправленных писем')],
+                        ["selector" => Request::columnName('calc_quantity_of_child_requests', 'Рассчитанное количество созданных подзадач')],
+                        ["selector" => Request::columnName('calc_quantity_of_words_in_dictionaries', 'Рассчитанное количество слов в словарях')],
+                        ["selector" => Request::columnName('average_amount_of_goods_in_group', 'Среднее количество товаров в группе')],
+                        ["selector" => Request::columnName('calc_quantity_of_checked_goods', 'Рассчитанное количество проверенных товаров')],
+                        ["selector" => Request::columnName('calc_quantity_of_checked_goods_with_errors', 'Рассчитанное количество проверенных товаров с ошибками')],
+                        ["selector" => Request::columnName('calc_quantity_of_checked_goods_cc', 'Рассчитанное количество проверенных товаров (Кросс-чек)')],
+                        ["selector" => Request::columnName('calc_quantity_of_checked_goods_with_errors_cc', 'Рассчитанное количество проверенных товаров с ошибками (Кросс-чек)')],
                     ],
                     "Заявка 3" => [
                         ["selector" => Request::requestInTable(1, 'id', 3)],
@@ -882,88 +613,34 @@ return [
                 ],
                 "cantSee" => [
                     "Заявка 7" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "7"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление/изменение тегов (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление/изменение тегов"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '7')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление/изменение тегов (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление/изменение тегов')],
                     ],
                     "Заявка 6" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "6"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление/изменение видео (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление/изменение видео"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '6')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление/изменение видео (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление/изменение видео')],
                     ],
                     "Заявка 5" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "5"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Изменение существующих параметров/значений"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '5')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Изменение существующих параметров/значений (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Изменение существующих параметров/значений')],
                     ],
                     "Заявка 4" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "4"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление параметров/значений (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление параметров/значений  "
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '4')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление параметров/значений (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление параметров/значений  ')],
                     ],
                     "Заявка 2" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "2"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Заливка фото с фотостудии"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '2')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Заливка фото с фотостудии (Работа с товарами Розетки)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Заливка фото с фотостудии')],
                     ],
                     "Заявка 1" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "1"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Перенос товаров	"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '1')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Перенос товаров (Работа с товарами Маркетплейса)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Перенос товаров	')],
                     ],
                 ]
             ]
@@ -994,58 +671,19 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='last_change_status_date']",
-                            "value" => "Дата последнего изменения статуса"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='created_at']",
-                            "value" => "Дата регистрации задачи в системе"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='supervisor_process_date']",
-                            "value" => "Дата обработки задачи супервайзером"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='supervisor_check_date']",
-                            "value" => "Дата проверки задачи супервайзером"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='planned_start_date']",
-                            "value" => "Плановая дата начала работ"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='planned_finish_date']",
-                            "value" => "Плановая дата завершения"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='actual_start_date']",
-                            "value" => "Фактическая дата начала работ"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='actual_finish_date']",
-                            "value" => "Фактическая дата завершения"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='report_period_id']",
-                            "value" => "Отчетный период КМ"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='sv_report_periods']",
-                            "value" => "Отчетные периоды СВ"
-                        ],
+                        ["selector" => Request::columnName('id', 'ID задачи')],
+                        ["selector" => Request::columnName('subject', 'Заголовок')],
+                        ["selector" => Request::columnName('type_id', 'Тип')],
+                        ["selector" => Request::columnName('last_change_status_date', 'Дата последнего изменения статуса')],
+                        ["selector" => Request::columnName('created_at', 'Дата регистрации задачи в системе')],
+                        ["selector" => Request::columnName('supervisor_process_date', 'Дата обработки задачи супервайзером')],
+                        ["selector" => Request::columnName('supervisor_check_date', 'Дата проверки задачи супервайзером')],
+                        ["selector" => Request::columnName('planned_start_date', 'Плановая дата начала работ')],
+                        ["selector" => Request::columnName('planned_finish_date', 'Плановая дата завершения')],
+                        ["selector" => Request::columnName('actual_start_date', 'Фактическая дата начала работ')],
+                        ["selector" => Request::columnName('actual_finish_date', 'Фактическая дата завершения')],
+                        ["selector" => Request::columnName('report_period_id', 'Отчетный период КМ')],
+                        ["selector" => Request::columnName('sv_report_periods', 'Отчетные периоды СВ')],
                     ],
                     "Выпадающие списки" => [
                         [
@@ -1108,88 +746,34 @@ return [
                 ],
                 "cantSee" => [
                     "Заявка 7" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "7"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление/изменение тегов (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление/изменение тегов"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '7')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление/изменение тегов (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление/изменение тегов')],
                     ],
                     "Заявка 6" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "6"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление/изменение видео (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление/изменение видео"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '6')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление/изменение видео (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление/изменение видео')],
                     ],
                     "Заявка 5" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "5"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Изменение существующих параметров/значений"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '5')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Изменение существующих параметров/значений (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Изменение существующих параметров/значений')],
                     ],
                     "Заявка 3" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "3"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '3')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление нового портала/раздела фат-меню/категории товаров')],
                     ],
                     "Заявка 2" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "2"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Заливка фото с фотостудии"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '2')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Заливка фото с фотостудии (Работа с товарами Розетки)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Заливка фото с фотостудии')],
                     ],
                     "Заявка 1" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "1"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Перенос товаров	"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '1')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Перенос товаров (Работа с товарами Маркетплейса)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Перенос товаров	')],
                     ],
                 ]
             ]
@@ -1220,66 +804,21 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='hand_load']",
-                            "value" => "Ручная загрузка"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='pack_load']",
-                            "value" => "Пакетная загрузка"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='visa']",
-                            "value" => "Виза супервайзера"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='with_photo']",
-                            "value" => "С фотосъемкой"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='enter_points']",
-                            "value" => "Точки входа"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='adding_graphics']",
-                            "value" => "Добавление графики"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='with_grid']",
-                            "value" => "С размерной сеткой"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='with_tags']",
-                            "value" => "С тегами к товарам"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='markdown']",
-                            "value" => "Уценка"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='markdown_2']",
-                            "value" => "Уценка 2"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='by_client_review']",
-                            "value" => "На основе отзыва клиента на сайте"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='complaint_for_good']",
-                            "value" => "Жалоба на товар продавца маркета"
-                        ],
+                        ["selector" => Request::columnName('id', 'ID задачи')],
+                        ["selector" => Request::columnName('subject', 'Заголовок')],
+                        ["selector" => Request::columnName('type_id', 'Тип')],
+                        ["selector" => Request::columnName('hand_load', 'Ручная загрузка')],
+                        ["selector" => Request::columnName('pack_load', 'Пакетная загрузка')],
+                        ["selector" => Request::columnName('visa', 'Виза супервайзера')],
+                        ["selector" => Request::columnName('with_photo', 'С фотосъемкой')],
+                        ["selector" => Request::columnName('enter_points', 'Точки входа')],
+                        ["selector" => Request::columnName('adding_graphics', 'Добавление графики')],
+                        ["selector" => Request::columnName('with_grid', 'С размерной сеткой')],
+                        ["selector" => Request::columnName('with_tags', 'С тегами к товарам')],
+                        ["selector" => Request::columnName('markdown', 'Уценка')],
+                        ["selector" => Request::columnName('markdown_2', 'Уценка 2')],
+                        ["selector" => Request::columnName('by_client_review', 'На основе отзыва клиента на сайте')],
+                        ["selector" => Request::columnName('complaint_for_good', 'Жалоба на товар продавца маркета')],
                     ],
                     "Заявка 5" => [
                         ["selector" => Request::requestInTable(1, 'id', 5)],
@@ -1301,88 +840,34 @@ return [
                 ],
                 "cantSee" => [
                     "Заявка 7" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "7"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление/изменение тегов (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление/изменение тегов"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '7')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление/изменение тегов (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление/изменение тегов')],
                     ],
                     "Заявка 6" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "6"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление/изменение видео (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление/изменение видео"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '6')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление/изменение видео (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление/изменение видео')],
                     ],
                     "Заявка 4" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "4"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление параметров/значений (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление параметров/значений  "
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '4')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление параметров/значений (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление параметров/значений  ')],
                     ],
                     "Заявка 3" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "3"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '3')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление нового портала/раздела фат-меню/категории товаров')],
                     ],
                     "Заявка 2" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "2"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Заливка фото с фотостудии"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '2')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Заливка фото с фотостудии (Работа с товарами Розетки)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Заливка фото с фотостудии')],
                     ],
                     "Заявка 1" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "1"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Перенос товаров	"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '1')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Перенос товаров (Работа с товарами Маркетплейса)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Перенос товаров	')],
                     ],
                 ]
             ]
@@ -1413,78 +898,24 @@ return [
             "pageObjects" => [
                 "canSee" => [
                     "Заголовки" => [
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='id']",
-                            "value" => "ID задачи"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='subject']",
-                            "value" => "Заголовок"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='type_id']",
-                            "value" => "Тип"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='promo_desc']",
-                            "value" => "Промо-описание"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='adding_goods_to_new_category']",
-                            "value" => "Добавление товаров в новую категорию"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='used_ref']",
-                            "value" => "БУ, REF"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='updating_photos']",
-                            "value" => "Обновление фото"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='updating_description']",
-                            "value" => "Обновление описания"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='updating_characteristics']",
-                            "value" => "Обновление характеристик"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='automoderation']",
-                            "value" => "Автомодерация"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='adding_instructions']",
-                            "value" => "Добавление/обновление инструкций"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='stop_brands']",
-                            "value" => "Стоп-бренды"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='with_pallets']",
-                            "value" => "С палитрой"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='lots']",
-                            "value" => "Лоты"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='with_video']",
-                            "value" => "С видео"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='mobile_courier']",
-                            "value" => "По заявке с MobileCourier"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='ua_fields']",
-                            "value" => "Укр. поля"
-                        ],
-                        [
-                            "selector" => "//thead/tr/th[@data-col-seq='algorithm']",
-                            "value" => "Алгоритм"
-                        ],
+                        ["selector" => Request::columnName('id', 'ID задачи')],
+                        ["selector" => Request::columnName('subject', 'Заголовок')],
+                        ["selector" => Request::columnName('type_id', 'Тип')],
+                        ["selector" => Request::columnName('promo_desc', 'Промо-описание')],
+                        ["selector" => Request::columnName('adding_goods_to_new_category', 'Добавление товаров в новую категорию')],
+                        ["selector" => Request::columnName('used_ref', 'БУ, REF')],
+                        ["selector" => Request::columnName('updating_photos', 'Обновление фото')],
+                        ["selector" => Request::columnName('updating_description', 'Обновление описания')],
+                        ["selector" => Request::columnName('updating_characteristics', 'Обновление характеристик')],
+                        ["selector" => Request::columnName('automoderation', 'Автомодерация')],
+                        ["selector" => Request::columnName('adding_instructions', 'Добавление/обновление инструкций')],
+                        ["selector" => Request::columnName('stop_brands', 'Стоп-бренды')],
+                        ["selector" => Request::columnName('with_pallets', 'С палитрой')],
+                        ["selector" => Request::columnName('lots', 'Лоты')],
+                        ["selector" => Request::columnName('with_video', 'С видео')],
+                        ["selector" => Request::columnName('mobile_courier', 'По заявке с MobileCourier')],
+                        ["selector" => Request::columnName('ua_fields', 'Укр. поля')],
+                        ["selector" => Request::columnName('algorithm', 'Алгоритм')],
                     ],
                     "Заявка 6" => [
                         ["selector" => Request::requestInTable(1, 'id', 7)],
@@ -1531,74 +962,29 @@ return [
                 ],
                 "cantSee" => [
                     "Заявка 5" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "5"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Изменение существующих параметров/значений (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Изменение существующих параметров/значений"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '5')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Изменение существующих параметров/значений (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Изменение существующих параметров/значений')],
                     ],
                     "Заявка 4" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "4"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление параметров/значений (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление параметров/значений"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '4')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление параметров/значений (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление параметров/значений')],
                     ],
                     "Заявка 3" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "3"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Добавление нового портала/раздела фат-меню/категории товаров"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '3')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Добавление нового портала/раздела фат-меню/категории товаров')],
                     ],
                     "Заявка 2" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "2"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Заливка фото с фотостудии (Работа с товарами Розетки)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Заливка фото с фотостудии"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '2')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Заливка фото с фотостудии (Работа с товарами Розетки)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Заливка фото с фотостудии')],
                     ],
                     "Заявка 1" => [
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='id']",
-                            "value" => "1"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='subject']",
-                            "value" => "Перенос товаров (Работа с товарами Маркетплейса)"
-                        ],
-                        [
-                            "selector" => "//tbody/tr/td[@data-col-seq='type_id']",
-                            "value" => "Перенос товаров	"
-                        ],
+                        ["selector" => Request::requestInTableInexact('id', '1')],
+                        ["selector" => Request::requestInTableInexact('subject', 'Перенос товаров (Работа с товарами Маркетплейса)')],
+                        ["selector" => Request::requestInTableInexact('type_id', 'Перенос товаров	')],
                     ],
                 ]
             ]
@@ -1641,7 +1027,6 @@ return [
                         ["selector" => Request::requestInTable(1, 'language', 'Английский')],
                     ],
                 ],
-                "cantSee" => []
             ]
         ]
     ],

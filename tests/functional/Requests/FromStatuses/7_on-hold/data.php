@@ -95,90 +95,13 @@ return [
                             "sv_report_periods" => null,
                             "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => 7,
                         ]
                     ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 2,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0.5,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 89,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                    ],
+                    "requests_fields" => (include __DIR__ . '/fixture/case.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [
                         [
                             "id" => 1,

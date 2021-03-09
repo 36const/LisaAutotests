@@ -12,8 +12,9 @@ use lisa\Page\Users\User;
  * @group lisa_functional_users
  * @group POSTUsers
  * @group POSTUsersUpdate
+ * @group POSTUsersUpdateAppointTeam
  */
-class POSTUsersUpdateCest
+class POSTUsersUpdateAppointTeamCest
 {
     /**@return array*/
     protected function pageProvider()
@@ -28,17 +29,14 @@ class POSTUsersUpdateCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTUsersUpdate(FunctionalTester $I, Example $data, User $user)
+    public function POSTUsersUpdateAppointTeam(FunctionalTester $I, Example $data, User $user)
     {
-        $I->loadDataForTest($data, null);
+        $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/user/update?id=4', $providerData['requestBody']);
+        $I->sendPOST('/bpm/user/appoint-team', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);
-
-        $user->amOnUserUpdate(4);
-        $user->checkCheckboxes($providerData['requestBody']);
     }
 }

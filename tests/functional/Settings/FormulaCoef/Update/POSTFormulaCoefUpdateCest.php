@@ -9,7 +9,7 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_functional
  * @group lisa_functional_settings
- * @group POSTFormulaCoef
+ * @group POSTFormulaCoefUpdate
  */
 class POSTFormulaCoefUpdateCest
 {

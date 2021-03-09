@@ -38,6 +38,7 @@ return [
                 "sv_report_periods" => null,
                 "cross_check_status" => 0,
                 "cross_check_manager_id" => null,
+                "previous_status" => 1,
             ],
         ],
         "requests_fields" => [
@@ -84,6 +85,11 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 60,
+                'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 64,
                 'value' => 0,
             ],
             [

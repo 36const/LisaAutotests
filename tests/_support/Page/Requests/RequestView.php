@@ -66,6 +66,24 @@ class RequestView extends FunctionalTester
         return "//div[contains(@class,'file-input')]//div[@id='thumb-request-uploadedfiles-init-$id']";
     }
 
+    public function changeStatus($requestParameter, $requestBody)
+    {
+        $I = $this;
+        $url = ($requestParameter == 'to-correction') ?
+            '/bpm/request/' . $requestParameter . '?id=1&changeStatus=1' :
+            '/bpm/request/' . $requestParameter . '?id=1';
+        $I->sendPOST($url, $requestBody);
+        $I->seeResponseCodeIs(200);
+    }
+
+    public function changeType($requestParameter, $requestBody)
+    {
+        $I = $this;
+        $url = '/bpm/request/change-type?typeId=' . $requestParameter['typeId'] . '&direction=' . $requestParameter['direction'] . '&id=1';
+        $I->sendPOST($url, $requestBody);
+        $I->seeResponseCodeIs(200);
+    }
+
     /**
      * Поля-чекбоксы, которые нужно проверять
      * не через canSeeInField, а через canSeeCheckboxIsChecked
@@ -138,6 +156,7 @@ class RequestView extends FunctionalTester
         'RequestField[59]',
         'RequestField[60]',
         'RequestField[61]',
+        'RequestField[64]',
         'RequestField[89]',
         'RequestField[142]',
         'RequestField[143]',
@@ -175,6 +194,7 @@ class RequestView extends FunctionalTester
         'employee_code_1c',
         'child_count',
         'photo_load_status',
+        'previous_status',
 
         'created_at',
         'planned_start_date',
@@ -186,7 +206,6 @@ class RequestView extends FunctionalTester
         'last_change_status_date',
 
         'request_id',
-        '64', //Общее рассчитанное количество показателей
         '89' //Фактические затраты КМ, мин
     ];
 
@@ -240,13 +259,13 @@ class RequestView extends FunctionalTester
 
             foreach ($requests as &$request) {
 
-                //исключить поле "Кол-во изменённых товаров" для типа 1
+                //исключить поле "Кол-во изменённых товаров" и "Общее рассчитанное количество показателей" для типа 1
                 if ($request['Request[type_id]'] == 1)
-                    unset($request['RequestField[50]']);
+                    unset($request['RequestField[50]'], $request['RequestField[64]']);
 
-                //исключить поле "Кол-во добавленных товаров" для типов 2, 3, 5, 6, 12
+                //исключить поле "Кол-во добавленных товаров" и "Общее рассчитанное количество показателей" для типов 2, 3, 5, 6, 12
                 if (in_array($request['Request[type_id]'], [2, 3, 5, 6, 12]))
-                    unset($request['RequestField[49]']);
+                    unset($request['RequestField[49]'], $request['RequestField[64]']);
 
                 //исключить поля, не отображаемые в новом типе заявки (для кейсов POSTChangeType)
                 if (!empty($otherTypesFields)) {
@@ -272,8 +291,10 @@ class RequestView extends FunctionalTester
 
             foreach ($request as $field => $value) {
 
-                if (in_array($field, $this->checkboxes)) {
+                if (in_array($field, $this->checkboxes) && $value === 1) {
                     $I->canSeeCheckboxIsChecked($field);
+                } elseif (in_array($field, $this->checkboxes) && $value === 0) {
+                    $I->cantSeeCheckboxIsChecked($field);
                 } elseif (in_array($field, $this->textFields)) {
                     $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => (string)$value]);
                 } elseif (in_array($field, $this->multipleFields)) {
@@ -302,8 +323,10 @@ class RequestView extends FunctionalTester
                 try {
                     $I->seeElement('//form[@id="update_form"]//*', ['name' => $field]);
 
-                    if (in_array($field, $this->checkboxes)) {
+                    if (in_array($field, $this->checkboxes) && $value === 1) {
                         $I->canSeeCheckboxIsChecked($field);
+                    } elseif (in_array($field, $this->checkboxes) && $value === 0) {
+                        $I->cantSeeCheckboxIsChecked($field);
                     } elseif (in_array($field, $this->textFields)) {
                         $I->canSeeElement('//form[@id="update_form"]//*', ['name' => $field, 'value' => (string)$value]);
                     } elseif (in_array($field, $this->multipleFields)) {

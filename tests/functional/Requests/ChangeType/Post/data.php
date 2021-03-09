@@ -60,6 +60,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -101,6 +102,11 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
                             'value' => 0,
                         ],
                         [
@@ -206,6 +212,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ]
                     ],
                     "requests_fields" => [
@@ -246,6 +253,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 101,
                             'value' => 0,
                         ],
@@ -277,11 +289,6 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 158,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
                             'value' => 0,
                         ],
                         [
@@ -401,6 +408,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ]
                     ],
                     "requests_fields" => [
@@ -442,6 +450,11 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
                             'value' => 0,
                         ],
                         [
@@ -544,6 +557,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 2,
                         ]
                     ],
                     "requests_fields" => [
@@ -652,6 +666,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 5,
                         ]
                     ],
                     "requests_fields" => [
@@ -813,6 +828,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     "requests_fields" => [
@@ -874,6 +890,11 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
                             'value' => 0,
                         ],
                         [
@@ -1028,6 +1049,12 @@ return [
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => '{"1": 1}',
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     "requests_fields" => [
@@ -1240,6 +1267,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     "requests_fields" => [
@@ -1297,6 +1325,11 @@ return [
                             'request_id' => 1,
                             'field_id' => 60,
                             'value' => 30,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 0,
                         ],
                         [
                             'request_id' => 1,

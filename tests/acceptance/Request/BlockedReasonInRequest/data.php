@@ -38,7 +38,7 @@ return [
                             "supervisor_check_date" => null,
                             "result_comment" => '',
                             "supervisor_comment" => "Комментарий",
-                            "last_change_status_date" => date("Y-m") . "-07 00:00:01",
+                            "last_change_status_date" => date("Y-m-07 00:00:01"),
                             "team_direction" => 5,
                             "report_period_id" => null,
                             "sync_source_id" => null,

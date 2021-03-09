@@ -3,7 +3,7 @@ return [
     "lisa_fixtures" => [
         'requests' => [
             [
-//                "id" => 1,
+                "id" => 1,
                 "author_id" => 4,
                 "type_id" => 1,
                 "supervisor_id" => 6,
@@ -41,6 +41,7 @@ return [
                 "employee_code_1c" => null,
                 "child_count" => 0,
                 "photo_load_status" => 0,
+                "previous_status" => 6,
             ],
         ],
         'requests_fields' => [
