@@ -445,32 +445,7 @@ return [
                             "user_id" => 17
                         ],
                     ],
-                    "markets_supervisors" => [
-                        [
-                            "owox_id" => -2,
-                            "supervisor_id" => 5
-                        ],
-                        [
-                            "owox_id" => 0,
-                            "supervisor_id" => 5
-                        ],
-                        [
-                            "owox_id" => 5,
-                            "supervisor_id" => 6
-                        ],
-                        [
-                            "owox_id" => 83,
-                            "supervisor_id" => 6
-                        ],
-                        [
-                            "owox_id" => 9423,
-                            "supervisor_id" => 10
-                        ],
-                        [
-                            "owox_id" => 67757,
-                            "supervisor_id" => 10
-                        ],
-                    ],
+                    "markets_supervisors" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['markets_supervisors'],
                 ]
             ]
         ]
@@ -644,32 +619,7 @@ return [
                             "user_id" => 17
                         ],
                     ],
-                    "markets_supervisors" => [
-                        [
-                            "owox_id" => -2,
-                            "supervisor_id" => 5
-                        ],
-                        [
-                            "owox_id" => 0,
-                            "supervisor_id" => 5
-                        ],
-                        [
-                            "owox_id" => 5,
-                            "supervisor_id" => 6
-                        ],
-                        [
-                            "owox_id" => 83,
-                            "supervisor_id" => 6
-                        ],
-                        [
-                            "owox_id" => 9423,
-                            "supervisor_id" => 10
-                        ],
-                        [
-                            "owox_id" => 67757,
-                            "supervisor_id" => 10
-                        ],
-                    ],
+                    "markets_supervisors" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['markets_supervisors'],
                 ],
             ]
         ]
@@ -891,32 +841,7 @@ return [
                         ],
                     ],
                     'user_notifications' => [],
-                    "markets_supervisors" => [
-                        [
-                            "owox_id" => -2,
-                            "supervisor_id" => 5
-                        ],
-                        [
-                            "owox_id" => 0,
-                            "supervisor_id" => 5
-                        ],
-                        [
-                            "owox_id" => 5,
-                            "supervisor_id" => 6
-                        ],
-                        [
-                            "owox_id" => 83,
-                            "supervisor_id" => 6
-                        ],
-                        [
-                            "owox_id" => 9423,
-                            "supervisor_id" => 10
-                        ],
-                        [
-                            "owox_id" => 67757,
-                            "supervisor_id" => 10
-                        ],
-                    ],
+                    "markets_supervisors" => (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['markets_supervisors'],
                 ],
             ]
         ]
@@ -1161,32 +1086,7 @@ return [
                         ],
                     ],
                     'user_notifications' => [],
-                    "markets_supervisors" => [
-                        [
-                            "owox_id" => -2,
-                            "supervisor_id" => 5
-                        ],
-                        [
-                            "owox_id" => 0,
-                            "supervisor_id" => 5
-                        ],
-                        [
-                            "owox_id" => 5,
-                            "supervisor_id" => 6
-                        ],
-                        [
-                            "owox_id" => 83,
-                            "supervisor_id" => 6
-                        ],
-                        [
-                            "owox_id" => 9423,
-                            "supervisor_id" => 10
-                        ],
-                        [
-                            "owox_id" => 67757,
-                            "supervisor_id" => 10
-                        ],
-                    ],
+                    "markets_supervisors" => (include __DIR__ . '/fixture/case6.php')['lisa_fixtures']['markets_supervisors'],
                 ],
             ]
         ]

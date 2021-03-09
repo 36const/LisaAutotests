@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Групповое изменение роли у нескольких пользователей',
+            'description' => 'Групповое изменение должности у нескольких пользователей',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
