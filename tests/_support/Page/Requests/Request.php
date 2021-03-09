@@ -45,6 +45,12 @@ class Request extends FunctionalTester
             '/tbody/tr[' . $tableRow . ']/td[@data-col-seq="' . $columnName . '"]//*[contains(text(),"' . $text . '")]';
     }
 
+    /**Строка заявки в таблице без указания номера строки*/
+    public static function requestInTableInexact(string $columnName, string $text): string
+    {
+        return "//tbody/tr/td[@data-col-seq=$columnName]//*[contains(text(), $text)]";
+    }
+
     /**Заголовки колонок таблицы*/
     public static function columnName(string $columnName, string $text): string
     {
