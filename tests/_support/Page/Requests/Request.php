@@ -48,7 +48,7 @@ class Request extends FunctionalTester
     /**Строка заявки в таблице без указания номера строки*/
     public static function requestInTableInexact(string $columnName, string $text): string
     {
-        return "//tbody/tr/td[@data-col-seq=$columnName]//*[contains(text(), $text)]";
+        return "//tbody/tr/td[@data-col-seq='$columnName']//*[contains(text(), '$text')]";
     }
 
     /**Заголовки колонок таблицы*/
