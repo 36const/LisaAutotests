@@ -16,7 +16,7 @@ use Codeception\Module\TestHelper;
 class CreateRequestPageCest
 {
     /**@return array */
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }

@@ -15,7 +15,7 @@ use Codeception\Module\TestHelper;
  */
 class CategoryCreateCest
 {
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }

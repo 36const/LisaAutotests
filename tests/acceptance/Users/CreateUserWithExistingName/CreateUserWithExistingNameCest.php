@@ -16,8 +16,7 @@ use Codeception\Module\TestHelper;
  */
 class CreateUserWithExistingNameCest
 {
-    /**@return array*/
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }

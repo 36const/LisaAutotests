@@ -14,7 +14,7 @@ use Codeception\Module\TestHelper;
  */
 class FieldValuesCreateCest
 {
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }

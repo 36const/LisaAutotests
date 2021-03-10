@@ -20,10 +20,8 @@ class POSTCreateRequestCest
      *
      * В данной функции реализуется дата провайдер который возвращает все кейсы с data.php
      * Далее функция POSTCreateRequest обрабатывает каждый кейс
-     *
-     * @return array
      */
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }

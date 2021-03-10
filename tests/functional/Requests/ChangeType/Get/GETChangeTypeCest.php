@@ -14,8 +14,7 @@ use lisa\Page\Requests\RequestCreate;
  */
 class GETChangeTypeCest
 {
-    /**@return array*/
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }
