@@ -127,7 +127,7 @@ class NotificationsCest
 
         //переход в настройки через модалку
         $I->click(Notifications::notifMenuFootButton('Настройки'));
-        $I->canSeeElement(Request::$globalCaption . '[text()="Изменение личных настроек"]');
+        $I->canSeeElement(Request::$globalCaption . '[text()="Изменение настроек нотификаций"]');
 
         //переход в настройки через таблицу
         $I->amOnPage('/bpm/notification');
@@ -135,6 +135,6 @@ class NotificationsCest
         $I->canSeeElement(Notifications::toggleStatusButton(1, 'repeat'));
         $I->canSeeElement(Notifications::toggleStatusButton(3, 'repeat'));
         $I->click(Notifications::$settingsButton);
-        $I->canSeeElement(Request::$globalCaption . '[text()="Изменение личных настроек"]');
+        $I->canSeeElement(Request::$globalCaption . '[text()="Изменение настроек нотификаций"]');
     }
 }
