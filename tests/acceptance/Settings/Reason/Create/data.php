@@ -94,6 +94,12 @@ return [
                             "reason" => "Ожидает группировки",
                             "status" => 1
                         ],
+                        [
+                            "id" => 15,
+                            "child_status" => 7,
+                            "reason" => "Товары на модерации",
+                            "status" => 1
+                        ],
                     ],
                 ],
             ],
@@ -186,6 +192,12 @@ return [
                         ],
                         [
                             "id" => 15,
+                            "child_status" => 7,
+                            "reason" => "Товары на модерации",
+                            "status" => 1
+                        ],
+                        [
+                            "id" => 16,
                             "child_status" => 7,
                             "reason" => "Ожидает группировки",
                             "status" => 1

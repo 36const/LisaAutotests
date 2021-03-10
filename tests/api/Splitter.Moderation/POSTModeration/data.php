@@ -37,7 +37,7 @@ return [
                             "id" => 1,
                             "author_id" => 7,
                             "type_id" => 2,
-                            //"supervisor_id" => 4,
+                            "supervisor_id" => 6,
                             "manager_id" => null,
                             "status" => 1,
                             "direction" => 1,
@@ -53,7 +53,7 @@ Email клієнта: fishman@rozetka.com.ua
 Мобільний телефон клієнта: 380993774442; 380660657036;
 
 Назва товару: Светодиодный светильник Brille LED-37 NW (L121-065)
-Посилання на товар в Owox: http://admin.rozetka.com.ua/#/Goods/Edit/?id=5842011
+Посилання на товар в Flanders (поштучка): http://admin.rozetka.com.ua/#/Goods/Edit/?id=5842011
 Посилання на коментар на сайті: http://bt.rozetka.com.ua/brille_l121_065/p5842011/#tab=comments;id=45620690
 Дата створення коментаря: 2020-03-12 10:55:13
 
@@ -85,7 +85,8 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
                         ]
                     ],
                     "requests_fields" => [
@@ -135,7 +136,7 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
                             "id" => 1,
                             "author_id" => 7,
                             "type_id" => 2,
-                            //"supervisor_id" => 4,
+                            "supervisor_id" => 6,
                             "manager_id" => null,
                             "status" => 1,
                             "direction" => 1,
@@ -151,7 +152,7 @@ Email клієнта:
 Мобільний телефон клієнта: 
 
 Назва товару: Светодиодный светильник Brille LED-37 NW (L121-065)
-Посилання на товар в Owox: 
+Посилання на товар в Flanders (поштучка): 
 Посилання на коментар на сайті: 
 Дата створення коментаря: 
 
@@ -183,7 +184,8 @@ Media:
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
                         ]
                     ],
                     "requests_fields" => [

@@ -37,6 +37,7 @@ return [
                 "sv_report_periods" => null,
                 "cross_check_status" => 0,
                 "cross_check_manager_id" => null,
+                "previous_status" => 5,
                 "photo_load_status" => 1
             ],
         ],
@@ -143,7 +144,7 @@ return [
         ],
         "transition_info" => [],
         "observers" => [],
-        "categories" =>include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
+        "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "difficulty_coefs" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
         "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',

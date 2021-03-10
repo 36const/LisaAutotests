@@ -53,6 +53,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 3,
                         ]
                     ],
                     "requests_fields" => (include __DIR__ . '/fixture/case.php')['lisa_fixtures']['requests_fields'],

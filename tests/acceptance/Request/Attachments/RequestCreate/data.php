@@ -1,5 +1,5 @@
 <?php
-
+"//~!@#$%^&*()_+`-=][';.|}{\":?><.doc";
 return [
     'case1' => [
         'setting' => [
@@ -20,7 +20,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name >" => "0",
+                            "file_name like" => "%.doc",
                         ]
                     ],
                     "user_notifications" => [
@@ -77,7 +77,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => "Константин Куцан",
                             "deleted_at >=" => date("Y-m-d"),
-                            "file_name >" => "0",
+                            "file_name like" => "%.doc",
                         ]
                     ],
                     "user_notifications" => [

@@ -440,7 +440,11 @@ return [
                         ],
                         [
                             "selector" => "//div[@id='field-ids']/table//input[@name='fields[160]' and @checked]",
-                            //"value" => " По заявке с MobileCourier"
+                            //"value" => " Укр. поля"
+                        ],
+                        [
+                            "selector" => "//div[@id='field-ids']/table//input[@name='fields[169]' and @checked]",
+                            //"value" => " Алгоритм"
                         ],
                     ],
                     "Даты" => [
@@ -462,72 +466,84 @@ return [
                             "value" => "Статус исполнения"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[3][@value='awaiting_correction' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[3][@value='previous_status' and @selected]",
+                            "value" => "Предыдущий статус"
+                        ],
+                        [
+                            "selector" => "//select[@id='filter-select2']/option[4][@value='awaiting_correction' and @selected]",
                             "value" => "На исправление"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[4][@value='subject' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[5][@value='subject' and @selected]",
                             "value" => "Заголовок"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[5][@value='description' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[6][@value='description' and @selected]",
                             "value" => "Описание"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[6][@value='direction' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[7][@value='direction' and @selected]",
                             "value" => "Направление задачи"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[7][@value='amount_to_work' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[8][@value='amount_to_work' and @selected]",
                             "value" => "Количество в работу"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[8][@value='recommendations' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[9][@value='recommendations' and @selected]",
                             "value" => "Рекомендации"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[9][@value='parent_id' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[10][@value='parent_id' and @selected]",
                             "value" => "ID связанной задачи"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[10][@value='supervisor_check_date' and not(@selected)]",
+                            "selector" => "//select[@id='filter-select2']/option[11][@value='supervisor_check_date' and not(@selected)]",
                             "value" => "Дата проверки задачи супервайзером"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[11][@value='result_comment' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[12][@value='result_comment' and @selected]",
                             "value" => "Комментарий к результату задачи"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[12][@value='supervisor_comment' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[13][@value='supervisor_comment' and @selected]",
                             "value" => "Комментарий супервайзера"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[13][@value='report_period_id' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[14][@value='report_period_id' and @selected]",
                             "value" => "Отчетный период КМ"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[14][@value='team_direction' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[15][@value='team_direction' and @selected]",
                             "value" => "Направление команды"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[15][@value='correction_comment' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[16][@value='correction_comment' and @selected]",
                             "value" => "Комментарий на исправление"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[16][@value='priority' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[17][@value='priority' and @selected]",
                             "value" => "Приоритет"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[17][@value='sv_report_periods' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[18][@value='sv_report_periods' and @selected]",
                             "value" => "Отчетные периоды СВ"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[18][@value='cross_check_status' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[19][@value='cross_check_status' and @selected]",
                             "value" => "Кросс-чек статус"
                         ],
                         [
-                            "selector" => "//select[@id='filter-select2']/option[19][@value='employee_code_1c' and @selected]",
+                            "selector" => "//select[@id='filter-select2']/option[20][@value='employee_code_1c' and @selected]",
                             "value" => "Код работника 1С"
+                        ],
+                        [
+                            "selector" => "//select[@id='filter-select2']/option[21][@value='child_count' and @selected]",
+                            "value" => "Количество созданных подзадач"
+                        ],
+                        [
+                            "selector" => "//select[@id='filter-select2']/option[22][@value='photo_load_status' and @selected]",
+                            "value" => "Статус загрузки фото"
                         ],
                     ],
                     "Дополнительные фильтры (значения)" => [
@@ -581,6 +597,51 @@ return [
                         ],
 
                         [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[previous_status][]']/option[1][@value='1' and @selected]",
+                            "value" => "Новая"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[previous_status][]']/option[2][@value='2' and @selected]",
+                            "value" => "Готова для распределения"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[previous_status][]']/option[3][@value='3' and @selected]",
+                            "value" => "На доработке"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[previous_status][]']/option[4][@value='4' and @selected]",
+                            "value" => "Отменена"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[previous_status][]']/option[5][@value='5' and @selected]",
+                            "value" => "Ожидает взятия в работу"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[previous_status][]']/option[6][@value='6' and @selected]",
+                            "value" => "В работе"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[previous_status][]']/option[7][@value='7' and @selected]",
+                            "value" => "Ожидает"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[previous_status][]']/option[8][@value='8' and @selected]",
+                            "value" => "Частично выполнена"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[previous_status][]']/option[9][@value='9' and @selected]",
+                            "value" => "Выполнена"
+                        ],
+                        [
+                            "selector" => "//div[@id='other-filters']//select[@name='request_field[previous_status][]']/option[10][@value='11' and @selected]",
+                            "value" => "Закрыта"
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[subject]'][@value='250~!@#$%^&*()_+`=-]/[;.,}\"?{:><|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ']",
+                        ],
+
+                        [
                             "selector" => "//div[@id='other-filters']//select[@name='request_field[priority][]']/option[1][@value='1' and @selected]",
                             "value" => "Информация необходима для склада"
                         ],
@@ -615,6 +676,14 @@ return [
 
                         [
                             "selector" => "//div[@id='other-filters']//input[@name='request_field[amount_to_work]'][@value='10']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[child_count]'][@value='10']",
+                        ],
+
+                        [
+                            "selector" => "//div[@id='other-filters']//input[@name='request_field[photo_load_status]'][@value='1']",
                         ],
 
                         [
@@ -704,8 +773,6 @@ return [
 
                     ]
                 ],
-                "cantSee" => [
-                ]
             ]
         ]
     ],

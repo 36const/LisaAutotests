@@ -36,6 +36,7 @@ return [
                 "sv_report_periods" => null,
                 "cross_check_status" => 0,
                 "cross_check_manager_id" => null,
+                "previous_status" => 1,
             ],
             [
                 "id" => 2,
@@ -71,6 +72,7 @@ return [
                 "sv_report_periods" => null,
                 "cross_check_status" => 0,
                 "cross_check_manager_id" => null,
+                "previous_status" => 6,
             ],
             [
                 "id" => 3,
@@ -106,6 +108,7 @@ return [
                 "sv_report_periods" => null,
                 "cross_check_status" => 0,
                 "cross_check_manager_id" => null,
+                "previous_status" => 6,
             ],
             [
                 "id" => 4,
@@ -141,6 +144,7 @@ return [
                 "sv_report_periods" => null,
                 "cross_check_status" => 0,
                 "cross_check_manager_id" => null,
+                "previous_status" => 9,
             ],
         ],
         'requests_fields' => [

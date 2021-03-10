@@ -54,6 +54,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -324,6 +325,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -597,6 +599,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -1275,6 +1278,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -1649,6 +1653,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -1907,7 +1912,7 @@ return [
                             "seller_id" => 83,
                             "recommendations" => '',
                             "reason" => 'Заявка переведена в статус "Ожидает",
-             так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
+             так как в GOMER\'e еще не закончилась группировка и/или модерация товаров по этой заявке.',
                             "parent_id" => null,
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
@@ -1927,6 +1932,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -2104,7 +2110,7 @@ return [
                             "old_status" => 6,
                             "new_status" => 7,
                             "reason" => 'Заявка переведена в статус "Ожидает",
-             так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
+             так как в GOMER\'e еще не закончилась группировка и/или модерация товаров по этой заявке.',
                             "created_at >=" => date("Y-m-d"),
                             "manager_id" => 11,
                             "reasons" => 'Ожидает группировки'
@@ -2200,6 +2206,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -2564,6 +2571,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -2816,7 +2824,7 @@ return [
                             "seller_id" => 83,
                             "recommendations" => '',
                             "reason" => 'Заявка переведена в статус "Ожидает",
-             так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
+             так как в GOMER\'e еще не закончилась группировка и/или модерация товаров по этой заявке.',
                             "parent_id" => null,
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
@@ -2836,6 +2844,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -3013,7 +3022,7 @@ return [
                             "old_status" => 6,
                             "new_status" => 7,
                             "reason" => 'Заявка переведена в статус "Ожидает",
-             так как в GOMER\'e еще не закончилась группировка товаров по этой заявке.',
+             так как в GOMER\'e еще не закончилась группировка и/или модерация товаров по этой заявке.',
                             "created_at >=" => date("Y-m-d"),
                             "manager_id" => 11,
                             "reasons" => 'Ожидает группировки'
@@ -3109,6 +3118,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -3408,6 +3418,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -3668,6 +3679,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -3967,6 +3979,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -4217,6 +4230,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -4463,6 +4477,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -4762,6 +4777,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -5016,6 +5032,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -5265,6 +5282,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -5509,6 +5527,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -5718,6 +5737,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -5927,6 +5947,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -6147,6 +6168,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -6448,6 +6470,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -6662,6 +6685,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -6841,6 +6865,7 @@ return [
                             "employee_code_1c" => null,
                             "child_count" => 0,
                             "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ]
                     ],
                     'requests_fields' => [
@@ -7058,6 +7083,10 @@ return [
                             "sv_report_periods" => null,
                             "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => 5,
                         ],
                     ],
                     'requests_fields' => [
@@ -7351,6 +7380,10 @@ return [
                             "sv_report_periods" => null,
                             "cross_check_status" => 0,
                             "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ],
                     ],
                     'requests_fields' => [

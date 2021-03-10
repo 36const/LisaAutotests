@@ -41,6 +41,7 @@ return [
                 "employee_code_1c" => null,
                 "child_count" => 0,
                 "photo_load_status" => 0,
+                "previous_status" => 6,
             ]
         ],
         'requests_fields' => [
@@ -177,7 +178,7 @@ return [
         "user_notifications" => [],
         'request_status_history' => [
             [
-                //"id" => 1,
+                "id" => 1,
                 "request_id" => 1,
                 "user_id" => 4,
                 "old_status" => 6,

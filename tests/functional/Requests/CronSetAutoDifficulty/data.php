@@ -47,7 +47,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
                         ],
                         [
                             "id" => 2,
@@ -85,7 +86,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ],
                         [
                             "id" => 3,
@@ -124,7 +126,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ],
                         [
                             "id" => 4,
@@ -163,7 +166,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 1,
                         ],
                         [
                             "id" => 5,
@@ -202,7 +206,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 2,
                         ],
                         [
                             "id" => 6,
@@ -241,7 +246,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 5,
                         ],
                         [
                             "id" => 7,
@@ -280,13 +286,14 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ],
                         [
                             "id" => 8,
                             "author_id" => 17,
-                            "type_id" => 4,
-                            "supervisor_id" => 33,
+                            "type_id" => 13,
+                            "supervisor_id" => 35,
                             "manager_id" => 11,
                             "status" => 8,
                             "direction" => 0,
@@ -295,10 +302,10 @@ return [
                             "created_at" => '2020-01-01 00:00:00',
                             "correction_comment" => null,
                             "amount_to_work" => 10,
-                            "subject" => "Группировка товаров (Определяется типом задачи)",
+                            "subject" => "Добавление/изменение видео (Определяется типом задачи)",
                             "description" => 'description',
                             "category_id" => 1,
-                            "seller_id" => null,
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -311,7 +318,7 @@ return [
                             "result_comment" => null,
                             "supervisor_comment" => null,
                             "last_change_status_date" => date("Y-m-d H:i:s", strtotime('-1 day')),
-                            "team_direction" => 4,
+                            "team_direction" => 6,
                             "report_period_id" => null,
                             "sync_source_id" => null,
                             "sv_report_periods" => null,
@@ -319,7 +326,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ],
                         [
                             "id" => 9,
@@ -358,7 +366,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 6,
                         ],
                         [
                             "id" => 10,
@@ -397,7 +406,8 @@ return [
                             "cross_check_manager_id" => null,
                             "employee_code_1c" => null,
                             "child_count" => 0,
-                            "photo_load_status" => 0
+                            "photo_load_status" => 0,
+                            "previous_status" => 9,
                         ],
                     ],
                     'requests_fields' => [
@@ -819,147 +829,112 @@ return [
                         [
                             "request_id" => 8,
                             "field_id" => 20,
-                            "value" => 63,
+                            "value" => "65"
                         ],
                         [
                             "request_id" => 8,
-                            "field_id" => 31,
-                            "value" => 51,
+                            "field_id" => 27,
+                            "value" => "25"
                         ],
                         [
                             "request_id" => 8,
-                            "field_id" => 32,
-                            "value" => 53,
+                            "field_id" => 47,
+                            "value" => "45.01"
+                        ],
+                        [
+                            "request_id" => 8,
+                            "field_id" => 48,
+                            "value" => "10"
                         ],
                         [
                             "request_id" => 8,
                             "field_id" => 53,
-                            "value" => 0.5,
+                            "value" => "0"
                         ],
                         [
                             "request_id" => 8,
                             "field_id" => 54,
-                            "value" => 1.2,
+                            "value" => "1.5"
                         ],
                         [
                             "request_id" => 8,
-                            "field_id" => 61,
-                            "value" => 210,
+                            "field_id" => 56,
+                            "value" => "30"
                         ],
                         [
                             "request_id" => 8,
-                            "field_id" => 89,
-                            "value" => 3,
+                            "field_id" => 62,
+                            "value" => "10"
                         ],
                         [
                             "request_id" => 8,
-                            "field_id" => 91,
-                            "value" => 10,
+                            "field_id" => 63,
+                            "value" => "10"
                         ],
                         [
                             "request_id" => 8,
-                            "field_id" => 93,
-                            "value" => 10,
+                            "field_id" => 65,
+                            "value" => "0"
                         ],
                         [
                             "request_id" => 8,
-                            "field_id" => 94,
-                            "value" => 300,
+                            "field_id" => 70,
+                            "value" => "10"
+                        ],
+                        [
+                            "request_id" => 8,
+                            "field_id" => 86,
+                            "value" => "60"
+                        ],
+                        [
+                            "request_id" => 8,
+                            "field_id" => 87,
+                            "value" => "10"
+                        ],
+                        [
+                            "request_id" => 8,
+                            "field_id" => 88,
+                            "value" => "10"
+                        ],
+                        [
+                            "request_id" => 8,
+                            "field_id" => 100,
+                            "value" => "10"
                         ],
                         [
                             "request_id" => 8,
                             "field_id" => 101,
-                            "value" => 0,
+                            "value" => "0"
                         ],
                         [
                             "request_id" => 8,
-                            "field_id" => 116,
-                            "value" => 10,
+                            "field_id" => 102,
+                            "value" => "0"
                         ],
                         [
                             "request_id" => 8,
                             "field_id" => 122,
-                            "value" => 0,
+                            "value" => "0"
+                        ],
+                        [
+                            "request_id" => 8,
+                            "field_id" => 144,
+                            "value" => "0"
                         ],
                         [
                             "request_id" => 8,
                             "field_id" => 146,
-                            "value" => 0,
+                            "value" => "0"
+                        ],
+                        [
+                            "request_id" => 8,
+                            "field_id" => 147,
+                            "value" => "0"
                         ],
                         [
                             "request_id" => 8,
                             "field_id" => 158,
-                            "value" => 0,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 161,
-                            "value" => 10,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 162,
-                            "value" => 10,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 163,
-                            "value" => 10,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 64,
-                            "value" => 141.84,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 164,
-                            "value" => 0.7,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 165,
-                            "value" => 1.5,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 166,
-                            "value" => 0,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 167,
-                            "value" => 1,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 168,
-                            "value" => 30,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 169,
-                            "value" => 1,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 170,
-                            "value" => 0.7,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 171,
-                            "value" => 0.07,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 172,
-                            "value" => 0.15,
-                        ],
-                        [
-                            "request_id" => 8,
-                            "field_id" => 173,
-                            "value" => 0.1,
+                            "value" => "0"
                         ],
                         [
                             "request_id" => 9,

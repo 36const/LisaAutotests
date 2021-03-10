@@ -45,6 +45,12 @@ class Request extends FunctionalTester
             '/tbody/tr[' . $tableRow . ']/td[@data-col-seq="' . $columnName . '"]//*[contains(text(),"' . $text . '")]';
     }
 
+    /**Строка заявки в таблице без указания номера строки*/
+    public static function requestInTableInexact(string $columnName, string $text): string
+    {
+        return "//tbody/tr/td[@data-col-seq='$columnName']//*[contains(text(), '$text')]";
+    }
+
     /**Заголовки колонок таблицы*/
     public static function columnName(string $columnName, string $text): string
     {
@@ -138,13 +144,13 @@ class Request extends FunctionalTester
     /**Итоговый диапазон внизу выпадающего календаря*/
     public static function calendarDateRange(): string
     {
-        return "//div[@class='daterangepicker ltr show-calendar opensright'][@style]//div[@class='drp-buttons']//span[text()='" . date("Y-m") . "-01 00:00:00to" . date("Y-m") . "-14 23:59:00']";
+        return "//div[@class='daterangepicker ltr show-calendar opensright'][@style]//div[@class='drp-buttons']//span[text()='" . date("Y-m-01 00:00:00") . "to" . date("Y-m-14 23:59:00") . "']";
     }
 
     /**Итоговый диапазон в поле поиска*/
     public static function searchDateRange(string $fieldName): string
     {
-        return "//input[@name='RequestSearch[$fieldName]' and @value='" . date("Y-m") . "-01 00:00:00to" . date("Y-m") . "-14 23:59:00']";
+        return "//input[@name='RequestSearch[$fieldName]' and @value='" . date("Y-m-01 00:00:00") . "to" . date("Y-m-14 23:59:00") . "']";
     }
 
     /**Кнопка подтверждения выбранного диапазона дат*/
