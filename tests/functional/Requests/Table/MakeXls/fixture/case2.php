@@ -35,7 +35,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => 1,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": "1"}'
+                "sv_report_periods" => '{"1": "1"}',
+                "previous_status" => 3,
             ],
         ],
         "requests_fields" => [

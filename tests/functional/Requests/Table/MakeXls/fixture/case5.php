@@ -37,6 +37,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 3,
             ],
             [
                 "id" => 11,
@@ -71,6 +72,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => null,
             ],
             [
                 "id" => 14,
@@ -105,6 +107,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => null,
             ],
             //2
             [
@@ -139,7 +142,8 @@ return [
                 "team_direction" => 2,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 1,
             ],
             [
                 "id" => 10,
@@ -174,6 +178,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 1,
             ],
             [
                 "id" => 13,
@@ -208,6 +213,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 1,
             ],
             //5
             [
@@ -242,7 +248,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 1,
             ],
             [
                 "id" => 8,
@@ -277,6 +284,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 1,
             ],
             [
                 "id" => 16,
@@ -311,6 +319,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 1,
             ],
             //6
             [
@@ -345,7 +354,8 @@ return [
                 "team_direction" => 5,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 5,
             ],
             [
                 "id" => 17,
@@ -380,6 +390,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 5,
             ],
             [
                 "id" => 19,
@@ -414,6 +425,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 5,
             ],
             //7
             [
@@ -448,7 +460,8 @@ return [
                 "team_direction" => 5,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 6,
             ],
             [
                 "id" => 21,
@@ -483,6 +496,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 6,
             ],
 
             //3
@@ -518,7 +532,8 @@ return [
                 "team_direction" => 3,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 1,
             ],
             [
                 "id" => 12,
@@ -553,6 +568,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 1,
             ],
             [
                 "id" => 15,
@@ -587,6 +603,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 1,
             ],
             //4
             [
@@ -621,7 +638,8 @@ return [
                 "team_direction" => 5,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 1,
             ],
             [
                 "id" => 25,
@@ -656,6 +674,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 2,
             ],
             //11
             [
@@ -690,7 +709,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => 1,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": "1", "2": "2", "3": "3", "4": "4"}'
+                "sv_report_periods" => '{"1": "1", "2": "2", "3": "3", "4": "4"}',
+                "previous_status" => 8,
             ],
             [
                 "id" => 23,
@@ -724,7 +744,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 9,
             ],
             [
                 "id" => 24,
@@ -758,7 +779,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 9,
             ],
 
             //8,9
@@ -794,7 +816,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 6,
             ],
             [
                 "id" => 7,
@@ -828,7 +851,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => 1,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": "1"}'
+                "sv_report_periods" => '{"1": "1"}',
+                "previous_status" => 6,
             ],
             [
                 "id" => 20,
@@ -862,7 +886,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 6,
             ],
         ],
         "requests_fields" => [

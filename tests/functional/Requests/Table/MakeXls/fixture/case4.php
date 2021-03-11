@@ -36,6 +36,7 @@ return [
                 "report_period_id" => null,
                 "sync_source_id" => null,
                 "sv_report_periods" => null,
+                "previous_status" => 3,
             ],
         ],
         "requests_fields" => [
