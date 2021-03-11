@@ -13,8 +13,7 @@ use Codeception\Module\TestHelper;
  */
 class GETPriorityInRequestCest
 {
-    /**@return array*/
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }

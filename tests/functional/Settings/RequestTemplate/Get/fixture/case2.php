@@ -17,11 +17,11 @@ return [
             ],
             [
 //                "id" => 2,
-                "parent_id" => null,
-                "name" => 'Добавление',
-                "type_id" => 1,
-                "direction" => 2,
-                "fields" => '{"subject": "Добавление новых товаров (Работа с товарами Розетки)", "type_id": "1", "direction": "2", "seller_id": "0", "description": "description", "amount_to_work": "10"}',
+                "parent_id" => 1,
+                "name" => 'Добавление/изменение информации',
+                "type_id" => 2,
+                "direction" => 1,
+                "fields" => '{"1": "1", "14": "1", "159": "1", "subject": "!@#$%^&*()_+`-]\'/[;.,}\"?{:>|а Добавление/изменение информации", "type_id": "2", "priority": "2", "direction": "1", "seller_id": "-2", "category_id": "1", "description": "!@#$%^&*()_+`-]\'/[;.,}\"?{:>|а", "amount_to_work": "10", "planned_finish_date": "2021-01-01 00:00:05"}',
             ],
         ]
     ],

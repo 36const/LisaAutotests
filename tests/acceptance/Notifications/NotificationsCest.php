@@ -15,7 +15,7 @@ use Codeception\Module\TestHelper;
  */
 class NotificationsCest
 {
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }

@@ -280,7 +280,7 @@ return [
                             "subject" => "Добавление новых товаров (Работа с товарами Маркетплейса)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => null,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -736,7 +736,7 @@ return [
                             "subject" => "Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => null,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -1192,7 +1192,7 @@ return [
                             "subject" => "Перенос товаров (Работа с товарами Маркетплейса)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => null,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -1422,7 +1422,7 @@ return [
                             "subject" => "Группировка товаров (Определяется типом задачи)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => 1,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -1888,7 +1888,7 @@ return [
                             "subject" => "Проверка скрытых товаров (Работа с товарами Маркетплейса)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => null,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -2120,7 +2120,7 @@ return [
                             "subject" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => 1,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -2322,7 +2322,7 @@ return [
                             "subject" => "Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => 1,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -2522,7 +2522,7 @@ return [
                             "subject" => "Добавление параметров/значений (Определяется типом задачи)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => 1,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -2712,7 +2712,7 @@ return [
                             "subject" => "Изменение существующих параметров/значений (Определяется типом задачи)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => 1,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -2902,7 +2902,7 @@ return [
                             "subject" => "Проектирование структуры (Определяется типом задачи)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => 1,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -3307,7 +3307,7 @@ return [
                             "subject" => "Добавление/изменение видео (Определяется типом задачи)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => 1,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -3497,7 +3497,7 @@ return [
                             "subject" => "Добавление/изменение размерной сетки (Определяется типом задачи)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => 1,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -3687,7 +3687,7 @@ return [
                             "subject" => "Добавление/изменение тегов (Определяется типом задачи)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             "category_id" => 1,
-                            "seller_id" => '0',
+                            "seller_id" => 0,
                             "recommendations" => null,
                             "reason" => null,
                             "parent_id" => null,
@@ -3810,6 +3810,723 @@ return [
                             "priority" => 2,
                             "amount_to_work" => 10,
                             "request_subject" => "Добавление/изменение тегов (Определяется типом задачи)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                        ],
+                    ],
+                    'observers' => [
+                        [
+                            "request_id" => 1,
+                            "user_id" => 15
+                        ],
+                        [
+                            "request_id" => 1,
+                            "user_id" => 17
+                        ],
+                    ],
+                ]
+            ]
+        ]
+    ],
+
+    'case19' => [
+        'setting' => [
+            'description' => 'Новая заявка на Группировка товаров через шаблон c дочерними заявками',
+            'type' => 4,
+            'direction' => 0
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'provider_data' => [
+            'requestBody' => [
+                "RequestField[169]" => 1,
+                "Request[addedAttachments]" => '[]',
+                "Request[amount_to_work]" => 999,
+                "Request[attachment_folder]" => '18ac118ec8919dcb3ad0d7ddd129d88a',
+                "Request[attachments]" => '[]',
+                "Request[category_id]" => 2,
+                "Request[deletedAttachments]" => '[]',
+                "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                "Request[direction]" => 0,
+                "Request[observers]" => [15, 17],
+                "Request[parent_id]" => null,
+                "Request[planned_finish_date]" => '2021-03-01 08:40:59',
+                "Request[priority]" => 2,
+                "Request[seller_id]" => 0,
+                "Request[subject]" => "Группировка товаров (Определяется типом задачи) =~}!@#$%^&*()_+`-]'/[;.,}\"?{:><1001234567890>",
+                "Request[type_id]" => 4,
+                "Request[uploadedFiles][]" => null,
+                "Request[uploadedFiles][]" => null,
+                "request_templates" => 1
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            "id" => 1,
+                            "author_id" => 4,
+                            "type_id" => 4,
+                            "supervisor_id" => 33,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 0,
+                            "priority" => 2,
+                            "awaiting_correction" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "correction_comment" => null,
+                            "amount_to_work" => 999,
+                            "subject" => 'Группировка товаров (Определяется типом задачи) =~}!@#$%^&*()_+`-]\'/[;.,}"?{:>',
+                            "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "category_id" => 2,
+                            "seller_id" => 0,
+                            "recommendations" => null,
+                            "reason" => null,
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            'planned_finish_date' => '2021-03-01 08:40:59',
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 4,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 5,
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
+                        ],
+                        [
+                            "id" => 2,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 5,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 2,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => "description",
+                            "category_id" => null,
+                            "seller_id" => 0,
+                            "recommendations" => null,
+                            "reason" => null,
+                            "parent_id" => 1,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 2,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => null
+                        ],
+                        [
+                            "id" => 3,
+                            "author_id" => 4,
+                            "type_id" => 2,
+                            "supervisor_id" => 10,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 1,
+                            "priority" => 1,
+                            "awaiting_correction" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление/изменение информации",
+                            "description" => "Добавление/изменение информации",
+                            "category_id" => 2,
+                            "seller_id" => 67757,
+                            "recommendations" => null,
+                            "reason" => null,
+                            "parent_id" => 1,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => null
+                        ],
+                        [
+                            "id" => 4,
+                            "author_id" => 4,
+                            "type_id" => 7,
+                            "supervisor_id" => 35,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 0,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление нового портала/раздела фат-меню/категории",
+                            "description" => "Добавление нового портала/раздела фат-меню/категории",
+                            "category_id" => 1,
+                            "seller_id" => null,
+                            "recommendations" => null,
+                            "reason" => null,
+                            "parent_id" => 1,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 6,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => null
+                        ],
+                        [
+                            "id" => 5,
+                            "author_id" => 4,
+                            "type_id" => 9,
+                            "supervisor_id" => 34,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 0,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "correction_comment" => null,
+                            "amount_to_work" => 999999999,
+                            "subject" => "Добавление параметров/значений",
+                            "description" => "Добавление параметров/значений",
+                            "category_id" => null,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => null,
+                            "parent_id" => 1,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => "2021-01-01 00:00:36",
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 5,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => null
+                        ],
+                        [
+                            "id" => 6,
+                            "author_id" => 4,
+                            "type_id" => 11,
+                            "supervisor_id" => 37,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 0,
+                            "priority" => 1,
+                            "awaiting_correction" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "correction_comment" => null,
+                            "amount_to_work" => 777,
+                            "subject" => "Проектирование структуры",
+                            "description" => "Проектирование структуры",
+                            "category_id" => 2,
+                            "seller_id" => 5,
+                            "recommendations" => null,
+                            "reason" => null,
+                            "parent_id" => 1,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 5,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => null
+                        ]
+                    ],
+                    'requests_fields' => [
+                        [
+                            "request_id" => 1,
+                            "field_id" => 53,
+                            "value" => 0.5
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 54,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 61,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 64,
+                            "value" => 0.75
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 101,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 122,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 146,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 158,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 164,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 165,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 166,
+                            "value" => 0.75
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 167,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 168,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 169,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 170,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 171,
+                            "value" => 0.07
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 172,
+                            "value" => 0.15
+                        ],
+                        [
+                            "request_id" => 1,
+                            "field_id" => 173,
+                            "value" => 0.1
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 15,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 19,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 49,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 50,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 51,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 53,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 60,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 64,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 101,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 114,
+                            "value" => 3
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 122,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 142,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 143,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 146,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 2,
+                            "field_id" => 158,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 2,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 49,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 50,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 51,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 52,
+                            "value" => 3
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 53,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 54,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 60,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 64,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 101,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 122,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 123,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 142,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 143,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 146,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 3,
+                            "field_id" => 158,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 4,
+                            "field_id" => 2,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 4,
+                            "field_id" => 53,
+                            "value" => 2
+                        ],
+                        [
+                            "request_id" => 4,
+                            "field_id" => 54,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 4,
+                            "field_id" => 55,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 4,
+                            "field_id" => 101,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 4,
+                            "field_id" => 122,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 4,
+                            "field_id" => 146,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 4,
+                            "field_id" => 158,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 5,
+                            "field_id" => 1,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 5,
+                            "field_id" => 53,
+                            "value" => 0.5
+                        ],
+                        [
+                            "request_id" => 5,
+                            "field_id" => 54,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 5,
+                            "field_id" => 59,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 5,
+                            "field_id" => 101,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 5,
+                            "field_id" => 122,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 5,
+                            "field_id" => 146,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 5,
+                            "field_id" => 158,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 6,
+                            "field_id" => 1,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 6,
+                            "field_id" => 53,
+                            "value" => 0.5
+                        ],
+                        [
+                            "request_id" => 6,
+                            "field_id" => 54,
+                            "value" => 1
+                        ],
+                        [
+                            "request_id" => 6,
+                            "field_id" => 59,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 6,
+                            "field_id" => 101,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 6,
+                            "field_id" => 122,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 6,
+                            "field_id" => 146,
+                            "value" => 0
+                        ],
+                        [
+                            "request_id" => 6,
+                            "field_id" => 158,
+                            "value" => 0
+                        ]
+                    ],
+                    'user_notifications' => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "amount_to_work" => 999,
+                            "request_subject" => "Группировка товаров (Определяется типом задачи) =~}!@#$%^&*()_+`-]'/[;.,}\"?{:>",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                        ],
+                        [
+                            "id" => 2,
+                            "user_id" => 33,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "amount_to_work" => 999,
+                            "request_subject" => "Группировка товаров (Определяется типом задачи) =~}!@#$%^&*()_+`-]'/[;.,}\"?{:>",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                        ],
+                        [
+                            "id" => 3,
+                            "user_id" => 15,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "amount_to_work" => 999,
+                            "request_subject" => "Группировка товаров (Определяется типом задачи) =~}!@#$%^&*()_+`-]'/[;.,}\"?{:>",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Константин Куцан",
+                            "event" => "create",
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                        ],
+                        [
+                            "id" => 4,
+                            "user_id" => 17,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => 2,
+                            "amount_to_work" => 999,
+                            "request_subject" => "Группировка товаров (Определяется типом задачи) =~}!@#$%^&*()_+`-]'/[;.,}\"?{:>",
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",

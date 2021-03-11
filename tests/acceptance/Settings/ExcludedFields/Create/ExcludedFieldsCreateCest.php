@@ -14,7 +14,7 @@ use Codeception\Module\TestHelper;
  */
 class ExcludedFieldsCreateCest
 {
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }

@@ -16,8 +16,7 @@ use lisa\Page\Requests\Request;
  */
 class ManagerAndSupervisorSelectingCest
 {
-    /**@return array*/
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }

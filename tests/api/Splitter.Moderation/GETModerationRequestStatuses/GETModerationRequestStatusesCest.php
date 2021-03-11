@@ -11,8 +11,7 @@ use Codeception\Module\TestHelper;
  */
 class GETModerationRequestStatusesCest
 {
-    /**@return array*/
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }

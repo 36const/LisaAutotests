@@ -16,8 +16,7 @@ use lisa\Page\Requests\RequestCorrection;
  */
 class POSTFromStatusesCest
 {
-    /**@return array*/
-    protected function pageProvider()
+    protected function pageProvider(): array
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }
