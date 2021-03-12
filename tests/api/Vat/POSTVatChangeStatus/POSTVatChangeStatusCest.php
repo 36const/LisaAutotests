@@ -29,7 +29,7 @@ class POSTVatChangeStatusCest
         $providerData = $data['provider_data'];
 
         $I->sendPOST('bpm/api/change-status', $providerData['requestBody']);
-        $I->seeResponseCodeIs($providerData['responseCode']);
+        $I->seeResponseCodeIs(200);
         $I->seeResponseContainsJson($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
