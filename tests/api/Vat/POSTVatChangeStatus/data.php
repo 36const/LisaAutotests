@@ -513,7 +513,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Ошибка при указании статуса 2',
+            'description' => 'Ошибка при переводе в статус 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -541,7 +541,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Ошибка при указании статуса 3',
+            'description' => 'Ошибка при переводе в статус 3',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -569,7 +569,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Ошибка при указании статуса 4',
+            'description' => 'Ошибка при переводе в статус 4',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -597,7 +597,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Ошибка при указании статуса 5',
+            'description' => 'Ошибка при переводе в статус 5',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -625,7 +625,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Ошибка при указании статуса 6',
+            'description' => 'Ошибка при переводе в статус 6',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -653,7 +653,7 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Ошибка при указании статуса 7',
+            'description' => 'Ошибка при переводе в статус 7',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -681,7 +681,7 @@ return [
 
     'case13' => [
         'setting' => [
-            'description' => 'Ошибка при указании статуса 8',
+            'description' => 'Ошибка при переводе в статус 8',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -709,7 +709,7 @@ return [
 
     'case14' => [
         'setting' => [
-            'description' => 'Ошибка при указании статуса 9',
+            'description' => 'Ошибка при переводе в статус 9',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -737,7 +737,7 @@ return [
 
     'case15' => [
         'setting' => [
-            'description' => 'Ошибка при указании статуса 11',
+            'description' => 'Ошибка при переводе в статус 11',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -790,4 +790,229 @@ return [
             ],
         ]
     ],
+
+    'case18' => [
+        'setting' => [
+            'description' => 'Ошибка при переводе из статуса 2',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case18.php',
+        'provider_data' => [
+            'requestBody' => [
+                "requestId" => 1,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Невозможно изменить статус заявки №1: В текущем рабочем процессе отсутствует перевод заявки из статуса \"Готова для распределения\"(2) в статус \"Новая\"(1)"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => array_replace_recursive($requests, (include __DIR__ . '/fixture/case18.php')['lisa_fixtures']['requests']),
+                    "requests_fields" => (include __DIR__ . '/fixture/case18.php')['lisa_fixtures']['requests_fields'],
+                    "user_notifications" => [],
+                    "request_status_history" => [],
+                ]
+            ],
+        ]
+    ],
+
+    'case19' => [
+        'setting' => [
+            'description' => 'Ошибка при переводе из статуса 4',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'provider_data' => [
+            'requestBody' => [
+                "requestId" => 1,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Невозможно изменить статус заявки №1: В текущем рабочем процессе отсутствует перевод заявки из статуса \"Отменена\"(4) в статус \"Новая\"(1)"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => array_replace_recursive($requests, (include __DIR__ . '/fixture/case19.php')['lisa_fixtures']['requests']),
+                    "requests_fields" => (include __DIR__ . '/fixture/case19.php')['lisa_fixtures']['requests_fields'],
+                    "user_notifications" => [],
+                    "request_status_history" => [],
+                ]
+            ],
+        ]
+    ],
+
+    'case20' => [
+        'setting' => [
+            'description' => 'Ошибка при переводе из статуса 5',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case20.php',
+        'provider_data' => [
+            'requestBody' => [
+                "requestId" => 1,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Невозможно изменить статус заявки №1: В текущем рабочем процессе отсутствует перевод заявки из статуса \"Ожидает взятия в работу\"(5) в статус \"Новая\"(1)"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => array_replace_recursive($requests, (include __DIR__ . '/fixture/case20.php')['lisa_fixtures']['requests']),
+                    "requests_fields" => (include __DIR__ . '/fixture/case20.php')['lisa_fixtures']['requests_fields'],
+                    "user_notifications" => [],
+                    "request_status_history" => [],
+                ]
+            ],
+        ]
+    ],
+
+    'case21' => [
+        'setting' => [
+            'description' => 'Ошибка при переводе из статуса 6',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case21.php',
+        'provider_data' => [
+            'requestBody' => [
+                "requestId" => 1,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Невозможно изменить статус заявки №1: В текущем рабочем процессе отсутствует перевод заявки из статуса \"В работе\"(6) в статус \"Новая\"(1)"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => array_replace_recursive($requests, (include __DIR__ . '/fixture/case21.php')['lisa_fixtures']['requests']),
+                    "requests_fields" => (include __DIR__ . '/fixture/case21.php')['lisa_fixtures']['requests_fields'],
+                    "user_notifications" => [],
+                    "request_status_history" => [],
+                ]
+            ],
+        ]
+    ],
+
+    'case22' => [
+        'setting' => [
+            'description' => 'Ошибка при переводе из статуса 7',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case22.php',
+        'provider_data' => [
+            'requestBody' => [
+                "requestId" => 1,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Невозможно изменить статус заявки №1: В текущем рабочем процессе отсутствует перевод заявки из статуса \"Ожидает\"(7) в статус \"Новая\"(1)"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => array_replace_recursive($requests, (include __DIR__ . '/fixture/case22.php')['lisa_fixtures']['requests']),
+                    "requests_fields" => (include __DIR__ . '/fixture/case22.php')['lisa_fixtures']['requests_fields'],
+                    "user_notifications" => [],
+                    "request_status_history" => [],
+                ]
+            ],
+        ]
+    ],
+
+    'case23' => [
+        'setting' => [
+            'description' => 'Ошибка при переводе из статуса 8',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case23.php',
+        'provider_data' => [
+            'requestBody' => [
+                "requestId" => 1,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Невозможно изменить статус заявки №1: В текущем рабочем процессе отсутствует перевод заявки из статуса \"Частично выполнена\"(8) в статус \"Новая\"(1)"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => array_replace_recursive($requests, (include __DIR__ . '/fixture/case23.php')['lisa_fixtures']['requests']),
+                    "requests_fields" => (include __DIR__ . '/fixture/case23.php')['lisa_fixtures']['requests_fields'],
+                    "user_notifications" => [],
+                    "request_status_history" => [],
+                ]
+            ],
+        ]
+    ],
+
+    'case24' => [
+        'setting' => [
+            'description' => 'Ошибка при переводе из статуса 9',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case24.php',
+        'provider_data' => [
+            'requestBody' => [
+                "requestId" => 1,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Невозможно изменить статус заявки №1: В текущем рабочем процессе отсутствует перевод заявки из статуса \"Выполнена\"(9) в статус \"Новая\"(1)"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => array_replace_recursive($requests, (include __DIR__ . '/fixture/case24.php')['lisa_fixtures']['requests']),
+                    "requests_fields" => (include __DIR__ . '/fixture/case24.php')['lisa_fixtures']['requests_fields'],
+                    "user_notifications" => [],
+                    "request_status_history" => [],
+                ]
+            ],
+        ]
+    ],
+
+    'case25' => [
+        'setting' => [
+            'description' => 'Ошибка при переводе из статуса 11',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case25.php',
+        'provider_data' => [
+            'requestBody' => [
+                "requestId" => 1,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Невозможно изменить статус заявки №1: В текущем рабочем процессе отсутствует перевод заявки из статуса \"Закрыта\"(11) в статус \"Новая\"(1)"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => array_replace_recursive($requests, (include __DIR__ . '/fixture/case25.php')['lisa_fixtures']['requests']),
+                    "requests_fields" => (include __DIR__ . '/fixture/case25.php')['lisa_fixtures']['requests_fields'],
+                    "user_notifications" => [],
+                    "request_status_history" => [],
+                ]
+            ],
+        ]
+    ],
+
 ];
