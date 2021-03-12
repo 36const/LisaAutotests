@@ -4,12 +4,14 @@ return [
         "requests" => [
             [
                 "status" => 3,
+                "reason" => 'так нада'
             ],
             [
                 "status" => 3,
+                "reason" => 'так ни нада'
             ],
         ],
-        'requests_fields' => [
+        "requests_fields" => [
             [
                 'request_id' => 1,
                 'field_id' => 1,
@@ -88,7 +90,7 @@ return [
         ],
         "user_notifications" => [],
         "request_status_history" => [],
-        'observers' => [
+        "observers" => [
             [
                 "request_id" => 1,
                 "user_id" => 15
@@ -96,6 +98,17 @@ return [
             [
                 "request_id" => 1,
                 "user_id" => 17
+            ],
+        ],
+        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
+        "requests_reasons" => [
+            [
+                "request_id" => 1,
+                "reason_id" => 13
+            ],
+            [
+                "request_id" => 2,
+                "reason_id" => 15
             ],
         ],
         "user_bpm" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/user_bpm.php',
@@ -1542,7 +1555,4 @@ return [
             ],
         ],
     ],
-    "cooper_fixtures" => [
-        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
-    ]
 ];

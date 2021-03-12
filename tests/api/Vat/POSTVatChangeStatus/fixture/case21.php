@@ -4,12 +4,14 @@ return [
         "requests" => [
             [
                 "status" => 6,
+                "reason" => null
             ],
             [
                 "status" => 3,
+                "reason" => null
             ],
         ],
-        'requests_fields' => [
+        "requests_fields" => [
             [
                 'request_id' => 1,
                 'field_id' => 1,
@@ -88,7 +90,7 @@ return [
         ],
         "user_notifications" => [],
         "request_status_history" => [],
-        'observers' => [
+        "observers" => [
             [
                 "request_id" => 1,
                 "user_id" => 15
@@ -1542,7 +1544,4 @@ return [
             ],
         ],
     ],
-    "cooper_fixtures" => [
-        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
-    ]
 ];

@@ -4,15 +4,17 @@ return [
         "requests" => [
             [
                 "status" => 1,
+                "reason" => 'так нада',
                 "correction_comment" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                 "last_change_status_date" => "2020-01-01 00:00:01",
                 "previous_status" => 3,
             ],
             [
                 "status" => 3,
+                "reason" => 'так ни нада',
             ],
         ],
-        'requests_fields' => [
+        "requests_fields" => [
             [
                 'request_id' => 1,
                 'field_id' => 1,
@@ -91,7 +93,7 @@ return [
         ],
         "user_notifications" => [],
         "request_status_history" => [],
-        'observers' => [
+        "observers" => [
             [
                 "request_id" => 1,
                 "user_id" => 15
@@ -99,6 +101,13 @@ return [
             [
                 "request_id" => 1,
                 "user_id" => 17
+            ],
+        ],
+        "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
+        "requests_reasons" => [
+            [
+                "request_id" => 2,
+                "reason_id" => 15
             ],
         ],
         "user_bpm" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/user_bpm.php',
@@ -1545,7 +1554,4 @@ return [
             ],
         ],
     ],
-    "cooper_fixtures" => [
-        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
-    ]
 ];

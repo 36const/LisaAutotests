@@ -19,7 +19,7 @@ $requests = [
         "category_id" => 1,
         "seller_id" => 83,
         "recommendations" => null,
-        "reason" => null,
+        "reason" => 'так нада',
         "parent_id" => null,
         "planned_start_date" => null,
         "planned_finish_date" => null,
@@ -59,7 +59,7 @@ $requests = [
         "category_id" => 1,
         "seller_id" => 83,
         "recommendations" => null,
-        "reason" => null,
+        "reason" => 'так ни нада',
         "parent_id" => null,
         "planned_start_date" => null,
         "planned_finish_date" => null,
@@ -120,7 +120,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
-                            "reason" => null,
+                            "reason" => 'так нада',
                             "parent_id" => null,
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
@@ -160,7 +160,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
-                            "reason" => null,
+                            "reason" => 'так ни нада',
                             "parent_id" => null,
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
@@ -184,6 +184,12 @@ return [
                         ]
                     ],
                     "requests_fields" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
+                    'requests_reasons' => [
+                        [
+                            "request_id" => 2,
+                            "reason_id" => 15
+                        ],
+                    ],
                     "request_status_history" => [
                         [
                             "id" => 1,
@@ -300,7 +306,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
-                            "reason" => null,
+                            "reason" => 'так нада',
                             "parent_id" => null,
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
@@ -340,7 +346,7 @@ return [
                             "category_id" => 1,
                             "seller_id" => 83,
                             "recommendations" => null,
-                            "reason" => null,
+                            "reason" => 'так ни нада',
                             "parent_id" => null,
                             "planned_start_date" => null,
                             "planned_finish_date" => null,
@@ -363,8 +369,14 @@ return [
                             "previous_status" => null,
                         ]
                     ],
-                    "requests_fields" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
+                    "requests_fields" => (include __DIR__ . '/fixture/case17.php')['lisa_fixtures']['requests_fields'],
                     "request_status_history" => [],
+                    'requests_reasons' => [
+                        [
+                            "request_id" => 2,
+                            "reason_id" => 15
+                        ],
+                    ],
                     'user_notifications' => []
                 ]
             ],
@@ -401,19 +413,19 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Ошибка без указания requestId',
+            'description' => 'Ошибка без указания newStatus',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
-                //"requestId" => 1,
-                "newStatus" => 1,
+                "requestId" => 1,
+                //"newStatus" => 1,
                 "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
             ],
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "requestId: должен быть числом."
+                    "newStatus: должен быть числом."
                 ]
             ],
             'db' => [
