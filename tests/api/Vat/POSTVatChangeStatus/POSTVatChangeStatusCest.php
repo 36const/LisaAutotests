@@ -7,10 +7,10 @@ use Codeception\Module\TestHelper;
 /**
  * @group lisa
  * @group lisa_api
- * @group lisa_api_gomer
- * @group POSTGomerCreateRequest
+ * @group lisa_api_vat
+ * @group POSTVatChangeStatus
  */
-class POSTGomerCreateRequestCest
+class POSTVatChangeStatusCest
 {
     protected function pageProvider(): array
     {
@@ -23,13 +23,12 @@ class POSTGomerCreateRequestCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTGomerCreateRequest(ApiTester $I, Example $data)
+    public function POSTVatChangeStatus(ApiTester $I, Example $data)
     {
-        $I->loadDataForTest($data);
+        $I->loadDataForTest($data, null);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/api/create-request-by-market-id', $providerData['requestBody']);
-
+        $I->sendPOST('bpm/api/change-status', $providerData['requestBody']);
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
 

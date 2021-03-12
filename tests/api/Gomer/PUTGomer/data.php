@@ -84,9 +84,7 @@ return [
             ],
             'db' => [
                 'lisa_fixtures' => [
-                    "requests" => [[
-                        "amount_to_work" => 10,
-                    ]],
+                    "requests" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'],
                 ]
             ]
         ],
@@ -111,9 +109,7 @@ return [
             ],
             'db' => [
                 'lisa_fixtures' => [
-                    "requests" => [[
-                        "amount_to_work" => 10,
-                    ]],
+                    "requests" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'],
                 ]
             ]
         ],
@@ -138,9 +134,7 @@ return [
             ],
             'db' => [
                 'lisa_fixtures' => [
-                    "requests" => [[
-                        "amount_to_work" => 10,
-                    ]],
+                    "requests" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'],
                 ]
             ]
         ]

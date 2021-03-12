@@ -7,7 +7,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
                 "sync_source_id" => 1,
                 "market_id" => 83,
@@ -76,7 +75,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
                 "sync_source_id" => 1,
                 "market_id" => 83,
@@ -153,7 +151,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
                 "sync_source_id" => 1,
                 "market_id" => 83,
@@ -230,7 +227,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
                 "sync_source_id" => 1,
                 "market_id" => 83,
@@ -313,7 +309,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
                 "sync_source_id" => 1,
                 "market_id" => 83,
@@ -383,7 +378,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
                 "sync_source_id" => 1,
                 "market_id" => 83,
@@ -453,7 +447,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
                 "sync_source_id" => 1,
                 "market_id" => 83,
@@ -523,7 +516,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [],
             "responseCode" => 200,
             "responseBody" => [
@@ -549,7 +541,6 @@ return [
             'description' => 'Несуществующий продавец',
         ],
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-market-id',
             'requestBody' => [
                 "sync_source_id" => 1,
                 "market_id" => 9999999,
