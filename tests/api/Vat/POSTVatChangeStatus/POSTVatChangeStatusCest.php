@@ -25,10 +25,10 @@ class POSTVatChangeStatusCest
      */
     public function POSTVatChangeStatus(ApiTester $I, Example $data)
     {
-        $I->loadDataForTest($data, null);
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('bpm/api/change-status', $providerData['requestBody']);
+        $I->sendPOST('/bpm/api/change-status', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
         $I->seeResponseContainsJson($providerData['responseBody']);
 
