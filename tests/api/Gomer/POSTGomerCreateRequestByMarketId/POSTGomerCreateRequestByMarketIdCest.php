@@ -8,9 +8,9 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_api
  * @group lisa_api_gomer
- * @group POSTGomerCreateRequest
+ * @group POSTGomerCreateRequestByMarketId
  */
-class POSTGomerCreateRequestCest
+class POSTGomerCreateRequestByMarketIdCest
 {
     protected function pageProvider(): array
     {
@@ -23,7 +23,7 @@ class POSTGomerCreateRequestCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTGomerCreateRequest(ApiTester $I, Example $data)
+    public function POSTGomerCreateRequestByMarketId(ApiTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
