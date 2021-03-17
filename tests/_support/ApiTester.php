@@ -61,20 +61,19 @@ class ApiTester extends Actor
 
     public function setMaxFileSize(int $kilobytes, bool $unset = false)
     {
-        $file = file(self::PARAMS_LOCAL);
+        $fileArray = file(self::PARAMS_LOCAL);
 
-        foreach ($file as $key => $str) {
+        foreach ($fileArray as $key => $str) {
             if (strpos($str, 'max_file_size')) {
-                unset($file[$key]);
+                unset($fileArray[$key]);
             }
         }
 
         if ($unset == false)
-            array_splice($file, 3, 0, "    'max_file_size' => $kilobytes,\n");
+            array_splice($fileArray, 3, 0, "    'max_file_size' => $kilobytes,\n");
 
-        $fileArray = implode($file);
+        $newFileContent = implode($fileArray);
         $fo = fopen(self::PARAMS_LOCAL, 'w+');
-        fwrite($fo, $fileArray);
+        fwrite($fo, $newFileContent);
     }
-
 }
