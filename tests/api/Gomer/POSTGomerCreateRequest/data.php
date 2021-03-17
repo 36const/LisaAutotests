@@ -4193,7 +4193,7 @@ return [
         'setting' => [
             'description' => 'Ошибка при создании со взаимоисключающими чекбоксами 5/1',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
                 "RequestField[1]" => 1,
@@ -4227,7 +4227,7 @@ return [
         'setting' => [
             'description' => 'Ошибка при создании со взаимоисключающими чекбоксами 10/0',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
                 "RequestField[1]" => 1,
@@ -5274,5 +5274,24 @@ return [
         ]
     ],
 
+    'case57' => [
+        'setting' => [
+            'description' => 'Ошибка при пустом запросе',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Не переданы данные для установки автора (Request[author_login] или Request[author_id])",
+                    "Передан пустой масив Request[]. Мы данные для создания должны от святого духа получить?"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => $lisa_fixtures
+            ],
+        ]
+    ],
 
 ];
