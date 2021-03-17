@@ -5115,5 +5115,83 @@ return [
         ]
     ],
 
+    'case53' => [
+        'setting' => [
+            'description' => 'Ошибка при создании с общим объёмом файлов больше 100 Мб',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'provider_data' => [
+            'requestBody' => [
+                "RequestField[1]" => 1,
+                "Request[amount_to_work]" => 0,
+                "Request[author_login]" => 'kutsan.k',
+                "Request[category_id]" => 1,
+                "Request[description]" => 'description',
+                "Request[direction]" => 0,
+                "Request[observers]" => [15, 17],
+                "Request[seller_id]" => 0,
+                "Request[subject]" => "Добавление/изменение размерной сетки (Определяется типом задачи)",
+                "Request[supplier_cabinet_id]" => 1,
+                "Request[type_id]" => 10,
+            ],
+            'attachments' => [
+                'files[]' => [
+                    codecept_data_dir('Attachments/rar.rar'),
+                    codecept_data_dir('Attachments/xls.xls'),
+                    codecept_data_dir('Attachments/xlsx.xlsx'),
+                ],
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Размер файлов превышает 100 МБ.",
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => $lisa_fixtures
+            ],
+        ]
+    ],
 
+    'case54' => [
+        'setting' => [
+            'description' => 'Ошибка при создании с неподдерживаемым типом файлов',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'provider_data' => [
+            'requestBody' => [
+                "RequestField[1]" => 1,
+                "Request[amount_to_work]" => 0,
+                "Request[author_login]" => 'kutsan.k',
+                "Request[category_id]" => 1,
+                "Request[description]" => 'description',
+                "Request[direction]" => 0,
+                "Request[observers]" => [15, 17],
+                "Request[seller_id]" => 0,
+                "Request[subject]" => "Добавление/изменение размерной сетки (Определяется типом задачи)",
+                "Request[supplier_cabinet_id]" => 1,
+                "Request[type_id]" => 10,
+            ],
+            'attachments' => [
+                'files[]' => [
+                    codecept_data_dir('Attachments/255exeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexee.exe'),
+                    codecept_data_dir('Attachments/7 z .7z'),
+                    codecept_data_dir('Attachments/mp3.mp3'),
+                    codecept_data_dir('Attachments/eml.eml'),
+                    codecept_data_dir('Attachments/doc .doc'),
+                ],
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Файлы типа exe не разрешается загружать в систему.",
+                    "Файлы типа 7z не разрешается загружать в систему.",
+                    "Файлы типа mp3 не разрешается загружать в систему."
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => $lisa_fixtures
+            ],
+        ]
+    ]
 ];
