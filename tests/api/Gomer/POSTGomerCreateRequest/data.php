@@ -32,7 +32,7 @@ return [
             ],
             'attachments' => [
                 'files[]' => [
-                    codecept_data_dir('Attachments/248psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd'),
+                    codecept_data_dir('Attachments/255psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdps.psd'),
                     codecept_data_dir('Attachments/csv.csv'),
                     codecept_data_dir('Attachments/doc .doc'),
                     codecept_data_dir('Attachments/docx.docx'),
@@ -117,13 +117,13 @@ return [
                             "id" => 1,
                             "request_id" => 1,
                             "file_name_old" => "",
-                            "alias" => "248psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd",
+                            "alias" => "255psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdps.psd",
                             "status" => 2,
                             "uploaded_by" => "Система",
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name like" => "%_248psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd"
+                            "file_name like" => "%__255psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdps.psd"
                         ],
                         [
                             "id" => 2,
@@ -147,7 +147,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name like" => "%_doc .doc"
+                            "file_name like" => "%_doc_.doc"
                         ],
                         [
                             "id" => 4,
@@ -351,7 +351,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name like" => "%_~!@#$%^&*()_+`-=][;.|}{:?><.jpg"
+                            "file_name like" => '%_$_-:.jpg'
                         ]
                     ],
                     'user_notifications' => [
