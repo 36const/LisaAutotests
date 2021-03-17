@@ -32,7 +32,7 @@ return [
             ],
             'attachments' => [
                 'files[]' => [
-                    codecept_data_dir('Attachments/255psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdps.psd'),
+                    codecept_data_dir('Attachments/248psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd'),
                     codecept_data_dir('Attachments/csv.csv'),
                     codecept_data_dir('Attachments/doc .doc'),
                     codecept_data_dir('Attachments/docx.docx'),
@@ -117,13 +117,13 @@ return [
                             "id" => 1,
                             "request_id" => 1,
                             "file_name_old" => "",
-                            "alias" => "255psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdps.psd",
+                            "alias" => "248psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd",
                             "status" => 2,
                             "uploaded_by" => "Система",
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "255psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdps.psd"
+                            "file_name like" => "%_248psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd"
                         ],
                         [
                             "id" => 2,
@@ -135,7 +135,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "csv.csv"
+                            "file_name like" => "%_csv.csv"
                         ],
                         [
                             "id" => 3,
@@ -147,7 +147,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "doc .doc"
+                            "file_name like" => "%_doc .doc"
                         ],
                         [
                             "id" => 4,
@@ -159,7 +159,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "docx.docx"
+                            "file_name like" => "%_docx.docx"
                         ],
                         [
                             "id" => 5,
@@ -171,7 +171,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "eml.eml"
+                            "file_name like" => "%_eml.eml"
                         ],
                         [
                             "id" => 6,
@@ -183,7 +183,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "gif_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.gif"
+                            "file_name like" => "%_gif_abvgdeezzijklmnoprstufhccssyeuaegii.gif"
                         ],
                         [
                             "id" => 7,
@@ -195,7 +195,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "jpeglong.jpeg"
+                            "file_name like" => "%_jpeglong.jpeg"
                         ],
                         [
                             "id" => 8,
@@ -207,7 +207,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "mp4.mp4"
+                            "file_name like" => "%_mp4.mp4"
                         ],
                         [
                             "id" => 9,
@@ -219,7 +219,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "rar1.rar"
+                            "file_name like" => "%_rar1.rar"
                         ],
                         [
                             "id" => 10,
@@ -231,7 +231,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "pdf.pdf"
+                            "file_name like" => "%_pdf.pdf"
                         ],
                         [
                             "id" => 11,
@@ -243,7 +243,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "png.png"
+                            "file_name like" => "%_png.png"
                         ],
                         [
                             "id" => 12,
@@ -255,7 +255,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "ppt_а.ppt"
+                            "file_name like" => "%_ppt_a.ppt"
                         ],
                         [
                             "id" => 13,
@@ -267,7 +267,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx"
+                            "file_name like" => "%_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx"
                         ],
                         [
                             "id" => 14,
@@ -279,7 +279,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "webp.webp"
+                            "file_name like" => "%_webp.webp"
                         ],
                         [
                             "id" => 15,
@@ -291,7 +291,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "xls.xls"
+                            "file_name like" => "%_xls.xls"
                         ],
                         [
                             "id" => 16,
@@ -303,7 +303,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "xlsm.xlsm"
+                            "file_name like" => "%_xlsm.xlsm"
                         ],
                         [
                             "id" => 17,
@@ -315,7 +315,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "xlsx.xlsx"
+                            "file_name like" => "%_xlsx.xlsx"
                         ],
                         [
                             "id" => 18,
@@ -327,7 +327,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml"
+                            "file_name like" => "%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml"
                         ],
                         [
                             "id" => 19,
@@ -339,7 +339,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "zip1.zip"
+                            "file_name like" => "%_zip1.zip"
                         ],
                         [
                             "id" => 20,
@@ -351,7 +351,7 @@ return [
                             "uploaded_at >=" => date("Y-m-d"),
                             "deleted_by" => null,
                             "deleted_at" => null,
-                            "file_name" => "~!@#$%^&*()_+`-=][';.|}{:?><.jpg"
+                            "file_name like" => "%_~!@#$%^&*()_+`-=][;.|}{:?><.jpg"
                         ]
                     ],
                     'user_notifications' => [
@@ -4654,7 +4654,40 @@ return [
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "Не найден продавец seller_id : 99"
+                    "Продавец с owox_id = 99 не существует!"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => $lisa_fixtures
+            ],
+        ]
+    ],
+
+    'case56' => [
+        'setting' => [
+            'description' => 'Ошибка при создании с сущ. категорией и несущ. продавцом для направления 0',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'provider_data' => [
+            'requestBody' => [
+                "RequestField[1]" => 1,
+                "RequestField[6]" => 1,
+                "RequestField[7]" => 1,
+                "Request[amount_to_work]" => 10,
+                "Request[author_login]" => 'kutsan.k',
+                "Request[category_id]" => 1,
+                "Request[description]" => 'description',
+                "Request[direction]" => 0,
+                "Request[observers]" => [15, 17],
+                "Request[seller_id]" => 111,
+                "Request[subject]" => "Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)",
+                "Request[supplier_cabinet_id]" => 1,
+                "Request[type_id]" => 7,
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    'Продавец с owox_id = 111 не существует!'
                 ]
             ],
             'db' => [
@@ -4782,7 +4815,7 @@ return [
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    'Не найден продавец seller_id : 99'
+                    'Продавец с owox_id = 99 не существует!'
                 ]
             ],
             'db' => [
@@ -4823,8 +4856,8 @@ return [
     ],
 
     /*
-      * Ошибки при неправильных указаниях обязательных полей Request[]
-      */
+     * Ошибки при неправильных указаниях обязательных полей Request[]
+     */
     'case28' => [
         'setting' => [
             'description' => 'Ошибка при создании без обязательных полей Request[]',
@@ -4908,7 +4941,7 @@ return [
 
     'case37' => [
         'setting' => [
-            'description' => 'Ошибка при указании строки для числовых полей Request',
+            'description' => 'Ошибка при указании для числовых полей Request значения-строки',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case19.php',
         'provider_data' => [
@@ -5135,7 +5168,7 @@ return [
      */
     'case53' => [
         'setting' => [
-            'description' => 'Ошибка при создании с общим объёмом файлов больше 100 Мб',
+            'description' => 'Ошибка при создании с общим объёмом файлов больше 1 Мб',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case19.php',
         'provider_data' => [
@@ -5154,15 +5187,14 @@ return [
             ],
             'attachments' => [
                 'files[]' => [
-                    codecept_data_dir('Attachments/rar.rar'),
                     codecept_data_dir('Attachments/xls.xls'),
-                    codecept_data_dir('Attachments/xlsx.xlsx'),
+                    codecept_data_dir('Attachments/more1Mb.jpg'),
                 ],
             ],
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "Размер файлов превышает 100 МБ.",
+                    "Размер файлов превышает 1 МБ.",
                 ]
             ],
             'db' => [
@@ -5192,7 +5224,6 @@ return [
             ],
             'attachments' => [
                 'files[]' => [
-                    codecept_data_dir('Attachments/255exeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexee.exe'),
                     codecept_data_dir('Attachments/7 z .7z'),
                     codecept_data_dir('Attachments/mp3.mp3'),
                     codecept_data_dir('Attachments/eml.eml'),
@@ -5202,7 +5233,6 @@ return [
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "Файлы типа exe не разрешается загружать в систему.",
                     "Файлы типа 7z не разрешается загружать в систему.",
                     "Файлы типа mp3 не разрешается загружать в систему."
                 ]
@@ -5211,5 +5241,38 @@ return [
                 'lisa_fixtures' => $lisa_fixtures
             ],
         ]
-    ]
+    ],
+
+    'case55' => [
+        'setting' => [
+            'description' => 'Ошибка при указании несуществующего наблюдателя',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                "RequestField[1]" => 1,
+                "Request[amount_to_work]" => 0,
+                "Request[author_login]" => 'kutsan.k',
+                "Request[category_id]" => 1,
+                "Request[description]" => 'description',
+                "Request[direction]" => 0,
+                "Request[observers]" => [1, 11, 111, 200],
+                "Request[seller_id]" => 0,
+                "Request[subject]" => "Добавление/изменение размерной сетки (Определяется типом задачи)",
+                "Request[supplier_cabinet_id]" => 1,
+                "Request[type_id]" => 10,
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "В Request[observers] переданы id несуществующих пользователей:111, 200"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => $lisa_fixtures
+            ],
+        ]
+    ],
+
+
 ];

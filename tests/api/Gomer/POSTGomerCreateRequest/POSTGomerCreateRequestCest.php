@@ -28,6 +28,8 @@ class POSTGomerCreateRequestCest
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
+        $I->setMaxFileSize(1024);
+
         isset($providerData['attachments']) ?
             $I->sendPOST('/bpm/api/create-request', $providerData['requestBody'], $providerData['attachments']) :
             $I->sendPOST('/bpm/api/create-request', $providerData['requestBody']);
@@ -36,5 +38,7 @@ class POSTGomerCreateRequestCest
         $I->seeResponseContainsJson($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
+
+        $I->setMaxFileSize(1024, true);
     }
 }
