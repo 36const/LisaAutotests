@@ -8,6 +8,9 @@ $lisa_fixtures = [
 ];
 
 return [
+    /*
+     * Корректные запросы для создания заявок всех возможных типов/направлений
+     */
     'case1' => [
         'setting' => [
             'description' => 'Создание заявки на Добавление новых товаров (Работа с товарами Розетки) + нотификации + все форматы вложений',
@@ -1733,7 +1736,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
+            'description' => 'Создание заявки на Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи) (без кат.)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1903,7 +1906,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
+            'description' => 'Создание заявки на Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи) (без прод.)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2073,7 +2076,7 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление параметров/значений (Определяется типом задачи)',
+            'description' => 'Создание заявки на Добавление параметров/значений (Определяется типом задачи) (без прод.)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2081,7 +2084,7 @@ return [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
                 "Request[author_login]" => 'kutsan.k',
-                //"Request[category_id]" => 1,
+                "Request[category_id]" => 1,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 "Request[direction]" => 0,
                 "Request[observers]" => [15, 17],
@@ -2114,7 +2117,7 @@ return [
                             "amount_to_work" => 10,
                             "subject" => "[API] Добавление параметров/значений (Определяется типом задачи)",
                             "description" => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            "category_id" => null,
+                            "category_id" => 1,
                             "seller_id" => null,
                             "recommendations" => null,
                             "reason" => null,
@@ -2231,7 +2234,7 @@ return [
 
     'case13' => [
         'setting' => [
-            'description' => 'Создание заявки на Изменение существующих параметров/значений (Определяется типом задачи)',
+            'description' => 'Создание заявки на Изменение существующих параметров/значений (Определяется типом задачи) (без кат.)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2854,7 +2857,7 @@ return [
 
     'case17' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление/изменение размерной сетки (Определяется типом задачи)',
+            'description' => 'Создание заявки на Добавление/изменение размерной сетки (Определяется типом задачи) (без кат.)',
             'type' => 14,
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -3170,6 +3173,9 @@ return [
         ]
     ],
 
+    /*
+     * Ошибки при указании всех RequestField + проверка, что в ответе не будут указаны правильные RequestField
+     */
     'case19' => [
         'setting' => [
             'description' => 'Ошибка при создании со всеми RequestField для 1/2',
@@ -4180,6 +4186,9 @@ return [
         ]
     ],
 
+    /*
+     * Ошибки при указании чекбоксов RequestField[]
+     */
     'case24' => [
         'setting' => [
             'description' => 'Ошибка при создании со взаимоисключающими чекбоксами 5/1',
@@ -4238,43 +4247,6 @@ return [
                 "status" => 400,
                 "errors" => [
                     "RequestField[1] не может быть установлен одновременно с полями: RequestField[2]"
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => $lisa_fixtures
-            ],
-        ]
-    ],
-
-    'case28' => [
-        'setting' => [
-            'description' => 'Ошибка при создании без обязательных полей Request[]',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case19.php',
-        'provider_data' => [
-            'requestBody' => [
-                "RequestField[1]" => 1,
-                //"Request[amount_to_work]" => 10,
-                //"Request[author_login]" => 'kutsan.k',
-                //"Request[category_id]" => 1,
-                //"Request[description]" => 'description',
-                "Request[observers]" => [15, 17],
-                //"Request[direction]" => 1,
-                //"Request[seller_id]" => 83,
-                //"Request[subject]" => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
-                "Request[supplier_cabinet_id]" => 1,
-                //"Request[type_id]" => 12,
-            ],
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "Не переданы данные для установки автора (Request[author_login] или Request[author_id])",
-                    "Не передано поле Request[author_id]",
-                    "Не передано поле Request[type_id]",
-                    "Не передано поле Request[direction]",
-                    "Не передано поле Request[subject]",
-                    "Не передано поле Request[description]",
-                    "Не передано поле Request[amount_to_work]"
                 ]
             ],
             'db' => [
@@ -4446,7 +4418,7 @@ return [
         'provider_data' => [
             'requestBody' => [
                 "RequestField[1]" => 1,
-                "RequestField[123]" => null,
+                "RequestField[123]" => -1,
                 "Request[amount_to_work]" => 10,
                 "Request[author_login]" => 'kutsan.k',
                 "Request[category_id]" => 1,
@@ -4472,13 +4444,13 @@ return [
 
     'case35' => [
         'setting' => [
-            'description' => 'Ошибка при указании для чек-боксов значения asdf',
+            'description' => 'Ошибка при указании для чек-боксов значения-строки',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case19.php',
         'provider_data' => [
             'requestBody' => [
                 "RequestField[1]" => 1,
-                "RequestField[159]" => null,
+                "RequestField[159]" => 'asdf',
                 "Request[amount_to_work]" => 10,
                 "Request[author_login]" => 'kutsan.k',
                 "Request[category_id]" => 1,
@@ -4502,87 +4474,9 @@ return [
         ]
     ],
 
-    'case36' => [
-        'setting' => [
-            'description' => 'Ошибка при указании для полей Request значения ""',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case19.php',
-        'provider_data' => [
-            'requestBody' => [
-                "RequestField[1]" => 1,
-                "Request[amount_to_work]" => "",
-                "Request[author_login]" => "",
-                "Request[category_id]" => "",
-                "Request[description]" => "",
-                "Request[observers]" => "",
-                "Request[direction]" => "",
-                "Request[seller_id]" => "",
-                "Request[subject]" => "",
-                "Request[supplier_cabinet_id]" => "",
-                "Request[type_id]" => "",
-            ],
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "Модель класа gomer\\bpm\\models\\UserBpm не найдена по параметрам. Conditions:{\"login\":\"\"}",
-                    "Не передано поле Request[author_id]",
-                    "Не передано поле Request[type_id]",
-                    "Не передано поле Request[direction]",
-                    "Не передано поле Request[subject]",
-                    "Не передано поле Request[description]",
-                    "Не передано поле Request[amount_to_work]",
-                    "Request[type_id]: поле должно быть числом",
-                    "Request[category_id]: поле должно быть числом",
-                    "Request[seller_id]: поле должно быть числом",
-                    "Request[direction]: поле должно быть числом",
-                    "Request[amount_to_work]: поле должно быть числом",
-                    "Request[supplier_cabinet_id]: поле должно быть числом",
-                    "Request[supplier_cabinet_id]: должен быть больше 0"
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => $lisa_fixtures
-            ],
-        ]
-    ],
-
-    'case37' => [
-        'setting' => [
-            'description' => 'Ошибка при указании для числовых полей Request значения "asdf"',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case19.php',
-        'provider_data' => [
-            'requestBody' => [
-                "RequestField[1]" => 1,
-                "Request[amount_to_work]" => "asdf",
-                "Request[author_login]" => "kutsan.k",
-                "Request[category_id]" => "asdf",
-                "Request[description]" => 'description',
-                "Request[observers]" => ["asdf"],
-                "Request[direction]" => "asdf",
-                "Request[seller_id]" => "asdf",
-                "Request[subject]" => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
-                "Request[supplier_cabinet_id]" => "asdf",
-                "Request[type_id]" => "asdf",
-            ],
-            "responseBody" => [
-                "status" => 400,
-                "errors" => [
-                    "Request[type_id]: поле должно быть числом",
-                    "Request[category_id]: поле должно быть числом",
-                    "Request[seller_id]: поле должно быть числом",
-                    "Request[direction]: поле должно быть числом",
-                    "Request[amount_to_work]: поле должно быть числом",
-                    "Request[supplier_cabinet_id]: поле должно быть числом",
-                    "Request[supplier_cabinet_id]: должен быть больше 0"
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => $lisa_fixtures
-            ],
-        ]
-    ],
-
+    /*
+     * Ошибки при неправильных указаниях продавца и/или категории для каждого направления
+     */
     'case27' => [
         'setting' => [
             'description' => 'Ошибка при создании без категории для направления 1',
@@ -4928,6 +4822,127 @@ return [
         ]
     ],
 
+    /*
+      * Ошибки при неправильных указаниях обязательных полей Request[]
+      */
+    'case28' => [
+        'setting' => [
+            'description' => 'Ошибка при создании без обязательных полей Request[]',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'provider_data' => [
+            'requestBody' => [
+                "RequestField[1]" => 1,
+                //"Request[amount_to_work]" => 10,
+                //"Request[author_login]" => 'kutsan.k',
+                //"Request[category_id]" => 1,
+                //"Request[description]" => 'description',
+                "Request[observers]" => [15, 17],
+                //"Request[direction]" => 1,
+                //"Request[seller_id]" => 83,
+                //"Request[subject]" => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
+                "Request[supplier_cabinet_id]" => 1,
+                //"Request[type_id]" => 12,
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Не переданы данные для установки автора (Request[author_login] или Request[author_id])",
+                    "Не передано поле Request[author_id]",
+                    "Не передано поле Request[type_id]",
+                    "Не передано поле Request[direction]",
+                    "Не передано поле Request[subject]",
+                    "Не передано поле Request[description]",
+                    "Не передано поле Request[amount_to_work]"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => $lisa_fixtures
+            ],
+        ]
+    ],
+
+    'case36' => [
+        'setting' => [
+            'description' => 'Ошибка при указании для полей Request значения ""',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'provider_data' => [
+            'requestBody' => [
+                "RequestField[1]" => 1,
+                "Request[amount_to_work]" => "",
+                "Request[author_login]" => "",
+                "Request[category_id]" => "",
+                "Request[description]" => "",
+                "Request[observers]" => "",
+                "Request[direction]" => "",
+                "Request[seller_id]" => "",
+                "Request[subject]" => "",
+                "Request[supplier_cabinet_id]" => "",
+                "Request[type_id]" => "",
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Модель класа gomer\\bpm\\models\\UserBpm не найдена по параметрам. Conditions:{\"login\":\"\"}",
+                    "Не передано поле Request[author_id]",
+                    "Не передано поле Request[type_id]",
+                    "Не передано поле Request[direction]",
+                    "Не передано поле Request[subject]",
+                    "Не передано поле Request[description]",
+                    "Не передано поле Request[amount_to_work]",
+                    "Request[type_id]: поле должно быть числом",
+                    "Request[category_id]: поле должно быть числом",
+                    "Request[seller_id]: поле должно быть числом",
+                    "Request[direction]: поле должно быть числом",
+                    "Request[amount_to_work]: поле должно быть числом",
+                    "Request[supplier_cabinet_id]: поле должно быть числом",
+                    "Request[supplier_cabinet_id]: должен быть больше 0"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => $lisa_fixtures
+            ],
+        ]
+    ],
+
+    'case37' => [
+        'setting' => [
+            'description' => 'Ошибка при указании строки для числовых полей Request',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'provider_data' => [
+            'requestBody' => [
+                "RequestField[1]" => 1,
+                "Request[amount_to_work]" => "asdf",
+                "Request[author_login]" => "kutsan.k",
+                "Request[category_id]" => "asdf",
+                "Request[description]" => 'description',
+                "Request[observers]" => ["asdf"],
+                "Request[direction]" => "asdf",
+                "Request[seller_id]" => "asdf",
+                "Request[subject]" => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
+                "Request[supplier_cabinet_id]" => "asdf",
+                "Request[type_id]" => "asdf",
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Request[type_id]: поле должно быть числом",
+                    "Request[category_id]: поле должно быть числом",
+                    "Request[seller_id]: поле должно быть числом",
+                    "Request[direction]: поле должно быть числом",
+                    "Request[amount_to_work]: поле должно быть числом",
+                    "Request[supplier_cabinet_id]: поле должно быть числом",
+                    "Request[supplier_cabinet_id]: должен быть больше 0"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => $lisa_fixtures
+            ],
+        ]
+    ],
+
     'case47' => [
         'setting' => [
             'description' => 'Ошибка при создании с несуществующим типом',
@@ -5060,7 +5075,7 @@ return [
         'provider_data' => [
             'requestBody' => [
                 "RequestField[1]" => 1,
-                "Request[amount_to_work]" => -10,
+                "Request[amount_to_work]" => -1,
                 "Request[author_login]" => 'kutsan.k',
                 "Request[category_id]" => 1,
                 "Request[description]" => 'description',
@@ -5115,6 +5130,9 @@ return [
         ]
     ],
 
+    /*
+     * Ошибки при неправильных указаниях файлов
+     */
     'case53' => [
         'setting' => [
             'description' => 'Ошибка при создании с общим объёмом файлов больше 100 Мб',
