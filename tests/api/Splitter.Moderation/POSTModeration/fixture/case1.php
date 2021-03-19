@@ -30,7 +30,7 @@ return [
                 "title" => "Добавление логотипов к производителям",
                 "difficulty" => 4,
                 "supervisor_id" => 6,
-                "status" => 0
+                "status" => 1
             ],
         ],
     ],
