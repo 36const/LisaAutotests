@@ -100,6 +100,7 @@ return [
                 "user_id" => 17
             ],
         ],
+        "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "reasons" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
         "requests_reasons" => [
             [
