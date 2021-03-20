@@ -2,60 +2,36 @@
 
 return [
     "lisa_fixtures" => [
-        'requests' => [
-            [
-                "id" => 1,
-                "author_id" => 4,
-                "type_id" => 1,
-                "supervisor_id" => 6,
-                "manager_id" => 11,
-                "status" => 6,
-                "direction" => 1,
-                "priority" => 2,
-                "awaiting_correction" => 1,
-                "created_at" => '2020-01-01 00:00:00',
-                "correction_comment" => '',
-                "amount_to_work" => 10,
-                "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
-                "description" => 'description',
-                "category_id" => 1,
-                "seller_id" => 83,
-                "recommendations" => '',
-                "reason" => null,
-                "parent_id" => null,
-                "planned_start_date" => null,
-                "planned_finish_date" => null,
-                "actual_start_date" => '2020-01-01 00:00:03',
-                "actual_finish_date" => '2020-01-01 00:00:04',
-                "supervisor_process_date" => '2020-01-01 00:00:02',
-                "supervisor_check_date" => null,
-                "result_comment" => 'Комментарий к результату задачи',
-                "supervisor_comment" => '',
-                "last_change_status_date" => "2020-01-01 00:00:01",
-                "team_direction" => 3,
-                "report_period_id" => null,
-                "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}',
-                "cross_check_status" => '1',
-                "cross_check_manager_id" => 12,
-            ]
-        ],
-        'request_errors' => [
-            [
-                'id' => 1,
-                'request_id' => 1,
-                'manager_id' => 11,
-                'errors_count' => 10,
-                'items_with_errors' => 10,
-                'field_value_id' => 142,
-                'comment' => 'comment',
-                'status' => 0,
-                //'create_ts' => null,
-                'correction_date' => null
-            ]
-        ],
-        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values_errors.php',
+        "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
         "teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
+        'request_templates' => [
+            [
+//                "id" => 1,
+                "parent_id" => null,
+                "name" => 'Добавление',
+                "type_id" => 1,
+                "direction" => 2,
+                "fields" => '{"5": "1", "160": "1", "subject": "Добавление новых товаров (Работа с товарами Розетки)", "type_id": "1", "direction": "2", "description": "description"}',
+                "user_id" => 4,
+                "seller_id" => 83,
+                "category_id" => null,
+                "amount_to_work" => 10,
+                "observers" => '["15", "16"]',
+            ],
+            [
+//                "id" => 2,
+                "parent_id" => null,
+                "name" => 'Добавление/изменение видео (Определяется типом задачи)',
+                "type_id" => 13,
+                "direction" => 0,
+                "fields" => '{"1": "1", "subject": "Добавление/изменение видео (Определяется типом задачи)", "type_id": "13", "direction": "0", "description": "description"}',
+                "user_id" => 5,
+                "seller_id" => null,
+                "category_id" => null,
+                "amount_to_work" => null,
+                "observers" => null,
+            ],
+        ],
         "user_permissions" => [
             [
                 //"id" => 3143,
@@ -149,8 +125,8 @@ return [
             ],
             [
                 //"id" => 3264,
-//                "user_id" => 4,
-//                "permission_name" => "errorsUpdate"
+                "user_id" => 4,
+                "permission_name" => "errorsUpdate"
             ],
             [
                 //"id" => 3265,
@@ -847,11 +823,11 @@ return [
                 "user_id" => 4,
                 "permission_name" => "transferRequireChangeToWaitCheck"
             ],
-            [
-                //"id" => 5715,
-                "user_id" => 4,
-                "permission_name" => "updateTemplates"
-            ],
+//            [
+//                //"id" => 5715,
+//                "user_id" => 4,
+//                "permission_name" => "updateTemplates"
+//            ],
             [
                 //"id" => 5715,
                 "user_id" => 4,
@@ -869,4 +845,7 @@ return [
             ],
         ]
     ],
+    "cooper_fixtures" => [
+        "market" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'cooper_fixtures/market.php',
+    ]
 ];
