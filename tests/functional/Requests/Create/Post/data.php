@@ -4542,6 +4542,14 @@ return [
                             "request_id" => 1,
                             "user_id" => 17
                         ],
+                        [
+                            "request_id" => 2,
+                            "user_id" => 15
+                        ],
+                        [
+                            "request_id" => 2,
+                            "user_id" => 17
+                        ],
                     ],
                 ]
             ]
