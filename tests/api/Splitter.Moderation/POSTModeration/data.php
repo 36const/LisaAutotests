@@ -7,7 +7,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-client-comment',
             'requestBody' => [
                 "idComment" => 45626602,
                 "sVisitorName" => "Михаил Михаил",
@@ -117,7 +116,6 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-client-comment',
             'requestBody' => [
                 "idComment" => 45626602,
                 "sProductName" => "Светодиодный светильник Brille LED-37 NW (L121-065)",
@@ -216,7 +214,6 @@ Media:
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-client-comment',
             'requestBody' => [
                 "idComment" => null,
                 "sVisitorName" => "Михаил Михаил",
@@ -253,7 +250,6 @@ Media:
             'description' => 'Заявка модерации с нечисловым id',
         ],
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-client-comment',
             'requestBody' => [
                 "idComment" => 'qwer',
                 "sVisitorName" => "Михаил Михаил",
@@ -290,7 +286,6 @@ Media:
             'description' => 'Заявка модерации без названия товара',
         ],
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-client-comment',
             'requestBody' => [
                 "idComment" => '1',
                 "sVisitorName" => "Михаил Михаил",
@@ -327,7 +322,6 @@ Media:
             'description' => 'Заявка модерации с пустым названием товара',
         ],
         'provider_data' => [
-            'requestURL' => '/bpm/api/create-request-by-client-comment',
             'requestBody' => [
                 "idComment" => 'qwer',
                 "sVisitorName" => "Михаил Михаил",

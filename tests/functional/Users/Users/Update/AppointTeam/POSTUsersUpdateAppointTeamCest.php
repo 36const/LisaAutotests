@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Users\User;
 
 /**
  * @group lisa
@@ -24,11 +23,10 @@ class POSTUsersUpdateAppointTeamCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param User $user
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTUsersUpdateAppointTeam(FunctionalTester $I, Example $data, User $user)
+    public function POSTUsersUpdateAppointTeam(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];

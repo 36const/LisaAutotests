@@ -1352,6 +1352,26 @@ return [
                             "user_id" => 4,
                             "permission_name" => "transferRequireChangeToWaitCheck"
                         ],
+                        [
+                            //"id" => 5715,
+                            "user_id" => 4,
+                            "permission_name" => "updateTemplates"
+                        ],
+                        [
+                            //"id" => 5715,
+                            "user_id" => 4,
+                            "permission_name" => "seeAllTemplates"
+                        ],
+                        [
+                            //"id" => 5715,
+                            "user_id" => 4,
+                            "permission_name" => "seeDirectionTemplates"
+                        ],
+                        [
+                            //"id" => 5715,
+                            "user_id" => 4,
+                            "permission_name" => "seeTeamTemplates"
+                        ],
 
                         [
                             //"id" => 3274,
@@ -2792,6 +2812,26 @@ return [
                             //"id" => 5715,
                             "user_id" => 4,
                             "permission_name" => "transferRequireChangeToWaitCheck"
+                        ],
+                        [
+                            //"id" => 5715,
+                            "user_id" => 4,
+                            "permission_name" => "updateTemplates"
+                        ],
+                        [
+                            //"id" => 5715,
+                            "user_id" => 4,
+                            "permission_name" => "seeAllTemplates"
+                        ],
+                        [
+                            //"id" => 5715,
+                            "user_id" => 4,
+                            "permission_name" => "seeDirectionTemplates"
+                        ],
+                        [
+                            //"id" => 5715,
+                            "user_id" => 4,
+                            "permission_name" => "seeTeamTemplates"
                         ],
 
                         [

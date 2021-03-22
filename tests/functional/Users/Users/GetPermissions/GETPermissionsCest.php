@@ -22,7 +22,6 @@ class GETPermissionsCest
      * @param FunctionalTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
      */
     public function GETPermissions(FunctionalTester $I, Example $data)
@@ -32,9 +31,7 @@ class GETPermissionsCest
 
         $I->amOnPage($providerData['url']);
 
-        isset($providerData['responseCode']) ?
-            $I->seeResponseCodeIs($providerData['responseCode']) :
-            $I->seeResponseCodeIs(200);
+        $I->seeResponseCodeIs($providerData['responseCode'] ?? 200);
 
         $I->checkObjectsOnPage($providerData['pageObjects']);
     }

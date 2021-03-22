@@ -27,7 +27,7 @@ class POSTModerationCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
+        $I->sendPOST('/bpm/api/create-request-by-client-comment', $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);

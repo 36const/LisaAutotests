@@ -56,4 +56,24 @@ class ApiTester extends Actor
             }
         }
     }
+
+    public const PARAMS_LOCAL = '/var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/config/params-local.php';
+
+    public function setMaxFileSize(int $kilobytes, bool $unset = false)
+    {
+        $fileArray = file(self::PARAMS_LOCAL);
+
+        foreach ($fileArray as $key => $str) {
+            if (strpos($str, 'max_file_size')) {
+                unset($fileArray[$key]);
+            }
+        }
+
+        if ($unset == false)
+            array_splice($fileArray, 3, 0, "    'max_file_size' => $kilobytes,\n");
+
+        $newFileContent = implode($fileArray);
+        $fo = fopen(self::PARAMS_LOCAL, 'w+');
+        fwrite($fo, $newFileContent);
+    }
 }
