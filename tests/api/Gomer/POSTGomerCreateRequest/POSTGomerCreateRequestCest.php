@@ -21,20 +21,24 @@ class POSTGomerCreateRequestCest
      * @param ApiTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
-     *
      * @dataProvider pageProvider
-     *
      */
-    public function POSTGomer(ApiTester $I, Example $data)
+    public function POSTGomerCreateRequest(ApiTester $I, Example $data)
     {
-        $I->loadDataForTest($data);
+        $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
-        $I->sendPOST($providerData['requestURL'], $providerData['requestBody']);
+        $I->setMaxFileSize(1024);
 
-        $I->seeResponseCodeIs($providerData['responseCode']);
+        isset($providerData['attachments']) ?
+            $I->sendPOST('/bpm/api/create-request', $providerData['requestBody'], $providerData['attachments']) :
+            $I->sendPOST('/bpm/api/create-request', $providerData['requestBody']);
+
+        $I->seeResponseCodeIs($providerData['responseCode'] ?? 200);
         $I->seeResponseContainsJson($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
+
+        $I->setMaxFileSize(1024, true);
     }
 }

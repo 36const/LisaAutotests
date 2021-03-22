@@ -215,7 +215,7 @@ return [
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/seller']"],
-                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]"],
                     ]
                 ]
             ]
@@ -234,7 +234,7 @@ return [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/category/create']"],
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/category']"],
-                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]"],
                     ]
                 ]
             ]
@@ -252,7 +252,7 @@ return [
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/team/create']"],
-                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]"],
                     ]
                 ]
             ]
@@ -270,7 +270,7 @@ return [
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/difficulty-coef/create']"],
-                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]"],
                     ]
                 ]
             ]
@@ -288,7 +288,7 @@ return [
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/field-values/create']"],
-                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]"],
                     ]
                 ]
             ]
@@ -306,7 +306,7 @@ return [
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/reason/create']"],
-                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]"],
                     ]
                 ]
             ]
@@ -324,7 +324,7 @@ return [
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/priority/create']"],
-                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]"],
                     ]
                 ]
             ]
@@ -342,7 +342,7 @@ return [
                 "cantSee" => [
                     [
                         ["selector" => "//header[@class='main-header']//a[@href='/bpm/excluded-fields']"],
-                        ["selector" => "//tbody//a[contains(@href, '/update?id')]",],
+                        ["selector" => "//tbody//a[contains(@href, '/update?id')]"],
                     ]
                 ]
             ]
@@ -398,7 +398,6 @@ return [
                 "canSee" => [
                     [
                         ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
-
                     ],
                 ],
             ]
@@ -417,12 +416,155 @@ return [
                 "canSee" => [
                     [
                         ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
-
                     ],
                 ],
             ]
         ]
     ],
 
+    //**** Шаблоны ****//
+    'case23' => [
+        'setting' => [
+            'description' => 'Кнопка редактирования у чужих шаблонов',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case23.php',
+        'provider_data' => [
+            "url" => '/bpm/request-template',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=1']"],
+                    ],
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=2']"],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
+    'case24' => [
+        'setting' => [
+            'description' => 'Поле редактирования владельца шаблона',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case23.php',
+        'provider_data' => [
+            "url" => '/bpm/request-template/update?id=1',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => "//select[@name='RequestTemplate[parent_id]']"],
+                    ],
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => "//select[@name='RequestTemplate[user_id]']"],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
+    'case25' => [
+        'setting' => [
+            'description' => 'Возможность использовать все шаблоны',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case25.php',
+        'provider_data' => [
+            "url" => '/bpm/request-template',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=1']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=2']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=3']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=4']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=5']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=6']"],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
+    'case26' => [
+        'setting' => [
+            'description' => 'Возможность использовать шаблоны только своего направления',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case26.php',
+        'provider_data' => [
+            "url" => '/bpm/request-template',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=1']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=3']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=4']"],
+                    ],
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=2']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=5']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=6']"],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
+    'case27' => [
+        'setting' => [
+            'description' => 'Возможность использовать шаблоны только своей команды',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case27.php',
+        'provider_data' => [
+            "url" => '/bpm/request-template',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=1']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=3']"],
+                    ],
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=2']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=4']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=5']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=6']"],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
+    'case28' => [
+        'setting' => [
+            'description' => 'Возможность использовать только свои шаблоны',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case28.php',
+        'provider_data' => [
+            "url" => '/bpm/request-template',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=1']"],
+                    ],
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=2']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=3']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=4']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=5']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=6']"],
+                    ],
+                ],
+            ]
+        ]
+    ],
 
 ];

@@ -4,7 +4,6 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
-use lisa\Page\Users\User;
 
 /**
  * @group lisa
@@ -24,11 +23,10 @@ class POSTUsersUpdateAssignRoleCest
     /**
      * @param FunctionalTester $I
      * @param Example $data
-     * @param User $user
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTUsersUpdateAssignRole(FunctionalTester $I, Example $data, User $user)
+    public function POSTUsersUpdateAssignRole(FunctionalTester $I, Example $data)
     {
         $I->loadDataForTest($data, null);
         $providerData = $data['provider_data'];

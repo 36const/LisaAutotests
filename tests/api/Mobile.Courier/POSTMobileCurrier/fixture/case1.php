@@ -26,7 +26,7 @@ return [
                 "title" => "Внесение изменений на основе запроса из MobileCourier",
                 "difficulty" => 4,
                 "supervisor_id" => 6,
-                "status" => 0
+                "status" => 1
             ],
         ],
         "markets_supervisors" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
