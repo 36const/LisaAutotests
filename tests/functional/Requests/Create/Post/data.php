@@ -4544,11 +4544,7 @@ return [
                         ],
                         [
                             "request_id" => 2,
-                            "user_id" => 15
-                        ],
-                        [
-                            "request_id" => 2,
-                            "user_id" => 17
+                            "user_id" => 16
                         ],
                     ],
                 ]
