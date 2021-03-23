@@ -63,7 +63,7 @@ class RequestView extends FunctionalTester
 
     public static function downloadedFile(int $id): string
     {
-        return "//div[contains(@class,'file-input')]//div[@id='thumb-request-uploadedfiles-init-$id']";
+        return "//div[contains(@class,'file-input')]//div[@id='thumb-file-input-widget-init-$id']";
     }
 
     public function changeStatus($requestParameter, $requestBody)

@@ -48,14 +48,14 @@ class AttachmentsRequestCreateCest
         $I->scrollTo(RequestCreate::$amount);
 
         //добавляем первый, правильный файл
-        $I->attachFile('//input[@id="request-uploadedfiles"]', "Attachments/~!@#$%^&*()_+`-=][';.|}{\":?><.doc");
+        $I->attachFile('//input[@id="file-input-widget"]', "Attachments/~!@#$%^&*()_+`-=][';.|}{\":?><.doc");
         $I->waitForElement(RequestView::downloadedFile(0));
         $I->cantSeeElement(RequestView::downloadedFile(1));
         $I->cantSeeElement('//div[@class="file-preview"]//div[@class="kv-fileinput-error file-error-message"]');
         $I->canSeeFileFound('*-.doc', FunctionalTester::BPM_UPLOADS);
 
         //добавляем второй файл с неподходящим расширением
-        $I->attachFile('//input[@id="request-uploadedfiles"]', 'Attachments/255exeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexee.exe');
+        $I->attachFile('//input[@id="file-input-widget"]', 'Attachments/255exeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexeexee.exe');
         $I->waitForElement('//div[@class="file-preview"]//div[@class="kv-fileinput-error file-error-message"]');
         $I->waitForElement(RequestView::downloadedFile(0));
         $I->cantSeeElement(RequestView::downloadedFile(1));
