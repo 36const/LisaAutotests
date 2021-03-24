@@ -257,7 +257,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "status",
-                            "changed_fields" => '{"newValue": 2, "oldValue": 1}'
+                            "changed_fields" => '{"newValue": 2, "oldValue": 1}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -272,7 +273,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "status",
-                            "changed_fields" => '{"newValue": 2, "oldValue": 1}'
+                            "changed_fields" => '{"newValue": 2, "oldValue": 1}',
+                            "notify_service_id" => null,
                         ]
                     ],
                     'request_status_history' => [
@@ -370,7 +372,8 @@ return [
                             "fields_for_complete" => '{"Причина": "Другое (описан в коментариях) | Нада </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}',
                             "triggered_by" => "Константин Куцан",
                             "event" => "status",
-                            "changed_fields" => '{"newValue": "3", "oldValue": 1}'
+                            "changed_fields" => '{"newValue": "3", "oldValue": 1}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -385,7 +388,8 @@ return [
                             "fields_for_complete" => '{"Причина": "Другое (описан в коментариях) | Нада </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}',
                             "triggered_by" => "Константин Куцан",
                             "event" => "status",
-                            "changed_fields" => '{"newValue": "3", "oldValue": 1}'
+                            "changed_fields" => '{"newValue": "3", "oldValue": 1}',
+                            "notify_service_id" => null,
                         ]
                     ],
                     'request_status_history' => [
@@ -493,7 +497,8 @@ return [
                             "fields_for_complete" => '{"Причина": "Все товары уже есть на сайте | Другое (описан в коментариях) | Дубль задачи </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО", "Описание": "description", "Приоритет": "Товар-новинка/эксклюзив (трафикообразующий)", "Ручная загрузка": "Да", "Пакетная загрузка": "(не указан)", "Супервайзер заявки": "Супервайзер Начальникович 1", "Сложность структуры": "(не указан)", "Коэффициент типа задачи": "0.5", "Уровень сложности задачи": "(не указан)", "Количество изменённых товаров": "(не указан)", "Коэффициент уровня сложности задачи": "1"}',
                             "triggered_by" => "Константин Куцан",
                             "event" => "status",
-                            "changed_fields" => '{"newValue": "4", "oldValue": 1}'
+                            "changed_fields" => '{"newValue": "4", "oldValue": 1}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -508,7 +513,8 @@ return [
                             "fields_for_complete" => '{"Причина": "Все товары уже есть на сайте | Другое (описан в коментариях) | Дубль задачи </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО", "Вид структуры": "(не указан)", "Ручная загрузка": "Да", "Пакетная загрузка": "(не указан)", "Сложность структуры": "(не указан)", "Коэффициент типа задачи": "0.5", "Общее количество ошибок": "0", "Уровень сложности задачи": "(не указан)", "Количество изменённых товаров": "(не указан)", "Общее количество товаров с ошибками": "0", "Коэффициент уровня сложности задачи": "1"}',
                             "triggered_by" => "Константин Куцан",
                             "event" => "status",
-                            "changed_fields" => '{"newValue": "4", "oldValue": 1}'
+                            "changed_fields" => '{"newValue": "4", "oldValue": 1}',
+                            "notify_service_id" => null,
                         ]
                     ],
                     'request_status_history' => [
@@ -618,7 +624,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "manager_id",
-                            "changed_fields" => '{"newValue": 11, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 11, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -633,7 +640,9 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "status",
-                            "changed_fields" => '{"newValue": 5, "oldValue": 1}'],
+                            "changed_fields" => '{"newValue": 5, "oldValue": 1}',
+                            "notify_service_id" => null,
+                        ],
                         [
                             "id" => 3,
                             "user_id" => 6,
@@ -647,7 +656,9 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "status",
-                            "changed_fields" => '{"newValue": 5, "oldValue": 1}'],
+                            "changed_fields" => '{"newValue": 5, "oldValue": 1}',
+                            "notify_service_id" => null,
+                        ],
                         [
                             "id" => 4,
                             "user_id" => 11,
@@ -661,7 +672,9 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "status",
-                            "changed_fields" => '{"newValue": 5, "oldValue": 1}']
+                            "changed_fields" => '{"newValue": 5, "oldValue": 1}',
+                            "notify_service_id" => null,
+                        ]
                     ],
                     'request_status_history' => [
                         [
@@ -944,7 +957,8 @@ return [
                             "fields_for_complete" => '[]',
                             "triggered_by" => "Константин Куцан",
                             "event" => "supervisor_id",
-                            "changed_fields" => '{"newValue": 10, "oldValue": 6}'
+                            "changed_fields" => '{"newValue": 10, "oldValue": 6}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -959,7 +973,8 @@ return [
                             "fields_for_complete" => '[]',
                             "triggered_by" => "Константин Куцан",
                             "event" => "supervisor_id",
-                            "changed_fields" => '{"newValue": 10, "oldValue": 6}'
+                            "changed_fields" => '{"newValue": 10, "oldValue": 6}',
+                            "notify_service_id" => null,
                         ]
                     ],
                     'request_status_history' => [],

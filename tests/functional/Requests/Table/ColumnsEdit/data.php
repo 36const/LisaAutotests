@@ -11,7 +11,7 @@ return [
         'provider_data' => [
             "url" => '',
             'requestBody' => [
-                'visibleColumns' => ['author_id', 'supervisor_id', 'manager_id', 'status', 'direction', 'team_direction', 'category_id', 'seller_id', 'priority', 'cross_check_status', 'cross_check_manager_id']
+                'visibleColumns' => ['author_id', 'supervisor_id', 'manager_id', 'status', 'previous_status', 'direction', 'team_direction', 'category_id', 'seller_id', 'priority', 'cross_check_status', 'cross_check_manager_id']
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -19,7 +19,7 @@ return [
                         [
                             "id" => 1,
                             "user_id" => 4,
-                            "columns_list" => '["author_id", "supervisor_id", "manager_id", "status", "direction", "team_direction", "category_id", "seller_id", "priority", "cross_check_status", "cross_check_manager_id"]'
+                            "columns_list" => '["author_id", "supervisor_id", "manager_id", "status", "previous_status", "direction", "team_direction", "category_id", "seller_id", "priority", "cross_check_status", "cross_check_manager_id"]'
                         ]
                     ],
                 ]
@@ -34,6 +34,7 @@ return [
                         ["selector" => Request::columnName('supervisor_id', 'Супервайзер заявки')],
                         ["selector" => Request::columnName('manager_id', 'Менеджер заявки')],
                         ["selector" => Request::columnName('status', 'Статус')],
+                        ["selector" => Request::columnName('previous_status', 'Предыдущий статус')],
                         ["selector" => Request::columnName('direction', 'Направление задачи')],
                         ["selector" => Request::columnName('team_direction', 'Направление команды')],
                         ["selector" => Request::columnName('category_id', 'Категория товаров')],
@@ -64,6 +65,7 @@ return [
                         ["selector" => Request::requestInTable(1, 'supervisor_id', 'Супервайзер Категоркин 15')],
                         ["selector" => Request::requestInTable(1, 'manager_id', 'Менеджер Контентович 1А')],
                         ["selector" => Request::requestInTable(1, 'status', 'Выполнена')],
+                        ["selector" => Request::requestInTable(1, 'previous_status', 'В работе')],
                         ["selector" => Request::requestInTable(1, 'direction', 'Определяется типом задачи')],
                         ["selector" => Request::requestInTable(1, 'team_direction', 'Работа с порталами, фат-меню, категориями')],
                         ["selector" => Request::requestInTable(1, 'category_id', 'Авиабилеты')],
@@ -80,6 +82,7 @@ return [
                         ["selector" => Request::requestInTable(2, 'supervisor_id', 'Супервайзер Категоркин 18')],
                         ["selector" => Request::requestInTable(2, 'manager_id', 'Менеджер Контентович 1А')],
                         ["selector" => Request::requestInTable(2, 'status', 'Частично выполнена')],
+                        ["selector" => Request::requestInTable(2, 'previous_status', 'В работе')],
                         ["selector" => Request::requestInTable(2, 'direction', 'Определяется типом задачи')],
                         ["selector" => Request::requestInTable(2, 'team_direction', 'Работа с порталами, фат-меню, категориями')],
                         ["selector" => Request::requestInTable(2, 'category_id', 'Авиабилеты')],
@@ -96,6 +99,7 @@ return [
                         ["selector" => Request::requestInTable(3, 'supervisor_id', 'Супервайзер Проектенко 17')],
                         ["selector" => Request::requestInTable(3, 'manager_id', 'Менеджер Контентович 1А')],
                         ["selector" => Request::requestInTable(3, 'status', 'Ожидает')],
+                        ["selector" => Request::requestInTable(3, 'previous_status', 'В работе')],
                         ["selector" => Request::requestInTable(3, 'direction', 'Определяется типом задачи')],
                         ["selector" => Request::requestInTable(3, 'team_direction', 'Работа с проектированием структур + фильтрами')],
                         ["selector" => Request::requestInTable(3, 'category_id', 'Авиабилеты')],
@@ -112,6 +116,7 @@ return [
                         ["selector" => Request::requestInTable(4, 'supervisor_id', 'Супервайзер Проектенко 14')],
                         ["selector" => Request::requestInTable(4, 'manager_id', 'Менеджер Контентович 1А')],
                         ["selector" => Request::requestInTable(4, 'status', 'В работе')],
+                        ["selector" => Request::requestInTable(4, 'previous_status', 'Ожидает взятия в работу')],
                         ["selector" => Request::requestInTable(4, 'direction', 'Определяется типом задачи')],
                         ["selector" => Request::requestInTable(4, 'team_direction', 'Работа с проектированием структур + фильтрами')],
                         ["selector" => Request::requestInTable(4, 'category_id', 'Авиабилеты')],
@@ -128,6 +133,7 @@ return [
                         ["selector" => Request::requestInTable(5, 'supervisor_id', 'Супервайзер Категоркин 15')],
                         ["selector" => Request::requestInTable(5, 'manager_id', 'Менеджер Контентович 1А')],
                         ["selector" => Request::requestInTable(5, 'status', 'Ожидает взятия в работу')],
+                        ["selector" => Request::requestInTable(5, 'previous_status', 'Готова для распределения')],
                         ["selector" => Request::requestInTable(5, 'direction', 'Определяется типом задачи')],
                         ["selector" => Request::requestInTable(5, 'team_direction', 'Работа с порталами, фат-меню, категориями')],
                         ["selector" => Request::requestInTable(5, 'category_id', 'Авиабилеты')],
@@ -144,6 +150,7 @@ return [
                         ["selector" => Request::requestInTable(6, 'supervisor_id', 'Супервайзер Начальникович 1')],
                         ["selector" => Request::requestInTable(6, 'manager_id', '(не задано)')],
                         ["selector" => Request::requestInTable(6, 'status', 'На доработке')],
+                        ["selector" => Request::requestInTable(6, 'previous_status', 'Готова для распределения')],
                         ["selector" => Request::requestInTable(6, 'direction', 'Работа с товарами Розетки')],
                         ["selector" => Request::requestInTable(6, 'team_direction', 'Работа с товарами Rozetka')],
                         ["selector" => Request::requestInTable(6, 'category_id', 'Авиабилеты')],
@@ -160,6 +167,7 @@ return [
                         ["selector" => Request::requestInTable(7, 'supervisor_id', 'Супервайзер Начальникович 1')],
                         ["selector" => Request::requestInTable(7, 'manager_id', '(не задано)')],
                         ["selector" => Request::requestInTable(7, 'status', 'Готова для распределения')],
+                        ["selector" => Request::requestInTable(7, 'previous_status', 'Новая')],
                         ["selector" => Request::requestInTable(7, 'direction', 'Работа с товарами Маркетплейса')],
                         ["selector" => Request::requestInTable(7, 'team_direction', 'Работа с товарами Маркетплейса')],
                         ["selector" => Request::requestInTable(7, 'category_id', '(не задано)')],

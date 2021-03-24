@@ -35,7 +35,8 @@ return [
                 "team_direction" => 2,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 1
             ],
             [
 //                "id" => 2,
@@ -69,7 +70,8 @@ return [
                 "team_direction" => 3,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 2
             ],
             [
 //                "id" => 3,
@@ -103,7 +105,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 2
             ],
             [
 //                "id" => 4,
@@ -137,7 +140,8 @@ return [
                 "team_direction" => 5,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 5
             ],
             [
 //                "id" => 5,
@@ -171,7 +175,8 @@ return [
                 "team_direction" => 5,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 6
             ],
             [
 //                "id" => 6,
@@ -205,7 +210,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 6
             ],
             [
 //                "id" => 7,
@@ -239,7 +245,8 @@ return [
                 "team_direction" => 6,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}'
+                "sv_report_periods" => '{"1": 1}',
+                "previous_status" => 6
             ]
         ],
         "requests_fields" => [

@@ -3,6 +3,7 @@ author_id               Создатель заявки
 supervisor_id           Супервайзер заявки
 manager_id              Менеджер заявки
 status                  Статус
+previous_status         Предыдущий статус
 cross_check_manager_id  Кросс-чек менеджер
 cross_check_status      Кросс-чек статус
 direction               Направление задачи

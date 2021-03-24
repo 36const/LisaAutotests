@@ -163,7 +163,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -178,7 +179,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -193,7 +195,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -208,7 +211,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -401,7 +405,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -416,7 +421,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -431,7 +437,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -446,7 +453,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -626,7 +634,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -641,7 +650,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -656,7 +666,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -671,7 +682,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -857,7 +869,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -872,7 +885,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -887,7 +901,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -902,7 +917,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -1082,7 +1098,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -1097,7 +1114,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -1112,7 +1130,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -1127,7 +1146,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -1313,7 +1333,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -1328,7 +1349,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -1343,7 +1365,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -1358,7 +1381,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -1553,7 +1577,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -1568,7 +1593,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -1583,7 +1609,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -1598,7 +1625,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -1778,7 +1806,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -1793,7 +1822,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -1808,7 +1838,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -1823,7 +1854,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -2009,7 +2041,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -2024,7 +2057,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -2039,7 +2073,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -2054,7 +2089,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -2211,7 +2247,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -2226,7 +2263,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -2241,7 +2279,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -2256,7 +2295,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -2413,7 +2453,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -2428,7 +2469,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -2443,7 +2485,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -2458,7 +2501,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -2603,7 +2647,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -2618,7 +2663,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -2633,7 +2679,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -2648,7 +2695,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -2793,7 +2841,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -2808,7 +2857,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -2823,7 +2873,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -2838,7 +2889,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -2983,7 +3035,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -2998,7 +3051,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -3013,7 +3067,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -3028,7 +3083,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ]
                 ]
@@ -3198,7 +3254,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -3213,7 +3270,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -3228,7 +3286,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -3243,7 +3302,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -3388,7 +3448,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -3403,7 +3464,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -3418,7 +3480,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -3433,7 +3496,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -3578,7 +3642,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -3593,7 +3658,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -3608,7 +3674,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -3623,7 +3690,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -3768,7 +3836,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -3783,7 +3852,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -3798,7 +3868,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -3813,7 +3884,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [
@@ -4485,7 +4557,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 2,
@@ -4500,7 +4573,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 3,
@@ -4515,7 +4589,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                         [
                             "id" => 4,
@@ -4530,7 +4605,8 @@ return [
                             "fields_for_complete" => "[]",
                             "triggered_by" => "Константин Куцан",
                             "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                            "notify_service_id" => null,
                         ],
                     ],
                     'observers' => [

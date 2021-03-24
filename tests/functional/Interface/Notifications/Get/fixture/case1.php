@@ -17,7 +17,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "create",
-                "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                "notify_service_id" => '5fe1a264253dc6.52838091',
             ],
             [
                 //"id" => 2,
@@ -32,7 +33,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "create",
-                "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                "notify_service_id" => null,
             ],
             [
                 //"id" => 3,
@@ -47,7 +49,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "create",
-                "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                "notify_service_id" => '5fe1a264253dc6.52838091',
             ],
             [
                 //"id" => 4,
@@ -62,7 +65,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "create",
-                "changed_fields" => '{"newValue": 1, "oldValue": null}'
+                "changed_fields" => '{"newValue": 1, "oldValue": null}',
+                "notify_service_id" => null,
             ],
             [
                 //"id" => 5,
@@ -77,7 +81,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "status",
-                "changed_fields" => '{"newValue": 2, "oldValue": 1}'
+                "changed_fields" => '{"newValue": 2, "oldValue": 1}',
+                "notify_service_id" => null,
             ],
             [
                 //"id" => 6,
@@ -92,7 +97,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "status",
-                "changed_fields" => '{"newValue": 2, "oldValue": 1}'
+                "changed_fields" => '{"newValue": 2, "oldValue": 1}',
+                "notify_service_id" => null,
             ],
             [
                 //"id" => 7,
@@ -107,7 +113,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "status",
-                "changed_fields" => '{"newValue": 2, "oldValue": 1}'
+                "changed_fields" => '{"newValue": 2, "oldValue": 1}',
+                "notify_service_id" => null,
             ],
             [
                 //"id" => 8,
@@ -122,7 +129,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "status",
-                "changed_fields" => '{"newValue": 2, "oldValue": 1}'
+                "changed_fields" => '{"newValue": 2, "oldValue": 1}',
+                "notify_service_id" => null,
             ],
             [
                 //"id" => 9,
@@ -137,7 +145,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "mention",
-                "changed_fields" => '[]'
+                "changed_fields" => '[]',
+                "notify_service_id" => null,
             ],
             [
                 //"id" => 10,
@@ -152,7 +161,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "mention",
-                "changed_fields" => '[]'
+                "changed_fields" => '[]',
+                "notify_service_id" => '5fe1a264253dc6.52838091',
             ],
             [
                 //"id" => 11,
@@ -167,7 +177,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "comment",
-                "changed_fields" => '{"newValue": "@bpm_teamLead_2  ~!@#$%^&amp;*()_+`]&#039;/[;.,|}}&quot;?{:&gt;&lt;\n@bpm_teamLead_1  ", "oldValue": ""}'
+                "changed_fields" => '{"newValue": "@bpm_teamLead_2  ~!@#$%^&amp;*()_+`]&#039;/[;.,|}}&quot;?{:&gt;&lt;\n@bpm_teamLead_1  ", "oldValue": ""}',
+                "notify_service_id" => null,
             ],
             [
                 //"id" => 12,
@@ -182,7 +193,8 @@ return [
                 "fields_for_complete" => '[]',
                 "triggered_by" => "Менеджер Продактович 1",
                 "event" => "comment",
-                "changed_fields" => '{"newValue": "@bpm_teamLead_2  ~!@#$%^&amp;*()_+`]&#039;/[;.,|}}&quot;?{:&gt;&lt;\n@bpm_teamLead_1  ", "oldValue": ""}'
+                "changed_fields" => '{"newValue": "@bpm_teamLead_2  ~!@#$%^&amp;*()_+`]&#039;/[;.,|}}&quot;?{:&gt;&lt;\n@bpm_teamLead_1  ", "oldValue": ""}',
+                "notify_service_id" => '5fe1a264253dc6.52838091',
             ]
         ],
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php'

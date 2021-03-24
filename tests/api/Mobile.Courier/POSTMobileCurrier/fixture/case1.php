@@ -6,6 +6,7 @@ return [
     "lisa_fixtures" => [
         "requests" => [],
         "requests_fields" => [],
+        "request_attachments" => [],
         "categories" => [
             [
                 //"id" => 1,

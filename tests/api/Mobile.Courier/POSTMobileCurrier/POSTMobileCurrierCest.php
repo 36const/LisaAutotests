@@ -27,7 +27,9 @@ class POSTMobileCurrierCest
         $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/api/create-request-by-mobile-courier', $providerData['requestBody']);
+        isset($providerData['attachments']) ?
+            $I->sendPOST('/bpm/api/create-request-by-mobile-courier', $providerData['requestBody'], $providerData['attachments']) :
+            $I->sendPOST('/bpm/api/create-request-by-mobile-courier', $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->seeResponseContainsJson($providerData['responseBody']);
