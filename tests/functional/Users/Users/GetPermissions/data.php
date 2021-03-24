@@ -567,4 +567,22 @@ return [
         ]
     ],
 
+    'case29' => [
+        'setting' => [
+            'description' => 'Доступ к разделу "Шаблоны задач"',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            "url" => '/bpm/request-template',
+            "responseCode" => 403,
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => "//section[@class='content']//*[text() = 'Forbidden (#403)']"],
+                    ]
+                ],
+            ]
+        ]
+    ],
+
 ];
