@@ -86,7 +86,7 @@ $requests = [
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Перевод заявки из "На доработке" в "Новые"',
+            'description' => 'Перевод заявки 3->1 по requestId',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -97,7 +97,9 @@ return [
             ],
             "responseBody" => [
                 "status" => 200,
-                "message" => "Ok"
+                "requests_transferred" => [
+                    1
+                ]
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -270,6 +272,1033 @@ return [
         ]
     ],
 
+    'case26' => [
+        'setting' => [
+            'description' => 'Перевод одной заявки 3->1 по supplierCabinetId',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case26.php',
+        'provider_data' => [
+            'requestBody' => [
+                "supplierCabinetId" => 111,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 200,
+                "requests_transferred" => [
+                    1
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => 3,
+                            "supplier_cabinet_id" => 111,
+                        ],
+                        [
+                            "id" => 2,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 3,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так ни нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date" => null,
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
+                        ]
+                    ],
+                    "requests_fields" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
+                    'requests_reasons' => [
+                        [
+                            "request_id" => 2,
+                            "reason_id" => 15
+                        ],
+                    ],
+                    "request_status_history" => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 1,
+                            "old_status" => 3,
+                            "new_status" => 1,
+                            "reason" => "=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                            "created_at >=" => date("Y-m-d"),
+                            "manager_id" => null,
+                            "reasons" => null
+                        ]
+                    ],
+                    'user_notifications' => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 2,
+                            "user_id" => 7,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 3,
+                            "user_id" => 15,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 4,
+                            "user_id" => 17,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                    ]
+                ]
+            ],
+        ]
+    ],
+
+    'case27' => [
+        'setting' => [
+            'description' => 'Перевод двух заявок 3->1 по supplierCabinetId',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case27.php',
+        'provider_data' => [
+            'requestBody' => [
+                "supplierCabinetId" => 111,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 200,
+                "requests_transferred" => [
+                    1,
+                    2
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => 3,
+                            "supplier_cabinet_id" => 111,
+                        ],
+                        [
+                            "id" => 2,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так ни нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => 3,
+                            "supplier_cabinet_id" => 111,
+                        ],
+                    ],
+                    "requests_fields" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
+                    'requests_reasons' => [],
+                    "request_status_history" => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 1,
+                            "old_status" => 3,
+                            "new_status" => 1,
+                            "reason" => "=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                            "created_at >=" => date("Y-m-d"),
+                            "manager_id" => null,
+                            "reasons" => null
+                        ],
+                        [
+                            "id" => 2,
+                            "request_id" => 2,
+                            "user_id" => 1,
+                            "old_status" => 3,
+                            "new_status" => 1,
+                            "reason" => "=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                            "created_at >=" => date("Y-m-d"),
+                            "manager_id" => null,
+                            "reasons" => null
+                        ],
+                    ],
+                    'user_notifications' => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 2,
+                            "user_id" => 7,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 3,
+                            "user_id" => 15,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 4,
+                            "user_id" => 17,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 5,
+                            "user_id" => 4,
+                            "notification" => "",
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 2,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}',
+                            "notify_service_id" => null
+                        ],
+                        [
+                            "id" => 6,
+                            "user_id" => 7,
+                            "notification" => "",
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 2,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}',
+                            "notify_service_id" => null
+                        ]
+                    ]
+                ]
+            ],
+        ]
+    ],
+
+    'case28' => [
+        'setting' => [
+            'description' => 'Перевод двух заявок 3->1 по requestId и supplierCabinetId',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case26.php',
+        'provider_data' => [
+            'requestBody' => [
+                "requestId" => 2,
+                "supplierCabinetId" => 111,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 200,
+                "requests_transferred" => [
+                    1,
+                    2
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => 3,
+                            "supplier_cabinet_id" => 111,
+                        ],
+                        [
+                            "id" => 2,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так ни нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => 3,
+                            "supplier_cabinet_id" => null,
+                        ]
+                    ],
+                    "requests_fields" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
+                    'requests_reasons' => [],
+                    "request_status_history" => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 1,
+                            "old_status" => 3,
+                            "new_status" => 1,
+                            "reason" => "=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                            "created_at >=" => date("Y-m-d"),
+                            "manager_id" => null,
+                            "reasons" => null
+                        ],
+                        [
+                            "id" => 2,
+                            "request_id" => 2,
+                            "user_id" => 1,
+                            "old_status" => 3,
+                            "new_status" => 1,
+                            "reason" => "=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                            "created_at >=" => date("Y-m-d"),
+                            "manager_id" => null,
+                            "reasons" => null
+                        ],
+                    ],
+                    'user_notifications' => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 2,
+                            "user_id" => 7,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 3,
+                            "user_id" => 15,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 4,
+                            "user_id" => 17,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 5,
+                            "user_id" => 4,
+                            "notification" => "",
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 2,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}',
+                            "notify_service_id" => null
+                        ],
+                        [
+                            "id" => 6,
+                            "user_id" => 7,
+                            "notification" => "",
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 2,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}',
+                            "notify_service_id" => null
+                        ]
+                    ]
+                ]
+            ],
+        ]
+    ],
+
+    'case30' => [
+        'setting' => [
+            'description' => 'Перевод одной из двух заявок 3->1 при requestId + / supplierCabinetId - ',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                "requestId" => 1,
+                "supplierCabinetId" => 222,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 200,
+                "requests_transferred" => [
+                    1
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => 3,
+                        ],
+                        [
+                            "id" => 2,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 3,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так ни нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date" => null,
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
+                        ]
+                    ],
+                    "requests_fields" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
+                    'requests_reasons' => [
+                        [
+                            "request_id" => 2,
+                            "reason_id" => 15
+                        ],
+                    ],
+                    "request_status_history" => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 1,
+                            "old_status" => 3,
+                            "new_status" => 1,
+                            "reason" => "=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                            "created_at >=" => date("Y-m-d"),
+                            "manager_id" => null,
+                            "reasons" => null
+                        ]
+                    ],
+                    'user_notifications' => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 2,
+                            "user_id" => 7,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 3,
+                            "user_id" => 15,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 4,
+                            "user_id" => 17,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                    ]
+                ]
+            ],
+        ]
+    ],
+
+    'case31' => [
+        'setting' => [
+            'description' => 'Перевод одной из двух заявок 3->1 при requestId - / supplierCabinetId + ',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case26.php',
+        'provider_data' => [
+            'requestBody' => [
+                "requestId" => 10,
+                "supplierCabinetId" => 111,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 200,
+                "requests_transferred" => [
+                    1
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 1,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date >=" => date("Y-m-d"),
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => 3,
+                            "supplier_cabinet_id" => 111,
+                        ],
+                        [
+                            "id" => 2,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 3,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так ни нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date" => null,
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
+                        ]
+                    ],
+                    "requests_fields" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
+                    'requests_reasons' => [
+                        [
+                            "request_id" => 2,
+                            "reason_id" => 15
+                        ],
+                    ],
+                    "request_status_history" => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "user_id" => 1,
+                            "old_status" => 3,
+                            "new_status" => 1,
+                            "reason" => "=~}!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО",
+                            "created_at >=" => date("Y-m-d"),
+                            "manager_id" => null,
+                            "reasons" => null
+                        ]
+                    ],
+                    'user_notifications' => [
+                        [
+                            "id" => 1,
+                            "user_id" => 4,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 2,
+                            "user_id" => 7,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 3,
+                            "user_id" => 15,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                        [
+                            "id" => 4,
+                            "user_id" => 17,
+                            "notification" => '',
+                            "status" => 0,
+                            "created_at >=" => date("Y-m-d"),
+                            "request_id" => 1,
+                            "priority" => null,
+                            "amount_to_work" => 10,
+                            "request_subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "fields_for_complete" => "[]",
+                            "triggered_by" => "Система",
+                            "event" => "status",
+                            "changed_fields" => '{"newValue": 1, "oldValue": 3}'
+                        ],
+                    ]
+                ]
+            ],
+        ]
+    ],
+
     'case17' => [
         'setting' => [
             'description' => 'Запрос на перевод заявки, ранее уже переведённой в "Новые"',
@@ -283,7 +1312,9 @@ return [
             ],
             "responseBody" => [
                 "status" => 200,
-                "message" => "Ok"
+                "requests_transferred" => [
+                    1
+                ]
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -385,7 +1416,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Ошибка без указания requestId',
+            'description' => 'Ошибка без указания requestId и supplierCabinetId',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -397,7 +1428,7 @@ return [
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "requestId: должен быть числом."
+                    "Необходимо заполнить requestId или supplierCabinetId"
                 ]
             ],
             'db' => [
@@ -481,7 +1512,35 @@ return [
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "Модель класа gomer\\bpm\\models\\requests\\Request не найдена по параметрам. Conditions:\"100\""
+                    "По вашему запросу не найдено заявок."
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => $requests,
+                    "requests_fields" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
+                    "user_notifications" => [],
+                    "request_status_history" => [],
+                ]
+            ],
+        ]
+    ],
+
+    'case29' => [
+        'setting' => [
+            'description' => 'Ошибка при указании несуществующего supplierCabinetId',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                "supplierCabinetId" => 111,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "По вашему запросу не найдено заявок."
                 ]
             ],
             'db' => [
@@ -515,6 +1574,117 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     "requests" => $requests,
+                    "requests_fields" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
+                    "user_notifications" => [],
+                    "request_status_history" => [],
+                ]
+            ],
+        ]
+    ],
+
+    'case32' => [
+        'setting' => [
+            'description' => 'Ошибка при переводе двух заявок 3->1 по supplierCabinetId, одна из которых не на доработке',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case32.php',
+        'provider_data' => [
+            'requestBody' => [
+                "supplierCabinetId" => 111,
+                "newStatus" => 1,
+                "payload[Request][correction_comment]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+            ],
+            "responseBody" => [
+                "status" => 400,
+                "errors" => [
+                    "Невозможно изменить статус заявки №2: В текущем рабочем процессе отсутствует перевод заявки из статуса \"Ожидает взятия в работу\"(5) в статус \"Новая\"(1)"                
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    "requests" => [
+                        [
+                            "id" => 1,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 3,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date" => null,
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
+                            "supplier_cabinet_id" => 111,
+                        ],
+                        [
+                            "id" => 2,
+                            "author_id" => 4,
+                            "type_id" => 1,
+                            "supervisor_id" => 7,
+                            "manager_id" => null,
+                            "status" => 5,
+                            "direction" => 1,
+                            "priority" => null,
+                            "awaiting_correction" => 0,
+                            "created_at" => '2020-01-01 00:00:00',
+                            "correction_comment" => null,
+                            "amount_to_work" => 10,
+                            "subject" => "Добавление новых товаров (Работа с товарами Розетки)",
+                            "description" => 'description',
+                            "category_id" => 1,
+                            "seller_id" => 83,
+                            "recommendations" => null,
+                            "reason" => 'так ни нада',
+                            "parent_id" => null,
+                            "planned_start_date" => null,
+                            "planned_finish_date" => null,
+                            "actual_start_date" => null,
+                            "actual_finish_date" => null,
+                            "supervisor_process_date" => null,
+                            "supervisor_check_date" => null,
+                            "result_comment" => null,
+                            "supervisor_comment" => null,
+                            "last_change_status_date" => null,
+                            "team_direction" => 3,
+                            "report_period_id" => null,
+                            "sync_source_id" => null,
+                            "sv_report_periods" => null,
+                            "cross_check_status" => 0,
+                            "cross_check_manager_id" => null,
+                            "employee_code_1c" => null,
+                            "child_count" => 0,
+                            "photo_load_status" => 0,
+                            "previous_status" => null,
+                            "supplier_cabinet_id" => 111,
+                        ]
+                    ],
                     "requests_fields" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     "user_notifications" => [],
                     "request_status_history" => [],
@@ -789,7 +1959,7 @@ return [
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "requestId: должен быть числом."
+                    "Необходимо заполнить requestId или supplierCabinetId"
                 ]
             ],
             'db' => [
