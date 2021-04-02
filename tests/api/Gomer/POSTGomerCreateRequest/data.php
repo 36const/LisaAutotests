@@ -457,7 +457,6 @@ return [
                 "Request[subject]" => 'Добавление новых товаров (Работа с товарами Маркетплейса)',
                 "Request[supplier_cabinet_id]" => 1,
                 "Request[type_id]" => 1,
-                "Request[observers]" => [15, 17],
                 "files[]" => ''
             ],
             "responseBody" => [
@@ -545,48 +544,6 @@ return [
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
                         ],
-                        [
-                            "id" => 3,
-                            "user_id" => 15,
-                            "notification" => '',
-                            "status" => 0,
-                            "created_at >=" => date("Y-m-d"),
-                            "request_id" => 1,
-                            "priority" => null,
-                            "amount_to_work" => 10,
-                            "request_subject" => "[API] Добавление новых товаров (Работа с товарами Маркетплейса)",
-                            "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
-                            "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
-                            "notify_service_id" => null,
-                        ],
-                        [
-                            "id" => 4,
-                            "user_id" => 17,
-                            "notification" => '',
-                            "status" => 0,
-                            "created_at >=" => date("Y-m-d"),
-                            "request_id" => 1,
-                            "priority" => null,
-                            "amount_to_work" => 10,
-                            "request_subject" => "[API] Добавление новых товаров (Работа с товарами Маркетплейса)",
-                            "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
-                            "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
-                            "notify_service_id" => null,
-                        ],
-                    ],
-                    'observers' => [
-                        [
-                            "request_id" => 1,
-                            "user_id" => 15
-                        ],
-                        [
-                            "request_id" => 1,
-                            "user_id" => 17
-                        ],
                     ],
                 ]
             ]
@@ -605,7 +562,6 @@ return [
                 "Request[author_login]" => 'kutsan.k',
                 "Request[category_id]" => 1,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                "Request[observers]" => [15, 17],
                 "Request[direction]" => 1,
                 "Request[seller_id]" => 83,
                 "Request[subject]" => "Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
@@ -702,48 +658,6 @@ return [
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
-                        ],
-                        [
-                            "id" => 3,
-                            "user_id" => 15,
-                            "notification" => '',
-                            "status" => 0,
-                            "created_at >=" => date("Y-m-d"),
-                            "request_id" => 1,
-                            "priority" => null,
-                            "amount_to_work" => 10,
-                            "request_subject" => "[API] Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
-                            "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
-                            "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
-                            "notify_service_id" => null,
-                        ],
-                        [
-                            "id" => 4,
-                            "user_id" => 17,
-                            "notification" => '',
-                            "status" => 0,
-                            "created_at >=" => date("Y-m-d"),
-                            "request_id" => 1,
-                            "priority" => null,
-                            "amount_to_work" => 10,
-                            "request_subject" => "[API] Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)",
-                            "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
-                            "event" => "create",
-                            "changed_fields" => '{"newValue": 1, "oldValue": null}',
-                            "notify_service_id" => null,
-                        ],
-                    ],
-                    'observers' => [
-                        [
-                            "request_id" => 1,
-                            "user_id" => 15
-                        ],
-                        [
-                            "request_id" => 1,
-                            "user_id" => 17
                         ],
                     ],
                 ]
