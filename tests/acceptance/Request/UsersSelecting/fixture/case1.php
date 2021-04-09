@@ -144,7 +144,7 @@ return [
         "public.teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
         "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
         "priorities" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
-        "user_bpm" => [
+        "auth.users" => [
             [
                 //"id" => 1,
                 "name" => "Система",
@@ -692,1826 +692,1459 @@ return [
                 "drfo" => "0"
             ],
         ],
-        "user_permissions" => [
+        "auth.auth_item" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
+        "auth.auth_assignment" => [
             [
-                //"id" => 2,
                 "user_id" => 4,
-                "permission_name" => "reportView"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 3,
                 "user_id" => 4,
-                "permission_name" => "viewUser"
+                "item_name" => "viewUser"
             ],
             [
-                //"id" => 5,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 6,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 7,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 8,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 9,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 13,
                 "user_id" => 4,
-                "permission_name" => "reportLoadYourTeam"
+                "item_name" => "reportLoadYourTeam"
             ],
             [
-                //"id" => 16,
                 "user_id" => 4,
-                "permission_name" => "viewDashboardsByCommand"
+                "item_name" => "viewDashboardsByCommand"
             ],
             [
-                //"id" => 28,
                 "user_id" => 4,
-                "permission_name" => "requestCreate"
+                "item_name" => "requestCreate"
             ],
             [
-                //"id" => 29,
                 "user_id" => 4,
-                "permission_name" => "requestUpdate"
+                "item_name" => "requestUpdate"
             ],
             [
-                //"id" => 30,
                 "user_id" => 4,
-                "permission_name" => "requestCreateRelated"
+                "item_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 31,
                 "user_id" => 4,
-                "permission_name" => "requestViewDirectionRequests"
+                "item_name" => "requestViewDirectionRequests"
             ],
             [
-                //"id" => 33,
                 "user_id" => 4,
-                "permission_name" => "massEdit"
+                "item_name" => "massEdit"
             ],
             [
-                //"id" => 36,
                 "user_id" => 4,
-                "permission_name" => "viewSplitterModerationRequests"
+                "item_name" => "viewSplitterModerationRequests"
             ],
             [
-                //"id" => 37,
                 "user_id" => 4,
-                "permission_name" => "takeToWork"
+                "item_name" => "takeToWork"
             ],
             [
-                //"id" => 38,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToInWork"
+                "item_name" => "transferOnHoldToInWork"
             ],
             [
-                //"id" => 39,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToRequireFix"
+                "item_name" => "transferCompletedToRequireFix"
             ],
             [
-                //"id" => 40,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToClosed"
+                "item_name" => "transferCompletedToClosed"
             ],
             [
-                //"id" => 41,
                 "user_id" => 4,
-                "permission_name" => "transferWaitCheckToInCheck"
+                "item_name" => "transferWaitCheckToInCheck"
             ],
             [
-                //"id" => 42,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToRequireChange"
+                "item_name" => "transferInCheckToRequireChange"
             ],
             [
-                //"id" => 43,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToDeclined"
+                "item_name" => "transferInCheckToDeclined"
             ],
             [
-                //"id" => 44,
                 "user_id" => 4,
-                "permission_name" => "requestAddNewItems"
+                "item_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 45,
                 "user_id" => 4,
-                "permission_name" => "requestUpdateItems"
+                "item_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 46,
                 "user_id" => 4,
-                "permission_name" => "requestTransferItems"
+                "item_name" => "requestTransferItems"
             ],
             [
-                //"id" => 47,
                 "user_id" => 4,
-                "permission_name" => "requestGroupItems"
+                "item_name" => "requestGroupItems"
             ],
             [
-                //"id" => 48,
                 "user_id" => 4,
-                "permission_name" => "requestUploadPhoto"
+                "item_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 49,
                 "user_id" => 4,
-                "permission_name" => "requestCheckHidden"
+                "item_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 50,
                 "user_id" => 4,
-                "permission_name" => "requestAddFatPortalCat"
+                "item_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 51,
                 "user_id" => 4,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "item_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 52,
                 "user_id" => 4,
-                "permission_name" => "requestAddAttrOrValues"
+                "item_name" => "requestAddAttrOrValues"
             ],
             [
-                //"id" => 53,
                 "user_id" => 4,
-                "permission_name" => "requestUpdateAttrOrValues"
+                "item_name" => "requestUpdateAttrOrValues"
             ],
             [
-                //"id" => 54,
                 "user_id" => 4,
-                "permission_name" => "requestStructureDesign"
+                "item_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 55,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateSC"
+                "item_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 56,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateVideo"
+                "item_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 57,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateSizeGrid"
+                "item_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 58,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateTags"
+                "item_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 59,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToWaitCheck"
+                "item_name" => "transferInCheckToWaitCheck"
             ],
             [
-                //"id" => 60,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToWaitCheck"
+                "item_name" => "transferRequireChangeToWaitCheck"
             ],
             [
-                //"id" => 61,
                 "user_id" => 4,
-                "permission_name" => "transferWaitCheckToRequireChange"
+                "item_name" => "transferWaitCheckToRequireChange"
             ],
             [
-                //"id" => 62,
                 "user_id" => 4,
-                "permission_name" => "transferDeclinedToWaitCheck"
+                "item_name" => "transferDeclinedToWaitCheck"
             ],
             [
-                //"id" => 63,
                 "user_id" => 4,
-                "permission_name" => "transferWaitCheckToDeclined"
+                "item_name" => "transferWaitCheckToDeclined"
             ],
             [
-                //"id" => 64,
                 "user_id" => 4,
-                "permission_name" => "transferDeclinedToInCheck"
+                "item_name" => "transferDeclinedToInCheck"
             ],
             [
-                //"id" => 65,
                 "user_id" => 4,
-                "permission_name" => "transferDeclinedToRequireChange"
+                "item_name" => "transferDeclinedToRequireChange"
             ],
             [
-                //"id" => 66,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToDeclined"
+                "item_name" => "transferRequireChangeToDeclined"
             ],
             [
-                //"id" => 67,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToWaitCheck"
+                "item_name" => "transferWaitWorkToWaitCheck"
             ],
             [
-                //"id" => 68,
                 "user_id" => 4,
-                "permission_name" => "transferWaitCheckToWaitWork"
+                "item_name" => "transferWaitCheckToWaitWork"
             ],
             [
-                //"id" => 69,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToInCheck"
+                "item_name" => "transferWaitWorkToInCheck"
             ],
             [
-                //"id" => 70,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToWaitWork"
+                "item_name" => "transferInCheckToWaitWork"
             ],
             [
-                //"id" => 71,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToRequireChange"
+                "item_name" => "transferWaitWorkToRequireChange"
             ],
             [
-                //"id" => 72,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToWaitWork"
+                "item_name" => "transferRequireChangeToWaitWork"
             ],
             [
-                //"id" => 73,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToDeclined"
+                "item_name" => "transferWaitWorkToDeclined"
             ],
             [
-                //"id" => 74,
                 "user_id" => 4,
-                "permission_name" => "transferDeclinedToWaitWork"
+                "item_name" => "transferDeclinedToWaitWork"
             ],
             [
-                //"id" => 75,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToWaitCheck"
+                "item_name" => "transferInWorkToWaitCheck"
             ],
             [
-                //"id" => 76,
                 "user_id" => 4,
-                "permission_name" => "transferWaitCheckToInWork"
+                "item_name" => "transferWaitCheckToInWork"
             ],
             [
-                //"id" => 77,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToInCheck"
+                "item_name" => "transferInWorkToInCheck"
             ],
             [
-                //"id" => 78,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToInWork"
+                "item_name" => "transferInCheckToInWork"
             ],
             [
-                //"id" => 79,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToRequireChange"
+                "item_name" => "transferInWorkToRequireChange"
             ],
             [
-                //"id" => 80,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToInWork"
+                "item_name" => "transferRequireChangeToInWork"
             ],
             [
-                //"id" => 81,
                 "user_id" => 4,
-                "permission_name" => "transferDeclinedToInWork"
+                "item_name" => "transferDeclinedToInWork"
             ],
             [
-                //"id" => 82,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToWaitWork"
+                "item_name" => "transferInWorkToWaitWork"
             ],
             [
-                //"id" => 83,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToWaitCheck"
+                "item_name" => "transferOnHoldToWaitCheck"
             ],
             [
-                //"id" => 84,
                 "user_id" => 4,
-                "permission_name" => "transferWaitCheckToOnHold"
+                "item_name" => "transferWaitCheckToOnHold"
             ],
             [
-                //"id" => 85,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToInCheck"
+                "item_name" => "transferOnHoldToInCheck"
             ],
             [
-                //"id" => 86,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToOnHold"
+                "item_name" => "transferInCheckToOnHold"
             ],
             [
-                //"id" => 87,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToRequireChange"
+                "item_name" => "transferOnHoldToRequireChange"
             ],
             [
-                //"id" => 88,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToOnHold"
+                "item_name" => "transferRequireChangeToOnHold"
             ],
             [
-                //"id" => 89,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToDeclined"
+                "item_name" => "transferOnHoldToDeclined"
             ],
             [
-                //"id" => 90,
                 "user_id" => 4,
-                "permission_name" => "transferDeclinedToOnHold"
+                "item_name" => "transferDeclinedToOnHold"
             ],
             [
-                //"id" => 91,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToWaitWork"
+                "item_name" => "transferOnHoldToWaitWork"
             ],
             [
-                //"id" => 92,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToOnHold"
+                "item_name" => "transferWaitWorkToOnHold"
             ],
             [
-                //"id" => 93,
                 "user_id" => 4,
-                "permission_name" => "transferPartialCompleteToWaitCheck"
+                "item_name" => "transferPartialCompleteToWaitCheck"
             ],
             [
-                //"id" => 94,
                 "user_id" => 4,
-                "permission_name" => "transferWaitCheckToPartialComplete"
+                "item_name" => "transferWaitCheckToPartialComplete"
             ],
             [
-                //"id" => 95,
                 "user_id" => 4,
-                "permission_name" => "transferPartialCompleteToInCheck"
+                "item_name" => "transferPartialCompleteToInCheck"
             ],
             [
-                //"id" => 96,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToPartialComplete"
+                "item_name" => "transferInCheckToPartialComplete"
             ],
             [
-                //"id" => 97,
                 "user_id" => 4,
-                "permission_name" => "transferPartialCompleteToRequireChange"
+                "item_name" => "transferPartialCompleteToRequireChange"
             ],
             [
-                //"id" => 98,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToPartialComplete"
+                "item_name" => "transferRequireChangeToPartialComplete"
             ],
             [
-                //"id" => 99,
                 "user_id" => 4,
-                "permission_name" => "transferPartialCompleteToDeclined"
+                "item_name" => "transferPartialCompleteToDeclined"
             ],
             [
-                //"id" => 100,
                 "user_id" => 4,
-                "permission_name" => "transferDeclinedToPartialComplete"
+                "item_name" => "transferDeclinedToPartialComplete"
             ],
             [
-                //"id" => 101,
                 "user_id" => 4,
-                "permission_name" => "transferPartialCompleteToWaitWork"
+                "item_name" => "transferPartialCompleteToWaitWork"
             ],
             [
-                //"id" => 102,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToPartialComplete"
+                "item_name" => "transferWaitWorkToPartialComplete"
             ],
             [
-                //"id" => 103,
                 "user_id" => 4,
-                "permission_name" => "transferPartialCompleteToInWork"
+                "item_name" => "transferPartialCompleteToInWork"
             ],
             [
-                //"id" => 104,
                 "user_id" => 4,
-                "permission_name" => "transferPartialCompleteToOnHold"
+                "item_name" => "transferPartialCompleteToOnHold"
             ],
             [
-                //"id" => 105,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToPartialComplete"
+                "item_name" => "transferOnHoldToPartialComplete"
             ],
             [
-                //"id" => 106,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToWaitCheck"
+                "item_name" => "transferCompletedToWaitCheck"
             ],
             [
-                //"id" => 107,
                 "user_id" => 4,
-                "permission_name" => "transferWaitCheckToCompleted"
+                "item_name" => "transferWaitCheckToCompleted"
             ],
             [
-                //"id" => 108,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToInCheck"
+                "item_name" => "transferCompletedToInCheck"
             ],
             [
-                //"id" => 109,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToCompleted"
+                "item_name" => "transferInCheckToCompleted"
             ],
             [
-                //"id" => 110,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToRequireChange"
+                "item_name" => "transferCompletedToRequireChange"
             ],
             [
-                //"id" => 111,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToCompleted"
+                "item_name" => "transferRequireChangeToCompleted"
             ],
             [
-                //"id" => 112,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToDeclined"
+                "item_name" => "transferCompletedToDeclined"
             ],
             [
-                //"id" => 113,
                 "user_id" => 4,
-                "permission_name" => "transferDeclinedToCompleted"
+                "item_name" => "transferDeclinedToCompleted"
             ],
             [
-                //"id" => 114,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToWaitWork"
+                "item_name" => "transferCompletedToWaitWork"
             ],
             [
-                //"id" => 115,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToCompleted"
+                "item_name" => "transferWaitWorkToCompleted"
             ],
             [
-                //"id" => 116,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToInWork"
+                "item_name" => "transferCompletedToInWork"
             ],
             [
-                //"id" => 117,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToOnHold"
+                "item_name" => "transferCompletedToOnHold"
             ],
             [
-                //"id" => 118,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToCompleted"
+                "item_name" => "transferOnHoldToCompleted"
             ],
             [
-                //"id" => 119,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToPartialComplete"
+                "item_name" => "transferCompletedToPartialComplete"
             ],
             [
-                //"id" => 120,
                 "user_id" => 4,
-                "permission_name" => "transferPartialCompleteToCompleted"
+                "item_name" => "transferPartialCompleteToCompleted"
             ],
             [
-                //"id" => 121,
                 "user_id" => 4,
-                "permission_name" => "transferClosedToWaitCheck"
+                "item_name" => "transferClosedToWaitCheck"
             ],
             [
-                //"id" => 122,
                 "user_id" => 4,
-                "permission_name" => "transferWaitCheckToClosed"
+                "item_name" => "transferWaitCheckToClosed"
             ],
             [
-                //"id" => 123,
                 "user_id" => 4,
-                "permission_name" => "transferClosedToInCheck"
+                "item_name" => "transferClosedToInCheck"
             ],
             [
-                //"id" => 124,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToClosed"
+                "item_name" => "transferInCheckToClosed"
             ],
             [
-                //"id" => 125,
                 "user_id" => 4,
-                "permission_name" => "transferClosedToRequireChange"
+                "item_name" => "transferClosedToRequireChange"
             ],
             [
-                //"id" => 126,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToClosed"
+                "item_name" => "transferRequireChangeToClosed"
             ],
             [
-                //"id" => 127,
                 "user_id" => 4,
-                "permission_name" => "transferClosedToDeclined"
+                "item_name" => "transferClosedToDeclined"
             ],
             [
-                //"id" => 128,
                 "user_id" => 4,
-                "permission_name" => "transferDeclinedToClosed"
+                "item_name" => "transferDeclinedToClosed"
             ],
             [
-                //"id" => 129,
                 "user_id" => 4,
-                "permission_name" => "transferClosedToWaitWork"
+                "item_name" => "transferClosedToWaitWork"
             ],
             [
-                //"id" => 130,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToClosed"
+                "item_name" => "transferWaitWorkToClosed"
             ],
             [
-                //"id" => 131,
                 "user_id" => 4,
-                "permission_name" => "transferClosedToInWork"
+                "item_name" => "transferClosedToInWork"
             ],
             [
-                //"id" => 132,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToClosed"
+                "item_name" => "transferInWorkToClosed"
             ],
             [
-                //"id" => 133,
                 "user_id" => 4,
-                "permission_name" => "transferClosedToOnHold"
+                "item_name" => "transferClosedToOnHold"
             ],
             [
-                //"id" => 134,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToClosed"
+                "item_name" => "transferOnHoldToClosed"
             ],
             [
-                //"id" => 135,
                 "user_id" => 4,
-                "permission_name" => "transferClosedToPartialComplete"
+                "item_name" => "transferClosedToPartialComplete"
             ],
             [
-                //"id" => 136,
                 "user_id" => 4,
-                "permission_name" => "transferPartialCompleteToClosed"
+                "item_name" => "transferPartialCompleteToClosed"
             ],
             [
-                //"id" => 137,
                 "user_id" => 4,
-                "permission_name" => "transferClosedToCompleted"
+                "item_name" => "transferClosedToCompleted"
             ],
             [
-                //"id" => 138,
                 "user_id" => 4,
-                "permission_name" => "transferAnyToWaitCheck"
+                "item_name" => "transferAnyToWaitCheck"
             ],
             [
-                //"id" => 139,
                 "user_id" => 4,
-                "permission_name" => "transferWaitCheckToAny"
+                "item_name" => "transferWaitCheckToAny"
             ],
             [
-                //"id" => 140,
                 "user_id" => 4,
-                "permission_name" => "transferAnyToInCheck"
+                "item_name" => "transferAnyToInCheck"
             ],
             [
-                //"id" => 141,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToAny"
+                "item_name" => "transferInCheckToAny"
             ],
             [
-                //"id" => 142,
                 "user_id" => 4,
-                "permission_name" => "transferAnyToRequireChange"
+                "item_name" => "transferAnyToRequireChange"
             ],
             [
-                //"id" => 143,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToAny"
+                "item_name" => "transferRequireChangeToAny"
             ],
             [
-                //"id" => 144,
                 "user_id" => 4,
-                "permission_name" => "transferAnyToDeclined"
+                "item_name" => "transferAnyToDeclined"
             ],
             [
-                //"id" => 145,
                 "user_id" => 4,
-                "permission_name" => "transferDeclinedToAny"
+                "item_name" => "transferDeclinedToAny"
             ],
             [
-                //"id" => 146,
                 "user_id" => 4,
-                "permission_name" => "transferAnyToWaitWork"
+                "item_name" => "transferAnyToWaitWork"
             ],
             [
-                //"id" => 147,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToAny"
+                "item_name" => "transferWaitWorkToAny"
             ],
             [
-                //"id" => 148,
                 "user_id" => 4,
-                "permission_name" => "transferAnyToInWork"
+                "item_name" => "transferAnyToInWork"
             ],
             [
-                //"id" => 149,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToAny"
+                "item_name" => "transferInWorkToAny"
             ],
             [
-                //"id" => 150,
                 "user_id" => 4,
-                "permission_name" => "transferAnyToOnHold"
+                "item_name" => "transferAnyToOnHold"
             ],
             [
-                //"id" => 151,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToAny"
+                "item_name" => "transferOnHoldToAny"
             ],
             [
-                //"id" => 152,
                 "user_id" => 4,
-                "permission_name" => "transferAnyToPartialComplete"
+                "item_name" => "transferAnyToPartialComplete"
             ],
             [
-                //"id" => 153,
                 "user_id" => 4,
-                "permission_name" => "transferPartialCompleteToAny"
+                "item_name" => "transferPartialCompleteToAny"
             ],
             [
-                //"id" => 154,
                 "user_id" => 4,
-                "permission_name" => "transferAnyToCompleted"
+                "item_name" => "transferAnyToCompleted"
             ],
             [
-                //"id" => 155,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToAny"
+                "item_name" => "transferCompletedToAny"
             ],
             [
-                //"id" => 156,
                 "user_id" => 4,
-                "permission_name" => "transferAnyToClosed"
+                "item_name" => "transferAnyToClosed"
             ],
             [
-                //"id" => 157,
                 "user_id" => 4,
-                "permission_name" => "transferClosedToAny"
+                "item_name" => "transferClosedToAny"
             ],
             [
-                //"id" => 158,
-                "user_id" => 4,
-                "permission_name" => "transferRequireChangeToWaitCheck"
-            ],
-            [
-                //"id" => 335,
                 "user_id" => 5,
-                "permission_name" => "reportLoadMarketUsers"
+                "item_name" => "reportLoadMarketUsers"
             ],
             [
-                //"id" => 336,
                 "user_id" => 5,
-                "permission_name" => "reportView"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 337,
                 "user_id" => 5,
-                "permission_name" => "viewDashboardsByDirection"
+                "item_name" => "viewDashboardsByDirection"
             ],
             [
-                //"id" => 338,
                 "user_id" => 5,
-                "permission_name" => "blockUser"
+                "item_name" => "blockUser"
             ],
             [
-                //"id" => 339,
                 "user_id" => 5,
-                "permission_name" => "updateUser"
+                "item_name" => "updateUser"
             ],
             [
-                //"id" => 340,
                 "user_id" => 5,
-                "permission_name" => "viewUser"
+                "item_name" => "viewUser"
             ],
             [
-                //"id" => 341,
                 "user_id" => 5,
-                "permission_name" => "createUser"
+                "item_name" => "createUser"
             ],
             [
-                //"id" => 342,
                 "user_id" => 5,
-                "permission_name" => "takeToWork"
+                "item_name" => "takeToWork"
             ],
             [
-                //"id" => 343,
                 "user_id" => 5,
-                "permission_name" => "requestUpdate"
+                "item_name" => "requestUpdate"
             ],
             [
-                //"id" => 344,
                 "user_id" => 5,
-                "permission_name" => "massEdit"
+                "item_name" => "massEdit"
             ],
             [
-                //"id" => 345,
                 "user_id" => 5,
-                "permission_name" => "requestViewAllRequests"
+                "item_name" => "requestViewAllRequests"
             ],
             [
-                //"id" => 346,
                 "user_id" => 5,
-                "permission_name" => "viewSplitterModerationRequests"
+                "item_name" => "viewSplitterModerationRequests"
             ],
             [
-                //"id" => 347,
                 "user_id" => 5,
-                "permission_name" => "requestCreate"
+                "item_name" => "requestCreate"
             ],
             [
-                //"id" => 348,
                 "user_id" => 5,
-                "permission_name" => "requestCreateRelated"
+                "item_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 349,
                 "user_id" => 5,
-                "permission_name" => "requestGroupItems"
+                "item_name" => "requestGroupItems"
             ],
             [
-                //"id" => 350,
                 "user_id" => 5,
-                "permission_name" => "requestAddUpdateVideo"
+                "item_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 351,
                 "user_id" => 5,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "item_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 352,
                 "user_id" => 5,
-                "permission_name" => "requestUpdateItems"
+                "item_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 353,
                 "user_id" => 5,
-                "permission_name" => "requestAddUpdateSizeGrid"
+                "item_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 354,
                 "user_id" => 5,
-                "permission_name" => "requestAddUpdateTags"
+                "item_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 355,
                 "user_id" => 5,
-                "permission_name" => "requestAddFatPortalCat"
+                "item_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 356,
                 "user_id" => 5,
-                "permission_name" => "requestAddUpdateSC"
+                "item_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 357,
                 "user_id" => 5,
-                "permission_name" => "requestAddNewItems"
+                "item_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 358,
                 "user_id" => 5,
-                "permission_name" => "requestAddAttrOrValues"
+                "item_name" => "requestAddAttrOrValues"
             ],
             [
-                //"id" => 359,
                 "user_id" => 5,
-                "permission_name" => "requestUploadPhoto"
+                "item_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 360,
                 "user_id" => 5,
-                "permission_name" => "requestUpdateAttrOrValues"
+                "item_name" => "requestUpdateAttrOrValues"
             ],
             [
-                //"id" => 361,
                 "user_id" => 5,
-                "permission_name" => "requestTransferItems"
+                "item_name" => "requestTransferItems"
             ],
             [
-                //"id" => 362,
                 "user_id" => 5,
-                "permission_name" => "requestCheckHidden"
+                "item_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 363,
                 "user_id" => 5,
-                "permission_name" => "requestStructureDesign"
+                "item_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 364,
                 "user_id" => 5,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 365,
                 "user_id" => 5,
-                "permission_name" => "transferInWorkToWaitWork"
+                "item_name" => "transferInWorkToWaitWork"
             ],
             [
-                //"id" => 366,
                 "user_id" => 5,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 367,
                 "user_id" => 5,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 368,
                 "user_id" => 5,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 369,
                 "user_id" => 5,
-                "permission_name" => "transferCompletedToInWork"
+                "item_name" => "transferCompletedToInWork"
             ],
             [
-                //"id" => 370,
                 "user_id" => 5,
-                "permission_name" => "transferCompletedToClosed"
+                "item_name" => "transferCompletedToClosed"
             ],
             [
-                //"id" => 371,
                 "user_id" => 5,
-                "permission_name" => "transferInCheckToRequireChange"
+                "item_name" => "transferInCheckToRequireChange"
             ],
             [
-                //"id" => 372,
                 "user_id" => 5,
-                "permission_name" => "transferInCheckToWaitWork"
+                "item_name" => "transferInCheckToWaitWork"
             ],
             [
-                //"id" => 373,
                 "user_id" => 5,
-                "permission_name" => "transferInCheckToDeclined"
+                "item_name" => "transferInCheckToDeclined"
             ],
             [
-                //"id" => 374,
                 "user_id" => 5,
-                "permission_name" => "transferRequireChangeToWaitCheck"
+                "item_name" => "transferRequireChangeToWaitCheck"
             ],
             [
-                //"id" => 375,
                 "user_id" => 5,
-                "permission_name" => "transferWaitCheckToRequireChange"
+                "item_name" => "transferWaitCheckToRequireChange"
             ],
             [
-                //"id" => 376,
                 "user_id" => 5,
-                "permission_name" => "transferWaitCheckToWaitWork"
+                "item_name" => "transferWaitCheckToWaitWork"
             ],
             [
-                //"id" => 377,
                 "user_id" => 5,
-                "permission_name" => "transferWaitCheckToDeclined"
+                "item_name" => "transferWaitCheckToDeclined"
             ],
             [
-                //"id" => 378,
                 "user_id" => 5,
-                "permission_name" => "transferWaitCheckToInCheck"
+                "item_name" => "transferWaitCheckToInCheck"
             ],
             [
-                //"id" => 379,
                 "user_id" => 5,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 380,
                 "user_id" => 5,
-                "permission_name" => "transferWaitWorkToDeclined"
+                "item_name" => "transferWaitWorkToDeclined"
             ],
             [
-                //"id" => 381,
                 "user_id" => 5,
-                "permission_name" => "transferOnHoldToCompleted"
+                "item_name" => "transferOnHoldToCompleted"
             ],
             [
-                //"id" => 382,
                 "user_id" => 5,
-                "permission_name" => "transferOnHoldToInWork"
+                "item_name" => "transferOnHoldToInWork"
             ],
             [
-                //"id" => 383,
                 "user_id" => 5,
-                "permission_name" => "transferOnHoldToPartialComplete"
+                "item_name" => "transferOnHoldToPartialComplete"
             ],
             [
-                //"id" => 384,
                 "user_id" => 5,
-                "permission_name" => "transferPartialCompleteToInWork"
+                "item_name" => "transferPartialCompleteToInWork"
             ],
             [
-                //"id" => 385,
                 "user_id" => 5,
-                "permission_name" => "transferPartialCompleteToClosed"
+                "item_name" => "transferPartialCompleteToClosed"
             ],
             [
-                //"id" => 287,
                 "user_id" => 6,
-                "permission_name" => "reportLoadYourTeam"
+                "item_name" => "reportLoadYourTeam"
             ],
             [
-                //"id" => 288,
                 "user_id" => 6,
-                "permission_name" => "reportView"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 289,
                 "user_id" => 6,
-                "permission_name" => "viewDashboardsByCommand"
+                "item_name" => "viewDashboardsByCommand"
             ],
             [
-                //"id" => 290,
                 "user_id" => 6,
-                "permission_name" => "viewUser"
+                "item_name" => "viewUser"
             ],
             [
-                //"id" => 291,
                 "user_id" => 6,
-                "permission_name" => "takeToWork"
+                "item_name" => "takeToWork"
             ],
             [
-                //"id" => 292,
                 "user_id" => 6,
-                "permission_name" => "requestUpdate"
+                "item_name" => "requestUpdate"
             ],
             [
-                //"id" => 293,
                 "user_id" => 6,
-                "permission_name" => "massEdit"
+                "item_name" => "massEdit"
             ],
             [
-                //"id" => 294,
                 "user_id" => 6,
-                "permission_name" => "viewSplitterModerationRequests"
+                "item_name" => "viewSplitterModerationRequests"
             ],
             [
-                //"id" => 295,
                 "user_id" => 6,
-                "permission_name" => "requestViewDirectionRequests"
+                "item_name" => "requestViewDirectionRequests"
             ],
             [
-                //"id" => 296,
                 "user_id" => 6,
-                "permission_name" => "requestCreate"
+                "item_name" => "requestCreate"
             ],
             [
-                //"id" => 297,
                 "user_id" => 6,
-                "permission_name" => "requestCreateRelated"
+                "item_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 298,
                 "user_id" => 6,
-                "permission_name" => "requestGroupItems"
+                "item_name" => "requestGroupItems"
             ],
             [
-                //"id" => 299,
                 "user_id" => 6,
-                "permission_name" => "requestAddUpdateVideo"
+                "item_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 300,
                 "user_id" => 6,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "item_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 301,
                 "user_id" => 6,
-                "permission_name" => "requestUpdateItems"
+                "item_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 302,
                 "user_id" => 6,
-                "permission_name" => "requestAddUpdateSizeGrid"
+                "item_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 303,
                 "user_id" => 6,
-                "permission_name" => "requestAddUpdateTags"
+                "item_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 304,
                 "user_id" => 6,
-                "permission_name" => "requestAddFatPortalCat"
+                "item_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 305,
                 "user_id" => 6,
-                "permission_name" => "requestAddUpdateSC"
+                "item_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 306,
                 "user_id" => 6,
-                "permission_name" => "requestAddNewItems"
+                "item_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 307,
                 "user_id" => 6,
-                "permission_name" => "requestAddAttrOrValues"
+                "item_name" => "requestAddAttrOrValues"
             ],
             [
-                //"id" => 308,
                 "user_id" => 6,
-                "permission_name" => "requestUploadPhoto"
+                "item_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 309,
                 "user_id" => 6,
-                "permission_name" => "requestUpdateAttrOrValues"
+                "item_name" => "requestUpdateAttrOrValues"
             ],
             [
-                //"id" => 310,
                 "user_id" => 6,
-                "permission_name" => "requestTransferItems"
+                "item_name" => "requestTransferItems"
             ],
             [
-                //"id" => 311,
                 "user_id" => 6,
-                "permission_name" => "requestCheckHidden"
+                "item_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 312,
                 "user_id" => 6,
-                "permission_name" => "requestStructureDesign"
+                "item_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 313,
                 "user_id" => 6,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 314,
                 "user_id" => 6,
-                "permission_name" => "transferInWorkToWaitWork"
+                "item_name" => "transferInWorkToWaitWork"
             ],
             [
-                //"id" => 315,
                 "user_id" => 6,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 316,
                 "user_id" => 6,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 317,
                 "user_id" => 6,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 318,
                 "user_id" => 6,
-                "permission_name" => "transferCompletedToInWork"
+                "item_name" => "transferCompletedToInWork"
             ],
             [
-                //"id" => 319,
                 "user_id" => 6,
-                "permission_name" => "transferCompletedToClosed"
+                "item_name" => "transferCompletedToClosed"
             ],
             [
-                //"id" => 320,
                 "user_id" => 6,
-                "permission_name" => "transferInCheckToRequireChange"
+                "item_name" => "transferInCheckToRequireChange"
             ],
             [
-                //"id" => 321,
                 "user_id" => 6,
-                "permission_name" => "transferInCheckToWaitWork"
+                "item_name" => "transferInCheckToWaitWork"
             ],
             [
-                //"id" => 322,
                 "user_id" => 6,
-                "permission_name" => "transferInCheckToDeclined"
+                "item_name" => "transferInCheckToDeclined"
             ],
             [
-                //"id" => 323,
                 "user_id" => 6,
-                "permission_name" => "transferRequireChangeToWaitCheck"
+                "item_name" => "transferRequireChangeToWaitCheck"
             ],
             [
-                //"id" => 324,
                 "user_id" => 6,
-                "permission_name" => "transferWaitCheckToRequireChange"
+                "item_name" => "transferWaitCheckToRequireChange"
             ],
             [
-                //"id" => 325,
                 "user_id" => 6,
-                "permission_name" => "transferWaitCheckToWaitWork"
+                "item_name" => "transferWaitCheckToWaitWork"
             ],
             [
-                //"id" => 326,
                 "user_id" => 6,
-                "permission_name" => "transferWaitCheckToDeclined"
+                "item_name" => "transferWaitCheckToDeclined"
             ],
             [
-                //"id" => 327,
                 "user_id" => 6,
-                "permission_name" => "transferWaitCheckToInCheck"
+                "item_name" => "transferWaitCheckToInCheck"
             ],
             [
-                //"id" => 328,
                 "user_id" => 6,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 329,
                 "user_id" => 6,
-                "permission_name" => "transferWaitWorkToDeclined"
+                "item_name" => "transferWaitWorkToDeclined"
             ],
             [
-                //"id" => 330,
                 "user_id" => 6,
-                "permission_name" => "transferOnHoldToCompleted"
+                "item_name" => "transferOnHoldToCompleted"
             ],
             [
-                //"id" => 331,
                 "user_id" => 6,
-                "permission_name" => "transferOnHoldToInWork"
+                "item_name" => "transferOnHoldToInWork"
             ],
             [
-                //"id" => 332,
                 "user_id" => 6,
-                "permission_name" => "transferOnHoldToPartialComplete"
+                "item_name" => "transferOnHoldToPartialComplete"
             ],
             [
-                //"id" => 333,
                 "user_id" => 6,
-                "permission_name" => "transferPartialCompleteToInWork"
+                "item_name" => "transferPartialCompleteToInWork"
             ],
             [
-                //"id" => 334,
                 "user_id" => 6,
-                "permission_name" => "transferPartialCompleteToClosed"
+                "item_name" => "transferPartialCompleteToClosed"
             ],
             [
-                //"id" => 239,
                 "user_id" => 10,
-                "permission_name" => "reportLoadYourTeam"
+                "item_name" => "reportLoadYourTeam"
             ],
             [
-                //"id" => 240,
                 "user_id" => 10,
-                "permission_name" => "reportView"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 241,
                 "user_id" => 10,
-                "permission_name" => "viewDashboardsByCommand"
+                "item_name" => "viewDashboardsByCommand"
             ],
             [
-                //"id" => 242,
                 "user_id" => 10,
-                "permission_name" => "viewUser"
+                "item_name" => "viewUser"
             ],
             [
-                //"id" => 243,
                 "user_id" => 10,
-                "permission_name" => "takeToWork"
+                "item_name" => "takeToWork"
             ],
             [
-                //"id" => 244,
                 "user_id" => 10,
-                "permission_name" => "requestUpdate"
+                "item_name" => "requestUpdate"
             ],
             [
-                //"id" => 245,
                 "user_id" => 10,
-                "permission_name" => "massEdit"
+                "item_name" => "massEdit"
             ],
             [
-                //"id" => 246,
                 "user_id" => 10,
-                "permission_name" => "viewSplitterModerationRequests"
+                "item_name" => "viewSplitterModerationRequests"
             ],
             [
-                //"id" => 247,
                 "user_id" => 10,
-                "permission_name" => "requestViewDirectionRequests"
+                "item_name" => "requestViewDirectionRequests"
             ],
             [
-                //"id" => 248,
                 "user_id" => 10,
-                "permission_name" => "requestCreate"
+                "item_name" => "requestCreate"
             ],
             [
-                //"id" => 249,
                 "user_id" => 10,
-                "permission_name" => "requestCreateRelated"
+                "item_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 250,
                 "user_id" => 10,
-                "permission_name" => "requestGroupItems"
+                "item_name" => "requestGroupItems"
             ],
             [
-                //"id" => 251,
                 "user_id" => 10,
-                "permission_name" => "requestAddUpdateVideo"
+                "item_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 252,
                 "user_id" => 10,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "item_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 253,
                 "user_id" => 10,
-                "permission_name" => "requestUpdateItems"
+                "item_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 254,
                 "user_id" => 10,
-                "permission_name" => "requestAddUpdateSizeGrid"
+                "item_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 255,
                 "user_id" => 10,
-                "permission_name" => "requestAddUpdateTags"
+                "item_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 256,
                 "user_id" => 10,
-                "permission_name" => "requestAddFatPortalCat"
+                "item_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 257,
                 "user_id" => 10,
-                "permission_name" => "requestAddUpdateSC"
+                "item_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 258,
                 "user_id" => 10,
-                "permission_name" => "requestAddNewItems"
+                "item_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 259,
                 "user_id" => 10,
-                "permission_name" => "requestAddAttrOrValues"
+                "item_name" => "requestAddAttrOrValues"
             ],
             [
-                //"id" => 260,
                 "user_id" => 10,
-                "permission_name" => "requestUploadPhoto"
+                "item_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 261,
                 "user_id" => 10,
-                "permission_name" => "requestUpdateAttrOrValues"
+                "item_name" => "requestUpdateAttrOrValues"
             ],
             [
-                //"id" => 262,
                 "user_id" => 10,
-                "permission_name" => "requestTransferItems"
+                "item_name" => "requestTransferItems"
             ],
             [
-                //"id" => 263,
                 "user_id" => 10,
-                "permission_name" => "requestCheckHidden"
+                "item_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 264,
                 "user_id" => 10,
-                "permission_name" => "requestStructureDesign"
+                "item_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 265,
                 "user_id" => 10,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 266,
                 "user_id" => 10,
-                "permission_name" => "transferInWorkToWaitWork"
+                "item_name" => "transferInWorkToWaitWork"
             ],
             [
-                //"id" => 267,
                 "user_id" => 10,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 268,
                 "user_id" => 10,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 269,
                 "user_id" => 10,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 270,
                 "user_id" => 10,
-                "permission_name" => "transferCompletedToInWork"
+                "item_name" => "transferCompletedToInWork"
             ],
             [
-                //"id" => 271,
                 "user_id" => 10,
-                "permission_name" => "transferCompletedToClosed"
+                "item_name" => "transferCompletedToClosed"
             ],
             [
-                //"id" => 272,
                 "user_id" => 10,
-                "permission_name" => "transferInCheckToRequireChange"
+                "item_name" => "transferInCheckToRequireChange"
             ],
             [
-                //"id" => 273,
                 "user_id" => 10,
-                "permission_name" => "transferInCheckToWaitWork"
+                "item_name" => "transferInCheckToWaitWork"
             ],
             [
-                //"id" => 274,
                 "user_id" => 10,
-                "permission_name" => "transferInCheckToDeclined"
+                "item_name" => "transferInCheckToDeclined"
             ],
             [
-                //"id" => 275,
                 "user_id" => 10,
-                "permission_name" => "transferRequireChangeToWaitCheck"
+                "item_name" => "transferRequireChangeToWaitCheck"
             ],
             [
-                //"id" => 276,
                 "user_id" => 10,
-                "permission_name" => "transferWaitCheckToRequireChange"
+                "item_name" => "transferWaitCheckToRequireChange"
             ],
             [
-                //"id" => 277,
                 "user_id" => 10,
-                "permission_name" => "transferWaitCheckToWaitWork"
+                "item_name" => "transferWaitCheckToWaitWork"
             ],
             [
-                //"id" => 278,
                 "user_id" => 10,
-                "permission_name" => "transferWaitCheckToDeclined"
+                "item_name" => "transferWaitCheckToDeclined"
             ],
             [
-                //"id" => 279,
                 "user_id" => 10,
-                "permission_name" => "transferWaitCheckToInCheck"
+                "item_name" => "transferWaitCheckToInCheck"
             ],
             [
-                //"id" => 280,
                 "user_id" => 10,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 281,
                 "user_id" => 10,
-                "permission_name" => "transferWaitWorkToDeclined"
+                "item_name" => "transferWaitWorkToDeclined"
             ],
             [
-                //"id" => 282,
                 "user_id" => 10,
-                "permission_name" => "transferOnHoldToCompleted"
+                "item_name" => "transferOnHoldToCompleted"
             ],
             [
-                //"id" => 283,
                 "user_id" => 10,
-                "permission_name" => "transferOnHoldToInWork"
+                "item_name" => "transferOnHoldToInWork"
             ],
             [
-                //"id" => 284,
                 "user_id" => 10,
-                "permission_name" => "transferOnHoldToPartialComplete"
+                "item_name" => "transferOnHoldToPartialComplete"
             ],
             [
-                //"id" => 285,
                 "user_id" => 10,
-                "permission_name" => "transferPartialCompleteToInWork"
+                "item_name" => "transferPartialCompleteToInWork"
             ],
             [
-                //"id" => 286,
                 "user_id" => 10,
-                "permission_name" => "transferPartialCompleteToClosed"
+                "item_name" => "transferPartialCompleteToClosed"
             ],
             [
-                //"id" => 229,
                 "user_id" => 11,
-                "permission_name" => "reportView"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 230,
                 "user_id" => 11,
-                "permission_name" => "viewOwnDashboards"
+                "item_name" => "viewOwnDashboards"
             ],
             [
-                //"id" => 231,
                 "user_id" => 11,
-                "permission_name" => "requestViewOwnRequests"
+                "item_name" => "requestViewOwnRequests"
             ],
             [
-                //"id" => 232,
                 "user_id" => 11,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 233,
                 "user_id" => 11,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 234,
                 "user_id" => 11,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 235,
                 "user_id" => 11,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 236,
                 "user_id" => 11,
-                "permission_name" => "transferCompletedToInWork"
+                "item_name" => "transferCompletedToInWork"
             ],
             [
-                //"id" => 237,
                 "user_id" => 11,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 238,
                 "user_id" => 11,
-                "permission_name" => "transferPartialCompleteToInWork"
+                "item_name" => "transferPartialCompleteToInWork"
             ],
             [
-                //"id" => 219,
                 "user_id" => 12,
-                "permission_name" => "reportView"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 220,
                 "user_id" => 12,
-                "permission_name" => "viewOwnDashboards"
+                "item_name" => "viewOwnDashboards"
             ],
             [
-                //"id" => 221,
                 "user_id" => 12,
-                "permission_name" => "requestViewOwnRequests"
+                "item_name" => "requestViewOwnRequests"
             ],
             [
-                //"id" => 222,
                 "user_id" => 12,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 223,
                 "user_id" => 12,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 224,
                 "user_id" => 12,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 225,
                 "user_id" => 12,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 226,
                 "user_id" => 12,
-                "permission_name" => "transferCompletedToInWork"
+                "item_name" => "transferCompletedToInWork"
             ],
             [
-                //"id" => 227,
                 "user_id" => 12,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 228,
                 "user_id" => 12,
-                "permission_name" => "transferPartialCompleteToInWork"
+                "item_name" => "transferPartialCompleteToInWork"
             ],
             [
-                //"id" => 209,
                 "user_id" => 13,
-                "permission_name" => "reportView"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 210,
                 "user_id" => 13,
-                "permission_name" => "viewOwnDashboards"
+                "item_name" => "viewOwnDashboards"
             ],
             [
-                //"id" => 211,
                 "user_id" => 13,
-                "permission_name" => "requestViewOwnRequests"
+                "item_name" => "requestViewOwnRequests"
             ],
             [
-                //"id" => 212,
                 "user_id" => 13,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 213,
                 "user_id" => 13,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 214,
                 "user_id" => 13,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 215,
                 "user_id" => 13,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 216,
                 "user_id" => 13,
-                "permission_name" => "transferCompletedToInWork"
+                "item_name" => "transferCompletedToInWork"
             ],
             [
-                //"id" => 217,
                 "user_id" => 13,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 218,
                 "user_id" => 13,
-                "permission_name" => "transferPartialCompleteToInWork"
+                "item_name" => "transferPartialCompleteToInWork"
             ],
             [
-                //"id" => 199,
                 "user_id" => 14,
-                "permission_name" => "reportView"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 200,
                 "user_id" => 14,
-                "permission_name" => "viewOwnDashboards"
+                "item_name" => "viewOwnDashboards"
             ],
             [
-                //"id" => 201,
                 "user_id" => 14,
-                "permission_name" => "requestViewOwnRequests"
+                "item_name" => "requestViewOwnRequests"
             ],
             [
-                //"id" => 202,
                 "user_id" => 14,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 203,
                 "user_id" => 14,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 204,
                 "user_id" => 14,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 205,
                 "user_id" => 14,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 206,
                 "user_id" => 14,
-                "permission_name" => "transferCompletedToInWork"
+                "item_name" => "transferCompletedToInWork"
             ],
             [
-                //"id" => 207,
                 "user_id" => 14,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 208,
                 "user_id" => 14,
-                "permission_name" => "transferPartialCompleteToInWork"
+                "item_name" => "transferPartialCompleteToInWork"
             ],
             [
-                //"id" => 179,
                 "user_id" => 15,
-                "permission_name" => "requestViewAllRequests"
+                "item_name" => "requestViewAllRequests"
             ],
             [
-                //"id" => 180,
                 "user_id" => 15,
-                "permission_name" => "requestViewTeamRequests"
+                "item_name" => "requestViewTeamRequests"
             ],
             [
-                //"id" => 181,
                 "user_id" => 15,
-                "permission_name" => "viewSplitterModerationRequests"
+                "item_name" => "viewSplitterModerationRequests"
             ],
             [
-                //"id" => 182,
                 "user_id" => 15,
-                "permission_name" => "requestCreate"
+                "item_name" => "requestCreate"
             ],
             [
-                //"id" => 183,
                 "user_id" => 15,
-                "permission_name" => "requestCreateRelated"
+                "item_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 184,
                 "user_id" => 15,
-                "permission_name" => "requestGroupItems"
+                "item_name" => "requestGroupItems"
             ],
             [
-                //"id" => 185,
                 "user_id" => 15,
-                "permission_name" => "requestAddUpdateVideo"
+                "item_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 186,
                 "user_id" => 15,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "item_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 187,
                 "user_id" => 15,
-                "permission_name" => "requestUpdateItems"
+                "item_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 188,
                 "user_id" => 15,
-                "permission_name" => "requestAddUpdateSizeGrid"
+                "item_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 189,
                 "user_id" => 15,
-                "permission_name" => "requestAddUpdateTags"
+                "item_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 190,
                 "user_id" => 15,
-                "permission_name" => "requestAddFatPortalCat"
+                "item_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 191,
                 "user_id" => 15,
-                "permission_name" => "requestAddUpdateSC"
+                "item_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 192,
                 "user_id" => 15,
-                "permission_name" => "requestAddNewItems"
+                "item_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 193,
                 "user_id" => 15,
-                "permission_name" => "requestUploadPhoto"
+                "item_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 194,
                 "user_id" => 15,
-                "permission_name" => "requestTransferItems"
+                "item_name" => "requestTransferItems"
             ],
             [
-                //"id" => 195,
                 "user_id" => 15,
-                "permission_name" => "requestCheckHidden"
+                "item_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 196,
                 "user_id" => 15,
-                "permission_name" => "requestStructureDesign"
+                "item_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 197,
                 "user_id" => 15,
-                "permission_name" => "transferRequireChangeToWaitCheck"
+                "item_name" => "transferRequireChangeToWaitCheck"
             ],
             [
-                //"id" => 198,
                 "user_id" => 15,
-                "permission_name" => "transferOnHoldToInWork"
+                "item_name" => "transferOnHoldToInWork"
             ],
             [
-                //"id" => 159,
                 "user_id" => 16,
-                "permission_name" => "requestViewAllRequests"
+                "item_name" => "requestViewAllRequests"
             ],
             [
-                //"id" => 160,
                 "user_id" => 16,
-                "permission_name" => "requestViewTeamRequests"
+                "item_name" => "requestViewTeamRequests"
             ],
             [
-                //"id" => 161,
                 "user_id" => 16,
-                "permission_name" => "viewSplitterModerationRequests"
+                "item_name" => "viewSplitterModerationRequests"
             ],
             [
-                //"id" => 162,
                 "user_id" => 16,
-                "permission_name" => "requestCreate"
+                "item_name" => "requestCreate"
             ],
             [
-                //"id" => 163,
                 "user_id" => 16,
-                "permission_name" => "requestCreateRelated"
+                "item_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 164,
                 "user_id" => 16,
-                "permission_name" => "requestGroupItems"
+                "item_name" => "requestGroupItems"
             ],
             [
-                //"id" => 165,
                 "user_id" => 16,
-                "permission_name" => "requestAddUpdateVideo"
+                "item_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 166,
                 "user_id" => 16,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "item_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 167,
                 "user_id" => 16,
-                "permission_name" => "requestUpdateItems"
+                "item_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 168,
                 "user_id" => 16,
-                "permission_name" => "requestAddUpdateSizeGrid"
+                "item_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 169,
                 "user_id" => 16,
-                "permission_name" => "requestAddUpdateTags"
+                "item_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 170,
                 "user_id" => 16,
-                "permission_name" => "requestAddFatPortalCat"
+                "item_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 171,
                 "user_id" => 16,
-                "permission_name" => "requestAddUpdateSC"
+                "item_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 172,
                 "user_id" => 16,
-                "permission_name" => "requestAddNewItems"
+                "item_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 173,
                 "user_id" => 16,
-                "permission_name" => "requestUploadPhoto"
+                "item_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 174,
                 "user_id" => 16,
-                "permission_name" => "requestTransferItems"
+                "item_name" => "requestTransferItems"
             ],
             [
-                //"id" => 175,
                 "user_id" => 16,
-                "permission_name" => "requestCheckHidden"
+                "item_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 176,
                 "user_id" => 16,
-                "permission_name" => "requestStructureDesign"
+                "item_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 177,
                 "user_id" => 16,
-                "permission_name" => "transferRequireChangeToWaitCheck"
+                "item_name" => "transferRequireChangeToWaitCheck"
             ],
             [
-                //"id" => 178,
                 "user_id" => 16,
-                "permission_name" => "transferOnHoldToInWork"
+                "item_name" => "transferOnHoldToInWork"
             ]
         ]
     ],

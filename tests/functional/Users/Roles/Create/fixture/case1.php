@@ -2,7 +2,6 @@
 
 return [
     "lisa_fixtures" => [
-        "roles" => [],
-        "default_role_permissions" => []
+        "auth.auth_item_child" => []
     ],
 ];

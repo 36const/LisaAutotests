@@ -94,9 +94,9 @@ return [
         "observers" => [],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
-        "public.teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
-        "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
-        "user_bpm" => [
+        "auth.teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
+        "auth.auth_item" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
+        "auth.users" => [
             [
 //        "id" => 1,
                 "name" => "Система",
@@ -154,56 +154,56 @@ return [
                 "drfo" => "'000000004"
             ],
         ],
-        "user_permissions" => [
+        "auth.auth_assignment" => [
             [
-                //"id" => 219,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 220,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 221,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 222,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 223,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 224,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestViewOwnRequests"
+                "item_name" => "requestViewOwnRequests"
             ],
             [
-                //"id" => 225,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "reportView"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 226,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "transferPartialCompleteToInWork"
+                "item_name" => "transferPartialCompleteToInWork"
             ],
             [
-                //"id" => 227,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToInWork"
+                "item_name" => "transferCompletedToInWork"
             ],
             [
-                //"id" => 228,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "viewOwnDashboards"
+                "item_name" => "viewOwnDashboards"
             ],
         ]
     ],

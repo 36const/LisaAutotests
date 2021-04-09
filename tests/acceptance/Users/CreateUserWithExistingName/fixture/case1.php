@@ -2,10 +2,9 @@
 
 return [
     "lisa_fixtures" => [
-        "public.teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
-        "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
+        "auth.teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
         "notification_settings" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/notification_settings.php',
-        "user_bpm" => [
+        "auth.users" => [
             [
 //                "id" => 1,
                 "name" => "Система",
@@ -77,1096 +76,847 @@ return [
                 "drfo" => "'000000005"
             ],
         ],
-        "user_permissions" => [
+        "auth.auth_item" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
+        "auth.auth_assignment" => [
             [
-                //"id" => 1,
                 "user_id" => 1,
-                "permission_name" => "createUser"
+                "item_name" => "createUser"
             ],
             [
-                //"id" => 3,
                 "user_id" => 1,
-                "permission_name" => "updateUser"
+                "item_name" => "updateUser"
             ],
             [
-                //"id" => 5,
                 "user_id" => 1,
-                "permission_name" => "blockUser"
+                "item_name" => "blockUser"
             ],
             [
-                //"id" => 7,
                 "user_id" => 1,
-                "permission_name" => "viewUser"
+                "item_name" => "viewUser"
             ],
             [
-                //"id" => 9,
                 "user_id" => 1,
-                "permission_name" => "requestAddNewItems"
+                "item_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 11,
                 "user_id" => 1,
-                "permission_name" => "requestUpdateItems"
+                "item_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 13,
                 "user_id" => 1,
-                "permission_name" => "requestTransferItems"
+                "item_name" => "requestTransferItems"
             ],
             [
-                //"id" => 15,
                 "user_id" => 1,
-                "permission_name" => "requestGroupItems"
+                "item_name" => "requestGroupItems"
             ],
             [
-                //"id" => 17,
                 "user_id" => 1,
-                "permission_name" => "requestUploadPhoto"
+                "item_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 19,
                 "user_id" => 1,
-                "permission_name" => "requestCheckHidden"
+                "item_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 21,
                 "user_id" => 1,
-                "permission_name" => "requestAddFatPortalCat"
+                "item_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 23,
                 "user_id" => 1,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "item_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 25,
                 "user_id" => 1,
-                "permission_name" => "requestAddAttrOrValues"
+                "item_name" => "requestAddAttrOrValues"
             ],
             [
-                //"id" => 27,
                 "user_id" => 1,
-                "permission_name" => "requestUpdateAttrOrValues"
+                "item_name" => "requestUpdateAttrOrValues"
             ],
             [
-                //"id" => 29,
                 "user_id" => 1,
-                "permission_name" => "requestStructureDesign"
+                "item_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 31,
                 "user_id" => 1,
-                "permission_name" => "requestAddUpdateSC"
+                "item_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 33,
                 "user_id" => 1,
-                "permission_name" => "requestAddUpdateVideo"
+                "item_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 35,
                 "user_id" => 1,
-                "permission_name" => "requestAddUpdateSizeGrid"
+                "item_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 37,
                 "user_id" => 1,
-                "permission_name" => "requestAddUpdateTags"
+                "item_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 39,
                 "user_id" => 1,
-                "permission_name" => "transferWaitCheckToInCheck"
+                "item_name" => "transferWaitCheckToInCheck"
             ],
             [
-                //"id" => 41,
                 "user_id" => 1,
-                "permission_name" => "transferInCheckToRequireChange"
+                "item_name" => "transferInCheckToRequireChange"
             ],
             [
-                //"id" => 43,
                 "user_id" => 1,
-                "permission_name" => "transferInCheckToDeclined"
+                "item_name" => "transferInCheckToDeclined"
             ],
             [
-                //"id" => 45,
                 "user_id" => 1,
-                "permission_name" => "transferRequireChangeToInCheck"
+                "item_name" => "transferRequireChangeToInCheck"
             ],
             [
-                //"id" => 47,
                 "user_id" => 1,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 49,
                 "user_id" => 1,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 51,
                 "user_id" => 1,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 53,
                 "user_id" => 1,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 55,
                 "user_id" => 1,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 57,
                 "user_id" => 1,
-                "permission_name" => "transferOnHoldToInWork"
+                "item_name" => "transferOnHoldToInWork"
             ],
             [
-                //"id" => 59,
                 "user_id" => 1,
-                "permission_name" => "transferCompletedToRequireFix"
+                "item_name" => "transferCompletedToRequireFix"
             ],
             [
-                //"id" => 61,
                 "user_id" => 1,
-                "permission_name" => "transferCompletedToClosed"
+                "item_name" => "transferCompletedToClosed"
             ],
             [
-                //"id" => 63,
                 "user_id" => 1,
-                "permission_name" => "requestAppointManager"
+                "item_name" => "requestCreate"
             ],
             [
-                //"id" => 65,
                 "user_id" => 1,
-                "permission_name" => "requestAppointSupervisor"
+                "item_name" => "requestUpdate"
             ],
             [
-                //"id" => 67,
                 "user_id" => 1,
-                "permission_name" => "requestCreate"
+                "item_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 69,
                 "user_id" => 1,
-                "permission_name" => "requestUpdate"
+                "item_name" => "requestViewAllRequests"
             ],
             [
-                //"id" => 71,
                 "user_id" => 1,
-                "permission_name" => "requestCreateRelated"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 75,
                 "user_id" => 1,
-                "permission_name" => "requestViewAllRequests"
+                "item_name" => "massEdit"
             ],
             [
-                //"id" => 77,
                 "user_id" => 1,
-                "permission_name" => "reportView"
+                "item_name" => "requestDeleteAttachments"
             ],
             [
-                //"id" => 79,
                 "user_id" => 1,
-                "permission_name" => "massEdit"
+                "item_name" => "reportLoadAllUsers"
             ],
             [
-                //"id" => 83,
                 "user_id" => 1,
-                "permission_name" => "requestDeleteAttachments"
+                "item_name" => "sellerUpdate"
             ],
             [
-                //"id" => 929,
                 "user_id" => 1,
-                "permission_name" => "reportLoadAllUsers"
+                "item_name" => "categoryUpdate"
             ],
             [
-                //"id" => 938,
                 "user_id" => 1,
-                "permission_name" => "reportLoadAllUsers"
+                "item_name" => "teamUpdate"
             ],
             [
-                //"id" => 991,
                 "user_id" => 1,
-                "permission_name" => "sellerUpdate"
+                "item_name" => "coefUpdate"
             ],
             [
-                //"id" => 994,
                 "user_id" => 1,
-                "permission_name" => "categoryUpdate"
+                "item_name" => "fieldsUpdate"
             ],
             [
-                //"id" => 997,
                 "user_id" => 1,
-                "permission_name" => "teamUpdate"
+                "item_name" => "reasonsUpdate"
             ],
             [
-                //"id" => 1000,
                 "user_id" => 1,
-                "permission_name" => "coefUpdate"
+                "item_name" => "excludedFieldsUpdate"
             ],
             [
-                //"id" => 1003,
                 "user_id" => 1,
-                "permission_name" => "fieldsUpdate"
+                "item_name" => "errorsUpdate"
             ],
             [
-                //"id" => 1006,
                 "user_id" => 1,
-                "permission_name" => "reasonsUpdate"
+                "item_name" => "viewSplitterModerationRequests"
             ],
             [
-                //"id" => 1009,
                 "user_id" => 1,
-                "permission_name" => "excludedFieldsUpdate"
+                "item_name" => "takeToWork"
             ],
             [
-                //"id" => 1100,
                 "user_id" => 1,
-                "permission_name" => "errorsUpdate"
+                "item_name" => "priorityUpdate"
             ],
             [
-                //"id" => 2220,
                 "user_id" => 1,
-                "permission_name" => "viewSplitterModerationRequests"
+                "item_name" => "viewAllDashboards"
             ],
             [
-                //"id" => 2325,
-                "user_id" => 1,
-                "permission_name" => "takeToWork"
-            ],
-            [
-                //"id" => 2564,
-                "user_id" => 1,
-                "permission_name" => "priorityUpdate"
-            ],
-            [
-                //"id" => 3011,
-                "user_id" => 1,
-                "permission_name" => "viewAllDashboards"
-            ],
-            [
-                //"id" => 2,
-                "user_id" => 2,
-                "permission_name" => "createUser"
-            ],
-            [
-                //"id" => 4,
-                "user_id" => 2,
-                "permission_name" => "updateUser"
-            ],
-            [
-                //"id" => 6,
-                "user_id" => 2,
-                "permission_name" => "blockUser"
-            ],
-            [
-                //"id" => 8,
-                "user_id" => 2,
-                "permission_name" => "viewUser"
-            ],
-            [
-                //"id" => 10,
-                "user_id" => 2,
-                "permission_name" => "requestAddNewItems"
-            ],
-            [
-                //"id" => 12,
                 "user_id" => 2,
-                "permission_name" => "requestUpdateItems"
+                "item_name" => "createUser"
             ],
             [
-                //"id" => 14,
                 "user_id" => 2,
-                "permission_name" => "requestTransferItems"
+                "item_name" => "updateUser"
             ],
             [
-                //"id" => 16,
                 "user_id" => 2,
-                "permission_name" => "requestGroupItems"
+                "item_name" => "blockUser"
             ],
             [
-                //"id" => 18,
                 "user_id" => 2,
-                "permission_name" => "requestUploadPhoto"
+                "item_name" => "viewUser"
             ],
             [
-                //"id" => 20,
                 "user_id" => 2,
-                "permission_name" => "requestCheckHidden"
+                "item_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 22,
                 "user_id" => 2,
-                "permission_name" => "requestAddFatPortalCat"
+                "item_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 24,
                 "user_id" => 2,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "item_name" => "requestTransferItems"
             ],
             [
-                //"id" => 26,
                 "user_id" => 2,
-                "permission_name" => "requestAddAttrOrValues"
+                "item_name" => "requestGroupItems"
             ],
             [
-                //"id" => 28,
                 "user_id" => 2,
-                "permission_name" => "requestUpdateAttrOrValues"
+                "item_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 30,
                 "user_id" => 2,
-                "permission_name" => "requestStructureDesign"
+                "item_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 32,
                 "user_id" => 2,
-                "permission_name" => "requestAddUpdateSC"
+                "item_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 34,
                 "user_id" => 2,
-                "permission_name" => "requestAddUpdateVideo"
+                "item_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 36,
                 "user_id" => 2,
-                "permission_name" => "requestAddUpdateSizeGrid"
+                "item_name" => "requestAddAttrOrValues"
             ],
             [
-                //"id" => 38,
                 "user_id" => 2,
-                "permission_name" => "requestAddUpdateTags"
+                "item_name" => "requestUpdateAttrOrValues"
             ],
             [
-                //"id" => 40,
                 "user_id" => 2,
-                "permission_name" => "transferWaitCheckToInCheck"
+                "item_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 42,
                 "user_id" => 2,
-                "permission_name" => "transferInCheckToRequireChange"
+                "item_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 44,
                 "user_id" => 2,
-                "permission_name" => "transferInCheckToDeclined"
+                "item_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 46,
                 "user_id" => 2,
-                "permission_name" => "transferRequireChangeToInCheck"
+                "item_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 48,
                 "user_id" => 2,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 50,
                 "user_id" => 2,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferWaitCheckToInCheck"
             ],
             [
-                //"id" => 52,
                 "user_id" => 2,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInCheckToRequireChange"
             ],
             [
-                //"id" => 54,
                 "user_id" => 2,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInCheckToDeclined"
             ],
             [
-                //"id" => 56,
                 "user_id" => 2,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferRequireChangeToInCheck"
             ],
             [
-                //"id" => 58,
                 "user_id" => 2,
-                "permission_name" => "transferOnHoldToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 60,
                 "user_id" => 2,
-                "permission_name" => "transferCompletedToRequireFix"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 62,
                 "user_id" => 2,
-                "permission_name" => "transferCompletedToClosed"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 64,
                 "user_id" => 2,
-                "permission_name" => "requestAppointManager"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 66,
                 "user_id" => 2,
-                "permission_name" => "requestAppointSupervisor"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 68,
                 "user_id" => 2,
-                "permission_name" => "requestCreate"
+                "item_name" => "transferOnHoldToInWork"
             ],
             [
-                //"id" => 70,
                 "user_id" => 2,
-                "permission_name" => "requestUpdate"
+                "item_name" => "transferCompletedToRequireFix"
             ],
             [
-                //"id" => 72,
                 "user_id" => 2,
-                "permission_name" => "requestCreateRelated"
+                "item_name" => "transferCompletedToClosed"
             ],
             [
-                //"id" => 73,
                 "user_id" => 2,
-                "permission_name" => "requestViewOwnRequests"
+                "item_name" => "requestCreate"
             ],
             [
-                //"id" => 74,
                 "user_id" => 2,
-                "permission_name" => "requestViewDirectionRequests"
+                "item_name" => "requestUpdate"
             ],
             [
-                //"id" => 76,
                 "user_id" => 2,
-                "permission_name" => "requestViewAllRequests"
+                "item_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 78,
                 "user_id" => 2,
-                "permission_name" => "reportView"
+                "item_name" => "requestViewOwnRequests"
             ],
             [
-                //"id" => 80,
                 "user_id" => 2,
-                "permission_name" => "massEdit"
+                "item_name" => "requestViewDirectionRequests"
             ],
             [
-                //"id" => 81,
                 "user_id" => 2,
-                "permission_name" => "requestViewTeamRequests"
+                "item_name" => "requestViewAllRequests"
             ],
             [
-                //"id" => 82,
                 "user_id" => 2,
-                "permission_name" => "requestDeleteAttachments"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 927,
                 "user_id" => 2,
-                "permission_name" => "reportLoadAllUsers"
+                "item_name" => "massEdit"
             ],
             [
-                //"id" => 931,
                 "user_id" => 2,
-                "permission_name" => "reportLoadMarketUsers"
+                "item_name" => "requestViewTeamRequests"
             ],
             [
-                //"id" => 934,
                 "user_id" => 2,
-                "permission_name" => "reportLoadYourTeam"
+                "item_name" => "requestDeleteAttachments"
             ],
             [
-                //"id" => 936,
                 "user_id" => 2,
-                "permission_name" => "reportLoadAllUsers"
+                "item_name" => "reportLoadAllUsers"
             ],
             [
-                //"id" => 940,
                 "user_id" => 2,
-                "permission_name" => "reportLoadMarketUsers"
+                "item_name" => "reportLoadMarketUsers"
             ],
             [
-                //"id" => 960,
                 "user_id" => 2,
-                "permission_name" => "reportLoadYourTeam"
+                "item_name" => "reportLoadYourTeam"
             ],
             [
-                //"id" => 989,
                 "user_id" => 2,
-                "permission_name" => "sellerUpdate"
+                "item_name" => "sellerUpdate"
             ],
             [
-                //"id" => 992,
                 "user_id" => 2,
-                "permission_name" => "categoryUpdate"
+                "item_name" => "categoryUpdate"
             ],
             [
-                //"id" => 995,
                 "user_id" => 2,
-                "permission_name" => "teamUpdate"
+                "item_name" => "teamUpdate"
             ],
             [
-                //"id" => 998,
                 "user_id" => 2,
-                "permission_name" => "coefUpdate"
+                "item_name" => "coefUpdate"
             ],
             [
-                //"id" => 1001,
                 "user_id" => 2,
-                "permission_name" => "fieldsUpdate"
+                "item_name" => "fieldsUpdate"
             ],
             [
-                //"id" => 1004,
                 "user_id" => 2,
-                "permission_name" => "reasonsUpdate"
+                "item_name" => "reasonsUpdate"
             ],
             [
-                //"id" => 1007,
                 "user_id" => 2,
-                "permission_name" => "excludedFieldsUpdate"
+                "item_name" => "excludedFieldsUpdate"
             ],
             [
-                //"id" => 1098,
                 "user_id" => 2,
-                "permission_name" => "errorsUpdate"
+                "item_name" => "errorsUpdate"
             ],
             [
-                //"id" => 2222,
                 "user_id" => 2,
-                "permission_name" => "viewSplitterModerationRequests"
+                "item_name" => "viewSplitterModerationRequests"
             ],
             [
-                //"id" => 2327,
                 "user_id" => 2,
-                "permission_name" => "takeToWork"
+                "item_name" => "takeToWork"
             ],
             [
-                //"id" => 2562,
                 "user_id" => 2,
-                "permission_name" => "priorityUpdate"
+                "item_name" => "priorityUpdate"
             ],
             [
-                //"id" => 3009,
                 "user_id" => 2,
-                "permission_name" => "viewAllDashboards"
+                "item_name" => "viewAllDashboards"
             ],
             [
-                //"id" => 3014,
                 "user_id" => 2,
-                "permission_name" => "viewDashboardsByDirection"
+                "item_name" => "viewDashboardsByDirection"
             ],
             [
-                //"id" => 3036,
                 "user_id" => 2,
-                "permission_name" => "viewDashboardsByCommand"
+                "item_name" => "viewDashboardsByCommand"
             ],
             [
-                //"id" => 3043,
                 "user_id" => 2,
-                "permission_name" => "viewOwnDashboards"
+                "item_name" => "viewOwnDashboards"
             ],
             [
-                //"id" => 1048,
                 "user_id" => 4,
-                "permission_name" => "reportLoadAllUsers"
+                "item_name" => "reportLoadAllUsers"
             ],
             [
-                //"id" => 1049,
                 "user_id" => 4,
-                "permission_name" => "reportLoadMarketUsers"
+                "item_name" => "reportLoadMarketUsers"
             ],
             [
-                //"id" => 1050,
                 "user_id" => 4,
-                "permission_name" => "reportLoadYourTeam"
+                "item_name" => "reportLoadYourTeam"
             ],
             [
-                //"id" => 1051,
                 "user_id" => 4,
-                "permission_name" => "errorsUpdate"
+                "item_name" => "errorsUpdate"
             ],
             [
-                //"id" => 1052,
                 "user_id" => 4,
-                "permission_name" => "sellerUpdate"
+                "item_name" => "sellerUpdate"
             ],
             [
-                //"id" => 1053,
                 "user_id" => 4,
-                "permission_name" => "categoryUpdate"
+                "item_name" => "categoryUpdate"
             ],
             [
-                //"id" => 1054,
                 "user_id" => 4,
-                "permission_name" => "teamUpdate"
+                "item_name" => "teamUpdate"
             ],
             [
-                //"id" => 1055,
                 "user_id" => 4,
-                "permission_name" => "coefUpdate"
+                "item_name" => "coefUpdate"
             ],
             [
-                //"id" => 1056,
                 "user_id" => 4,
-                "permission_name" => "fieldsUpdate"
+                "item_name" => "fieldsUpdate"
             ],
             [
-                //"id" => 1057,
                 "user_id" => 4,
-                "permission_name" => "reasonsUpdate"
+                "item_name" => "reasonsUpdate"
             ],
             [
-                //"id" => 1058,
                 "user_id" => 4,
-                "permission_name" => "excludedFieldsUpdate"
+                "item_name" => "excludedFieldsUpdate"
             ],
             [
-                //"id" => 1059,
                 "user_id" => 4,
-                "permission_name" => "requestViewOwnRequests"
+                "item_name" => "requestViewOwnRequests"
             ],
             [
-                //"id" => 1060,
                 "user_id" => 4,
-                "permission_name" => "requestViewDirectionRequests"
+                "item_name" => "requestViewDirectionRequests"
             ],
             [
-                //"id" => 1061,
                 "user_id" => 4,
-                "permission_name" => "requestViewTeamRequests"
+                "item_name" => "requestViewTeamRequests"
             ],
             [
-                //"id" => 1062,
                 "user_id" => 4,
-                "permission_name" => "requestDeleteAttachments"
+                "item_name" => "requestDeleteAttachments"
             ],
             [
-                //"id" => 1333,
                 "user_id" => 4,
-                "permission_name" => "createUser"
+                "item_name" => "createUser"
             ],
             [
-                //"id" => 1334,
                 "user_id" => 4,
-                "permission_name" => "updateUser"
+                "item_name" => "updateUser"
             ],
             [
-                //"id" => 1335,
                 "user_id" => 4,
-                "permission_name" => "blockUser"
+                "item_name" => "blockUser"
             ],
             [
-                //"id" => 1336,
                 "user_id" => 4,
-                "permission_name" => "viewUser"
+                "item_name" => "viewUser"
             ],
             [
-                //"id" => 1337,
                 "user_id" => 4,
-                "permission_name" => "requestAddNewItems"
+                "item_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 1338,
                 "user_id" => 4,
-                "permission_name" => "requestUpdateItems"
+                "item_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 1339,
                 "user_id" => 4,
-                "permission_name" => "requestTransferItems"
+                "item_name" => "requestTransferItems"
             ],
             [
-                //"id" => 1340,
                 "user_id" => 4,
-                "permission_name" => "requestGroupItems"
+                "item_name" => "requestGroupItems"
             ],
             [
-                //"id" => 1341,
                 "user_id" => 4,
-                "permission_name" => "requestUploadPhoto"
+                "item_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 1342,
                 "user_id" => 4,
-                "permission_name" => "requestCheckHidden"
+                "item_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 1343,
                 "user_id" => 4,
-                "permission_name" => "requestAddFatPortalCat"
+                "item_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 1344,
                 "user_id" => 4,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "item_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 1345,
                 "user_id" => 4,
-                "permission_name" => "requestAddAttrOrValues"
+                "item_name" => "requestAddAttrOrValues"
             ],
             [
-                //"id" => 1346,
                 "user_id" => 4,
-                "permission_name" => "requestUpdateAttrOrValues"
+                "item_name" => "requestUpdateAttrOrValues"
             ],
             [
-                //"id" => 1347,
                 "user_id" => 4,
-                "permission_name" => "requestStructureDesign"
+                "item_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 1348,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateSC"
+                "item_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 1349,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateVideo"
+                "item_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 1350,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateSizeGrid"
+                "item_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 1351,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateTags"
+                "item_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 1352,
                 "user_id" => 4,
-                "permission_name" => "transferWaitCheckToInCheck"
+                "item_name" => "transferWaitCheckToInCheck"
             ],
             [
-                //"id" => 1353,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToRequireChange"
+                "item_name" => "transferInCheckToRequireChange"
             ],
             [
-                //"id" => 1354,
                 "user_id" => 4,
-                "permission_name" => "transferInCheckToDeclined"
+                "item_name" => "transferInCheckToDeclined"
             ],
             [
-                //"id" => 1355,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToInCheck"
+                "item_name" => "transferRequireChangeToInCheck"
             ],
             [
-                //"id" => 1356,
                 "user_id" => 4,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 1357,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 1358,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 1359,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 1360,
                 "user_id" => 4,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 1361,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToInWork"
+                "item_name" => "transferOnHoldToInWork"
             ],
             [
-                //"id" => 1362,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToRequireFix"
+                "item_name" => "transferCompletedToRequireFix"
             ],
             [
-                //"id" => 1363,
                 "user_id" => 4,
-                "permission_name" => "transferCompletedToClosed"
+                "item_name" => "transferCompletedToClosed"
             ],
             [
-                //"id" => 1364,
                 "user_id" => 4,
-                "permission_name" => "requestCreate"
+                "item_name" => "requestCreate"
             ],
             [
-                //"id" => 1365,
                 "user_id" => 4,
-                "permission_name" => "requestUpdate"
+                "item_name" => "requestUpdate"
             ],
             [
-                //"id" => 1366,
                 "user_id" => 4,
-                "permission_name" => "requestCreateRelated"
+                "item_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 1369,
                 "user_id" => 4,
-                "permission_name" => "requestViewAllRequests"
+                "item_name" => "requestViewAllRequests"
             ],
             [
-                //"id" => 1370,
                 "user_id" => 4,
-                "permission_name" => "reportView"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 1371,
                 "user_id" => 4,
-                "permission_name" => "massEdit"
+                "item_name" => "massEdit"
             ],
             [
-                //"id" => 2223,
                 "user_id" => 4,
-                "permission_name" => "viewSplitterModerationRequests"
+                "item_name" => "viewSplitterModerationRequests"
             ],
             [
-                //"id" => 2328,
                 "user_id" => 4,
-                "permission_name" => "takeToWork"
+                "item_name" => "takeToWork"
             ],
             [
-                //"id" => 2563,
                 "user_id" => 4,
-                "permission_name" => "priorityUpdate"
+                "item_name" => "priorityUpdate"
             ],
             [
-                //"id" => 3010,
                 "user_id" => 4,
-                "permission_name" => "viewAllDashboards"
+                "item_name" => "viewAllDashboards"
             ],
             [
-                //"id" => 3015,
                 "user_id" => 4,
-                "permission_name" => "viewDashboardsByDirection"
+                "item_name" => "viewDashboardsByDirection"
             ],
             [
-                //"id" => 3037,
                 "user_id" => 4,
-                "permission_name" => "viewDashboardsByCommand"
+                "item_name" => "viewDashboardsByCommand"
             ],
             [
-                //"id" => 3044,
                 "user_id" => 4,
-                "permission_name" => "viewOwnDashboards"
+                "item_name" => "viewOwnDashboards"
             ],
             [
-                //"id" => 1064,
                 "user_id" => 5,
-                "permission_name" => "createUser"
+                "item_name" => "createUser"
             ],
             [
-                //"id" => 1065,
                 "user_id" => 5,
-                "permission_name" => "updateUser"
+                "item_name" => "updateUser"
             ],
             [
-                //"id" => 1066,
                 "user_id" => 5,
-                "permission_name" => "blockUser"
+                "item_name" => "blockUser"
             ],
             [
-                //"id" => 1082,
                 "user_id" => 5,
-                "permission_name" => "massEdit"
+                "item_name" => "massEdit"
             ],
             [
-                //"id" => 1083,
                 "user_id" => 5,
-                "permission_name" => "transferWaitCheckToInCheck"
+                "item_name" => "transferWaitCheckToInCheck"
             ],
             [
-                //"id" => 1084,
                 "user_id" => 5,
-                "permission_name" => "transferInCheckToRequireChange"
+                "item_name" => "transferInCheckToRequireChange"
             ],
             [
-                //"id" => 1086,
                 "user_id" => 5,
-                "permission_name" => "transferRequireChangeToInCheck"
+                "item_name" => "transferRequireChangeToInCheck"
             ],
             [
-                //"id" => 1087,
                 "user_id" => 5,
-                "permission_name" => "transferInCheckToDeclined"
+                "item_name" => "transferInCheckToDeclined"
             ],
             [
-                //"id" => 1088,
                 "user_id" => 5,
-                "permission_name" => "transferWaitWorkToInWork"
+                "item_name" => "transferWaitWorkToInWork"
             ],
             [
-                //"id" => 1089,
                 "user_id" => 5,
-                "permission_name" => "transferInWorkToOnHold"
+                "item_name" => "transferInWorkToOnHold"
             ],
             [
-                //"id" => 1090,
                 "user_id" => 5,
-                "permission_name" => "transferInWorkToPartialComplete"
+                "item_name" => "transferInWorkToPartialComplete"
             ],
             [
-                //"id" => 1091,
                 "user_id" => 5,
-                "permission_name" => "transferInWorkToCompleted"
+                "item_name" => "transferInWorkToCompleted"
             ],
             [
-                //"id" => 1092,
                 "user_id" => 5,
-                "permission_name" => "transferInWorkToDeclined"
+                "item_name" => "transferInWorkToDeclined"
             ],
             [
-                //"id" => 1093,
                 "user_id" => 5,
-                "permission_name" => "transferOnHoldToInWork"
+                "item_name" => "transferOnHoldToInWork"
             ],
             [
-                //"id" => 1094,
                 "user_id" => 5,
-                "permission_name" => "transferCompletedToRequireFix"
+                "item_name" => "transferCompletedToRequireFix"
             ],
             [
-                //"id" => 1095,
                 "user_id" => 5,
-                "permission_name" => "transferCompletedToClosed"
+                "item_name" => "transferCompletedToClosed"
             ],
             [
-                //"id" => 1389,
                 "user_id" => 5,
-                "permission_name" => "viewUser"
+                "item_name" => "viewUser"
             ],
             [
-                //"id" => 1391,
                 "user_id" => 5,
-                "permission_name" => "requestUpdateItems"
+                "item_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 1392,
                 "user_id" => 5,
-                "permission_name" => "requestTransferItems"
+                "item_name" => "requestTransferItems"
             ],
             [
-                //"id" => 1393,
                 "user_id" => 5,
-                "permission_name" => "requestGroupItems"
+                "item_name" => "requestGroupItems"
             ],
             [
-                //"id" => 1394,
                 "user_id" => 5,
-                "permission_name" => "requestUploadPhoto"
+                "item_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 1396,
                 "user_id" => 5,
-                "permission_name" => "requestAddFatPortalCat"
+                "item_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 1397,
                 "user_id" => 5,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "item_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 1398,
                 "user_id" => 5,
-                "permission_name" => "requestAddAttrOrValues"
+                "item_name" => "requestAddAttrOrValues"
             ],
             [
-                //"id" => 1400,
                 "user_id" => 5,
-                "permission_name" => "requestStructureDesign"
+                "item_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 1401,
                 "user_id" => 5,
-                "permission_name" => "requestAddUpdateSC"
+                "item_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 1402,
                 "user_id" => 5,
-                "permission_name" => "requestAddUpdateVideo"
+                "item_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 1403,
                 "user_id" => 5,
-                "permission_name" => "requestAddUpdateSizeGrid"
+                "item_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 1404,
                 "user_id" => 5,
-                "permission_name" => "requestAddUpdateTags"
+                "item_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 1417,
                 "user_id" => 5,
-                "permission_name" => "requestCreate"
+                "item_name" => "requestCreate"
             ],
             [
-                //"id" => 1418,
                 "user_id" => 5,
-                "permission_name" => "requestUpdate"
+                "item_name" => "requestUpdate"
             ],
             [
-                //"id" => 1419,
                 "user_id" => 5,
-                "permission_name" => "requestCreateRelated"
+                "item_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 1420,
                 "user_id" => 5,
-                "permission_name" => "requestViewAllRequests"
+                "item_name" => "requestViewAllRequests"
             ],
             [
-                //"id" => 1421,
                 "user_id" => 5,
-                "permission_name" => "reportView"
+                "item_name" => "reportView"
             ],
             [
-                //"id" => 1423,
                 "user_id" => 5,
-                "permission_name" => "reportLoadMarketUsers"
+                "item_name" => "reportLoadMarketUsers"
             ],
             [
-                //"id" => 2224,
                 "user_id" => 5,
-                "permission_name" => "viewSplitterModerationRequests"
+                "item_name" => "viewSplitterModerationRequests"
             ],
             [
-                //"id" => 2329,
                 "user_id" => 5,
-                "permission_name" => "takeToWork"
+                "item_name" => "takeToWork"
             ],
             [
-                //"id" => 2790,
                 "user_id" => 5,
-                "permission_name" => "requestAddNewItems"
+                "item_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 2791,
                 "user_id" => 5,
-                "permission_name" => "requestCheckHidden"
+                "item_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 2792,
                 "user_id" => 5,
-                "permission_name" => "requestUpdateAttrOrValues"
+                "item_name" => "requestUpdateAttrOrValues"
             ],
             [
-                //"id" => 3013,
                 "user_id" => 5,
-                "permission_name" => "viewAllDashboards"
+                "item_name" => "viewAllDashboards"
             ],
         ]
     ],

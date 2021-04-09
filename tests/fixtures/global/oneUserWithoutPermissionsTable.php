@@ -1,7 +1,10 @@
 <?php
+
+use Codeception\Module\TestHelper;
+
 return [
     "lisa_fixtures" => [
-        "user_bpm" => [
+        "auth.users" => [
             [
 //                "id" => 1,
                 "name" => "Система",
@@ -59,6 +62,7 @@ return [
                 "drfo" => "'000000004"
             ],
         ],
+        "auth.auth_item" => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
         "request_errors" => []
     ],
 

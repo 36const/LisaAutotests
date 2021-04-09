@@ -32,7 +32,7 @@ class POSTUpdateUserPermissionsCest
         $I->loadDataForTest($data, null);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/roles/update?id=5', $providerData['requestBody']);
+        $I->sendPOST('/bpm/roles/update?name=contentManager', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);

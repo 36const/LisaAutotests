@@ -1,7 +1,7 @@
 <?php
 return [
     "lisa_fixtures" => [
-        "teams" => [
+        "auth.teams" => [
             [
                 //"id" => 1,
                 "name" => "Маркетплейс 1",

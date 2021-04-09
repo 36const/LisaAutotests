@@ -13,7 +13,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "user_bpm" => [
+                    "auth.users" => [
                         [
                             "id" => 1,
                             "name" => "Система",
@@ -141,1077 +141,1464 @@ return [
                             "drfo" => "0"
                         ],
                     ],
-                    "user_permissions" => [
+                    "auth.auth_assignment" => [
                         [
-                            "id" => 1,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "createUser"
+                            "item_name" => "createUser"
                         ],
                         [
-                            "id" => 2,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "updateUser"
+                            "item_name" => "updateUser"
                         ],
                         [
-                            "id" => 3,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "blockUser"
+                            "item_name" => "blockUser"
                         ],
                         [
-                            "id" => 4,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "viewUser"
+                            "item_name" => "viewUser"
                         ],
                         [
-                            "id" => 5,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestAddNewItems"
+                            "item_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 6,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestUpdateItems"
+                            "item_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 7,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestTransferItems"
+                            "item_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 8,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestGroupItems"
+                            "item_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 9,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestUploadPhoto"
+                            "item_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 10,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestCheckHidden"
+                            "item_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 11,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestAddFatPortalCat"
+                            "item_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 12,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestUpdateFatPortalCat"
+                            "item_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 13,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestAddAttrOrValues"
+                            "item_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 14,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestUpdateAttrOrValues"
+                            "item_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 15,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestStructureDesign"
+                            "item_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 16,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestAddUpdateSC"
+                            "item_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 17,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestAddUpdateVideo"
+                            "item_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 18,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestAddUpdateSizeGrid"
+                            "item_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 19,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestAddUpdateTags"
+                            "item_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 20,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferWaitCheckToInCheck"
+                            "item_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 21,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferInCheckToRequireChange"
+                            "item_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 22,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferInCheckToDeclined"
+                            "item_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 23,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferRequireChangeToInCheck"
+                            "item_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 24,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferWaitWorkToInWork"
+                            "item_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 25,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferInWorkToOnHold"
+                            "item_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 26,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferInWorkToPartialComplete"
+                            "item_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 27,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferInWorkToCompleted"
+                            "item_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 28,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferInWorkToDeclined"
+                            "item_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 29,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferOnHoldToInWork"
+                            "item_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 30,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferCompletedToRequireFix"
+                            "item_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 31,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "transferCompletedToClosed"
+                            "item_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 32,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestAppointManager"
+                            "item_name" => "requestCreate"
                         ],
                         [
-                            "id" => 33,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestAppointSupervisor"
+                            "item_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 34,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestCreate"
+                            "item_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 35,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestUpdate"
+                            "item_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 36,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestCreateRelated"
+                            "item_name" => "reportView"
                         ],
                         [
-                            "id" => 37,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestViewAllRequests"
+                            "item_name" => "massEdit"
                         ],
                         [
-                            "id" => 38,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "reportView"
+                            "item_name" => "requestDeleteAttachments"
                         ],
                         [
-                            "id" => 39,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "massEdit"
+                            "item_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 40,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "requestDeleteAttachments"
+                            "item_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 41,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "reportLoadAllUsers"
+                            "item_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 42,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "reportLoadAllUsers"
+                            "item_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 43,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "sellerUpdate"
+                            "item_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 44,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "categoryUpdate"
+                            "item_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 45,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "teamUpdate"
+                            "item_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 46,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "coefUpdate"
+                            "item_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 47,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "fieldsUpdate"
+                            "item_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 48,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "reasonsUpdate"
+                            "item_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 49,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "excludedFieldsUpdate"
+                            "item_name" => "takeToWork"
                         ],
                         [
-                            "id" => 50,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "errorsUpdate"
+                            "item_name" => "priorityUpdate"
                         ],
                         [
-                            "id" => 51,
+                            "created_at" => null,
                             "user_id" => 1,
-                            "permission_name" => "viewSplitterModerationRequests"
+                            "item_name" => "viewAllDashboards"
                         ],
                         [
-                            "id" => 52,
-                            "user_id" => 1,
-                            "permission_name" => "takeToWork"
-                        ],
-                        [
-                            "id" => 53,
-                            "user_id" => 1,
-                            "permission_name" => "priorityUpdate"
-                        ],
-                        [
-                            "id" => 54,
-                            "user_id" => 1,
-                            "permission_name" => "viewAllDashboards"
-                        ],
-                        [
-                            "id" => 55,
-                            "user_id" => 2,
-                            "permission_name" => "createUser"
-                        ],
-                        [
-                            "id" => 56,
-                            "user_id" => 2,
-                            "permission_name" => "updateUser"
-                        ],
-                        [
-                            "id" => 57,
-                            "user_id" => 2,
-                            "permission_name" => "blockUser"
-                        ],
-                        [
-                            "id" => 58,
-                            "user_id" => 2,
-                            "permission_name" => "viewUser"
-                        ],
-                        [
-                            "id" => 59,
-                            "user_id" => 2,
-                            "permission_name" => "requestAddNewItems"
-                        ],
-                        [
-                            "id" => 60,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestUpdateItems"
+                            "item_name" => "createUser"
                         ],
                         [
-                            "id" => 61,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestTransferItems"
+                            "item_name" => "updateUser"
                         ],
                         [
-                            "id" => 62,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestGroupItems"
+                            "item_name" => "blockUser"
                         ],
                         [
-                            "id" => 63,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestUploadPhoto"
+                            "item_name" => "viewUser"
                         ],
                         [
-                            "id" => 64,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestCheckHidden"
+                            "item_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 65,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestAddFatPortalCat"
+                            "item_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 66,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestUpdateFatPortalCat"
+                            "item_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 67,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestAddAttrOrValues"
+                            "item_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 68,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestUpdateAttrOrValues"
+                            "item_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 69,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestStructureDesign"
+                            "item_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 70,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestAddUpdateSC"
+                            "item_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 71,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestAddUpdateVideo"
+                            "item_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 72,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestAddUpdateSizeGrid"
+                            "item_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 73,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestAddUpdateTags"
+                            "item_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 74,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferWaitCheckToInCheck"
+                            "item_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 75,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferInCheckToRequireChange"
+                            "item_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 76,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferInCheckToDeclined"
+                            "item_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 77,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferRequireChangeToInCheck"
+                            "item_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 78,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferWaitWorkToInWork"
+                            "item_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 79,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferInWorkToOnHold"
+                            "item_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 80,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferInWorkToPartialComplete"
+                            "item_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 81,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferInWorkToCompleted"
+                            "item_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 82,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferInWorkToDeclined"
+                            "item_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 83,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferOnHoldToInWork"
+                            "item_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 84,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferCompletedToRequireFix"
+                            "item_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 85,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "transferCompletedToClosed"
+                            "item_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 86,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestAppointManager"
+                            "item_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 87,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestAppointSupervisor"
+                            "item_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 88,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestCreate"
+                            "item_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 89,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestUpdate"
+                            "item_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 90,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestCreateRelated"
+                            "item_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 91,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestViewOwnRequests"
+                            "item_name" => "requestCreate"
                         ],
                         [
-                            "id" => 92,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestViewDirectionRequests"
+                            "item_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 93,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestViewAllRequests"
+                            "item_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 94,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "reportView"
+                            "item_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 95,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "massEdit"
+                            "item_name" => "requestViewDirectionRequests"
                         ],
                         [
-                            "id" => 96,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestViewTeamRequests"
+                            "item_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 97,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "requestDeleteAttachments"
+                            "item_name" => "reportView"
                         ],
                         [
-                            "id" => 98,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "reportLoadAllUsers"
+                            "item_name" => "massEdit"
                         ],
                         [
-                            "id" => 99,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "reportLoadMarketUsers"
+                            "item_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 100,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "reportLoadYourTeam"
+                            "item_name" => "requestDeleteAttachments"
                         ],
                         [
-                            "id" => 101,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "reportLoadAllUsers"
+                            "item_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 102,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "reportLoadMarketUsers"
+                            "item_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 103,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "reportLoadYourTeam"
+                            "item_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 104,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "sellerUpdate"
+                            "item_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 105,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "categoryUpdate"
+                            "item_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 106,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "teamUpdate"
+                            "item_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 107,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "coefUpdate"
+                            "item_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 108,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "fieldsUpdate"
+                            "item_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 109,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "reasonsUpdate"
+                            "item_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 110,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "excludedFieldsUpdate"
+                            "item_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 111,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "errorsUpdate"
+                            "item_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 112,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "viewSplitterModerationRequests"
+                            "item_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 113,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "takeToWork"
+                            "item_name" => "takeToWork"
                         ],
                         [
-                            "id" => 114,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "priorityUpdate"
+                            "item_name" => "priorityUpdate"
                         ],
                         [
-                            "id" => 115,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "viewAllDashboards"
+                            "item_name" => "viewAllDashboards"
                         ],
                         [
-                            "id" => 116,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "viewDashboardsByDirection"
+                            "item_name" => "viewDashboardsByDirection"
                         ],
                         [
-                            "id" => 117,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "viewDashboardsByCommand"
+                            "item_name" => "viewDashboardsByCommand"
                         ],
                         [
-                            "id" => 118,
+                            "created_at" => null,
                             "user_id" => 2,
-                            "permission_name" => "viewOwnDashboards"
+                            "item_name" => "viewOwnDashboards"
                         ],
                         [
-                            "id" => 119,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "reportLoadAllUsers"
+                            "item_name" => "reportLoadAllUsers"
                         ],
                         [
-                            "id" => 120,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "reportLoadMarketUsers"
+                            "item_name" => "reportLoadMarketUsers"
                         ],
                         [
-                            "id" => 121,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "reportLoadYourTeam"
+                            "item_name" => "reportLoadYourTeam"
                         ],
                         [
-                            "id" => 122,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "errorsUpdate"
+                            "item_name" => "errorsUpdate"
                         ],
                         [
-                            "id" => 123,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "sellerUpdate"
+                            "item_name" => "sellerUpdate"
                         ],
                         [
-                            "id" => 124,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "categoryUpdate"
+                            "item_name" => "categoryUpdate"
                         ],
                         [
-                            "id" => 125,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "teamUpdate"
+                            "item_name" => "teamUpdate"
                         ],
                         [
-                            "id" => 126,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "coefUpdate"
+                            "item_name" => "coefUpdate"
                         ],
                         [
-                            "id" => 127,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "fieldsUpdate"
+                            "item_name" => "fieldsUpdate"
                         ],
                         [
-                            "id" => 128,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "reasonsUpdate"
+                            "item_name" => "reasonsUpdate"
                         ],
                         [
-                            "id" => 129,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "excludedFieldsUpdate"
+                            "item_name" => "excludedFieldsUpdate"
                         ],
                         [
-                            "id" => 130,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestViewOwnRequests"
+                            "item_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 131,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestViewDirectionRequests"
+                            "item_name" => "requestViewDirectionRequests"
                         ],
                         [
-                            "id" => 132,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestViewTeamRequests"
+                            "item_name" => "requestViewTeamRequests"
                         ],
                         [
-                            "id" => 133,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestDeleteAttachments"
+                            "item_name" => "requestDeleteAttachments"
                         ],
                         [
-                            "id" => 134,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "createUser"
+                            "item_name" => "createUser"
                         ],
                         [
-                            "id" => 135,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "updateUser"
+                            "item_name" => "updateUser"
                         ],
                         [
-                            "id" => 136,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "blockUser"
+                            "item_name" => "blockUser"
                         ],
                         [
-                            "id" => 137,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "viewUser"
+                            "item_name" => "viewUser"
                         ],
                         [
-                            "id" => 138,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestAddNewItems"
+                            "item_name" => "requestAddNewItems"
                         ],
                         [
-                            "id" => 139,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestUpdateItems"
+                            "item_name" => "requestUpdateItems"
                         ],
                         [
-                            "id" => 140,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestTransferItems"
+                            "item_name" => "requestTransferItems"
                         ],
                         [
-                            "id" => 141,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestGroupItems"
+                            "item_name" => "requestGroupItems"
                         ],
                         [
-                            "id" => 142,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestUploadPhoto"
+                            "item_name" => "requestUploadPhoto"
                         ],
                         [
-                            "id" => 143,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestCheckHidden"
+                            "item_name" => "requestCheckHidden"
                         ],
                         [
-                            "id" => 144,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestAddFatPortalCat"
+                            "item_name" => "requestAddFatPortalCat"
                         ],
                         [
-                            "id" => 145,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestUpdateFatPortalCat"
+                            "item_name" => "requestUpdateFatPortalCat"
                         ],
                         [
-                            "id" => 146,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestAddAttrOrValues"
+                            "item_name" => "requestAddAttrOrValues"
                         ],
                         [
-                            "id" => 147,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestUpdateAttrOrValues"
+                            "item_name" => "requestUpdateAttrOrValues"
                         ],
                         [
-                            "id" => 148,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestStructureDesign"
+                            "item_name" => "requestStructureDesign"
                         ],
                         [
-                            "id" => 149,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestAddUpdateSC"
+                            "item_name" => "requestAddUpdateSC"
                         ],
                         [
-                            "id" => 150,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestAddUpdateVideo"
+                            "item_name" => "requestAddUpdateVideo"
                         ],
                         [
-                            "id" => 151,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestAddUpdateSizeGrid"
+                            "item_name" => "requestAddUpdateSizeGrid"
                         ],
                         [
-                            "id" => 152,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestAddUpdateTags"
+                            "item_name" => "requestAddUpdateTags"
                         ],
                         [
-                            "id" => 153,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferWaitCheckToInCheck"
+                            "item_name" => "transferWaitCheckToInCheck"
                         ],
                         [
-                            "id" => 154,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferInCheckToRequireChange"
+                            "item_name" => "transferInCheckToRequireChange"
                         ],
                         [
-                            "id" => 155,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferInCheckToDeclined"
+                            "item_name" => "transferInCheckToDeclined"
                         ],
                         [
-                            "id" => 156,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferRequireChangeToInCheck"
+                            "item_name" => "transferRequireChangeToInCheck"
                         ],
                         [
-                            "id" => 157,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferWaitWorkToInWork"
+                            "item_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 158,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferInWorkToOnHold"
+                            "item_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 159,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferInWorkToPartialComplete"
+                            "item_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 160,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferInWorkToCompleted"
+                            "item_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 161,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferInWorkToDeclined"
+                            "item_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 162,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferOnHoldToInWork"
+                            "item_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 163,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferCompletedToRequireFix"
+                            "item_name" => "transferCompletedToRequireFix"
                         ],
                         [
-                            "id" => 164,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "transferCompletedToClosed"
+                            "item_name" => "transferCompletedToClosed"
                         ],
                         [
-                            "id" => 165,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestCreate"
+                            "item_name" => "requestCreate"
                         ],
                         [
-                            "id" => 166,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestUpdate"
+                            "item_name" => "requestUpdate"
                         ],
                         [
-                            "id" => 167,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestCreateRelated"
+                            "item_name" => "requestCreateRelated"
                         ],
                         [
-                            "id" => 168,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "requestViewAllRequests"
+                            "item_name" => "requestViewAllRequests"
                         ],
                         [
-                            "id" => 169,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "reportView"
+                            "item_name" => "reportView"
                         ],
                         [
-                            "id" => 170,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "massEdit"
+                            "item_name" => "massEdit"
                         ],
                         [
-                            "id" => 171,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "viewSplitterModerationRequests"
+                            "item_name" => "viewSplitterModerationRequests"
                         ],
                         [
-                            "id" => 172,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "takeToWork"
+                            "item_name" => "takeToWork"
                         ],
                         [
-                            "id" => 173,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "priorityUpdate"
+                            "item_name" => "priorityUpdate"
                         ],
                         [
-                            "id" => 174,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "viewAllDashboards"
+                            "item_name" => "viewAllDashboards"
                         ],
                         [
-                            "id" => 175,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "viewDashboardsByDirection"
+                            "item_name" => "viewDashboardsByDirection"
                         ],
                         [
-                            "id" => 176,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "viewDashboardsByCommand"
+                            "item_name" => "viewDashboardsByCommand"
                         ],
                         [
-                            "id" => 177,
+                            "created_at" => null,
                             "user_id" => 4,
-                            "permission_name" => "viewOwnDashboards"
+                            "item_name" => "viewOwnDashboards"
                         ],
                         [
-                            "id" => 219,
+                            "created_at" => null,
                             "user_id" => 5,
-                            "permission_name" => "transferWaitWorkToInWork"
+                            "item_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 220,
+                            "created_at" => null,
                             "user_id" => 5,
-                            "permission_name" => "transferInWorkToOnHold"
+                            "item_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 221,
+                            "created_at" => null,
                             "user_id" => 5,
-                            "permission_name" => "transferInWorkToPartialComplete"
+                            "item_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 222,
+                            "created_at" => null,
                             "user_id" => 5,
-                            "permission_name" => "transferInWorkToCompleted"
+                            "item_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 223,
+                            "created_at" => null,
                             "user_id" => 5,
-                            "permission_name" => "transferInWorkToDeclined"
+                            "item_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 224,
+                            "created_at" => null,
                             "user_id" => 5,
-                            "permission_name" => "requestViewOwnRequests"
+                            "item_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 225,
+                            "created_at" => null,
                             "user_id" => 5,
-                            "permission_name" => "reportView"
+                            "item_name" => "reportView"
                         ],
                         [
-                            "id" => 226,
+                            "created_at" => null,
                             "user_id" => 5,
-                            "permission_name" => "transferPartialCompleteToInWork"
+                            "item_name" => "transferPartialCompleteToInWork"
                         ],
                         [
-                            "id" => 227,
+                            "created_at" => null,
                             "user_id" => 5,
-                            "permission_name" => "transferCompletedToInWork"
+                            "item_name" => "transferCompletedToInWork"
                         ],
                         [
-                            "id" => 228,
+                            "created_at" => null,
                             "user_id" => 5,
-                            "permission_name" => "viewOwnDashboards"
+                            "item_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 229,
+                            "created_at" => null,
+                            "user_id" => 5,
+                            "item_name" => "viewOwnDashboards"
+                        ],
+                        [
+                            "created_at" => null,
+                            "user_id" => 5,
+                            "item_name" => "contentManager"
+                        ],
+                        [
+                            "created_at" => null,
                             "user_id" => 6,
-                            "permission_name" => "transferWaitWorkToInWork"
+                            "item_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 230,
+                            "created_at" => null,
                             "user_id" => 6,
-                            "permission_name" => "transferInWorkToOnHold"
+                            "item_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 231,
+                            "created_at" => null,
                             "user_id" => 6,
-                            "permission_name" => "transferInWorkToPartialComplete"
+                            "item_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 232,
+                            "created_at" => null,
                             "user_id" => 6,
-                            "permission_name" => "transferInWorkToCompleted"
+                            "item_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 233,
+                            "created_at" => null,
                             "user_id" => 6,
-                            "permission_name" => "transferInWorkToDeclined"
+                            "item_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 234,
+                            "created_at" => null,
                             "user_id" => 6,
-                            "permission_name" => "requestViewOwnRequests"
+                            "item_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 235,
+                            "created_at" => null,
                             "user_id" => 6,
-                            "permission_name" => "reportView"
+                            "item_name" => "reportView"
                         ],
                         [
-                            "id" => 236,
+                            "created_at" => null,
                             "user_id" => 6,
-                            "permission_name" => "transferPartialCompleteToInWork"
+                            "item_name" => "transferPartialCompleteToInWork"
                         ],
                         [
-                            "id" => 237,
+                            "created_at" => null,
                             "user_id" => 6,
-                            "permission_name" => "transferCompletedToInWork"
+                            "item_name" => "transferCompletedToInWork"
                         ],
                         [
-                            "id" => 238,
+                            "created_at" => null,
                             "user_id" => 6,
-                            "permission_name" => "viewOwnDashboards"
+                            "item_name" => "transferOnHoldToInWork"
                         ],
                         [
-                            "id" => 239,
-                            "user_id" => 8,
-                            "permission_name" => "transferWaitWorkToInWork"
+                            "created_at" => null,
+                            "user_id" => 6,
+                            "item_name" => "viewOwnDashboards"
                         ],
                         [
-                            "id" => 240,
-                            "user_id" => 8,
-                            "permission_name" => "transferInWorkToOnHold"
+                            "created_at" => null,
+                            "user_id" => 6,
+                            "item_name" => "contentManager"
                         ],
                         [
-                            "id" => 241,
+                            "created_at" => null,
                             "user_id" => 8,
-                            "permission_name" => "transferInWorkToPartialComplete"
+                            "item_name" => "transferWaitWorkToInWork"
                         ],
                         [
-                            "id" => 242,
+                            "created_at" => null,
                             "user_id" => 8,
-                            "permission_name" => "transferInWorkToCompleted"
+                            "item_name" => "transferInWorkToOnHold"
                         ],
                         [
-                            "id" => 243,
+                            "created_at" => null,
                             "user_id" => 8,
-                            "permission_name" => "transferInWorkToDeclined"
+                            "item_name" => "transferInWorkToPartialComplete"
                         ],
                         [
-                            "id" => 244,
+                            "created_at" => null,
                             "user_id" => 8,
-                            "permission_name" => "requestViewOwnRequests"
+                            "item_name" => "transferInWorkToCompleted"
                         ],
                         [
-                            "id" => 245,
+                            "created_at" => null,
                             "user_id" => 8,
-                            "permission_name" => "reportView"
+                            "item_name" => "transferInWorkToDeclined"
                         ],
                         [
-                            "id" => 246,
+                            "created_at" => null,
                             "user_id" => 8,
-                            "permission_name" => "transferPartialCompleteToInWork"
+                            "item_name" => "requestViewOwnRequests"
                         ],
                         [
-                            "id" => 247,
+                            "created_at" => null,
                             "user_id" => 8,
-                            "permission_name" => "transferCompletedToInWork"
+                            "item_name" => "reportView"
                         ],
                         [
-                            "id" => 248,
+                            "created_at" => null,
                             "user_id" => 8,
-                            "permission_name" => "viewOwnDashboards"
-                        ]
+                            "item_name" => "transferPartialCompleteToInWork"
+                        ],
+                        [
+                            "created_at" => null,
+                            "user_id" => 8,
+                            "item_name" => "transferCompletedToInWork"
+                        ],
+                        [
+                            "created_at" => null,
+                            "user_id" => 8,
+                            "item_name" => "viewOwnDashboards"
+                        ],
+                        [
+                            "created_at" => null,
+                            "user_id" => 8,
+                            "item_name" => "contentManager"
+                        ],
+                        [
+                            "created_at" => null,
+                            "user_id" => 8,
+                            "item_name" => "transferOnHoldToInWork"
+                        ],
                     ],
-                    "user_changing_history" => [
+                    "auth.user_changing_history" => [
                         [
-                            "id" => 1,
-                            "changed_user_id" => 5,
-                            "changed_user_login" => "bpm_headSupervisor_1",
-                            "changer_id" => 4,
-                            "changer_login" => "kutsan.k",
-                            "changed_field" => "position",
-                            "old_value" => "headSupervisor",
-                            "new_value" => "contentManager",
-                            "date >=" => date("Y-m-d"),
+                            'id' => 1,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'viewOwnDashboards',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
                         ],
                         [
-                            "id" => 2,
-                            "changed_user_id" => 6,
-                            "changed_user_login" => "bpm_supervisor_1",
-                            "changer_id" => 4,
-                            "changer_login" => "kutsan.k",
-                            "changed_field" => "position",
-                            "old_value" => "supervisor",
-                            "new_value" => "contentManager",
-                            "date >=" => date("Y-m-d"),
+                            'id' => 2,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'reportView',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
                         ],
                         [
-                            "id" => 3,
-                            "changed_user_id" => 8,
-                            "changed_user_login" => "bpm_supervisor_13",
-                            "changer_id" => 4,
-                            "changer_login" => "kutsan.k",
-                            "changed_field" => "position",
-                            "old_value" => "supervisor",
-                            "new_value" => "contentManager",
-                            "date >=" => date("Y-m-d"),
+                            'id' => 3,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'requestViewOwnRequests',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 4,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferCompletedToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 5,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToCompleted',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 6,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToDeclined',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 7,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToOnHold',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 8,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToPartialComplete',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 9,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferOnHoldToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 10,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferPartialCompleteToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 11,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferWaitWorkToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 12,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'contentManager',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 13,
+                            'changed_user_id' => 5,
+                            'changed_user_login' => 'bpm_headSupervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'position',
+                            'old_value' => 'headSupervisor',
+                            'new_value' => 'contentManager',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 14,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'viewOwnDashboards',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 15,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'reportView',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 16,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'requestViewOwnRequests',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 17,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferCompletedToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 18,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToCompleted',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 19,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToDeclined',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 20,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToOnHold',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 21,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToPartialComplete',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 22,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferOnHoldToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 23,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferPartialCompleteToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 24,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferWaitWorkToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 25,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'contentManager',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 26,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'position',
+                            'old_value' => 'supervisor',
+                            'new_value' => 'contentManager',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 27,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'viewOwnDashboards',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 28,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'reportView',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 29,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'requestViewOwnRequests',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 30,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferCompletedToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 31,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToCompleted',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 32,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToDeclined',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 33,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToOnHold',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 34,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferInWorkToPartialComplete',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 35,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferOnHoldToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 36,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferPartialCompleteToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 37,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'transferWaitWorkToInWork',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 38,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'contentManager',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d')
+                        ],
+                        [
+                            'id' => 39,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'position',
+                            'old_value' => 'supervisor',
+                            'new_value' => 'contentManager',
+                            'date >=' => date('Y-m-d')
                         ]
+
                     ]
                 ],
             ]
@@ -1230,9 +1617,9 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "user_bpm" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['user_bpm'],
-                    "user_permissions" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['user_permissions'],
-                    "user_changing_history" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['user_changing_history'],
+                    "auth.auth_item" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_item'],
+                    "auth.auth_assignment" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_assignment'],
+                    "auth.user_changing_history" => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_changing_history'],
                 ],
             ]
         ]

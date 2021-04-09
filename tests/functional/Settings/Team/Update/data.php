@@ -14,7 +14,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "teams" => [
+                    "auth.teams" => [
                         [
                             "id" => 1,
                             "name" => "Управление отделом",
@@ -46,7 +46,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "teams" => [
+                    "auth.teams" => [
                         [
                             "id" => 1,
                             "name" => "Управление отделом",
@@ -78,7 +78,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "teams" => [
+                    "auth.teams" => [
                         [
                             "id" => 1,
                             "name" => "Управление отделом",
@@ -110,7 +110,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "teams" => [
+                    "auth.teams" => [
                         [
                             "id" => 1,
                             "name" => "Управление отделом new",
@@ -142,7 +142,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "teams" => [
+                    "auth.teams" => [
                         [
                             "id" => 1,
                             "name" => "Управление отделом new",

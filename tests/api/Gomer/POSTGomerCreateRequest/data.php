@@ -4831,7 +4831,7 @@ return [
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "Модель класа gomer\\bpm\\models\\UserBpm не найдена по параметрам. Conditions:{\"login\":\"\"}",
+                    "Модель класа gomer\\bpm\\models\\auth\\UserBpm не найдена по параметрам. Conditions:{\"login\":\"\"}",
                     "Не передано поле Request[author_id]",
                     "Не передано поле Request[type_id]",
                     "Не передано поле Request[direction]",

@@ -32,7 +32,7 @@ class POSTRolesUpdateCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST('/bpm/roles/update?id=1', $providerData['requestBody']);
+        $I->sendPOST('/bpm/roles/update?name=Должность', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);

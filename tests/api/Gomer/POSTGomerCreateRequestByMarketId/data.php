@@ -650,7 +650,7 @@ return [
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "Модель класа gomer\\bpm\\models\\UserBpm не найдена по параметрам. Conditions:{\"login\":\"bpm_supervisor_\"}"
+                    "Модель класа gomer\\bpm\\models\\auth\\UserBpm не найдена по параметрам. Conditions:{\"login\":\"bpm_supervisor_\"}"
                 ]
             ],
             'db' => [

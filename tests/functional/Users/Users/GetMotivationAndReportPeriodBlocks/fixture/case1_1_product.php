@@ -121,9 +121,9 @@ return [
         "observers" => [],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
-        "public.teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/teams.php',
-        "roles" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/roles.php',
-        "user_bpm" => [
+        "auth.teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
+        "auth.auth_item" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
+        "auth.users" => [
             [
 //        "id" => 1,
                 "name" => "Система",
@@ -181,106 +181,106 @@ return [
                 "drfo" => "'000000004"
             ],
         ],
-        "user_permissions" => [
+        "auth.auth_assignment" => [
             [
-                //"id" => 219,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestAddNewItems"
+                "item_name" => "requestAddNewItems"
             ],
             [
-                //"id" => 220,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestUpdateItems"
+                "item_name" => "requestUpdateItems"
             ],
             [
-                //"id" => 221,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestTransferItems"
+                "item_name" => "requestTransferItems"
             ],
             [
-                //"id" => 222,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestGroupItems"
+                "item_name" => "requestGroupItems"
             ],
             [
-                //"id" => 223,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestUploadPhoto"
+                "item_name" => "requestUploadPhoto"
             ],
             [
-                //"id" => 224,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestCheckHidden"
+                "item_name" => "requestCheckHidden"
             ],
             [
-                //"id" => 225,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestAddFatPortalCat"
+                "item_name" => "requestAddFatPortalCat"
             ],
             [
-                //"id" => 226,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestUpdateFatPortalCat"
+                "item_name" => "requestUpdateFatPortalCat"
             ],
             [
-                //"id" => 227,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestStructureDesign"
+                "item_name" => "requestStructureDesign"
             ],
             [
-                //"id" => 228,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateSC"
+                "item_name" => "requestAddUpdateSC"
             ],
             [
-                //"id" => 229,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateVideo"
+                "item_name" => "requestAddUpdateVideo"
             ],
             [
-                //"id" => 230,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateSizeGrid"
+                "item_name" => "requestAddUpdateSizeGrid"
             ],
             [
-                //"id" => 231,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestAddUpdateTags"
+                "item_name" => "requestAddUpdateTags"
             ],
             [
-                //"id" => 232,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "transferOnHoldToInWork"
+                "item_name" => "transferOnHoldToInWork"
             ],
             [
-                //"id" => 233,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestCreate"
+                "item_name" => "requestCreate"
             ],
             [
-                //"id" => 234,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestCreateRelated"
+                "item_name" => "requestCreateRelated"
             ],
             [
-                //"id" => 235,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestViewOwnRequests"
+                "item_name" => "requestViewOwnRequests"
             ],
             [
-                //"id" => 236,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "requestViewTeamRequests"
+                "item_name" => "requestViewTeamRequests"
             ],
             [
-                //"id" => 238,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToInCheck"
+                "item_name" => "transferRequireChangeToInCheck"
             ],
             [
-                //"id" => 237,
+                "created_at" => null,
                 "user_id" => 4,
-                "permission_name" => "transferRequireChangeToWaitCheck"
+                "item_name" => "transferRequireChangeToWaitCheck"
             ],
         ]
     ],
