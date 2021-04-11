@@ -1,0 +1,14 @@
+suite_namespace: lisa
+actor: UserTester
+modules:
+    enabled:
+        - \lisa\Helper\User
+        - Cli
+        - Asserts
+        - TestHelper
+        - PhpBrowser:
+              url: http://gomer.local # Domen вашего приложения
+              auth: ['kutsan.k', '123qweASD!']
+        - REST:
+              depends: PhpBrowser
+              url: http://gomer.local # Domen вашего приложения, должен быть такой же как и выше

@@ -26,7 +26,7 @@ class POSTTableColumnsEditCest
      */
     public function POSTTableColumnsEdit(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/grid-settings/save-columns', $providerData['requestBody']);

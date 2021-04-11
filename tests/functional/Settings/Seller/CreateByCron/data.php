@@ -36,7 +36,7 @@ return [
                         ],
                         [
                             "owox_id" => 1332,
-                            "supervisor_id" => 6
+                            "supervisor_id" => 24
                         ],
                     ],
                 ],

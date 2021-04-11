@@ -28,7 +28,7 @@ class CronCompleteWaitGroupingCest
      */
     public function CronCompleteWaitGrouping(FunctionalTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->runShellCommand('./yii bpm/request/complete-wait-grouping');

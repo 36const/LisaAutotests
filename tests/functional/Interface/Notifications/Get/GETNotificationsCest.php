@@ -26,7 +26,7 @@ class GETNotificationsCest
      */
     public function GETNotifications(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->amOnPage('bpm/notification/' . $providerData['url']);

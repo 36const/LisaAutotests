@@ -221,6 +221,8 @@ return [
         "request_errors" => [],
         'notification_settings' => [],
         "user_notifications" => [],
+        "observers" => [],
+        "request_attachments" => [],
         "request_status_history" => [],
         "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values_errors.php',

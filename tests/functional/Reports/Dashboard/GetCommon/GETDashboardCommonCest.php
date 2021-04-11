@@ -26,7 +26,7 @@ class GETDashboardCommonCest
      */
     public function GETDashboardCommon(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->amOnPage("/bpm/dashboard/common" . $providerData['url']);

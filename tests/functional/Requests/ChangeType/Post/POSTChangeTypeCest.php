@@ -28,7 +28,7 @@ class POSTChangeTypeCest
      */
     public function POSTChangeType(FunctionalTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $view->changeType($providerData['requestParameter'], $providerData['requestBody']);

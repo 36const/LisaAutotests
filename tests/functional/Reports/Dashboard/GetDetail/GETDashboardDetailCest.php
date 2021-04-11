@@ -26,7 +26,7 @@ class GETDashboardDetailCest
      */
     public function GETDashboardDetail(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->runShellCommand('./yii bpm/request/count-for-dashboards');

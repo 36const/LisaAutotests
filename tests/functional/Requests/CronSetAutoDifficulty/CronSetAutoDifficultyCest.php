@@ -28,7 +28,7 @@ class CronSetAutoDifficultyCest
      */
     public function CronSetAutoDifficulty(FunctionalTester $I, Example $data, RequestView $view)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->runShellCommand('./yii bpm/request/set-auto-difficulty');

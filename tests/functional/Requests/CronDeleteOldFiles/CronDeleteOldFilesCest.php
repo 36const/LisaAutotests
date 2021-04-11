@@ -26,7 +26,7 @@ class CronDeleteOldFilesCest
      */
     public function CronDeleteOldFiles(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->runShellCommand('./yii bpm/request/delete-old-files');

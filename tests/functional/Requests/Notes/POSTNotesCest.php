@@ -27,7 +27,7 @@ class POSTNotesCest
      */
     public function POSTNotes(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/request/save-note', $providerData['requestBody']);

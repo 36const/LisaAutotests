@@ -26,7 +26,7 @@ class CronSetReportPeriodCest
      */
     public function CronSetReportPeriod(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->runShellCommand('./yii bpm/request/set-report-period');

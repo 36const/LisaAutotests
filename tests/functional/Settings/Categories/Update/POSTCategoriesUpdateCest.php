@@ -27,7 +27,7 @@ class POSTCategoriesUpdateCest
      */
     public function POSTCategoriesUpdate(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->sendPOST($providerData['url'], $providerData['requestBody']);

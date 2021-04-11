@@ -33,7 +33,7 @@ class POSTFromStatusesCest
     public function POSTFromStatuses(FunctionalTester $I, Example $data, RequestView $view,
                                      RequestToCorrection $toCorrection, RequestCorrection $correction)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $view->changeStatus($providerData['requestParameter'], $providerData['requestBody']);

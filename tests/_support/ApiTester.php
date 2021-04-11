@@ -26,14 +26,10 @@ class ApiTester extends Actor
 
     /**
      * @param Example $data - данные кейса из файла data.php
-     * @param string|null $globalFixture - название файла глобальных фикстур, при значении null глобальные фикстуры не используются
      */
-    public function loadDataForTest(Example $data, ?string $globalFixture = 'oneUser')
+    public function loadDataForTest(Example $data)
     {
         $I = $this;
-
-        if (isset($globalFixture))
-            $I->insertFixtureToDatabase($globalFixture);
 
         $I->loadFixtureFromDataprovider();
         $I->loadMockFromDataprovider();
@@ -46,7 +42,7 @@ class ApiTester extends Actor
     {
         $I = $this;
 
-        foreach ($dbTablesArray as $dbName => $dbData) {
+        foreach ($dbTablesArray as $dbData) {
             foreach ($dbData as $tableName => $tableData) {
                 $I->canSeeNumRecords(count($tableData), $tableName);
 

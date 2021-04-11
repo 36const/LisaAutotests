@@ -27,7 +27,7 @@ class POSTCommentUpdateCest
      */
     public function POSTCommentUpdate(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/request-comments/update', $providerData['requestBody']);

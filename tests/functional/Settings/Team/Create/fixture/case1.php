@@ -2,6 +2,6 @@
 
 return [
     "lisa_fixtures" => [
-        "teams" => []
+        "auth.teams" => []
     ],
 ];

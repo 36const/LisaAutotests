@@ -93,7 +93,7 @@ class AcceptanceTester extends Actor
     {
         $I = $this;
 
-        foreach ($dbTablesArray as $dbName => $dbData) {
+        foreach ($dbTablesArray as $dbData) {
             foreach ($dbData as $tableName => $tableData) {
                 $I->canSeeNumRecords(count($tableData), $tableName);
 

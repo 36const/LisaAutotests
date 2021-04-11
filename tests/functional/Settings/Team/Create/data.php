@@ -14,7 +14,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "teams" => [
+                    "auth.teams" => [
                         [
                             "id" => 1,
                             "name" => "Управление отделом",
@@ -40,7 +40,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "teams" => [
+                    "auth.teams" => [
                         [
                             "id" => 1,
                             "name" => "Заявки Маркетплейс",
@@ -66,7 +66,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "teams" => [
+                    "auth.teams" => [
                         [
                             "id" => 1,
                             "name" => "Заявки Rozetka",
@@ -92,7 +92,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "teams" => [
+                    "auth.teams" => [
                         [
                             "id" => 1,
                             "name" => "Работа с группами",
@@ -118,7 +118,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "teams" => [
+                    "auth.teams" => [
                         [
                             "id" => 1,
                             "name" => "Работа с проектированием структур + фильтрами",
@@ -144,7 +144,7 @@ return [
             ],
             'db' => [
                 "lisa_fixtures" => [
-                    "teams" => [
+                    "auth.teams" => [
                         [
                             "id" => 1,
                             "name" => "Работа с порталами, фат-меню, категориями",

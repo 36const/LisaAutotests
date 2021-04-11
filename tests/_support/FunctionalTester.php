@@ -29,14 +29,10 @@ class FunctionalTester extends Actor
 
     /**
      * @param Example $data - данные кейса из файла data.php
-     * @param string|null $globalFixture - название файла глобальных фикстур, при значении null глобальные фикстуры не используются
      */
-    public function loadDataForTest(Example $data, ?string $globalFixture = 'oneUser')
+    public function loadDataForTest(Example $data)
     {
         $I = $this;
-
-        if (isset($globalFixture))
-            $I->insertFixtureToDatabase($globalFixture);
 
         $I->loadFixtureFromDataprovider();
         $I->loadMockFromDataprovider();
@@ -56,7 +52,7 @@ class FunctionalTester extends Actor
     {
         $I = $this;
 
-        foreach ($dbTablesArray as $dbName => $dbData) {
+        foreach ($dbTablesArray as $dbData) {
             foreach ($dbData as $tableName => $tableData) {
                 $I->canSeeNumRecords(count($tableData), $tableName);
 
@@ -88,23 +84,6 @@ class FunctionalTester extends Actor
                         $I->cantSee($object['value'], $object['selector']) :
                         $I->cantSeeElement($object['selector']);
                 }
-            }
-        }
-    }
-
-    public function checkAjaxResponse($ajaxResponse)
-    {
-        $I = $this;
-
-        if (isset($ajaxResponse['canSee'])) {
-            foreach ($ajaxResponse['canSee'] as $text) {
-                $I->canSeeResponseContains($text);
-            }
-        }
-
-        if (isset($ajaxResponse['cantSee'])) {
-            foreach ($ajaxResponse['cantSee'] as $text) {
-                $I->cantSeeResponseContains($text);
             }
         }
     }

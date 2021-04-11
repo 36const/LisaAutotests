@@ -28,7 +28,7 @@ class GETColumnsFiltersCest
      */
     public function GETColumnsFilters(FunctionalTester $I, Example $data, Request $request)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $request->amOnTable($providerData['url']);

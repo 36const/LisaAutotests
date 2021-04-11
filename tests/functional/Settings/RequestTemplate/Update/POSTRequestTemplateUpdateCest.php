@@ -27,7 +27,7 @@ class POSTRequestTemplateUpdateCest
      */
     public function POSTCategoriesUpdate(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->sendPOST('bpm/request-template/update?id=2', $providerData['requestBody']);

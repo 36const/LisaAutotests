@@ -6,5 +6,7 @@ namespace lisa\Helper;
 
 class Functional extends \Codeception\Module
 {
-
+    public function _beforeSuite($settings = []) {
+        $this->getModule('TestHelper')->insertFixtureToDatabase('allUsers');
+    }
 }

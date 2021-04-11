@@ -27,7 +27,7 @@ class POSTSellerDistributionUpdateCest
      */
     public function POSTSellerDistributionUpdate(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
         \Yii::$app->redis->flushall();
 

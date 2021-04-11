@@ -26,7 +26,7 @@ class CronClearNotificationsCest
      */
     public function CronClearNotifications(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->runShellCommand('./yii bpm/request/clear-notifications');

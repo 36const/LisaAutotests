@@ -26,7 +26,7 @@ class GETUsersExportCest
      */
     public function GETUsersExport(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->sendGET('bpm/user/export' . $providerData['url']);

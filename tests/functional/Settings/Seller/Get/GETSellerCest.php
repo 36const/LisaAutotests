@@ -26,7 +26,7 @@ class GETSellerCest
      */
     public function GETSeller(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->amOnPage('bpm/seller/index/' . $providerData['url']);

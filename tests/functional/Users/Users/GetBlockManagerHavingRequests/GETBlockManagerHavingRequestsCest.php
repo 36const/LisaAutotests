@@ -26,7 +26,7 @@ class GETBlockManagerHavingRequestsCest
      */
     public function GETBlockManagerHavingRequests(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->amOnPage('bpm/user/update?id=11');

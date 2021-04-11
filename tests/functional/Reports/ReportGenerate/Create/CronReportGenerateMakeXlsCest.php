@@ -27,7 +27,7 @@ class CronReportGenerateMakeXlsCest
      */
     public function CronReportGenerateMakeXls(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
         $I->cleanDir(FunctionalTester::BPM_UPLOADS);
 

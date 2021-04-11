@@ -26,7 +26,7 @@ class GETCategoriesCest
      */
     public function GETCategories(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->amOnPage('bpm/category/index/' . $providerData['url']);

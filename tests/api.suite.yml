@@ -6,6 +6,8 @@ modules:
         - Cli
         - Asserts
         - TestHelper:
+            fixture:
+              cleanup_fixture_after_test: false
             mockserver:
               clear_before_test: true   # По-умолчанию false, то есть не чистим моки перед стартом каждого тестa
         - PhpBrowser:

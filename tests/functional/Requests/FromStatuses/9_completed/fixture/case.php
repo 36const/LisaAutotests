@@ -220,6 +220,7 @@ return [
         "report_periods" => [[]],
         "request_errors" => [],
         "user_notifications" => [],
+        "request_attachments" => [],
         "request_status_history" => [],
         "notification_settings" => [
             [

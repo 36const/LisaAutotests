@@ -26,7 +26,7 @@ class GETOtherFilterCest
      */
     public function GETOtherFilter(FunctionalTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->amOnPage($providerData['url']);
