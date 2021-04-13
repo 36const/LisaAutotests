@@ -44,5 +44,6 @@ return [
         "photo_load_status" => 0,
         "previous_status" => null,
         "supplier_cabinet_id" => null,
+        "payload" => '[]',
     ],
 ];

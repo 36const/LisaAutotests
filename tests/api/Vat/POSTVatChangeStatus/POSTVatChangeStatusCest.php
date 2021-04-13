@@ -25,7 +25,7 @@ class POSTVatChangeStatusCest
      */
     public function POSTVatChangeStatus(ApiTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'oneUserWithoutPermissionsTable');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/api/change-status', $providerData['requestBody']);

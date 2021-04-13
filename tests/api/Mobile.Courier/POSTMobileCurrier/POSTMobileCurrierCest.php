@@ -24,7 +24,7 @@ class POSTMobileCurrierCest
      */
     public function POSTMobileCurrier(ApiTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         isset($providerData['attachments']) ?

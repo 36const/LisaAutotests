@@ -20,7 +20,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 999
                     ],
                     "2" => [
                         "id" => 2,
@@ -28,7 +29,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-02 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 888
                     ],
                     "3" => [
                         "id" => 3,
@@ -36,7 +38,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "На доработке",
                         "created_at" => '2020-01-03 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 0
                     ],
                 ],
                 "count" => 3,
@@ -65,7 +68,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 999
                     ],
                     "2" => [
                         "id" => 2,
@@ -73,7 +77,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-02 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 888
                     ],
                     "3" => [
                         "id" => 3,
@@ -81,7 +86,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "На доработке",
                         "created_at" => '2020-01-03 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 0
                     ],
                     "4" => [
                         "id" => 4,
@@ -89,7 +95,8 @@ return [
                         "subject" => "Euromart. Источник №1",
                         "status" => "Отменена",
                         "created_at" => '2020-01-04 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "5" => [
                         "id" => 5,
@@ -97,7 +104,8 @@ return [
                         "subject" => "Euromart. Источник №1",
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-05 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => null
                     ],
                     "6" => [
                         "id" => 6,
@@ -105,7 +113,8 @@ return [
                         "subject" => "Euromart. Источник №1",
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:06',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => null
                     ],
                     "7" => [
                         "id" => 7,
@@ -113,7 +122,8 @@ return [
                         "subject" => "Euromart. Источник №1",
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:07',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => null
                     ],
                 ],
                 "count" => 7,
@@ -125,7 +135,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Один существующий, другой несущестующий, без статусов',
+            'description' => 'Один существующий, другой несуществующий, без статусов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -142,7 +152,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 999
                     ],
                     "2" => [
                         "id" => 2,
@@ -150,7 +161,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-02 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 888
                     ],
                     "3" => [
                         "id" => 3,
@@ -158,7 +170,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "На доработке",
                         "created_at" => '2020-01-03 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 0
                     ],
                 ],
                 "count" => 3,
@@ -208,7 +221,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-02 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 888
                     ],
                 ],
                 "count" => 1,
@@ -238,7 +252,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 999
                     ],
                     "2" => [
                         "id" => 2,
@@ -246,7 +261,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-02 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 888
                     ],
                     "3" => [
                         "id" => 3,
@@ -254,7 +270,8 @@ return [
                         "subject" => "Rozetka",
                         "status" => "На доработке",
                         "created_at" => '2020-01-03 00:00:00',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => 0
                     ],
                     "8" => [
                         "id" => 8,
@@ -262,7 +279,8 @@ return [
                         "subject" => "anytech. Источник №9423",
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:08',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => null
                     ],
                     "9" => [
                         "id" => 9,
@@ -270,7 +288,8 @@ return [
                         "subject" => "anytech. Источник №9423",
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:09',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => null
                     ],
                     "10" => [
                         "id" => 10,
@@ -278,7 +297,8 @@ return [
                         "subject" => "anytech. Источник №9423",
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:10',
-                        "amount_to_work" => 10
+                        "amount_to_work" => 10,
+                        "side_user_id" => null
                     ],
                 ],
                 "count" => 6,
@@ -386,6 +406,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 999,
                     ],
                     "2" => [
                         "id" => 2,
@@ -394,6 +415,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 888,
                     ],
                     "3" => [
                         "id" => 3,
@@ -402,6 +424,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 0,
                     ],
                     "4" => [
                         "id" => 4,
@@ -410,6 +433,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "5" => [
                         "id" => 5,
@@ -418,6 +442,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "6" => [
                         "id" => 6,
@@ -426,6 +451,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "7" => [
                         "id" => 7,
@@ -434,6 +460,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "8" => [
                         "id" => 8,
@@ -442,6 +469,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "9" => [
                         "id" => 9,
@@ -450,6 +478,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "10" => [
                         "id" => 10,
@@ -458,6 +487,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "11" => [
                         "id" => 11,
@@ -466,6 +496,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "12" => [
                         "id" => 12,
@@ -474,6 +505,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "13" => [
                         "id" => 13,
@@ -482,6 +514,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "14" => [
                         "id" => 14,
@@ -490,6 +523,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "15" => [
                         "id" => 15,
@@ -498,6 +532,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "16" => [
                         "id" => 16,
@@ -506,6 +541,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "17" => [
                         "id" => 17,
@@ -514,6 +550,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "18" => [
                         "id" => 18,
@@ -522,6 +559,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "19" => [
                         "id" => 19,
@@ -530,6 +568,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "20" => [
                         "id" => 20,
@@ -538,6 +577,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "21" => [
                         "id" => 21,
@@ -546,6 +586,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "22" => [
                         "id" => 22,
@@ -554,6 +595,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "23" => [
                         "id" => 23,
@@ -562,6 +604,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "24" => [
                         "id" => 24,
@@ -570,6 +613,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "25" => [
                         "id" => 25,
@@ -578,6 +622,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "26" => [
                         "id" => 26,
@@ -586,6 +631,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "27" => [
                         "id" => 27,
@@ -594,6 +640,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "28" => [
                         "id" => 28,
@@ -602,6 +649,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "29" => [
                         "id" => 29,
@@ -610,6 +658,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "30" => [
                         "id" => 30,
@@ -618,6 +667,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "31" => [
                         "id" => 31,
@@ -626,6 +676,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "32" => [
                         "id" => 32,
@@ -634,6 +685,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "33" => [
                         "id" => 33,
@@ -642,6 +694,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "34" => [
                         "id" => 34,
@@ -650,6 +703,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "35" => [
                         "id" => 35,
@@ -658,6 +712,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "36" => [
                         "id" => 36,
@@ -666,6 +721,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "37" => [
                         "id" => 37,
@@ -674,6 +730,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "38" => [
                         "id" => 38,
@@ -682,6 +739,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "39" => [
                         "id" => 39,
@@ -690,6 +748,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "40" => [
                         "id" => 40,
@@ -698,6 +757,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "41" => [
                         "id" => 41,
@@ -706,6 +766,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "42" => [
                         "id" => 42,
@@ -714,6 +775,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "43" => [
                         "id" => 43,
@@ -722,6 +784,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "44" => [
                         "id" => 44,
@@ -730,6 +793,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "45" => [
                         "id" => 45,
@@ -738,6 +802,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "46" => [
                         "id" => 46,
@@ -746,6 +811,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "47" => [
                         "id" => 47,
@@ -754,6 +820,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "48" => [
                         "id" => 48,
@@ -762,6 +829,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "49" => [
                         "id" => 49,
@@ -770,6 +838,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "50" => [
                         "id" => 50,
@@ -778,6 +847,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "51" => [
                         "id" => 51,
@@ -786,6 +856,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "52" => [
                         "id" => 52,
@@ -794,6 +865,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "53" => [
                         "id" => 53,
@@ -802,6 +874,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "54" => [
                         "id" => 54,
@@ -810,6 +883,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "55" => [
                         "id" => 55,
@@ -818,6 +892,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "56" => [
                         "id" => 56,
@@ -826,6 +901,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "57" => [
                         "id" => 57,
@@ -834,6 +910,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "58" => [
                         "id" => 58,
@@ -842,6 +919,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "59" => [
                         "id" => 59,
@@ -850,6 +928,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "60" => [
                         "id" => 60,
@@ -858,6 +937,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "61" => [
                         "id" => 61,
@@ -866,6 +946,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "62" => [
                         "id" => 62,
@@ -874,6 +955,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "63" => [
                         "id" => 63,
@@ -882,6 +964,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "64" => [
                         "id" => 64,
@@ -890,6 +973,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "65" => [
                         "id" => 65,
@@ -898,6 +982,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "66" => [
                         "id" => 66,
@@ -906,6 +991,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "67" => [
                         "id" => 67,
@@ -914,6 +1000,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "68" => [
                         "id" => 68,
@@ -922,6 +1009,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "69" => [
                         "id" => 69,
@@ -930,6 +1018,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "70" => [
                         "id" => 70,
@@ -938,6 +1027,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "71" => [
                         "id" => 71,
@@ -946,6 +1036,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "72" => [
                         "id" => 72,
@@ -954,6 +1045,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "73" => [
                         "id" => 73,
@@ -962,6 +1054,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "74" => [
                         "id" => 74,
@@ -970,6 +1063,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "75" => [
                         "id" => 75,
@@ -978,6 +1072,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "76" => [
                         "id" => 76,
@@ -986,6 +1081,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "77" => [
                         "id" => 77,
@@ -994,6 +1090,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "78" => [
                         "id" => 78,
@@ -1002,6 +1099,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "79" => [
                         "id" => 79,
@@ -1010,6 +1108,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "80" => [
                         "id" => 80,
@@ -1018,6 +1117,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "81" => [
                         "id" => 81,
@@ -1026,6 +1126,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "82" => [
                         "id" => 82,
@@ -1034,6 +1135,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "83" => [
                         "id" => 83,
@@ -1042,6 +1144,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "84" => [
                         "id" => 84,
@@ -1050,6 +1153,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "85" => [
                         "id" => 85,
@@ -1058,6 +1162,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "86" => [
                         "id" => 86,
@@ -1066,6 +1171,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "87" => [
                         "id" => 87,
@@ -1074,6 +1180,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "88" => [
                         "id" => 88,
@@ -1082,6 +1189,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "89" => [
                         "id" => 89,
@@ -1090,6 +1198,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "90" => [
                         "id" => 90,
@@ -1098,6 +1207,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "91" => [
                         "id" => 91,
@@ -1106,6 +1216,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "92" => [
                         "id" => 92,
@@ -1114,6 +1225,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "93" => [
                         "id" => 93,
@@ -1122,6 +1234,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "94" => [
                         "id" => 94,
@@ -1130,6 +1243,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "95" => [
                         "id" => 95,
@@ -1138,6 +1252,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "96" => [
                         "id" => 96,
@@ -1146,6 +1261,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "97" => [
                         "id" => 97,
@@ -1154,6 +1270,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "98" => [
                         "id" => 98,
@@ -1162,6 +1279,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "99" => [
                         "id" => 99,
@@ -1170,6 +1288,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "100" => [
                         "id" => 100,
@@ -1178,6 +1297,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ]
                 ],
                 "count" => 250,
@@ -1208,6 +1328,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 999,
                     ],
                     "102" => [
                         "id" => 102,
@@ -1216,6 +1337,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 888,
                     ],
                     "103" => [
                         "id" => 103,
@@ -1224,6 +1346,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 0,
                     ],
                     "104" => [
                         "id" => 104,
@@ -1232,6 +1355,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "105" => [
                         "id" => 105,
@@ -1240,6 +1364,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "106" => [
                         "id" => 106,
@@ -1248,6 +1373,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "107" => [
                         "id" => 107,
@@ -1256,6 +1382,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "108" => [
                         "id" => 108,
@@ -1264,6 +1391,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "109" => [
                         "id" => 109,
@@ -1272,6 +1400,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "110" => [
                         "id" => 110,
@@ -1280,6 +1409,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "111" => [
                         "id" => 111,
@@ -1288,6 +1418,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "112" => [
                         "id" => 112,
@@ -1296,6 +1427,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "113" => [
                         "id" => 113,
@@ -1304,6 +1436,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "114" => [
                         "id" => 114,
@@ -1312,6 +1445,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "115" => [
                         "id" => 115,
@@ -1320,6 +1454,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "116" => [
                         "id" => 116,
@@ -1328,6 +1463,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "117" => [
                         "id" => 117,
@@ -1336,6 +1472,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "118" => [
                         "id" => 118,
@@ -1344,6 +1481,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "119" => [
                         "id" => 119,
@@ -1352,6 +1490,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "120" => [
                         "id" => 120,
@@ -1360,6 +1499,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "121" => [
                         "id" => 121,
@@ -1368,6 +1508,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "122" => [
                         "id" => 122,
@@ -1376,6 +1517,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "123" => [
                         "id" => 123,
@@ -1384,6 +1526,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "124" => [
                         "id" => 124,
@@ -1392,6 +1535,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "125" => [
                         "id" => 125,
@@ -1400,6 +1544,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "126" => [
                         "id" => 126,
@@ -1408,6 +1553,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "127" => [
                         "id" => 127,
@@ -1416,6 +1562,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "128" => [
                         "id" => 128,
@@ -1424,6 +1571,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "129" => [
                         "id" => 129,
@@ -1432,6 +1580,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "130" => [
                         "id" => 130,
@@ -1440,6 +1589,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "131" => [
                         "id" => 131,
@@ -1448,6 +1598,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "132" => [
                         "id" => 132,
@@ -1456,6 +1607,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "133" => [
                         "id" => 133,
@@ -1464,6 +1616,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "134" => [
                         "id" => 134,
@@ -1472,6 +1625,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "135" => [
                         "id" => 135,
@@ -1480,6 +1634,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "136" => [
                         "id" => 136,
@@ -1488,6 +1643,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "137" => [
                         "id" => 137,
@@ -1496,6 +1652,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "138" => [
                         "id" => 138,
@@ -1504,6 +1661,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "139" => [
                         "id" => 139,
@@ -1512,6 +1670,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "140" => [
                         "id" => 140,
@@ -1520,6 +1679,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "141" => [
                         "id" => 141,
@@ -1528,6 +1688,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "142" => [
                         "id" => 142,
@@ -1536,6 +1697,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "143" => [
                         "id" => 143,
@@ -1544,6 +1706,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "144" => [
                         "id" => 144,
@@ -1552,6 +1715,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "145" => [
                         "id" => 145,
@@ -1560,6 +1724,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "146" => [
                         "id" => 146,
@@ -1568,6 +1733,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "147" => [
                         "id" => 147,
@@ -1576,6 +1742,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "148" => [
                         "id" => 148,
@@ -1584,6 +1751,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "149" => [
                         "id" => 149,
@@ -1592,6 +1760,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "150" => [
                         "id" => 150,
@@ -1600,6 +1769,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "151" => [
                         "id" => 151,
@@ -1608,6 +1778,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "152" => [
                         "id" => 152,
@@ -1616,6 +1787,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "153" => [
                         "id" => 153,
@@ -1624,6 +1796,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "154" => [
                         "id" => 154,
@@ -1632,6 +1805,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "155" => [
                         "id" => 155,
@@ -1640,6 +1814,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "156" => [
                         "id" => 156,
@@ -1648,6 +1823,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "157" => [
                         "id" => 157,
@@ -1656,6 +1832,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "158" => [
                         "id" => 158,
@@ -1664,6 +1841,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "159" => [
                         "id" => 159,
@@ -1672,6 +1850,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "160" => [
                         "id" => 160,
@@ -1680,6 +1859,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "161" => [
                         "id" => 161,
@@ -1688,6 +1868,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "162" => [
                         "id" => 162,
@@ -1696,6 +1877,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "163" => [
                         "id" => 163,
@@ -1704,6 +1886,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "164" => [
                         "id" => 164,
@@ -1712,6 +1895,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "165" => [
                         "id" => 165,
@@ -1720,6 +1904,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "166" => [
                         "id" => 166,
@@ -1728,6 +1913,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "167" => [
                         "id" => 167,
@@ -1736,6 +1922,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "168" => [
                         "id" => 168,
@@ -1744,6 +1931,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "169" => [
                         "id" => 169,
@@ -1752,6 +1940,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "170" => [
                         "id" => 170,
@@ -1760,6 +1949,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "171" => [
                         "id" => 171,
@@ -1768,6 +1958,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "172" => [
                         "id" => 172,
@@ -1776,6 +1967,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "173" => [
                         "id" => 173,
@@ -1784,6 +1976,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "174" => [
                         "id" => 174,
@@ -1792,6 +1985,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "175" => [
                         "id" => 175,
@@ -1800,6 +1994,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "176" => [
                         "id" => 176,
@@ -1808,6 +2003,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "177" => [
                         "id" => 177,
@@ -1816,6 +2012,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "178" => [
                         "id" => 178,
@@ -1824,6 +2021,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "179" => [
                         "id" => 179,
@@ -1832,6 +2030,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "180" => [
                         "id" => 180,
@@ -1840,6 +2039,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "181" => [
                         "id" => 181,
@@ -1848,6 +2048,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "182" => [
                         "id" => 182,
@@ -1856,6 +2057,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "183" => [
                         "id" => 183,
@@ -1864,6 +2066,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "184" => [
                         "id" => 184,
@@ -1872,6 +2075,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "185" => [
                         "id" => 185,
@@ -1880,6 +2084,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "186" => [
                         "id" => 186,
@@ -1888,6 +2093,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "187" => [
                         "id" => 187,
@@ -1896,6 +2102,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "188" => [
                         "id" => 188,
@@ -1904,6 +2111,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "189" => [
                         "id" => 189,
@@ -1912,6 +2120,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "190" => [
                         "id" => 190,
@@ -1920,6 +2129,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "191" => [
                         "id" => 191,
@@ -1928,6 +2138,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "192" => [
                         "id" => 192,
@@ -1936,6 +2147,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "193" => [
                         "id" => 193,
@@ -1944,6 +2156,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "194" => [
                         "id" => 194,
@@ -1952,6 +2165,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "195" => [
                         "id" => 195,
@@ -1960,6 +2174,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "196" => [
                         "id" => 196,
@@ -1968,6 +2183,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "197" => [
                         "id" => 197,
@@ -1976,6 +2192,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "198" => [
                         "id" => 198,
@@ -1984,6 +2201,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "199" => [
                         "id" => 199,
@@ -1992,6 +2210,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "200" => [
                         "id" => 200,
@@ -2000,6 +2219,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ]
                 ],
                 "count" => 250,
@@ -2030,6 +2250,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 999,
                     ],
                     "202" => [
                         "id" => 202,
@@ -2038,6 +2259,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 888,
                     ],
                     "203" => [
                         "id" => 203,
@@ -2046,6 +2268,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 0,
                     ],
                     "204" => [
                         "id" => 204,
@@ -2054,6 +2277,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "205" => [
                         "id" => 205,
@@ -2062,6 +2286,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "206" => [
                         "id" => 206,
@@ -2070,6 +2295,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "207" => [
                         "id" => 207,
@@ -2078,6 +2304,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "208" => [
                         "id" => 208,
@@ -2086,6 +2313,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "209" => [
                         "id" => 209,
@@ -2094,6 +2322,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "210" => [
                         "id" => 210,
@@ -2102,6 +2331,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "211" => [
                         "id" => 211,
@@ -2110,6 +2340,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "212" => [
                         "id" => 212,
@@ -2118,6 +2349,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "213" => [
                         "id" => 213,
@@ -2126,6 +2358,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "214" => [
                         "id" => 214,
@@ -2134,6 +2367,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "215" => [
                         "id" => 215,
@@ -2142,6 +2376,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "216" => [
                         "id" => 216,
@@ -2150,6 +2385,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "217" => [
                         "id" => 217,
@@ -2158,6 +2394,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "218" => [
                         "id" => 218,
@@ -2166,6 +2403,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "219" => [
                         "id" => 219,
@@ -2174,6 +2412,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "220" => [
                         "id" => 220,
@@ -2182,6 +2421,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "221" => [
                         "id" => 221,
@@ -2190,6 +2430,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "222" => [
                         "id" => 222,
@@ -2198,6 +2439,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "223" => [
                         "id" => 223,
@@ -2206,6 +2448,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "224" => [
                         "id" => 224,
@@ -2214,6 +2457,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "225" => [
                         "id" => 225,
@@ -2222,6 +2466,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "226" => [
                         "id" => 226,
@@ -2230,6 +2475,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "227" => [
                         "id" => 227,
@@ -2238,6 +2484,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "228" => [
                         "id" => 228,
@@ -2246,6 +2493,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "229" => [
                         "id" => 229,
@@ -2254,6 +2502,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "230" => [
                         "id" => 230,
@@ -2262,6 +2511,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "231" => [
                         "id" => 231,
@@ -2270,6 +2520,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "232" => [
                         "id" => 232,
@@ -2278,6 +2529,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "233" => [
                         "id" => 233,
@@ -2286,6 +2538,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "234" => [
                         "id" => 234,
@@ -2294,6 +2547,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "235" => [
                         "id" => 235,
@@ -2302,6 +2556,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "236" => [
                         "id" => 236,
@@ -2310,6 +2565,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "237" => [
                         "id" => 237,
@@ -2318,6 +2574,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "238" => [
                         "id" => 238,
@@ -2326,6 +2583,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "239" => [
                         "id" => 239,
@@ -2334,6 +2592,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "240" => [
                         "id" => 240,
@@ -2342,6 +2601,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "241" => [
                         "id" => 241,
@@ -2350,6 +2610,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "242" => [
                         "id" => 242,
@@ -2358,6 +2619,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "243" => [
                         "id" => 243,
@@ -2366,6 +2628,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "244" => [
                         "id" => 244,
@@ -2374,6 +2637,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "245" => [
                         "id" => 245,
@@ -2382,6 +2646,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "246" => [
                         "id" => 246,
@@ -2390,6 +2655,7 @@ return [
                         "status" => "В работе",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "247" => [
                         "id" => 247,
@@ -2398,6 +2664,7 @@ return [
                         "status" => "Ожидает",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "248" => [
                         "id" => 248,
@@ -2406,6 +2673,7 @@ return [
                         "status" => "Частично выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "249" => [
                         "id" => 249,
@@ -2414,6 +2682,7 @@ return [
                         "status" => "Выполнена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "250" => [
                         "id" => 250,
@@ -2422,6 +2691,7 @@ return [
                         "status" => "Закрыта",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ]
                 ],
                 "count" => 250,
@@ -2453,6 +2723,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 999,
                     ],
                     "202" => [
                         "id" => 202,
@@ -2461,6 +2732,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 888,
                     ],
                     "203" => [
                         "id" => 203,
@@ -2469,6 +2741,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => 0,
                     ],
                     "204" => [
                         "id" => 204,
@@ -2477,6 +2750,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "205" => [
                         "id" => 205,
@@ -2485,6 +2759,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "211" => [
                         "id" => 211,
@@ -2493,6 +2768,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "212" => [
                         "id" => 212,
@@ -2501,6 +2777,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "213" => [
                         "id" => 213,
@@ -2509,6 +2786,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "214" => [
                         "id" => 214,
@@ -2517,6 +2795,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "215" => [
                         "id" => 215,
@@ -2525,6 +2804,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "221" => [
                         "id" => 221,
@@ -2533,6 +2813,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "222" => [
                         "id" => 222,
@@ -2541,6 +2822,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "223" => [
                         "id" => 223,
@@ -2549,6 +2831,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "224" => [
                         "id" => 224,
@@ -2557,6 +2840,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "225" => [
                         "id" => 225,
@@ -2565,6 +2849,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "231" => [
                         "id" => 231,
@@ -2573,6 +2858,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "232" => [
                         "id" => 232,
@@ -2581,6 +2867,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "233" => [
                         "id" => 233,
@@ -2589,6 +2876,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "234" => [
                         "id" => 234,
@@ -2597,6 +2885,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "235" => [
                         "id" => 235,
@@ -2605,6 +2894,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "241" => [
                         "id" => 241,
@@ -2613,6 +2903,7 @@ return [
                         "status" => "Новая",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "242" => [
                         "id" => 242,
@@ -2621,6 +2912,7 @@ return [
                         "status" => "Готова для распределения",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "243" => [
                         "id" => 243,
@@ -2629,6 +2921,7 @@ return [
                         "status" => "На доработке",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "244" => [
                         "id" => 244,
@@ -2637,6 +2930,7 @@ return [
                         "status" => "Отменена",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ],
                     "245" => [
                         "id" => 245,
@@ -2645,6 +2939,7 @@ return [
                         "status" => "Ожидает взятия в работу",
                         "created_at" => '2020-01-01 00:00:00',
                         "amount_to_work" => 10,
+                        "side_user_id" => null,
                     ]
                 ],
                 "count" => 125,

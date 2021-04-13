@@ -8,9 +8,9 @@ use Codeception\Module\TestHelper;
 /**
  * @group lisa
  * @group lisa_api
- * @group GETZendeskRequestsByMarket
+ * @group GETMarketRequestDetails
  */
-class GETZendeskRequestsByMarketCest
+class GETMarketRequestDetailsCest
 {
     protected function pageProvider(): array
     {
@@ -23,12 +23,12 @@ class GETZendeskRequestsByMarketCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function GETZendeskRequestsByMarket(ApiTester $I, Example $data)
+    public function GETMarketRequestDetails(ApiTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->sendGET('/bpm/api/requests-list', $providerData['requestParameters']);
+        $I->sendGET('/bpm/api/request-details', $providerData['requestParameters']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);

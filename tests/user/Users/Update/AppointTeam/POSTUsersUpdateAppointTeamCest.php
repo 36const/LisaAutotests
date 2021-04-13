@@ -28,7 +28,7 @@ class POSTUsersUpdateAppointTeamCest
      */
     public function POSTUsersUpdateAppointTeam(UserTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data, null);
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/user/appoint-team', $providerData['requestBody']);

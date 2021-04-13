@@ -24,7 +24,7 @@ class POSTComiCest
      */
     public function POSTComi(ApiTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/bpm/api/jira-request' . $providerData['requestParameters'], []);

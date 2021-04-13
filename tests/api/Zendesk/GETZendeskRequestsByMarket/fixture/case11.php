@@ -10,6 +10,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
+                'payload' => '{"author_login": "йцукфыва", "side_user_id": 999}',
             ],
             [
                 //'id' => 2,
@@ -19,6 +20,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=2',
+                'payload' => '{"side_user_id": 888}',
             ],
             [
                 //'id' => 3,
@@ -28,6 +30,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bchange_type%5D=sync_source_category_id',
+                'payload' => '{"side_user_id": 0}',
             ],
             [
                 //'id' => 4,
@@ -37,6 +40,7 @@ return [
                 "seller_id" => 83,
                 "subject" => "Euromart. Источник №1",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=9',
+                'payload' => '{"author_login": "йцукфыва"}',
             ],
             [
                 //'id' => 5,
@@ -910,6 +914,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
+                'payload' => '{"author_login": "йцукфыва", "side_user_id": 999}',
             ],
             [
                 //'id' => 2,
@@ -919,6 +924,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=2',
+                'payload' => '{"side_user_id": 888}',
             ],
             [
                 //'id' => 3,
@@ -928,6 +934,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bchange_type%5D=sync_source_category_id',
+                'payload' => '{"side_user_id": 0}',
             ],
             [
                 //'id' => 4,
@@ -937,6 +944,7 @@ return [
                 "seller_id" => 83,
                 "subject" => "Euromart. Источник №1",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=9',
+                'payload' => '{"author_login": "йцукфыва"}',
             ],
             [
                 //'id' => 5,
@@ -1810,6 +1818,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
+                'payload' => '{"author_login": "йцукфыва", "side_user_id": 999}',
             ],
             [
                 //'id' => 2,
@@ -1819,6 +1828,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=2',
+                'payload' => '{"side_user_id": 888}',
             ],
             [
                 //'id' => 3,
@@ -1828,6 +1838,7 @@ return [
                 "seller_id" => 5,
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bchange_type%5D=sync_source_category_id',
+                'payload' => '{"side_user_id": 0}',
             ],
             [
                 //'id' => 4,
@@ -1837,6 +1848,7 @@ return [
                 "seller_id" => 83,
                 "subject" => "Euromart. Источник №1",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=9',
+                'payload' => '{"author_login": "йцукфыва"}',
             ],
             [
                 //'id' => 5,

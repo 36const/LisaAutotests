@@ -561,6 +561,154 @@ return [
             ],
             [
                 'user_id' => 1,
+                'item_name' => 'blockUser'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'categoryUpdate'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'coefUpdate'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'createUser'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'errorsUpdate'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'excludedFieldsUpdate'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'fieldsUpdate'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'massEdit'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'priorityUpdate'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'reasonsUpdate'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'reportLoadAllUsers'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'reportView'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestAddAttrOrValues'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestAddFatPortalCat'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestAddNewItems'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestAddUpdateSC'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestAddUpdateSizeGrid'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestAddUpdateTags'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestAddUpdateVideo'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestCheckHidden'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestCreate'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestCreateRelated'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestDeleteAttachments'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestGroupItems'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestStructureDesign'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestTransferItems'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestUpdateAttrOrValues'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestUpdateFatPortalCat'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestUpdateItems'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestUploadPhoto'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'requestViewAllRequests'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'seeAllTemplates'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'seeDirectionTemplates'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'seeTeamTemplates'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'sellerUpdate'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'takeToWork'
+            ],
+            [
+                'user_id' => 1,
+                'item_name' => 'teamUpdate'
+            ],
+            [
+                'user_id' => 1,
                 'item_name' => 'transferAnyToClosed'
             ],
             [

@@ -25,7 +25,7 @@ class POSTGomerCreateRequestCest
      */
     public function POSTGomerCreateRequest(ApiTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
         $I->setMaxFileSize(1024);

@@ -11,6 +11,7 @@ return [
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
                 "created_at" => '2020-01-01 00:00:00',
+                'payload' => '{"author_login": "йцукфыва", "side_user_id": 999}',
             ],
             [
                 'id' => 2,
@@ -21,6 +22,7 @@ return [
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=2',
                 "created_at" => '2020-01-02 00:00:00',
+                'payload' => '{"side_user_id": 888}',
             ],
             [
                 'id' => 3,
@@ -31,6 +33,7 @@ return [
                 "subject" => "Rozetka",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bchange_type%5D=sync_source_category_id',
                 "created_at" => '2020-01-03 00:00:00',
+                'payload' => '{"side_user_id": 0}',
             ],
             [
                 'id' => 4,
@@ -41,6 +44,7 @@ return [
                 "subject" => "Euromart. Источник №1",
                 "description" => 'http://splitter.staging.com.ua/gomer/items/changes/source/1?ItemSearch%5Bupload_status%5D=9',
                 "created_at" => '2020-01-04 00:00:00',
+                'payload' => '{"author_login": "йцукфыва"}',
             ],
             [
                 'id' => 5,

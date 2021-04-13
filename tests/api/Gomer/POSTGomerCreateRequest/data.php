@@ -13,7 +13,7 @@ return [
      */
     'case1' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление новых товаров (Работа с товарами Розетки) + нотификации + все форматы вложений',
+            'description' => 'Создание заявки тип 1 направление 1 + нотификации + все форматы вложений',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -103,6 +103,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -444,7 +445,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление новых товаров (Работа с товарами Маркетплейса)',
+            'description' => 'Создание заявки тип 1 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -508,6 +509,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [],
@@ -552,7 +554,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
+            'description' => 'Создание заявки тип 2 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -617,6 +619,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -667,7 +670,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
+            'description' => 'Создание заявки тип 2 направление 2 (без логина и id автора)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -676,7 +679,6 @@ return [
                 "RequestField[15]" => 1,
                 "RequestField[19]" => 1,
                 "Request[amount_to_work]" => 10,
-                "Request[author_login]" => 'kutsan.k',
                 "Request[category_id]" => 99, //пропускается потому что направление Маркет
                 "Request[seller_id]" => 0,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
@@ -697,7 +699,7 @@ return [
                     'requests' => [
                         [
                             "id" => 1,
-                            "author_id" => 4,
+                            "author_id" => 1,
                             "type_id" => 2,
                             "supervisor_id" => 5,
                             "manager_id" => null,
@@ -735,6 +737,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -757,7 +760,7 @@ return [
                     'user_notifications' => [
                         [
                             "id" => 1,
-                            "user_id" => 4,
+                            "user_id" => 1,
                             "notification" => '',
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
@@ -766,7 +769,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -782,7 +785,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -798,7 +801,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -814,7 +817,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            "triggered_by" => "Система",
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -837,7 +840,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Создание заявки на Перенос товаров (Работа с товарами Розетки)',
+            'description' => 'Создание заявки тип 3 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -903,6 +906,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -995,7 +999,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Создание заявки на Перенос товаров (Работа с товарами Маркетплейса)',
+            'description' => 'Создание заявки тип 3 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1063,6 +1067,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -1165,7 +1170,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Создание заявки на Группировка товаров (Определяется типом задачи)',
+            'description' => 'Создание заявки тип 4 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1231,6 +1236,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -1323,14 +1329,14 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Создание заявки на Заливка фото с фотостудии (Работа с товарами Розетки)',
+            'description' => 'Создание заявки тип 5 направление 1 (с author_id)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
-                "Request[author_login]" => 'kutsan.k',
+                "Request[author_id]" => 4,
                 "Request[category_id]" => 1,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 "Request[observers]" => [15, 17],
@@ -1389,6 +1395,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -1481,7 +1488,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Создание заявки на Проверка скрытых товаров (Работа с товарами Маркетплейса)',
+            'description' => 'Создание заявки тип 6 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1548,6 +1555,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -1650,7 +1658,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи) (без кат.)',
+            'description' => 'Создание заявки тип 7 направление 0 (без кат.) (с author_id)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1659,7 +1667,7 @@ return [
                 "RequestField[6]" => 1,
                 "RequestField[7]" => 1,
                 "Request[amount_to_work]" => 10,
-                "Request[author_login]" => 'kutsan.k',
+                "Request[author_id]" => 4,
                 //"Request[category_id]" => 1,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 "Request[direction]" => 0,
@@ -1718,6 +1726,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -1820,7 +1829,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи) (без прод.)',
+            'description' => 'Создание заявки тип 8 направление 0 (без прод.) (с несуществующим author_login)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1829,7 +1838,7 @@ return [
                 "RequestField[6]" => 1,
                 "RequestField[7]" => 1,
                 "Request[amount_to_work]" => 10,
-                "Request[author_login]" => 'kutsan.k',
+                "Request[author_login]" => 'йцукфыва',
                 "Request[category_id]" => 1,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 "Request[direction]" => 0,
@@ -1850,7 +1859,7 @@ return [
                     'requests' => [
                         [
                             "id" => 1,
-                            "author_id" => 4,
+                            "author_id" => 1,
                             "type_id" => 8,
                             "supervisor_id" => 35,
                             "manager_id" => null,
@@ -1888,6 +1897,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            'payload' => '{"author_login": "йцукфыва"}',
                         ]
                     ],
                     'requests_fields' => [
@@ -1910,7 +1920,7 @@ return [
                     'user_notifications' => [
                         [
                             "id" => 1,
-                            "user_id" => 4,
+                            "user_id" => 1,
                             "notification" => '',
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
@@ -1919,7 +1929,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            "triggered_by" => "Система",
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -1935,7 +1945,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -1951,7 +1961,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -1967,7 +1977,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -1990,14 +2000,14 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление параметров/значений (Определяется типом задачи) (без прод.)',
+            'description' => 'Создание заявки тип 9 направление 0 (без прод.) (с несуществующим author_id)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
-                "Request[author_login]" => 'kutsan.k',
+                "Request[author_id]" => 999,
                 "Request[category_id]" => 1,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 "Request[direction]" => 0,
@@ -2018,7 +2028,7 @@ return [
                     'requests' => [
                         [
                             "id" => 1,
-                            "author_id" => 4,
+                            "author_id" => 1,
                             "type_id" => 9,
                             "supervisor_id" => 34,
                             "manager_id" => null,
@@ -2056,6 +2066,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -2068,7 +2079,7 @@ return [
                     'user_notifications' => [
                         [
                             "id" => 1,
-                            "user_id" => 4,
+                            "user_id" => 1,
                             "notification" => '',
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
@@ -2077,7 +2088,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление параметров/значений (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            "triggered_by" => "Система",
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2093,7 +2104,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление параметров/значений (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2109,7 +2120,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление параметров/значений (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2125,7 +2136,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление параметров/значений (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2148,7 +2159,7 @@ return [
 
     'case13' => [
         'setting' => [
-            'description' => 'Создание заявки на Изменение существующих параметров/значений (Определяется типом задачи) (без кат.)',
+            'description' => 'Создание заявки тип 10 направление 0 (без кат.) (с одинаковыми существующими author_id и author_login)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2156,6 +2167,7 @@ return [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
                 "Request[author_login]" => 'kutsan.k',
+                "Request[author_id]" => 4,
                 //"Request[category_id]" => 1,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 "Request[direction]" => 0,
@@ -2214,6 +2226,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -2306,7 +2319,7 @@ return [
 
     'case14' => [
         'setting' => [
-            'description' => 'Создание заявки на Проектирование структуры (Определяется типом задачи)',
+            'description' => 'Создание заявки тип 11 направление 0 (с разными существующими author_id и author_login)',
             'type' => 11,
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -2315,6 +2328,7 @@ return [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
                 "Request[author_login]" => 'kutsan.k',
+                "Request[author_id]" => 10,
                 "Request[category_id]" => 1,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 "Request[direction]" => 0,
@@ -2373,6 +2387,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -2455,7 +2470,7 @@ return [
 
     'case15' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
+            'description' => 'Создание заявки тип 12 направление 1 (с несуществующим author_id и существующим author_login)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2463,6 +2478,7 @@ return [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
                 "Request[author_login]" => 'kutsan.k',
+                "Request[author_id]" => 999,
                 "Request[category_id]" => 1,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 "Request[observers]" => [15, 17],
@@ -2521,6 +2537,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -2613,14 +2630,15 @@ return [
 
     'case16' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление/изменение видео (Определяется типом задачи)',
+            'description' => 'Создание заявки тип 13 направление 0 (с существующим author_id и несуществующим author_login)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
-                "Request[author_login]" => 'kutsan.k',
+                "Request[author_login]" => 'йцукфыва',
+                "Request[author_id]" => 4,
                 "Request[category_id]" => 1,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 "Request[direction]" => 0,
@@ -2641,7 +2659,7 @@ return [
                     'requests' => [
                         [
                             "id" => 1,
-                            "author_id" => 4,
+                            "author_id" => 1,
                             "type_id" => 13,
                             "supervisor_id" => 35,
                             "manager_id" => null,
@@ -2679,6 +2697,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '{"author_login": "йцукфыва"}',
                         ]
                     ],
                     'requests_fields' => [
@@ -2691,7 +2710,7 @@ return [
                     'user_notifications' => [
                         [
                             "id" => 1,
-                            "user_id" => 4,
+                            "user_id" => 1,
                             "notification" => '',
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
@@ -2700,7 +2719,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение видео (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2716,7 +2735,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение видео (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2732,7 +2751,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение видео (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2748,7 +2767,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение видео (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2771,7 +2790,7 @@ return [
 
     'case17' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление/изменение размерной сетки (Определяется типом задачи) (без кат.)',
+            'description' => 'Создание заявки тип 14 направление 0 (без кат.) (с несуществующими author_id и author_login)',
             'type' => 14,
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -2779,7 +2798,8 @@ return [
             'requestBody' => [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => 10,
-                "Request[author_login]" => 'kutsan.k',
+                "Request[author_login]" => 'fasdf',
+                "Request[author_id]" => 999,
                 //"Request[category_id]" => 1,
                 "Request[description]" => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 "Request[direction]" => 0,
@@ -2800,7 +2820,7 @@ return [
                     'requests' => [
                         [
                             "id" => 1,
-                            "author_id" => 4,
+                            "author_id" => 1,
                             "type_id" => 14,
                             "supervisor_id" => 35,
                             "manager_id" => null,
@@ -2838,6 +2858,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '{"author_login": "fasdf"}',
                         ]
                     ],
                     'requests_fields' => [
@@ -2850,7 +2871,7 @@ return [
                     'user_notifications' => [
                         [
                             "id" => 1,
-                            "user_id" => 4,
+                            "user_id" => 1,
                             "notification" => '',
                             "status" => 0,
                             "created_at >=" => date("Y-m-d"),
@@ -2859,7 +2880,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение размерной сетки (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            "triggered_by" => "Система",
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2875,7 +2896,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение размерной сетки (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2891,7 +2912,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение размерной сетки (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2907,7 +2928,7 @@ return [
                             "amount_to_work" => 10,
                             "request_subject" => "[API] Добавление/изменение размерной сетки (Определяется типом задачи)",
                             "fields_for_complete" => "[]",
-                            "triggered_by" => "Константин Куцан",
+                            'triggered_by' => 'Система',
                             "event" => "create",
                             "changed_fields" => '{"newValue": 1, "oldValue": null}',
                             "notify_service_id" => null,
@@ -2930,7 +2951,7 @@ return [
 
     'case18' => [
         'setting' => [
-            'description' => 'Создание заявки на Добавление/изменение тегов (Определяется типом задачи)',
+            'description' => 'Создание заявки тип 15 направление 0',
             'type' => 15,
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -2997,6 +3018,7 @@ return [
                             "photo_load_status" => 0,
                             "previous_status" => null,
                             "supplier_cabinet_id" => 1,
+                            "payload" => '[]',
                         ]
                     ],
                     'requests_fields' => [
@@ -4781,12 +4803,14 @@ return [
             'requestBody' => [
                 "RequestField[1]" => 1,
                 //"Request[amount_to_work]" => 10,
-                //"Request[author_login]" => 'kutsan.k',
+                "Request[author_login]" => 'kutsan.k',
+                "Request[author_id]" => 10,
                 //"Request[category_id]" => 1,
                 //"Request[description]" => 'description',
                 "Request[observers]" => [15, 17],
                 //"Request[direction]" => 1,
                 //"Request[seller_id]" => 83,
+                'Request[side_user_id]' => 1,
                 //"Request[subject]" => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
                 "Request[supplier_cabinet_id]" => 1,
                 //"Request[type_id]" => 12,
@@ -4794,8 +4818,6 @@ return [
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "Не переданы данные для установки автора (Request[author_login] или Request[author_id])",
-                    "Не передано поле Request[author_id]",
                     "Не передано поле Request[type_id]",
                     "Не передано поле Request[direction]",
                     "Не передано поле Request[subject]",
@@ -4819,11 +4841,13 @@ return [
                 "RequestField[1]" => 1,
                 "Request[amount_to_work]" => "",
                 "Request[author_login]" => "",
+                "Request[author_id]" => "",
                 "Request[category_id]" => "",
                 "Request[description]" => "",
                 "Request[observers]" => "",
                 "Request[direction]" => "",
                 "Request[seller_id]" => "",
+                'Request[side_user_id]' => "",
                 "Request[subject]" => "",
                 "Request[supplier_cabinet_id]" => "",
                 "Request[type_id]" => "",
@@ -4831,8 +4855,6 @@ return [
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "Модель класа gomer\\bpm\\models\\auth\\UserBpm не найдена по параметрам. Conditions:{\"login\":\"\"}",
-                    "Не передано поле Request[author_id]",
                     "Не передано поле Request[type_id]",
                     "Не передано поле Request[direction]",
                     "Не передано поле Request[subject]",
@@ -4843,6 +4865,7 @@ return [
                     "Request[seller_id]: поле должно быть числом",
                     "Request[direction]: поле должно быть числом",
                     "Request[amount_to_work]: поле должно быть числом",
+                    "Request[author_id]: поле должно быть числом",
                     "Request[supplier_cabinet_id]: поле должно быть числом",
                     "Request[supplier_cabinet_id]: должен быть больше 0"
                 ]
@@ -5198,7 +5221,6 @@ return [
             "responseBody" => [
                 "status" => 400,
                 "errors" => [
-                    "Не переданы данные для установки автора (Request[author_login] или Request[author_id])",
                     "Передан пустой масив Request[]. Мы данные для создания должны от святого духа получить?"
                 ]
             ],
