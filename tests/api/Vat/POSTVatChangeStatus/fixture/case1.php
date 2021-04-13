@@ -112,5 +112,6 @@ return [
                 "reason_id" => 15
             ],
         ],
+        'exceptions' => []
     ],
 ];

@@ -1,0 +1,14 @@
+<?php
+return [
+    [
+        //"id" => 1,
+        'date' => '2021-04-13 15:09:55',
+        'class' => "yii\\httpclient\\Exception",
+        'message' => '',
+        'file' => '/var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/infrastructure/api/VATApiClient.php',
+        'line' => 74,
+        'name' => 'HTTP Client Exception',
+        'code' => 404,
+        'trace' => "#0 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(2076): gomer\\bpm\\infrastructure\\api\\VATApiClient->sendValidationResults(Object(gomer\\bpm\\models\\requests\\Request))\n#1 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(516): gomer\\bpm\\models\\requests\\Request->sendVAT()\n#2 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(421): gomer\\bpm\\models\\requests\\Request->processUpdate(Array)\n#3 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/BaseActiveRecord.php(825): gomer\\bpm\\models\\requests\\Request->afterSave(false, Array)\n#4 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/ActiveRecord.php(676): yii\\db\\BaseActiveRecord->updateInternal(NULL)\n#5 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/BaseActiveRecord.php(681): yii\\db\\ActiveRecord->update(true, NULL)\n#6 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(393): yii\\db\\BaseActiveRecord->save(true, NULL)\n#7 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/infrastructure/api/transitions/ApiRequestTransitionBuilder.php(81): gomer\\bpm\\models\\requests\\Request->save()\n#8 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/controllers/ApiController.php(748): gomer\\bpm\\infrastructure\\api\\transitions\\ApiRequestTransitionBuilder->saveRequest()\n#9 [internal function]: gomer\\bpm\\controllers\\ApiController->actionChangeStatus()\n#10 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)\n#11 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\\base\\InlineAction->runWithParams(Array)\n#12 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Module.php(528): yii\\base\\Controller->runAction('change-status', Array)\n#13 /var/www/gomer.local/www/vendor/yiisoft/yii2/web/Application.php(103): yii\\base\\Module->runAction('bpm/api/change-...', Array)\n#14 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Application.php(386): yii\\web\\Application->handleRequest(Object(yii\\web\\Request))\n#15 /var/www/gomer.local/www/backend/web/index.php(32): yii\\base\\Application->run()\n#16 {main}"
+    ]
+];

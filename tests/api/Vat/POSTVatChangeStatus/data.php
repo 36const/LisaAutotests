@@ -277,6 +277,23 @@ return [
             'description' => 'Перевод одной заявки 3->1 по supplierCabinetId',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case26.php',
+        'mock_data' => [
+            'Vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            "application/json;charset=UTF-8"
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Vat/case26.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
         'provider_data' => [
             'requestBody' => [
                 "supplierCabinetId" => 111,
@@ -455,7 +472,8 @@ return [
                             "event" => "status",
                             "changed_fields" => '{"newValue": 1, "oldValue": 3}'
                         ],
-                    ]
+                    ],
+                    'exceptions' => []
                 ]
             ],
         ]
@@ -466,6 +484,23 @@ return [
             'description' => 'Перевод двух заявок 3->1 по supplierCabinetId',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case27.php',
+        'mock_data' => [
+            'Vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            "application/json;charset=UTF-8"
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Vat/case27.json'),
+                    'statusCode' => 400
+                ],
+            ],
+        ],
         'provider_data' => [
             'requestBody' => [
                 "supplierCabinetId" => 111,
@@ -684,6 +719,30 @@ return [
                             "changed_fields" => '{"newValue": 1, "oldValue": 3}',
                             "notify_service_id" => null
                         ]
+                    ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\httpclient\Exception',
+                            'message' => "{\n    \"status\": 400,\n    \"errors\": {\n        \"status\": [\n            \"Значение «Статус заявки» должно быть числом.\"\n        ]\n    }\n}",
+                            'file' => '/var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/infrastructure/api/VATApiClient.php',
+                            'line' => 74,
+                            'name' => 'HTTP Client Exception',
+                            'trace' => "#0 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(2076): gomer\\bpm\\infrastructure\\api\\VATApiClient->sendValidationResults(Object(gomer\\bpm\\models\\requests\\Request))\n#1 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(516): gomer\\bpm\\models\\requests\\Request->sendVAT()\n#2 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(421): gomer\\bpm\\models\\requests\\Request->processUpdate(Array)\n#3 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/BaseActiveRecord.php(825): gomer\\bpm\\models\\requests\\Request->afterSave(false, Array)\n#4 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/ActiveRecord.php(676): yii\\db\\BaseActiveRecord->updateInternal(NULL)\n#5 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/BaseActiveRecord.php(681): yii\\db\\ActiveRecord->update(true, NULL)\n#6 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(393): yii\\db\\BaseActiveRecord->save(true, NULL)\n#7 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/infrastructure/api/transitions/ApiRequestTransitionBuilder.php(81): gomer\\bpm\\models\\requests\\Request->save()\n#8 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/controllers/ApiController.php(748): gomer\\bpm\\infrastructure\\api\\transitions\\ApiRequestTransitionBuilder->saveRequest()\n#9 [internal function]: gomer\\bpm\\controllers\\ApiController->actionChangeStatus()\n#10 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)\n#11 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\\base\\InlineAction->runWithParams(Array)\n#12 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Module.php(528): yii\\base\\Controller->runAction('change-status', Array)\n#13 /var/www/gomer.local/www/vendor/yiisoft/yii2/web/Application.php(103): yii\\base\\Module->runAction('bpm/api/change-...', Array)\n#14 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Application.php(386): yii\\web\\Application->handleRequest(Object(yii\\web\\Request))\n#15 /var/www/gomer.local/www/backend/web/index.php(32): yii\\base\\Application->run()\n#16 {main}",
+                            'code' => 400
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\httpclient\Exception',
+                            'message' => "{\n    \"status\": 400,\n    \"errors\": {\n        \"status\": [\n            \"Значение «Статус заявки» должно быть числом.\"\n        ]\n    }\n}",
+                            'file' => '/var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/infrastructure/api/VATApiClient.php',
+                            'line' => 74,
+                            'name' => 'HTTP Client Exception',
+                            'trace' => "#0 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(2076): gomer\\bpm\\infrastructure\\api\\VATApiClient->sendValidationResults(Object(gomer\\bpm\\models\\requests\\Request))\n#1 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(516): gomer\\bpm\\models\\requests\\Request->sendVAT()\n#2 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(421): gomer\\bpm\\models\\requests\\Request->processUpdate(Array)\n#3 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/BaseActiveRecord.php(825): gomer\\bpm\\models\\requests\\Request->afterSave(false, Array)\n#4 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/ActiveRecord.php(676): yii\\db\\BaseActiveRecord->updateInternal(NULL)\n#5 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/BaseActiveRecord.php(681): yii\\db\\ActiveRecord->update(true, NULL)\n#6 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(393): yii\\db\\BaseActiveRecord->save(true, NULL)\n#7 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/infrastructure/api/transitions/ApiRequestTransitionBuilder.php(81): gomer\\bpm\\models\\requests\\Request->save()\n#8 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/controllers/ApiController.php(748): gomer\\bpm\\infrastructure\\api\\transitions\\ApiRequestTransitionBuilder->saveRequest()\n#9 [internal function]: gomer\\bpm\\controllers\\ApiController->actionChangeStatus()\n#10 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)\n#11 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\\base\\InlineAction->runWithParams(Array)\n#12 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Module.php(528): yii\\base\\Controller->runAction('change-status', Array)\n#13 /var/www/gomer.local/www/vendor/yiisoft/yii2/web/Application.php(103): yii\\base\\Module->runAction('bpm/api/change-...', Array)\n#14 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Application.php(386): yii\\web\\Application->handleRequest(Object(yii\\web\\Request))\n#15 /var/www/gomer.local/www/backend/web/index.php(32): yii\\base\\Application->run()\n#16 {main}",
+                            'code' => 400
+                        ]
                     ]
                 ]
             ],
@@ -695,6 +754,23 @@ return [
             'description' => 'Перевод двух заявок 3->1 по requestId и supplierCabinetId',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case26.php',
+        'mock_data' => [
+            'Vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            "application/json;charset=UTF-8"
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Vat/case28.json'),
+                    'statusCode' => 404
+                ],
+            ],
+        ],
         'provider_data' => [
             'requestBody' => [
                 "requestId" => 2,
@@ -914,6 +990,19 @@ return [
                             "changed_fields" => '{"newValue": 1, "oldValue": 3}',
                             "notify_service_id" => null
                         ]
+                    ],
+                    'exceptions' => [
+                        [
+                            "id" => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\httpclient\Exception',
+                            'message' => "{\n    \"id\": 1,\n    \"status\": 404,\n    \"errors\": {\n        \"id\": \"Заявка не найдена\"\n    }\n}",
+                            'file' => '/var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/infrastructure/api/VATApiClient.php',
+                            'line' => 74,
+                            'name' => 'HTTP Client Exception',
+                            'code' => 404,
+                            'trace' => "#0 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(2076): gomer\\bpm\\infrastructure\\api\\VATApiClient->sendValidationResults(Object(gomer\\bpm\\models\\requests\\Request))\n#1 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(516): gomer\\bpm\\models\\requests\\Request->sendVAT()\n#2 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(421): gomer\\bpm\\models\\requests\\Request->processUpdate(Array)\n#3 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/BaseActiveRecord.php(825): gomer\\bpm\\models\\requests\\Request->afterSave(false, Array)\n#4 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/ActiveRecord.php(676): yii\\db\\BaseActiveRecord->updateInternal(NULL)\n#5 /var/www/gomer.local/www/vendor/yiisoft/yii2/db/BaseActiveRecord.php(681): yii\\db\\ActiveRecord->update(true, NULL)\n#6 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/models/requests/Request.php(393): yii\\db\\BaseActiveRecord->save(true, NULL)\n#7 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/infrastructure/api/transitions/ApiRequestTransitionBuilder.php(81): gomer\\bpm\\models\\requests\\Request->save()\n#8 /var/www/gomer.local/www/vendor/splitter-modules/gomer.bpm/controllers/ApiController.php(748): gomer\\bpm\\infrastructure\\api\\transitions\\ApiRequestTransitionBuilder->saveRequest()\n#9 [internal function]: gomer\\bpm\\controllers\\ApiController->actionChangeStatus()\n#10 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)\n#11 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Controller.php(157): yii\\base\\InlineAction->runWithParams(Array)\n#12 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Module.php(528): yii\\base\\Controller->runAction('change-status', Array)\n#13 /var/www/gomer.local/www/vendor/yiisoft/yii2/web/Application.php(103): yii\\base\\Module->runAction('bpm/api/change-...', Array)\n#14 /var/www/gomer.local/www/vendor/yiisoft/yii2/base/Application.php(386): yii\\web\\Application->handleRequest(Object(yii\\web\\Request))\n#15 /var/www/gomer.local/www/backend/web/index.php(32): yii\\base\\Application->run()\n#16 {main}"
+                        ]
                     ]
                 ]
             ],
@@ -925,6 +1014,25 @@ return [
             'description' => 'Перевод одной из двух заявок 3->1 при requestId + / supplierCabinetId - ',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'Vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Vat/case26.json'),
+                    'statusCode' => 400
+                    //доп. проверка, что не будет отправки запроса в Vat, если заявки без supplierCabinetId
+                    //т.е. этот запрос в мок-сервер не будет отправлен, ответ 400 не будет получен и exception останется пустой
+                ],
+            ],
+        ],
         'provider_data' => [
             'requestBody' => [
                 "requestId" => 1,
@@ -1103,7 +1211,8 @@ return [
                             "event" => "status",
                             "changed_fields" => '{"newValue": 1, "oldValue": 3}'
                         ],
-                    ]
+                    ],
+                    'exceptions' => []
                 ]
             ],
         ]
@@ -1114,6 +1223,23 @@ return [
             'description' => 'Перевод одной из двух заявок 3->1 при requestId - / supplierCabinetId + ',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case26.php',
+        'mock_data' => [
+            'Vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Vat/case26.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
         'provider_data' => [
             'requestBody' => [
                 "requestId" => 10,
@@ -1293,7 +1419,8 @@ return [
                             "event" => "status",
                             "changed_fields" => '{"newValue": 1, "oldValue": 3}'
                         ],
-                    ]
+                    ],
+                    'exceptions' => []
                 ]
             ],
         ]
