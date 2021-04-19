@@ -32,7 +32,7 @@ class CronSyncCategoryCest
         $I->runShellCommand('./yii bpm/request/sync-category');
 
         $I->declareExchange('goods_service', 'topic');
-        $I->bindQueueToExchange('lisa', 'goods_service', 'create.category.entity.DVR');
+        $I->bindQueueToExchange('_lisa', 'goods_service', 'create.category.entity.DVR');
 
         $I->pushToExchange('goods_service', $providerData['message'], 'create.category.entity.DVR');
 
