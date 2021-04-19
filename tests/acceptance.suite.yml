@@ -29,9 +29,9 @@ modules:
             vhost: '/'
             cleanup: false
             single_channel: true
-            queues: [ 'lisa_attachmentsCopy',
-                      'lisa_elastic_sync',
-                      'lisa_elastic_sync_crash',
-                      'lisa_exportGenerating',
-                      'lisa_makeAttachmentsArchive',
-                      'lisa_sendMailNotifications' ]
+            queues: [ '_lisa_attachmentsCopy',
+                      '_lisa_elastic_sync',
+                      '_lisa_elastic_sync_crash',
+                      '_lisa_exportGenerating',
+                      '_lisa_makeAttachmentsArchive',
+                      '_lisa_sendMailNotifications' ]
