@@ -72,4 +72,23 @@ class ApiTester extends Actor
         $fo = fopen(self::PARAMS_LOCAL, 'w+');
         fwrite($fo, $newFileContent);
     }
+
+    public static function mockAuthArray()
+    {
+        return [
+            'httpRequest' => [
+                'method' => 'POST',
+                'path' => '/api/auth/login',
+                'body' => [
+                    'type' => 'STRING',
+                    'string' => '{"username":"admin","password":"admin"}',
+                    'contentType' => 'application/json'
+                ]
+            ],
+            'httpResponse' => [
+                'body' => file_get_contents(__DIR__ . '/../_data/auth.json'),
+                'statusCode' => 200
+            ],
+        ];
+    }
 }
