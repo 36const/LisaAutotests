@@ -44,13 +44,13 @@ class CronTableMakeXlsCest
             '"80":"calc_quantity_of_sent_emails","81":"calc_quantity_of_child_requests","82":"calc_quantity_of_words_in_dictionaries","83":"average_amount_of_goods_in_group","84":"algorithm","85":"previous_status"}'
         );
         $I->seeResponseCodeIs(200);
-        $I->canSeeNumberOfMessagesInQueue('lisa_exportGenerating', $setting['count'] ?? 1);
+        $I->canSeeNumberOfMessagesInQueue('_lisa_exportGenerating', $setting['count'] ?? 1);
         $I->checkTablesInDB($providerData['db_1']);
 
         $I->runShellCommand('./yii bpm/request/make-xls');
         $I->canSeeInShellOutput('');
         $I->canSeeResultCodeIs(0);
-        $I->canSeeNumberOfMessagesInQueue('lisa_exportGenerating', 0);
+        $I->canSeeNumberOfMessagesInQueue('_lisa_exportGenerating', 0);
 
         $I->amOnPage('/bpm/export/index');
         $I->checkObjectsOnPage($providerData['pageObjects']);

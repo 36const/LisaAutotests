@@ -60,7 +60,7 @@ return [
                 ]
             ],
             'RabbitMQ_1' => [
-                'lisa_sendMailNotifications' => [
+                '_lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `!\"№;%:?*()`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=1\">№1 !\"№;%:?*()</a></br><b>Количество в работу:</b> 999999999</br>","requestId":1}',
                 ]
             ],
@@ -149,7 +149,7 @@ return [
                 ]
             ],
             'RabbitMQ_2' => [
-                'lisa_sendMailNotifications' => [
+                '_lisa_sendMailNotifications' => [
                     '{"notificationId":3,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `!\"№;%:?*()`: изменен набор вложений","notification":"Константин Куцан <b>изменил(а) набор вложений заявки</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=3\">№1 !\"№;%:?*()</a></br><b>Количество в работу:</b> 999999999</br> <b>Удалено:</b> ~!@#$%^&*()_+`-=][;.|}{:?><.doc</br>","requestId":1}',
                 ]
             ]

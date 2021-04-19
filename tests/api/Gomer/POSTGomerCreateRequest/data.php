@@ -434,7 +434,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-                'lisa_sendMailNotifications' => [
+                '_lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br>","requestId":1}',
                     '{"notificationId":3,"userId":15,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br>","requestId":1}',
                     '{"notificationId":4,"userId":17,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/bpm/request/view-from-notify?requestId=1&amp;notifId=4\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br>","requestId":1}',
