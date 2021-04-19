@@ -31,7 +31,7 @@ return [
                 ],
             ],
             'RabbitMQ' => [
-                'lisa' => [],
+                '_lisa' => [],
             ]
         ]
     ],
