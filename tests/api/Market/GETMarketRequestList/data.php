@@ -550,6 +550,26 @@ return [
 
     'case11' => [
         'setting' => [
+            'description' => 'Ошибка если указан несуществующий marketId больше 9999999',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'marketId' => '!@#$%^10000000 CFBHUNJ ',
+                'status' => ' 1asdf2+_)(3*^&%4^%#$5#!~6}{:>7?><M8э9 ',
+                'sort' => 'amount_to_work,-id',
+            ],
+            'responseBody' => [
+                'status' => 400,
+                'errors' => [
+                    'marketId' => 'В переданой строке marketId не найдено ни одного ID.',
+                ]
+            ],
+        ]
+    ],
+
+    'case12' => [
+        'setting' => [
             'description' => 'Ошибка если указан page текст',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -570,7 +590,33 @@ return [
         ]
     ],
 
-    'case12' => [
+    'case13' => [
+        'setting' => [
+            'description' => 'Ошибка если указана несуществующая page',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'marketId' => '!@#$%^5  83 CFBHUNJ ',
+                'status' => ' 1asdf2+_)(3*^&%4^%#$5#!~6}{:>7?><M8э9 ',
+                'page' => 3,
+                'perPage' => 5,
+                'sort' => 'amount_to_work,-id',
+            ],
+            'responseBody' => [
+                'status' => 200,
+                'requests' => [],
+                'total_count' => 7,
+                'next_page' => NULL,
+                'previous_page' => 2,
+                'current_page' => 3,
+                'per_page' => 5,
+                'pages_count' => 2,
+            ],
+        ]
+    ],
+
+    'case14' => [
         'setting' => [
             'description' => 'Ошибка если указан perPage текст',
         ],
@@ -592,9 +638,9 @@ return [
         ]
     ],
 
-    'case13' => [
+    'case15' => [
         'setting' => [
-            'description' => 'Ошибка если указан perPage текст',
+            'description' => 'Ошибка если указан пробел в параметре сортировки',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -602,13 +648,57 @@ return [
                 'marketId' => '!@#$%^5 CFBHUNJ ',
                 'status' => ' 1asdf2+_)(3*^&%4^%#$5#!~6}{:>7?><M8э9 ',
                 'page' => 2,
-                'perPage' => 'adsf',
+                'perPage' => 5,
+                'sort' => 'amount_to_work, -id',
+            ],
+            'responseBody' => [
+                'status' => 400,
+                'errors' => [
+                    'sort' => 'Не валидный параметр сортировки: \' -id\'',
+                ]
+            ],
+        ]
+    ],
+
+    'case16' => [
+        'setting' => [
+            'description' => 'Ошибка если указан status текст',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'marketId' => '!@#$%^5 CFBHUNJ ',
+                'status' => ' asdf+_)(*^&%^%#$#!~}{:>?><Mэ ',
+                'page' => 2,
+                'perPage' => 5,
                 'sort' => 'amount_to_work,-id',
             ],
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    'perPage' => 'Не валидный параметр page:\'adsf\'',
+                    'status' => 'Не валидные параметры в поле status:\' asdf+_)(*^&%^%#$#!~}{:>?><Mэ \'',
+                ]
+            ],
+        ]
+    ],
+
+    'case17' => [
+        'setting' => [
+            'description' => 'Ошибка если указан несуществующий status',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'marketId' => '!@#$%^5 CFBHUNJ ',
+                'status' => ' asdf+_)(*10^&%^%#$#!~}{:>?><Mэ ',
+                'page' => 2,
+                'perPage' => 5,
+                'sort' => 'amount_to_work,-id',
+            ],
+            'responseBody' => [
+                'status' => 400,
+                'errors' => [
+                    'status' => 'Не валидные параметры в поле status:\'10\'',
                 ]
             ],
         ]
