@@ -7,7 +7,7 @@ use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
- * @group lisa_functional
+ * @group _lisa_functional
  * @group lisa_functional_settings
  * @group CronSyncCategory
  */
