@@ -445,6 +445,28 @@ return [
         ]
     ],
 
+    'case30' => [
+        'setting' => [
+            'description' => 'Кнопка удаления у чужих шаблонов',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case23.php',
+        'provider_data' => [
+            "url" => '/bpm/request-template',
+            "pageObjects" => [
+                "canSee" => [
+                    [
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=1']"],
+                    ],
+                ],
+                "cantSee" => [
+                    [
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=2']"],
+                    ],
+                ],
+            ]
+        ]
+    ],
+
     'case24' => [
         'setting' => [
             'description' => 'Поле редактирования владельца шаблона',
@@ -483,6 +505,12 @@ return [
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=4']"],
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=5']"],
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=6']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=1']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=2']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=3']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=4']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=5']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=6']"],
                     ],
                 ],
             ]
@@ -502,6 +530,9 @@ return [
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=1']"],
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=3']"],
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=4']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=1']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=3']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=4']"],
                     ],
                 ],
                 "cantSee" => [
@@ -509,6 +540,9 @@ return [
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=2']"],
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=5']"],
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=6']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=2']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=5']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=6']"],
                     ],
                 ],
             ]
@@ -527,6 +561,8 @@ return [
                     [
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=1']"],
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=3']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=1']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=3']"],
                     ],
                 ],
                 "cantSee" => [
@@ -535,6 +571,10 @@ return [
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=4']"],
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=5']"],
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=6']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=2']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=4']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=5']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=6']"],
                     ],
                 ],
             ]
@@ -552,6 +592,7 @@ return [
                 "canSee" => [
                     [
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=1']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=1']"],
                     ],
                 ],
                 "cantSee" => [
@@ -561,6 +602,11 @@ return [
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=4']"],
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=5']"],
                         ["selector" => "//tbody//a[@href='/bpm/request-template/update?id=6']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=2']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=3']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=4']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=5']"],
+                        ["selector" => "//tbody//a[@href='/bpm/request-template/delete?id=6']"],
                     ],
                 ],
             ]
