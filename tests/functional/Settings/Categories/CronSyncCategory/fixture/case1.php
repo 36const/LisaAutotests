@@ -2,6 +2,15 @@
 
 return [
     "lisa_fixtures" => [
-        "rozetka_categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
+        "rozetka_categories" => [
+            [
+                'id' => 80022,
+                'title' => 'Диктофоны',
+                'mpath' => '.4627949.80257.4627865.',
+                'status' => 'active',
+                'deleted' => null,
+                'parent_id' => 4627865
+            ]
+        ],
     ],
 ];

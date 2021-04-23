@@ -30,7 +30,7 @@ class POSTCategoriesUpdateCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->sendPOST($providerData['url'], $providerData['requestBody']);
+        $I->sendPOST($providerData['url'] ?? '/bpm/category/update?id=2', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);

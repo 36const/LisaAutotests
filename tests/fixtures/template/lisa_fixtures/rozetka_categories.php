@@ -7,7 +7,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 0,
-        'lisa_category_id' => null
+        'lisa_category_id' => 1
     ],
     [
         'id' => 80025,
@@ -25,7 +25,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 0,
-        'lisa_category_id' => 50
+        'lisa_category_id' => null
     ],
     [
         'id' => 80253,
@@ -34,7 +34,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 0,
-        'lisa_category_id' => 392
+        'lisa_category_id' => null
     ],
     [
         'id' => 4629305,
@@ -43,7 +43,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 0,
-        'lisa_category_id' => 94
+        'lisa_category_id' => null
     ],
     [
         'id' => 1162030,
@@ -52,7 +52,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 0,
-        'lisa_category_id' => 78
+        'lisa_category_id' => null
     ],
     [
         'id' => 84625,
@@ -61,7 +61,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 0,
-        'lisa_category_id' => 122
+        'lisa_category_id' => null
     ],
     [
         'id' => 4625734,
@@ -70,7 +70,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 0,
-        'lisa_category_id' => 32
+        'lisa_category_id' => null
     ],
     [
         'id' => 80260,
@@ -103,24 +103,6 @@ return [
         'id' => 4655025,
         'title' => 'Скрытые',
         'mpath' => '.4655025.',
-        'status' => 'locked',
-        'deleted' => null,
-        'parent_id' => 0,
-        'lisa_category_id' => null
-    ],
-    [
-        'id' => 4655031,
-        'title' => 'Скрытые',
-        'mpath' => '.4655031.',
-        'status' => 'locked',
-        'deleted' => null,
-        'parent_id' => 0,
-        'lisa_category_id' => null
-    ],
-    [
-        'id' => 4635105,
-        'title' => 'Скрытые 261217',
-        'mpath' => '.4635105.',
         'status' => 'locked',
         'deleted' => null,
         'parent_id' => 0,
@@ -250,16 +232,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 80258,
-        'lisa_category_id' => 2
-    ],
-    [
-        'id' => 2460402,
-        'title' => 'Архивирование и делопроизводство',
-        'mpath' => '.4625734.2460392.2460402.',
-        'status' => 'active',
-        'deleted' => null,
-        'parent_id' => 2460392,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 1
     ],
     [
         'id' => 2514857,
@@ -268,7 +241,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2460402,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2514867,
@@ -277,7 +250,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2460402,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2514872,
@@ -286,52 +259,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2460402,
-        'lisa_category_id' => 3
-    ],
-    [
-        'id' => 2514877,
-        'title' => 'Штемпельная продукция',
-        'mpath' => '.4625734.2460392.2460402.2514877.',
-        'status' => 'active',
-        'deleted' => null,
-        'parent_id' => 2460402,
-        'lisa_category_id' => 3
-    ],
-    [
-        'id' => 2898382,
-        'title' => 'Самонаборные штампы, кассы букв',
-        'mpath' => '.4625734.2460392.2460402.2514877.2898382.',
-        'status' => 'active',
-        'deleted' => null,
-        'parent_id' => 2514877,
-        'lisa_category_id' => 3
-    ],
-    [
-        'id' => 2898387,
-        'title' => 'Штемпельные краски и подушки',
-        'mpath' => '.4625734.2460392.2460402.2514877.2898387.',
-        'status' => 'active',
-        'deleted' => null,
-        'parent_id' => 2514877,
-        'lisa_category_id' => 3
-    ],
-    [
-        'id' => 4628926,
-        'title' => 'Датеры',
-        'mpath' => '.4625734.2460392.2460402.2514877.4628926.',
-        'status' => 'active',
-        'deleted' => null,
-        'parent_id' => 2514877,
-        'lisa_category_id' => 3
-    ],
-    [
-        'id' => 4629073,
-        'title' => 'Оснастки, штампы стандартные',
-        'mpath' => '.4625734.2460392.2460402.2514877.4629073.',
-        'status' => 'active',
-        'deleted' => null,
-        'parent_id' => 2514877,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2560747,
@@ -340,7 +268,7 @@ return [
         'status' => 'locked',
         'deleted' => null,
         'parent_id' => 2460402,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2581722,
@@ -349,7 +277,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2460402,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2514862,
@@ -358,7 +286,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2581722,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2581727,
@@ -367,7 +295,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2581722,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2581732,
@@ -376,7 +304,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2581722,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2581737,
@@ -385,7 +313,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2581722,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2581742,
@@ -394,7 +322,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2581722,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2595767,
@@ -403,7 +331,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2581722,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2666302,
@@ -412,7 +340,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2581722,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 4626584,
@@ -421,7 +349,7 @@ return [
         'status' => 'active',
         'deleted' => null,
         'parent_id' => 2581722,
-        'lisa_category_id' => 3
+        'lisa_category_id' => 2
     ],
     [
         'id' => 2660622,
@@ -493,6 +421,69 @@ return [
         'status' => 'locked',
         'deleted' => null,
         'parent_id' => 2460402,
+        'lisa_category_id' => null
+    ],
+    [
+        'id' => 2460392,
+        'title' => 'Канцелярия',
+        'mpath' => '.4625734.2460392.',
+        'status' => 'active',
+        'deleted' => null,
+        'parent_id' => 4625734,
+        'lisa_category_id' => null
+    ],
+    [
+        'id' => 2460402,
+        'title' => 'Архивирование и делопроизводство',
+        'mpath' => '.4625734.2460392.2460402.',
+        'status' => 'active',
+        'deleted' => null,
+        'parent_id' => 2460392,
+        'lisa_category_id' => null
+    ],
+    [
+        'id' => 2514877,
+        'title' => 'Штемпельная продукция',
+        'mpath' => '.4625734.2460392.2460402.2514877.',
+        'status' => 'active',
+        'deleted' => null,
+        'parent_id' => 2460402,
+        'lisa_category_id' => null
+    ],
+    [
+        'id' => 2898382,
+        'title' => 'Самонаборные штампы, кассы букв',
+        'mpath' => '.4625734.2460392.2460402.2514877.2898382.',
+        'status' => 'active',
+        'deleted' => null,
+        'parent_id' => 2514877,
+        'lisa_category_id' => null
+    ],
+    [
+        'id' => 2898387,
+        'title' => 'Штемпельные краски и подушки',
+        'mpath' => '.4625734.2460392.2460402.2514877.2898387.',
+        'status' => 'active',
+        'deleted' => null,
+        'parent_id' => 2514877,
+        'lisa_category_id' => null
+    ],
+    [
+        'id' => 4628926,
+        'title' => 'Датеры',
+        'mpath' => '.4625734.2460392.2460402.2514877.4628926.',
+        'status' => 'active',
+        'deleted' => null,
+        'parent_id' => 2514877,
+        'lisa_category_id' => null
+    ],
+    [
+        'id' => 4629073,
+        'title' => 'Оснастки, штампы стандартные',
+        'mpath' => '.4625734.2460392.2460402.2514877.4629073.',
+        'status' => 'active',
+        'deleted' => null,
+        'parent_id' => 2514877,
         'lisa_category_id' => null
     ]
 ];
