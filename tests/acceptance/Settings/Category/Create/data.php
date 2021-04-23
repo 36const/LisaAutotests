@@ -63,7 +63,7 @@ return [
                             "title" => "Авиабилеты-",
                             "difficulty" => 1.3,
                             "supervisor_id" => 4,
-                            "status" => 0
+                            "status" => 1
                         ]
                     ],
                 ],

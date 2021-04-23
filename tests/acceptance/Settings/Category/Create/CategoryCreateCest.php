@@ -49,6 +49,7 @@ class CategoryCreateCest
         $I->canSeeElement(Category::errorField('Необходимо заполнить «Название категории».'));
         $I->checkTablesInDB($providerData['db_1']);
 
+        $I->wait(1);    //без ожидания выдаёт ошибку
         $I->pressKey(Category::$categoryTitle, 'А', 'в', 'и', 'а', 'б', 'и', 'л', 'е', 'т', 'ы');
         $I->click(Category::$saveButton);
         $I->canSeeElement(Category::errorField('Значение «Авиабилеты» для «Название категории» уже занято.'));
