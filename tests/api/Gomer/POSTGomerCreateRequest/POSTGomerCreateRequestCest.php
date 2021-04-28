@@ -35,7 +35,7 @@ class POSTGomerCreateRequestCest
             $I->sendPOST('/bpm/api/create-request', $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode'] ?? 200);
-        $I->seeResponseContainsJson($providerData['responseBody']);
+        $I->seeJsonResponseEquals($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
 

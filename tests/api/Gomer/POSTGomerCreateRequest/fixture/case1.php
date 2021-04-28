@@ -38,7 +38,45 @@ return [
         "user_notifications" => [],
         "request_status_history" => [],
         "observers" => [],
-        "categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
+        "categories" => [
+            [
+                //"id" => 1,
+                'title' => 'Авиабилеты',
+                'difficulty' => 2,
+                'supervisor_id' => 6,
+                'status' => 1
+            ],
+            [
+                //"id" => 2,
+                'title' => 'Видео к товару',
+                'difficulty' => 3,
+                'supervisor_id' => 10,
+                'status' => 1
+            ],
+            [
+                //"id" => 3,
+                'title' => 'Добавление логотипов к производителям',
+                'difficulty' => 4,
+                'supervisor_id' => 6,
+                'status' => 0
+            ],
+            [
+                //"id" => 4,
+                'title' => 'Ж/Д билеты',
+                'difficulty' => 3,
+                'supervisor_id' => 10,
+                'status' => 1
+            ],
+            [
+                "id" => 474,
+                'title' => 'Распределить категорию в Lisa',
+                'difficulty' => 3,
+                'supervisor_id' => 10,
+                'status' => 1
+            ],
+        ],
+        "rozetka_categories" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
+        "field_values" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
         "excluded_fields" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/excluded_fields.php',
         "markets_supervisors" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
         "auth.teams" => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
