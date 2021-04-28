@@ -3114,7 +3114,7 @@ return [
      */
     'case62' => [
         'setting' => [
-            'description' => 'Создание заявки тип 1 направление 1 с 1 непривяз. категорией стора, с нашей категорией',
+            'description' => 'Создание заявки тип 1 направление 1 с 1 непривяз. категорией стора, с category_id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -3278,7 +3278,7 @@ return [
 
     'case63' => [
         'setting' => [
-            'description' => 'Создание заявки тип 4 направление 0 с 1 привяз. категорией стора, без нашей категории',
+            'description' => 'Создание заявки тип 4 направление 0 (с author_id) с 1 привяз. категорией стора, без category_id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -3441,7 +3441,7 @@ return [
 
     'case64' => [
         'setting' => [
-            'description' => 'Создание заявки тип 2 направление 2 (без логина и id автора), c 1 привязанной и 1 непривязанной кат. стора',
+            'description' => 'Создание заявки тип 2 направление 2 (без логина и id автора), c 1 непривяз. и 1 привяз. кат. стора',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -3749,7 +3749,7 @@ return [
 
     'case65' => [
         'setting' => [
-            'description' => 'Создание заявки тип 7 направление 0 (без кат.) (с author_id) c 1 непривязанной и 2 привязанными к одинаковой кат. стора',
+            'description' => 'Создание заявки тип 7 направление 0 (без кат.) (с author_id) c 1 непривяз. и 2 привяз. к одинаковой кат. стора',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -4037,7 +4037,7 @@ return [
 
     'case66' => [
         'setting' => [
-            'description' => 'Создание заявки тип 3 направление 1 c 2 непривязанными и 2 привязанными к разным кат. стора',
+            'description' => 'Создание заявки тип 3 направление 1 c 2 непривяз. и 2 привяз. к разным кат. стора, c category_id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
