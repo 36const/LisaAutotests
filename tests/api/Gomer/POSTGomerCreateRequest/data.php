@@ -3762,11 +3762,12 @@ return [
                 //"Request[category_id]" => 1,
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[direction]' => 0,
+                //'Request[observers]' => [15],
                 'Request[seller_id]' => 0,
                 'Request[subject]' => 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
                 //'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 7,
-                'rz_categories' => [753399, 4653010, 1162030],
+                'rz_categories' => [753399, 4653010, 4653010, 1162030, 1162030],
             ],
             'responseBody' => [
                 'status' => 200,
@@ -3784,6 +3785,12 @@ return [
                         'requestId' => 1,
                     ],
                 ]
+            ],
+            'attachments' => [
+                'files[]' => [
+                    codecept_data_dir('Attachments/doc .doc'),
+                    codecept_data_dir('Attachments/xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml'),
+                ],
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -3904,6 +3911,56 @@ return [
                             'request_id' => 2,
                             'field_id' => 7,
                             'value' => 1,
+                        ],
+                    ],
+                    'request_attachments' => [
+                        [
+                            "id" => 1,
+                            "request_id" => 1,
+                            "file_name_old" => "",
+                            "alias" => "doc .doc",
+                            "status" => 2,
+                            "uploaded_by" => "Система",
+                            "uploaded_at >=" => date("Y-m-d"),
+                            "deleted_by" => null,
+                            "deleted_at" => null,
+                            "file_name like" => "%_doc_.doc"
+                        ],
+                        [
+                            "id" => 2,
+                            "request_id" => 1,
+                            "file_name_old" => "",
+                            "alias" => "xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml",
+                            "status" => 2,
+                            "uploaded_by" => "Система",
+                            "uploaded_at >=" => date("Y-m-d"),
+                            "deleted_by" => null,
+                            "deleted_at" => null,
+                            "file_name like" => "%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml"
+                        ],
+                        [
+                            "id" => 3,
+                            "request_id" => 2,
+                            "file_name_old" => "",
+                            "alias" => "doc .doc",
+                            "status" => 2,
+                            "uploaded_by" => "Система",
+                            "uploaded_at >=" => date("Y-m-d"),
+                            "deleted_by" => null,
+                            "deleted_at" => null,
+                            "file_name like" => "%_doc_.doc"
+                        ],
+                        [
+                            "id" => 4,
+                            "request_id" => 2,
+                            "file_name_old" => "",
+                            "alias" => "xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml",
+                            "status" => 2,
+                            "uploaded_by" => "Система",
+                            "uploaded_at >=" => date("Y-m-d"),
+                            "deleted_by" => null,
+                            "deleted_at" => null,
+                            "file_name like" => "%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml"
                         ],
                     ],
                     'user_notifications' => [
