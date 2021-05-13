@@ -16,7 +16,7 @@ class CronTableMakeXlsCest
 {
     protected function pageProvider(): array
     {
-        return TestHelper::prepareDataprovider(require 'data.php', '');
+        return TestHelper::prepareDataprovider(require 'data.php', 'case3 case4 case6');
     }
 
     /**
