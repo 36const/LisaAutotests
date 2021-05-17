@@ -8,7 +8,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -32,7 +33,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -56,7 +58,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case3.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -82,7 +85,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case4.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -107,7 +111,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case5.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -131,7 +136,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case6.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -155,7 +161,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case7.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -180,7 +187,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case8.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -204,7 +212,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case9.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -228,7 +237,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case10.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -245,7 +255,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case11.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -262,7 +273,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case12.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -279,7 +291,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case13.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -296,7 +309,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case14.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -313,7 +327,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case15.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -330,7 +345,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case16.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -347,7 +363,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case17.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -364,7 +381,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case18.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -381,7 +399,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case19.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -398,7 +417,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case20.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -415,7 +435,8 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case21.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
@@ -432,12 +453,52 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case22.php',
         'provider_data' => [
             'requestParameters' => [
-                'requestId' => 1
+                'requestId' => 1,
+                'sellerId' => 83,
             ],
             'responseCode' => 200,
             'responseBody' => [
                 'status' => 423,
                 'error' => 'Невозможно получить данные по заявке в текущем статусе.',
+            ]
+        ]
+    ],
+
+    'case23' => [
+        'setting' => [
+            'description' => 'Ошибка при указании чужого sellerId',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'requestId' => 1,
+                'sellerId' => 883,
+            ],
+            'responseCode' => 200,
+            'responseBody' => [
+                'status' => 404,
+                'error' => 'Модель класа gomer\\bpm\\models\\requests\\Request не найдена по параметрам. Conditions:{"id":1,"seller_id":883}',
+            ]
+        ]
+    ],
+
+    'case24' => [
+        'setting' => [
+            'description' => 'Ошибка при отсутствии sellerId',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'requestId' => 1,
+                //'sellerId' => 883,
+            ],
+            'responseCode' => 400,
+            'responseBody' => [
+                'code' => 0,
+                'status' => 400,
+                'name' => 'Bad Request',
+                'message' => 'Отсутствуют обязательные параметры: sellerId',
+                'type' => 'yii\\web\\BadRequestHttpException',
             ]
         ]
     ],

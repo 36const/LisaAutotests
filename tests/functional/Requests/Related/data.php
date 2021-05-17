@@ -876,27 +876,27 @@ return [
                             'value' => "1"
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 53,
                             'value' => "3"
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 54,
                             'value' => "1"
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 55,
                             'value' => "0"
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 101,
                             'value' => 0
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 2,
                             'field_id' => 122,
                             'value' => 0
                         ],
@@ -1906,7 +1906,7 @@ return [
                             "supervisor_check_date" => null,
                             "result_comment" => null,
                             "supervisor_comment" => null,
-//                            "last_change_status_date >=" => date("Y-m-d"),
+                            "last_change_status_date >=" => date("Y-m-d"),
                             "team_direction" => 3,
                             "report_period_id" => null,
                             "sync_source_id" => null,

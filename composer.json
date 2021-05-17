@@ -1,14 +1,10 @@
 {
-    "name": "lisa-tests/lisa",
+    "name": "lisa-tests/lisa.tests",
     "description": "API, Functional and Acceptance tests for Lisa",
     "type": "project",
     "license": "Open Source",
     "minimum-stability": "stable",
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@gitlab.rozetka.company:autotests/codeception-test-helper.git"
-        },
         {
             "type": "vcs",
             "url": "git@gitlab.rozetka.company:automation-testing-tools/codeception-test-helper.git"
@@ -25,7 +21,7 @@
     "require": {
         "codeception/codeception": "4.1.5",
         "automation-testing-tools/codeception-test-helper": "*",
-        "automation-testing-tools/allure-codeception": "2.1.7.1",
-        "automation-testing-tools/module-db": "^1.06"
+        "automation-testing-tools/allure-codeception": "*",
+        "automation-testing-tools/module-db": "*"
     }
 }

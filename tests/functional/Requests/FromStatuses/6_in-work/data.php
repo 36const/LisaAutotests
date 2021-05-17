@@ -804,7 +804,7 @@ return [
         'setting' => [
             'description' => 'Перевод из "В работе" в "Ожидает (ризоны)" c ранее загруженными фото, причина 1',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload_1.php',
+        'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -1007,7 +1007,7 @@ return [
         'setting' => [
             'description' => 'Перевод из "В работе" в "Ожидает (ризоны)" c ранее загруженными фото, причина 2',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload_2.php',
+        'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
