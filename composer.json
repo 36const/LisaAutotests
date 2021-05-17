@@ -1,5 +1,5 @@
 {
-    "name": "lisa-tests/lisa",
+    "name": "lisa-tests/lisa.tests",
     "description": "API, Functional and Acceptance tests for Lisa",
     "type": "project",
     "license": "Open Source",
