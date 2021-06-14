@@ -7,6 +7,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '21',
                 'FieldValue[status]' => '1',
@@ -33,6 +36,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '22',
                 'FieldValue[status]' => '0',
@@ -59,6 +65,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '23',
                 'FieldValue[status]' => '1',
@@ -85,6 +94,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '24',
                 'FieldValue[status]' => '0',
@@ -111,6 +123,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '25',
                 'FieldValue[status]' => '1',
@@ -137,6 +152,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '26',
                 'FieldValue[status]' => '0',
@@ -163,6 +181,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '27',
                 'FieldValue[status]' => '1',
@@ -189,6 +210,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '28',
                 'FieldValue[status]' => '0',
@@ -215,6 +239,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '29',
                 'FieldValue[status]' => '1',
@@ -241,6 +268,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '30',
                 'FieldValue[status]' => '0',
@@ -267,6 +297,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '31',
                 'FieldValue[status]' => '1',
@@ -293,6 +326,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'FieldValue[field_id]' => '32',
                 'FieldValue[status]' => '0',

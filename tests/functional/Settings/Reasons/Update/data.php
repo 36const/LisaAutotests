@@ -7,6 +7,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_reasons2fb6cc3f5862c154757f7dbd5ca312e9',
+            ],
             'requestBody' => [
                 'Reason[child_status]' => '2',
                 'Reason[reason]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ ',
@@ -39,6 +42,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_reasons2fb6cc3f5862c154757f7dbd5ca312e9',
+            ],
             'requestBody' => [
                 'Reason[child_status]' => '3',
                 'Reason[reason]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\| ',
@@ -71,6 +77,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_reasons2fb6cc3f5862c154757f7dbd5ca312e9',
+            ],
             'requestBody' => [
                 'Reason[child_status]' => '3',
                 'Reason[reason]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ ',
@@ -103,6 +112,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_reasons2fb6cc3f5862c154757f7dbd5ca312e9',
+            ],
             'requestBody' => [
                 'Reason[child_status]' => '3',
                 'Reason[reason]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ ',
@@ -135,6 +147,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_reasons2fb6cc3f5862c154757f7dbd5ca312e9',
+            ],
             'requestBody' => [
                 'Reason[child_status]' => '2',
                 'Reason[reason]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\| ',

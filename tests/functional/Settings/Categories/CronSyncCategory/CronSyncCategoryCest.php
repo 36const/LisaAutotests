@@ -29,17 +29,18 @@ class CronSyncCategoryCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->runShellCommand('./yii bpm/request/sync-category');
+        $I->loadDataForRedis(FunctionalTester::REDIS_KEYS_VALUES);
 
-        $I->declareExchange('goods_service', 'topic');
-        $I->declareQueue('goods-service-lisa');
-        $I->bindQueueToExchange('goods-service-lisa', 'goods_service', 'create.category.entity.DVR');
+        $I->declareExchange('goods_service', 'topic', false, true, false);
+        $I->declareQueue('goods-service-lisa', false, true, false, false);
+        $I->bindQueueToExchange('goods-service-lisa', 'goods_service', 'create.category.entity.SLR.DVR.CMT.CTT.SEO.BI.LLT.1C.MRK.CTL.DBA.EBQ.GML.SSH.LIS');
 
-        $I->pushToExchange('goods_service', $providerData['message'], 'create.category.entity.DVR');
+        $I->pushToExchange('goods_service', $providerData['message'], 'create.category.entity.SLR.DVR.CMT.CTT.SEO.BI.LLT.1C.MRK.CTL.DBA.EBQ.GML.SSH.LIS');
 
         $I->runShellCommand('./yii bpm/request/sync-category');
         $I->canSeeResultCodeIs(0);
 
+        $I->checkRedis();
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData);
     }

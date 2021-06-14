@@ -83,7 +83,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Изменение правил распределения без указания должности',
+            'description' => 'Невозможность изменения правил распределения без указания должности',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -103,7 +103,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Изменение правил распределения без указания направления',
+            'description' => 'Невозможность изменения правил распределения без указания направления',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

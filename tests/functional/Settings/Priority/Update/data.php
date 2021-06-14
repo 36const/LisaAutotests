@@ -7,6 +7,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_prioritiesc89065f72175b22f9ba823aa3d51fa27',
+            ],
             'requestBody' => [
                 'Priority[name]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
                 'Priority[status]' => '1',
@@ -41,6 +44,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_prioritiesc89065f72175b22f9ba823aa3d51fa27',
+            ],
             'requestBody' => [
                 'Priority[name]' => 'Информация необходима для склада',
                 'Priority[status]' => '0',
@@ -75,6 +81,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_prioritiesc89065f72175b22f9ba823aa3d51fa27',
+            ],
             'requestBody' => [
                 'Priority[name]' => '~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
                 'Priority[status]' => '0',

@@ -7,6 +7,10 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_category_namesfa94761536e04215430d7de0b502b16e',
+                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478'
+            ],
             'requestBody' => [
                 'Category[difficulty]' => '5',
                 'Category[status]' => '1',
@@ -56,6 +60,10 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_category_namesfa94761536e04215430d7de0b502b16e',
+                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478'
+            ],
             'requestBody' => [
                 'Category[difficulty]' => '5',
                 'Category[status]' => '0',

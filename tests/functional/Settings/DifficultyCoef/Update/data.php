@@ -7,6 +7,19 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'diff_coef_1_[1]ee1510e00f15f464f1482c229e1c4b28',
+                'diff_coef_1_[2]6b59feb34a7dd85a6b2b365f725a7b20',
+                'diff_coef_2_[2]e4f11b540a5968017834ae5f0e499978',
+                'diff_coef_3_[8,15,19]09a6c57a3c5f1025a5f3dcd444b906a9',
+                'diff_coef_4_[169]af057faf680f6e20087cf785ccfdc40e',
+                'diff_coef_5_[1]3bd4af5326d1e27a9ad741e340646f57',
+                'diff_coef_6_[8,15,19]b1b33073c1eb1d5daabed600c76a8dc1',
+                'diff_coef_7_[1]c386bb062826fca6605ade8ad14d7b38',
+                'diff_coef_7_[2]e401b38c96a14dff7cb79a71638e1fcd',
+                'diff_coef_8_[1,6,7]0b2026cb63268e05ca709ea7090c12cc',
+                'diff_coef_11_[2]107301ff442b30cffbcd119ee16b0ac6',
+            ],
             'requestBody' => [
                 'DifficultyCoef[difficulty_coef]' => '2.5',
             ],
@@ -178,6 +191,19 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'diff_coef_1_[1]ee1510e00f15f464f1482c229e1c4b28',
+                'diff_coef_1_[2]6b59feb34a7dd85a6b2b365f725a7b20',
+                'diff_coef_2_[2]e4f11b540a5968017834ae5f0e499978',
+                'diff_coef_3_[8,15,19]09a6c57a3c5f1025a5f3dcd444b906a9',
+                'diff_coef_4_[169]af057faf680f6e20087cf785ccfdc40e',
+                'diff_coef_5_[1]3bd4af5326d1e27a9ad741e340646f57',
+                'diff_coef_6_[8,15,19]b1b33073c1eb1d5daabed600c76a8dc1',
+                'diff_coef_7_[1]c386bb062826fca6605ade8ad14d7b38',
+                'diff_coef_7_[2]e401b38c96a14dff7cb79a71638e1fcd',
+                'diff_coef_8_[1,6,7]0b2026cb63268e05ca709ea7090c12cc',
+                'diff_coef_11_[2]107301ff442b30cffbcd119ee16b0ac6',
+            ],
             'requestBody' => [
                 'DifficultyCoef[status]' => '0',
             ],
@@ -349,6 +375,19 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'diff_coef_1_[1]ee1510e00f15f464f1482c229e1c4b28',
+                'diff_coef_1_[2]6b59feb34a7dd85a6b2b365f725a7b20',
+                'diff_coef_2_[2]e4f11b540a5968017834ae5f0e499978',
+                'diff_coef_3_[8,15,19]09a6c57a3c5f1025a5f3dcd444b906a9',
+                'diff_coef_4_[169]af057faf680f6e20087cf785ccfdc40e',
+                'diff_coef_5_[1]3bd4af5326d1e27a9ad741e340646f57',
+                'diff_coef_6_[8,15,19]b1b33073c1eb1d5daabed600c76a8dc1',
+                'diff_coef_7_[1]c386bb062826fca6605ade8ad14d7b38',
+                'diff_coef_7_[2]e401b38c96a14dff7cb79a71638e1fcd',
+                'diff_coef_8_[1,6,7]0b2026cb63268e05ca709ea7090c12cc',
+                'diff_coef_11_[2]107301ff442b30cffbcd119ee16b0ac6',
+            ],
             'requestBody' => [
                 'DifficultyCoef[difficulty_coef]' => '2.5',
                 'DifficultyCoef[status]' => '0',

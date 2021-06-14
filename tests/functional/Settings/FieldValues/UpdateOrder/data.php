@@ -7,6 +7,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_valuesc72cdd5825f4c8d1ec44822407865c5f',
+            ],
             'requestBody' => [
                 'sort' => [4, 2, 3, 1, 5]
             ],

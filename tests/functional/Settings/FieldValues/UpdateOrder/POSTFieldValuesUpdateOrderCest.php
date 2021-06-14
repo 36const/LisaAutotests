@@ -30,9 +30,12 @@ class POSTFieldValuesUpdateOrderCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
+        $I->loadDataForRedis(FunctionalTester::REDIS_KEYS_VALUES);
+
         $I->sendPOST('/bpm/field-values/order', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
+        $I->checkRedis($providerData['excludedRedisKeys'] ?? null);
         $I->checkTablesInDB($providerData['db']);
     }
 }

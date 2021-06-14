@@ -7,6 +7,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'formula_coefs96c97f00c7a4f639793578f36f8d740e',
+            ],
             'requestBody' => [
                 'coef' => '0.9',
                 'modelId' => '1',
@@ -42,6 +45,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'formula_coefs96c97f00c7a4f639793578f36f8d740e',
+            ],
             'requestBody' => [
                 'coef' => '0.33',
                 'modelId' => '2',
@@ -77,6 +83,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'formula_coefs96c97f00c7a4f639793578f36f8d740e',
+            ],
             'requestBody' => [
                 'coef' => '1.99',
                 'modelId' => '3',

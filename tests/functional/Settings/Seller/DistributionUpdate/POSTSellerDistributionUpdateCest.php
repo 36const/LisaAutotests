@@ -35,6 +35,6 @@ class POSTSellerDistributionUpdateCest
         $I->seeResponseCodeIs(200);
 
         $I->canSee($providerData['pageObjects']);
-        $I->checkRedis($providerData['redis']);
+        $I->checkSellerRedis($providerData['redis']);
     }
 }
