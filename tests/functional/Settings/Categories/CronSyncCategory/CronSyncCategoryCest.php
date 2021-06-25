@@ -7,7 +7,7 @@ use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
- * @group _lisa_functional
+ * @group lisa_functional
  * @group lisa_functional_settings
  * @group CronSyncCategory
  */
@@ -31,9 +31,9 @@ class CronSyncCategoryCest
 
         $I->declareExchange('goods_service', 'topic');
         $I->declareQueue('goods-lisa');
-        $I->bindQueueToExchange('goods-lisa', 'goods_service', 'create.category.entity.DVR');
+        $I->bindQueueToExchange('goods-lisa', 'goods_service', $providerData['routing_key']);
 
-        $I->pushToExchange('goods_service', $providerData['message'], 'create.category.entity.DVR');
+        $I->pushToExchange('goods_service', $providerData['message'], $providerData['routing_key']);
 
         $I->runShellCommand('./yii bpm/request/sync-category');
         $I->canSeeResultCodeIs(0);

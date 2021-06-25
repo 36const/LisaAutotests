@@ -7,17 +7,18 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'message' => '{"data":{"id":80022,"mpath":".4627949.80257.4627865.","title":"Диктофоны","status":"active","status_inherited":"active","order":18,"ext_id":0,"name":"dictophones","titles_mode":"inherited","kits_show":"show","parent_id":4627865,"left_key":12165,"right_key":12166,"level":4,"created_at":"2017-08-08T16:33:38Z","is_deleted":false,"sections_list":"Портативная электроника Диктофоны","href":"https://rozetka.com.ua/dictophones/c80022/","rz_mpath":".4627949.80257.4627865.80022.","allow_index_three_parameters":false,"on_subdomain":"none","oversized":"default","is_subdomain":false,"disable_kit_ratio":false,"is_rozetka_top":true,"uk":null,"use_group_links":"inherited"},"changed":[], "time": "2021-04-01T11:52:00.497061299Z"}',
+            'message' => '{"data":{"id":4326656,"mpath":".84625.4326572.","title":"Учебники","status":"active","status_inherited":"active","order":16777215,"ext_id":"","name":"uchebniki-nauchno-metodicheskaya-literatura","titles_mode":"inherited","kits_show":"inherited","parent_id":4326572,"left_key":8044,"right_key":8045,"level":0,"created_at":"2015-08-28T10:02:42Z","href":"https://rozetka.com.ua/uchebniki-nauchno-metodicheskaya-literatura/c4326656/","allow_index_three_parameters":false,"on_subdomain":"none","oversized":"default","is_subdomain":false,"disable_kit_ratio":false,"is_rozetka_top":true,"uk":{"id":4326656,"title":""},"use_group_links":""},"changed":["mpath", "status_inherited"], "time": "2021-06-25T07:11:02.333270217Z","request_id":"MessageBus_Modules_RozetkaCLIController::sendRecordsDataByWhere"}',
+            'routing_key' => 'create.category.entity.SLR.DVR.CMT.CTT.SEO.BI.LLT.1C.MRK.CTL.DBA.EBQ.GML.SMD.SSH.LIS',
             'db' => [
                 "lisa_fixtures" => [
                     "rozetka_categories" => [
                         [
-                            "id" => 80020,
-                            "title" => "Игровые консоли и детские приставки",
-                            "mpath" => ".80253.80261.",
-                            "status" => "active",
-                            "deleted" => null,
-                            "parent_id" => 80261
+                            'id' => 4326656,
+                            'title' => 'Учебники',
+                            'mpath' => '.84625.4326572.',
+                            'status' => 'active',
+                            'deleted' => null,
+                            'parent_id' => 4326572
                         ],
                         [
                             "id" => 80022,
