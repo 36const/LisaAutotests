@@ -1,4 +1,5 @@
 <?php
+
 return [
     [
         'id' => 4626923,
@@ -485,5 +486,68 @@ return [
         'deleted' => null,
         'parent_id' => 2514877,
         'lisa_category_id' => null
-    ]
+    ],
+    [
+        'id' => 4660667,
+        'title' => 'не должно выгружаться (old)',
+        'mpath' => '.4625734.2460392.2460402.2581722.4660667.',
+        'parent_id' => 2581722,
+        'lisa_category_id' => 2,
+        'status' => 'active',
+        'deleted' => null,
+    ],
+    [
+        'id' => 4660668,
+        'title' => 'o не должно выгружаться',
+        'mpath' => '.4626923.4660668.',
+        'parent_id' => 4626923,
+        'lisa_category_id' => 1,
+        'status' => 'locked',
+        'deleted' => null,
+    ],
+    [
+        'id' => 4660666,
+        'title' => 'не должно выгружаться _old',
+        'mpath' => '.4660666.',
+        'parent_id' => 0,
+        'lisa_category_id' => null,
+        'status' => 'active',
+        'deleted' => null,
+    ],
+    [
+        'id' => 4660669,
+        'title' => 'не использовать не должно выгружаться ',
+        'mpath' => '.4660666.4660669.',
+        'parent_id' => 4660666,
+        'lisa_category_id' => null,
+        'status' => 'locked',
+        'deleted' => null,
+    ],
+    [
+        'id' => 4660651,
+        'title' => 'Рестораны и продуктовые сети',
+        'mpath' => '.4660651.',
+        'parent_id' => 0,
+        'lisa_category_id' => null,
+        'status' => 'active',
+        'deleted' => null,
+    ],
+    [
+        'id' => 4660652,
+        'title' => 'Рестораны',
+        'mpath' => '.4660651.4660652.',
+        'parent_id' => 4660651,
+        'lisa_category_id' => null,
+        'status' => 'active',
+        'deleted' => null,
+    ],
+    [
+        'id' => 4660653,
+        'title' => 'Продуктовые сети',
+        'mpath' => '.4660651.4660653.',
+        'parent_id' => 4660651,
+        'lisa_category_id' => null,
+        'status' => 'locked',
+        'deleted' => null,
+    ],
 ];
