@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Добавление при создании заявки Работа с товарами Маркетплейса',
+            'description' => 'Добавление нового магазина при создании заявки Работа с товарами Маркетплейса',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
