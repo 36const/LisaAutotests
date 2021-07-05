@@ -51,7 +51,7 @@ return [
                         'status_id' => 4,
                         'created_at' => '2020-01-04 00:00:00',
                         'amount_to_work' => 4,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     5 => [
                         'id' => 5,
@@ -61,7 +61,7 @@ return [
                         'status_id' => 5,
                         'created_at' => '2020-01-05 00:00:00',
                         'amount_to_work' => 6,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     6 => [
                         'id' => 6,
@@ -71,7 +71,7 @@ return [
                         'status_id' => 6,
                         'created_at' => '2020-01-01 00:00:06',
                         'amount_to_work' => 6,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     7 => [
                         'id' => 7,
@@ -81,7 +81,7 @@ return [
                         'status_id' => 7,
                         'created_at' => '2020-01-01 00:00:07',
                         'amount_to_work' => 8,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                 ],
                 'total_count' => 7,
@@ -115,7 +115,7 @@ return [
                         'status_id' => 5,
                         'created_at' => '2020-01-05 00:00:00',
                         'amount_to_work' => 6,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     9 => [
                         'id' => 9,
@@ -125,7 +125,7 @@ return [
                         'status_id' => 9,
                         'created_at' => '2020-01-01 00:00:09',
                         'amount_to_work' => 10,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     10 => [
                         'id' => 10,
@@ -135,7 +135,7 @@ return [
                         'status_id' => 11,
                         'created_at' => '2020-01-01 00:00:10',
                         'amount_to_work' => 10,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                 ],
                 'total_count' => 3,
@@ -214,7 +214,7 @@ return [
                         'status_id' => 7,
                         'created_at' => '2020-01-01 00:00:07',
                         'amount_to_work' => 8,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     8 => [
                         'id' => 8,
@@ -224,7 +224,7 @@ return [
                         'status_id' => 8,
                         'created_at' => '2020-01-01 00:00:08',
                         'amount_to_work' => 8,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                 ],
                 'total_count' => 10,
@@ -258,7 +258,7 @@ return [
                         'status' => 'В работе',
                         'created_at' => '2020-01-01 00:00:06',
                         'amount_to_work' => 6,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     7 => [
                         'id' => 7,
@@ -268,7 +268,7 @@ return [
                         'status' => 'Ожидает',
                         'created_at' => '2020-01-01 00:00:07',
                         'amount_to_work' => 8,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     5 => [
                         'id' => 5,
@@ -278,7 +278,7 @@ return [
                         'status' => 'Ожидает взятия в работу',
                         'created_at' => '2020-01-05 00:00:00',
                         'amount_to_work' => 6,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     4 => [
                         'id' => 4,
@@ -288,7 +288,7 @@ return [
                         'status' => 'Отменена',
                         'created_at' => '2020-01-04 00:00:00',
                         'amount_to_work' => 4,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                 ],
                 'total_count' => 4,
@@ -322,7 +322,7 @@ return [
                         'status_id' => 8,
                         'created_at' => '2020-01-01 00:00:08',
                         'amount_to_work' => 8,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     9 => [
                         'id' => 9,
@@ -332,7 +332,7 @@ return [
                         'status_id' => 9,
                         'created_at' => '2020-01-01 00:00:09',
                         'amount_to_work' => 10,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     10 => [
                         'id' => 10,
@@ -342,7 +342,7 @@ return [
                         'status_id' => 11,
                         'created_at' => '2020-01-01 00:00:10',
                         'amount_to_work' => 10,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     7 => [
                         'id' => 7,
@@ -352,7 +352,7 @@ return [
                         'status_id' => 7,
                         'created_at' => '2020-01-01 00:00:07',
                         'amount_to_work' => 8,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     5 => [
                         'id' => 5,
@@ -362,7 +362,7 @@ return [
                         'status_id' => 5,
                         'created_at' => '2020-01-05 00:00:00',
                         'amount_to_work' => 6,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     6 => [
                         'id' => 6,
@@ -372,7 +372,7 @@ return [
                         'status_id' => 6,
                         'created_at' => '2020-01-01 00:00:06',
                         'amount_to_work' => 6,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     4 => [
                         'id' => 4,
@@ -382,7 +382,7 @@ return [
                         'status_id' => 4,
                         'created_at' => '2020-01-04 00:00:00',
                         'amount_to_work' => 4,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     2 => [
                         'id' => 2,
@@ -457,7 +457,7 @@ return [
                         'status_id' => 6,
                         'created_at' => '2020-01-01 00:00:06',
                         'amount_to_work' => 6,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     7 => [
                         'id' => 7,
@@ -467,7 +467,7 @@ return [
                         'status_id' => 7,
                         'created_at' => '2020-01-01 00:00:07',
                         'amount_to_work' => 8,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     8 => [
                         'id' => 8,
@@ -477,7 +477,7 @@ return [
                         'status_id' => 8,
                         'created_at' => '2020-01-01 00:00:08',
                         'amount_to_work' => 8,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     9 => [
                         'id' => 9,
@@ -487,7 +487,7 @@ return [
                         'status_id' => 9,
                         'created_at' => '2020-01-01 00:00:09',
                         'amount_to_work' => 10,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                 ],
                 'total_count' => 10,
@@ -534,7 +534,7 @@ return [
                         'status_id' => 6,
                         'created_at' => '2020-01-01 00:00:06',
                         'amount_to_work' => 6,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     5 => [
                         'id' => 5,
@@ -544,7 +544,7 @@ return [
                         'status_id' => 5,
                         'created_at' => '2020-01-05 00:00:00',
                         'amount_to_work' => 6,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                 ],
                 'total_count' => 9,

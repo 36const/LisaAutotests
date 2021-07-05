@@ -14,6 +14,6 @@ class Category
 
     public static function errorField(string $text): string
     {
-        return "//div[@class='category-form']//div[@class='help-block' and text()='$text']";
+        return "//form[@id='category_form']//div[@class='help-block' and text()='$text']";
     }
 }
