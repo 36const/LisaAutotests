@@ -592,6 +592,11 @@ return [
                         ],
                     ]
                 ],
+            ],
+            'RabbitMQ' => [
+                'lisa_rz_categories_export' => [
+                    '["export"]'
+                ]
             ]
         ]
     ],
@@ -637,6 +642,9 @@ return [
                     ],
                     'rozetka_categories' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['rozetka_categories'],
                 ],
+            ],
+            'RabbitMQ' => [
+                'lisa_rz_categories_export' => []
             ]
         ]
     ],
@@ -682,6 +690,9 @@ return [
                     ],
                     'rozetka_categories' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['rozetka_categories'],
                 ],
+            ],
+            'RabbitMQ' => [
+                'lisa_rz_categories_export' => []
             ]
         ]
     ],
@@ -727,6 +738,9 @@ return [
                     ],
                     'rozetka_categories' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['rozetka_categories'],
                 ],
+            ],
+            'RabbitMQ' => [
+                'lisa_rz_categories_export' => []
             ]
         ]
     ],
@@ -1322,6 +1336,12 @@ return [
                         ],
                     ]
                 ],
+            ],
+            'RabbitMQ' => [
+                'lisa_rz_categories_export' => [
+                    '["export"]',
+                    '["export"]'
+                ]
             ]
         ]
     ],
@@ -1367,6 +1387,9 @@ return [
                     ],
                     'rozetka_categories' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['rozetka_categories'],
                 ],
+            ],
+            'RabbitMQ' => [
+                'lisa_rz_categories_export' => []
             ]
         ]
     ],
@@ -1410,6 +1433,9 @@ return [
                     ],
                     'rozetka_categories' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['rozetka_categories'],
                 ],
+            ],
+            'RabbitMQ' => [
+                'lisa_rz_categories_export' => []
             ]
         ]
     ],

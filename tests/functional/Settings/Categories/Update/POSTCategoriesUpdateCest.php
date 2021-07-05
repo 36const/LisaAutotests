@@ -34,5 +34,6 @@ class POSTCategoriesUpdateCest
         $I->seeResponseCodeIs(200);
 
         $I->checkTablesInDB($providerData['db']);
+        $I->checkRabbitMQ($providerData);
     }
 }
