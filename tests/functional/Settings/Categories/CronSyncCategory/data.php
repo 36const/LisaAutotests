@@ -18,7 +18,8 @@ return [
                             'mpath' => '.84625.4326572.',
                             'status' => 'active',
                             'deleted' => null,
-                            'parent_id' => 4326572
+                            'parent_id' => 4326572,
+                            'lisa_category_id' => 474,
                         ],
                         [
                             "id" => 80022,
@@ -26,7 +27,8 @@ return [
                             "mpath" => ".4627949.80257.4627865.",
                             "status" => "active",
                             "deleted" => null,
-                            "parent_id" => 4627865
+                            "parent_id" => 4627865,
+                            "lisa_category_id" => null,
                         ]
                     ],
                 ],
