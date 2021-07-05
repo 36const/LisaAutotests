@@ -31,9 +31,9 @@ class CronMakeCategoriesXlsCest
         $providerData = $data['provider_data'];
 
         $I->declareExchange('default', 'direct', false, true, false);
-        $I->declareQueue('lisa_rz_categories_export', false, true, false, false);
-        $I->bindQueueToExchange('lisa_rz_categories_export', 'default', 'lisa_rz_categories_export');
-        $I->pushToExchange('default', '["export"]', 'lisa_rz_categories_export');
+        $I->declareQueue('lisa_rzCategoriesExport', false, true, false, false);
+        $I->bindQueueToExchange('lisa_rzCategoriesExport', 'default', 'lisa_rzCategoriesExport');
+        $I->pushToExchange('default', '["export"]', 'lisa_rzCategoriesExport');
 
         $I->runShellCommand('rm -f /var/www/gomer.local/www/backend/runtime/выгрузка_связанных_категорий_LISA.xlsx');
         $I->runShellCommand('touch /var/www/gomer.local/www/backend/runtime/выгрузка_связанных_категорий_LISA.xlsx');

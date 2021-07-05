@@ -601,7 +601,7 @@ return [
                 ],
             ],
             'RabbitMQ' => [
-                'lisa_rz_categories_export' => [
+                'lisa_rzCategoriesExport' => [
                     '["export"]'
                 ]
             ]
@@ -658,7 +658,7 @@ return [
                 ],
             ],
             'RabbitMQ' => [
-                'lisa_rz_categories_export' => []
+                'lisa_rzCategoriesExport' => []
             ]
         ]
     ],
@@ -713,7 +713,7 @@ return [
                 ],
             ],
             'RabbitMQ' => [
-                'lisa_rz_categories_export' => []
+                'lisa_rzCategoriesExport' => []
             ]
         ]
     ],
@@ -768,7 +768,7 @@ return [
                 ],
             ],
             'RabbitMQ' => [
-                'lisa_rz_categories_export' => []
+                'lisa_rzCategoriesExport' => []
             ]
         ]
     ],
@@ -1373,7 +1373,7 @@ return [
                 ],
             ],
             'RabbitMQ' => [
-                'lisa_rz_categories_export' => [
+                'lisa_rzCategoriesExport' => [
                     '["export"]',
                     '["export"]'
                 ]
@@ -1981,7 +1981,7 @@ return [
                 ],
             ],
             'RabbitMQ' => [
-                'lisa_rz_categories_export' => [
+                'lisa_rzCategoriesExport' => [
                     '["export"]'
                 ]
             ]
@@ -2036,7 +2036,7 @@ return [
                 ],
             ],
             'RabbitMQ' => [
-                'lisa_rz_categories_export' => []
+                'lisa_rzCategoriesExport' => []
             ]
         ]
     ],
