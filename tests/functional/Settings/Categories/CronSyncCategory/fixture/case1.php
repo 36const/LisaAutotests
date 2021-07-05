@@ -9,7 +9,7 @@ return [
                     "id" => 474,
                     'title' => 'Распределить категорию в Lisa',
                     'difficulty' => 1,
-                    'supervisor_id' => 6,
+                    'supervisor_id' => 4,
                     'status' => 1
                 ]
             ]
@@ -25,5 +25,7 @@ return [
                 'lisa_category_id' => null,
             ]
         ],
+        'notification_settings' => include \Codeception\Module\TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/notification_settings.php',
+        'user_notifications' => [],
     ],
 ];

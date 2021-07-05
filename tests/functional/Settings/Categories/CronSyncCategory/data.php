@@ -31,7 +31,25 @@ return [
                             "lisa_category_id" => null,
                         ]
                     ],
-                ],
+                    'user_notifications' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => null,
+                            'priority' => null,
+                            'amount_to_work' => 0,
+                            'request_subject' => null,
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Администратор',
+                            'event' => 'new_category',
+                            'changed_fields' => '{"newValue": "Учебники (4326656)", "oldValue": ""}',
+                            'notify_service_id' => null,
+                        ],
+                    ],
+                ]
             ],
             'RabbitMQ' => [
                 'goods-lisa' => [],
