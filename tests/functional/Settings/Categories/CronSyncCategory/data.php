@@ -55,6 +55,9 @@ return [
                 'goods-lisa' => [],
                 'lisa_rzCategoriesExport' => [
                     '["export"]'
+                ],
+                '_lisa_sendMailNotifications' => [
+                    '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] В LISA добавилась новая категория: Учебники (4326656)","notification":"В базу данных LISA добавилась новая категория Rozetka: <b>Учебники (4326656)</b> .\n        Привязать её к категории LISA можно по <a href=\"http://splitter.staging.com.ua/bpm/category/index\">ссылке</a>","requestId":null}'
                 ]
             ]
         ]
