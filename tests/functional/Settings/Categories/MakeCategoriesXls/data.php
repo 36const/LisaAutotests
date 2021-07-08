@@ -1,11 +1,9 @@
 <?php
 
-use lisa\Page\Other\Export;
-
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Выгрузка заявки с заблокированными значениями',
+            'description' => 'Выгрузка связанных категорий Lisa и Store',
             'rows' => 2
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',

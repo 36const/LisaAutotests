@@ -51,7 +51,7 @@ return [
                         [
                             'id' => 4626923,
                             'title' => 'Алкогольные напитки и продукты питания',
-                            'mpath' => '.4626923.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -60,7 +60,7 @@ return [
                         [
                             'id' => 80025,
                             'title' => 'Бытовая техника, интерьер',
-                            'mpath' => '.80025.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -69,7 +69,7 @@ return [
                         [
                             'id' => 2394297,
                             'title' => 'Дача, сад, огород',
-                            'mpath' => '.2394297.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -78,7 +78,7 @@ return [
                         [
                             'id' => 80253,
                             'title' => 'Компьютеры и ноутбуки',
-                            'mpath' => '.80253.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -87,7 +87,7 @@ return [
                         [
                             'id' => 4629305,
                             'title' => 'Красота и здоровье',
-                            'mpath' => '.4629305.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -96,7 +96,7 @@ return [
                         [
                             'id' => 1162030,
                             'title' => 'Одежда, обувь и аксессуары',
-                            'mpath' => '.1162030.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -105,7 +105,7 @@ return [
                         [
                             'id' => 84625,
                             'title' => 'Оружие',
-                            'mpath' => '.84625.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -114,7 +114,7 @@ return [
                         [
                             'id' => 4625734,
                             'title' => 'Офис, школа, книги',
-                            'mpath' => '.4625734.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -123,7 +123,7 @@ return [
                         [
                             'id' => 80260,
                             'title' => 'Подарки и товары для праздников',
-                            'mpath' => '.80260.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -132,7 +132,7 @@ return [
                         [
                             'id' => 4628418,
                             'title' => 'Сантехника и ремонт',
-                            'mpath' => '.4628418.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -141,7 +141,7 @@ return [
                         [
                             'id' => 4655216,
                             'title' => 'Сельское хозяйство',
-                            'mpath' => '.4655216.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -150,7 +150,7 @@ return [
                         [
                             'id' => 4655025,
                             'title' => 'Скрытые',
-                            'mpath' => '.4655025.',
+                            'mpath' => '.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -159,7 +159,7 @@ return [
                         [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
-                            'mpath' => '.80262.',
+                            'mpath' => '.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -168,7 +168,7 @@ return [
                         [
                             'id' => 4656380,
                             'title' => 'Скрытые товары',
-                            'mpath' => '.4656380.',
+                            'mpath' => '.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -177,7 +177,7 @@ return [
                         [
                             'id' => 4627949,
                             'title' => 'Смартфоны, ТВ и электроника',
-                            'mpath' => '.4627949.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -186,7 +186,7 @@ return [
                         [
                             'id' => 4627893,
                             'title' => 'Спорт и увлечения',
-                            'mpath' => '.4627893.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -195,7 +195,7 @@ return [
                         [
                             'id' => 4627851,
                             'title' => 'Товары для бизнеса',
-                            'mpath' => '.4627851.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -204,7 +204,7 @@ return [
                         [
                             'id' => 88468,
                             'title' => 'Товары для детей',
-                            'mpath' => '.88468.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -213,7 +213,7 @@ return [
                         [
                             'id' => 2394287,
                             'title' => 'Товары для дома',
-                            'mpath' => '.2394287.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -222,7 +222,7 @@ return [
                         [
                             'id' => 4630262,
                             'title' => 'Услуги и сервисы',
-                            'mpath' => '.4630262.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -231,7 +231,7 @@ return [
                         [
                             'id' => 83850,
                             'title' => 'Уцененные товары',
-                            'mpath' => '.83850.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -240,7 +240,7 @@ return [
                         [
                             'id' => 753399,
                             'title' => 'Аксессуары для алкоголя',
-                            'mpath' => '.4626923.753399.',
+                            'mpath' => '.4626923.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 4626923,
@@ -249,7 +249,7 @@ return [
                         [
                             'id' => 4652996,
                             'title' => 'Мини-бары',
-                            'mpath' => '.4626923.753399.4652996.',
+                            'mpath' => '.4626923.753399.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 753399,
@@ -258,7 +258,7 @@ return [
                         [
                             'id' => 4653010,
                             'title' => 'Фляги',
-                            'mpath' => '.4626923.753399.4653010.',
+                            'mpath' => '.4626923.753399.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 753399,
@@ -267,7 +267,7 @@ return [
                         [
                             'id' => 4653017,
                             'title' => 'Упаковки для алкогольных напитков',
-                            'mpath' => '.4626923.753399.4653017.',
+                            'mpath' => '.4626923.753399.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 753399,
@@ -276,7 +276,7 @@ return [
                         [
                             'id' => 4628124,
                             'title' => 'Фото и видео',
-                            'mpath' => '.4627949.80258.4628124.',
+                            'mpath' => '.4627949.80258.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 80258,
@@ -285,7 +285,7 @@ return [
                         [
                             'id' => 2460392,
                             'title' => 'Канцелярия',
-                            'mpath' => '.4625734.2460392.',
+                            'mpath' => '.4625734.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 4625734,
@@ -294,7 +294,7 @@ return [
                         [
                             'id' => 2460402,
                             'title' => 'Архивирование и делопроизводство',
-                            'mpath' => '.4625734.2460392.2460402.',
+                            'mpath' => '.4625734.2460392.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460392,
@@ -303,7 +303,7 @@ return [
                         [
                             'id' => 2514857,
                             'title' => 'Файлы',
-                            'mpath' => '.4625734.2460392.2460402.2514857.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -312,7 +312,7 @@ return [
                         [
                             'id' => 2514867,
                             'title' => 'Визитницы',
-                            'mpath' => '.4625734.2460392.2460402.2514867.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -321,7 +321,7 @@ return [
                         [
                             'id' => 2514872,
                             'title' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
-                            'mpath' => '.4625734.2460392.2460402.2514872.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -330,7 +330,7 @@ return [
                         [
                             'id' => 2514877,
                             'title' => 'Штемпельная продукция',
-                            'mpath' => '.4625734.2460392.2460402.2514877.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -339,7 +339,7 @@ return [
                         [
                             'id' => 2898382,
                             'title' => 'Самонаборные штампы, кассы букв',
-                            'mpath' => '.4625734.2460392.2460402.2514877.2898382.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -348,7 +348,7 @@ return [
                         [
                             'id' => 2898387,
                             'title' => 'Штемпельные краски и подушки',
-                            'mpath' => '.4625734.2460392.2460402.2514877.2898387.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -357,7 +357,7 @@ return [
                         [
                             'id' => 4628926,
                             'title' => 'Датеры',
-                            'mpath' => '.4625734.2460392.2460402.2514877.4628926.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -366,7 +366,7 @@ return [
                         [
                             'id' => 4629073,
                             'title' => 'Оснастки, штампы стандартные',
-                            'mpath' => '.4625734.2460392.2460402.2514877.4629073.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -375,7 +375,7 @@ return [
                         [
                             'id' => 2560747,
                             'title' => 'Банковские принадлежности',
-                            'mpath' => '.4625734.2460392.2460402.2560747.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -384,7 +384,7 @@ return [
                         [
                             'id' => 2581722,
                             'title' => 'Папки, регистраторы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -393,7 +393,7 @@ return [
                         [
                             'id' => 2514862,
                             'title' => 'Папки пластиковые',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2514862.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -402,7 +402,7 @@ return [
                         [
                             'id' => 2581727,
                             'title' => 'Папки-портфели, папки-боксы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581727.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -411,7 +411,7 @@ return [
                         [
                             'id' => 2581732,
                             'title' => 'Папки-регистраторы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581732.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -420,7 +420,7 @@ return [
                         [
                             'id' => 2581737,
                             'title' => 'Папки-планшеты',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581737.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -429,7 +429,7 @@ return [
                         [
                             'id' => 2581742,
                             'title' => 'Папки и файлы подвесные',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581742.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -438,7 +438,7 @@ return [
                         [
                             'id' => 2595767,
                             'title' => 'Папки с файлами',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2595767.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -447,7 +447,7 @@ return [
                         [
                             'id' => 2666302,
                             'title' => 'Архивные короба и боксы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2666302.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -456,7 +456,7 @@ return [
                         [
                             'id' => 4626584,
                             'title' => 'Папки специальные',
-                            'mpath' => '.4625734.2460392.2460402.2581722.4626584.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -465,7 +465,7 @@ return [
                         [
                             'id' => 2660622,
                             'title' => 'Разделители и закладки',
-                            'mpath' => '.4625734.2460392.2460402.2660622.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -474,7 +474,7 @@ return [
                         [
                             'id' => 2973057,
                             'title' => 'Новая категория',
-                            'mpath' => '.4625734.2460392.2460402.2973057.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -483,7 +483,7 @@ return [
                         [
                             'id' => 3167120,
                             'title' => 'Новая категория',
-                            'mpath' => '.4625734.2460392.2460402.3167120.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -492,7 +492,7 @@ return [
                         [
                             'id' => 4630034,
                             'title' => 'Шило, нити и шпагаты',
-                            'mpath' => '.4625734.2460392.2460402.4630034.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -501,7 +501,7 @@ return [
                         [
                             'id' => 4641568,
                             'title' => 'Настольные картотеки',
-                            'mpath' => '.4625734.2460392.2460402.4641568.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -510,7 +510,7 @@ return [
                         [
                             'id' => 4655242,
                             'title' => 'Пломбы и пломбираторы',
-                            'mpath' => '.4625734.2460392.2460402.4655242.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -519,7 +519,7 @@ return [
                         [
                             'id' => 4655266,
                             'title' => 'Сургуч',
-                            'mpath' => '.4625734.2460392.2460402.4655266.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -528,7 +528,7 @@ return [
                         [
                             'id' => 4655272,
                             'title' => 'Досточки для оттиска',
-                            'mpath' => '.4625734.2460392.2460402.4655272.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -537,7 +537,7 @@ return [
                         [
                             'id' => 4660667,
                             'title' => 'не должно выгружаться (old)',
-                            'mpath' => '.4625734.2460392.2460402.2581722.4660667.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'parent_id' => 2581722,
                             'lisa_category_id' => 474,
                             'status' => 'active',
@@ -546,7 +546,7 @@ return [
                         [
                             'id' => 4660668,
                             'title' => 'old не должно выгружаться',
-                            'mpath' => '.4626923.4660668.',
+                            'mpath' => '.4626923.',
                             'parent_id' => 4626923,
                             'lisa_category_id' => 1,
                             'status' => 'locked',
@@ -555,7 +555,7 @@ return [
                         [
                             'id' => 4660666,
                             'title' => 'не должно выгружаться _old',
-                            'mpath' => '.4660666.',
+                            'mpath' => '.',
                             'parent_id' => 0,
                             'lisa_category_id' => null,
                             'status' => 'active',
@@ -564,7 +564,7 @@ return [
                         [
                             'id' => 4660669,
                             'title' => 'не использовать не должно выгружаться ',
-                            'mpath' => '.4660666.4660669.',
+                            'mpath' => '.4660666.',
                             'parent_id' => 4660666,
                             'lisa_category_id' => null,
                             'status' => 'locked',
@@ -573,7 +573,7 @@ return [
                         [
                             'id' => 4660651,
                             'title' => 'Рестораны и продуктовые сети',
-                            'mpath' => '.4660651.',
+                            'mpath' => '.',
                             'parent_id' => 0,
                             'lisa_category_id' => null,
                             'status' => 'active',
@@ -582,7 +582,7 @@ return [
                         [
                             'id' => 4660652,
                             'title' => 'Рестораны',
-                            'mpath' => '.4660651.4660652.',
+                            'mpath' => '.4660651.',
                             'parent_id' => 4660651,
                             'lisa_category_id' => null,
                             'status' => 'active',
@@ -591,7 +591,7 @@ return [
                         [
                             'id' => 4660653,
                             'title' => 'Продуктовые сети',
-                            'mpath' => '.4660651.4660653.',
+                            'mpath' => '.4660651.',
                             'parent_id' => 4660651,
                             'lisa_category_id' => null,
                             'status' => 'locked',
@@ -823,7 +823,7 @@ return [
                         [
                             'id' => 4626923,
                             'title' => 'Алкогольные напитки и продукты питания',
-                            'mpath' => '.4626923.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -832,7 +832,7 @@ return [
                         [
                             'id' => 80025,
                             'title' => 'Бытовая техника, интерьер',
-                            'mpath' => '.80025.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -841,7 +841,7 @@ return [
                         [
                             'id' => 2394297,
                             'title' => 'Дача, сад, огород',
-                            'mpath' => '.2394297.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -850,7 +850,7 @@ return [
                         [
                             'id' => 80253,
                             'title' => 'Компьютеры и ноутбуки',
-                            'mpath' => '.80253.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -859,7 +859,7 @@ return [
                         [
                             'id' => 4629305,
                             'title' => 'Красота и здоровье',
-                            'mpath' => '.4629305.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -868,7 +868,7 @@ return [
                         [
                             'id' => 1162030,
                             'title' => 'Одежда, обувь и аксессуары',
-                            'mpath' => '.1162030.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -877,7 +877,7 @@ return [
                         [
                             'id' => 84625,
                             'title' => 'Оружие',
-                            'mpath' => '.84625.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -886,7 +886,7 @@ return [
                         [
                             'id' => 4625734,
                             'title' => 'Офис, школа, книги',
-                            'mpath' => '.4625734.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -895,7 +895,7 @@ return [
                         [
                             'id' => 80260,
                             'title' => 'Подарки и товары для праздников',
-                            'mpath' => '.80260.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -904,7 +904,7 @@ return [
                         [
                             'id' => 4628418,
                             'title' => 'Сантехника и ремонт',
-                            'mpath' => '.4628418.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -913,7 +913,7 @@ return [
                         [
                             'id' => 4655216,
                             'title' => 'Сельское хозяйство',
-                            'mpath' => '.4655216.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -922,7 +922,7 @@ return [
                         [
                             'id' => 4655025,
                             'title' => 'Скрытые',
-                            'mpath' => '.4655025.',
+                            'mpath' => '.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -931,7 +931,7 @@ return [
                         [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
-                            'mpath' => '.80262.',
+                            'mpath' => '.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -940,7 +940,7 @@ return [
                         [
                             'id' => 4656380,
                             'title' => 'Скрытые товары',
-                            'mpath' => '.4656380.',
+                            'mpath' => '.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -949,7 +949,7 @@ return [
                         [
                             'id' => 4627949,
                             'title' => 'Смартфоны, ТВ и электроника',
-                            'mpath' => '.4627949.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -958,7 +958,7 @@ return [
                         [
                             'id' => 4627893,
                             'title' => 'Спорт и увлечения',
-                            'mpath' => '.4627893.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -967,7 +967,7 @@ return [
                         [
                             'id' => 4627851,
                             'title' => 'Товары для бизнеса',
-                            'mpath' => '.4627851.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -976,7 +976,7 @@ return [
                         [
                             'id' => 88468,
                             'title' => 'Товары для детей',
-                            'mpath' => '.88468.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -985,7 +985,7 @@ return [
                         [
                             'id' => 2394287,
                             'title' => 'Товары для дома',
-                            'mpath' => '.2394287.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -994,7 +994,7 @@ return [
                         [
                             'id' => 4630262,
                             'title' => 'Услуги и сервисы',
-                            'mpath' => '.4630262.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1003,7 +1003,7 @@ return [
                         [
                             'id' => 83850,
                             'title' => 'Уцененные товары',
-                            'mpath' => '.83850.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1012,7 +1012,7 @@ return [
                         [
                             'id' => 753399,
                             'title' => 'Аксессуары для алкоголя',
-                            'mpath' => '.4626923.753399.',
+                            'mpath' => '.4626923.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 4626923,
@@ -1021,7 +1021,7 @@ return [
                         [
                             'id' => 4653010,
                             'title' => 'Фляги',
-                            'mpath' => '.4626923.753399.4653010.',
+                            'mpath' => '.4626923.753399.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 753399,
@@ -1030,7 +1030,7 @@ return [
                         [
                             'id' => 4653017,
                             'title' => 'Упаковки для алкогольных напитков',
-                            'mpath' => '.4626923.753399.4653017.',
+                            'mpath' => '.4626923.753399.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 753399,
@@ -1039,7 +1039,7 @@ return [
                         [
                             'id' => 4628124,
                             'title' => 'Фото и видео',
-                            'mpath' => '.4627949.80258.4628124.',
+                            'mpath' => '.4627949.80258.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 80258,
@@ -1048,7 +1048,7 @@ return [
                         [
                             'id' => 2514867,
                             'title' => 'Визитницы',
-                            'mpath' => '.4625734.2460392.2460402.2514867.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1057,7 +1057,7 @@ return [
                         [
                             'id' => 2514872,
                             'title' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
-                            'mpath' => '.4625734.2460392.2460402.2514872.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1066,7 +1066,7 @@ return [
                         [
                             'id' => 2560747,
                             'title' => 'Банковские принадлежности',
-                            'mpath' => '.4625734.2460392.2460402.2560747.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1075,7 +1075,7 @@ return [
                         [
                             'id' => 2660622,
                             'title' => 'Разделители и закладки',
-                            'mpath' => '.4625734.2460392.2460402.2660622.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1084,7 +1084,7 @@ return [
                         [
                             'id' => 2973057,
                             'title' => 'Новая категория',
-                            'mpath' => '.4625734.2460392.2460402.2973057.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1093,7 +1093,7 @@ return [
                         [
                             'id' => 3167120,
                             'title' => 'Новая категория',
-                            'mpath' => '.4625734.2460392.2460402.3167120.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1102,7 +1102,7 @@ return [
                         [
                             'id' => 4630034,
                             'title' => 'Шило, нити и шпагаты',
-                            'mpath' => '.4625734.2460392.2460402.4630034.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1111,7 +1111,7 @@ return [
                         [
                             'id' => 4641568,
                             'title' => 'Настольные картотеки',
-                            'mpath' => '.4625734.2460392.2460402.4641568.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1120,7 +1120,7 @@ return [
                         [
                             'id' => 4655242,
                             'title' => 'Пломбы и пломбираторы',
-                            'mpath' => '.4625734.2460392.2460402.4655242.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1129,7 +1129,7 @@ return [
                         [
                             'id' => 4655266,
                             'title' => 'Сургуч',
-                            'mpath' => '.4625734.2460392.2460402.4655266.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1138,7 +1138,7 @@ return [
                         [
                             'id' => 2460392,
                             'title' => 'Канцелярия',
-                            'mpath' => '.4625734.2460392.',
+                            'mpath' => '.4625734.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 4625734,
@@ -1147,7 +1147,7 @@ return [
                         [
                             'id' => 2460402,
                             'title' => 'Архивирование и делопроизводство',
-                            'mpath' => '.4625734.2460392.2460402.',
+                            'mpath' => '.4625734.2460392.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460392,
@@ -1156,7 +1156,7 @@ return [
                         [
                             'id' => 4652996,
                             'title' => 'Мини-бары',
-                            'mpath' => '.4626923.753399.4652996.',
+                            'mpath' => '.4626923.753399.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 753399,
@@ -1165,7 +1165,7 @@ return [
                         [
                             'id' => 4655272,
                             'title' => 'Досточки для оттиска',
-                            'mpath' => '.4625734.2460392.2460402.4655272.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1174,7 +1174,7 @@ return [
                         [
                             'id' => 2514877,
                             'title' => 'Штемпельная продукция',
-                            'mpath' => '.4625734.2460392.2460402.2514877.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1183,7 +1183,7 @@ return [
                         [
                             'id' => 2898382,
                             'title' => 'Самонаборные штампы, кассы букв',
-                            'mpath' => '.4625734.2460392.2460402.2514877.2898382.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -1192,7 +1192,7 @@ return [
                         [
                             'id' => 2898387,
                             'title' => 'Штемпельные краски и подушки',
-                            'mpath' => '.4625734.2460392.2460402.2514877.2898387.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -1201,7 +1201,7 @@ return [
                         [
                             'id' => 4628926,
                             'title' => 'Датеры',
-                            'mpath' => '.4625734.2460392.2460402.2514877.4628926.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -1210,7 +1210,7 @@ return [
                         [
                             'id' => 4629073,
                             'title' => 'Оснастки, штампы стандартные',
-                            'mpath' => '.4625734.2460392.2460402.2514877.4629073.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -1219,7 +1219,7 @@ return [
                         [
                             'id' => 2514857,
                             'title' => 'Файлы',
-                            'mpath' => '.4625734.2460392.2460402.2514857.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1228,7 +1228,7 @@ return [
                         [
                             'id' => 2581722,
                             'title' => 'Папки, регистраторы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1237,7 +1237,7 @@ return [
                         [
                             'id' => 2514862,
                             'title' => 'Папки пластиковые',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2514862.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1246,7 +1246,7 @@ return [
                         [
                             'id' => 2581727,
                             'title' => 'Папки-портфели, папки-боксы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581727.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1255,7 +1255,7 @@ return [
                         [
                             'id' => 2581732,
                             'title' => 'Папки-регистраторы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581732.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1264,7 +1264,7 @@ return [
                         [
                             'id' => 2581737,
                             'title' => 'Папки-планшеты',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581737.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1273,7 +1273,7 @@ return [
                         [
                             'id' => 2581742,
                             'title' => 'Папки и файлы подвесные',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581742.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1282,7 +1282,7 @@ return [
                         [
                             'id' => 2595767,
                             'title' => 'Папки с файлами',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2595767.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1291,7 +1291,7 @@ return [
                         [
                             'id' => 2666302,
                             'title' => 'Архивные короба и боксы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2666302.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1300,7 +1300,7 @@ return [
                         [
                             'id' => 4626584,
                             'title' => 'Папки специальные',
-                            'mpath' => '.4625734.2460392.2460402.2581722.4626584.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1309,7 +1309,7 @@ return [
                         [
                             'id' => 4660667,
                             'title' => 'не должно выгружаться (old)',
-                            'mpath' => '.4625734.2460392.2460402.2581722.4660667.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'parent_id' => 2581722,
                             'lisa_category_id' => 2,
                             'status' => 'active',
@@ -1318,7 +1318,7 @@ return [
                         [
                             'id' => 4660668,
                             'title' => 'old не должно выгружаться',
-                            'mpath' => '.4626923.4660668.',
+                            'mpath' => '.4626923.',
                             'parent_id' => 4626923,
                             'lisa_category_id' => 1,
                             'status' => 'locked',
@@ -1327,7 +1327,7 @@ return [
                         [
                             'id' => 4660666,
                             'title' => 'не должно выгружаться _old',
-                            'mpath' => '.4660666.',
+                            'mpath' => '.',
                             'parent_id' => 0,
                             'lisa_category_id' => null,
                             'status' => 'active',
@@ -1336,7 +1336,7 @@ return [
                         [
                             'id' => 4660669,
                             'title' => 'не использовать не должно выгружаться ',
-                            'mpath' => '.4660666.4660669.',
+                            'mpath' => '.4660666.',
                             'parent_id' => 4660666,
                             'lisa_category_id' => null,
                             'status' => 'locked',
@@ -1345,7 +1345,7 @@ return [
                         [
                             'id' => 4660651,
                             'title' => 'Рестораны и продуктовые сети',
-                            'mpath' => '.4660651.',
+                            'mpath' => '.',
                             'parent_id' => 0,
                             'lisa_category_id' => null,
                             'status' => 'active',
@@ -1354,7 +1354,7 @@ return [
                         [
                             'id' => 4660652,
                             'title' => 'Рестораны',
-                            'mpath' => '.4660651.4660652.',
+                            'mpath' => '.4660651.',
                             'parent_id' => 4660651,
                             'lisa_category_id' => null,
                             'status' => 'active',
@@ -1363,7 +1363,7 @@ return [
                         [
                             'id' => 4660653,
                             'title' => 'Продуктовые сети',
-                            'mpath' => '.4660651.4660653.',
+                            'mpath' => '.4660651.',
                             'parent_id' => 4660651,
                             'lisa_category_id' => null,
                             'status' => 'locked',
@@ -1431,7 +1431,7 @@ return [
                         [
                             'id' => 4626923,
                             'title' => 'Алкогольные напитки и продукты питания',
-                            'mpath' => '.4626923.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1440,7 +1440,7 @@ return [
                         [
                             'id' => 80025,
                             'title' => 'Бытовая техника, интерьер',
-                            'mpath' => '.80025.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1449,7 +1449,7 @@ return [
                         [
                             'id' => 2394297,
                             'title' => 'Дача, сад, огород',
-                            'mpath' => '.2394297.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1458,7 +1458,7 @@ return [
                         [
                             'id' => 80253,
                             'title' => 'Компьютеры и ноутбуки',
-                            'mpath' => '.80253.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1467,7 +1467,7 @@ return [
                         [
                             'id' => 4629305,
                             'title' => 'Красота и здоровье',
-                            'mpath' => '.4629305.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1476,7 +1476,7 @@ return [
                         [
                             'id' => 1162030,
                             'title' => 'Одежда, обувь и аксессуары',
-                            'mpath' => '.1162030.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1485,7 +1485,7 @@ return [
                         [
                             'id' => 84625,
                             'title' => 'Оружие',
-                            'mpath' => '.84625.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1494,7 +1494,7 @@ return [
                         [
                             'id' => 4625734,
                             'title' => 'Офис, школа, книги',
-                            'mpath' => '.4625734.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1503,7 +1503,7 @@ return [
                         [
                             'id' => 80260,
                             'title' => 'Подарки и товары для праздников',
-                            'mpath' => '.80260.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1512,7 +1512,7 @@ return [
                         [
                             'id' => 4628418,
                             'title' => 'Сантехника и ремонт',
-                            'mpath' => '.4628418.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1521,7 +1521,7 @@ return [
                         [
                             'id' => 4655216,
                             'title' => 'Сельское хозяйство',
-                            'mpath' => '.4655216.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1530,7 +1530,7 @@ return [
                         [
                             'id' => 4655025,
                             'title' => 'Скрытые',
-                            'mpath' => '.4655025.',
+                            'mpath' => '.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1539,7 +1539,7 @@ return [
                         [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
-                            'mpath' => '.80262.',
+                            'mpath' => '.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1548,7 +1548,7 @@ return [
                         [
                             'id' => 4656380,
                             'title' => 'Скрытые товары',
-                            'mpath' => '.4656380.',
+                            'mpath' => '.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1557,7 +1557,7 @@ return [
                         [
                             'id' => 4627949,
                             'title' => 'Смартфоны, ТВ и электроника',
-                            'mpath' => '.4627949.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1566,7 +1566,7 @@ return [
                         [
                             'id' => 4627893,
                             'title' => 'Спорт и увлечения',
-                            'mpath' => '.4627893.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1575,7 +1575,7 @@ return [
                         [
                             'id' => 4627851,
                             'title' => 'Товары для бизнеса',
-                            'mpath' => '.4627851.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1584,7 +1584,7 @@ return [
                         [
                             'id' => 88468,
                             'title' => 'Товары для детей',
-                            'mpath' => '.88468.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1593,7 +1593,7 @@ return [
                         [
                             'id' => 2394287,
                             'title' => 'Товары для дома',
-                            'mpath' => '.2394287.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1602,7 +1602,7 @@ return [
                         [
                             'id' => 4630262,
                             'title' => 'Услуги и сервисы',
-                            'mpath' => '.4630262.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1611,7 +1611,7 @@ return [
                         [
                             'id' => 83850,
                             'title' => 'Уцененные товары',
-                            'mpath' => '.83850.',
+                            'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
@@ -1620,7 +1620,7 @@ return [
                         [
                             'id' => 753399,
                             'title' => 'Аксессуары для алкоголя',
-                            'mpath' => '.4626923.753399.',
+                            'mpath' => '.4626923.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 4626923,
@@ -1629,7 +1629,7 @@ return [
                         [
                             'id' => 4652996,
                             'title' => 'Мини-бары',
-                            'mpath' => '.4626923.753399.4652996.',
+                            'mpath' => '.4626923.753399.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 753399,
@@ -1638,7 +1638,7 @@ return [
                         [
                             'id' => 4653010,
                             'title' => 'Фляги',
-                            'mpath' => '.4626923.753399.4653010.',
+                            'mpath' => '.4626923.753399.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 753399,
@@ -1647,7 +1647,7 @@ return [
                         [
                             'id' => 4653017,
                             'title' => 'Упаковки для алкогольных напитков',
-                            'mpath' => '.4626923.753399.4653017.',
+                            'mpath' => '.4626923.753399.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 753399,
@@ -1656,7 +1656,7 @@ return [
                         [
                             'id' => 4628124,
                             'title' => 'Фото и видео',
-                            'mpath' => '.4627949.80258.4628124.',
+                            'mpath' => '.4627949.80258.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 80258,
@@ -1665,7 +1665,7 @@ return [
                         [
                             'id' => 2460392,
                             'title' => 'Канцелярия',
-                            'mpath' => '.4625734.2460392.',
+                            'mpath' => '.4625734.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 4625734,
@@ -1674,7 +1674,7 @@ return [
                         [
                             'id' => 2460402,
                             'title' => 'Архивирование и делопроизводство',
-                            'mpath' => '.4625734.2460392.2460402.',
+                            'mpath' => '.4625734.2460392.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460392,
@@ -1683,7 +1683,7 @@ return [
                         [
                             'id' => 2514857,
                             'title' => 'Файлы',
-                            'mpath' => '.4625734.2460392.2460402.2514857.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1692,7 +1692,7 @@ return [
                         [
                             'id' => 2514867,
                             'title' => 'Визитницы',
-                            'mpath' => '.4625734.2460392.2460402.2514867.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1701,7 +1701,7 @@ return [
                         [
                             'id' => 2514872,
                             'title' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
-                            'mpath' => '.4625734.2460392.2460402.2514872.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1710,7 +1710,7 @@ return [
                         [
                             'id' => 2514877,
                             'title' => 'Штемпельная продукция',
-                            'mpath' => '.4625734.2460392.2460402.2514877.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1719,7 +1719,7 @@ return [
                         [
                             'id' => 2898382,
                             'title' => 'Самонаборные штампы, кассы букв',
-                            'mpath' => '.4625734.2460392.2460402.2514877.2898382.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -1728,7 +1728,7 @@ return [
                         [
                             'id' => 2898387,
                             'title' => 'Штемпельные краски и подушки',
-                            'mpath' => '.4625734.2460392.2460402.2514877.2898387.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -1737,7 +1737,7 @@ return [
                         [
                             'id' => 4628926,
                             'title' => 'Датеры',
-                            'mpath' => '.4625734.2460392.2460402.2514877.4628926.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -1746,7 +1746,7 @@ return [
                         [
                             'id' => 4629073,
                             'title' => 'Оснастки, штампы стандартные',
-                            'mpath' => '.4625734.2460392.2460402.2514877.4629073.',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2514877,
@@ -1755,7 +1755,7 @@ return [
                         [
                             'id' => 2560747,
                             'title' => 'Банковские принадлежности',
-                            'mpath' => '.4625734.2460392.2460402.2560747.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1764,7 +1764,7 @@ return [
                         [
                             'id' => 2581722,
                             'title' => 'Папки, регистраторы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1773,7 +1773,7 @@ return [
                         [
                             'id' => 2514862,
                             'title' => 'Папки пластиковые',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2514862.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1782,7 +1782,7 @@ return [
                         [
                             'id' => 2581727,
                             'title' => 'Папки-портфели, папки-боксы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581727.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1791,7 +1791,7 @@ return [
                         [
                             'id' => 2581732,
                             'title' => 'Папки-регистраторы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581732.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1800,7 +1800,7 @@ return [
                         [
                             'id' => 2581737,
                             'title' => 'Папки-планшеты',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581737.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1809,7 +1809,7 @@ return [
                         [
                             'id' => 2581742,
                             'title' => 'Папки и файлы подвесные',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2581742.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1818,7 +1818,7 @@ return [
                         [
                             'id' => 2595767,
                             'title' => 'Папки с файлами',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2595767.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1827,7 +1827,7 @@ return [
                         [
                             'id' => 2666302,
                             'title' => 'Архивные короба и боксы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.2666302.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1836,7 +1836,7 @@ return [
                         [
                             'id' => 4626584,
                             'title' => 'Папки специальные',
-                            'mpath' => '.4625734.2460392.2460402.2581722.4626584.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2581722,
@@ -1845,7 +1845,7 @@ return [
                         [
                             'id' => 2660622,
                             'title' => 'Разделители и закладки',
-                            'mpath' => '.4625734.2460392.2460402.2660622.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1854,7 +1854,7 @@ return [
                         [
                             'id' => 2973057,
                             'title' => 'Новая категория',
-                            'mpath' => '.4625734.2460392.2460402.2973057.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1863,7 +1863,7 @@ return [
                         [
                             'id' => 3167120,
                             'title' => 'Новая категория',
-                            'mpath' => '.4625734.2460392.2460402.3167120.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1872,7 +1872,7 @@ return [
                         [
                             'id' => 4630034,
                             'title' => 'Шило, нити и шпагаты',
-                            'mpath' => '.4625734.2460392.2460402.4630034.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1881,7 +1881,7 @@ return [
                         [
                             'id' => 4641568,
                             'title' => 'Настольные картотеки',
-                            'mpath' => '.4625734.2460392.2460402.4641568.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1890,7 +1890,7 @@ return [
                         [
                             'id' => 4655242,
                             'title' => 'Пломбы и пломбираторы',
-                            'mpath' => '.4625734.2460392.2460402.4655242.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1899,7 +1899,7 @@ return [
                         [
                             'id' => 4655266,
                             'title' => 'Сургуч',
-                            'mpath' => '.4625734.2460392.2460402.4655266.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1908,7 +1908,7 @@ return [
                         [
                             'id' => 4655272,
                             'title' => 'Досточки для оттиска',
-                            'mpath' => '.4625734.2460392.2460402.4655272.',
+                            'mpath' => '.4625734.2460392.2460402.',
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
@@ -1917,7 +1917,7 @@ return [
                         [
                             'id' => 4660667,
                             'title' => 'не должно выгружаться (old)',
-                            'mpath' => '.4625734.2460392.2460402.2581722.4660667.',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
                             'parent_id' => 2581722,
                             'lisa_category_id' => 474,
                             'status' => 'active',
@@ -1926,7 +1926,7 @@ return [
                         [
                             'id' => 4660668,
                             'title' => 'old не должно выгружаться',
-                            'mpath' => '.4626923.4660668.',
+                            'mpath' => '.4626923.',
                             'parent_id' => 4626923,
                             'lisa_category_id' => 1,
                             'status' => 'locked',
@@ -1935,7 +1935,7 @@ return [
                         [
                             'id' => 4660666,
                             'title' => 'не должно выгружаться _old',
-                            'mpath' => '.4660666.',
+                            'mpath' => '.',
                             'parent_id' => 0,
                             'lisa_category_id' => null,
                             'status' => 'active',
@@ -1944,7 +1944,7 @@ return [
                         [
                             'id' => 4660669,
                             'title' => 'не использовать не должно выгружаться ',
-                            'mpath' => '.4660666.4660669.',
+                            'mpath' => '.4660666.',
                             'parent_id' => 4660666,
                             'lisa_category_id' => null,
                             'status' => 'locked',
@@ -1953,7 +1953,7 @@ return [
                         [
                             'id' => 4660651,
                             'title' => 'Рестораны и продуктовые сети',
-                            'mpath' => '.4660651.',
+                            'mpath' => '.',
                             'parent_id' => 0,
                             'lisa_category_id' => null,
                             'status' => 'active',
@@ -1962,7 +1962,7 @@ return [
                         [
                             'id' => 4660652,
                             'title' => 'Рестораны',
-                            'mpath' => '.4660651.4660652.',
+                            'mpath' => '.4660651.',
                             'parent_id' => 4660651,
                             'lisa_category_id' => null,
                             'status' => 'active',
@@ -1971,7 +1971,7 @@ return [
                         [
                             'id' => 4660653,
                             'title' => 'Продуктовые сети',
-                            'mpath' => '.4660651.4660653.',
+                            'mpath' => '.4660651.',
                             'parent_id' => 4660651,
                             'lisa_category_id' => null,
                             'status' => 'locked',
