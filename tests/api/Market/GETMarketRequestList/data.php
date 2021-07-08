@@ -41,7 +41,7 @@ return [
                         'status_id' => 3,
                         'created_at' => '2020-01-03 00:00:00',
                         'amount_to_work' => 4,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     4 => [
                         'id' => 4,
@@ -412,7 +412,7 @@ return [
                         'status_id' => 3,
                         'created_at' => '2020-01-03 00:00:00',
                         'amount_to_work' => 4,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                 ],
                 'total_count' => 10,
@@ -524,7 +524,7 @@ return [
                         'status_id' => 3,
                         'created_at' => '2020-01-03 00:00:00',
                         'amount_to_work' => 4,
-                        'side_user_id' => NULL,
+                        'side_user_id' => 0,
                     ],
                     6 => [
                         'id' => 6,
