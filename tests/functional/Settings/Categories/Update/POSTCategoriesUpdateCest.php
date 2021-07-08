@@ -37,5 +37,6 @@ class POSTCategoriesUpdateCest
 
         $I->checkRedis($providerData['excludedRedisKeys'] ?? null);
         $I->checkTablesInDB($providerData['db']);
+        $I->checkRabbitMQ($providerData);
     }
 }

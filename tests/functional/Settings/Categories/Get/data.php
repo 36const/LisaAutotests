@@ -29,6 +29,10 @@ return [
                         ],
                         [
                             "selector" => "//thead/tr/th[6]",
+                            "value" => "Связанные категории Rozetka"
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[7]",
                             "value" => "Статус"
                         ],
                         [
@@ -54,10 +58,14 @@ return [
                         ],
                         [
                             "selector" => "//tbody/tr[1]/td[6]",
+                            "value" => "Алкогольные напитки и продукты питания (4626923) | Аксессуары для алкоголя (753399) | Мини-бары (4652996) | Фляги (4653010) | Упаковки для алкогольных напитков (4653017) | Фото и видео (4628124)"
+                        ],
+                        [   
+                            "selector" => "//tbody/tr[1]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[7]/a[@href='/bpm/category/update?id=1']",
+                            "selector" => "//tbody/tr[1]/td[8]/a[@href='/bpm/category/update?id=1']",
                         ],
                     ],
                     "Видео к товару" => [
@@ -78,11 +86,15 @@ return [
                             "value" => "Супервайзер Начальникович 2"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[6]",
+                            'selector' => '//tbody/tr[2]/td[6]',
+                            'value' => 'Файлы (2514857) | Визитницы (2514867) | Бейджи, брелоки-идентификаторы, настольные таблички (2514872) | Банковские принадлежности (2560747) | Папки, регистраторы (2581722) | Папки пластиковые (2514862) | Папки-портфели, папки-боксы (2581727) | Папки-регистраторы (2581732) | Папки-планшеты (2581737) | Папки и файлы подвесные (2581742) | Папки с файлами (2595767) | Архивные короба и боксы (2666302) | Папки специальные (4626584)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[7]/a[@href='/bpm/category/update?id=2']",
+                            "selector" => "//tbody/tr[2]/td[8]/a[@href='/bpm/category/update?id=2']",
                         ],
                     ],
                     "Добавление логотипов к производителям" => [
@@ -103,11 +115,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[6]",
+                            'selector' => '//tbody/tr[3]/td[6]',
+                            'value' => ''
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[7]",
                             "value" => "Заблокированый"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[7]/a[@href='/bpm/category/update?id=3']",
+                            "selector" => "//tbody/tr[3]/td[8]/a[@href='/bpm/category/update?id=3']",
                         ],
                     ],
                 ],
@@ -144,7 +160,11 @@ return [
                             "value" => "Супервизор"
                         ],
                         [
-                            "selector" => "//thead/tr/th[6]",
+                            'selector' => '//thead/tr/th[6]',
+                            'value' => 'Связанные категории Rozetka	'
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[7]",
                             "value" => "Статус"
                         ],
                         [
@@ -169,11 +189,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            'selector' => '//tbody/tr[1]/td[6]',
+                            'value' => ''
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[7]",
                             "value" => "Заблокированый"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[7]/a[@href='/bpm/category/update?id=3']",
+                            "selector" => "//tbody/tr[1]/td[8]/a[@href='/bpm/category/update?id=3']",
                         ],
                     ],
                     "Видео к товару" => [
@@ -194,11 +218,15 @@ return [
                             "value" => "Супервайзер Начальникович 2"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[6]",
+                            'selector' => '//tbody/tr[2]/td[6]',
+                            'value' => ''
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[7]/a[@href='/bpm/category/update?id=2']",
+                            "selector" => "//tbody/tr[2]/td[8]/a[@href='/bpm/category/update?id=2']",
                         ],
                     ],
                     "Авиабилеты" => [
@@ -219,11 +247,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[6]",
+                            'selector' => '//tbody/tr[3]/td[6]',
+                            'value' => 'Алкогольные напитки и продукты питания (4626923) | Аксессуары для алкоголя (753399) | Мини-бары (4652996) | Фляги (4653010) | Упаковки для алкогольных напитков (4653017) | Фото и видео (4628124)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[7]/a[@href='/bpm/category/update?id=1']",
+                            "selector" => "//tbody/tr[3]/td[8]/a[@href='/bpm/category/update?id=1']",
                         ],
                     ],
                 ],
@@ -260,7 +292,11 @@ return [
                             "value" => "Супервизор"
                         ],
                         [
-                            "selector" => "//thead/tr/th[6]",
+                            'selector' => '//thead/tr/th[6]',
+                            'value' => 'Связанные категории Rozetka	'
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[7]",
                             "value" => "Статус"
                         ],
                         [
@@ -285,11 +321,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            'selector' => '//tbody/tr[1]/td[6]',
+                            'value' => ''
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[7]",
                             "value" => "Заблокированый"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[7]/a[@href='/bpm/category/update?id=3']",
+                            "selector" => "//tbody/tr[1]/td[8]/a[@href='/bpm/category/update?id=3']",
                         ],
                     ],
                     "Видео к товару" => [
@@ -310,11 +350,15 @@ return [
                             "value" => "Супервайзер Начальникович 2"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[6]",
+                            'selector' => '//tbody/tr[2]/td[6]',
+                            'value' => 'Файлы (2514857) | Визитницы (2514867) | Бейджи, брелоки-идентификаторы, настольные таблички (2514872) | Банковские принадлежности (2560747) | Папки, регистраторы (2581722) | Папки пластиковые (2514862) | Папки-портфели, папки-боксы (2581727) | Папки-регистраторы (2581732) | Папки-планшеты (2581737) | Папки и файлы подвесные (2581742) | Папки с файлами (2595767) | Архивные короба и боксы (2666302) | Папки специальные (4626584)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[7]/a[@href='/bpm/category/update?id=2']",
+                            "selector" => "//tbody/tr[2]/td[8]/a[@href='/bpm/category/update?id=2']",
                         ],
                     ],
                     "Авиабилеты" => [
@@ -335,11 +379,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[6]",
+                            'selector' => '//tbody/tr[3]/td[6]',
+                            'value' => 'Алкогольные напитки и продукты питания (4626923) | Аксессуары для алкоголя (753399) | Мини-бары (4652996) | Фляги (4653010) | Упаковки для алкогольных напитков (4653017) | Фото и видео (4628124)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[7]/a[@href='/bpm/category/update?id=1']",
+                            "selector" => "//tbody/tr[3]/td[8]/a[@href='/bpm/category/update?id=1']",
                         ],
                     ],
                 ],
@@ -376,7 +424,11 @@ return [
                             "value" => "Супервизор"
                         ],
                         [
-                            "selector" => "//thead/tr/th[6]",
+                            'selector' => '//thead/tr/th[6]',
+                            'value' => 'Связанные категории Rozetka	'
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[7]",
                             "value" => "Статус"
                         ],
                         [
@@ -401,11 +453,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            'selector' => '//tbody/tr[1]/td[6]',
+                            'value' => 'Алкогольные напитки и продукты питания (4626923) | Аксессуары для алкоголя (753399) | Мини-бары (4652996) | Фляги (4653010) | Упаковки для алкогольных напитков (4653017) | Фото и видео (4628124)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[7]/a[@href='/bpm/category/update?id=1']",
+                            "selector" => "//tbody/tr[1]/td[8]/a[@href='/bpm/category/update?id=1']",
                         ],
                     ],
                     "Добавление логотипов к производителям" => [
@@ -426,11 +482,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[6]",
+                            'selector' => '//tbody/tr[2]/td[6]',
+                            'value' => ''
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[7]",
                             "value" => "Заблокированый"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[7]/a[@href='/bpm/category/update?id=3']",
+                            "selector" => "//tbody/tr[2]/td[8]/a[@href='/bpm/category/update?id=3']",
                         ],
                     ],
                     "Видео к товару" => [
@@ -451,11 +511,15 @@ return [
                             "value" => "Супервайзер Начальникович 2"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[6]",
+                            'selector' => '//tbody/tr[3]/td[6]',
+                            'value' => 'Файлы (2514857) | Визитницы (2514867) | Бейджи, брелоки-идентификаторы, настольные таблички (2514872) | Банковские принадлежности (2560747) | Папки, регистраторы (2581722) | Папки пластиковые (2514862) | Папки-портфели, папки-боксы (2581727) | Папки-регистраторы (2581732) | Папки-планшеты (2581737) | Папки и файлы подвесные (2581742) | Папки с файлами (2595767) | Архивные короба и боксы (2666302) | Папки специальные (4626584)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[7]/a[@href='/bpm/category/update?id=2']",
+                            "selector" => "//tbody/tr[3]/td[8]/a[@href='/bpm/category/update?id=2']",
                         ],
                     ],
                 ],
@@ -492,7 +556,11 @@ return [
                             "value" => "Супервизор"
                         ],
                         [
-                            "selector" => "//thead/tr/th[6]",
+                            'selector' => '//thead/tr/th[6]',
+                            'value' => 'Связанные категории Rozetka	'
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[7]",
                             "value" => "Статус"
                         ],
                         [
@@ -517,11 +585,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            'selector' => '//tbody/tr[1]/td[6]',
+                            'value' => ''
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[7]",
                             "value" => "Заблокированый"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[7]/a[@href='/bpm/category/update?id=3']",
+                            "selector" => "//tbody/tr[1]/td[8]/a[@href='/bpm/category/update?id=3']",
                         ],
                     ],
                     "Авиабилеты" => [
@@ -542,11 +614,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[6]",
+                            'selector' => '//tbody/tr[2]/td[6]',
+                            'value' => 'Алкогольные напитки и продукты питания (4626923) | Аксессуары для алкоголя (753399) | Мини-бары (4652996) | Фляги (4653010) | Упаковки для алкогольных напитков (4653017) | Фото и видео (4628124)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[7]/a[@href='/bpm/category/update?id=1']",
+                            "selector" => "//tbody/tr[2]/td[8]/a[@href='/bpm/category/update?id=1']",
                         ],
                     ],
                     "Видео к товару" => [
@@ -567,11 +643,15 @@ return [
                             "value" => "Супервайзер Начальникович 2"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[6]",
+                            'selector' => '//tbody/tr[3]/td[6]',
+                            'value' => 'Файлы (2514857) | Визитницы (2514867) | Бейджи, брелоки-идентификаторы, настольные таблички (2514872) | Банковские принадлежности (2560747) | Папки, регистраторы (2581722) | Папки пластиковые (2514862) | Папки-портфели, папки-боксы (2581727) | Папки-регистраторы (2581732) | Папки-планшеты (2581737) | Папки и файлы подвесные (2581742) | Папки с файлами (2595767) | Архивные короба и боксы (2666302) | Папки специальные (4626584)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[7]/a[@href='/bpm/category/update?id=2']",
+                            "selector" => "//tbody/tr[3]/td[8]/a[@href='/bpm/category/update?id=2']",
                         ],
                     ],
                 ],
@@ -608,7 +688,11 @@ return [
                             "value" => "Супервизор"
                         ],
                         [
-                            "selector" => "//thead/tr/th[6]",
+                            'selector' => '//thead/tr/th[6]',
+                            'value' => 'Связанные категории Rozetka	'
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[7]",
                             "value" => "Статус"
                         ],
                         [
@@ -633,11 +717,15 @@ return [
                             "value" => "Супервайзер Начальникович 2"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            'selector' => '//tbody/tr[1]/td[6]',
+                            'value' => ''
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[7]/a[@href='/bpm/category/update?id=2']",
+                            "selector" => "//tbody/tr[1]/td[8]/a[@href='/bpm/category/update?id=2']",
                         ],
                     ],
                 ],
@@ -686,7 +774,11 @@ return [
                             "value" => "Супервизор"
                         ],
                         [
-                            "selector" => "//thead/tr/th[6]",
+                            'selector' => '//thead/tr/th[6]',
+                            'value' => 'Связанные категории Rozetka	'
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[7]",
                             "value" => "Статус"
                         ],
                         [
@@ -711,11 +803,15 @@ return [
                             "value" => "Супервайзер Начальникович 2"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            'selector' => '//tbody/tr[1]/td[6]',
+                            'value' => 'Файлы (2514857) | Визитницы (2514867) | Бейджи, брелоки-идентификаторы, настольные таблички (2514872) | Банковские принадлежности (2560747) | Папки, регистраторы (2581722) | Папки пластиковые (2514862) | Папки-портфели, папки-боксы (2581727) | Папки-регистраторы (2581732) | Папки-планшеты (2581737) | Папки и файлы подвесные (2581742) | Папки с файлами (2595767) | Архивные короба и боксы (2666302) | Папки специальные (4626584)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[7]/a[@href='/bpm/category/update?id=2']",
+                            "selector" => "//tbody/tr[1]/td[8]/a[@href='/bpm/category/update?id=2']",
                         ],
                     ],
                 ],
@@ -764,7 +860,11 @@ return [
                             "value" => "Супервизор"
                         ],
                         [
-                            "selector" => "//thead/tr/th[6]",
+                            'selector' => '//thead/tr/th[6]',
+                            'value' => 'Связанные категории Rozetka	'
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[7]",
                             "value" => "Статус"
                         ],
                         [
@@ -789,11 +889,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            'selector' => '//tbody/tr[1]/td[6]',
+                            'value' => 'Алкогольные напитки и продукты питания (4626923) | Аксессуары для алкоголя (753399) | Мини-бары (4652996) | Фляги (4653010) | Упаковки для алкогольных напитков (4653017) | Фото и видео (4628124)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[7]/a[@href='/bpm/category/update?id=1']",
+                            "selector" => "//tbody/tr[1]/td[8]/a[@href='/bpm/category/update?id=1']",
                         ],
                     ],
                     "Добавление логотипов к производителям" => [
@@ -814,11 +918,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[6]",
+                            'selector' => '//tbody/tr[2]/td[6]',
+                            'value' => ''
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[7]",
                             "value" => "Заблокированый"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[7]/a[@href='/bpm/category/update?id=3']",
+                            "selector" => "//tbody/tr[2]/td[8]/a[@href='/bpm/category/update?id=3']",
                         ],
                     ],
                 ],
@@ -861,7 +969,11 @@ return [
                             "value" => "Супервизор"
                         ],
                         [
-                            "selector" => "//thead/tr/th[6]",
+                            'selector' => '//thead/tr/th[6]',
+                            'value' => 'Связанные категории Rozetka	'
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[7]",
                             "value" => "Статус"
                         ],
                         [
@@ -886,11 +998,11 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            "selector" => "//tbody/tr[1]/td[7]",
                             "value" => "Заблокированый"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[7]/a[@href='/bpm/category/update?id=3']",
+                            "selector" => "//tbody/tr[1]/td[8]/a[@href='/bpm/category/update?id=3']",
                         ],
                     ],
                 ],
@@ -945,7 +1057,11 @@ return [
                             "value" => "Супервизор"
                         ],
                         [
-                            "selector" => "//thead/tr/th[6]",
+                            'selector' => '//thead/tr/th[6]',
+                            'value' => 'Связанные категории Rozetka	'
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[7]",
                             "value" => "Статус"
                         ],
                         [
@@ -970,11 +1086,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            'selector' => '//tbody/tr[1]/td[6]',
+                            'value' => 'Алкогольные напитки и продукты питания (4626923) | Аксессуары для алкоголя (753399) | Мини-бары (4652996) | Фляги (4653010) | Упаковки для алкогольных напитков (4653017) | Фото и видео (4628124)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[7]/a[@href='/bpm/category/update?id=1']",
+                            "selector" => "//tbody/tr[1]/td[8]/a[@href='/bpm/category/update?id=1']",
                         ],
                     ],
                     "Видео к товару" => [
@@ -995,11 +1115,15 @@ return [
                             "value" => "Супервайзер Начальникович 2"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[6]",
+                            'selector' => '//tbody/tr[2]/td[6]',
+                            'value' => 'Файлы (2514857) | Визитницы (2514867) | Бейджи, брелоки-идентификаторы, настольные таблички (2514872) | Банковские принадлежности (2560747) | Папки, регистраторы (2581722) | Папки пластиковые (2514862) | Папки-портфели, папки-боксы (2581727) | Папки-регистраторы (2581732) | Папки-планшеты (2581737) | Папки и файлы подвесные (2581742) | Папки с файлами (2595767) | Архивные короба и боксы (2666302) | Папки специальные (4626584)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[7]/a[@href='/bpm/category/update?id=2']",
+                            "selector" => "//tbody/tr[2]/td[8]/a[@href='/bpm/category/update?id=2']",
                         ],
                     ],
                     "Добавление логотипов к производителям" => [
@@ -1020,11 +1144,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[6]",
+                            'selector' => '//tbody/tr[3]/td[6]',
+                            'value' => ''
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[7]",
                             "value" => "Заблокированый"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[7]/a[@href='/bpm/category/update?id=3']",
+                            "selector" => "//tbody/tr[3]/td[8]/a[@href='/bpm/category/update?id=3']",
                         ],
                     ],
                 ],
@@ -1067,7 +1195,11 @@ return [
                             "value" => "Супервизор"
                         ],
                         [
-                            "selector" => "//thead/tr/th[6]",
+                            'selector' => '//thead/tr/th[6]',
+                            'value' => 'Связанные категории Rozetka	'
+                        ],
+                        [
+                            "selector" => "//thead/tr/th[7]",
                             "value" => "Статус"
                         ],
                         [
@@ -1092,11 +1224,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[6]",
+                            'selector' => '//tbody/tr[1]/td[6]',
+                            'value' => 'Алкогольные напитки и продукты питания (4626923) | Аксессуары для алкоголя (753399) | Мини-бары (4652996) | Фляги (4653010) | Упаковки для алкогольных напитков (4653017) | Фото и видео (4628124)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[1]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[1]/td[7]/a[@href='/bpm/category/update?id=1']",
+                            "selector" => "//tbody/tr[1]/td[8]/a[@href='/bpm/category/update?id=1']",
                         ],
                     ],
                     "Видео к товару" => [
@@ -1117,11 +1253,15 @@ return [
                             "value" => "Супервайзер Начальникович 2"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[6]",
+                            'selector' => '//tbody/tr[2]/td[6]',
+                            'value' => 'Файлы (2514857) | Визитницы (2514867) | Бейджи, брелоки-идентификаторы, настольные таблички (2514872) | Банковские принадлежности (2560747) | Папки, регистраторы (2581722) | Папки пластиковые (2514862) | Папки-портфели, папки-боксы (2581727) | Папки-регистраторы (2581732) | Папки-планшеты (2581737) | Папки и файлы подвесные (2581742) | Папки с файлами (2595767) | Архивные короба и боксы (2666302) | Папки специальные (4626584)'
+                        ],
+                        [
+                            "selector" => "//tbody/tr[2]/td[7]",
                             "value" => "Активный"
                         ],
                         [
-                            "selector" => "//tbody/tr[2]/td[7]/a[@href='/bpm/category/update?id=2']",
+                            "selector" => "//tbody/tr[2]/td[8]/a[@href='/bpm/category/update?id=2']",
                         ],
                     ],
                     "Добавление логотипов к производителям" => [
@@ -1142,11 +1282,15 @@ return [
                             "value" => "Супервайзер Начальникович 1"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[6]",
+                            'selector' => '//tbody/tr[3]/td[6]',
+                            'value' => ''
+                        ],
+                        [
+                            "selector" => "//tbody/tr[3]/td[7]",
                             "value" => "Заблокированый"
                         ],
                         [
-                            "selector" => "//tbody/tr[3]/td[7]/a[@href='/bpm/category/update?id=3']",
+                            "selector" => "//tbody/tr[3]/td[8]/a[@href='/bpm/category/update?id=3']",
                         ],
                     ],
                 ],

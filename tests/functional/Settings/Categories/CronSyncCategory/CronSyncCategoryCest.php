@@ -7,7 +7,7 @@ use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
- * @group _lisa_functional
+ * @group lisa_functional
  * @group lisa_functional_settings
  * @group CronSyncCategory
  */
@@ -29,13 +29,11 @@ class CronSyncCategoryCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(FunctionalTester::REDIS_KEYS_VALUES);
+        $I->declareExchange('goods_service', 'topic');
+        $I->declareQueue('goods-lisa');
+        $I->bindQueueToExchange('goods-lisa', 'goods_service', $providerData['routing_key']);
 
-        $I->declareExchange('goods_service', 'topic', false, true, false);
-        $I->declareQueue('goods-service-lisa', false, true, false, false);
-        $I->bindQueueToExchange('goods-service-lisa', 'goods_service', 'create.category.entity.SLR.DVR.CMT.CTT.SEO.BI.LLT.1C.MRK.CTL.DBA.EBQ.GML.SSH.LIS');
-
-        $I->pushToExchange('goods_service', $providerData['message'], 'create.category.entity.SLR.DVR.CMT.CTT.SEO.BI.LLT.1C.MRK.CTL.DBA.EBQ.GML.SSH.LIS');
+        $I->pushToExchange('goods_service', $providerData['message'], $providerData['routing_key']);
 
         $I->runShellCommand('./yii bpm/request/sync-category');
         $I->canSeeResultCodeIs(0);

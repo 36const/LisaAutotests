@@ -122,14 +122,14 @@ class FunctionalTester extends Actor
         }
     }
 
-    public function checkXlsxFile(?array $fileContent, ?int $rowCount = null, int $sheetCount = 1)
+    public function checkXlsxFile(?array $fileContent, ?int $rowCount = null, int $sheetCount = 1, string $filepath = FunctionalTester::BPM_UPLOADS)
     {
         $I = $this;
 
         if ($fileContent) {
 
             $file = IOFactory::createReader('Xlsx')
-                ->load(FunctionalTester::BPM_UPLOADS . scandir(FunctionalTester::BPM_UPLOADS, 1)[0]);
+                ->load($filepath . scandir($filepath, 1)[0]);
             $tableArray = $file->getSheet(0)->toArray(null, true, true, true);
             $exceptions = null;
 
