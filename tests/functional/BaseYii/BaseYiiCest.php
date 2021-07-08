@@ -6,9 +6,9 @@ use Codeception\Example;
 use Codeception\Module\TestHelper;
 
 /**
- * @group lisa
- * @group lisa_functional
- * @group lisa_functional_baseYii
+ * @group _lisa
+ * @group _lisa_functional
+ * @group _lisa_functional_baseYii
  */
 class BaseYiiCest
 {
