@@ -7,6 +7,10 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_category_namesfa94761536e04215430d7de0b502b16e',
+                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478'
+            ],
             'requestBody' => [
                 'Category[difficulty]' => '10',
                 'Category[status]' => '0',
@@ -614,6 +618,10 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_category_namesfa94761536e04215430d7de0b502b16e',
+                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478'
+            ],
             'requestBody' => [
                 'Category[difficulty]' => '10',
                 'Category[status]' => '1',
@@ -669,6 +677,10 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_category_namesfa94761536e04215430d7de0b502b16e',
+                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478'
+            ],
             'requestBody' => [
                 'Category[difficulty]' => '3',
                 'Category[status]' => '1',
@@ -724,6 +736,10 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_category_namesfa94761536e04215430d7de0b502b16e',
+                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478'
+            ],
             'requestBody' => [
                 'Category[difficulty]' => '3',
                 'Category[status]' => '1',
@@ -779,6 +795,10 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_category_namesfa94761536e04215430d7de0b502b16e',
+                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478'
+            ],
             'requestBody' => [
                 'Category[difficulty]' => '3',
                 'Category[status]' => '1',
@@ -1383,10 +1403,14 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Невозможность изменения статуса с активного на заблокированный без отвязки категорий стора',
+            'description' => 'Перепривязка категорий стора к 474 категории при изменения статуса с активного на заблокированный',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'all_category_namesfa94761536e04215430d7de0b502b16e',
+                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478'
+            ],
             'requestBody' => [
                 'Category[difficulty]' => '3',
                 'Category[status]' => '0',
@@ -1995,6 +2019,10 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'url' => '/bpm/category/appoint-supervisor?model=gomer\bpm\models\references\Category',
+            'excludedRedisKeys' => [
+                'all_category_namesfa94761536e04215430d7de0b502b16e',
+                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478'
+            ],
             'requestBody' => [
                 'Category[supervisor_id]' => '23',
                 'keys' => '1,2',
