@@ -661,7 +661,6 @@ return [
                 "type_id" => 2,
                 "items_count" => 10,
                 "side_user_id" => 999,
-                "side_user_name" => '!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
             ],
             "responseCode" => 200,
             "responseBody" => [
@@ -712,7 +711,7 @@ return [
                             "child_count" => 0,
                             "photo_load_status" => 0,
                             "previous_status" => null,
-                            "payload" => '{"side_user_id": 999, "side_user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ"}',
+                            "payload" => '{"side_user_id": 999}',
                         ]
                     ],
                 ]
@@ -806,7 +805,6 @@ return [
                 'author_login' => 'йцукфыва',
                 'author_id' => 999,
                 'side_user_id' => 999,
-                'side_user_name' => '!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
             ],
             "responseCode" => 200,
             "responseBody" => [
@@ -857,7 +855,7 @@ return [
                             "child_count" => 0,
                             "photo_load_status" => 0,
                             "previous_status" => null,
-                            'payload' => '{"author_login": "йцукфыва", "side_user_id": 999, "side_user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ"}',
+                            'payload' => '{"author_login": "йцукфыва", "side_user_id": 999}',
                         ]
                     ],
                     "requests_fields" => []
@@ -916,64 +914,6 @@ return [
                     "requests_fields" => []
                 ]
             ]
-        ]
-    ],
-
-    'case16' => [
-        'setting' => [
-            'description' => 'Ошибка при указании side_user_name без side_user_id',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'sync_source_id' => 1,
-                'market_id' => 83,
-                'type_id' => 2,
-                'items_count' => 10,
-                'side_user_name' => '!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-            ],
-            'responseCode' => 200,
-            'responseBody' => [
-                'status' => 400,
-                'errors' => [
-                    'Не передано поле side_user_id'
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [],
-                    'requests_fields' => []
-                ]
-            ],
-        ]
-    ],
-
-    'case17' => [
-        'setting' => [
-            'description' => 'Ошибка при указании side_user_id без side_user_name',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'sync_source_id' => 1,
-                'market_id' => 83,
-                'type_id' => 2,
-                'items_count' => 10,
-                'side_user_id' => 999,
-            ],
-            'responseCode' => 200,
-            'responseBody' => [
-                'status' => 400,
-                'errors' => [
-                    'Не передано поле side_user_name'
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [],
-                    'requests_fields' => []
-                ]
-            ],
         ]
     ],
 
