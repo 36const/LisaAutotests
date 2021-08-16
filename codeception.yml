@@ -1,44 +1,66 @@
 namespace: lisa
-paths:
-    tests: tests
-    output: tests/_output
-    data: tests/_data
-    support: tests/_support
-    envs: tests/_envs
+actor: Tester
 bootstrap: _bootstrap.php
+paths:
+  tests: tests
+  log: tests/_output
+  data: tests/_data
+  helpers: tests/_support
 settings:
-    memory_limit: 2048M
-    colors: true
-actor_suffix: Tester
-extensions:
-    enabled:
-        - Yandex\Allure\Codeception\AllureCodeception
-    config:
-        Yandex\Allure\Codeception\AllureCodeception:
-            deletePreviousResults: true
-            outputDirectory: allure-results # Результаты будут сохранены в tests/_output/allure-results
-            ignoredAnnotations:
-                - env
-                - dataprovider
+  memory_limit: 1024M
+  colors: true
 modules:
-    enabled:
-        - Db: # Подключение к базе вашего приложения (Именно в эту базу будут загружаться фикстуры)
+  enabled:
+    - Cli
+    - Asserts
+    - PhpBrowser:
+        url: http://lisa.api # Domen вашего приложения
+        auth: [ 'kutsan.k', '123qweASD!' ]
+    - REST:
+        url: http://lisa.api # Domen вашего приложения, должен быть такой же как и выше
+        depends: PhpBrowser
+    - Db:
+        dsn: 'pgsql:host=postgres;port=5432;dbname=lisa_auto_db'
+        user: 'lisa'
+        password: 'lisa'
+        cleanup: false
+        databases:
+          lisa_fixtures:
             dsn: 'pgsql:host=postgres;port=5432;dbname=lisa_auto_db'
-            user: 'lisa' # Логин к базе
-            password: 'jw8s0F4' # Пароль к базе
-            cleanup: false
-            databases:
-                lisa_fixtures:
-                    dsn: 'pgsql:host=postgres;port=5432;dbname=lisa_auto_db'
-                    user: 'lisa'
-                    password: 'jw8s0F4'
-                cooper_fixtures:
-                    dsn: 'pgsql:host=postgres;port=5432;dbname=cooper_mock_db'
-                    user: 'gomer'
-                    password: '4c0EcmzAm28AeqbFFOb8N5RBw'
-                    populate: true
-                    dump: 'tests/dump_cooper.sql'
-                gomer_fixtures:
-                    dsn: 'mysql:host=mysql;port=3306;dbname=gomer_auto_db'
-                    user: 'gomer'
-                    password: 'Ch3d5r74hcA1WpSELkDfdKGPOpo'
+            user: 'lisa'
+            password: 'lisa'
+          gomer_fixtures:
+            dsn: 'mysql:host=mysql;port=3306;dbname=gomer_auto_db'
+            user: 'root'
+            password: 'gomer'
+    - Redis:
+        host: 'redis'
+        port: 6379
+        database: 0
+        password: 'redis'
+        cleanupBefore: 'test'
+    - AMQP:
+        host: 'rabbit-mq'
+        port: '5672'
+        username: 'splitter'
+        password: 'splitter'
+        vhost: '/'
+        cleanup: false
+        single_channel: true
+        queues: [ 'lisa_attachmentsCopy',
+                  'lisa_exportGenerate',
+                  'lisa_makeAttachmentsArchive',
+                  'lisa_sendMailNotifications',
+                  'market_queue',
+                  'lisa_common',
+                  'lisa_rzCategoriesExport',
+                  'lisa_rzCategoriesImport',
+                  'goods-lisa',
+                  'lisa_failedApiRequests' ]
+extensions:
+  enabled:
+    - Yandex\Allure\Codeception\AllureCodeception
+  config:
+    Yandex\Allure\Codeception\AllureCodeception:
+      deletePreviousResults: true
+      outputDirectory: allure-results # Результаты будут сохранены в tests/_output/allure-results

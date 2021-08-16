@@ -3,25 +3,5 @@
     "description": "API, Functional and Acceptance tests for Lisa",
     "type": "project",
     "license": "Open Source",
-    "minimum-stability": "stable",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@gitlab.rozetka.company:automation-testing-tools/codeception-test-helper.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@gitlab.rozetka.company:automation-testing-tools/allure-codeception.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@gitlab.rozetka.company:automation-testing-tools/module-db.git"
-        }
-    ],
-    "require": {
-        "codeception/codeception": "4.1.5",
-        "automation-testing-tools/codeception-test-helper": "*",
-        "automation-testing-tools/allure-codeception": "*",
-        "automation-testing-tools/module-db": "*"
-    }
+    "minimum-stability": "stable"
 }

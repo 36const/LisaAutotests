@@ -1,0 +1,6 @@
+suite_namespace: lisa
+actor: UsersTester
+modules:
+    enabled:
+        - lisa\Helper\Users
+        - TestHelper

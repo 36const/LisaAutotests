@@ -3,7 +3,7 @@
 return [
     [
         //"id" => 1,
-        "login" => 'kutsan.k',
-        "password" => '123qweASD!',
+        'login' => 'kutsan.k',
+        'password' => '123qweASD!',
     ],
 ];
