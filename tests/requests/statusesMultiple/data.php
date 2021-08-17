@@ -3,6 +3,7 @@
 $dirs = [
     '/1_new',
     '/2_in-check',
+    '/3_require-changes',
     '/5_wait-work',
     '/6_in-work',
 ];

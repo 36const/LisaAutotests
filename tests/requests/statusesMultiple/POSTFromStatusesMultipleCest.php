@@ -30,11 +30,14 @@ class POSTFromStatusesMultipleCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
+        $I->haveHttpHeader('Content-Type', 'application/json');
+
         $I->sendPOST('/request/' . $providerData['requestParameter'], $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);
+        $I->checkRabbitMQWithRoutingKey($providerData['RabbitMQWithRoutingKey'] ?? null, true);
     }
 }
