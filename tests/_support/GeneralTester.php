@@ -104,6 +104,8 @@ class GeneralTester extends Actor
                 $I->canSeeNumberOfMessagesInQueue($queueName, count($queueMessages));
                 $lastMessage = (array)$I->grabMessageFromQueue($queueName);
 
+                $I->assertNotEquals($lastMessage, []);
+
                 foreach ($queueMessages as $routingKey => $messageBody) {
                     $I->assertEquals($routingKey, $lastMessage['delivery_info']['routing_key']);
 
