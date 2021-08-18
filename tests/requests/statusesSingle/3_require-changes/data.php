@@ -88,22 +88,6 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}',
                             'notify_service_id' => null,
                         ],
-                        [
-                            'id' => 2,
-                            'user_id' => 6,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => 2,
-                            'amount_to_work' => 10,
-                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'status',
-                            'changed_fields' => '{"newValue": 1, "oldValue": 3}',
-                            'notify_service_id' => null,
-                        ]
                     ],
                     'request_status_history' => [
                         [
