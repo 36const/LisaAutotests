@@ -92,6 +92,13 @@ return [
         "status" => 1
     ],
     [
+        //"id" => 11,
+        "type_id" => 4,
+        "field_ids" => "[1]",
+        "difficulty_coef" => 1.5,
+        "status" => 0
+    ],
+    [
         //"id" => 12,
         "type_id" => 5,
         "field_ids" => "[1]",

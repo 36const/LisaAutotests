@@ -25,6 +25,6 @@ return [
         'observers' => []
     ],
     'gomer_fixtures' => [
-        'users' => (include TestHelper::getFixtureTempleteDefaultPath() . 'gomer_fixtures/users.php'),
+        'users' => include TestHelper::getFixtureTempleteDefaultPath() . 'gomer_fixtures/users.php',
     ]
 ];

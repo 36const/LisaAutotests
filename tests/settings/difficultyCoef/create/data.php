@@ -47,7 +47,7 @@ return [
             ],
             'responseBody' => [
                 'model' => [
-                    'id' => 42,
+                    'id' => 43,
                     'type_id' => 'Добавление новых товаров',
                     'difficulty_coef' => '1.5',
                     'status' => 'Активный',
@@ -60,7 +60,7 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['difficulty_coefs'],
                         [
                             [
-                                'id' => 42,
+                                'id' => 43,
                                 'type_id' => 1,
                                 'field_ids' => '[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 123, 124, 125, 126, 127, 159, 160, 169]',
                                 'difficulty_coef' => 1.5,
@@ -99,7 +99,7 @@ return [
             ],
             'responseBody' => [
                 'model' => [
-                    'id' => 42,
+                    'id' => 43,
                     'type_id' => 'Группировка товаров',
                     'difficulty_coef' => '0.75',
                     'status' => 'Заблокированный',
@@ -112,7 +112,7 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['difficulty_coefs'],
                         [
                             [
-                                'id' => 42,
+                                'id' => 43,
                                 'type_id' => 4,
                                 'field_ids' => '[1, 4, 7, 10, 13, 16, 19, 125]',
                                 'difficulty_coef' => 0.75,
@@ -152,7 +152,7 @@ return [
             ],
             'responseBody' => [
                 'model' => [
-                    'id' => 42,
+                    'id' => 43,
                     'type_id' => 'Добавление нового портала/раздела фат-меню/категории товаров',
                     'difficulty_coef' => '2.5',
                     'status' => 'Активный',
@@ -165,7 +165,7 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['difficulty_coefs'],
                         [
                             [
-                                'id' => 42,
+                                'id' => 43,
                                 'type_id' => 7,
                                 'field_ids' => '[2, 5, 8, 11, 14, 17, 123, 126]',
                                 'difficulty_coef' => 2.5,
@@ -196,7 +196,7 @@ return [
             ],
             'responseBody' => [
                 'model' => [
-                    'id' => 42,
+                    'id' => 43,
                     'type_id' => 'Проектирование структуры',
                     'difficulty_coef' => '3',
                     'status' => 'Заблокированный',
@@ -209,7 +209,7 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['difficulty_coefs'],
                         [
                             [
-                                'id' => 42,
+                                'id' => 43,
                                 'type_id' => 11,
                                 'field_ids' => '[]',
                                 'difficulty_coef' => 3,

@@ -4,6 +4,7 @@ return [
     'case1' => [
         'setting' => [
             'description' => 'Удаление файлов старше 1 года',
+            'skip' => 'minio'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
