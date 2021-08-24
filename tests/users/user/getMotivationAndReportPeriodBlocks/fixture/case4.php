@@ -869,26 +869,26 @@ return [
             ]
         ]
     ],
-    'gomer_fixtures' => [
-        'users' => [
-            [
-                'id' => 1,
-                'username' => 'kutsan.k',
-                'auth_key' => 'WXkN0YPJ3zjiyIptDy4NzCYQnSn4Qejo',
-                'password_hash' => '$2y$13$C9087r6ipKg6Q9Q.2ykXHuHFsBriKMGAbpGCqs6ezLpNWatKnTxPi',
-                'password_reset_token' => null,
-                'email' => 'kutsan.k@rozetka.com.ua',
-                'created_at' => 1584396309,
-                'updated_at' => 1584475046,
-                'status' => 1,
-                'color' => null,
-                'first_name' => '',
-                'second_name' => '',
-                'avatar_image' => null,
-                'reason_for_edit' => 'kutsan.k kutsan.k kutsan.k kutsan.k kutsan.k',
-                'ldap_sync_code' => null,
-                'site_theme' => null
-            ],
-        ],
-    ]
+//    'gomer_fixtures' => [
+//        'users' => [
+//            [
+//                'id' => 1,
+//                'username' => 'kutsan.k',
+//                'auth_key' => 'WXkN0YPJ3zjiyIptDy4NzCYQnSn4Qejo',
+//                'password_hash' => '$2y$13$C9087r6ipKg6Q9Q.2ykXHuHFsBriKMGAbpGCqs6ezLpNWatKnTxPi',
+//                'password_reset_token' => null,
+//                'email' => 'kutsan.k@rozetka.com.ua',
+//                'created_at' => 1584396309,
+//                'updated_at' => 1584475046,
+//                'status' => 1,
+//                'color' => null,
+//                'first_name' => '',
+//                'second_name' => '',
+//                'avatar_image' => null,
+//                'reason_for_edit' => 'kutsan.k kutsan.k kutsan.k kutsan.k kutsan.k',
+//                'ldap_sync_code' => null,
+//                'site_theme' => null
+//            ],
+//        ],
+//    ]
 ];

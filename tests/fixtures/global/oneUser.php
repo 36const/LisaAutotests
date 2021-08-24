@@ -18,9 +18,9 @@ return [
         'request_errors' => [],
         'observers' => []
     ],
-    'gomer_fixtures' => [
-        'users' => [
-            (include TestHelper::getFixtureTempleteDefaultPath() . 'gomer_fixtures/users.php')[0],
-        ],
-    ]
+//    'gomer_fixtures' => [
+//        'users' => [
+//            (include TestHelper::getFixtureTempleteDefaultPath() . 'gomer_fixtures/users.php')[0],
+//        ],
+//    ]
 ];
