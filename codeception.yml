@@ -29,10 +29,10 @@ modules:
             dsn: 'pgsql:host=postgres;port=5432;dbname=lisa_auto_db'
             user: 'lisa'
             password: 'lisa'
-          gomer_fixtures:
-            dsn: 'mysql:host=mysql;port=3306;dbname=gomer_auto_db'
-            user: 'root'
-            password: 'gomer'
+#          gomer_fixtures:
+#            dsn: 'mysql:host=mysql;port=3306;dbname=gomer_auto_db'
+#            user: 'root'
+#            password: 'gomer'
     - Redis:
         host: 'redis'
         port: 6379
