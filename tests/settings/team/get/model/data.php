@@ -1,5 +1,7 @@
 <?php
 
+use lisa\SettingsTester;
+
 return [
     'case1' => [
         'setting' => [
@@ -10,6 +12,7 @@ return [
             'id' => 4,
             'responseBody' => [
                 'initialValues' => [
+                    'projects' => SettingsTester::PROJECTS,
                     'hasMembers' => true,
                     'directions' => [
                         1 => 'Управление отделом',
@@ -24,6 +27,7 @@ return [
                     'id' => 4,
                     'name' => 'Маркетплейс 4',
                     'direction' => 2,
+                    'project_id' => 1,
                     'status' => 1,
                 ],
             ],
@@ -40,6 +44,7 @@ return [
             'responseBody' => [
                 'initialValues' => [
                     'hasMembers' => false,
+                    'projects' => SettingsTester::PROJECTS,
                     'directions' => [
                         1 => 'Управление отделом',
                         2 => 'Работа с товарами Маркетплейса',
@@ -53,6 +58,7 @@ return [
                     'id' => 5,
                     'name' => 'Маркетплейс 5',
                     'direction' => 2,
+                    'project_id' => 1,
                     'status' => 1,
                 ],
             ],
@@ -68,6 +74,7 @@ return [
             'responseBody' => [
                 'initialValues' => [
                     'hasMembers' => false,
+                    'projects' => SettingsTester::PROJECTS,
                     'directions' => [
                         1 => 'Управление отделом',
                         2 => 'Работа с товарами Маркетплейса',
@@ -81,6 +88,7 @@ return [
                     'id' => NULL,
                     'name' => NULL,
                     'direction' => NULL,
+                    'project_id' => NULL,
                     'status' => 1,
                 ],
             ],

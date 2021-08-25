@@ -13,6 +13,7 @@ return [
                 'name' => 'Маркетплейс 4',
                 'direction' => 2,
                 'status' => 0,
+                'project_id' => 1,
             ],
             'responseBody' => [
                 'model' => [
@@ -20,6 +21,7 @@ return [
                     'name' => 'Маркетплейс 4',
                     'direction' => 'Работа с товарами Маркетплейса',
                     'status' => 'Заблокированный',
+                    'project_id' => 'Контент',
                 ],
             ],
             'db' => [
@@ -34,7 +36,8 @@ return [
                                 'id' => 4,
                                 'name' => 'Маркетплейс 4',
                                 'direction' => 2,
-                                'status' => 0
+                                'status' => 0,
+                                'project_id' => 1,
                             ],
                         ],
                     )
@@ -42,7 +45,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Маркетплейс 4","direction":"2","status":"0"},"changed_fields_names":["status"]}'
+                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Маркетплейс 4","direction":"2","status":"0","project_id":"1"},"changed_fields_names":["status"]}'
                 ],
             ],
         ],
@@ -60,6 +63,7 @@ return [
                 'name' => 'Маркетплейс 6',
                 'direction' => 2,
                 'status' => 1,
+                'project_id' => 1,
             ],
             'responseBody' => [
                 'model' => [
@@ -67,6 +71,7 @@ return [
                     'name' => 'Маркетплейс 6',
                     'direction' => 'Работа с товарами Маркетплейса',
                     'status' => 'Активный',
+                    'project_id' => 'Контент',
                 ],
             ],
             'db' => [
@@ -83,7 +88,8 @@ return [
                                 'id' => 6,
                                 'name' => 'Маркетплейс 6',
                                 'direction' => 2,
-                                'status' => 1
+                                'status' => 1,
+                                'project_id' => 1,
                             ],
                         ],
                     )
@@ -91,7 +97,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":6,"name":"Маркетплейс 6","direction":"2","status":"1"},"changed_fields_names":["status"]}'
+                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":6,"name":"Маркетплейс 6","direction":"2","status":"1","project_id":"1"},"changed_fields_names":["status"]}'
                 ],
             ],
         ],
@@ -109,6 +115,7 @@ return [
                 'direction' => 3,
                 'name' => 'Управление отделом',
                 'status' => 1,
+                'project_id' => 1,
             ],
             'responseBody' => [
                 'model' => [
@@ -116,6 +123,7 @@ return [
                     'name' => 'Управление отделом',
                     'direction' => 'Работа с товарами Rozetka',
                     'status' => 'Активный',
+                    'project_id' => 'Контент',
                 ],
             ],
             'db' => [
@@ -130,7 +138,8 @@ return [
                                 'id' => 4,
                                 'name' => 'Управление отделом',
                                 'direction' => 3,
-                                'status' => 1
+                                'status' => 1,
+                                'project_id' => 1,
                             ],
                         ],
                     )
@@ -138,7 +147,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Управление отделом","direction":"3","status":"1"},"changed_fields_names":["name","direction"]}'
+                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Управление отделом","direction":"3","status":"1","project_id":"1"},"changed_fields_names":["name","direction"]}'
                 ],
             ],
         ]
@@ -156,6 +165,7 @@ return [
                 'direction' => 2,
                 'name' => 'Управление отделом new',
                 'status' => 1,
+                'project_id' => 1,
             ],
             'responseBody' => [
                 'model' => [
@@ -163,6 +173,7 @@ return [
                     'name' => 'Управление отделом new',
                     'direction' => 'Работа с товарами Маркетплейса',
                     'status' => 'Активный',
+                    'project_id' => 'Контент',
                 ],
             ],
             'db' => [
@@ -177,7 +188,8 @@ return [
                                 'id' => 4,
                                 'name' => 'Управление отделом new',
                                 'direction' => 2,
-                                'status' => 1
+                                'status' => 1,
+                                'project_id' => 1,
                             ],
                         ],
                     )
@@ -185,7 +197,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Управление отделом new","direction":"2","status":"1"},"changed_fields_names":["name"]}'
+                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Управление отделом new","direction":"2","status":"1","project_id":"1"},"changed_fields_names":["name"]}'
                 ],
             ],
         ]
@@ -203,6 +215,7 @@ return [
                 'direction' => 4,
                 'name' => 'Управление отделом new',
                 'status' => 0,
+                'project_id' => 1,
             ],
             'responseBody' => [
                 'model' => [
@@ -210,6 +223,7 @@ return [
                     'name' => 'Управление отделом new',
                     'direction' => 'Работа с группами',
                     'status' => 'Заблокированный',
+                    'project_id' => 'Контент',
                 ],
             ],
             'db' => [
@@ -224,7 +238,8 @@ return [
                                 'id' => 4,
                                 'name' => 'Управление отделом new',
                                 'direction' => 4,
-                                'status' => 0
+                                'status' => 0,
+                                'project_id' => 1,
                             ],
                         ],
                     )
@@ -232,7 +247,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Управление отделом new","direction":"4","status":"0"},"changed_fields_names":["name","direction","status"]}'
+                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Управление отделом new","direction":"4","status":"0","project_id":"1"},"changed_fields_names":["name","direction","status"]}'
                 ],
             ],
         ]

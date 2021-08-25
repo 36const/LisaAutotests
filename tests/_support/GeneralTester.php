@@ -839,4 +839,19 @@ class GeneralTester extends Actor
         39 => 'Менеджер Модерашкин'
     ];
 
+    public const PROJECTS = [
+        [
+            'value' => 0,
+            'text' => 'Все',
+        ],
+        [
+            'value' => 1,
+            'text' => 'Контент',
+        ],
+        [
+            'value' => 2,
+            'text' => 'Маркетинг',
+        ],
+    ];
+
 }
