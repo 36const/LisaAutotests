@@ -18,6 +18,7 @@ return [
     'case2' => [
         'setting' => [
             'description' => 'Проставление отчётного периода КМ во вчерашних заявках без отчётного периода',
+            //+ заблоченная категория в одной из заявок
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
@@ -81,7 +82,7 @@ return [
                             'amount_to_work' => 10,
                             'subject' => 'Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
                             'description' => 'Описание',
-                            'category_id' => 2,
+                            'category_id' => 3,
                             'seller_id' => 0,
                             'recommendations' => '',
                             'reason' => null,

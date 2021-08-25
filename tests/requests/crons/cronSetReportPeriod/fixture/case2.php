@@ -56,7 +56,7 @@ return [
                 'amount_to_work' => 10,
                 'subject' => 'Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
                 'description' => 'Описание',
-                'category_id' => 2,
+                'category_id' => 3,
                 'seller_id' => 0,
                 'recommendations' => '',
                 'reason' => null,
