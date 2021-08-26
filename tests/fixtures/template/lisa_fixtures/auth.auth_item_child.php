@@ -239,6 +239,10 @@ return [
     ],
     [
         'parent' => 'admin',
+        'child' => 'transferRequireChangeToDeclined'
+    ],
+    [
+        'parent' => 'admin',
         'child' => 'transferWaitCheckToDeclined'
     ],
     [
@@ -504,6 +508,10 @@ return [
     [
         'parent' => 'headSupervisor',
         'child' => 'transferRequireChangeToWaitCheck'
+    ],
+    [
+        'parent' => 'headSupervisor',
+        'child' => 'transferRequireChangeToDeclined'
     ],
     [
         'parent' => 'headSupervisor',
@@ -875,6 +883,10 @@ return [
     ],
     [
         'parent' => 'supervisor',
+        'child' => 'transferRequireChangeToDeclined'
+    ],
+    [
+        'parent' => 'supervisor',
         'child' => 'transferWaitCheckToDeclined'
     ],
     [
@@ -1012,6 +1024,10 @@ return [
     [
         'parent' => 'teamLead',
         'child' => 'transferRequireChangeToWaitCheck'
+    ],
+    [
+        'parent' => 'teamLead',
+        'child' => 'transferRequireChangeToDeclined'
     ],
     [
         'parent' => 'teamLead',

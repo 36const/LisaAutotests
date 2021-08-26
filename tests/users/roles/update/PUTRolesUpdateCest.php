@@ -29,7 +29,7 @@ class PUTRolesUpdateCest
         $I->loadDataForTest($data, null);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
         
         $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPUT('/auth-item/update/supervisor', $providerData['requestBody']);

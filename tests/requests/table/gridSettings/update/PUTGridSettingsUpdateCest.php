@@ -29,7 +29,7 @@ class PUTGridSettingsUpdateCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPUT('/grid-settings/save/', $providerData['requestBody']);

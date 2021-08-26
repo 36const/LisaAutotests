@@ -9,9 +9,9 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_api
  * @group lisa_api_roles
- * @group GETRoles
+ * @group GETRolesList
  */
-class GETRolesCest
+class GETRolesListCest
 {
     protected function pageProvider(): array
     {
@@ -24,7 +24,7 @@ class GETRolesCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function GETRoles(UsersTester $I, Example $data)
+    public function GETRolesList(UsersTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];

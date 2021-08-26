@@ -30,7 +30,7 @@ class POSTTeamCreateCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->sendPOST('/team/create', $providerData['requestBody']);
 

@@ -30,7 +30,7 @@ class DELETEExcludedFieldDeleteCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendDELETE('/excluded-field/delete?field_id=10&excluded_field_id=11');

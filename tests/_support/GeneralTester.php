@@ -121,7 +121,7 @@ class GeneralTester extends Actor
         }
     }
 
-    public function loadDataForRedis(array $keyValueArray)
+    public function loadDataForRedis(array $keyValueArray = self::REDIS_KEYS_VALUES)
     {
         $I = $this;
 
@@ -851,6 +851,347 @@ class GeneralTester extends Actor
         [
             'value' => 2,
             'text' => 'Маркетинг',
+        ],
+    ];
+
+    public const PROJECT_PERMISSIONS = [
+        0 => [
+            'Управление пользователями' => [
+                [
+                    'blockUser' => 'Блокирование пользователей',
+                    'updateUser' => 'Изменение пользователей',
+                    'viewUser' => 'Просмотр пользователей',
+                ],
+                [
+                    'errorsUpdate' => 'Редактирование истории ошибок (Контент)',
+                    'createUser' => 'Создание пользователей',
+                ],
+            ],
+            'Управление заявками' => [
+                [
+                    'takeToWork' => 'Взятие в работу и выполнение/отмена заявок (не менеджером заявки) (Контент)',
+                    'requestUpdate' => 'Обновление полей заявок (Контент)',
+                    'massEdit' => 'Пакетное редактирование (Контент)',
+                ],
+                [
+                    'requestViewAllRequests' => 'Просмотр всех заявок (Контент)',
+                    'requestViewTeamRequests' => 'Просмотр заявок команды (Контент)',
+                    'viewSplitterModerationRequests' => 'Просмотр заявок отдела модерации (Контент)',
+                ],
+                [
+                    'requestViewDirectionRequests' => 'Просмотр заявок своего направления (Контент)',
+                    'requestViewOwnRequests' => 'Просмотр своих заявок (Контент)',
+                    'requestCreate' => 'Создание задач (Контент)',
+                ],
+                [
+                    'requestCreateRelated' => 'Создание подзадач (Контент)',
+                    'requestDeleteAttachments' => 'Удаление вложеных файлов (Контент)',
+                ],
+            ],
+            'Переходы по статусам' => [
+                [
+                    'transferInWorkToCompleted' => 'В работе	-> Выполнена (Контент)',
+                    'transferInWorkToWaitWork' => 'В работе -> Ожидает взятия в работу (Контент)',
+                    'transferInWorkToOnHold' => 'В работе	-> Ожидает (нужны ризоны) (Контент)',
+                ],
+                [
+                    'transferInWorkToDeclined' => 'В работе	-> Отменена (Контент)',
+                    'transferInWorkToPartialComplete' => 'В работе	-> Частично выполнена (нужны ризоны) (Контент)',
+                    'transferCompletedToInWork' => 'Выполнена -> В работе (Контент)',
+                ],
+                [
+                    'transferCompletedToClosed' => 'Выполнена -> Закрыта (Контент)',
+                    'transferInCheckToRequireChange' => 'Готова для распределения -> На доработке (Контент)',
+                    'transferInCheckToWaitWork' => 'Готова для распределения -> Ожидает взятия в работу (Контент)',
+                ],
+                [
+                    'transferInCheckToDeclined' => 'Готова для распределения -> Отменена (Контент)',
+                    'transferRequireChangeToWaitCheck' => 'На доработке -> Новая (Контент)',
+                    'transferRequireChangeToDeclined' => 'На доработке -> Отменена (Контент)',
+                ],
+                [
+                    'transferWaitCheckToRequireChange' => 'Новая -> На доработке (Контент)',
+                    'transferWaitCheckToWaitWork' => 'Новая -> Ожидает взятия в работу (Контент)',
+                    'transferWaitCheckToDeclined' => 'Новая -> Отменена (Контент)',
+                ],
+                [
+                    'transferWaitCheckToInCheck' => 'Новые -> Готовы для распределения (Контент)',
+                    'transferWaitWorkToInWork' => 'Ожидает взятия в работу -> В работе (Контент)',
+                    'transferWaitWorkToDeclined' => 'Ожидает взятия в работу -> Отменена (Контент)',
+                ],
+                [
+                    'transferOnHoldToCompleted' => 'Ожидает -> Выполнена (Контент)',
+                    'transferOnHoldToInWork' => 'Ожидает (нужны ризоны) -> В работе (Контент)',
+                    'transferOnHoldToPartialComplete' => 'Ожидает -> Частично выполнена (Контент)',
+                ],
+                [
+                    'transferPartialCompleteToInWork' => 'Частично выполнена -> В работе (Контент)',
+                    'transferPartialCompleteToClosed' => 'Частично выполнена -> Закрыта (Контент)',
+                ],
+            ],
+            'Отчеты' => [
+                [
+                    'reportLoadAllUsers' => 'Выгрузка отчетов по всем пользователям (Контент)',
+                    'reportLoadMarketUsers' => 'Выгрузка отчетов по пользователям направления Маркетплейс (Контент)',
+                    'reportLoadYourTeam' => 'Выгрузка отчетов по своей комманде (Контент)',
+                ],
+                [
+                    'reportView' => 'Просмотр отчетов (Контент)',
+                ],
+            ],
+            'Заявки' => [
+                [
+                    'requestGroupItems' => 'Группировка товаров (Контент)',
+                    'requestAddUpdateVideo' => 'Добавление/изменение видео (Контент)',
+                    'requestUpdateFatPortalCat' => 'Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Контент)',
+                ],
+                [
+                    'requestUpdateItems' => 'Добавление/изменение информации в существующих товарах (Контент)',
+                    'requestAddUpdateSizeGrid' => 'Добавление/изменение размерной сетки (Контент)',
+                    'requestAddUpdateTags' => 'Добавление/изменение тегов (Контент)',
+                ],
+                [
+                    'requestAddFatPortalCat' => 'Добавление нового портала/раздела фат-меню/категории товаров (Контент)',
+                    'requestAddUpdateSC' => 'Добавление новых СЦ/изменение существующих СЦ (Контент)',
+                    'requestAddNewItems' => 'Добавление новых товаров (Контент)',
+                ],
+                [
+                    'requestAddAttrOrValues' => 'Добавление параметров/значений (Контент)',
+                    'requestUploadPhoto' => 'Заливка фото с фотостудии (Контент)',
+                    'requestUpdateAttrOrValues' => 'Изменение существующих параметров/значений (Контент)',
+                ],
+                [
+                    'commentRequestMrkt' => 'Комментирование задач (Маркетинг)',
+                    'requestTransferItems' => 'Перенос товаров (Контент)',
+                    'requestCheckHidden' => 'Проверка скрытых товаров (Контент)',
+                ],
+                [
+                    'requestStructureDesign' => 'Проектирование структуры (Контент)',
+                    'viewAllRequestsMrkt' => 'Просмотр всех задач (Маркетинг)',
+                    'viewTeamRequestsMrkt' => 'Просмотр задач команды (Маркетинг)',
+                ],
+                [
+                    'viewOwnRequestsMrkt' => 'Просмотр только своих задач (Маркетинг)',
+                    'updateRequestMrkt' => 'Редактирование задач (Маркетинг)',
+                    'createRequestMrkt' => 'Создание задач (Маркетинг)',
+                ],
+                [
+                    'createSubRequestMrkt' => 'Создание подзадач (Маркетинг)',
+                    'createFilterMrkt' => 'Создание фильтра (Маркетинг)',
+                ],
+            ],
+            'Шаблоны' => [
+                [
+                    'updateTemplates' => 'Обновление чужих шаблонов (Контент)',
+                    'seeAllTemplates' => 'Просмотр всех шаблонов (Контент)',
+                    'seeTeamTemplates' => 'Просмотр шаблонов команды (Контент)',
+                ],
+                [
+                    'seeDirectionTemplates' => 'Просмотр шаблонов направления (Контент)',
+                ],
+            ],
+            'Дашборды' => [
+                [
+                    'viewDashboardsByCommand' => 'Просмотр дашбордов для супервизоров по своей команде (Контент)',
+                    'viewDashboardsByDirection' => 'Просмотр дашбордов по заявкам направления Маркет (Контент)',
+                    'viewOwnDashboards' => 'Просмотр дашбордов по своим заявкам (Контент)',
+                ],
+                [
+                    'viewAllDashboards' => 'Просмотр дашбордов с заявками всех направлений, команд и пользователей (Контент)',
+                ],
+            ],
+            'Управление настройками' => [
+                [
+                    'excludedFieldsUpdate' => 'Редактирование взаимоисключающих чекбоксов (Контент)',
+                    'categoryUpdate' => 'Редактирование категорий (Контент)',
+                    'teamUpdate' => 'Редактирование команд (Контент)',
+                ],
+                [
+                    'coefUpdate' => 'Редактирование коэфициентов (Контент)',
+                    'sellerUpdate' => 'Редактирование магазинов (Контент)',
+                    'fieldsUpdate' => 'Редактирование полей (Контент)',
+                ],
+                [
+                    'priorityUpdate' => 'Редактирование приоритетов (Контент)',
+                    'reasonsUpdate' => 'Редактирование причин (Контент)',
+                ],
+            ],
+        ],
+        1 => [
+            'Управление пользователями' => [
+                [
+                    'blockUser' => 'Блокирование пользователей',
+                    'updateUser' => 'Изменение пользователей',
+                    'viewUser' => 'Просмотр пользователей',
+                ],
+                [
+                    'errorsUpdate' => 'Редактирование истории ошибок',
+                    'createUser' => 'Создание пользователей',
+                ],
+            ],
+            'Управление заявками' => [
+                [
+                    'takeToWork' => 'Взятие в работу и выполнение/отмена заявок (не менеджером заявки)',
+                    'requestUpdate' => 'Обновление полей заявок',
+                    'massEdit' => 'Пакетное редактирование',
+                ],
+                [
+                    'requestViewAllRequests' => 'Просмотр всех заявок',
+                    'requestViewTeamRequests' => 'Просмотр заявок команды',
+                    'viewSplitterModerationRequests' => 'Просмотр заявок отдела модерации',
+                ],
+                [
+                    'requestViewDirectionRequests' => 'Просмотр заявок своего направления',
+                    'requestViewOwnRequests' => 'Просмотр своих заявок',
+                    'requestCreate' => 'Создание задач',
+                ],
+                [
+                    'requestCreateRelated' => 'Создание подзадач',
+                    'requestDeleteAttachments' => 'Удаление вложеных файлов',
+                ],
+            ],
+            'Переходы по статусам' => [
+                [
+                    'transferInWorkToCompleted' => 'В работе	-> Выполнена',
+                    'transferInWorkToWaitWork' => 'В работе -> Ожидает взятия в работу',
+                    'transferInWorkToOnHold' => 'В работе	-> Ожидает (нужны ризоны)',
+                ],
+                [
+                    'transferInWorkToDeclined' => 'В работе	-> Отменена',
+                    'transferInWorkToPartialComplete' => 'В работе	-> Частично выполнена (нужны ризоны)',
+                    'transferCompletedToInWork' => 'Выполнена -> В работе',
+                ],
+                [
+                    'transferCompletedToClosed' => 'Выполнена -> Закрыта',
+                    'transferInCheckToRequireChange' => 'Готова для распределения -> На доработке',
+                    'transferInCheckToWaitWork' => 'Готова для распределения -> Ожидает взятия в работу',
+                ],
+                [
+                    'transferInCheckToDeclined' => 'Готова для распределения -> Отменена',
+                    'transferRequireChangeToWaitCheck' => 'На доработке -> Новая',
+                    'transferRequireChangeToDeclined' => 'На доработке -> Отменена',
+                ],
+                [
+                    'transferWaitCheckToRequireChange' => 'Новая -> На доработке',
+                    'transferWaitCheckToWaitWork' => 'Новая -> Ожидает взятия в работу',
+                    'transferWaitCheckToDeclined' => 'Новая -> Отменена',
+                ],
+                [
+                    'transferWaitCheckToInCheck' => 'Новые -> Готовы для распределения',
+                    'transferWaitWorkToInWork' => 'Ожидает взятия в работу -> В работе',
+                    'transferWaitWorkToDeclined' => 'Ожидает взятия в работу -> Отменена',
+                ],
+                [
+                    'transferOnHoldToCompleted' => 'Ожидает -> Выполнена',
+                    'transferOnHoldToInWork' => 'Ожидает (нужны ризоны) -> В работе',
+                    'transferOnHoldToPartialComplete' => 'Ожидает -> Частично выполнена',
+                ],
+                [
+                    'transferPartialCompleteToInWork' => 'Частично выполнена -> В работе',
+                    'transferPartialCompleteToClosed' => 'Частично выполнена -> Закрыта',
+                ],
+            ],
+            'Отчеты' => [
+                [
+                    'reportLoadAllUsers' => 'Выгрузка отчетов по всем пользователям',
+                    'reportLoadMarketUsers' => 'Выгрузка отчетов по пользователям направления Маркетплейс',
+                    'reportLoadYourTeam' => 'Выгрузка отчетов по своей комманде',
+                ],
+                [
+                    'reportView' => 'Просмотр отчетов',
+                ],
+            ],
+            'Заявки' => [
+                [
+                    'requestGroupItems' => 'Группировка товаров',
+                    'requestAddUpdateVideo' => 'Добавление/изменение видео',
+                    'requestUpdateFatPortalCat' => 'Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров',
+                ],
+                [
+                    'requestUpdateItems' => 'Добавление/изменение информации в существующих товарах',
+                    'requestAddUpdateSizeGrid' => 'Добавление/изменение размерной сетки',
+                    'requestAddUpdateTags' => 'Добавление/изменение тегов',
+                ],
+                [
+                    'requestAddFatPortalCat' => 'Добавление нового портала/раздела фат-меню/категории товаров',
+                    'requestAddUpdateSC' => 'Добавление новых СЦ/изменение существующих СЦ',
+                    'requestAddNewItems' => 'Добавление новых товаров',
+                ],
+                [
+                    'requestAddAttrOrValues' => 'Добавление параметров/значений',
+                    'requestUploadPhoto' => 'Заливка фото с фотостудии',
+                    'requestUpdateAttrOrValues' => 'Изменение существующих параметров/значений',
+                ],
+                [
+                    'requestTransferItems' => 'Перенос товаров',
+                    'requestCheckHidden' => 'Проверка скрытых товаров',
+                    'requestStructureDesign' => 'Проектирование структуры',
+                ],
+            ],
+            'Шаблоны' => [
+                [
+                    'updateTemplates' => 'Обновление чужих шаблонов',
+                    'seeAllTemplates' => 'Просмотр всех шаблонов',
+                    'seeTeamTemplates' => 'Просмотр шаблонов команды',
+                ],
+                [
+                    'seeDirectionTemplates' => 'Просмотр шаблонов направления',
+                ],
+            ],
+            'Дашборды' => [
+                [
+                    'viewDashboardsByCommand' => 'Просмотр дашбордов для супервизоров по своей команде',
+                    'viewDashboardsByDirection' => 'Просмотр дашбордов по заявкам направления Маркет',
+                    'viewOwnDashboards' => 'Просмотр дашбордов по своим заявкам',
+                ],
+                [
+                    'viewAllDashboards' => 'Просмотр дашбордов с заявками всех направлений, команд и пользователей',
+                ],
+            ],
+            'Управление настройками' => [
+                [
+                    'excludedFieldsUpdate' => 'Редактирование взаимоисключающих чекбоксов',
+                    'categoryUpdate' => 'Редактирование категорий',
+                    'teamUpdate' => 'Редактирование команд',
+                ],
+                [
+                    'coefUpdate' => 'Редактирование коэфициентов',
+                    'sellerUpdate' => 'Редактирование магазинов',
+                    'fieldsUpdate' => 'Редактирование полей',
+                ],
+                [
+                    'priorityUpdate' => 'Редактирование приоритетов',
+                    'reasonsUpdate' => 'Редактирование причин',
+                ],
+            ],
+        ],
+        2 => [
+            'Управление пользователями' => [
+                [
+                    'blockUser' => 'Блокирование пользователей',
+                    'updateUser' => 'Изменение пользователей',
+                    'viewUser' => 'Просмотр пользователей',
+                ],
+                [
+                    'createUser' => 'Создание пользователей',
+                ],
+            ],
+            'Заявки' => [
+                [
+                    'commentRequestMrkt' => 'Комментирование задач',
+                    'viewAllRequestsMrkt' => 'Просмотр всех задач',
+                    'viewTeamRequestsMrkt' => 'Просмотр задач команды',
+                ],
+                [
+                    'viewOwnRequestsMrkt' => 'Просмотр только своих задач',
+                    'updateRequestMrkt' => 'Редактирование задач',
+                    'createRequestMrkt' => 'Создание задач',
+                ],
+                [
+                    'createSubRequestMrkt' => 'Создание подзадач',
+                    'createFilterMrkt' => 'Создание фильтра',
+                ],
+            ],
         ],
     ];
 

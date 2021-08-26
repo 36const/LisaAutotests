@@ -408,6 +408,11 @@ return [
                                 'created_at >=' => date('Y-m-d')
                             ],
                             [
+                                'item_name' => 'transferRequireChangeToDeclined',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
                                 'item_name' => 'transferOnHoldToInWork',
                                 'user_id' => 5,
                                 'created_at >=' => date('Y-m-d')
@@ -446,7 +451,7 @@ return [
                                 'item_name' => 'teamLead',
                                 'user_id' => 5,
                                 'created_at >=' => date('Y-m-d')
-                            ]
+                            ],
                         ]
                     ),
                     'notification_settings' => [
@@ -1225,6 +1230,11 @@ return [
                                 'item_name' => 'transferRequireChangeToWaitCheck',
                                 'created_at >=' => date('Y-m-d'),
                                 'user_id' => 5
+                            ],
+                            [
+                                'item_name' => 'transferRequireChangeToDeclined',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
                             ],
                             [
                                 'item_name' => 'transferWaitCheckToDeclined',

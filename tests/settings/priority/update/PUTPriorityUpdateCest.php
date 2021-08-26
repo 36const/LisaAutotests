@@ -30,7 +30,7 @@ class PUTPriorityUpdateCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->sendPUT('/priority/update/1', $providerData['requestBody']);
 

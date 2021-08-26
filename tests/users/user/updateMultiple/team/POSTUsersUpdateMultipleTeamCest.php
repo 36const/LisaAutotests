@@ -31,7 +31,7 @@ class POSTUsersUpdateMultipleTeamCest
         $I->loadDataForTest($data, null);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(UsersTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->sendPOST('/user/update-team', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);

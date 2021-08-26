@@ -12,8 +12,8 @@ return [
             'id' => 4,
             'responseBody' => [
                 'initialValues' => [
-                    'projects' => SettingsTester::PROJECTS,
                     'hasMembers' => true,
+                    'projects' => SettingsTester::PROJECTS,
                     'directions' => [
                         1 => 'Управление отделом',
                         2 => 'Работа с товарами Маркетплейса',

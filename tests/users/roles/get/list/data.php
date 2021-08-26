@@ -19,6 +19,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Все'
                         ],
                         1 => [
                             'name' => 'contentManager',
@@ -29,6 +30,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         2 => [
                             'name' => 'headSupervisor',
@@ -39,6 +41,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         3 => [
                             'name' => 'moderator',
@@ -49,6 +52,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-04-16 07:52:40',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         4 => [
                             'name' => 'photoManager',
@@ -59,6 +63,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         5 => [
                             'name' => 'productManager',
@@ -69,6 +74,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         6 => [
                             'name' => 'seo',
@@ -79,6 +85,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         7 => [
                             'name' => 'supervisor',
@@ -89,6 +96,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         8 => [
                             'name' => 'system',
@@ -99,6 +107,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Все'
                         ],
                         9 => [
                             'name' => 'teamLead',
@@ -109,6 +118,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Все'
                         ],
                     ],
                     '_links' => [
@@ -156,6 +166,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         1 => [
                             'name' => 'contentManager',
@@ -166,6 +177,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                     ],
                     '_links' => [
@@ -214,6 +226,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Все'
                         ],
                         1 => [
                             'name' => 'contentManager',
@@ -224,6 +237,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         2 => [
                             'name' => 'productManager',
@@ -234,6 +248,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         3 => [
                             'name' => 'teamLead',
@@ -244,6 +259,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Все'
                         ],
                         4 => [
                             'name' => 'headSupervisor',
@@ -254,6 +270,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         5 => [
                             'name' => 'system',
@@ -264,6 +281,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Все'
                         ],
                         6 => [
                             'name' => 'seo',
@@ -274,6 +292,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         7 => [
                             'name' => 'photoManager',
@@ -284,6 +303,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                         8 => [
                             'name' => 'supervisor',
@@ -294,6 +314,7 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
+                            'project_id' => 'Контент'
                         ],
                     ],
                     '_links' => [

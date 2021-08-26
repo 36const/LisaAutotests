@@ -31,7 +31,7 @@ class CronSyncCategoryCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->declareExchange('goods_service', 'topic', false, true, false);
         $I->declareQueue('goods-lisa', false, true, false, false);

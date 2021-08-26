@@ -30,7 +30,7 @@ class PUTTeamUpdateCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->sendPUT('/team/update/' . $providerData['id'], $providerData['requestBody']);
 

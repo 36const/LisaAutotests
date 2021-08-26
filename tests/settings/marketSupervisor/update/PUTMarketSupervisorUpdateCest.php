@@ -30,7 +30,7 @@ class PUTMarketSupervisorUpdateCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->sendPUT('/market-supervisor/update/0', $providerData['requestBody']);
 

@@ -30,7 +30,7 @@ class POSTMarketSupervisorUpdateGroupCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->sendPOST('/market-supervisor/appoint-sv', $providerData['requestBody']);
 

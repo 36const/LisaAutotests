@@ -30,7 +30,7 @@ class PUTNotificationSettingsCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->sendPUT('notification-settings/update/4', $providerData['requestBody']);
 

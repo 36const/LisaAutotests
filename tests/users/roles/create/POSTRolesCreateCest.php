@@ -29,8 +29,8 @@ class POSTRolesCreateCest
         $I->loadDataForTest($data, null);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
-        
+        $I->loadDataForRedis();
+
         $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPOST('/auth-item/create', $providerData['requestBody']);
 

@@ -32,7 +32,7 @@ class CronRzCategoriesImportXlsCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->declareExchange('default', 'direct', false, true, false);
         $I->declareQueue('lisa_rzCategoriesImport', false, true, false, false);

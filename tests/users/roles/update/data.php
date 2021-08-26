@@ -1,9 +1,11 @@
 <?php
 
+use lisa\UsersTester;
+
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Изменить набор пермишенов и описание роли',
+            'description' => 'Изменить набор пермишенов и описание роли, проект Контент',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -24,80 +26,14 @@ return [
                 'data' => NULL,
                 'created_at' => '2020-03-10 12:07:48',
                 'updated_at' => NULL,
+                'project_id' => 1,
                 'permissions' => [
-                    'blockUser' => false,
-                    'takeToWork' => false,
-                    'transferInWorkToCompleted' => false,
-                    'transferInWorkToWaitWork' => false,
-                    'transferInWorkToOnHold' => false,
-                    'transferInWorkToDeclined' => false,
-                    'transferInWorkToPartialComplete' => false,
-                    'reportLoadAllUsers' => false,
-                    'reportLoadMarketUsers' => false,
-                    'reportLoadYourTeam' => false,
-                    'transferCompletedToInWork' => false,
-                    'transferCompletedToClosed' => false,
-                    'transferInCheckToRequireChange' => false,
-                    'transferInCheckToWaitWork' => false,
-                    'transferInCheckToDeclined' => false,
-                    'requestGroupItems' => false,
-                    'requestAddUpdateVideo' => false,
-                    'requestUpdateFatPortalCat' => false,
-                    'requestUpdateItems' => false,
-                    'requestAddUpdateSizeGrid' => false,
-                    'requestAddUpdateTags' => false,
-                    'requestAddFatPortalCat' => false,
-                    'requestAddUpdateSC' => false,
-                    'requestAddNewItems' => false,
-                    'requestAddAttrOrValues' => false,
-                    'requestUploadPhoto' => false,
-                    'updateUser' => false,
-                    'requestUpdateAttrOrValues' => false,
-                    'transferRequireChangeToWaitCheck' => false,
-                    'transferWaitCheckToRequireChange' => false,
-                    'transferWaitCheckToWaitWork' => false,
-                    'transferWaitCheckToDeclined' => false,
-                    'transferWaitCheckToInCheck' => false,
-                    'requestUpdate' => false,
-                    'updateTemplates' => false,
-                    'transferWaitWorkToInWork' => false,
-                    'transferWaitWorkToDeclined' => false,
-                    'transferOnHoldToCompleted' => false,
-                    'transferOnHoldToInWork' => false,
-                    'transferOnHoldToPartialComplete' => false,
-                    'massEdit' => false,
-                    'requestTransferItems' => false,
-                    'requestCheckHidden' => false,
-                    'requestStructureDesign' => false,
-                    'requestViewAllRequests' => true,
-                    'seeAllTemplates' => false,
-                    'viewDashboardsByCommand' => false,
-                    'viewDashboardsByDirection' => false,
-                    'viewOwnDashboards' => false,
-                    'viewAllDashboards' => false,
-                    'requestViewTeamRequests' => true,
-                    'viewSplitterModerationRequests' => false,
-                    'requestViewDirectionRequests' => true,
-                    'reportView' => false,
-                    'viewUser' => false,
-                    'requestViewOwnRequests' => false,
-                    'seeTeamTemplates' => false,
-                    'seeDirectionTemplates' => false,
-                    'excludedFieldsUpdate' => false,
-                    'errorsUpdate' => true,
-                    'categoryUpdate' => false,
-                    'teamUpdate' => false,
-                    'coefUpdate' => false,
-                    'sellerUpdate' => false,
-                    'fieldsUpdate' => false,
-                    'priorityUpdate' => false,
-                    'reasonsUpdate' => false,
-                    'requestCreate' => false,
-                    'requestCreateRelated' => true,
-                    'createUser' => true,
-                    'requestDeleteAttachments' => false,
-                    'transferPartialCompleteToInWork' => false,
-                    'transferPartialCompleteToClosed' => false,
+                    'requestViewAllRequests',
+                    'requestViewTeamRequests',
+                    'requestViewDirectionRequests',
+                    'errorsUpdate',
+                    'requestCreateRelated',
+                    'createUser',
                 ],
             ],
             'responseBody' => [
@@ -114,6 +50,7 @@ return [
                         'params' => [
                         ],
                     ],
+                    'project_id' => 'Контент',
                 ],
             ],
             'db' => [
@@ -128,7 +65,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 0
                         ],
                         [
                             'name' => 'contentManager',
@@ -138,7 +76,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'headSupervisor',
@@ -148,7 +87,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'moderator',
@@ -158,7 +98,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-04-16 07:52:40',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'photoManager',
@@ -168,7 +109,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'productManager',
@@ -178,7 +120,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'seo',
@@ -188,7 +131,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'supervisor',
@@ -198,7 +142,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at >=' => date('Y-m-d')
+                            'updated_at >=' => date('Y-m-d'),
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'system',
@@ -208,7 +153,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 0
                         ],
                         [
                             'name' => 'teamLead',
@@ -218,7 +164,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 0
                         ],
                         [
                             'name' => 'viewAllDashboards',
@@ -228,7 +175,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:11',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'viewDashboardsByCommand',
@@ -238,7 +186,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:11',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'viewDashboardsByDirection',
@@ -248,7 +197,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:11',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'viewOwnDashboards',
@@ -258,7 +208,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:11',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'blockUser',
@@ -268,7 +219,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 0
                         ],
                         [
                             'name' => 'createUser',
@@ -278,7 +230,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 0
                         ],
                         [
                             'name' => 'errorsUpdate',
@@ -288,7 +241,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'updateUser',
@@ -298,7 +252,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 0
                         ],
                         [
                             'name' => 'viewUser',
@@ -308,7 +263,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 0
                         ],
                         [
                             'name' => 'reportLoadAllUsers',
@@ -318,7 +274,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'reportLoadMarketUsers',
@@ -328,7 +285,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'reportLoadYourTeam',
@@ -338,7 +296,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'reportView',
@@ -348,7 +307,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestAddAttrOrValues',
@@ -358,7 +318,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestAddFatPortalCat',
@@ -368,7 +329,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestAddNewItems',
@@ -378,7 +340,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestAddUpdateSC',
@@ -388,7 +351,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestAddUpdateSizeGrid',
@@ -398,7 +362,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestAddUpdateTags',
@@ -408,7 +373,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestAddUpdateVideo',
@@ -418,7 +384,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestCheckHidden',
@@ -428,7 +395,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestGroupItems',
@@ -438,7 +406,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestStructureDesign',
@@ -448,7 +417,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestTransferItems',
@@ -458,7 +428,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestUpdateAttrOrValues',
@@ -468,7 +439,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestUpdateFatPortalCat',
@@ -478,7 +450,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestUpdateItems',
@@ -488,7 +461,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestUploadPhoto',
@@ -498,7 +472,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'massEdit',
@@ -508,7 +483,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:51',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestCreate',
@@ -518,7 +494,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestCreateRelated',
@@ -528,7 +505,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestDeleteAttachments',
@@ -538,7 +516,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:51',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestUpdate',
@@ -548,7 +527,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestViewAllRequests',
@@ -558,7 +538,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestViewDirectionRequests',
@@ -568,7 +549,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestViewOwnRequests',
@@ -578,7 +560,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'requestViewTeamRequests',
@@ -588,7 +571,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:51',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'takeToWork',
@@ -598,7 +582,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:10',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'viewSplitterModerationRequests',
@@ -608,7 +593,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'categoryUpdate',
@@ -618,7 +604,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'coefUpdate',
@@ -628,7 +615,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'excludedFieldsUpdate',
@@ -638,7 +626,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'fieldsUpdate',
@@ -648,7 +637,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'priorityUpdate',
@@ -658,7 +648,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:11',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'reasonsUpdate',
@@ -668,7 +659,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'sellerUpdate',
@@ -678,7 +670,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'teamUpdate',
@@ -688,7 +681,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:09',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'seeAllTemplates',
@@ -698,7 +692,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2021-03-19 08:41:28',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'seeDirectionTemplates',
@@ -708,7 +703,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2021-03-19 08:41:28',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'seeTeamTemplates',
@@ -718,7 +714,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2021-03-19 08:41:28',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'updateTemplates',
@@ -728,7 +725,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2021-03-19 08:41:28',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferAnyToClosed',
@@ -738,7 +736,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferAnyToCompleted',
@@ -748,7 +747,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferAnyToDeclined',
@@ -758,7 +758,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferAnyToInCheck',
@@ -768,7 +769,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferAnyToInWork',
@@ -778,7 +780,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferAnyToOnHold',
@@ -788,7 +791,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferAnyToPartialComplete',
@@ -798,7 +802,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferAnyToRequireChange',
@@ -808,7 +813,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferAnyToWaitCheck',
@@ -818,7 +824,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferAnyToWaitWork',
@@ -828,7 +835,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferClosedToAny',
@@ -838,7 +846,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferClosedToCompleted',
@@ -848,7 +857,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferClosedToDeclined',
@@ -858,7 +868,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferClosedToInCheck',
@@ -868,7 +879,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferClosedToInWork',
@@ -878,7 +890,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferClosedToOnHold',
@@ -888,7 +901,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferClosedToPartialComplete',
@@ -898,7 +912,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferClosedToRequireChange',
@@ -908,7 +923,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferClosedToWaitCheck',
@@ -918,7 +934,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferClosedToWaitWork',
@@ -928,7 +945,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferCompletedToAny',
@@ -938,7 +956,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferCompletedToClosed',
@@ -948,7 +967,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferCompletedToDeclined',
@@ -958,7 +978,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferCompletedToInCheck',
@@ -968,7 +989,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferCompletedToInWork',
@@ -978,7 +1000,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferCompletedToOnHold',
@@ -988,7 +1011,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferCompletedToPartialComplete',
@@ -998,7 +1022,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferCompletedToRequireChange',
@@ -1008,7 +1033,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferCompletedToWaitCheck',
@@ -1018,7 +1044,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferCompletedToWaitWork',
@@ -1028,7 +1055,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferDeclinedToAny',
@@ -1038,7 +1066,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferDeclinedToClosed',
@@ -1048,7 +1077,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferDeclinedToCompleted',
@@ -1058,7 +1088,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferDeclinedToInCheck',
@@ -1068,7 +1099,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferDeclinedToInWork',
@@ -1078,7 +1110,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferDeclinedToOnHold',
@@ -1088,7 +1121,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferDeclinedToPartialComplete',
@@ -1098,7 +1132,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferDeclinedToRequireChange',
@@ -1108,7 +1143,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferDeclinedToWaitCheck',
@@ -1118,7 +1154,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferDeclinedToWaitWork',
@@ -1128,7 +1165,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInCheckToAny',
@@ -1138,7 +1176,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInCheckToClosed',
@@ -1148,7 +1187,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInCheckToCompleted',
@@ -1158,7 +1198,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInCheckToDeclined',
@@ -1168,7 +1209,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInCheckToInWork',
@@ -1178,7 +1220,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInCheckToOnHold',
@@ -1188,7 +1231,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInCheckToPartialComplete',
@@ -1198,7 +1242,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInCheckToRequireChange',
@@ -1208,7 +1253,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInCheckToWaitCheck',
@@ -1218,7 +1264,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInCheckToWaitWork',
@@ -1228,7 +1275,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInWorkToAny',
@@ -1238,7 +1286,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInWorkToClosed',
@@ -1248,7 +1297,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInWorkToCompleted',
@@ -1258,7 +1308,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInWorkToDeclined',
@@ -1268,7 +1319,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInWorkToInCheck',
@@ -1278,7 +1330,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInWorkToOnHold',
@@ -1288,7 +1341,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInWorkToPartialComplete',
@@ -1298,7 +1352,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInWorkToRequireChange',
@@ -1308,7 +1363,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInWorkToWaitCheck',
@@ -1318,7 +1374,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferInWorkToWaitWork',
@@ -1328,7 +1385,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferOnHoldToAny',
@@ -1338,7 +1396,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferOnHoldToClosed',
@@ -1348,7 +1407,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferOnHoldToCompleted',
@@ -1358,7 +1418,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferOnHoldToDeclined',
@@ -1368,7 +1429,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferOnHoldToInCheck',
@@ -1378,7 +1440,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferOnHoldToInWork',
@@ -1388,7 +1451,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferOnHoldToPartialComplete',
@@ -1398,7 +1462,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferOnHoldToRequireChange',
@@ -1408,7 +1473,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferOnHoldToWaitCheck',
@@ -1418,7 +1484,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferOnHoldToWaitWork',
@@ -1428,7 +1495,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferPartialCompleteToAny',
@@ -1438,7 +1506,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferPartialCompleteToClosed',
@@ -1448,7 +1517,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferPartialCompleteToCompleted',
@@ -1458,7 +1528,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferPartialCompleteToDeclined',
@@ -1468,7 +1539,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferPartialCompleteToInCheck',
@@ -1478,7 +1550,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferPartialCompleteToInWork',
@@ -1488,7 +1561,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferPartialCompleteToOnHold',
@@ -1498,7 +1572,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferPartialCompleteToRequireChange',
@@ -1508,7 +1583,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferPartialCompleteToWaitCheck',
@@ -1518,7 +1594,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferPartialCompleteToWaitWork',
@@ -1528,7 +1605,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferRequireChangeToAny',
@@ -1538,7 +1616,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferRequireChangeToClosed',
@@ -1548,7 +1627,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferRequireChangeToCompleted',
@@ -1558,7 +1638,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferRequireChangeToDeclined',
@@ -1568,7 +1649,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferRequireChangeToInCheck',
@@ -1578,7 +1660,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferRequireChangeToInWork',
@@ -1588,7 +1671,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferRequireChangeToOnHold',
@@ -1598,7 +1682,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferRequireChangeToPartialComplete',
@@ -1608,7 +1693,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferRequireChangeToWaitCheck',
@@ -1618,7 +1704,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferRequireChangeToWaitWork',
@@ -1628,7 +1715,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitCheckToAny',
@@ -1638,7 +1726,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitCheckToClosed',
@@ -1648,7 +1737,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitCheckToCompleted',
@@ -1658,7 +1748,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitCheckToDeclined',
@@ -1668,7 +1759,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitCheckToInCheck',
@@ -1678,7 +1770,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitCheckToInWork',
@@ -1688,7 +1781,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitCheckToOnHold',
@@ -1698,7 +1792,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitCheckToPartialComplete',
@@ -1708,7 +1803,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitCheckToRequireChange',
@@ -1718,7 +1814,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitCheckToWaitWork',
@@ -1728,7 +1825,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitWorkToAny',
@@ -1738,7 +1836,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitWorkToClosed',
@@ -1748,7 +1847,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitWorkToCompleted',
@@ -1758,7 +1858,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitWorkToDeclined',
@@ -1768,7 +1869,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitWorkToInCheck',
@@ -1778,7 +1880,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitWorkToInWork',
@@ -1788,7 +1891,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitWorkToOnHold',
@@ -1798,7 +1902,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitWorkToPartialComplete',
@@ -1808,7 +1913,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitWorkToRequireChange',
@@ -1818,7 +1924,8 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
+                            'updated_at' => null,
+                            'project_id' => 1
                         ],
                         [
                             'name' => 'transferWaitWorkToWaitCheck',
@@ -1828,8 +1935,97 @@ return [
                             'rule_name' => null,
                             'data' => null,
                             'created_at' => '2020-12-03 12:30:07',
-                            'updated_at' => null
-                        ]
+                            'updated_at' => null,
+                            'project_id' => 1
+                        ],
+                        [
+                            'name' => 'viewOwnRequestsMrkt',
+                            'type' => 2,
+                            'description' => 'Просмотр только своих задач',
+                            'group' => 'request',
+                            'rule_name' => NULL,
+                            'data' => NULL,
+                            'created_at' => '2021-08-26 08:26:56',
+                            'updated_at' => NULL,
+                            'project_id' => 2,
+                        ],
+                        [
+                            'name' => 'viewTeamRequestsMrkt',
+                            'type' => 2,
+                            'description' => 'Просмотр задач команды',
+                            'group' => 'request',
+                            'rule_name' => NULL,
+                            'data' => NULL,
+                            'created_at' => '2021-08-26 08:26:56',
+                            'updated_at' => NULL,
+                            'project_id' => 2,
+                        ],
+                        [
+                            'name' => 'viewAllRequestsMrkt',
+                            'type' => 2,
+                            'description' => 'Просмотр всех задач',
+                            'group' => 'request',
+                            'rule_name' => NULL,
+                            'data' => NULL,
+                            'created_at' => '2021-08-26 08:26:56',
+                            'updated_at' => NULL,
+                            'project_id' => 2,
+                        ],
+                        [
+                            'name' => 'createFilterMrkt',
+                            'type' => 2,
+                            'description' => 'Создание фильтра',
+                            'group' => 'request',
+                            'rule_name' => NULL,
+                            'data' => NULL,
+                            'created_at' => '2021-08-26 08:26:56',
+                            'updated_at' => NULL,
+                            'project_id' => 2,
+                        ],
+                        [
+                            'name' => 'createRequestMrkt',
+                            'type' => 2,
+                            'description' => 'Создание задач',
+                            'group' => 'request',
+                            'rule_name' => NULL,
+                            'data' => NULL,
+                            'created_at' => '2021-08-26 08:26:56',
+                            'updated_at' => NULL,
+                            'project_id' => 2,
+                        ],
+                        [
+                            'name' => 'createSubRequestMrkt',
+                            'type' => 2,
+                            'description' => 'Создание подзадач',
+                            'group' => 'request',
+                            'rule_name' => NULL,
+                            'data' => NULL,
+                            'created_at' => '2021-08-26 08:26:56',
+                            'updated_at' => NULL,
+                            'project_id' => 2,
+                        ],
+                        [
+                            'name' => 'updateRequestMrkt',
+                            'type' => 2,
+                            'description' => 'Редактирование задач',
+                            'group' => 'request',
+                            'rule_name' => NULL,
+                            'data' => NULL,
+                            'created_at' => '2021-08-26 08:26:56',
+                            'updated_at' => NULL,
+                            'project_id' => 2,
+                        ],
+                        [
+                            'name' => 'commentRequestMrkt',
+                            'type' => 2,
+                            'description' => 'Комментирование задач',
+                            'group' => 'request',
+                            'rule_name' => NULL,
+                            'data' => NULL,
+                            'created_at' => '2021-08-26 08:26:56',
+                            'updated_at' => NULL,
+                            'project_id' => 2,
+                        ],
                     ],
                     'auth.auth_assignment' => [
                         [
@@ -2010,7 +2206,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Сохранение индивидуально проставленных/удалённых пермишенов пользователя при изменении роли',
+            'description' => 'Сохранение индивидуально проставленных/удалённых пермишенов пользователя при изменении роли, проект Контент',
             //без изменения описания
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
@@ -2032,80 +2228,14 @@ return [
                 'data' => NULL,
                 'created_at' => '2020-03-10 12:07:48',
                 'updated_at' => NULL,
+                'project_id' => 1,
                 'permissions' => [
-                    'blockUser' => true,
-                    'takeToWork' => true,
-                    'transferInWorkToCompleted' => false,
-                    'transferInWorkToWaitWork' => false,
-                    'transferInWorkToOnHold' => false,
-                    'transferInWorkToDeclined' => false,
-                    'transferInWorkToPartialComplete' => false,
-                    'reportLoadAllUsers' => false,
-                    'reportLoadMarketUsers' => false,
-                    'reportLoadYourTeam' => false,
-                    'transferCompletedToInWork' => false,
-                    'transferCompletedToClosed' => false,
-                    'transferInCheckToRequireChange' => false,
-                    'transferInCheckToWaitWork' => false,
-                    'transferInCheckToDeclined' => false,
-                    'requestGroupItems' => false,
-                    'requestAddUpdateVideo' => false,
-                    'requestUpdateFatPortalCat' => false,
-                    'requestUpdateItems' => false,
-                    'requestAddUpdateSizeGrid' => false,
-                    'requestAddUpdateTags' => false,
-                    'requestAddFatPortalCat' => false,
-                    'requestAddUpdateSC' => false,
-                    'requestAddNewItems' => false,
-                    'requestAddAttrOrValues' => false,
-                    'requestUploadPhoto' => false,
-                    'updateUser' => true,
-                    'requestUpdateAttrOrValues' => false,
-                    'transferRequireChangeToWaitCheck' => false,
-                    'transferWaitCheckToRequireChange' => false,
-                    'transferWaitCheckToWaitWork' => false,
-                    'transferWaitCheckToDeclined' => false,
-                    'transferWaitCheckToInCheck' => false,
-                    'requestUpdate' => false,
-                    'updateTemplates' => false,
-                    'transferWaitWorkToInWork' => false,
-                    'transferWaitWorkToDeclined' => false,
-                    'transferOnHoldToCompleted' => false,
-                    'transferOnHoldToInWork' => false,
-                    'transferOnHoldToPartialComplete' => false,
-                    'massEdit' => false,
-                    'requestTransferItems' => false,
-                    'requestCheckHidden' => false,
-                    'requestStructureDesign' => false,
-                    'requestViewAllRequests' => true,
-                    'seeAllTemplates' => false,
-                    'viewDashboardsByCommand' => false,
-                    'viewDashboardsByDirection' => false,
-                    'viewOwnDashboards' => false,
-                    'viewAllDashboards' => false,
-                    'requestViewTeamRequests' => false,
-                    'viewSplitterModerationRequests' => false,
-                    'requestViewDirectionRequests' => false,
-                    'reportView' => false,
-                    'viewUser' => true,
-                    'requestViewOwnRequests' => false,
-                    'seeTeamTemplates' => false,
-                    'seeDirectionTemplates' => false,
-                    'excludedFieldsUpdate' => false,
-                    'errorsUpdate' => true,
-                    'categoryUpdate' => false,
-                    'teamUpdate' => false,
-                    'coefUpdate' => false,
-                    'sellerUpdate' => false,
-                    'fieldsUpdate' => false,
-                    'priorityUpdate' => false,
-                    'reasonsUpdate' => false,
-                    'requestCreate' => false,
-                    'requestCreateRelated' => false,
-                    'createUser' => false,
-                    'requestDeleteAttachments' => false,
-                    'transferPartialCompleteToInWork' => false,
-                    'transferPartialCompleteToClosed' => false,
+                    'blockUser',
+                    'takeToWork',
+                    'updateUser',
+                    'requestViewAllRequests',
+                    'viewUser',
+                    'errorsUpdate',
                 ],
             ],
             'responseBody' => [
@@ -2118,6 +2248,7 @@ return [
                     'data' => NULL,
                     'created_at' => '2020-03-10 12:07:48',
                     'updated_at' => NULL,
+                    'project_id' => 'Контент',
                 ],
             ],
             'db' => [

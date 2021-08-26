@@ -30,7 +30,7 @@ class PUTCategoryUpdateCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->sendPUT('/category/update/2', $providerData['requestBody']);
 

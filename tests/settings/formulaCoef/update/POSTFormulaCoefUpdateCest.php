@@ -30,7 +30,7 @@ class POSTFormulaCoefUpdateCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis(RequestsTester::REDIS_KEYS_VALUES);
+        $I->loadDataForRedis();
 
         $I->sendPOST($providerData['url'] ?? '/formula-coef/update-coef', $providerData['requestBody']);
 

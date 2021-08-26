@@ -8,11 +8,10 @@ use Codeception\Module\TestHelper;
 /**
  * @group lisa
  * @group lisa_api
- * @group lisa_api_settings
- * @group lisa_api_marketSupervisor
- * @group POSTMarketSupervisorDistribution
+ * @group lisa_api_roles
+ * @group GETRolesModel
  */
-class POSTMarketSupervisorDistributionCest
+class GETRolesModelCest
 {
     protected function pageProvider(): array
     {
@@ -20,25 +19,19 @@ class POSTMarketSupervisorDistributionCest
     }
 
     /**
-     * @param SettingsTester $I
+     * @param UsersTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTMarketSupervisorDistribution(SettingsTester $I, Example $data)
+    public function GETRolesModel(UsersTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis();
-
-        $I->haveHttpHeader('Content-Type', 'application/json');
-        $I->sendPOST('/market-supervisor/save-distribution', $providerData['requestBody']);
+        $I->sendGET('/auth-item/get-model/' . ($providerData['name'] ?? null));
 
         $I->seeResponseCodeIs(200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
-
-        $I->checkRedis();
-        $I->checkKeyValueInRedis($providerData['redisValueAfter']);
     }
 }
