@@ -961,23 +961,23 @@ class GeneralTester extends Actor
                     'requestUpdateAttrOrValues' => 'Изменение существующих параметров/значений (Контент)',
                 ],
                 [
-                    'commentRequestMrkt' => 'Комментирование задач (Маркетинг)',
+                    'commentRequestMrk' => 'Комментирование задач (Маркетинг)',
                     'requestTransferItems' => 'Перенос товаров (Контент)',
                     'requestCheckHidden' => 'Проверка скрытых товаров (Контент)',
                 ],
                 [
                     'requestStructureDesign' => 'Проектирование структуры (Контент)',
-                    'viewAllRequestsMrkt' => 'Просмотр всех задач (Маркетинг)',
-                    'viewTeamRequestsMrkt' => 'Просмотр задач команды (Маркетинг)',
+                    'viewAllRequestsMrk' => 'Просмотр всех задач (Маркетинг)',
+                    'viewTeamRequestsMrk' => 'Просмотр задач команды (Маркетинг)',
                 ],
                 [
-                    'viewOwnRequestsMrkt' => 'Просмотр только своих задач (Маркетинг)',
-                    'updateRequestMrkt' => 'Редактирование задач (Маркетинг)',
-                    'createRequestMrkt' => 'Создание задач (Маркетинг)',
+                    'viewOwnRequestsMrk' => 'Просмотр только своих задач (Маркетинг)',
+                    'updateRequestMrk' => 'Редактирование задач (Маркетинг)',
+                    'createRequestMrk' => 'Создание задач (Маркетинг)',
                 ],
                 [
-                    'createSubRequestMrkt' => 'Создание подзадач (Маркетинг)',
-                    'createFilterMrkt' => 'Создание фильтра (Маркетинг)',
+                    'createSubRequestMrk' => 'Создание подзадач (Маркетинг)',
+                    'createFilterMrk' => 'Создание фильтра (Маркетинг)',
                 ],
             ],
             'Шаблоны' => [
@@ -1178,18 +1178,18 @@ class GeneralTester extends Actor
             ],
             'Заявки' => [
                 [
-                    'commentRequestMrkt' => 'Комментирование задач',
-                    'viewAllRequestsMrkt' => 'Просмотр всех задач',
-                    'viewTeamRequestsMrkt' => 'Просмотр задач команды',
+                    'commentRequestMrk' => 'Комментирование задач',
+                    'viewAllRequestsMrk' => 'Просмотр всех задач',
+                    'viewTeamRequestsMrk' => 'Просмотр задач команды',
                 ],
                 [
-                    'viewOwnRequestsMrkt' => 'Просмотр только своих задач',
-                    'updateRequestMrkt' => 'Редактирование задач',
-                    'createRequestMrkt' => 'Создание задач',
+                    'viewOwnRequestsMrk' => 'Просмотр только своих задач',
+                    'updateRequestMrk' => 'Редактирование задач',
+                    'createRequestMrk' => 'Создание задач',
                 ],
                 [
-                    'createSubRequestMrkt' => 'Создание подзадач',
-                    'createFilterMrkt' => 'Создание фильтра',
+                    'createSubRequestMrk' => 'Создание подзадач',
+                    'createFilterMrk' => 'Создание фильтра',
                 ],
             ],
         ],

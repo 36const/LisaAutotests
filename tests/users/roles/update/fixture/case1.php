@@ -100,6 +100,11 @@ return [
                 'created_at' => null
             ],
             [
+                'item_name' => 'updateUser',
+                'user_id' => 4,
+                'created_at' => null
+            ],
+            [
                 'item_name' => 'blockUser',
                 'user_id' => 6,
                 'created_at' => '2021-04-15 16:19:36'

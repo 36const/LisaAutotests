@@ -1883,7 +1883,7 @@ return [
         'project_id' => 1
     ],
     [
-        'name' => 'viewOwnRequestsMrkt',
+        'name' => 'viewOwnRequestsMrk',
         'type' => 2,
         'description' => 'Просмотр только своих задач',
         'group' => 'request',
@@ -1894,7 +1894,7 @@ return [
         'project_id' => 2,
     ],
     [
-        'name' => 'viewTeamRequestsMrkt',
+        'name' => 'viewTeamRequestsMrk',
         'type' => 2,
         'description' => 'Просмотр задач команды',
         'group' => 'request',
@@ -1905,7 +1905,7 @@ return [
         'project_id' => 2,
     ],
     [
-        'name' => 'viewAllRequestsMrkt',
+        'name' => 'viewAllRequestsMrk',
         'type' => 2,
         'description' => 'Просмотр всех задач',
         'group' => 'request',
@@ -1916,7 +1916,7 @@ return [
         'project_id' => 2,
     ],
     [
-        'name' => 'createFilterMrkt',
+        'name' => 'createFilterMrk',
         'type' => 2,
         'description' => 'Создание фильтра',
         'group' => 'request',
@@ -1927,7 +1927,7 @@ return [
         'project_id' => 2,
     ],
     [
-        'name' => 'createRequestMrkt',
+        'name' => 'createRequestMrk',
         'type' => 2,
         'description' => 'Создание задач',
         'group' => 'request',
@@ -1938,7 +1938,7 @@ return [
         'project_id' => 2,
     ],
     [
-        'name' => 'createSubRequestMrkt',
+        'name' => 'createSubRequestMrk',
         'type' => 2,
         'description' => 'Создание подзадач',
         'group' => 'request',
@@ -1949,7 +1949,7 @@ return [
         'project_id' => 2,
     ],
     [
-        'name' => 'updateRequestMrkt',
+        'name' => 'updateRequestMrk',
         'type' => 2,
         'description' => 'Редактирование задач',
         'group' => 'request',
@@ -1960,7 +1960,7 @@ return [
         'project_id' => 2,
     ],
     [
-        'name' => 'commentRequestMrkt',
+        'name' => 'commentRequestMrk',
         'type' => 2,
         'description' => 'Комментирование задач',
         'group' => 'request',
