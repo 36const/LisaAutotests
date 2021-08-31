@@ -9,11 +9,11 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_api
  * @group lisa_api_users
- * @group POSTUsers
- * @group POSTUsersUpdateMultiple
- * @group POSTUsersUpdateMultiplePosition
+ * @group POSTUser
+ * @group POSTUserUpdateMultiple
+ * @group POSTUserUpdateMultipleTeam
  */
-class POSTUsersUpdateMultiplePositionCest
+class POSTUserUpdateMultipleTeamCest
 {
     protected function pageProvider(): array
     {
@@ -26,26 +26,18 @@ class POSTUsersUpdateMultiplePositionCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function POSTUsersUpdateAssignRole(UsersTester $I, Example $data)
+    public function POSTUserUpdateMultipleTeam(UsersTester $I, Example $data)
     {
         $I->loadDataForTest($data, null);
         $providerData = $data['provider_data'];
 
-        $redis = array_merge(
-            UsersTester::REDIS_KEYS_VALUES,
-            [
-                'allowed_types_8' => 'value',
-                'user_permissions_9' => 'value',
-                'user_permissions_6' => 'value'
-            ]
-        );
-        $I->loadDataForRedis($redis);
+        $I->loadDataForRedis();
 
-        $I->sendPOST('/user/update-position', $providerData['requestBody']);
+        $I->sendPOST('/user/update-team', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
 
-        $I->checkRedis($providerData['excludedRedisKeys'] ?? null, $redis);
+        $I->checkRedis($providerData['excludedRedisKeys'] ?? null);
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);
         $I->checkRabbitMQWithRoutingKey($providerData['RabbitMQWithRoutingKey'] ?? null, true);
