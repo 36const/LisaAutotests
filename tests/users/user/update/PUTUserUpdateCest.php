@@ -36,7 +36,6 @@ class PUTUserUpdateCest
 
         $I->seeResponseCodeIs(200);
         $I->canseeResponseContainsJson($providerData['responseBody']);
-        $I->canSeeResponseMatchesJsonType(['change_date' => 'string:regex(~[\d]{4}-[\d]{2}-[\d]{2} [\d]{2}:[\d]{2}:[\d]{2}~)'], '$.model');
 
         $I->checkRedis($providerData['excludedRedisKeys'] ?? null);
         $I->checkTablesInDB($providerData['db']);

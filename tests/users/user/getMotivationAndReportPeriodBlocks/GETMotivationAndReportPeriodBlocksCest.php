@@ -34,9 +34,5 @@ class GETMotivationAndReportPeriodBlocksCest
 
         foreach ($providerData['responseBody'] as $jsonPath => $jsonValue)
             $I->canSeePartJsonResponseEquals($jsonValue, $jsonPath);
-        
-        if (isset($providerData['responseBodyContains']))
-            foreach ($providerData['responseBodyContains'] as $jsonValue)
-                $I->canSeeResponseContainsJson($jsonValue);
     }
 }

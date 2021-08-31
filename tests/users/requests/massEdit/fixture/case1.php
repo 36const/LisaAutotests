@@ -22,7 +22,8 @@ return [
                     'create_ts' => '2020-05-19 13:36:22',
                     'created_by' => 1,
                     'change_date' => '2020-05-19 16:36:22',
-                    'drfo' => "'000000004"
+                    'drfo' => "'000000004",
+                    'positions' => '["supervisor"]',
                 ],
             ],
         ),

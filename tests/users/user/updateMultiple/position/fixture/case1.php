@@ -6,7 +6,7 @@ return [
     'lisa_fixtures' => [
         'auth.users' => [
             [
-                //"id" => 1,
+                //'id' => 1,
                 'name' => 'Система',
                 'login' => 'systemBPM',
                 'email' => 'system@rozetka.com.ua',
@@ -17,10 +17,11 @@ return [
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 0,
                 'change_date' => '2020-05-19 16:36:22',
-                'drfo' => '0'
+                'drfo' => '0',
+                'positions' => '["system"]',
             ],
             [
-                //"id" => 2,
+                //'id' => 2,
                 'name' => 'Администратор',
                 'login' => 'adminBPM',
                 'email' => 'admin@admin.com',
@@ -31,10 +32,11 @@ return [
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 0,
                 'change_date' => '2020-05-19 16:36:22',
-                'drfo' => '0'
+                'drfo' => '0',
+                'positions' => '["admin"]',
             ],
             [
-                //"id" => 3,
+                //'id' => 3,
                 'name' => 'Гость',
                 'login' => 'guestBPM',
                 'email' => 'guest@guest.com',
@@ -45,10 +47,11 @@ return [
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 0,
                 'change_date' => '2020-05-19 16:36:22',
-                'drfo' => '0'
+                'drfo' => '0',
+                'positions' => '["guest"]',
             ],
             [
-                //"id" => 4,
+                //'id' => 4,
                 'name' => 'Константин Куцан',
                 'login' => 'kutsan.k',
                 'email' => 'kutsan.k@rozetka.com.ua',
@@ -59,10 +62,11 @@ return [
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 1,
                 'change_date' => '2020-05-19 16:36:22',
-                'drfo' => "'000000004"
+                'drfo' => "'000000004",
+                'positions' => '["admin"]',
             ],
             [
-                //"id" => 5,
+                //'id' => 5,
                 'name' => 'Супервайзер Руководько 1',
                 'login' => 'bpm_headSupervisor_1',
                 'email' => 'bpm_headSupervisor_1@rozetka.com.ua',
@@ -73,10 +77,11 @@ return [
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 1,
                 'change_date' => '2020-05-19 16:36:22',
-                'drfo' => "'000000005"
+                'drfo' => "'000000005",
+                'positions' => '["headSupervisor"]',
             ],
             [
-                //"id" => 6,
+                //'id' => 6,
                 'name' => 'Супервайзер Начальникович 1',
                 'login' => 'bpm_supervisor_1',
                 'email' => 'bpm_supervisor_1@rozetka.com.ua',
@@ -87,10 +92,11 @@ return [
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 1,
                 'change_date' => '2020-05-19 16:36:22',
-                'drfo' => "'000000006"
+                'drfo' => "'000000006",
+                'positions' => '["supervisor"]',
             ],
             [
-                //"id" => 7,
+                //'id' => 7,
                 'name' => 'Splitter.Moderation',
                 'login' => 'splitter_moderation',
                 'email' => 'splitter_moderation@rozetka.com.ua',
@@ -101,10 +107,11 @@ return [
                 'create_ts' => '2020-04-13 13:17:20',
                 'created_by' => 1,
                 'change_date' => '2020-04-13 13:17:20',
-                'drfo' => '0'
+                'drfo' => '0',
+                'positions' => '["system"]',
             ],
             [
-                //"id" => 8,
+                //'id' => 8,
                 'name' => 'Супервайзер Групповушкин 13',
                 'login' => 'bpm_supervisor_13',
                 'email' => 'bpm_supervisor_13@rozetka.com.ua',
@@ -115,10 +122,11 @@ return [
                 'create_ts' => '2020-04-13 13:17:20',
                 'created_by' => 1,
                 'change_date' => '2020-04-13 13:17:20',
-                'drfo' => '0'
+                'drfo' => '0',
+                'positions' => '["supervisor"]',
             ],
             [
-                //"id" => 9,
+                //'id' => 9,
                 'name' => 'Супервайзер Групповушкин 16',
                 'login' => 'bpm_supervisor_16',
                 'email' => 'bpm_supervisor_16@rozetka.com.ua',
@@ -129,7 +137,8 @@ return [
                 'create_ts' => '2020-04-13 13:17:20',
                 'created_by' => 1,
                 'change_date' => '2020-04-13 13:17:20',
-                'drfo' => '0'
+                'drfo' => '0',
+                'positions' => '["supervisor"]',
             ],
         ],
         'auth.api_users' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.api_users.php',
@@ -1478,7 +1487,6 @@ return [
                 'user_id' => 5
             ]
         ],
-        'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
         'auth.user_changing_history' => [],
     ],
 ];

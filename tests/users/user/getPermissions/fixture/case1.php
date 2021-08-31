@@ -5,7 +5,6 @@ use Codeception\Module\TestHelper;
 return [
     'lisa_fixtures' => [
         'field_values' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
-        'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
         'auth.auth_assignment' => [
             [
                 'created_at' => null,

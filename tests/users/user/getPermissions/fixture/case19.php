@@ -57,7 +57,6 @@ return [
             ]
         ],
         'field_values' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values_prod.php',
-        'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
         'auth.auth_assignment' => [
             [
                 'created_at' => null,

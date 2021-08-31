@@ -52,12 +52,10 @@ return [
                         ],
                     ],
                 ],
+                '$.fieldsData.sv_report_periods' => [
+                    'disabled' => true,
+                ],
             ],
-            'responseBodyContains' => [
-                [
-                    'sv_report_periods' => false
-                ]
-            ]
         ]
     ],
 
@@ -107,12 +105,10 @@ return [
                         ],
                     ],
                 ],
+                '$.fieldsData.sv_report_periods' => [
+                    'disabled' => true,
+                ],
             ],
-            'responseBodyContains' => [
-                [
-                    'sv_report_periods' => false
-                ]
-            ]
         ]
     ],
 
@@ -129,13 +125,10 @@ return [
                 ],
                 '$.fieldsData.ccMotivation' => [
                 ],
+                '$.fieldsData.sv_report_periods' => [
+                    'disabled' => true,
+                ],
             ],
-            'responseBodyContains' => [
-                [
-                    'report_period_id' => false,
-                    'sv_report_periods' => false
-                ]
-            ]
         ]
     ],
 

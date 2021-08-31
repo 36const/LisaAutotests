@@ -86,6 +86,10 @@ return [
                             'id' => 20,
                             'name' => 'Фотостудия',
                         ],
+                        18 => [
+                            'id' => 21,
+                            'name' => 'Маркетинг',
+                        ],
                     ],
                     '_links' => [
                         'self' => [
@@ -99,7 +103,7 @@ return [
                         ],
                     ],
                     '_meta' => [
-                        'totalCount' => 18,
+                        'totalCount' => 19,
                         'pageCount' => 1,
                         'currentPage' => 1,
                         'perPage' => 20,

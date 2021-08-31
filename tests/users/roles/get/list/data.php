@@ -41,9 +41,20 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
-                            'project_id' => 'Контент'
+                            'project_id' => 'Все'
                         ],
                         3 => [
+                            'name' => 'marketolog',
+                            'type' => 1,
+                            'description' => 'Маркетолог',
+                            'group' => null,
+                            'rule_name' => null,
+                            'data' => null,
+                            'created_at' => '2020-03-10 12:07:48',
+                            'updated_at' => null,
+                            'project_id' => 'Маркетинг'
+                        ],
+                        4 => [
                             'name' => 'moderator',
                             'type' => 1,
                             'description' => 'Сотрудник отдела модерации',
@@ -54,7 +65,7 @@ return [
                             'updated_at' => NULL,
                             'project_id' => 'Контент'
                         ],
-                        4 => [
+                        5 => [
                             'name' => 'photoManager',
                             'type' => 1,
                             'description' => 'Сотрудник фотостудии',
@@ -65,7 +76,7 @@ return [
                             'updated_at' => NULL,
                             'project_id' => 'Контент'
                         ],
-                        5 => [
+                        6 => [
                             'name' => 'productManager',
                             'type' => 1,
                             'description' => 'Продакт-менеджер',
@@ -76,7 +87,7 @@ return [
                             'updated_at' => NULL,
                             'project_id' => 'Контент'
                         ],
-                        6 => [
+                        7 => [
                             'name' => 'seo',
                             'type' => 1,
                             'description' => 'Сотрудник seo-отдела',
@@ -87,7 +98,7 @@ return [
                             'updated_at' => NULL,
                             'project_id' => 'Контент'
                         ],
-                        7 => [
+                        8 => [
                             'name' => 'supervisor',
                             'type' => 1,
                             'description' => 'Супервайзер',
@@ -98,7 +109,7 @@ return [
                             'updated_at' => NULL,
                             'project_id' => 'Контент'
                         ],
-                        8 => [
+                        9 => [
                             'name' => 'system',
                             'type' => 1,
                             'description' => 'Система',
@@ -109,7 +120,7 @@ return [
                             'updated_at' => NULL,
                             'project_id' => 'Все'
                         ],
-                        9 => [
+                        10 => [
                             'name' => 'teamLead',
                             'type' => 1,
                             'description' => 'Руководитель направления (тимлид)',
@@ -133,7 +144,7 @@ return [
                         ],
                     ],
                     '_meta' => [
-                        'totalCount' => 10,
+                        'totalCount' => 11,
                         'pageCount' => 1,
                         'currentPage' => 1,
                         'perPage' => 20,
@@ -251,6 +262,17 @@ return [
                             'project_id' => 'Контент'
                         ],
                         3 => [
+                            'name' => 'marketolog',
+                            'type' => 1,
+                            'description' => 'Маркетолог',
+                            'group' => null,
+                            'rule_name' => null,
+                            'data' => null,
+                            'created_at' => '2020-03-10 12:07:48',
+                            'updated_at' => null,
+                            'project_id' => 'Маркетинг'
+                        ],
+                        4 => [
                             'name' => 'teamLead',
                             'type' => 1,
                             'description' => 'Руководитель направления (тимлид)',
@@ -261,7 +283,7 @@ return [
                             'updated_at' => NULL,
                             'project_id' => 'Все'
                         ],
-                        4 => [
+                        5 => [
                             'name' => 'headSupervisor',
                             'type' => 1,
                             'description' => 'Руководитель супервайзеров',
@@ -270,9 +292,9 @@ return [
                             'data' => NULL,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => NULL,
-                            'project_id' => 'Контент'
+                            'project_id' => 'Все'
                         ],
-                        5 => [
+                        6 => [
                             'name' => 'system',
                             'type' => 1,
                             'description' => 'Система',
@@ -283,7 +305,7 @@ return [
                             'updated_at' => NULL,
                             'project_id' => 'Все'
                         ],
-                        6 => [
+                        7 => [
                             'name' => 'seo',
                             'type' => 1,
                             'description' => 'Сотрудник seo-отдела',
@@ -294,7 +316,7 @@ return [
                             'updated_at' => NULL,
                             'project_id' => 'Контент'
                         ],
-                        7 => [
+                        8 => [
                             'name' => 'photoManager',
                             'type' => 1,
                             'description' => 'Сотрудник фотостудии',
@@ -305,7 +327,7 @@ return [
                             'updated_at' => NULL,
                             'project_id' => 'Контент'
                         ],
-                        8 => [
+                        9 => [
                             'name' => 'supervisor',
                             'type' => 1,
                             'description' => 'Супервайзер',
@@ -329,7 +351,7 @@ return [
                         ],
                     ],
                     '_meta' => [
-                        'totalCount' => 9,
+                        'totalCount' => 10,
                         'pageCount' => 1,
                         'currentPage' => 1,
                         'perPage' => 20,

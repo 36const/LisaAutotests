@@ -1,6 +1,6 @@
 <?php
 
-use lisa\RequestsTester;
+use lisa\UsersTester;
 
 return [
     'data' => [
@@ -14,7 +14,8 @@ return [
                 'teamName' => 'Маркетплейс 1',
                 'parent_id' => 6,
                 'position' => 'contentManager',
-                'positionName' => 'Контент-менеджер',
+                'positions' => '["contentManager"]',
+                'positionName' => 'Контент-менеджер (Контент)',
                 'status' => 'Активный',
                 'create_ts' => '2020-05-19 13:36:23',
                 'created_by' => 1,
@@ -31,7 +32,8 @@ return [
                 'teamName' => 'Маркетплейс 1',
                 'parent_id' => 6,
                 'position' => 'contentManager',
-                'positionName' => 'Контент-менеджер',
+                'positions' => '["contentManager"]',
+                'positionName' => 'Контент-менеджер (Контент)',
                 'status' => 'Активный',
                 'create_ts' => '2020-05-19 13:36:23',
                 'created_by' => 1,
@@ -48,7 +50,8 @@ return [
                 'teamName' => 'Маркетплейс 1',
                 'parent_id' => 5,
                 'position' => 'supervisor',
-                'positionName' => 'Супервайзер',
+                'positions' => '["supervisor"]',
+                'positionName' => 'Супервайзер (Контент)',
                 'status' => 'Активный',
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 1,
@@ -80,9 +83,9 @@ return [
         'team' => '1',
     ],
     'initialValues' => [
-        'activeTeams' => RequestsTester::ACTIVETEAMS,
-        'positions' => RequestsTester::POSITIONS,
-        'teams' => RequestsTester::TEAMS,
-        'userNames' => RequestsTester::USER_NAMES,
+        'activeTeams' => UsersTester::ACTIVETEAMS,
+        'positions' => UsersTester::POSITIONS,
+        'teams' => UsersTester::TEAMS,
+        'userNames' => UsersTester::USER_NAMES,
     ]
 ];

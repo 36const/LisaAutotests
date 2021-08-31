@@ -89,7 +89,7 @@ return [
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => null,
-                            'project_id' => 1
+                            'project_id' => 0
                         ],
                         [
                             'name' => 'moderator',
@@ -167,6 +167,17 @@ return [
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => null,
                             'project_id' => 0
+                        ],
+                        [
+                            'name' => 'marketolog',
+                            'type' => 1,
+                            'description' => 'Маркетолог',
+                            'group' => null,
+                            'rule_name' => null,
+                            'data' => null,
+                            'created_at' => '2020-03-10 12:07:48',
+                            'updated_at' => null,
+                            'project_id' => 2
                         ],
                         [
                             'name' => 'viewAllDashboards',
@@ -2492,7 +2503,7 @@ return [
                             'data' => null,
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => null,
-                            'project_id' => 1
+                            'project_id' => 0
                         ],
                         [
                             'name' => 'moderator',
@@ -2570,6 +2581,17 @@ return [
                             'created_at' => '2020-03-10 12:07:48',
                             'updated_at' => null,
                             'project_id' => 0
+                        ],
+                        [
+                            'name' => 'marketolog',
+                            'type' => 1,
+                            'description' => 'Маркетолог',
+                            'group' => null,
+                            'rule_name' => null,
+                            'data' => null,
+                            'created_at' => '2020-03-10 12:07:48',
+                            'updated_at' => null,
+                            'project_id' => 2
                         ],
                         [
                             'name' => 'viewAllDashboards',

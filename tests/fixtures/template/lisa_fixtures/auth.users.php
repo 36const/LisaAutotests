@@ -2,7 +2,7 @@
 
 return [
     [
-//        "id" => 1,
+//        'id' => 1,
         'name' => 'Система',
         'login' => 'systemBPM',
         'email' => 'system@rozetka.com.ua',
@@ -13,10 +13,11 @@ return [
         'create_ts' => '2020-05-19 13:36:22',
         'created_by' => 0,
         'change_date' => '2020-05-19 16:36:22',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["system"]',
     ],
     [
-//        "id" => 2,
+//        'id' => 2,
         'name' => 'Администратор',
         'login' => 'adminBPM',
         'email' => 'admin@admin.com',
@@ -27,10 +28,11 @@ return [
         'create_ts' => '2020-05-19 13:36:22',
         'created_by' => 0,
         'change_date' => '2020-05-19 16:36:22',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["admin"]',
     ],
     [
-//        "id" => 3,
+//        'id' => 3,
         'name' => 'Гость',
         'login' => 'guestBPM',
         'email' => 'guest@guest.com',
@@ -41,10 +43,11 @@ return [
         'create_ts' => '2020-05-19 13:36:22',
         'created_by' => 0,
         'change_date' => '2020-05-19 16:36:22',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["guest"]',
     ],
     [
-//        "id" => 4,
+//        'id' => 4,
         'name' => 'Константин Куцан',
         'login' => 'kutsan.k',
         'email' => 'kutsan.k@rozetka.com.ua',
@@ -55,10 +58,11 @@ return [
         'create_ts' => '2020-05-19 13:36:22',
         'created_by' => 1,
         'change_date' => '2020-05-19 16:36:22',
-        'drfo' => "'000000004"
+        'drfo' => "'000000004",
+        'positions' => '["admin"]',
     ],
     [
-//        "id" => 5,
+//        'id' => 5,
         'name' => 'Супервайзер Руководько 1',
         'login' => 'bpm_headSupervisor_1',
         'email' => 'bpm_headSupervisor_1@rozetka.com.ua',
@@ -69,10 +73,11 @@ return [
         'create_ts' => '2020-05-19 13:36:22',
         'created_by' => 1,
         'change_date' => '2020-05-19 16:36:22',
-        'drfo' => "'000000005"
+        'drfo' => "'000000005",
+        'positions' => '["headSupervisor"]',
     ],
     [
-//        "id" => 6,
+//        'id' => 6,
         'name' => 'Супервайзер Начальникович 1',
         'login' => 'bpm_supervisor_1',
         'email' => 'bpm_supervisor_1@rozetka.com.ua',
@@ -83,10 +88,11 @@ return [
         'create_ts' => '2020-05-19 13:36:22',
         'created_by' => 1,
         'change_date' => '2020-05-19 16:36:22',
-        'drfo' => "'000000006"
+        'drfo' => "'000000006",
+        'positions' => '["supervisor"]',
     ],
     [
-//        "id" => 7,
+//        'id' => 7,
         'name' => 'Splitter.Moderation',
         'login' => 'splitter_moderation',
         'email' => 'splitter_moderation@rozetka.com.ua',
@@ -97,10 +103,11 @@ return [
         'create_ts' => '2020-04-13 13:17:20',
         'created_by' => 1,
         'change_date' => '2020-04-13 13:17:20',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["system"]',
     ],
     [
-        //"id" => 8,
+        //'id' => 8,
         'name' => 'Mobile Courier',
         'login' => 'mobile_courier',
         'email' => 'mobile_courier@rozetka.com.ua',
@@ -111,10 +118,11 @@ return [
         'create_ts' => '2020-04-13 13:17:20',
         'created_by' => 1,
         'change_date' => '2020-04-13 13:17:20',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["system"]',
     ],
     [
-        //"id" => 9,
+        //'id' => 9,
         'name' => 'JIRA COMI-запрос на замер',
         'login' => 'jira_comi',
         'email' => 'jira_comi@rozetka.com.ua',
@@ -125,10 +133,11 @@ return [
         'create_ts' => '2020-04-13 13:17:20',
         'created_by' => 1,
         'change_date' => '2020-04-13 13:17:20',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["system"]',
     ],
     [
-        //"id" => 10,
+        //'id' => 10,
         'name' => 'Супервайзер Начальникович 2',
         'login' => 'bpm_supervisor_2',
         'email' => 'bpm_supervisor_2@rozetka.com.ua',
@@ -139,10 +148,11 @@ return [
         'create_ts' => '2020-05-19 13:36:23',
         'created_by' => 1,
         'change_date' => '2020-05-19 16:36:22',
-        'drfo' => "'000000010"
+        'drfo' => "'000000010",
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 11,
+        //'id' => 11,
         'name' => 'Менеджер Контентович 1А',
         'login' => 'bpm_contentManager_1a',
         'email' => 'bpm_contentManager_1a@rozetka.com.ua',
@@ -153,10 +163,11 @@ return [
         'create_ts' => '2020-05-19 13:36:23',
         'created_by' => 1,
         'change_date' => '2020-05-19 16:36:23',
-        'drfo' => "'000000011"
+        'drfo' => "'000000011",
+        'positions' => '["contentManager"]',
     ],
     [
-        //"id" => 12,
+        //'id' => 12,
         'name' => 'Менеджер Контентович 1Б',
         'login' => 'bpm_contentManager_1b',
         'email' => 'bpm_contentManager_1b@rozetka.com.ua',
@@ -167,10 +178,11 @@ return [
         'create_ts' => '2020-05-19 13:36:23',
         'created_by' => 1,
         'change_date' => '2020-05-19 16:36:23',
-        'drfo' => "'000000012"
+        'drfo' => "'000000012",
+        'positions' => '["contentManager"]',
     ],
     [
-        //"id" => 13,
+        //'id' => 13,
         'name' => 'Менеджер Контентович 2А',
         'login' => 'bpm_contentManager_2a',
         'email' => 'bpm_contentManager_2a@rozetka.com.ua',
@@ -181,10 +193,11 @@ return [
         'create_ts' => '2020-04-13 13:15:35',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:40:25',
-        'drfo' => "'000000013"
+        'drfo' => "'000000013",
+        'positions' => '["contentManager"]',
     ],
     [
-        //"id" => 14,
+        //'id' => 14,
         'name' => 'Менеджер Контентович 2Б',
         'login' => 'bpm_contentManager_2b',
         'email' => 'bpm_contentManager_2b@rozetka.com.ua',
@@ -195,10 +208,11 @@ return [
         'create_ts' => '2020-04-13 13:15:35',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:40:31',
-        'drfo' => "'000000014"
+        'drfo' => "'000000014",
+        'positions' => '["contentManager"]',
     ],
     [
-        //"id" => 15,
+        //'id' => 15,
         'name' => 'Тим Лидович 1',
         'login' => 'bpm_teamLead_1',
         'email' => 'bpm_teamLead_1@rozetka.com.ua',
@@ -209,10 +223,11 @@ return [
         'create_ts' => '2020-04-13 13:15:35',
         'created_by' => 1,
         'change_date' => '2020-06-28 13:19:51',
-        'drfo' => "'000000015"
+        'drfo' => "'000000015",
+        'positions' => '["teamLead"]',
     ],
     [
-        //"id" => 16,
+        //'id' => 16,
         'name' => 'Тим Лидович 2',
         'login' => 'bpm_teamLead_2',
         'email' => 'bpm_teamLead_2@rozetka.com.ua',
@@ -223,10 +238,11 @@ return [
         'create_ts' => '2020-04-13 13:15:36',
         'created_by' => 1,
         'change_date' => '2020-06-25 10:49:20',
-        'drfo' => "'000000016"
+        'drfo' => "'000000016",
+        'positions' => '["teamLead"]',
     ],
     [
-        //"id" => 17,
+        //'id' => 17,
         'name' => 'Менеджер Продактович 1',
         'login' => 'bpm_productManager_1',
         'email' => 'bpm_productManager_1@rozetka.com.ua',
@@ -237,10 +253,11 @@ return [
         'create_ts' => '2020-04-13 13:15:36',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:41:00',
-        'drfo' => "'000000017"
+        'drfo' => "'000000017",
+        'positions' => '["productManager"]',
     ],
     [
-        //"id" => 18,
+        //'id' => 18,
         'name' => 'Менеджер Продактович 2',
         'login' => 'bpm_productManager_2',
         'email' => 'bpm_productManager_2@rozetka.com.ua',
@@ -251,10 +268,11 @@ return [
         'create_ts' => '2020-04-13 13:15:36',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:41:05',
-        'drfo' => "'000000018"
+        'drfo' => "'000000018",
+        'positions' => '["productManager"]',
     ],
     [
-        //"id" => 19,
+        //'id' => 19,
         'name' => 'Сео Сеошевич 1',
         'login' => 'bpm_seo_1',
         'email' => 'bpm_seo_1@rozetka.com.ua',
@@ -265,10 +283,11 @@ return [
         'create_ts' => '2020-04-13 13:15:37',
         'created_by' => 1,
         'change_date' => '2020-06-25 13:18:41',
-        'drfo' => "'000000018"
+        'drfo' => "'000000018",
+        'positions' => '["seo"]',
     ],
     [
-        //"id" => 20,
+        //'id' => 20,
         'name' => 'Сео Сеошевич 2',
         'login' => 'bpm_seo_2',
         'email' => 'bpm_seo_2@rozetka.com.ua',
@@ -279,38 +298,41 @@ return [
         'create_ts' => '2020-04-13 13:15:37',
         'created_by' => 1,
         'change_date' => '2020-06-25 11:13:13',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["seo"]',
     ],
     [
-        //"id" => 21,
+        //'id' => 21,
         'name' => 'Менеджер Фоткович 1',
         'login' => 'bpm_photoManager_1',
         'email' => 'bpm_photoManager_1@rozetka.com.ua',
-        'team' => 21,
+        'team' => null,
         'parent_id' => 4,
         'position' => 'photoManager',
         'status' => 1,
         'create_ts' => '2020-04-13 13:15:37',
         'created_by' => 1,
         'change_date' => '2020-06-25 11:13:37',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["photoManager"]',
     ],
     [
-        //"id" => 22,
+        //'id' => 22,
         'name' => 'Менеджер Фоткович 2',
         'login' => 'bpm_photoManager_2',
         'email' => 'bpm_photoManager_2@rozetka.com.ua',
-        'team' => 21,
+        'team' => null,
         'parent_id' => 4,
         'position' => 'photoManager',
         'status' => 1,
         'create_ts' => '2020-04-13 13:15:37',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:41:42',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["photoManager"]',
     ],
     [
-        //"id" => 23,
+        //'id' => 23,
         'name' => 'Супервайзер Начальникович 3',
         'login' => 'bpm_supervisor_3',
         'email' => 'bpm_supervisor_3@rozetka.com.ua',
@@ -321,10 +343,11 @@ return [
         'create_ts' => '2020-04-13 13:15:37',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:42:34',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 24,
+        //'id' => 24,
         'name' => 'Супервайзер Начальникович 4',
         'login' => 'bpm_supervisor_4',
         'email' => 'bpm_supervisor_4@rozetka.com.ua',
@@ -335,10 +358,11 @@ return [
         'create_ts' => '2020-04-13 13:15:38',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:42:39',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 25,
+        //'id' => 25,
         'name' => 'Супервайзер Начальникович 5',
         'login' => 'bpm_supervisor_5',
         'email' => 'bpm_supervisor_5@rozetka.com.ua',
@@ -349,10 +373,11 @@ return [
         'create_ts' => '2020-04-13 13:15:39',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:42:43',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 26,
+        //'id' => 26,
         'name' => 'Супервайзер Начальникович 6',
         'login' => 'bpm_supervisor_6',
         'email' => 'bpm_supervisor_6@rozetka.com.ua',
@@ -363,10 +388,11 @@ return [
         'create_ts' => '2020-04-13 13:15:39',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:42:47',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 27,
+        //'id' => 27,
         'name' => 'Супервайзер Начальникович 7',
         'login' => 'bpm_supervisor_7',
         'email' => 'bpm_supervisor_7@rozetka.com.ua',
@@ -377,10 +403,11 @@ return [
         'create_ts' => '2020-04-13 13:15:40',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:42:52',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 28,
+        //'id' => 28,
         'name' => 'Супервайзер Начальникович 8',
         'login' => 'bpm_supervisor_8',
         'email' => 'bpm_supervisor_8@rozetka.com.ua',
@@ -391,10 +418,11 @@ return [
         'create_ts' => '2020-04-13 13:15:40',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:43:24',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 29,
+        //'id' => 29,
         'name' => 'Супервайзер Начальникович 9',
         'login' => 'bpm_supervisor_9',
         'email' => 'bpm_supervisor_9@rozetka.com.ua',
@@ -405,10 +433,11 @@ return [
         'create_ts' => '2020-04-13 13:15:41',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:43:30',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 30,
+        //'id' => 30,
         'name' => 'Супервайзер Начальникович 10',
         'login' => 'bpm_supervisor_10',
         'email' => 'bpm_supervisor_10@rozetka.com.ua',
@@ -419,10 +448,11 @@ return [
         'create_ts' => '2020-04-13 13:15:41',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:43:35',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 31,
+        //'id' => 31,
         'name' => 'Супервайзер Начальникович 11',
         'login' => 'bpm_supervisor_11',
         'email' => 'bpm_supervisor_11@rozetka.com.ua',
@@ -433,10 +463,11 @@ return [
         'create_ts' => '2020-04-13 13:15:42',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:43:39',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 32,
+        //'id' => 32,
         'name' => 'Супервайзер Начальникович 12',
         'login' => 'bpm_supervisor_12',
         'email' => 'bpm_supervisor_12@rozetka.com.ua',
@@ -447,10 +478,11 @@ return [
         'create_ts' => '2020-04-13 13:15:42',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:43:44',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 33,
+        //'id' => 33,
         'name' => 'Супервайзер Групповушкин 13',
         'login' => 'bpm_supervisor_13',
         'email' => 'bpm_supervisor_13@rozetka.com.ua',
@@ -461,10 +493,11 @@ return [
         'create_ts' => '2020-04-13 13:15:43',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:44:01',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 34,
+        //'id' => 34,
         'name' => 'Супервайзер Проектенко 14',
         'login' => 'bpm_supervisor_14',
         'email' => 'bpm_supervisor_14@rozetka.com.ua',
@@ -475,10 +508,11 @@ return [
         'create_ts' => '2020-04-13 13:15:44',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:44:05',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 35,
+        //'id' => 35,
         'name' => 'Супервайзер Категоркин 15',
         'login' => 'bpm_supervisor_15',
         'email' => 'bpm_supervisor_15@rozetka.com.ua',
@@ -489,10 +523,11 @@ return [
         'create_ts' => '2020-04-13 13:15:44',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:44:10',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 36,
+        //'id' => 36,
         'name' => 'Супервайзер Групповушкин 16',
         'login' => 'bpm_supervisor_16',
         'email' => 'bpm_supervisor_16@rozetka.com.ua',
@@ -503,10 +538,11 @@ return [
         'create_ts' => '2020-04-13 13:15:45',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:44:28',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 37,
+        //'id' => 37,
         'name' => 'Супервайзер Проектенко 17',
         'login' => 'bpm_supervisor_17',
         'email' => 'bpm_supervisor_17@rozetka.com.ua',
@@ -517,10 +553,11 @@ return [
         'create_ts' => '2020-04-13 13:15:45',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:44:32',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 38,
+        //'id' => 38,
         'name' => 'Супервайзер Категоркин 18',
         'login' => 'bpm_supervisor_18',
         'email' => 'bpm_supervisor_18@rozetka.com.ua',
@@ -531,10 +568,11 @@ return [
         'create_ts' => '2020-04-13 13:15:46',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:44:36',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["supervisor"]',
     ],
     [
-        //"id" => 39,
+        //'id' => 39,
         'name' => 'Менеджер Модерашкин',
         'login' => 'bpm_moderation',
         'email' => 'bpm_moderation@rozetka.com.ua',
@@ -545,6 +583,7 @@ return [
         'create_ts' => '2020-04-13 13:15:46',
         'created_by' => 1,
         'change_date' => '2020-06-24 08:44:54',
-        'drfo' => '0'
+        'drfo' => '0',
+        'positions' => '["moderator"]',
     ],
 ];

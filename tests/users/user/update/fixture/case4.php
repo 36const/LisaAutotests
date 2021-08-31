@@ -26,7 +26,8 @@ return [
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 1,
                 'change_date' => '2020-05-19 16:36:22',
-                'drfo' => "'000000005"
+                'drfo' => "'000000005",
+                'positions' => '["headSupervisor"]',
             ]
         ],
         'auth.auth_assignment' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_assignment.php'

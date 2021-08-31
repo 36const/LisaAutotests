@@ -1230,6 +1230,38 @@ return [
         'item_name' => 'seeTeamTemplates',
         'user_id' => 4,
     ],
+    [
+        'item_name' => 'viewOwnRequestsMrk',
+        'user_id' => 4,
+    ],
+    [
+        'item_name' => 'viewTeamRequestsMrk',
+        'user_id' => 4,
+    ],
+    [
+        'item_name' => 'viewAllRequestsMrk',
+        'user_id' => 4,
+    ],
+    [
+        'item_name' => 'createFilterMrk',
+        'user_id' => 4,
+    ],
+    [
+        'item_name' => 'createRequestMrk',
+        'user_id' => 4,
+    ],
+    [
+        'item_name' => 'createSubRequestMrk',
+        'user_id' => 4,
+    ],
+    [
+        'item_name' => 'updateRequestMrk',
+        'user_id' => 4,
+    ],
+    [
+        'item_name' => 'commentRequestMrk',
+        'user_id' => 4,
+    ],
 
     [
         'item_name' => 'requestUpdate',

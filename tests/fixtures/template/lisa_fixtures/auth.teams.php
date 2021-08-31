@@ -140,4 +140,12 @@ return [
         'project_id' => 1,
 
     ],
+    [
+        //"id" => 21,
+        'name' => 'Маркетинг',
+        'direction' => null,
+        'status' => 1,
+        'project_id' => 2,
+
+    ],
 ];

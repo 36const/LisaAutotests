@@ -648,7 +648,7 @@ return [
                 'lisa_common' => [
                     'update.users.all' => [
                         '{"action":"update","entity":"users","fields_data":{"id":30,"name":"Супервайзер Начальникович 10","login":"bpm_supervisor_10","email":"bpm_supervisor_10@rozetka.com.ua","team":"8","parent_id":5,"position":"supervisor","status":1,"create_ts":"2020-04-13 13:15:41","created_by":1,"change_date":"' . date('Y-m-d'),
-                        '","drfo":"0"},"changed_fields_names":["team","change_date"]}'
+                        '","drfo":"0","positions":"[\\"supervisor\\"]"},"changed_fields_names":["team","change_date"]}'
                     ]
                 ],
             ],

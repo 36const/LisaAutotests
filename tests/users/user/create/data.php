@@ -5,12 +5,14 @@ use Codeception\Module\TestHelper;
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Невозможность создания юзера без логина, имени, почты и должности',
+            'description' => 'Невозможность создания юзера без логина, имени, почты и ролей',
             'negative' => true
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'requestBody' => [],
+            'requestBody' => [
+                'positions' => []
+            ],
             'responseBody' => [
                 'errors' => [
                     'login' => [
@@ -20,7 +22,10 @@ return [
                         0 => 'Необходимо заполнить «Почта пользователя».',
                     ],
                     'position' => [
-                        0 => 'Необходимо заполнить «Роль пользователя».',
+                        0 => 'Значение «Роль пользователя» должно быть строкой.',
+                    ],
+                    'positions' => [
+                        0 => 'Необходимо заполнить одну из ролей',
                     ],
                     'name' => [
                         0 => 'Необходимо заполнить «Имя пользователя».',
@@ -41,7 +46,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Невозможность создания юзера без должности',
+            'description' => 'Невозможность создания юзера без ролей',
             'negative' => true
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -50,13 +55,17 @@ return [
                 'login' => 'content_supervisor',
                 'email' => 'content_supervisor@rozetka.com.ua',
                 'name' => 'Контентович СВ',
-                'team' => '2',
+                'team' => 2,
                 'parent_id' => 4,
+                'positions' => []
             ],
             'responseBody' => [
                 'errors' => [
                     'position' => [
-                        0 => 'Необходимо заполнить «Роль пользователя».',
+                        0 => 'Значение «Роль пользователя» должно быть строкой.',
+                    ],
+                    'positions' => [
+                        0 => 'Необходимо заполнить одну из ролей',
                     ],
                 ],
             ],
@@ -83,7 +92,9 @@ return [
                 'login' => 'content_supervisor',
                 'email' => 'content_supervisor@rozetka.com.ua',
                 'name' => 'Контентович СВ',
-                'position' => 'headSupervisor',
+                'positions' => [
+                    'headSupervisor'
+                ],
             ],
             'responseBody' => [
                 'errors' => [
@@ -115,7 +126,9 @@ return [
                 'login' => 'content_supervisor',
                 'email' => 'content_supervisor@rozetka.com.ua',
                 'name' => 'Контентович СВ',
-                'position' => 'supervisor',
+                'positions' => [
+                    'supervisor'
+                ],
                 'parent_id' => 4,
             ],
             'responseBody' => [
@@ -148,7 +161,9 @@ return [
                 'login' => 'content_supervisor',
                 'email' => 'content_supervisor@rozetka.com.ua',
                 'name' => 'Контентович СВ',
-                'position' => 'contentManager',
+                'positions' => [
+                    'contentManager'
+                ],
                 'parent_id' => 4,
             ],
             'responseBody' => [
@@ -181,8 +196,10 @@ return [
                 'login' => 'content_supervisor',
                 'email' => 'content_supervisor@rozetka.com.ua',
                 'name' => 'Контентович СВ',
-                'position' => 'supervisor',
-                'team' => '1',
+                'positions' => [
+                    'supervisor'
+                ],
+                'team' => 1,
             ],
             'responseBody' => [
                 'errors' => [
@@ -214,8 +231,10 @@ return [
                 'login' => 'content_supervisor',
                 'email' => 'content_supervisor@rozetka.com.ua',
                 'name' => 'Контентович СВ',
-                'position' => 'contentManager',
-                'team' => '1',
+                'positions' => [
+                    'contentManager'
+                ],
+                'team' => 1,
             ],
             'responseBody' => [
                 'errors' => [
@@ -247,8 +266,10 @@ return [
                 'login' => 'kutsan.k',
                 'email' => 'kutsan.k@rozetka.com.ua',
                 'name' => 'Константин Куцан',
-                'position' => 'admin',
-                'team' => '1',
+                'positions' => [
+                    'admin'
+                ],
+                'team' => 1,
             ],
             'responseBody' => [
                 'errors' => [
@@ -272,9 +293,120 @@ return [
         ],
     ],
 
+    'case15' => [
+        'setting' => [
+            'description' => 'Невозможность создания юзера с командой проекта Все и ролью проектов Контент/Маркетинг',
+            'negative' => true
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'login' => 'bpm_teamLead_1',
+                'email' => 'bpm_teamLead_1@rozetka.com.ua',
+                'name' => 'Лидович 1 Тим',
+                'positions' => [
+                    null,
+                    'productManager',
+                    'marketolog'
+                ],
+                'team' => 17,
+            ],
+            'responseBody' => [
+                'errors' => [
+                    'positions' => [
+                        0 => 'Необходимо заполнить либо роль, относящуюся к проекту команды, либо роль Все',
+                    ],
+                ],
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_common' => [],
+            ],
+        ],
+    ],
+
+    'case16' => [
+        'setting' => [
+            'description' => 'Невозможность создания юзера с командой проекта Контент и ролью только проекта Маркетинг',
+            'negative' => true
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'login' => 'bpm_teamLead_1',
+                'email' => 'bpm_teamLead_1@rozetka.com.ua',
+                'name' => 'Лидович 1 Тим',
+                'positions' => [
+                    null,
+                    null,
+                    'marketolog'
+                ],
+                'team' => 18,
+            ],
+            'responseBody' => [
+                'errors' => [
+                    'positions' => [
+                        0 => 'Необходимо заполнить либо роль, относящуюся к проекту команды, либо роль Все',
+                    ],
+                ],
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_common' => [],
+            ],
+        ],
+    ],
+
+    'case17' => [
+        'setting' => [
+            'description' => 'Невозможность создания юзера с командой проекта Маркетинг и ролью только проекта Контент',
+            'negative' => true
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'login' => 'bpm_teamLead_1',
+                'email' => 'bpm_teamLead_1@rozetka.com.ua',
+                'name' => 'Лидович 1 Тим',
+                'positions' => [
+                    null,
+                    'productManager',
+                    null,
+                ],
+                'team' => 21,
+            ],
+            'responseBody' => [
+                'errors' => [
+                    'positions' => [
+                        0 => 'Необходимо заполнить либо роль, относящуюся к проекту команды, либо роль Все',
+                    ],
+                ],
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_common' => [],
+            ],
+        ],
+    ],
+
     'case8' => [
         'setting' => [
-            'description' => 'Создание тим-лида с командой',
+            'description' => 'Создание тим-лида с командой Контента и ролью проекта Все',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -292,7 +424,9 @@ return [
                 'email' => 'bpm_teamLead_1@rozetka.com.ua',
                 'name' => 'Тим Лидович 1',
                 'team' => 18,
-                'position' => 'teamLead',
+                'positions' => [
+                    'teamLead'
+                ],
             ],
             'responseBody' => [
                 'model' => [
@@ -302,7 +436,8 @@ return [
                     'team' => 18,
                     'teamName' => 'Маркетплейс (инициаторы)',
                     'position' => 'teamLead',
-                    'positionName' => 'Руководитель направления (тимлид)',
+                    'positions' => '["teamLead"]',
+                    'positionName' => 'Руководитель направления (тимлид) (Все)',
                     'parent_id' => 1,
                     'drfo' => NULL,
                     'created_by' => 4,
@@ -330,7 +465,8 @@ return [
                                 'create_ts >=' => date('Y-m-d'),
                                 'created_by' => 4,
                                 'change_date >=' => date('Y-m-d'),
-                                'drfo' => null
+                                'drfo' => null,
+                                'positions' => '["teamLead"]',
                             ]
                         ]
                     ),
@@ -470,7 +606,7 @@ return [
                 'lisa_common' => [
                     'create.users.all' => [
                         '{"action":"create","entity":"users","fields_data":{"id":5,"name":"Тим Лидович 1","login":"bpm_teamLead_1","email":"bpm_teamLead_1@rozetka.com.ua","team":18,"parent_id":1,"position":"teamLead","status":1,"create_ts":"' . date('Y-m-d'),
-                        '","created_by":4,"change_date":null,"drfo":null},"changed_fields_names":[]}'
+                        '","created_by":4,"change_date":null,"drfo":null,"positions":"[\\"teamLead\\"]"},"changed_fields_names":[]}'
                     ]
                 ],
             ],
@@ -479,7 +615,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Создание продакта с кодом дрфо',
+            'description' => 'Создание продакта с кодом дрфо, командой Контента и ролями проектов Контента и Маркетинга',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -496,7 +632,12 @@ return [
                 'login' => 'bpm_productManager_1',
                 'email' => 'bpm_productManager_1@rozetka.com.ua',
                 'name' => 'Менеджер Продактович 1',
-                'position' => 'productManager',
+                'team' => 18,
+                'positions' => [
+                    null,
+                    'productManager',
+                    'marketolog',
+                ],
                 'drfo' => '\'000000099',
             ],
             'responseBody' => [
@@ -504,9 +645,11 @@ return [
                     'login' => 'bpm_productManager_1',
                     'email' => 'bpm_productManager_1@rozetka.com.ua',
                     'name' => 'Менеджер Продактович 1',
-                    'teamName' => NULL,
+                    'team' => 18,
+                    'teamName' => 'Маркетплейс (инициаторы)',
                     'position' => 'productManager',
-                    'positionName' => 'Продакт-менеджер',
+                    'positions' => '["productManager","marketolog"]',
+                    'positionName' => 'Продакт-менеджер (Контент), Маркетолог (Маркетинг)',
                     'parent_id' => 1,
                     'drfo' => '\'000000099',
                     'created_by' => 4,
@@ -527,14 +670,15 @@ return [
                                 'name' => 'Менеджер Продактович 1',
                                 'login' => 'bpm_productManager_1',
                                 'email' => 'bpm_productManager_1@rozetka.com.ua',
-                                'team' => null,
+                                'team' => 18,
                                 'parent_id' => 1,
                                 'position' => 'productManager',
                                 'status' => 1,
                                 'create_ts >=' => date('Y-m-d'),
                                 'created_by' => 4,
                                 'change_date >=' => date('Y-m-d'),
-                                'drfo' => "'000000099"
+                                'drfo' => "'000000099",
+                                'positions' => '["productManager","marketolog"]',
                             ]
                         ]
                     ),
@@ -645,7 +789,52 @@ return [
                                 'item_name' => 'productManager',
                                 'user_id' => 5,
                                 'created_at >=' => date('Y-m-d')
-                            ]
+                            ],
+                            [
+                                'item_name' => 'marketolog',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'commentRequestMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'createFilterMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'createRequestMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'createSubRequestMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'updateRequestMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'viewAllRequestsMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'viewOwnRequestsMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'viewTeamRequestsMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
                         ],
                     ),
                     'notification_settings' => [
@@ -663,8 +852,8 @@ return [
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
                     'create.users.all' => [
-                        '{"action":"create","entity":"users","fields_data":{"id":5,"name":"Менеджер Продактович 1","login":"bpm_productManager_1","email":"bpm_productManager_1@rozetka.com.ua","team":null,"parent_id":1,"position":"productManager","status":1,"create_ts":"' . date('Y-m-d'),
-                        '","created_by":4,"change_date":null,"drfo":"\'000000099"},"changed_fields_names":[]}'
+                        '{"action":"create","entity":"users","fields_data":{"id":5,"name":"Менеджер Продактович 1","login":"bpm_productManager_1","email":"bpm_productManager_1@rozetka.com.ua","team":18,"parent_id":1,"position":"productManager","status":1,"create_ts":"' . date('Y-m-d'),
+                        '","created_by":4,"change_date":null,"drfo":"\'000000099","positions":"[\\"productManager\\",\\"marketolog\\"]"},"changed_fields_names":[]}'
                     ]
                 ],
             ],
@@ -690,7 +879,9 @@ return [
                 'login' => 'bpm_seo_1',
                 'email' => 'bpm_seo_1@rozetka.com.ua',
                 'name' => 'Сео Сеошевич 1',
-                'position' => 'seo',
+                'positions' => [
+                    'seo'
+                ],
                 'parent_id' => '4',
             ],
             'responseBody' => [
@@ -700,7 +891,8 @@ return [
                     'name' => 'Сео Сеошевич 1',
                     'teamName' => NULL,
                     'position' => 'seo',
-                    'positionName' => 'Сотрудник seo-отдела',
+                    'positions' => '["seo"]',
+                    'positionName' => 'Сотрудник seo-отдела (Контент)',
                     'parent_id' => '4',
                     'drfo' => NULL,
                     'created_by' => 4,
@@ -728,7 +920,8 @@ return [
                                 'create_ts >=' => date('Y-m-d'),
                                 'created_by' => 4,
                                 'change_date >=' => date('Y-m-d'),
-                                'drfo' => null
+                                'drfo' => null,
+                                'positions' => '["seo"]',
                             ]
                         ]
                     ),
@@ -828,7 +1021,7 @@ return [
                 'lisa_common' => [
                     'create.users.all' => [
                         '{"action":"create","entity":"users","fields_data":{"id":5,"name":"Сео Сеошевич 1","login":"bpm_seo_1","email":"bpm_seo_1@rozetka.com.ua","team":null,"parent_id":"4","position":"seo","status":1,"create_ts":"' . date('Y-m-d'),
-                        '","created_by":4,"change_date":null,"drfo":null},"changed_fields_names":[]}'
+                        '","created_by":4,"change_date":null,"drfo":null,"positions":"[\\"seo\\"]"},"changed_fields_names":[]}'
                     ]
                 ],
             ],
@@ -854,7 +1047,9 @@ return [
                 'login' => 'bpm_photoManager_2',
                 'email' => 'bpm_photoManager_2@rozetka.com.ua',
                 'name' => 'Менеджер Фоткович 1',
-                'position' => 'photoManager',
+                'positions' => [
+                    'photoManager'
+                ],
             ],
             'responseBody' => [
                 'model' => [
@@ -863,7 +1058,8 @@ return [
                     'name' => 'Менеджер Фоткович 1',
                     'teamName' => NULL,
                     'position' => 'photoManager',
-                    'positionName' => 'Сотрудник фотостудии',
+                    'positions' => '["photoManager"]',
+                    'positionName' => 'Сотрудник фотостудии (Контент)',
                     'parent_id' => 1,
                     'drfo' => NULL,
                     'created_by' => 4,
@@ -891,7 +1087,8 @@ return [
                                 'create_ts >=' => date('Y-m-d'),
                                 'created_by' => 4,
                                 'change_date >=' => date('Y-m-d'),
-                                'drfo' => null
+                                'drfo' => null,
+                                'positions' => '["photoManager"]',
                             ]
                         ]
                     ),
@@ -961,7 +1158,7 @@ return [
                 'lisa_common' => [
                     'create.users.all' => [
                         '{"action":"create","entity":"users","fields_data":{"id":5,"name":"Менеджер Фоткович 1","login":"bpm_photoManager_2","email":"bpm_photoManager_2@rozetka.com.ua","team":null,"parent_id":1,"position":"photoManager","status":1,"create_ts":"' . date('Y-m-d'),
-                        '","created_by":4,"change_date":null,"drfo":null},"changed_fields_names":[]}'
+                        '","created_by":4,"change_date":null,"drfo":null,"positions":"[\\"photoManager\\"]"},"changed_fields_names":[]}'
                     ]
                 ],
             ],
@@ -990,7 +1187,9 @@ return [
                 'name' => 'Супервайзер Начальникович 2',
                 'team' => 1,
                 'parent_id' => 4,
-                'position' => 'supervisor',
+                'positions' => [
+                    'supervisor'
+                ],
                 'drfo' => '\'00001111',
             ],
             'responseBody' => [
@@ -1002,7 +1201,8 @@ return [
                     'teamName' => 'Маркетплейс 1',
                     'parent_id' => 4,
                     'position' => 'supervisor',
-                    'positionName' => 'Супервайзер',
+                    'positions' => '["supervisor"]',
+                    'positionName' => 'Супервайзер (Контент)',
                     'drfo' => '\'00001111',
                     'created_by' => 4,
                     'status' => 'Активный',
@@ -1029,7 +1229,8 @@ return [
                                 'create_ts >=' => date('Y-m-d'),
                                 'created_by' => 4,
                                 'change_date >=' => date('Y-m-d'),
-                                'drfo' => "'00001111"
+                                'drfo' => "'00001111",
+                                'positions' => '["supervisor"]',
                             ]
                         ]
                     ),
@@ -1299,7 +1500,7 @@ return [
                 'lisa_common' => [
                     'create.users.all' => [
                         '{"action":"create","entity":"users","fields_data":{"id":5,"name":"Супервайзер Начальникович 2","login":"bpm_supervisor_2","email":"bpm_supervisor_2@rozetka.com.ua","team":1,"parent_id":4,"position":"supervisor","status":1,"create_ts":"' . date('Y-m-d'),
-                        '","created_by":4,"change_date":null,"drfo":"\'00001111"},"changed_fields_names":[]}'
+                        '","created_by":4,"change_date":null,"drfo":"\'00001111","positions":"[\\"supervisor\\"]"},"changed_fields_names":[]}'
                     ]
                 ],
             ],
@@ -1327,7 +1528,9 @@ return [
                 'name' => 'Менеджер Контентович 2А',
                 'team' => 2,
                 'parent_id' => 4,
-                'position' => 'contentManager',
+                'positions' => [
+                    'contentManager'
+                ],
                 'drfo' => '\'00001111',
             ],
             'responseBody' => [
@@ -1339,7 +1542,7 @@ return [
                     'teamName' => 'Маркетплейс 2',
                     'parent_id' => 4,
                     'position' => 'contentManager',
-                    'positionName' => 'Контент-менеджер',
+                    'positionName' => 'Контент-менеджер (Контент)',
                     'drfo' => '\'00001111',
                     'created_by' => 4,
                     'status' => 'Активный',
@@ -1362,6 +1565,7 @@ return [
                                 'team' => 2,
                                 'parent_id' => 4,
                                 'position' => 'contentManager',
+                                'positions' => '["contentManager"]',
                                 'status' => 1,
                                 'create_ts >=' => date('Y-m-d'),
                                 'created_by' => 4,
@@ -1451,7 +1655,148 @@ return [
                 'lisa_common' => [
                     'create.users.all' => [
                         '"name":"Менеджер Контентович 2А","login":"bpm_contentManager_2a","email":"bpm_contentManager_2a@rozetka.com.ua","team":2,"parent_id":4,"position":"contentManager","status":1,"create_ts":"' . date('Y-m-d'),
-                        '","created_by":4,"change_date":null,"drfo":"\'00001111"},"changed_fields_names":[]}'
+                        '","created_by":4,"change_date":null,"drfo":"\'00001111","positions":"[\\"contentManager\\"]"},"changed_fields_names":[]}'
+                    ]
+                ],
+            ],
+        ],
+    ],
+
+    'case18' => [
+        'setting' => [
+            'description' => 'Создание маркетолога с руководителем, командой Маркетинга и ролью проекта Маркетинга',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'excludedRedisKeys' => [
+                'active_user_names',
+                'managers_2',
+                'managers_17',
+                'supervisors',
+                'user_names',
+                'user_team_ids_1',
+                'user_team_ids_2',
+            ],
+            'requestBody' => [
+                'login' => 'bpm_teamLead_1',
+                'email' => 'bpm_teamLead_1@rozetka.com.ua',
+                'name' => 'Лидович 1 Тим',
+                'team' => 21,
+                'parent_id' => 4,
+                'positions' => [
+                    null,
+                    null,
+                    'marketolog'
+                ],
+            ],
+            'responseBody' => [
+                'model' => [
+                    'login' => 'bpm_teamLead_1',
+                    'email' => 'bpm_teamLead_1@rozetka.com.ua',
+                    'name' => 'Лидович 1 Тим',
+                    'team' => 21,
+                    'teamName' => 'Маркетинг',
+                    'parent_id' => 4,
+                    'position' => 'marketolog',
+                    'positionName' => 'Маркетолог (Маркетинг)',
+                    'drfo' => NULL,
+                    'created_by' => 4,
+                    'status' => 'Активный',
+                    //'create_ts >=' => date('Y-m-d'),
+                    'id' => 5,
+                    'parent' => '4.Константин Куцан',
+                ],
+                'splitterRole' => 'userBPM',
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'auth.users' => array_merge_recursive(
+                        (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                        [
+                            [
+                                'id' => 5,
+                                'name' => 'Лидович 1 Тим',
+                                'login' => 'bpm_teamLead_1',
+                                'email' => 'bpm_teamLead_1@rozetka.com.ua',
+                                'team' => 21,
+                                'parent_id' => 4,
+                                'position' => 'marketolog',
+                                'positions' => '["marketolog"]',
+                                'status' => 1,
+                                'create_ts >=' => date('Y-m-d'),
+                                'created_by' => 4,
+                                'change_date >=' => date('Y-m-d'),
+                                'drfo' => null
+                            ]
+                        ]
+                    ),
+                    'auth.auth_assignment' => array_merge_recursive(
+                        include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_assignment.php',
+                        [
+                            [
+                                'item_name' => 'commentRequestMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'createFilterMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'createRequestMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'createSubRequestMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'marketolog',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'updateRequestMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'viewAllRequestsMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'viewOwnRequestsMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'viewTeamRequestsMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                        ]
+                    ),
+                    'notification_settings' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 5,
+                            'types_for_notification' => '{"create": 1, "comment": 2, "mention": 1, "manager_id": 1, "attachments": 1, "supervisor_id": 1}',
+                            'fields_for_complete' => '[]',
+                            'statuses_for_notification' => '{"1": 1, "2": 1, "3": 2, "4": 2, "5": 1, "6": 1, "7": 1, "8": 1, "9": 1, "11": 1}',
+                            'url_id' => 0,
+                        ]
+                    ],
+                ]
+            ],
+            'RabbitMQWithRoutingKey' => [
+                'lisa_common' => [
+                    'create.users.all' => [
+                        '"name":"Лидович 1 Тим","login":"bpm_teamLead_1","email":"bpm_teamLead_1@rozetka.com.ua","team":21,"parent_id":4,"position":"marketolog","status":1,"create_ts":"' . date('Y-m-d'),
+                        '","created_by":4,"change_date":null,"drfo":null,"positions":"[\\"marketolog\\"]"},"changed_fields_names":[]}'
                     ]
                 ],
             ],

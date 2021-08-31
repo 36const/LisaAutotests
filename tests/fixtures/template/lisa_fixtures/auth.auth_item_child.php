@@ -1032,5 +1032,37 @@ return [
     [
         'parent' => 'teamLead',
         'child' => 'viewSplitterModerationRequests'
-    ]
+    ],
+    [
+        'parent' => 'marketolog',
+        'child' => 'viewOwnRequestsMrk'
+    ],
+    [
+        'parent' => 'marketolog',
+        'child' => 'viewTeamRequestsMrk'
+    ],
+    [
+        'parent' => 'marketolog',
+        'child' => 'viewAllRequestsMrk'
+    ],
+    [
+        'parent' => 'marketolog',
+        'child' => 'createFilterMrk'
+    ],
+    [
+        'parent' => 'marketolog',
+        'child' => 'createRequestMrk'
+    ],
+    [
+        'parent' => 'marketolog',
+        'child' => 'createSubRequestMrk'
+    ],
+    [
+        'parent' => 'marketolog',
+        'child' => 'updateRequestMrk'
+    ],
+    [
+        'parent' => 'marketolog',
+        'child' => 'commentRequestMrk'
+    ],
 ];

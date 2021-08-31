@@ -115,7 +115,7 @@ return [
                     'name' => 'Управление отделом',
                     'direction' => 'Управление отделом',
                     'status' => 'Активный',
-                    'id' => 21,
+                    'id' => 22,
                     'project_id' => 'Контент',
                 ],
             ],
@@ -125,7 +125,7 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
                             [
-                                'id' => 21,
+                                'id' => 22,
                                 'name' => 'Управление отделом',
                                 'direction' => 1,
                                 'status' => 1
@@ -136,7 +136,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":21,"name":"Управление отделом","direction":"1","status":"1","project_id":"1"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Управление отделом","direction":"1","status":"1","project_id":"1"},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -160,7 +160,7 @@ return [
                     'name' => 'Заявки Маркетплейс',
                     'direction' => 'Работа с товарами Маркетплейса',
                     'status' => 'Заблокированный',
-                    'id' => 21,
+                    'id' => 22,
                     'project_id' => 'Контент',
                 ],
             ],
@@ -170,7 +170,7 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
                             [
-                                'id' => 21,
+                                'id' => 22,
                                 'name' => 'Заявки Маркетплейс',
                                 'direction' => 2,
                                 'status' => 0
@@ -181,7 +181,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":21,"name":"Заявки Маркетплейс","direction":"2","status":"0","project_id":"1"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Заявки Маркетплейс","direction":"2","status":"0","project_id":"1"},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -205,7 +205,7 @@ return [
                     'name' => 'Заявки Rozetka',
                     'direction' => 'Работа с товарами Rozetka',
                     'status' => 'Активный',
-                    'id' => 21,
+                    'id' => 22,
                     'project_id' => 'Контент',
                 ],
             ],
@@ -215,7 +215,7 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
                             [
-                                'id' => 21,
+                                'id' => 22,
                                 'name' => 'Заявки Rozetka',
                                 'direction' => 3,
                                 'status' => 1
@@ -226,7 +226,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":21,"name":"Заявки Rozetka","direction":"3","status":"1","project_id":"1"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Заявки Rozetka","direction":"3","status":"1","project_id":"1"},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -250,7 +250,7 @@ return [
                     'name' => 'Работа с группами',
                     'direction' => 'Работа с группами',
                     'status' => 'Заблокированный',
-                    'id' => 21,
+                    'id' => 22,
                     'project_id' => 'Контент',
                 ],
             ],
@@ -260,7 +260,7 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
                             [
-                                'id' => 21,
+                                'id' => 22,
                                 'name' => 'Работа с группами',
                                 'direction' => 4,
                                 'status' => 0
@@ -271,7 +271,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":21,"name":"Работа с группами","direction":"4","status":"0","project_id":"1"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Работа с группами","direction":"4","status":"0","project_id":"1"},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -295,7 +295,7 @@ return [
                     'name' => 'Работа с проектированием структур + фильтрами',
                     'direction' => 'Работа с проектированием структур + фильтрами',
                     'status' => 'Активный',
-                    'id' => 21,
+                    'id' => 22,
                     'project_id' => 'Контент',
                 ],
             ],
@@ -305,7 +305,7 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
                             [
-                                'id' => 21,
+                                'id' => 22,
                                 'name' => 'Работа с проектированием структур + фильтрами',
                                 'direction' => 5,
                                 'status' => 1
@@ -316,7 +316,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":21,"name":"Работа с проектированием структур + фильтрами","direction":"5","status":"1","project_id":"1"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Работа с проектированием структур + фильтрами","direction":"5","status":"1","project_id":"1"},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -340,7 +340,7 @@ return [
                     'name' => 'Работа с порталами, фат-меню, категориями',
                     'direction' => 'Работа с порталами, фат-меню, категориями',
                     'status' => 'Заблокированный',
-                    'id' => 21,
+                    'id' => 22,
                     'project_id' => 'Контент',
                 ],
             ],
@@ -350,7 +350,7 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
                             [
-                                'id' => 21,
+                                'id' => 22,
                                 'name' => 'Работа с порталами, фат-меню, категориями',
                                 'direction' => 6,
                                 'status' => 0
@@ -361,7 +361,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":21,"name":"Работа с порталами, фат-меню, категориями","direction":"6","status":"0","project_id":"1"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Работа с порталами, фат-меню, категориями","direction":"6","status":"0","project_id":"1"},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -375,17 +375,17 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'id' => NULL,
-                'name' => 'Маркетинг',
+                'name' => 'Маркетинг2',
                 'direction' => NULL,
                 'status' => 1,
                 'project_id' => 2,
             ],
             'responseBody' => [
                 'model' => [
-                    'name' => 'Маркетинг',
+                    'name' => 'Маркетинг2',
                     'direction' => NULL,
                     'status' => 'Активный',
-                    'id' => 21,
+                    'id' => 22,
                     'project_id' => 'Маркетинг',
                 ],
             ],
@@ -395,8 +395,8 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
                             [
-                                'id' => 21,
-                                'name' => 'Маркетинг',
+                                'id' => 22,
+                                'name' => 'Маркетинг2',
                                 'direction' => null,
                                 'status' => 1,
                                 'project_id' => 2,
@@ -407,7 +407,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":21,"name":"Маркетинг","direction":"","status":"1","project_id":"2"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Маркетинг2","direction":"","status":"1","project_id":"2"},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -431,7 +431,7 @@ return [
                     'name' => 'Все',
                     'direction' => NULL,
                     'status' => 'Заблокированный',
-                    'id' => 21,
+                    'id' => 22,
                     'project_id' => 'Все',
                 ],
             ],
@@ -441,7 +441,7 @@ return [
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
                             [
-                                'id' => 21,
+                                'id' => 22,
                                 'name' => 'Все',
                                 'direction' => null,
                                 'status' => 0,
@@ -453,7 +453,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":21,"name":"Все","direction":"","status":"0","project_id":"0"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Все","direction":"","status":"0","project_id":"0"},"changed_fields_names":[]}'
                 ],
             ],
         ]

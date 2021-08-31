@@ -35,7 +35,7 @@ class POSTUsersUpdateMultiplePositionCest
             UsersTester::REDIS_KEYS_VALUES,
             [
                 'allowed_types_8' => 'value',
-                'user_permissions_5' => 'value',
+                'user_permissions_9' => 'value',
                 'user_permissions_6' => 'value'
             ]
         );
