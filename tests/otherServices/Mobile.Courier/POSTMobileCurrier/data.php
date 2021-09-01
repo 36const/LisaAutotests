@@ -303,7 +303,6 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
     'case3' => [
         'setting' => [
             'description' => 'Заявка с обязательными полями, описанием и вложениями, направление Розетка',
-            'skip' => 'minio'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -403,7 +402,77 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'request_id' => 1,
                             'field_id' => 159,
                             'value' => 1,
-                        ]
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 49,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 50,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 51,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 52,
+                            'value' => 4,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 54,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
                     ],
                     'request_attachments' => [
                         [
@@ -416,8 +485,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%__194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdps.psd',
-                            'size' => 40861,
+                            'file_name LIKE' => '%__194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdps.psd',
+                            'size' => 60424,
                         ],
                         [
                             'id' => 2,
@@ -429,8 +498,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_csv.csv',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_csv.csv',
+                            'size' => 4046,
                         ],
                         [
                             'id' => 3,
@@ -442,8 +511,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_doc_.doc',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_doc_.doc',
+                            'size' => 34304,
                         ],
                         [
                             'id' => 4,
@@ -455,8 +524,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_docx.docx',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_docx.docx',
+                            'size' => 34304,
                         ],
                         [
                             'id' => 5,
@@ -468,8 +537,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_eml.eml',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_eml.eml',
+                            'size' => 4046,
                         ],
                         [
                             'id' => 6,
@@ -481,8 +550,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_gif_abvgdeezzijklmnoprstufhccssyeuaegii.gif',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_gif_abvgdeezzijklmnoprstufhccssyeuaegii.gif',
+                            'size' => 4046,
                         ],
                         [
                             'id' => 7,
@@ -494,8 +563,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_jpeglong.jpeg',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_jpeglong.jpeg',
+                            'size' => 97152,
                         ],
                         [
                             'id' => 8,
@@ -507,7 +576,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_mp4.mp4',
+                            'file_name LIKE' => '%_mp4.mp4',
                             'size' => 40861,
                         ],
                         [
@@ -520,8 +589,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_rar1.rar',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_rar1.rar',
+                            'size' => 4046,
                         ],
                         [
                             'id' => 10,
@@ -533,8 +602,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_pdf.pdf',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_pdf.pdf',
+                            'size' => 60424,
                         ],
                         [
                             'id' => 11,
@@ -546,8 +615,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_png.png',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_png.png',
+                            'size' => 60424,
                         ],
                         [
                             'id' => 12,
@@ -559,8 +628,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_ppt_a.ppt',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_ppt_a.ppt',
+                            'size' => 34304,
                         ],
                         [
                             'id' => 13,
@@ -572,8 +641,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx',
+                            'size' => 97152,
                         ],
                         [
                             'id' => 14,
@@ -585,7 +654,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_webp.webp',
+                            'file_name LIKE' => '%_webp.webp',
                             'size' => 40861,
                         ],
                         [
@@ -598,8 +667,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_xls.xls',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_xls.xls',
+                            'size' => 60424,
                         ],
                         [
                             'id' => 16,
@@ -611,8 +680,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_xlsm.xlsm',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_xlsm.xlsm',
+                            'size' => 97152,
                         ],
                         [
                             'id' => 17,
@@ -624,8 +693,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_xlsx.xlsx',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_xlsx.xlsx',
+                            'size' => 97152,
                         ],
                         [
                             'id' => 18,
@@ -637,7 +706,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml',
+                            'file_name LIKE' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml',
                             'size' => 40861,
                         ],
                         [
@@ -650,8 +719,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_zip1.zip',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_zip1.zip',
+                            'size' => 34304,
                         ],
                         [
                             'id' => 20,
@@ -663,8 +732,8 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_$_-:.jpg',
-                            'size' => 40861,
+                            'file_name LIKE' => '%_$_-:.jpg',
+                            'size' => 34304,
                         ]
                     ]
                 ]

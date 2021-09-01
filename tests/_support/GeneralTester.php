@@ -70,7 +70,7 @@ class GeneralTester extends Actor
     }
 
     /**
-     * Проверка количества и значений сообщений в очереди
+     * Проверка количества и значений сообщений в очереди.
      * Для очереди lisa_common добавляется 1 потому что последнее сообщение из этой очереди проверяется вместе с routing_key
      * отдельно через метод checkRabbitMQWithRoutingKey
      */
@@ -92,7 +92,7 @@ class GeneralTester extends Actor
     }
 
     /**
-     * Проверка одного последнего сообщения в очереди с его routing_key
+     * Проверка одного последнего сообщения в очереди с его routing_key.
      * Используется для очереди lisa_common
      */
     public function checkRabbitMQWithRoutingKey(?array $providerData, bool $notExactMatch = false)
@@ -130,7 +130,7 @@ class GeneralTester extends Actor
     }
 
     /**
-     * Проверка наличия/отсутствия ключей в редисе
+     * Проверка наличия/отсутствия ключей в редисе.
      * На отсутствие проверяются ключи, указанные в $excludedKeys
      */
     public function checkRedis(?array $excludedKeys = null, $redisKeys = self::REDIS_KEYS_VALUES)
@@ -686,7 +686,7 @@ class GeneralTester extends Actor
     ];
 
     /**
-     * Проверка Excel-файла на количество листов, количество строк и содержимое ячеек (только для первого листа)
+     * Проверка Excel-файла на количество листов, количество строк и содержимое ячеек (только для первого листа).
      * Содержимое ячеек можно не проверять, указав значение [] для $fileContent
      */
     public function checkXlsxFile(?array $fileContent, ?int $rowCount = null, int $sheetCount = 1, string $filepath = './web/files/')

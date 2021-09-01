@@ -14,7 +14,6 @@ return [
     'case1' => [
         'setting' => [
             'description' => 'Создание заявки тип 1 направление 1 + нотификации', // + все форматы вложений
-//            'skip' => 'minio'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -31,30 +30,30 @@ return [
                 'Request[type_id]' => 1,
                 'Request[observers]' => [16, 17],
             ],
-//            'attachments' => [
-//                'files[]' => [
-//                    codecept_data_dir('Attachments/194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd'),
-//                    codecept_data_dir('Attachments/csv.csv'),
-//                    codecept_data_dir('Attachments/doc .doc'),
-//                    codecept_data_dir('Attachments/docx.docx'),
-//                    codecept_data_dir('Attachments/eml.eml'),
-//                    codecept_data_dir('Attachments/gif_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.gif'),
-//                    codecept_data_dir('Attachments/jpeglong.jpeg'),
-//                    codecept_data_dir('Attachments/mp4.mp4'),
-//                    codecept_data_dir('Attachments/rar1.rar'),
-//                    codecept_data_dir('Attachments/pdf.pdf'),
-//                    codecept_data_dir('Attachments/png.png'),
-//                    codecept_data_dir('Attachments/ppt_а.ppt'),
-//                    codecept_data_dir('Attachments/pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx'),
-//                    codecept_data_dir('Attachments/webp.webp'),
-//                    codecept_data_dir('Attachments/xls.xls'),
-//                    codecept_data_dir('Attachments/xlsm.xlsm'),
-//                    codecept_data_dir('Attachments/xlsx.xlsx'),
-//                    codecept_data_dir('Attachments/xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml'),
-//                    codecept_data_dir('Attachments/zip1.zip'),
-/*                    codecept_data_dir('Attachments/~!@#$%^&*()_+`-=][\';.|}{:?><.jpg'),*/
-//                ],
-//            ],
+            'attachments' => [
+                'files[]' => [
+                    codecept_data_dir('Attachments/194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd'),
+                    codecept_data_dir('Attachments/csv.csv'),
+                    codecept_data_dir('Attachments/doc .doc'),
+                    codecept_data_dir('Attachments/docx.docx'),
+                    codecept_data_dir('Attachments/eml.eml'),
+                    codecept_data_dir('Attachments/gif_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.gif'),
+                    codecept_data_dir('Attachments/jpeglong.jpeg'),
+                    codecept_data_dir('Attachments/mp4.mp4'),
+                    codecept_data_dir('Attachments/rar1.rar'),
+                    codecept_data_dir('Attachments/pdf.pdf'),
+                    codecept_data_dir('Attachments/png.png'),
+                    codecept_data_dir('Attachments/ppt_а.ppt'),
+                    codecept_data_dir('Attachments/pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx'),
+                    codecept_data_dir('Attachments/webp.webp'),
+                    codecept_data_dir('Attachments/xls.xls'),
+                    codecept_data_dir('Attachments/xlsm.xlsm'),
+                    codecept_data_dir('Attachments/xlsx.xlsx'),
+                    codecept_data_dir('Attachments/xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml'),
+                    codecept_data_dir('Attachments/zip1.zip'),
+                    codecept_data_dir('Attachments/~!@#$%^&*()_+`-=][\';.|}{:?><.jpg'),
+                ],
+            ],
             'responseBody' => [
                 'status' => 200,
                 'result' => [
@@ -184,7 +183,7 @@ return [
                             'value' => 0,
                         ],
                     ],
-/*                    'request_attachments' => [
+                    'request_attachments' => [
                         [
                             'id' => 1,
                             'request_id' => 1,
@@ -195,7 +194,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%__194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdps.psd'
+                            'file_name LIKE' => '%__194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdps.psd',
+                            'size' => 60424,
                         ],
                         [
                             'id' => 2,
@@ -207,7 +207,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_csv.csv'
+                            'file_name LIKE' => '%_csv.csv',
+                            'size' => 4046,
                         ],
                         [
                             'id' => 3,
@@ -219,7 +220,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_doc_.doc'
+                            'file_name LIKE' => '%_doc_.doc',
+                            'size' => 34304,
                         ],
                         [
                             'id' => 4,
@@ -231,7 +233,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_docx.docx'
+                            'file_name LIKE' => '%_docx.docx',
+                            'size' => 34304,
                         ],
                         [
                             'id' => 5,
@@ -243,7 +246,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_eml.eml'
+                            'file_name LIKE' => '%_eml.eml',
+                            'size' => 4046,
                         ],
                         [
                             'id' => 6,
@@ -255,7 +259,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_gif_abvgdeezzijklmnoprstufhccssyeuaegii.gif'
+                            'file_name LIKE' => '%_gif_abvgdeezzijklmnoprstufhccssyeuaegii.gif',
+                            'size' => 4046,
                         ],
                         [
                             'id' => 7,
@@ -267,7 +272,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_jpeglong.jpeg'
+                            'file_name LIKE' => '%_jpeglong.jpeg',
+                            'size' => 97152,
                         ],
                         [
                             'id' => 8,
@@ -279,7 +285,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_mp4.mp4'
+                            'file_name LIKE' => '%_mp4.mp4',
+                            'size' => 40861,
                         ],
                         [
                             'id' => 9,
@@ -291,7 +298,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_rar1.rar'
+                            'file_name LIKE' => '%_rar1.rar',
+                            'size' => 4046,
                         ],
                         [
                             'id' => 10,
@@ -303,7 +311,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_pdf.pdf'
+                            'file_name LIKE' => '%_pdf.pdf',
+                            'size' => 60424,
                         ],
                         [
                             'id' => 11,
@@ -315,7 +324,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_png.png'
+                            'file_name LIKE' => '%_png.png',
+                            'size' => 60424,
                         ],
                         [
                             'id' => 12,
@@ -327,7 +337,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_ppt_a.ppt'
+                            'file_name LIKE' => '%_ppt_a.ppt',
+                            'size' => 34304,
                         ],
                         [
                             'id' => 13,
@@ -339,7 +350,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx'
+                            'file_name LIKE' => '%_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx',
+                            'size' => 97152,
                         ],
                         [
                             'id' => 14,
@@ -351,7 +363,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_webp.webp'
+                            'file_name LIKE' => '%_webp.webp',
+                            'size' => 40861,
                         ],
                         [
                             'id' => 15,
@@ -363,7 +376,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_xls.xls'
+                            'file_name LIKE' => '%_xls.xls',
+                            'size' => 60424,
                         ],
                         [
                             'id' => 16,
@@ -375,7 +389,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_xlsm.xlsm'
+                            'file_name LIKE' => '%_xlsm.xlsm',
+                            'size' => 97152,
                         ],
                         [
                             'id' => 17,
@@ -387,7 +402,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_xlsx.xlsx'
+                            'file_name LIKE' => '%_xlsx.xlsx',
+                            'size' => 97152,
                         ],
                         [
                             'id' => 18,
@@ -399,7 +415,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml'
+                            'file_name LIKE' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml',
+                            'size' => 40861,
                         ],
                         [
                             'id' => 19,
@@ -411,7 +428,8 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_zip1.zip'
+                            'file_name LIKE' => '%_zip1.zip',
+                            'size' => 34304,
                         ],
                         [
                             'id' => 20,
@@ -423,9 +441,10 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_$_-:.jpg'
+                            'file_name LIKE' => '%_$_-:.jpg',
+                            'size' => 34304,
                         ]
-                    ],*/
+                    ],
                     'user_notifications' => [
                         [
                             'id' => 1,
@@ -507,8 +526,8 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=1\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
-                    '{"notificationId":3,"userId":16,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=3\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
-                    '{"notificationId":4,"userId":17,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://admin.gomer.local/lisa/#/request/view/1?notifyId=4\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":3,"userId":17,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://admin.gomer.local/lisa/#/request/view/1?notifyId=3\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":4,"userId":16,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=4\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
                 ],
                 'lisa_failedApiRequests' => [],
             ],
@@ -5073,7 +5092,6 @@ return [
     'case65' => [
         'setting' => [
             'description' => 'Создание заявки тип 7 направление 0 (без кат.) (с author_id) c 1 непривяз. и 2 привяз. к одинаковой кат. стора',
-            'skip' => 'minio'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -5318,7 +5336,7 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_doc_.doc',
+                            'file_name LIKE' => '%_doc_.doc',
                             'size' => 34304,
                         ],
                         [
@@ -5331,7 +5349,7 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml',
+                            'file_name LIKE' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml',
                             'size' => 40861,
                         ],
                         [
@@ -5344,7 +5362,7 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_doc_.doc',
+                            'file_name LIKE' => '%_doc_.doc',
                             'size' => 34304,
                         ],
                         [
@@ -5357,7 +5375,7 @@ return [
                             'uploaded_at >=' => date('Y-m-d'),
                             'deleted_by' => null,
                             'deleted_at' => null,
-                            'file_name like' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml',
+                            'file_name LIKE' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml',
                             'size' => 40861,
                         ],
                     ],
@@ -8356,7 +8374,6 @@ return [
     'case53' => [
         'setting' => [
             'description' => 'Ошибка при создании с общим объёмом файлов больше 1 Мб',
-            'skip' => 'minio'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case19.php',
         'provider_data' => [
@@ -8399,7 +8416,6 @@ return [
     'case54' => [
         'setting' => [
             'description' => 'Ошибка при создании с неподдерживаемым типом файлов',
-            'skip' => 'minio'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case19.php',
         'provider_data' => [

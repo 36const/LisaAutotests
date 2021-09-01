@@ -29,7 +29,7 @@ class POSTGomerCreateRequestCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->setMaxFileSize(1024);
+        $I->changeMaxFileSize();
 
         isset($providerData['attachments']) ?
             $I->sendPOST('/request/create-request', $providerData['requestBody'], $providerData['attachments']) :
@@ -41,6 +41,6 @@ class POSTGomerCreateRequestCest
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);
 
-        $I->setMaxFileSize(1024, true);
+        $I->changeMaxFileSize(false);
     }
 }

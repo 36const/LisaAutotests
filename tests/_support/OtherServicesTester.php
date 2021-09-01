@@ -41,20 +41,23 @@ class OtherServicesTester extends GeneralTester
 //    public const PARAMS_LOCAL = '/var/www/lisa/www/api/config/params.php';
     public const PARAMS_LOCAL = '/builds/gomer/lisa/api/config/params.php';
 
-    public function setMaxFileSize(int $kilobytes, bool $unset = false)
+    /**
+     * Установить максимально допустимый объём загружаемого файла 1 Мб.
+     * При параметре false установка скидывается
+     */
+    public function changeMaxFileSize(bool $set = true)
     {
-        $fileArray = file(self::PARAMS_LOCAL);
+        $fileStringsArray = file(self::PARAMS_LOCAL);
 
-        foreach ($fileArray as $key => $str) {
-            if (strpos($str, 'max_file_size')) {
-                unset($fileArray[$key]);
-            }
+        foreach ($fileStringsArray as $key => $string) {
+            if (strpos($string, 'max_file_size'))
+                unset($fileStringsArray[$key]);
         }
 
-        if ($unset == false)
-            array_splice($fileArray, 3, 0, "    'max_file_size' => $kilobytes,\n");
+        if ($set)
+            array_splice($fileStringsArray, 3, 0, "    'max_file_size' => 1024,\n");
 
-        $newFileContent = implode($fileArray);
+        $newFileContent = implode($fileStringsArray);
         $fo = fopen(self::PARAMS_LOCAL, 'w+');
         fwrite($fo, $newFileContent);
     }
