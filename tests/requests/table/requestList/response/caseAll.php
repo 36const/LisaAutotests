@@ -1,7 +1,9 @@
 <?php
 
+use lisa\UsersTester;
+
 return [
-    'tabsData' => \lisa\UsersTester::tableMassButtons(999),
+    'tabsData' => UsersTester::tableMassButtons(999),
     'currentTab' => 'all',
     'columns' => [
         'item.id' => [
@@ -344,576 +346,1451 @@ return [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Выполнена',
+                'previous_status' => [
+                    'text' => 'Выполнена',
+                    'value' => 9,
+                ],
+                'status' => [
+                    'text' => 'Закрыта',
+                    'value' => 11,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 25,
                 'subject' => 'Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
-                'type_id' => 'Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров',
-                'author_id' => 'Тим Лидович 1',
-                'supervisor_id' => 'Супервайзер Категоркин 18',
-                'manager_id' => 'Менеджер Контентович 2А',
-                'status' => 'Закрыта',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с порталами, фат-меню, категориями',
-                'category_id' => 'Видео к товару',
-                'seller_id' => 'Маркетплейс (общий)',
+                'type_id' => [
+                    'text' => 'Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров',
+                    'value' => 8,
+                ],
+                'author_id' => [
+                    'text' => 'Тим Лидович 1',
+                    'value' => 15,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Категоркин 18',
+                    'value' => 38,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 2А',
+                    'value' => 13,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с порталами, фат-меню, категориями',
+                    'value' => 6,
+                ],
+                'category_id' => [
+                    'text' => 'Видео к товару',
+                    'value' => 2,
+                ],
+                'seller_id' => [
+                    'text' => 'Маркетплейс (общий)',
+                    'value' => 0,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 11,
             ],
             1 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Выполнена',
+                'previous_status' => [
+                    'text' => 'Выполнена',
+                    'value' => 9,
+                ],
+                'status' => [
+                    'text' => 'Закрыта',
+                    'value' => 11,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 24,
                 'subject' => 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
-                'type_id' => 'Добавление нового портала/раздела фат-меню/категории товаров',
-                'author_id' => 'Тим Лидович 2',
-                'supervisor_id' => 'Супервайзер Категоркин 15',
-                'manager_id' => 'Менеджер Контентович 2Б',
-                'status' => 'Закрыта',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с порталами, фат-меню, категориями',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => NULL,
+                'type_id' => [
+                    'text' => 'Добавление нового портала/раздела фат-меню/категории товаров',
+                    'value' => 7,
+                ],
+                'author_id' => [
+                    'text' => 'Тим Лидович 2',
+                    'value' => 16,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Категоркин 15',
+                    'value' => 35,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 2Б',
+                    'value' => 14,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с порталами, фат-меню, категориями',
+                    'value' => 6,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 11,
             ],
             2 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Частично выполнена',
+                'previous_status' => [
+                    'text' => 'Частично выполнена',
+                    'value' => 8,
+                ],
+                'status' => [
+                    'text' => 'Закрыта',
+                    'value' => 11,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 23,
                 'subject' => 'Добавление/изменение тегов (Определяется типом задачи)',
-                'type_id' => 'Добавление/изменение тегов',
-                'author_id' => 'Менеджер Продактович 1',
-                'supervisor_id' => 'Супервайзер Категоркин 15',
-                'manager_id' => 'Менеджер Контентович 2А',
-                'status' => 'Закрыта',
-                'cross_check_manager_id' => 'Менеджер Контентович 2Б',
-                'cross_check_status' => 'Кросс-чек пройден',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с порталами, фат-меню, категориями',
-                'category_id' => NULL,
-                'seller_id' => 'Маркетплейс (общий)',
+                'type_id' => [
+                    'text' => 'Добавление/изменение тегов',
+                    'value' => 15,
+                ],
+                'author_id' => [
+                    'text' => 'Менеджер Продактович 1',
+                    'value' => 17,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Категоркин 15',
+                    'value' => 35,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 2А',
+                    'value' => 13,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => 'Менеджер Контентович 2Б',
+                    'value' => 14,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Кросс-чек пройден',
+                    'value' => 2,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с порталами, фат-меню, категориями',
+                    'value' => 6,
+                ],
+                'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'seller_id' => [
+                    'text' => 'Маркетплейс (общий)',
+                    'value' => 0,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 11,
             ],
             3 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'В работе',
+                'previous_status' => [
+                    'text' => 'В работе',
+                    'value' => 6,
+                ],
+                'status' => [
+                    'text' => 'Выполнена',
+                    'value' => 9,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 22,
                 'subject' => 'Добавление/изменение видео (Определяется типом задачи)',
-                'type_id' => 'Добавление/изменение видео',
-                'author_id' => 'Менеджер Продактович 2',
-                'supervisor_id' => 'Супервайзер Категоркин 15',
-                'manager_id' => 'Менеджер Контентович 2А',
-                'status' => 'Выполнена',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с порталами, фат-меню, категориями',
-                'category_id' => 'Видео к товару',
-                'seller_id' => 'anytech',
+                'type_id' => [
+                    'text' => 'Добавление/изменение видео',
+                    'value' => 13,
+                ],
+                'author_id' => [
+                    'text' => 'Менеджер Продактович 2',
+                    'value' => 18,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Категоркин 15',
+                    'value' => 35,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 2А',
+                    'value' => 13,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с порталами, фат-меню, категориями',
+                    'value' => 6,
+                ],
+                'category_id' => [
+                    'text' => 'Видео к товару',
+                    'value' => 2,
+                ],
+                'seller_id' => [
+                    'text' => 'anytech',
+                    'value' => 9423,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 9,
             ],
             4 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'В работе',
+                'previous_status' => [
+                    'text' => 'В работе',
+                    'value' => 6,
+                ],
+                'status' => [
+                    'text' => 'Выполнена',
+                    'value' => 9,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 21,
                 'subject' => 'Добавление/изменение тегов (Определяется типом задачи)',
-                'type_id' => 'Добавление/изменение тегов',
-                'author_id' => 'Менеджер Продактович 2',
-                'supervisor_id' => 'Супервайзер Категоркин 15',
-                'manager_id' => 'Менеджер Контентович 1А',
-                'status' => 'Выполнена',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с порталами, фат-меню, категориями',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => 'Euromart',
+                'type_id' => [
+                    'text' => 'Добавление/изменение тегов',
+                    'value' => 15,
+                ],
+                'author_id' => [
+                    'text' => 'Менеджер Продактович 2',
+                    'value' => 18,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Категоркин 15',
+                    'value' => 35,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 1А',
+                    'value' => 11,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с порталами, фат-меню, категориями',
+                    'value' => 6,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => 'Euromart',
+                    'value' => 83,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 9,
             ],
             5 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'В работе',
+                'previous_status' => [
+                    'text' => 'В работе',
+                    'value' => 6,
+                ],
+                'status' => [
+                    'text' => 'Частично выполнена',
+                    'value' => 8,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 20,
                 'subject' => 'Добавление/изменение видео (Определяется типом задачи)',
-                'type_id' => 'Добавление/изменение видео',
-                'author_id' => 'Тим Лидович 1',
-                'supervisor_id' => 'Супервайзер Категоркин 18',
-                'manager_id' => 'Менеджер Контентович 1Б',
-                'status' => 'Частично выполнена',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с порталами, фат-меню, категориями',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => 'Euromart',
+                'type_id' => [
+                    'text' => 'Добавление/изменение видео',
+                    'value' => 13,
+                ],
+                'author_id' => [
+                    'text' => 'Тим Лидович 1',
+                    'value' => 15,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Категоркин 18',
+                    'value' => 38,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 1Б',
+                    'value' => 12,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с порталами, фат-меню, категориями',
+                    'value' => 6,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => 'Euromart',
+                    'value' => 83,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 8,
             ],
             6 => [
                 'parent_id' => 3,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'В работе',
+                'previous_status' => [
+                    'text' => 'В работе',
+                    'value' => 6,
+                ],
+                'status' => [
+                    'text' => 'Ожидает',
+                    'value' => 7,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 19,
                 'subject' => 'Добавление/изменение размерной сетки (Определяется типом задачи)',
-                'type_id' => 'Добавление/изменение размерной сетки',
-                'author_id' => 'Тим Лидович 2',
-                'supervisor_id' => 'Супервайзер Категоркин 18',
-                'manager_id' => 'Менеджер Контентович 2Б',
-                'status' => 'Ожидает',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с порталами, фат-меню, категориями',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => NULL,
+                'type_id' => [
+                    'text' => 'Добавление/изменение размерной сетки',
+                    'value' => 14,
+                ],
+                'author_id' => [
+                    'text' => 'Тим Лидович 2',
+                    'value' => 16,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Категоркин 18',
+                    'value' => 38,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 2Б',
+                    'value' => 14,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с порталами, фат-меню, категориями',
+                    'value' => 6,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 7,
             ],
             7 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'В работе',
+                'previous_status' => [
+                    'text' => 'В работе',
+                    'value' => 6,
+                ],
+                'status' => [
+                    'text' => 'Ожидает',
+                    'value' => 7,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 18,
                 'subject' => 'Изменение существующих параметров/значений (Определяется типом задачи)',
-                'type_id' => 'Изменение существующих параметров/значений',
-                'author_id' => 'Сео Сеошевич 2',
-                'supervisor_id' => 'Супервайзер Проектенко 17',
-                'manager_id' => 'Менеджер Контентович 1А',
-                'status' => 'Ожидает',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с проектированием структур + фильтрами',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => 'Euromart',
+                'type_id' => [
+                    'text' => 'Изменение существующих параметров/значений',
+                    'value' => 10,
+                ],
+                'author_id' => [
+                    'text' => 'Сео Сеошевич 2',
+                    'value' => 20,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Проектенко 17',
+                    'value' => 37,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 1А',
+                    'value' => 11,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с проектированием структур + фильтрами',
+                    'value' => 5,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => 'Euromart',
+                    'value' => 83,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 7,
             ],
             8 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Ожидает взятия в работу',
+                'previous_status' => [
+                    'text' => 'Ожидает взятия в работу',
+                    'value' => 5,
+                ],
+                'status' => [
+                    'text' => 'В работе',
+                    'value' => 6,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 17,
                 'subject' => 'Проектирование структуры (Определяется типом задачи)',
-                'type_id' => 'Проектирование структуры',
-                'author_id' => 'Тим Лидович 2',
-                'supervisor_id' => 'Супервайзер Проектенко 17',
-                'manager_id' => 'Менеджер Контентович 2Б',
-                'status' => 'В работе',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с проектированием структур + фильтрами',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => NULL,
+                'type_id' => [
+                    'text' => 'Проектирование структуры',
+                    'value' => 11,
+                ],
+                'author_id' => [
+                    'text' => 'Тим Лидович 2',
+                    'value' => 16,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Проектенко 17',
+                    'value' => 37,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 2Б',
+                    'value' => 14,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с проектированием структур + фильтрами',
+                    'value' => 5,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 6,
             ],
             9 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Частично выполнена',
+                'previous_status' => [
+                    'text' => 'Частично выполнена',
+                    'value' => 8,
+                ],
+                'status' => [
+                    'text' => 'В работе (ожидает исправлений)',
+                    'value' => 6,
+                ],
                 'awaiting_correction' => 1,
                 'id' => 16,
                 'subject' => 'Добавление параметров/значений (Определяется типом задачи)',
-                'type_id' => 'Добавление параметров/значений',
-                'author_id' => 'Сео Сеошевич 2',
-                'supervisor_id' => 'Супервайзер Проектенко 14',
-                'manager_id' => 'Менеджер Контентович 2Б',
-                'status' => 'В работе (ожидает исправлений)',
-                'cross_check_manager_id' => 'Менеджер Контентович 2А',
-                'cross_check_status' => 'На кросс-чеке',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с проектированием структур + фильтрами',
-                'category_id' => 'Видео к товару',
-                'seller_id' => 'Маркетплейс (общий)',
+                'type_id' => [
+                    'text' => 'Добавление параметров/значений',
+                    'value' => 9,
+                ],
+                'author_id' => [
+                    'text' => 'Сео Сеошевич 2',
+                    'value' => 20,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Проектенко 14',
+                    'value' => 34,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 2Б',
+                    'value' => 14,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => 'Менеджер Контентович 2А',
+                    'value' => 13,
+                ],
+                'cross_check_status' => [
+                    'text' => 'На кросс-чеке',
+                    'value' => 1,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с проектированием структур + фильтрами',
+                    'value' => 5,
+                ],
+                'category_id' => [
+                    'text' => 'Видео к товару',
+                    'value' => 2,
+                ],
+                'seller_id' => [
+                    'text' => 'Маркетплейс (общий)',
+                    'value' => 0,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 6,
             ],
             10 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Выполнена',
+                'previous_status' => [
+                    'text' => 'Выполнена',
+                    'value' => 9,
+                ],
+                'status' => [
+                    'text' => 'В работе (ожидает исправлений)',
+                    'value' => 6,
+                ],
                 'awaiting_correction' => 1,
                 'id' => 15,
                 'subject' => 'Добавление параметров/значений (Определяется типом задачи)',
-                'type_id' => 'Добавление параметров/значений',
-                'author_id' => 'Сео Сеошевич 1',
-                'supervisor_id' => 'Супервайзер Проектенко 14',
-                'manager_id' => 'Менеджер Контентович 1Б',
-                'status' => 'В работе (ожидает исправлений)',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с проектированием структур + фильтрами',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => 'Euromart',
+                'type_id' => [
+                    'text' => 'Добавление параметров/значений',
+                    'value' => 9,
+                ],
+                'author_id' => [
+                    'text' => 'Сео Сеошевич 1',
+                    'value' => 19,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Проектенко 14',
+                    'value' => 34,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 1Б',
+                    'value' => 12,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с проектированием структур + фильтрами',
+                    'value' => 5,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => 'Euromart',
+                    'value' => 83,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 6,
             ],
             11 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Готова для распределения',
+                'previous_status' => [
+                    'text' => 'Готова для распределения',
+                    'value' => 2,
+                ],
+                'status' => [
+                    'text' => 'Ожидает взятия в работу',
+                    'value' => 5,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 14,
                 'subject' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
-                'type_id' => 'Добавление новых СЦ/изменение существующих СЦ',
-                'author_id' => 'Менеджер Продактович 1',
-                'supervisor_id' => 'Супервайзер Начальникович 1',
-                'manager_id' => 'Менеджер Контентович 2А',
-                'status' => 'Ожидает взятия в работу',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Работа с товарами Розетки',
-                'team_direction' => 'Работа с товарами Rozetka',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => 'Euromart',
+                'type_id' => [
+                    'text' => 'Добавление новых СЦ/изменение существующих СЦ',
+                    'value' => 12,
+                ],
+                'author_id' => [
+                    'text' => 'Менеджер Продактович 1',
+                    'value' => 17,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Начальникович 1',
+                    'value' => 6,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 2А',
+                    'value' => 13,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Работа с товарами Розетки',
+                    'value' => 1,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с товарами Rozetka',
+                    'value' => 3,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => 'Euromart',
+                    'value' => 83,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 5,
             ],
             12 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Новая',
+                'previous_status' => [
+                    'text' => 'Новая',
+                    'value' => 1,
+                ],
+                'status' => [
+                    'text' => 'Ожидает взятия в работу',
+                    'value' => 5,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 13,
                 'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                'type_id' => 'Добавление новых товаров',
-                'author_id' => 'Тим Лидович 1',
-                'supervisor_id' => 'Супервайзер Начальникович 1',
-                'manager_id' => 'Менеджер Контентович 1Б',
-                'status' => 'Ожидает взятия в работу',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Работа с товарами Розетки',
-                'team_direction' => 'Работа с товарами Rozetka',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => 'Euromart',
+                'type_id' => [
+                    'text' => 'Добавление новых товаров',
+                    'value' => 1,
+                ],
+                'author_id' => [
+                    'text' => 'Тим Лидович 1',
+                    'value' => 15,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Начальникович 1',
+                    'value' => 6,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 1Б',
+                    'value' => 12,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Работа с товарами Розетки',
+                    'value' => 1,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с товарами Rozetka',
+                    'value' => 3,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => 'Euromart',
+                    'value' => 83,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 5,
             ],
             13 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Новая',
+                'previous_status' => [
+                    'text' => 'Новая',
+                    'value' => 1,
+                ],
+                'status' => [
+                    'text' => 'Ожидает взятия в работу',
+                    'value' => 5,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 12,
                 'subject' => 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
-                'type_id' => 'Добавление нового портала/раздела фат-меню/категории товаров',
-                'author_id' => 'Тим Лидович 1',
-                'supervisor_id' => 'Супервайзер Категоркин 15',
-                'manager_id' => 'Менеджер Контентович 1А',
-                'status' => 'Ожидает взятия в работу',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с порталами, фат-меню, категориями',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => 'Euromart',
+                'type_id' => [
+                    'text' => 'Добавление нового портала/раздела фат-меню/категории товаров',
+                    'value' => 7,
+                ],
+                'author_id' => [
+                    'text' => 'Тим Лидович 1',
+                    'value' => 15,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Категоркин 15',
+                    'value' => 35,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 1А',
+                    'value' => 11,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с порталами, фат-меню, категориями',
+                    'value' => 6,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => 'Euromart',
+                    'value' => 83,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 5,
             ],
             14 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'В работе',
+                'previous_status' => [
+                    'text' => 'В работе',
+                    'value' => 6,
+                ],
+                'status' => [
+                    'text' => 'Отменена',
+                    'value' => 4,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 11,
                 'subject' => 'Проектирование структуры (Определяется типом задачи)',
-                'type_id' => 'Проектирование структуры',
-                'author_id' => 'Менеджер Продактович 1',
-                'supervisor_id' => 'Супервайзер Проектенко 14',
-                'manager_id' => 'Менеджер Контентович 1Б',
-                'status' => 'Отменена',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с проектированием структур + фильтрами',
-                'category_id' => 'Видео к товару',
-                'seller_id' => NULL,
+                'type_id' => [
+                    'text' => 'Проектирование структуры',
+                    'value' => 11,
+                ],
+                'author_id' => [
+                    'text' => 'Менеджер Продактович 1',
+                    'value' => 17,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Проектенко 14',
+                    'value' => 34,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 1Б',
+                    'value' => 12,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с проектированием структур + фильтрами',
+                    'value' => 5,
+                ],
+                'category_id' => [
+                    'text' => 'Видео к товару',
+                    'value' => 2,
+                ],
+                'seller_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 4,
             ],
             15 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Ожидает взятия в работу',
+                'previous_status' => [
+                    'text' => 'Ожидает взятия в работу',
+                    'value' => 5,
+                ],
+                'status' => [
+                    'text' => 'Отменена',
+                    'value' => 4,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 10,
                 'subject' => 'Изменение существующих параметров/значений (Определяется типом задачи)',
-                'type_id' => 'Изменение существующих параметров/значений',
-                'author_id' => 'Сео Сеошевич 1',
-                'supervisor_id' => 'Супервайзер Проектенко 14',
-                'manager_id' => 'Менеджер Контентович 2А',
-                'status' => 'Отменена',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с проектированием структур + фильтрами',
-                'category_id' => NULL,
-                'seller_id' => 'Маркетплейс (общий)',
+                'type_id' => [
+                    'text' => 'Изменение существующих параметров/значений',
+                    'value' => 10,
+                ],
+                'author_id' => [
+                    'text' => 'Сео Сеошевич 1',
+                    'value' => 19,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Проектенко 14',
+                    'value' => 34,
+                ],
+                'manager_id' => [
+                    'text' => 'Менеджер Контентович 2А',
+                    'value' => 13,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с проектированием структур + фильтрами',
+                    'value' => 5,
+                ],
+                'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'seller_id' => [
+                    'text' => 'Маркетплейс (общий)',
+                    'value' => 0,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 4,
             ],
             16 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Готова для распределения',
+                'previous_status' => [
+                    'text' => 'Готова для распределения',
+                    'value' => 2,
+                ],
+                'status' => [
+                    'text' => 'На доработке',
+                    'value' => 3,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 9,
                 'subject' => 'Группировка товаров (Определяется типом задачи)',
-                'type_id' => 'Группировка товаров',
-                'author_id' => 'Менеджер Продактович 1',
-                'supervisor_id' => 'Супервайзер Групповушкин 13',
-                'manager_id' => NULL,
-                'status' => 'На доработке',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с группами',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => NULL,
+                'type_id' => [
+                    'text' => 'Группировка товаров',
+                    'value' => 4,
+                ],
+                'author_id' => [
+                    'text' => 'Менеджер Продактович 1',
+                    'value' => 17,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Групповушкин 13',
+                    'value' => 33,
+                ],
+                'manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с группами',
+                    'value' => 4,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 3,
             ],
             17 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Готова для распределения',
+                'previous_status' => [
+                    'text' => 'Готова для распределения',
+                    'value' => 2,
+                ],
+                'status' => [
+                    'text' => 'На доработке',
+                    'value' => 3,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 8,
                 'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
-                'type_id' => 'Добавление/изменение информации в существующих товарах',
-                'author_id' => 'Тим Лидович 1',
-                'supervisor_id' => 'Супервайзер Начальникович 2',
-                'manager_id' => NULL,
-                'status' => 'На доработке',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Работа с товарами Маркетплейса',
-                'team_direction' => 'Работа с товарами Маркетплейса',
-                'category_id' => NULL,
-                'seller_id' => 'anytech',
+                'type_id' => [
+                    'text' => 'Добавление/изменение информации в существующих товарах',
+                    'value' => 2,
+                ],
+                'author_id' => [
+                    'text' => 'Тим Лидович 1',
+                    'value' => 15,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Начальникович 2',
+                    'value' => 10,
+                ],
+                'manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Работа с товарами Маркетплейса',
+                    'value' => 2,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с товарами Маркетплейса',
+                    'value' => 2,
+                ],
+                'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'seller_id' => [
+                    'text' => 'anytech',
+                    'value' => 9423,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 3,
             ],
             18 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Новая',
+                'previous_status' => [
+                    'text' => 'Новая',
+                    'value' => 1,
+                ],
+                'status' => [
+                    'text' => 'На доработке',
+                    'value' => 3,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 7,
                 'subject' => 'Заливка фото с фотостудии (Работа с товарами Розетки)',
-                'type_id' => 'Заливка фото с фотостудии',
-                'author_id' => 'Менеджер Фоткович 1',
-                'supervisor_id' => 'Супервайзер Начальникович 1',
-                'manager_id' => NULL,
-                'status' => 'На доработке',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Работа с товарами Розетки',
-                'team_direction' => 'Работа с товарами Rozetka',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => 'Rozetka',
+                'type_id' => [
+                    'text' => 'Заливка фото с фотостудии',
+                    'value' => 5,
+                ],
+                'author_id' => [
+                    'text' => 'Менеджер Фоткович 1',
+                    'value' => 21,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Начальникович 1',
+                    'value' => 6,
+                ],
+                'manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Работа с товарами Розетки',
+                    'value' => 1,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с товарами Rozetka',
+                    'value' => 3,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => 'Rozetka',
+                    'value' => 5,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 3,
             ],
             19 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Новая',
+                'previous_status' => [
+                    'text' => 'Новая',
+                    'value' => 1,
+                ],
+                'status' => [
+                    'text' => 'Готова для распределения',
+                    'value' => 2,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 6,
                 'subject' => 'Перенос товаров (Работа с товарами Маркетплейса)',
-                'type_id' => 'Перенос товаров',
-                'author_id' => 'Менеджер Продактович 1',
-                'supervisor_id' => 'Супервайзер Руководько 1',
-                'manager_id' => NULL,
-                'status' => 'Готова для распределения',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Работа с товарами Маркетплейса',
-                'team_direction' => 'Работа с товарами Маркетплейса',
-                'category_id' => NULL,
-                'seller_id' => 'Маркетплейс (общий)',
+                'type_id' => [
+                    'text' => 'Перенос товаров',
+                    'value' => 3,
+                ],
+                'author_id' => [
+                    'text' => 'Менеджер Продактович 1',
+                    'value' => 17,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Руководько 1',
+                    'value' => 5,
+                ],
+                'manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Работа с товарами Маркетплейса',
+                    'value' => 2,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с товарами Маркетплейса',
+                    'value' => 2,
+                ],
+                'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'seller_id' => [
+                    'text' => 'Маркетплейс (общий)',
+                    'value' => 0,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 2,
             ],
             20 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Новая',
+                'previous_status' => [
+                    'text' => 'Новая',
+                    'value' => 1,
+                ],
+                'status' => [
+                    'text' => 'Готова для распределения',
+                    'value' => 2,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 5,
                 'subject' => 'Перенос товаров (Работа с товарами Розетки)',
-                'type_id' => 'Перенос товаров',
-                'author_id' => 'Менеджер Продактович 2',
-                'supervisor_id' => 'Супервайзер Начальникович 1',
-                'manager_id' => NULL,
-                'status' => 'Готова для распределения',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Работа с товарами Розетки',
-                'team_direction' => 'Работа с товарами Rozetka',
-                'category_id' => 'Авиабилеты',
-                'seller_id' => 'Rozetka',
+                'type_id' => [
+                    'text' => 'Перенос товаров',
+                    'value' => 3,
+                ],
+                'author_id' => [
+                    'text' => 'Менеджер Продактович 2',
+                    'value' => 18,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Начальникович 1',
+                    'value' => 6,
+                ],
+                'manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Работа с товарами Розетки',
+                    'value' => 1,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с товарами Rozetka',
+                    'value' => 3,
+                ],
+                'category_id' => [
+                    'text' => 'Авиабилеты',
+                    'value' => 1,
+                ],
+                'seller_id' => [
+                    'text' => 'Rozetka',
+                    'value' => 5,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 2,
             ],
             21 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'Новая',
+                'previous_status' => [
+                    'text' => 'Новая',
+                    'value' => 1,
+                ],
+                'status' => [
+                    'text' => 'Готова для распределения',
+                    'value' => 2,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 4,
                 'subject' => 'Перенос товаров (Работа с товарами Маркетплейса)',
-                'type_id' => 'Перенос товаров',
-                'author_id' => 'Менеджер Продактович 1',
-                'supervisor_id' => 'Супервайзер Начальникович 1',
-                'manager_id' => NULL,
-                'status' => 'Готова для распределения',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Работа с товарами Маркетплейса',
-                'team_direction' => 'Работа с товарами Маркетплейса',
-                'category_id' => NULL,
-                'seller_id' => 'Euromart',
+                'type_id' => [
+                    'text' => 'Перенос товаров',
+                    'value' => 3,
+                ],
+                'author_id' => [
+                    'text' => 'Менеджер Продактович 1',
+                    'value' => 17,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Начальникович 1',
+                    'value' => 6,
+                ],
+                'manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Работа с товарами Маркетплейса',
+                    'value' => 2,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с товарами Маркетплейса',
+                    'value' => 2,
+                ],
+                'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'seller_id' => [
+                    'text' => 'Euromart',
+                    'value' => 83,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 2,
             ],
             22 => [
                 'parent_id' => NULL,
                 'child_count' => 1,
                 'photo_load_status' => 0,
-                'previous_status' => NULL,
+                'previous_status' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'status' => [
+                    'text' => 'Новая',
+                    'value' => 1,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 3,
                 'subject' => 'Группировка товаров (Определяется типом задачи)',
-                'type_id' => 'Группировка товаров',
-                'author_id' => 'Менеджер Продактович 2',
-                'supervisor_id' => 'Супервайзер Групповушкин 13',
-                'manager_id' => NULL,
-                'status' => 'Новая',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Определяется типом задачи',
-                'team_direction' => 'Работа с группами',
-                'category_id' => NULL,
-                'seller_id' => 'Маркетплейс (общий)',
+                'type_id' => [
+                    'text' => 'Группировка товаров',
+                    'value' => 4,
+                ],
+                'author_id' => [
+                    'text' => 'Менеджер Продактович 2',
+                    'value' => 18,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Групповушкин 13',
+                    'value' => 33,
+                ],
+                'manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Определяется типом задачи',
+                    'value' => 0,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с группами',
+                    'value' => 4,
+                ],
+                'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'seller_id' => [
+                    'text' => 'Маркетплейс (общий)',
+                    'value' => 0,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 1,
             ],
             23 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => NULL,
+                'previous_status' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'status' => [
+                    'text' => 'Новая',
+                    'value' => 1,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 2,
                 'subject' => 'Добавление новых товаров (Работа с товарами Маркетплейса)',
-                'type_id' => 'Добавление новых товаров',
-                'author_id' => 'Тим Лидович 2',
-                'supervisor_id' => 'Супервайзер Руководько 1',
-                'manager_id' => NULL,
-                'status' => 'Новая',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Работа с товарами Маркетплейса',
-                'team_direction' => 'Работа с товарами Маркетплейса',
-                'category_id' => NULL,
-                'seller_id' => 'Маркетплейс (общий)',
+                'type_id' => [
+                    'text' => 'Добавление новых товаров',
+                    'value' => 1,
+                ],
+                'author_id' => [
+                    'text' => 'Тим Лидович 2',
+                    'value' => 16,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Руководько 1',
+                    'value' => 5,
+                ],
+                'manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Работа с товарами Маркетплейса',
+                    'value' => 2,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с товарами Маркетплейса',
+                    'value' => 2,
+                ],
+                'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'seller_id' => [
+                    'text' => 'Маркетплейс (общий)',
+                    'value' => 0,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 1,
             ],
             24 => [
                 'parent_id' => NULL,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => 'На доработке',
+                'previous_status' => [
+                    'text' => 'На доработке',
+                    'value' => 3,
+                ],
+                'status' => [
+                    'text' => 'Новая  (Вернулась с доработки)',
+                    'value' => 1,
+                ],
                 'awaiting_correction' => 0,
                 'id' => 1,
                 'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
-                'type_id' => 'Добавление/изменение информации в существующих товарах',
-                'author_id' => 'Тим Лидович 2',
-                'supervisor_id' => 'Супервайзер Начальникович 2',
-                'manager_id' => NULL,
-                'status' => 'Новая  (Вернулась с доработки)',
-                'cross_check_manager_id' => NULL,
-                'cross_check_status' => 'Не прошла кросс-чек',
-                'direction' => 'Работа с товарами Розетки',
-                'team_direction' => 'Работа с товарами Rozetka',
-                'category_id' => 'Видео к товару',
-                'seller_id' => 'anytech',
+                'type_id' => [
+                    'text' => 'Добавление/изменение информации в существующих товарах',
+                    'value' => 2,
+                ],
+                'author_id' => [
+                    'text' => 'Тим Лидович 2',
+                    'value' => 16,
+                ],
+                'supervisor_id' => [
+                    'text' => 'Супервайзер Начальникович 2',
+                    'value' => 10,
+                ],
+                'manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_manager_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'cross_check_status' => [
+                    'text' => 'Не прошла кросс-чек',
+                    'value' => 0,
+                ],
+                'direction' => [
+                    'text' => 'Работа с товарами Розетки',
+                    'value' => 1,
+                ],
+                'team_direction' => [
+                    'text' => 'Работа с товарами Rozetka',
+                    'value' => 3,
+                ],
+                'category_id' => [
+                    'text' => 'Видео к товару',
+                    'value' => 2,
+                ],
+                'seller_id' => [
+                    'text' => 'anytech',
+                    'value' => 9423,
+                ],
                 'requestAttachments' => [
                 ],
-                'statusKey' => 1,
             ],
         ],
         '_links' => [
