@@ -37,6 +37,7 @@ class UsersTester extends GeneralTester
         $I->loadFixtureFromDataprovider();
         $I->loadMockFromDataprovider();
         $I->purgeAllQueues();
+        $I->truncateTablesInDatabase(['lisa_fixtures' => ['exceptions' => []]]);
 
         $I->wantTo($data['setting']['description']);
     }

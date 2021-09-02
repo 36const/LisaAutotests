@@ -34,6 +34,7 @@ class GeneralTester extends Actor
         $I->loadFixtureFromDataprovider();
         $I->loadMockFromDataprovider();
         $I->purgeAllQueues();
+        $I->truncateTablesInDatabase(['lisa_fixtures' => ['exceptions' => []]]);
 
         $I->wantTo($data['setting']['description']);
     }
@@ -42,8 +43,8 @@ class GeneralTester extends Actor
     {
         $I = $this;
 
-        foreach ($dbTablesArray as $dbData) {
-            foreach ($dbData as $tableName => $tableData) {
+        foreach ($dbTablesArray as $dbTable) {
+            foreach ($dbTable as $tableName => $tableData) {
                 $I->canSeeNumRecords(count($tableData), $tableName);
 
                 foreach ($tableData as $tableRow) {

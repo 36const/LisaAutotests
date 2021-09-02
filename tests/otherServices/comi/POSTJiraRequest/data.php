@@ -860,7 +860,27 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'requests' => [],
-                    'requests_fields' => []
+                    'requests_fields' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\InvalidArgumentException',
+                            'message' => 'Неподдерживаемый проект: ',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\InvalidArgumentException',
+                            'message' => 'Неподдерживаемый проект: ',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ]
         ]
@@ -883,7 +903,27 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'requests' => [],
-                    'requests_fields' => []
+                    'requests_fields' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\InvalidArgumentException',
+                            'message' => 'Неподдерживаемый проект: BPM',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\InvalidArgumentException',
+                            'message' => 'Неподдерживаемый проект: BPM',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ]
         ]
@@ -907,7 +947,27 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'requests' => [],
-                    'requests_fields' => []
+                    'requests_fields' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\web\BadRequestHttpException',
+                            'message' => 'Отсутствуют обязательные параметры: issueKey',
+                            'name' => 'Bad Request',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\web\BadRequestHttpException',
+                            'message' => 'Отсутствуют обязательные параметры: issueKey',
+                            'name' => 'Bad Request',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ]
         ]

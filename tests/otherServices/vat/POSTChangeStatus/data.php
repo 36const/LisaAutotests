@@ -1576,7 +1576,35 @@ return [
                             'reason_id' => 15
                         ],
                     ],
-                    'user_notifications' => []
+                    'user_notifications' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 1 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 1 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -1610,6 +1638,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Необходимо заполнить requestId или supplierCabinetId',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Необходимо заполнить requestId или supplierCabinetId',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -1643,6 +1691,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'newStatus: должен быть числом.',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'newStatus: должен быть числом.',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -1680,6 +1748,34 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => Необходимо заполнить payload[Request][correction_comment]
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => Необходимо заполнить payload[Request][correction_comment]
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -1713,6 +1809,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\web\NotFoundHttpException',
+                            'message' => 'По вашему запросу не найдено заявок.',
+                            'name' => 'Not Found',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\web\NotFoundHttpException',
+                            'message' => 'По вашему запросу не найдено заявок.',
+                            'name' => 'Not Found',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -1746,6 +1862,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\web\NotFoundHttpException',
+                            'message' => 'По вашему запросу не найдено заявок.',
+                            'name' => 'Not Found',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\web\NotFoundHttpException',
+                            'message' => 'По вашему запросу не найдено заявок.',
+                            'name' => 'Not Found',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -1779,6 +1915,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 10 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 10 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -1899,6 +2055,43 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 5 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 3,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 5 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -1932,6 +2125,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 2 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 2 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -1965,6 +2178,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 3 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 3 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -1998,6 +2231,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 4 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 4 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2031,6 +2284,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 5 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 5 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2064,6 +2337,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 6 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 6 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2097,6 +2390,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 7 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 7 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2130,6 +2443,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 8 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 8 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2163,6 +2496,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 9 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 9 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2196,6 +2549,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 11 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'InvalidArgumentException',
+                            'message' => 'Невозможно перевести задачу в статус 11 через API.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2225,6 +2598,26 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Необходимо заполнить requestId или supplierCabinetId',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Необходимо заполнить requestId или supplierCabinetId',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2262,6 +2655,34 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case18.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 2 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 2 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2299,6 +2720,34 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case19.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 4 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 4 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2336,6 +2785,34 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case20.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 5 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 5 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2373,6 +2850,34 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case21.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 6 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 6 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2410,6 +2915,34 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case22.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 7 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 7 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2447,6 +2980,34 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case23.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 8 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 8 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2484,6 +3045,34 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case24.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 9 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 9 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -2521,6 +3110,34 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case25.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 11 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\StatusTransitionException',
+                            'message' => 'Array
+(
+    [0] => В текущем процессе отсутствует переход заявки из статуса 11 в статус 1
+)
+',
+                            'name' => 'Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [

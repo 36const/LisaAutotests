@@ -8052,6 +8052,42 @@ return [
                     'auth.auth_item' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_item'],
                     'auth.auth_assignment' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_assignment'],
                     'auth.user_changing_history' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_changing_history'],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\db\\Exception',
+                            'message' => 'Array
+(
+    [positions] => Array
+        (
+            [0] => Необходимо заполнить либо роль, относящуюся к проекту команды, либо роль Все
+        )
+
+)
+',
+                            'name' => 'Database Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\db\\Exception',
+                            'message like' => 'Array
+(
+    [positions] => Array
+        (
+            [0] => Необходимо заполнить либо роль, относящуюся к проекту команды, либо роль Все
+        )
+
+)
+',
+                            'name' => 'Database Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ],
             ],
         ]

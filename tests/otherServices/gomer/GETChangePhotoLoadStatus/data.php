@@ -1106,6 +1106,26 @@ return [
                             'photo_load_status' => 1
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'У заявки №1 статус загрузки фото уже \'Загружены на OWOX\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'У заявки №1 статус загрузки фото уже \'Загружены на OWOX\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -1287,6 +1307,26 @@ return [
                             'photo_load_status' => 0
                         ]
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\web\NotFoundHttpException',
+                            'message' => 'Заявка с таким ID не существует.',
+                            'name' => 'Not Found',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\web\NotFoundHttpException',
+                            'message' => 'Заявка с таким ID не существует.',
+                            'name' => 'Not Found',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ]
                 ]
             ],
         ]
@@ -1305,7 +1345,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Передан не валидный \$requestId"
+                    'Передан не валидный $requestId'
                 ]
             ],
             'db' => [
@@ -1468,6 +1508,26 @@ return [
                             'photo_load_status' => 0
                         ]
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Передан не валидный $requestId',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Передан не валидный $requestId',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -1486,7 +1546,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Передан не валидный \$requestId"
+                    'Передан не валидный $requestId'
                 ]
             ],
             'db' => [
@@ -1648,6 +1708,26 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0
                         ]
+                    ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Передан не валидный $requestId',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Передан не валидный $requestId',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
                     ],
                 ]
             ],
@@ -1829,6 +1909,26 @@ return [
                             'photo_load_status' => 0
                         ]
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\web\BadRequestHttpException',
+                            'message' => 'Отсутствуют обязательные параметры: requestId',
+                            'name' => 'Bad Request',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\web\BadRequestHttpException',
+                            'message' => 'Отсутствуют обязательные параметры: requestId',
+                            'name' => 'Bad Request',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -1836,7 +1936,7 @@ return [
 
     'case17' => [
         'setting' => [
-            'description' => 'Заявка тип 2 направление 1',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 2 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case17.php',
         'provider_data' => [
@@ -1893,6 +1993,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -1900,7 +2020,7 @@ return [
 
     'case18' => [
         'setting' => [
-            'description' => 'Заявка тип 3 направление 2',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 3 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case18.php',
         'provider_data' => [
@@ -1957,6 +2077,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -1964,7 +2104,7 @@ return [
 
     'case19' => [
         'setting' => [
-            'description' => 'Заявка тип 4 направление 0',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 4 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case19.php',
         'provider_data' => [
@@ -2021,6 +2161,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -2028,7 +2188,7 @@ return [
 
     'case20' => [
         'setting' => [
-            'description' => 'Заявка тип 5 направление 1',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 5 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case20.php',
         'provider_data' => [
@@ -2085,6 +2245,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -2092,7 +2272,7 @@ return [
 
     'case21' => [
         'setting' => [
-            'description' => 'Заявка тип 6 направление 2',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 6 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case21.php',
         'provider_data' => [
@@ -2149,6 +2329,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -2156,7 +2356,7 @@ return [
 
     'case22' => [
         'setting' => [
-            'description' => 'Заявка тип 7 направление 0',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 7 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case22.php',
         'provider_data' => [
@@ -2213,6 +2413,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -2220,7 +2440,7 @@ return [
 
     'case23' => [
         'setting' => [
-            'description' => 'Заявка тип 8 направление 0',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 8 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case23.php',
         'provider_data' => [
@@ -2277,6 +2497,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -2284,7 +2524,7 @@ return [
 
     'case24' => [
         'setting' => [
-            'description' => 'Заявка тип 9 направление 0',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 9 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case24.php',
         'provider_data' => [
@@ -2341,6 +2581,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -2348,7 +2608,7 @@ return [
 
     'case25' => [
         'setting' => [
-            'description' => 'Заявка тип 10 направление 0',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 10 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case25.php',
         'provider_data' => [
@@ -2405,6 +2665,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -2412,7 +2692,7 @@ return [
 
     'case26' => [
         'setting' => [
-            'description' => 'Заявка тип 11 направление 0',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 11 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case26.php',
         'provider_data' => [
@@ -2469,6 +2749,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -2476,7 +2776,7 @@ return [
 
     'case27' => [
         'setting' => [
-            'description' => 'Заявка тип 12 направление 1',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 12 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case27.php',
         'provider_data' => [
@@ -2533,6 +2833,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -2540,7 +2860,7 @@ return [
 
     'case28' => [
         'setting' => [
-            'description' => 'Заявка тип 13 направление 0',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 13 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case28.php',
         'provider_data' => [
@@ -2597,6 +2917,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -2604,7 +2944,7 @@ return [
 
     'case29' => [
         'setting' => [
-            'description' => 'Заявка тип 14 направление 0',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 14 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case29.php',
         'provider_data' => [
@@ -2661,6 +3001,26 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
                 ]
             ],
         ]
@@ -2668,7 +3028,7 @@ return [
 
     'case30' => [
         'setting' => [
-            'description' => 'Заявка тип 15 направление 0',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 15 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case30.php',
         'provider_data' => [
@@ -2723,6 +3083,26 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0
+                        ],
+                    ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                        [
+                            'id' => 2,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\InvalidArgumentException',
+                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
+                            'name' => 'Invalid Argument',
+                            'code' => 0,
+                            'user' => '4',
                         ],
                     ],
                 ]
