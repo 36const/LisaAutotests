@@ -384,6 +384,18 @@ $initSeller = [
         'title' => 'Rozetka',
     ],
     4 => [
+        'owox_id' => 72141,
+        'title' => 'Rozetka.md',
+    ],
+    5 => [
+        'owox_id' => 124276,
+        'title' => 'Rozetka.uz',
+    ],
+    6 => [
+        'owox_id' => 128603,
+        'title' => 'RozetkaEU',
+    ],
+    7 => [
         'owox_id' => -2,
         'title' => 'Все продавцы',
     ],

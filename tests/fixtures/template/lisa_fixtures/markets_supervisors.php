@@ -37,4 +37,22 @@ return [
         'title' => 'iTook',
         'status' => 3
     ],
+    [
+        'owox_id' => 72141,
+        'supervisor_id' => 10,
+        'title' => 'Rozetka.md',
+        'status' => 3
+    ],
+    [
+        'owox_id' => 128603,
+        'supervisor_id' => 10,
+        'title' => 'RozetkaEU',
+        'status' => 3
+    ],
+    [
+        'owox_id' => 124276,
+        'supervisor_id' => 10,
+        'title' => 'Rozetka.uz',
+        'status' => 3
+    ],
 ];

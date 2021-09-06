@@ -49,6 +49,24 @@ return [
                             'title' => 'iTook',
                             'status' => 3,
                         ],
+                        6 => [
+                            'owox_id' => 72141,
+                            'supervisor_id' => 'Супервайзер Начальникович 2',
+                            'title' => 'Rozetka.md',
+                            'status' => 3
+                        ],
+                        7 => [
+                            'owox_id' => 128603,
+                            'supervisor_id' => 'Супервайзер Начальникович 2',
+                            'title' => 'RozetkaEU',
+                            'status' => 3
+                        ],
+                        8 => [
+                            'owox_id' => 124276,
+                            'supervisor_id' => 'Супервайзер Начальникович 2',
+                            'title' => 'Rozetka.uz',
+                            'status' => 3
+                        ],
                     ],
                     '_links' => [
                         'self' => [
@@ -62,7 +80,7 @@ return [
                         ],
                     ],
                     '_meta' => [
-                        'totalCount' => 6,
+                        'totalCount' => 9,
                         'pageCount' => 1,
                         'currentPage' => 1,
                         'perPage' => 20,
@@ -157,6 +175,24 @@ return [
                             'title' => 'anytech',
                             'status' => 6,
                         ],
+                        2 => [
+                            'owox_id' => 72141,
+                            'supervisor_id' => 'Супервайзер Начальникович 2',
+                            'title' => 'Rozetka.md',
+                            'status' => 3
+                        ],
+                        3 => [
+                            'owox_id' => 128603,
+                            'supervisor_id' => 'Супервайзер Начальникович 2',
+                            'title' => 'RozetkaEU',
+                            'status' => 3
+                        ],
+                        4 => [
+                            'owox_id' => 124276,
+                            'supervisor_id' => 'Супервайзер Начальникович 2',
+                            'title' => 'Rozetka.uz',
+                            'status' => 3
+                        ],
                     ],
                     '_links' => [
                         'self' => [
@@ -170,7 +206,7 @@ return [
                         ],
                     ],
                     '_meta' => [
-                        'totalCount' => 2,
+                        'totalCount' => 5,
                         'pageCount' => 1,
                         'currentPage' => 1,
                         'perPage' => 20,

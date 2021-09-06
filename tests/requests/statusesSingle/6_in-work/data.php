@@ -8535,7 +8535,7 @@ return [
     'case6_0_cm' => [
         'setting' => [
             'description' => 'Изменение контент-менеджера во "В работе" + нотификации',
-            'skip' => 'skip'
+//            'skip' => 'skip'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_0_cm.php',
         'provider_data' => [
