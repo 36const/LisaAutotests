@@ -344,7 +344,8 @@ return [
                 'priority' => null,
                 'awaiting_correction' => 0,
                 'created_at' => '2020-03-15 00:00:00',
-                'correction_comment' => '',
+                'correction_comment' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО
+http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395acaa4d6c3?_g=&not_(refreshInterval:(pause:!t,value:0),time:(from:now%2FM,mode:quick,to:now%2FM))&_a=(description:\'\',filters:!(),fullScreenMode:!f,options:(darkTheme:!f,hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(),gridData:(h:15,i:\'6\',w:24,x:24,y:30),id:\'7ba18f80-2238-11ea-a052-1d55fc41757c\',panelIndex:\'6\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'7\',w:24,x:0,y:0),id:e8db8c70-21ae-11ea-825a-395acaa4d6c3,panelIndex:\'7\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'8\',w:24,x:24,y:0),id:bd6c7d00-223b-11ea-a052-1d55fc41757c,panelIndex:\'8\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'9\',w:12,x:0,y:15),id:fd87de60-2241-11ea-a052-1d55fc41757c,panelIndex:\'9\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'10\',w:12,x:12,y:15),id:b8a458e0-2283-11ea-a052-1d55fc41757c,panelIndex:\'10\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'11\',w:24,x:24,y:45),id:\'1e605320-2287-11ea-825a-395acaa4d6c3\',panelIndex:\'11\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'12\',w:24,x:0,y:45),id:f280c580-228d-11ea-825a-395acaa4d6c3,panelIndex:\'12\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'13\',w:24,x:24,y:15),id:\'36fe2110-24bb-11ea-a052-1d55fc41757c\',panelIndex:\'13\',type:visualization,version:\'6.4.2\'),(embeddableConfig:(),gridData:(h:15,i:\'14\',w:24,x:0,y:30),id:\'6f8eba80-24ca-11ea-825a-395acaa4d6c3\',panelIndex:\'14\',type:visualization,version:\'6.4.2\')),query:(language:kuery,query:\'\'),timeRestore:!t,title:\'Goods%20Experimental%20Copy\',viewMode:view)',
                 'amount_to_work' => 10,
                 'subject' => 'Группировка товаров (Определяется типом задачи)',
                 'description' => 'Описание',
@@ -1039,6 +1040,11 @@ return [
             ],
             [
                 'request_id' => 1,
+                'field_id' => 4,
+                'value' => '1'
+            ],
+            [
+                'request_id' => 1,
                 'field_id' => 49,
                 'value' => '0'
             ],
@@ -1194,7 +1200,7 @@ return [
             ],
             [
                 'request_id' => 3,
-                'field_id' => 2,
+                'field_id' => 3,
                 'value' => '1'
             ],
             [
@@ -1516,6 +1522,16 @@ return [
                 'request_id' => 5,
                 'field_id' => 158,
                 'value' => '0'
+            ],
+            [
+                'request_id' => 6,
+                'field_id' => 3,
+                'value' => '1'
+            ],
+            [
+                'request_id' => 6,
+                'field_id' => 17,
+                'value' => '1'
             ],
             [
                 'request_id' => 6,
@@ -4038,6 +4054,50 @@ return [
                 'created_at' => '2020-01-02 12:12:12',
                 'manager_id' => 12,
                 'reasons' => 'Дубль задачи | Все товары уже есть на сайте'
+            ],
+            [
+                //'id' => 3,
+                'request_id' => 14,
+                'user_id' => 4,
+                'old_status' => 2,
+                'new_status' => 3,
+                'reason' => 'http://gomer.local/lisa/#/request/list/in-check',
+                'created_at' => '2021-09-03 13:37:55',
+                'manager_id' => 13,
+                'reasons' => 'Другое (описан в коментариях)',
+            ],
+            [
+                //'id' => 4,
+                'request_id' => 14,
+                'user_id' => 4,
+                'old_status' => 3,
+                'new_status' => 1,
+                'reason' => 'йцук',
+                'created_at' => '2021-09-03 13:38:09',
+                'manager_id' => 13,
+                'reasons' => NULL,
+            ],
+            [
+                //'id' => 5,
+                'request_id' => 14,
+                'user_id' => 4,
+                'old_status' => 1,
+                'new_status' => 3,
+                'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                'created_at' => '2021-09-03 13:38:55',
+                'manager_id' => 13,
+                'reasons' => 'Другое (описан в коментариях) | Нада',
+            ],
+            [
+                //'id' => 6,
+                'request_id' => 14,
+                'user_id' => 4,
+                'old_status' => 3,
+                'new_status' => 1,
+                'reason' => 'https://zabbix3.local/latest.php?groupids%5B%5D=251&hostids%5B%5D=12686&hostids%5B%5D=16666&hostids%5B%5D=16728&hostids%5B%5D=17592&hostids%5B%5D=17607&hostids%5B%5D=17714&hostids%5B%5D=17720&hostids%5B%5D=18537&hostids%5B%5D=19198&application=Memory',
+                'created_at' => '2021-09-03 13:39:22',
+                'manager_id' => 13,
+                'reasons' => NULL,
             ],
         ],
     ],

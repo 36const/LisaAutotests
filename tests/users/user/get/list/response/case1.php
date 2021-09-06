@@ -621,9 +621,9 @@ return [
     'filters' => [
     ],
     'initialValues' => [
-        'activeTeams' => UsersTester::ACTIVETEAMS,
+        'activeTeams' => UsersTester::ACTIVE_TEAMS,
         'positions' => UsersTester::POSITIONS,
-        'teams' => UsersTester::TEAMS,
+        'teams' => UsersTester::ALL_TEAMS,
         'userNames' => UsersTester::USER_NAMES,
     ]
 ];

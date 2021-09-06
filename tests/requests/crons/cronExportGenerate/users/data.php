@@ -1,33 +1,5 @@
 <?php
 
-$db_1 = [
-    'lisa_fixtures' => [
-        'exports_logs' => [],
-        'user_exports' => [
-            [
-                'id' => 1,
-                'user_id' => 4,
-                'title >' => 'export_users_4_' . date('Y-m-d'),
-                'status' => 1,
-            ]
-        ]
-    ]
-];
-
-$db_2 = [
-    'lisa_fixtures' => [
-        'exports_logs' => [],
-        'user_exports' => [
-            [
-                'id' => 1,
-                'user_id' => 4,
-                'title >' => 'export_users_4_' . date('Y-m-d'),
-                'status' => 2,
-            ]
-        ]
-    ]
-];
-
 return [
     'case1' => [
         'setting' => [
@@ -37,8 +9,50 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'url' => '',
-            'db_1' => $db_1,
-            'db_2' => $db_2,
+            'db_1' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "users", "params": "[]"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at' => null,
+                            'generation_time' => null,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_users_4_' . date('Y-m-d'),
+                            'status' => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "users", "params": "[]"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at >=' => date('Y-m-d'),
+                            'generation_time >' => 0,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_users_4_' . date('Y-m-d'),
+                            'status' => 2,
+                        ]
+                    ]
+                ]
+            ],
             'fileContent' => [
                 1 => [
                     'A' => 'ID пользователя',
@@ -64,8 +78,50 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'url' => '?filter[team]=1&sort=-id&per-page=100',
-            'db_1' => $db_1,
-            'db_2' => $db_2,
+            'db_1' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "users", "params": "{\"filter\":{\"team\":\"1\"},\"sort\":\"-id\"}"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at' => null,
+                            'generation_time' => null,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_users_4_' . date('Y-m-d'),
+                            'status' => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "users", "params": "{\"filter\":{\"team\":\"1\"},\"sort\":\"-id\"}"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at >=' => date('Y-m-d'),
+                            'generation_time >' => 0,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_users_4_' . date('Y-m-d'),
+                            'status' => 2,
+                        ]
+                    ]
+                ]
+            ],
             'fileContent' => [
                 1 => [
                     'A' => 'ID пользователя',
@@ -127,8 +183,50 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'url' => '?filter[team]&sort=-id&filter[position]=teamLead&per-page=100',
-            'db_1' => $db_1,
-            'db_2' => $db_2,
+            'db_1' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "users", "params": "{\"filter\":{\"team\":\"\",\"position\":\"teamLead\"},\"sort\":\"-id\"}"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at' => null,
+                            'generation_time' => null,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_users_4_' . date('Y-m-d'),
+                            'status' => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "users", "params": "{\"filter\":{\"team\":\"\",\"position\":\"teamLead\"},\"sort\":\"-id\"}"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at >=' => date('Y-m-d'),
+                            'generation_time >' => 0,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_users_4_' . date('Y-m-d'),
+                            'status' => 2,
+                        ]
+                    ]
+                ]
+            ],
             'fileContent' => [
                 1 => [
                     'A' => 'ID пользователя',
@@ -178,8 +276,50 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'url' => '?filter[team]=19&sort=-id&filter[position]&filter[parent_id]=4&filter[status]=1',
-            'db_1' => $db_1,
-            'db_2' => $db_2,
+            'db_1' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "users", "params": "{\"filter\":{\"team\":\"19\",\"position\":\"\",\"parent_id\":\"4\",\"status\":\"1\"},\"sort\":\"-id\"}"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at' => null,
+                            'generation_time' => null,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_users_4_' . date('Y-m-d'),
+                            'status' => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "users", "params": "{\"filter\":{\"team\":\"19\",\"position\":\"\",\"parent_id\":\"4\",\"status\":\"1\"},\"sort\":\"-id\"}"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at >=' => date('Y-m-d'),
+                            'generation_time >' => 0,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_users_4_' . date('Y-m-d'),
+                            'status' => 2,
+                        ]
+                    ]
+                ]
+            ],
             'fileContent' => [
                 1 => [
                     'A' => 'ID пользователя',

@@ -137,7 +137,7 @@ return [
                 'name' => 'Константин Куцан',
                 'login' => 'kutsan.k',
                 'email' => 'kutsan.k@rozetka.com.ua',
-                'team' => 17,
+                'team' => 18,
                 'parent_id' => 1,
                 'position' => 'productManager',
                 'status' => 1,

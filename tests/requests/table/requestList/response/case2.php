@@ -1,259 +1,14 @@
 <?php
 
+use lisa\UsersTester;
+
 return [
-    'tabsData' => [
-        'all' => [
-            'label' => 'Все',
-        ],
-        'new' => [
-            'label' => 'Новые',
-            'visible' => true,
-            'dialogs' => [
-                0 => [
-                    'component' => 'Confirm',
-                    'title' => 'Готова для распределения',
-                    'visible' => true,
-                ],
-                1 => [
-                    'component' => 'Reason',
-                    'title' => 'На доработку',
-                    'visible' => true,
-                    'targetStatus' => 3,
-                ],
-                2 => [
-                    'component' => 'Reason',
-                    'title' => 'Отменить',
-                    'visible' => true,
-                    'targetStatus' => 4,
-                ],
-                3 => [
-                    'component' => 'Appoint',
-                    'title' => 'Назначить исполнителя',
-                    'visible' => true,
-                    'url' => '/user/managers',
-                    'userTeam' => 17,
-                    'prompt' => 'Поиск исполнителя...',
-                ],
-                4 => [
-                    'component' => 'Appoint',
-                    'title' => 'Изменить супервайзера',
-                    'visible' => true,
-                    'url' => '/user/supervisors',
-                    'prompt' => 'Поиск супервизора...',
-                ],
-                5 => [
-                    'component' => 'MassEdit',
-                    'title' => 'Пакетное редактирование',
-                    'visible' => true,
-                ],
-                'order' => 5,
-            ],
-        ],
-        'in-check' => [
-            'label' => 'Готовы для распределения',
-            'visible' => true,
-            'dialogs' => [
-                0 => [
-                    'component' => 'Reason',
-                    'title' => 'На доработку',
-                    'visible' => true,
-                    'targetStatus' => 3,
-                ],
-                1 => [
-                    'component' => 'Reason',
-                    'title' => 'Отменить',
-                    'visible' => true,
-                    'targetStatus' => 4,
-                ],
-                2 => [
-                    'component' => 'Appoint',
-                    'title' => 'Назначить исполнителя',
-                    'visible' => true,
-                    'url' => '/user/managers',
-                    'userTeam' => 17,
-                    'prompt' => 'Поиск исполнителя...',
-                ],
-                3 => [
-                    'component' => 'Appoint',
-                    'title' => 'Изменить супервайзера',
-                    'visible' => true,
-                    'url' => '/user/supervisors',
-                    'prompt' => 'Поиск супервизора...',
-                ],
-                4 => [
-                    'component' => 'MassEdit',
-                    'title' => 'Пакетное редактирование',
-                    'visible' => true,
-                ],
-                'order' => 10,
-            ],
-        ],
-        'require-changes' => [
-            'label' => 'На доработке',
-            'visible' => true,
-            'dialogs' => [
-                0 => [
-                    'component' => 'Comment',
-                    'title' => 'Вернуть в новые',
-                    'visible' => false,
-                ],
-                1 => [
-                    'component' => 'Appoint',
-                    'title' => 'Изменить супервайзера',
-                    'visible' => true,
-                    'url' => '/user/supervisors',
-                    'prompt' => 'Поиск супервизора...',
-                ],
-                2 => [
-                    'component' => 'MassEdit',
-                    'title' => 'Пакетное редактирование',
-                    'visible' => true,
-                ],
-                'order' => 13,
-            ],
-        ],
-        'wait-work' => [
-            'label' => 'Ожидают взятия в работу',
-            'dialogs' => [
-                0 => [
-                    'component' => 'Confirm',
-                    'title' => 'В работу',
-                    'visible' => true,
-                ],
-                1 => [
-                    'component' => 'Appoint',
-                    'title' => 'Изменить супервайзера',
-                    'visible' => true,
-                    'url' => '/user/supervisors',
-                    'prompt' => 'Поиск супервизора...',
-                ],
-                2 => [
-                    'component' => 'MassEdit',
-                    'title' => 'Пакетное редактирование',
-                    'visible' => true,
-                ],
-                'order' => 16,
-            ],
-        ],
-        'in-work' => [
-            'label' => 'В работе',
-            'dialogs' => [
-                0 => [
-                    'component' => 'Reason',
-                    'title' => 'Ожидать',
-                    'visible' => true,
-                    'targetStatus' => 7,
-                ],
-                1 => [
-                    'component' => 'Reason',
-                    'title' => 'Отменить',
-                    'visible' => true,
-                    'targetStatus' => 4,
-                ],
-                2 => [
-                    'component' => 'Appoint',
-                    'title' => 'Изменить супервайзера',
-                    'visible' => true,
-                    'url' => '/user/supervisors',
-                    'prompt' => 'Поиск супервизора...',
-                ],
-                3 => [
-                    'component' => 'MassEdit',
-                    'title' => 'Пакетное редактирование',
-                    'visible' => true,
-                ],
-                'order' => 20,
-            ],
-        ],
-        'on-hold' => [
-            'label' => 'Ожидают',
-            'dialogs' => [
-                0 => [
-                    'component' => 'Appoint',
-                    'title' => 'Изменить супервайзера',
-                    'visible' => true,
-                    'url' => '/user/supervisors',
-                    'prompt' => 'Поиск супервизора...',
-                ],
-                1 => [
-                    'component' => 'MassEdit',
-                    'title' => 'Пакетное редактирование',
-                    'visible' => true,
-                ],
-                'order' => 22,
-            ],
-        ],
-        'completed' => [
-            'label' => 'Выполнены',
-            'dialogs' => [
-                0 => [
-                    'component' => 'Appoint',
-                    'title' => 'Изменить супервайзера',
-                    'visible' => true,
-                    'url' => '/user/supervisors',
-                    'prompt' => 'Поиск супервизора...',
-                ],
-                1 => [
-                    'component' => 'MassEdit',
-                    'title' => 'Пакетное редактирование',
-                    'visible' => true,
-                ],
-                'order' => 24,
-            ],
-        ],
-        'declined' => [
-            'label' => 'Отменены',
-            'dialogs' => [
-                0 => [
-                    'component' => 'MassEdit',
-                    'title' => 'Пакетное редактирование',
-                    'visible' => true,
-                ],
-                'order' => 25,
-            ],
-        ],
-        'closed' => [
-            'label' => 'Закрыты',
-            'dialogs' => [
-                0 => [
-                    'component' => 'MassEdit',
-                    'title' => 'Пакетное редактирование',
-                    'visible' => true,
-                ],
-                'order' => 26,
-            ],
-        ],
-        'observable' => [
-            'label' => 'Наблюдаемые',
-        ],
-        'cross-check' => [
-            'label' => 'Кросс-чек',
-            'visible' => true,
-            'dialogs' => [
-                0 => [
-                    'component' => 'Appoint',
-                    'title' => 'Изменить супервайзера',
-                    'visible' => true,
-                    'url' => '/user/supervisors',
-                    'prompt' => 'Поиск супервизора...',
-                ],
-                1 => [
-                    'component' => 'Confirm',
-                    'title' => ' Взять на Кросс-чек',
-                ],
-                2 => [
-                    'component' => 'MassEdit',
-                    'title' => 'Пакетное редактирование',
-                    'visible' => true,
-                ],
-                'order' => 29,
-            ],
-        ],
-    ],
+    'tabsData' => UsersTester::tableMassButtons(2),
+    'currentTab' => 'in-check',
     'columns' => [
         'item.id' => [
             'value' => 'id',
-            'text' => 'ID задачи',
+            'text' => 'Номер задачи',
         ],
         'item.subject' => [
             'value' => 'subject',
@@ -267,63 +22,63 @@ return [
                 'multiple' => true,
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Добавление новых товаров',
                     ],
                     1 => [
-                        'id' => '2',
+                        'id' => 2,
                         'text' => 'Добавление/изменение информации в существующих товарах',
                     ],
                     2 => [
-                        'id' => '3',
+                        'id' => 3,
                         'text' => 'Перенос товаров',
                     ],
                     3 => [
-                        'id' => '4',
+                        'id' => 4,
                         'text' => 'Группировка товаров',
                     ],
                     4 => [
-                        'id' => '5',
+                        'id' => 5,
                         'text' => 'Заливка фото с фотостудии',
                     ],
                     5 => [
-                        'id' => '6',
+                        'id' => 6,
                         'text' => 'Проверка скрытых товаров',
                     ],
                     6 => [
-                        'id' => '7',
+                        'id' => 7,
                         'text' => 'Добавление нового портала/раздела фат-меню/категории товаров',
                     ],
                     7 => [
-                        'id' => '8',
+                        'id' => 8,
                         'text' => 'Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров',
                     ],
                     8 => [
-                        'id' => '9',
+                        'id' => 9,
                         'text' => 'Добавление параметров/значений',
                     ],
                     9 => [
-                        'id' => '10',
+                        'id' => 10,
                         'text' => 'Изменение существующих параметров/значений',
                     ],
                     10 => [
-                        'id' => '11',
+                        'id' => 11,
                         'text' => 'Проектирование структуры',
                     ],
                     11 => [
-                        'id' => '12',
+                        'id' => 12,
                         'text' => 'Добавление новых СЦ/изменение существующих СЦ',
                     ],
                     12 => [
-                        'id' => '13',
+                        'id' => 13,
                         'text' => 'Добавление/изменение видео',
                     ],
                     13 => [
-                        'id' => '14',
+                        'id' => 14,
                         'text' => 'Добавление/изменение размерной сетки',
                     ],
                     14 => [
-                        'id' => '15',
+                        'id' => 15,
                         'text' => 'Добавление/изменение тегов',
                     ],
                 ],
@@ -339,11 +94,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -359,11 +114,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -379,11 +134,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -399,11 +154,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -419,11 +174,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -439,11 +194,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -459,11 +214,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -479,11 +234,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -499,11 +254,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -519,11 +274,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -539,11 +294,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -559,11 +314,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -579,11 +334,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -599,11 +354,11 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
@@ -619,31 +374,74 @@ return [
                 'type' => 'select',
                 'items' => [
                     0 => [
-                        'id' => '1',
+                        'id' => 1,
                         'text' => 'Да',
                     ],
                     1 => [
-                        'id' => '0',
+                        'id' => 0,
                         'text' => 'Нет',
                     ],
                 ],
             ],
         ],
     ],
-    'currentTab' => 'in-check',
+    'filters' => [
+    ],
+    'permissions' => [
+        'requestCreate' => true,
+    ],
     'data' => [
         'models' => [
             0 => [
+                'parent_id' => NULL,
+                'child_count' => 0,
+                'photo_load_status' => 0,
+                'previous_status' => [
+                    'text' => 'Новая',
+                    'value' => 1,
+                ],
+                'status' => [
+                    'text' => 'Готова для распределения',
+                    'value' => 2,
+                ],
+                'awaiting_correction' => 0,
                 'id' => 6,
                 'subject' => 'Перенос товаров (Работа с товарами Маркетплейса)',
-                'type_id' => 'Перенос товаров',
+                'type_id' => [
+                    'text' => 'Перенос товаров',
+                    'value' => 3,
+                ],
+                'requestAttachments' => [
+                ],
                 'fields' => [
+                    17 => [
+                        'request_id' => 6,
+                        'field_id' => 17,
+                        'value' => '1',
+                    ],
                 ],
             ],
             1 => [
+                'parent_id' => NULL,
+                'child_count' => 0,
+                'photo_load_status' => 0,
+                'previous_status' => [
+                    'text' => 'Новая',
+                    'value' => 1,
+                ],
+                'status' => [
+                    'text' => 'Готова для распределения',
+                    'value' => 2,
+                ],
+                'awaiting_correction' => 0,
                 'id' => 5,
                 'subject' => 'Перенос товаров (Работа с товарами Розетки)',
-                'type_id' => 'Перенос товаров',
+                'type_id' => [
+                    'text' => 'Перенос товаров',
+                    'value' => 3,
+                ],
+                'requestAttachments' => [
+                ],
                 'fields' => [
                     15 => [
                         'request_id' => 5,
@@ -653,9 +451,26 @@ return [
                 ],
             ],
             2 => [
+                'parent_id' => NULL,
+                'child_count' => 0,
+                'photo_load_status' => 0,
+                'previous_status' => [
+                    'text' => 'Новая',
+                    'value' => 1,
+                ],
+                'status' => [
+                    'text' => 'Готова для распределения',
+                    'value' => 2,
+                ],
+                'awaiting_correction' => 0,
                 'id' => 4,
                 'subject' => 'Перенос товаров (Работа с товарами Маркетплейса)',
-                'type_id' => 'Перенос товаров',
+                'type_id' => [
+                    'text' => 'Перенос товаров',
+                    'value' => 3,
+                ],
+                'requestAttachments' => [
+                ],
                 'fields' => [
                     15 => [
                         'request_id' => 4,

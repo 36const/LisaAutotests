@@ -51,6 +51,9 @@ class GeneralTester extends Actor
                     $I->canSeeInDatabase($tableName, $tableRow);
                 }
             }
+
+            if (!in_array('exceptions', array_keys($dbTable)))
+                $I->assertFalse($I->grabFromDatabase('exceptions', 'message'));
         }
     }
 
@@ -755,7 +758,56 @@ class GeneralTester extends Actor
         'teamLead' => 'Руководитель направления (тимлид) (Все)',
     ];
 
-    public const ACTIVETEAMS = [
+    public const PROJECT_POSITIONS = [
+        0 => [
+            0 => [
+                'value' => 'admin',
+                'text' => 'Администратор',
+            ],
+            1 => [
+                'value' => 'headSupervisor',
+                'text' => 'Руководитель супервайзеров',
+            ],
+            2 => [
+                'value' => 'teamLead',
+                'text' => 'Руководитель направления (тимлид)',
+            ],
+        ],
+        1 => [
+            0 => [
+                'value' => 'contentManager',
+                'text' => 'Контент-менеджер',
+            ],
+            1 => [
+                'value' => 'moderator',
+                'text' => 'Сотрудник отдела модерации',
+            ],
+            2 => [
+                'value' => 'photoManager',
+                'text' => 'Сотрудник фотостудии',
+            ],
+            3 => [
+                'value' => 'productManager',
+                'text' => 'Продакт-менеджер',
+            ],
+            4 => [
+                'value' => 'seo',
+                'text' => 'Сотрудник seo-отдела',
+            ],
+            5 => [
+                'value' => 'supervisor',
+                'text' => 'Супервайзер',
+            ],
+        ],
+        2 => [
+            0 => [
+                'value' => 'marketolog',
+                'text' => 'Маркетолог',
+            ],
+        ],
+    ];
+
+    public const ACTIVE_TEAMS = [
         [
             'value' => 1,
             'text' => 'Маркетплейс 1 (Контент)',
@@ -834,7 +886,7 @@ class GeneralTester extends Actor
         ],
     ];
 
-    public const TEAMS = [
+    public const ALL_TEAMS = [
         [
             'value' => 1,
             'text' => 'Маркетплейс 1 (Контент)',

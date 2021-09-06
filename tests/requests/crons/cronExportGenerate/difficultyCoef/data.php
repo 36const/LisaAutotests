@@ -1,33 +1,5 @@
 <?php
 
-$db_1 = [
-    'lisa_fixtures' => [
-        'exports_logs' => [],
-        'user_exports' => [
-            [
-                'id' => 1,
-                'user_id' => 4,
-                'title >' => 'export_difficulty_coefs_4_' . date('Y-m-d'),
-                'status' => 1,
-            ]
-        ]
-    ]
-];
-
-$db_2 = [
-    'lisa_fixtures' => [
-        'exports_logs' => [],
-        'user_exports' => [
-            [
-                'id' => 1,
-                'user_id' => 4,
-                'title >' => 'export_difficulty_coefs_4_' . date('Y-m-d'),
-                'status' => 2,
-            ]
-        ]
-    ]
-];
-
 return [
     'case1' => [
         'setting' => [
@@ -37,8 +9,50 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'url' => '',
-            'db_1' => $db_1,
-            'db_2' => $db_2,
+            'db_1' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "diff_coefs", "params": "[]"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at' => null,
+                            'generation_time' => null,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_difficulty_coefs_4_' . date('Y-m-d'),
+                            'status' => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "diff_coefs", "params": "[]"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at >=' => date('Y-m-d'),
+                            'generation_time >' => 0,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_difficulty_coefs_4_' . date('Y-m-d'),
+                            'status' => 2,
+                        ]
+                    ]
+                ]
+            ],
             'fileContent' => [
                 1 => [
                     'A' => 'Тип задачи',
@@ -58,8 +72,50 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'url' => '?filter[type_id]=2&per-page=100',
-            'db_1' => $db_1,
-            'db_2' => $db_2,
+            'db_1' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "diff_coefs", "params": "{\"filter\":{\"type_id\":\"2\"}}"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at' => null,
+                            'generation_time' => null,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_difficulty_coefs_4_' . date('Y-m-d'),
+                            'status' => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "diff_coefs", "params": "{\"filter\":{\"type_id\":\"2\"}}"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at >=' => date('Y-m-d'),
+                            'generation_time >' => 0,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_difficulty_coefs_4_' . date('Y-m-d'),
+                            'status' => 2,
+                        ]
+                    ]
+                ]
+            ],
             'fileContent' => [
                 1 => [
                     'A' => 'Тип задачи',
@@ -103,8 +159,50 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'url' => '?filter[type_id]&sort=-id&filter[status]=1&per-page=10',
-            'db_1' => $db_1,
-            'db_2' => $db_2,
+            'db_1' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "diff_coefs", "params": "{\"filter\":{\"type_id\":\"\",\"status\":\"1\"},\"sort\":\"-id\"}"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at' => null,
+                            'generation_time' => null,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_difficulty_coefs_4_' . date('Y-m-d'),
+                            'status' => 1,
+                        ]
+                    ]
+                ]
+            ],
+            'db_2' => [
+                'lisa_fixtures' => [
+                    'exports_logs' => [
+                        [
+                            'export_id' => 1,
+                            'user_id' => 4,
+                            'conditions' => '{"type": "diff_coefs", "params": "{\"filter\":{\"type_id\":\"\",\"status\":\"1\"},\"sort\":\"-id\"}"}',
+                            'created_at >=' => date('Y-m-d'),
+                            'generated_at >=' => date('Y-m-d'),
+                            'generation_time >' => 0,
+                        ]
+                    ],
+                    'user_exports' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'title >' => 'export_difficulty_coefs_4_' . date('Y-m-d'),
+                            'status' => 2,
+                        ]
+                    ]
+                ]
+            ],
             'fileContent' => [
                 1 => [
                     'A' => 'Тип задачи',
