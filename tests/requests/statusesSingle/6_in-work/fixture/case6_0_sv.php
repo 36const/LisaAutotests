@@ -161,7 +161,7 @@ return [
             [
                 'request_id' => 1,
                 'user_id' => 17
-            ]
+            ],
         ],
         'user_notifications' => [],
         'requests_reasons' => [],
@@ -173,7 +173,7 @@ return [
                 'old_status' => 5,
                 'new_status' => 6,
                 'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                'created_at' => date('Y-m-d H:i:s', strtotime('- 3 hours 58 minutes')),
+                'created_at' => date('Y-m-d H:i:s', strtotime('- 3 minutes')),
                 'manager_id' => 11,
                 'reasons' => null
             ]
