@@ -25,7 +25,7 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
             'responseBody' => [
-                'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&gt;&lt;`\]\'/[;.,-=</div>',
+                'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&gt;&lt;`\]\'/[;.,-=&not</div>',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -33,7 +33,7 @@ return [
                         [
                             'user_id' => 4,
                             'request_id' => 1,
-                            'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&gt;&lt;`\]\'/[;.,-=</div>',
+                            'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&gt;&lt;`\]\'/[;.,-=&not</div>',
                         ]
                     ],
                 ],

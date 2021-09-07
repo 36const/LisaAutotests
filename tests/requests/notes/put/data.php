@@ -8,7 +8,7 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestBody' => [
-                'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&lt;&gt;`\\]\\\'/[;.,-=</div>',
+                'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&lt;&gt;`\\]\\\'/[;.,-=&not</div>',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -18,7 +18,7 @@ return [
                         [
                             'user_id' => 4,
                             'request_id' => 1,
-                            'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&lt;&gt;`\\]\\\'/[;.,-=</div>',
+                            'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&lt;&gt;`\\]\\\'/[;.,-=&not</div>',
                         ]
                     ],
                 ],

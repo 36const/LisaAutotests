@@ -15,7 +15,7 @@ class PUTNotesCest
 {
     protected function pageProvider(): array
     {
-        return TestHelper::prepareDataprovider(require 'data.php', 'case2');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -28,7 +28,7 @@ class PUTNotesCest
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
-//die();
+
         $I->sendPUT('/request-note/save?requestId=1', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
 
