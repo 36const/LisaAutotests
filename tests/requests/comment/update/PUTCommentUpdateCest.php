@@ -9,7 +9,7 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_api
  * @group lisa_api_requests
- * @group PUTComment
+ * @group lisa_api_requests_comment
  * @group PUTCommentUpdate
  */
 class PUTCommentUpdateCest
