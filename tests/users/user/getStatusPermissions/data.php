@@ -1885,6 +1885,14 @@ return [
                     'currentStatus' => 8,
                 ],
                 2 => [
+                    'component' => 'Button',
+                    'title' => 'Взять на кросс-чек',
+                    'icon' => 'mdiClosedCaption',
+                    'visible' => true,
+                    'action' => 'to-cross-check',
+                    'currentStatus' => 8,
+                ],
+                4 => [
                     'component' => 'Appoint',
                     'title' => 'Изменить супервайзера',
                     'icon' => 'mdiAccountCowboyHat',
@@ -1895,7 +1903,7 @@ return [
                     'notShowInView' => true,
                     'currentStatus' => 8,
                 ],
-                3 => [
+                5 => [
                     'component' => 'Button',
                     'title' => 'Создать подзадачу',
                     'visible' => true,
@@ -1925,6 +1933,14 @@ return [
                     'currentStatus' => 8,
                 ],
                 2 => [
+                    'component' => 'Button',
+                    'title' => 'Взять на кросс-чек',
+                    'icon' => 'mdiClosedCaption',
+                    'visible' => true,
+                    'action' => 'to-cross-check',
+                    'currentStatus' => 8,
+                ],
+                4 => [
                     'component' => 'Appoint',
                     'title' => 'Изменить супервайзера',
                     'icon' => 'mdiAccountCowboyHat',
@@ -1935,7 +1951,7 @@ return [
                     'notShowInView' => true,
                     'currentStatus' => 8,
                 ],
-                3 => [
+                5 => [
                     'component' => 'Button',
                     'title' => 'Создать подзадачу',
                     'visible' => true,
@@ -1968,6 +1984,14 @@ return [
                     'currentStatus' => 9,
                 ],
                 2 => [
+                    'component' => 'Button',
+                    'title' => 'Взять на кросс-чек',
+                    'icon' => 'mdiClosedCaption',
+                    'visible' => true,
+                    'action' => 'to-cross-check',
+                    'currentStatus' => 9,
+                ],
+                4 => [
                     'component' => 'Appoint',
                     'title' => 'Изменить супервайзера',
                     'icon' => 'mdiAccountCowboyHat',
@@ -1978,7 +2002,7 @@ return [
                     'notShowInView' => true,
                     'currentStatus' => 9,
                 ],
-                3 => [
+                5 => [
                     'component' => 'Button',
                     'title' => 'Создать подзадачу',
                     'visible' => true,
@@ -2008,6 +2032,14 @@ return [
                     'currentStatus' => 9,
                 ],
                 2 => [
+                    'component' => 'Button',
+                    'title' => 'Взять на кросс-чек',
+                    'icon' => 'mdiClosedCaption',
+                    'visible' => true,
+                    'action' => 'to-cross-check',
+                    'currentStatus' => 9,
+                ],
+                4 => [
                     'component' => 'Appoint',
                     'title' => 'Изменить супервайзера',
                     'icon' => 'mdiAccountCowboyHat',
@@ -2018,7 +2050,7 @@ return [
                     'notShowInView' => true,
                     'currentStatus' => 9,
                 ],
-                3 => [
+                5 => [
                     'component' => 'Button',
                     'title' => 'Создать подзадачу',
                     'visible' => true,

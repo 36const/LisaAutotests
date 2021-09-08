@@ -377,9 +377,9 @@ class UsersTester extends GeneralTester
                     ],
                     1 => [
                         'component' => 'Confirm',
-                        'title' => ' Взять на Кросс-чек',
+                        'title' => 'Взять на Кросс-чек',
                         'action' => 'to-cross-check',
-                        'icon' => 'mdiMagnify',
+                        'icon' => 'mdiClosedCaptionOutline',
                         'order' => 29,
                         'currentStatus' => $status,
                     ],
