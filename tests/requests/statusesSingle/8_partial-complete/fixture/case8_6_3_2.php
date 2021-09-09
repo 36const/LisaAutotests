@@ -1,6 +1,7 @@
 <?php
 
 use Codeception\Module\TestHelper;
+
 return [
     "lisa_fixtures" => [
         'requests' => [
@@ -174,10 +175,6 @@ return [
         'notification_settings' => [],
         "user_notifications" => [],
         "request_status_history" => [],
-        "categories" => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
-        "field_values" => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values_errors.php',
-        "difficulty_coefs" => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
-        "reasons" => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
         "requests_reasons" => [
             [
                 "request_id" => 1,
@@ -192,7 +189,5 @@ return [
                 "reason_id" => 7
             ],
         ],
-        "auth.teams" => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
-        "priorities" => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
     ]
 ];
