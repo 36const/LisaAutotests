@@ -1116,15 +1116,6 @@ return [
                             'code' => 0,
                             'user' => '4',
                         ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'У заявки №1 статус загрузки фото уже \'Загружены на OWOX\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
                     ],
                 ]
             ],
@@ -1310,15 +1301,6 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\web\NotFoundHttpException',
-                            'message' => 'Заявка с таким ID не существует.',
-                            'name' => 'Not Found',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                        [
-                            'id' => 2,
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\web\NotFoundHttpException',
                             'message' => 'Заявка с таким ID не существует.',
@@ -1518,15 +1500,6 @@ return [
                             'code' => 0,
                             'user' => '4',
                         ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Передан не валидный $requestId',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
                     ],
                 ]
             ],
@@ -1712,15 +1685,6 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Передан не валидный $requestId',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                        [
-                            'id' => 2,
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\InvalidArgumentException',
                             'message' => 'Передан не валидный $requestId',
@@ -1919,15 +1883,6 @@ return [
                             'code' => 0,
                             'user' => '4',
                         ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\web\BadRequestHttpException',
-                            'message' => 'Отсутствуют обязательные параметры: requestId',
-                            'name' => 'Bad Request',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
                     ],
                 ]
             ],
@@ -1996,15 +1951,6 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                        [
-                            'id' => 2,
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\InvalidArgumentException',
                             'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
@@ -2087,15 +2033,6 @@ return [
                             'code' => 0,
                             'user' => '4',
                         ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
                     ],
                 ]
             ],
@@ -2164,15 +2101,6 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                        [
-                            'id' => 2,
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\InvalidArgumentException',
                             'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
@@ -2255,15 +2183,6 @@ return [
                             'code' => 0,
                             'user' => '4',
                         ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
                     ],
                 ]
             ],
@@ -2332,15 +2251,6 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                        [
-                            'id' => 2,
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\InvalidArgumentException',
                             'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
@@ -2423,15 +2333,6 @@ return [
                             'code' => 0,
                             'user' => '4',
                         ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
                     ],
                 ]
             ],
@@ -2500,15 +2401,6 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                        [
-                            'id' => 2,
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\InvalidArgumentException',
                             'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
@@ -2591,15 +2483,6 @@ return [
                             'code' => 0,
                             'user' => '4',
                         ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
                     ],
                 ]
             ],
@@ -2668,15 +2551,6 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                        [
-                            'id' => 2,
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\InvalidArgumentException',
                             'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
@@ -2759,15 +2633,6 @@ return [
                             'code' => 0,
                             'user' => '4',
                         ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
                     ],
                 ]
             ],
@@ -2836,15 +2701,6 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                        [
-                            'id' => 2,
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\InvalidArgumentException',
                             'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
@@ -2927,15 +2783,6 @@ return [
                             'code' => 0,
                             'user' => '4',
                         ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
                     ],
                 ]
             ],
@@ -3011,15 +2858,6 @@ return [
                             'code' => 0,
                             'user' => '4',
                         ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
                     ],
                 ]
             ],
@@ -3088,15 +2926,6 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                        [
-                            'id' => 2,
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\InvalidArgumentException',
                             'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',

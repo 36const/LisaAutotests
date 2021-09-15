@@ -97,7 +97,7 @@ return [
                 'message' => '',
                 'code' => 0,
                 'status' => 404,
-                'type' => "yii\\web\\NotFoundHttpException"
+                'type' => "app\\infra\\exceptions\\NotFoundHttpException"
             ]
         ]
     ],
@@ -118,7 +118,7 @@ return [
                 'message' => '',
                 'code' => 0,
                 'status' => 404,
-                'type' => "yii\\web\\NotFoundHttpException"
+                'type' => "app\\infra\\exceptions\\NotFoundHttpException"
             ]
         ]
     ],
@@ -139,7 +139,7 @@ return [
                 'message' => '',
                 'code' => 0,
                 'status' => 404,
-                'type' => "yii\\web\\NotFoundHttpException"
+                'type' => "app\\infra\\exceptions\\NotFoundHttpException"
             ]
         ]
     ],
@@ -160,7 +160,7 @@ return [
                 'message' => '',
                 'code' => 0,
                 'status' => 404,
-                'type' => "yii\\web\\NotFoundHttpException"
+                'type' => "app\\infra\\exceptions\\NotFoundHttpException"
             ]
         ]
     ],
@@ -181,7 +181,7 @@ return [
                 'message' => '',
                 'code' => 0,
                 'status' => 404,
-                'type' => "yii\\web\\NotFoundHttpException"
+                'type' => "app\\infra\\exceptions\\NotFoundHttpException"
             ]
         ]
     ],

@@ -8070,23 +8070,6 @@ return [
                             'code' => 0,
                             'user' => '4',
                         ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\\db\\Exception',
-                            'message like' => 'Array
-(
-    [positions] => Array
-        (
-            [0] => Необходимо заполнить либо роль, относящуюся к проекту команды, либо роль Все
-        )
-
-)
-',
-                            'name' => 'Database Exception',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
                     ],
                 ],
             ],

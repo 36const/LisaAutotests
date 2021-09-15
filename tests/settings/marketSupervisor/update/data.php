@@ -15,7 +15,7 @@ return [
             ],
             'responseBody' => [
                 'model' => [
-                    'owox_id' => 0,
+                    'owox_id' => '0',
                     'supervisor_id' => 'Супервайзер Начальникович 2',
                     'title' => 'Маркетплейс (общий)',
                     'status' => NULL,
@@ -91,7 +91,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.markets_supervisors.all' => '{"action":"update","entity":"markets_supervisors","fields_data":{"owox_id":0,"supervisor_id":"10","title":"Маркетплейс (общий)","status":null},"changed_fields_names":["supervisor_id"]}'
+                    'update.markets_supervisors.all' => '{"action":"update","entity":"markets_supervisors","fields_data":{"owox_id":"0","supervisor_id":"10","title":"Маркетплейс (общий)","status":null},"changed_fields_names":["supervisor_id"]}'
                 ],
             ],
         ]

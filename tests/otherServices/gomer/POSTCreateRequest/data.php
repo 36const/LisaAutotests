@@ -8559,15 +8559,6 @@ return [
                                 'code' => 0,
                                 'user' => '4',
                             ],
-                            [
-                                'id' => 2,
-                                'date >=' => date('Y-m-d'),
-                                'class' => 'yii\base\InvalidArgumentException',
-                                'message' => 'Передана невалидная rz_categories: фыва',
-                                'name' => 'Invalid Argument',
-                                'code' => 0,
-                                'user' => '4',
-                            ],
                         ]
                     ]
                 )
@@ -8609,15 +8600,6 @@ return [
                         'exceptions' => [
                             [
                                 'id' => 1,
-                                'date >=' => date('Y-m-d'),
-                                'class' => 'yii\base\InvalidArgumentException',
-                                'message' => 'Передана невалидная rz_categories: ',
-                                'name' => 'Invalid Argument',
-                                'code' => 0,
-                                'user' => '4',
-                            ],
-                            [
-                                'id' => 2,
                                 'date >=' => date('Y-m-d'),
                                 'class' => 'yii\base\InvalidArgumentException',
                                 'message' => 'Передана невалидная rz_categories: ',
@@ -8675,15 +8657,6 @@ return [
                                 'code' => 0,
                                 'user' => '4',
                             ],
-                            [
-                                'id' => 2,
-                                'date >=' => date('Y-m-d'),
-                                'class' => 'yii\base\InvalidArgumentException',
-                                'message' => 'В Lisa не существует следующих rz_categories: 11111',
-                                'name' => 'Invalid Argument',
-                                'code' => 0,
-                                'user' => '4',
-                            ],
                         ]
                     ]
                 )
@@ -8725,15 +8698,6 @@ return [
                         'exceptions' => [
                             [
                                 'id' => 1,
-                                'date >=' => date('Y-m-d'),
-                                'class' => 'yii\base\InvalidArgumentException',
-                                'message' => 'В Lisa не существует следующих rz_categories: 11111',
-                                'name' => 'Invalid Argument',
-                                'code' => 0,
-                                'user' => '4',
-                            ],
-                            [
-                                'id' => 2,
                                 'date >=' => date('Y-m-d'),
                                 'class' => 'yii\base\InvalidArgumentException',
                                 'message' => 'В Lisa не существует следующих rz_categories: 11111',

@@ -190,30 +190,6 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'markets_supervisors' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\db\IntegrityException',
-                            'message' => 'SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "owox_id" of relation "markets_supervisors" violates not-null constraint
-DETAIL:  Failing row contains (null, 24, Soska, 1).
-The SQL being executed was: INSERT INTO "markets_supervisors" ("owox_id", "title", "supervisor_id", "status") VALUES (NULL, \'Soska\', 24, 1) RETURNING "owox_id"',
-                            'name' => 'Integrity constraint violation',
-                            'code' => 23502,
-                            'user' => 'console',
-                        ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\db\IntegrityException',
-                            'message' => 'SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "owox_id" of relation "markets_supervisors" violates not-null constraint
-DETAIL:  Failing row contains (null, 24, Soska, 1).
-The SQL being executed was: INSERT INTO "markets_supervisors" ("owox_id", "title", "supervisor_id", "status") VALUES (NULL, \'Soska\', 24, 1) RETURNING "owox_id"',
-                            'name' => 'Integrity constraint violation',
-                            'code' => 23502,
-                            'user' => 'console',
-                        ],
-                    ]
                 ]
             ],
         ]
@@ -231,30 +207,6 @@ The SQL being executed was: INSERT INTO "markets_supervisors" ("owox_id", "title
             'db' => [
                 'lisa_fixtures' => [
                     'markets_supervisors' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\db\IntegrityException',
-                            'message' => 'SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "owox_id" of relation "markets_supervisors" violates not-null constraint
-DETAIL:  Failing row contains (null, 24, Soska, 1).
-The SQL being executed was: INSERT INTO "markets_supervisors" ("owox_id", "title", "supervisor_id", "status") VALUES (NULL, \'Soska\', 24, 1) RETURNING "owox_id"',
-                            'name' => 'Integrity constraint violation',
-                            'code' => 23502,
-                            'user' => 'console',
-                        ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\db\IntegrityException',
-                            'message' => 'SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "owox_id" of relation "markets_supervisors" violates not-null constraint
-DETAIL:  Failing row contains (null, 24, Soska, 1).
-The SQL being executed was: INSERT INTO "markets_supervisors" ("owox_id", "title", "supervisor_id", "status") VALUES (NULL, \'Soska\', 24, 1) RETURNING "owox_id"',
-                            'name' => 'Integrity constraint violation',
-                            'code' => 23502,
-                            'user' => 'console',
-                        ],
-                    ]
                 ]
             ],
         ]
@@ -414,30 +366,6 @@ The SQL being executed was: INSERT INTO "markets_supervisors" ("owox_id", "title
                             ]
                         ]
                     ),
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\db\IntegrityException',
-                            'message' => 'SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "owox_id" of relation "markets_supervisors" violates not-null constraint
-DETAIL:  Failing row contains (null, 25, Sososka, 5).
-The SQL being executed was: INSERT INTO "markets_supervisors" ("owox_id", "title", "supervisor_id", "status") VALUES (NULL, \'Sososka\', 25, 5) RETURNING "owox_id"',
-                            'name' => 'Integrity constraint violation',
-                            'code' => 23502,
-                            'user' => 'console',
-                        ],
-                        [
-                            'id' => 2,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\db\IntegrityException',
-                            'message' => 'SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "owox_id" of relation "markets_supervisors" violates not-null constraint
-DETAIL:  Failing row contains (null, 25, Sososka, 5).
-The SQL being executed was: INSERT INTO "markets_supervisors" ("owox_id", "title", "supervisor_id", "status") VALUES (NULL, \'Sososka\', 25, 5) RETURNING "owox_id"',
-                            'name' => 'Integrity constraint violation',
-                            'code' => 23502,
-                            'user' => 'console',
-                        ],
-                    ]
                 ]
             ],
         ]
