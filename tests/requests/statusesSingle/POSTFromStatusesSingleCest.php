@@ -31,6 +31,7 @@ class POSTFromStatusesSingleCest
         $providerData = $data['provider_data'];
 
         $I->haveHttpHeader('Content-Type', 'application/json');
+        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
 
         in_array($providerData['requestParameter'], ['update', 'to-correction'])
             ? $I->sendPUT('/request/' . $providerData['requestParameter'] . '/1', json_encode($providerData['requestBody']))

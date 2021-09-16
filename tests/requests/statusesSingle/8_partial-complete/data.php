@@ -8,6 +8,7 @@ return [
             //поля результатов задачи 76, 77, 21, 23, 24, 27 и Кол-во проверенных товаров
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -337,6 +338,7 @@ http://gomer.local/lisa/#/request/view/3',
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":20,"value":"66"},"changed_fields_names":[]}',
                     '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":21,"value":"2"},"changed_fields_names":["value"]}',

@@ -6,6 +6,7 @@ return [
             'description' => 'Перевод из "Готова для распределения" в "На доработке"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -131,6 +132,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     'create.request_status_history.all' => '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":2,"new_status":3,"reason":"Затребовать изменения","created_at":"' . date('Y-m-d'),
                 ]
@@ -151,6 +153,7 @@ return [
             'description' => 'Перевод из "Готова для распределения" в "Отменена"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -276,6 +279,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     'create.request_status_history.all' => '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":2,"new_status":4,"reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","created_at":"' . date('Y-m-d'),
                 ],
@@ -297,6 +301,7 @@ return [
             'description' => 'Перевод из "Готова для распределения" в "Ожидает взятия в работу"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'appoint-manager',
             'requestBody' => [
@@ -442,6 +447,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     'create.request_status_history.all' => '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":2,"new_status":5,"reason":null,"created_at":"' . date('Y-m-d'),
                 ]

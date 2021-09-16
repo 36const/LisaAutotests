@@ -1,11 +1,16 @@
 <?php
 
+use lisa\OtherServicesTester;
+
 return [
     'case1' => [
         'setting' => [
             'description' => 'Изменение количества товаров в заявке',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-update', 83),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'id' => 1,
@@ -61,12 +66,18 @@ return [
                             'photo_load_status' => 0,
                             'previous_status' => null,
                             'supplier_cabinet_id' => null,
-                            'payload' => '[]',
+                            'payload' => '{"side_user_id": 999, "side_user_name": "!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ"}',
                         ],
                     ],
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-update","fields":{"id":1,"type":"Добавление товаров","amount_to_work":20,"user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-update","fields":{"id":1,"type":"Додавання товарів","amount_to_work":20,"user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-update","fields":{"id":1,"type":"Добавление товаров","amount_to_work":20,"user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-update","fields":{"id":1,"type":"Додавання товарів","amount_to_work":20,"user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
                 'lisa_failedApiRequests' => [],
             ],
         ]

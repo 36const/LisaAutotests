@@ -31,6 +31,7 @@ class POSTFromStatusesMultipleCest
         $providerData = $data['provider_data'];
 
         $I->haveHttpHeader('Content-Type', 'application/json');
+        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
 
         $I->sendPOST('/request/' . $providerData['requestParameter'], $providerData['requestBody']);
         $I->seeResponseCodeIs(200);

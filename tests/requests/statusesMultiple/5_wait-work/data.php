@@ -6,6 +6,7 @@ return [
             'description' => 'Перевод из "Ожидает взятия в работу" во "В работе"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'to-work',
             'requestBody' => [
@@ -232,7 +233,15 @@ return [
                     ],
                     'requests_reasons' => []
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-in-progress","fields":{"id":2,"type":"Обновление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-in-progress","fields":{"id":2,"type":"Оновлення товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-in-progress","fields":{"id":2,"type":"Обновление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-in-progress","fields":{"id":2,"type":"Оновлення товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                ],
+            ],
         ]
     ],
 ];

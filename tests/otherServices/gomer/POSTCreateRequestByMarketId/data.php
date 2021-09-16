@@ -1,11 +1,16 @@
 <?php
 
+use lisa\OtherServicesTester;
+
 return [
     'case1' => [
         'setting' => [
             'description' => 'Заявка на Добавление новых товаров',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -134,6 +139,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -144,6 +150,9 @@ return [
             'description' => 'Заявка на Добавление новых товаров c автомодерацией',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -278,6 +287,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -996,6 +1011,9 @@ return [
             'description' => 'Заявка на Проверку скрытых товаров с логином автора',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -1125,6 +1143,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Проверка скрытых товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перевірка прихованих товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Проверка скрытых товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перевірка прихованих товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -1135,6 +1159,9 @@ return [
             'description' => 'Заявка на Добавление новых товаров с id автора',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -1264,6 +1291,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -1274,6 +1307,9 @@ return [
             'description' => 'Заявка на Добавление/изменение информации в существующих товарах с id стороннего пользователя',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -1405,6 +1441,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -1415,6 +1457,9 @@ return [
             'description' => 'Заявка на Перенос товаров с разными логином и id автора',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -1546,6 +1591,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Перенос товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перенесення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Перенос товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перенесення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -1556,6 +1607,9 @@ return [
             'description' => 'Заявка на Перенос товаров с несуществующими логином, id автора и id стороннего пользователя',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -1689,6 +1743,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Перенос товаров","amount_to_work":"10","user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перенесення товарів","amount_to_work":"10","user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Перенос товаров","amount_to_work":"10","user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перенесення товарів","amount_to_work":"10","user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -1699,6 +1759,9 @@ return [
             'description' => 'Пустой запрос',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83),
+        ],
         'provider_data' => [
             'requestBody' => [],
             'responseCode' => 200,
@@ -1718,6 +1781,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [
                     '{"url":"http://lisa.api/request/create-request-by-market-id","bodyParams":[],"exceptionMessage":"[\"Не передано поле sync_source_id\",\"Не передано поле market_id\",\"Не передано поле type_id\",\"Не передано поле items_count\"]","user":"kutsan.k"}'
                 ],
@@ -1728,6 +1792,9 @@ return [
     'case9' => [
         'setting' => [
             'description' => 'Несуществующий продавец',
+        ],
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83),
         ],
         'provider_data' => [
             'requestBody' => [
@@ -1750,6 +1817,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [
                     '{"url":"http://lisa.api/request/create-request-by-market-id","bodyParams":{"sync_source_id":"1","market_id":"9999999","type_id":"1","items_count":"10"},"exceptionMessage":"[\"Передан несуществующий продавец\"]","user":"kutsan.k"}'
                 ],
@@ -1762,6 +1830,9 @@ return [
             'description' => 'Ошибка при указании side_user_name без side_user_id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -1784,6 +1855,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [
                     '{"url":"http://lisa.api/request/create-request-by-market-id","bodyParams":{"sync_source_id":"1","market_id":"83","type_id":"2","items_count":"10","side_user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ"},"exceptionMessage":"[\"Не передано поле side_user_id\"]","user":"kutsan.k"}'
                 ],
@@ -1796,6 +1868,9 @@ return [
             'description' => 'Ошибка при указании side_user_id без side_user_name',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -1818,67 +1893,10 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [
                     '{"url":"http://lisa.api/request/create-request-by-market-id","bodyParams":{"sync_source_id":"1","market_id":"83","type_id":"2","items_count":"10","side_user_id":"999"},"exceptionMessage":"[\"Не передано поле side_user_name\"]","user":"kutsan.k"}'
                 ],
-            ],
-        ]
-    ],
-
-    'case15' => [
-        'setting' => [
-            'description' => 'Ошибка при указании side_user_name без side_user_id',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'sync_source_id' => 1,
-                'market_id' => 83,
-                'type_id' => 2,
-                'items_count' => 10,
-                'side_user_name' => '!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-            ],
-            'responseCode' => 200,
-            'responseBody' => [
-                'status' => 400,
-                'errors' => [
-                    'Не передано поле side_user_id'
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [],
-                    'requests_fields' => []
-                ]
-            ],
-        ]
-    ],
-
-    'case16' => [
-        'setting' => [
-            'description' => 'Ошибка при указании side_user_id без side_user_name',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'sync_source_id' => 1,
-                'market_id' => 83,
-                'type_id' => 2,
-                'items_count' => 10,
-                'side_user_id' => 999,
-            ],
-            'responseCode' => 200,
-            'responseBody' => [
-                'status' => 400,
-                'errors' => [
-                    'Не передано поле side_user_name'
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [],
-                    'requests_fields' => []
-                ]
             ],
         ]
     ],

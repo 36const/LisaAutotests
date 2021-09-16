@@ -14,7 +14,8 @@ return [
                 'description' => 'http://splitter.staging.com.ua/gomer/items/on-moderation/source/1',
                 'category_id' => null,
                 'seller_id' => 83,
-                'team_direction' => 2
+                'team_direction' => 2,
+                'payload' => '{"side_user_id": 999, "side_user_name": "!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ"}',
             ]
         ],
     ],

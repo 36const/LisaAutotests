@@ -29,6 +29,8 @@ class POSTCreateRequestCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
+        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
+
         $I->sendPOST('/request/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
         $I->canSeeResponseContainsJson($providerData['responseBody']);

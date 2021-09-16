@@ -1,13 +1,14 @@
 <?php
 
 return [
-    'case9_11' => [
+    'case9_11_1_1' => [
         'setting' => [
-            'description' => 'Перевод из "Выполнена" в "Закрыта" + нотификации',
+            'description' => 'Перевод из "Выполнена" в "Закрыта" тип 1 направление 1 + нотификации',
             //доп. изменяются Продавец, Приоритет, Ур. сложности, Рекомендации, Комментарий СВ, Отч. период КМ, Проверенные ссылки
             //поля результатов задачи 76, 77, 21, 23, 24, 27 и Кол-во проверенных товаров
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -353,6 +354,7 @@ return [
                     '{"notificationId":2,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Закрыта`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=2\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> в статус <b>\"Закрыта\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> Да </br><b>Пакетная загрузка:</b> (не указан) </br><b>Уровень сложности задачи:</b> 6 </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 0.5 </br><b>Коэффициент уровня сложности задачи:</b> 2 </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
                     '{"notificationId":3,"userId":15,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Закрыта`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> в статус <b>\"Закрыта\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> Да </br><b>Пакетная загрузка:</b> (не указан) </br><b>Уровень сложности задачи:</b> 6 </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 0.5 </br><b>Коэффициент уровня сложности задачи:</b> 2 </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
                 ],
+                'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":20,"value":"66"},"changed_fields_names":[]}',
                     '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":21,"value":"2"},"changed_fields_names":["value"]}',
@@ -376,6 +378,159 @@ return [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":"11","direction":1,"priority":null,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":1,"seller_id":"-2","recommendations":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"2020-01-01 00:00:04","supervisor_process_date":"2020-01-01 00:00:02","supervisor_check_date":"' . date('Y-m-d'),
                         '","result_comment":"Комментарий к результату задачи","supervisor_comment":"Комментарий супервайзера","last_change_status_date":"' . date('Y-m-d'),
                         '","team_direction":3,"report_period_id":"1","sync_source_id":null,"sv_report_periods":"{\"1\": 1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":9,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["status","priority","seller_id","recommendations","supervisor_check_date","supervisor_comment","last_change_status_date","report_period_id","previous_status"]}',
+                    ]
+                ],
+            ]
+        ]
+    ],
+
+    'case9_11_1_2' => [
+        'setting' => [
+            'description' => 'Перевод из "Выполнена" в "Закрыта" тип 1 направление 2 + нотификации',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case9_6_1_2.php',
+        'mock_data' => $mockData,
+        'provider_data' => [
+            'requestParameter' => 'update',
+            'requestBody' => [
+                'priority' => NULL,
+                'recommendations' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                'supervisor_comment' => 'Комментарий супервайзера',
+                'report_period_id' => 1,
+                'status' => 11,
+                'currentStatus' => 9,
+            ],
+            'responseBody' => [
+                'success' => true,
+                'warning' => '',
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 1,
+                            'supervisor_id' => 6,
+                            'manager_id' => 11,
+                            'status' => 11,
+                            'direction' => 2,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => '',
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление новых товаров (Работа с товарами Маркета)',
+                            'description' => 'description',
+                            'category_id' => null,
+                            'seller_id' => 83,
+                            'recommendations' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => '2020-01-01 00:00:03',
+                            'actual_finish_date' => '2020-01-01 00:00:04',
+                            'supervisor_process_date' => '2020-01-01 00:00:02',
+                            'supervisor_check_date >=' => date('Y-m-d'),
+                            'result_comment' => 'Комментарий к результату задачи',
+                            'supervisor_comment' => 'Комментарий супервайзера',
+                            'last_change_status_date >=' => date('Y-m-d'),
+                            'team_direction' => 2,
+                            'report_period_id' => 1,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => '{"1": 1}',
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0,
+                            'previous_status' => 9,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                        ]
+                    ],
+                    'requests_fields' => (include __DIR__ . '/fixture/case9_6_1_2.php')['lisa_fixtures']['requests_fields'],
+                    'request_errors' => [],
+                    'user_notifications' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Маркета)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'status',
+                            'changed_fields' => '{"newValue": "11", "oldValue": 9}',
+                            'notify_service_id' => null,
+                        ],
+                        [
+                            'id' => 2,
+                            'user_id' => 6,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Маркета)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'status',
+                            'changed_fields' => '{"newValue": "11", "oldValue": 9}',
+                            'notify_service_id' => null,
+                        ],
+                        [
+                            'id' => 3,
+                            'user_id' => 11,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Маркета)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'status',
+                            'changed_fields' => '{"newValue": "11", "oldValue": 9}',
+                            'notify_service_id' => null,
+                        ],
+                    ],
+                    'request_status_history' => [
+                        [
+                            'id' => 1,
+                            'request_id' => 1,
+                            'user_id' => 4,
+                            'old_status' => 9,
+                            'new_status' => 11,
+                            'reason' => null,
+                            'created_at >=' => date('Y-m-d'),
+                            'manager_id' => 11,
+                            'reasons' => null,
+                        ]
+                    ],
+                    'requests_reasons' => [],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [],
+                'lisa_sendOuterNotifications' => [],
+                'lisa_common' => [
+                    '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":9,"new_status":11,"reason":null,"created_at":"' . date('Y-m-d'),
+                ],
+            ],
+            'RabbitMQWithRoutingKey' => [
+                'lisa_common' => [
+                    'update.requests.all' => [
+                        '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":"11","direction":2,"priority":null,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Маркета)","description":"description","category_id":null,"seller_id":83,"recommendations":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"2020-01-01 00:00:04","supervisor_process_date":"2020-01-01 00:00:02","supervisor_check_date":"' . date('Y-m-d'),
+                        '","result_comment":"Комментарий к результату задачи","supervisor_comment":"Комментарий супервайзера","last_change_status_date":"' . date('Y-m-d'),
+                        '","team_direction":2,"report_period_id":"1","sync_source_id":null,"sv_report_periods":"{\"1\": 1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":9,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["status","priority","recommendations","supervisor_check_date","supervisor_comment","last_change_status_date","report_period_id","previous_status"]}',
                     ]
                 ],
             ]

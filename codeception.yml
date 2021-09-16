@@ -56,7 +56,8 @@ modules:
                   'lisa_rzCategoriesExport',
                   'lisa_rzCategoriesImport',
                   'goods-lisa',
-                  'lisa_failedApiRequests' ]
+                  'lisa_failedApiRequests',
+                  'lisa_sendOuterNotifications' ]
 extensions:
   enabled:
     - Yandex\Allure\Codeception\AllureCodeception

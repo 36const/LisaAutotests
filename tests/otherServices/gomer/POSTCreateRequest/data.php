@@ -1,10 +1,19 @@
 <?php
 
+use lisa\OtherServicesTester;
+
 $lisa_fixtures = [
     'requests' => [],
     'requests_fields' => [],
     'user_notifications' => [],
     'observers' => [],
+];
+
+$rabbitMQ = [
+    'lisa_sendOuterNotifications' => [],
+    'lisa_failedApiRequests' => [
+        '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
+    ],
 ];
 
 return [
@@ -16,6 +25,9 @@ return [
             'description' => 'Создание заявки тип 1 направление 1 + нотификации', // + все форматы вложений
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', -2, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'RequestField[1]' => 1,
@@ -529,6 +541,7 @@ return [
                     '{"notificationId":3,"userId":17,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://admin.gomer.local/lisa/#/request/view/1?notifyId=3\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
                     '{"notificationId":4,"userId":16,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=4\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
                 ],
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -539,6 +552,9 @@ return [
             'description' => 'Создание заявки тип 1 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 0, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'Request[amount_to_work]' => 10,
@@ -707,6 +723,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -717,6 +734,9 @@ return [
             'description' => 'Создание заявки тип 2 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', -2, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'RequestField[1]' => 1,
@@ -896,6 +916,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -906,6 +927,9 @@ return [
             'description' => 'Создание заявки тип 2 направление 2 (без логина и id автора)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 0),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'RequestField[8]' => 1,
@@ -1134,6 +1158,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -6393,16 +6423,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -6605,16 +6626,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -6817,11 +6829,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7024,11 +7032,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7231,11 +7235,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7273,11 +7273,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7310,11 +7306,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7345,11 +7337,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7381,11 +7369,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7416,11 +7400,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7453,11 +7433,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7490,11 +7466,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7527,11 +7499,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7564,11 +7532,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7603,11 +7567,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7639,11 +7599,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7675,11 +7631,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7711,11 +7663,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7745,11 +7693,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7783,11 +7727,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7821,11 +7761,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7859,11 +7795,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7898,11 +7830,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7934,11 +7862,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -7970,11 +7894,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8006,11 +7926,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8051,11 +7967,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8101,11 +8013,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8143,11 +8051,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8179,11 +8083,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8215,11 +8115,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8251,11 +8147,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8287,11 +8179,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8324,11 +8212,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8360,11 +8244,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8405,11 +8285,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8450,11 +8326,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8486,11 +8358,7 @@ return [
             'db' => [
                 'lisa_fixtures' => $lisa_fixtures
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8563,11 +8431,7 @@ return [
                     ]
                 )
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8611,11 +8475,7 @@ return [
                     ]
                 )
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8661,11 +8521,7 @@ return [
                     ]
                 )
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 
@@ -8709,11 +8565,7 @@ return [
                     ]
                 )
             ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
-                ],
-            ],
+            'RabbitMQ' => $rabbitMQ,
         ]
     ],
 

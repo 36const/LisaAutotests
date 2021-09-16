@@ -1,5 +1,16 @@
 <?php
 
+use lisa\RequestsTester;
+
+$mockData = [
+    RequestsTester::interiorMockArray('request-create', 83),
+    RequestsTester::interiorMockArray('request-revision', 83),
+    RequestsTester::interiorMockArray('request-in-progress', 83),
+    RequestsTester::interiorMockArray('request-completed', 83),
+    RequestsTester::interiorMockArray('request-canceled', 83),
+    RequestsTester::interiorMockArray('request-update', 83),
+];
+
 $dirs = [
     '/1_new',
     '/2_in-check',

@@ -8,6 +8,7 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
             'requestParameter' => 'for-check',
+            'mock_data' => $mockData,
             'requestBody' => [
                 'ids' => [
                     0 => 1,
@@ -207,6 +208,7 @@ return [
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Готова для распределения`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Готова для распределения\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
                 ],
+                'lisa_sendOuterNotifications' => [],
             ],
         ]
     ],
@@ -216,6 +218,7 @@ return [
             'description' => 'Перевод из "Новая" в "На доработке" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -449,6 +452,12 @@ return [
                     '{"notificationId":3,"userId":16,"attachments":"[]","subject":"[LISA] Заявка №2 `Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)` перешла в статус `На доработке`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://admin.gomer.local/lisa/#/request/view/2?notifyId=3\">№2 Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)</a> в статус <b>\"На доработке\"</b> </br><b>Количество в работу:</b> 10</br><b>Причина:</b> Другое (описан в коментариях) | Нада </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО </br>","requestId":2}',
                     '{"notificationId":4,"userId":10,"attachments":"[]","subject":"[LISA] Заявка №2 `Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)` перешла в статус `На доработке`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/2?notifyId=4\">№2 Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)</a> в статус <b>\"На доработке\"</b> </br><b>Количество в работу:</b> 10</br><b>Причина:</b> Другое (описан в коментариях) | Нада </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО </br>","requestId":2}',
                 ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-revision","fields":{"id":2,"type":"Обновление товаров","reasons":"Другое (описан в коментариях) | Нада","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-revision","fields":{"id":2,"type":"Оновлення товарів","reasons":"Другое (описан в коментариях) | Нада","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-revision","fields":{"id":2,"type":"Обновление товаров","reasons":"Другое (описан в коментариях) | Нада","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-revision","fields":{"id":2,"type":"Оновлення товарів","reasons":"Другое (описан в коментариях) | Нада","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                ],
             ],
         ]
     ],
@@ -458,6 +467,7 @@ return [
             'description' => 'Перевод из "Новая" в "Отменена" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -703,6 +713,12 @@ return [
                     '{"notificationId":3,"userId":16,"attachments":"[]","subject":"[LISA] Заявка №2 `Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)` перешла в статус `Отменена`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://admin.gomer.local/lisa/#/request/view/2?notifyId=3\">№2 Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)</a> в статус <b>\"Отменена\"</b> </br><b>Количество в работу:</b> 10</br><b>Причина:</b> Все товары уже есть на сайте | Другое (описан в коментариях) | Дубль задачи </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО </br>","requestId":2}',
                     '{"notificationId":4,"userId":10,"attachments":"[]","subject":"[LISA] Заявка №2 `Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)` перешла в статус `Отменена`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/2?notifyId=4\">№2 Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)</a> в статус <b>\"Отменена\"</b> </br><b>Количество в работу:</b> 10</br><b>Причина:</b> Все товары уже есть на сайте | Другое (описан в коментариях) | Дубль задачи </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО </br>","requestId":2}',
                 ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-canceled","fields":{"id":2,"type":"Обновление товаров","reasons":"Все товары уже есть на сайте | Другое (описан в коментариях) | Дубль задачи","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-canceled","fields":{"id":2,"type":"Оновлення товарів","reasons":"Все товары уже есть на сайте | Другое (описан в коментариях) | Дубль задачи","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-canceled","fields":{"id":2,"type":"Обновление товаров","reasons":"Все товары уже есть на сайте | Другое (описан в коментариях) | Дубль задачи","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-canceled","fields":{"id":2,"type":"Оновлення товарів","reasons":"Все товары уже есть на сайте | Другое (описан в коментариях) | Дубль задачи","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                ],
             ],
         ]
     ],
@@ -712,6 +728,7 @@ return [
             'description' => 'Перевод из "Новая" в "Ожидает взятия в работу" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'appoint-manager',
             'requestBody' => [
@@ -996,6 +1013,7 @@ return [
                     '{"notificationId":2,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Ожидает взятия в работу`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=2\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Ожидает взятия в работу\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
                     '{"notificationId":6,"userId":11,"attachments":"[]","subject":"[LISA] Заявка №2 `Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)`: назначен новый исполнитель Менеджер Контентович 1А","notification":"Константин Куцан <b>назначил(а) исполнителем заявки</b> <a href=\"http://admin.gomer.local/lisa/#/request/view/2?notifyId=6\">№2 Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)</a> Вас</br><b>Количество в работу:</b> 10</br>","requestId":2}',
                 ],
+                'lisa_sendOuterNotifications' => [],
             ],
         ]
     ],
@@ -1005,6 +1023,7 @@ return [
             'description' => 'Изменение супервайзера в "Новая" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1_0_sv.php',
+        'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'appoint-supervisor',
             'requestBody' => [
@@ -1104,7 +1123,7 @@ return [
                             'previous_status' => 3,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
-                        ]
+                        ],
                     ],
                     'requests_fields' => (include __DIR__ . '/fixture/case.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [
@@ -1184,6 +1203,7 @@ return [
                     '{"notificationId":3,"userId":10,"attachments":"[]","subject":"[LISA] Заявка №2 `Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)`: назначен новый супервайзер Супервайзер Начальникович 3","notification":"Константин Куцан <b>назначил(а) супервайзером заявки</b> <a href=\"http://gomer.local/lisa/#/request/view/2?notifyId=3\">№2 Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)</a> пользователя Супервайзер Начальникович 3</br><b>Количество в работу:</b> 10</br>","requestId":2}',
                     '{"notificationId":4,"userId":23,"attachments":"[]","subject":"[LISA] Заявка №2 `Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)`: назначен новый супервайзер Супервайзер Начальникович 3","notification":"Константин Куцан <b>назначил(а) супервайзером заявки</b> <a href=\"http://gomer.local/lisa/#/request/view/2?notifyId=4\">№2 Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)</a> Вас</br><b>Количество в работу:</b> 10</br>","requestId":2}',
                 ],
+                'lisa_sendOuterNotifications' => [],
             ],
         ]
     ],

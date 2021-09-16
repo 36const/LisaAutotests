@@ -29,6 +29,8 @@ class POSTGomerCreateRequestByMarketIdCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
+        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
+
         $I->sendPOST('/request/create-request-by-market-id', $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);

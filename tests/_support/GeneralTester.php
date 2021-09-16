@@ -125,6 +125,31 @@ class GeneralTester extends Actor
         }
     }
 
+    public static function interiorMockArray(string $event, int $marketId, string $responseFile = 'full')
+    {
+        return [
+            'httpRequest' => [
+                'method' => 'GET',
+                'path' => '/v2/seller-notification/list',
+                'queryStringParameters' => [
+                    'notification' => [$event],
+                    'channel' => ['email'],
+                    'marketId' => ["$marketId"],
+                    'expand' => ['email']
+                ]
+            ],
+            'httpResponse' => [
+                'headers' => [
+                    'content-type' => [
+                        'application/json; charset=UTF-8'
+                    ]
+                ],
+                'body' => file_get_contents(codecept_data_dir('/Interior/' . $responseFile . '.json')),
+                'statusCode' => 200
+            ],
+        ];
+    }
+    
     public function loadDataForRedis(array $keyValueArray = self::REDIS_KEYS_VALUES)
     {
         $I = $this;

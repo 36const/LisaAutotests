@@ -30,6 +30,8 @@ class CronCompleteWaitGroupingCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
+        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
+
         $I->runShellCommand('./yii request/complete-wait-grouping');
         $I->canSeeResultCodeIs(0);
         $I->canSeeInShellOutput('Задача №1 переведена в статус ' . ($providerData['status'] ?? 7));
