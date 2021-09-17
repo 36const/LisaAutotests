@@ -134,7 +134,7 @@ class GeneralTester extends Actor
                 'queryStringParameters' => [
                     'notification' => [$event],
                     'channel' => ['email'],
-                    'marketId' => ["$marketId"],
+                    'marketOwoxId' => ["$marketId"],
                     'expand' => ['email']
                 ]
             ],
