@@ -38,8 +38,8 @@ class OtherServicesTester extends GeneralTester
         }
     }
 
-//    public const PARAMS_LOCAL = '/var/www/lisa/www/api/config/params.php';
-    public const PARAMS_LOCAL = '/builds/gomer/lisa/api/config/params.php';
+    public const PARAMS_LOCAL = '/var/www/lisa/www/api/config/params.php';
+//    public const PARAMS_LOCAL = '/builds/gomer/lisa/api/config/params.php';
 
     /**
      * Установить максимально допустимый объём загружаемого файла 1 Мб.
