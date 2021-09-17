@@ -125,6 +125,7 @@ return [
                 'value' => 0,
             ],
         ],
+        'request_attachments' => [],
         'report_periods' => [[]],
         'request_errors' => [],
         'notification_settings' => [
