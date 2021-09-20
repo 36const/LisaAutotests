@@ -1,6 +1,6 @@
 <?php
 
-use lisa\SettingsTester;
+use lisa\Constants;
 
 return [
     'case1' => [
@@ -13,7 +13,7 @@ return [
             'responseBody' => [
                 'initialValues' => [
                     'hasMembers' => true,
-                    'projects' => SettingsTester::PROJECTS,
+                    'projects' => Constants::PROJECTS,
                     'directions' => [
                         1 => 'Управление отделом',
                         2 => 'Работа с товарами Маркетплейса',
@@ -44,7 +44,7 @@ return [
             'responseBody' => [
                 'initialValues' => [
                     'hasMembers' => false,
-                    'projects' => SettingsTester::PROJECTS,
+                    'projects' => Constants::PROJECTS,
                     'directions' => [
                         1 => 'Управление отделом',
                         2 => 'Работа с товарами Маркетплейса',
@@ -74,7 +74,7 @@ return [
             'responseBody' => [
                 'initialValues' => [
                     'hasMembers' => false,
-                    'projects' => SettingsTester::PROJECTS,
+                    'projects' => Constants::PROJECTS,
                     'directions' => [
                         1 => 'Управление отделом',
                         2 => 'Работа с товарами Маркетплейса',

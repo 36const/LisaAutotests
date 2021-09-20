@@ -1,7 +1,7 @@
 <?php
 
 use Codeception\Module\TestHelper;
-use lisa\RequestsTester;
+use lisa\Constants;
 
 return [
     'case1' => [
@@ -68,7 +68,7 @@ return [
                 'filters' => [
                 ],
                 'initialValues' => [
-                    'userNames' => RequestsTester::USER_NAMES,
+                    'userNames' => Constants::USER_NAMES,
                     'exportUrl' => 'http://lisa.api/files/выгрузка_связанных_категорий_LISA.xlsx',
                 ],
             ],

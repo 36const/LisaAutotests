@@ -32,7 +32,7 @@ class POSTUserUpdateMultiplePositionCest
         $providerData = $data['provider_data'];
 
         $redis = array_merge(
-            UsersTester::REDIS_KEYS_VALUES,
+            Constants::REDIS_KEYS_VALUES,
             [
                 'allowed_types_8' => 'value',
                 'user_permissions_9' => 'value',

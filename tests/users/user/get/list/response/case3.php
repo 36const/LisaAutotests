@@ -1,6 +1,6 @@
 <?php
 
-use lisa\UsersTester;
+use lisa\Constants;
 
 return [
     'data' => [
@@ -83,9 +83,9 @@ return [
         'team' => '1',
     ],
     'initialValues' => [
-        'activeTeams' => UsersTester::ACTIVE_TEAMS,
-        'positions' => UsersTester::POSITIONS,
-        'teams' => UsersTester::ALL_TEAMS,
-        'userNames' => UsersTester::USER_NAMES,
+        'activeTeams' => Constants::ACTIVE_TEAMS,
+        'positions' => Constants::POSITIONS,
+        'teams' => Constants::ALL_TEAMS,
+        'userNames' => Constants::USER_NAMES,
     ]
 ];

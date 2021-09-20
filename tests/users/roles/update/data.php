@@ -1,6 +1,6 @@
 <?php
 
-use lisa\UsersTester;
+use lisa\Constants;
 
 return [
     'case1' => [
@@ -27,7 +27,7 @@ return [
                 'created_at' => '2020-03-10 12:07:48',
                 'updated_at' => NULL,
                 'project_id' => 1,
-                'projects' => UsersTester::PROJECTS,
+                'projects' => Constants::PROJECTS,
                 'permissions' => [
                     'requestViewAllRequests',
                     'requestViewTeamRequests',
@@ -2246,7 +2246,7 @@ return [
                 'created_at' => '2020-03-10 12:07:48',
                 'updated_at' => NULL,
                 'project_id' => 1,
-                'projects' => UsersTester::PROJECTS,
+                'projects' => Constants::PROJECTS,
                 'permissions' => [
                     'blockUser',
                     'takeToWork',
@@ -2440,7 +2440,7 @@ return [
                 'created_at' => '2020-03-10 12:07:48',
                 'updated_at' => NULL,
                 'project_id' => 2,
-                'projects' => UsersTester::PROJECTS,
+                'projects' => Constants::PROJECTS,
                 'permissions' => [
                     'blockUser',
                     'takeToWork',

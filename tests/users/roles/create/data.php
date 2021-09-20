@@ -1,7 +1,7 @@
 <?php
 
 use Codeception\Module\TestHelper;
-use lisa\UsersTester;
+use lisa\Constants;
 
 return [
     'case1' => [
@@ -20,7 +20,7 @@ return [
                 'created_at' => '2020-03-10 12:07:48',
                 'updated_at' => NULL,
                 'project_id' => 0,
-                'projects' => UsersTester::PROJECTS,
+                'projects' => Constants::PROJECTS,
                 'permissions' => [
                     'blockUser' => true,
                     'takeToWork' => true,
@@ -131,7 +131,7 @@ return [
                 'created_at' => '2020-03-10 12:07:48',
                 'updated_at' => NULL,
                 'project_id' => 0,
-                'projects' => UsersTester::PROJECTS,
+                'projects' => Constants::PROJECTS,
                 'permissions' => [
                     'blockUser' => true,
                     'takeToWork' => true,
@@ -249,7 +249,7 @@ return [
                 'created_at' => '2020-03-10 12:07:48',
                 'updated_at' => NULL,
                 'project_id' => 0,
-                'projects' => UsersTester::PROJECTS,
+                'projects' => Constants::PROJECTS,
                 'permissions' => [
                     'blockUser',
                     'takeToWork',
@@ -589,7 +589,7 @@ return [
                 'created_at' => '2020-03-10 12:07:48',
                 'updated_at' => NULL,
                 'project_id' => 0,
-                'projects' => UsersTester::PROJECTS,
+                'projects' => Constants::PROJECTS,
                 'permissions' => [
                     'blockUser',
                     'takeToWork',

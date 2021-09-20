@@ -1,6 +1,6 @@
 <?php
 
-use lisa\RequestsTester;
+use lisa\Constants;
 
 return [
     'case1' => [
@@ -89,7 +89,7 @@ return [
                 'filters' => [
                 ],
                 'initialValues' => [
-                    'userNames' => RequestsTester::USER_NAMES
+                    'userNames' => Constants::USER_NAMES
                 ]
             ]
         ]
@@ -143,7 +143,7 @@ return [
                     'supervisor_id' => '5',
                 ],
                 'initialValues' => [
-                    'userNames' => RequestsTester::USER_NAMES
+                    'userNames' => Constants::USER_NAMES
                 ]
             ],
         ]
@@ -217,7 +217,7 @@ return [
                     'supervisor_id' => '10',
                 ],
                 'initialValues' => [
-                    'userNames' => RequestsTester::USER_NAMES
+                    'userNames' => Constants::USER_NAMES
                 ]
             ],
         ]

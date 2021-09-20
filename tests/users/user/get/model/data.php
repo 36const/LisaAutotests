@@ -1,6 +1,6 @@
 <?php
 
-use lisa\UsersTester;
+use lisa\Constants;
 
 return [
     'case1' => [
@@ -34,7 +34,7 @@ return [
                     ],
                 ],
                 'initialValues' => [
-                    'userTeam' => UsersTester::ACTIVE_TEAMS,
+                    'userTeam' => Constants::ACTIVE_TEAMS,
                     'parentUser' => [
                         0 => [
                             'name' => 'Константин Куцан',
@@ -169,8 +169,8 @@ return [
                             'id' => 39,
                         ],
                     ],
-                    'normalizedPermissions' => UsersTester::PROJECT_PERMISSIONS,
-                    'projectPositions' => UsersTester::PROJECT_POSITIONS,
+                    'normalizedPermissions' => Constants::PROJECT_PERMISSIONS,
+                    'projectPositions' => Constants::PROJECT_POSITIONS,
                     'projects' => [
                         0 => 'Все',
                         1 => 'Контент',
@@ -238,7 +238,7 @@ return [
                     ],
                 ],
                 'initialValues' => [
-                    'userTeam' => UsersTester::ACTIVE_TEAMS,
+                    'userTeam' => Constants::ACTIVE_TEAMS,
                     'parentUser' => [
                         0 => [
                             'name' => 'Константин Куцан',
@@ -373,8 +373,8 @@ return [
                             'id' => 39,
                         ],
                     ],
-                    'normalizedPermissions' => UsersTester::PROJECT_PERMISSIONS,
-                    'projectPositions' => UsersTester::PROJECT_POSITIONS,
+                    'normalizedPermissions' => Constants::PROJECT_PERMISSIONS,
+                    'projectPositions' => Constants::PROJECT_POSITIONS,
                     'projects' => [
                         0 => 'Все',
                         1 => 'Контент',

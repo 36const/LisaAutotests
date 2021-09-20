@@ -1,6 +1,6 @@
 <?php
 
-use lisa\UsersTester;
+use lisa\Constants;
 
 return [
     'case1' => [
@@ -97,9 +97,9 @@ return [
                         72 => 'errorsUpdate',
                         73 => 'transferRequireChangeToDeclined',
                     ],
-                    'projects' => UsersTester::PROJECTS,
+                    'projects' => Constants::PROJECTS,
                 ],
-                'initialPermissions' => UsersTester::PROJECT_PERMISSIONS,
+                'initialPermissions' => Constants::PROJECT_PERMISSIONS,
             ],
         ]
     ],
@@ -172,9 +172,9 @@ return [
                         46 => 'viewSplitterModerationRequests',
                         47 => 'viewUser',
                     ],
-                    'projects' => UsersTester::PROJECTS,
+                    'projects' => Constants::PROJECTS,
                 ],
-                'initialPermissions' => UsersTester::PROJECT_PERMISSIONS,
+                'initialPermissions' => Constants::PROJECT_PERMISSIONS,
             ],
         ]
     ],
@@ -198,9 +198,9 @@ return [
                     'project_id' => 1,
                     'permissions' => [
                     ],
-                    'projects' => UsersTester::PROJECTS,
+                    'projects' => Constants::PROJECTS,
                 ],
-                'initialPermissions' => UsersTester::PROJECT_PERMISSIONS,
+                'initialPermissions' => Constants::PROJECT_PERMISSIONS,
             ],
         ]
     ]
