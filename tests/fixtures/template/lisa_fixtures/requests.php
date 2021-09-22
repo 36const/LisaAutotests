@@ -45,5 +45,6 @@ return [
         'previous_status' => null,
         'supplier_cabinet_id' => null,
         'payload' => '[]',
+        'rz_category_id' => null,
     ],
 ];

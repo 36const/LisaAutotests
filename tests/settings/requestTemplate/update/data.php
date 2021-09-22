@@ -7,21 +7,6 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-//            'requestBody' => [
-//                'RequestTemplate[name]' => 'Группировка товаров (Определяется типом задачи)',
-//                'RequestTemplate[parent_id]' => '',
-//                'RequestTemplate[amount_to_work]' => '',
-//                'RequestTemplate[category_id]' => '',
-//                'RequestTemplate[seller_id]' => '',
-//                'RequestTemplate[user_id]' => '4',
-//                'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:><1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі
-//',
-//                'Request[direction]' => '0',
-//                'Request[planned_finish_date]' => '',
-//                'Request[priority]' => '',
-//                'Request[subject]' => 'Группировка товаров (Определяется типом задачи)',
-//                'Request[type_id]' => '4'
-//            ],
             'requestBody' => [
                 'model' => [
                     'id' => 2,
@@ -40,6 +25,7 @@ return [
                         'category_id' => NULL,
                         'seller_id' => NULL,
                         'planned_finish_date' => '2021-03-01 08:40:59',
+                        'rz_category_id' => 753399,
                     ],
                     'user_id' => 4,
                     'seller_id' => NULL,
@@ -47,6 +33,7 @@ return [
                     'amount_to_work' => '',
                     'observers' => [
                     ],
+                    'rz_category_id' => 753399,
                 ],
                 'checkboxes' => [
                 ],
@@ -59,12 +46,13 @@ return [
                     'name' => 'Группировка товаров (Определяется типом задачи)',
                     'type_id' => '4',
                     'direction' => '0',
-                    'fields' => '{"type_id":"4","direction":"0","priority":"","amount_to_work":"","subject":"Группировка товаров (Определяется типом задачи)","description":"!@#$%^&*()_+`-]\'/[;.,}\\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі\\n","category_id":"","seller_id":"","planned_finish_date":"2021-03-01 08:40:59"}',
+                    'fields' => '{"type_id":"4","direction":"0","priority":"","amount_to_work":"","subject":"Группировка товаров (Определяется типом задачи)","description":"!@#$%^&*()_+`-]\'/[;.,}\\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі\\n","category_id":"","seller_id":"","planned_finish_date":"2021-03-01 08:40:59","rz_category_id":"753399"}',
                     'user_id' => '4',
                     'seller_id' => NULL,
                     'category_id' => NULL,
                     'amount_to_work' => NULL,
                     'observers' => '[]',
+                    'rz_category_id' => '753399',
                 ],
             ],
             'db' => [
@@ -76,12 +64,13 @@ return [
                             'name' => 'Добавление',
                             'type_id' => 1,
                             'direction' => 2,
-                            'fields' => '{"5": "1", "160": "1", "subject": "Добавление новых товаров (Работа с товарами Розетки)", "type_id": "1", "direction": "2", "description": "description"}',
+                            'fields' => '{"5": "1", "160": "1", "subject": "Добавление новых товаров (Работа с товарами Розетки)", "type_id": "1", "direction": "2", "description": "description", "rz_category_id": ""}',
                             'user_id' => 4,
                             'seller_id' => 83,
                             'category_id' => null,
                             'amount_to_work' => 10,
                             'observers' => '["15", "16"]',
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 2,
@@ -89,12 +78,13 @@ return [
                             'name' => 'Группировка товаров (Определяется типом задачи)',
                             'type_id' => 4,
                             'direction' => 0,
-                            'fields' => '{"subject": "Группировка товаров (Определяется типом задачи)", "type_id": "4", "priority": "", "direction": "0", "seller_id": "", "category_id": "", "description": "!@#$%^&*()_+`-]\'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі\n", "amount_to_work": "", "planned_finish_date": "2021-03-01 08:40:59"}',
+                            'fields' => '{"subject": "Группировка товаров (Определяется типом задачи)", "type_id": "4", "priority": "", "direction": "0", "seller_id": "", "category_id": "", "description": "!@#$%^&*()_+`-]\'/[;.,}\"?{:>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі\n", "amount_to_work": "", "planned_finish_date": "2021-03-01 08:40:59", "rz_category_id": "753399"}',
                             'user_id' => 4,
                             'seller_id' => null,
                             'category_id' => null,
                             'amount_to_work' => null,
                             'observers' => '[]',
+                            'rz_category_id' => 753399,
                         ],
                     ]
                 ]
@@ -125,6 +115,7 @@ return [
                         'category_id' => 1,
                         'seller_id' => 5,
                         'planned_finish_date' => '2021-03-01 00:00:27',
+                        'rz_category_id' => null,
                     ],
                     'user_id' => 5,
                     'seller_id' => 5,
@@ -134,6 +125,7 @@ return [
                         0 => '15',
                         1 => '16'
                     ],
+                    'rz_category_id' => null,
                 ],
                 'checkboxes' => [
                     0 => '2'
@@ -147,12 +139,13 @@ return [
                     'name' => 'Добавление/изменение видео (Определяется типом задачи) =~}!@#$%^&*()_+`-]\\\'/[;.,}"?{:>',
                     'type_id' => '13',
                     'direction' => '0',
-                    'fields' => '{"type_id":"13","direction":"0","priority":"2","amount_to_work":"999999","subject":"Добавление/изменение видео (Определяется типом задачи) =~}!@#$%^&*()_+`-]\\\\\'/[;.,}\"?{:>","description":"description =~}!@#$%^&*()_+`-]\\\\\'/[;.,}\"?{:>","category_id":"1","seller_id":"5","planned_finish_date":"2021-03-01 00:00:27","2":"1"}',
+                    'fields' => '{"type_id":"13","direction":"0","priority":"2","amount_to_work":"999999","subject":"Добавление/изменение видео (Определяется типом задачи) =~}!@#$%^&*()_+`-]\\\\\'/[;.,}\"?{:>","description":"description =~}!@#$%^&*()_+`-]\\\\\'/[;.,}\"?{:>","category_id":"1","seller_id":"5","planned_finish_date":"2021-03-01 00:00:27","rz_category_id":"","2":"1"}',
                     'user_id' => '5',
                     'seller_id' => '5',
                     'category_id' => '1',
                     'amount_to_work' => '999999',
                     'observers' => '[16]',
+                    'rz_category_id' => null,
                 ],
             ],
             'db' => [
@@ -164,12 +157,13 @@ return [
                             'name' => 'Добавление',
                             'type_id' => 1,
                             'direction' => 2,
-                            'fields' => '{"5": "1", "160": "1", "subject": "Добавление новых товаров (Работа с товарами Розетки)", "type_id": "1", "direction": "2", "description": "description"}',
+                            'fields' => '{"5": "1", "160": "1", "subject": "Добавление новых товаров (Работа с товарами Розетки)", "type_id": "1", "direction": "2", "description": "description", "rz_category_id": ""}',
                             'user_id' => 4,
                             'seller_id' => 83,
                             'category_id' => null,
                             'amount_to_work' => 10,
                             'observers' => '["15", "16"]',
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 2,
@@ -177,12 +171,13 @@ return [
                             'name' => 'Добавление/изменение видео (Определяется типом задачи) =~}!@#$%^&*()_+`-]\\\'/[;.,}"?{:>',
                             'type_id' => 13,
                             'direction' => 0,
-                            'fields' => '{"2": "1", "subject": "Добавление/изменение видео (Определяется типом задачи) =~}!@#$%^&*()_+`-]\\\\\'/[;.,}\"?{:>", "type_id": "13", "priority": "2", "direction": "0", "seller_id": "5", "category_id": "1", "description": "description =~}!@#$%^&*()_+`-]\\\\\'/[;.,}\"?{:>", "amount_to_work": "999999", "planned_finish_date": "2021-03-01 00:00:27"}',
+                            'fields' => '{"2": "1", "subject": "Добавление/изменение видео (Определяется типом задачи) =~}!@#$%^&*()_+`-]\\\\\'/[;.,}\"?{:>", "type_id": "13", "priority": "2", "direction": "0", "seller_id": "5", "category_id": "1", "description": "description =~}!@#$%^&*()_+`-]\\\\\'/[;.,}\"?{:>", "amount_to_work": "999999", "planned_finish_date": "2021-03-01 00:00:27", "rz_category_id":""}',
                             'user_id' => 5,
                             'seller_id' => 5,
                             'category_id' => 1,
                             'amount_to_work' => 999999,
                             'observers' => '[16]',
+                            'rz_category_id' => null,
                         ],
                     ]
                 ]

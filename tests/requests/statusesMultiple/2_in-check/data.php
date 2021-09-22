@@ -74,6 +74,7 @@ return [
                             'previous_status' => 2,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 2,
@@ -116,6 +117,7 @@ return [
                             'previous_status' => 2,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => (include __DIR__ . '/fixture/case.php')['lisa_fixtures']['requests_fields'],
@@ -305,6 +307,7 @@ return [
                             'previous_status' => 2,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 2,
@@ -347,6 +350,7 @@ return [
                             'previous_status' => 2,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => (include __DIR__ . '/fixture/case.php')['lisa_fixtures']['requests_fields'],
@@ -529,6 +533,7 @@ return [
                             'previous_status' => 2,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 2,
@@ -571,6 +576,7 @@ return [
                             'previous_status' => 2,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => (include __DIR__ . '/fixture/case.php')['lisa_fixtures']['requests_fields'],

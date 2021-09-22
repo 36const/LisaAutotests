@@ -1643,6 +1643,7 @@ return [
     'case7' => [
         'setting' => [
             'description' => 'Создание заявки тип 4 направление 0',
+            'skip' => 'rz_category_id'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -4430,6 +4431,7 @@ return [
     'case63' => [
         'setting' => [
             'description' => 'Создание заявки тип 4 направление 0 (с author_id) с 1 привяз. категорией стора, без category_id',
+            'skip' => 'rz_category_id'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

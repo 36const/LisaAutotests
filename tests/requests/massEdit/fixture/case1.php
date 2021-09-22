@@ -130,6 +130,7 @@ return [
                 'previous_status' => 5,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => 753399,
             ],
             [
                 'id' => 4,

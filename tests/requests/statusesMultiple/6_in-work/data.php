@@ -82,6 +82,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 2,
@@ -124,6 +125,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => array_merge_recursive(
@@ -449,6 +451,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 2,
@@ -491,6 +494,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => array_merge_recursive(
@@ -778,6 +782,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 2,
@@ -820,6 +825,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => array_merge_recursive(
@@ -1054,6 +1060,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 2,
@@ -1096,6 +1103,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => array_merge_recursive(
@@ -1326,6 +1334,7 @@ return [
                             'previous_status' => 5,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 2,
@@ -1368,6 +1377,7 @@ return [
                             'previous_status' => 1,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => (include __DIR__ . '/fixture/case6_0_sv.php')['lisa_fixtures']['requests_fields'],

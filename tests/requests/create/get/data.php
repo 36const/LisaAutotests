@@ -425,12 +425,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 1,
                     'direction' => 1,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => $initSeller,
                 'initObservers' => [
@@ -464,6 +467,7 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 1,
                     'direction' => 2,
                 ],
@@ -474,6 +478,8 @@ return [
                     ],
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -584,12 +590,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 2,
                     'direction' => 1,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => $initSeller,
                 'initObservers' => [
@@ -669,12 +678,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 2,
                     'direction' => 2,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -709,12 +721,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 3,
                     'direction' => 1,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => $initSeller,
                 'initObservers' => [
@@ -748,12 +763,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 3,
                     'direction' => 2,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -794,12 +812,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 4,
                     'direction' => 0,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -834,12 +855,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 5,
                     'direction' => 1,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => $initSeller,
                 'initObservers' => [
@@ -873,12 +897,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 6,
                     'direction' => 2,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -934,12 +961,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 7,
                     'direction' => 0,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -995,12 +1025,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 8,
                     'direction' => 0,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -1035,12 +1068,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 9,
                     'direction' => 0,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -1075,12 +1111,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 10,
                     'direction' => 0,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -1115,12 +1154,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 11,
                     'direction' => 0,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -1155,12 +1197,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 12,
                     'direction' => 1,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => $initSeller,
                 'initObservers' => [
@@ -1194,12 +1239,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 13,
                     'direction' => 0,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -1234,12 +1282,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 14,
                     'direction' => 0,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],
@@ -1274,12 +1325,15 @@ return [
                     'amount_to_work' => NULL,
                     'planned_finish_date' => NULL,
                     'priority' => NULL,
+                    'rz_category_id' => NULL,
                     'type_id' => 15,
                     'direction' => 0,
                 ],
                 'templates' => [
                 ],
                 'initCategory' => [
+                ],
+                'initRzCategory' => [
                 ],
                 'initSeller' => [
                 ],

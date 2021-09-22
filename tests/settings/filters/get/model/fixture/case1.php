@@ -51,6 +51,7 @@ return [
                     "author_id": ["in", "requests.author_id", ["15", "19", "17"]], 
                     "manager_id": ["in", "requests.manager_id", ["11", "13"]], 
                     "supervisor_id": ["in", "requests.supervisor_id", ["33", "35", "6"]], 
+                    "rz_category_id": ["in", "requests.rz_category_id", [4626923, 2394297, 4629305, 4629073]], 
                     "report_period_id": ["in", "requests.report_period_id", ["1", "2"]], 
                     "photo_load_status": ["in", "requests.photo_load_status", ["1", "0"]], 
                     "sv_report_periods": ["json", "sv_report_periods", ["1", "2"]], 
@@ -80,6 +81,7 @@ return [
                 'created_at' => '2020-01-01 00:00:00',
                 'updated_at' => null,
             ],
-        ]
+        ],
+        'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
     ]
 ];

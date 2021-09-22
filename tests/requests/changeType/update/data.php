@@ -12,6 +12,7 @@ return [
                 'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'description' => 'description',
                 'category_id' => 1,
+                'rz_category_id' => NULL,
                 'seller_id' => 83,
                 'amount_to_work' => 10,
                 'planned_finish_date' => NULL,
@@ -61,6 +62,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -152,7 +154,7 @@ return [
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
                     'update.requests.all' => [
-                        '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":"2","supervisor_id":6,"manager_id":null,"status":1,"direction":"1","priority":"2","awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":null,"amount_to_work":"10","subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":"1","seller_id":"83","recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"2020-01-01 00:00:01","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":null,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["type_id"]}'
+                        '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":"2","supervisor_id":6,"manager_id":null,"status":1,"direction":"1","priority":"2","awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":null,"amount_to_work":"10","subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":"1","seller_id":"83","recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"2020-01-01 00:00:01","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":null,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["type_id"]}'
                     ],
                 ],
             ],
@@ -170,6 +172,7 @@ return [
                 'subject' => 'Перенос товаров (Работа с товарами Маркета)',
                 'description' => 'description',
                 'category_id' => 1,
+                'rz_category_id' => 753399,
                 'seller_id' => 5,
                 'amount_to_work' => 10,
                 'planned_finish_date' => NULL,
@@ -219,6 +222,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 1,
+                            'rz_category_id' => 753399,
                         ]
                     ],
                     'requests_fields' => [
@@ -364,6 +368,7 @@ return [
                 'subject' => 'Заливка фото с фотостудии (Работа с товарами Розетки)',
                 'description' => 'description',
                 'category_id' => NULL,
+                'rz_category_id' => NULL,
                 'seller_id' => 5,
                 'amount_to_work' => 10,
                 'planned_finish_date' => NULL,
@@ -413,6 +418,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 1,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -513,6 +519,7 @@ return [
                 'subject' => 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
                 'description' => 'description',
                 'category_id' => 1,
+                'rz_category_id' => NULL,
                 'seller_id' => 83,
                 'amount_to_work' => 10,
                 'planned_finish_date' => NULL,
@@ -562,6 +569,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 2,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -622,6 +630,7 @@ return [
                 'subject' => 'Добавление параметров/значений (Определяется типом задачи)',
                 'description' => 'description',
                 'category_id' => 2,
+                'rz_category_id' => NULL,
                 'seller_id' => 0,
                 'amount_to_work' => 10,
                 'planned_finish_date' => NULL,
@@ -671,6 +680,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 5,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -771,6 +781,7 @@ return [
                 'subject' => 'Проектирование структуры (Определяется типом задачи)',
                 'description' => 'description',
                 'category_id' => 1,
+                'rz_category_id' => NULL,
                 'seller_id' => -2,
                 'amount_to_work' => 10,
                 'planned_finish_date' => NULL,
@@ -820,6 +831,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 6,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -980,6 +992,7 @@ return [
                 'subject' => 'Добавление/изменение видео (Определяется типом задачи)',
                 'description' => 'description',
                 'category_id' => 1,
+                'rz_category_id' => NULL,
                 'seller_id' => 83,
                 'amount_to_work' => 10,
                 'planned_finish_date' => NULL,
@@ -1029,6 +1042,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 6,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1185,6 +1199,7 @@ return [
                 'subject' => 'Добавление/изменение тегов (Определяется типом задачи)',
                 'description' => 'description',
                 'category_id' => NULL,
+                'rz_category_id' => NULL,
                 'seller_id' => 0,
                 'amount_to_work' => 10,
                 'planned_finish_date' => NULL,
@@ -1234,6 +1249,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 6,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1404,7 +1420,7 @@ return [
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
                     'update.requests.all' => [
-                        '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":"1","supervisor_id":5,"manager_id":11,"status":9,"direction":"2","priority":"2","awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":"10","subject":"Добавление/изменение тегов (Определяется типом задачи)","description":"description","category_id":null,"seller_id":"0","recommendations":"","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"2020-01-01 00:00:04","supervisor_process_date":"2020-01-01 00:00:02","supervisor_check_date":null,"result_comment":"Выполнена","supervisor_comment":"","last_change_status_date":"2020-01-01 00:00:01","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\": 1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["type_id","supervisor_id","direction","category_id","seller_id","team_direction"]}'
+                        '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":"1","supervisor_id":5,"manager_id":11,"status":9,"direction":"2","priority":"2","awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":"10","subject":"Добавление/изменение тегов (Определяется типом задачи)","description":"description","category_id":null,"seller_id":"0","recommendations":"","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"2020-01-01 00:00:04","supervisor_process_date":"2020-01-01 00:00:02","supervisor_check_date":null,"result_comment":"Выполнена","supervisor_comment":"","last_change_status_date":"2020-01-01 00:00:01","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\": 1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["type_id","supervisor_id","direction","category_id","seller_id","team_direction"]}'
                     ],
                 ],
             ],

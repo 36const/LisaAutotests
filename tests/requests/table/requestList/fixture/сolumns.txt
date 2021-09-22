@@ -9,6 +9,7 @@ cross_check_status      Кросс-чек статус
 direction               Направление задачи
 team_direction          Направление команды
 category_id             Категория товаров
+rz_category_id          Категория Rozetka
 seller_id               Продавец
 
 Статус 1

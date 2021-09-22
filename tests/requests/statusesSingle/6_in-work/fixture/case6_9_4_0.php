@@ -45,6 +45,7 @@ return [
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 5,
+                'rz_category_id' => 753399,
             ],
         ],
         'requests_fields' => [

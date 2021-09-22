@@ -19,7 +19,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Получить модель поля для редактирования приоритета',
+            'description' => 'Получить модель полей для редактирования приоритета',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

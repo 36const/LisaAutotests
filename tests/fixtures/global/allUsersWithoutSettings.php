@@ -10,6 +10,7 @@ return [
         'auth.auth_assignment' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_assignment.php',
         'request_attachments' => [],
         'request_errors' => [],
+        'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
         'observers' => []
     ],
 //    'gomer_fixtures' => [

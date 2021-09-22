@@ -102,7 +102,7 @@ return [
                 'amount_to_work' => 10,
                 'subject' => 'Группировка товаров (Определяется типом задачи)',
                 'description' => 'Описание',
-                'category_id' => null,
+                'category_id' => 474,
                 'seller_id' => 0,
                 'recommendations' => '',
                 'reason' => null,
@@ -126,7 +126,8 @@ return [
                 'child_count' => 1,
                 'photo_load_status' => 0,
                 'previous_status' => null,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => 83850,
             ],
             [
                 //"id" => 4,
@@ -373,7 +374,8 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 2,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => 753399,
             ],
             [
                 //"id" => 10,
@@ -3979,7 +3981,7 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
             [
                 'id' => 1,
                 'user_id' => 4,
-                'columns_list' => '["author_id", "supervisor_id", "manager_id", "status", "previous_status", "cross_check_manager_id", "cross_check_status", "direction", "team_direction", "category_id", "seller_id"]'
+                'columns_list' => '["author_id", "supervisor_id", "manager_id", "status", "previous_status", "cross_check_manager_id", "cross_check_status", "direction", "team_direction", "category_id", "rz_category_id", "seller_id"]'
             ]
         ],
         'requests_reasons' => [

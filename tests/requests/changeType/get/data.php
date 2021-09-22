@@ -452,6 +452,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 1,
                     'direction' => 1,
@@ -459,6 +460,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => $initSeller,
                 'initObservers' => $initObservers,
                 'parentAttachments' => [
@@ -491,6 +493,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 1,
                     'direction' => 2,
@@ -502,6 +505,7 @@ return [
                     ],
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -615,6 +619,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 2,
                     'direction' => 1,
@@ -622,6 +627,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => $initSeller,
                 'initObservers' => $initObservers,
                 'parentAttachments' => [
@@ -700,6 +706,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 2,
                     'direction' => 2,
@@ -707,6 +714,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -744,6 +752,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 3,
                     'direction' => 1,
@@ -751,6 +760,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => $initSeller,
                 'initObservers' => $initObservers,
                 'parentAttachments' => [
@@ -783,6 +793,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 3,
                     'direction' => 2,
@@ -790,6 +801,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -833,6 +845,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 4,
                     'direction' => 0,
@@ -840,6 +853,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -877,6 +891,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 5,
                     'direction' => 1,
@@ -884,6 +899,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => $initSeller,
                 'initObservers' => $initObservers,
                 'parentAttachments' => [
@@ -916,6 +932,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 6,
                     'direction' => 2,
@@ -923,6 +940,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -981,6 +999,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 7,
                     'direction' => 0,
@@ -988,6 +1007,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -1046,6 +1066,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 8,
                     'direction' => 0,
@@ -1053,6 +1074,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -1090,6 +1112,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 9,
                     'direction' => 0,
@@ -1097,6 +1120,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -1134,6 +1158,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 10,
                     'direction' => 0,
@@ -1141,6 +1166,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -1178,6 +1204,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 11,
                     'direction' => 0,
@@ -1185,6 +1212,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -1222,6 +1250,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 12,
                     'direction' => 1,
@@ -1229,6 +1258,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => $initSeller,
                 'initObservers' => $initObservers,
                 'parentAttachments' => [
@@ -1261,6 +1291,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 13,
                     'direction' => 0,
@@ -1268,6 +1299,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -1305,6 +1337,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 14,
                     'direction' => 0,
@@ -1312,6 +1345,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,
@@ -1349,6 +1383,7 @@ return [
                     'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
                     'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
                     'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
+                    'rz_category_id' => NULL,
                     'supervisor_id' => 6,
                     'type_id' => 15,
                     'direction' => 0,
@@ -1356,6 +1391,7 @@ return [
                 'templates' => [
                 ],
                 'initCategory' => $initCategory,
+                'initRzCategory' => [],
                 'initSeller' => [
                     [
                         'owox_id' => 83,

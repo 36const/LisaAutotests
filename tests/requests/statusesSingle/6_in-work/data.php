@@ -105,6 +105,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -458,7 +459,7 @@ return [
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":4,"direction":1,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":1,"seller_id":83,"recommendations":"","reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":null,"supervisor_process_date":"' . date('Y-m-d'),
                         '","supervisor_check_date":null,"result_comment":"","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\":1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["status","reason","supervisor_process_date","last_change_status_date","sv_report_periods","previous_status"]}'
+                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\":1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["status","reason","supervisor_process_date","last_change_status_date","sv_report_periods","previous_status"]}'
                     ]
                 ],
             ],
@@ -552,6 +553,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -904,7 +906,7 @@ return [
                 'lisa_common' => [
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":12,"status":5,"direction":1,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":1,"seller_id":83,"recommendations":"","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":"","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["manager_id","status","last_change_status_date","previous_status"]}'
+                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["manager_id","status","last_change_status_date","previous_status"]}'
                     ]
                 ],
             ],
@@ -1031,6 +1033,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1526,7 +1529,7 @@ return [
                 'lisa_common' => [
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":7,"direction":1,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":1,"seller_id":83,"recommendations":"","reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":"","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["status","reason","last_change_status_date","previous_status"]}'
+                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["status","reason","last_change_status_date","previous_status"]}'
                     ]
                 ],
             ],
@@ -1616,6 +1619,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1922,6 +1926,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2235,6 +2240,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2571,7 +2577,7 @@ return [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":"8","direction":1,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":1,"seller_id":83,"recommendations":"","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"' . date('Y-m-d'),
                         '","supervisor_process_date":"' . date('Y-m-d'),
                         '","supervisor_check_date":null,"result_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\":1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["status","actual_finish_date","supervisor_process_date","result_comment","last_change_status_date","sv_report_periods","previous_status"]}',
+                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\":1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["status","actual_finish_date","supervisor_process_date","result_comment","last_change_status_date","sv_report_periods","previous_status"]}',
                     ]
                 ],
             ]
@@ -2675,6 +2681,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2915,7 +2922,7 @@ return [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":"8","direction":2,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Маркета)","description":"description","category_id":null,"seller_id":83,"recommendations":"","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"' . date('Y-m-d'),
                         '","supervisor_process_date":"' . date('Y-m-d'),
                         '","supervisor_check_date":null,"result_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\":1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["status","actual_finish_date","supervisor_process_date","result_comment","last_change_status_date","sv_report_periods","previous_status"]}',
+                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\":1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["status","actual_finish_date","supervisor_process_date","result_comment","last_change_status_date","sv_report_periods","previous_status"]}',
                     ]
                 ],
             ]
@@ -3021,6 +3028,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3241,7 +3249,7 @@ return [
                 'lisa_common' => [
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":7,"direction":2,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Маркета)","description":"description","category_id":null,"seller_id":83,"recommendations":"","reason":"Заявка переведена в статус \"Ожидает\",\n             так как в GOMER\'e еще не закончилась группировка и/или модерация товаров по этой заявке.","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["status","reason","result_comment","last_change_status_date","previous_status"]}',
+                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["status","reason","result_comment","last_change_status_date","previous_status"]}',
                     ]
                 ],
             ]
@@ -3328,6 +3336,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3655,7 +3664,7 @@ return [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":"9","direction":1,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":1,"seller_id":83,"recommendations":"","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"' . date('Y-m-d'),
                         '","supervisor_process_date":"' . date('Y-m-d'),
                         '","supervisor_check_date":null,"result_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\":1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["status","actual_finish_date","supervisor_process_date","result_comment","last_change_status_date","sv_report_periods","previous_status"]}',
+                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\":1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["status","actual_finish_date","supervisor_process_date","result_comment","last_change_status_date","sv_report_periods","previous_status"]}',
                     ]
                 ],
             ]
@@ -3753,6 +3762,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3967,7 +3977,7 @@ return [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":"9","direction":2,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Маркета)","description":"description","category_id":null,"seller_id":83,"recommendations":"","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"' . date('Y-m-d'),
                         '","supervisor_process_date":"' . date('Y-m-d'),
                         '","supervisor_check_date":null,"result_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\":1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["status","actual_finish_date","supervisor_process_date","result_comment","last_change_status_date","sv_report_periods","previous_status"]}',
+                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\":1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["status","actual_finish_date","supervisor_process_date","result_comment","last_change_status_date","sv_report_periods","previous_status"]}',
                     ]
                 ],
             ]
@@ -4067,6 +4077,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4287,7 +4298,7 @@ return [
                 'lisa_common' => [
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":7,"direction":2,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Маркета)","description":"description","category_id":null,"seller_id":83,"recommendations":"","reason":"Заявка переведена в статус \"Ожидает\",\n             так как в GOMER\'e еще не закончилась группировка и/или модерация товаров по этой заявке.","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]"},"changed_fields_names":["status","reason","result_comment","last_change_status_date","previous_status"]}',
+                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["status","reason","result_comment","last_change_status_date","previous_status"]}',
                     ]
                 ],
             ]
@@ -4374,6 +4385,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4699,6 +4711,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4976,6 +4989,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -5301,6 +5315,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -5568,6 +5583,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => 753399,
                         ]
                     ],
                     'requests_fields' => [
@@ -5846,6 +5862,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -6158,6 +6175,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -6429,6 +6447,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -6707,6 +6726,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -6963,6 +6983,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -7184,6 +7205,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -7417,6 +7439,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -7649,6 +7672,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -7962,6 +7986,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -8214,6 +8239,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -8410,6 +8436,7 @@ return [
                             'previous_status' => 6,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [

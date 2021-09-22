@@ -46,6 +46,7 @@ return [
                 'previous_status' => 6,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => 753399,
             ]
         ],
         'requests_fields' => [

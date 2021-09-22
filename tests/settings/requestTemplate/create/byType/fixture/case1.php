@@ -10,5 +10,6 @@ return [
         'markets_supervisors' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
         'priorities' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
         'request_templates' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/request_templates.php',
+        'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
     ]
 ];

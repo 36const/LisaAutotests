@@ -472,6 +472,44 @@ return [
 
     'case6' => [
         'setting' => [
+            'description' => 'Установить колонки набора 5',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case4.php',
+        'provider_data' => [
+            'excludedRedisKeys' => [
+                'grid_settings_4eb368f0862999c8fa0bbef8506b11e2a',
+            ],
+            'requestBody' => [
+                [
+                    'label' => 'Комментарий к результату задачи',
+                    'column' => 'result_comment',
+                ],
+                [
+                    'label' => 'Категория Rozetka',
+                    'column' => 'rz_category_id',
+                ],
+            ],
+            'responseBody' => [
+                'user_id' => 4,
+                'columns_list' => '["result_comment","rz_category_id"]',
+                'id' => 1,
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'grid_settings' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'columns_list' => '["result_comment","rz_category_id"]',
+                        ]
+                    ]
+                ]
+            ]
+        ],
+    ],
+
+    'case7' => [
+        'setting' => [
             'description' => 'Изменить только порядок колонок',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',

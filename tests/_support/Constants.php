@@ -4,8 +4,7 @@ namespace lisa;
 
 class Constants
 {
-//    public const PARAMS_LOCAL = '/var/www/lisa/www/api/config/params.php';
-    public const PARAMS_LOCAL = '/builds/gomer/lisa/api/config/params.php';
+    public const PARAMS_LOCAL = './config/params.php';
 
     public const REDIS_KEYS_VALUES = [
         'active_category_ids5ec4d878ccfce7dc3c19481d6a063478' => 'a:2:{i:0;a:3:{i:0;i:1;i:1;i:2;i:2;i:474;}i:1;N;}',

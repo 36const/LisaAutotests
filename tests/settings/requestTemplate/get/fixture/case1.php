@@ -23,6 +23,7 @@ return [
                 'category_id' => 2,
                 'amount_to_work' => 999,
                 'observers' => '["15", "16"]',
+                'rz_category_id' => 753399,
             ],
             [
 //                "id" => 2,
@@ -36,6 +37,7 @@ return [
                 'category_id' => null,
                 'amount_to_work' => 10,
                 'observers' => null,
+                'rz_category_id' => null,
             ],
         ]
     ]

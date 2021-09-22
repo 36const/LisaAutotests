@@ -19,6 +19,7 @@ return [
                 'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'description' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'category_id' => 1,
+                'rz_category_id' => null,
                 'seller_id' => 83,
                 'amount_to_work' => 10,
                 'planned_finish_date' => null,
@@ -61,6 +62,7 @@ return [
                     'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 83,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -102,6 +104,7 @@ return [
                             'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => 1,
+                            'rz_category_id' => null,
                             'seller_id' => 83,
                             'recommendations' => null,
                             'reason' => null,
@@ -125,6 +128,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -366,7 +370,7 @@ return [
                     'create.requests.all' => [
                         '{"action":"create","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":"1","supervisor_id":6,"manager_id":null,"status":1,"direction":"1","priority":"2","awaiting_correction":0,"created_at":"' . date('Y-m-d'),
                         '","correction_comment":null,"amount_to_work":"10","subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","category_id":"1","seller_id":"83","recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":null,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":null,"previous_status":null,"supplier_cabinet_id":null,"payload":null},"changed_fields_names":[]}'
+                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":null,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":null,"previous_status":null,"supplier_cabinet_id":null,"payload":null,"rz_category_id":null},"changed_fields_names":[]}'
                     ]
                 ],
             ],
@@ -395,6 +399,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'subject' => 'Добавление новых товаров (Работа с товарами Маркетплейса)',
                 'type_id' => 1,
@@ -405,6 +410,7 @@ return [
                     'status' => 1,
                     'subject' => 'Добавление новых товаров (Работа с товарами Маркетплейса)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'category_id' => NULL,
                     'amount_to_work' => '10',
@@ -470,6 +476,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -663,7 +670,7 @@ return [
                     'create.requests.all' => [
                         '{"action":"create","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":"1","supervisor_id":5,"manager_id":null,"status":1,"direction":"2","priority":"2","awaiting_correction":0,"created_at":"' . date('Y-m-d'),
                         '","correction_comment":null,"amount_to_work":"10","subject":"Добавление новых товаров (Работа с товарами Маркетплейса)","description":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","category_id":null,"seller_id":"0","recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":null,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":null,"previous_status":null,"supplier_cabinet_id":null,"payload":null},"changed_fields_names":[]}'
+                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":null,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":null,"previous_status":null,"supplier_cabinet_id":null,"payload":null,"rz_category_id":null},"changed_fields_names":[]}'
                     ]
                 ],
             ],
@@ -691,6 +698,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 83,
                 'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
                 'type_id' => 2,
@@ -702,6 +710,7 @@ return [
                     'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 83,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -766,6 +775,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -945,6 +955,7 @@ return [
                 '15' => true,
                 '19' => true,
                 'amount_to_work' => 10,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'description' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'observers' => [15, 17],
@@ -962,6 +973,7 @@ return [
                     'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => NULL,
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -1026,6 +1038,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1215,6 +1228,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 83,
                 'subject' => 'Перенос товаров (Работа с товарами Розетки)',
                 'type_id' => 3,
@@ -1226,6 +1240,7 @@ return [
                     'subject' => 'Перенос товаров (Работа с товарами Розетки)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 83,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -1290,6 +1305,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1475,6 +1491,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'subject' => 'Перенос товаров (Работа с товарами Маркетплейса)',
                 'type_id' => 3,
@@ -1486,6 +1503,7 @@ return [
                     'subject' => 'Перенос товаров (Работа с товарами Маркетплейса)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => NULL,
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -1550,6 +1568,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1737,7 +1756,8 @@ return [
             'requestBody' => [
                 '169' => true,
                 'amount_to_work' => 10,
-                'category_id' => 1,
+                'category_id' => null,
+                'rz_category_id' => 753399,
                 'description' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'observers' => [15, 17],
                 'direction' => 0,
@@ -1754,7 +1774,8 @@ return [
                     'status' => 1,
                     'subject' => 'Группировка товаров (Определяется типом задачи)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                    'category_id' => '1',
+                    'category_id' => 1,
+                    'rz_category_id' => 753399,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -1819,6 +1840,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => 753399,
                         ]
                     ],
                     'requests_fields' => [
@@ -2023,8 +2047,8 @@ return [
                 'lisa_common' => [
                     'create.requests.all' => [
                         '{"action":"create","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":"4","supervisor_id":33,"manager_id":null,"status":1,"direction":"0","priority":"2","awaiting_correction":0,"created_at":"' . date('Y-m-d'),
-                        '","correction_comment":null,"amount_to_work":"10","subject":"Группировка товаров (Определяется типом задачи)","description":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","category_id":"1","seller_id":"0","recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":4,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":null,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":null,"previous_status":null,"supplier_cabinet_id":null,"payload":null},"changed_fields_names":[]}'
+                        '","correction_comment":null,"amount_to_work":"10","subject":"Группировка товаров (Определяется типом задачи)","description":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","category_id":1,"seller_id":"0","recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
+                        '","team_direction":4,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":null,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":null,"previous_status":null,"supplier_cabinet_id":null,"payload":null,"rz_category_id":"753399"},"changed_fields_names":[]}'
                     ]
                 ],
             ],
@@ -2053,6 +2077,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 83,
                 'subject' => 'Заливка фото с фотостудии (Работа с товарами Розетки)',
                 'type_id' => 5,
@@ -2064,6 +2089,7 @@ return [
                     'subject' => 'Заливка фото с фотостудии (Работа с товарами Розетки)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 83,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -2128,6 +2154,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2307,6 +2334,7 @@ return [
                 '15' => true,
                 '19' => true,
                 'amount_to_work' => 10,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'description' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'observers' => [15, 17],
@@ -2324,6 +2352,7 @@ return [
                     'subject' => 'Проверка скрытых товаров (Работа с товарами Маркетплейса)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => NULL,
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -2388,6 +2417,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2585,6 +2615,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'subject' => 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
                 'type_id' => 7,
@@ -2596,6 +2627,7 @@ return [
                     'subject' => 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -2660,6 +2692,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2812,7 +2845,7 @@ return [
                     'create.requests.all' => [
                         '{"action":"create","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":"7","supervisor_id":35,"manager_id":null,"status":1,"direction":"0","priority":"2","awaiting_correction":0,"created_at":"' . date('Y-m-d'),
                         '","correction_comment":null,"amount_to_work":"10","subject":"Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)","description":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","category_id":"1","seller_id":"0","recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":6,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":null,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":null,"previous_status":null,"supplier_cabinet_id":null,"payload":null},"changed_fields_names":[]}'
+                        '","team_direction":6,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":null,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":null,"previous_status":null,"supplier_cabinet_id":null,"payload":null,"rz_category_id":null},"changed_fields_names":[]}'
                     ]
                 ],
             ],
@@ -2843,6 +2876,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'subject' => 'Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
                 'type_id' => 8,
@@ -2854,6 +2888,7 @@ return [
                     'subject' => 'Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -2918,6 +2953,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3078,6 +3114,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'subject' => 'Добавление параметров/значений (Определяется типом задачи)',
                 'type_id' => 9,
@@ -3089,6 +3126,7 @@ return [
                     'subject' => 'Добавление параметров/значений (Определяется типом задачи)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -3153,6 +3191,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3303,6 +3342,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'subject' => 'Изменение существующих параметров/значений (Определяется типом задачи)',
                 'type_id' => 10,
@@ -3314,6 +3354,7 @@ return [
                     'subject' => 'Изменение существующих параметров/значений (Определяется типом задачи)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -3378,6 +3419,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3528,6 +3570,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'subject' => 'Проектирование структуры (Определяется типом задачи)',
                 'type_id' => 11,
@@ -3539,6 +3582,7 @@ return [
                     'subject' => 'Проектирование структуры (Определяется типом задачи)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -3603,6 +3647,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3752,6 +3797,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 83,
                 'subject' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
                 'type_id' => 12,
@@ -3763,6 +3809,7 @@ return [
                     'subject' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 83,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -3827,6 +3874,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4011,6 +4059,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'subject' => 'Добавление/изменение видео (Определяется типом задачи)',
                 'type_id' => 13,
@@ -4022,6 +4071,7 @@ return [
                     'subject' => 'Добавление/изменение видео (Определяется типом задачи)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -4086,6 +4136,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4240,6 +4291,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'subject' => 'Добавление/изменение размерной сетки (Определяется типом задачи)',
                 'type_id' => 14,
@@ -4251,6 +4303,7 @@ return [
                     'subject' => 'Добавление/изменение размерной сетки (Определяется типом задачи)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -4315,6 +4368,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4470,6 +4524,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
+                'rz_category_id' => null,
                 'seller_id' => 0,
                 'subject' => 'Добавление/изменение тегов (Определяется типом задачи)',
                 'type_id' => 15,
@@ -4481,6 +4536,7 @@ return [
                     'subject' => 'Добавление/изменение тегов (Определяется типом задачи)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
+                    'rz_category_id' => null,
                     'seller_id' => 0,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
@@ -4545,6 +4601,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4693,6 +4750,7 @@ return [
                 'subject' => "Группировка товаров (Определяется типом задачи) =~}!@#$%^&*()_+`-]'/[;.,}\"?{:><1001234567890>",
                 'description' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'category_id' => 2,
+                'rz_category_id' => 2514857,
                 'seller_id' => 0,
                 'planned_finish_date' => '2021-03-01 08:40:59',
                 'observers' => [15, 17],
@@ -4709,6 +4767,7 @@ return [
                     'subject' => 'Группировка товаров (Определяется типом задачи) =~}!@#$%^&*()_+`-]\'/[;.,}"?{:>',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '2',
+                    'rz_category_id' => 2514857,
                     'seller_id' => '0',
                     'planned_finish_date' => '2021-03-01 08:40:59',
                     'supervisor_id' => 33,
@@ -4769,6 +4828,7 @@ return [
                             'child_count' => 5,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => 2514857,
                         ],
                         [
                             'id' => 2,
@@ -4808,7 +4868,8 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0,
-                            'previous_status' => null
+                            'previous_status' => null,
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 3,
@@ -4848,7 +4909,8 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0,
-                            'previous_status' => null
+                            'previous_status' => null,
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 4,
@@ -4888,7 +4950,8 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0,
-                            'previous_status' => null
+                            'previous_status' => null,
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 5,
@@ -4928,7 +4991,8 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0,
-                            'previous_status' => null
+                            'previous_status' => null,
+                            'rz_category_id' => null,
                         ],
                         [
                             'id' => 6,
@@ -4968,7 +5032,8 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0,
-                            'previous_status' => null
+                            'previous_status' => null,
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [

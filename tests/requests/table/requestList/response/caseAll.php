@@ -324,6 +324,16 @@ return [
                 'itemValue' => 'id',
             ],
         ],
+        'item.rz_category_id' => [
+            'value' => 'rz_category_id',
+            'text' => 'Категория Rozetka',
+            'filter' => [
+                'type' => 'autocomplete',
+                'url' => '/rozetka-category/list?fields=id,title&parent&filter[title]=',
+                'itemText' => 'title',
+                'itemValue' => 'id',
+            ],
+        ],
         'item.seller_id' => [
             'filter' => [
                 'itemText' => 'title',
@@ -393,6 +403,10 @@ return [
                     'text' => 'Видео к товару',
                     'value' => 2,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => 'Маркетплейс (общий)',
                     'value' => 0,
@@ -451,6 +465,10 @@ return [
                     'text' => 'Авиабилеты',
                     'value' => 1,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => NULL,
                     'value' => NULL,
@@ -506,6 +524,10 @@ return [
                     'value' => 6,
                 ],
                 'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'rz_category_id' => [
                     'text' => NULL,
                     'value' => NULL,
                 ],
@@ -567,6 +589,10 @@ return [
                     'text' => 'Видео к товару',
                     'value' => 2,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => 'anytech',
                     'value' => 9423,
@@ -624,6 +650,10 @@ return [
                 'category_id' => [
                     'text' => 'Авиабилеты',
                     'value' => 1,
+                ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
                 ],
                 'seller_id' => [
                     'text' => 'Euromart',
@@ -683,6 +713,10 @@ return [
                     'text' => 'Авиабилеты',
                     'value' => 1,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => 'Euromart',
                     'value' => 83,
@@ -740,6 +774,10 @@ return [
                 'category_id' => [
                     'text' => 'Авиабилеты',
                     'value' => 1,
+                ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
                 ],
                 'seller_id' => [
                     'text' => NULL,
@@ -799,6 +837,10 @@ return [
                     'text' => 'Авиабилеты',
                     'value' => 1,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => 'Euromart',
                     'value' => 83,
@@ -856,6 +898,10 @@ return [
                 'category_id' => [
                     'text' => 'Авиабилеты',
                     'value' => 1,
+                ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
                 ],
                 'seller_id' => [
                     'text' => NULL,
@@ -915,6 +961,10 @@ return [
                     'text' => 'Видео к товару',
                     'value' => 2,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => 'Маркетплейс (общий)',
                     'value' => 0,
@@ -972,6 +1022,10 @@ return [
                 'category_id' => [
                     'text' => 'Авиабилеты',
                     'value' => 1,
+                ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
                 ],
                 'seller_id' => [
                     'text' => 'Euromart',
@@ -1031,6 +1085,10 @@ return [
                     'text' => 'Авиабилеты',
                     'value' => 1,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => 'Euromart',
                     'value' => 83,
@@ -1088,6 +1146,10 @@ return [
                 'category_id' => [
                     'text' => 'Авиабилеты',
                     'value' => 1,
+                ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
                 ],
                 'seller_id' => [
                     'text' => 'Euromart',
@@ -1147,6 +1209,10 @@ return [
                     'text' => 'Авиабилеты',
                     'value' => 1,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => 'Euromart',
                     'value' => 83,
@@ -1205,6 +1271,10 @@ return [
                     'text' => 'Видео к товару',
                     'value' => 2,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => NULL,
                     'value' => NULL,
@@ -1260,6 +1330,10 @@ return [
                     'value' => 5,
                 ],
                 'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'rz_category_id' => [
                     'text' => NULL,
                     'value' => NULL,
                 ],
@@ -1321,6 +1395,10 @@ return [
                     'text' => 'Авиабилеты',
                     'value' => 1,
                 ],
+                'rz_category_id' => [
+                    'text' => 'Аксессуары для алкоголя',
+                    'value' => 753399,
+                ],
                 'seller_id' => [
                     'text' => NULL,
                     'value' => NULL,
@@ -1376,6 +1454,10 @@ return [
                     'value' => 2,
                 ],
                 'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'rz_category_id' => [
                     'text' => NULL,
                     'value' => NULL,
                 ],
@@ -1437,6 +1519,10 @@ return [
                     'text' => 'Авиабилеты',
                     'value' => 1,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => 'Rozetka',
                     'value' => 5,
@@ -1492,6 +1578,10 @@ return [
                     'value' => 2,
                 ],
                 'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'rz_category_id' => [
                     'text' => NULL,
                     'value' => NULL,
                 ],
@@ -1553,6 +1643,10 @@ return [
                     'text' => 'Авиабилеты',
                     'value' => 1,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => 'Rozetka',
                     'value' => 5,
@@ -1611,6 +1705,10 @@ return [
                     'text' => NULL,
                     'value' => NULL,
                 ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
                 'seller_id' => [
                     'text' => 'Euromart',
                     'value' => 83,
@@ -1666,8 +1764,13 @@ return [
                     'value' => 4,
                 ],
                 'category_id' => [
+//                    'text' => 'Распределить категорию в Lisa',
                     'text' => NULL,
-                    'value' => NULL,
+                    'value' => 474,
+                ],
+                'rz_category_id' => [
+                    'text' => 'Уцененные товары',
+                    'value' => 83850,
                 ],
                 'seller_id' => [
                     'text' => 'Маркетплейс (общий)',
@@ -1724,6 +1827,10 @@ return [
                     'value' => 2,
                 ],
                 'category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
+                ],
+                'rz_category_id' => [
                     'text' => NULL,
                     'value' => NULL,
                 ],
@@ -1784,6 +1891,10 @@ return [
                 'category_id' => [
                     'text' => 'Видео к товару',
                     'value' => 2,
+                ],
+                'rz_category_id' => [
+                    'text' => NULL,
+                    'value' => NULL,
                 ],
                 'seller_id' => [
                     'text' => 'anytech',
