@@ -1406,6 +1406,9 @@ return [
             'description' => 'Создание заявки тип 3 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83, 'full'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'RequestField[8]' => 1,
@@ -1632,9 +1635,21 @@ return [
                             'user_id' => 17
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => '4',
+                        ],
+                    ]
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -2125,6 +2140,9 @@ return [
             'description' => 'Создание заявки тип 6 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83, 'full'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'RequestField[8]' => 1,
@@ -2350,9 +2368,21 @@ return [
                             'user_id' => 17
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => '4',
+                        ],
+                    ]
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -3598,6 +3628,9 @@ return [
             'description' => 'Создание заявки тип 13 направление 0 (с существующим author_id и несуществующим author_login)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83, 'full'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'RequestField[1]' => 1,
@@ -3783,9 +3816,21 @@ return [
                             'user_id' => 17
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => 'kutsan.k',
+                        ],
+                    ]
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -3797,6 +3842,9 @@ return [
             'type' => 14,
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83, 'full'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'RequestField[1]' => 1,
@@ -3982,9 +4030,21 @@ return [
                             'user_id' => 17
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => 'kutsan.k',
+                        ],
+                    ]
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -4685,6 +4745,9 @@ return [
             'description' => 'Создание заявки тип 2 направление 2 (без логина и id автора), c 1 непривяз. и 1 привяз. кат. стора',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83, 'full'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'RequestField[8]' => 1,
@@ -5113,9 +5176,21 @@ return [
                             'user_id' => 17
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => 'kutsan.k',
+                        ],
+                    ]
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]

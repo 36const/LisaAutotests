@@ -1199,6 +1199,17 @@ return [
                             'user_id' => 17
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => '4',
+                        ],
+                    ]
                 ]
             ],
             'RabbitMQ' => [

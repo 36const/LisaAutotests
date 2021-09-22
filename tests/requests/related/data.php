@@ -1,11 +1,16 @@
 <?php
 
+use lisa\RequestsTester;
+
 return [
     'case1' => [
         'setting' => [
             'description' => 'Связанная заявка тип 3/2 статус 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => RequestsTester::interiorMockArray('request-create', 0, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 8 => true,
@@ -281,6 +286,17 @@ return [
                             'user_id' => 17
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => '4',
+                        ],
+                    ]
                 ]
             ],
             'RabbitMQ' => [
@@ -1239,6 +1255,9 @@ return [
             'description' => 'Связанная заявка тип 13 статус 8 с изменёнными категорией, продавцом и наблюдателем',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6.php',
+        'mock_data' => [
+            'interior' => RequestsTester::interiorMockArray('request-create', 0, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 2 => true,
@@ -1442,6 +1461,17 @@ return [
                             'user_id' => 19
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => '4',
+                        ],
+                    ]
                 ]
             ]
         ]
@@ -2195,6 +2225,9 @@ return [
             'description' => 'Связанная заявка тип 4 статус 8 с изменением типа, заголовка и описания (и пересчётом показателей в типе 4)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case10.php',
+        'mock_data' => [
+            'interior' => RequestsTester::interiorMockArray('request-create', 0, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 8 => true,
@@ -2609,6 +2642,17 @@ return [
                             'user_id' => 17
                         ],
                     ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => '4',
+                        ],
+                    ]
                 ]
             ]
         ]

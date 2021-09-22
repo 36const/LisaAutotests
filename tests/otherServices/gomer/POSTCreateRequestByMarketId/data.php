@@ -303,6 +303,9 @@ return [
             'description' => 'Заявка на Добавление новых товаров c Б/У>',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -437,6 +440,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -447,6 +451,9 @@ return [
             'description' => 'Заявка на Добавление новых товаров c Автомодерацией и Б/У>',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -587,6 +594,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -597,6 +605,9 @@ return [
             'description' => 'Заявка на Добавление/изменение информации в существующих товарах',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -725,6 +736,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -735,6 +747,9 @@ return [
             'description' => 'Заявка на Перенос товаров (изменение категории в товарах)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -863,6 +878,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -873,6 +889,9 @@ return [
             'description' => 'Заявка на Проверку скрытых товаров',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 83, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'sync_source_id' => 1,
@@ -1001,6 +1020,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]

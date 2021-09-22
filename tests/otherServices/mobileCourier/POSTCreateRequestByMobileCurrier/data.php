@@ -1,5 +1,7 @@
 <?php
 
+use lisa\OtherServicesTester;
+
 return [
     'case1' => [
         'setting' => [
@@ -163,6 +165,9 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             'description' => 'Заявка с обязательными полями, направление Маркетплейс',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 9423, 'empty'),
+        ],
         'provider_data' => [
             'requestBody' => [
                 'item_id' => '123123123',
@@ -295,6 +300,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
             ],
         ]

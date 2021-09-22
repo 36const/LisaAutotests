@@ -356,7 +356,7 @@ Media:
 
     'case3' => [
         'setting' => [
-            'description' => 'Заявка модерации с пустым id',
+            'description' => 'Ошибка при заявке модерации с пустым id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -398,7 +398,7 @@ Media:
 
     'case4' => [
         'setting' => [
-            'description' => 'Заявка модерации с нечисловым id',
+            'description' => 'Ошибка при заявке модерации с нечисловым id',
         ],
         'provider_data' => [
             'requestBody' => [
@@ -439,7 +439,7 @@ Media:
 
     'case5' => [
         'setting' => [
-            'description' => 'Заявка модерации без названия товара',
+            'description' => 'Ошибка при заявке модерации без названия товара',
         ],
         'provider_data' => [
             'requestBody' => [
@@ -480,7 +480,7 @@ Media:
 
     'case6' => [
         'setting' => [
-            'description' => 'Заявка модерации с пустым названием товара',
+            'description' => 'Ошибка при заявке модерации с пустым названием товара',
         ],
         'provider_data' => [
             'requestBody' => [

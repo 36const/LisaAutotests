@@ -1,5 +1,7 @@
 <?php
 
+use lisa\OtherServicesTester;
+
 return [
     'case1' => [
         'setting' => [
@@ -674,6 +676,9 @@ return [
             'description' => 'Заявка тип 1 направление 2 статус 7 ризон 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case8_1.php',
+        'mock_data' => [
+            'interior' => OtherServicesTester::interiorMockArray('request-in-progress', 83, 'empty'),
+        ],
         'provider_data' => [
             'requestParameters' => [
                 'requestId' => '1'
@@ -727,6 +732,9 @@ return [
                         ],
                     ],
                 ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
             ],
         ]
     ],
