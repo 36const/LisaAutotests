@@ -79,6 +79,5 @@ return [
                 'status' => 1
             ],
         ],
-        'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
     ]
 ];

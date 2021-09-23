@@ -78,7 +78,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 2394297,
@@ -87,7 +87,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 80253,
@@ -96,7 +96,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4629305,
@@ -105,7 +105,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 1162030,
@@ -114,7 +114,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 84625,
@@ -123,7 +123,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4625734,
@@ -132,7 +132,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 80260,
@@ -141,7 +141,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4628418,
@@ -166,7 +166,7 @@ return [
                             'title' => 'Скрытые',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => null,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => null
                         ],
@@ -184,7 +184,7 @@ return [
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => null,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => null
                         ],
@@ -483,7 +483,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 2973057,
@@ -492,7 +492,7 @@ return [
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 3167120,
@@ -501,7 +501,7 @@ return [
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4630034,
@@ -510,7 +510,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4641568,
@@ -519,7 +519,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4655242,
@@ -528,7 +528,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4655266,
@@ -537,7 +537,7 @@ return [
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4655272,
@@ -546,7 +546,7 @@ return [
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4660667,
@@ -571,7 +571,7 @@ return [
                             'title' => 'не должно выгружаться _old',
                             'mpath' => '.',
                             'parent_id' => 0,
-                            'lisa_category_id' => null,
+                            'lisa_category_id' => 474,
                             'status' => 'active',
                             'deleted' => null,
                         ],
@@ -589,7 +589,7 @@ return [
                             'title' => 'Рестораны и продуктовые сети',
                             'mpath' => '.',
                             'parent_id' => 0,
-                            'lisa_category_id' => null,
+                            'lisa_category_id' => 474,
                             'status' => 'active',
                             'deleted' => null,
                         ],
@@ -905,7 +905,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 2394297,
@@ -914,7 +914,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 80253,
@@ -923,7 +923,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4629305,
@@ -932,7 +932,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 1162030,
@@ -941,7 +941,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 84625,
@@ -950,7 +950,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4625734,
@@ -959,7 +959,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 80260,
@@ -968,7 +968,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 0,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4628418,
@@ -993,7 +993,7 @@ return [
                             'title' => 'Скрытые',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => null,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => null
                         ],
@@ -1011,7 +1011,7 @@ return [
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => null,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => null
                         ],
@@ -1148,7 +1148,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 2973057,
@@ -1157,7 +1157,7 @@ return [
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 3167120,
@@ -1166,7 +1166,7 @@ return [
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4630034,
@@ -1175,7 +1175,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4641568,
@@ -1184,7 +1184,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4655242,
@@ -1193,7 +1193,7 @@ return [
                             'status' => 'active',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 4655266,
@@ -1202,7 +1202,7 @@ return [
                             'status' => 'locked',
                             'deleted' => null,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => null
+                            'lisa_category_id' => 474
                         ],
                         [
                             'id' => 2460392,
@@ -1398,7 +1398,7 @@ return [
                             'title' => 'не должно выгружаться _old',
                             'mpath' => '.',
                             'parent_id' => 0,
-                            'lisa_category_id' => null,
+                            'lisa_category_id' => 474,
                             'status' => 'active',
                             'deleted' => null,
                         ],
@@ -1416,7 +1416,7 @@ return [
                             'title' => 'Рестораны и продуктовые сети',
                             'mpath' => '.',
                             'parent_id' => 0,
-                            'lisa_category_id' => null,
+                            'lisa_category_id' => 474,
                             'status' => 'active',
                             'deleted' => null,
                         ],
@@ -1449,37 +1449,6 @@ return [
             ]
         ]
     ],
-
-//    проверяется только через ui
-//    'case6' => [
-//        'setting' => [
-//            'description' => 'Невозможность изменения статуса с активного на заблокированный без отвязки категорий стора',
-//        ],
-//        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-//        'provider_data' => [
-//            'requestBody' => [
-//                'id' => 2,
-//                'difficulty' => '3',
-//                'status' => '0',
-//                'supervisor_id' => '10',
-//                'title' => 'Видео к товару',
-//                'boundRzCategories' => [2560747, 2514872, 2514867, 2581722, 2666302, 2581742, 2581737, 2514862, 2581727, 2581732, 4626584, 2595767, 2514857],
-//            ],
-//            'responseBody' => [
-//                'errors' => [
-//                    'boundRzCategories' => [
-//                        'Невозможно блокировать категорию, к которой привязаны категории Розетки!'
-//                    ],
-//                ],
-//            ],
-//            'db' => [
-//                'lisa_fixtures' => [
-//                    'categories' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['categories'],
-//                    'rozetka_categories' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['rozetka_categories'],
-//                ],
-//            ]
-//        ]
-//    ],
 
     'case7' => [
         'setting' => [

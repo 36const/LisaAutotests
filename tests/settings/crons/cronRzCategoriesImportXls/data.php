@@ -125,7 +125,7 @@ return [
                             'title' => 'Скрытые',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => NULL,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => 474,
                         ],
@@ -143,7 +143,7 @@ return [
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => NULL,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => 474,
                         ],
@@ -217,7 +217,7 @@ return [
                             'status' => 'active',
                             'deleted' => NULL,
                             'parent_id' => 0,
-                            'lisa_category_id' => NULL,
+                            'lisa_category_id' => 474,
                         ],
                         [
                             'id' => 4660651,
@@ -226,7 +226,7 @@ return [
                             'status' => 'active',
                             'deleted' => NULL,
                             'parent_id' => 0,
-                            'lisa_category_id' => NULL,
+                            'lisa_category_id' => 474,
                         ],
                         [
                             'id' => 2460392,
@@ -577,7 +577,7 @@ return [
                             [
                                 'id' => 2,
                                 'user_id' => 4,
-                                'new_mapping' => '[{"rz_category_id": 80025, "lisa_category_id": 474}, {"rz_category_id": 2394297, "lisa_category_id": 474}, {"rz_category_id": 80253, "lisa_category_id": 474}, {"rz_category_id": 4629305, "lisa_category_id": 474}, {"rz_category_id": 1162030, "lisa_category_id": "2"}, {"rz_category_id": 84625, "lisa_category_id": 474}, {"rz_category_id": 4625734, "lisa_category_id": 474}, {"rz_category_id": 80260, "lisa_category_id": 474}, {"rz_category_id": 4628418, "lisa_category_id": 474}, {"rz_category_id": 4655216, "lisa_category_id": 474}, {"rz_category_id": 4655025, "lisa_category_id": 474}, {"rz_category_id": 80262, "lisa_category_id": 474}, {"rz_category_id": 4656380, "lisa_category_id": 474}, {"rz_category_id": 4627949, "lisa_category_id": 474}, {"rz_category_id": 4627893, "lisa_category_id": 474}, {"rz_category_id": 4627851, "lisa_category_id": 474}, {"rz_category_id": 88468, "lisa_category_id": 474}, {"rz_category_id": 2394287, "lisa_category_id": 474}, {"rz_category_id": 4630262, "lisa_category_id": 474}, {"rz_category_id": 83850, "lisa_category_id": 474}, {"rz_category_id": 2514857, "lisa_category_id": 474}, {"rz_category_id": 2660622, "lisa_category_id": 474}, {"rz_category_id": 2973057, "lisa_category_id": 474}, {"rz_category_id": 3167120, "lisa_category_id": 474}, {"rz_category_id": 4630034, "lisa_category_id": 474}, {"rz_category_id": 4641568, "lisa_category_id": 474}, {"rz_category_id": 4655242, "lisa_category_id": 474}, {"rz_category_id": 4655266, "lisa_category_id": 474}, {"rz_category_id": 4655272, "lisa_category_id": 474}, {"rz_category_id": 2460392, "lisa_category_id": 474}, {"rz_category_id": 2460402, "lisa_category_id": "2"}, {"rz_category_id": 2514877, "lisa_category_id": 474}, {"rz_category_id": 2898382, "lisa_category_id": 474}, {"rz_category_id": 2898387, "lisa_category_id": 474}, {"rz_category_id": 4628926, "lisa_category_id": 474}, {"rz_category_id": 4629073, "lisa_category_id": 474}]',
+                                'new_mapping' => '[{"rz_category_id": 1162030, "lisa_category_id": "2"}, {"rz_category_id": 4628418, "lisa_category_id": 474}, {"rz_category_id": 4655216, "lisa_category_id": 474}, {"rz_category_id": 4655025, "lisa_category_id": 474}, {"rz_category_id": 80262, "lisa_category_id": 474}, {"rz_category_id": 4656380, "lisa_category_id": 474}, {"rz_category_id": 4627949, "lisa_category_id": 474}, {"rz_category_id": 4627893, "lisa_category_id": 474}, {"rz_category_id": 4627851, "lisa_category_id": 474}, {"rz_category_id": 88468, "lisa_category_id": 474}, {"rz_category_id": 2394287, "lisa_category_id": 474}, {"rz_category_id": 4630262, "lisa_category_id": 474}, {"rz_category_id": 83850, "lisa_category_id": 474}, {"rz_category_id": 2514857, "lisa_category_id": 474}, {"rz_category_id": 2460392, "lisa_category_id": 474}, {"rz_category_id": 2460402, "lisa_category_id": "2"}, {"rz_category_id": 2514877, "lisa_category_id": 474}, {"rz_category_id": 2898382, "lisa_category_id": 474}, {"rz_category_id": 2898387, "lisa_category_id": 474}, {"rz_category_id": 4628926, "lisa_category_id": 474}, {"rz_category_id": 4629073, "lisa_category_id": 474}]',
                                 'errors' => '[]',
                                 'created_at >=' => date('Y-m-d'),
                                 'status' => 1,
@@ -723,7 +723,7 @@ return [
                             'title' => 'Скрытые',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => NULL,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => 474,
                         ],
@@ -741,7 +741,7 @@ return [
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => NULL,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => 474,
                         ],
@@ -815,7 +815,7 @@ return [
                             'status' => 'active',
                             'deleted' => NULL,
                             'parent_id' => 0,
-                            'lisa_category_id' => NULL,
+                            'lisa_category_id' => 474,
                         ],
                         [
                             'id' => 4660651,
@@ -824,7 +824,7 @@ return [
                             'status' => 'active',
                             'deleted' => NULL,
                             'parent_id' => 0,
-                            'lisa_category_id' => NULL,
+                            'lisa_category_id' => 474,
                         ],
                         [
                             'id' => 2460392,
@@ -1175,7 +1175,7 @@ return [
                             [
                                 'id' => 2,
                                 'user_id' => 4,
-                                'new_mapping' => '[{"rz_category_id": 80025, "lisa_category_id": 474}, {"rz_category_id": 2394297, "lisa_category_id": 474}, {"rz_category_id": 80253, "lisa_category_id": 474}, {"rz_category_id": 4629305, "lisa_category_id": 474}, {"rz_category_id": 1162030, "lisa_category_id": "2"}, {"rz_category_id": 84625, "lisa_category_id": 474}, {"rz_category_id": 4625734, "lisa_category_id": 474}, {"rz_category_id": 80260, "lisa_category_id": 474}, {"rz_category_id": 4628418, "lisa_category_id": 474}, {"rz_category_id": 4655216, "lisa_category_id": 474}, {"rz_category_id": 4655025, "lisa_category_id": 474}, {"rz_category_id": 80262, "lisa_category_id": 474}, {"rz_category_id": 4656380, "lisa_category_id": 474}, {"rz_category_id": 4627949, "lisa_category_id": 474}, {"rz_category_id": 4627893, "lisa_category_id": 474}, {"rz_category_id": 4627851, "lisa_category_id": 474}, {"rz_category_id": 88468, "lisa_category_id": 474}, {"rz_category_id": 2394287, "lisa_category_id": 474}, {"rz_category_id": 4630262, "lisa_category_id": 474}, {"rz_category_id": 83850, "lisa_category_id": 474}, {"rz_category_id": 2514857, "lisa_category_id": 474}, {"rz_category_id": 2660622, "lisa_category_id": 474}, {"rz_category_id": 2973057, "lisa_category_id": 474}, {"rz_category_id": 3167120, "lisa_category_id": 474}, {"rz_category_id": 4630034, "lisa_category_id": 474}, {"rz_category_id": 4641568, "lisa_category_id": 474}, {"rz_category_id": 4655242, "lisa_category_id": 474}, {"rz_category_id": 4655266, "lisa_category_id": 474}, {"rz_category_id": 4655272, "lisa_category_id": 474}, {"rz_category_id": 2460392, "lisa_category_id": 474}, {"rz_category_id": 2460402, "lisa_category_id": "2"}, {"rz_category_id": 2514877, "lisa_category_id": 474}, {"rz_category_id": 2898382, "lisa_category_id": 474}, {"rz_category_id": 2898387, "lisa_category_id": 474}, {"rz_category_id": 4628926, "lisa_category_id": 474}, {"rz_category_id": 4629073, "lisa_category_id": 474}]',
+                                'new_mapping' => '[{"rz_category_id": 1162030, "lisa_category_id": "2"}, {"rz_category_id": 4628418, "lisa_category_id": 474}, {"rz_category_id": 4655216, "lisa_category_id": 474}, {"rz_category_id": 4655025, "lisa_category_id": 474}, {"rz_category_id": 80262, "lisa_category_id": 474}, {"rz_category_id": 4656380, "lisa_category_id": 474}, {"rz_category_id": 4627949, "lisa_category_id": 474}, {"rz_category_id": 4627893, "lisa_category_id": 474}, {"rz_category_id": 4627851, "lisa_category_id": 474}, {"rz_category_id": 88468, "lisa_category_id": 474}, {"rz_category_id": 2394287, "lisa_category_id": 474}, {"rz_category_id": 4630262, "lisa_category_id": 474}, {"rz_category_id": 83850, "lisa_category_id": 474}, {"rz_category_id": 2514857, "lisa_category_id": 474}, {"rz_category_id": 2460392, "lisa_category_id": 474}, {"rz_category_id": 2460402, "lisa_category_id": "2"}, {"rz_category_id": 2514877, "lisa_category_id": 474}, {"rz_category_id": 2898382, "lisa_category_id": 474}, {"rz_category_id": 2898387, "lisa_category_id": 474}, {"rz_category_id": 4628926, "lisa_category_id": 474}, {"rz_category_id": 4629073, "lisa_category_id": 474}]',
                                 'errors' => '[]',
                                 'created_at >=' => date('Y-m-d'),
                                 'status' => 1,
@@ -1317,7 +1317,7 @@ return [
                             'title' => 'Скрытые',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => NULL,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => 474,
                         ],
@@ -1335,7 +1335,7 @@ return [
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => NULL,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => 474,
                         ],
@@ -1409,7 +1409,7 @@ return [
                             'status' => 'active',
                             'deleted' => NULL,
                             'parent_id' => 0,
-                            'lisa_category_id' => NULL,
+                            'lisa_category_id' => 474,
                         ],
                         [
                             'id' => 4660651,
@@ -1418,7 +1418,7 @@ return [
                             'status' => 'active',
                             'deleted' => NULL,
                             'parent_id' => 0,
-                            'lisa_category_id' => NULL,
+                            'lisa_category_id' => 474,
                         ],
                         [
                             'id' => 2460392,
@@ -1769,7 +1769,7 @@ return [
                             [
                                 'id' => 2,
                                 'user_id' => 10,
-                                'new_mapping' => '[{"rz_category_id": 4626923, "lisa_category_id": 474}, {"rz_category_id": 80025, "lisa_category_id": 474}, {"rz_category_id": 2394297, "lisa_category_id": 474}, {"rz_category_id": 80253, "lisa_category_id": 474}, {"rz_category_id": 4629305, "lisa_category_id": 474}, {"rz_category_id": 1162030, "lisa_category_id": "2"}, {"rz_category_id": 84625, "lisa_category_id": 474}, {"rz_category_id": 4625734, "lisa_category_id": 474}, {"rz_category_id": 80260, "lisa_category_id": 474}, {"rz_category_id": 4628418, "lisa_category_id": 474}, {"rz_category_id": 4655216, "lisa_category_id": 474}, {"rz_category_id": 4655025, "lisa_category_id": 474}, {"rz_category_id": 80262, "lisa_category_id": 474}, {"rz_category_id": 4656380, "lisa_category_id": 474}, {"rz_category_id": 4627949, "lisa_category_id": 474}, {"rz_category_id": 4627893, "lisa_category_id": 474}, {"rz_category_id": 4627851, "lisa_category_id": 474}, {"rz_category_id": 88468, "lisa_category_id": 474}, {"rz_category_id": 2394287, "lisa_category_id": 474}, {"rz_category_id": 4630262, "lisa_category_id": 474}, {"rz_category_id": 83850, "lisa_category_id": 474}, {"rz_category_id": 753399, "lisa_category_id": 474}, {"rz_category_id": 4652996, "lisa_category_id": 474}, {"rz_category_id": 4653010, "lisa_category_id": 474}, {"rz_category_id": 4653017, "lisa_category_id": 474}, {"rz_category_id": 4628124, "lisa_category_id": 474}, {"rz_category_id": 2660622, "lisa_category_id": 474}, {"rz_category_id": 2973057, "lisa_category_id": 474}, {"rz_category_id": 3167120, "lisa_category_id": 474}, {"rz_category_id": 4630034, "lisa_category_id": 474}, {"rz_category_id": 4641568, "lisa_category_id": 474}, {"rz_category_id": 4655242, "lisa_category_id": 474}, {"rz_category_id": 4655266, "lisa_category_id": 474}, {"rz_category_id": 4655272, "lisa_category_id": 474}, {"rz_category_id": 2460392, "lisa_category_id": 474}, {"rz_category_id": 2460402, "lisa_category_id": 474}, {"rz_category_id": 2514877, "lisa_category_id": 474}, {"rz_category_id": 2898382, "lisa_category_id": 474}, {"rz_category_id": 2898387, "lisa_category_id": 474}, {"rz_category_id": 4628926, "lisa_category_id": 474}, {"rz_category_id": 4629073, "lisa_category_id": 474}]',
+                                'new_mapping' => '[{"rz_category_id": 4626923, "lisa_category_id": 474}, {"rz_category_id": 1162030, "lisa_category_id": "2"}, {"rz_category_id": 4628418, "lisa_category_id": 474}, {"rz_category_id": 4655216, "lisa_category_id": 474}, {"rz_category_id": 4655025, "lisa_category_id": 474}, {"rz_category_id": 80262, "lisa_category_id": 474}, {"rz_category_id": 4656380, "lisa_category_id": 474}, {"rz_category_id": 4627949, "lisa_category_id": 474}, {"rz_category_id": 4627893, "lisa_category_id": 474}, {"rz_category_id": 4627851, "lisa_category_id": 474}, {"rz_category_id": 88468, "lisa_category_id": 474}, {"rz_category_id": 2394287, "lisa_category_id": 474}, {"rz_category_id": 4630262, "lisa_category_id": 474}, {"rz_category_id": 83850, "lisa_category_id": 474}, {"rz_category_id": 753399, "lisa_category_id": 474}, {"rz_category_id": 4652996, "lisa_category_id": 474}, {"rz_category_id": 4653010, "lisa_category_id": 474}, {"rz_category_id": 4653017, "lisa_category_id": 474}, {"rz_category_id": 4628124, "lisa_category_id": 474}, {"rz_category_id": 2460392, "lisa_category_id": 474}, {"rz_category_id": 2460402, "lisa_category_id": 474}, {"rz_category_id": 2514877, "lisa_category_id": 474}, {"rz_category_id": 2898382, "lisa_category_id": 474}, {"rz_category_id": 2898387, "lisa_category_id": 474}, {"rz_category_id": 4628926, "lisa_category_id": 474}, {"rz_category_id": 4629073, "lisa_category_id": 474}]',
                                 'errors' => '[]',
                                 'created_at >=' => date('Y-m-d'),
                                 'status' => 1,
@@ -1853,7 +1853,7 @@ return [
                         [
                             'id' => 4660666,
                             'title' => 'не должно выгружаться _old',
-                            'lisa_category_id' => null,
+                            'lisa_category_id' => 474,
                             'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
@@ -1898,7 +1898,7 @@ return [
                         [
                             'id' => 4660651,
                             'title' => 'Рестораны и продуктовые сети',
-                            'lisa_category_id' => null,
+                            'lisa_category_id' => 474,
                             'mpath' => '.',
                             'status' => 'active',
                             'deleted' => null,
@@ -1928,7 +1928,7 @@ return [
                             'lisa_category_id' => 474,
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => null,
+                            'deleted' => 1,
                             'parent_id' => 0
                         ],
                         [
@@ -1946,7 +1946,7 @@ return [
                             'lisa_category_id' => 474,
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => null,
+                            'deleted' => 1,
                             'parent_id' => 0
                         ],
                         [
@@ -2361,7 +2361,7 @@ return [
                             [
                                 'id' => 2,
                                 'user_id' => 4,
-                                'new_mapping' => '[{"rz_category_id": 80025, "lisa_category_id": 474}, {"rz_category_id": 2394297, "lisa_category_id": 474}, {"rz_category_id": 80253, "lisa_category_id": 474}, {"rz_category_id": 4629305, "lisa_category_id": 474}, {"rz_category_id": 1162030, "lisa_category_id": 474}, {"rz_category_id": 84625, "lisa_category_id": 474}, {"rz_category_id": 4625734, "lisa_category_id": 474}, {"rz_category_id": 80260, "lisa_category_id": 474}, {"rz_category_id": 4628418, "lisa_category_id": 474}, {"rz_category_id": 4655216, "lisa_category_id": 474}, {"rz_category_id": 4655025, "lisa_category_id": 474}, {"rz_category_id": 80262, "lisa_category_id": 474}, {"rz_category_id": 4656380, "lisa_category_id": 474}, {"rz_category_id": 4627949, "lisa_category_id": 474}, {"rz_category_id": 4627893, "lisa_category_id": 474}, {"rz_category_id": 4627851, "lisa_category_id": 474}, {"rz_category_id": 88468, "lisa_category_id": 474}, {"rz_category_id": 2394287, "lisa_category_id": 474}, {"rz_category_id": 4630262, "lisa_category_id": 474}, {"rz_category_id": 83850, "lisa_category_id": 474}, {"rz_category_id": 753399, "lisa_category_id": 474}, {"rz_category_id": 4652996, "lisa_category_id": 474}, {"rz_category_id": 4653010, "lisa_category_id": 474}, {"rz_category_id": 4653017, "lisa_category_id": 474}, {"rz_category_id": 4628124, "lisa_category_id": 474}, {"rz_category_id": 2514857, "lisa_category_id": 474}, {"rz_category_id": 2514867, "lisa_category_id": 474}, {"rz_category_id": 2514872, "lisa_category_id": 474}, {"rz_category_id": 2560747, "lisa_category_id": 474}, {"rz_category_id": 2581722, "lisa_category_id": 474}, {"rz_category_id": 2660622, "lisa_category_id": 474}, {"rz_category_id": 2973057, "lisa_category_id": 474}, {"rz_category_id": 3167120, "lisa_category_id": 474}, {"rz_category_id": 4630034, "lisa_category_id": 474}, {"rz_category_id": 4641568, "lisa_category_id": 474}, {"rz_category_id": 4655242, "lisa_category_id": 474}, {"rz_category_id": 4655266, "lisa_category_id": 474}, {"rz_category_id": 4655272, "lisa_category_id": 474}, {"rz_category_id": 2460392, "lisa_category_id": 474}, {"rz_category_id": 2460402, "lisa_category_id": 474}, {"rz_category_id": 2514877, "lisa_category_id": 474}, {"rz_category_id": 2898382, "lisa_category_id": 474}, {"rz_category_id": 2898387, "lisa_category_id": 474}, {"rz_category_id": 4628926, "lisa_category_id": 474}, {"rz_category_id": 4629073, "lisa_category_id": 474}]',
+                                'new_mapping' => '[{"rz_category_id": 4628418, "lisa_category_id": 474}, {"rz_category_id": 4655216, "lisa_category_id": 474}, {"rz_category_id": 4655025, "lisa_category_id": 474}, {"rz_category_id": 80262, "lisa_category_id": 474}, {"rz_category_id": 4656380, "lisa_category_id": 474}, {"rz_category_id": 4627949, "lisa_category_id": 474}, {"rz_category_id": 4627893, "lisa_category_id": 474}, {"rz_category_id": 4627851, "lisa_category_id": 474}, {"rz_category_id": 88468, "lisa_category_id": 474}, {"rz_category_id": 2394287, "lisa_category_id": 474}, {"rz_category_id": 4630262, "lisa_category_id": 474}, {"rz_category_id": 83850, "lisa_category_id": 474}, {"rz_category_id": 753399, "lisa_category_id": 474}, {"rz_category_id": 4652996, "lisa_category_id": 474}, {"rz_category_id": 4653010, "lisa_category_id": 474}, {"rz_category_id": 4653017, "lisa_category_id": 474}, {"rz_category_id": 4628124, "lisa_category_id": 474}, {"rz_category_id": 2514857, "lisa_category_id": 474}, {"rz_category_id": 2514867, "lisa_category_id": 474}, {"rz_category_id": 2514872, "lisa_category_id": 474}, {"rz_category_id": 2560747, "lisa_category_id": 474}, {"rz_category_id": 2581722, "lisa_category_id": 474}, {"rz_category_id": 2460392, "lisa_category_id": 474}, {"rz_category_id": 2460402, "lisa_category_id": 474}, {"rz_category_id": 2514877, "lisa_category_id": 474}, {"rz_category_id": 2898382, "lisa_category_id": 474}, {"rz_category_id": 2898387, "lisa_category_id": 474}, {"rz_category_id": 4628926, "lisa_category_id": 474}, {"rz_category_id": 4629073, "lisa_category_id": 474}]',
                                 'errors' => '[]',
                                 'created_at >=' => date('Y-m-d'),
                                 'status' => 1,
@@ -2502,7 +2502,7 @@ return [
                             'title' => 'Скрытые',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => NULL,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => 474,
                         ],
@@ -2520,7 +2520,7 @@ return [
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
                             'status' => 'locked',
-                            'deleted' => NULL,
+                            'deleted' => 1,
                             'parent_id' => 0,
                             'lisa_category_id' => 474,
                         ],
@@ -2594,7 +2594,7 @@ return [
                             'status' => 'active',
                             'deleted' => NULL,
                             'parent_id' => 0,
-                            'lisa_category_id' => NULL,
+                            'lisa_category_id' => 474,
                         ],
                         [
                             'id' => 4660651,
@@ -2603,7 +2603,7 @@ return [
                             'status' => 'active',
                             'deleted' => NULL,
                             'parent_id' => 0,
-                            'lisa_category_id' => NULL,
+                            'lisa_category_id' => 474,
                         ],
                         [
                             'id' => 2460392,
@@ -2711,7 +2711,7 @@ return [
                             'status' => 'active',
                             'deleted' => NULL,
                             'parent_id' => 2460402,
-                            'lisa_category_id' => NULL, //в файле после него поставилась ещё одна категория (F32)
+                            'lisa_category_id' => 474, //в файле после него поставилась ещё одна категория (F32)
                         ],
                         [
                             'id' => 4655266,
@@ -2954,7 +2954,7 @@ return [
                             [
                                 'id' => 2,
                                 'user_id' => 4,
-                                'new_mapping' => '[{"rz_category_id": 80025, "lisa_category_id": 474}, {"rz_category_id": 2394297, "lisa_category_id": 474}, {"rz_category_id": 80253, "lisa_category_id": 474}, {"rz_category_id": 4629305, "lisa_category_id": 474}, {"rz_category_id": 1162030, "lisa_category_id": "2"}, {"rz_category_id": 84625, "lisa_category_id": 474}, {"rz_category_id": 4625734, "lisa_category_id": 474}, {"rz_category_id": 80260, "lisa_category_id": 474}, {"rz_category_id": 4628418, "lisa_category_id": 474}, {"rz_category_id": 4655216, "lisa_category_id": 474}, {"rz_category_id": 4655025, "lisa_category_id": 474}, {"rz_category_id": 80262, "lisa_category_id": 474}, {"rz_category_id": 4656380, "lisa_category_id": 474}, {"rz_category_id": 4627949, "lisa_category_id": 474}, {"rz_category_id": 4627893, "lisa_category_id": 474}, {"rz_category_id": 4627851, "lisa_category_id": 474}, {"rz_category_id": 88468, "lisa_category_id": 474}, {"rz_category_id": 2394287, "lisa_category_id": 474}, {"rz_category_id": 4630262, "lisa_category_id": 474}, {"rz_category_id": 83850, "lisa_category_id": 474}, {"rz_category_id": 4652996, "lisa_category_id": "2"}, {"rz_category_id": 4653010, "lisa_category_id": 474}, {"rz_category_id": 2973057, "lisa_category_id": 474}, {"rz_category_id": 3167120, "lisa_category_id": 474}, {"rz_category_id": 4630034, "lisa_category_id": 474}, {"rz_category_id": 4641568, "lisa_category_id": 474}, {"rz_category_id": 4655242, "lisa_category_id": 474}, {"rz_category_id": 4655266, "lisa_category_id": 474}, {"rz_category_id": 4655272, "lisa_category_id": 474}, {"rz_category_id": 2460392, "lisa_category_id": 474}, {"rz_category_id": 2460402, "lisa_category_id": 474}, {"rz_category_id": 2514877, "lisa_category_id": 474}, {"rz_category_id": 2898382, "lisa_category_id": 474}, {"rz_category_id": 2898387, "lisa_category_id": 474}, {"rz_category_id": 4628926, "lisa_category_id": 474}, {"rz_category_id": 4629073, "lisa_category_id": 474}]',
+                                'new_mapping' => '[{"rz_category_id": 1162030, "lisa_category_id": "2"}, {"rz_category_id": 4628418, "lisa_category_id": 474}, {"rz_category_id": 4655216, "lisa_category_id": 474}, {"rz_category_id": 4655025, "lisa_category_id": 474}, {"rz_category_id": 80262, "lisa_category_id": 474}, {"rz_category_id": 4656380, "lisa_category_id": 474}, {"rz_category_id": 4627949, "lisa_category_id": 474}, {"rz_category_id": 4627893, "lisa_category_id": 474}, {"rz_category_id": 4627851, "lisa_category_id": 474}, {"rz_category_id": 88468, "lisa_category_id": 474}, {"rz_category_id": 2394287, "lisa_category_id": 474}, {"rz_category_id": 4630262, "lisa_category_id": 474}, {"rz_category_id": 83850, "lisa_category_id": 474}, {"rz_category_id": 4652996, "lisa_category_id": "2"}, {"rz_category_id": 4653010, "lisa_category_id": 474}, {"rz_category_id": 2460392, "lisa_category_id": 474}, {"rz_category_id": 2460402, "lisa_category_id": 474}, {"rz_category_id": 2514877, "lisa_category_id": 474}, {"rz_category_id": 2898382, "lisa_category_id": 474}, {"rz_category_id": 2898387, "lisa_category_id": 474}, {"rz_category_id": 4628926, "lisa_category_id": 474}, {"rz_category_id": 4629073, "lisa_category_id": 474}]',
                                 'errors' => '[]',
                                 'created_at >=' => date('Y-m-d'),
                                 'status' => 1,
