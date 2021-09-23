@@ -37,6 +37,14 @@ return [
                             'rz_categories_string' => '',
                             'status' => 'Заблокированный',
                         ],
+                        3 => [
+                            'id' => 474,
+                            'title' => 'Распределить категорию в Lisa',
+                            'difficulty' => 1,
+                            'supervisor_id' => 'Супервайзер Начальникович 1',
+                            'rz_categories_string' => '',
+                            'status' => 'Активный'
+                        ],
                     ],
                     '_links' => [
                         'self' => [
@@ -50,7 +58,7 @@ return [
                         ],
                     ],
                     '_meta' => [
-                        'totalCount' => 3,
+                        'totalCount' => 4,
                         'pageCount' => 1,
                         'currentPage' => 1,
                         'perPage' => 20,
@@ -155,6 +163,14 @@ return [
                             'rz_categories_string' => '',
                             'status' => 'Заблокированный',
                         ],
+                        2 => [
+                            'id' => 474,
+                            'title' => 'Распределить категорию в Lisa',
+                            'difficulty' => 1,
+                            'supervisor_id' => 'Супервайзер Начальникович 1',
+                            'rz_categories_string' => '',
+                            'status' => 'Активный'
+                        ],
                     ],
                     '_links' => [
                         'self' => [
@@ -168,7 +184,7 @@ return [
                         ],
                     ],
                     '_meta' => [
-                        'totalCount' => 2,
+                        'totalCount' => 3,
                         'pageCount' => 1,
                         'currentPage' => 1,
                         'perPage' => 20,

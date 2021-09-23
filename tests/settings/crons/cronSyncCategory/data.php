@@ -37,7 +37,7 @@ return [
                     'user_notifications' => [
                         [
                             'id' => 1,
-                            'user_id' => 4,
+                            'user_id' => 6,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -60,7 +60,7 @@ return [
                     '["export"]'
                 ],
                 'lisa_sendMailNotifications' => [
-                    '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] В LISA добавилась новая категория: Учебники (4326656)","notification":"В базу данных LISA добавилась новая категория Rozetka: <b>Учебники (4326656)</b> .\n        Привязать её к категории LISA можно по <a href=\"http://gomer.local/lisa/#/category/list\">ссылке</a>","requestId":null}'
+                    '{"notificationId":1,"userId":6,"attachments":"[]","subject":"[LISA] В LISA добавилась новая категория: Учебники (4326656)","notification":"В базу данных LISA добавилась новая категория Rozetka: <b>Учебники (4326656)</b> .\n        Привязать её к категории LISA можно по <a href=\"http://gomer.local/lisa/#/category/list\">ссылке</a>","requestId":null}'
                 ]
             ]
         ]

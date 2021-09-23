@@ -1764,8 +1764,7 @@ return [
                     'value' => 4,
                 ],
                 'category_id' => [
-//                    'text' => 'Распределить категорию в Lisa',
-                    'text' => NULL,
+                    'text' => 'Распределить категорию в Lisa',
                     'value' => 474,
                 ],
                 'rz_category_id' => [
