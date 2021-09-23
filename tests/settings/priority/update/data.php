@@ -110,7 +110,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.priorities.all' => '{"action":"update","entity":"priorities","fields_data":{"id":1,"name":"Информация необходима для склада","status":"0"},"changed_fields_names":["status"]}'
+                    'update.priorities.all' => '{"action":"update","entity":"priorities","fields_data":{"id":1,"name":"Информация необходима для склада","status":0},"changed_fields_names":["status"]}'
                 ],
             ],
         ]
@@ -153,7 +153,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.priorities.all' => '{"action":"update","entity":"priorities","fields_data":{"id":1,"name":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":"0"},"changed_fields_names":["name","status"]}'
+                    'update.priorities.all' => '{"action":"update","entity":"priorities","fields_data":{"id":1,"name":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":0},"changed_fields_names":["name","status"]}'
                 ],
             ],
         ]

@@ -36,7 +36,6 @@ class CronReportExportGenerateCest
             ? $I->cleanDir('../../../web/files/')
             : $I->runShellCommand('mkdir -p ./web/files/');
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPOST('report/generate', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);

@@ -23,6 +23,21 @@ class OtherServicesTester extends GeneralTester
 {
     use _generated\OtherServicesTesterActions;
 
+    /**
+     * @param Example $data - данные кейса из файла data.php
+     */
+    public function loadDataForTest(Example $data)
+    {
+        $I = $this;
+
+        $I->loadFixtureFromDataprovider();
+        $I->loadMockFromDataprovider();
+        $I->purgeAllQueues();
+        $I->truncateTablesInDatabase(['lisa_fixtures' => ['exceptions' => []]]);
+
+        $I->wantTo($data['setting']['description']);
+    }
+    
     public function checkRabbitMQ(?array $providerData)
     {
         $I = $this;

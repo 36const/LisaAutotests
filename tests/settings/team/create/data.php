@@ -181,7 +181,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Заявки Маркетплейс","direction":"2","status":"0","project_id":"1"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Заявки Маркетплейс","direction":"2","status":0,"project_id":"1"},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -271,7 +271,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Работа с группами","direction":"4","status":"0","project_id":"1"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Работа с группами","direction":"4","status":0,"project_id":"1"},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -361,7 +361,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Работа с порталами, фат-меню, категориями","direction":"6","status":"0","project_id":"1"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Работа с порталами, фат-меню, категориями","direction":"6","status":0,"project_id":"1"},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -407,7 +407,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Маркетинг2","direction":"","status":"1","project_id":"2"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Маркетинг2","direction":null,"status":"1","project_id":"2"},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -453,7 +453,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Все","direction":"","status":"0","project_id":"0"},"changed_fields_names":[]}'
+                    'create.teams.all' => '{"action":"create","entity":"teams","fields_data":{"id":22,"name":"Все","direction":null,"status":0,"project_id":0},"changed_fields_names":[]}'
                 ],
             ],
         ]

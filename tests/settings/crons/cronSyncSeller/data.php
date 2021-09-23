@@ -151,7 +151,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'message' => '{"data":{"id":21567,"owox_id":134802,"title_translit":"soska","business_model":"b2c","title":"Soska","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":1,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
+            'message' => '{"data":{"id":21567,"owox_id":134802,"title_translit":"soska","business_model":"b2c","title":"Soska","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":"1","logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
             'routing_key' => 'market.update',
             'response' => 'Магазин сохранен.Array
 (
@@ -185,7 +185,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'message' => '{"data":{"id":21567,"owox_id":null,"title_translit":"soska","business_model":"b2c","title":"Soska","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":1,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
+            'message' => '{"data":{"id":21567,"owox_id":null,"title_translit":"soska","business_model":"b2c","title":"Soska","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":"1","logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
             'routing_key' => 'market.create',
             'db' => [
                 'lisa_fixtures' => [
@@ -202,7 +202,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'message' => '{"data":{"id":21567,"owox_id":null,"title_translit":"soska","business_model":"b2c","title":"Soska","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":1,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
+            'message' => '{"data":{"id":21567,"owox_id":null,"title_translit":"soska","business_model":"b2c","title":"Soska","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":"1","logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
             'routing_key' => 'market.update',
             'db' => [
                 'lisa_fixtures' => [
@@ -251,7 +251,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case5.php',
         'provider_data' => [
-            'message' => '{"data":{"id":21567,"owox_id":134802,"title_translit":"sososka","business_model":"b2c","title":"Sososka","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":1,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
+            'message' => '{"data":{"id":21567,"owox_id":134802,"title_translit":"sososka","business_model":"b2c","title":"Sososka","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":"1","logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
             'routing_key' => 'market.update',
             'response' => 'Магазин обновлен.Array
 (

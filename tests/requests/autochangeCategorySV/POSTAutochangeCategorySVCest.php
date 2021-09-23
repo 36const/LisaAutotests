@@ -29,8 +29,6 @@ class POSTAutochangeCategorySVCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
-
         in_array($providerData['requestParameter'], ['update', 'to-correction'])
             ? $I->sendPUT('/request/' . $providerData['requestParameter'] . '/1', json_encode($providerData['requestBody']))
             : $I->sendPOST('/request/' . $providerData['requestParameter'], json_encode($providerData['requestBody']));

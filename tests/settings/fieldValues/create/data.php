@@ -93,7 +93,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"22","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":"0","order":0},"changed_fields_names":[]}'
+                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"22","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":0,"order":0},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -191,7 +191,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"24","value":"Более 5 уточнений","status":"0","order":0},"changed_fields_names":[]}'
+                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"24","value":"Более 5 уточнений","status":0,"order":0},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -289,7 +289,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"26","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":"0","order":0},"changed_fields_names":[]}'
+                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"26","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":0,"order":0},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -387,7 +387,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"28","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":"0","order":0},"changed_fields_names":[]}'
+                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"28","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":0,"order":0},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -485,7 +485,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"30","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":"0","order":0},"changed_fields_names":[]}'
+                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"30","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":0,"order":0},"changed_fields_names":[]}'
                 ],
             ],
         ]
@@ -583,7 +583,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"32","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":"0","order":0},"changed_fields_names":[]}'
+                    'create.field_values.all' => '{"action":"create","entity":"field_values","fields_data":{"id":31,"field_id":"32","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":0,"order":0},"changed_fields_names":[]}'
                 ],
             ],
         ]

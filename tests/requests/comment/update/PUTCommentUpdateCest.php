@@ -30,7 +30,6 @@ class PUTCommentUpdateCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPUT('/comment/update/1', $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);

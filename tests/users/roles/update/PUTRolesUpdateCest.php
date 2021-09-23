@@ -31,7 +31,6 @@ class PUTRolesUpdateCest
 
         $I->loadDataForRedis();
         
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPUT('/auth-item/update/supervisor', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);

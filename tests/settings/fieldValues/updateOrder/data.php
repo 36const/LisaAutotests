@@ -116,9 +116,9 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    '{"action":"update","entity":"field_values","fields_data":{"id":2,"field_id":21,"value":"Предоставлены продактом частично. Без дополнительного поиска.","status":1,"order":"1"},"changed_fields_names":["order"]}',
-                    '{"action":"update","entity":"field_values","fields_data":{"id":3,"field_id":21,"value":"Предоставлены продактом частично. С дополнительным поиском.","status":1,"order":"2"},"changed_fields_names":["order"]}',
-                    '{"action":"update","entity":"field_values","fields_data":{"id":1,"field_id":21,"value":"Предоставлены продактом","status":1,"order":"3"},"changed_fields_names":["order"]}',
+                    '{"action":"update","entity":"field_values","fields_data":{"id":2,"field_id":21,"value":"Предоставлены продактом частично. Без дополнительного поиска.","status":"1","order":"1"},"changed_fields_names":["order"]}',
+                    '{"action":"update","entity":"field_values","fields_data":{"id":3,"field_id":21,"value":"Предоставлены продактом частично. С дополнительным поиском.","status":"1","order":"2"},"changed_fields_names":["order"]}',
+                    '{"action":"update","entity":"field_values","fields_data":{"id":1,"field_id":21,"value":"Предоставлены продактом","status":"1","order":"3"},"changed_fields_names":["order"]}',
                     '{"action":"update","entity":"field_values","fields_data":{"id":5,"field_id":21,"value":"Характеристики добавлены с обновлением фото/описания","status":0,"order":"4"},"changed_fields_names":["order"]}',
                 ],
             ],

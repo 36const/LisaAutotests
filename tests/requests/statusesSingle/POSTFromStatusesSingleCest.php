@@ -30,7 +30,6 @@ class POSTFromStatusesSingleCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
 
         if (isset($providerData['requestBody']['payload']['files']))

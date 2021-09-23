@@ -30,8 +30,6 @@ class POSTReportPatternCreateUpdateCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
-
         $I->sendPOST('/report/save', $providerData['requestBody']);
         
         $I->seeResponseCodeIs(200);

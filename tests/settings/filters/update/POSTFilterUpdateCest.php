@@ -33,7 +33,6 @@ class POSTFilterUpdateCest
 
         $I->loadDataForRedis();
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPOST('/filter/save/1', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);

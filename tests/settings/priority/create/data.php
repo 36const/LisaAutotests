@@ -142,7 +142,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.priorities.all' => '{"action":"create","entity":"priorities","fields_data":{"id":4,"name":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":"0"},"changed_fields_names":[]}'
+                    'create.priorities.all' => '{"action":"create","entity":"priorities","fields_data":{"id":4,"name":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":0},"changed_fields_names":[]}'
                 ],
             ],
         ],

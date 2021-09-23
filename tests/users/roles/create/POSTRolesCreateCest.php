@@ -31,7 +31,6 @@ class POSTRolesCreateCest
 
         $I->loadDataForRedis();
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPOST('/auth-item/create', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);

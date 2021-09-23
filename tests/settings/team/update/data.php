@@ -45,7 +45,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Маркетплейс 4","direction":"2","status":"0","project_id":"1"},"changed_fields_names":["status"]}'
+                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Маркетплейс 4","direction":"2","status":0,"project_id":"1"},"changed_fields_names":["status"]}'
                 ],
             ],
         ],
@@ -247,7 +247,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Управление отделом new","direction":"4","status":"0","project_id":"1"},"changed_fields_names":["name","direction","status"]}'
+                    'update.teams.all' => '{"action":"update","entity":"teams","fields_data":{"id":4,"name":"Управление отделом new","direction":"4","status":0,"project_id":"1"},"changed_fields_names":["name","direction","status"]}'
                 ],
             ],
         ]

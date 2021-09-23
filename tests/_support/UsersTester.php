@@ -40,6 +40,7 @@ class UsersTester extends GeneralTester
         $I->truncateTablesInDatabase(['lisa_fixtures' => ['exceptions' => []]]);
 
         $I->wantTo($data['setting']['description']);
+        $I->haveHttpHeader('Content-Type', 'application/json');
     }
 
     public static function tableMassButtons($status)

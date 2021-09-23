@@ -32,7 +32,6 @@ class DELETEExcludedFieldDeleteCest
 
         $I->loadDataForRedis();
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendDELETE('/excluded-field/delete?field_id=10&excluded_field_id=11');
 
         $I->seeResponseCodeIs(200);

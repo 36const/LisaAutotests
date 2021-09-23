@@ -219,7 +219,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.categories.all' => '{"action":"create","entity":"categories","fields_data":{"id":4,"title":"=}~!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","difficulty":"2.5","supervisor_id":"6","status":"1"},"changed_fields_names":[]}'
+                    'create.categories.all' => '{"action":"create","entity":"categories","fields_data":{"id":4,"title":"=}~!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","difficulty":"2.5","supervisor_id":6,"status":1},"changed_fields_names":[]}'
                 ],
             ],
         ],
@@ -830,7 +830,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.categories.all' => '{"action":"create","entity":"categories","fields_data":{"id":4,"title":"=}~!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","difficulty":"2.5","supervisor_id":"6","status":"1"},"changed_fields_names":[]}'
+                    'create.categories.all' => '{"action":"create","entity":"categories","fields_data":{"id":4,"title":"=}~!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","difficulty":"2.5","supervisor_id":6,"status":1},"changed_fields_names":[]}'
                 ],
             ],
         ],
@@ -884,7 +884,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'create.categories.all' => '{"action":"create","entity":"categories","fields_data":{"id":4,"title":"=}~!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","difficulty":"2.5","supervisor_id":"6","status":"0"},"changed_fields_names":[]}'
+                    'create.categories.all' => '{"action":"create","entity":"categories","fields_data":{"id":4,"title":"=}~!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","difficulty":"2.5","supervisor_id":6,"status":0},"changed_fields_names":[]}'
                 ],
             ],
         ],

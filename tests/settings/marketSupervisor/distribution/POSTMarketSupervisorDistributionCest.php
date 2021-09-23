@@ -32,7 +32,6 @@ class POSTMarketSupervisorDistributionCest
 
         $I->loadDataForRedis();
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPOST('/market-supervisor/save-distribution', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);

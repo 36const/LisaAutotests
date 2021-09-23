@@ -31,7 +31,6 @@ class POSTUserCreateCest
 
         $I->loadDataForRedis();
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPOST('/user/create', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);

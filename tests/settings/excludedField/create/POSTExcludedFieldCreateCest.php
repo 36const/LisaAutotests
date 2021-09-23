@@ -32,7 +32,6 @@ class POSTExcludedFieldCreateCest
 
         $I->loadDataForRedis();
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPOST('/excluded-field/create', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);

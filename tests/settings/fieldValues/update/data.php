@@ -173,7 +173,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.field_values.all' => '{"action":"update","entity":"field_values","fields_data":{"id":1,"field_id":"21","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":"0","order":"1"},"changed_fields_names":["status"]}'
+                    'update.field_values.all' => '{"action":"update","entity":"field_values","fields_data":{"id":1,"field_id":"21","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ","status":0,"order":"1"},"changed_fields_names":["status"]}'
                 ],
             ],
         ]
@@ -225,7 +225,7 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    'update.field_values.all' => '{"action":"update","entity":"field_values","fields_data":{"id":1,"field_id":"22","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|","status":"0","order":"1"},"changed_fields_names":["field_id","value","status"]}'
+                    'update.field_values.all' => '{"action":"update","entity":"field_values","fields_data":{"id":1,"field_id":"22","value":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|","status":0,"order":"1"},"changed_fields_names":["field_id","value","status"]}'
                 ],
             ],
         ]

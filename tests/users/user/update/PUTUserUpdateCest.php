@@ -31,7 +31,6 @@ class PUTUserUpdateCest
 
         $I->loadDataForRedis();
         
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPUT('/user/update/4', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);

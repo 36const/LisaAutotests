@@ -37,6 +37,7 @@ class GeneralTester extends Actor
         $I->truncateTablesInDatabase(['lisa_fixtures' => ['exceptions' => []]]);
 
         $I->wantTo($data['setting']['description']);
+        $I->haveHttpHeader('Content-Type', 'application/json');
     }
 
     public function checkTablesInDB($dbTablesArray)

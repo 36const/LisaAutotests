@@ -31,7 +31,6 @@ class PUTGridSettingsUpdateCest
 
         $I->loadDataForRedis();
 
-        $I->haveHttpHeader('Content-Type', 'application/json');
         $I->sendPUT('/grid-settings/save/', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);

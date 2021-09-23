@@ -53,8 +53,8 @@ return [
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
-                    '{"action":"update","entity":"categories","fields_data":{"id":1,"title":"Авиабилеты","difficulty":2,"supervisor_id":"23","status":1},"changed_fields_names":["supervisor_id"]}',
-                    '{"action":"update","entity":"categories","fields_data":{"id":2,"title":"Видео к товару","difficulty":3,"supervisor_id":"23","status":1},"changed_fields_names":["supervisor_id"]}',
+                    '{"action":"update","entity":"categories","fields_data":{"id":1,"title":"Авиабилеты","difficulty":2,"supervisor_id":"23","status":"1"},"changed_fields_names":["supervisor_id"]}',
+                    '{"action":"update","entity":"categories","fields_data":{"id":2,"title":"Видео к товару","difficulty":3,"supervisor_id":"23","status":"1"},"changed_fields_names":["supervisor_id"]}',
                 ],
             ],
         ]

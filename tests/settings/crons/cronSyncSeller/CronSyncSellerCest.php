@@ -39,7 +39,7 @@ class CronSyncSellerCest
             $id = 1;
 
             while ($id <= 18) {
-                $message = '{"data":{"id":21567,"owox_id":13480' . $id . ',"title_translit":"soska","business_model":"b2c","title":"Soska' . $id . '","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":1,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}';
+                $message = '{"data":{"id":21567,"owox_id":13480' . $id . ',"title_translit":"soska","business_model":"b2c","title":"Soska' . $id . '","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":"1","logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}';
                 $id++;
 
                 $I->pushToExchange('marketplace_exchange', $message, $providerData['routing_key']);
