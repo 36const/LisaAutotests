@@ -10,9 +10,9 @@ use Codeception\Module\TestHelper;
  * @group lisa_api
  * @group lisa_api_settings
  * @group lisa_api_requestTemplate
- * @group GETRequestTemplateList
+ * @group GETRequestTemplate
  */
-class GETRequestTemplateListCest
+class GETRequestTemplateCest
 {
     protected function pageProvider(): array
     {
@@ -25,13 +25,13 @@ class GETRequestTemplateListCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function GETRequestTemplateList(SettingsTester $I, Example $data)
+    public function GETRequestTemplate(SettingsTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->sendGET('/request-template/list', $providerData['requestParameters']);
-        
+        $I->sendGET('/request-template/get-model', ['id' => 2]);
+
         $I->seeResponseCodeIs(200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
     }
