@@ -16,7 +16,7 @@ class GETGomerRequestsExistsCest
 {
     protected function pageProvider(): array
     {
-        return TestHelper::prepareDataprovider(require 'data.php', '');
+        return TestHelper::prepareDataprovider(require 'data.php', 'case1');
     }
 
     /**
@@ -34,5 +34,9 @@ class GETGomerRequestsExistsCest
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
+        
+//        $I->getListPackageFiles(59, 917, '9xCQA99bmwHsZiJ1JnSD');
+//        $I->deleteLastPackageFile(59, 917, '9xCQA99bmwHsZiJ1JnSD');
+        $I->publishPackageFile(60,1, codecept_data_dir('qwer.json'), 917, '9xCQA99bmwHsZiJ1JnSD');
     }
 }
