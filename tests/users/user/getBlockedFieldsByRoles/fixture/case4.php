@@ -8,11 +8,11 @@ return [
             [
                 'id' => 1,
                 'author_id' => 1,
-                'type_id' => 1,
+                'type_id' => 7,
                 'supervisor_id' => 4,
                 'manager_id' => null,
-                'status' => 1,
-                'direction' => 1,
+                'status' => 11,
+                'direction' => 0,
                 'priority' => 2,
                 'awaiting_correction' => 0,
                 'created_at' => '2020-01-01 00:00:01',
@@ -34,7 +34,7 @@ return [
                 'result_comment' => null,
                 'supervisor_comment' => null,
                 'last_change_status_date' => '2020-01-01 00:00:01',
-                'team_direction' => 3,
+                'team_direction' => 6,
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
@@ -124,7 +124,11 @@ return [
         'observers' => [],
         'report_periods' => [[]],
         'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
+        'excluded_fields' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/excluded_fields.php',
         'field_values' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
+        'markets_supervisors' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
+        'priorities' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
+        'reasons' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
         'auth.api_users' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.api_users.php',
         'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
         'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
@@ -144,7 +148,8 @@ return [
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 1,
                 'change_date' => '2020-05-19 16:36:22',
-                'drfo' => "'000000004"
+                'drfo' => "'000000004",
+                'positions' => '["supervisor"]',
             ],
         ],
         'auth.auth_assignment' => [
@@ -267,11 +272,6 @@ return [
                 'created_at' => null,
                 'user_id' => 4,
                 'item_name' => 'requestCreate'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestUpdate'
             ],
             [
                 'created_at' => null,
@@ -827,7 +827,7 @@ return [
                 'created_at' => null,
                 'user_id' => 4,
                 'item_name' => 'viewDashboardsByCommand'
-            ]
+            ],
         ]
     ],
 //    'gomer_fixtures' => [
