@@ -28,7 +28,7 @@ class POSTUserUpdateMultiplePositionCest
      */
     public function POSTUserUpdateAssignRole(UsersTester $I, Example $data)
     {
-        $I->loadDataForTest($data, null);
+        $I->loadDataForTest($data, 'oneUserWithoutAssignment');
         $providerData = $data['provider_data'];
 
         $redis = array_merge(

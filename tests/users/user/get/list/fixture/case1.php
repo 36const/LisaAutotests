@@ -4,6 +4,6 @@ use Codeception\Module\TestHelper;
 
 return [
     'lisa_fixtures' => [
-        'auth.users' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php',
+        'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
     ],
 ];

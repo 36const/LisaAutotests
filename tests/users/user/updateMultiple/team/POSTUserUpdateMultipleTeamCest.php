@@ -28,7 +28,7 @@ class POSTUserUpdateMultipleTeamCest
      */
     public function POSTUserUpdateMultipleTeam(UsersTester $I, Example $data)
     {
-        $I->loadDataForTest($data, null);
+        $I->loadDataForTest($data, 'oneUserWithoutAssignment');
         $providerData = $data['provider_data'];
 
         $I->loadDataForRedis();

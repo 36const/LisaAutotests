@@ -26,7 +26,7 @@ class GETUserListCest
      */
     public function GETUserList(UsersTester $I, Example $data)
     {
-        $I->loadDataForTest($data);
+        $I->loadDataForTest($data, 'allUsersWithoutSettings');
         $providerData = $data['provider_data'];
 
         $I->sendGET('/user/list', $providerData['requestParameters']);

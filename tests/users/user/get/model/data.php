@@ -219,7 +219,7 @@ return [
                     'name' => 'Тим Лидович 1',
                     'login' => 'bpm_teamLead_1',
                     'email' => 'bpm_teamLead_1@rozetka.com.ua',
-                    'team' => 19,
+                    'team' => 18,
                     'parent_id' => 4,
                     'position' => 'teamLead',
                     'status' => 0,

@@ -8013,9 +8013,9 @@ return [
             ],
             'db' => [
                 'lisa_fixtures' => [
-                    'auth.auth_item' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_item'],
+                    'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
                     'auth.auth_assignment' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_assignment'],
-                    'auth.user_changing_history' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_changing_history'],
+                    'auth.user_changing_history' => [],
                 ],
             ],
         ]
@@ -8049,9 +8049,9 @@ return [
             ],
             'db' => [
                 'lisa_fixtures' => [
-                    'auth.auth_item' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_item'],
+                    'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
                     'auth.auth_assignment' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_assignment'],
-                    'auth.user_changing_history' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_changing_history'],
+                    'auth.user_changing_history' => [],
                     'exceptions' => [
                         [
                             'id' => 1,

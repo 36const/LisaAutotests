@@ -21,7 +21,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => array_replace(
-                        (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.users'],
+                        include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php',
                         [
                             10 => [
                                 'id' => 11,
@@ -109,7 +109,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => array_replace(
-                        (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.users'],
+                        include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php',
                         [
                             10 => [
                                 'id' => 11,

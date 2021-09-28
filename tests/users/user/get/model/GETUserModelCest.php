@@ -26,7 +26,7 @@ class GETUserModelCest
      */
     public function GETReasonModel(UsersTester $I, Example $data)
     {
-        $I->loadDataForTest($data, 'allUsers');
+        $I->loadDataForTest($data, 'allUsersWithoutSettings');
         $providerData = $data['provider_data'];
 
         $I->sendGET('/user/get-model/' . ($providerData['id'] ?? null));
