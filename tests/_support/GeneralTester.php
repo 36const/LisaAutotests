@@ -76,8 +76,8 @@ class GeneralTester extends Actor
 
     /**
      * Проверка количества и значений сообщений в очереди.
-     * Для очереди lisa_common добавляется 1 потому что последнее сообщение из этой очереди проверяется вместе с routing_key
-     * отдельно через метод checkRabbitMQWithRoutingKey
+     * Для очереди lisa_common добавляется 1, потому что последнее сообщение из этой очереди проверяется 
+     * вместе с routing_key отдельно через метод checkRabbitMQWithRoutingKey
      */
     public function checkRabbitMQ(?array $providerData)
     {
@@ -98,7 +98,6 @@ class GeneralTester extends Actor
 
     /**
      * Проверка одного последнего сообщения в очереди с его routing_key.
-     * Используется для очереди lisa_common
      */
     public function checkRabbitMQWithRoutingKey(?array $providerData, bool $notExactMatch = false)
     {
