@@ -32,9 +32,7 @@ class POSTRelatedRequestCest
         $I->sendPOST('/request/create', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);
-        $I->canseeResponseContainsJson($providerData['responseBody']);
-        $I->canSeeResponseMatchesJsonType(['created_at' => 'string:regex(~[\d]{4}-[\d]{2}-[\d]{2} [\d]{2}:[\d]{2}:[\d]{2}~)'], '$.request');
-        $I->canSeeResponseMatchesJsonType(['last_change_status_date' => 'string:regex(~[\d]{4}-[\d]{2}-[\d]{2} [\d]{2}:[\d]{2}:[\d]{2}~)'], '$.request');
+        $I->canSeeJsonResponseMatchesCriteria($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);

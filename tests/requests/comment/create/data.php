@@ -22,7 +22,7 @@ alert(&quot;XSS&quot;);//\\
                     'user_id' => 4,
                     'status' => 1,
                     'id' => 1,
-//                    'created_at >=' => date('Y-m-d'),
+                    'created_at >=' => date('Y-m-d'),
                     'commentatorName' => 'Константин Куцан',
                     'commentatorLogin' => 'kutsan.k',
                     'editable' => true,
@@ -142,7 +142,7 @@ alert(&quot;XSS&quot;);//\\
                     'comment' => 'https://zabbix3.local/latest.php?groupids%5B%5D=251&amp;hostids%5B%5D=12686&amp;hostids%5B%5D=16666&amp;hostids%5B%5D=16728&amp;hostids%5B%5D=17592&amp;hostids%5B%5D=17607&amp;hostids%5B%5D=17714&amp;hostids%5B%5D=17720&amp;hostids%5B%5D=18537&amp;hostids%5B%5D=19198&amp;application=Memory&amp;select=&amp;show_without_data=1&amp;show_details=1&amp;filter_set=1',
                     'user_id' => 4,
                     'status' => 1,
-//                    'created_at >=' => date('Y-m-d'),
+                    'created_at >=' => date('Y-m-d'),
                     'commentatorName' => 'Константин Куцан',
                     'commentatorLogin' => 'kutsan.k'
                 ]

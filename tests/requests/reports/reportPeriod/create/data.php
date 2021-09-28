@@ -22,7 +22,7 @@ return [
                 'model' => [
                     'begin' => '2020-05-01T00:00:00.000Z',
                     'end' => '2020-05-31T00:00:00.000Z',
-                    //'created_at >=' => date('Y-m-d'),
+                    'created_at >=' => date('Y-m-d'),
                     'id' => 2,
                 ],
             ],

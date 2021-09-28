@@ -24,7 +24,7 @@ return [
                     'begin' => '2021-04-02T21:00:00.000Z',
                     'end' => '2021-04-28T21:00:00.000Z',
                     'created_at' => '2021-03-01 00:00:00',
-                    //'updated_at >=' => date('Y-m-d'),
+                    'updated_at >=' => date('Y-m-d'),
                 ],
             ],
             'db' => [

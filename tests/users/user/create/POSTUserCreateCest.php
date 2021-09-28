@@ -34,10 +34,7 @@ class POSTUserCreateCest
         $I->sendPOST('/user/create', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);
-        $I->canseeResponseContainsJson($providerData['responseBody']);
-
-        if (!isset($data['setting']['negative']))
-            $I->canSeeResponseMatchesJsonType(['create_ts' => 'string:regex(~[\d]{4}-[\d]{2}-[\d]{2} [\d]{2}:[\d]{2}:[\d]{2}~)'], '$.model');
+        $I->canSeeJsonResponseMatchesCriteria($providerData['responseBody']);
 
         $I->checkRedis($providerData['excludedRedisKeys'] ?? null);
         $I->checkTablesInDB($providerData['db']);

@@ -34,7 +34,7 @@ class PUTUserUpdateCest
         $I->sendPUT('/user/update/4', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);
-        $I->canseeResponseContainsJson($providerData['responseBody']);
+        $I->canSeeJsonResponseMatchesCriteria($providerData['responseBody']);
 
         $I->checkRedis($providerData['excludedRedisKeys'] ?? null);
         $I->checkTablesInDB($providerData['db']);

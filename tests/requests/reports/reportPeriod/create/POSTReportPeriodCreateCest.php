@@ -37,7 +37,7 @@ class POSTReportPeriodCreateCest
         $I->seeResponseCodeIs(200);
 
         isset($data['setting']['positive'])
-            ? $I->canSeeResponseContainsJson($providerData['responseBody'])
+            ? $I->canSeeJsonResponseMatchesCriteria($providerData['responseBody'])
             : $I->canSeeJsonResponseEquals($providerData['responseBody']);
 
         $I->checkRedis($providerData['excludedRedisKeys'] ?? null);

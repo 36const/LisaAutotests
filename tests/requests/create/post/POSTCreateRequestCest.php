@@ -36,7 +36,7 @@ class POSTCreateRequestCest
 
         $I->sendPOST('/request/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
-        $I->canSeeResponseContainsJson($providerData['responseBody']);
+        $I->canSeeJsonResponseMatchesCriteria($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);

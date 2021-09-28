@@ -33,7 +33,7 @@ class PUTCommentUpdateCest
         $I->sendPUT('/comment/update/1', $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
-        $I->canSeeResponseContainsJson($providerData['responseBody']);
+        $I->canSeeJsonResponseMatchesCriteria($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);

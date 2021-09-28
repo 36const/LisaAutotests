@@ -35,10 +35,7 @@ class PUTReportPeriodUpdateCest
         $I->sendPUT('/report-period/update/4', $providerData['requestBody']);
         
         $I->seeResponseCodeIs(200);
-
-        isset($data['setting']['positive'])
-            ? $I->canSeeResponseContainsJson($providerData['responseBody'])
-            : $I->canSeeJsonResponseEquals($providerData['responseBody']);
+        $I->canSeeJsonResponseMatchesCriteria($providerData['responseBody']);
 
         $I->checkRedis($providerData['excludedRedisKeys'] ?? null);
         $I->checkTablesInDB($providerData['db']);
