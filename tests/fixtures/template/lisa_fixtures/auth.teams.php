@@ -138,7 +138,6 @@ return [
         'direction' => 3,
         'status' => 1,
         'project_id' => 1,
-
     ],
     [
         //"id" => 21,
@@ -146,6 +145,5 @@ return [
         'direction' => null,
         'status' => 1,
         'project_id' => 2,
-
     ],
 ];

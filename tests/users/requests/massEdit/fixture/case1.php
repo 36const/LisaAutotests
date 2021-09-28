@@ -7,10 +7,7 @@ return [
         'auth.users' => array_replace_recursive(
             include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php',
             [
-                [],
-                [],
-                [],
-                [
+                3 => [
 //                    "id" => 4,
                     'name' => 'Константин Куцан',
                     'login' => 'kutsan.k',
