@@ -39,7 +39,7 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
                 'cross_check_status' => 0,
-                'cross_check_manager_id' => null,
+                'cross_check_manager_id' => 12,
                 'employee_code_1c' => null,
                 'child_count' => 0,
                 'photo_load_status' => 0,
