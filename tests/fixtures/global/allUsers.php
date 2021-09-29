@@ -10,6 +10,7 @@ return [
         'auth.auth_assignment' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_assignment.php',
         'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
         'auto_diff_conditions' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auto_diff_conditions.php',
+        'auto_diff_fields' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auto_diff_fields.php',
         'auto_diff_sets' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auto_diff_sets.php',
         'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         'difficulty_coefs' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/difficulty_coefs.php',
