@@ -1158,12 +1158,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-                'lisa_sendOuterNotifications' => [
-                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-                ],
+//                'lisa_sendOuterNotifications' => [
+//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+//                ],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -1636,15 +1636,15 @@ return [
                         ],
                     ],
                     'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\\base\\Exception',
-                            'message' => '',
-                            'name' => 'Exception',
-                            'code' => 404,
-                            'user' => '4',
-                        ],
+//                        [
+//                            'id' => 1,
+//                            'date >=' => date('Y-m-d'),
+//                            'class' => 'yii\\base\\Exception',
+//                            'message' => '',
+//                            'name' => 'Exception',
+//                            'code' => 404,
+//                            'user' => '4',
+//                        ],
                     ]
                 ]
             ],
@@ -2369,15 +2369,15 @@ return [
                         ],
                     ],
                     'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\\base\\Exception',
-                            'message' => '',
-                            'name' => 'Exception',
-                            'code' => 404,
-                            'user' => '4',
-                        ],
+//                        [
+//                            'id' => 1,
+//                            'date >=' => date('Y-m-d'),
+//                            'class' => 'yii\\base\\Exception',
+//                            'message' => '',
+//                            'name' => 'Exception',
+//                            'code' => 404,
+//                            'user' => '4',
+//                        ],
                     ]
                 ]
             ],
@@ -3817,15 +3817,15 @@ return [
                         ],
                     ],
                     'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\\base\\Exception',
-                            'message' => '',
-                            'name' => 'Exception',
-                            'code' => 404,
-                            'user' => 'kutsan.k',
-                        ],
+//                        [
+//                            'id' => 1,
+//                            'date >=' => date('Y-m-d'),
+//                            'class' => 'yii\\base\\Exception',
+//                            'message' => '',
+//                            'name' => 'Exception',
+//                            'code' => 404,
+//                            'user' => 'kutsan.k',
+//                        ],
                     ]
                 ]
             ],
@@ -4031,15 +4031,15 @@ return [
                         ],
                     ],
                     'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\\base\\Exception',
-                            'message' => '',
-                            'name' => 'Exception',
-                            'code' => 404,
-                            'user' => 'kutsan.k',
-                        ],
+//                        [
+//                            'id' => 1,
+//                            'date >=' => date('Y-m-d'),
+//                            'class' => 'yii\\base\\Exception',
+//                            'message' => '',
+//                            'name' => 'Exception',
+//                            'code' => 404,
+//                            'user' => 'kutsan.k',
+//                        ],
                     ]
                 ]
             ],
@@ -5177,15 +5177,15 @@ return [
                         ],
                     ],
                     'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\\base\\Exception',
-                            'message' => '',
-                            'name' => 'Exception',
-                            'code' => 404,
-                            'user' => 'kutsan.k',
-                        ],
+//                        [
+//                            'id' => 1,
+//                            'date >=' => date('Y-m-d'),
+//                            'class' => 'yii\\base\\Exception',
+//                            'message' => '',
+//                            'name' => 'Exception',
+//                            'code' => 404,
+//                            'user' => 'kutsan.k',
+//                        ],
                     ]
                 ]
             ],

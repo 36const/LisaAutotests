@@ -1462,15 +1462,15 @@ return [
                         ],
                     ],
                     'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\\base\\Exception',
-                            'message' => '',
-                            'name' => 'Exception',
-                            'code' => 404,
-                            'user' => '4',
-                        ],
+//                        [
+//                            'id' => 1,
+//                            'date >=' => date('Y-m-d'),
+//                            'class' => 'yii\\base\\Exception',
+//                            'message' => '',
+//                            'name' => 'Exception',
+//                            'code' => 404,
+//                            'user' => '4',
+//                        ],
                     ]
                 ]
             ]
