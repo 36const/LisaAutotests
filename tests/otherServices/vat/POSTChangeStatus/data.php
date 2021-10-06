@@ -1733,17 +1733,6 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\web\NotFoundHttpException',
-                            'message' => 'По вашему запросу не найдено заявок.',
-                            'name' => 'Not Found',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -1777,17 +1766,6 @@ return [
                     'requests_fields' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [],
                     'request_status_history' => [],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\web\NotFoundHttpException',
-                            'message' => 'По вашему запросу не найдено заявок.',
-                            'name' => 'Not Found',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ],
                 ]
             ],
             'RabbitMQ' => [

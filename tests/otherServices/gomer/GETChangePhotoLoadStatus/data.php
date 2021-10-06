@@ -1306,17 +1306,6 @@ return [
                             'photo_load_status' => 0
                         ]
                     ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\web\NotFoundHttpException',
-                            'message' => 'Заявка с таким ID не существует.',
-                            'name' => 'Not Found',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ]
                 ]
             ],
         ]
