@@ -385,7 +385,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
-            'interior' => RequestsTester::interiorMockArray('request-create', 0),
+            'interior' => RequestsTester::interiorMockArray('request-create', 83),
         ],
         'provider_data' => [
             'requestBody' => [
@@ -400,7 +400,7 @@ return [
                 'planned_finish_date' => null,
                 'priority' => 2,
                 'rz_category_id' => null,
-                'seller_id' => 0,
+                'seller_id' => 83,
                 'subject' => 'Добавление новых товаров (Работа с товарами Маркетплейса)',
                 'type_id' => 1,
             ],
@@ -411,14 +411,14 @@ return [
                     'subject' => 'Добавление новых товаров (Работа с товарами Маркетплейса)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'rz_category_id' => null,
-                    'seller_id' => 0,
+                    'seller_id' => '83',
                     'category_id' => NULL,
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
                     'priority' => '2',
                     'type_id' => '1',
                     'direction' => '2',
-                    'supervisor_id' => 5,
+                    'supervisor_id' => 6,
                     'team_direction' => 2,
                     'awaiting_correction' => 0,
                     'manager_id' => NULL,
@@ -441,7 +441,7 @@ return [
                             'id' => 1,
                             'author_id' => 4,
                             'type_id' => 1,
-                            'supervisor_id' => 5,
+                            'supervisor_id' => 6,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 2,
@@ -453,7 +453,7 @@ return [
                             'subject' => 'Добавление новых товаров (Работа с товарами Маркетплейса)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => null,
-                            'seller_id' => 0,
+                            'seller_id' => 83,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -580,7 +580,7 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 5,
+                            'user_id' => 6,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -640,12 +640,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-//                'lisa_sendOuterNotifications' => [
-//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
                 'lisa_common' => [
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":8,"value":"1"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":15,"value":"1"},"changed_fields_names":[]}',
@@ -668,8 +668,8 @@ return [
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
                     'create.requests.all' => [
-                        '{"action":"create","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":"1","supervisor_id":5,"manager_id":null,"status":1,"direction":"2","priority":"2","awaiting_correction":0,"created_at":"' . date('Y-m-d'),
-                        '","correction_comment":null,"amount_to_work":"10","subject":"Добавление новых товаров (Работа с товарами Маркетплейса)","description":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","category_id":null,"seller_id":0,"recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
+                        '{"action":"create","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":"1","supervisor_id":6,"manager_id":null,"status":1,"direction":"2","priority":"2","awaiting_correction":0,"created_at":"' . date('Y-m-d'),
+                        '","correction_comment":null,"amount_to_work":"10","subject":"Добавление новых товаров (Работа с товарами Маркетплейса)","description":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","category_id":null,"seller_id":"83","recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
                         '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":null,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":null,"previous_status":null,"supplier_cabinet_id":null,"payload":null,"rz_category_id":null},"changed_fields_names":[]}'
                     ]
                 ],
@@ -956,7 +956,7 @@ return [
                 '19' => true,
                 'amount_to_work' => 10,
                 'rz_category_id' => null,
-                'seller_id' => 0,
+                'seller_id' => 5,
                 'description' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'observers' => [15, 17],
                 'direction' => 2,
@@ -974,13 +974,13 @@ return [
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => NULL,
                     'rz_category_id' => null,
-                    'seller_id' => 0,
+                    'seller_id' => '5',
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
                     'priority' => '2',
                     'type_id' => '2',
                     'direction' => '2',
-                    'supervisor_id' => 5,
+                    'supervisor_id' => 6,
                     'team_direction' => 2,
                     'awaiting_correction' => 0,
                     'manager_id' => NULL,
@@ -1003,7 +1003,7 @@ return [
                             'id' => 1,
                             'author_id' => 4,
                             'type_id' => 2,
-                            'supervisor_id' => 5,
+                            'supervisor_id' => 6,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 2,
@@ -1015,7 +1015,7 @@ return [
                             'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => null,
-                            'seller_id' => 0,
+                            'seller_id' => 5,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -1142,7 +1142,7 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 5,
+                            'user_id' => 6,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -1200,15 +1200,15 @@ return [
                         ],
                     ],
                     'exceptions' => [
-//                        [
-//                            'id' => 1,
-//                            'date >=' => date('Y-m-d'),
-//                            'class' => 'yii\\base\\Exception',
-//                            'message' => '',
-//                            'name' => 'Exception',
-//                            'code' => 404,
-//                            'user' => '4',
-//                        ],
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => '4',
+                        ],
                     ]
                 ]
             ],
@@ -1488,7 +1488,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
-            'interior' => RequestsTester::interiorMockArray('request-create', 0),
+            'interior' => RequestsTester::interiorMockArray('request-create', 83),
         ],
         'provider_data' => [
             'requestBody' => [
@@ -1503,7 +1503,7 @@ return [
                 'planned_finish_date' => null,
                 'priority' => 2,
                 'rz_category_id' => null,
-                'seller_id' => 0,
+                'seller_id' => 83,
                 'subject' => 'Перенос товаров (Работа с товарами Маркетплейса)',
                 'type_id' => 3,
             ],
@@ -1515,13 +1515,13 @@ return [
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => NULL,
                     'rz_category_id' => null,
-                    'seller_id' => 0,
+                    'seller_id' => '83',
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
                     'priority' => '2',
                     'type_id' => '3',
                     'direction' => '2',
-                    'supervisor_id' => 5,
+                    'supervisor_id' => 6,
                     'team_direction' => 2,
                     'awaiting_correction' => 0,
                     'manager_id' => NULL,
@@ -1544,7 +1544,7 @@ return [
                             'id' => 1,
                             'author_id' => 4,
                             'type_id' => 3,
-                            'supervisor_id' => 5,
+                            'supervisor_id' => 6,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 2,
@@ -1556,7 +1556,7 @@ return [
                             'subject' => 'Перенос товаров (Работа с товарами Маркетплейса)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => null,
-                            'seller_id' => 0,
+                            'seller_id' => 83,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -1683,7 +1683,7 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 5,
+                            'user_id' => 6,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -1743,12 +1743,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-//                'lisa_sendOuterNotifications' => [
-//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Перенос товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перенесення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Перенос товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перенесення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Перенос товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перенесення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Перенос товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перенесення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
             ]
         ]
     ],
@@ -1761,7 +1761,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
-            'interior' => RequestsTester::interiorMockArray('request-create', 0),
+            'interior' => RequestsTester::interiorMockArray('request-create', 5),
         ],
         'provider_data' => [
             'requestBody' => [
@@ -1775,7 +1775,7 @@ return [
                 'parent_id' => null,
                 'planned_finish_date' => null,
                 'priority' => 2,
-                'seller_id' => 0,
+                'seller_id' => 5,
                 'subject' => 'Группировка товаров (Определяется типом задачи)',
                 'type_id' => 4,
             ],
@@ -1787,7 +1787,7 @@ return [
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => 1,
                     'rz_category_id' => '753399',
-                    'seller_id' => 0,
+                    'seller_id' => '5',
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
                     'priority' => '2',
@@ -1828,7 +1828,7 @@ return [
                             'subject' => 'Группировка товаров (Определяется типом задачи)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => 1,
-                            'seller_id' => 0,
+                            'seller_id' => 5,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -2027,12 +2027,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-//                'lisa_sendOuterNotifications' => [
-//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
                 'lisa_common' => [
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":169,"value":"1"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":168,"value":"0"},"changed_fields_names":[]}',
@@ -2058,7 +2058,7 @@ return [
                 'lisa_common' => [
                     'create.requests.all' => [
                         '{"action":"create","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":"4","supervisor_id":33,"manager_id":null,"status":1,"direction":0,"priority":"2","awaiting_correction":0,"created_at":"' . date('Y-m-d'),
-                        '","correction_comment":null,"amount_to_work":"10","subject":"Группировка товаров (Определяется типом задачи)","description":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","category_id":1,"seller_id":0,"recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
+                        '","correction_comment":null,"amount_to_work":"10","subject":"Группировка товаров (Определяется типом задачи)","description":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","category_id":1,"seller_id":"5","recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
                         '","team_direction":4,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":null,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":null,"previous_status":null,"supplier_cabinet_id":null,"payload":null,"rz_category_id":"753399"},"changed_fields_names":[]}'
                     ]
                 ],
@@ -2337,7 +2337,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
-            'interior' => RequestsTester::interiorMockArray('request-create', 0),
+            'interior' => RequestsTester::interiorMockArray('request-create', 9423),
         ],
         'provider_data' => [
             'requestBody' => [
@@ -2346,7 +2346,7 @@ return [
                 '19' => true,
                 'amount_to_work' => 10,
                 'rz_category_id' => null,
-                'seller_id' => 0,
+                'seller_id' => 9423,
                 'description' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'observers' => [15, 17],
                 'direction' => 2,
@@ -2364,13 +2364,13 @@ return [
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => NULL,
                     'rz_category_id' => null,
-                    'seller_id' => 0,
+                    'seller_id' => '9423',
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
                     'priority' => '2',
                     'type_id' => '6',
                     'direction' => '2',
-                    'supervisor_id' => 5,
+                    'supervisor_id' => 10,
                     'team_direction' => 2,
                     'awaiting_correction' => 0,
                     'manager_id' => NULL,
@@ -2393,7 +2393,7 @@ return [
                             'id' => 1,
                             'author_id' => 4,
                             'type_id' => 6,
-                            'supervisor_id' => 5,
+                            'supervisor_id' => 10,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 2,
@@ -2405,7 +2405,7 @@ return [
                             'subject' => 'Проверка скрытых товаров (Работа с товарами Маркетплейса)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => null,
-                            'seller_id' => 0,
+                            'seller_id' => 9423,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -2532,7 +2532,7 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 5,
+                            'user_id' => 10,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -2592,12 +2592,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-//                'lisa_sendOuterNotifications' => [
-//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Проверка скрытых товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перевірка прихованих товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Проверка скрытых товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перевірка прихованих товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Проверка скрытых товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перевірка прихованих товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Проверка скрытых товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Перевірка прихованих товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
             ]
         ]
     ],
@@ -4057,7 +4057,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
-            'interior' => RequestsTester::interiorMockArray('request-create', 0),
+            'interior' => RequestsTester::interiorMockArray('request-create', 83),
         ],
         'provider_data' => [
             'requestBody' => [
@@ -4071,7 +4071,7 @@ return [
                 'planned_finish_date' => null,
                 'priority' => 2,
                 'rz_category_id' => null,
-                'seller_id' => 0,
+                'seller_id' => 83,
                 'subject' => 'Добавление/изменение видео (Определяется типом задачи)',
                 'type_id' => 13,
             ],
@@ -4083,7 +4083,7 @@ return [
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
                     'rz_category_id' => null,
-                    'seller_id' => 0,
+                    'seller_id' => '83',
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
                     'priority' => '2',
@@ -4124,7 +4124,7 @@ return [
                             'subject' => 'Добавление/изменение видео (Определяется типом задачи)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => 1,
-                            'seller_id' => 0,
+                            'seller_id' => 83,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -4271,12 +4271,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-//                'lisa_sendOuterNotifications' => [
-//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление/изменение видео","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання/змінення відео","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление/изменение видео","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання/змінення відео","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление/изменение видео","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання/змінення відео","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление/изменение видео","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання/змінення відео","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
             ]
         ]
     ],
@@ -4289,7 +4289,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
-            'interior' => RequestsTester::interiorMockArray('request-create', 0),
+            'interior' => RequestsTester::interiorMockArray('request-create', 83),
         ],
         'provider_data' => [
             'requestBody' => [
@@ -4303,7 +4303,7 @@ return [
                 'planned_finish_date' => null,
                 'priority' => 2,
                 'rz_category_id' => null,
-                'seller_id' => 0,
+                'seller_id' => 83,
                 'subject' => 'Добавление/изменение размерной сетки (Определяется типом задачи)',
                 'type_id' => 14,
             ],
@@ -4315,7 +4315,7 @@ return [
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
                     'rz_category_id' => null,
-                    'seller_id' => 0,
+                    'seller_id' => '83',
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
                     'priority' => '2',
@@ -4356,7 +4356,7 @@ return [
                             'subject' => 'Добавление/изменение размерной сетки (Определяется типом задачи)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => 1,
-                            'seller_id' => 0,
+                            'seller_id' => 83,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -4503,12 +4503,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-//                'lisa_sendOuterNotifications' => [
-//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление/изменение размерной сетки","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання/змінення розмірної сітки","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление/изменение размерной сетки","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання/змінення розмірної сітки","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление/изменение размерной сетки","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання/змінення розмірної сітки","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Добавление/изменение размерной сетки","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Додавання/змінення розмірної сітки","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
             ]
         ]
     ],
@@ -4521,7 +4521,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
-            'interior' => RequestsTester::interiorMockArray('request-create', 0),
+            'interior' => RequestsTester::interiorMockArray('request-create', 5),
             //в моке есть ответ по этому магазину, но для типа 15 запрос к моку отправляться не должен
         ],
         'provider_data' => [
@@ -4536,7 +4536,7 @@ return [
                 'planned_finish_date' => null,
                 'priority' => 2,
                 'rz_category_id' => null,
-                'seller_id' => 0,
+                'seller_id' => 5,
                 'subject' => 'Добавление/изменение тегов (Определяется типом задачи)',
                 'type_id' => 15,
             ],
@@ -4548,7 +4548,7 @@ return [
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => '1',
                     'rz_category_id' => null,
-                    'seller_id' => 0,
+                    'seller_id' => '5',
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
                     'priority' => '2',
@@ -4589,7 +4589,7 @@ return [
                             'subject' => 'Добавление/изменение тегов (Определяется типом задачи)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => 1,
-                            'seller_id' => 0,
+                            'seller_id' => 5,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -4749,7 +4749,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case19.php',
         'mock_data' => [
-            'interior' => RequestsTester::interiorMockArray('request-create', 0),
+            'interior' => RequestsTester::interiorMockArray('request-create', 5),
         ],
         'provider_data' => [
             'requestBody' => [
@@ -4762,7 +4762,7 @@ return [
                 'description' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'category_id' => 2,
                 'rz_category_id' => 2514857,
-                'seller_id' => 0,
+                'seller_id' => 5,
                 'planned_finish_date' => '2021-03-01 08:40:59',
                 'observers' => [15, 17],
                 'selectedTemplate' => 1
@@ -4779,7 +4779,7 @@ return [
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                     'category_id' => 2,
                     'rz_category_id' => '2514857',
-                    'seller_id' => 0,
+                    'seller_id' => '5',
                     'planned_finish_date' => '2021-03-01 08:40:59',
                     'supervisor_id' => 33,
                     'team_direction' => 4,
@@ -4816,7 +4816,7 @@ return [
                             'subject' => 'Группировка товаров (Определяется типом задачи) =~}!@#$%^&*()_+`-]\'/[;.,}"?{:>',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => 2,
-                            'seller_id' => 0,
+                            'seller_id' => 5,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -4845,7 +4845,7 @@ return [
                             'id' => 2,
                             'author_id' => 4,
                             'type_id' => 1,
-                            'supervisor_id' => 5,
+                            'supervisor_id' => 6,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 2,
@@ -4857,7 +4857,7 @@ return [
                             'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                             'description' => 'description',
                             'category_id' => null,
-                            'seller_id' => 0,
+                            'seller_id' => 5,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => 1,
@@ -5497,16 +5497,16 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-//                'lisa_sendOuterNotifications' => [
-//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":2,"type":"Добавление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":2,"type":"Додавання товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":2,"type":"Добавление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":2,"type":"Додавання товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":2,"type":"Добавление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":2,"type":"Додавання товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":2,"type":"Добавление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":2,"type":"Додавання товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                ],
             ]
         ]
     ]

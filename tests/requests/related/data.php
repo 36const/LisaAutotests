@@ -1256,7 +1256,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6.php',
         'mock_data' => [
-            'interior' => RequestsTester::interiorMockArray('request-create', 0, 'empty'),
+            'interior' => RequestsTester::interiorMockArray('request-create', 83, 'empty'),
         ],
         'provider_data' => [
             'requestBody' => [
@@ -1265,7 +1265,7 @@ return [
                 'description' => 'Описание',
                 'category_id' => 2,
                 'rz_category_id' => NULL,
-                'seller_id' => -2,
+                'seller_id' => 5,
                 'supervisor_id' => 38,
                 'amount_to_work' => 10,
                 'planned_finish_date' => NULL,
@@ -1285,7 +1285,7 @@ return [
                     'description' => 'Описание',
                     'category_id' => '2',
                     'rz_category_id' => NULL,
-                    'seller_id' => '-2',
+                    'seller_id' => '5',
                     'amount_to_work' => '10',
                     'planned_finish_date' => NULL,
                     'priority' => '2',
@@ -1333,7 +1333,7 @@ return [
                                 'subject' => 'Добавление/изменение видео (Определяется типом задачи)',
                                 'description' => 'Описание',
                                 'category_id' => 2,
-                                'seller_id' => -2,
+                                'seller_id' => 5,
                                 'recommendations' => null,
                                 'reason' => null,
                                 'parent_id' => 1,
@@ -1462,15 +1462,15 @@ return [
                         ],
                     ],
                     'exceptions' => [
-//                        [
-//                            'id' => 1,
-//                            'date >=' => date('Y-m-d'),
-//                            'class' => 'yii\\base\\Exception',
-//                            'message' => '',
-//                            'name' => 'Exception',
-//                            'code' => 404,
-//                            'user' => '4',
-//                        ],
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => '4',
+                        ],
                     ]
                 ]
             ]

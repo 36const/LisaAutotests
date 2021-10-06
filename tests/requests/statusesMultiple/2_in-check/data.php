@@ -49,7 +49,7 @@ return [
                             'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                             'description' => 'description',
                             'category_id' => 1,
-                            'seller_id' => 83,
+                            'seller_id' => -2,
                             'recommendations' => '',
                             'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'parent_id' => null,
@@ -92,7 +92,7 @@ return [
                             'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
                             'description' => 'Описание',
                             'category_id' => null,
-                            'seller_id' => 0,
+                            'seller_id' => 83,
                             'recommendations' => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<\\|1234567890абвгдеёжзийклмноп513\r\nhttp://gomer.local/bpm/request/view?id=11&forCrossCheck=0",
                             'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'parent_id' => null,
@@ -224,12 +224,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-//                'lisa_sendOuterNotifications' => [
-//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-revision","fields":{"id":2,"type":"Обновление товаров","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-revision","fields":{"id":2,"type":"Оновлення товарів","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-revision","fields":{"id":2,"type":"Обновление товаров","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-revision","fields":{"id":2,"type":"Оновлення товарів","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-revision","fields":{"id":2,"type":"Обновление товаров","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-revision","fields":{"id":2,"type":"Оновлення товарів","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-revision","fields":{"id":2,"type":"Обновление товаров","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-revision","fields":{"id":2,"type":"Оновлення товарів","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                ],
             ]
         ]
     ],
@@ -282,7 +282,7 @@ return [
                             'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                             'description' => 'description',
                             'category_id' => 1,
-                            'seller_id' => 83,
+                            'seller_id' => -2,
                             'recommendations' => '',
                             'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'parent_id' => null,
@@ -325,7 +325,7 @@ return [
                             'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
                             'description' => 'Описание',
                             'category_id' => null,
-                            'seller_id' => 0,
+                            'seller_id' => 83,
                             'recommendations' => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<\\|1234567890абвгдеёжзийклмноп513\r\nhttp://gomer.local/bpm/request/view?id=11&forCrossCheck=0",
                             'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'parent_id' => null,
@@ -457,12 +457,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-//                'lisa_sendOuterNotifications' => [
-//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-canceled","fields":{"id":2,"type":"Обновление товаров","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-canceled","fields":{"id":2,"type":"Оновлення товарів","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-canceled","fields":{"id":2,"type":"Обновление товаров","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-canceled","fields":{"id":2,"type":"Оновлення товарів","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-//                ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-canceled","fields":{"id":2,"type":"Обновление товаров","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-canceled","fields":{"id":2,"type":"Оновлення товарів","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-canceled","fields":{"id":2,"type":"Обновление товаров","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-canceled","fields":{"id":2,"type":"Оновлення товарів","reasons":"Другое (описан в коментариях)","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                ],
             ],
         ]
     ],
@@ -508,7 +508,7 @@ return [
                             'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                             'description' => 'description',
                             'category_id' => 1,
-                            'seller_id' => 83,
+                            'seller_id' => -2,
                             'recommendations' => '',
                             'reason' => null,
                             'parent_id' => null,
@@ -551,7 +551,7 @@ return [
                             'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
                             'description' => 'Описание',
                             'category_id' => null,
-                            'seller_id' => 0,
+                            'seller_id' => 83,
                             'recommendations' => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<\\|1234567890абвгдеёжзийклмноп513\r\nhttp://gomer.local/bpm/request/view?id=11&forCrossCheck=0",
                             'reason' => null,
                             'parent_id' => null,

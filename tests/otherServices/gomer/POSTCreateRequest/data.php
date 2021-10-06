@@ -928,7 +928,7 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
-            'interior' => OtherServicesTester::interiorMockArray('request-create', 0),
+            'interior' => OtherServicesTester::interiorMockArray('request-create', 5),
         ],
         'provider_data' => [
             'requestBody' => [
@@ -937,7 +937,7 @@ return [
                 'RequestField[19]' => 1,
                 'Request[amount_to_work]' => 10,
                 'Request[category_id]' => 99, //пропускается потому что направление Маркет
-                'Request[seller_id]' => 0,
+                'Request[seller_id]' => 5,
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[observers]' => [16, 17],
                 'Request[direction]' => 2,
@@ -958,7 +958,7 @@ return [
                             'id' => 1,
                             'author_id' => 1,
                             'type_id' => 2,
-                            'supervisor_id' => 5,
+                            'supervisor_id' => 6,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 2,
@@ -970,7 +970,7 @@ return [
                             'subject' => '[API] Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => null,
-                            'seller_id' => 0,
+                            'seller_id' => 5,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -1098,7 +1098,7 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 5,
+                            'user_id' => 6,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -1158,12 +1158,12 @@ return [
                 ]
             ],
             'RabbitMQ' => [
-//                'lisa_sendOuterNotifications' => [
-//                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-//                ],
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Обновление товаров","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":"10","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                ],
                 'lisa_failedApiRequests' => [],
             ],
         ]
@@ -1420,7 +1420,7 @@ return [
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[observers]' => [16, 17],
                 'Request[direction]' => 2,
-                'Request[seller_id]' => 0,
+                'Request[seller_id]' => 5,
                 'Request[subject]' => 'Перенос товаров (Работа с товарами Маркетплейса)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 3,
@@ -1438,7 +1438,7 @@ return [
                             'id' => 1,
                             'author_id' => 4,
                             'type_id' => 3,
-                            'supervisor_id' => 5,
+                            'supervisor_id' => 6,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 2,
@@ -1450,7 +1450,7 @@ return [
                             'subject' => '[API] Перенос товаров (Работа с товарами Маркетплейса)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => null,
-                            'seller_id' => 0,
+                            'seller_id' => 5,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -1578,7 +1578,7 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 5,
+                            'user_id' => 6,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -1636,15 +1636,15 @@ return [
                         ],
                     ],
                     'exceptions' => [
-//                        [
-//                            'id' => 1,
-//                            'date >=' => date('Y-m-d'),
-//                            'class' => 'yii\\base\\Exception',
-//                            'message' => '',
-//                            'name' => 'Exception',
-//                            'code' => 404,
-//                            'user' => '4',
-//                        ],
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => '4',
+                        ],
                     ]
                 ]
             ],
@@ -2150,7 +2150,7 @@ return [
                 'RequestField[19]' => 1,
                 'Request[amount_to_work]' => 10,
                 'Request[author_login]' => 'kutsan.k',
-                'Request[seller_id]' => 0,
+                'Request[seller_id]' => 72141,
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[observers]' => [16, 17],
                 'Request[direction]' => 2,
@@ -2171,7 +2171,7 @@ return [
                             'id' => 1,
                             'author_id' => 4,
                             'type_id' => 6,
-                            'supervisor_id' => 5,
+                            'supervisor_id' => 10,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 2,
@@ -2183,7 +2183,7 @@ return [
                             'subject' => '[API] Проверка скрытых товаров (Работа с товарами Маркетплейса)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => null,
-                            'seller_id' => 0,
+                            'seller_id' => 72141,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -2311,7 +2311,7 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 5,
+                            'user_id' => 10,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -2369,15 +2369,15 @@ return [
                         ],
                     ],
                     'exceptions' => [
-//                        [
-//                            'id' => 1,
-//                            'date >=' => date('Y-m-d'),
-//                            'class' => 'yii\\base\\Exception',
-//                            'message' => '',
-//                            'name' => 'Exception',
-//                            'code' => 404,
-//                            'user' => '4',
-//                        ],
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\base\\Exception',
+                            'message' => '',
+                            'name' => 'Exception',
+                            'code' => 404,
+                            'user' => '4',
+                        ],
                     ]
                 ]
             ],
@@ -3641,7 +3641,7 @@ return [
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
-                'Request[seller_id]' => 0,
+                'Request[seller_id]' => -2,
                 'Request[subject]' => 'Добавление/изменение видео (Определяется типом задачи)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 13,
@@ -3671,7 +3671,7 @@ return [
                             'subject' => '[API] Добавление/изменение видео (Определяется типом задачи)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                             'category_id' => 1,
-                            'seller_id' => 0,
+                            'seller_id' => -2,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -3816,17 +3816,6 @@ return [
                             'user_id' => 17
                         ],
                     ],
-                    'exceptions' => [
-//                        [
-//                            'id' => 1,
-//                            'date >=' => date('Y-m-d'),
-//                            'class' => 'yii\\base\\Exception',
-//                            'message' => '',
-//                            'name' => 'Exception',
-//                            'code' => 404,
-//                            'user' => 'kutsan.k',
-//                        ],
-                    ]
                 ]
             ],
             'RabbitMQ' => [
@@ -4030,17 +4019,6 @@ return [
                             'user_id' => 17
                         ],
                     ],
-                    'exceptions' => [
-//                        [
-//                            'id' => 1,
-//                            'date >=' => date('Y-m-d'),
-//                            'class' => 'yii\\base\\Exception',
-//                            'message' => '',
-//                            'name' => 'Exception',
-//                            'code' => 404,
-//                            'user' => 'kutsan.k',
-//                        ],
-                    ]
                 ]
             ],
             'RabbitMQ' => [
@@ -5176,17 +5154,6 @@ return [
                             'user_id' => 17
                         ],
                     ],
-                    'exceptions' => [
-//                        [
-//                            'id' => 1,
-//                            'date >=' => date('Y-m-d'),
-//                            'class' => 'yii\\base\\Exception',
-//                            'message' => '',
-//                            'name' => 'Exception',
-//                            'code' => 404,
-//                            'user' => 'kutsan.k',
-//                        ],
-                    ]
                 ]
             ],
             'RabbitMQ' => [
