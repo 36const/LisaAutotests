@@ -30,7 +30,7 @@ return [
             [
                 'id' => 3,
                 'type_id' => 3,
-                'status' => 3,
+                'status' => 1,
                 'author_id' => 1,
                 'direction' => 2,
                 'seller_id' => 83,
