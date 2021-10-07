@@ -7,7 +7,7 @@ return [
         'requests' => (include __DIR__ . '/case.php')['lisa_fixtures']['requests'],
         'requests_fields' => (include __DIR__ . '/case.php')['lisa_fixtures']['requests_fields'],
         'request_status_history' => (include __DIR__ . '/case.php')['lisa_fixtures']['request_status_history'],
-        'report_periods' => [[]],
+        'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
         'request_errors' => [],
         'notification_settings' => [
             [

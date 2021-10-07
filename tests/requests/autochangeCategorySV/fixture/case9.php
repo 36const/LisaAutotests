@@ -49,7 +49,7 @@ return [
             ],
         ],
         'requests_fields' => (include __DIR__ . '/case1.php')['lisa_fixtures']['requests_fields'],
-        'report_periods' => [[]],
+        'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
         'request_errors' => [],
     ],
 ];

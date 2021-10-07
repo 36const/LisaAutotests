@@ -126,7 +126,7 @@ return [
             ],
         ],
         'request_attachments' => [],
-        'report_periods' => [[]],
+        'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
         'request_errors' => [],
         'notification_settings' => [
             [

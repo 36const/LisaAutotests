@@ -37,7 +37,7 @@ return [
                 "team_direction" => 3,
                 "report_period_id" => null,
                 "sync_source_id" => null,
-                "sv_report_periods" => '{"1": 1}',
+                "sv_report_periods" => '{"3": 3}',
                 "cross_check_status" => 1,
                 "cross_check_manager_id" => 12,
                 "previous_status" => 6,

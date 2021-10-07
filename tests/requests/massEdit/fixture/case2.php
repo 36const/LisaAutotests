@@ -1230,7 +1230,7 @@ return [
                 'value' => 0,
             ],
         ],
-        'report_periods' => [[]],
+        'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
         'request_errors' => [],
         'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
     ],

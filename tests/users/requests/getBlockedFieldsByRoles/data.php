@@ -703,7 +703,19 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => '2020-01-01 - 2021-12-31',
+                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                            ],
+                            1 => [
+                                'id' => 2,
+                                'value' => date('Y-m-01', strtotime('-1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month')),
+                            ],
+                            2 => [
+                                'id' => 3,
+                                'value' => date('Y-m-01') . ' - ' . date('Y-m-d'),
+                            ],
+                            3 => [
+                                'id' => 4,
+                                'value' => date('Y-m-d', strtotime('+1 day')) . ' - ' . date('Y-m-d', strtotime('last day of this month')),
                             ],
                         ],
                     ],
@@ -1170,7 +1182,19 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => '2020-01-01 - 2021-12-31',
+                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                            ],
+                            1 => [
+                                'id' => 2,
+                                'value' => date('Y-m-01', strtotime('-1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month')),
+                            ],
+                            2 => [
+                                'id' => 3,
+                                'value' => date('Y-m-01') . ' - ' . date('Y-m-d'),
+                            ],
+                            3 => [
+                                'id' => 4,
+                                'value' => date('Y-m-d', strtotime('+1 day')) . ' - ' . date('Y-m-d', strtotime('last day of this month')),
                             ],
                         ],
                     ],
@@ -2099,7 +2123,19 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => '2020-01-01 - 2021-12-31',
+                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                            ],
+                            1 => [
+                                'id' => 2,
+                                'value' => date('Y-m-01', strtotime('-1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month')),
+                            ],
+                            2 => [
+                                'id' => 3,
+                                'value' => date('Y-m-01') . ' - ' . date('Y-m-d'),
+                            ],
+                            3 => [
+                                'id' => 4,
+                                'value' => date('Y-m-d', strtotime('+1 day')) . ' - ' . date('Y-m-d', strtotime('last day of this month')),
                             ],
                         ],
                     ],

@@ -1,5 +1,7 @@
 <?php
 
+use Codeception\Module\TestHelper;
+
 return [
     'lisa_fixtures' => [
         'requests' => [
@@ -233,7 +235,7 @@ return [
                 'value' => 0,
             ],
         ],
-        'report_periods' => [[]],
+        'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
         'request_errors' => [],
         'request_notes' => [],
     ],
