@@ -25,6 +25,9 @@ return [
                     '9' => true,
                     '10' => true,
                 ]
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -53,6 +56,9 @@ return [
                     '91' => false,
                     '101' => false,
                 ]
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -81,6 +87,9 @@ return [
                     '9' => true,
                     '101' => false,
                 ]
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -100,6 +109,9 @@ return [
                 'errors' => [
                     ' - не число'
                 ]
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -119,6 +131,9 @@ return [
                 'errors' => [
                     'qwer - не число'
                 ]
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -137,6 +152,21 @@ return [
                 'code' => 0,
                 'status' => 400,
                 'type' => "yii\\web\\BadRequestHttpException"
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\web\\BadRequestHttpException',
+                            'message' => 'Отсутствуют обязательные параметры: ids',
+                            'name' => 'Bad Request',
+                            'code' => 0,
+                            'user' => '4',
+                        ]
+                    ]
+                ]
             ]
         ]
     ],

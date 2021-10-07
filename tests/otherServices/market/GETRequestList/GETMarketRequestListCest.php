@@ -33,5 +33,7 @@ class GETMarketRequestListCest
 
         $I->seeResponseCodeIs($providerData['responseCode'] ?? 200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
+
+        $I->checkTablesInDB($providerData['db']);
     }
 }

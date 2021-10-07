@@ -45,6 +45,9 @@ return [
                 'count' => 3,
                 'next_page' => null,
                 'previous_page' => null
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -129,6 +132,9 @@ return [
                 'count' => 7,
                 'next_page' => null,
                 'previous_page' => null
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -177,6 +183,9 @@ return [
                 'count' => 3,
                 'next_page' => null,
                 'previous_page' => null
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -197,6 +206,9 @@ return [
                 'count' => 0,
                 'next_page' => null,
                 'previous_page' => null
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -228,6 +240,9 @@ return [
                 'count' => 1,
                 'next_page' => null,
                 'previous_page' => null
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -304,6 +319,9 @@ return [
                 'count' => 6,
                 'next_page' => null,
                 'previous_page' => null
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -323,6 +341,21 @@ return [
                 'status' => 400,
                 'errors' => [
                     'В переданой строке marketId не найдено ни одного ID.'
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'Exception',
+                            'message' => 'В переданой строке marketId не найдено ни одного ID.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ]
+                    ]
                 ]
             ]
         ]
@@ -344,6 +377,21 @@ return [
                 'errors' => [
                     'В переданой строке marketId не найдено ни одного ID.'
                 ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'Exception',
+                            'message' => 'В переданой строке marketId не найдено ни одного ID.',
+                            'name' => '',
+                            'code' => 0,
+                            'user' => '4',
+                        ]
+                    ]
+                ]
             ]
         ]
     ],
@@ -364,6 +412,21 @@ return [
                 'code' => 0,
                 'status' => 400,
                 'type' => "yii\\web\\BadRequestHttpException",
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\web\\BadRequestHttpException',
+                            'message' => 'Отсутствуют обязательные параметры: marketId',
+                            'name' => 'Bad Request',
+                            'code' => 0,
+                            'user' => '4',
+                        ]
+                    ]
+                ]
             ]
         ]
     ],
@@ -382,6 +445,21 @@ return [
                 'code' => 0,
                 'status' => 400,
                 'type' => "yii\\web\\BadRequestHttpException",
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\web\\BadRequestHttpException',
+                            'message' => 'Отсутствуют обязательные параметры: marketId',
+                            'name' => 'Bad Request',
+                            'code' => 0,
+                            'user' => '4',
+                        ]
+                    ]
+                ]
             ]
         ]
     ],
@@ -1303,6 +1381,9 @@ return [
                 'count' => 250,
                 'next_page' => 2,
                 'previous_page' => null
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -2225,6 +2306,9 @@ return [
                 'count' => 250,
                 'next_page' => 3,
                 'previous_page' => 1
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -2697,6 +2781,9 @@ return [
                 'count' => 250,
                 'next_page' => null,
                 'previous_page' => 2
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -2945,6 +3032,9 @@ return [
                 'count' => 125,
                 'next_page' => null,
                 'previous_page' => 1
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],

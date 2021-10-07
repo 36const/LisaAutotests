@@ -78,8 +78,11 @@ return [
                 'count' => 10,
                 'next_page' => null,
                 'previous_page' => null
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
-        ],
+        ]
     ],
 
     'case2' => [
@@ -98,6 +101,9 @@ return [
                 'count' => 0,
                 'next_page' => null,
                 'previous_page' => null
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -149,6 +155,9 @@ return [
                 'count' => 5,
                 'next_page' => null,
                 'previous_page' => null
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -231,6 +240,9 @@ return [
                 'count' => 10,
                 'next_page' => null,
                 'previous_page' => 1
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ],
     ],
@@ -250,6 +262,9 @@ return [
                 'errors' => [
                     ' - не число'
                 ]
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -269,6 +284,9 @@ return [
                 'errors' => [
                     'qwer - не число'
                 ]
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -287,6 +305,21 @@ return [
                 'code' => 0,
                 'status' => 400,
                 'type' => "yii\\web\\BadRequestHttpException"
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\\web\\BadRequestHttpException',
+                            'message' => 'Отсутствуют обязательные параметры: ids',
+                            'name' => 'Bad Request',
+                            'code' => 0,
+                            'user' => '4',
+                        ]
+                    ]
+                ]
             ]
         ]
     ],
@@ -307,6 +340,9 @@ return [
                 'errors' => [
                     'Параметр page должен быть числом'
                 ]
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -327,6 +363,9 @@ return [
                 'errors' => [
                     'Параметр page должен быть числом'
                 ]
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],

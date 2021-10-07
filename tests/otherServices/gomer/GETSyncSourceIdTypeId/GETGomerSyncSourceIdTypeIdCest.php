@@ -33,6 +33,7 @@ class GETGomerSyncSourceIdTypeIdCest
 
         $I->seeResponseCodeIs($providerData['responseCode']);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
+        
         $I->checkTablesInDB($providerData['db']);
     }
 }

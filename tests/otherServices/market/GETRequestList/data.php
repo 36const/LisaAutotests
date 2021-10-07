@@ -90,6 +90,9 @@ return [
                 'current_page' => 1,
                 'per_page' => 100,
                 'pages_count' => 1,
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -144,6 +147,9 @@ return [
                 'current_page' => 1,
                 'per_page' => 100,
                 'pages_count' => 1,
+            ],
+            'db' => [
+                'lisa_fixtures' => []
             ]
         ]
     ],
@@ -189,6 +195,9 @@ return [
                 'per_page' => 2,
                 'pages_count' => 5,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -234,6 +243,9 @@ return [
                 'per_page' => 2,
                 'pages_count' => 5,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -298,6 +310,9 @@ return [
                 'per_page' => 100,
                 'pages_count' => 1,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -422,6 +437,9 @@ return [
                 'per_page' => 100,
                 'pages_count' => 1,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -497,6 +515,9 @@ return [
                 'per_page' => 5,
                 'pages_count' => 2,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -554,6 +575,9 @@ return [
                 'per_page' => 3,
                 'pages_count' => 3,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -598,6 +622,9 @@ return [
                 'per_page' => 100,
                 'pages_count' => 1,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -653,6 +680,9 @@ return [
                 'per_page' => 100,
                 'pages_count' => 1,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -697,6 +727,9 @@ return [
                 'per_page' => 100,
                 'pages_count' => 1,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -791,6 +824,9 @@ return [
                 'per_page' => 100,
                 'pages_count' => 1,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -856,6 +892,9 @@ return [
                 'per_page' => 4,
                 'pages_count' => 2,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -878,6 +917,9 @@ return [
                     'marketId' => 'В переданой строке marketId не найдено ни одного ID.',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -900,6 +942,9 @@ return [
                     'marketId' => 'В переданой строке marketId не найдено ни одного ID.',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -920,6 +965,9 @@ return [
                     'marketId' => 'В переданой строке marketId не найдено ни одного ID.',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -942,6 +990,9 @@ return [
                     'page' => 'Не валидный параметр page:\'asdf\'',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -968,6 +1019,9 @@ return [
                 'per_page' => 5,
                 'pages_count' => 2,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -990,6 +1044,9 @@ return [
                     'perPage' => 'Не валидный параметр perPage:\'adsf\'',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -1012,6 +1069,9 @@ return [
                     'perPage' => 'Не валидный параметр perPage:\'501\'',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -1034,6 +1094,9 @@ return [
                     'sort' => 'Не валидный параметр сортировки: \' -id\'',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -1056,6 +1119,9 @@ return [
                     'status' => 'Не валидные параметры в поле status:\' asdf+_)(*^&%^%#$#!~}{:>?><Mэ \'',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -1078,6 +1144,9 @@ return [
                     'status' => 'Не валидные параметры в поле status:\'10\'',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -1097,6 +1166,9 @@ return [
                     'requestId' => 'В переданой строке requestId не найдено ни одного ID.',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -1121,6 +1193,9 @@ return [
                 'status' => 200,
                 'total_count' => 0,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -1141,6 +1216,9 @@ return [
                     'typeId' => 'В переданой строке typeId не найдено ни одного ID.',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -1165,6 +1243,9 @@ return [
                 'status' => 200,
                 'total_count' => 0,
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
@@ -1187,6 +1268,9 @@ return [
                     'sideUserId' => 'В переданой строке sideUserId не найдено ни одного ID.',
                 ]
             ],
+            'db' => [
+                'lisa_fixtures' => []
+            ]
         ]
     ],
 
