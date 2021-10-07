@@ -10,9 +10,9 @@ use Codeception\Module\TestHelper;
  * @group lisa_api
  * @group lisa_api_settings
  * @group lisa_api_crossCheckFilter
- * @group PUTCrossCheckFilterUpdate
+ * @group GETCrossCheckFilterList
  */
-class PUTCrossCheckFilterUpdateCest
+class GETCrossCheckFilterListCest
 {
     protected function pageProvider(): array
     {
@@ -25,18 +25,14 @@ class PUTCrossCheckFilterUpdateCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function PUTCrossCheckFilterUpdate(SettingsTester $I, Example $data)
+    public function GETCrossCheckFilterList(SettingsTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->loadDataForRedis();
+        $I->sendGET('/cross-check-filter/get-model/' . $providerData['team_id']);
 
-        $I->sendPUT('/cross-check-filter/update/1', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
-
-        $I->checkRedis($providerData['excludedRedisKeys'] ?? null);
-        $I->checkTablesInDB($providerData['db']);
     }
 }
