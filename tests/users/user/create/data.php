@@ -588,6 +588,11 @@ return [
                                 'user_id' => 5,
                                 'created_at >=' => date('Y-m-d')
                             ],
+                            [
+                                'item_name' => 'seeHiddenCrossCheckFields',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
                         ]
                     ),
                     'notification_settings' => [
@@ -832,6 +837,11 @@ return [
                             ],
                             [
                                 'item_name' => 'viewTeamRequestsMrk',
+                                'user_id' => 5,
+                                'created_at >=' => date('Y-m-d')
+                            ],
+                            [
+                                'item_name' => 'seeHiddenCrossCheckFields',
                                 'user_id' => 5,
                                 'created_at >=' => date('Y-m-d')
                             ],
@@ -1481,7 +1491,12 @@ return [
                                 'item_name' => 'viewUser',
                                 'created_at >=' => date('Y-m-d'),
                                 'user_id' => 5
-                            ]
+                            ],
+                            [
+                                'item_name' => 'seeHiddenCrossCheckFields',
+                                'created_at >=' => date('Y-m-d'),
+                                'user_id' => 5
+                            ],
                         ]
                     ),
                     'notification_settings' => [

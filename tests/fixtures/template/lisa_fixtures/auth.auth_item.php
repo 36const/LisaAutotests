@@ -1981,4 +1981,15 @@ return [
         'updated_at' => NULL,
         'project_id' => 2,
     ],
+    [
+        'name' => 'seeHiddenCrossCheckFields',
+        'type' => 2,
+        'description' => 'Просмотр полей, скрытых для кросс-чека',
+        'group' => 'requestManagement',
+        'rule_name' => NULL,
+        'data' => NULL,
+        'created_at' => '2021-08-26 08:26:56',
+        'updated_at' => NULL,
+        'project_id' => 1,
+    ],
 ];

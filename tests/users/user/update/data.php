@@ -5131,7 +5131,8 @@ return [
                 'positions' => [
                     0 => 'admin',
                 ],
-                'permissions' => ['blockUser',
+                'permissions' => [
+                    'blockUser',
                     'categoryUpdate',
                     'coefUpdate',
                     'createUser',
@@ -5298,6 +5299,7 @@ return [
                     'viewAllRequestsMrk',
                     'viewOwnRequestsMrk',
                     'viewTeamRequestsMrk',
+                    'seeHiddenCrossCheckFields',
                 ],
             ],
             'responseBody' => [
@@ -5401,7 +5403,8 @@ return [
                 'positions' => [
                     0 => 'admin',
                 ],
-                'permissions' => ['blockUser',
+                'permissions' => [
+                    'blockUser',
                     'categoryUpdate',
                     'coefUpdate',
                     'createUser',
@@ -5568,6 +5571,7 @@ return [
                     'viewAllRequestsMrk',
                     'viewOwnRequestsMrk',
                     'viewTeamRequestsMrk',
+                    'seeHiddenCrossCheckFields',
                 ],
             ],
             'responseBody' => [

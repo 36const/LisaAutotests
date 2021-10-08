@@ -5,7 +5,7 @@ use Codeception\Module\TestHelper;
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Групповое изменение роли Контента на другую роль Контента',
+            'description' => 'Групповое изменение пользователям роли Контента на другую роль Контента',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -530,6 +530,11 @@ return [
                             'user_id' => 1
                         ],
                         [
+                            'item_name' => 'seeHiddenCrossCheckFields',
+                            'created_at' => '2021-04-04 13:27:59',
+                            'user_id' => 1,
+                        ],
+                        [
                             'item_name' => 'blockUser',
                             'created_at' => '2021-04-04 13:27:58',
                             'user_id' => 2
@@ -890,6 +895,16 @@ return [
                             'user_id' => 2
                         ],
                         [
+                            'item_name' => 'viewUser',
+                            'created_at' => '2021-04-04 13:27:59',
+                            'user_id' => 2
+                        ],
+                        [
+                            'item_name' => 'seeHiddenCrossCheckFields',
+                            'created_at' => '2021-04-04 13:27:59',
+                            'user_id' => 2,
+                        ],
+                        [
                             'item_name' => 'blockUser',
                             'user_id' => 4,
                             'created_at' => null
@@ -1240,9 +1255,9 @@ return [
                             'created_at' => null
                         ],
                         [
-                            'item_name' => 'viewUser',
+                            'item_name' => 'seeHiddenCrossCheckFields',
                             'created_at' => '2021-04-04 13:27:59',
-                            'user_id' => 2
+                            'user_id' => 4,
                         ],
                         [
                             'item_name' => 'blockUser',
@@ -1503,6 +1518,11 @@ return [
                             'item_name' => 'viewUser',
                             'created_at' => '2021-04-04 13:31:19',
                             'user_id' => 5
+                        ],
+                        [
+                            'item_name' => 'seeHiddenCrossCheckFields',
+                            'created_at' => '2021-04-04 13:27:59',
+                            'user_id' => 5,
                         ],
                         [
                             'created_at >=' => date('Y-m-d'),
@@ -2137,7 +2157,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Групповое добавление роли Маркета',
+            'description' => 'Групповое добавление пользователям роли Маркета',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2589,6 +2609,11 @@ return [
                                 'created_at >=' => date('Y-m-d'),
                             ],
                             [
+                                'item_name' => 'seeHiddenCrossCheckFields',
+                                'user_id' => 6,
+                                'created_at >=' => date('Y-m-d'),
+                            ],
+                            [
                                 'item_name' => 'commentRequestMrk',
                                 'user_id' => 8,
                                 'created_at >=' => date('Y-m-d'),
@@ -2879,6 +2904,11 @@ return [
                                 'created_at >=' => date('Y-m-d'),
                             ],
                             [
+                                'item_name' => 'seeHiddenCrossCheckFields',
+                                'user_id' => 8,
+                                'created_at >=' => date('Y-m-d'),
+                            ],
+                            [
                                 'item_name' => 'commentRequestMrk',
                                 'user_id' => 9,
                                 'created_at >=' => date('Y-m-d'),
@@ -3165,6 +3195,11 @@ return [
                             ],
                             [
                                 'item_name' => 'viewUser',
+                                'user_id' => 9,
+                                'created_at >=' => date('Y-m-d'),
+                            ],
+                            [
+                                'item_name' => 'seeHiddenCrossCheckFields',
                                 'user_id' => 9,
                                 'created_at >=' => date('Y-m-d'),
                             ],
@@ -3805,6 +3840,17 @@ return [
                             'changer_id' => 4,
                             'changer_login' => 'kutsan.k',
                             'changed_field' => 'commentRequestMrk',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d'),
+                        ],
+                        [
+                            //'id' => 58,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'seeHiddenCrossCheckFields',
                             'old_value' => '0',
                             'new_value' => '1',
                             'date >=' => date('Y-m-d'),
@@ -4454,6 +4500,17 @@ return [
                             'changer_id' => 4,
                             'changer_login' => 'kutsan.k',
                             'changed_field' => 'commentRequestMrk',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d'),
+                        ],
+                        [
+                            //'id' => 58,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'seeHiddenCrossCheckFields',
                             'old_value' => '0',
                             'new_value' => '1',
                             'date >=' => date('Y-m-d'),
@@ -5108,6 +5165,17 @@ return [
                             'date >=' => date('Y-m-d'),
                         ],
                         [
+                            //'id' => 58,
+                            'changed_user_id' => 9,
+                            'changed_user_login' => 'bpm_supervisor_16',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'seeHiddenCrossCheckFields',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d'),
+                        ],
+                        [
                             //'id' => 177,
                             'changed_user_id' => 9,
                             'changed_user_login' => 'bpm_supervisor_16',
@@ -5140,7 +5208,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Групповое изменение роли Контента на роль Все',
+            'description' => 'Групповое изменение пользователям роли Контента на роль Все',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -5577,6 +5645,11 @@ return [
                                 'created_at >=' => date('Y-m-d'),
                             ],
                             [
+                                'item_name' => 'seeHiddenCrossCheckFields',
+                                'user_id' => 6,
+                                'created_at >=' => date('Y-m-d'),
+                            ],
+                            [
                                 'item_name' => 'blockUser',
                                 'user_id' => 8,
                                 'created_at >=' => date('Y-m-d'),
@@ -5852,6 +5925,11 @@ return [
                                 'created_at >=' => date('Y-m-d'),
                             ],
                             [
+                                'item_name' => 'seeHiddenCrossCheckFields',
+                                'user_id' => 8,
+                                'created_at >=' => date('Y-m-d'),
+                            ],
+                            [
                                 'item_name' => 'blockUser',
                                 'user_id' => 9,
                                 'created_at >=' => date('Y-m-d'),
@@ -6123,6 +6201,11 @@ return [
                             ],
                             [
                                 'item_name' => 'viewUser',
+                                'user_id' => 9,
+                                'created_at >=' => date('Y-m-d'),
+                            ],
+                            [
+                                'item_name' => 'seeHiddenCrossCheckFields',
                                 'user_id' => 9,
                                 'created_at >=' => date('Y-m-d'),
                             ],
@@ -6730,6 +6813,17 @@ return [
                             'changer_id' => 4,
                             'changer_login' => 'kutsan.k',
                             'changed_field' => 'viewUser',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d'),
+                        ],
+                        [
+                            //'id' => 55,
+                            'changed_user_id' => 6,
+                            'changed_user_login' => 'bpm_supervisor_1',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'seeHiddenCrossCheckFields',
                             'old_value' => '0',
                             'new_value' => '1',
                             'date >=' => date('Y-m-d'),
@@ -7351,6 +7445,17 @@ return [
                             'date >=' => date('Y-m-d'),
                         ],
                         [
+                            //'id' => 55,
+                            'changed_user_id' => 8,
+                            'changed_user_login' => 'bpm_supervisor_13',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'seeHiddenCrossCheckFields',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d'),
+                        ],
+                        [
                             //'id' => 112,
                             'changed_user_id' => 8,
                             'changed_user_login' => 'bpm_supervisor_13',
@@ -7962,6 +8067,17 @@ return [
                             'changer_id' => 4,
                             'changer_login' => 'kutsan.k',
                             'changed_field' => 'viewUser',
+                            'old_value' => '0',
+                            'new_value' => '1',
+                            'date >=' => date('Y-m-d'),
+                        ],
+                        [
+                            //'id' => 55,
+                            'changed_user_id' => 9,
+                            'changed_user_login' => 'bpm_supervisor_16',
+                            'changer_id' => 4,
+                            'changer_login' => 'kutsan.k',
+                            'changed_field' => 'seeHiddenCrossCheckFields',
                             'old_value' => '0',
                             'new_value' => '1',
                             'date >=' => date('Y-m-d'),

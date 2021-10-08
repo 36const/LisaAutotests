@@ -336,10 +336,11 @@ class Constants
                 ],
                 [
                     'requestViewDirectionRequests' => 'Просмотр заявок своего направления (Контент)',
+                    'seeHiddenCrossCheckFields' => 'Просмотр полей, скрытых для кросс-чека (Контент)',
                     'requestViewOwnRequests' => 'Просмотр своих заявок (Контент)',
-                    'requestCreate' => 'Создание задач (Контент)',
                 ],
                 [
+                    'requestCreate' => 'Создание задач (Контент)',
                     'requestCreateRelated' => 'Создание подзадач (Контент)',
                     'requestDeleteAttachments' => 'Удаление вложеных файлов (Контент)',
                 ],
@@ -498,10 +499,11 @@ class Constants
                 ],
                 [
                     'requestViewDirectionRequests' => 'Просмотр заявок своего направления',
+                    'seeHiddenCrossCheckFields' => 'Просмотр полей, скрытых для кросс-чека',
                     'requestViewOwnRequests' => 'Просмотр своих заявок',
-                    'requestCreate' => 'Создание задач',
                 ],
                 [
+                    'requestCreate' => 'Создание задач',
                     'requestCreateRelated' => 'Создание подзадач',
                     'requestDeleteAttachments' => 'Удаление вложеных файлов',
                 ],

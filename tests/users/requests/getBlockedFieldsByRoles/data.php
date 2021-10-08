@@ -85,6 +85,7 @@ return [
                         ],
                         'userTeam' => 1,
                         'url' => '/user/managers',
+                        'visible' => true,
                         'disabled' => true,
                     ],
                     'cross_check_status' => 'Не прошла кросс-чек',
@@ -851,12 +852,17 @@ return [
                     ],
                     'cross_check_manager_id' => [
                         'initValue' => [
+                            0 => [
+                                'id' => 0,
+                                'name' => 'Кросс-чек менеджер скрыт',
+                            ],
                         ],
                         'userTeam' => 1,
                         'url' => '/user/managers',
                         'disabled' => true,
+                        'visible' => false,
                     ],
-                    'cross_check_status' => 'Не прошла кросс-чек',
+                    'cross_check_status' => 'На кросс-чеке',
                     'seller_id' => [
                         'disabled' => true,
                         'initValue' => [
@@ -1258,6 +1264,10 @@ return [
                     ],
                     'manager_id' => [
                         'initValue' => [
+                            0 => [
+                                'id' => 3,
+                                'name' => 'Гость',
+                            ],
                         ],
                         'userTeam' => 18,
                         'url' => '/user/managers',
@@ -1291,12 +1301,17 @@ return [
                     ],
                     'cross_check_manager_id' => [
                         'initValue' => [
+                            0 => [
+                                'id' => 1,
+                                'name' => 'Система',
+                            ],
                         ],
                         'userTeam' => 18,
                         'url' => '/user/managers',
                         'disabled' => true,
+                        'visible' => true,
                     ],
-                    'cross_check_status' => 'Не прошла кросс-чек',
+                    'cross_check_status' => 'На кросс-чеке',
                     'seller_id' => [
                         'disabled' => false,
                         'initValue' => [
@@ -1670,6 +1685,10 @@ return [
                     ],
                     'manager_id' => [
                         'initValue' => [
+                            0 => [
+                                'id' => 2,
+                                'name' => 'Администратор',
+                            ],
                         ],
                         'userTeam' => 1,
                         'url' => '/user/managers',
@@ -1701,12 +1720,17 @@ return [
                     ],
                     'cross_check_manager_id' => [
                         'initValue' => [
+                            0 => [
+                                'id' => 3,
+                                'name' => 'Гость',
+                            ],
                         ],
                         'userTeam' => 1,
                         'url' => '/user/managers',
                         'disabled' => true,
+                        'visible' => true,
                     ],
-                    'cross_check_status' => 'Не прошла кросс-чек',
+                    'cross_check_status' => 'Кросс-чек пройден',
                     'seller_id' => [
                         'disabled' => true,
                         'initValue' => [

@@ -509,6 +509,11 @@ return [
                 'user_id' => 1
             ],
             [
+                'item_name' => 'seeHiddenCrossCheckFields',
+                'created_at' => '2021-04-04 13:27:59',
+                'user_id' => 1,
+            ],
+            [
                 'item_name' => 'blockUser',
                 'created_at' => '2021-04-04 13:27:58',
                 'user_id' => 2
@@ -869,6 +874,16 @@ return [
                 'user_id' => 2
             ],
             [
+                'item_name' => 'viewUser',
+                'created_at' => '2021-04-04 13:27:59',
+                'user_id' => 2
+            ],
+            [
+                'item_name' => 'seeHiddenCrossCheckFields',
+                'created_at' => '2021-04-04 13:27:59',
+                'user_id' => 2,
+            ],
+            [
                 'item_name' => 'blockUser',
                 'user_id' => 4,
                 'created_at' => null
@@ -1219,9 +1234,9 @@ return [
                 'created_at' => null
             ],
             [
-                'item_name' => 'viewUser',
+                'item_name' => 'seeHiddenCrossCheckFields',
                 'created_at' => '2021-04-04 13:27:59',
-                'user_id' => 2
+                'user_id' => 4,
             ],
             [
                 'item_name' => 'blockUser',
@@ -1482,7 +1497,12 @@ return [
                 'item_name' => 'viewUser',
                 'created_at' => '2021-04-04 13:31:19',
                 'user_id' => 5
-            ]
+            ],
+            [
+                'item_name' => 'seeHiddenCrossCheckFields',
+                'created_at' => '2021-04-04 13:27:59',
+                'user_id' => 5,
+            ],
         ],
         'auth.user_changing_history' => [],
     ],

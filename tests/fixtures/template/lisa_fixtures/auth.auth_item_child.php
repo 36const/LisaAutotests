@@ -298,6 +298,10 @@ return [
         'child' => 'viewUser'
     ],
     [
+        'parent' => 'admin',
+        'child' => 'seeHiddenCrossCheckFields'
+    ],
+    [
         'parent' => 'contentManager',
         'child' => 'reportView'
     ],
@@ -558,6 +562,10 @@ return [
         'child' => 'viewUser'
     ],
     [
+        'parent' => 'headSupervisor',
+        'child' => 'seeHiddenCrossCheckFields'
+    ],
+    [
         'parent' => 'moderator',
         'child' => 'viewSplitterModerationRequests'
     ],
@@ -672,6 +680,10 @@ return [
     [
         'parent' => 'productManager',
         'child' => 'transferRequireChangeToWaitCheck'
+    ],
+    [
+        'parent' => 'productManager',
+        'child' => 'seeHiddenCrossCheckFields'
     ],
     [
         'parent' => 'seo',
@@ -922,6 +934,10 @@ return [
         'child' => 'viewUser'
     ],
     [
+        'parent' => 'supervisor',
+        'child' => 'seeHiddenCrossCheckFields'
+    ],
+    [
         'parent' => 'system',
         'child' => 'seeAllTemplates'
     ],
@@ -944,6 +960,10 @@ return [
     [
         'parent' => 'system',
         'child' => 'updateTemplates'
+    ],
+    [
+        'parent' => 'system',
+        'child' => 'seeHiddenCrossCheckFields'
     ],
     [
         'parent' => 'teamLead',
@@ -1032,6 +1052,10 @@ return [
     [
         'parent' => 'teamLead',
         'child' => 'viewSplitterModerationRequests'
+    ],
+    [
+        'parent' => 'teamLead',
+        'child' => 'seeHiddenCrossCheckFields'
     ],
     [
         'parent' => 'marketolog',

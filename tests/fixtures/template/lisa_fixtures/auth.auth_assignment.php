@@ -589,6 +589,10 @@ return [
         'item_name' => 'transferWaitWorkToWaitCheck',
         'user_id' => 1,
     ],
+    [
+        'item_name' => 'seeHiddenCrossCheckFields',
+        'user_id' => 1,
+    ],
 
     [
         'item_name' => 'updateUser',
@@ -1260,6 +1264,10 @@ return [
     ],
     [
         'item_name' => 'commentRequestMrk',
+        'user_id' => 4,
+    ],
+    [
+        'item_name' => 'seeHiddenCrossCheckFields',
         'user_id' => 4,
     ],
 

@@ -10,6 +10,7 @@ $changed_field = [
     'errorsUpdate' => 'Редактирование истории ошибок',
     'updateUser' => 'Изменение пользователей',
     'viewUser' => 'Просмотр пользователей',
+    'seeHiddenCrossCheckFields' => 'Просмотр полей, скрытых для кросс-чека',
     'reportLoadAllUsers' => 'Выгрузка отчетов по всем пользователям',
     'reportLoadMarketUsers' => 'Выгрузка отчетов по пользователям направления Маркетплейс',
     'reportLoadYourTeam' => 'Выгрузка отчетов по своей комманде',

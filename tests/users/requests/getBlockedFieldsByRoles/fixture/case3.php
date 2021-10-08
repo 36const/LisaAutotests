@@ -10,7 +10,7 @@ return [
                 'author_id' => 4,
                 'type_id' => 4,
                 'supervisor_id' => 2,
-                'manager_id' => null,
+                'manager_id' => 3,
                 'status' => 3,
                 'direction' => 0,
                 'priority' => 2,
@@ -38,8 +38,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
-                'cross_check_status' => 0,
-                'cross_check_manager_id' => null,
+                'cross_check_status' => 1,
+                'cross_check_manager_id' => 1,
                 'employee_code_1c' => null,
                 'child_count' => 0,
                 'rz_category_id' => 753399,
@@ -254,6 +254,11 @@ return [
                 'created_at' => null,
                 'user_id' => 4,
                 'item_name' => 'transferRequireChangeToWaitCheck'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'seeHiddenCrossCheckFields'
             ],
         ]
     ],
