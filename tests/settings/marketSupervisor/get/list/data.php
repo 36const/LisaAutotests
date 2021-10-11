@@ -29,43 +29,43 @@ return [
                             'owox_id' => 5,
                             'supervisor_id' => 'Супервайзер Начальникович 1',
                             'title' => 'Rozetka',
-                            'status' => NULL,
+                            'status' => 'Подготовительный',
                         ],
                         3 => [
                             'owox_id' => 83,
                             'supervisor_id' => 'Супервайзер Начальникович 1',
                             'title' => 'Euromart',
-                            'status' => 6,
+                            'status' => 'Активный',
                         ],
                         4 => [
                             'owox_id' => 9423,
                             'supervisor_id' => 'Супервайзер Начальникович 2',
                             'title' => 'anytech',
-                            'status' => 6,
+                            'status' => 'Активный',
                         ],
                         5 => [
                             'owox_id' => 67757,
                             'supervisor_id' => 'Супервайзер Начальникович 2',
                             'title' => 'iTook',
-                            'status' => 3,
+                            'status' => 'Заблокирован',
                         ],
                         6 => [
                             'owox_id' => 72141,
                             'supervisor_id' => 'Супервайзер Начальникович 2',
                             'title' => 'Rozetka.md',
-                            'status' => 3
+                            'status' => 'Приостановлен',
                         ],
                         7 => [
                             'owox_id' => 128603,
                             'supervisor_id' => 'Супервайзер Начальникович 2',
                             'title' => 'RozetkaEU',
-                            'status' => 3
+                            'status' => 'Верифицирован',
                         ],
                         8 => [
                             'owox_id' => 124276,
                             'supervisor_id' => 'Супервайзер Начальникович 2',
                             'title' => 'Rozetka.uz',
-                            'status' => 3
+                            'status' => 'Проблемный',
                         ],
                     ],
                     '_links' => [
@@ -89,6 +89,16 @@ return [
                 'filters' => [
                 ],
                 'initialValues' => [
+                    'statusNames' => [
+                        0 => 'Активный',
+                        1 => 'Верифицирован',
+                        2 => 'Заблокирован',
+                        3 => 'Отключен',
+                        4 => 'Подготовительный',
+                        5 => 'Приостановлен',
+                        6 => 'Проблемный',
+                        7 => 'Требует Верификации',
+                    ],
                     'userNames' => Constants::USER_NAMES
                 ]
             ]
@@ -143,6 +153,16 @@ return [
                     'supervisor_id' => '5',
                 ],
                 'initialValues' => [
+                    'statusNames' => [
+                        0 => 'Активный',
+                        1 => 'Верифицирован',
+                        2 => 'Заблокирован',
+                        3 => 'Отключен',
+                        4 => 'Подготовительный',
+                        5 => 'Приостановлен',
+                        6 => 'Проблемный',
+                        7 => 'Требует Верификации',
+                    ],
                     'userNames' => Constants::USER_NAMES
                 ]
             ],
@@ -167,31 +187,31 @@ return [
                             'owox_id' => 67757,
                             'supervisor_id' => 'Супервайзер Начальникович 2',
                             'title' => 'iTook',
-                            'status' => 3,
+                            'status' => 'Заблокирован',
                         ],
                         1 => [
                             'owox_id' => 9423,
                             'supervisor_id' => 'Супервайзер Начальникович 2',
                             'title' => 'anytech',
-                            'status' => 6,
+                            'status' => 'Активный',
                         ],
                         2 => [
                             'owox_id' => 72141,
                             'supervisor_id' => 'Супервайзер Начальникович 2',
                             'title' => 'Rozetka.md',
-                            'status' => 3
+                            'status' => 'Приостановлен',
                         ],
                         3 => [
                             'owox_id' => 128603,
                             'supervisor_id' => 'Супервайзер Начальникович 2',
                             'title' => 'RozetkaEU',
-                            'status' => 3
+                            'status' => 'Верифицирован',
                         ],
                         4 => [
                             'owox_id' => 124276,
                             'supervisor_id' => 'Супервайзер Начальникович 2',
                             'title' => 'Rozetka.uz',
-                            'status' => 3
+                            'status' => 'Проблемный',
                         ],
                     ],
                     '_links' => [
@@ -217,6 +237,80 @@ return [
                     'supervisor_id' => '10',
                 ],
                 'initialValues' => [
+                    'statusNames' => [
+                        0 => 'Активный',
+                        1 => 'Верифицирован',
+                        2 => 'Заблокирован',
+                        3 => 'Отключен',
+                        4 => 'Подготовительный',
+                        5 => 'Приостановлен',
+                        6 => 'Проблемный',
+                        7 => 'Требует Верификации',
+                    ],
+                    'userNames' => Constants::USER_NAMES
+                ]
+            ],
+        ]
+    ],
+
+    'case4' => [
+        'setting' => [
+            'description' => 'Получить список магазинов с сортировкой по супервайзеру и фильтром по статусу',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'filter[status]' => 6,
+                'sort' => 'supervisor_id',
+            ],
+            'responseBody' => [
+                'data' => [
+                    'models' => [
+                        0 => [
+                            'owox_id' => 83,
+                            'supervisor_id' => 'Супервайзер Начальникович 1',
+                            'title' => 'Euromart',
+                            'status' => 'Активный',
+                        ],
+                        1 => [
+                            'owox_id' => 9423,
+                            'supervisor_id' => 'Супервайзер Начальникович 2',
+                            'title' => 'anytech',
+                            'status' => 'Активный',
+                        ],
+                    ],
+                    '_links' => [
+                        'self' => [
+                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Bstatus%5D=6&sort=supervisor_id&page=1',
+                        ],
+                        'first' => [
+                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Bstatus%5D=6&sort=supervisor_id&page=1',
+                        ],
+                        'last' => [
+                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Bstatus%5D=6&sort=supervisor_id&page=1',
+                        ],
+                    ],
+                    '_meta' => [
+                        'totalCount' => 2,
+                        'pageCount' => 1,
+                        'currentPage' => 1,
+                        'perPage' => 20,
+                    ],
+                ],
+                'filters' => [
+                    'status' => '6',
+                ],
+                'initialValues' => [
+                    'statusNames' => [
+                        0 => 'Активный',
+                        1 => 'Верифицирован',
+                        2 => 'Заблокирован',
+                        3 => 'Отключен',
+                        4 => 'Подготовительный',
+                        5 => 'Приостановлен',
+                        6 => 'Проблемный',
+                        7 => 'Требует Верификации',
+                    ],
                     'userNames' => Constants::USER_NAMES
                 ]
             ],
