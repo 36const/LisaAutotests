@@ -271,7 +271,7 @@ return [
                     'resultFieldsOrder' => [],
                     'requestResult' => [
                         'inputs' => [
-                            66 => [
+                            0 => [
                                 'id' => 66,
                                 'name' => 'Количество добавленных товаров',
                                 'type' => 'integer',
@@ -279,7 +279,7 @@ return [
                                 'disabled' => false,
                                 'required' => true,
                             ],
-                            69 => [
+                            1 => [
                                 'id' => 69,
                                 'name' => 'Общее количество обработанных фото',
                                 'type' => 'integer',
@@ -287,7 +287,7 @@ return [
                                 'disabled' => false,
                                 'required' => true,
                             ],
-                            68 => [
+                            2 => [
                                 'id' => 68,
                                 'name' => 'Среднее количество фото в товаре',
                                 'type' => 'integer',
@@ -295,56 +295,56 @@ return [
                                 'disabled' => false,
                                 'required' => true,
                             ],
-                            111 => [
+                            3 => [
                                 'id' => 111,
                                 'name' => 'Количество товаров, которые уже есть в БД',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            71 => [
+                            4 => [
                                 'id' => 71,
                                 'name' => 'Количество добавленных инструкций',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            70 => [
+                            5 => [
                                 'id' => 70,
                                 'name' => 'Количество добавленных видеороликов',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            88 => [
+                            6 => [
                                 'id' => 88,
                                 'name' => 'Количество товаров, к которым добавлены видео',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            93 => [
+                            7 => [
                                 'id' => 93,
                                 'name' => 'Количество обработанных групп',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            94 => [
+                            8 => [
                                 'id' => 94,
                                 'name' => 'Количество сгруппированых товаров',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            76 => [
+                            9 => [
                                 'id' => 76,
                                 'name' => 'Добавлено новых СЦ',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            77 => [
+                            10 => [
                                 'id' => 77,
                                 'name' => 'Изменено существующих СЦ',
                                 'type' => 'integer',
@@ -353,7 +353,7 @@ return [
                             ],
                         ],
                         'selects' => [
-                            21 => [
+                            0 => [
                                 'id' => 21,
                                 'name' => 'Наличие характеристик к товарам',
                                 'type' => 'select',
@@ -388,7 +388,7 @@ return [
                                     ],
                                 ],
                             ],
-                            23 => [
+                            1 => [
                                 'id' => 23,
                                 'name' => 'Наличие описаний к товарам',
                                 'type' => 'select',
@@ -418,7 +418,7 @@ return [
                                     ],
                                 ],
                             ],
-                            22 => [
+                            2 => [
                                 'id' => 22,
                                 'name' => 'Наличие фото к товарам',
                                 'type' => 'select',
@@ -453,7 +453,7 @@ return [
                                     ],
                                 ],
                             ],
-                            26 => [
+                            3 => [
                                 'id' => 26,
                                 'name' => 'Язык информации',
                                 'type' => 'select',
@@ -478,7 +478,7 @@ return [
                                     ],
                                 ],
                             ],
-                            24 => [
+                            4 => [
                                 'id' => 24,
                                 'name' => 'Обработка фото',
                                 'type' => 'select',
@@ -502,7 +502,7 @@ return [
                                     ],
                                 ],
                             ],
-                            27 => [
+                            5 => [
                                 'id' => 27,
                                 'name' => 'Видео к товарам',
                                 'type' => 'select',
@@ -526,7 +526,7 @@ return [
                                     ],
                                 ],
                             ],
-                            31 => [
+                            6 => [
                                 'id' => 31,
                                 'name' => 'Группировка товаров (наличие варьируемых параметров)',
                                 'type' => 'select',
@@ -555,7 +555,7 @@ return [
                                     ],
                                 ],
                             ],
-                            25 => [
+                            7 => [
                                 'id' => 25,
                                 'name' => 'Уточнения. Количество уточнений у автора.',
                                 'type' => 'select',
@@ -1146,7 +1146,7 @@ return [
                     'resultFieldsOrder' => [],
                     'requestResult' => [
                         'inputs' => [
-                            67 => [
+                            0 => [
                                 'id' => 67,
                                 'name' => 'Количество изменённых товаров',
                                 'type' => 'integer',
@@ -1154,42 +1154,42 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            72 => [
+                            1 => [
                                 'id' => 72,
                                 'name' => 'Количество скрытых товаров',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
                             ],
-                            73 => [
+                            2 => [
                                 'id' => 73,
                                 'name' => 'Количество связанных категорий',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
                             ],
-                            93 => [
+                            3 => [
                                 'id' => 93,
                                 'name' => 'Количество обработанных групп',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
                             ],
-                            94 => [
+                            4 => [
                                 'id' => 94,
                                 'name' => 'Количество сгруппированых товаров',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
                             ],
-                            74 => [
+                            5 => [
                                 'id' => 74,
                                 'name' => 'Количество связанных параметров',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
                             ],
-                            75 => [
+                            6 => [
                                 'id' => 75,
                                 'name' => 'Количество связанных значений параметров',
                                 'type' => 'integer',
@@ -1198,7 +1198,7 @@ return [
                             ],
                         ],
                         'selects' => [
-                            25 => [
+                            0 => [
                                 'id' => 25,
                                 'name' => 'Уточнения. Количество уточнений у автора.',
                                 'type' => 'select',
@@ -2154,7 +2154,7 @@ return [
                     'resultFieldsOrder' => [],
                     'requestResult' => [
                         'inputs' => [
-                            115 => [
+                            0 => [
                                 'id' => 115,
                                 'name' => 'Количество добавленных категорий',
                                 'type' => 'integer',
@@ -2162,7 +2162,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            79 => [
+                            1 => [
                                 'id' => 79,
                                 'name' => 'Количество добавленных/заблокированных параметров',
                                 'type' => 'integer',
@@ -2170,7 +2170,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            80 => [
+                            2 => [
                                 'id' => 80,
                                 'name' => 'Количество добавленных значений к параметрам',
                                 'type' => 'integer',
@@ -2178,7 +2178,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            90 => [
+                            3 => [
                                 'id' => 90,
                                 'name' => 'Количество заполненных параметров в товарах при изменении структуры категории',
                                 'type' => 'integer',
@@ -2186,7 +2186,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            113 => [
+                            4 => [
                                 'id' => 113,
                                 'name' => 'Перевязано опций',
                                 'type' => 'integer',
@@ -2194,7 +2194,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            85 => [
+                            5 => [
                                 'id' => 85,
                                 'name' => 'Отправлено файлов продакту на заполнение',
                                 'type' => 'integer',
@@ -2202,7 +2202,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            97 => [
+                            6 => [
                                 'id' => 97,
                                 'name' => 'Количество измененных товаров (Splitter)',
                                 'type' => 'integer',
@@ -2210,7 +2210,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            98 => [
+                            7 => [
                                 'id' => 98,
                                 'name' => 'Количество измененных товаров (пакетно в Owox)',
                                 'type' => 'integer',
@@ -2218,7 +2218,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            99 => [
+                            8 => [
                                 'id' => 99,
                                 'name' => 'Количество измененных товаров (поштучно в Owox)',
                                 'type' => 'integer',
@@ -2226,7 +2226,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            84 => [
+                            9 => [
                                 'id' => 84,
                                 'name' => 'Количество настроенных редиректов',
                                 'type' => 'integer',
@@ -2234,7 +2234,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            112 => [
+                            10 => [
                                 'id' => 112,
                                 'name' => 'Количество добавленных/измененных точек входа на портале/в фат-меню',
                                 'type' => 'integer',
@@ -2242,7 +2242,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            81 => [
+                            11 => [
                                 'id' => 81,
                                 'name' => 'Количество добавленных иконок на портальную страницу',
                                 'type' => 'integer',
@@ -2252,7 +2252,7 @@ return [
                             ],
                         ],
                         'selects' => [
-                            28 => [
+                            0 => [
                                 'id' => 28,
                                 'name' => 'Перенос информации при изменении структуры категории',
                                 'type' => 'select',
