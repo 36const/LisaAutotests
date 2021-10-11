@@ -10,7 +10,51 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'responseBody' => [
-                '$.fieldsData' => [
+                'request' => [
+                    'id' => 1,
+                    'author_id' => 1,
+                    'type_id' => 1,
+                    'supervisor_id' => 2,
+                    'manager_id' => 2,
+                    'status' => 6,
+                    'direction' => 1,
+                    'priority' => 2,
+                    'awaiting_correction' => 0,
+                    'created_at' => '2020-01-01 00:00:01',
+                    'correction_comment' => NULL,
+                    'amount_to_work' => 10,
+                    'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                    'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|',
+                    'category_id' => 1,
+                    'seller_id' => 83,
+                    'recommendations' => NULL,
+                    'reason' => NULL,
+                    'parent_id' => NULL,
+                    'planned_start_date' => NULL,
+                    'planned_finish_date' => NULL,
+                    'actual_start_date' => NULL,
+                    'actual_finish_date' => NULL,
+                    'supervisor_process_date' => NULL,
+                    'supervisor_check_date' => NULL,
+                    'result_comment' => NULL,
+                    'supervisor_comment' => NULL,
+                    'last_change_status_date' => '2020-01-01 00:00:01',
+                    'team_direction' => 3,
+                    'report_period_id' => NULL,
+                    'sync_source_id' => NULL,
+                    'sv_report_periods' => NULL,
+                    'cross_check_status' => 0,
+                    'cross_check_manager_id' => 4,
+                    'employee_code_1c' => NULL,
+                    'child_count' => 0,
+                    'photo_load_status' => 0,
+                    'previous_status' => NULL,
+                    'supplier_cabinet_id' => NULL,
+                    'payload' => '[]',
+                    'rz_category_id' => NULL,
+                ],
+                'isCrossCheck' => true,
+                'fieldsData' => [
                     'requestFields' => [
                         1 => '1',
                         49 => '0',
@@ -179,10 +223,55 @@ return [
                         'text' => '',
                     ],
                     'attachments' => [
+                        0 => [
+                            'alias' => '!@#$%^&*()_+`-=][\';.|}{:?><.jpg',
+                            'canDelete' => false,
+                            'id' => 4,
+                            'isImage' => true,
+                            'link' => 'http://minio.local/lisa-auto/1/803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg',
+                            'size' => ' (0.03 Mb)',
+                            'status' => 3,
+                            'uploaded_at' => '2021-10-09 00:00:00',
+                            'uploaded_by' => 'Константин Куцан',
+                        ],
+                        1 => [
+                            'alias' => '194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'canDelete' => false,
+                            'id' => 1,
+                            'isImage' => false,
+                            'link' => 'http://minio.local/lisa-auto/1/803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'size' => ' (0.06 Mb)',
+                            'status' => 3,
+                            'uploaded_at' => '2021-10-09 00:00:00',
+                            'uploaded_by' => 'Константин Куцан',
+                        ],
+                        2 => [
+                            'alias' => 'doc .doc',
+                            'canDelete' => false,
+                            'id' => 2,
+                            'isImage' => false,
+                            'link' => 'http://minio.local/lisa-auto/1/803902_doc.doc',
+                            'size' => ' (0.03 Mb)',
+                            'status' => 3,
+                            'uploaded_at' => '2021-10-09 00:00:00',
+                            'uploaded_by' => 'Константин Куцан',
+                        ],
+                        3 => [
+                            'alias' => 'pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx',
+                            'canDelete' => false,
+                            'id' => 3,
+                            'isImage' => false,
+                            'link' => 'http://minio.local/lisa-auto/1/803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx',
+                            'size' => ' (0.09 Mb)',
+                            'status' => 3,
+                            'uploaded_at' => '2021-10-09 00:00:00',
+                            'uploaded_by' => 'Константин Куцан',
+                        ],
                     ],
+                    'resultFieldsOrder' => [],
                     'requestResult' => [
                         'inputs' => [
-                            0 => [
+                            66 => [
                                 'id' => 66,
                                 'name' => 'Количество добавленных товаров',
                                 'type' => 'integer',
@@ -190,7 +279,7 @@ return [
                                 'disabled' => false,
                                 'required' => true,
                             ],
-                            1 => [
+                            69 => [
                                 'id' => 69,
                                 'name' => 'Общее количество обработанных фото',
                                 'type' => 'integer',
@@ -198,7 +287,7 @@ return [
                                 'disabled' => false,
                                 'required' => true,
                             ],
-                            2 => [
+                            68 => [
                                 'id' => 68,
                                 'name' => 'Среднее количество фото в товаре',
                                 'type' => 'integer',
@@ -206,56 +295,56 @@ return [
                                 'disabled' => false,
                                 'required' => true,
                             ],
-                            3 => [
+                            111 => [
                                 'id' => 111,
                                 'name' => 'Количество товаров, которые уже есть в БД',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            4 => [
+                            71 => [
                                 'id' => 71,
                                 'name' => 'Количество добавленных инструкций',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            5 => [
+                            70 => [
                                 'id' => 70,
                                 'name' => 'Количество добавленных видеороликов',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            6 => [
+                            88 => [
                                 'id' => 88,
                                 'name' => 'Количество товаров, к которым добавлены видео',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            7 => [
+                            93 => [
                                 'id' => 93,
                                 'name' => 'Количество обработанных групп',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            8 => [
+                            94 => [
                                 'id' => 94,
                                 'name' => 'Количество сгруппированых товаров',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            9 => [
+                            76 => [
                                 'id' => 76,
                                 'name' => 'Добавлено новых СЦ',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => false,
                             ],
-                            10 => [
+                            77 => [
                                 'id' => 77,
                                 'name' => 'Изменено существующих СЦ',
                                 'type' => 'integer',
@@ -264,7 +353,7 @@ return [
                             ],
                         ],
                         'selects' => [
-                            0 => [
+                            21 => [
                                 'id' => 21,
                                 'name' => 'Наличие характеристик к товарам',
                                 'type' => 'select',
@@ -299,7 +388,7 @@ return [
                                     ],
                                 ],
                             ],
-                            1 => [
+                            23 => [
                                 'id' => 23,
                                 'name' => 'Наличие описаний к товарам',
                                 'type' => 'select',
@@ -329,7 +418,7 @@ return [
                                     ],
                                 ],
                             ],
-                            2 => [
+                            22 => [
                                 'id' => 22,
                                 'name' => 'Наличие фото к товарам',
                                 'type' => 'select',
@@ -364,7 +453,7 @@ return [
                                     ],
                                 ],
                             ],
-                            3 => [
+                            26 => [
                                 'id' => 26,
                                 'name' => 'Язык информации',
                                 'type' => 'select',
@@ -389,7 +478,7 @@ return [
                                     ],
                                 ],
                             ],
-                            4 => [
+                            24 => [
                                 'id' => 24,
                                 'name' => 'Обработка фото',
                                 'type' => 'select',
@@ -413,7 +502,7 @@ return [
                                     ],
                                 ],
                             ],
-                            5 => [
+                            27 => [
                                 'id' => 27,
                                 'name' => 'Видео к товарам',
                                 'type' => 'select',
@@ -437,7 +526,7 @@ return [
                                     ],
                                 ],
                             ],
-                            6 => [
+                            31 => [
                                 'id' => 31,
                                 'name' => 'Группировка товаров (наличие варьируемых параметров)',
                                 'type' => 'select',
@@ -466,7 +555,7 @@ return [
                                     ],
                                 ],
                             ],
-                            7 => [
+                            25 => [
                                 'id' => 25,
                                 'name' => 'Уточнения. Количество уточнений у автора.',
                                 'type' => 'select',
@@ -775,6 +864,48 @@ return [
                     ],
                     'svOrHigher' => false,
                 ],
+                'buttons' => [
+                    0 => [
+                        'component' => 'Reason',
+                        'title' => 'Ожидать',
+                        'visible' => true,
+                        'targetStatus' => 7,
+                        'action' => 'change-reason',
+                        'icon' => 'mdiTimerSand',
+                        'currentStatus' => 6,
+                    ],
+                    1 => [
+                        'component' => 'Reason',
+                        'title' => 'Отменить',
+                        'visible' => true,
+                        'targetStatus' => 4,
+                        'action' => 'change-reason',
+                        'icon' => 'mdiCloseThick',
+                        'currentStatus' => 6,
+                    ],
+                    2 => [
+                        'component' => 'Complete',
+                        'title' => 'Частично выполнена',
+                        'visible' => true,
+                        'targetStatus' => 8,
+                        'icon' => 'mdiBookmarkCheckOutline',
+                        'currentStatus' => 6,
+                    ],
+                    3 => [
+                        'component' => 'Complete',
+                        'title' => 'Выполнена',
+                        'visible' => true,
+                        'targetStatus' => 9,
+                        'icon' => 'mdiCheckBold',
+                        'withoutReason' => true,
+                        'currentStatus' => 6,
+                    ],
+                ],
+                'bredcrumbStatus' => [
+                    'text' => 'В работе',
+                    'link' => '#/request/list/in-work',
+                ],
+
             ]
         ]
     ],
@@ -786,7 +917,51 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
             'responseBody' => [
-                '$.fieldsData' => [
+                'request' => [
+                    'id' => 1,
+                    'author_id' => 1,
+                    'type_id' => 2,
+                    'supervisor_id' => 2,
+                    'manager_id' => 4,
+                    'status' => 9,
+                    'direction' => 2,
+                    'priority' => 2,
+                    'awaiting_correction' => 0,
+                    'created_at' => '2020-01-01 00:00:01',
+                    'correction_comment' => NULL,
+                    'amount_to_work' => 10,
+                    'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                    'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|',
+                    'category_id' => NULL,
+                    'seller_id' => 83,
+                    'recommendations' => NULL,
+                    'reason' => NULL,
+                    'parent_id' => NULL,
+                    'planned_start_date' => NULL,
+                    'planned_finish_date' => NULL,
+                    'actual_start_date' => NULL,
+                    'actual_finish_date' => NULL,
+                    'supervisor_process_date' => NULL,
+                    'supervisor_check_date' => NULL,
+                    'result_comment' => NULL,
+                    'supervisor_comment' => NULL,
+                    'last_change_status_date' => '2020-01-01 00:00:01',
+                    'team_direction' => 2,
+                    'report_period_id' => NULL,
+                    'sync_source_id' => NULL,
+                    'sv_report_periods' => NULL,
+                    'cross_check_status' => 1,
+                    'cross_check_manager_id' => 3,
+                    'employee_code_1c' => NULL,
+                    'child_count' => 0,
+                    'photo_load_status' => 0,
+                    'previous_status' => NULL,
+                    'supplier_cabinet_id' => NULL,
+                    'payload' => '[]',
+                    'rz_category_id' => NULL,
+                ],
+                'isCrossCheck' => false,
+                'fieldsData' => [
                     'requestFields' => [
                         1 => '1',
                         49 => '0',
@@ -923,10 +1098,55 @@ return [
                         'text' => '',
                     ],
                     'attachments' => [
+                        0 => [
+                            'alias' => '!@#$%^&*()_+`-=][\';.|}{:?><.jpg',
+                            'canDelete' => false,
+                            'id' => 4,
+                            'isImage' => true,
+                            'link' => 'http://minio.local/lisa-auto/1/803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg',
+                            'size' => ' (0.03 Mb)',
+                            'status' => 3,
+                            'uploaded_at' => '2021-10-09 00:00:00',
+                            'uploaded_by' => 'Константин Куцан',
+                        ],
+                        1 => [
+                            'alias' => '194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'canDelete' => false,
+                            'id' => 1,
+                            'isImage' => false,
+                            'link' => 'http://minio.local/lisa-auto/1/803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'size' => ' (0.06 Mb)',
+                            'status' => 3,
+                            'uploaded_at' => '2021-10-09 00:00:00',
+                            'uploaded_by' => 'Константин Куцан',
+                        ],
+                        2 => [
+                            'alias' => 'doc .doc',
+                            'canDelete' => false,
+                            'id' => 2,
+                            'isImage' => false,
+                            'link' => 'http://minio.local/lisa-auto/1/803902_doc.doc',
+                            'size' => ' (0.03 Mb)',
+                            'status' => 3,
+                            'uploaded_at' => '2021-10-09 00:00:00',
+                            'uploaded_by' => 'Константин Куцан',
+                        ],
+                        3 => [
+                            'alias' => 'pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx',
+                            'canDelete' => false,
+                            'id' => 3,
+                            'isImage' => false,
+                            'link' => 'http://minio.local/lisa-auto/1/803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx',
+                            'size' => ' (0.09 Mb)',
+                            'status' => 3,
+                            'uploaded_at' => '2021-10-09 00:00:00',
+                            'uploaded_by' => 'Константин Куцан',
+                        ],
                     ],
+                    'resultFieldsOrder' => [],
                     'requestResult' => [
                         'inputs' => [
-                            0 => [
+                            67 => [
                                 'id' => 67,
                                 'name' => 'Количество изменённых товаров',
                                 'type' => 'integer',
@@ -934,42 +1154,42 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            1 => [
+                            72 => [
                                 'id' => 72,
                                 'name' => 'Количество скрытых товаров',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
                             ],
-                            2 => [
+                            73 => [
                                 'id' => 73,
                                 'name' => 'Количество связанных категорий',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
                             ],
-                            3 => [
+                            93 => [
                                 'id' => 93,
                                 'name' => 'Количество обработанных групп',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
                             ],
-                            4 => [
+                            94 => [
                                 'id' => 94,
                                 'name' => 'Количество сгруппированых товаров',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
                             ],
-                            5 => [
+                            74 => [
                                 'id' => 74,
                                 'name' => 'Количество связанных параметров',
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
                             ],
-                            6 => [
+                            75 => [
                                 'id' => 75,
                                 'name' => 'Количество связанных значений параметров',
                                 'type' => 'integer',
@@ -978,7 +1198,7 @@ return [
                             ],
                         ],
                         'selects' => [
-                            0 => [
+                            25 => [
                                 'id' => 25,
                                 'name' => 'Уточнения. Количество уточнений у автора.',
                                 'type' => 'select',
@@ -1220,6 +1440,20 @@ return [
                     ],
                     'svOrHigher' => false,
                 ],
+                'buttons' => [
+                    3 => [
+                        'component' => 'Button',
+                        'title' => 'Завершить кросс-чек',
+                        'visible' => true,
+                        'icon' => 'mdiClosedCaption',
+                        'action' => 'complete-cross-check',
+                        'currentStatus' => 9,
+                    ],
+                ],
+                'bredcrumbStatus' => [
+                    'text' => 'Выполнены',
+                    'link' => '#/request/list/completed',
+                ],
             ],
         ]
     ],
@@ -1231,7 +1465,51 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case3.php',
         'provider_data' => [
             'responseBody' => [
-                '$.fieldsData' => [
+                'request' => [
+                    'id' => 1,
+                    'author_id' => 4,
+                    'type_id' => 4,
+                    'supervisor_id' => 2,
+                    'manager_id' => 3,
+                    'status' => 3,
+                    'direction' => 0,
+                    'priority' => 2,
+                    'awaiting_correction' => 0,
+                    'created_at' => '2020-01-01 00:00:01',
+                    'correction_comment' => NULL,
+                    'amount_to_work' => 10,
+                    'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                    'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|',
+                    'category_id' => 1,
+                    'seller_id' => 83,
+                    'recommendations' => NULL,
+                    'reason' => NULL,
+                    'parent_id' => NULL,
+                    'planned_start_date' => NULL,
+                    'planned_finish_date' => NULL,
+                    'actual_start_date' => NULL,
+                    'actual_finish_date' => NULL,
+                    'supervisor_process_date' => NULL,
+                    'supervisor_check_date' => NULL,
+                    'result_comment' => NULL,
+                    'supervisor_comment' => NULL,
+                    'last_change_status_date' => '2020-01-01 00:00:01',
+                    'team_direction' => 4,
+                    'report_period_id' => NULL,
+                    'sync_source_id' => NULL,
+                    'sv_report_periods' => NULL,
+                    'cross_check_status' => 1,
+                    'cross_check_manager_id' => 1,
+                    'employee_code_1c' => NULL,
+                    'child_count' => 0,
+                    'photo_load_status' => 0,
+                    'previous_status' => NULL,
+                    'supplier_cabinet_id' => NULL,
+                    'payload' => '[]',
+                    'rz_category_id' => 753399,
+                ],
+                'isCrossCheck' => false,
+                'fieldsData' => [
                     'requestFields' => [
                         1 => '1',
                         40 => '0',
@@ -1385,9 +1663,22 @@ return [
                     ],
                     'attachments' => [
                     ],
+                    'resultFieldsOrder' => [
+                        0 => 'child_count',
+                        1 => 31,
+                        2 => 32,
+                        3 => 91,
+                        4 => 93,
+                        5 => 94,
+                        6 => 116,
+                        7 => 161,
+                        8 => 162,
+                        9 => 163,
+                        10 => 168,
+                    ],
                     'requestResult' => [
                         'inputs' => [
-                            0 => [
+                            91 => [
                                 'id' => 91,
                                 'name' => 'Количество обработанных категорий',
                                 'type' => 'integer',
@@ -1395,7 +1686,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            1 => [
+                            161 => [
                                 'id' => 161,
                                 'name' => 'Количество обработанных, но не сгруппированных товаров',
                                 'type' => 'integer',
@@ -1403,7 +1694,7 @@ return [
                                 'disabled' => false,
                                 'required' => true,
                             ],
-                            2 => [
+                            94 => [
                                 'id' => 94,
                                 'name' => 'Количество сгруппированых товаров',
                                 'type' => 'integer',
@@ -1411,7 +1702,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            3 => [
+                            93 => [
                                 'id' => 93,
                                 'name' => 'Количество обработанных групп',
                                 'type' => 'integer',
@@ -1419,7 +1710,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            4 => [
+                            162 => [
                                 'id' => 162,
                                 'name' => 'Количество настроек групп (управление группами)',
                                 'type' => 'integer',
@@ -1427,7 +1718,7 @@ return [
                                 'disabled' => false,
                                 'required' => true,
                             ],
-                            5 => [
+                            116 => [
                                 'id' => 116,
                                 'name' => 'Количество отправленных писем',
                                 'type' => 'integer',
@@ -1435,7 +1726,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            6 => [
+                            163 => [
                                 'id' => 163,
                                 'name' => 'Количество слов в словарях',
                                 'type' => 'integer',
@@ -1445,7 +1736,7 @@ return [
                             ],
                         ],
                         'selects' => [
-                            0 => [
+                            32 => [
                                 'id' => 32,
                                 'name' => 'Сложность группировки в заявках',
                                 'type' => 'select',
@@ -1500,7 +1791,7 @@ return [
                                     ],
                                 ],
                             ],
-                            1 => [
+                            31 => [
                                 'id' => 31,
                                 'name' => 'Группировка товаров (наличие варьируемых параметров)',
                                 'type' => 'select',
@@ -1641,6 +1932,30 @@ return [
                     ],
                     'svOrHigher' => false,
                 ],
+                'buttons' => [
+                    1 => [
+                        'component' => 'Button',
+                        'title' => 'Создать подзадачу',
+                        'visible' => true,
+                        'icon' => 'mdiArrangeSendBackward',
+                        'action' => '/request/create?typeId=4&direction=0&id=1',
+                        'currentStatus' => 3,
+                    ],
+                    2 => [
+                        'component' => 'Reason',
+                        'title' => 'Вернуть в новые',
+                        'visible' => true,
+                        'targetStatus' => 1,
+                        'withoutReason' => true,
+                        'action' => 'change-reason',
+                        'icon' => 'mdiArrowLeftBoldOutline',
+                        'currentStatus' => 3,
+                    ],
+                ],
+                'bredcrumbStatus' => [
+                    'text' => 'На доработке',
+                    'link' => '#/request/list/require-changes',
+                ],
             ],
         ]
     ],
@@ -1652,7 +1967,51 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case4.php',
         'provider_data' => [
             'responseBody' => [
-                '$.fieldsData' => [
+                'request' => [
+                    'id' => 1,
+                    'author_id' => 1,
+                    'type_id' => 7,
+                    'supervisor_id' => 4,
+                    'manager_id' => 2,
+                    'status' => 11,
+                    'direction' => 0,
+                    'priority' => 2,
+                    'awaiting_correction' => 0,
+                    'created_at' => '2020-01-01 00:00:01',
+                    'correction_comment' => NULL,
+                    'amount_to_work' => 10,
+                    'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                    'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|',
+                    'category_id' => 1,
+                    'seller_id' => 83,
+                    'recommendations' => NULL,
+                    'reason' => NULL,
+                    'parent_id' => NULL,
+                    'planned_start_date' => NULL,
+                    'planned_finish_date' => NULL,
+                    'actual_start_date' => NULL,
+                    'actual_finish_date' => NULL,
+                    'supervisor_process_date' => NULL,
+                    'supervisor_check_date' => NULL,
+                    'result_comment' => NULL,
+                    'supervisor_comment' => NULL,
+                    'last_change_status_date' => '2020-01-01 00:00:01',
+                    'team_direction' => 6,
+                    'report_period_id' => NULL,
+                    'sync_source_id' => NULL,
+                    'sv_report_periods' => NULL,
+                    'cross_check_status' => 2,
+                    'cross_check_manager_id' => 3,
+                    'employee_code_1c' => NULL,
+                    'child_count' => 0,
+                    'photo_load_status' => 0,
+                    'previous_status' => NULL,
+                    'supplier_cabinet_id' => NULL,
+                    'payload' => '[]',
+                    'rz_category_id' => NULL,
+                ],
+                'isCrossCheck' => false,
+                'fieldsData' => [
                     'requestFields' => [
                         1 => '1',
                         49 => '0',
@@ -1792,9 +2151,10 @@ return [
                     ],
                     'attachments' => [
                     ],
+                    'resultFieldsOrder' => [],
                     'requestResult' => [
                         'inputs' => [
-                            0 => [
+                            115 => [
                                 'id' => 115,
                                 'name' => 'Количество добавленных категорий',
                                 'type' => 'integer',
@@ -1802,7 +2162,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            1 => [
+                            79 => [
                                 'id' => 79,
                                 'name' => 'Количество добавленных/заблокированных параметров',
                                 'type' => 'integer',
@@ -1810,7 +2170,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            2 => [
+                            80 => [
                                 'id' => 80,
                                 'name' => 'Количество добавленных значений к параметрам',
                                 'type' => 'integer',
@@ -1818,7 +2178,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            3 => [
+                            90 => [
                                 'id' => 90,
                                 'name' => 'Количество заполненных параметров в товарах при изменении структуры категории',
                                 'type' => 'integer',
@@ -1826,7 +2186,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            4 => [
+                            113 => [
                                 'id' => 113,
                                 'name' => 'Перевязано опций',
                                 'type' => 'integer',
@@ -1834,7 +2194,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            5 => [
+                            85 => [
                                 'id' => 85,
                                 'name' => 'Отправлено файлов продакту на заполнение',
                                 'type' => 'integer',
@@ -1842,7 +2202,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            6 => [
+                            97 => [
                                 'id' => 97,
                                 'name' => 'Количество измененных товаров (Splitter)',
                                 'type' => 'integer',
@@ -1850,7 +2210,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            7 => [
+                            98 => [
                                 'id' => 98,
                                 'name' => 'Количество измененных товаров (пакетно в Owox)',
                                 'type' => 'integer',
@@ -1858,7 +2218,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            8 => [
+                            99 => [
                                 'id' => 99,
                                 'name' => 'Количество измененных товаров (поштучно в Owox)',
                                 'type' => 'integer',
@@ -1866,7 +2226,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            9 => [
+                            84 => [
                                 'id' => 84,
                                 'name' => 'Количество настроенных редиректов',
                                 'type' => 'integer',
@@ -1874,7 +2234,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            10 => [
+                            112 => [
                                 'id' => 112,
                                 'name' => 'Количество добавленных/измененных точек входа на портале/в фат-меню',
                                 'type' => 'integer',
@@ -1882,7 +2242,7 @@ return [
                                 'disabled' => true,
                                 'required' => true,
                             ],
-                            11 => [
+                            81 => [
                                 'id' => 81,
                                 'name' => 'Количество добавленных иконок на портальную страницу',
                                 'type' => 'integer',
@@ -1892,7 +2252,7 @@ return [
                             ],
                         ],
                         'selects' => [
-                            0 => [
+                            28 => [
                                 'id' => 28,
                                 'name' => 'Перенос информации при изменении структуры категории',
                                 'type' => 'select',
@@ -2328,8 +2688,22 @@ return [
                     ],
                     'svOrHigher' => true,
                 ],
+                'buttons' => [
+                    1 => [
+                        'component' => 'Button',
+                        'title' => 'Создать подзадачу',
+                        'visible' => true,
+                        'icon' => 'mdiArrangeSendBackward',
+                        'action' => '/request/create?typeId=7&direction=0&id=1',
+                        'currentStatus' => 11,
+                    ],
+                ],
+                'bredcrumbStatus' => [
+                    'text' => 'Закрыты',
+                    'link' => '#/request/list/closed',
+                ],
             ]
         ]
-    ],
+    ]
 
 ];

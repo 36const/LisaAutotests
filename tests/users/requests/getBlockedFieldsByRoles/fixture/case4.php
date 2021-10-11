@@ -121,6 +121,8 @@ return [
                 'value' => 0,
             ],
         ],
+        'request_attachments' => [],
+        'request_status_history' => [],
         'observers' => [],
         'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
         'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',

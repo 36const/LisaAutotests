@@ -32,7 +32,6 @@ class GETBlockedFieldsByRolesCest
         $I->sendGET('/request/view/1');
         $I->canSeeResponseCodeIs(200);
 
-        foreach ($providerData['responseBody'] as $jsonPath => $jsonValue)
-            $I->canSeePartJsonResponseEquals($jsonValue, $jsonPath);
+        $I->canSeeJsonResponseEquals($providerData['responseBody']);
     }
 }
