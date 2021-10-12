@@ -1114,17 +1114,6 @@ return [
                             'photo_load_status' => 1
                         ],
                     ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'У заявки №1 статус загрузки фото уже \'Загружены на OWOX\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ],
                 ]
             ],
         ]

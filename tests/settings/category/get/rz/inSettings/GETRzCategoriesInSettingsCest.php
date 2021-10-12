@@ -10,9 +10,9 @@ use Codeception\Module\TestHelper;
  * @group lisa_api
  * @group lisa_api_settings
  * @group lisa_api_category
- * @group GETRzCategories
+ * @group GETRzCategoriesInSettings
  */
-class GETRzCategoriesCest
+class GETRzCategoriesInSettingsCest
 {
     protected function pageProvider(): array
     {
@@ -25,7 +25,7 @@ class GETRzCategoriesCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function GETRzCategories(SettingsTester $I, Example $data)
+    public function GETRzCategoriesInSettings(SettingsTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];

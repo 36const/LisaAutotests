@@ -172,7 +172,7 @@ return [
                 'subject' => 'Перенос товаров (Работа с товарами Маркета)',
                 'description' => 'description',
                 'category_id' => 1,
-                'rz_category_id' => 753399,
+                'rz_category_id' => 4652996,
                 'seller_id' => 5,
                 'amount_to_work' => 10,
                 'planned_finish_date' => NULL,
@@ -222,7 +222,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 1,
-                            'rz_category_id' => 753399,
+                            'rz_category_id' => 4652996,
                         ]
                     ],
                     'requests_fields' => [

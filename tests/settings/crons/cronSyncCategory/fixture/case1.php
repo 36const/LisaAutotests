@@ -14,6 +14,7 @@ return [
                 'deleted' => null,
                 'parent_id' => 4627865,
                 'lisa_category_id' => null,
+                'children' => 0,
             ]
         ],
         'notification_settings' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/notification_settings.php',
