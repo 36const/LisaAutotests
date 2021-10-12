@@ -1934,17 +1934,6 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ],
                 ]
             ],
         ]
@@ -2007,17 +1996,6 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0
-                        ],
-                    ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
                         ],
                     ],
                 ]
@@ -2084,17 +2062,6 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ],
                 ]
             ],
         ]
@@ -2157,17 +2124,6 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0
-                        ],
-                    ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
                         ],
                     ],
                 ]
@@ -2234,17 +2190,6 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ],
                 ]
             ],
         ]
@@ -2307,17 +2252,6 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0
-                        ],
-                    ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
                         ],
                     ],
                 ]
@@ -2384,17 +2318,6 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ],
                 ]
             ],
         ]
@@ -2457,17 +2380,6 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0
-                        ],
-                    ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
                         ],
                     ],
                 ]
@@ -2534,17 +2446,6 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ],
                 ]
             ],
         ]
@@ -2607,17 +2508,6 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0
-                        ],
-                    ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
                         ],
                     ],
                 ]
@@ -2684,17 +2574,6 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ],
                 ]
             ],
         ]
@@ -2757,17 +2636,6 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0
-                        ],
-                    ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
                         ],
                     ],
                 ]
@@ -2834,17 +2702,6 @@ return [
                             'photo_load_status' => 0
                         ],
                     ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ],
                 ]
             ],
         ]
@@ -2907,17 +2764,6 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0
-                        ],
-                    ],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'date >=' => date('Y-m-d'),
-                            'class' => 'yii\base\InvalidArgumentException',
-                            'message' => 'Статус загрузки фото можно присвоить только задачам типа \'Добавление новых товаров\'',
-                            'name' => 'Invalid Argument',
-                            'code' => 0,
-                            'user' => '4',
                         ],
                     ],
                 ]
