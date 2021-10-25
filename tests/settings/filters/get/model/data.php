@@ -16,6 +16,7 @@ return [
                         'fields' => [
                         ],
                     ],
+                    'order' => NULL,
                     'selectedOtherFields' => [
                     ],
                 ],
@@ -700,6 +701,7 @@ return [
                         'last_change_status_date' => '2020-06-08 00:00to2020-06-14 23:59',
                         'supervisor_process_date' => '2020-06-01 00:00to2020-06-07 23:59',
                     ],
+                    'order' => 1,
                     'selectedOtherFields' => [
                         0 => 'report_period_id',
                         1 => 'photo_load_status',

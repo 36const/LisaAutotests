@@ -48,6 +48,7 @@ return [
                     "last_change_status_date": ["between", "last_change_status_date", "2020-01-01 00:00:00", "2020-01-31 23:59:59"], 
                     "supervisor_process_date": ["between", "supervisor_process_date", "2021-09-01 00:00:00", "2021-09-30 23:59:59"]
                 }',
+                'order' => 0,
             ]
         ],
         'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',

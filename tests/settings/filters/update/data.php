@@ -193,7 +193,8 @@ return [
                                 "cross_check_manager_id": ["in", "requests.cross_check_manager_id", ["13", "14", "18"]], 
                                 "last_change_status_date": ["between", "last_change_status_date", "2019-12-28 00:00:00", "2020-01-24 23:59:59"], 
                                 "supervisor_process_date": ["between", "supervisor_process_date", "2021-08-25 00:00:00", "2021-09-22 23:59:59"]
-                            }'
+                            }',
+                            'order' => 0,
                         ]
                     ]
                 ]
@@ -272,7 +273,8 @@ return [
                             'id' => 1,
                             'user_id' => 4,
                             'name' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            'conditions' => '{"supervisor_id": ["in", "requests.supervisor_id", ["34"]]}'
+                            'conditions' => '{"supervisor_id": ["in", "requests.supervisor_id", ["34"]]}',
+                            'order' => 0,
                         ]
                     ]
                 ]
