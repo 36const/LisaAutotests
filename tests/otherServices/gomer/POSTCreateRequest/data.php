@@ -4758,18 +4758,18 @@ return [
                 'Request[subject]' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 2,
-                'rz_categories' => [4652996, 4628418], //пропускается потому что направление Маркет
+                'rz_categories' => [753399, 4628418], //пропускается потому что направление Маркет
             ],
             'responseBody' => [
                 'status' => 200,
                 'requests' => [
                     [
-                        'rzCategoryId' => 4652996,
-                        'requestId' => 2,
+                        'rzCategoryId' => 753399,
+                        'requestId' => 1,
                     ],
                     [
                         'rzCategoryId' => 4628418,
-                        'requestId' => 1,
+                        'requestId' => 2,
                     ],
                 ]
             ],
@@ -4777,7 +4777,7 @@ return [
                 'lisa_fixtures' => [
                     'requests' => [
                         [
-                            'id' => 2,
+                            'id' => 1,
                             'author_id' => 1,
                             'type_id' => 2,
                             'supervisor_id' => 5, //присваивается не категорийному СВ 6, потому что направление Маркет
@@ -4820,7 +4820,7 @@ return [
                             'rz_category_id' => null,
                         ],
                         [
-                            'id' => 1,
+                            'id' => 2,
                             'author_id' => 1,
                             'type_id' => 2,
                             'supervisor_id' => 5, //присваивается не категорийному СВ 10, потому что направление Маркет
@@ -5203,22 +5203,22 @@ return [
                 'Request[subject]' => 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
                 //'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 7,
-                'rz_categories' => [4652996, 4653010, 4653010, 4628418, 4628418],
+                'rz_categories' => [753399, 4653010, 4653010, 4628418, 4628418],
             ],
             'responseBody' => [
                 'status' => 200,
                 'requests' => [
                     [
-                        'rzCategoryId' => 4652996,
-                        'requestId' => 2,
-                    ],
-                    [
-                        'rzCategoryId' => 4628418,
+                        'rzCategoryId' => 753399,
                         'requestId' => 1,
                     ],
                     [
-                        'rzCategoryId' => 4653010,
+                        'rzCategoryId' => 4628418,
                         'requestId' => 2,
+                    ],
+                    [
+                        'rzCategoryId' => 4653010,
+                        'requestId' => 1,
                     ],
                 ]
             ],
@@ -5232,10 +5232,10 @@ return [
                 'lisa_fixtures' => [
                     'requests' => [
                         [
-                            'id' => 2,
+                            'id' => 1,
                             'author_id' => 4,
                             'type_id' => 7,
-                            'supervisor_id' => 38,
+                            'supervisor_id' => 35,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 0,
@@ -5275,10 +5275,10 @@ return [
                             'rz_category_id' => null,
                         ],
                         [
-                            'id' => 1,
+                            'id' => 2,
                             'author_id' => 4,
                             'type_id' => 7,
-                            'supervisor_id' => 35,
+                            'supervisor_id' => 38,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 0,
@@ -6188,26 +6188,26 @@ return [
                 'Request[subject]' => 'Перенос товаров (Работа с товарами Розетки)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 3,
-                'rz_categories' => [4652996, 2514857, 4628418, 2898382],
+                'rz_categories' => [753399, 2514857, 4628418, 2898382],
             ],
             'responseBody' => [
                 'status' => 200,
                 'requests' => [
                     [
-                        'rzCategoryId' => 4652996,
-                        'requestId' => 4,
-                    ],
-                    [
-                        'rzCategoryId' => 2514857,
+                        'rzCategoryId' => 753399,
                         'requestId' => 1,
                     ],
                     [
-                        'rzCategoryId' => 2898382,
+                        'rzCategoryId' => 2514857,
                         'requestId' => 2,
                     ],
                     [
-                        'rzCategoryId' => 4628418,
+                        'rzCategoryId' => 2898382,
                         'requestId' => 3,
+                    ],
+                    [
+                        'rzCategoryId' => 4628418,
+                        'requestId' => 4,
                     ],
                 ]
             ],
@@ -6215,7 +6215,7 @@ return [
                 'lisa_fixtures' => [
                     'requests' => [
                         [
-                            'id' => 4,
+                            'id' => 1,
                             'author_id' => 4,
                             'type_id' => 3,
                             'supervisor_id' => 6,
@@ -6258,7 +6258,7 @@ return [
                             'rz_category_id' => null,
                         ],
                         [
-                            'id' => 1,
+                            'id' => 2,
                             'author_id' => 4,
                             'type_id' => 3,
                             'supervisor_id' => 10,
@@ -6301,7 +6301,7 @@ return [
                             'rz_category_id' => null,
                         ],
                         [
-                            'id' => 2,
+                            'id' => 3,
                             'author_id' => 4,
                             'type_id' => 3,
                             'supervisor_id' => 10,
@@ -6345,7 +6345,7 @@ return [
                             'rz_category_id' => null,
                         ],
                         [
-                            'id' => 3,
+                            'id' => 4,
                             'author_id' => 4,
                             'type_id' => 3,
                             'supervisor_id' => 10,
@@ -6391,106 +6391,31 @@ return [
                     ],
                     'requests_fields' => [
                         [
-                            'request_id' => 4,
+                            'request_id' => 1,
                             'field_id' => 1,
                             'value' => 1,
                         ],
                         [
-                            'request_id' => 4,
+                            'request_id' => 1,
                             'field_id' => 49,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 4,
+                            'request_id' => 1,
                             'field_id' => 50,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 4,
+                            'request_id' => 1,
                             'field_id' => 51,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 4,
+                            'request_id' => 1,
                             'field_id' => 52,
                             'value' => 2,
                         ],
                         [
-                            'request_id' => 4,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
                             'request_id' => 1,
                             'field_id' => 53,
                             'value' => 0,
@@ -6687,6 +6612,81 @@ return [
                         ],
                         [
                             'request_id' => 3,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 1,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 49,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 50,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 51,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 52,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 53,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 54,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 64,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
                             'field_id' => 158,
                             'value' => 0,
                         ],
@@ -6710,7 +6710,7 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 10,
+                            'user_id' => 6,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -6854,7 +6854,7 @@ return [
                         ],
                         [
                             'id' => 11,
-                            'user_id' => 6,
+                            'user_id' => 10,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -9225,7 +9225,7 @@ return [
             ],
             'responseBody' => [
                 'status' => 400,
-                'error' => 'Передана не конечная категория Rozetka: 11111',
+                'error' => 'В Lisa не существует следующих rz_categories: 11111',
             ],
             'db' => [
                 'lisa_fixtures' => array_merge(
@@ -9236,7 +9236,7 @@ return [
                                 'id' => 1,
                                 'date >=' => date('Y-m-d'),
                                 'class' => 'yii\base\InvalidArgumentException',
-                                'message' => 'Передана не конечная категория Rozetka: 11111',
+                                'message' => 'В Lisa не существует следующих rz_categories: 11111',
                                 'name' => 'Invalid Argument',
                                 'code' => 0,
                                 'user' => '4',
@@ -9265,11 +9265,11 @@ return [
                 'Request[seller_id]' => 0,
                 'Request[subject]' => 'Добавление/изменение размерной сетки (Определяется типом задачи)',
                 'Request[type_id]' => 10,
-                'rz_categories' => [11111, 4652996]
+                'rz_categories' => [11111, 753399]
             ],
             'responseBody' => [
                 'status' => 400,
-                'error' => 'Передана не конечная категория Rozetka: 11111',
+                'error' => 'В Lisa не существует следующих rz_categories: 11111',
             ],
             'db' => [
                 'lisa_fixtures' => array_merge(
@@ -9280,7 +9280,7 @@ return [
                                 'id' => 1,
                                 'date >=' => date('Y-m-d'),
                                 'class' => 'yii\base\InvalidArgumentException',
-                                'message' => 'Передана не конечная категория Rozetka: 11111',
+                                'message' => 'В Lisa не существует следующих rz_categories: 11111',
                                 'name' => 'Invalid Argument',
                                 'code' => 0,
                                 'user' => '4',
@@ -9295,7 +9295,7 @@ return [
 
     'case67' => [
         'setting' => [
-            'description' => 'Ошибка при указании существующего, но не конечного rz_categories',
+            'description' => 'Ошибка при указании существующего, но не конечного rz_categories, для типа 4',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case19.php',
         'provider_data' => [
@@ -9308,7 +9308,7 @@ return [
                 'Request[direction]' => 0,
                 'Request[seller_id]' => 0,
                 'Request[subject]' => 'Добавление/изменение размерной сетки (Определяется типом задачи)',
-                'Request[type_id]' => 10,
+                'Request[type_id]' => 4,
                 'rz_categories' => [4652996, 753399]
             ],
             'responseBody' => [
