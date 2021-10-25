@@ -116,6 +116,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -617,6 +618,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -800,6 +802,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -995,6 +998,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1238,6 +1242,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1475,6 +1480,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1658,7 +1664,6 @@ return [
     'case7' => [
         'setting' => [
             'description' => 'Создание заявки тип 4 направление 0',
-            'skip' => 'rz_category_id'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1666,10 +1671,11 @@ return [
                 'RequestField[169]' => 1,
                 'Request[amount_to_work]' => 10,
                 'Request[author_login]' => 'kutsan.k',
-                'Request[category_id]' => 1,
+                'Request[category_id]' => 1, //пропускается потому что тип 4 с категорией Розетки
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
+                'Request[rz_category_id]' => 2581742,
                 'Request[seller_id]' => 0,
                 'Request[subject]' => 'Группировка товаров (Определяется типом задачи)',
                 'Request[supplier_cabinet_id]' => 1,
@@ -1699,7 +1705,7 @@ return [
                             'amount_to_work' => 10,
                             'subject' => '[API] Группировка товаров (Определяется типом задачи)',
                             'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            'category_id' => 1,
+                            'category_id' => 2,
                             'seller_id' => 0,
                             'recommendations' => null,
                             'reason' => null,
@@ -1725,6 +1731,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => 2581742,
                         ]
                     ],
                     'requests_fields' => [
@@ -1972,6 +1979,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2208,6 +2216,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2400,7 +2409,7 @@ return [
                 'RequestField[7]' => 1,
                 'Request[amount_to_work]' => 10,
                 'Request[author_id]' => 4,
-                //"Request[category_id]" => 1,
+                //'Request[category_id]' => 1,
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
@@ -2459,6 +2468,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2613,7 +2623,7 @@ return [
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
-                //"Request[seller_id]" => 0,
+                //'Request[seller_id]' => 0,
                 'Request[subject]' => 'Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 8,
@@ -2820,7 +2830,7 @@ return [
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
-                //"Request[seller_id]" => 83,
+                //'Request[seller_id]' => 83,
                 'Request[subject]' => 'Добавление параметров/значений (Определяется типом задачи)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 9,
@@ -2875,6 +2885,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3014,7 +3025,7 @@ return [
                 'Request[amount_to_work]' => 10,
                 'Request[author_login]' => 'kutsan.k',
                 'Request[author_id]' => 4,
-                //"Request[category_id]" => 1,
+                //'Request[category_id]' => 1,
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
@@ -3073,6 +3084,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3272,6 +3284,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3460,6 +3473,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3840,7 +3854,7 @@ return [
                 'Request[amount_to_work]' => 10,
                 'Request[author_login]' => 'fasdf',
                 'Request[author_id]' => 999,
-                //"Request[category_id]" => 1,
+                //'Request[category_id]' => 1,
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
@@ -4098,6 +4112,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4242,6 +4257,7 @@ return [
                 'Request[category_id]' => 1,
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[direction]' => 1,
+                'Request[rz_category_id]' => 88468, //пропускается потому что есть параметр rz_categories
                 'Request[seller_id]' => -2,
                 'Request[subject]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[supplier_cabinet_id]' => 1,
@@ -4303,6 +4319,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4469,7 +4486,6 @@ return [
     'case63' => [
         'setting' => [
             'description' => 'Создание заявки тип 4 направление 0 (с author_id) с 1 привяз. категорией стора, без category_id',
-            'skip' => 'rz_category_id'
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -4477,10 +4493,11 @@ return [
                 'RequestField[169]' => 1,
                 'Request[amount_to_work]' => 10,
                 'Request[author_id]' => 4,
-                //"Request[category_id]" => 1,
+                //'Request[category_id]' => 1,
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
+                'Request[rz_category_id]' => 88468, //пропускается потому что есть параметр rz_categories
                 'Request[seller_id]' => 0,
                 'Request[subject]' => 'Группировка товаров (Определяется типом задачи)',
                 'Request[supplier_cabinet_id]' => 1,
@@ -4540,6 +4557,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => 2514857,
                         ]
                     ],
                     'requests_fields' => [
@@ -4740,18 +4758,18 @@ return [
                 'Request[subject]' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 2,
-                'rz_categories' => [753399, 4628418], //пропускается потому что направление Маркет
+                'rz_categories' => [4652996, 4628418], //пропускается потому что направление Маркет
             ],
             'responseBody' => [
                 'status' => 200,
                 'requests' => [
                     [
-                        'rzCategoryId' => 753399,
-                        'requestId' => 1,
+                        'rzCategoryId' => 4652996,
+                        'requestId' => 2,
                     ],
                     [
                         'rzCategoryId' => 4628418,
-                        'requestId' => 2,
+                        'requestId' => 1,
                     ],
                 ]
             ],
@@ -4759,7 +4777,7 @@ return [
                 'lisa_fixtures' => [
                     'requests' => [
                         [
-                            'id' => 1,
+                            'id' => 2,
                             'author_id' => 1,
                             'type_id' => 2,
                             'supervisor_id' => 5, //присваивается не категорийному СВ 6, потому что направление Маркет
@@ -4799,9 +4817,10 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
-                            'id' => 2,
+                            'id' => 1,
                             'author_id' => 1,
                             'type_id' => 2,
                             'supervisor_id' => 5, //присваивается не категорийному СВ 10, потому что направление Маркет
@@ -4842,6 +4861,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -5175,7 +5195,7 @@ return [
                 'RequestField[7]' => 1,
                 'Request[amount_to_work]' => 10,
                 'Request[author_id]' => 4,
-                //"Request[category_id]" => 1,
+                //'Request[category_id]' => 1,
                 'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
                 'Request[direction]' => 0,
                 //'Request[observers]' => [15],
@@ -5183,22 +5203,22 @@ return [
                 'Request[subject]' => 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
                 //'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 7,
-                'rz_categories' => [753399, 4653010, 4653010, 4628418, 4628418],
+                'rz_categories' => [4652996, 4653010, 4653010, 4628418, 4628418],
             ],
             'responseBody' => [
                 'status' => 200,
                 'requests' => [
                     [
-                        'rzCategoryId' => 753399,
-                        'requestId' => 1,
-                    ],
-                    [
-                        'rzCategoryId' => 4628418,
+                        'rzCategoryId' => 4652996,
                         'requestId' => 2,
                     ],
                     [
-                        'rzCategoryId' => 4653010,
+                        'rzCategoryId' => 4628418,
                         'requestId' => 1,
+                    ],
+                    [
+                        'rzCategoryId' => 4653010,
+                        'requestId' => 2,
                     ],
                 ]
             ],
@@ -5212,10 +5232,10 @@ return [
                 'lisa_fixtures' => [
                     'requests' => [
                         [
-                            'id' => 1,
+                            'id' => 2,
                             'author_id' => 4,
                             'type_id' => 7,
-                            'supervisor_id' => 35,
+                            'supervisor_id' => 38,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 0,
@@ -5252,12 +5272,13 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
-                            'id' => 2,
+                            'id' => 1,
                             'author_id' => 4,
                             'type_id' => 7,
-                            'supervisor_id' => 38,
+                            'supervisor_id' => 35,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 0,
@@ -5295,6 +5316,7 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -5528,6 +5550,626 @@ return [
         ]
     ],
 
+    'case69' => [
+        'setting' => [
+            'description' => 'Создание заявки тип 4 направление 0 (без кат.) (с author_id) c 1 непривяз. и 2 привяз. к одинаковой кат. стора',
+            //в типе 4 для каждой категории стора (даже если они привязаны к одной категории Лизы) создаётся отдельная заявка
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'Request[amount_to_work]' => 10,
+                'Request[author_id]' => 4,
+                //'Request[category_id]' => 1,
+                'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'Request[direction]' => 0,
+                //'Request[observers]' => [15],
+                'Request[seller_id]' => 0,
+                'Request[subject]' => 'Группировка товаров (Определяется типом задачи)',
+                //'Request[supplier_cabinet_id]' => 1,
+                'Request[type_id]' => 4,
+                'rz_categories' => [4652996, 4653010, 4653010, 4628418, 4628418],
+            ],
+            'responseBody' => [
+                'status' => 200,
+                'requests' => [
+                    [
+                        'rzCategoryId' => 4628418,
+                        'requestId' => 1,
+                    ],
+                    [
+                        'rzCategoryId' => 4652996,
+                        'requestId' => 2,
+                    ],
+                    [
+                        'rzCategoryId' => 4653010,
+                        'requestId' => 3,
+                    ],
+                ]
+            ],
+            'attachments' => [
+                'files[]' => [
+                    codecept_data_dir('Attachments/doc .doc'),
+                    codecept_data_dir('Attachments/xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml'),
+                ],
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 4,
+                            'supervisor_id' => 33,
+                            'manager_id' => null,
+                            'status' => 1,
+                            'direction' => 0,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => '[API] Группировка товаров (Определяется типом задачи)',
+                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'category_id' => null,
+                            'seller_id' => 0,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date >=' => date('Y-m-d'),
+                            'team_direction' => 4,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0,
+                            'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => 4628418,
+                        ],
+                        [
+                            'id' => 2,
+                            'author_id' => 4,
+                            'type_id' => 4,
+                            'supervisor_id' => 36,
+                            'manager_id' => null,
+                            'status' => 1,
+                            'direction' => 0,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => '[API] Группировка товаров (Определяется типом задачи)',
+                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'category_id' => 1,
+                            'seller_id' => 0,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date >=' => date('Y-m-d'),
+                            'team_direction' => 4,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0,
+                            'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => 4652996,
+                        ],
+                        [
+                            'id' => 3,
+                            'author_id' => 4,
+                            'type_id' => 4,
+                            'supervisor_id' => 33,
+                            'manager_id' => null,
+                            'status' => 1,
+                            'direction' => 0,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => '[API] Группировка товаров (Определяется типом задачи)',
+                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'category_id' => 1,
+                            'seller_id' => 0,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date >=' => date('Y-m-d'),
+                            'team_direction' => 4,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0,
+                            'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => 4653010,
+                        ],
+                    ],
+                    'requests_fields' => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 54,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 61,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 164,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 165,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 166,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 167,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 168,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 170,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 171,
+                            'value' => 0.07,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 172,
+                            'value' => 0.15,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 173,
+                            'value' => 0.1,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 53,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 54,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 61,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 64,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 164,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 165,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 166,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 167,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 168,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 170,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 171,
+                            'value' => 0.07,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 172,
+                            'value' => 0.15,
+                        ],
+                        [
+                            'request_id' => 2,
+                            'field_id' => 173,
+                            'value' => 0.1,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 53,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 54,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 61,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 64,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 164,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 165,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 166,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 167,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 168,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 170,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 171,
+                            'value' => 0.07,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 172,
+                            'value' => 0.15,
+                        ],
+                        [
+                            'request_id' => 3,
+                            'field_id' => 173,
+                            'value' => 0.1,
+                        ],
+                    ],
+                    'request_attachments' => [
+                        [
+                            'id' => 1,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => 'doc .doc',
+                            'status' => 2,
+                            'uploaded_by' => 'Система',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => null,
+                            'deleted_at' => null,
+                            'file_name LIKE' => '%_doc_.doc',
+                            'size' => 34304,
+                        ],
+                        [
+                            'id' => 2,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => 'xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml',
+                            'status' => 2,
+                            'uploaded_by' => 'Система',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => null,
+                            'deleted_at' => null,
+                            'file_name LIKE' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml',
+                            'size' => 40861,
+                        ],
+                        [
+                            'id' => 3,
+                            'request_id' => 2,
+                            'file_name_old' => '',
+                            'alias' => 'doc .doc',
+                            'status' => 2,
+                            'uploaded_by' => 'Система',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => null,
+                            'deleted_at' => null,
+                            'file_name LIKE' => '%_doc_.doc',
+                            'size' => 34304,
+                        ],
+                        [
+                            'id' => 4,
+                            'request_id' => 2,
+                            'file_name_old' => '',
+                            'alias' => 'xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml',
+                            'status' => 2,
+                            'uploaded_by' => 'Система',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => null,
+                            'deleted_at' => null,
+                            'file_name LIKE' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml',
+                            'size' => 40861,
+                        ],
+                        [
+                            'id' => 5,
+                            'request_id' => 3,
+                            'file_name_old' => '',
+                            'alias' => 'doc .doc',
+                            'status' => 2,
+                            'uploaded_by' => 'Система',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => null,
+                            'deleted_at' => null,
+                            'file_name LIKE' => '%_doc_.doc',
+                            'size' => 34304,
+                        ],
+                        [
+                            'id' => 6,
+                            'request_id' => 3,
+                            'file_name_old' => '',
+                            'alias' => 'xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml',
+                            'status' => 2,
+                            'uploaded_by' => 'Система',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => null,
+                            'deleted_at' => null,
+                            'file_name LIKE' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml',
+                            'size' => 40861,
+                        ],
+                    ],
+                    'user_notifications' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => '[API] Группировка товаров (Определяется типом задачи)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'create',
+                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
+                            'notify_service_id' => null,
+                        ],
+                        [
+                            'id' => 2,
+                            'user_id' => 33,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => '[API] Группировка товаров (Определяется типом задачи)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'create',
+                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
+                            'notify_service_id' => null,
+                        ],
+                        [
+                            'id' => 3,
+                            'user_id' => 4,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 2,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => '[API] Группировка товаров (Определяется типом задачи)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'create',
+                            'changed_fields' => '{"newValue": 2, "oldValue": null}',
+                            'notify_service_id' => null,
+                        ],
+                        [
+                            'id' => 4,
+                            'user_id' => 36,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 2,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => '[API] Группировка товаров (Определяется типом задачи)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'create',
+                            'changed_fields' => '{"newValue": 2, "oldValue": null}',
+                            'notify_service_id' => null,
+                        ],
+                        [
+                            'id' => 5,
+                            'user_id' => 4,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 3,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => '[API] Группировка товаров (Определяется типом задачи)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'create',
+                            'changed_fields' => '{"newValue": 3, "oldValue": null}',
+                            'notify_service_id' => null,
+                        ],
+                        [
+                            'id' => 6,
+                            'user_id' => 33,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 3,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => '[API] Группировка товаров (Определяется типом задачи)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'create',
+                            'changed_fields' => '{"newValue": 3, "oldValue": null}',
+                            'notify_service_id' => null,
+                        ],
+                    ],
+                    'observers' => [],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_failedApiRequests' => [],
+            ],
+        ]
+    ],
+
     'case66' => [
         'setting' => [
             'description' => 'Создание заявки тип 3 направление 1 c 2 непривяз. и 2 привяз. к разным кат. стора, c category_id',
@@ -5546,26 +6188,26 @@ return [
                 'Request[subject]' => 'Перенос товаров (Работа с товарами Розетки)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 3,
-                'rz_categories' => [753399, 2514857, 4628418, 2898382],
+                'rz_categories' => [4652996, 2514857, 4628418, 2898382],
             ],
             'responseBody' => [
                 'status' => 200,
                 'requests' => [
                     [
-                        'rzCategoryId' => 753399,
-                        'requestId' => 1,
+                        'rzCategoryId' => 4652996,
+                        'requestId' => 4,
                     ],
                     [
                         'rzCategoryId' => 2514857,
-                        'requestId' => 2,
+                        'requestId' => 1,
                     ],
                     [
                         'rzCategoryId' => 2898382,
-                        'requestId' => 3,
+                        'requestId' => 2,
                     ],
                     [
                         'rzCategoryId' => 4628418,
-                        'requestId' => 4,
+                        'requestId' => 3,
                     ],
                 ]
             ],
@@ -5573,7 +6215,7 @@ return [
                 'lisa_fixtures' => [
                     'requests' => [
                         [
-                            'id' => 1,
+                            'id' => 4,
                             'author_id' => 4,
                             'type_id' => 3,
                             'supervisor_id' => 6,
@@ -5613,9 +6255,10 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
-                            'id' => 2,
+                            'id' => 1,
                             'author_id' => 4,
                             'type_id' => 3,
                             'supervisor_id' => 10,
@@ -5655,9 +6298,10 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
-                            'id' => 3,
+                            'id' => 2,
                             'author_id' => 4,
                             'type_id' => 3,
                             'supervisor_id' => 10,
@@ -5698,9 +6342,10 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                         [
-                            'id' => 4,
+                            'id' => 3,
                             'author_id' => 4,
                             'type_id' => 3,
                             'supervisor_id' => 10,
@@ -5741,35 +6386,111 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
+                            'rz_category_id' => null,
                         ],
                     ],
                     'requests_fields' => [
                         [
-                            'request_id' => 1,
+                            'request_id' => 4,
                             'field_id' => 1,
                             'value' => 1,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 4,
                             'field_id' => 49,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 4,
                             'field_id' => 50,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 4,
                             'field_id' => 51,
                             'value' => 0,
                         ],
                         [
-                            'request_id' => 1,
+                            'request_id' => 4,
                             'field_id' => 52,
                             'value' => 2,
                         ],
                         [
+                            'request_id' => 4,
+                            'field_id' => 53,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 54,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 64,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 4,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 1,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 49,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 50,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 51,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 52,
+                            'value' => 3,
+                        ],
+                        [
                             'request_id' => 1,
                             'field_id' => 53,
                             'value' => 0,
@@ -5966,81 +6687,6 @@ return [
                         ],
                         [
                             'request_id' => 3,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 4,
                             'field_id' => 158,
                             'value' => 0,
                         ],
@@ -6064,7 +6710,7 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 6,
+                            'user_id' => 10,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -6208,7 +6854,7 @@ return [
                         ],
                         [
                             'id' => 11,
-                            'user_id' => 10,
+                            'user_id' => 6,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
@@ -6859,6 +7505,7 @@ return [
                 'Request[description]' => 'description',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
+                'Request[rz_category_id]' => 2514857,
                 'Request[seller_id]' => 0,
                 'Request[subject]' => 'Группировка товаров (Определяется типом задачи)',
                 'Request[supplier_cabinet_id]' => 1,
@@ -7593,7 +8240,7 @@ return [
                 'RequestField[1]' => 1,
                 'Request[amount_to_work]' => 10,
                 'Request[author_login]' => 'kutsan.k',
-                //"Request[category_id]" => 1,
+                //'Request[category_id]' => 1,
                 'Request[description]' => 'description',
                 'Request[observers]' => [16, 17],
                 'Request[direction]' => 1,
@@ -7661,7 +8308,7 @@ return [
                 'Request[description]' => 'description',
                 'Request[observers]' => [16, 17],
                 'Request[direction]' => 1,
-                //"Request[seller_id]" => 83,
+                //'Request[seller_id]' => 83,
                 'Request[subject]' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 2,
@@ -7722,7 +8369,7 @@ return [
                 'Request[author_login]' => 'kutsan.k',
                 'Request[description]' => 'description',
                 'Request[direction]' => 2,
-                //"Request[seller_id]" => 0,
+                //'Request[seller_id]' => 0,
                 'Request[subject]' => 'Добавление новых товаров (Работа с товарами Маркетплейса)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 1,
@@ -7892,7 +8539,7 @@ return [
                 'Request[description]' => 'description',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
-                //"Request[seller_id]" => 83,
+                //'Request[seller_id]' => 83,
                 'Request[subject]' => 'Добавление параметров/значений (Определяется типом задачи)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 9,
@@ -7920,7 +8567,7 @@ return [
                 'RequestField[1]' => 1,
                 'Request[amount_to_work]' => 10,
                 'Request[author_login]' => 'kutsan.k',
-                //"Request[category_id]" => 1,
+                //'Request[category_id]' => 1,
                 'Request[description]' => 'description',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
@@ -7952,11 +8599,11 @@ return [
                 'RequestField[1]' => 1,
                 'Request[amount_to_work]' => 10,
                 'Request[author_login]' => 'kutsan.k',
-                //"Request[category_id]" => 1,
+                //'Request[category_id]' => 1,
                 'Request[description]' => 'description',
                 'Request[direction]' => 0,
                 'Request[observers]' => [16, 17],
-                //"Request[seller_id]" => 0,
+                //'Request[seller_id]' => 0,
                 'Request[subject]' => 'Добавление/изменение размерной сетки (Определяется типом задачи)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 14,
@@ -7965,6 +8612,39 @@ return [
                 'status' => 400,
                 'errors' => [
                     'Для этого типа задачи нужно указать либо category_id либо seller_id'
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => $lisa_fixtures
+            ],
+            'RabbitMQ' => $rabbitMQ,
+        ]
+    ],
+
+    'case68' => [
+        'setting' => [
+            'description' => 'Ошибка при создании без rz-категории для типа 4',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'provider_data' => [
+            'requestBody' => [
+                'RequestField[169]' => 1,
+                'Request[amount_to_work]' => 10,
+                'Request[author_login]' => 'kutsan.k',
+                'Request[category_id]' => 1,
+                'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'Request[direction]' => 0,
+                'Request[observers]' => [16, 17],
+                //'Request[rz_category_id]' => 2581742,
+                'Request[seller_id]' => 0,
+                'Request[subject]' => 'Группировка товаров (Определяется типом задачи)',
+                'Request[supplier_cabinet_id]' => 1,
+                'Request[type_id]' => 4,
+            ],
+            'responseBody' => [
+                'status' => 400,
+                'errors' => [
+                    'Не передано поле rz_category_id'
                 ]
             ],
             'db' => [
@@ -7985,18 +8665,18 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'RequestField[1]' => 1,
-                //"Request[amount_to_work]" => 10,
+                //'Request[amount_to_work]' => 10,
                 'Request[author_login]' => 'kutsan.k',
                 'Request[author_id]' => 10,
-                //"Request[category_id]" => 1,
-                //"Request[description]" => 'description',
+                //'Request[category_id]' => 1,
+                //'Request[description]' => 'description',
                 'Request[observers]' => [16, 17],
-                //"Request[direction]" => 1,
-                //"Request[seller_id]" => 83,
+                //'Request[direction]' => 1,
+                //'Request[seller_id]' => 83,
                 'Request[side_user_id]' => 1,
-                //"Request[subject]" => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
+                //'Request[subject]' => "Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)",
                 'Request[supplier_cabinet_id]' => 1,
-                //"Request[type_id]" => 12,
+                //'Request[type_id]' => 12,
             ],
             'responseBody' => [
                 'status' => 400,
@@ -8545,7 +9225,7 @@ return [
             ],
             'responseBody' => [
                 'status' => 400,
-                'error' => 'В Lisa не существует следующих rz_categories: 11111',
+                'error' => 'Передана не конечная категория Rozetka: 11111',
             ],
             'db' => [
                 'lisa_fixtures' => array_merge(
@@ -8556,7 +9236,7 @@ return [
                                 'id' => 1,
                                 'date >=' => date('Y-m-d'),
                                 'class' => 'yii\base\InvalidArgumentException',
-                                'message' => 'В Lisa не существует следующих rz_categories: 11111',
+                                'message' => 'Передана не конечная категория Rozetka: 11111',
                                 'name' => 'Invalid Argument',
                                 'code' => 0,
                                 'user' => '4',
@@ -8585,11 +9265,11 @@ return [
                 'Request[seller_id]' => 0,
                 'Request[subject]' => 'Добавление/изменение размерной сетки (Определяется типом задачи)',
                 'Request[type_id]' => 10,
-                'rz_categories' => [11111, 753399]
+                'rz_categories' => [11111, 4652996]
             ],
             'responseBody' => [
                 'status' => 400,
-                'error' => 'В Lisa не существует следующих rz_categories: 11111',
+                'error' => 'Передана не конечная категория Rozetka: 11111',
             ],
             'db' => [
                 'lisa_fixtures' => array_merge(
@@ -8600,7 +9280,51 @@ return [
                                 'id' => 1,
                                 'date >=' => date('Y-m-d'),
                                 'class' => 'yii\base\InvalidArgumentException',
-                                'message' => 'В Lisa не существует следующих rz_categories: 11111',
+                                'message' => 'Передана не конечная категория Rozetka: 11111',
+                                'name' => 'Invalid Argument',
+                                'code' => 0,
+                                'user' => '4',
+                            ],
+                        ]
+                    ]
+                )
+            ],
+            'RabbitMQ' => $rabbitMQ,
+        ]
+    ],
+
+    'case67' => [
+        'setting' => [
+            'description' => 'Ошибка при указании существующего, но не конечного rz_categories',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case19.php',
+        'provider_data' => [
+            'requestBody' => [
+                'RequestField[1]' => 1,
+                'Request[amount_to_work]' => 0,
+                'Request[author_login]' => 'kutsan.k',
+                'Request[category_id]' => 1,
+                'Request[description]' => 'description',
+                'Request[direction]' => 0,
+                'Request[seller_id]' => 0,
+                'Request[subject]' => 'Добавление/изменение размерной сетки (Определяется типом задачи)',
+                'Request[type_id]' => 10,
+                'rz_categories' => [4652996, 753399]
+            ],
+            'responseBody' => [
+                'status' => 400,
+                'error' => 'Передана не конечная категория Rozetka: 753399',
+            ],
+            'db' => [
+                'lisa_fixtures' => array_merge(
+                    $lisa_fixtures,
+                    [
+                        'exceptions' => [
+                            [
+                                'id' => 1,
+                                'date >=' => date('Y-m-d'),
+                                'class' => 'yii\base\InvalidArgumentException',
+                                'message' => 'Передана не конечная категория Rozetka: 753399',
                                 'name' => 'Invalid Argument',
                                 'code' => 0,
                                 'user' => '4',

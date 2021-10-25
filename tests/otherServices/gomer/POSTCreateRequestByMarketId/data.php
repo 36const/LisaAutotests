@@ -67,6 +67,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -210,6 +213,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -363,6 +369,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -512,6 +521,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -664,6 +676,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -806,6 +821,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -948,6 +966,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1091,6 +1112,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1239,6 +1263,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
                         ]
                     ],
                     'requests_fields' => [
