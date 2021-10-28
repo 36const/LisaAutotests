@@ -5,7 +5,7 @@ use lisa\RequestsTester;
 return [
     'case1_1' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление новых товаров (Работа с товарами Розетки) + нотификации',
+            'description' => 'Создание заявки на Добавление новых товаров (Работа с товарами Розетки) + нотификации',
             'type' => 1,
             'direction' => 1
         ],
@@ -381,7 +381,7 @@ return [
 
     'case1_2' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление новых товаров (Работа с товарами Маркетплейса)',
+            'description' => 'Создание заявки на Добавление новых товаров (Работа с товарами Маркетплейса)',
             'type' => 1,
             'direction' => 2
         ],
@@ -683,7 +683,7 @@ return [
 
     'case2_1' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
+            'description' => 'Создание заявки на Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
             'type' => 2,
             'direction' => 1
         ],
@@ -947,7 +947,7 @@ return [
 
     'case2_2' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
+            'description' => 'Создание заявки на Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
             'type' => 2,
             'direction' => 2
         ],
@@ -1228,7 +1228,7 @@ return [
 
     'case3_1' => [
         'setting' => [
-            'description' => 'Новая заявка на Перенос товаров (Работа с товарами Розетки)',
+            'description' => 'Создание заявки на Перенос товаров (Работа с товарами Розетки)',
             'type' => 3,
             'direction' => 1
         ],
@@ -1492,7 +1492,7 @@ return [
 
     'case3_2' => [
         'setting' => [
-            'description' => 'Новая заявка на Перенос товаров (Работа с товарами Маркетплейса)',
+            'description' => 'Создание заявки на Перенос товаров (Работа с товарами Маркетплейса)',
             'type' => 3,
             'direction' => 2
         ],
@@ -1767,7 +1767,7 @@ return [
 
     'case4_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Группировка товаров (Определяется типом задачи)',
+            'description' => 'Создание заявки на Группировка товаров (Определяется типом задачи)',
             'type' => 4,
             'direction' => 0
         ],
@@ -2080,7 +2080,7 @@ return [
 
     'case5_1' => [
         'setting' => [
-            'description' => 'Новая заявка на Заливка фото с фотостудии (Работа с товарами Розетки)',
+            'description' => 'Создание заявки на Заливка фото с фотостудии (Работа с товарами Розетки)',
             'type' => 5,
             'direction' => 1
         ],
@@ -2345,7 +2345,7 @@ return [
 
     'case6_2' => [
         'setting' => [
-            'description' => 'Новая заявка на Проверка скрытых товаров (Работа с товарами Маркетплейса)',
+            'description' => 'Создание заявки на Проверка скрытых товаров (Работа с товарами Маркетплейса)',
             'type' => 6,
             'direction' => 2
         ],
@@ -2620,7 +2620,7 @@ return [
 
     'case7_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
+            'description' => 'Создание заявки на Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
             'type' => 7,
             'direction' => 0
         ],
@@ -2883,7 +2883,7 @@ return [
 
     'case8_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
+            'description' => 'Создание заявки на Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи)',
             'type' => 8,
             'direction' => 0
         ],
@@ -3125,7 +3125,7 @@ return [
 
     'case9_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление параметров/значений (Определяется типом задачи)',
+            'description' => 'Создание заявки на Добавление параметров/значений (Определяется типом задачи)',
             'type' => 9,
             'direction' => 0
         ],
@@ -3355,7 +3355,7 @@ return [
 
     'case10_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Изменение существующих параметров/значений (Определяется типом задачи)',
+            'description' => 'Создание заявки на Изменение существующих параметров/значений (Определяется типом задачи)',
             'type' => 10,
             'direction' => 0
         ],
@@ -3585,7 +3585,7 @@ return [
 
     'case11_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Проектирование структуры (Определяется типом задачи)',
+            'description' => 'Создание заявки на Проектирование структуры (Определяется типом задачи)',
             'type' => 11,
             'direction' => 0
         ],
@@ -3814,7 +3814,7 @@ return [
 
     'case12_1' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
+            'description' => 'Создание заявки на Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
             'type' => 12,
             'direction' => 1
         ],
@@ -4079,7 +4079,7 @@ return [
 
     'case13_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение видео (Определяется типом задачи)',
+            'description' => 'Создание заявки на Добавление/изменение видео (Определяется типом задачи)',
             'type' => 13,
             'direction' => 0
         ],
@@ -4313,7 +4313,7 @@ return [
 
     'case14_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение размерной сетки (Определяется типом задачи)',
+            'description' => 'Создание заявки на Добавление/изменение размерной сетки (Определяется типом задачи)',
             'type' => 14,
             'direction' => 0
         ],
@@ -4547,7 +4547,7 @@ return [
 
     'case15_0' => [
         'setting' => [
-            'description' => 'Новая заявка на Добавление/изменение тегов (Определяется типом задачи)',
+            'description' => 'Создание заявки на Добавление/изменение тегов (Определяется типом задачи)',
             'type' => 15,
             'direction' => 0
         ],
@@ -4775,9 +4775,9 @@ return [
         ]
     ],
 
-    'case0' => [
+    'case19' => [
         'setting' => [
-            'description' => 'Новая заявка на Группировка товаров через шаблон c дочерними заявками',
+            'description' => 'Создание заявки на Группировка товаров через шаблон c дочерними заявками',
             'type' => 4,
             'direction' => 0
         ],
@@ -5555,5 +5555,75 @@ return [
                 ],
             ]
         ]
-    ]
+    ],
+
+    'case20' => [
+        'setting' => [
+            'description' => 'Ошибка при создании заявки на Группировка товаров через шаблон c дочерними заявками с заблокированной категорией',
+            'type' => 4,
+            'direction' => 0
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case20.php',
+        'mock_data' => [
+            'interior' => RequestsTester::interiorMockArray('request-create', 5),
+        ],
+        'provider_data' => [
+            'requestBody' => [
+                '169' => 1,
+                'type_id' => '4',
+                'direction' => 0,
+                'priority' => '2',
+                'amount_to_work' => 999,
+                'subject' => "Группировка товаров (Определяется типом задачи) =~}!@#$%^&*()_+`-]'/[;.,}\"?{:><1001234567890>",
+                'description' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'category_id' => 2,
+                'rz_category_id' => 2514857,
+                'seller_id' => 5,
+                'planned_finish_date' => '2021-03-01 08:40:59',
+                'observers' => [15, 17],
+                'selectedTemplate' => 1
+            ],
+            'responseBody' => [
+                'errors' => [
+                    'templates' => 'Не удалось сохранить заявку: Заявка не сохранилась: Попытка установить заявке неактивную категорию.
+Также, возможно Вы пользуетесь шаблоном, который создает дочерние заявки, и неактивное значение в одной из них.',
+                ],
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [],
+                    'requests_fields' => [],
+                    'request_errors' => [],
+                    'user_notifications' => [],
+                    'request_status_history' => [],
+                    'requests_reasons' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'class' => 'yii\\db\\Exception',
+                            'message' => 'Заявка не сохранилась: Заявка не сохранилась: Попытка установить заявке неактивную категорию.
+Также, возможно Вы пользуетесь шаблоном, который создает дочерние заявки, и неактивное значение в одной из них.',
+                            'name' => 'Database Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
+                ],
+            ],
+            //задача MGB-668
+            'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":2,"type":"Добавление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":2,"type":"Додавання товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":2,"type":"Добавление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":2,"type":"Додавання товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
+                ]
+            ]
+        ]
+    ],
+
 ];

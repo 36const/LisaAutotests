@@ -35,7 +35,7 @@ class POSTRequestsClearFieldsCest
         $I->sendPUT('/request/update/1', json_encode($providerData['requestBody']));
 
         $I->seeResponseCodeIs(200);
-        $I->canSeeJsonResponseEquals(['success' => true, 'warning' => '']);
+        $I->canSeeJsonResponseEquals($providerData['responseBody'] ?? ['success' => true, 'warning' => '']);
 
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);

@@ -14,7 +14,7 @@ $mockData = [
 return [
     'case1_1' => [
         'setting' => [
-            'description' => 'Очистка полей тип 1 направление 1',
+            'description' => 'Очистка необязательных полей тип 1 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1_1.php',
         'mock_data' => $mockData,
@@ -299,9 +299,82 @@ return [
         ]
     ],
 
+    'case1_1_negative' => [
+        'setting' => [
+            'description' => 'Ошибка при очистке поля Количество в работу тип 1 направление 1',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1_1.php',
+        'mock_data' => $mockData,
+        'provider_data' => [
+            'requestBody' => [
+                20 => NULL,
+                24 => NULL,
+                25 => NULL,
+                27 => NULL,
+                31 => NULL,
+                65 => '',
+                66 => '0',
+                68 => '0',
+                69 => '0',
+                70 => '0',
+                71 => '0',
+                76 => '0',
+                77 => '0',
+                88 => '0',
+                93 => '0',
+                94 => '0',
+                111 => '0',
+                121 => '',
+                144 => '',
+                157 => '',
+                'supervisor_comment' => '',
+                'result_comment' => '',
+                'correction_comment' => '',
+                'sv_report_periods' => [
+                ],
+                'observers' => [
+                ],
+                'priority' => NULL,
+                'cross_check_manager_id' => null,
+                'amount_to_work' => '',
+                'currentStatus' => 6,
+            ],
+            'responseBody' => [
+                'errors' => 'Необходимо заполнить «Количество в работу».',
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => (include __DIR__ . '/fixture/case1_1.php')['lisa_fixtures']['requests'],
+                    'requests_fields' => (include __DIR__ . '/fixture/case1_1.php')['lisa_fixtures']['requests_fields'],
+                    'request_errors' => [],
+                    'user_notifications' => [],
+                    'request_status_history' => [],
+                    'requests_reasons' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'class' => 'yii\\db\\Exception',
+                            'message' => 'Заявка не сохранилась: Необходимо заполнить «Количество в работу».',
+                            'name' => 'Database Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [],
+                'lisa_sendOuterNotifications' => [],
+            ],
+            'RabbitMQWithRoutingKey' => [
+                'lisa_common' => [],
+            ]
+        ]
+    ],
+
     'case2_2' => [
         'setting' => [
-            'description' => 'Очистка полей тип 2 направление 2',
+            'description' => 'Очистка необязательных полей тип 2 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2_2.php',
         'mock_data' => $mockData,
@@ -495,7 +568,7 @@ return [
 
     'case4_0' => [
         'setting' => [
-            'description' => 'Очистка полей тип 4 направление 0',
+            'description' => 'Очистка необязательных полей тип 4 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4_0.php',
         'mock_data' => $mockData,
@@ -755,9 +828,78 @@ return [
         ]
     ],
 
+    'case4_0_negative' => [
+        'setting' => [
+            'description' => 'Ошибка при очистке поля Категория Rozetka тип 4 направление 0',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case4_0_negative.php',
+        'mock_data' => $mockData,
+        'provider_data' => [
+            'requestBody' => [
+                20 => NULL,
+                91 => '0',
+                93 => '0',
+                94 => '0',
+                95 => '',
+                103 => '',
+                116 => '0',
+                121 => '',
+                145 => '',
+                148 => '',
+                157 => '',
+                161 => '0',
+                162 => '0',
+                163 => '0',
+                169 => false,
+                'priority' => NULL,
+                'seller_id' => NULL,
+                'supervisor_comment' => '',
+                'result_comment' => '',
+                'rz_category_id' => NULL,
+                'correction_comment' => '',
+                'sv_report_periods' => [
+                ],
+                'observers' => [
+                ],
+                'cross_check_manager_id' => null,
+                'currentStatus' => 6,
+            ],
+            'responseBody' => [
+                'errors' => 'Необходимо заполнить поле "Категория Rozetka" для задачи типа "Группировка товаров"',
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => (include __DIR__ . '/fixture/case4_0_negative.php')['lisa_fixtures']['requests'],
+                    'requests_fields' => (include __DIR__ . '/fixture/case4_0_negative.php')['lisa_fixtures']['requests_fields'],
+                    'request_errors' => [],
+                    'user_notifications' => [],
+                    'request_status_history' => [],
+                    'requests_reasons' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'class' => 'yii\\db\\Exception',
+                            'message' => 'Заявка не сохранилась: Необходимо заполнить поле "Категория Rozetka" для задачи типа "Группировка товаров"',
+                            'name' => 'Database Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [],
+                'lisa_sendOuterNotifications' => [],
+            ],
+            'RabbitMQWithRoutingKey' => [
+                'lisa_common' => [],
+            ]
+        ]
+    ],
+
     'case7_0' => [
         'setting' => [
-            'description' => 'Очистка полей тип 7 направление 0',
+            'description' => 'Очистка необязательных полей тип 7 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case7_0.php',
         'provider_data' => [
@@ -960,9 +1102,95 @@ return [
         ]
     ],
 
+    'case7_0_negative' => [
+        'setting' => [
+            'description' => 'Ошибка при очистке поля Описание тип 7 направление 0',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case7_0.php',
+        'provider_data' => [
+            'requestBody' => [
+                1 => false,
+                2 => true,
+                6 => false,
+                7 => false,
+                20 => NULL,
+                29 => NULL,
+                30 => NULL,
+                65 => '',
+                79 => '',
+                80 => '',
+                81 => '',
+                84 => '',
+                85 => '',
+                90 => '',
+                97 => '',
+                98 => '',
+                99 => '',
+                104 => '',
+                105 => '',
+                106 => '',
+                107 => '',
+                109 => '',
+                112 => '',
+                113 => '',
+                115 => '',
+                121 => '',
+                144 => '',
+                149 => '',
+                150 => '',
+                151 => '',
+                152 => '',
+                154 => '',
+                157 => '',
+                'priority' => NULL,
+                'seller_id' => NULL,
+                'supervisor_comment' => '',
+                'result_comment' => '',
+                'correction_comment' => '',
+                'sv_report_periods' => [
+                ],
+                'observers' => [
+                ],
+                'cross_check_manager_id' => null,
+                'description' => '',
+                'currentStatus' => 6,
+            ],
+            'responseBody' => [
+                'errors' => 'Необходимо заполнить «Описание».',
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => (include __DIR__ . '/fixture/case7_0.php')['lisa_fixtures']['requests'],
+                    'requests_fields' => (include __DIR__ . '/fixture/case7_0.php')['lisa_fixtures']['requests_fields'],
+                    'request_errors' => [],
+                    'user_notifications' => [],
+                    'request_status_history' => [],
+                    'requests_reasons' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'class' => 'yii\\db\\Exception',
+                            'message' => 'Заявка не сохранилась: Необходимо заполнить «Описание».',
+                            'name' => 'Database Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [],
+                'lisa_sendOuterNotifications' => [],
+            ],
+            'RabbitMQWithRoutingKey' => [
+                'lisa_common' => [],
+            ]
+        ]
+    ],
+
     'case9_0' => [
         'setting' => [
-            'description' => 'Очистка полей тип 9 направление 0',
+            'description' => 'Очистка необязательных полей тип 9 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case9_0.php',
         'provider_data' => [
@@ -1132,9 +1360,81 @@ return [
         ]
     ],
 
+    'case9_0_negative' => [
+        'setting' => [
+            'description' => 'Ошибка при очистке поля Заголовок тип 9 направление 0',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case9_0.php',
+        'provider_data' => [
+            'requestBody' => [
+                20 => NULL,
+                29 => NULL,
+                30 => NULL,
+                79 => '',
+                80 => '',
+                84 => '',
+                91 => '',
+                97 => '',
+                98 => '',
+                99 => '',
+                104 => '',
+                105 => '',
+                106 => '',
+                113 => '',
+                121 => '',
+                149 => '',
+                150 => '',
+                151 => '',
+                157 => '',
+                'seller_id' => NULL,
+                'priority' => NULL,
+                'observers' => [
+                ],
+                'sv_report_periods' => [
+                ],
+                'result_comment' => '',
+                'correction_comment' => '',
+                'supervisor_comment' => '',
+                'cross_check_manager_id' => null,
+                'subject' => '',
+                'currentStatus' => 6,
+            ],
+            'responseBody' => [
+                'errors' => 'Необходимо заполнить «Заголовок».',
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => (include __DIR__ . '/fixture/case9_0.php')['lisa_fixtures']['requests'],
+                    'requests_fields' => (include __DIR__ . '/fixture/case9_0.php')['lisa_fixtures']['requests_fields'],
+                    'request_errors' => [],
+                    'user_notifications' => [],
+                    'request_status_history' => [],
+                    'requests_reasons' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'class' => 'yii\\db\\Exception',
+                            'message' => 'Заявка не сохранилась: Необходимо заполнить «Заголовок».',
+                            'name' => 'Database Exception',
+                            'code' => 0,
+                            'user' => '4',
+                        ],
+                    ],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [],
+                'lisa_sendOuterNotifications' => [],
+            ],
+            'RabbitMQWithRoutingKey' => [
+                'lisa_common' => [],
+            ]
+        ]
+    ],
+
     'case13_0' => [
         'setting' => [
-            'description' => 'Очистка полей тип 13 направление 0',
+            'description' => 'Очистка необязательных полей тип 13 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case13_0.php',
         'mock_data' => $mockData,
@@ -1305,7 +1605,7 @@ return [
 
     'case14_0' => [
         'setting' => [
-            'description' => 'Очистка полей тип 14 направление 0',
+            'description' => 'Очистка необязательных полей тип 14 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case14_0.php',
         'mock_data' => $mockData,
@@ -1459,7 +1759,7 @@ return [
 
     'case15_0' => [
         'setting' => [
-            'description' => 'Очистка полей тип 15 направление 0',
+            'description' => 'Очистка необязательных полей тип 15 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case15_0.php',
         'provider_data' => [
