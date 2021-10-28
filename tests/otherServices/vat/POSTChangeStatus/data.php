@@ -223,21 +223,6 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 7,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'status',
-                            'changed_fields' => '{"newValue": 1, "oldValue": 3}'
-                        ],
-                        [
-                            'id' => 3,
                             'user_id' => 15,
                             'notification' => '',
                             'status' => 0,
@@ -252,7 +237,7 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}'
                         ],
                         [
-                            'id' => 4,
+                            'id' => 3,
                             'user_id' => 17,
                             'notification' => '',
                             'status' => 0,
@@ -432,21 +417,6 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 7,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'status',
-                            'changed_fields' => '{"newValue": 1, "oldValue": 3}'
-                        ],
-                        [
-                            'id' => 3,
                             'user_id' => 15,
                             'notification' => '',
                             'status' => 0,
@@ -461,7 +431,7 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}'
                         ],
                         [
-                            'id' => 4,
+                            'id' => 3,
                             'user_id' => 17,
                             'notification' => '',
                             'status' => 0,
@@ -650,21 +620,6 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 7,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'status',
-                            'changed_fields' => '{"newValue": 1, "oldValue": 3}'
-                        ],
-                        [
-                            'id' => 3,
                             'user_id' => 15,
                             'notification' => '',
                             'status' => 0,
@@ -679,7 +634,7 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}'
                         ],
                         [
-                            'id' => 4,
+                            'id' => 3,
                             'user_id' => 17,
                             'notification' => '',
                             'status' => 0,
@@ -694,7 +649,7 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}'
                         ],
                         [
-                            'id' => 5,
+                            'id' => 4,
                             'user_id' => 4,
                             'notification' => '',
                             'status' => 0,
@@ -709,22 +664,6 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}',
                             'notify_service_id' => null
                         ],
-                        [
-                            'id' => 6,
-                            'user_id' => 7,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 2,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'status',
-                            'changed_fields' => '{"newValue": 1, "oldValue": 3}',
-                            'notify_service_id' => null
-                        ]
                     ],
                     'exceptions' => [
                         [
@@ -912,21 +851,6 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 7,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'status',
-                            'changed_fields' => '{"newValue": 1, "oldValue": 3}'
-                        ],
-                        [
-                            'id' => 3,
                             'user_id' => 15,
                             'notification' => '',
                             'status' => 0,
@@ -941,7 +865,7 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}'
                         ],
                         [
-                            'id' => 4,
+                            'id' => 3,
                             'user_id' => 17,
                             'notification' => '',
                             'status' => 0,
@@ -956,7 +880,7 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}'
                         ],
                         [
-                            'id' => 5,
+                            'id' => 4,
                             'user_id' => 4,
                             'notification' => '',
                             'status' => 0,
@@ -971,22 +895,6 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}',
                             'notify_service_id' => null
                         ],
-                        [
-                            'id' => 6,
-                            'user_id' => 7,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 2,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'status',
-                            'changed_fields' => '{"newValue": 1, "oldValue": 3}',
-                            'notify_service_id' => null
-                        ]
                     ],
                     'exceptions' => [
                         [
@@ -1167,21 +1075,6 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 7,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'status',
-                            'changed_fields' => '{"newValue": 1, "oldValue": 3}'
-                        ],
-                        [
-                            'id' => 3,
                             'user_id' => 15,
                             'notification' => '',
                             'status' => 0,
@@ -1196,7 +1089,7 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}'
                         ],
                         [
-                            'id' => 4,
+                            'id' => 3,
                             'user_id' => 17,
                             'notification' => '',
                             'status' => 0,
@@ -1378,21 +1271,6 @@ return [
                         ],
                         [
                             'id' => 2,
-                            'user_id' => 7,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'status',
-                            'changed_fields' => '{"newValue": 1, "oldValue": 3}'
-                        ],
-                        [
-                            'id' => 3,
                             'user_id' => 15,
                             'notification' => '',
                             'status' => 0,
@@ -1407,7 +1285,7 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}'
                         ],
                         [
-                            'id' => 4,
+                            'id' => 3,
                             'user_id' => 17,
                             'notification' => '',
                             'status' => 0,

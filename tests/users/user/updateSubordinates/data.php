@@ -10,6 +10,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'system_usersae2ad3d3da10c2072175ce20624812d4',
+            ],
             'requestBody' => [
                 'subordinates' => [
                     0 => '11',
@@ -97,6 +100,9 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
+            'excludedRedisKeys' => [
+                'system_usersae2ad3d3da10c2072175ce20624812d4',
+            ],
             'requestBody' => [
                 'subordinates' => [
                     0 => '11',
