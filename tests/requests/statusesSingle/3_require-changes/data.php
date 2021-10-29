@@ -203,6 +203,7 @@ return [
                     '{"notificationId":3,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Новая`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Новая\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
                 ],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_saveFiles' => [],
                 'lisa_common' => [
                     'create.request_status_history.all' => '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":3,"new_status":1,"reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","created_at":"' . date('Y-m-d'),
                 ]

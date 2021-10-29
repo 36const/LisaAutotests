@@ -16,6 +16,32 @@ return [
                 'currentStatus' => 1,
                 'payload' => [
                     'recommendations' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                    'files' => [
+                        0 => [
+                            'folder' => 1631802792673,
+                            'fileName' => '803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'alias' => '194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'size' => 60424,
+                        ],
+                        1 => [
+                            'folder' => 1631802792673,
+                            'fileName' => '803902_doc .doc',
+                            'alias' => 'doc .doc',
+                            'size' => 34304,
+                        ],
+                        2 => [
+                            'folder' => 1631802792673,
+                            'fileName' => '803902_pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx',
+                            'alias' => 'pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx',
+                            'size' => 97152,
+                        ],
+                        3 => [
+                            'folder' => 1631802792673,
+                            'fileName' => '803902_~!@#$%^&*()_+`-=][\';.|}{:?><.jpg',
+                            'alias' => '~!@#$%^&*()_+`-=][\';.|}{:?><.jpg',
+                            'size' => 34304,
+                        ],
+                    ],
                 ],
             ],
             'responseBody' => [
@@ -70,9 +96,95 @@ return [
                         ]
                     ],
                     'requests_fields' => (include __DIR__ . '/fixture/case.php')['lisa_fixtures']['requests_fields'],
+                    'request_attachments' => [
+                        [
+                            'id' => 1,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => '194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'status' => 3,
+                            'uploaded_by' => 'Константин Куцан',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => NULL,
+                            'deleted_at' => NULL,
+                            'file_name' => '803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'size' => 60424,
+                        ],
+                        [
+                            'id' => 2,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => 'doc .doc',
+                            'status' => 3,
+                            'uploaded_by' => 'Константин Куцан',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => NULL,
+                            'deleted_at' => NULL,
+                            'file_name' => '803902_doc.doc',
+                            'size' => 34304,
+                        ],
+                        [
+                            'id' => 3,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => 'pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx',
+                            'status' => 3,
+                            'uploaded_by' => 'Константин Куцан',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => NULL,
+                            'deleted_at' => NULL,
+                            'file_name' => '803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx',
+                            'size' => 97152,
+                        ],
+                        [
+                            'id' => 4,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => '!@#$%^&*()_+`-=][\';.|}{:?><.jpg',
+                            'status' => 3,
+                            'uploaded_by' => 'Константин Куцан',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => NULL,
+                            'deleted_at' => NULL,
+                            'file_name' => '803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg',
+                            'size' => 34304,
+                        ],
+                    ],
                     'user_notifications' => [
                         [
                             'id' => 1,
+                            'user_id' => 4,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'attachments',
+                            'changed_fields' => '{"newValue": {"added": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "doc .doc", "pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"], "deleted": []}, "oldValue": []}',
+                            'notify_service_id' => NULL,
+                        ],
+                        [
+                            'id' => 2,
+                            'user_id' => 6,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'attachments',
+                            'changed_fields' => '{"newValue": {"added": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "doc .doc", "pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"], "deleted": []}, "oldValue": []}',
+                            'notify_service_id' => NULL,
+                        ],
+                        [
+                            'id' => 3,
                             'user_id' => 4,
                             'notification' => '',
                             'status' => 0,
@@ -88,7 +200,7 @@ return [
                             'notify_service_id' => null,
                         ],
                         [
-                            'id' => 2,
+                            'id' => 4,
                             'user_id' => 6,
                             'notification' => '',
                             'status' => 0,
@@ -122,11 +234,15 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [
-                    '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Готова для распределения`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Готова для распределения\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: изменен набор вложений","notification":"Константин Куцан <b>изменил(а) набор вложений заявки</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br> <b>Добавлено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, doc .doc, pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br>","requestId":1}',
+                    '{"notificationId":3,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Готова для распределения`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Готова для распределения\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
                 ],
                 'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     'create.request_status_history.all' => '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":1,"new_status":2,"reason":null,"created_at":"' . date('Y-m-d'),
+                ],
+                'lisa_saveFiles' => [
+                    '{"folder":"1631802792673","fileName":"803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","alias":"194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","size":"60424","attachmentId":1},{"folder":"1631802792673","fileName":"803902_doc .doc","alias":"doc .doc","size":"34304","attachmentId":2},{"folder":"1631802792673","fileName":"803902_pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx","alias":"pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx","size":"97152","attachmentId":3},{"folder":"1631802792673","fileName":"803902_~!@#$%^&*()_+`-=][\';.|}{:?><.jpg","alias":"!@#$%^&*()_+`-=][\';.|}{:?><.jpg","size":"34304","attachmentId":4}'
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -400,6 +516,9 @@ return [
                 'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     'create.request_status_history.all' => '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":1,"new_status":3,"reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","created_at":"' . date('Y-m-d'),
+                ],
+                'lisa_saveFiles' => [
+                    '{"folder":"1631802792673","fileName":"803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","alias":"194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","size":"60424","attachmentId":1},{"folder":"1631802792673","fileName":"803902_doc .doc","alias":"doc .doc","size":"34304","attachmentId":2},{"folder":"1631802792673","fileName":"803902_pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx","alias":"pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx","size":"97152","attachmentId":3},{"folder":"1631802792673","fileName":"803902_~!@#$%^&*()_+`-=][\';.|}{:?><.jpg","alias":"!@#$%^&*()_+`-=][\';.|}{:?><.jpg","size":"34304","attachmentId":4}'
                 ],
             ],
             'RabbitMQWithRoutingKey' => [

@@ -47,9 +47,8 @@ modules:
         vhost: '/'
         cleanup: false
         single_channel: true
-        queues: [ 'lisa_attachmentsCopy',
+        queues: [ 'lisa_saveFiles',
                   'lisa_exportGenerate',
-                  'lisa_makeAttachmentsArchive',
                   'lisa_sendMailNotifications',
                   'market_queue',
                   'lisa_common',
