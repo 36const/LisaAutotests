@@ -5059,7 +5059,7 @@ return [
                             'id' => 6,
                             'author_id' => 4,
                             'type_id' => 11,
-                            'supervisor_id' => 37,
+                            'supervisor_id' => 34,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 0,
@@ -5603,31 +5603,10 @@ return [
                     'user_notifications' => [],
                     'request_status_history' => [],
                     'requests_reasons' => [],
-                    'exceptions' => [
-                        [
-                            'id' => 1,
-                            'class' => 'yii\\db\\Exception',
-                            'message' => 'Заявка не сохранилась: Заявка не сохранилась: Попытка установить заявке неактивную категорию.
-Также, возможно Вы пользуетесь шаблоном, который создает дочерние заявки, и неактивное значение в одной из них.',
-                            'name' => 'Database Exception',
-                            'code' => 0,
-                            'user' => '4',
-                        ],
-                    ],
-                ],
-            ],
-            //задача MGB-668
-            'RabbitMQ' => [
-                'lisa_sendOuterNotifications' => [
-                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":1,"type":"Группировка товаров","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":1,"type":"Групування товарів","amount_to_work":"999","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-create","fields":{"id":2,"type":"Добавление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-create","fields":{"id":2,"type":"Додавання товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-create","fields":{"id":2,"type":"Добавление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
-                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-create","fields":{"id":2,"type":"Додавання товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
                 ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => []
             ]
         ]
     ],
