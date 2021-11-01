@@ -166,7 +166,7 @@ return [
     
     'case7_6_1_2' => [
         'setting' => [
-            'description' => 'Перевод из "Ожидает (ризоны)" во "В работе" тип 1 направление 2',
+            'description' => 'Перевод из "Ожидает (ризоны)" во "В работе" тип 1 направление 2 + добавление файлов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case7_6_1_2.php',
         'mock_data' => $mockData,
@@ -395,7 +395,10 @@ return [
                     'create.request_status_history.all' => '{"action":"create","entity":"request_status_history","fields_data":{"id":2,"request_id":1,"user_id":4,"old_status":7,"new_status":6,"reason":null,"created_at":"' . date('Y-m-d'),
                 ],
                 'lisa_saveFiles' => [
-                    '{"folder":"1631802792673","fileName":"803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","alias":"194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","size":"60424","attachmentId":5},{"folder":"1631802792673","fileName":"803902_doc .doc","alias":"doc .doc","size":"34304","attachmentId":6},{"folder":"1631802792673","fileName":"803902_pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx","alias":"pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx","size":"97152","attachmentId":7},{"folder":"1631802792673","fileName":"803902_~!@#$%^&*()_+`-=][\';.|}{:?><.jpg","alias":"!@#$%^&*()_+`-=][\';.|}{:?><.jpg","size":"34304","attachmentId":8}'
+                    '[{"folder":"1631802792673","fileName":"803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","alias":"194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","size":"60424","attachment":{"id":5,"request_id":1,"file_name_old":"","alias":"194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","status":3,"uploaded_by":"Константин Куцан","uploaded_at":null,"deleted_by":null,"deleted_at":null,"file_name":"803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","size":60424}},' .
+                    '{"folder":"1631802792673","fileName":"803902_doc .doc","alias":"doc .doc","size":"34304","attachment":{"id":6,"request_id":1,"file_name_old":"","alias":"doc .doc","status":3,"uploaded_by":"Константин Куцан","uploaded_at":null,"deleted_by":null,"deleted_at":null,"file_name":"803902_doc.doc","size":34304}},' .
+                    '{"folder":"1631802792673","fileName":"803902_pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx","alias":"pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx","size":"97152","attachment":{"id":7,"request_id":1,"file_name_old":"","alias":"pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx","status":3,"uploaded_by":"Константин Куцан","uploaded_at":null,"deleted_by":null,"deleted_at":null,"file_name":"803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx","size":97152}},' .
+                    '{"folder":"1631802792673","fileName":"803902_~!@#$%^&*()_+`-=][\';.|}{:?><.jpg","alias":"!@#$%^&*()_+`-=][\';.|}{:?><.jpg","size":"34304","attachment":{"id":8,"request_id":1,"file_name_old":"","alias":"!@#$%^&*()_+`-=][\';.|}{:?><.jpg","status":3,"uploaded_by":"Константин Куцан","uploaded_at":null,"deleted_by":null,"deleted_at":null,"file_name":"803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg","size":34304}}]'
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
