@@ -21,7 +21,7 @@ return [
                 'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
                 'category_id' => null,
-                'seller_id' => 83,
+                'seller_id' => 121212,
                 'recommendations' => null,
                 'reason' => null,
                 'parent_id' => null,
@@ -181,7 +181,17 @@ return [
         'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         'excluded_fields' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/excluded_fields.php',
         'field_values' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
-        'markets_supervisors' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
+        'markets_supervisors' => array_merge(
+            include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
+            [
+                [
+                    'owox_id' => 121212,
+                    'supervisor_id' => 10,
+                    'title' => 'Mogozinchik',
+                    'status' => 6
+                ],
+            ]
+        ),
         'priorities' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
         'reasons' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
         'auth.api_users' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.api_users.php',

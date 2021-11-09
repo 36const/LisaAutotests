@@ -54,6 +54,8 @@ return [
                     'rz_category_id' => NULL,
                 ],
                 'isCrossCheck' => true,
+                'fieldsForOuter' => [],
+                'fieldsForPC' => [],
                 'fieldsData' => [
                     'requestFields' => [
                         1 => '1',
@@ -905,7 +907,6 @@ return [
                     'text' => 'В работе',
                     'link' => '#/request/list/in-work',
                 ],
-
             ]
         ]
     ],
@@ -933,7 +934,7 @@ return [
                     'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|',
                     'category_id' => NULL,
-                    'seller_id' => 83,
+                    'seller_id' => 121212,
                     'recommendations' => NULL,
                     'reason' => NULL,
                     'parent_id' => NULL,
@@ -961,6 +962,27 @@ return [
                     'rz_category_id' => NULL,
                 ],
                 'isCrossCheck' => false,
+                'fieldsForOuter' => [
+                    'amount_to_work',
+                    'id',
+                    'reason',
+                    'status',
+                    'subject',
+                    'type_id',
+                    67,
+                    72,
+                    94,
+                ],
+                'fieldsForPC' => [
+                    'actual_finish_date',
+                    'id',
+                    'reason',
+                    'status',
+                    'subject',
+                    'type_id',
+                    67,
+                    94,
+                ],
                 'fieldsData' => [
                     'requestFields' => [
                         1 => '1',
@@ -1041,8 +1063,8 @@ return [
                     'seller_id' => [
                         'disabled' => true,
                         'initValue' => [
-                            'owox_id' => 83,
-                            'title' => 'Euromart',
+                            'owox_id' => 121212,
+                            'title' => 'Mogozinchik',
                         ],
                     ],
                     'priority' => [
@@ -1481,7 +1503,7 @@ return [
                     'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|',
                     'category_id' => 1,
-                    'seller_id' => 83,
+                    'seller_id' => 121212,
                     'recommendations' => NULL,
                     'reason' => NULL,
                     'parent_id' => NULL,
@@ -1509,6 +1531,24 @@ return [
                     'rz_category_id' => 753399,
                 ],
                 'isCrossCheck' => false,
+                'fieldsForOuter' => [
+                    'amount_to_work',
+                    'id',
+                    'reason',
+                    'status',
+                    'subject',
+                    'type_id',
+                    94,
+                ],
+                'fieldsForPC' => [
+                    'actual_finish_date',
+                    'id',
+                    'reason',
+                    'status',
+                    'subject',
+                    'type_id',
+                    94,
+                ],
                 'fieldsData' => [
                     'requestFields' => [
                         1 => '1',
@@ -1593,8 +1633,8 @@ return [
                     'seller_id' => [
                         'disabled' => false,
                         'initValue' => [
-                            'owox_id' => 83,
-                            'title' => 'Euromart',
+                            'owox_id' => 121212,
+                            'title' => 'Mogozinchik',
                         ],
                     ],
                     'priority' => [
@@ -1983,7 +2023,7 @@ return [
                     'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                     'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|',
                     'category_id' => 1,
-                    'seller_id' => 83,
+                    'seller_id' => 121212,
                     'recommendations' => NULL,
                     'reason' => NULL,
                     'parent_id' => NULL,
@@ -2011,6 +2051,22 @@ return [
                     'rz_category_id' => NULL,
                 ],
                 'isCrossCheck' => false,
+                'fieldsForOuter' => [
+                    'amount_to_work',
+                    'id',
+                    'reason',
+                    'status',
+                    'subject',
+                    'type_id',
+                ],
+                'fieldsForPC' => [
+                    'actual_finish_date',
+                    'id',
+                    'reason',
+                    'status',
+                    'subject',
+                    'type_id',
+                ],
                 'fieldsData' => [
                     'requestFields' => [
                         1 => '1',
@@ -2093,8 +2149,8 @@ return [
                     'seller_id' => [
                         'disabled' => true,
                         'initValue' => [
-                            'owox_id' => 83,
-                            'title' => 'Euromart',
+                            'owox_id' => 121212,
+                            'title' => 'Mogozinchik',
                         ],
                     ],
                     'priority' => [
