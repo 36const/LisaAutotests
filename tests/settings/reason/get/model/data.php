@@ -14,6 +14,10 @@ return [
                     'child_status' => 7,
                     'reason' => 'Ожидается загрузка фото в товары',
                     'status' => 1,
+                    'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка фото ЛК',
+                    'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка фото_ua ЛК',
+                    'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка фото Output',
+                    'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка фото_ua Output',
                 ],
                 'initialValues' => [
                     'statuses' => [
@@ -47,6 +51,10 @@ return [
                     'child_status' => 7,
                     'reason' => 'Ожидается загрузка обновлений в систему',
                     'status' => 0,
+                    'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка обновлений ЛК',
+                    'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка обновлений_ua ЛК',
+                    'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка обновлений Output',
+                    'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка обновлений_ua Output',
                 ],
                 'initialValues' => [
                     'statuses' => [
@@ -79,6 +87,10 @@ return [
                     'child_status' => NULL,
                     'reason' => NULL,
                     'status' => 1,
+                    'reason_for_personal_cab' => NULL,
+                    'reason_for_personal_cab_ua' => NULL,
+                    'reason_for_supplier_cab' => NULL,
+                    'reason_for_supplier_cab_ua' => NULL,
                 ],
                 'initialValues' => [
                     'statuses' => [

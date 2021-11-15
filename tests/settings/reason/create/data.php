@@ -25,11 +25,19 @@ return [
                 'child_status' => 3,
                 'reason' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
                 'status' => 1,
+                'reason_for_personal_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                'reason_for_personal_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
             ],
             'responseBody' => [
                 'model' => [
                     'child_status' => 'На доработке',
                     'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
+                    'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                    'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                    'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                    'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                     'status' => 'Активный',
                     'id' => 16,
                 ],
@@ -43,7 +51,11 @@ return [
                                 'id' => 16,
                                 'child_status' => 3,
                                 'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                                'status' => 1
+                                'status' => 1,
+                                'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                                'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                                'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                                'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                             ],
                         ],
                     )
@@ -76,11 +88,19 @@ return [
                 'child_status' => 4,
                 'reason' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
                 'status' => 0,
+                'reason_for_personal_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                'reason_for_personal_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
             ],
             'responseBody' => [
                 'model' => [
                     'child_status' => 'Отменена',
                     'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
+                    'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                    'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                    'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                    'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                     'status' => 'Заблокированный',
                     'id' => 16,
                 ],
@@ -94,7 +114,11 @@ return [
                                 'id' => 16,
                                 'child_status' => 4,
                                 'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                                'status' => 0
+                                'status' => 0,
+                                'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                                'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                                'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                                'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                             ],
                         ],
                     )
@@ -127,11 +151,19 @@ return [
                 'child_status' => 7,
                 'reason' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
                 'status' => 1,
+                'reason_for_personal_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                'reason_for_personal_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
             ],
             'responseBody' => [
                 'model' => [
                     'child_status' => 'Ожидает',
                     'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
+                    'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                    'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                    'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                    'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                     'status' => 'Активный',
                     'id' => 16,
                 ],
@@ -145,7 +177,11 @@ return [
                                 'id' => 16,
                                 'child_status' => 7,
                                 'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                                'status' => 1
+                                'status' => 1,
+                                'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                                'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                                'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                                'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                             ],
                         ],
                     )
@@ -178,11 +214,19 @@ return [
                 'child_status' => 8,
                 'reason' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
                 'status' => 0,
+                'reason_for_personal_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                'reason_for_personal_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
             ],
             'responseBody' => [
                 'model' => [
                     'child_status' => 'Частично выполнена',
                     'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
+                    'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                    'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                    'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                    'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                     'status' => 'Заблокированный',
                     'id' => 16,
                 ],
@@ -196,7 +240,11 @@ return [
                                 'id' => 16,
                                 'child_status' => 8,
                                 'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
-                                'status' => 0
+                                'status' => 0,
+                                'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                                'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                                'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                                'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                             ],
                         ],
                     )
@@ -215,6 +263,10 @@ return [
                 'child_status' => NULL,
                 'id' => NULL,
                 'reason' => 'Причина',
+                'reason_for_personal_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                'reason_for_personal_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                 'status' => 1,
             ],
             'responseBody' => [
@@ -234,6 +286,46 @@ return [
 
     'case6' => [
         'setting' => [
+            'description' => 'Невозможность создания причины с пустыми полями "Причина ..."',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'child_status' => 4,
+                'id' => NULL,
+                'reason' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
+                'reason_for_personal_cab' => NULL,
+                'reason_for_personal_cab_ua' => NULL,
+                'reason_for_supplier_cab' => NULL,
+                'reason_for_supplier_cab_ua' => NULL,
+                'status' => 0,
+            ],
+            'responseBody' => [
+                'errors' => [
+                    'reason_for_personal_cab' => [
+                        0 => 'Необходимо заполнить «Причина для ЛК».',
+                    ],
+                    'reason_for_personal_cab_ua' => [
+                        0 => 'Необходимо заполнить «Причина для ЛК (укр.)».',
+                    ],
+                    'reason_for_supplier_cab' => [
+                        0 => 'Необходимо заполнить «Причина для КП».',
+                    ],
+                    'reason_for_supplier_cab_ua' => [
+                        0 => 'Необходимо заполнить «Причина для КП (укр.)».',
+                    ],
+                ],
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'reasons' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['reasons']
+                ],
+            ]
+        ]
+    ],
+
+    'case7' => [
+        'setting' => [
             'description' => 'Невозможность создания причины с пустым полем "Причина"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -242,12 +334,47 @@ return [
                 'child_status' => 4,
                 'id' => NULL,
                 'reason' => NULL,
+                'reason_for_personal_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
+                'reason_for_personal_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                 'status' => 0,
             ],
             'responseBody' => [
                 'errors' => [
                     'reason' => [
                         0 => 'Необходимо заполнить «Причина».',
+                    ],
+                ],
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'reasons' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['reasons']
+                ],
+            ]
+        ]
+    ],
+
+    'case8' => [
+        'setting' => [
+            'description' => 'Невозможность создания причины с пустым полем "Причина для ЛК"',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'child_status' => 4,
+                'id' => NULL,
+                'reason' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
+                'reason_for_personal_cab' => NULL,
+                'reason_for_personal_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
+                'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
+                'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
+                'status' => 0,
+            ],
+            'responseBody' => [
+                'errors' => [
+                    'reason_for_personal_cab' => [
+                        0 => 'Необходимо заполнить «Причина для ЛК».',
                     ],
                 ],
             ],

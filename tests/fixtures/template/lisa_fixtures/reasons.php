@@ -1,93 +1,154 @@
 <?php
+
 return [
     [
         //"id" => 1,
-        "child_status" => 7,
-        "reason" => "Ожидается загрузка фото в товары",
-        "status" => 1
+        'child_status' => 7,
+        'reason' => 'Ожидается загрузка фото в товары',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка фото ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка фото_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка фото Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка фото_ua Output',
     ],
     [
         //"id" => 2,
-        "child_status" => 7,
-        "reason" => "Требуется уточнение информации по задаче",
-        "status" => 1
+        'child_status' => 7,
+        'reason' => 'Требуется уточнение информации по задаче',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Требуется уточнение информации ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Требуется уточнение информации_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Требуется уточнение информаци Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Требуется уточнение информации_ua Output',
     ],
     [
         //"id" => 3,
-        "child_status" => 7,
-        "reason" => "Изменен приоритет задачи",
-        "status" => 1
+        'child_status' => 7,
+        'reason' => 'Изменен приоритет задачи',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Изменен приоритет ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Изменен приоритет_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Изменен приоритет Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Изменен приоритет_ua Output',
     ],
     [
         //"id" => 4,
-        "child_status" => 7,
-        "reason" => "Ожидается загрузка товаров в систему",
-        "status" => 1
+        'child_status' => 7,
+        'reason' => 'Ожидается загрузка товаров в систему',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка товаров ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка товаров_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка товаров Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка товаров_ua Output',
     ],
     [
         //"id" => 5,
-        "child_status" => 7,
-        "reason" => "Ожидается загрузка обновлений в систему",
-        "status" => 0
+        'child_status' => 7,
+        'reason' => 'Ожидается загрузка обновлений в систему',
+        'status' => 0,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка обновлений ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка обновлений_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка обновлений Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидается загрузка обновлений_ua Output',
     ],
     [
         //"id" => 6,
-        "child_status" => 8,
-        "reason" => "Не получена запрошенная недостающая информация",
-        "status" => 1
+        'child_status' => 8,
+        'reason' => 'Не получена запрошенная недостающая информация',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Не получена информация ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Не получена информация_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Не получена информация Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Не получена информация_ua Output',
     ],
     [
         //"id" => 7,
-        "child_status" => 8,
-        "reason" => "Товары ушли в ошибки",
-        "status" => 1
+        'child_status' => 8,
+        'reason' => 'Товары ушли в ошибки',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Товары ушли ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Товары ушли_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Товары ушли Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Товары ушли_ua Output',
     ],
     [
         //"id" => 8,
-        "child_status" => 8,
-        "reason" => "Часть товаров ушла в ошибки",
-        "status" => 0
+        'child_status' => 8,
+        'reason' => 'Часть товаров ушла в ошибки',
+        'status' => 0,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Часть товаров ушла ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Часть товаров ушла_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Часть товаров ушла Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Часть товаров ушла_ua Output',
     ],
     [
         //"id" => 9,
-        "child_status" => 4,
-        "reason" => "Дубль задачи",
-        "status" => 1
+        'child_status' => 4,
+        'reason' => 'Дубль задачи',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Дубль ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Дубль_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Дубль Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Дубль_ua Output',
     ],
     [
         //"id" => 10,
-        "child_status" => 4,
-        "reason" => "Все товары уже есть на сайте",
-        "status" => 1
+        'child_status' => 4,
+        'reason' => 'Все товары уже есть на сайте',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Все товары уже есть ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Все товары уже есть_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Все товары уже есть Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Все товары уже есть_ua Output',
     ],
     [
-        //"id" => 15, 11
-        "child_status" => 999,
-        "reason" => "Другое (описан в коментариях)",
-        "status" => 1
+        //"id" => 11
+        'child_status' => 999,
+        'reason' => 'Другое (описан в коментариях)',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Другое ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Другое_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Другое Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Другое_ua Output',
     ],
     [
-        //"id" => 16, 12
-        "child_status" => 3,
-        "reason" => "Нинада",
-        "status" => 0
+        //"id" => 12
+        'child_status' => 3,
+        'reason' => 'Нинада',
+        'status' => 0,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|NO ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|NO_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|NO Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|NO_ua Output',
     ],
     [
         //"id" => 13
-        "child_status" => 3,
-        "reason" => "Нада",
-        "status" => 1
+        'child_status' => 3,
+        'reason' => 'Нада',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|YES ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|YES_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|YES Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|YES_ua Output',
     ],
     [
-        //"id" => 17, 13, 14
-        "child_status" => 7,
-        "reason" => "Ожидает группировки",
-        "status" => 1
+        //"id" => 14
+        'child_status' => 7,
+        'reason' => 'Ожидает группировки',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидает групп ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидает групп_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидает групп Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Ожидает групп_ua Output',
     ],
     [
         //"id" => 15
-        "child_status" => 7,
-        "reason" => "Товары на модерации",
-        "status" => 1
+        'child_status' => 7,
+        'reason' => 'Товары на модерации',
+        'status' => 1,
+        'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Товары на моде ЛК',
+        'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Товары на моде_ua ЛК',
+        'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Товары на моде Output',
+        'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Товары на моде_ua Output',
     ],
 ];
