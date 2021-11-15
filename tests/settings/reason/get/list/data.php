@@ -420,13 +420,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
+                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
+                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
+                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -495,13 +495,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
+                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
+                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
+                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
                         ],
                     ],
                     '_meta' => [
