@@ -62,13 +62,13 @@ return [
         ],
         '_links' => [
             'self' => [
-                'href' => 'http://lisa.api/user/list?filter%5Blogin%5D=_1&filter%5Bteam%5D=1&sort=position&page=1&per-page=50',
+                'href' => 'http://lisa-api.docker/user/list?filter%5Blogin%5D=_1&filter%5Bteam%5D=1&sort=position&page=1&per-page=50',
             ],
             'first' => [
-                'href' => 'http://lisa.api/user/list?filter%5Blogin%5D=_1&filter%5Bteam%5D=1&sort=position&page=1&per-page=50',
+                'href' => 'http://lisa-api.docker/user/list?filter%5Blogin%5D=_1&filter%5Bteam%5D=1&sort=position&page=1&per-page=50',
             ],
             'last' => [
-                'href' => 'http://lisa.api/user/list?filter%5Blogin%5D=_1&filter%5Bteam%5D=1&sort=position&page=1&per-page=50',
+                'href' => 'http://lisa-api.docker/user/list?filter%5Blogin%5D=_1&filter%5Bteam%5D=1&sort=position&page=1&per-page=50',
             ],
         ],
         '_meta' => [

@@ -58,13 +58,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?page=1',
                         ],
                     ],
                     '_meta' => [
@@ -120,13 +120,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?filter%5Bstatus%5D=0&sort=-id&page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?filter%5Bstatus%5D=0&sort=-id&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?filter%5Bstatus%5D=0&sort=-id&page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?filter%5Bstatus%5D=0&sort=-id&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?filter%5Bstatus%5D=0&sort=-id&page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?filter%5Bstatus%5D=0&sort=-id&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -176,13 +176,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?filter%5Bstatus%5D=1&filter%5Btype_id%5D=1&page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?filter%5Bstatus%5D=1&filter%5Btype_id%5D=1&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?filter%5Bstatus%5D=1&filter%5Btype_id%5D=1&page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?filter%5Bstatus%5D=1&filter%5Btype_id%5D=1&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?filter%5Bstatus%5D=1&filter%5Btype_id%5D=1&page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?filter%5Bstatus%5D=1&filter%5Btype_id%5D=1&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -235,13 +235,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?filter%5Bstatus%5D=&filter%5Btype_id%5D=&filter%5Bdifficulty_coef%5D=0.5&sort=type_id&page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?filter%5Bstatus%5D=&filter%5Btype_id%5D=&filter%5Bdifficulty_coef%5D=0.5&sort=type_id&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?filter%5Bstatus%5D=&filter%5Btype_id%5D=&filter%5Bdifficulty_coef%5D=0.5&sort=type_id&page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?filter%5Bstatus%5D=&filter%5Btype_id%5D=&filter%5Bdifficulty_coef%5D=0.5&sort=type_id&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/difficulty-coef/list?filter%5Bstatus%5D=&filter%5Btype_id%5D=&filter%5Bdifficulty_coef%5D=0.5&sort=type_id&page=1',
+                            'href' => 'http://lisa-api.docker/difficulty-coef/list?filter%5Bstatus%5D=&filter%5Btype_id%5D=&filter%5Bdifficulty_coef%5D=0.5&sort=type_id&page=1',
                         ],
                     ],
                     '_meta' => [

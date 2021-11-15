@@ -12,7 +12,7 @@ return [
             ],
             [
 //                'id' => 2,
-                'title' => 'http://gomer.local/lisa/#/report/create?mode=create',
+                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create',
                 'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "rz_category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                 'conditions' => '{"type_id": ["1", "4", "7", "13"], "team_direction": ["2", "4", "6"]}',
                 'type' => 0

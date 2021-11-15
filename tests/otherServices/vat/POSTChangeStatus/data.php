@@ -1442,7 +1442,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -1486,7 +1486,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -1530,7 +1530,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"requestId":"1","payload":{"Request":{"correction_comment":"=~}!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}}},"exceptionMessage":"newStatus: должен быть числом.","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"requestId":"1","payload":{"Request":{"correction_comment":"=~}!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}}},"exceptionMessage":"newStatus: должен быть числом.","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -1582,7 +1582,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"requestId":"1","newStatus":"1"},"exceptionMessage":"Array\n(\n    [0] => Необходимо заполнить payload[Request][correction_comment]\n)\n","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"requestId":"1","newStatus":"1"},"exceptionMessage":"Array\n(\n    [0] => Необходимо заполнить payload[Request][correction_comment]\n)\n","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -1615,7 +1615,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"requestId":"100","newStatus":"1","payload":{"Request":{"correction_comment":"=~}!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}}},"exceptionMessage":"По вашему запросу не найдено заявок.","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"requestId":"100","newStatus":"1","payload":{"Request":{"correction_comment":"=~}!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}}},"exceptionMessage":"По вашему запросу не найдено заявок.","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -1648,7 +1648,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -1692,7 +1692,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -1836,7 +1836,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"supplierCabinetId":"111","newStatus":"1","payload":{"Request":{"correction_comment":"=~}!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}}},"exceptionMessage":"Array\n(\n    [0] => В текущем процессе отсутствует переход заявки из статуса 5 в статус 1\n)\n","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"supplierCabinetId":"111","newStatus":"1","payload":{"Request":{"correction_comment":"=~}!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}}},"exceptionMessage":"Array\n(\n    [0] => В текущем процессе отсутствует переход заявки из статуса 5 в статус 1\n)\n","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -1880,7 +1880,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -1924,7 +1924,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -1968,7 +1968,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"requestId":"1","newStatus":"4","payload":{"Request":{"correction_comment":"=~}!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}}},"exceptionMessage":"Невозможно перевести задачу в статус 4 через API.","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"requestId":"1","newStatus":"4","payload":{"Request":{"correction_comment":"=~}!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}}},"exceptionMessage":"Невозможно перевести задачу в статус 4 через API.","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -2012,7 +2012,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2056,7 +2056,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2100,7 +2100,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2144,7 +2144,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2188,7 +2188,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2232,7 +2232,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2272,7 +2272,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":['
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":['
                 ],
             ],
         ]
@@ -2324,7 +2324,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2376,7 +2376,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2428,7 +2428,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2480,7 +2480,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"requestId":"1","newStatus":"1","payload":{"Request":{"correction_comment":"=~}!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}}},"exceptionMessage":"Array\n(\n    [0] => В текущем процессе отсутствует переход заявки из статуса 6 в статус 1\n)\n","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"requestId":"1","newStatus":"1","payload":{"Request":{"correction_comment":"=~}!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}}},"exceptionMessage":"Array\n(\n    [0] => В текущем процессе отсутствует переход заявки из статуса 6 в статус 1\n)\n","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -2532,7 +2532,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2584,7 +2584,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2636,7 +2636,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]
@@ -2688,7 +2688,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/change-status","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/change-status","bodyParams":{"'
                 ],
             ],
         ]

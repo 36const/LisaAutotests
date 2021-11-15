@@ -9,4 +9,4 @@ modules:
                   cleanup_fixture_after_test: false
               mockserver:
                   clear_before_test: true   # По-умолчанию false, то есть не чистим моки перед стартом каждого тестa
-                  url: 'http://mock-server:1080'
+                  url: 'http://lisa-mock-server:1080'

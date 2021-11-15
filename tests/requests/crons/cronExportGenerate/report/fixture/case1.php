@@ -142,7 +142,7 @@ return [
             [
                 'request_id' => 11,
                 'field_id' => 121,
-                'value' => 'http://gomer.local/bpm/request/to-correction?id=11'
+                'value' => 'http://splitter.docker/bpm/request/to-correction?id=11'
             ],
             [
                 'request_id' => 11,
@@ -178,7 +178,7 @@ return [
                 'errors_count' => 10,
                 'items_with_errors' => 10,
                 'field_value_id' => 91,
-                'comment' => 'http://gomer.local/bpm/request/to-correction?id=11',
+                'comment' => 'http://splitter.docker/bpm/request/to-correction?id=11',
                 'status' => 0,
                 'create_ts' => '2020-09-18 05:57:39',
                 'correction_date' => null
@@ -190,7 +190,7 @@ return [
                 'errors_count' => 10,
                 'items_with_errors' => 10,
                 'field_value_id' => 89,
-                'comment' => 'http://gomer.local/bpm/request/to-correction?id=11',
+                'comment' => 'http://splitter.docker/bpm/request/to-correction?id=11',
                 'status' => 0,
                 'create_ts' => '2020-09-18 05:57:39',
                 'correction_date' => null
@@ -202,7 +202,7 @@ return [
                 'errors_count' => 10,
                 'items_with_errors' => 10,
                 'field_value_id' => 75,
-                'comment' => 'http://gomer.local/bpm/request/to-correction?id=11',
+                'comment' => 'http://splitter.docker/bpm/request/to-correction?id=11',
                 'status' => 0,
                 'create_ts' => '2020-09-18 05:57:39',
                 'correction_date' => null
@@ -214,7 +214,7 @@ return [
                 'errors_count' => 10,
                 'items_with_errors' => 10,
                 'field_value_id' => 74,
-                'comment' => 'http://gomer.local/bpm/request/to-correction?id=11',
+                'comment' => 'http://splitter.docker/bpm/request/to-correction?id=11',
                 'status' => 0,
                 'create_ts' => '2020-09-18 05:57:39',
                 'correction_date' => null

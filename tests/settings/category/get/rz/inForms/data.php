@@ -284,13 +284,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/rozetka-category/list?per-page=50&sort=title&filter%5Btitle%5D=%D0%BF%D0%B0%D0%BF%D0%BA%D0%B8&page=1',
+                            'href' => 'http://lisa-api.docker/rozetka-category/list?per-page=50&sort=title&filter%5Btitle%5D=%D0%BF%D0%B0%D0%BF%D0%BA%D0%B8&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/rozetka-category/list?per-page=50&sort=title&filter%5Btitle%5D=%D0%BF%D0%B0%D0%BF%D0%BA%D0%B8&page=1',
+                            'href' => 'http://lisa-api.docker/rozetka-category/list?per-page=50&sort=title&filter%5Btitle%5D=%D0%BF%D0%B0%D0%BF%D0%BA%D0%B8&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/rozetka-category/list?per-page=50&sort=title&filter%5Btitle%5D=%D0%BF%D0%B0%D0%BF%D0%BA%D0%B8&page=1',
+                            'href' => 'http://lisa-api.docker/rozetka-category/list?per-page=50&sort=title&filter%5Btitle%5D=%D0%BF%D0%B0%D0%BF%D0%BA%D0%B8&page=1',
                         ],
                     ],
                     '_meta' => [

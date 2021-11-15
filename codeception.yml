@@ -14,36 +14,36 @@ modules:
     - Cli
     - Asserts
     - PhpBrowser:
-        url: http://lisa.api # Domen вашего приложения
+        url: http://lisa-api.docker # Domen вашего приложения
         auth: [ 'kutsan.k', '123qweASD!' ]
     - REST:
-        url: http://lisa.api # Domen вашего приложения, должен быть такой же как и выше
+        url: http://lisa-api.docker # Domen вашего приложения, должен быть такой же как и выше
         depends: PhpBrowser
     - Db:
-        dsn: 'pgsql:host=postgres;port=5432;dbname=lisa_auto_db'
+        dsn: 'pgsql:host=lisa-postgres;port=5432;dbname=lisa_auto_db'
         user: 'lisa'
         password: 'lisa'
         cleanup: false
         databases:
           lisa_fixtures:
-            dsn: 'pgsql:host=postgres;port=5432;dbname=lisa_auto_db'
+            dsn: 'pgsql:host=lisa-postgres;port=5432;dbname=lisa_auto_db'
             user: 'lisa'
             password: 'lisa'
-#          gomer_fixtures:
-#            dsn: 'mysql:host=mysql;port=3306;dbname=gomer_auto_db'
-#            user: 'root'
-#            password: 'gomer'
+          splitter_fixtures:
+            dsn: 'mysql:host=splitter-mysql;port=3306;dbname=splitter_auto_db'
+            user: 'lisa'
+            password: 'lisa'
     - Redis:
-        host: 'redis'
+        host: 'lisa-redis'
         port: 6379
         database: 0
-        password: 'redis'
+        password: 'lisa'
         cleanupBefore: 'test'
     - AMQP:
-        host: 'rabbit-mq'
+        host: 'lisa-rabbitmq'
         port: '5672'
-        username: 'splitter'
-        password: 'splitter'
+        username: 'lisa'
+        password: 'lisa'
         vhost: '/'
         cleanup: false
         single_channel: true

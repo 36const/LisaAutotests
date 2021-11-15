@@ -50,13 +50,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/excluded-field/list?page=1',
+                            'href' => 'http://lisa-api.docker/excluded-field/list?page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/excluded-field/list?page=1',
+                            'href' => 'http://lisa-api.docker/excluded-field/list?page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/excluded-field/list?page=1',
+                            'href' => 'http://lisa-api.docker/excluded-field/list?page=1',
                         ],
                     ],
                     '_meta' => [
@@ -137,13 +137,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/excluded-field/list?sort=-field_id&filter%5Bexcluded_field_id%5D=5&page=1',
+                            'href' => 'http://lisa-api.docker/excluded-field/list?sort=-field_id&filter%5Bexcluded_field_id%5D=5&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/excluded-field/list?sort=-field_id&filter%5Bexcluded_field_id%5D=5&page=1',
+                            'href' => 'http://lisa-api.docker/excluded-field/list?sort=-field_id&filter%5Bexcluded_field_id%5D=5&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/excluded-field/list?sort=-field_id&filter%5Bexcluded_field_id%5D=5&page=1',
+                            'href' => 'http://lisa-api.docker/excluded-field/list?sort=-field_id&filter%5Bexcluded_field_id%5D=5&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -208,7 +208,7 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/excluded-field/list?sort=excluded_field_id&filter%5Bexcluded_field_id%5D=&filter%5Bfield_id%5D=9&page=1',
+                            'href' => 'http://lisa-api.docker/excluded-field/list?sort=excluded_field_id&filter%5Bexcluded_field_id%5D=&filter%5Bfield_id%5D=9&page=1',
                         ],
                     ],
                     '_meta' => [

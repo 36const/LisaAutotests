@@ -164,13 +164,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/reason/list?page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/reason/list?page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/reason/list?page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?page=1',
                         ],
                     ],
                     '_meta' => [
@@ -227,13 +227,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Bchild_status%5D=3&filter%5Bstatus%5D=0&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Bchild_status%5D=3&filter%5Bstatus%5D=0&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Bchild_status%5D=3&filter%5Bstatus%5D=0&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Bchild_status%5D=3&filter%5Bstatus%5D=0&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Bchild_status%5D=3&filter%5Bstatus%5D=0&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Bchild_status%5D=3&filter%5Bstatus%5D=0&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -324,13 +324,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Bchild_status%5D=&filter%5Bstatus%5D=&filter%5Breason%5D=%D0%BE%D0%B6&sort=-id&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Bchild_status%5D=&filter%5Bstatus%5D=&filter%5Breason%5D=%D0%BE%D0%B6&sort=-id&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Bchild_status%5D=&filter%5Bstatus%5D=&filter%5Breason%5D=%D0%BE%D0%B6&sort=-id&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Bchild_status%5D=&filter%5Bstatus%5D=&filter%5Breason%5D=%D0%BE%D0%B6&sort=-id&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Bchild_status%5D=&filter%5Bstatus%5D=&filter%5Breason%5D=%D0%BE%D0%B6&sort=-id&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Bchild_status%5D=&filter%5Bstatus%5D=&filter%5Breason%5D=%D0%BE%D0%B6&sort=-id&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -420,13 +420,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=%D0%BE%D0%B6%D0%B8&sort=-reason_for_supplier_cab_ua&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -495,13 +495,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Breason_for_personal_cab%5D=&filter%5Breason_for_supplier_cab%5D=%D0%B8+out&sort=reason_for_personal_cab_ua&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -553,7 +553,7 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/reason/list?filter%5Bchild_status%5D=&filter%5Bstatus%5D=1&filter%5Breason%5D=&filter%5Bid%5D=999&sort=id&page=1',
+                            'href' => 'http://lisa-api.docker/reason/list?filter%5Bchild_status%5D=&filter%5Bstatus%5D=1&filter%5Breason%5D=&filter%5Bid%5D=999&sort=id&page=1',
                         ],
                     ],
                     '_meta' => [

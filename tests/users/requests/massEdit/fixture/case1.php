@@ -1010,7 +1010,7 @@ return [
                 'actual_finish_date' => '2021-08-01 21:29:32',
                 'supervisor_process_date' => '2021-08-01 21:29:32',
                 'supervisor_check_date' => '2021-08-01 21:30:19',
-                'result_comment' => 'http://gomer.local/lisa/#/request/list/in-work',
+                'result_comment' => 'http://splitter.docker/lisa/#/request/list/in-work',
                 'supervisor_comment' => NULL,
                 'last_change_status_date' => '2021-08-01 21:30:19',
                 'team_direction' => 3,
@@ -1052,7 +1052,7 @@ return [
                 'actual_finish_date' => '2021-08-01 21:28:54',
                 'supervisor_process_date' => '2021-08-01 21:28:54',
                 'supervisor_check_date' => '2021-08-01 21:30:51',
-                'result_comment' => 'http://gomer.local/lisa/#/request/list/in-work',
+                'result_comment' => 'http://splitter.docker/lisa/#/request/list/in-work',
                 'supervisor_comment' => NULL,
                 'last_change_status_date' => '2021-08-01 21:31:06',
                 'team_direction' => 2,
@@ -2248,7 +2248,7 @@ return [
             [
                 'request_id' => 9,
                 'field_id' => 121,
-                'value' => 'http://gomer.local/lisa/#/request/to-correction/9',
+                'value' => 'http://splitter.docker/lisa/#/request/to-correction/9',
             ],
             [
                 'request_id' => 9,

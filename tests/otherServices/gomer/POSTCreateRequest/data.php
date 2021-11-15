@@ -12,7 +12,7 @@ $lisa_fixtures = [
 $rabbitMQ = [
     'lisa_sendOuterNotifications' => [],
     'lisa_failedApiRequests' => [
-        '{"url":"http://lisa.api/request/create-request","bodyParams":{"'
+        '{"url":"http://lisa-api.docker/request/create-request","bodyParams":{"'
     ],
 ];
 
@@ -538,9 +538,9 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [
-                    '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=1\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
-                    '{"notificationId":3,"userId":17,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://admin.gomer.local/lisa/#/request/view/1?notifyId=3\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
-                    '{"notificationId":4,"userId":16,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://gomer.local/lisa/#/request/view/1?notifyId=4\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":3,"userId":17,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://admin.splitter.docker/lisa/#/request/view/1?notifyId=3\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":4,"userId":16,"attachments":"[]","subject":"[LISA] Создана новая заявка №1 `[API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО`","notification":"Константин Куцан <b>создал(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=4\">№1 [API] !@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО</a></br><b>Количество в работу:</b> 10</br>","requestId":1}',
                 ],
                 'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [],
@@ -8992,7 +8992,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request","bodyParams":['
+                    '{"url":"http://lisa-api.docker/request/create-request","bodyParams":['
                 ],
             ],
         ]

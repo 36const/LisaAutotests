@@ -14,7 +14,7 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/filter/list?page=1',
+                            'href' => 'http://lisa-api.docker/filter/list?page=1',
                         ],
                     ],
                     '_meta' => [
@@ -46,7 +46,7 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/filter/list?sort=name&filter%5Bname%5D=qwer1234&page=1',
+                            'href' => 'http://lisa-api.docker/filter/list?sort=name&filter%5Bname%5D=qwer1234&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -90,13 +90,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/filter/list?page=1',
+                            'href' => 'http://lisa-api.docker/filter/list?page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/filter/list?page=1',
+                            'href' => 'http://lisa-api.docker/filter/list?page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/filter/list?page=1',
+                            'href' => 'http://lisa-api.docker/filter/list?page=1',
                         ],
                     ],
                     '_meta' => [
@@ -135,13 +135,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/filter/list?filter%5Bname%5D=2&sort=-name&page=1',
+                            'href' => 'http://lisa-api.docker/filter/list?filter%5Bname%5D=2&sort=-name&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/filter/list?filter%5Bname%5D=2&sort=-name&page=1',
+                            'href' => 'http://lisa-api.docker/filter/list?filter%5Bname%5D=2&sort=-name&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/filter/list?filter%5Bname%5D=2&sort=-name&page=1',
+                            'href' => 'http://lisa-api.docker/filter/list?filter%5Bname%5D=2&sort=-name&page=1',
                         ],
                     ],
                     '_meta' => [

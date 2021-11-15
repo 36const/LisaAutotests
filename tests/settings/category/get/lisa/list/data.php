@@ -48,13 +48,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/category/list?page=1',
+                            'href' => 'http://lisa-api.docker/category/list?page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/category/list?page=1',
+                            'href' => 'http://lisa-api.docker/category/list?page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/category/list?page=1',
+                            'href' => 'http://lisa-api.docker/category/list?page=1',
                         ],
                     ],
                     '_meta' => [
@@ -68,7 +68,7 @@ return [
                 ],
                 'initialValues' => [
                     'userNames' => Constants::USER_NAMES,
-                    'exportUrl' => 'http://lisa.api/files/выгрузка_связанных_категорий_LISA.xlsx',
+                    'exportUrl' => 'http://lisa-api.docker/files/выгрузка_связанных_категорий_LISA.xlsx',
                 ]
             ]
         ]
@@ -106,13 +106,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/category/list?sort=-id&filter%5Btitle%5D=%D0%B2%D0%B8&page=1',
+                            'href' => 'http://lisa-api.docker/category/list?sort=-id&filter%5Btitle%5D=%D0%B2%D0%B8&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/category/list?sort=-id&filter%5Btitle%5D=%D0%B2%D0%B8&page=1',
+                            'href' => 'http://lisa-api.docker/category/list?sort=-id&filter%5Btitle%5D=%D0%B2%D0%B8&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/category/list?sort=-id&filter%5Btitle%5D=%D0%B2%D0%B8&page=1',
+                            'href' => 'http://lisa-api.docker/category/list?sort=-id&filter%5Btitle%5D=%D0%B2%D0%B8&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -127,7 +127,7 @@ return [
                 ],
                 'initialValues' => [
                     'userNames' => Constants::USER_NAMES,
-                    'exportUrl' => 'http://lisa.api/files/выгрузка_связанных_категорий_LISA.xlsx',
+                    'exportUrl' => 'http://lisa-api.docker/files/выгрузка_связанных_категорий_LISA.xlsx',
                 ]
             ],
         ]
@@ -174,13 +174,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/category/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=6&sort=-status&page=1',
+                            'href' => 'http://lisa-api.docker/category/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=6&sort=-status&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/category/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=6&sort=-status&page=1',
+                            'href' => 'http://lisa-api.docker/category/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=6&sort=-status&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/category/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=6&sort=-status&page=1',
+                            'href' => 'http://lisa-api.docker/category/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=6&sort=-status&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -196,7 +196,7 @@ return [
                 ],
                 'initialValues' => [
                     'userNames' => Constants::USER_NAMES,
-                    'exportUrl' => 'http://lisa.api/files/выгрузка_связанных_категорий_LISA.xlsx',
+                    'exportUrl' => 'http://lisa-api.docker/files/выгрузка_связанных_категорий_LISA.xlsx',
                 ]
             ],
         ]

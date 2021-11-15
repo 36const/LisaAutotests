@@ -70,13 +70,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?page=1',
                         ],
                     ],
                     '_meta' => [
@@ -133,13 +133,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Bsupervisor_id%5D=5&sort=-owox_id&page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?filter%5Bsupervisor_id%5D=5&sort=-owox_id&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Bsupervisor_id%5D=5&sort=-owox_id&page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?filter%5Bsupervisor_id%5D=5&sort=-owox_id&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Bsupervisor_id%5D=5&sort=-owox_id&page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?filter%5Bsupervisor_id%5D=5&sort=-owox_id&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -216,13 +216,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=10&sort=-title&page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=10&sort=-title&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=10&sort=-title&page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=10&sort=-title&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=10&sort=-title&page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?filter%5Btitle%5D=&filter%5Bsupervisor_id%5D=10&sort=-title&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -281,13 +281,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Bstatus%5D=6&sort=supervisor_id&page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?filter%5Bstatus%5D=6&sort=supervisor_id&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Bstatus%5D=6&sort=supervisor_id&page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?filter%5Bstatus%5D=6&sort=supervisor_id&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/market-supervisor/list?filter%5Bstatus%5D=6&sort=supervisor_id&page=1',
+                            'href' => 'http://lisa-api.docker/market-supervisor/list?filter%5Bstatus%5D=6&sort=supervisor_id&page=1',
                         ],
                     ],
                     '_meta' => [

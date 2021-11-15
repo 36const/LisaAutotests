@@ -476,13 +476,13 @@ abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщ
         ],
         '_links' => [
             'self' => [
-                'href' => 'http://lisa.api/request/list/closed?page=1',
+                'href' => 'http://lisa-api.docker/request/list/closed?page=1',
             ],
             'first' => [
-                'href' => 'http://lisa.api/request/list/closed?page=1',
+                'href' => 'http://lisa-api.docker/request/list/closed?page=1',
             ],
             'last' => [
-                'href' => 'http://lisa.api/request/list/closed?page=1',
+                'href' => 'http://lisa-api.docker/request/list/closed?page=1',
             ],
         ],
         '_meta' => [

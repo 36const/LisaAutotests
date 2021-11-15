@@ -33,7 +33,7 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case2.php',
         'provider_data' => [
             'requestBody' => [
-                'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&gt;&lt;`\\]\\\'/[;.,-=</div><div><a href="http://gomer.local/bpm/request/view?id=904&amp;forCrossCheck=0">http://gomer.local/bpm/request/view?id=904&amp;forCrossCheck=0</a></div>',
+                'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&gt;&lt;`\\]\\\'/[;.,-=</div><div><a href="http://splitter.docker/bpm/request/view?id=904&amp;forCrossCheck=0">http://splitter.docker/bpm/request/view?id=904&amp;forCrossCheck=0</a></div>',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -43,7 +43,7 @@ return [
                         [
                             'user_id' => 4,
                             'request_id' => 1,
-                            'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&gt;&lt;`\\]\\\'/[;.,-=</div><div><a href="http://gomer.local/bpm/request/view?id=904&amp;forCrossCheck=0">http://gomer.local/bpm/request/view?id=904&amp;forCrossCheck=0</a></div>',
+                            'note' => '<div>~!@#$%^&amp;*()_+~|}"?{:&gt;&lt;`\\]\\\'/[;.,-=</div><div><a href="http://splitter.docker/bpm/request/view?id=904&amp;forCrossCheck=0">http://splitter.docker/bpm/request/view?id=904&amp;forCrossCheck=0</a></div>',
                         ]
                     ],
                 ],

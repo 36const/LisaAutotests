@@ -432,17 +432,17 @@ return [
                 'subject' => 'Добавление/изменение видео (Определяется типом задачи)',
                 'type_id' => 'Добавление/изменение видео',
                 'description' => 'Описание
-http://gomer.local/bpm/request/view?id=20&forCrossCheck=0
+http://splitter.docker/bpm/request/view?id=20&forCrossCheck=0
 №20 Добавление/изменение видео (Определяется типом задачи)
-http://gomer.local/bpm/request/view?id=20&forCrossCheck=0
+http://splitter.docker/bpm/request/view?id=20&forCrossCheck=0
 №20 Добавление/изменение видео (Определяется типом задачи)
-http://gomer.local/bpm/request/view?id=20&forCrossCheck=0
+http://splitter.docker/bpm/request/view?id=20&forCrossCheck=0
 №20 Добавление/изменение видео (Определяется типом задачи)
-http://gomer.local/bpm/request/view?id=20&forCrossCheck=0
+http://splitter.docker/bpm/request/view?id=20&forCrossCheck=0
 №20 Добавление/изменение видео (Определяется типом задачи)
-http://gomer.local/bpm/request/view?id=20&forCrossCheck=0
+http://splitter.docker/bpm/request/view?id=20&forCrossCheck=0
 №20 Добавление/изменение видео (Определяется типом задачи)
-http://gomer.local/bpm/request/view?id=20&forCrossCheck=0
+http://splitter.docker/bpm/request/view?id=20&forCrossCheck=0
 №20 Добавление/изменение видео (Определяется типом задачи)
 ',
                 'actual_start_date' => '2020-08-20 14:48:21',
@@ -466,8 +466,8 @@ http://gomer.local/bpm/request/view?id=20&forCrossCheck=0
                 'id' => 20,
                 'subject' => 'Добавление/изменение видео (Определяется типом задачи)',
                 'type_id' => 'Добавление/изменение видео',
-                'description' => 'http://gomer.local/bpm/request/view?id=11&forCrossCheck=0
-http://gomer.local/bpm/request/view?id=11&forCrossCheck=0
+                'description' => 'http://splitter.docker/bpm/request/view?id=11&forCrossCheck=0
+http://splitter.docker/bpm/request/view?id=11&forCrossCheck=0
 =~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
                 'actual_start_date' => '2020-01-01 00:00:03',
                 'actual_finish_date' => '2021-03-27 21:05:03',
@@ -478,13 +478,13 @@ http://gomer.local/bpm/request/view?id=11&forCrossCheck=0
         ],
         '_links' => [
             'self' => [
-                'href' => 'http://lisa.api/request/list/completed?per-page=500&page=1',
+                'href' => 'http://lisa-api.docker/request/list/completed?per-page=500&page=1',
             ],
             'first' => [
-                'href' => 'http://lisa.api/request/list/completed?per-page=500&page=1',
+                'href' => 'http://lisa-api.docker/request/list/completed?per-page=500&page=1',
             ],
             'last' => [
-                'href' => 'http://lisa.api/request/list/completed?per-page=500&page=1',
+                'href' => 'http://lisa-api.docker/request/list/completed?per-page=500&page=1',
             ],
         ],
         '_meta' => [

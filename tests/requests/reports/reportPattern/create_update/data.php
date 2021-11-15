@@ -1820,7 +1820,7 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'id' => NULL,
-                'title' => 'http://gomer.local/lisa/#/report/create?mode=create',
+                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create',
                 'fields' => '[]',
                 'conditions' => [
                     'type_id' => [
@@ -2701,7 +2701,7 @@ return [
                 'status' => 200,
                 'model' => [
                     'id' => NULL,
-                    'title' => 'http://gomer.local/lisa/#/report/create?mode=create',
+                    'title' => 'http://splitter.docker/lisa/#/report/create?mode=create',
                     'fields' => '[]',
                     'conditions' => [
                         'type_id' => [
@@ -3586,7 +3586,7 @@ return [
                         [
                             [
                                 'id' => 2,
-                                'title' => 'http://gomer.local/lisa/#/report/create?mode=create',
+                                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create',
                                 'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                                 'conditions' => '{"type_id": ["1", "4", "7", "13"], "team_direction": ["2", "4", "6"]}',
                                 'type' => 0
@@ -5420,7 +5420,7 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'id' => NULL,
-                'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный)',
+                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный)',
                 'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                 'conditions' => [
                     'type_id' => [
@@ -6301,7 +6301,7 @@ return [
                 'status' => 200,
                 'model' => [
                     'id' => NULL,
-                    'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный)',
+                    'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный)',
                     'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                     'conditions' => [
                         'type_id' => [
@@ -7186,7 +7186,7 @@ return [
                         [
                             [
                                 'id' => 4,
-                                'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный)',
+                                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный)',
                                 'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                                 'conditions' => '{"type_id": ["1", "4", "7", "13"], "team_direction": ["2", "4", "6"]}',
                                 'type' => 1
@@ -7206,7 +7206,7 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'id' => NULL,
-                'title' => 'http://gomer.local/lisa/#/report/create?mode=create (копия)',
+                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (копия)',
                 'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                 'conditions' => [
                     'type_id' => [
@@ -8083,7 +8083,7 @@ return [
                 'status' => 200,
                 'model' => [
                     'id' => NULL,
-                    'title' => 'http://gomer.local/lisa/#/report/create?mode=create (копия)',
+                    'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (копия)',
                     'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                     'conditions' => [
                         'type_id' => [
@@ -8964,7 +8964,7 @@ return [
                         [
                             [
                                 'id' => 5,
-                                'title' => 'http://gomer.local/lisa/#/report/create?mode=create (копия)',
+                                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (копия)',
                                 'fields' => '["author_id", "supervisor_id", "type_id", "22", "status", "previous_status", "category_id", "34", "seller_id", "actual_finish_date", "89", "report_period_id", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "58", "146", "5", "131", "128", "64", "53", "50", "49", "47", "33", "21"]',
                                 'conditions' => '{"type_id": ["1", "4"], "team_direction": ["2", "4", "6", "3", "5"]}',
                                 'type' => 0
@@ -8984,7 +8984,7 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'id' => NULL,
-                'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный) (копия)',
+                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный) (копия)',
                 'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                 'conditions' => [
                     'type_id' => [
@@ -9856,7 +9856,7 @@ return [
                 'status' => 200,
                 'model' => [
                     'id' => NULL,
-                    'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный) (копия)',
+                    'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный) (копия)',
                     'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                     'conditions' => [
                         'type_id' => [
@@ -10732,7 +10732,7 @@ return [
                         [
                             [
                                 'id' => 5,
-                                'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный) (копия)',
+                                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный) (копия)',
                                 'fields' => '["id", "168", "reason", "170", "supervisor_comment", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47"]',
                                 'conditions' => '{"type_id": ["15"], "team_direction": ["1"]}',
                                 'type' => 1
@@ -10752,7 +10752,7 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'id' => NULL,
-                'title' => 'http://gomer.local/lisa/#/report/create?mode=create',
+                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create',
                 'fields' => '[]',
                 'conditions' => [
                     'type_id' => [
@@ -11629,7 +11629,7 @@ return [
                 'status' => 400,
                 'errors' => [
                     'title' => [
-                        0 => 'Значение «http://gomer.local/lisa/#/report/create?mode=create» для «Название отчета» уже занято.',
+                        0 => 'Значение «http://splitter.docker/lisa/#/report/create?mode=create» для «Название отчета» уже занято.',
                     ],
                 ],
             ],
@@ -11649,7 +11649,7 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'id' => NULL,
-                'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный)',
+                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный)',
                 'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                 'conditions' => [
                     'type_id' => [
@@ -12526,7 +12526,7 @@ return [
                 'status' => 400,
                 'errors' => [
                     'title' => [
-                        0 => 'Значение «http://gomer.local/lisa/#/report/create?mode=create (сводный)» для «Название отчета» уже занято.',
+                        0 => 'Значение «http://splitter.docker/lisa/#/report/create?mode=create (сводный)» для «Название отчета» уже занято.',
                     ],
                 ],
             ],
@@ -12546,7 +12546,7 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'id' => NULL,
-                'title' => 'http://gomer.local/lisa/#/report/create?mode=create',
+                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create',
                 'fields' => '[]',
                 'conditions' => [
                     'type_id' => [
@@ -16144,7 +16144,7 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'id' => 4,
-                'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный)',
+                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный)',
                 'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                 'conditions' => [
                     'type_id' => [
@@ -17025,7 +17025,7 @@ return [
                 'status' => 200,
                 'model' => [
                     'id' => '4',
-                    'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный)',
+                    'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный)',
                     'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                     'conditions' => [
                         'type_id' => [
@@ -17911,7 +17911,7 @@ return [
                         (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['reports'][2],
                         [
                             'id' => 4,
-                            'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный)',
+                            'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный)',
                             'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                             'conditions' => '{"type_id": ["1", "4", "12", "8"], "team_direction": ["2", "4", "3"]}',
                             'type' => 1
@@ -17930,7 +17930,7 @@ return [
         'provider_data' => [
             'requestBody' => [
                 'id' => 4,
-                'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный)',
+                'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный)',
                 'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                 'conditions' => [
                     'type_id' => [
@@ -18807,7 +18807,7 @@ return [
                 'status' => 200,
                 'model' => [
                     'id' => '4',
-                    'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный)',
+                    'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный)',
                     'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                     'conditions' => [
                         'type_id' => [
@@ -19689,7 +19689,7 @@ return [
                         (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['reports'][2],
                         [
                             'id' => 4,
-                            'title' => 'http://gomer.local/lisa/#/report/create?mode=create (сводный)',
+                            'title' => 'http://splitter.docker/lisa/#/report/create?mode=create (сводный)',
                             'fields' => '["id", "author_id", "supervisor_id", "type_id", "status", "previous_status", "category_id", "seller_id", "actual_start_date", "actual_finish_date", "89", "report_period_id", "sv_report_periods", "manager_drfo", "manager_team", "supervisor_drfo", "supervisor_team", "160", "146", "131", "128", "64", "53", "52", "50", "49", "47", "33", "21", "20", "1"]',
                             'conditions' => '{"type_id": ["1", "4", "12", "8"], "team_direction": ["2", "4", "3"]}',
                             'type' => 1

@@ -112,7 +112,7 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 121,
-                'value' => 'http://gomer.local/lisa/#/request/view/1',
+                'value' => 'http://splitter.docker/lisa/#/request/view/1',
             ],
             [
                 'request_id' => 1,
@@ -137,7 +137,7 @@ return [
             [
                 'request_id' => 1,
                 'field_id' => 157,
-                'value' => 'http://gomer.local/lisa/#/request/view/1',
+                'value' => 'http://splitter.docker/lisa/#/request/view/1',
             ],
             [
                 'request_id' => 1,

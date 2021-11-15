@@ -780,7 +780,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-mobile-courier","bodyParams":{"item_id":"","market_id":"9423","employee_code_1c":"978654132","direction":"1","description":"~!@#$%^&*()_+`=-\\\\]\'/[;.,|}\"?{:><"},"exceptionMessage":"[\"Не передано поле item_id\",\"item_id: поле должно быть числом\"]","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-mobile-courier","bodyParams":{"item_id":"","market_id":"9423","employee_code_1c":"978654132","direction":"1","description":"~!@#$%^&*()_+`=-\\\\]\'/[;.,|}\"?{:><"},"exceptionMessage":"[\"Не передано поле item_id\",\"item_id: поле должно быть числом\"]","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -816,7 +816,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-mobile-courier","bodyParams":{"item_id":"123123123","market_id":"","employee_code_1c":"978654132","direction":"1"},"exceptionMessage":"[\"Не передано поле market_id\",\"market_id: поле должно быть числом\"]","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-mobile-courier","bodyParams":{"item_id":"123123123","market_id":"","employee_code_1c":"978654132","direction":"1"},"exceptionMessage":"[\"Не передано поле market_id\",\"market_id: поле должно быть числом\"]","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -852,7 +852,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-mobile-courier","bodyParams":{"item_id":"123123123","market_id":"9423","employee_code_1c":"","direction":"1","description":"~!@#$%^&*()_+`=-\\\\]\'/[;.,|}\"?{:><"},"exceptionMessage":"[\"Не передано поле employee_code_1c\",\"employee_code_1c: поле должно быть числом\"]","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-mobile-courier","bodyParams":{"item_id":"123123123","market_id":"9423","employee_code_1c":"","direction":"1","description":"~!@#$%^&*()_+`=-\\\\]\'/[;.,|}\"?{:><"},"exceptionMessage":"[\"Не передано поле employee_code_1c\",\"employee_code_1c: поле должно быть числом\"]","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -889,7 +889,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-mobile-courier","bodyParams":{"item_id":"123123123","market_id":"9423","employee_code_1c":"978654132","direction":""},"exceptionMessage":"[\"Не передано поле direction\",\"direction: поле должно быть числом\",\"direction: значение может быть равно только 1 или 2\"]","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-mobile-courier","bodyParams":{"item_id":"123123123","market_id":"9423","employee_code_1c":"978654132","direction":""},"exceptionMessage":"[\"Не передано поле direction\",\"direction: поле должно быть числом\",\"direction: значение может быть равно только 1 или 2\"]","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -924,7 +924,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-mobile-courier","bodyParams":{"market_id":"9423","employee_code_1c":"978654132","direction":"1","description":"~!@#$%^&*()_+`=-\\\\]\'/[;.,|}\"?{:><"},"exceptionMessage":"[\"Не передано поле item_id\"]","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-mobile-courier","bodyParams":{"market_id":"9423","employee_code_1c":"978654132","direction":"1","description":"~!@#$%^&*()_+`=-\\\\]\'/[;.,|}\"?{:><"},"exceptionMessage":"[\"Не передано поле item_id\"]","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -959,7 +959,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-mobile-courier","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-mobile-courier","bodyParams":{"'
                 ],
             ],
         ]
@@ -994,7 +994,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-mobile-courier","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-mobile-courier","bodyParams":{"'
                 ],
             ],
         ]
@@ -1030,7 +1030,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-mobile-courier","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-mobile-courier","bodyParams":{"'
                 ],
             ],
         ]
@@ -1065,7 +1065,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-mobile-courier","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-mobile-courier","bodyParams":{"'
                 ],
             ],
         ]
@@ -1104,7 +1104,7 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-mobile-courier","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-mobile-courier","bodyParams":{"'
                 ],
             ],
         ]

@@ -105,7 +105,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/update-amount-to-work","bodyParams":[],"exceptionMessage":"не передан amountне передан id","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/update-amount-to-work","bodyParams":[],"exceptionMessage":"не передан amountне передан id","user":"kutsan.k"}'
                 ],
             ],
         ],
@@ -135,7 +135,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/update-amount-to-work","bodyParams":{"id":"1","amount":""},"exceptionMessage":"не передан amount","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/update-amount-to-work","bodyParams":{"id":"1","amount":""},"exceptionMessage":"не передан amount","user":"kutsan.k"}'
                 ],
             ],
         ],
@@ -165,7 +165,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/update-amount-to-work","bodyParams":{"id":"","amount":"10"},"exceptionMessage":"не передан id","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/update-amount-to-work","bodyParams":{"id":"","amount":"10"},"exceptionMessage":"не передан id","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -195,7 +195,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/update-amount-to-work","bodyParams":{"id":"1","amount":"~!@#$%^&*()_asdf"},"exceptionMessage":"amount должен быть числом","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/update-amount-to-work","bodyParams":{"id":"1","amount":"~!@#$%^&*()_asdf"},"exceptionMessage":"amount должен быть числом","user":"kutsan.k"}'
                 ],
             ],
         ],
@@ -225,7 +225,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/update-amount-to-work","bodyParams":{"id":"~!@#$%^&*()_asdf","amount":"10"},"exceptionMessage":"id должен быть числом","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/update-amount-to-work","bodyParams":{"id":"~!@#$%^&*()_asdf","amount":"10"},"exceptionMessage":"id должен быть числом","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -254,7 +254,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/update-amount-to-work","bodyParams":{"amount":"10"},"exceptionMessage":"не передан id","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/update-amount-to-work","bodyParams":{"amount":"10"},"exceptionMessage":"не передан id","user":"kutsan.k"}'
                 ],
             ],
         ],
@@ -283,7 +283,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/update-amount-to-work","bodyParams":{"id":"10"},"exceptionMessage":"не передан amount","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/update-amount-to-work","bodyParams":{"id":"10"},"exceptionMessage":"не передан amount","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -313,7 +313,7 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/update-amount-to-work","bodyParams":{"id":"999999","amount":"10"},"exceptionMessage":"заявка не найдена","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/update-amount-to-work","bodyParams":{"id":"999999","amount":"10"},"exceptionMessage":"заявка не найдена","user":"kutsan.k"}'
                 ],
             ],
         ]

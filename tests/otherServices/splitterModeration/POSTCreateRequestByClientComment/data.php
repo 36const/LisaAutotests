@@ -390,7 +390,7 @@ Media:
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-client-comment","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-client-comment","bodyParams":{"'
                 ],
             ],
         ]
@@ -431,7 +431,7 @@ Media:
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-client-comment","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-client-comment","bodyParams":{"'
                 ],
             ],
         ]
@@ -472,7 +472,7 @@ Media:
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-client-comment","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-client-comment","bodyParams":{"'
                 ],
             ],
         ]
@@ -513,7 +513,7 @@ Media:
             ],
             'RabbitMQ' => [
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-client-comment","bodyParams":{"'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-client-comment","bodyParams":{"'
                 ],
             ],
         ]

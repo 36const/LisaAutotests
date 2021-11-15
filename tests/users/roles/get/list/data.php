@@ -134,13 +134,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/auth-item/list?page=1',
+                            'href' => 'http://lisa-api.docker/auth-item/list?page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/auth-item/list?page=1',
+                            'href' => 'http://lisa-api.docker/auth-item/list?page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/auth-item/list?page=1',
+                            'href' => 'http://lisa-api.docker/auth-item/list?page=1',
                         ],
                     ],
                     '_meta' => [
@@ -193,13 +193,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/auth-item/list?sort=-name&filter%5Bdescription%5D=%D0%BC%D0%B5&page=1',
+                            'href' => 'http://lisa-api.docker/auth-item/list?sort=-name&filter%5Bdescription%5D=%D0%BC%D0%B5&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/auth-item/list?sort=-name&filter%5Bdescription%5D=%D0%BC%D0%B5&page=1',
+                            'href' => 'http://lisa-api.docker/auth-item/list?sort=-name&filter%5Bdescription%5D=%D0%BC%D0%B5&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/auth-item/list?sort=-name&filter%5Bdescription%5D=%D0%BC%D0%B5&page=1',
+                            'href' => 'http://lisa-api.docker/auth-item/list?sort=-name&filter%5Bdescription%5D=%D0%BC%D0%B5&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -341,13 +341,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/auth-item/list?sort=description&filter%5Bcreated_at%5D=2020-03-09+00%3A00%3A00to2020-03-11+23%3A59%3A59&page=1',
+                            'href' => 'http://lisa-api.docker/auth-item/list?sort=description&filter%5Bcreated_at%5D=2020-03-09+00%3A00%3A00to2020-03-11+23%3A59%3A59&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/auth-item/list?sort=description&filter%5Bcreated_at%5D=2020-03-09+00%3A00%3A00to2020-03-11+23%3A59%3A59&page=1',
+                            'href' => 'http://lisa-api.docker/auth-item/list?sort=description&filter%5Bcreated_at%5D=2020-03-09+00%3A00%3A00to2020-03-11+23%3A59%3A59&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/auth-item/list?sort=description&filter%5Bcreated_at%5D=2020-03-09+00%3A00%3A00to2020-03-11+23%3A59%3A59&page=1',
+                            'href' => 'http://lisa-api.docker/auth-item/list?sort=description&filter%5Bcreated_at%5D=2020-03-09+00%3A00%3A00to2020-03-11+23%3A59%3A59&page=1',
                         ],
                     ],
                     '_meta' => [

@@ -1149,7 +1149,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 121,
-                            'value' => 'http://gomer.local/bpm/request/to-correction?id=1',
+                            'value' => 'http://splitter.docker/bpm/request/to-correction?id=1',
                         ],
                         [
                             'request_id' => 1,
@@ -1356,7 +1356,7 @@ return [
                         [
                             'request_id' => 1,
                             'field_id' => 121,
-                            'value' => 'http://gomer.local/bpm/request/to-correction?id=1',
+                            'value' => 'http://splitter.docker/bpm/request/to-correction?id=1',
                         ],
                         [
                             'request_id' => 1,

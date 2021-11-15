@@ -49,13 +49,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/category/list?page=1',
+                            'href' => 'http://lisa-api.docker/category/list?page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/category/list?page=1',
+                            'href' => 'http://lisa-api.docker/category/list?page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/category/list?page=1',
+                            'href' => 'http://lisa-api.docker/category/list?page=1',
                         ],
                     ],
                     '_meta' => [
@@ -69,7 +69,7 @@ return [
                 ],
                 'initialValues' => [
                     'userNames' => Constants::USER_NAMES,
-                    'exportUrl' => 'http://lisa.api/files/выгрузка_связанных_категорий_LISA.xlsx',
+                    'exportUrl' => 'http://lisa-api.docker/files/выгрузка_связанных_категорий_LISA.xlsx',
                 ],
             ],
             'db' => [

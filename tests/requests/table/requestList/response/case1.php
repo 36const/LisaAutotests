@@ -427,13 +427,13 @@ return [
         ],
         '_links' => [
             'self' => [
-                'href' => 'http://lisa.api/request/list/new?page=1',
+                'href' => 'http://lisa-api.docker/request/list/new?page=1',
             ],
             'first' => [
-                'href' => 'http://lisa.api/request/list/new?page=1',
+                'href' => 'http://lisa-api.docker/request/list/new?page=1',
             ],
             'last' => [
-                'href' => 'http://lisa.api/request/list/new?page=1',
+                'href' => 'http://lisa-api.docker/request/list/new?page=1',
             ],
         ],
         '_meta' => [

@@ -20,9 +20,9 @@ return [
                 65 => '10',
                 76 => '20',
                 77 => '',
-                157 => 'http://gomer.local/lisa/#/request/view/1
-http://gomer.local/lisa/#/request/view/2
-http://gomer.local/lisa/#/request/view/3',
+                157 => 'http://splitter.docker/lisa/#/request/view/1
+http://splitter.docker/lisa/#/request/view/2
+http://splitter.docker/lisa/#/request/view/3',
                 'seller_id' => -2,
                 'priority' => NULL,
                 'recommendations' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
@@ -261,9 +261,9 @@ http://gomer.local/lisa/#/request/view/3',
                         [
                             'request_id' => 1,
                             'field_id' => 157,
-                            'value' => 'http://gomer.local/lisa/#/request/view/1
-http://gomer.local/lisa/#/request/view/2
-http://gomer.local/lisa/#/request/view/3',
+                            'value' => 'http://splitter.docker/lisa/#/request/view/1
+http://splitter.docker/lisa/#/request/view/2
+http://splitter.docker/lisa/#/request/view/3',
                         ],
                         [
                             'request_id' => 1,
@@ -349,7 +349,7 @@ http://gomer.local/lisa/#/request/view/3',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":65,"value":"10"},"changed_fields_names":[]}',
                     '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":76,"value":"20"},"changed_fields_names":["value"]}',
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":77},"changed_fields_names":[]}',
-                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":157,"value":"http://gomer.local/lisa/#/request/view/1\nhttp://gomer.local/lisa/#/request/view/2\nhttp://gomer.local/lisa/#/request/view/3"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":157,"value":"http://splitter.docker/lisa/#/request/view/1\nhttp://splitter.docker/lisa/#/request/view/2\nhttp://splitter.docker/lisa/#/request/view/3"},"changed_fields_names":[]}',
                     '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":49,"value":"20.1"},"changed_fields_names":["value"]}',
                     '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":64,"value":"20.1"},"changed_fields_names":["value"]}',
                     '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":51,"value":"10"},"changed_fields_names":["value"]}',

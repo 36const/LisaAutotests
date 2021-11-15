@@ -211,13 +211,13 @@ return [
         ],
         '_links' => [
             'self' => [
-                'href' => 'http://lisa.api/request/list/declined?per-page=500&page=1',
+                'href' => 'http://lisa-api.docker/request/list/declined?per-page=500&page=1',
             ],
             'first' => [
-                'href' => 'http://lisa.api/request/list/declined?per-page=500&page=1',
+                'href' => 'http://lisa-api.docker/request/list/declined?per-page=500&page=1',
             ],
             'last' => [
-                'href' => 'http://lisa.api/request/list/declined?per-page=500&page=1',
+                'href' => 'http://lisa-api.docker/request/list/declined?per-page=500&page=1',
             ],
         ],
         '_meta' => [

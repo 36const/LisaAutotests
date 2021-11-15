@@ -89,13 +89,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/auto-diff-field/list?page=1',
+                            'href' => 'http://lisa-api.docker/auto-diff-field/list?page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/auto-diff-field/list?page=1',
+                            'href' => 'http://lisa-api.docker/auto-diff-field/list?page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/auto-diff-field/list?page=1',
+                            'href' => 'http://lisa-api.docker/auto-diff-field/list?page=1',
                         ],
                     ],
                     '_meta' => [
@@ -201,13 +201,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/auto-diff-field/list?sort=-fields&page=1',
+                            'href' => 'http://lisa-api.docker/auto-diff-field/list?sort=-fields&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/auto-diff-field/list?sort=-fields&page=1',
+                            'href' => 'http://lisa-api.docker/auto-diff-field/list?sort=-fields&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/auto-diff-field/list?sort=-fields&page=1',
+                            'href' => 'http://lisa-api.docker/auto-diff-field/list?sort=-fields&page=1',
                         ],
                     ],
                     '_meta' => [

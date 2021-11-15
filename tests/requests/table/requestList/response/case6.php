@@ -429,13 +429,13 @@ return [
         ],
         '_links' => [
             'self' => [
-                'href' => 'http://lisa.api/request/list/in-work?per-page=50&page=1',
+                'href' => 'http://lisa-api.docker/request/list/in-work?per-page=50&page=1',
             ],
             'first' => [
-                'href' => 'http://lisa.api/request/list/in-work?per-page=50&page=1',
+                'href' => 'http://lisa-api.docker/request/list/in-work?per-page=50&page=1',
             ],
             'last' => [
-                'href' => 'http://lisa.api/request/list/in-work?per-page=50&page=1',
+                'href' => 'http://lisa-api.docker/request/list/in-work?per-page=50&page=1',
             ],
         ],
         '_meta' => [

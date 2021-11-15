@@ -1,0 +1,35 @@
+suite_namespace: lisa
+actor: AcceptanceTester
+step_decorators:
+  - \Codeception\Step\Retry
+  - \Codeception\Step\TryTo
+  - \Codeception\Step\ConditionalAssertion
+modules:
+    enabled:
+        - lisa\Helper\Acceptance
+        - TestHelper:
+            fixture:
+              cleanup_fixture_after_test: false
+        - Filesystem
+        - WebDriver:
+            url: http://splitter.docker
+            browser: chrome
+            window_size: 1920x1080
+            wait: 2
+            capabilities:
+              enableVNC: true
+              sessionTimeout: 1m
+              "goog:chromeOptions":
+                args: [ "--disable-dev-shm-usage" ]       #additional chrome options
+            host: lisa-webdriver
+            port: 4444
+        - VisualCeption:
+            report: true
+            referenceImageDir: VisualCeption/             #default: 'VisualCeption/'
+            currentImageDir: VisualCeption/current/       #default: 'VisualCeption/'
+            #templateFile: "/report/template2.php"        #absolute path or relative from module dir to report template. Default "/report/template.php"
+            maximumDeviation: 0.01                        #deviation in percent, default: 0
+            saveCurrentImageIfFailure: true               #if true, VisualCeption saves the current, default: true
+            fullScreenShot: false                         #fullpage screenshot, default: false
+    disabled:
+      - PhpBrowser

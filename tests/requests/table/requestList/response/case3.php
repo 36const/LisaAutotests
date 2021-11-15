@@ -308,13 +308,13 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
         ],
         '_links' => [
             'self' => [
-                'href' => 'http://lisa.api/request/list/require-changes?per-page=100&page=1',
+                'href' => 'http://lisa-api.docker/request/list/require-changes?per-page=100&page=1',
             ],
             'first' => [
-                'href' => 'http://lisa.api/request/list/require-changes?per-page=100&page=1',
+                'href' => 'http://lisa-api.docker/request/list/require-changes?per-page=100&page=1',
             ],
             'last' => [
-                'href' => 'http://lisa.api/request/list/require-changes?per-page=100&page=1',
+                'href' => 'http://lisa-api.docker/request/list/require-changes?per-page=100&page=1',
             ],
         ],
         '_meta' => [

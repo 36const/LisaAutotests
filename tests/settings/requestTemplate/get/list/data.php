@@ -49,7 +49,7 @@ return [
                             'name' => 'Изменение информации',
                             'type_id' => 'Добавление/изменение информации в существующих товарах',
                             'direction' => 'Работа с товарами Розетки',
-                            'fields' => '{"2": "1", "123": "1", "125": "1", "subject": "\\"Добавление/изменение информации в существующих товарах\\" (направление: \\"Работа с товарами Розетки\\" )", "type_id": "2", "priority": "1", "direction": "1", "seller_id": "124276", "category_id": "474", "description": "\\"Добавление/изменение информации в существующих товарах\\" (направление: \\"Работа с товарами Розетки\\" )\\nhttp://gomer.local/lisa/#/request-template/create?typeId=2&direction=1", "amount_to_work": "10", "rz_category_id": null, "planned_finish_date": null}',
+                            'fields' => '{"2": "1", "123": "1", "125": "1", "subject": "\\"Добавление/изменение информации в существующих товарах\\" (направление: \\"Работа с товарами Розетки\\" )", "type_id": "2", "priority": "1", "direction": "1", "seller_id": "124276", "category_id": "474", "description": "\\"Добавление/изменение информации в существующих товарах\\" (направление: \\"Работа с товарами Розетки\\" )\\nhttp://splitter.docker/lisa/#/request-template/create?typeId=2&direction=1", "amount_to_work": "10", "rz_category_id": null, "planned_finish_date": null}',
                             'user_id' => 19,
                             'seller_id' => 124276,
                             'category_id' => 474,
@@ -64,7 +64,7 @@ return [
                             'name' => 'Добавление фат-меню',
                             'type_id' => 'Добавление нового портала/раздела фат-меню/категории товаров',
                             'direction' => 'Определяется типом задачи',
-                            'fields' => '{"1": "1", "subject": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )", "type_id": "7", "priority": null, "direction": 0, "seller_id": "83", "category_id": null, "description": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )\\nhttp://gomer.local/lisa/#/request-template/create?typeId=7&direction=0", "amount_to_work": "20", "rz_category_id": null, "planned_finish_date": null}',
+                            'fields' => '{"1": "1", "subject": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )", "type_id": "7", "priority": null, "direction": 0, "seller_id": "83", "category_id": null, "description": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )\\nhttp://splitter.docker/lisa/#/request-template/create?typeId=7&direction=0", "amount_to_work": "20", "rz_category_id": null, "planned_finish_date": null}',
                             'user_id' => 20,
                             'seller_id' => 83,
                             'category_id' => NULL,
@@ -76,13 +76,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/request-template/list?page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/request-template/list?page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/request-template/list?page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?page=1',
                         ],
                     ],
                     '_meta' => [
@@ -127,7 +127,7 @@ return [
                             'name' => 'Добавление фат-меню',
                             'type_id' => 'Добавление нового портала/раздела фат-меню/категории товаров',
                             'direction' => 'Определяется типом задачи',
-                            'fields' => '{"1": "1", "subject": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )", "type_id": "7", "priority": null, "direction": 0, "seller_id": "83", "category_id": null, "description": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )\\nhttp://gomer.local/lisa/#/request-template/create?typeId=7&direction=0", "amount_to_work": "20", "rz_category_id": null, "planned_finish_date": null}',
+                            'fields' => '{"1": "1", "subject": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )", "type_id": "7", "priority": null, "direction": 0, "seller_id": "83", "category_id": null, "description": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )\\nhttp://splitter.docker/lisa/#/request-template/create?typeId=7&direction=0", "amount_to_work": "20", "rz_category_id": null, "planned_finish_date": null}',
                             'user_id' => 20,
                             'seller_id' => 83,
                             'category_id' => NULL,
@@ -154,13 +154,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/request-template/list?sort=-id&filter%5Bdirection%5D=0&page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?sort=-id&filter%5Bdirection%5D=0&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/request-template/list?sort=-id&filter%5Bdirection%5D=0&page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?sort=-id&filter%5Bdirection%5D=0&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/request-template/list?sort=-id&filter%5Bdirection%5D=0&page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?sort=-id&filter%5Bdirection%5D=0&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -206,7 +206,7 @@ return [
                             'name' => 'Добавление фат-меню',
                             'type_id' => 'Добавление нового портала/раздела фат-меню/категории товаров',
                             'direction' => 'Определяется типом задачи',
-                            'fields' => '{"1": "1", "subject": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )", "type_id": "7", "priority": null, "direction": 0, "seller_id": "83", "category_id": null, "description": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )\\nhttp://gomer.local/lisa/#/request-template/create?typeId=7&direction=0", "amount_to_work": "20", "rz_category_id": null, "planned_finish_date": null}',
+                            'fields' => '{"1": "1", "subject": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )", "type_id": "7", "priority": null, "direction": 0, "seller_id": "83", "category_id": null, "description": "\\"Добавление нового портала/раздела фат-меню/категории товаров\\" (направление: \\"Определяется типом задачи\\" )\\nhttp://splitter.docker/lisa/#/request-template/create?typeId=7&direction=0", "amount_to_work": "20", "rz_category_id": null, "planned_finish_date": null}',
                             'user_id' => 20,
                             'seller_id' => 83,
                             'category_id' => NULL,
@@ -233,13 +233,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/request-template/list?sort=parent_id&filter%5Bname%5D=%D0%B4%D0%BE%D0%B1&page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?sort=parent_id&filter%5Bname%5D=%D0%B4%D0%BE%D0%B1&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/request-template/list?sort=parent_id&filter%5Bname%5D=%D0%B4%D0%BE%D0%B1&page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?sort=parent_id&filter%5Bname%5D=%D0%B4%D0%BE%D0%B1&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/request-template/list?sort=parent_id&filter%5Bname%5D=%D0%B4%D0%BE%D0%B1&page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?sort=parent_id&filter%5Bname%5D=%D0%B4%D0%BE%D0%B1&page=1',
                         ],
                     ],
                     '_meta' => [
@@ -314,13 +314,13 @@ return [
                     ],
                     '_links' => [
                         'self' => [
-                            'href' => 'http://lisa.api/request-template/list?sort=type_id&filter%5Bname%5D=&filter%5Buser_id%5D=4&filter%5Btype_id%5D=&page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?sort=type_id&filter%5Bname%5D=&filter%5Buser_id%5D=4&filter%5Btype_id%5D=&page=1',
                         ],
                         'first' => [
-                            'href' => 'http://lisa.api/request-template/list?sort=type_id&filter%5Bname%5D=&filter%5Buser_id%5D=4&filter%5Btype_id%5D=&page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?sort=type_id&filter%5Bname%5D=&filter%5Buser_id%5D=4&filter%5Btype_id%5D=&page=1',
                         ],
                         'last' => [
-                            'href' => 'http://lisa.api/request-template/list?sort=type_id&filter%5Bname%5D=&filter%5Buser_id%5D=4&filter%5Btype_id%5D=&page=1',
+                            'href' => 'http://lisa-api.docker/request-template/list?sort=type_id&filter%5Bname%5D=&filter%5Buser_id%5D=4&filter%5Btype_id%5D=&page=1',
                         ],
                     ],
                     '_meta' => [

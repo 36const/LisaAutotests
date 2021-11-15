@@ -1830,7 +1830,7 @@ return [
             'RabbitMQ' => [
                 'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-market-id","bodyParams":[],"exceptionMessage":"[\"Не передано поле sync_source_id\",\"Не передано поле market_id\",\"Не передано поле type_id\",\"Не передано поле items_count\"]","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-market-id","bodyParams":[],"exceptionMessage":"[\"Не передано поле sync_source_id\",\"Не передано поле market_id\",\"Не передано поле type_id\",\"Не передано поле items_count\"]","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -1866,7 +1866,7 @@ return [
             'RabbitMQ' => [
                 'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-market-id","bodyParams":{"sync_source_id":"1","market_id":"9999999","type_id":"1","items_count":"10"},"exceptionMessage":"[\"Передан несуществующий продавец\"]","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-market-id","bodyParams":{"sync_source_id":"1","market_id":"9999999","type_id":"1","items_count":"10"},"exceptionMessage":"[\"Передан несуществующий продавец\"]","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -1904,7 +1904,7 @@ return [
             'RabbitMQ' => [
                 'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-market-id","bodyParams":{"sync_source_id":"1","market_id":"83","type_id":"2","items_count":"10","side_user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ"},"exceptionMessage":"[\"Не передано поле side_user_id\"]","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-market-id","bodyParams":{"sync_source_id":"1","market_id":"83","type_id":"2","items_count":"10","side_user_name":"!@#$%^&*()_ 1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ"},"exceptionMessage":"[\"Не передано поле side_user_id\"]","user":"kutsan.k"}'
                 ],
             ],
         ]
@@ -1942,7 +1942,7 @@ return [
             'RabbitMQ' => [
                 'lisa_sendOuterNotifications' => [],
                 'lisa_failedApiRequests' => [
-                    '{"url":"http://lisa.api/request/create-request-by-market-id","bodyParams":{"sync_source_id":"1","market_id":"83","type_id":"2","items_count":"10","side_user_id":"999"},"exceptionMessage":"[\"Не передано поле side_user_name\"]","user":"kutsan.k"}'
+                    '{"url":"http://lisa-api.docker/request/create-request-by-market-id","bodyParams":{"sync_source_id":"1","market_id":"83","type_id":"2","items_count":"10","side_user_id":"999"},"exceptionMessage":"[\"Не передано поле side_user_name\"]","user":"kutsan.k"}'
                 ],
             ],
         ]

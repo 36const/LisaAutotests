@@ -602,13 +602,13 @@ return [
         ],
         '_links' => [
             'self' => [
-                'href' => 'http://lisa.api/user/list?page=1&per-page=50',
+                'href' => 'http://lisa-api.docker/user/list?page=1&per-page=50',
             ],
             'first' => [
-                'href' => 'http://lisa.api/user/list?page=1&per-page=50',
+                'href' => 'http://lisa-api.docker/user/list?page=1&per-page=50',
             ],
             'last' => [
-                'href' => 'http://lisa.api/user/list?page=1&per-page=50',
+                'href' => 'http://lisa-api.docker/user/list?page=1&per-page=50',
             ],
         ],
         '_meta' => [

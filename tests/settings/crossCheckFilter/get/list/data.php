@@ -455,19 +455,19 @@ return [
                                 ],
                                 'block4' => [
                                     120 => [
-                                        'value' => 'http://gomer.local/lisa/#/cross-check-filter/update/1',
+                                        'value' => 'http://splitter.docker/lisa/#/cross-check-filter/update/1',
                                         'operator' => 'ilike',
                                     ],
                                     121 => [
-                                        'value' => 'http://gomer.local/lisa/#/cross-check-filter/update/1',
+                                        'value' => 'http://splitter.docker/lisa/#/cross-check-filter/update/1',
                                         'operator' => 'not like',
                                     ],
                                     156 => [
-                                        'value' => 'http://gomer.local/lisa/#/cross-check-filter/update/1',
+                                        'value' => 'http://splitter.docker/lisa/#/cross-check-filter/update/1',
                                         'operator' => 'ilike',
                                     ],
                                     157 => [
-                                        'value' => 'http://gomer.local/lisa/#/cross-check-filter/update/1',
+                                        'value' => 'http://splitter.docker/lisa/#/cross-check-filter/update/1',
                                         'operator' => 'not like',
                                     ],
                                     'subject' => [

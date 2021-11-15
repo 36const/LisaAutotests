@@ -65,7 +65,7 @@ return [
                 'description' => 'Описание',
                 'category_id' => null,
                 'seller_id' => 83,
-                'recommendations' => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<\\|1234567890абвгдеёжзийклмноп513\r\nhttp://gomer.local/bpm/request/view?id=11&forCrossCheck=0",
+                'recommendations' => "!@#$%^&*()_+`-]'/[;.,}\"?{:>\\|<\\|1234567890абвгдеёжзийклмноп513\r\nhttp://splitter.docker/bpm/request/view?id=11&forCrossCheck=0",
                 'reason' => null,
                 'parent_id' => null,
                 'planned_start_date' => null,
