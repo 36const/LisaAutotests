@@ -65,6 +65,9 @@ return [
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
                         ],
                         [
                             'id' => 2,
@@ -108,6 +111,9 @@ return [
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 19,
+                            'supervisor_team' => 7,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => (include __DIR__ . '/fixture/case.php')['lisa_fixtures']['requests_fields'],

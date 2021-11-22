@@ -75,6 +75,9 @@ return [
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ],
                         [
                             'id' => 2,
@@ -118,6 +121,9 @@ return [
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 19,
+                            'supervisor_team' => 7,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => (include __DIR__ . '/fixture/case.php')['lisa_fixtures']['requests_fields'],
@@ -247,7 +253,7 @@ return [
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":2,"author_id":16,"type_id":2,"supervisor_id":10,"manager_id":null,"status":4,"direction":2,"priority":null,"awaiting_correction":0,"created_at":"2020-01-09 00:00:00","correction_comment":null,"amount_to_work":10,"subject":"Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)","description":"Описание","category_id":null,"seller_id":83,"recommendations":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|<\\\|1234567890абвгдеёжзийклмноп513\\r\\nhttp://splitter.docker/bpm/request/view?id=11&forCrossCheck=0","reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":"' . date('Y-m-d'),
                         '","supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"3\":3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":3,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["status","reason","supervisor_process_date","last_change_status_date","sv_report_periods","previous_status"]}',
+                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"3\":3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":3,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":19,"supervisor_team":7,"manager_team":null},"changed_fields_names":["status","reason","supervisor_process_date","last_change_status_date","sv_report_periods","previous_status"]}',
                     ],
                 ],
             ],

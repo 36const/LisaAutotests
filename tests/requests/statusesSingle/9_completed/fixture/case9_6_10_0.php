@@ -41,6 +41,10 @@ return [
                 'cross_check_status' => 0,
                 'cross_check_manager_id' => null,
                 'previous_status' => 6,
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 15,
+                'manager_team' => 1,
             ]
         ],
         'requests_fields' => [

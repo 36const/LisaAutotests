@@ -1339,6 +1339,9 @@ return [
                         'supplier_cabinet_id' => 'integer',
                         'payload' => 'json',
                         'rz_category_id' => 'integer',
+                        'author_team' => 'integer',
+                        'supervisor_team' => 'integer',
+                        'manager_team' => 'integer',
                     ],
                     'specialFields' => [
                         0 => 'seller_id',

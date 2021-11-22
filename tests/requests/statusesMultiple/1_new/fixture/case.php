@@ -46,6 +46,10 @@ return [
                 'previous_status' => null,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 1,
+                'manager_team' => null,
             ],
             [
                 //"id" => 2,
@@ -91,6 +95,10 @@ return [
                 'previous_status' => 3,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 7,
+                'manager_team' => null,
             ]
         ],
         'requests_fields' => [

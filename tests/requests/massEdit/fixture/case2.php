@@ -46,6 +46,10 @@ return [
                 'previous_status' => 1,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 1,
+                'manager_team' => null,
             ],
             [
 //                "id" => 2,
@@ -88,6 +92,10 @@ return [
                 'previous_status' => 1,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 1,
+                'manager_team' => null,
             ],
             [
 //                "id" => 3,
@@ -130,6 +138,10 @@ return [
                 'previous_status' => 2,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 16,
+                'manager_team' => 1,
             ],
             [
 //                "id" => 4,
@@ -172,6 +184,10 @@ return [
                 'previous_status' => 5,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 15,
+                'manager_team' => 1,
             ],
             [
 //                "id" => 5,
@@ -214,6 +230,10 @@ return [
                 'previous_status' => 6,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 15,
+                'manager_team' => 1,
             ],
             [
 //                "id" => 6,
@@ -256,6 +276,10 @@ return [
                 'previous_status' => 6,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 16,
+                'manager_team' => 1,
             ],
             [
 //                "id" => 7,
@@ -296,6 +320,10 @@ return [
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 6,
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 16,
+                'manager_team' => 1,
             ]
         ],
         'requests_fields' => [

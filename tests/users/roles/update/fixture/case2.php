@@ -7,6 +7,7 @@ return [
         'auth.api_users' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.api_users.php',
         'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
         'auth.users' => array_slice(include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php', 0, 15),
+        'auth.user_access' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php',
         'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
         'auth.auth_item_child' => [
             [

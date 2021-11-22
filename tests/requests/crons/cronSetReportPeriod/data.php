@@ -65,6 +65,10 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0,
+                            'rz_category_id' => null,
+                            'author_team' => 8,
+                            'supervisor_team' => 15,
+                            'manager_team' => 7,
                         ],
                         //11
                         [
@@ -105,6 +109,10 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0,
+                            'rz_category_id' => null,
+                            'author_team' => 19,
+                            'supervisor_team' => 16,
+                            'manager_team' => 7,
                         ],
                         //8,9
                         [
@@ -145,6 +153,10 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0,
+                            'rz_category_id' => null,
+                            'author_team' => 19,
+                            'supervisor_team' => 16,
+                            'manager_team' => 1,
                         ],
                         [
                             'id' => 20,
@@ -184,6 +196,10 @@ return [
                             'employee_code_1c' => null,
                             'child_count' => 0,
                             'photo_load_status' => 0,
+                            'rz_category_id' => null,
+                            'author_team' => 19,
+                            'supervisor_team' => 16,
+                            'manager_team' => 7,
                         ],
                     ],
                 ]

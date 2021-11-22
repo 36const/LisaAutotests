@@ -40,6 +40,10 @@ return [
                 'sv_report_periods' => '{"1": 1}',
                 'cross_check_status' => '1',
                 'cross_check_manager_id' => 12,
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 1,
+                'manager_team' => 1,
             ]
         ],
         'request_errors' => [

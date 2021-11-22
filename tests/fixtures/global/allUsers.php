@@ -9,6 +9,7 @@ return [
         'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
         'auth.auth_assignment' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_assignment.php',
         'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
+        'auth.user_access' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php',
         'auto_diff_conditions' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auto_diff_conditions.php',
         'auto_diff_fields' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auto_diff_fields.php',
         'auto_diff_sets' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auto_diff_sets.php',
@@ -26,7 +27,4 @@ return [
         'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
         'observers' => []
     ],
-//    'gomer_fixtures' => [
-//        'users' => (include TestHelper::getFixtureTempleteDefaultPath() . 'gomer_fixtures/users.php'),
-//    ]
 ];

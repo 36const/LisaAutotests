@@ -46,6 +46,10 @@ return [
                 'previous_status' => 6,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 16,
+                'manager_team' => 1,
             ],
             [
 //                "id" => 2,
@@ -88,6 +92,10 @@ return [
                 'previous_status' => null,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 1,
+                'manager_team' => null,
             ],
             [
 //                "id" => 3,
@@ -130,6 +138,10 @@ return [
                 'previous_status' => null,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 16,
+                'manager_team' => null,
             ]
         ],
         'requests_fields' => [

@@ -47,6 +47,10 @@ return [
                 'previous_status' => 1,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 1,
+                'manager_team' => null,
             ],
             [
 //                'id' => 2,
@@ -86,9 +90,16 @@ return [
                 'employee_code_1c' => null,
                 'child_count' => 0,
                 'photo_load_status' => 0,
+                'employee_code_1c' => null,
+                'child_count' => 0,
+                'photo_load_status' => 0,
                 'previous_status' => 2,
                 'supplier_cabinet_id' => null,
                 'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 7,
+                'manager_team' => null,
             ]
         ],
         'requests_fields' => [

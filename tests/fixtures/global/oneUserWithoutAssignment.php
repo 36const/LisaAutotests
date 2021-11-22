@@ -13,13 +13,14 @@ return [
         ],
         'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
         'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
+        'auth.user_access' => [
+            (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php')[0],
+            (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php')[1],
+            (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php')[2],
+            (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php')[3],
+        ],
         'request_attachments' => [],
         'request_errors' => [],
         'observers' => []
     ],
-//    'gomer_fixtures' => [
-//        'users' => [
-//            (include TestHelper::getFixtureTempleteDefaultPath() . 'gomer_fixtures/users.php')[0],
-//        ],
-//    ]
 ];

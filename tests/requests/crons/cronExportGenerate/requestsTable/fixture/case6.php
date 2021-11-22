@@ -251,6 +251,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
                 'previous_status' => 1,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 1,
             ],
             [
                 'id' => 8,
@@ -286,6 +290,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
                 'previous_status' => 1,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 1,
+                'manager_team' => 1,
             ],
             [
                 'id' => 16,
@@ -321,6 +329,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
                 'previous_status' => 1,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 1,
+                'manager_team' => 7,
             ],
             //6
             [
@@ -357,6 +369,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
                 'previous_status' => 5,
+                'rz_category_id' => null,
+                'author_team' => 8,
+                'supervisor_team' => 15,
+                'manager_team' => 7,
             ],
             [
                 'id' => 17,
@@ -392,6 +408,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
                 'previous_status' => 5,
+                'rz_category_id' => null,
+                'author_team' => 8,
+                'supervisor_team' => 15,
+                'manager_team' => 7,
             ],
             [
                 'id' => 19,
@@ -427,6 +447,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
                 'previous_status' => 5,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 14,
+                'manager_team' => 7,
             ],
             //7
             [
@@ -463,6 +487,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
                 'previous_status' => 6,
+                'rz_category_id' => null,
+                'author_team' => 8,
+                'supervisor_team' => 15,
+                'manager_team' => 1,
             ],
             [
                 'id' => 21,
@@ -498,6 +526,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
                 'previous_status' => 6,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
 
             //3
@@ -642,6 +674,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
                 'previous_status' => 1,
+                'rz_category_id' => null,
+                'author_team' => 8,
+                'supervisor_team' => 15,
+                'manager_team' => 7,
             ],
             [
                 'id' => 25,
@@ -677,6 +713,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
                 'previous_status' => 2,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 15,
+                'manager_team' => 7,
             ],
             //11
             [
@@ -713,6 +753,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": "1", "2": "2", "3": "3", "4": "4"}',
                 'previous_status' => 8,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
             [
                 'id' => 23,
@@ -748,6 +792,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
                 'previous_status' => 9,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
             [
                 'id' => 24,
@@ -783,6 +831,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
                 'previous_status' => 9,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
 
             //8,9
@@ -820,6 +872,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
                 'previous_status' => 6,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
             [
                 'id' => 7,
@@ -855,6 +911,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": "1"}',
                 'previous_status' => 6,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 1,
             ],
             [
                 'id' => 20,
@@ -890,6 +950,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
                 'previous_status' => 6,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
         ],
         'requests_fields' => [

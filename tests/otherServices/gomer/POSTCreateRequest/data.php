@@ -117,6 +117,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -619,6 +622,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 17,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -803,6 +809,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -999,6 +1008,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1227,6 +1239,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1465,6 +1480,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1716,6 +1734,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => 2581742,
+                            'author_team' => 17,
+                            'supervisor_team' => 14,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -1964,6 +1985,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2201,6 +2225,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 7,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2453,6 +2480,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 16,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2662,6 +2692,9 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '{"author_login": "йцукфыва"}',
+                            'author_team' => null,
+                            'supervisor_team' => 16,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2854,6 +2887,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 15,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3037,6 +3073,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 15,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3237,6 +3276,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 15,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3426,6 +3468,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3662,6 +3707,9 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '{"author_login": "йцукфыва"}',
+                            'author_team' => null,
+                            'supervisor_team' => 16,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3849,6 +3897,9 @@ return [
                             'previous_status' => null,
                             'supplier_cabinet_id' => 1,
                             'payload' => '{"author_login": "fasdf"}',
+                            'author_team' => null,
+                            'supervisor_team' => 16,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4033,6 +4084,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 16,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4240,6 +4294,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 7,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4478,6 +4535,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => 2514857,
+                            'author_team' => 17,
+                            'supervisor_team' => 14,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4738,6 +4798,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 17,
+                            'manager_team' => null,
                         ],
                         [
                             'id' => 2,
@@ -4782,6 +4845,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 17,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -5161,6 +5227,9 @@ return [
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 16,
+                            'manager_team' => null,
                         ],
                         [
                             'id' => 2,
@@ -5205,6 +5274,9 @@ return [
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 16,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -5526,6 +5598,9 @@ return [
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => 4628418,
+                            'author_team' => 17,
+                            'supervisor_team' => 14,
+                            'manager_team' => null,
                         ],
                         [
                             'id' => 2,
@@ -5569,6 +5644,9 @@ return [
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => 4652996,
+                            'author_team' => 17,
+                            'supervisor_team' => 14,
+                            'manager_team' => null,
                         ],
                         [
                             'id' => 3,
@@ -5612,6 +5690,9 @@ return [
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => 4653010,
+                            'author_team' => 17,
+                            'supervisor_team' => 14,
+                            'manager_team' => null,
                         ],
                     ],
                     'requests_fields' => [
@@ -6144,6 +6225,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ],
                         [
                             'id' => 2,
@@ -6187,6 +6271,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 7,
+                            'manager_team' => null,
                         ],
                         [
                             'id' => 3,
@@ -6231,6 +6318,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 7,
+                            'manager_team' => null,
                         ],
                         [
                             'id' => 4,
@@ -6275,6 +6365,9 @@ return [
                             'supplier_cabinet_id' => 1,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 7,
+                            'manager_team' => null,
                         ],
                     ],
                     'requests_fields' => [

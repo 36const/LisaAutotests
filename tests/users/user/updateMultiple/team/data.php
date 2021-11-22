@@ -1,5 +1,7 @@
 <?php
 
+use Codeception\Module\TestHelper;
+
 return [
     'case1' => [
         'setting' => [
@@ -108,6 +110,7 @@ return [
                             ],
                         ]
                     ),
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUserWithoutAssignment.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_assignment'],
                     'auth.user_changing_history' => [
                         [
@@ -204,6 +207,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUserWithoutAssignment.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_assignment'],
                     'auth.user_changing_history' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_changing_history'],
                 ],

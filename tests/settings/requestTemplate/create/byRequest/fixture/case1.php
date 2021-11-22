@@ -44,6 +44,10 @@ return [
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => null,
+                'rz_category_id' => null,
+                'author_team' => 17,
+                'supervisor_team' => 16,
+                'manager_team' => null,
             ]
         ],
         'requests_fields' => [

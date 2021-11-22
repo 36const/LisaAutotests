@@ -58,6 +58,7 @@ return [
                             ],
                         ]
                     ),
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'allUsersWithoutSettings.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_assignment.php',
                     'auth.user_changing_history' => [
                         [
@@ -134,6 +135,7 @@ return [
                             ],
                         ]
                     ),
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'allUsersWithoutSettings.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_assignment.php',
                     'auth.user_changing_history' => [
                         [

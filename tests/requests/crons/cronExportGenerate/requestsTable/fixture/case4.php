@@ -37,6 +37,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
                 'previous_status' => 3,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 17,
+                'manager_team' => null,
             ],
         ],
         'requests_fields' => [

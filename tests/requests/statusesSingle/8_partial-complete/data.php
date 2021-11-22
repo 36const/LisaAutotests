@@ -80,6 +80,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -362,7 +365,7 @@ http://splitter.docker/lisa/#/request/view/3',
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":"11","direction":1,"priority":null,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":1,"seller_id":"-2","recommendations":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"2020-01-01 00:00:04","supervisor_process_date":"2020-01-01 00:00:02","supervisor_check_date":"' . date('Y-m-d'),
                         '","result_comment":"Комментарий к результату задачи","supervisor_comment":"Комментарий супервайзера","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":3,"report_period_id":"1","sync_source_id":null,"sv_report_periods":"{\"3\": 3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":8,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null},"changed_fields_names":["status","priority","seller_id","recommendations","supervisor_check_date","supervisor_comment","last_change_status_date","report_period_id","previous_status"]}',
+                        '","team_direction":3,"report_period_id":"1","sync_source_id":null,"sv_report_periods":"{\"3\": 3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":8,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":1},"changed_fields_names":["status","priority","seller_id","recommendations","supervisor_check_date","supervisor_comment","last_change_status_date","report_period_id","previous_status"]}',
                     ]
                 ],
             ]
@@ -451,6 +454,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -808,6 +814,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -1114,6 +1123,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -1471,6 +1483,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -1777,6 +1792,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -2134,6 +2152,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -2437,6 +2458,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => 753399,
+                            'author_team' => 17,
+                            'supervisor_team' => 14,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -2751,6 +2775,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -3108,6 +3135,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -3407,6 +3437,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 16,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -3738,6 +3771,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 16,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -4066,6 +4102,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 15,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -4344,6 +4383,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 15,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -4622,6 +4664,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 15,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -4898,6 +4943,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -5251,6 +5299,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 16,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -5521,6 +5572,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 16,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [
@@ -5763,6 +5817,9 @@ http://splitter.docker/lisa/#/request/view/3',
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
                             'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 16,
+                            'manager_team' => 1,
                         ]
                     ],
                     'requests_fields' => [

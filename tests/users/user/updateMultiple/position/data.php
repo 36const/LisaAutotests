@@ -2136,6 +2136,7 @@ return [
                             'date >=' => date('Y-m-d')
                         ],
                     ],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                 ],
             ],
             'RabbitMQ' => [
@@ -5187,6 +5188,7 @@ return [
                             'date >=' => date('Y-m-d'),
                         ],
                     ],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                 ],
             ],
             'RabbitMQ' => [
@@ -8094,6 +8096,7 @@ return [
                             'date >=' => date('Y-m-d'),
                         ],
                     ],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                 ],
             ],
             'RabbitMQ' => [
@@ -8132,6 +8135,7 @@ return [
                     'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
                     'auth.auth_assignment' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_assignment'],
                     'auth.user_changing_history' => [],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                 ],
             ],
         ]
@@ -8168,6 +8172,7 @@ return [
                     'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
                     'auth.auth_assignment' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_assignment'],
                     'auth.user_changing_history' => [],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'exceptions' => [
                         [
                             'id' => 1,

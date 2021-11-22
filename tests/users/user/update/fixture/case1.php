@@ -13,6 +13,7 @@ return [
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[3],
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[4],
         ],
+        'auth.user_access' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php',
         'auth.auth_assignment' => [
             [
                 'item_name' => 'blockUser',
@@ -1356,7 +1357,4 @@ return [
             ]
         ]
     ],
-//    'gomer_fixtures' => [
-//        'users' => (include TestHelper::getFixtureTempleteDefaultPath() . 'gomer_fixtures/users.php'),
-//    ]
 ];

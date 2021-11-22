@@ -30,7 +30,7 @@ return [
                             'id' => 1,
                             'author_id' => 4,
                             'type_id' => 1,
-                            'supervisor_id' => 7,
+                            'supervisor_id' => 6,
                             'manager_id' => null,
                             'status' => 1,
                             'direction' => 2,

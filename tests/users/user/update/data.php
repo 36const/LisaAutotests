@@ -3,7 +3,7 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Изменить команду, ДРФО, руководителя и роль с изменением роли сплиттера',
+            'description' => 'Изменить команду, ДРФО, руководителя, доступы к отображению и роль с изменением роли сплиттера',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -47,6 +47,21 @@ return [
                     'transferPartialCompleteToInWork',
                 ],
                 'disabledProjects' => [
+                ],
+                'access' => [
+                    'teams' => [
+                        0 => 1,
+                        1 => 2,
+                    ],
+                    'types' => [
+                        0 => 7,
+                        1 => 8,
+                    ],
+                    'team_directions' => [
+                        0 => 1,
+                        1 => 2,
+                        2 => 4,
+                    ],
                 ],
             ],
             'responseBody' => [
@@ -1870,6 +1885,16 @@ return [
                             'date >=' => date('Y-m-d'),
                         ]
                     ],
+                    'auth.user_access' => array_replace_recursive(
+                        (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_access'],
+                        [
+                            3 => [
+                                'id' => 4,
+                                'user_id' => 4,
+                                'access' => '{"teams": [1, 2], "types": [7, 8], "team_directions": [1, 2, 4]}',
+                            ],
+                        ]
+                    )
                 ]
             ],
             'RabbitMQWithRoutingKey' => [
@@ -1968,6 +1993,16 @@ return [
                     'transferPartialCompleteToClosed',
                 ],
                 'disabledProjects' => [
+                ],
+                'access' => [
+                    'teams' => [
+                        0 => 17,
+                    ],
+                    'types' => [
+                    ],
+                    'team_directions' => [
+                        0 => 1,
+                    ],
                 ],
             ],
             'responseBody' => [
@@ -3550,6 +3585,7 @@ return [
                             'date >=' => date('Y-m-d'),
                         ]
                     ],
+                    'auth.user_access' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_access'],
                 ]
             ],
             'RabbitMQWithRoutingKey' => [
@@ -3657,6 +3693,16 @@ return [
                     'requestDeleteAttachments',
                     'transferPartialCompleteToClosed',
                 ],
+                'access' => [
+                    'teams' => [
+                        0 => 17,
+                    ],
+                    'types' => [
+                    ],
+                    'team_directions' => [
+                        0 => 1,
+                    ],
+                ],
             ],
             'responseBody' => [
                 'model' => [
@@ -3684,6 +3730,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => [
                         [
                             'item_name' => 'blockUser',
@@ -5303,6 +5350,16 @@ return [
                     'viewTeamRequestsMrk',
                     'seeHiddenCrossCheckFields',
                 ],
+                'access' => [
+                    'teams' => [
+                        0 => 17,
+                    ],
+                    'types' => [
+                    ],
+                    'team_directions' => [
+                        0 => 1,
+                    ],
+                ],
             ],
             'responseBody' => [
                 'model' => [
@@ -5350,6 +5407,7 @@ return [
                         ],
                         (include __DIR__ . '/fixture/case4.php')['lisa_fixtures']['auth.users'][4],
                     ],
+                    'auth.user_access' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include __DIR__ . '/fixture/case4.php')['lisa_fixtures']['auth.auth_assignment'],
                     'auth.user_changing_history' => [
                         [
@@ -5575,6 +5633,16 @@ return [
                     'viewTeamRequestsMrk',
                     'seeHiddenCrossCheckFields',
                 ],
+                'access' => [
+                    'teams' => [
+                        0 => 17,
+                    ],
+                    'types' => [
+                    ],
+                    'team_directions' => [
+                        0 => 1,
+                    ],
+                ],
             ],
             'responseBody' => [
                 'model' => [
@@ -5622,6 +5690,7 @@ return [
                         ],
                         (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['auth.users'][4],
                     ],
+                    'auth.user_access' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['auth.auth_assignment'],
                     'auth.user_changing_history' => [
                         [
@@ -5685,6 +5754,16 @@ return [
                 ],
                 'disabledProjects' => [
                 ],
+                'access' => [
+                    'teams' => [
+                        0 => 17,
+                    ],
+                    'types' => [
+                    ],
+                    'team_directions' => [
+                        0 => 1,
+                    ],
+                ],
             ],
             'responseBody' => [
                 'errors' => [
@@ -5696,6 +5775,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_assignment'],
                     'auth.user_changing_history' => [],
                 ]
@@ -5754,6 +5834,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_assignment'],
                     'auth.user_changing_history' => [],
                 ]

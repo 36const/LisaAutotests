@@ -63,6 +63,10 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -223,6 +227,9 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 7,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -391,6 +398,10 @@ http://splitter.staging.com.ua/goods/list/update?id=123123123#goods-card-part-op
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [

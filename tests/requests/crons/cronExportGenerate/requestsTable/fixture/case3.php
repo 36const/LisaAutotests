@@ -38,6 +38,10 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": "1", "2": "2", "3": "3", "4": "4"}',
                 'previous_status' => 3,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
         ],
         'requests_fields' => [

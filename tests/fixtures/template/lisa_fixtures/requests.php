@@ -4,7 +4,7 @@ return [
         //'id' => 1,
         'author_id' => 4,
         'type_id' => 1,
-        'supervisor_id' => 7,
+        'supervisor_id' => 6,
         'manager_id' => null,
         'status' => 1,
         'direction' => 1,
@@ -46,5 +46,8 @@ return [
         'supplier_cabinet_id' => null,
         'payload' => '[]',
         'rz_category_id' => null,
+        'author_team' => 17,
+        'supervisor_team' => 1,
+        'manager_team' => null,
     ],
 ];

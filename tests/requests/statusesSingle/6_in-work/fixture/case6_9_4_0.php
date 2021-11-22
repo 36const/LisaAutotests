@@ -46,6 +46,9 @@ return [
                 'photo_load_status' => 0,
                 'previous_status' => 5,
                 'rz_category_id' => 753399,
+                'author_team' => 17,
+                'supervisor_team' => 14,
+                'manager_team' => 1,
             ],
         ],
         'requests_fields' => [

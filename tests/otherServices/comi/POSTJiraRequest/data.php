@@ -99,6 +99,10 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 9,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -286,6 +290,9 @@ return [
                             'child_count' => 1,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 9,
+                            'manager_team' => null,
                         ],
                         [
                             'id' => 2,
@@ -354,6 +361,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 9,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -621,6 +631,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 9,
+                            'manager_team' => null,
                         ],
                         [
                             'id' => 2,
@@ -674,6 +687,9 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 9,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [

@@ -35,6 +35,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
                 ]
             ],
@@ -72,6 +73,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
                 ]
             ],
@@ -106,6 +108,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
                 ]
             ],
@@ -141,6 +144,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
                 ]
             ],
@@ -176,6 +180,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
                 ]
             ],
@@ -211,6 +216,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
                 ]
             ],
@@ -246,6 +252,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
                 ]
             ],
@@ -284,6 +291,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
                 ]
             ],
@@ -321,6 +329,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
                 ]
             ],
@@ -358,6 +367,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
                 ]
             ],
@@ -395,6 +405,7 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.users'],
+                    'auth.user_access' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
                     'auth.auth_assignment' => (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.auth_assignment'],
                 ]
             ],
@@ -468,6 +479,16 @@ return [
                                 'change_date >=' => date('Y-m-d'),
                                 'drfo' => null,
                                 'positions' => '["teamLead"]',
+                            ]
+                        ]
+                    ),
+                    'auth.user_access' => array_merge_recursive(
+                        (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
+                        [
+                            [
+                                'id' => 5,
+                                'user_id' => 5,
+                                'access' => '{"teams": [], "types": [], "team_directions": []}',
                             ]
                         ]
                     ),
@@ -686,6 +707,16 @@ return [
                                 'change_date >=' => date('Y-m-d'),
                                 'drfo' => "'000000099",
                                 'positions' => '["productManager","marketolog"]',
+                            ]
+                        ]
+                    ),
+                    'auth.user_access' => array_merge_recursive(
+                        (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
+                        [
+                            [
+                                'id' => 5,
+                                'user_id' => 5,
+                                'access' => '{"teams": [], "types": [], "team_directions": []}',
                             ]
                         ]
                     ),
@@ -938,6 +969,16 @@ return [
                             ]
                         ]
                     ),
+                    'auth.user_access' => array_merge_recursive(
+                        (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
+                        [
+                            [
+                                'id' => 5,
+                                'user_id' => 5,
+                                'access' => '{"teams": [], "types": [], "team_directions": []}',
+                            ]
+                        ]
+                    ),
                     'auth.auth_assignment' => array_merge_recursive(
                         include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_assignment.php',
                         [
@@ -1106,6 +1147,16 @@ return [
                             ]
                         ]
                     ),
+                    'auth.user_access' => array_merge_recursive(
+                        (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
+                        [
+                            [
+                                'id' => 5,
+                                'user_id' => 5,
+                                'access' => '{"teams": [], "types": [], "team_directions": []}',
+                            ]
+                        ]
+                    ),
                     'auth.auth_assignment' => array_merge_recursive(
                         include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_assignment.php',
                         [
@@ -1246,6 +1297,16 @@ return [
                                 'change_date >=' => date('Y-m-d'),
                                 'drfo' => "'00001111",
                                 'positions' => '["supervisor"]',
+                            ]
+                        ]
+                    ),
+                    'auth.user_access' => array_merge_recursive(
+                        (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
+                        [
+                            [
+                                'id' => 5,
+                                'user_id' => 5,
+                                'access' => '{"teams": [], "types": [], "team_directions": []}',
                             ]
                         ]
                     ),
@@ -1595,6 +1656,16 @@ return [
                             ]
                         ]
                     ),
+                    'auth.user_access' => array_merge_recursive(
+                        (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
+                        [
+                            [
+                                'id' => 5,
+                                'user_id' => 5,
+                                'access' => '{"teams": [], "types": [], "team_directions": []}',
+                            ]
+                        ]
+                    ),
                     'auth.auth_assignment' => array_merge_recursive(
                         include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_assignment.php',
                         [
@@ -1749,6 +1820,16 @@ return [
                                 'created_by' => 4,
                                 'change_date >=' => date('Y-m-d'),
                                 'drfo' => null
+                            ]
+                        ]
+                    ),
+                    'auth.user_access' => array_merge_recursive(
+                        (include TestHelper::getGlobalFixtureDefaultPath() . 'oneUser.php')['lisa_fixtures']['auth.user_access'],
+                        [
+                            [
+                                'id' => 5,
+                                'user_id' => 5,
+                                'access' => '{"teams": [], "types": [], "team_directions": []}',
                             ]
                         ]
                     ),

@@ -86,6 +86,10 @@ Media: http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-82
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -257,6 +261,10 @@ Media:
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => null,
+                            'rz_category_id' => null,
+                            'author_team' => null,
+                            'supervisor_team' => 1,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [

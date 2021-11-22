@@ -416,7 +416,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 5,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 8,
+                'supervisor_team' => 15,
+                'manager_team' => 7,
             ],
             [
                 //"id" => 11,
@@ -457,7 +461,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 6,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 15,
+                'manager_team' => 7,
             ],
             [
                 //"id" => 12,
@@ -498,7 +506,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 1,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 1,
             ],
             [
                 //"id" => 13,
@@ -539,7 +551,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 1,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 1,
+                'manager_team' => 1,
             ],
             [
                 //"id" => 14,
@@ -580,7 +596,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 2,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 1,
+                'manager_team' => 7,
             ],
             [
                 //"id" => 15,
@@ -621,7 +641,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 9,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 8,
+                'supervisor_team' => 15,
+                'manager_team' => 7,
             ],
             [
                 //"id" => 16,
@@ -662,7 +686,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 8,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 8,
+                'supervisor_team' => 15,
+                'manager_team' => 7,
             ],
             [
                 //"id" => 17,
@@ -703,7 +731,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 5,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 14,
+                'manager_team' => 7,
             ],
             [
                 //"id" => 18,
@@ -744,7 +776,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 6,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 8,
+                'supervisor_team' => 15,
+                'manager_team' => 1,
             ],
             [
                 //"id" => 19,
@@ -785,7 +821,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 6,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
             [
                 //"id" => 20,
@@ -826,7 +866,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 6,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
             [
                 //"id" => 21,
@@ -867,7 +911,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 6,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 1,
             ],
             [
                 //"id" => 22,
@@ -908,7 +956,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 6,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
             [
                 //"id" => 23,
@@ -949,7 +1001,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 8,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
             [
                 //"id" => 24,
@@ -990,7 +1046,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 9,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ],
             [
                 //"id" => 25,
@@ -1031,7 +1091,11 @@ http://elk.dev.rozetka.com.ua/app/kibana#/dashboard/6b539350-27b3-11ea-825a-395a
                 'child_count' => 0,
                 'photo_load_status' => 0,
                 'previous_status' => 9,
-                'supplier_cabinet_id' => null
+                'supplier_cabinet_id' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 7,
             ]
         ],
         'requests_fields' => [

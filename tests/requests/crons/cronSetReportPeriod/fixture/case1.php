@@ -39,6 +39,10 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 1,
+                'manager_team' => null,
             ],
             //2
             [
@@ -73,7 +77,11 @@ return [
                 'team_direction' => 2,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 1,
+                'manager_team' => null,
             ],
             //5
             [
@@ -108,7 +116,11 @@ return [
                 'team_direction' => 6,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'rz_category_id' => null,
+                'author_team' => 19,
+                'supervisor_team' => 16,
+                'manager_team' => 1,
             ],
             //6
             [
@@ -143,7 +155,11 @@ return [
                 'team_direction' => 5,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'rz_category_id' => null,
+                'author_team' => 8,
+                'supervisor_team' => 15,
+                'manager_team' => 7,
             ],
             //7
             [
@@ -178,7 +194,11 @@ return [
                 'team_direction' => 5,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'rz_category_id' => null,
+                'author_team' => 8,
+                'supervisor_team' => 15,
+                'manager_team' => 1,
             ],
             //3
             [
@@ -213,7 +233,11 @@ return [
                 'team_direction' => 3,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'rz_category_id' => null,
+                'author_team' => 21,
+                'supervisor_team' => 1,
+                'manager_team' => null,
             ],
         ],
         'report_periods' => [
