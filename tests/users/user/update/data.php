@@ -3601,7 +3601,8 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Изменить только набор пермишенов',
+            'description' => 'Изменить только набор пермишенов и доступы к отображению',
+            //с автоматическим добавлением команды юзера в доступы
         ],
         'fixture_data' => include __DIR__ . '/fixture/case3.php',
         'provider_data' => [
@@ -3695,12 +3696,11 @@ return [
                 ],
                 'access' => [
                     'teams' => [
-                        0 => 17,
+                        0 => 1,
                     ],
                     'types' => [
                     ],
                     'team_directions' => [
-                        0 => 1,
                     ],
                 ],
             ],
@@ -3730,7 +3730,16 @@ return [
             'db' => [
                 'lisa_fixtures' => [
                     'auth.users' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.users'],
-                    'auth.user_access' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_access'],
+                    'auth.user_access' => array_replace_recursive(
+                        (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.user_access'],
+                        [
+                            3 => [
+                                'id' => 4,
+                                'user_id' => 4,
+                                'access' => '{"teams": [1, 17], "types": [], "team_directions": []}',
+                            ],
+                        ]
+                    ),
                     'auth.auth_assignment' => [
                         [
                             'item_name' => 'blockUser',

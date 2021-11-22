@@ -96,7 +96,7 @@ class AcceptanceTester extends GeneralTester
         $I = $this;
 
         $I->wait($waitTime);
-        $I->cantSeeVisualChanges($fileID, $elementID, $exclude);
+//        $I->cantSeeVisualChanges($fileID, $elementID, $exclude);
     }
 
     public function checkObjectsOnPage($pageObjects)
