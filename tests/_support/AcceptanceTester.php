@@ -4,6 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Lib\Actor\Shared\Retry;
+use Facebook\WebDriver\WebDriverKeys;
 
 /**
  * Inherited Methods
@@ -38,31 +39,27 @@ class AcceptanceTester extends GeneralTester
         $I->truncateTablesInDatabase(['lisa_fixtures' => ['exceptions' => []]]);
 
         $I->wantTo($data['setting']['description']);
-        $I->setAuthorizationCookie();
+        $I->authorize();
         $I->retry(3);
     }
 
-    private function setAuthorizationCookie()
+    private function authorize()
     {
         $I = $this;
-        $I->amOnPage('/');
 
-//        if (file_exists(__DIR__ . '/_identityCookie.txt')) {
-//            $I->setCookie('_identity', file_get_contents(__DIR__ . '/_identityCookie.txt'));
-//        } else {
+        if ($I->loadSessionSnapshot('login')) {
+            $I->pressKey('//body', WebDriverKeys::PAGE_UP);
+            return;
+        }
+        
+        $I->amOnPage('/');
         $I->fillField("LoginForm[username]", "kutsan.k");
         $I->fillField("LoginForm[password]", "123qweASD!");
         $I->checkOption("LoginForm[isBasicAuth]");
         $I->click('login-button');
         $I->wait(1);
-//            $I->waitForText("Добро пожаловать", 5);
-//            file_put_contents(__DIR__ . '/_identityCookie.txt', $I->grabCookie('_identity'));
-//        }
 
-//        $I->setCookie('newTabOpening', 'false');
-
-//        $I->seeCookie('_identity');
-//        $I->seeCookie('newTabOpening');
+        $I->saveSessionSnapshot('login');
     }
 
     public function setRequestPerPageCookie(int $amount)
@@ -91,12 +88,14 @@ class AcceptanceTester extends GeneralTester
         $I->wait($waitTime);
     }
 
-    public function waitAndCantSeeVisualChanges(string $fileID, int $waitTime = 1, array $exclude = ['.user-image', '#yii-debug-toolbar'], string $elementID = '.content-wrapper')
+    public function waitAndCantSeeVisualChanges(string $fileID, int $waitTime = 1, array $exclude = [], string $elementID = '.content-wrapper')
     {
         $I = $this;
+        
+        $defaultExclude = ['.user-image', '#yii-debug-toolbar'];
 
         $I->wait($waitTime);
-//        $I->cantSeeVisualChanges($fileID, $elementID, $exclude);
+        $I->cantSeeVisualChanges($fileID, $elementID, array_merge($defaultExclude, $exclude), []);
     }
 
     public function checkObjectsOnPage($pageObjects)
@@ -112,23 +111,6 @@ class AcceptanceTester extends GeneralTester
         if (isset($pageObjects['cantSee'])) {
             foreach ($pageObjects['cantSee'] as $object) {
                 $I->cantSeeElement($object);
-            }
-        }
-    }
-
-    public function checkCheckboxesOnPage($pageObjects)
-    {
-        $I = $this;
-
-        if (isset($pageObjects['canSee'])) {
-            foreach ($pageObjects['canSee'] as $checkbox) {
-                $I->canSeeCheckboxIsChecked($checkbox);
-            }
-        }
-
-        if (isset($pageObjects['cantSee'])) {
-            foreach ($pageObjects['cantSee'] as $checkbox) {
-                $I->cantSeeCheckboxIsChecked($checkbox);
             }
         }
     }

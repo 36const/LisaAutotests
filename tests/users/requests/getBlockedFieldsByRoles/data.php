@@ -1225,32 +1225,7 @@ return [
                                 'disabled' => true,
                             ],
                         ],
-                        'selects' => [
-                            0 => [
-                                'id' => 25,
-                                'name' => 'Уточнения. Количество уточнений у автора.',
-                                'type' => 'select',
-                                'status' => 1,
-                                'disabled' => true,
-                                'values' => [
-                                    0 => [
-                                        'value' => 18,
-                                        'text' => 'Без уточнений',
-                                        'disabled' => false,
-                                    ],
-                                    1 => [
-                                        'value' => 20,
-                                        'text' => 'Более 5 уточнений',
-                                        'disabled' => true,
-                                    ],
-                                    2 => [
-                                        'value' => 19,
-                                        'text' => 'Менее 5 уточнений',
-                                        'disabled' => false,
-                                    ],
-                                ],
-                            ],
-                        ],
+                        'selects' => [],
                     ],
                     'requestErrors' => [
                         'origin' => [

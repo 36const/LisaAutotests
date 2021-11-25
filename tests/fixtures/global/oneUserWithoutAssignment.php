@@ -21,6 +21,7 @@ return [
         ],
         'request_attachments' => [],
         'request_errors' => [],
-        'observers' => []
+        'observers' => [],
+        'user_notifications' => [],
     ],
 ];

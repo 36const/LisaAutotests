@@ -4,6 +4,7 @@ namespace lisa;
 
 use Codeception\Example;
 use Codeception\Module\TestHelper;
+use Facebook\WebDriver\WebDriverKeys;
 use lisa\Page\Requests\Request;
 use lisa\Page\Requests\RequestCreate;
 
@@ -64,7 +65,10 @@ class TableColumnsSettingsCest
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4);
 
         //очистить поле фильтра
-        $I->clearField(Request::SEARCH_COLUMNS);
+        $I->pressKey(
+            Request::SEARCH_COLUMNS, 
+            WebDriverKeys::BACKSPACE, WebDriverKeys::BACKSPACE, WebDriverKeys::BACKSPACE, WebDriverKeys::BACKSPACE
+        );
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 5);
 
         //сохранить настройки

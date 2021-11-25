@@ -2577,11 +2577,6 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 25,
-                'value' => 18
-            ],
-            [
-                'request_id' => 1,
                 'field_id' => 146,
                 'value' => 0
             ],

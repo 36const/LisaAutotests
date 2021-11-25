@@ -39,6 +39,8 @@ class CronNotifyCest
         $I->bindQueueToExchange('lisa_saveFiles', 'default', 'lisa_saveFiles');
         $I->declareQueue('lisa_sendMailNotifications', false, true, false, false);
         $I->bindQueueToExchange('lisa_sendMailNotifications', 'default', 'lisa_sendMailNotifications');
+        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
+        $I->bindQueueToExchange('lisa_sendOuterNotifications', 'default', 'lisa_sendOuterNotifications');
 
         if (!empty($providerData['RabbitMQ']['lisa_saveFiles'])) {
             $I->pushToExchange(

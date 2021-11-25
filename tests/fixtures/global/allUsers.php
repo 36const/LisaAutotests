@@ -25,6 +25,7 @@ return [
         'request_attachments' => [],
         'request_errors' => [],
         'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
-        'observers' => []
+        'observers' => [],
+        'user_notifications' => [],
     ],
 ];

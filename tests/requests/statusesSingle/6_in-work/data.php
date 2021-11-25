@@ -1572,7 +1572,6 @@ return [
                 'currentStatus' => 6,
                 'payload' => [
                     3 => true,
-                    25 => 18,
                     72 => '10',
                     73 => '10',
                     74 => '10',
@@ -1658,11 +1657,6 @@ return [
                             'request_id' => 1,
                             'field_id' => 19,
                             'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 25,
-                            'value' => 18,
                         ],
                         [
                             'request_id' => 1,
@@ -1882,7 +1876,6 @@ return [
                 'currentStatus' => 6,
                 'payload' => [
                     3 => true,
-                    25 => 18,
                     72 => '10',
                     73 => '10',
                     74 => '10',
@@ -1968,11 +1961,6 @@ return [
                             'request_id' => 1,
                             'field_id' => 19,
                             'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 25,
-                            'value' => 18,
                         ],
                         [
                             'request_id' => 1,
@@ -2171,7 +2159,7 @@ return [
 
     'case6_8_1_1' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Частично выполнен" тип 1 направление 1 + нотификации + автосложность',
+            'description' => 'Перевод из "В работе" в "Частично выполнен" 1/1 + нотификации + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'mock_data' => $mockData,
@@ -2608,7 +2596,7 @@ return [
 
     'case6_8_1_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Частично выполнен" тип 1 направление 2 без "Ждёт группировки" в Гомере',
+            'description' => 'Перевод из "В работе" в "Частично выполнен" 1/2 без "Ждёт группировки/Товары на модерации" в Гомере',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_1_2.php',
         'mock_data' => [
@@ -2637,7 +2625,6 @@ return [
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
-                25 => 18,
                 72 => '10',
                 73 => '10',
                 74 => '10',
@@ -2724,11 +2711,6 @@ return [
                             'request_id' => 1,
                             'field_id' => 19,
                             'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 25,
-                            'value' => 18,
                         ],
                         [
                             'request_id' => 1,
@@ -2927,7 +2909,6 @@ return [
                     '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-completed","fields":{"id":1,"type":"Додавання товарів","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Кількість доданих товарів — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість згрупованих товарів — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість прихованих товарів/лишилось прихованих — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                 ],
                 'lisa_common' => [
-                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":25,"value":"18"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":72,"value":"10"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":73,"value":"10"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":74,"value":"10"},"changed_fields_names":[]}',
@@ -2956,7 +2937,7 @@ return [
 
     'case6_8_1_2_on-hold' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Частично выполнен" тип 1 направление 2 с "Ждёт группировки" в Гомере',
+            'description' => 'Перевод из "В работе" в "Частично выполнен" 1/2 с "Ждёт группировки" в Гомере',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_1_2.php',
         'mock_data' => [
@@ -2976,7 +2957,7 @@ return [
                             'application/json; charset=UTF-8'
                         ]
                     ],
-                    'body' => file_get_contents(__DIR__ . '/mock/case_on-hold.json'),
+                    'body' => file_get_contents(__DIR__ . '/mock/case1_on-hold.json'),
                     'statusCode' => 200
                 ],
             ],
@@ -2985,7 +2966,6 @@ return [
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
-                25 => 18,
                 72 => '10',
                 73 => '10',
                 74 => '10',
@@ -3074,11 +3054,6 @@ return [
                             'request_id' => 1,
                             'field_id' => 19,
                             'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 25,
-                            'value' => 18,
                         ],
                         [
                             'request_id' => 1,
@@ -3259,7 +3234,6 @@ return [
             'RabbitMQ' => [
                 'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
-                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":25,"value":"18"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":72,"value":"10"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":73,"value":"10"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":74,"value":"10"},"changed_fields_names":[]}',
@@ -3286,7 +3260,7 @@ return [
 
     'case6_9_1_1' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 1 направление 1 + нотификации + автосложность',
+            'description' => 'Перевод из "В работе" в "Выполнен" 1/1 + нотификации + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'mock_data' => $mockData,
@@ -3704,7 +3678,7 @@ return [
 
     'case6_9_1_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 1 направление 2 без "Ждёт группировки" в Гомере',
+            'description' => 'Перевод из "В работе" в "Выполнен" 1/2 без "Ждёт группировки/Товары на модерации" в Гомере',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_1_2.php',
         'mock_data' => [
@@ -3733,7 +3707,6 @@ return [
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
-                25 => 18,
                 72 => '10',
                 73 => '10',
                 74 => '10',
@@ -3814,11 +3787,6 @@ return [
                             'request_id' => 1,
                             'field_id' => 19,
                             'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 25,
-                            'value' => 18,
                         ],
                         [
                             'request_id' => 1,
@@ -3991,7 +3959,6 @@ return [
                     '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-completed","fields":{"id":1,"type":"Додавання товарів","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Кількість доданих товарів — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість згрупованих товарів — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість прихованих товарів/лишилось прихованих — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                 ],
                 'lisa_common' => [
-                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":25,"value":"18"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":72,"value":"10"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":73,"value":"10"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":74,"value":"10"},"changed_fields_names":[]}',
@@ -4020,7 +3987,7 @@ return [
 
     'case6_9_1_2_on-hold' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 1 направление 2 с "Ждёт группировки" в Гомере',
+            'description' => 'Перевод из "В работе" в "Выполнен" 1/2 с "Ждёт группировки" в Гомере',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_1_2.php',
         'mock_data' => [
@@ -4040,7 +4007,7 @@ return [
                             'application/json; charset=UTF-8'
                         ]
                     ],
-                    'body' => file_get_contents(__DIR__ . '/mock/case_on-hold.json'),
+                    'body' => file_get_contents(__DIR__ . '/mock/case1_on-hold.json'),
                     'statusCode' => 200
                 ],
             ],
@@ -4049,7 +4016,6 @@ return [
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
-                25 => 18,
                 72 => '10',
                 73 => '10',
                 74 => '10',
@@ -4132,11 +4098,6 @@ return [
                             'request_id' => 1,
                             'field_id' => 19,
                             'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 25,
-                            'value' => 18,
                         ],
                         [
                             'request_id' => 1,
@@ -4317,7 +4278,6 @@ return [
             'RabbitMQ' => [
                 'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
-                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":25,"value":"18"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":72,"value":"10"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":73,"value":"10"},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":74,"value":"10"},"changed_fields_names":[]}',
@@ -4344,7 +4304,7 @@ return [
 
     'case6_9_2_1' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 2 направление 1 + автосложность',
+            'description' => 'Перевод из "В работе" в "Выполнен" 2/1 + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_2_1.php',
         'mock_data' => $mockData,
@@ -4684,14 +4644,35 @@ return [
 
     'case6_9_2_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 2 направление 2',
+            'description' => 'Перевод из "В работе" в "Выполнен" 2/2 без "Ждёт группировки/Товары на модерации" в Гомере',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_2_2.php',
-        'mock_data' => $mockData,
+        'mock_data' => [
+            'Gomer' => [
+                'httpRequest' => [
+                    'method' => 'GET',
+                    'path' => '/new-items/check-bpm',
+                    'queryStringParameters' => [
+                        'bpm_number' => [
+                            '1'
+                        ]
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json; charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/case_not_on-hold.json'),
+                    'statusCode' => 200
+                ],
+            ],
+            $mockData
+        ],
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
-                25 => 18,
                 67 => '10',
                 72 => '10',
                 73 => '10',
@@ -4772,11 +4753,6 @@ return [
                             'request_id' => 1,
                             'field_id' => 19,
                             'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 25,
-                            'value' => 18,
                         ],
                         [
                             'request_id' => 1,
@@ -4952,9 +4928,305 @@ return [
         ]
     ],
 
+    'case6_9_2_2_on-hold' => [
+        'setting' => [
+            'description' => 'Перевод из "В работе" в "Выполнен" 2/2 с "Товары на модерации" в Гомере',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case6_9_2_2.php',
+        'mock_data' => [
+            'Gomer' => [
+                'httpRequest' => [
+                    'method' => 'GET',
+                    'path' => '/new-items/check-bpm',
+                    'queryStringParameters' => [
+                        'bpm_number' => [
+                            '1'
+                        ]
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json; charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/case2_on-hold.json'),
+                    'statusCode' => 200
+                ],
+            ],
+            $mockData
+        ],
+        'provider_data' => [
+            'requestParameter' => 'update',
+            'requestBody' => [
+                67 => '10',
+                72 => '10',
+                73 => '10',
+                74 => '10',
+                75 => '10',
+                93 => '10',
+                94 => '5',
+                'status' => 9,
+                'currentStatus' => 6,
+                'result_comment' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+            ],
+            'responseBody' => [
+                'success' => true,
+                'warning' => 'Заявка переведена в статус "Ожидает",
+             так как в GOMER\'e еще не закончилась группировка и/или модерация товаров по этой заявке.'
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 2,
+                            'supervisor_id' => 6,
+                            'manager_id' => 11,
+                            'status' => 7,
+                            'direction' => 2,
+                            'priority' => 2,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => '',
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркета)',
+                            'description' => 'description',
+                            'category_id' => null,
+                            'seller_id' => 83,
+                            'recommendations' => '',
+                            'reason' => 'Заявка переведена в статус "Ожидает",
+             так как в GOMER\'e еще не закончилась группировка и/или модерация товаров по этой заявке.',
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => '2020-01-01 00:00:03',
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'supervisor_comment' => '',
+                            'last_change_status_date >=' => date('Y-m-d'),
+                            'team_direction' => 2,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0,
+                            'previous_status' => 6,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
+                        ]
+                    ],
+                    'requests_fields' => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 8,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 15,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 19,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 49,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 50,
+                            'value' => 60,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 51,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 60,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 67,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 72,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 73,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 74,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 75,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 89,
+                            'value >' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 93,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 94,
+                            'value' => 5,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 114,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                    ],
+                    'user_notifications' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                        ],
+                        [
+                            'id' => 2,
+                            'user_id' => 6,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                        ],
+                        [
+                            'id' => 3,
+                            'user_id' => 11,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                        ],
+                    ],
+                    'request_status_history' => [
+                        [
+                            'id' => 1,
+                            'request_id' => 1,
+                            'user_id' => 4,
+                            'old_status' => 5,
+                            'new_status' => 6,
+                            'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'created_at' => date('Y-m-d H:i:s', strtotime('- 3 minutes')),
+                            'manager_id' => 11,
+                            'reasons' => null
+                        ],
+                        [
+                            'id' => 2,
+                            'request_id' => 1,
+                            'user_id' => 4,
+                            'old_status' => 6,
+                            'new_status' => 7,
+                            'reason' => 'Заявка переведена в статус "Ожидает",
+             так как в GOMER\'e еще не закончилась группировка и/или модерация товаров по этой заявке.',
+                            'created_at >=' => date('Y-m-d'),
+                            'manager_id' => 11,
+                            'reasons' => 'Товары на модерации'
+                        ]
+                    ],
+                    'requests_reasons' => [
+                        [
+                            'request_id' => 1,
+                            'reason_id' => 15
+                        ]
+                    ],
+                    'transition_info' => [
+                        [
+                            'request_id' => 1,
+                            'status' => 9,
+                            'reason' => null,
+                            'reasons_list' => '[]'
+                        ],
+                    ]
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
+            ]
+        ]
+    ],
+
     'case6_9_3_1' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 3 направление 1 + автосложность',
+            'description' => 'Перевод из "В работе" в "Выполнен" 3/1 + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_3_1.php',
         'mock_data' => $mockData,
@@ -5294,14 +5566,13 @@ return [
 
     'case6_9_3_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 3 направление 2',
+            'description' => 'Перевод из "В работе" в "Выполнен" 3/2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_3_2.php',
         'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
-                25 => 18,
                 67 => '10',
                 72 => '10',
                 73 => '10',
@@ -5382,11 +5653,6 @@ return [
                             'request_id' => 1,
                             'field_id' => 19,
                             'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 25,
-                            'value' => 18,
                         ],
                         [
                             'request_id' => 1,
@@ -5564,7 +5830,7 @@ return [
 
     'case6_9_4_0' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 4 направление 0 + автосложность',
+            'description' => 'Перевод из "В работе" в "Выполнен" 4/0 + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_4_0.php',
         'mock_data' => $mockData,
@@ -5835,7 +6101,7 @@ return [
 
     'case6_9_5_1' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 5 направление 1 + автосложность',
+            'description' => 'Перевод из "В работе" в "Выполнен" 5/1 + автосложность',
             //автосложность не должна проставиться, потому что поля для этого типа не занесены в auto_diff_fields
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_5_1.php',
@@ -6163,14 +6429,13 @@ return [
 
     'case6_9_6_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 6 направление 2',
+            'description' => 'Перевод из "В работе" в "Выполнен" 6/2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_6_2.php',
         'mock_data' => $mockData,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
-                25 => 18,
                 67 => '10',
                 72 => '10',
                 73 => '10',
@@ -6251,11 +6516,6 @@ return [
                             'request_id' => 1,
                             'field_id' => 19,
                             'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 25,
-                            'value' => 18,
                         ],
                         [
                             'request_id' => 1,
@@ -6433,7 +6693,7 @@ return [
 
     'case6_9_7_0' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 7 направление 0',
+            'description' => 'Перевод из "В работе" в "Выполнен" 7/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_7_0.php',
         'mock_data' => $mockData,
@@ -6698,7 +6958,7 @@ return [
 
     'case6_9_8_0' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 8 направление 0',
+            'description' => 'Перевод из "В работе" в "Выполнен" 8/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_8_0.php',
         'mock_data' => $mockData,
@@ -6980,7 +7240,7 @@ return [
 
     'case6_9_9_0' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 9 направление 0',
+            'description' => 'Перевод из "В работе" в "Выполнен" 9/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_9_0.php',
         'mock_data' => $mockData,
@@ -7205,7 +7465,7 @@ return [
 
     'case6_9_10_0' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 10 направление 0',
+            'description' => 'Перевод из "В работе" в "Выполнен" 10/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_10_0.php',
         'mock_data' => $mockData,
@@ -7430,7 +7690,7 @@ return [
 
     'case6_9_11_0' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 11 направление 0',
+            'description' => 'Перевод из "В работе" в "Выполнен" 11/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_11_0.php',
         'mock_data' => $mockData,
@@ -7667,7 +7927,7 @@ return [
 
     'case6_9_12_1' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 12 направление 1',
+            'description' => 'Перевод из "В работе" в "Выполнен" 12/1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_12_1.php',
         'mock_data' => $mockData,
@@ -7993,7 +8253,7 @@ return [
 
     'case6_9_13_0' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 13 направление 0 + автосложность',
+            'description' => 'Перевод из "В работе" в "Выполнен" 13/0 + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_13_0.php',
         'mock_data' => $mockData,
@@ -8249,7 +8509,7 @@ return [
 
     'case6_9_14_0' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 14 направление 0',
+            'description' => 'Перевод из "В работе" в "Выполнен" 14/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_14_0.php',
         'mock_data' => $mockData,
@@ -8456,7 +8716,7 @@ return [
 
     'case6_9_15_0' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" тип 15 направление 0',
+            'description' => 'Перевод из "В работе" в "Выполнен" 15/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_15_0.php',
         'mock_data' => $mockData,

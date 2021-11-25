@@ -32,6 +32,8 @@ class CategoryCreateCest
         $providerData = $data['provider_data'];
 
         $I->amOnPage('/lisa/#/category/list');
+        $I->reloadPage();
+        $I->waitForElement(Category::CREATE_BUTTON);
         $I->click(Category::CREATE_BUTTON);
         $I->waitForElement(Category::SAVE_BUTTON);
 
@@ -44,36 +46,32 @@ class CategoryCreateCest
 
         $I->pressKey(Category::CATEGORY_DIFF, '1', '.', '3');
         $I->click(Category::SAVE_BUTTON);
-        $I->wait(1);
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Название категории».'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Супервизор».'));
-        $I->cantSeeElement(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
+        $I->waitForElementNotVisible(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
         $I->checkTablesInDB($providerData['db_1']);
 
         $I->click(Category::categoryStatus('Заблокированный'));
         $I->click(Category::SAVE_BUTTON);
-        $I->wait(1);
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Название категории».'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Супервизор».'));
-        $I->cantSeeElement(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
+        $I->waitForElementNotVisible(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
         $I->checkTablesInDB($providerData['db_1']);
 
         $I->pressKey(Category::CATEGORY_TITLE, 'А', 'в', 'и', 'а', 'б', 'и', 'л', 'е', 'т', 'ы');
         $I->click(Category::SAVE_BUTTON);
-        $I->wait(1);
         $I->waitForElementVisible(Category::errorField('Значение «Авиабилеты» для «Название категории» уже занято.'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Супервизор».'));
-        $I->cantSeeElement(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
-        $I->cantSeeElement(Category::errorField('Необходимо заполнить «Название категории».'));
+        $I->waitForElementNotVisible(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
+        $I->waitForElementNotVisible(Category::errorField('Необходимо заполнить «Название категории».'));
         $I->checkTablesInDB($providerData['db_1']);
 
         $I->click(Category::categoryStatus('Активный'));
         $I->click(Category::SAVE_BUTTON);
-        $I->wait(1);
         $I->waitForElementVisible(Category::errorField('Значение «Авиабилеты» для «Название категории» уже занято.'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Супервизор».'));
-        $I->cantSeeElement(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
-        $I->cantSeeElement(Category::errorField('Необходимо заполнить «Название категории».'));
+        $I->waitForElementNotVisible(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
+        $I->waitForElementNotVisible(Category::errorField('Необходимо заполнить «Название категории».'));
         $I->checkTablesInDB($providerData['db_1']);
 
         $I->reloadPage();
@@ -81,10 +79,9 @@ class CategoryCreateCest
         $I->pressKey(Category::CATEGORY_SV, 'К', 'у');
         $I->click(SearchField::searchResult('Константин '));
         $I->click(Category::SAVE_BUTTON);
-        $I->wait(1);
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Название категории».'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
-        $I->cantSeeElement(Category::errorField('Необходимо заполнить «Супервизор».'));
+        $I->waitForElementNotVisible(Category::errorField('Необходимо заполнить «Супервизор».'));
         $I->checkTablesInDB($providerData['db_1']);
 
         $I->pressKey(Category::CATEGORY_TITLE, 'А', 'в', 'и', 'а', 'б', 'и', 'л', 'е', 'т', 'ы', '-');

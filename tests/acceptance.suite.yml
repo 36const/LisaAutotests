@@ -15,7 +15,7 @@ modules:
             url: http://splitter.docker
             browser: chrome
             window_size: 1920x1080
-            wait: 2
+            wait: 3
             capabilities:
               enableVNC: true
               sessionTimeout: 1m
@@ -28,7 +28,7 @@ modules:
             referenceImageDir: VisualCeption/             #default: 'VisualCeption/'
             currentImageDir: VisualCeption/current/       #default: 'VisualCeption/'
             #templateFile: "/report/template2.php"        #absolute path or relative from module dir to report template. Default "/report/template.php"
-            maximumDeviation: 0.01                        #deviation in percent, default: 0
+            maximumDeviation: 0.001                       #deviation in percent, default: 0
             saveCurrentImageIfFailure: true               #if true, VisualCeption saves the current, default: true
             fullScreenShot: false                         #fullpage screenshot, default: false
     disabled:

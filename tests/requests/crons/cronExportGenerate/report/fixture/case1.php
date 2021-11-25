@@ -56,11 +56,6 @@ return [
             ],
             [
                 'request_id' => 11,
-                'field_id' => 25,
-                'value' => 19
-            ],
-            [
-                'request_id' => 11,
                 'field_id' => 49,
                 'value' => 90
             ],
