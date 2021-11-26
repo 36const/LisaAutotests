@@ -35,7 +35,7 @@ class TableColumnsFiltersListCest
         $I->amOnPage('/lisa/#/request/list/all');
 
         //открыть список значений в фильтре колонки
-        $I->click(Request::columnSearchField($setting['column']));
+        $I->retryClick(Request::columnSearchField($setting['column']));
         $I->checkObjectsOnPage($provider_data['columnValueList']);
         //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1);
 
