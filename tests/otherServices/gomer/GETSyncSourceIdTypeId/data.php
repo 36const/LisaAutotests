@@ -236,7 +236,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\\web\\BadRequestHttpException',
                             'message' => 'Отсутствуют обязательные параметры: sync_source_id, type_id',
-                            'name' => 'Bad Request',
                             'code' => 0,
                             'user' => '4',
                         ]
@@ -272,7 +271,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\\web\\BadRequestHttpException',
                             'message' => 'Неправильное значение параметра "sync_source_id".',
-                            'name' => 'Bad Request',
                             'code' => 0,
                             'user' => '4',
                         ]
@@ -308,7 +306,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\\web\\BadRequestHttpException',
                             'message' => 'Неправильное значение параметра "type_id".',
-                            'name' => 'Bad Request',
                             'code' => 0,
                             'user' => '4',
                         ]

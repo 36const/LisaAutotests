@@ -351,7 +351,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'Exception',
                             'message' => 'В переданой строке marketId не найдено ни одного ID.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ]
@@ -386,7 +385,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'Exception',
                             'message' => 'В переданой строке marketId не найдено ни одного ID.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ]
@@ -421,7 +419,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\\web\\BadRequestHttpException',
                             'message' => 'Отсутствуют обязательные параметры: marketId',
-                            'name' => 'Bad Request',
                             'code' => 0,
                             'user' => '4',
                         ]
@@ -454,7 +451,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\\web\\BadRequestHttpException',
                             'message' => 'Отсутствуют обязательные параметры: marketId',
-                            'name' => 'Bad Request',
                             'code' => 0,
                             'user' => '4',
                         ]

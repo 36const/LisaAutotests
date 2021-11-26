@@ -492,7 +492,6 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}'
                         ],
                     ],
-                    'exceptions' => []
                 ]
             ],
             'RabbitMQ' => [
@@ -749,7 +748,6 @@ return [
                             'message' => "{\n    \"status\": 400,\n    \"errors\": {\n        \"status\": [\n            \"Значение «Статус заявки» должно быть числом.\"\n        ]\n    }\n}",
                             'file LIKE' => '%/api/infra/api/VATApiClient.php',
                             'line' => 76,
-                            'name' => 'Exception',
                             'code' => 400
                         ],
                     ]
@@ -1010,7 +1008,6 @@ return [
                             'message' => "{\n    \"id\": 1,\n    \"status\": 404,\n    \"errors\": {\n        \"id\": \"Заявка не найдена\"\n    }\n}",
                             'file LIKE' => '%/api/infra/api/VATApiClient.php',
                             'line' => 76,
-                            'name' => 'Exception',
                             'code' => 404,
                         ],
                     ]
@@ -1225,7 +1222,6 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}'
                         ],
                     ],
-                    'exceptions' => []
                 ]
             ],
             'RabbitMQ' => [
@@ -1436,7 +1432,6 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": 3}'
                         ],
                     ],
-                    'exceptions' => []
                 ]
             ],
             'RabbitMQ' => [
@@ -1569,7 +1564,6 @@ return [
     [0] => В текущем процессе отсутствует переход заявки из статуса 1 в статус 1
 )
 ',
-                            'name' => 'Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -1613,7 +1607,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\InvalidArgumentException',
                             'message' => 'Необходимо заполнить requestId или supplierCabinetId',
-                            'name' => 'Invalid Argument',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -1657,7 +1650,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\InvalidArgumentException',
                             'message' => 'newStatus: должен быть числом.',
-                            'name' => 'Invalid Argument',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -1709,7 +1701,6 @@ return [
     [0] => Необходимо заполнить payload[Request][correction_comment]
 )
 ',
-                            'name' => 'Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -1819,7 +1810,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'InvalidArgumentException',
                             'message' => 'Невозможно перевести задачу в статус 10 через API.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -1950,7 +1940,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\Exception',
                             'message' => '',
-                            'name' => 'Exception',
                             'code' => 404,
                             'user' => '4',
                         ],
@@ -1963,7 +1952,6 @@ return [
     [0] => В текущем процессе отсутствует переход заявки из статуса 5 в статус 1
 )
 ',
-                            'name' => 'Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2007,7 +1995,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'InvalidArgumentException',
                             'message' => 'Невозможно перевести задачу в статус 2 через API.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2051,7 +2038,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'InvalidArgumentException',
                             'message' => 'Невозможно перевести задачу в статус 3 через API.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2095,7 +2081,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'InvalidArgumentException',
                             'message' => 'Невозможно перевести задачу в статус 4 через API.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2139,7 +2124,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'InvalidArgumentException',
                             'message' => 'Невозможно перевести задачу в статус 5 через API.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2183,7 +2167,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'InvalidArgumentException',
                             'message' => 'Невозможно перевести задачу в статус 6 через API.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2227,7 +2210,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'InvalidArgumentException',
                             'message' => 'Невозможно перевести задачу в статус 7 через API.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2271,7 +2253,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'InvalidArgumentException',
                             'message' => 'Невозможно перевести задачу в статус 8 через API.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2315,7 +2296,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'InvalidArgumentException',
                             'message' => 'Невозможно перевести задачу в статус 9 через API.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2359,7 +2339,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'InvalidArgumentException',
                             'message' => 'Невозможно перевести задачу в статус 11 через API.',
-                            'name' => '',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2399,7 +2378,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\InvalidArgumentException',
                             'message' => 'Необходимо заполнить requestId или supplierCabinetId',
-                            'name' => 'Invalid Argument',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2451,7 +2429,6 @@ return [
     [0] => В текущем процессе отсутствует переход заявки из статуса 2 в статус 1
 )
 ',
-                            'name' => 'Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2503,7 +2480,6 @@ return [
     [0] => В текущем процессе отсутствует переход заявки из статуса 4 в статус 1
 )
 ',
-                            'name' => 'Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2555,7 +2531,6 @@ return [
     [0] => В текущем процессе отсутствует переход заявки из статуса 5 в статус 1
 )
 ',
-                            'name' => 'Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2607,7 +2582,6 @@ return [
     [0] => В текущем процессе отсутствует переход заявки из статуса 6 в статус 1
 )
 ',
-                            'name' => 'Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2659,7 +2633,6 @@ return [
     [0] => В текущем процессе отсутствует переход заявки из статуса 7 в статус 1
 )
 ',
-                            'name' => 'Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2711,7 +2684,6 @@ return [
     [0] => В текущем процессе отсутствует переход заявки из статуса 8 в статус 1
 )
 ',
-                            'name' => 'Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2763,7 +2735,6 @@ return [
     [0] => В текущем процессе отсутствует переход заявки из статуса 9 в статус 1
 )
 ',
-                            'name' => 'Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -2815,7 +2786,6 @@ return [
     [0] => В текущем процессе отсутствует переход заявки из статуса 11 в статус 1
 )
 ',
-                            'name' => 'Exception',
                             'code' => 0,
                             'user' => '4',
                         ],

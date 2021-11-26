@@ -314,7 +314,6 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\\web\\BadRequestHttpException',
                             'message' => 'Отсутствуют обязательные параметры: ids',
-                            'name' => 'Bad Request',
                             'code' => 0,
                             'user' => '4',
                         ]

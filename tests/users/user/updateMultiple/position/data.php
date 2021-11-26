@@ -8187,7 +8187,6 @@ return [
 
 )
 ',
-                            'name' => 'Database Exception',
                             'code' => 0,
                             'user' => '4',
                         ],

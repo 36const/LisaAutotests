@@ -356,9 +356,8 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'class' => 'yii\\db\\Exception',
+                            'class' => 'app\\infra\\exceptions\\RequestValidationException',
                             'message' => 'Заявка не сохранилась: Необходимо заполнить «Количество в работу».',
-                            'name' => 'Database Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -885,9 +884,8 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'class' => 'yii\\db\\Exception',
+                            'class' => 'app\\infra\\exceptions\\RequestValidationException',
                             'message' => 'Заявка не сохранилась: Необходимо заполнить поле "Категория Rozetka" для задачи типа "Группировка товаров"',
-                            'name' => 'Database Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -1179,9 +1177,8 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'class' => 'yii\\db\\Exception',
+                            'class' => 'app\\infra\\exceptions\\RequestValidationException',
                             'message' => 'Заявка не сохранилась: Необходимо заполнить «Описание».',
-                            'name' => 'Database Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
@@ -1426,9 +1423,8 @@ return [
                     'exceptions' => [
                         [
                             'id' => 1,
-                            'class' => 'yii\\db\\Exception',
+                            'class' => 'app\\infra\\exceptions\\RequestValidationException',
                             'message' => 'Заявка не сохранилась: Необходимо заполнить «Заголовок».',
-                            'name' => 'Database Exception',
                             'code' => 0,
                             'user' => '4',
                         ],
