@@ -38,12 +38,12 @@ class CreateRequestPageCest
 
         $I->clickAndWait(RequestCreate::CREATE_BUTTON);
         $I->waitForElementVisible(RequestCreate::CREATE_MODAL);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1);
+        //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1);
 
         $I->click(RequestCreate::TYPES_LIST);
         $I->click(RequestCreate::typeSelect(Constants::TYPES[$setting['type']]));
         $I->click(RequestCreate::checkboxesDirection($setting['direction']));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2);
+        //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2);
 
         $I->click(RequestCreate::CREATE_MODAL_BUTTON);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 3);
@@ -57,12 +57,14 @@ class CreateRequestPageCest
         $I->scrollTo(RequestCreate::MAIN_BLOCK);
         $I->pressKey(RequestCreate::SUBJECT, '!', '"', '№', ';', '%', ':', '?', '*', '(', ')');
         $I->click(RequestCreate::CREATE_FORM_BUTTON);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 5);
+        //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 5);
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
 
         //заполнен заголовок и описание
         $I->pressKey(RequestCreate::DESCRIPTION, '!', '"', '№', ';', '%', ':', '?', '*', '(', ')');
         $I->click(RequestCreate::CREATE_FORM_BUTTON);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 6);
+        //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 6);
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
 
         //заполнен заголовок, описание и категория/продавец
         if ($setting['direction'] == 'Работа с товарами Розетки') {
@@ -93,6 +95,7 @@ class CreateRequestPageCest
         $I->click(RequestCreate::CREATE_FORM_BUTTON);
         $I->wait(1);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 8);
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
 
         //заполнен заголовок, описание, категория/продавец и количество в работу
         $I->pressKey(RequestCreate::AMOUNT, '9', '9', '9', '9', '9', '9', '9', '9', '9');

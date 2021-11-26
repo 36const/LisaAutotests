@@ -80,7 +80,7 @@ class AcceptanceTester extends GeneralTester
         $I->seeCookie('requestsPerPage');
     }
 
-    public function clickAndWait(string $xpath, int $waitTime = 1)
+    public function clickAndWait(string $xpath, float $waitTime = 0.5)
     {
         $I = $this;
 
@@ -92,7 +92,7 @@ class AcceptanceTester extends GeneralTester
     {
         $I = $this;
         
-        $defaultExclude = ['.user-image', '#yii-debug-toolbar'];
+        $defaultExclude = ['.user-image', '.main-header', '#yii-debug-toolbar'];
 
         $I->wait($waitTime);
         $I->cantSeeVisualChanges($fileID, $elementID, array_merge($defaultExclude, $exclude), []);
@@ -104,13 +104,13 @@ class AcceptanceTester extends GeneralTester
 
         if (isset($pageObjects['canSee'])) {
             foreach ($pageObjects['canSee'] as $object) {
-                $I->canSeeElement($object);
+                $I->waitForElementVisible($object);
             }
         }
 
         if (isset($pageObjects['cantSee'])) {
             foreach ($pageObjects['cantSee'] as $object) {
-                $I->cantSeeElement($object);
+                $I->waitForElementNotVisible($object);
             }
         }
     }

@@ -38,7 +38,7 @@ class RequestCreate
 
     public static function errorFieldMessage($field, $text): string
     {
-        return $field . "/../div[@class='help-block' and contains(text(),'$text')]";
+        return "//div[contains(@class,'error--text')]//div[@class='v-messages__message'][text()='$errorMessage']";
     }
 
     public static function findCheckbox(string $name): string

@@ -21,7 +21,7 @@ class Request
     /**Общее количество отфильтрованных заявок*/
     public static function tableSummary($summary): string
     {
-        return "//div[@class='summary']/b/..//*[text()='$summary']";
+        return "//div[@class='lisa-request-grid']//span/b[2][text()='$summary']";
     }
 
     /**Диапазон количества показанных заявок*/
@@ -67,34 +67,31 @@ class Request
     /**Поле поиска в заголовке колонки с готовым списком вариантов*/
     public static function columnSearchField(string $fieldName): string
     {
-        return "//thead//td//select[@name='RequestSearch[$fieldName][]']/..//ul";
+        return "//td[@column='$fieldName']//input";
     }
-
-    /**Чекбокс "Выбрать все" в заголовке колонки с готовым списком вариантов*/
-    public static $columnSelectAll = "//span[@class='select2-dropdown select2-dropdown--below']//span[text()='Выбрать все']";
 
     /**Значение в выпадающем списке значений в заголовке колонки*/
-    public static function columnValueList(string $value): string
+    public static function columnValueFromList(string $optionTitle): string
     {
-        return "//span[@class='select2-results']/ul/li[text()='$value']";
+        return "//div[@role='listbox']//div[@role='option']/div[@class='v-list-item__content']/div[@class='v-list-item__title'][text()='$optionTitle']/../..//div[@class='v-simple-checkbox']";
     }
 
-    /**Значение в списке выбранных для поиска значений в заголовке колонки*/
-    public static function searchValueList(string $fieldName, string $value): string
+    /**Выбранное значение в заголовке колонки*/
+    public static function selectedValueFromList(string $fieldName, string $optionTitle): string
     {
-        return Request::columnSearchField($fieldName) . "[@class='select2-selection__rendered']/li[text()='$value']";
+        return self::columnSearchField($fieldName) . "//preceding-sibling::span/span[text()='$optionTitle']";
     }
 
     /**Кнопка удаления одного значения из фильтра в заголовке колонки*/
     public static function searchValueRemove(string $fieldName, string $value): string
     {
-        return Request::searchValueList($fieldName, $value) . "/span[@class='select2-selection__choice__remove']";
+        return Request::columnSearchField($fieldName) . "//preceding-sibling::span/span[text()='$value']/button";
     }
 
     /**Кнопка сброса фильтра в заголовке колонки*/
     public static function searchClearButton(string $fieldName): string
     {
-        return "//thead//td//input[@name='RequestSearch[$fieldName]']/..//button[@title='Очистить']";
+        return Request::columnSearchField($fieldName) . "//preceding-sibling::div[@class='v-input__append-inner']//button";
     }
 
 
