@@ -43,8 +43,8 @@ class TableColumnsFiltersListCest
         foreach ($provider_data['columnValueListToSelect'] as $item)
             $I->clickAndWait($item);
 
-        if ($I->tryToSeeElement('//span[@class="counter-wrapper"][text()="......"]'))
-            $I->moveMouseOver('//span[@class="counter-wrapper"][text()="......"]');
+        if ($I->tryToSeeElement(Request::HIDDEN_TABLE_SUMMARY))
+            $I->moveMouseOver(Request::HIDDEN_TABLE_SUMMARY);
 
         $I->waitForElement(Request::tableSummary($setting['tableSummary_1']));
         $I->checkObjectsOnPage($provider_data['searchValueList_1']);
@@ -60,7 +60,7 @@ class TableColumnsFiltersListCest
         //удалить все оставшиеся значения колонки (очистить фильтр колонки)
         $I->click(Request::searchClearButton($setting['column']));
 
-        $I->waitForElement('//span[@class="counter-wrapper"][text()="......"]');
+        $I->waitForElement(Request::HIDDEN_TABLE_SUMMARY);
         $I->checkObjectsOnPage($provider_data['searchValueList_3']);
         //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 4);
     }
