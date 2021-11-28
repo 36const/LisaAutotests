@@ -4,13 +4,7 @@ namespace lisa\Page\Requests;
 
 class Request
 {
-    public static $globalCaption = "//h1[@class='global-caption']";
-    public static $emptyTable = '//table[@class="kv-grid-table table table-bordered table-striped"]' .
-                                '/tbody//div[@class="empty" and text()="Ничего не найдено."]';
-    public static $paginator = '//ul[@class="pagination"]';
-
-    public static $modal_supervisor_id = "//form[@id='appoint-supervisor-form']//*[@name='Request[supervisor_id]']/..//span";
-    public static $modal_manager_id = "//form[@id='appoint-manager-form']//*[@name='Request[manager_id]']/..//span";
+    public const HIDDEN_TABLE_SUMMARY = '//span[@class="counter-wrapper"][text()="......"]';
 
     /**Общее количество заявок в названии вкладки*/
     public static function statusTabsCounter(int $tabNumber, int $tabCounter): string
@@ -97,22 +91,16 @@ class Request
 
     //****** Колонки с поиском значений, без готового списка ******//
 
-    /**Поле поиска в заголовке колонки без готового списка вариантов*/
-    public static function columnSearchFieldNotList(string $fieldName): string
+    /**Значение в выпадающем списке значений в заголовке колонки*/
+    public static function columnValueFromSearch(string $optionTitle): string
     {
-        return "//thead//td//select[@name='RequestSearch[$fieldName]']/..//span[@role='combobox']";
+        return "//div[@role='listbox']//div[@role='option']/div[@class='v-list-item__content']/div[@class='v-list-item__title'][contains(text(),'$optionTitle')]";
     }
 
     /**Поле поиска в заголовке колонки без готового списка вариантов после выбора результата*/
-    public static function columnSearchFieldNotListAfterResult(string $fieldName, string $result): string
+    public static function selectedValueFromSearch(string $fieldName, string $result): string
     {
-        return Request::columnSearchFieldNotList($fieldName) . "/span[@title='$result' and text()='$result']";
-    }
-
-    /**Кнопка сброса фильтра в заголовке колонки без готового списка вариантов*/
-    public static function searchNotListClearButton(string $fieldName, string $result): string
-    {
-        return Request::columnSearchFieldNotListAfterResult($fieldName, $result) . "/span[@title='Удалить все элементы' and text()='×']";
+        return Request::columnSearchField($fieldName) . "/preceding-sibling::span/span[text()='$result']";
     }
 
 
