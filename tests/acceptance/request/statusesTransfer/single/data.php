@@ -6,7 +6,7 @@ use lisa\AcceptanceTester;
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Множественный перевод заявок по статусам 1-2-3-1-4',
+            'description' => 'Отдельный перевод заявки по статусам 1->5->6->7->6->9->11',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [

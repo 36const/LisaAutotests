@@ -17,7 +17,7 @@ class TableColumnsFiltersListCest
 {
     protected function pageProvider(): array
     {
-        return TestHelper::prepareDataprovider(require 'data.php', 'case1');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -32,6 +32,10 @@ class TableColumnsFiltersListCest
         $setting = $data['setting'];
         $provider_data = $data['provider_data'];
         $I->cleanup();
+
+        if ($setting['case'] == '1_')
+            $I->amOnPage('/');
+
         $I->amOnPage('/lisa/#/request/list/all');
 
         //открыть список значений в фильтре колонки
