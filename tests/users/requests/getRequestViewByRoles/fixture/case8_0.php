@@ -7,12 +7,12 @@ return [
         'requests' => [
             [
                 'id' => 1,
-                'author_id' => 1,
-                'type_id' => 2,
-                'supervisor_id' => 2,
-                'manager_id' => 4,
-                'status' => 9,
-                'direction' => 2,
+                'author_id' => 4,
+                'type_id' => 8,
+                'supervisor_id' => 1,
+                'manager_id' => 2,
+                'status' => 6,
+                'direction' => 0,
                 'priority' => 2,
                 'awaiting_correction' => 0,
                 'created_at' => '2020-01-01 00:00:01',
@@ -20,8 +20,8 @@ return [
                 'amount_to_work' => 10,
                 'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                 'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
-                'category_id' => null,
-                'seller_id' => 83,
+                'category_id' => 1,
+                'seller_id' => 121212,
                 'recommendations' => null,
                 'reason' => null,
                 'parent_id' => null,
@@ -34,22 +34,22 @@ return [
                 'result_comment' => null,
                 'supervisor_comment' => null,
                 'last_change_status_date' => '2020-01-01 00:00:01',
-                'team_direction' => 2,
+                'team_direction' => 6,
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
                 'cross_check_status' => 0,
-                'cross_check_manager_id' => null,
+                'cross_check_manager_id' => 0,
                 'employee_code_1c' => null,
-                'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => NULL,
+                'previous_status' => 5,
                 'supplier_cabinet_id' => NULL,
+                'child_count' => 0,
                 'payload' => '[]',
                 'rz_category_id' => null,
-                'author_team' => null,
+                'author_team' => 18,
                 'supervisor_team' => null,
-                'manager_team' => 17,
+                'manager_team' => null,
             ]
         ],
         'requests_fields' => [
@@ -60,28 +60,23 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 49,
-                'value' => 0,
+                'field_id' => 6,
+                'value' => 1,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 50,
-                'value' => 0,
+                'field_id' => 7,
+                'value' => 1,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 51,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 52,
-                'value' => 2,
+                'field_id' => 28,
+                'value' => 27,
             ],
             [
                 'request_id' => 1,
                 'field_id' => 53,
-                'value' => 0.5,
+                'value' => 3,
             ],
             [
                 'request_id' => 1,
@@ -90,13 +85,58 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 60,
-                'value' => 0,
+                'field_id' => 55,
+                'value' => 273.3,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 64,
-                'value' => 0,
+                'field_id' => 79,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 80,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 81,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 84,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 85,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 89,
+                'value' => 3,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 90,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 97,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 98,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 99,
+                'value' => 10,
             ],
             [
                 'request_id' => 1,
@@ -105,17 +145,22 @@ return [
             ],
             [
                 'request_id' => 1,
+                'field_id' => 112,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 113,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 115,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
                 'field_id' => 122,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 142,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 143,
                 'value' => 0,
             ],
             [
@@ -129,6 +174,10 @@ return [
                 'value' => 0,
             ],
         ],
+        'request_attachments' => [],
+        'request_status_history' => [],
+        'request_errors' => [],
+        'requests_reasons' => [],
         'observers' => [],
         'auth.users' => [
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[0],
@@ -139,69 +188,18 @@ return [
                 'name' => 'Константин Куцан',
                 'login' => 'kutsan.k',
                 'email' => 'kutsan.k@rozetka.com.ua',
-                'team' => 1,
+                'team' => 18,
                 'parent_id' => 1,
-                'position' => 'contentManager',
+                'position' => 'productManager',
                 'status' => 1,
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 1,
                 'change_date' => '2020-05-19 16:36:22',
                 'drfo' => "'000000004",
-                'positions' => '["contentManager"]',
+                'positions' => '["productManager"]',
             ],
         ],
         'auth.user_access' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php',
-        'auth.auth_assignment' => [
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferWaitWorkToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToOnHold'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToPartialComplete'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToCompleted'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToDeclined'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestViewOwnRequests'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'reportView'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferPartialCompleteToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferCompletedToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'viewOwnDashboards'
-            ],
-        ]
+        'auth.auth_assignment' =>  (include __DIR__ . '/case2_1.php')['lisa_fixtures']['auth.auth_assignment'],
     ],
 ];

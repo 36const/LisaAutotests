@@ -7,18 +7,18 @@ return [
         'requests' => [
             [
                 'id' => 1,
-                'author_id' => 4,
-                'type_id' => 4,
-                'supervisor_id' => 2,
-                'manager_id' => null,
-                'status' => 3,
-                'direction' => 0,
+                'author_id' => 1,
+                'type_id' => 5,
+                'supervisor_id' => 4,
+                'manager_id' => 2,
+                'status' => 6,
+                'direction' => 1,
                 'priority' => 2,
                 'awaiting_correction' => 0,
                 'created_at' => '2020-01-01 00:00:01',
                 'correction_comment' => null,
                 'amount_to_work' => 10,
-                'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                'subject' => 'Заливка фото с фотостудии	 (Работа с товарами Розетки)',
                 'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
                 'category_id' => 1,
                 'seller_id' => 83,
@@ -34,16 +34,20 @@ return [
                 'result_comment' => null,
                 'supervisor_comment' => null,
                 'last_change_status_date' => '2020-01-01 00:00:01',
-                'team_direction' => 4,
+                'team_direction' => 3,
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
                 'cross_check_status' => 0,
-                'cross_check_manager_id' => null,
+                'cross_check_manager_id' => 0,
                 'employee_code_1c' => null,
+                'photo_load_status' => 0,
+                'previous_status' => 5,
+                'supplier_cabinet_id' => NULL,
                 'child_count' => 0,
-                'rz_category_id' => 753399,
-                'author_team' => 17,
+                'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => null,
                 'supervisor_team' => null,
                 'manager_team' => null,
             ]
@@ -86,12 +90,12 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 40,
+                'field_id' => 60,
                 'value' => 0,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 44,
+                'field_id' => 64,
                 'value' => 0,
             ],
             [
@@ -125,6 +129,63 @@ return [
                 'value' => 0,
             ],
         ],
+        'request_attachments' => [
+            [
+                'id' => 1,
+                'request_id' => 1,
+                'file_name_old' => '',
+                'alias' => '194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                'status' => 3,
+                'uploaded_by' => 'Константин Куцан',
+                'uploaded_at' => '2021-10-09 00:00:00',
+                'deleted_by' => NULL,
+                'deleted_at' => NULL,
+                'file_name' => '803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                'size' => 60424,
+            ],
+            [
+                'id' => 2,
+                'request_id' => 1,
+                'file_name_old' => '',
+                'alias' => 'doc .doc',
+                'status' => 3,
+                'uploaded_by' => 'Константин Куцан',
+                'uploaded_at' => '2021-10-09 00:00:00',
+                'deleted_by' => NULL,
+                'deleted_at' => NULL,
+                'file_name' => '803902_doc.doc',
+                'size' => 34304,
+            ],
+            [
+                'id' => 3,
+                'request_id' => 1,
+                'file_name_old' => '',
+                'alias' => 'pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx',
+                'status' => 3,
+                'uploaded_by' => 'Константин Куцан',
+                'uploaded_at' => '2021-10-09 00:00:00',
+                'deleted_by' => NULL,
+                'deleted_at' => NULL,
+                'file_name' => '803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx',
+                'size' => 97152,
+            ],
+            [
+                'id' => 4,
+                'request_id' => 1,
+                'file_name_old' => '',
+                'alias' => '!@#$%^&*()_+`-=][\';.|}{:?><.jpg',
+                'status' => 3,
+                'uploaded_by' => 'Константин Куцан',
+                'uploaded_at' => '2021-10-09 00:00:00',
+                'deleted_by' => NULL,
+                'deleted_at' => NULL,
+                'file_name' => '803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg',
+                'size' => 34304,
+            ],
+        ],        
+        'request_status_history' => [],
+        'request_errors' => [],
+        'requests_reasons' => [],
         'observers' => [],
         'auth.users' => [
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[0],
@@ -135,119 +196,18 @@ return [
                 'name' => 'Константин Куцан',
                 'login' => 'kutsan.k',
                 'email' => 'kutsan.k@rozetka.com.ua',
-                'team' => 18,
+                'team' => 1,
                 'parent_id' => 1,
-                'position' => 'productManager',
+                'position' => 'supervisor',
                 'status' => 1,
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 1,
                 'change_date' => '2020-05-19 16:36:22',
                 'drfo' => "'000000004",
-                'positions' => '["productManager"]',
+                'positions' => '["supervisor"]',
             ],
         ],
         'auth.user_access' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php',
-        'auth.auth_assignment' => [
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddNewItems'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestUpdateItems'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestTransferItems'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestGroupItems'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestUploadPhoto'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestCheckHidden'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddFatPortalCat'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestUpdateFatPortalCat'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestStructureDesign'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateSC'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateVideo'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateSizeGrid'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateTags'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferOnHoldToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestCreate'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestCreateRelated'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestViewOwnRequests'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestViewTeamRequests'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferRequireChangeToInCheck'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferRequireChangeToWaitCheck'
-            ],
-        ]
+        'auth.auth_assignment' =>  (include __DIR__ . '/case3_1.php')['lisa_fixtures']['auth.auth_assignment'],
     ],
 ];

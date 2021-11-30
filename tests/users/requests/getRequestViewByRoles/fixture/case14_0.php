@@ -8,33 +8,33 @@ return [
             [
                 'id' => 1,
                 'author_id' => 1,
-                'type_id' => 2,
-                'supervisor_id' => 2,
-                'manager_id' => 4,
-                'status' => 9,
-                'direction' => 2,
+                'type_id' => 13,
+                'supervisor_id' => 4,
+                'manager_id' => 2,
+                'status' => 7,
+                'direction' => 0,
                 'priority' => 2,
                 'awaiting_correction' => 0,
-                'created_at' => '2020-01-01 00:00:01',
-                'correction_comment' => null,
+                'created_at' => '2020-01-01 00:00:00',
+                'correction_comment' => '',
                 'amount_to_work' => 10,
-                'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
-                'category_id' => null,
+                'subject' => 'Добавление/изменение размерной сетки (Определяется типом задачи)',
+                'description' => 'description',
+                'category_id' => 1,
                 'seller_id' => 83,
-                'recommendations' => null,
+                'recommendations' => '',
                 'reason' => null,
                 'parent_id' => null,
                 'planned_start_date' => null,
                 'planned_finish_date' => null,
-                'actual_start_date' => null,
+                'actual_start_date' => '2020-01-01 00:00:03',
                 'actual_finish_date' => null,
                 'supervisor_process_date' => null,
                 'supervisor_check_date' => null,
-                'result_comment' => null,
-                'supervisor_comment' => null,
+                'result_comment' => '',
+                'supervisor_comment' => '',
                 'last_change_status_date' => '2020-01-01 00:00:01',
-                'team_direction' => 2,
+                'team_direction' => 6,
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
@@ -43,13 +43,13 @@ return [
                 'employee_code_1c' => null,
                 'child_count' => 0,
                 'photo_load_status' => 0,
-                'previous_status' => NULL,
-                'supplier_cabinet_id' => NULL,
+                'previous_status' => 6,
+                'supplier_cabinet_id' => null,
                 'payload' => '[]',
                 'rz_category_id' => null,
-                'author_team' => null,
-                'supervisor_team' => null,
-                'manager_team' => 17,
+                'author_team' => 0,
+                'supervisor_team' => 0,
+                'manager_team' => 1,
             ]
         ],
         'requests_fields' => [
@@ -60,23 +60,18 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 49,
-                'value' => 0,
+                'field_id' => 27,
+                'value' => 24,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 50,
-                'value' => 0,
+                'field_id' => 47,
+                'value' => 10,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 51,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 52,
-                'value' => 2,
+                'field_id' => 48,
+                'value' => 10,
             ],
             [
                 'request_id' => 1,
@@ -90,13 +85,48 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 60,
-                'value' => 0,
+                'field_id' => 56,
+                'value' => 25,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 64,
-                'value' => 0,
+                'field_id' => 62,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 63,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 70,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 86,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 87,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 88,
+                'value' => 10,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 89,
+                'value' => 3,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 100,
+                'value' => 10,
             ],
             [
                 'request_id' => 1,
@@ -110,16 +140,6 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 142,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 143,
-                'value' => 0,
-            ],
-            [
-                'request_id' => 1,
                 'field_id' => 146,
                 'value' => 0,
             ],
@@ -127,6 +147,15 @@ return [
                 'request_id' => 1,
                 'field_id' => 158,
                 'value' => 0,
+            ],
+        ],
+        'request_attachments' => [],
+        'request_status_history' => [],
+        'request_errors' => [],
+        'requests_reasons' => [
+            [
+                'request_id' => 1,
+                'reason_id' => 1
             ],
         ],
         'observers' => [],
@@ -151,57 +180,6 @@ return [
             ],
         ],
         'auth.user_access' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php',
-        'auth.auth_assignment' => [
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferWaitWorkToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToOnHold'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToPartialComplete'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToCompleted'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToDeclined'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestViewOwnRequests'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'reportView'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferPartialCompleteToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferCompletedToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'viewOwnDashboards'
-            ],
-        ]
+        'auth.auth_assignment' =>  (include __DIR__ . '/case3_1.php')['lisa_fixtures']['auth.auth_assignment'],
     ],
 ];

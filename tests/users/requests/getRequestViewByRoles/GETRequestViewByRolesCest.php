@@ -9,9 +9,9 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_api
  * @group lisa_api_users
- * @group GETBlockedFieldsByRoles
+ * @group GETRequestViewByRoles
  */
-class GETBlockedFieldsByRolesCest
+class GETRequestViewByRolesCest
 {
     protected function pageProvider(): array
     {
@@ -24,7 +24,7 @@ class GETBlockedFieldsByRolesCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function GETBlockedFieldsByRoles(UsersTester $I, Example $data)
+    public function GETRequestViewByRoles(UsersTester $I, Example $data)
     {
         $I->loadDataForTest($data, null);
         $providerData = $data['provider_data'];

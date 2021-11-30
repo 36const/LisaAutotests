@@ -41,6 +41,9 @@ return [
                 'cross_check_status' => 1,
                 'cross_check_manager_id' => 1,
                 'employee_code_1c' => null,
+                'photo_load_status' => 0,
+                'previous_status' => 2,
+                'supplier_cabinet_id' => NULL,
                 'child_count' => 0,
                 'payload' => '[]',
                 'rz_category_id' => 753399,
@@ -128,28 +131,18 @@ return [
         ],
         'request_attachments' => [],
         'request_status_history' => [],
-        'observers' => [],
-        'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
-        'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
-        'excluded_fields' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/excluded_fields.php',
-        'field_values' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
-        'markets_supervisors' => array_merge(
-            include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
+        'request_errors' => [],
+        'requests_reasons' => [
             [
-                [
-                    'owox_id' => 121212,
-                    'supervisor_id' => 10,
-                    'title' => 'Mogozinchik',
-                    'status' => 6
-                ],
-            ]
-        ),
-        'priorities' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
-        'reasons' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
-        'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
-        'auth.api_users' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.api_users.php',
-        'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
-        'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
+                'request_id' => 1,
+                'reason_id' => 11
+            ],
+            [
+                'request_id' => 1,
+                'reason_id' => 13
+            ],
+        ],
+        'observers' => [],
         'auth.users' => [
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[0],
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[1],
@@ -171,112 +164,6 @@ return [
             ],
         ],
         'auth.user_access' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php',
-        'auth.auth_assignment' => [
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddNewItems'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestUpdateItems'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestTransferItems'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestGroupItems'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestUploadPhoto'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestCheckHidden'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddFatPortalCat'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestUpdateFatPortalCat'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestStructureDesign'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateSC'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateVideo'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateSizeGrid'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateTags'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferOnHoldToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestCreate'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestCreateRelated'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestViewOwnRequests'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestViewTeamRequests'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferRequireChangeToInCheck'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferRequireChangeToWaitCheck'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'seeHiddenCrossCheckFields'
-            ],
-        ]
+        'auth.auth_assignment' =>  (include __DIR__ . '/case2_1.php')['lisa_fixtures']['auth.auth_assignment'],
     ],
 ];

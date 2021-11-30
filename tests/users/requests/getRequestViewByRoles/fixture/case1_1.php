@@ -7,12 +7,12 @@ return [
         'requests' => [
             [
                 'id' => 1,
-                'author_id' => 4,
-                'type_id' => 4,
+                'author_id' => 1,
+                'type_id' => 1,
                 'supervisor_id' => 2,
-                'manager_id' => null,
-                'status' => 3,
-                'direction' => 0,
+                'manager_id' => 2,
+                'status' => 6,
+                'direction' => 1,
                 'priority' => 2,
                 'awaiting_correction' => 0,
                 'created_at' => '2020-01-01 00:00:01',
@@ -34,16 +34,20 @@ return [
                 'result_comment' => null,
                 'supervisor_comment' => null,
                 'last_change_status_date' => '2020-01-01 00:00:01',
-                'team_direction' => 4,
+                'team_direction' => 3,
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
                 'cross_check_status' => 0,
-                'cross_check_manager_id' => null,
+                'cross_check_manager_id' => 4,
                 'employee_code_1c' => null,
                 'child_count' => 0,
-                'rz_category_id' => 753399,
-                'author_team' => 17,
+                'photo_load_status' => 0,
+                'previous_status' => 5,
+                'supplier_cabinet_id' => null,
+                'payload' => '[]',
+                'rz_category_id' => null,
+                'author_team' => null,
                 'supervisor_team' => null,
                 'manager_team' => null,
             ]
@@ -86,12 +90,12 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 40,
+                'field_id' => 60,
                 'value' => 0,
             ],
             [
                 'request_id' => 1,
-                'field_id' => 44,
+                'field_id' => 64,
                 'value' => 0,
             ],
             [
@@ -125,25 +129,103 @@ return [
                 'value' => 0,
             ],
         ],
+        'request_attachments' => [
+            [
+                'id' => 1,
+                'request_id' => 1,
+                'file_name_old' => '',
+                'alias' => '194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                'status' => 3,
+                'uploaded_by' => 'Константин Куцан',
+                'uploaded_at' => '2021-10-09 00:00:00',
+                'deleted_by' => NULL,
+                'deleted_at' => NULL,
+                'file_name' => '803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                'size' => 60424,
+            ],
+            [
+                'id' => 2,
+                'request_id' => 1,
+                'file_name_old' => '',
+                'alias' => 'doc .doc',
+                'status' => 3,
+                'uploaded_by' => 'Константин Куцан',
+                'uploaded_at' => '2021-10-09 00:00:00',
+                'deleted_by' => NULL,
+                'deleted_at' => NULL,
+                'file_name' => '803902_doc.doc',
+                'size' => 34304,
+            ],
+            [
+                'id' => 3,
+                'request_id' => 1,
+                'file_name_old' => '',
+                'alias' => 'pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx',
+                'status' => 3,
+                'uploaded_by' => 'Константин Куцан',
+                'uploaded_at' => '2021-10-09 00:00:00',
+                'deleted_by' => NULL,
+                'deleted_at' => NULL,
+                'file_name' => '803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx',
+                'size' => 97152,
+            ],
+            [
+                'id' => 4,
+                'request_id' => 1,
+                'file_name_old' => '',
+                'alias' => '!@#$%^&*()_+`-=][\';.|}{:?><.jpg',
+                'status' => 3,
+                'uploaded_by' => 'Константин Куцан',
+                'uploaded_at' => '2021-10-09 00:00:00',
+                'deleted_by' => NULL,
+                'deleted_at' => NULL,
+                'file_name' => '803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg',
+                'size' => 34304,
+            ],
+        ],
+        'request_status_history' => [],
+        'request_errors' => [],
+        'requests_reasons' => [],
         'observers' => [],
+        'markets_supervisors' => array_merge(
+            include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
+            [
+                [
+                    'owox_id' => 121212,
+                    'supervisor_id' => 10,
+                    'title' => 'Mogozinchik',
+                    'status' => 6
+                ],
+            ]
+        ),
+        'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
+        'excluded_fields' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/excluded_fields.php',
+        'field_values' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
+        'priorities' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
+        'reasons' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
+        'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
+        'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
+        'auth.api_users' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.api_users.php',
+        'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
+        'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
         'auth.users' => [
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[0],
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[1],
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[2],
             [
-//        "id" => 4,
+        //        "id" => 4,
                 'name' => 'Константин Куцан',
                 'login' => 'kutsan.k',
                 'email' => 'kutsan.k@rozetka.com.ua',
-                'team' => 18,
+                'team' => 1,
                 'parent_id' => 1,
-                'position' => 'productManager',
+                'position' => 'contentManager',
                 'status' => 1,
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 1,
                 'change_date' => '2020-05-19 16:36:22',
                 'drfo' => "'000000004",
-                'positions' => '["productManager"]',
+                'positions' => '["contentManager"]',
             ],
         ],
         'auth.user_access' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php',
@@ -151,82 +233,27 @@ return [
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'requestAddNewItems'
+                'item_name' => 'transferWaitWorkToInWork'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'requestUpdateItems'
+                'item_name' => 'transferInWorkToOnHold'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'requestTransferItems'
+                'item_name' => 'transferInWorkToPartialComplete'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'requestGroupItems'
+                'item_name' => 'transferInWorkToCompleted'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'requestUploadPhoto'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestCheckHidden'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddFatPortalCat'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestUpdateFatPortalCat'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestStructureDesign'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateSC'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateVideo'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateSizeGrid'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestAddUpdateTags'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferOnHoldToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestCreate'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestCreateRelated'
+                'item_name' => 'transferInWorkToDeclined'
             ],
             [
                 'created_at' => null,
@@ -236,17 +263,22 @@ return [
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'requestViewTeamRequests'
+                'item_name' => 'reportView'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'transferRequireChangeToInCheck'
+                'item_name' => 'transferPartialCompleteToInWork'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'transferRequireChangeToWaitCheck'
+                'item_name' => 'transferCompletedToInWork'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'viewOwnDashboards'
             ],
         ]
     ],

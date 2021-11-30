@@ -306,8 +306,8 @@ return [
             ],
             'db' => [
                 'lisa_fixtures' => [
-                    'auth.users' => (include __DIR__ . '/fixture/case2.php')['lisa_fixtures']['auth.users'],
-                    'auth.auth_item' => (include __DIR__ . '/fixture/case2.php')['lisa_fixtures']['auth.auth_item'],
+                    'auth.users' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.users'],
+                    'auth.auth_item' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.auth_item'],
                     'auth.auth_assignment' => [
                         [
                             'item_name' => 'blockUser',

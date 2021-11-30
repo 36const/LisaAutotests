@@ -42,6 +42,9 @@ return [
                 'cross_check_manager_id' => 3,
                 'employee_code_1c' => null,
                 'child_count' => 0,
+                'photo_load_status' => 0,
+                'previous_status' => 6,
+                'supplier_cabinet_id' => null,
                 'payload' => '[]',
                 'rz_category_id' => null,
                 'author_team' => null,
@@ -50,11 +53,6 @@ return [
             ]
         ],
         'requests_fields' => [
-            [
-                'request_id' => 1,
-                'field_id' => 1,
-                'value' => 1,
-            ],
             [
                 'request_id' => 1,
                 'field_id' => 49,
@@ -99,6 +97,11 @@ return [
                 'request_id' => 1,
                 'field_id' => 101,
                 'value' => 0,
+            ],
+            [
+                'request_id' => 1,
+                'field_id' => 114,
+                'value' => 3,
             ],
             [
                 'request_id' => 1,
@@ -181,27 +184,9 @@ return [
             ],
         ],
         'request_status_history' => [],
+        'request_errors' => [],
+        'requests_reasons' => [],
         'observers' => [],
-        'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
-        'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
-        'excluded_fields' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/excluded_fields.php',
-        'field_values' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
-        'markets_supervisors' => array_merge(
-            include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
-            [
-                [
-                    'owox_id' => 121212,
-                    'supervisor_id' => 10,
-                    'title' => 'Mogozinchik',
-                    'status' => 6
-                ],
-            ]
-        ),
-        'priorities' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
-        'reasons' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
-        'auth.api_users' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.api_users.php',
-        'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
-        'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
         'auth.users' => [
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[0],
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[1],
@@ -223,57 +208,6 @@ return [
             ],
         ],
         'auth.user_access' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php',
-        'auth.auth_assignment' => [
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferWaitWorkToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToOnHold'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToPartialComplete'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToCompleted'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferInWorkToDeclined'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'requestViewOwnRequests'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'reportView'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferPartialCompleteToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'transferCompletedToInWork'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
-                'item_name' => 'viewOwnDashboards'
-            ],
-        ]
+        'auth.auth_assignment' =>  (include __DIR__ . '/case1_2.php')['lisa_fixtures']['auth.auth_assignment'],
     ],
 ];

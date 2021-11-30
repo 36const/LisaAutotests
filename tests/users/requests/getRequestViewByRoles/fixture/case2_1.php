@@ -7,18 +7,18 @@ return [
         'requests' => [
             [
                 'id' => 1,
-                'author_id' => 1,
-                'type_id' => 1,
+                'author_id' => 4,
+                'type_id' => 2,
                 'supervisor_id' => 2,
-                'manager_id' => 2,
-                'status' => 6,
+                'manager_id' => null,
+                'status' => 1,
                 'direction' => 1,
                 'priority' => 2,
                 'awaiting_correction' => 0,
                 'created_at' => '2020-01-01 00:00:01',
                 'correction_comment' => null,
                 'amount_to_work' => 10,
-                'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
                 'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|',
                 'category_id' => 1,
                 'seller_id' => 83,
@@ -39,8 +39,11 @@ return [
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
                 'cross_check_status' => 0,
-                'cross_check_manager_id' => 4,
+                'cross_check_manager_id' => 0,
                 'employee_code_1c' => null,
+                'photo_load_status' => 0,
+                'previous_status' => 5,
+                'supplier_cabinet_id' => NULL,
                 'child_count' => 0,
                 'payload' => '[]',
                 'rz_category_id' => null,
@@ -181,27 +184,9 @@ return [
             ],
         ],        
         'request_status_history' => [],
+        'request_errors' => [],
+        'requests_reasons' => [],
         'observers' => [],
-        'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
-        'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
-        'excluded_fields' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/excluded_fields.php',
-        'field_values' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
-        'markets_supervisors' => array_merge(
-            include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
-            [
-                [
-                    'owox_id' => 121212,
-                    'supervisor_id' => 10,
-                    'title' => 'Mogozinchik',
-                    'status' => 6
-                ],
-            ]
-        ),
-        'priorities' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
-        'reasons' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
-        'auth.api_users' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.api_users.php',
-        'auth.teams' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.teams.php',
-        'auth.auth_item' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item.php',
         'auth.users' => [
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[0],
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[1],
@@ -211,15 +196,15 @@ return [
                 'name' => 'Константин Куцан',
                 'login' => 'kutsan.k',
                 'email' => 'kutsan.k@rozetka.com.ua',
-                'team' => 1,
+                'team' => 18,
                 'parent_id' => 1,
-                'position' => 'contentManager',
+                'position' => 'productManager',
                 'status' => 1,
                 'create_ts' => '2020-05-19 13:36:22',
                 'created_by' => 1,
                 'change_date' => '2020-05-19 16:36:22',
                 'drfo' => "'000000004",
-                'positions' => '["contentManager"]',
+                'positions' => '["productManager"]',
             ],
         ],
         'auth.user_access' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php',
@@ -227,27 +212,82 @@ return [
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'transferWaitWorkToInWork'
+                'item_name' => 'requestAddNewItems'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'transferInWorkToOnHold'
+                'item_name' => 'requestUpdateItems'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'transferInWorkToPartialComplete'
+                'item_name' => 'requestTransferItems'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'transferInWorkToCompleted'
+                'item_name' => 'requestGroupItems'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'transferInWorkToDeclined'
+                'item_name' => 'requestUploadPhoto'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'requestCheckHidden'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'requestAddFatPortalCat'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'requestUpdateFatPortalCat'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'requestStructureDesign'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'requestAddUpdateSC'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'requestAddUpdateVideo'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'requestAddUpdateSizeGrid'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'requestAddUpdateTags'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'transferOnHoldToInWork'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'requestCreate'
+            ],
+            [
+                'created_at' => null,
+                'user_id' => 4,
+                'item_name' => 'requestCreateRelated'
             ],
             [
                 'created_at' => null,
@@ -257,22 +297,22 @@ return [
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'reportView'
+                'item_name' => 'requestViewTeamRequests'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'transferPartialCompleteToInWork'
+                'item_name' => 'transferRequireChangeToInCheck'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'transferCompletedToInWork'
+                'item_name' => 'transferRequireChangeToWaitCheck'
             ],
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'viewOwnDashboards'
+                'item_name' => 'seeHiddenCrossCheckFields'
             ],
         ]
     ],

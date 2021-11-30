@@ -4,7 +4,7 @@ use Codeception\Module\TestHelper;
 
 return [
     'lisa_fixtures' => [
-        'field_values' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',
+        'field_values' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values_prod.php',
         'priorities' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/priorities.php',
         'request_errors' => [],
         'requests' => [

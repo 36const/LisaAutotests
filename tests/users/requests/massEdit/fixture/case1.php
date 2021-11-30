@@ -2318,6 +2318,5 @@ return [
             ],
         ],
         'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
-        'exceptions' => [],
     ],
 ];

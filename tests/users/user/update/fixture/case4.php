@@ -4,7 +4,6 @@ use Codeception\Module\TestHelper;
 
 return [
     'lisa_fixtures' => [
-        'auth.auth_item_child' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.auth_item_child.php',
         'auth.user_changing_history' => [],
         'auth.users' => [
             (include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.users.php')[0],
