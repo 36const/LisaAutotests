@@ -93,7 +93,7 @@ class TableColumnsSettingsCest
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
         $I->reloadPage();
         $I->click(RequestTable::TABLE_SETTINGS);
-        $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
+        $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS, 5);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 9);
 
         //установить открытие заявки в новом окне, что после перезагрузки страницы они не изменились
