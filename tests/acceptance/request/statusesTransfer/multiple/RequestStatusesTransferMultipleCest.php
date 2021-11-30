@@ -17,7 +17,7 @@ class RequestStatusesTransferMultipleCest
 {
     protected function pageProvider(): array
     {
-        return TestHelper::prepareDataprovider(require 'data.php', 'case1');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -35,7 +35,7 @@ class RequestStatusesTransferMultipleCest
         $I->amOnPage('/lisa/#/request/list/all');
 
         //перевод 1->2
-        $I->clickAndWait(RequestTable::requestsTableTab('Новые'));
+        $I->clickAndWait(RequestTable::requestsTableTab('Новые'), 2);
         $I->click('//tr/th[@role="columnheader"][1]');
         $I->click(RequestTable::transferButton('Готова для распределения'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1);

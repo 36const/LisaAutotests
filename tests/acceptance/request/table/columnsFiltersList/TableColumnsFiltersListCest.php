@@ -17,7 +17,7 @@ class TableColumnsFiltersListCest
 {
     protected function pageProvider(): array
     {
-        return TestHelper::prepareDataprovider(require 'data.php', '');
+        return TestHelper::prepareDataprovider(require 'data.php', 'case1');
     }
 
     /**

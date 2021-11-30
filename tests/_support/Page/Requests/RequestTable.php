@@ -68,13 +68,13 @@ class RequestTable
     /**Кнопка удаления одного значения из фильтра в заголовке колонки*/
     public static function searchValueRemove(string $fieldName, string $value): string
     {
-        return Request::columnSearchField($fieldName) . "//preceding-sibling::span/span[text()='$value']/button";
+        return RequestTable::columnSearchField($fieldName) . "//preceding-sibling::span/span[text()='$value']/button";
     }
 
     /**Кнопка сброса фильтра в заголовке колонки*/
     public static function searchClearButton(string $fieldName): string
     {
-        return Request::columnSearchField($fieldName) . "//preceding-sibling::div[@class='v-input__append-inner']//button";
+        return RequestTable::columnSearchField($fieldName) . "//preceding-sibling::div[@class='v-input__append-inner']//button";
     }
 
 
@@ -89,7 +89,7 @@ class RequestTable
     /**Поле поиска в заголовке колонки без готового списка вариантов после выбора результата*/
     public static function selectedValueFromSearch(string $fieldName, string $result): string
     {
-        return Request::columnSearchField($fieldName) . "/preceding-sibling::span/span[text()='$result']";
+        return RequestTable::columnSearchField($fieldName) . "/preceding-sibling::span/span[text()='$result']";
     }
 
 
