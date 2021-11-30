@@ -2,7 +2,7 @@
 
 namespace lisa\Page\Requests;
 
-class Request
+class RequestTable
 {
     public const HIDDEN_TABLE_SUMMARY = '//span[@class="counter-wrapper"][text()="......"]';
     public const REASON_IN_STATUS_CHANGE_POPUP = '//div[@role="document"]//div[@role="combobox"]';

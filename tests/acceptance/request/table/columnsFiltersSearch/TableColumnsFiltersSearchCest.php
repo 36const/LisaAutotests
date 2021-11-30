@@ -5,7 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use Codeception\Module\TestHelper;
 use Facebook\WebDriver\WebDriverKeys;
-use lisa\Page\Requests\Request;
+use lisa\Page\Requests\RequestTable;
 
 /**
  * @group lisa
@@ -40,24 +40,24 @@ class TableColumnsFiltersSearchCest
         $I->amOnPage('/lisa/#/request/list/all');
 
         //открыть результаты поля поиска и ввести текст
-        $I->retryClick(Request::columnSearchField($setting['column']));
-        $I->pressKey(Request::columnSearchField($setting['column']), $setting['symbol_1'], $setting['symbol_2']);
+        $I->retryClick(RequestTable::columnSearchField($setting['column']));
+        $I->pressKey(RequestTable::columnSearchField($setting['column']), $setting['symbol_1'], $setting['symbol_2']);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1);
 
         //кликнуть на один из результатов и проверить применение в таблице
         in_array($setting['column'], ['category_id', 'rz_category_id', 'seller_id'])
-            ? $I->retryClick(Request::columnValueFromSearch(substr($setting['value'], 4)))
-            : $I->retryClick(Request::columnValueFromSearch(explode(' ', trim($setting['value']))[0]));
+            ? $I->retryClick(RequestTable::columnValueFromSearch(substr($setting['value'], 4)))
+            : $I->retryClick(RequestTable::columnValueFromSearch(explode(' ', trim($setting['value']))[0]));
 
-        $I->canSeeElement(Request::selectedValueFromSearch($setting['column'], $setting['value']));
-        $I->canSeeElement(Request::tableSummary($setting['amount']));
+        $I->canSeeElement(RequestTable::selectedValueFromSearch($setting['column'], $setting['value']));
+        $I->canSeeElement(RequestTable::tableSummary($setting['amount']));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2);
 
         //очистить фильтр колонки
-        $I->click(Request::searchClearButton($setting['column']));
+        $I->click(RequestTable::searchClearButton($setting['column']));
 
-        $I->cantSeeElement(Request::selectedValueFromSearch($setting['column'], $setting['value']));
-        $I->canSeeElement(Request::HIDDEN_TABLE_SUMMARY);
+        $I->cantSeeElement(RequestTable::selectedValueFromSearch($setting['column'], $setting['value']));
+        $I->canSeeElement(RequestTable::HIDDEN_TABLE_SUMMARY);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 3);
     }
 }

@@ -13,7 +13,7 @@ use lisa\Page\Requests\RequestTable;
  * @group RequestStatusesTransfer
  * @group RequestStatusesTransferMultiple
  */
-class RequestStatusesTransferMultipleCest
+class RequestStatusesTransferSingleCest
 {
     protected function pageProvider(): array
     {
@@ -35,7 +35,7 @@ class RequestStatusesTransferMultipleCest
         $I->amOnPage('/lisa/#/request/list/all');
 
         //перевод 1->2
-        $I->clickAndWait(RequestTable::requestsTableTab('Новые'));
+        $I->click(RequestTable::requestsTableTab('Новые'));
         $I->click('//tr/th[@role="columnheader"][1]');
         $I->click(RequestTable::transferButton('Готова для распределения'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1);

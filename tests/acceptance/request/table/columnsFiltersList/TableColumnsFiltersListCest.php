@@ -5,7 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use Codeception\Module\TestHelper;
 use Facebook\WebDriver\WebDriverKeys;
-use lisa\Page\Requests\Request;
+use lisa\Page\Requests\RequestTable;
 
 /**
  * @group lisa
@@ -35,7 +35,7 @@ class TableColumnsFiltersListCest
         $I->amOnPage('/lisa/#/request/list/all');
 
         //открыть список значений в фильтре колонки
-        $I->retryClick(Request::columnSearchField($setting['column']));
+        $I->retryClick(RequestTable::columnSearchField($setting['column']));
         $I->checkObjectsOnPage($provider_data['columnValueList']);
         //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1);
 
@@ -43,24 +43,24 @@ class TableColumnsFiltersListCest
         foreach ($provider_data['columnValueListToSelect'] as $item)
             $I->clickAndWait($item);
 
-        if ($I->tryToSeeElement(Request::HIDDEN_TABLE_SUMMARY))
-            $I->moveMouseOver(Request::HIDDEN_TABLE_SUMMARY);
+        if ($I->tryToSeeElement(RequestTable::HIDDEN_TABLE_SUMMARY))
+            $I->moveMouseOver(RequestTable::HIDDEN_TABLE_SUMMARY);
 
-        $I->waitForElement(Request::tableSummary($setting['tableSummary_1']));
+        $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_1']));
         $I->checkObjectsOnPage($provider_data['searchValueList_1']);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2);
 
         //удалить одно из выбранных значений колонки
-        $I->click(Request::searchValueRemove($setting['column'], $setting['value'] ?? '(не задано)'));
+        $I->click(RequestTable::searchValueRemove($setting['column'], $setting['value'] ?? '(не задано)'));
 
-        $I->waitForElement(Request::tableSummary($setting['tableSummary_2']));
+        $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_2']));
         $I->checkObjectsOnPage($provider_data['searchValueList_2']);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 3);
 
         //удалить все оставшиеся значения колонки (очистить фильтр колонки)
-        $I->click(Request::searchClearButton($setting['column']));
+        $I->click(RequestTable::searchClearButton($setting['column']));
 
-        $I->waitForElement(Request::HIDDEN_TABLE_SUMMARY);
+        $I->waitForElement(RequestTable::HIDDEN_TABLE_SUMMARY);
         $I->checkObjectsOnPage($provider_data['searchValueList_3']);
         //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 4);
     }
