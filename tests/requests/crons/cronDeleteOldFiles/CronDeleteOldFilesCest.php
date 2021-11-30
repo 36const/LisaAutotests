@@ -7,9 +7,9 @@ use Codeception\Module\TestHelper;
 
 /**
  * @group lisa
- * @group _lisa_api
- * @group _lisa_api_requests
- * @group _lisa_api_crons
+ * @group lisa_api
+ * @group lisa_api_requests
+ * @group lisa_api_crons
  * @group CronDeleteOldFiles
  */
 class CronDeleteOldFilesCest
@@ -18,7 +18,7 @@ class CronDeleteOldFilesCest
     {
         return TestHelper::prepareDataprovider(require 'data.php', '');
     }
-//надо добавить контейнер минио на ci
+
     /**
      * @param RequestsTester $I
      * @param Example $data

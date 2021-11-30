@@ -5,6 +5,8 @@ namespace lisa\Page\Requests;
 class Request
 {
     public const HIDDEN_TABLE_SUMMARY = '//span[@class="counter-wrapper"][text()="......"]';
+    public const REASON_IN_STATUS_CHANGE_POPUP = '//div[@role="document"]//div[@role="combobox"]';
+    public const COMMENT_IN_STATUS_CHANGE_POPUP = '//div[@role="document"]//textarea';
 
     /**Общее количество заявок в названии вкладки*/
     public static function statusTabsCounter(int $tabNumber, int $tabCounter): string
@@ -18,35 +20,22 @@ class Request
         return "//div[@class='lisa-request-grid']//span/b[2][text()='$summary']";
     }
 
-    /**Диапазон количества показанных заявок*/
-    public static function tableFromTo(string $diapason): string
-    {
-        return "//div[@class='summary']/b[text()='$diapason']";
-    }
-
-    /**Строка заявки в таблице*/
-    public static function requestInTable(int $tableRow, string $columnName, string $text): string
-    {
-        return '//table[@class="kv-grid-table table table-bordered table-striped"]' .
-            '/tbody/tr[' . $tableRow . ']/td[@data-col-seq="' . $columnName . '"]//*[contains(text(),"' . $text . '")]';
-    }
-
-    /**Строка заявки в таблице без указания номера строки*/
-    public static function requestInTableInexact(string $columnName, string $text): string
-    {
-        return "//tbody/tr/td[@data-col-seq='$columnName']//*[contains(text(), '$text')]";
-    }
-
-    /**Заголовки колонок таблицы*/
-    public static function columnName(string $columnName, string $text): string
-    {
-        return "//thead/tr/th[@data-col-seq='$columnName']/..//*[contains(text(),'$text')]";
-    }
-
     /**Блок кнопок изменения статуса в таблице заявок и самой заявке*/
     public static function transferButton(string $action): string
     {
-        return "//div[@class='buttons-background']//*[contains(@class, 'btn')][contains(text(), '$action')]";
+        return "//div[@id='sticky-toolbar']/header//button[@title='$action']";
+    }
+
+    /**Вкладка таблицы заявок*/
+    public static function requestsTableTab(string $tabName): string
+    {
+        return "//div[@role='tablist']//a[text()='$tabName']";
+    }
+
+    /**Всплывающая модалка изменения статуса - кнопка*/
+    public static function transferPopUp(string $action): string
+    {
+        return "//div[@role='document']//button/span[text()='$action']";
     }
 
     /**Страница таблицы*/
