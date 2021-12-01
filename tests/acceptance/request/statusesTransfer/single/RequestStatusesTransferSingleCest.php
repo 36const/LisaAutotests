@@ -46,7 +46,7 @@ class RequestStatusesTransferSingleCest
 
         //перевод 5->6
         $I->click(RequestTable::transferButton('В работу'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3, 2);
         $I->checkTablesInDB($provider_data['db_2']);
 
         //изменение категории/продавца/супервайзера/чекбокса
@@ -62,6 +62,7 @@ class RequestStatusesTransferSingleCest
         //перевод 6->7
         $I->click(RequestTable::transferButton('Ожидать'));
         $I->click(RequestTable::REASON_IN_STATUS_CHANGE_POPUP);
+        $I->makeScreenshot();
         $I->click(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
         $I->click(RequestTable::columnValueFromList('Ожидает группировки'));
         $I->click("//div[contains(@class,'headline')][text()='Ожидать']");

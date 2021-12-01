@@ -44,7 +44,7 @@ class RequestStatusesTransferMultipleCest
         $I->checkTablesInDB($provider_data['db_1']);
 
         //перевод 2->3
-        $I->clickAndWait(RequestTable::requestsTableTab('Готовы для распределения'));
+        $I->clickAndWait(RequestTable::requestsTableTab('Готовы для распределения'), 1);
         $I->click('//tr/th[@role="columnheader"][1]');
         $I->click(RequestTable::transferButton('На доработку'));
         $I->click(RequestTable::REASON_IN_STATUS_CHANGE_POPUP);
@@ -60,7 +60,7 @@ class RequestStatusesTransferMultipleCest
         $I->checkTablesInDB($provider_data['db_2']);
 
         //перевод 3->4
-        $I->clickAndWait(RequestTable::requestsTableTab('На доработке'));
+        $I->clickAndWait(RequestTable::requestsTableTab('На доработке'), 1);
         $I->click('//tr/th[@role="columnheader"][1]');
         $I->click(RequestTable::transferButton('Отменить'));
         $I->click(RequestTable::REASON_IN_STATUS_CHANGE_POPUP);
