@@ -41,7 +41,7 @@ class RequestStatusesTransferSingleCest
         $I->click(RequestTable::columnValueFromListSingle('Менеджер Контентович 1А'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1);
         $I->click(RequestTable::transferPopUp('Назначить исполнителя'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 2);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 2, 2);
         $I->checkTablesInDB($provider_data['db_1']);
 
         //перевод 5->6
@@ -71,7 +71,7 @@ class RequestStatusesTransferSingleCest
         );
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 5);
         $I->click(RequestTable::transferPopUp('Ожидать'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 6);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 6, 2);
         $I->checkTablesInDB($provider_data['db_3']);
 
     }

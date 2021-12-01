@@ -100,8 +100,9 @@ class TableColumnsSettingsCest
         $I->click(RequestTable::CHECKBOX_NEW_WINDOW);
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
         $I->reloadPage();
+        $I->wait(2);
         $I->click(RequestTable::TABLE_SETTINGS);
-        $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS, 5);
+        $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 10);
 
         //вернуть первые 3 видимые колонки в скрытые
