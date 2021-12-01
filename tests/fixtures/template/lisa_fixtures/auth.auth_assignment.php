@@ -1287,4 +1287,9 @@ return [
         'item_name' => 'transferOnHoldToInWork',
         'user_id' => 2,
     ],
+
+    [
+        'item_name' => 'transferWaitWorkToInWork',
+        'user_id' => 11,
+    ],
 ];

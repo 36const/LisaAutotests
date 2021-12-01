@@ -53,10 +53,16 @@ class RequestTable
         return "//td[@column='$fieldName']//input";
     }
 
-    /**Значение в выпадающем списке значений в заголовке колонки*/
+    /**Значение в выпадающем списке с множественным выбором*/
     public static function columnValueFromList(string $optionTitle): string
     {
-        return "//div[@role='listbox']//div[@role='option']/div[@class='v-list-item__content']/div[@class='v-list-item__title'][text()='$optionTitle']/../..//div[@class='v-simple-checkbox']";
+        return "//div[@role='listbox']//div[@role='option']//div[@class='v-list-item__title'][text()='$optionTitle']/../..//div[@class='v-simple-checkbox']";
+    }
+
+    /**Значение в выпадающем списке с единичным выбором*/
+    public static function columnValueFromListSingle(string $optionTitle): string
+    {
+        return "//div[@role='listbox']/div[@role='option'][contains(text(),'$optionTitle')]";
     }
 
     /**Выбранное значение в заголовке колонки*/

@@ -42,7 +42,7 @@ class TableColumnsFiltersSearchCest
         //открыть результаты поля поиска и ввести текст
         $I->retryClick(RequestTable::columnSearchField($setting['column']));
         $I->pressKey(RequestTable::columnSearchField($setting['column']), $setting['symbol_1'], $setting['symbol_2']);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1, 2);
 
         //кликнуть на один из результатов и проверить применение в таблице
         in_array($setting['column'], ['category_id', 'rz_category_id', 'seller_id'])

@@ -101,7 +101,7 @@ class TableColumnsSettingsCest
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
         $I->reloadPage();
         $I->click(RequestTable::TABLE_SETTINGS);
-        $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
+        $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS, 5);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 10);
 
         //вернуть первые 3 видимые колонки в скрытые

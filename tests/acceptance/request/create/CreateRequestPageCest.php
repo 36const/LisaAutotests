@@ -92,8 +92,7 @@ class CreateRequestPageCest
             $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 7);
             $I->click(SearchField::searchResult('иабилеты'));
         }
-        $I->click(RequestCreate::CREATE_FORM_BUTTON);
-        $I->wait(1);
+        $I->clickAndWait(RequestCreate::CREATE_FORM_BUTTON, 1);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 8);
         $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
 

@@ -35,9 +35,8 @@ class CategoryCreateCest
         $I->reloadPage();
         $I->waitForElement(Category::CREATE_BUTTON);
         $I->click(Category::CREATE_BUTTON);
-        $I->waitForElement(Category::SAVE_BUTTON);
 
-        $I->click(Category::SAVE_BUTTON);
+        $I->retryClick(Category::SAVE_BUTTON);
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Название категории».'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Супервизор».'));

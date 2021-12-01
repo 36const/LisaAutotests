@@ -26,7 +26,7 @@ class RequestStatusesTransferMultipleCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function RequestStatusesTransfer(AcceptanceTester $I, Example $data)
+    public function RequestStatusesTransferMultiple(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $provider_data = $data['provider_data'];
