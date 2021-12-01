@@ -8,7 +8,7 @@ return [
             [
                 'id' => 1,
                 'author_id' => 1,
-                'type_id' => 13,
+                'type_id' => 14,
                 'supervisor_id' => 4,
                 'manager_id' => 2,
                 'status' => 7,
@@ -60,21 +60,6 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 27,
-                'value' => 24,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 47,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 48,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
                 'field_id' => 53,
                 'value' => 0.5,
             ],
@@ -85,48 +70,8 @@ return [
             ],
             [
                 'request_id' => 1,
-                'field_id' => 56,
-                'value' => 25,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 62,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 63,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 70,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 86,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 87,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 88,
-                'value' => 10,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 89,
-                'value' => 3,
-            ],
-            [
-                'request_id' => 1,
-                'field_id' => 100,
-                'value' => 10,
+                'field_id' => 58,
+                'value' => 0,
             ],
             [
                 'request_id' => 1,
