@@ -55,13 +55,13 @@ class CreateRequestPageCest
 
         //заполнен заголовок
         $I->scrollTo(RequestCreate::MAIN_BLOCK);
-        $I->pressKey(RequestCreate::SUBJECT, '!', '"', '№', ';', '%', ':', '?', '*', '(', ')');
+        $I->pressKey(RequestCreate::SUBJECT, '!"№;%:?*()');
         $I->click(RequestCreate::CREATE_FORM_BUTTON);
         //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 5);
         $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
 
         //заполнен заголовок и описание
-        $I->pressKey(RequestCreate::DESCRIPTION, '!', '"', '№', ';', '%', ':', '?', '*', '(', ')');
+        $I->pressKey(RequestCreate::DESCRIPTION, '!"№;%:?*()');
         $I->click(RequestCreate::CREATE_FORM_BUTTON);
         //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 6);
         $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
@@ -69,26 +69,26 @@ class CreateRequestPageCest
         //заполнен заголовок, описание и категория/продавец
         if ($setting['direction'] == 'Работа с товарами Розетки') {
             $I->click(RequestCreate::CATEGORY);
-            $I->pressKey(RequestCreate::CATEGORY, 'А', 'в');
+            $I->pressKey(RequestCreate::CATEGORY, 'Ав');
             $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 7);
             $I->click(SearchField::searchResult('иабилеты'));
         }
         elseif ($setting['direction'] == 'Работа с товарами Маркетплейса') {
             $I->click(RequestCreate::SELLER);
-            $I->pressKey(RequestCreate::SELLER, 'М', 'а');
+            $I->pressKey(RequestCreate::SELLER, 'Ма');
             $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 7);
             $I->click(SearchField::searchResult('ркетплейс (общий)'));
         }
         elseif ($setting['direction'] == 'Определяется типом задачи' && $setting['case'] == '3_') {
             $I->click(RequestCreate::ROZETKA_CATEGORY);
-            $I->pressKey(RequestCreate::ROZETKA_CATEGORY, 'п', 'о');
+            $I->pressKey(RequestCreate::ROZETKA_CATEGORY, 'по');
             $I->wait(1);
             $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 7);
             $I->click(SearchField::searchResult('дарки и товары для праздников (80260)'));
         }
         else {
             $I->click(RequestCreate::CATEGORY);
-            $I->pressKey(RequestCreate::CATEGORY, 'А', 'в');
+            $I->pressKey(RequestCreate::CATEGORY, 'Ав');
             $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 7);
             $I->click(SearchField::searchResult('иабилеты'));
         }
@@ -97,7 +97,7 @@ class CreateRequestPageCest
         $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
 
         //заполнен заголовок, описание, категория/продавец и количество в работу
-        $I->pressKey(RequestCreate::AMOUNT, '9', '9', '9', '9', '9', '9', '9', '9', '9');
+        $I->pressKey(RequestCreate::AMOUNT, '999999999');
         $I->click(RequestCreate::CREATE_FORM_BUTTON);
         $I->waitForElement(RequestCreate::CREATE_BUTTON);
         $I->canSee('Ваша заявка успешно создана.');

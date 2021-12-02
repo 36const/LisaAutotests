@@ -50,10 +50,7 @@ class RequestStatusesTransferMultipleCest
         $I->click(RequestTable::REASON_IN_STATUS_CHANGE_POPUP);
         $I->click(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
         $I->click(RequestTable::columnValueFromList('Нада'));
-        $I->pressKey(
-            RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP,
-            'h','t','t','p',':','/','/','s','p','l','i','t','t','e','r','.','d','o','c','k','e','r'
-        );
+        $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, 'http://splitter.docker');
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3);
         $I->click(RequestTable::transferPopUp('На доработку'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4);
@@ -66,10 +63,7 @@ class RequestStatusesTransferMultipleCest
         $I->click(RequestTable::REASON_IN_STATUS_CHANGE_POPUP);
         $I->click(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
         $I->click(RequestTable::columnValueFromList('Дубль задачи'));
-        $I->pressKey(
-            RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP,
-            '=','~','}','!','@','#','$','%','^','&','*','(',')','_','+','`','-',']','\'','/','[',';','.',',','}','"','?','{',':','>','\\','|','<','1','0','0','1','2','3','4','5','6','7','8','9','0','>'
-        );
+        $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>');
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 5);
         $I->click(RequestTable::transferPopUp('Отменить'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 6);

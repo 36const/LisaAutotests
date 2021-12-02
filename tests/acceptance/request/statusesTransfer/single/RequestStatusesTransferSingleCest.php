@@ -46,17 +46,17 @@ class RequestStatusesTransferSingleCest
 
         //перевод 5->6
         $I->click(RequestTable::transferButton('В работу'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3, 2);
+        //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3, 2); //иногда не показывается сообщение
         $I->checkTablesInDB($provider_data['db_2']);
 
         //изменение категории/продавца/супервайзера/чекбокса
-        $I->click(RequestView::viewField('Категория'));
+        $I->click(RequestView::field('Категория'));
         $I->click(RequestTable::columnValueFromListSingle('Видео к товару'));
         $I->click("//div[@role='combobox']//label[text()='Продавец']/following-sibling::input");
         $I->click("//div[@role='listbox']//div[@role='option']//div[@class='v-list-item__title'][text()='Rozetka']");
-        $I->click(RequestView::viewField('Супервайзер'));
+        $I->click(RequestView::field('Супервайзер'));
         $I->click(RequestTable::columnValueFromListSingle('Супервайзер Начальникович 2'));
-        $I->click(RequestView::viewCheckbox('Пакетная загрузка'));
+        $I->click(RequestView::checkbox('Пакетная загрузка'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4);
 
         //перевод 6->7
@@ -66,10 +66,7 @@ class RequestStatusesTransferSingleCest
         $I->click(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
         $I->click(RequestTable::columnValueFromList('Ожидает группировки'));
         $I->click("//div[contains(@class,'headline')][text()='Ожидать']");
-        $I->pressKey(
-            RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP,
-            'h','t','t','p',':','/','/','s','p','l','i','t','t','e','r','.','d','o','c','k','e','r'
-        );
+        $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, 'http://splitter.docker');
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 5);
         $I->click(RequestTable::transferPopUp('Ожидать'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 6, 2);

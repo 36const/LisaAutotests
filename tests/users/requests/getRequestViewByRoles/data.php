@@ -10501,7 +10501,7 @@ return [
                                     0 => [
                                         'value' => 23,
                                         'text' => 'Английский',
-                                        'disabled' => false,
+                                        'disabled' => true,
                                     ],
                                     1 => [
                                         'value' => 21,
@@ -10509,11 +10509,6 @@ return [
                                         'disabled' => false,
                                     ],
                                     2 => [
-                                        'value' => 174,
-                                        'text' => 'Русский + украинский',
-                                        'disabled' => false,
-                                    ],
-                                    3 => [
                                         'value' => 22,
                                         'text' => 'Украинский',
                                         'disabled' => false,
