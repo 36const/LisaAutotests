@@ -27,7 +27,7 @@ class TableColumnsFiltersSearch2Cest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function TableColumnsFiltersSearch2(AcceptanceTester $I, Example $data)
+    public function TableColumnsFiltersSearch(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data, 'allUsers');
         $setting = $data['setting'];

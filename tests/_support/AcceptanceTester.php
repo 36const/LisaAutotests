@@ -142,40 +142,32 @@ class AcceptanceTester extends GeneralTester
     {
         $I = $this;
 
-        if ($setting['case'] == '1_')
+        //без данной хрени выдаётся element is not interractible при клике в этих кейсах
+        if (in_array($setting['column'], ['supervisor_id', 'cross_check_manager_id']))
             $I->amOnPage('/');
 
         $I->amOnPage('/lisa/#/request/list/all');
 
-        //открыть список значений в фильтре колонки
+        //открыть результаты поля поиска и ввести текст
         $I->retryClick(RequestTable::columnSearchField($setting['column']));
-        $I->checkObjectsOnPage($provider_data['columnValueList']);
-        //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1);
+        $I->pressKey(RequestTable::columnSearchField($setting['column']), $setting['symbol_1'], $setting['symbol_2']);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1, 2);
 
-        //выбрать несколько значений из выпадающего списка
-        foreach ($provider_data['columnValueListToSelect'] as $item)
-            $I->clickAndWait($item);
+        //кликнуть на один из результатов и проверить применение в таблице
+        in_array($setting['column'], ['category_id', 'rz_category_id', 'seller_id'])
+            ? $I->retryClick(RequestTable::columnValueFromSearch(substr($setting['value'], 4)))
+            : $I->retryClick(RequestTable::columnValueFromSearch(explode(' ', trim($setting['value']))[0]));
 
-        if ($I->tryToSeeElement(RequestTable::HIDDEN_TABLE_SUMMARY))
-            $I->moveMouseOver(RequestTable::HIDDEN_TABLE_SUMMARY);
-
-        $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_1']));
-        $I->checkObjectsOnPage($provider_data['searchValueList_1']);
+        $I->canSeeElement(RequestTable::selectedValueFromSearch($setting['column'], $setting['value']));
+        $I->canSeeElement(RequestTable::tableSummary($setting['amount']));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2);
 
-        //удалить одно из выбранных значений колонки
-        $I->click(RequestTable::searchValueRemove($setting['column'], $setting['value'] ?? '(не задано)'));
-
-        $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_2']));
-        $I->checkObjectsOnPage($provider_data['searchValueList_2']);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 3);
-
-        //удалить все оставшиеся значения колонки (очистить фильтр колонки)
+        //очистить фильтр колонки
         $I->click(RequestTable::searchClearButton($setting['column']));
 
-        $I->waitForElement(RequestTable::HIDDEN_TABLE_SUMMARY);
-        $I->checkObjectsOnPage($provider_data['searchValueList_3']);
-        //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 4);
+        $I->cantSeeElement(RequestTable::selectedValueFromSearch($setting['column'], $setting['value']));
+        $I->canSeeElement(RequestTable::HIDDEN_TABLE_SUMMARY);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 3);
     }
 
 }
