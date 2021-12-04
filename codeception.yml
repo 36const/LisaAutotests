@@ -59,6 +59,7 @@ modules:
                   'lisa_sendOuterNotifications' ]
 extensions:
   enabled:
+    - Codeception\Extension\RunFailed
     - Yandex\Allure\Codeception\AllureCodeception
   config:
     Yandex\Allure\Codeception\AllureCodeception:

@@ -128,7 +128,7 @@ class TableColumnsSettingsCest
         $I->click(RequestTable::TABLE_SETTINGS);
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
         $I->click(RequestTable::DELETE_SETTINGS_BUTTON);
-        $I->waitForElement(RequestCreate::CREATE_BUTTON);
+        $I->waitForElementNotVisible(RequestCreate::DELETE_SETTINGS_BUTTON);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 14);
         $I->checkTablesInDB($provider_data['db_2']);
     }

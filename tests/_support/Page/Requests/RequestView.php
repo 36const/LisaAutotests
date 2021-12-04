@@ -11,6 +11,8 @@ class RequestView
     public const MOTIVATION = "//div[contains(@class,'motivation-section')]//div[contains(text(),'Мотивация супервайзеры')]";
     public const DATES = "//div[@id='dates-section']//div[text()='Даты']";
 
+    public const AMOUNT_TO_WORK = "//div[@id='head-section']//label[text()='Количество в работу']/following-sibling::input";
+
     public const POPUP_RESULT_COMMENT = "//div[@role='document']//label[text()='Комментарий к результату задачи']/following-sibling::textarea";
     public const POPUP_COMPLETED = "//div[@role='document']//button/span[text()='Выполнена']";
 
@@ -24,4 +26,18 @@ class RequestView
         return "//div[contains(@class,'v-input--checkbox')]//label[text()='$checkboxName']/preceding-sibling::div/input";
     }
 
+    public static function numberFieldInResultPopUp(string $fieldName)
+    {
+        return "//div[@role='document']//label[text()='$fieldName']/following-sibling::input";
+    }
+
+    public static function listFieldInResultPopUp(string $fieldName)
+    {
+        return "//div[@role='document']//label[text()='$fieldName']/following-sibling::div";
+    }
+
+    public static function valueFromListFieldInResultPopUp(int $boxNumber, string $optionTitle): string
+    {
+        return "//div[contains(@class,'v-menu__content')][$boxNumber]//div[@role='listbox']/div[@role='option']//div[@class='v-list-item__title'][(text()='$optionTitle')]";
+    }
 }
