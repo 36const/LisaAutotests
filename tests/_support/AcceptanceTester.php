@@ -5,6 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use Codeception\Lib\Actor\Shared\Retry;
 use Facebook\WebDriver\WebDriverKeys;
+use lisa\Page\Requests\RequestTable;
 
 /**
  * Inherited Methods
@@ -62,24 +63,6 @@ class AcceptanceTester extends GeneralTester
         $I->saveSessionSnapshot('login');
     }
 
-    public function setRequestPerPageCookie(int $amount)
-    {
-        $I = $this;
-
-        if (file_exists(__DIR__ . '/_requestsPerPage.txt')) {
-            $I->setCookie('requestsPerPage', file_get_contents(__DIR__ . '/_requestsPerPage.txt'));
-        } else {
-            $I->resetCookie('requestsPerPage');
-            $I->amOnPage('/request/list/all');
-            $I->scrollTo('//div[@id="toolbar"]//ul[@class="dropdown-menu"]');
-            $I->click('//div[@id="toolbar"]//a[@id="drop5"]');
-            $I->click('//div[@id="toolbar"]//ul[@class="dropdown-menu"]//li//a[text()="' . $amount . '"]');
-            file_put_contents(__DIR__ . '/_requestsPerPage.txt', $I->grabCookie('requestsPerPage'));
-        }
-
-        $I->seeCookie('requestsPerPage');
-    }
-
     public function clickAndWait(string $xpath, float $waitTime = 0.5)
     {
         $I = $this;
@@ -113,6 +96,86 @@ class AcceptanceTester extends GeneralTester
                 $I->waitForElementNotVisible($object);
             }
         }
+    }
+
+    public function TableColumnsFiltersList($setting, $provider_data)
+    {
+        $I = $this;
+
+        if ($setting['case'] == '1_')
+            $I->amOnPage('/');
+
+        $I->amOnPage('/lisa/#/request/list/all');
+
+        //открыть список значений в фильтре колонки
+        $I->retryClick(RequestTable::columnSearchField($setting['column']));
+        $I->checkObjectsOnPage($provider_data['columnValueList']);
+        //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1);
+
+        //выбрать несколько значений из выпадающего списка
+        foreach ($provider_data['columnValueListToSelect'] as $item)
+            $I->clickAndWait($item);
+
+        if ($I->tryToSeeElement(RequestTable::HIDDEN_TABLE_SUMMARY))
+            $I->moveMouseOver(RequestTable::HIDDEN_TABLE_SUMMARY);
+
+        $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_1']));
+        $I->checkObjectsOnPage($provider_data['searchValueList_1']);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2);
+
+        //удалить одно из выбранных значений колонки
+        $I->click(RequestTable::searchValueRemove($setting['column'], $setting['value'] ?? '(не задано)'));
+
+        $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_2']));
+        $I->checkObjectsOnPage($provider_data['searchValueList_2']);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 3);
+
+        //удалить все оставшиеся значения колонки (очистить фильтр колонки)
+        $I->click(RequestTable::searchClearButton($setting['column']));
+
+        $I->waitForElement(RequestTable::HIDDEN_TABLE_SUMMARY);
+        $I->checkObjectsOnPage($provider_data['searchValueList_3']);
+        //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 4);
+    }
+
+    public function TableColumnsFiltersSearch($setting, $provider_data)
+    {
+        $I = $this;
+
+        if ($setting['case'] == '1_')
+            $I->amOnPage('/');
+
+        $I->amOnPage('/lisa/#/request/list/all');
+
+        //открыть список значений в фильтре колонки
+        $I->retryClick(RequestTable::columnSearchField($setting['column']));
+        $I->checkObjectsOnPage($provider_data['columnValueList']);
+        //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1);
+
+        //выбрать несколько значений из выпадающего списка
+        foreach ($provider_data['columnValueListToSelect'] as $item)
+            $I->clickAndWait($item);
+
+        if ($I->tryToSeeElement(RequestTable::HIDDEN_TABLE_SUMMARY))
+            $I->moveMouseOver(RequestTable::HIDDEN_TABLE_SUMMARY);
+
+        $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_1']));
+        $I->checkObjectsOnPage($provider_data['searchValueList_1']);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2);
+
+        //удалить одно из выбранных значений колонки
+        $I->click(RequestTable::searchValueRemove($setting['column'], $setting['value'] ?? '(не задано)'));
+
+        $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_2']));
+        $I->checkObjectsOnPage($provider_data['searchValueList_2']);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 3);
+
+        //удалить все оставшиеся значения колонки (очистить фильтр колонки)
+        $I->click(RequestTable::searchClearButton($setting['column']));
+
+        $I->waitForElement(RequestTable::HIDDEN_TABLE_SUMMARY);
+        $I->checkObjectsOnPage($provider_data['searchValueList_3']);
+        //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 4);
     }
 
 }
