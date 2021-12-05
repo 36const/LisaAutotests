@@ -37,11 +37,11 @@ class CategoryCreateCest
         $I->click(Category::CREATE_BUTTON);
 
         $I->retryClick(Category::SAVE_BUTTON);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1, 2);
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Название категории».'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Супервизор».'));
         $I->checkTablesInDB($providerData['db_1']);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1, 3);
 
         $I->pressKey(Category::CATEGORY_DIFF, '1', '.', '3');
         $I->click(Category::SAVE_BUTTON);
