@@ -56,7 +56,7 @@ class RequestTable
     /**Значение в выпадающем списке с множественным выбором*/
     public static function columnValueFromList(string $optionTitle): string
     {
-        return "//div[@role='listbox']//div[@role='option']//div[@class='v-list-item__title'][text()='$optionTitle']";
+        return "//div[@role='listbox']//div[@role='option']//div[@class='v-list-item__title'][text()='$optionTitle']/../..//div[@class='v-simple-checkbox']";
     }
 
     /**Значение в выпадающем списке с единичным выбором*/
