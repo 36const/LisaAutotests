@@ -4230,6 +4230,11 @@ return [
                         ],
                         [
                             'request_id' => 1,
+                            'field_id' => 27,
+                            'value' => 24,
+                        ],
+                        [
+                            'request_id' => 1,
                             'field_id' => 53,
                             'value' => 0.5,
                         ],
