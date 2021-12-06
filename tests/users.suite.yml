@@ -3,7 +3,3 @@ actor: UsersTester
 modules:
     enabled:
         - lisa\Helper\Users
-        - TestHelper:
-              fixture:
-                  cleanup_fixture_after_test: false
-

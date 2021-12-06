@@ -49,7 +49,7 @@ class RequestStatusesTransferSingle2Cest
 
         //ошибка при переводе 6->9 с пустыми полями, но заполненным комментарием
         $I->pressKey("//div[@role='document']", WebDriverKeys::PAGE_UP);
-        $I->pressKey(RequestView::POPUP_RESULT_COMMENT, 'https://zabbix3.local/latest.php?groupids%5B%5D=251&hostids%5B%5D=12686&hostids%5B%5D=16666&hostids%5B%5D=16728&hostids%5B%5D=17592&hostids%5B%5D=17607&hostids%5B%5D=17714&hostids%5B%5D=17720&hostids%5B%5D=18537&hostids%5B%5D=19198&application=Memory');
+        $I->pressKey(RequestView::POPUP_RESULT_COMMENT, 'https://zabbix3.local/latest.php?group=251&host=12686&host=16666&host=16728&host=17592&host=17607&host=17714&host=17720&host=18537&host=19198&application=Memory');
         $I->pressKey("//div[@role='document']//textarea", WebDriverKeys::PAGE_DOWN);
         $I->click(RequestView::POPUP_COMPLETED);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_3', 2);
