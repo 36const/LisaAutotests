@@ -52,7 +52,7 @@ class RequestStatusesTransferMultipleCest
         $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, 'http://splitter.docker');
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3);
         $I->click(RequestTable::transferPopUp('На доработку'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4, 2);
         $I->checkTablesInDB($provider_data['db_2']);
 
         //перевод 3->4
