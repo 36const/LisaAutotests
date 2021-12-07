@@ -59,7 +59,7 @@ class RequestStatusesTransferMultipleCest
         $I->clickAndWait(RequestTable::requestsTableTab('На доработке'), 1);
         $I->click('//tr/th[@role="columnheader"][1]');
         $I->click(RequestTable::transferButton('Отменить'));
-        $I->click(RequestTable::REASON_IN_STATUS_CHANGE_POPUP);
+        $I->clickAndWait(RequestTable::REASON_IN_STATUS_CHANGE_POPUP);
         $I->click(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
         $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>');
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 5, 2);
