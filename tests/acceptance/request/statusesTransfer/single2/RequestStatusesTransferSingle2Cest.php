@@ -42,7 +42,7 @@ class RequestStatusesTransferSingle2Cest
 
         //ошибка при переводе 6->9 с пустыми полями и комментарием
         $I->clickAndWait(RequestTable::transferButton('Выполнена'));
-        $I->pressKey(RequestView::POPUP_RESULT_COMMENT, WebDriverKeys::PAGE_DOWN);
+        $I->pressKey("//div[@role='document']", WebDriverKeys::PAGE_DOWN);
         $I->click(RequestView::POPUP_COMPLETED);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_2', 2);
 
