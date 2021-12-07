@@ -31,7 +31,6 @@ class RequestStatusesTransferSingle1Cest
     {
         $I->loadDataForTest($data);
         $provider_data = $data['provider_data'];
-        $setting = $data['setting'];
 
         $I->amOnPage('/lisa/#/request/view/1');
 

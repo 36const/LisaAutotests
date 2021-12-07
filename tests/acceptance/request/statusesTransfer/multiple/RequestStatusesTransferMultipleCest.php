@@ -30,7 +30,6 @@ class RequestStatusesTransferMultipleCest
     {
         $I->loadDataForTest($data);
         $provider_data = $data['provider_data'];
-        $setting = $data['setting'];
 
         $I->amOnPage('/lisa/#/request/list/all');
 
