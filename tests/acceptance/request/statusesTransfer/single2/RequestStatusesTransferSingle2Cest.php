@@ -51,7 +51,7 @@ class RequestStatusesTransferSingle2Cest
         $I->pressKey(RequestView::POPUP_RESULT_COMMENT, 'https://zabbix3.local/latest.php?group=251&host=12686&host=16666&host=16728&host=17592&host=17607&host=17714&host=17720&host=18537&host=19198&application=Memory');
         $I->pressKey("//div[@role='document']//textarea", WebDriverKeys::PAGE_DOWN);
         $I->click(RequestView::POPUP_COMPLETED);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_3', 2);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_3');
         $I->checkTablesInDB($provider_data['db_1']);
 
         //проставление обязательных полей результатов задачи и перевод 6->9

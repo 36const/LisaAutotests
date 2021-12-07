@@ -342,10 +342,6 @@ return [
                     'requests_reasons' => [
                         [
                             'request_id' => 1,
-                            'reason_id' => 11,
-                        ],
-                        [
-                            'request_id' => 1,
                             'reason_id' => 14,
                         ],
                     ],

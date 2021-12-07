@@ -46,7 +46,7 @@ class RequestStatusesTransferSingle3Cest
         $I->pressKey(
             "//div[contains(@class,'request-corrections')]//label[text()='Количество проверенных товаров']//following-sibling::input",
             10);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_2', 2);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_2');
         $I->clickAndWait("//div[@id='sticky-toolbar']//button/span[contains(text(),'Сохранить
       ')]/..");
         $I->checkTablesInDB($provider_data['db_1']);
@@ -57,7 +57,7 @@ class RequestStatusesTransferSingle3Cest
         $I->pressKey(
             "//div[text()='Неправильная категория товаров']/..//div[@class='v-input__control']//textarea",
             '/#/request/to-correction/1');
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_3', 2);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_3');
         $I->clickAndWait("//div[@id='sticky-toolbar']//button/span[contains(text(),'Сохранить и отправить на исправление')]/..");
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_4', 2);
         $I->checkTablesInDB($provider_data['db_2']);
@@ -76,7 +76,7 @@ class RequestStatusesTransferSingle3Cest
         //ошибка при переводе 5->4 без причины и комментария
         $I->click(RequestTable::transferButton('Отменить'));
         $I->click(RequestTable::transferPopUp('Отменить'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_6', 2);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_6');
         $I->checkTablesInDB($provider_data['db_3']);
 
         //перевод 5->4

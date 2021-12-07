@@ -61,7 +61,6 @@ class RequestStatusesTransferSingle1Cest
         //перевод 6->7
         $I->click(RequestTable::transferButton('Ожидать'));
         $I->click(RequestTable::REASON_IN_STATUS_CHANGE_POPUP);
-        $I->click(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
         $I->click(RequestTable::columnValueFromList('Ожидает группировки'));
         $I->click("//div[contains(@class,'headline')][text()='Ожидать']");
         $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, 'http://splitter.docker');
