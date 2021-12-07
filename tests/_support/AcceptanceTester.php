@@ -67,7 +67,7 @@ class AcceptanceTester extends GeneralTester
     {
         $I = $this;
 
-        $I->click($xpath);
+        $I->retryClick($xpath);
         $I->wait($waitTime);
     }
 
