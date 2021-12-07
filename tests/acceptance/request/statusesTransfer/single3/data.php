@@ -513,6 +513,20 @@ return [
                         ],
                     ],
                     'requests_reasons' => [],
+                    'request_errors' => [
+                        [
+                            'id' => 1,
+                            'request_id' => 1,
+                            'manager_id' => 11,
+                            'errors_count' => 10,
+                            'items_with_errors' => 5,
+                            'field_value_id' => 91,
+                            'comment' => '/#/request/to-correction/1',
+                            'status' => 0,
+                            'create_ts >=' => date('Y-m-d'),
+                            'correction_date' => NULL,
+                        ],
+                    ]
                 ]
             ],
             'db_3' => [
@@ -779,6 +793,20 @@ return [
                         ],
                     ],
                     'requests_reasons' => [],
+                    'request_errors' => [
+                        [
+                            'id' => 1,
+                            'request_id' => 1,
+                            'manager_id' => 11,
+                            'errors_count' => 10,
+                            'items_with_errors' => 5,
+                            'field_value_id' => 91,
+                            'comment' => '/#/request/to-correction/1',
+                            'status' => 0,
+                            'create_ts >=' => date('Y-m-d'),
+                            'correction_date' => NULL,
+                        ],
+                    ]
                 ]
             ],
             'db_4' => [
@@ -1050,6 +1078,20 @@ return [
                             'reason_id' => 9,
                         ],
                     ],
+                    'request_errors' => [
+                        [
+                            'id' => 1,
+                            'request_id' => 1,
+                            'manager_id' => 11,
+                            'errors_count' => 10,
+                            'items_with_errors' => 5,
+                            'field_value_id' => 91,
+                            'comment' => '/#/request/to-correction/1',
+                            'status' => 0,
+                            'create_ts >=' => date('Y-m-d'),
+                            'correction_date' => NULL,
+                        ],
+                    ]
                 ]
             ],
         ]

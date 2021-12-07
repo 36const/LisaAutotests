@@ -56,7 +56,7 @@ class RequestStatusesTransferSingle3Cest
         $I->pressKey("//div[text()='Неправильная категория товаров']/../div[4]//input", 5);
         $I->pressKey(
             "//div[text()='Неправильная категория товаров']/..//div[@class='v-input__control']//textarea",
-            'http://splitter.docker/lisa/#/request/to-correction/1');
+            '/#/request/to-correction/1');
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_3', 2);
         $I->clickAndWait("//div[@id='sticky-toolbar']//button/span[contains(text(),'Сохранить и отправить на исправление')]/..");
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_4', 2);
