@@ -346,16 +346,8 @@ return [
                             'reason_id' => 11,
                         ],
                         [
-                            'request_id' => 1,
-                            'reason_id' => 9,
-                        ],
-                        [
                             'request_id' => 2,
                             'reason_id' => 11,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'reason_id' => 9,
                         ],
                     ],
                     'request_status_history' => [
@@ -412,7 +404,7 @@ return [
                             'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|',
                             'created_at >=' => date('Y-m-d'),
                             'manager_id' => NULL,
-                            'reasons' => 'Другое (описан в коментариях) | Дубль задачи',
+                            'reasons' => 'Другое (описан в коментариях)',
                         ],
                         [
                             'id' => 6,
@@ -423,7 +415,7 @@ return [
                             'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|',
                             'created_at >=' => date('Y-m-d'),
                             'manager_id' => NULL,
-                            'reasons' => 'Другое (описан в коментариях) | Дубль задачи',
+                            'reasons' => 'Другое (описан в коментариях)',
                         ],
                     ],
                 ]

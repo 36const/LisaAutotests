@@ -76,7 +76,7 @@ class RequestStatusesTransferSingle3Cest
         //ошибка при переводе 5->4 без причины и комментария
         $I->click(RequestTable::transferButton('Отменить'));
         $I->retryClick(RequestTable::transferPopUp('Отменить'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_6');
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_6', 2);
         $I->checkTablesInDB($provider_data['db_3']);
 
         //перевод 5->4

@@ -61,15 +61,14 @@ class RequestStatusesTransferMultipleCest
         $I->click(RequestTable::transferButton('Отменить'));
         $I->click(RequestTable::REASON_IN_STATUS_CHANGE_POPUP);
         $I->click(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
-        $I->click(RequestTable::columnValueFromList('Дубль задачи'));
         $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>');
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 5);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 5, 2);
         $I->click(RequestTable::transferPopUp('Отменить'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 6);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 6, 2);
         $I->checkTablesInDB($provider_data['db_3']);
 
         //просмотр в 4
         $I->clickAndWait(RequestTable::requestsTableTab('Отменены'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 7);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 7, 2);
     }
 }
