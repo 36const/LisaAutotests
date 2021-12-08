@@ -30,7 +30,7 @@ class GETFilterListCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->sendGET('/filter/list', $providerData['requestParameters']);
+        $I->sendGET('/filter/list?per-page=100', $providerData['requestParameters']);
         $I->seeResponseCodeIs(200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
     }
