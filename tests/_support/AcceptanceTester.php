@@ -121,9 +121,9 @@ class AcceptanceTester extends GeneralTester
 
         //выбрать несколько значений из выпадающего списка
         foreach ($provider_data['columnValueListToSelect'] as $item) {
-            $I->clickAndWait($item);
+            $I->clickAndWait($item, 1);
             if ($I->tryToDontSeeElement($item . '/../parent::div[@aria-selected="true"]'))
-                $I->clickAndWait($item);
+                $I->clickAndWait($item, 1);
         }
 
         if ($I->tryToSeeElement(RequestTable::HIDDEN_TABLE_SUMMARY))
@@ -131,14 +131,14 @@ class AcceptanceTester extends GeneralTester
 
         $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_1']));
         $I->checkObjectsOnPage($provider_data['searchValueList_1']);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2, 1, 0.1);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2, 1, 0.1, ['div.lisa-request-view > div > button']);
 
         //удалить одно из выбранных значений колонки
         $I->click(RequestTable::searchValueRemove($setting['column'], $setting['value'] ?? '(не задано)'));
 
         $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_2']));
         $I->checkObjectsOnPage($provider_data['searchValueList_2']);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 3, 1, 0.1);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 3, 1, 0.1, ['div.lisa-request-view > div > button']);
 
         //удалить все оставшиеся значения колонки (очистить фильтр колонки)
         $I->click(RequestTable::searchClearButton($setting['column']));
