@@ -72,14 +72,14 @@ class AcceptanceTester extends GeneralTester
         $I->wait($waitTime);
     }
 
-    public function waitAndCantSeeVisualChanges(string $fileID, int $waitTime = 1, array $exclude = [], string $elementID = '.content-wrapper')
+    public function waitAndCantSeeVisualChanges(string $fileID, int $waitTime = 1, float $deviation, array $exclude = [], string $elementID = '.content-wrapper')
     {
         $I = $this;
         
         $defaultExclude = ['.user-image', '.main-header', '#yii-debug-toolbar'];
 
         $I->wait($waitTime);
-        $I->cantSeeVisualChanges($fileID, $elementID, array_merge($defaultExclude, $exclude), []);
+        $I->cantSeeVisualChanges($fileID, $elementID, array_merge($defaultExclude, $exclude), [], $deviation);
     }
 
     public function checkObjectsOnPage($pageObjects)
@@ -122,14 +122,14 @@ class AcceptanceTester extends GeneralTester
 
         $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_1']));
         $I->checkObjectsOnPage($provider_data['searchValueList_1']);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2, 1, 0.1);
 
         //удалить одно из выбранных значений колонки
         $I->click(RequestTable::searchValueRemove($setting['column'], $setting['value'] ?? '(не задано)'));
 
         $I->waitForElement(RequestTable::tableSummary($setting['tableSummary_2']));
         $I->checkObjectsOnPage($provider_data['searchValueList_2']);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 3);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 3, 1, 0.1);
 
         //удалить все оставшиеся значения колонки (очистить фильтр колонки)
         $I->click(RequestTable::searchClearButton($setting['column']));
