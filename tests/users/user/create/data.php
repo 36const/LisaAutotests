@@ -923,6 +923,7 @@ return [
                 'login' => 'bpm_seo_1',
                 'email' => 'bpm_seo_1@rozetka.com.ua',
                 'name' => 'Сео Сеошевич 1',
+                'team' => 19,
                 'positions' => [
                     'seo'
                 ],
@@ -933,7 +934,7 @@ return [
                     'login' => 'bpm_seo_1',
                     'email' => 'bpm_seo_1@rozetka.com.ua',
                     'name' => 'Сео Сеошевич 1',
-                    'teamName' => NULL,
+                    'teamName' => 'SEO-отдел',
                     'position' => 'seo',
                     'positions' => '["seo"]',
                     'positionName' => 'Сотрудник seo-отдела (Контент)',
@@ -957,7 +958,7 @@ return [
                                 'name' => 'Сео Сеошевич 1',
                                 'login' => 'bpm_seo_1',
                                 'email' => 'bpm_seo_1@rozetka.com.ua',
-                                'team' => null,
+                                'team' => 19,
                                 'parent_id' => 4,
                                 'position' => 'seo',
                                 'status' => 1,
@@ -1074,7 +1075,7 @@ return [
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
                     'create.users.all' => [
-                        '{"action":"create","entity":"users","fields_data":{"id":5,"name":"Сео Сеошевич 1","login":"bpm_seo_1","email":"bpm_seo_1@rozetka.com.ua","team":null,"parent_id":"4","position":"seo","status":1,"create_ts":"' . date('Y-m-d'),
+                        '{"action":"create","entity":"users","fields_data":{"id":5,"name":"Сео Сеошевич 1","login":"bpm_seo_1","email":"bpm_seo_1@rozetka.com.ua","team":19,"parent_id":"4","position":"seo","status":1,"create_ts":"' . date('Y-m-d'),
                         '","created_by":4,"change_date":null,"drfo":null,"positions":"[\\"seo\\"]"},"changed_fields_names":[]}'
                     ]
                 ],
@@ -1102,6 +1103,7 @@ return [
                 'login' => 'bpm_photoManager_2',
                 'email' => 'bpm_photoManager_2@rozetka.com.ua',
                 'name' => 'Менеджер Фоткович 1',
+                'team' => 20,
                 'positions' => [
                     'photoManager'
                 ],
@@ -1111,7 +1113,7 @@ return [
                     'login' => 'bpm_photoManager_2',
                     'email' => 'bpm_photoManager_2@rozetka.com.ua',
                     'name' => 'Менеджер Фоткович 1',
-                    'teamName' => NULL,
+                    'teamName' => 'Фотостудия',
                     'position' => 'photoManager',
                     'positions' => '["photoManager"]',
                     'positionName' => 'Сотрудник фотостудии (Контент)',
@@ -1135,7 +1137,7 @@ return [
                                 'name' => 'Менеджер Фоткович 1',
                                 'login' => 'bpm_photoManager_2',
                                 'email' => 'bpm_photoManager_2@rozetka.com.ua',
-                                'team' => null,
+                                'team' => 20,
                                 'parent_id' => 1,
                                 'position' => 'photoManager',
                                 'status' => 1,
@@ -1222,7 +1224,7 @@ return [
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
                     'create.users.all' => [
-                        '{"action":"create","entity":"users","fields_data":{"id":5,"name":"Менеджер Фоткович 1","login":"bpm_photoManager_2","email":"bpm_photoManager_2@rozetka.com.ua","team":null,"parent_id":1,"position":"photoManager","status":1,"create_ts":"' . date('Y-m-d'),
+                        '{"action":"create","entity":"users","fields_data":{"id":5,"name":"Менеджер Фоткович 1","login":"bpm_photoManager_2","email":"bpm_photoManager_2@rozetka.com.ua","team":20,"parent_id":1,"position":"photoManager","status":1,"create_ts":"' . date('Y-m-d'),
                         '","created_by":4,"change_date":null,"drfo":null,"positions":"[\\"photoManager\\"]"},"changed_fields_names":[]}'
                     ]
                 ],
@@ -1233,7 +1235,7 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Создание супервайзера с руководителем/командой/дрфо',
+            'description' => 'Создание супервайзера с руководителем/дрфо',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1590,7 +1592,7 @@ return [
 
     'case13' => [
         'setting' => [
-            'description' => 'Создание менеджера с руководителем/командой/дрфо',
+            'description' => 'Создание менеджера с руководителем/дрфо',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [

@@ -54,6 +54,7 @@ class AcceptanceTester extends GeneralTester
         }
         
         $I->amOnPage('/');
+        $I->seeResponseCodeIs(200 || 201);
         $I->fillField("LoginForm[username]", "kutsan.k");
         $I->fillField("LoginForm[password]", "123qweASD!");
         $I->checkOption("LoginForm[isBasicAuth]");
