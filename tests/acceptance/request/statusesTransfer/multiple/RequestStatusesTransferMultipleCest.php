@@ -37,7 +37,7 @@ class RequestStatusesTransferMultipleCest
         $I->clickAndWait(RequestTable::requestsTableTab('Новые'), 2);
         $I->click('//tr/th[@role="columnheader"][1]');
         $I->click(RequestTable::transferButton('Готова для распределения'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1, 1, 0.001, ['div.lisa-request-view > div > button']);
         $I->click(RequestTable::transferPopUp('Подтвердить'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 2);
         $I->checkTablesInDB($provider_data['db_1']);

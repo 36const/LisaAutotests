@@ -38,7 +38,7 @@ class RequestStatusesTransferSingle1Cest
         $I->click(RequestTable::transferButton('Назначить исполнителя'));
         $I->click(RequestTable::REASON_IN_STATUS_CHANGE_POPUP); //переименовать
         $I->click(RequestTable::columnValueFromListSingle('Менеджер Контентович 1А'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_1');
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_1', 1, 0.001, ['div.lisa-request-view > div > button']);
         $I->click(RequestTable::transferPopUp('Назначить исполнителя'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_2', 2);
         $I->checkTablesInDB($provider_data['db_1']);

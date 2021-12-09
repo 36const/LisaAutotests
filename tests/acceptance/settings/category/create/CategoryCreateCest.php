@@ -37,13 +37,13 @@ class CategoryCreateCest
         $I->click(Category::CREATE_BUTTON);
 
         $I->retryClick(Category::SAVE_BUTTON);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1, 3);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1, 2, 0.01);
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Название категории».'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Супервизор».'));
         $I->checkTablesInDB($providerData['db_1']);
 
-        $I->pressKey(Category::CATEGORY_DIFF, '1', '.', '3');
+        $I->pressKey(Category::CATEGORY_DIFF, '1.3');
         $I->click(Category::SAVE_BUTTON);
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Название категории».'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Супервизор».'));
@@ -57,7 +57,7 @@ class CategoryCreateCest
         $I->waitForElementNotVisible(Category::errorField('Необходимо заполнить «Коэффициент сложности».'));
         $I->checkTablesInDB($providerData['db_1']);
 
-        $I->pressKey(Category::CATEGORY_TITLE, 'А', 'в', 'и', 'а', 'б', 'и', 'л', 'е', 'т', 'ы');
+        $I->pressKey(Category::CATEGORY_TITLE, 'Авиабилеты');
         $I->click(Category::SAVE_BUTTON);
         $I->waitForElementVisible(Category::errorField('Значение «Авиабилеты» для «Название категории» уже занято.'));
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Супервизор».'));
@@ -75,7 +75,7 @@ class CategoryCreateCest
 
         $I->reloadPage();
         $I->click(Category::CATEGORY_SV);
-        $I->pressKey(Category::CATEGORY_SV, 'К', 'у');
+        $I->pressKey(Category::CATEGORY_SV, 'Ку');
         $I->click(SearchField::searchResult('Константин '));
         $I->click(Category::SAVE_BUTTON);
         $I->waitForElementVisible(Category::errorField('Необходимо заполнить «Название категории».'));
@@ -83,8 +83,8 @@ class CategoryCreateCest
         $I->waitForElementNotVisible(Category::errorField('Необходимо заполнить «Супервизор».'));
         $I->checkTablesInDB($providerData['db_1']);
 
-        $I->pressKey(Category::CATEGORY_TITLE, 'А', 'в', 'и', 'а', 'б', 'и', 'л', 'е', 'т', 'ы', '-');
-        $I->pressKey(Category::CATEGORY_DIFF, '1', '.', '3');
+        $I->pressKey(Category::CATEGORY_TITLE, 'Авиабилеты-');
+        $I->pressKey(Category::CATEGORY_DIFF, '1.3');
         $I->click(Category::SAVE_BUTTON);
         $I->waitForElement(Category::CREATE_BUTTON);
         $I->canSee('Категория успешно создана!');
