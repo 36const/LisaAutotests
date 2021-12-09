@@ -55,9 +55,9 @@ class AcceptanceTester extends GeneralTester
         
         $I->amOnPage('/');
         $I->seeResponseCodeIs(200 || 201);
-        $I->fillField("LoginForm[username]", "kutsan.k");
-        $I->fillField("LoginForm[password]", "123qweASD!");
-        $I->checkOption("LoginForm[isBasicAuth]");
+        $I->fillField('LoginForm[username]', 'kutsan.k');
+        $I->fillField('LoginForm[password]', '123qweASD!');
+        $I->checkOption('LoginForm[isBasicAuth]');
         $I->click('login-button');
         $I->wait(1);
 
@@ -72,7 +72,13 @@ class AcceptanceTester extends GeneralTester
         $I->wait($waitTime);
     }
 
-    public function waitAndCantSeeVisualChanges(string $fileID, int $waitTime = 1, float $deviation, array $exclude = [], string $elementID = '.content-wrapper')
+    public function waitAndCantSeeVisualChanges(
+        string $fileID,
+        int $waitTime = 1,
+        float $deviation = 0.001,
+        array $exclude = [],
+        string $elementID = '.content-wrapper'
+    )
     {
         $I = $this;
         
