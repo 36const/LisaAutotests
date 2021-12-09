@@ -44,7 +44,7 @@ class RequestStatusesTransferSingle1Cest
         $I->checkTablesInDB($provider_data['db_1']);
 
         //перевод 5->6
-        $I->clickAndWait(RequestTable::transferButton('В работу'));
+        $I->clickAndWait(RequestTable::transferButton('В работу'), 1);
         //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_3', 2); //иногда не показывается сообщение
         $I->checkTablesInDB($provider_data['db_2']);
 
