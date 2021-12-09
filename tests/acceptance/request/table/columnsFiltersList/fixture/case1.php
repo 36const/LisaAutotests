@@ -1048,11 +1048,11 @@ return [
                 'field_id' => 1,
                 'value' => 1
             ],
-                [
-                    'request_id' => 4,
-                    'field_id' => 20,
-                    'value' => 64
-                ],
+            [
+                'request_id' => 4,
+                'field_id' => 20,
+                'value' => 64
+            ],
             [
                 'request_id' => 4,
                 'field_id' => 53,

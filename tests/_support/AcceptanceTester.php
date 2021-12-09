@@ -120,8 +120,11 @@ class AcceptanceTester extends GeneralTester
         //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1);
 
         //выбрать несколько значений из выпадающего списка
-        foreach ($provider_data['columnValueListToSelect'] as $item)
+        foreach ($provider_data['columnValueListToSelect'] as $item) {
             $I->clickAndWait($item);
+            if ($I->tryToDontSeeElement($item . '/../parent::div[@aria-selected="true"]'))
+                $I->clickAndWait($item);
+        }
 
         if ($I->tryToSeeElement(RequestTable::HIDDEN_TABLE_SUMMARY))
             $I->moveMouseOver(RequestTable::HIDDEN_TABLE_SUMMARY);
