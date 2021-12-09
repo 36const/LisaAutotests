@@ -77,7 +77,7 @@ class TableColumnsSettingsCest
         $I->checkTablesInDB($provider_data['db_1']);
 
         //перезагрузить страницу
-        $I->reloadPage();
+        $I->amOnPage('/lisa/#/request/list/all');
         $I->waitForElement(RequestCreate::CREATE_BUTTON);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 7);
 
@@ -91,7 +91,7 @@ class TableColumnsSettingsCest
         //установить открытие заявки в новой вкладке, что после перезагрузки страницы они не изменились
         $I->click(RequestTable::CHECKBOX_NEW_TAB);
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
-        $I->reloadPage();
+        $I->amOnPage('/lisa/#/request/list/all');
         $I->click(RequestTable::TABLE_SETTINGS);
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS, 5);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 9);
@@ -99,7 +99,7 @@ class TableColumnsSettingsCest
         //установить открытие заявки в новом окне, что после перезагрузки страницы они не изменились
         $I->click(RequestTable::CHECKBOX_NEW_WINDOW);
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
-        $I->reloadPage();
+        $I->amOnPage('/lisa/#/request/list/all');
         $I->wait(2);
         $I->click(RequestTable::TABLE_SETTINGS);
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
@@ -120,7 +120,7 @@ class TableColumnsSettingsCest
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 12);
 
         //перезагрузить страницу
-        $I->reloadPage();
+        $I->amOnPage('/lisa/#/request/list/all');
         $I->waitForElement(RequestCreate::CREATE_BUTTON);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 13);
 
