@@ -2,7 +2,7 @@
 
 use lisa\RequestsTester;
 
-$mockData = [
+$mockDataStatusesSingle = [
     RequestsTester::interiorMockArray('request-create', 83),
     RequestsTester::interiorMockArray('request-revision', 83),
     RequestsTester::interiorMockArray('request-in-progress', 83),

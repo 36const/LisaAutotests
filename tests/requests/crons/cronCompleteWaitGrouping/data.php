@@ -2,7 +2,7 @@
 
 use lisa\RequestsTester;
 
-$mockData = [
+$mockDataCronCompleteWaitGrouping = [
     RequestsTester::interiorMockArray('request-create', 83),
     RequestsTester::interiorMockArray('request-revision', 83),
     RequestsTester::interiorMockArray('request-in-progress', 83),
@@ -38,7 +38,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataCronCompleteWaitGrouping
         ],
         'provider_data' => [
             'status' => 8,
@@ -215,7 +215,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataCronCompleteWaitGrouping
         ],
         'provider_data' => [
             'db' => [
@@ -261,7 +261,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataCronCompleteWaitGrouping
         ],
         'provider_data' => [
             'db' => [
@@ -307,7 +307,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataCronCompleteWaitGrouping
         ],
         'provider_data' => [
             'db' => [
@@ -353,7 +353,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataCronCompleteWaitGrouping
         ],
         'provider_data' => [
             'db' => [
@@ -404,7 +404,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataCronCompleteWaitGrouping
         ],
         'provider_data' => [
             'db' => [
@@ -455,7 +455,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataCronCompleteWaitGrouping
         ],
         'provider_data' => [
             'db' => [

@@ -6,7 +6,7 @@ return [
             'description' => 'Перевод из "В работе" в "Отменена" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesMultiple,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -381,7 +381,7 @@ return [
             'description' => 'Перевод из "В работе" в "Ожидает (ризоны)" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesMultiple,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -730,7 +730,7 @@ return [
             //проверка, что значение request.photo_load_status собьётся с 1 на 0
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesMultiple,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -1014,7 +1014,7 @@ return [
             //проверка, что значение request.photo_load_status НЕ собьётся с 1 на 0
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesMultiple,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -1297,7 +1297,7 @@ return [
             'description' => 'Изменение супервайзера во "В работе" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_0_sv.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesMultiple,
         'provider_data' => [
             'requestParameter' => 'appoint-supervisor',
             'requestBody' => [

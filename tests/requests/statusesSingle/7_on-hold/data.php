@@ -6,7 +6,7 @@ return [
             'description' => 'Перевод из "Ожидает (ризоны)" во "В работе" тип 1 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'to-work',
             'requestBody' => [
@@ -172,7 +172,7 @@ return [
             'description' => 'Перевод из "Ожидает (ризоны)" во "В работе" тип 1 направление 2 + добавление файлов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case7_6_1_2.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'to-work',
             'requestBody' => [

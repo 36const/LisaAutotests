@@ -285,7 +285,7 @@ return [
 
     'case26' => [
         'setting' => [
-            'description' => 'Перевод одной заявки 3->1 по supplierCabinetId',
+            'description' => 'Перевод одной заявки 3->1 по supplierCabinetId + отправка запроса после изменения статуса',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case26.php',
         'mock_data' => [
@@ -502,7 +502,7 @@ return [
 
     'case27' => [
         'setting' => [
-            'description' => 'Перевод двух заявок 3->1 по supplierCabinetId',
+            'description' => 'Перевод двух заявок 3->1 по supplierCabinetId + отправка запроса после изменения статуса',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case27.php',
         'mock_data' => [
@@ -761,7 +761,7 @@ return [
 
     'case28' => [
         'setting' => [
-            'description' => 'Перевод двух заявок 3->1 по requestId и supplierCabinetId',
+            'description' => 'Перевод двух заявок 3->1 по requestId и supplierCabinetId + отправка запроса после изменения статуса',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case26.php',
         'mock_data' => [
@@ -1021,7 +1021,7 @@ return [
 
     'case30' => [
         'setting' => [
-            'description' => 'Перевод одной из двух заявок 3->1 при requestId + / supplierCabinetId - ',
+            'description' => 'Перевод одной из двух заявок 3->1 при requestId + / supplierCabinetId -  + отправка запроса после изменения статуса',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
@@ -1232,7 +1232,7 @@ return [
 
     'case31' => [
         'setting' => [
-            'description' => 'Перевод одной из двух заявок 3->1 при requestId - / supplierCabinetId + ',
+            'description' => 'Перевод одной из двух заявок 3->1 при requestId - / supplierCabinetId +  и отправка запроса после изменения статуса',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case26.php',
         'mock_data' => [

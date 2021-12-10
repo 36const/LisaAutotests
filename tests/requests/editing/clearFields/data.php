@@ -2,7 +2,7 @@
 
 use lisa\RequestsTester;
 
-$mockData = [
+$mockDataСlearFields = [
     RequestsTester::interiorMockArray('request-create', 83),
     RequestsTester::interiorMockArray('request-revision', 83),
     RequestsTester::interiorMockArray('request-in-progress', 83),
@@ -17,7 +17,7 @@ return [
             'description' => 'Очистка необязательных полей тип 1 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1_1.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataСlearFields,
         'provider_data' => [
             'requestBody' => [
                 20 => NULL,
@@ -307,7 +307,7 @@ return [
             'description' => 'Ошибка при очистке поля Количество в работу тип 1 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1_1.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataСlearFields,
         'provider_data' => [
             'requestBody' => [
                 20 => NULL,
@@ -379,7 +379,7 @@ return [
             'description' => 'Очистка необязательных полей тип 2 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2_2.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataСlearFields,
         'provider_data' => [
             'requestBody' => [
                 8 => false,
@@ -574,7 +574,7 @@ return [
             'description' => 'Очистка необязательных полей тип 4 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataСlearFields,
         'provider_data' => [
             'requestBody' => [
                 20 => NULL,
@@ -839,7 +839,7 @@ return [
             'description' => 'Ошибка при очистке поля Категория Rozetka тип 4 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4_0_negative.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataСlearFields,
         'provider_data' => [
             'requestBody' => [
                 20 => NULL,
@@ -1446,7 +1446,7 @@ return [
             'description' => 'Очистка необязательных полей тип 13 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case13_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataСlearFields,
         'provider_data' => [
             'requestBody' => [
                 20 => NULL,
@@ -1620,7 +1620,7 @@ return [
             'description' => 'Очистка необязательных полей тип 14 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case14_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataСlearFields,
         'provider_data' => [
             'requestBody' => [
                 20 => NULL,

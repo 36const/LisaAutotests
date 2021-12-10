@@ -6,7 +6,7 @@ return [
             'description' => 'Перевод из "Готова для распределения" в "На доработке"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -157,7 +157,7 @@ return [
             'description' => 'Перевод из "Готова для распределения" в "Отменена"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -378,7 +378,7 @@ return [
             'description' => 'Перевод из "Готова для распределения" в "Ожидает взятия в работу"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'appoint-manager',
             'requestBody' => [

@@ -8,7 +8,7 @@ return [
             //поля результатов задачи 76, 77, 21, 23, 24, 27 и Кол-во проверенных товаров
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -736,7 +736,7 @@ http://splitter.docker/lisa/#/request/view/3',
             'description' => 'Перевод из "Частично выполнена" во "В работе (на исправление)" КЧ тип 1 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case8_6_1_2.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [
@@ -1400,7 +1400,7 @@ http://splitter.docker/lisa/#/request/view/3',
             'description' => 'Перевод из "Частично выполнена" во "В работе (на исправление)" КЧ тип 2 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case8_6_2_2.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [
@@ -2064,7 +2064,7 @@ http://splitter.docker/lisa/#/request/view/3',
             'description' => 'Перевод из "Частично выполнена" во "В работе (на исправление)" КЧ тип 3 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case8_6_3_2.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [
@@ -2369,7 +2369,7 @@ http://splitter.docker/lisa/#/request/view/3',
             'description' => 'Перевод из "Частично выполнена" во "В работе (на исправление)" КЧ тип 4 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case8_6_4_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [
@@ -3042,7 +3042,7 @@ http://splitter.docker/lisa/#/request/view/3',
             'description' => 'Перевод из "Частично выполнена" во "В работе (на исправление)" КЧ тип 6 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case8_6_6_2.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [
@@ -5205,7 +5205,7 @@ http://splitter.docker/lisa/#/request/view/3',
             'description' => 'Перевод из "Частично выполнена" во "В работе (на исправление)" КЧ тип 13 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case8_6_13_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [
@@ -5474,7 +5474,7 @@ http://splitter.docker/lisa/#/request/view/3',
             'description' => 'Перевод из "Частично выполнена" во "В работе (на исправление)" КЧ тип 14 направление 0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case8_6_14_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [

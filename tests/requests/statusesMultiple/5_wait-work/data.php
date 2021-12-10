@@ -6,7 +6,7 @@ return [
             'description' => 'Перевод из "Ожидает взятия в работу" во "В работе"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesMultiple,
         'provider_data' => [
             'requestParameter' => 'to-work',
             'requestBody' => [

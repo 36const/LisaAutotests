@@ -8,7 +8,7 @@ return [
             //лишние поля отправляются, но со значением "0"
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -474,7 +474,7 @@ return [
             'description' => 'Перевод из "В работе" в "Ожидает взятия в работу" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'appoint-manager',
             'requestBody' => [
@@ -924,7 +924,7 @@ return [
             'description' => 'Перевод из "В работе" в "Ожидает (ризоны)" + нотификации + добавление и удаление вложений',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -1555,7 +1555,7 @@ return [
             //проверка обнуления requests.photo_load_status
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -1859,7 +1859,7 @@ return [
             //проверка НЕобнуления requests.photo_load_status
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -2162,7 +2162,7 @@ return [
             'description' => 'Перевод из "В работе" в "Частично выполнен" 1/1 + нотификации + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -2620,7 +2620,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataStatusesSingle
         ],
         'provider_data' => [
             'requestParameter' => 'update',
@@ -2961,7 +2961,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataStatusesSingle
         ],
         'provider_data' => [
             'requestParameter' => 'update',
@@ -3263,7 +3263,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 1/1 + нотификации + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -3702,7 +3702,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataStatusesSingle
         ],
         'provider_data' => [
             'requestParameter' => 'update',
@@ -4011,7 +4011,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataStatusesSingle
         ],
         'provider_data' => [
             'requestParameter' => 'update',
@@ -4307,7 +4307,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 2/1 + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_2_1.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -4668,7 +4668,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataStatusesSingle
         ],
         'provider_data' => [
             'requestParameter' => 'update',
@@ -4954,7 +4954,7 @@ return [
                     'statusCode' => 200
                 ],
             ],
-            $mockData
+            $mockDataStatusesSingle
         ],
         'provider_data' => [
             'requestParameter' => 'update',
@@ -5229,7 +5229,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 3/1 + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_3_1.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -5569,7 +5569,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 3/2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_3_2.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -5833,7 +5833,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 4/0 + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_4_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -6105,7 +6105,7 @@ return [
             //автосложность не должна проставиться, потому что поля для этого типа не занесены в auto_diff_fields
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_5_1.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -6432,7 +6432,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 6/2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_6_2.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -6696,7 +6696,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 7/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_7_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -6961,7 +6961,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 8/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_8_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -7243,7 +7243,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 9/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_9_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -7468,7 +7468,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 10/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_10_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -7693,7 +7693,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 11/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_11_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -7930,7 +7930,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 12/1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_12_1.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -8256,7 +8256,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 13/0 + автосложность',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_13_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -8512,7 +8512,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 14/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_14_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -8719,7 +8719,7 @@ return [
             'description' => 'Перевод из "В работе" в "Выполнен" 15/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_15_0.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -8914,7 +8914,7 @@ return [
             'description' => 'Изменение супервайзера во "В работе" без перевода в статус 5 + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_0_sv.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -9040,7 +9040,7 @@ return [
             'description' => 'Изменение контент-менеджера во "В работе" с переводом в статус 5 + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_0_cm.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [

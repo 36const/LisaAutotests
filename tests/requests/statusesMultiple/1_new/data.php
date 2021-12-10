@@ -8,7 +8,7 @@ return [
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
             'requestParameter' => 'for-check',
-            'mock_data' => $mockData,
+            'mock_data' => $mockDataStatusesMultiple,
             'requestBody' => [
                 'ids' => [
                     0 => 1,
@@ -226,7 +226,7 @@ return [
             'description' => 'Перевод из "Новая" в "На доработке" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesMultiple,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -483,7 +483,7 @@ return [
             'description' => 'Перевод из "Новая" в "Отменена" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesMultiple,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -752,7 +752,7 @@ return [
             'description' => 'Перевод из "Новая" в "Ожидает взятия в работу" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesMultiple,
         'provider_data' => [
             'requestParameter' => 'appoint-manager',
             'requestBody' => [
@@ -1055,7 +1055,7 @@ return [
             'description' => 'Изменение супервайзера в "Новая" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1_0_sv.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesMultiple,
         'provider_data' => [
             'requestParameter' => 'appoint-supervisor',
             'requestBody' => [

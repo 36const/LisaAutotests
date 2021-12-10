@@ -6,7 +6,7 @@ return [
             'description' => 'Перевод из "На доработке" в "Новая" + удаление вложений',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -227,7 +227,7 @@ return [
             'description' => 'Перевод из "На доработке" в "Отменена" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [

@@ -6,7 +6,7 @@ return [
             'description' => 'Перевод из "Ожидает взятия в работу" в "Отменена" тип 1 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -174,7 +174,7 @@ return [
             'description' => 'Перевод из "Ожидает взятия в работу" в "Отменена" тип 1 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case5_4_1_2.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -347,7 +347,7 @@ return [
             'description' => 'Перевод из "Ожидает взятия в работу" во "В работе"',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockData,
+        'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'to-work',
             'requestBody' => [
