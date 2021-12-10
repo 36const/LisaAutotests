@@ -92,6 +92,7 @@ class TableColumnsSettingsCest
         $I->click(RequestTable::CHECKBOX_NEW_TAB);
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
         $I->amOnPage('/lisa/#/request/list/all');
+        $I->wait(1);
         $I->click(RequestTable::TABLE_SETTINGS);
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS, 5);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 9);
@@ -100,7 +101,7 @@ class TableColumnsSettingsCest
         $I->click(RequestTable::CHECKBOX_NEW_WINDOW);
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
         $I->amOnPage('/lisa/#/request/list/all');
-        $I->wait(2);
+        $I->wait(1);
         $I->click(RequestTable::TABLE_SETTINGS);
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 10);
@@ -121,6 +122,7 @@ class TableColumnsSettingsCest
 
         //перезагрузить страницу
         $I->amOnPage('/lisa/#/request/list/all');
+        $I->wait(1);
         $I->waitForElement(RequestCreate::CREATE_BUTTON);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 13);
 
