@@ -2603,7 +2603,7 @@ return [
             'Gomer' => [
                 'httpRequest' => [
                     'method' => 'GET',
-                    'path' => '/new-items/check-bpm',
+                    'path' => '/items/check-bpm',
                     'queryStringParameters' => [
                         'bpm_number' => [
                             '1'
@@ -2944,7 +2944,7 @@ return [
             'Gomer' => [
                 'httpRequest' => [
                     'method' => 'GET',
-                    'path' => '/new-items/check-bpm',
+                    'path' => '/items/check-bpm',
                     'queryStringParameters' => [
                         'bpm_number' => [
                             '1'
@@ -3685,7 +3685,7 @@ return [
             'Gomer' => [
                 'httpRequest' => [
                     'method' => 'GET',
-                    'path' => '/new-items/check-bpm',
+                    'path' => '/items/check-bpm',
                     'queryStringParameters' => [
                         'bpm_number' => [
                             '1'
@@ -3994,7 +3994,7 @@ return [
             'Gomer' => [
                 'httpRequest' => [
                     'method' => 'GET',
-                    'path' => '/new-items/check-bpm',
+                    'path' => '/items/check-bpm',
                     'queryStringParameters' => [
                         'bpm_number' => [
                             '1'
@@ -4651,7 +4651,7 @@ return [
             'Gomer' => [
                 'httpRequest' => [
                     'method' => 'GET',
-                    'path' => '/new-items/check-bpm',
+                    'path' => '/items/check-bpm',
                     'queryStringParameters' => [
                         'bpm_number' => [
                             '1'
@@ -4937,7 +4937,7 @@ return [
             'Gomer' => [
                 'httpRequest' => [
                     'method' => 'GET',
-                    'path' => '/new-items/check-bpm',
+                    'path' => '/items/check-bpm',
                     'queryStringParameters' => [
                         'bpm_number' => [
                             '1'
