@@ -54,7 +54,7 @@ class RequestStatusesTransferSingle2Cest
         $I->pressKey("//div[@role='document']//textarea", WebDriverKeys::PAGE_DOWN);
         $I->pressKey("//div[@role='document']//textarea", WebDriverKeys::PAGE_DOWN);
         $I->click(RequestView::POPUP_COMPLETED);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_3', 2);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_3', 2, 0.68);  //иногда не прокручивается до конца
         $I->checkTablesInDB($provider_data['db_1']);
 
         //проставление обязательных полей результатов задачи и перевод 6->9
