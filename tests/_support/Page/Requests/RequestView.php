@@ -15,6 +15,7 @@ class RequestView
 
     public const POPUP_RESULT_COMMENT = "//div[@role='document']//label[text()='Комментарий к результату задачи']/following-sibling::textarea";
     public const POPUP_COMPLETED = "//div[@role='document']//button/span[text()='Выполнена']";
+    public const POPUP_SAVE = "//div[@role='document']//button/span[text()='Сохранить']";
 
     public const SAVE_BUTTON = "//div[@id='sticky-toolbar']/header//button/span[contains(text(),'Сохранить')]";
 

@@ -33,7 +33,7 @@ class TableColumnsSettingsCest
         $provider_data = $data['provider_data'];
 
         $I->amOnPage('/lisa/#/request/list/all');
-        $I->click(RequestTable::TABLE_SETTINGS);
+        $I->click(RequestTable::transferButton('Настройки таблицы'));
 
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
         $I->canSeeNumberOfElements(RequestTable::VISIBLE_COLUMNS, 0);
@@ -51,7 +51,7 @@ class TableColumnsSettingsCest
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 2);
 
         //отфильтровать скрытые колонки с "дата" в названии
-        $I->pressKey(RequestTable::SEARCH_COLUMNS, 'д', 'а', 'т', 'а');
+        $I->pressKey(RequestTable::SEARCH_COLUMNS, 'дата');
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3);
 
         //попытаться перевести ещё 4 колонки в видимые, переведутся только 2
@@ -82,7 +82,7 @@ class TableColumnsSettingsCest
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 7);
 
         //открыть настройки и проверить, что после перезагрузки страницы они не изменились
-        $I->click(RequestTable::TABLE_SETTINGS);
+        $I->click(RequestTable::transferButton('Настройки таблицы'));
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
         $I->canSeeNumberOfElements(RequestTable::VISIBLE_COLUMNS, 20);
         $I->canSeeNumberOfElements(RequestTable::HIDDEN_COLUMNS, 63);
@@ -93,7 +93,7 @@ class TableColumnsSettingsCest
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
         $I->amOnPage('/lisa/#/request/list/all');
         $I->wait(1);
-        $I->click(RequestTable::TABLE_SETTINGS);
+        $I->click(RequestTable::transferButton('Настройки таблицы'));
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS, 5);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 9);
 
@@ -102,7 +102,7 @@ class TableColumnsSettingsCest
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
         $I->amOnPage('/lisa/#/request/list/all');
         $I->wait(1);
-        $I->click(RequestTable::TABLE_SETTINGS);
+        $I->click(RequestTable::transferButton('Настройки таблицы'));
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 10);
 
@@ -127,7 +127,7 @@ class TableColumnsSettingsCest
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 13);
 
         //сбросить настройки
-        $I->click(RequestTable::TABLE_SETTINGS);
+        $I->click(RequestTable::transferButton('Настройки таблицы'));
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
         $I->click(RequestTable::DELETE_SETTINGS_BUTTON);
         $I->waitForElementNotVisible(RequestTable::DELETE_SETTINGS_BUTTON);

@@ -174,9 +174,6 @@ class RequestTable
 
     //****** Настройки таблицы ******//
 
-    /**Кнопка настроек таблицы*/
-    public const TABLE_SETTINGS = "//div[@id='sticky-toolbar']//button[@title='Настройки таблицы']";
-
     /**Поле поиска колонок*/
     public const SEARCH_COLUMNS = "//div[text()='Настройка таблицы']/following::div/div[@class='row']/div[@class='col-6'][2]//label[text()='Нажмите сюда для поиска поля...']/following::input";
 
