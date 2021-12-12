@@ -11,9 +11,9 @@ use lisa\Page\Other\SearchField;
  * @group lisa
  * @group lisa_acceptance
  * @group lisa_acceptance_requests
- * @group CreateRequestPage
+ * @group RequestCreate
  */
-class CreateRequestPageCest
+class RequestCreateCest
 {
     protected function pageProvider(): array
     {
@@ -26,7 +26,7 @@ class CreateRequestPageCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function CreateRequestPage(AcceptanceTester $I, Example $data)
+    public function RequestCreate(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $provider_data = $data['provider_data'];

@@ -12,9 +12,9 @@ use lisa\Page\Requests\RequestView;
  * @group lisa
  * @group lisa_acceptance
  * @group lisa_acceptance_requests
- * @group MassEdit
+ * @group RequestMassEdit
  */
-class MassEditCest
+class RequestMassEditCest
 {
     protected function pageProvider(): array
     {
@@ -27,7 +27,7 @@ class MassEditCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function MassEdit(AcceptanceTester $I, Example $data)
+    public function RequestMassEdit(AcceptanceTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $provider_data = $data['provider_data'];
@@ -48,7 +48,7 @@ class MassEditCest
         $I->click('//tr/th[@role="columnheader"][1]');
         $I->click('//tr/td[@class="text-start"]//span');
         $I->click(RequestTable::transferButton('Пакетное редактирование'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3, 2);
 
         //заполнить все поля модалки
         $I->click(RequestView::listFieldInResultPopUp('Вид структуры'));
@@ -79,7 +79,7 @@ class MassEditCest
         $I->click(RequestView::listFieldInResultPopUp('Отчетный период КМ') . '//button');
         $I->click("//div[@role='document']//label[text()='Пакетная загрузка']/preceding-sibling::div");
         $I->click("//div[@role='document']//label[text()='Не менять']/preceding-sibling::div");
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4, 2);
 
         //сохранить изменения
         $I->click(RequestView::POPUP_SAVE);
