@@ -35,7 +35,7 @@ class RequestMassEditCest
         $I->amOnPage('/lisa/#/request/list/all');
 
         //попробовать сохранить без выделения заявок
-        $I->click(RequestTable::transferButton('Пакетное редактирование'));
+        $I->retryClick(RequestTable::transferButton('Пакетное редактирование'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1);
         $I->click(RequestView::listFieldInResultPopUp('Уровень сложности задачи'));
         $I->click(RequestView::valueFromListFieldInResultPopUp(1, '3'));
@@ -48,7 +48,7 @@ class RequestMassEditCest
         $I->click('//tr/th[@role="columnheader"][1]');
         $I->click('//tr/td[@class="text-start"]//span');
         $I->click(RequestTable::transferButton('Пакетное редактирование'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3, 2, 0.001, [], "div[role='document'] div[class*='mass-edit']");
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3, 2, 0.01, [], "div[role='document'] div[class*='mass-edit']");
 
         //заполнить все поля модалки
         $I->click(RequestView::listFieldInResultPopUp('Вид структуры'));
@@ -79,7 +79,7 @@ class RequestMassEditCest
         $I->click(RequestView::listFieldInResultPopUp('Отчетный период КМ') . '//button');
         $I->click("//div[@role='document']//label[text()='Пакетная загрузка']/preceding-sibling::div");
         $I->click("//div[@role='document']//label[text()='Не менять']/preceding-sibling::div");
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4, 2, 0.001, [], "div[role='document'] div[class*='mass-edit']");
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4, 2, 0.01, [], "div[role='document'] div[class*='mass-edit']");
 
         //сохранить изменения
         $I->click(RequestView::POPUP_SAVE);
