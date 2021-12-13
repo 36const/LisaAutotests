@@ -3,185 +3,6 @@
 use lisa\OtherServicesTester;
 
 return [
-    'case1' => [
-        'setting' => [
-            'description' => 'Заявка тип 1 направление 1 статус 1 при наличии других заявок',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestParameters' => [
-                'requestId' => '1'
-            ],
-            'responseCode' => 200,
-            'responseBody' => [
-                'status' => 200,
-                'message' => 'Ok'
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [
-                        [
-                            'id' => 1,
-                            'author_id' => 4,
-                            'type_id' => 1,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 1,
-                            'direction' => 1,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at' => '2020-01-01 00:00:00',
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'description' => 'description',
-                            'category_id' => 1,
-                            'seller_id' => null,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 1
-                        ],
-                        [
-                            'id' => 2,
-                            'author_id' => 4,
-                            'type_id' => 1,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 1,
-                            'direction' => 2,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at' => '2020-01-01 00:00:00',
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => 'Добавление новых товаров (Работа с товарами Маркета)',
-                            'description' => 'description',
-                            'category_id' => null,
-                            'seller_id' => 83,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date' => null,
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 0
-                        ],
-                        [
-                            'id' => 3,
-                            'author_id' => 4,
-                            'type_id' => 2,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 1,
-                            'direction' => 1,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at' => '2020-01-01 00:00:00',
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'description' => 'description',
-                            'category_id' => 1,
-                            'seller_id' => null,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date' => null,
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 0
-                        ],
-                        [
-                            'id' => 4,
-                            'author_id' => 4,
-                            'type_id' => 2,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 1,
-                            'direction' => 2,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at' => '2020-01-01 00:00:00',
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => 'Добавление новых товаров (Работа с товарами Маркета)',
-                            'description' => 'description',
-                            'category_id' => null,
-                            'seller_id' => 83,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date' => null,
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 0
-                        ]
-                    ],
-                ]
-            ],
-        ]
-    ],
-
     'case2' => [
         'setting' => [
             'description' => 'Заявка тип 1 направление 2 статус 1 при наличии других заявок',
@@ -361,68 +182,6 @@ return [
         ]
     ],
 
-    'case3' => [
-        'setting' => [
-            'description' => 'Заявка тип 1 направление 1 статус 2',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case3.php',
-        'provider_data' => [
-            'requestParameters' => [
-                'requestId' => '1'
-            ],
-            'responseCode' => 200,
-            'responseBody' => [
-                'status' => 200,
-                'message' => 'Ok'
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [
-                        [
-                            'id' => 1,
-                            'author_id' => 4,
-                            'type_id' => 1,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 2,
-                            'direction' => 1,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at' => '2020-01-01 00:00:00',
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'description' => 'description',
-                            'category_id' => 1,
-                            'seller_id' => null,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 1
-                        ],
-                    ],
-                ]
-            ],
-        ]
-    ],
-
     'case4' => [
         'setting' => [
             'description' => 'Заявка тип 1 направление 2 статус 3',
@@ -485,68 +244,6 @@ return [
         ]
     ],
 
-    'case5' => [
-        'setting' => [
-            'description' => 'Заявка тип 1 направление 1 статус 4',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case5.php',
-        'provider_data' => [
-            'requestParameters' => [
-                'requestId' => '1'
-            ],
-            'responseCode' => 200,
-            'responseBody' => [
-                'status' => 200,
-                'message' => 'Ok'
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [
-                        [
-                            'id' => 1,
-                            'author_id' => 4,
-                            'type_id' => 1,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 4,
-                            'direction' => 1,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at' => '2020-01-01 00:00:00',
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'description' => 'description',
-                            'category_id' => 1,
-                            'seller_id' => null,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 1
-                        ],
-                    ],
-                ]
-            ],
-        ]
-    ],
-
     'case6' => [
         'setting' => [
             'description' => 'Заявка тип 1 направление 2 статус 5',
@@ -594,68 +291,6 @@ return [
                             'supervisor_comment' => null,
                             'last_change_status_date >=' => date('Y-m-d'),
                             'team_direction' => 2,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 1
-                        ],
-                    ],
-                ]
-            ],
-        ]
-    ],
-
-    'case7' => [
-        'setting' => [
-            'description' => 'Заявка тип 1 направление 1 статус 6',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case7.php',
-        'provider_data' => [
-            'requestParameters' => [
-                'requestId' => '1'
-            ],
-            'responseCode' => 200,
-            'responseBody' => [
-                'status' => 200,
-                'message' => 'Ok'
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [
-                        [
-                            'id' => 1,
-                            'author_id' => 4,
-                            'type_id' => 1,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 6,
-                            'direction' => 1,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at' => '2020-01-01 00:00:00',
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'description' => 'description',
-                            'category_id' => 1,
-                            'seller_id' => null,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 3,
                             'report_period_id' => null,
                             'sync_source_id' => null,
                             'sv_report_periods' => null,
@@ -869,68 +504,6 @@ return [
         ]
     ],
 
-    'case9' => [
-        'setting' => [
-            'description' => 'Заявка тип 1 направление 1 статус 8',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case9.php',
-        'provider_data' => [
-            'requestParameters' => [
-                'requestId' => '1'
-            ],
-            'responseCode' => 200,
-            'responseBody' => [
-                'status' => 200,
-                'message' => 'Ok'
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [
-                        [
-                            'id' => 1,
-                            'author_id' => 4,
-                            'type_id' => 1,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 8,
-                            'direction' => 1,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at' => '2020-01-01 00:00:00',
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'description' => 'description',
-                            'category_id' => 1,
-                            'seller_id' => null,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 1
-                        ],
-                    ],
-                ]
-            ],
-        ]
-    ],
-
     'case10' => [
         'setting' => [
             'description' => 'Заявка тип 1 направление 2 статус 9',
@@ -978,68 +551,6 @@ return [
                             'supervisor_comment' => null,
                             'last_change_status_date >=' => date('Y-m-d'),
                             'team_direction' => 2,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 1
-                        ],
-                    ],
-                ]
-            ],
-        ]
-    ],
-
-    'case11' => [
-        'setting' => [
-            'description' => 'Заявка тип 1 направление 1 статус 11',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case11.php',
-        'provider_data' => [
-            'requestParameters' => [
-                'requestId' => '1'
-            ],
-            'responseCode' => 200,
-            'responseBody' => [
-                'status' => 200,
-                'message' => 'Ok'
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [
-                        [
-                            'id' => 1,
-                            'author_id' => 4,
-                            'type_id' => 1,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 11,
-                            'direction' => 1,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at' => '2020-01-01 00:00:00',
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'description' => 'description',
-                            'category_id' => 1,
-                            'seller_id' => null,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 3,
                             'report_period_id' => null,
                             'sync_source_id' => null,
                             'sv_report_periods' => null,
@@ -1118,6 +629,131 @@ return [
             ],
         ]
     ],
+
+    'case18' => [
+        'setting' => [
+            'description' => 'Заявка тип 3 направление 2 статус 3',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case18.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'requestId' => '1'
+            ],
+            'responseCode' => 200,
+            'responseBody' => [
+                'status' => 200,
+                'message' => 'Ok'
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 3,
+                            'supervisor_id' => 6,
+                            'manager_id' => null,
+                            'status' => 3,
+                            'direction' => 2,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'description' => 'description',
+                            'category_id' => null,
+                            'seller_id' => 83,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date >=' => date('Y-m-d'),
+                            'team_direction' => 3,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 1
+                        ],
+                    ],
+                ]
+            ],
+        ]
+    ],
+
+    'case21' => [
+        'setting' => [
+            'description' => 'Заявка тип 6 направление 2 статус 6',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case21.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'requestId' => '1'
+            ],
+            'responseCode' => 200,
+            'responseBody' => [
+                'status' => 200,
+                'message' => 'Ok'
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 6,
+                            'supervisor_id' => 6,
+                            'manager_id' => null,
+                            'status' => 6,
+                            'direction' => 2,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'description' => 'description',
+                            'category_id' => null,
+                            'seller_id' => 83,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date >=' => date('Y-m-d'),
+                            'team_direction' => 3,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 1
+                        ],
+                    ],
+                ]
+            ],
+        ]
+    ],
+
 
     'case13' => [
         'setting' => [
@@ -1885,7 +1521,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -1936,70 +1572,6 @@ return [
         ]
     ],
 
-    'case18' => [
-        'setting' => [
-            'description' => 'Невозможность присвоить статус загрузки фото тип 3 направление 2',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case18.php',
-        'provider_data' => [
-            'requestParameters' => [
-                'requestId' => '1'
-            ],
-            'responseCode' => 200,
-            'responseBody' => [
-                'status' => 400,
-                'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [
-                        [
-                            'id' => 1,
-                            'author_id' => 4,
-                            'type_id' => 3,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 3,
-                            'direction' => 2,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at' => '2020-01-01 00:00:00',
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
-                            'description' => 'description',
-                            'category_id' => null,
-                            'seller_id' => 83,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date' => null,
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 0
-                        ],
-                    ],
-                ]
-            ],
-        ]
-    ],
-
     'case19' => [
         'setting' => [
             'description' => 'Невозможность присвоить статус загрузки фото тип 4 направление 0',
@@ -2013,7 +1585,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -2077,7 +1649,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -2128,11 +1700,11 @@ return [
         ]
     ],
 
-    'case21' => [
+    'case1' => [
         'setting' => [
-            'description' => 'Невозможность присвоить статус загрузки фото тип 6 направление 2',
+            'description' => 'Невозможность присвоить статус загрузки фото тип 1 направление 1 статус 1 при наличии других заявок',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case21.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestParameters' => [
                 'requestId' => '1'
@@ -2141,7 +1713,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -2150,11 +1722,11 @@ return [
                         [
                             'id' => 1,
                             'author_id' => 4,
-                            'type_id' => 6,
+                            'type_id' => 1,
                             'supervisor_id' => 6,
                             'manager_id' => null,
-                            'status' => 6,
-                            'direction' => 2,
+                            'status' => 1,
+                            'direction' => 1,
                             'priority' => null,
                             'awaiting_correction' => 0,
                             'created_at' => '2020-01-01 00:00:00',
@@ -2162,8 +1734,317 @@ return [
                             'amount_to_work' => 10,
                             'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
                             'description' => 'description',
+                            'category_id' => 1,
+                            'seller_id' => null,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date' => null,
+                            'team_direction' => 3,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0
+                        ],
+                        [
+                            'id' => 2,
+                            'author_id' => 4,
+                            'type_id' => 1,
+                            'supervisor_id' => 6,
+                            'manager_id' => null,
+                            'status' => 1,
+                            'direction' => 2,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление новых товаров (Работа с товарами Маркета)',
+                            'description' => 'description',
                             'category_id' => null,
                             'seller_id' => 83,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date' => null,
+                            'team_direction' => 3,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0
+                        ],
+                        [
+                            'id' => 3,
+                            'author_id' => 4,
+                            'type_id' => 2,
+                            'supervisor_id' => 6,
+                            'manager_id' => null,
+                            'status' => 1,
+                            'direction' => 1,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'description' => 'description',
+                            'category_id' => 1,
+                            'seller_id' => null,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date' => null,
+                            'team_direction' => 3,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0
+                        ],
+                        [
+                            'id' => 4,
+                            'author_id' => 4,
+                            'type_id' => 2,
+                            'supervisor_id' => 6,
+                            'manager_id' => null,
+                            'status' => 1,
+                            'direction' => 2,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление новых товаров (Работа с товарами Маркета)',
+                            'description' => 'description',
+                            'category_id' => null,
+                            'seller_id' => 83,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date' => null,
+                            'team_direction' => 3,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0
+                        ]
+                    ],
+                ]
+            ],
+        ]
+    ],
+
+    'case7' => [
+        'setting' => [
+            'description' => 'Невозможность присвоить статус загрузки фото тип 1 направление 1 статус 6',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case7.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'requestId' => '1'
+            ],
+            'responseCode' => 200,
+            'responseBody' => [
+                'status' => 400,
+                'errors' => [
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 1,
+                            'supervisor_id' => 6,
+                            'manager_id' => null,
+                            'status' => 6,
+                            'direction' => 1,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'description' => 'description',
+                            'category_id' => 1,
+                            'seller_id' => null,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date' => null,
+                            'team_direction' => 3,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0
+                        ],
+                    ],
+                ]
+            ],
+        ]
+    ],
+
+    'case11' => [
+        'setting' => [
+            'description' => 'Невозможность присвоить статус загрузки фото тип 1 направление 1 статус 11',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case11.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'requestId' => '1'
+            ],
+            'responseCode' => 200,
+            'responseBody' => [
+                'status' => 400,
+                'errors' => [
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 1,
+                            'supervisor_id' => 6,
+                            'manager_id' => null,
+                            'status' => 11,
+                            'direction' => 1,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'description' => 'description',
+                            'category_id' => 1,
+                            'seller_id' => null,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date' => null,
+                            'team_direction' => 3,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0
+                        ],
+                    ],
+                ]
+            ],
+        ]
+    ],
+
+    'case9' => [
+        'setting' => [
+            'description' => 'Невозможность присвоить статус загрузки фото тип 1 направление 1 статус 8',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case9.php',
+        'provider_data' => [
+            'requestParameters' => [
+                'requestId' => '1'
+            ],
+            'responseCode' => 200,
+            'responseBody' => [
+                'status' => 400,
+                'errors' => [
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 1,
+                            'supervisor_id' => 6,
+                            'manager_id' => null,
+                            'status' => 8,
+                            'direction' => 1,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'description' => 'description',
+                            'category_id' => 1,
+                            'seller_id' => null,
                             'recommendations' => null,
                             'reason' => null,
                             'parent_id' => null,
@@ -2205,7 +2086,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -2269,7 +2150,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -2333,7 +2214,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -2397,7 +2278,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -2461,7 +2342,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -2525,7 +2406,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -2589,7 +2470,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -2653,7 +2534,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
@@ -2717,7 +2598,7 @@ return [
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
-                    "Статус загрузки фото можно присвоить только задачам типа 'Добавление новых товаров'"
+                    "Статус загрузки фото можно присвоить только задачам направления 'Работа с товарами Маркетплейса'"
                 ]
             ],
             'db' => [
