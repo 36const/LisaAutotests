@@ -73,7 +73,7 @@ class AcceptanceTester extends GeneralTester
     }
 
     public function waitAndCantSeeVisualChanges(
-        string $fileID,
+        $fileID,
         int $waitTime = 1,
         float $deviation = 0.001,
         array $exclude = [],
@@ -85,7 +85,17 @@ class AcceptanceTester extends GeneralTester
         $defaultExclude = ['.user-image', '.main-header', '#yii-debug-toolbar'];
 
         $I->wait($waitTime);
-        $I->cantSeeVisualChanges($fileID, $elementID, array_merge($defaultExclude, $exclude), [], $deviation);
+
+        if (!is_array($fileID)) {
+            $I->cantSeeVisualChanges($fileID, $elementID, array_merge($defaultExclude, $exclude), [], $deviation);
+        } else {
+            foreach ($fileID as $id) {
+                $result[] = $I->tryToDontSeeVisualChanges($id, $elementID, array_merge($defaultExclude, $exclude), [], $deviation);
+            }
+            in_array(true, $result)
+                ? $I->assertTrue(true)
+                : $I->assertTrue(false, 'Ни один скриншот не совпал');
+        }
     }
 
     public function checkObjectsOnPage($pageObjects)
