@@ -385,7 +385,7 @@ return [
             'description' => 'Установка, изменение и сброс фильтра колонки отчётных периодов СВ',
             'column' => 'sv_report_periods',
             'case' => '6_',
-            'tableSummary_1' => 7,
+            'tableSummary_1' => 19,
             'tableSummary_2' => 7,
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
