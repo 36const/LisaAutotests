@@ -865,6 +865,7 @@ return [
                     'text' => 'В работе',
                     'link' => '#/request/list/in-work',
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -1350,6 +1351,7 @@ return [
                 ],
                 'fieldsForOuter' => [
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -2148,6 +2150,7 @@ return [
                 ],
                 'fieldsForOuter' => [
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -2652,6 +2655,7 @@ return [
                     'text' => 'Выполнены',
                     'link' => '#/request/list/completed',
                 ],
+                'status' => 200,
             ],
         ]
     ],
@@ -3574,6 +3578,7 @@ return [
                 ],
                 'fieldsForOuter' => [
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -4129,6 +4134,7 @@ return [
                     94,
                     72,
                 ],
+                'status' => 200,
             ],
         ]
     ],
@@ -4621,6 +4627,7 @@ return [
                     'text' => 'На доработке',
                     'link' => '#/request/list/require-changes',
                 ],
+                'status' => 200,
             ],
         ]
     ],
@@ -5553,6 +5560,7 @@ return [
                 ],
                 'fieldsForOuter' => [
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -6047,6 +6055,7 @@ return [
                     94,
                     72,
                 ],
+                'status' => 200,
             ],
         ]
     ],
@@ -6775,6 +6784,7 @@ return [
                     'text' => 'Закрыты',
                     'link' => '#/request/list/closed',
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -7365,6 +7375,7 @@ return [
                     'subject',
                     'request_attachments',
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -7902,6 +7913,7 @@ return [
                 ],
                 'fieldsForOuter' => [
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -8441,6 +8453,7 @@ return [
                 ],
                 'fieldsForOuter' => [
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -9048,6 +9061,7 @@ return [
                 ],
                 'fieldsForOuter' => [
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -9853,6 +9867,7 @@ return [
                 ],
                 'fieldsForOuter' => [
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -10279,6 +10294,7 @@ return [
                 ],
                 'fieldsForOuter' => [
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -10724,6 +10740,7 @@ return [
                 ],
                 'fieldsForOuter' => [
                 ],
+                'status' => 200,
             ]
         ]
     ],
@@ -11035,6 +11052,20 @@ return [
                 ],
                 'fieldsForOuter' => [
                 ],
+                'status' => 200,
+            ]
+        ]
+    ],
+
+    'case0' => [
+        'setting' => [
+            'description' => 'Несуществующая заявка',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case0.php',
+        'provider_data' => [
+            'responseBody' => [
+                'status' => 404,
+                'message' => 'Задача с указанным номером не существует!',
             ]
         ]
     ],
