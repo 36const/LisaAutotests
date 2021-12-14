@@ -37,7 +37,9 @@ return [
                 'team_direction' => 2,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 2,
@@ -71,7 +73,9 @@ return [
                 'team_direction' => 3,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 3,
@@ -106,6 +110,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
+                'child_count' => 0,
+                'photo_load_status' => 0,
                 'rz_category_id' => null,
                 'author_team' => 17,
                 'supervisor_team' => 16,
@@ -130,7 +136,7 @@ return [
                 'seller_id' => 83,
                 'recommendations' => null,
                 'reason' => null,
-                'parent_id' => null,
+                'parent_id' => 5,
                 'planned_start_date' => null,
                 'planned_finish_date' => null,
                 'actual_start_date' => '2020-01-01 00:00:03',
@@ -146,6 +152,8 @@ return [
                 'sv_report_periods' => '{"1": 1}',
                 'cross_check_status' => 1,
                 'cross_check_manager_id' => 12,
+                'child_count' => 0,
+                'photo_load_status' => 0,
                 'rz_category_id' => null,
                 'author_team' => 17,
                 'supervisor_team' => 15,
@@ -184,6 +192,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
+                'child_count' => 1,
+                'photo_load_status' => 0,
                 'rz_category_id' => null,
                 'author_team' => 17,
                 'supervisor_team' => 15,
@@ -222,6 +232,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
+                'child_count' => 0,
+                'photo_load_status' => 0,
                 'rz_category_id' => null,
                 'author_team' => 17,
                 'supervisor_team' => 16,
@@ -260,6 +272,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => '{"1": 1}',
+                'child_count' => 0,
+                'photo_load_status' => 0,
                 'rz_category_id' => null,
                 'author_team' => 17,
                 'supervisor_team' => 16,
@@ -298,6 +312,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 9,
@@ -332,6 +348,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 10,
@@ -366,6 +384,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 11,
@@ -400,6 +420,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 12,
@@ -420,7 +442,7 @@ return [
                 'seller_id' => 9423,
                 'recommendations' => null,
                 'reason' => 'Дубль задачи',
-                'parent_id' => null,
+                'parent_id' => 14,
                 'planned_start_date' => null,
                 'planned_finish_date' => date('Y-m-14 00:00:01'),
                 'actual_start_date' => null,
@@ -434,6 +456,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 0,
+                'photo_load_status' => 1,
             ],
             [
                 //"id" => 13,
@@ -454,7 +478,7 @@ return [
                 'seller_id' => 0,
                 'recommendations' => null,
                 'reason' => null,
-                'parent_id' => null,
+                'parent_id' => 14,
                 'planned_start_date' => null,
                 'planned_finish_date' => null,
                 'actual_start_date' => date('Y-m-01 00:00:01'),
@@ -468,6 +492,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 0,
+                'photo_load_status' => 1,
             ],
             [
                 //"id" => 14,
@@ -502,6 +528,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 2,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 15,
@@ -536,6 +564,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 16,
@@ -570,6 +600,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 17,
@@ -604,6 +636,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 18,
@@ -637,7 +671,9 @@ return [
                 'team_direction' => 5,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 19,
@@ -672,6 +708,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 0,
+                'photo_load_status' => 1,
             ],
             [
                 //"id" => 20,
@@ -692,7 +730,7 @@ return [
                 'seller_id' => 9423,
                 'recommendations' => null,
                 'reason' => null,
-                'parent_id' => null,
+                'parent_id' => 24,
                 'planned_start_date' => null,
                 'planned_finish_date' => null,
                 'actual_start_date' => '2020-08-20 14:48:21',
@@ -705,7 +743,9 @@ return [
                 'team_direction' => 6,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 21,
@@ -726,7 +766,7 @@ return [
                 'seller_id' => null,
                 'recommendations' => null,
                 'reason' => 'Ожидать',
-                'parent_id' => null,
+                'parent_id' => 24,
                 'planned_start_date' => null,
                 'planned_finish_date' => null,
                 'actual_start_date' => '2020-08-20 14:48:21',
@@ -740,6 +780,8 @@ return [
                 'report_period_id' => null,
                 'sync_source_id' => null,
                 'sv_report_periods' => null,
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 22,
@@ -760,7 +802,7 @@ return [
                 'seller_id' => 0,
                 'recommendations' => '',
                 'reason' => null,
-                'parent_id' => null,
+                'parent_id' => 24,
                 'planned_start_date' => null,
                 'planned_finish_date' => null,
                 'actual_start_date' => '2020-08-20 14:48:20',
@@ -773,7 +815,9 @@ return [
                 'team_direction' => 6,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 23,
@@ -807,7 +851,9 @@ return [
                 'team_direction' => 6,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'child_count' => 0,
+                'photo_load_status' => 0,
             ],
             [
                 //"id" => 24,
@@ -841,7 +887,9 @@ return [
                 'team_direction' => 6,
                 'report_period_id' => null,
                 'sync_source_id' => null,
-                'sv_report_periods' => '{"1": 1}'
+                'sv_report_periods' => '{"1": 1}',
+                'child_count' => 3,
+                'photo_load_status' => 1,
             ]
         ],
         'grid_settings' => [],

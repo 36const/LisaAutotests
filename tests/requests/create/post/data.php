@@ -1891,6 +1891,7 @@ return [
                             'rz_category_id' => 4652996,
                             'author_team' => 17,
                             'supervisor_team' => 14,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2475,6 +2476,7 @@ return [
                             'rz_category_id' => null,
                             'author_team' => 17,
                             'supervisor_team' => 7,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -2754,6 +2756,7 @@ return [
                             'rz_category_id' => null,
                             'author_team' => 17,
                             'supervisor_team' => 16,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3019,6 +3022,7 @@ return [
                             'rz_category_id' => null,
                             'author_team' => 17,
                             'supervisor_team' => 16,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3261,6 +3265,7 @@ return [
                             'rz_category_id' => null,
                             'author_team' => 17,
                             'supervisor_team' => 15,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3493,6 +3498,7 @@ return [
                             'rz_category_id' => null,
                             'author_team' => 17,
                             'supervisor_team' => 15,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -3725,6 +3731,7 @@ return [
                             'rz_category_id' => null,
                             'author_team' => 17,
                             'supervisor_team' => 15,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4220,6 +4227,7 @@ return [
                             'rz_category_id' => null,
                             'author_team' => 17,
                             'supervisor_team' => 16,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4461,6 +4469,7 @@ return [
                             'rz_category_id' => null,
                             'author_team' => 17,
                             'supervisor_team' => 16,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -4698,6 +4707,7 @@ return [
                             'rz_category_id' => null,
                             'author_team' => 17,
                             'supervisor_team' => 16,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
@@ -5152,6 +5162,7 @@ return [
                             'rz_category_id' => null,
                             'author_team' => 17,
                             'supervisor_team' => 15,
+                            'manager_team' => null,
                         ]
                     ],
                     'requests_fields' => [
