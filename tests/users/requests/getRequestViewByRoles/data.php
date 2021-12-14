@@ -1095,7 +1095,6 @@ return [
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
-                                'required' => true,
                             ],
                             3 => [
                                 'id' => 93,
@@ -3816,7 +3815,6 @@ return [
                                 'type' => 'integer',
                                 'status' => 1,
                                 'disabled' => true,
-                                'required' => true,
                             ],
                             72 => [
                                 'id' => 72,
