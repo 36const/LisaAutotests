@@ -8,8 +8,7 @@ return [
             'column' => 'author_id',
             'value' => 'Менеджер Продактович 1',
             'amount' => 4,
-            'symbol_1' => 'п',
-            'symbol_2' => 'р',
+            'symbols' => 'пр',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => []
@@ -22,8 +21,7 @@ return [
             'column' => 'supervisor_id',
             'value' => 'Супервайзер Категоркин 18',
             'amount' => 3,
-            'symbol_1' => '1',
-            'symbol_2' => '8',
+            'symbols' => '18',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => []
@@ -36,8 +34,7 @@ return [
             'column' => 'manager_id',
             'value' => 'Менеджер Контентович 1А',
             'amount' => 5,
-            'symbol_1' => '1',
-            'symbol_2' => 'А',
+            'symbols' => '1А',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => []
@@ -50,8 +47,7 @@ return [
             'column' => 'cross_check_manager_id',
             'value' => 'Менеджер Контентович 1Б',
             'amount' => 1,
-            'symbol_1' => '1',
-            'symbol_2' => 'Б',
+            'symbols' => '1Б',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => []
@@ -64,8 +60,7 @@ return [
             'column' => 'category_id',
             'value' => 'Видео к товару',
             'amount' => 4,
-            'symbol_1' => 'в',
-            'symbol_2' => 'и',
+            'symbols' => 'ви',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => []
@@ -78,8 +73,7 @@ return [
             'column' => 'rz_category_id',
             'value' => 'Архивные короба и боксы (2666302)',
             'amount' => 1,
-            'symbol_1' => 'а',
-            'symbol_2' => 'р',
+            'symbols' => 'ар',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => []
@@ -92,8 +86,7 @@ return [
             'column' => 'seller_id',
             'value' => 'Маркетплейс (общий)',
             'amount' => 7,
-            'symbol_1' => 'м',
-            'symbol_2' => 'а',
+            'symbols' => 'ма',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => []

@@ -92,7 +92,6 @@ class TableColumnsSettingsCest
         $I->click(RequestTable::CHECKBOX_NEW_TAB);
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
         $I->amOnPage('/lisa/#/request/list/all');
-        $I->wait(1);
         $I->click(RequestTable::transferButton('Настройки таблицы'));
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS, 5);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 9);
@@ -101,9 +100,8 @@ class TableColumnsSettingsCest
         $I->click(RequestTable::CHECKBOX_NEW_WINDOW);
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
         $I->amOnPage('/lisa/#/request/list/all');
-        $I->wait(1);
         $I->click(RequestTable::transferButton('Настройки таблицы'));
-        $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
+        $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS, 5);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 10);
 
         //вернуть первые 3 видимые колонки в скрытые
@@ -122,7 +120,6 @@ class TableColumnsSettingsCest
 
         //перезагрузить страницу
         $I->amOnPage('/lisa/#/request/list/all');
-        $I->wait(1);
         $I->waitForElement(RequestCreate::CREATE_BUTTON);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 13);
 

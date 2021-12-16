@@ -132,9 +132,6 @@ class AcceptanceTester extends GeneralTester
     {
         $I = $this;
 
-        if ($setting['case'] == '1_')
-            $I->amOnPage('/');
-
         $I->amOnPage('/lisa/#/request/list/all');
 
         //открыть список значений в фильтре колонки
