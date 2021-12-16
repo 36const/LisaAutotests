@@ -6,6 +6,8 @@ use Codeception\Example;
 use Codeception\Lib\Actor\Shared\Retry;
 use Facebook\WebDriver\WebDriverKeys;
 use lisa\Page\Requests\RequestTable;
+use yii\helpers\Json;
+use yii\httpclient\Client;
 
 /**
  * Inherited Methods
@@ -50,6 +52,7 @@ class AcceptanceTester extends GeneralTester
 
         if ($I->loadSessionSnapshot('login')) {
             $I->pressKey('//body', WebDriverKeys::PAGE_UP);
+            $I->scrollTo('//body', null, -200);
             return;
         }
         
@@ -62,6 +65,16 @@ class AcceptanceTester extends GeneralTester
         $I->wait(1);
 
         $I->saveSessionSnapshot('login');
+    }
+    
+    public static function manifest(): string
+    {
+        $request = new Client();
+        $response = $request->createRequest()
+            ->setUrl(getenv('LISA_API_URL') . 'manifest/view?static=1')
+            ->send();
+
+        return Json::encode($response->data);
     }
 
     public function clickAndWait(string $xpath, float $waitTime = 0.5)
