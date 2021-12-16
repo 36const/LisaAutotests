@@ -1259,6 +1259,35 @@ return [
             ],
         ],
         'request_errors' => [],
-        'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
+        'report_periods' => [
+            [
+                //'id' => 1,
+                'begin' => '2021-01-01 00:00:00',
+                'end' => '2021-10-31 00:00:00',
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => null,
+            ],
+            [
+                //'id' => 2,
+                'begin' => '2021-11-01 00:00:00',
+                'end' => '2021-11-30 00:00:00',
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => null,
+            ],
+            [
+                //'id' => 3,
+                'begin' => '2021-12-01 00:00:00',
+                'end' => '2021-12-14 00:00:00',
+                'created_at' => '2021-02-01 00:00:00',
+                'updated_at' => '2021-07-01 17:01:01',
+            ],
+            [
+                //'id' => 4,
+                'begin' => '2021-12-15 00:00:00',
+                'end' => '2021-12-31 00:00:00',
+                'created_at' => '2021-03-01 00:00:00',
+                'updated_at' => '2021-09-01 19:01:01',
+            ],
+        ],
     ],
 ];

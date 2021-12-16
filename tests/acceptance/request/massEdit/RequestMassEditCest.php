@@ -65,13 +65,10 @@ class RequestMassEditCest
         $I->click(RequestView::listFieldInResultPopUp('Укр. поля'));
         $I->click(RequestView::valueFromListFieldInResultPopUp(6, 'Да'));
         $I->click(RequestView::listFieldInResultPopUp('Отчетный период КМ'));
-        $I->click(RequestView::valueFromListFieldInResultPopUp(7,
-            date('Y-m-01') . ' - ' . date('Y-m-d')));
+        $I->click(RequestView::valueFromListFieldInResultPopUp(7, '2021-12-01 - 2021-12-14'));
         $I->click(RequestView::listFieldInResultPopUp('Отчетный период СВ'));
-        $I->click(RequestView::valueFromListFieldInResultPopUp(8,
-            date('Y-m-01', strtotime('-1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month'))));
-        $I->click(RequestView::valueFromListFieldInResultPopUp(8,
-            date('Y-m-01') . ' - ' . date('Y-m-d')));
+        $I->click(RequestView::valueFromListFieldInResultPopUp(8, '2021-11-01 - 2021-11-30'));
+        $I->click(RequestView::valueFromListFieldInResultPopUp(8, '2021-12-01 - 2021-12-14'));
 
         //очистить несколько полей модалки
         $I->click(RequestView::listFieldInResultPopUp('Уровень сложности задачи') . '//button');
