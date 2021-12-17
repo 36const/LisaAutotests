@@ -2,6 +2,8 @@
 
 namespace lisa\Page\Requests;
 
+use lisa\Page\Other\SearchField;
+
 class RequestTable
 {
     public const HIDDEN_TABLE_SUMMARY = '//span[@class="counter-wrapper"][text()="......"]';
@@ -45,13 +47,7 @@ class RequestTable
     }
 
 
-    //****** Колонки с готовым списком значений ******//
-
-    /**Поле поиска в заголовке колонки с готовым списком вариантов*/
-    public static function columnSearchField(string $fieldName): string
-    {
-        return "//td[@column='$fieldName']//input";
-    }
+    //****** Поля с готовым списком значений ******//
 
     /**Значение в выпадающем списке с множественным выбором*/
     public static function columnValueFromList(string $optionTitle): string
@@ -65,6 +61,12 @@ class RequestTable
         return "//div[@role='listbox']/div[@role='option'][contains(text(),'$optionTitle')]";
     }
 
+    /**Поле поиска в заголовке колонки с готовым списком вариантов*/
+    public static function columnSearchField(string $fieldName): string
+    {
+        return "//td[@column='$fieldName']//input";
+    }
+
     /**Выбранное значение в заголовке колонки*/
     public static function selectedValueFromList(string $fieldName, string $optionTitle): string
     {
@@ -74,28 +76,19 @@ class RequestTable
     /**Кнопка удаления одного значения из фильтра в заголовке колонки*/
     public static function searchValueRemove(string $fieldName, string $value): string
     {
-        return RequestTable::columnSearchField($fieldName) . "//preceding-sibling::span/span[text()='$value']/button";
+        return self::columnSearchField($fieldName) . "//preceding-sibling::span/span[text()='$value']/button";
     }
 
     /**Кнопка сброса фильтра в заголовке колонки*/
     public static function searchClearButton(string $fieldName): string
     {
-        return RequestTable::columnSearchField($fieldName) . "//preceding-sibling::div[@class='v-input__append-inner']//button";
-    }
-
-
-    //****** Колонки с поиском значений, без готового списка ******//
-
-    /**Значение в выпадающем списке значений в заголовке колонки*/
-    public static function columnValueFromSearch(string $optionTitle): string
-    {
-        return "//div[@role='listbox']//div[@role='option']/div[@class='v-list-item__content']/div[@class='v-list-item__title'][contains(text(),'$optionTitle')]";
+        return self::columnSearchField($fieldName) . "//preceding-sibling::div[@class='v-input__append-inner']//button";
     }
 
     /**Поле поиска в заголовке колонки без готового списка вариантов после выбора результата*/
     public static function selectedValueFromSearch(string $fieldName, string $result): string
     {
-        return RequestTable::columnSearchField($fieldName) . "/preceding-sibling::span/span[text()='$result']";
+        return self::columnSearchField($fieldName) . "/preceding-sibling::span/span[text()='$result']";
     }
 
 

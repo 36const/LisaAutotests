@@ -5,6 +5,7 @@ namespace lisa;
 use Codeception\Example;
 use Codeception\Lib\Actor\Shared\Retry;
 use Facebook\WebDriver\WebDriverKeys;
+use lisa\Page\Other\SearchField;
 use lisa\Page\Requests\RequestTable;
 use yii\helpers\Json;
 use yii\httpclient\Client;
@@ -52,7 +53,7 @@ class AcceptanceTester extends GeneralTester
 
         if ($I->loadSessionSnapshot('login')) {
             $I->pressKey('//body', WebDriverKeys::PAGE_UP);
-            $I->scrollTo('//body', null, -200);
+            $I->scrollTo('//section[@class="content"]', null, -300);
             return;
         }
         
@@ -180,13 +181,13 @@ class AcceptanceTester extends GeneralTester
 
         //открыть результаты поля поиска и ввести текст
         $I->retryClick(RequestTable::columnSearchField($setting['column']));
-        $I->pressKey(RequestTable::columnSearchField($setting['column']), $setting['symbol_1'], $setting['symbol_2']);
+        $I->pressKey(RequestTable::columnSearchField($setting['column']), $setting['symbols']);
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1, 2);
 
         //кликнуть на один из результатов и проверить применение в таблице
         in_array($setting['column'], ['category_id', 'rz_category_id', 'seller_id'])
-            ? $I->retryClick(RequestTable::columnValueFromSearch(substr($setting['value'], 4)))
-            : $I->retryClick(RequestTable::columnValueFromSearch(explode(' ', trim($setting['value']))[0]));
+            ? $I->retryClick(SearchField::searchResult(substr($setting['value'], 4)))
+            : $I->retryClick(SearchField::searchResult(explode(' ', trim($setting['value']))[0]));
 
         $I->canSeeElement(RequestTable::selectedValueFromSearch($setting['column'], $setting['value']));
         $I->canSeeElement(RequestTable::tableSummary($setting['amount']));

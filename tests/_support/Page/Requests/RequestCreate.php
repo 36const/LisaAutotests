@@ -26,11 +26,6 @@ class RequestCreate
     public const CREATE_MODAL_BUTTON = "//div[@class='v-card v-sheet theme--light']//button/span[text()='Создать']";
     public const REQUESTS_LIST = "//div[@class='lisa-request-grid']//tbody//tr[2]";
 
-    public static function typeSelect($typeName): string
-    {
-        return "//div[@role='listbox']//div[@class='v-list-item__title'][text()='$typeName']";
-    }
-
     public static function checkboxesDirection(string $directionId): string
     {
         return "//div[@role='radiogroup']//label[text()='$directionId']/../div";

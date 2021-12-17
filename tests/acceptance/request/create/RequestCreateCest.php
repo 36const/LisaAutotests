@@ -42,7 +42,7 @@ class RequestCreateCest
         //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 1);
 
         $I->retryClick(RequestCreate::TYPES_LIST);
-        $I->retryClick(RequestCreate::typeSelect(Constants::TYPES[$setting['type']]));
+        $I->retryClick(SearchField::searchResult(Constants::TYPES[$setting['type']]));
         $I->click(RequestCreate::checkboxesDirection($setting['direction']));
         //$I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 2);
 
