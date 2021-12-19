@@ -1,25 +1,27 @@
 <?php
 
+$excludedRedisKeys = [
+    'all_reasons2fb6cc3f5862c154757f7dbd5ca312e9',
+    'reasons_by_status_11fc68253b26fc3d2e010e94675d7cf8b',
+    'reasons_by_status_2848ec487e1a0be4abfe5d5722dade4dc',
+    'reasons_by_status_3cb7d746c6663211ac9840871e16bca0c',
+    'reasons_by_status_495b720c6262f0fd97d0ec7e7172a3364',
+    'reasons_by_status_5ab2862e1fe728ffc6ed525d02b1a08b3',
+    'reasons_by_status_64fb7db11b2f190142add5b06cba278b1',
+    'reasons_by_status_7c4921af50cf971f4cf6accb6823428ff',
+    'reasons_by_status_89eda2a8ada4c29bd2618a2a896f67473',
+    'reasons_by_status_9776834c96ed03ea5d6e18bf2f389288f',
+    'reasons_by_status_113d18f99638fba7ed367540edf621056d',
+];
+
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Создание причины для перевода в статус 3, Активная',
+            'description' => 'Создание причины для перевода в статус 3, Активная, все типы, с комментарием',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'excludedRedisKeys' => [
-                'all_reasons2fb6cc3f5862c154757f7dbd5ca312e9',
-                'reasons_by_status_11fc68253b26fc3d2e010e94675d7cf8b',
-                'reasons_by_status_2848ec487e1a0be4abfe5d5722dade4dc',
-                'reasons_by_status_3cb7d746c6663211ac9840871e16bca0c',
-                'reasons_by_status_495b720c6262f0fd97d0ec7e7172a3364',
-                'reasons_by_status_5ab2862e1fe728ffc6ed525d02b1a08b3',
-                'reasons_by_status_64fb7db11b2f190142add5b06cba278b1',
-                'reasons_by_status_7c4921af50cf971f4cf6accb6823428ff',
-                'reasons_by_status_89eda2a8ada4c29bd2618a2a896f67473',
-                'reasons_by_status_9776834c96ed03ea5d6e18bf2f389288f',
-                'reasons_by_status_113d18f99638fba7ed367540edf621056d',
-            ],
+            'excludedRedisKeys' => $excludedRedisKeys,
             'requestBody' => [
                 'id' => NULL,
                 'child_status' => 3,
@@ -29,9 +31,13 @@ return [
                 'reason_for_personal_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
                 'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
                 'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
+                'type_directions' => ["[1,1]", "[1,2]", "[2,1]", "[2,2]", "[3,1]", "[3,2]", "[4,0]", "[5,1]", "[6,2]", "[7,0]", "[8,0]", "[9,0]", "[10,0]", "[11,0]", "[12,1]", "[13,0]", "[14,0]", "[15,0]"],
+                'comment_is_required' => 1,
             ],
             'responseBody' => [
                 'model' => [
+                    'type_directions' => 'Добавление новых товаров (Работа с товарами Розетки), Добавление новых товаров (Работа с товарами Маркетплейса), Добавление/изменение информации в существующих товарах (Работа с товарами Розетки), Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса), Перенос товаров (Работа с товарами Розетки), Перенос товаров (Работа с товарами Маркетплейса), Группировка товаров (Определяется типом задачи), Заливка фото с фотостудии (Работа с товарами Розетки), Проверка скрытых товаров (Работа с товарами Маркетплейса), Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи), Добавление/изменение информации в существующих порталах/фат-меню/категориях товаров (Определяется типом задачи), Добавление параметров/значений (Определяется типом задачи), Изменение существующих параметров/значений (Определяется типом задачи), Проектирование структуры (Определяется типом задачи), Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки), Добавление/изменение видео (Определяется типом задачи), Добавление/изменение размерной сетки (Определяется типом задачи), Добавление/изменение тегов (Определяется типом задачи)',
+                    'comment_is_required' => 'Обязательный',
                     'child_status' => 'На доработке',
                     'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
                     'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
@@ -56,6 +62,8 @@ return [
                                 'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
                                 'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
                                 'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
+                                'type_directions' => '["[1,1]", "[1,2]", "[2,1]", "[2,2]", "[3,1]", "[3,2]", "[4,0]", "[5,1]", "[6,2]", "[7,0]", "[8,0]", "[9,0]", "[10,0]", "[11,0]", "[12,1]", "[13,0]", "[14,0]", "[15,0]"]',
+                                'comment_is_required' => 1,
                             ],
                         ],
                     )
@@ -66,23 +74,11 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Создание причины для перевода в статус 4, Заблокированная',
+            'description' => 'Создание причины для перевода в статус 4, Заблокированная, с несколькими типами, без комментария',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'excludedRedisKeys' => [
-                'all_reasons2fb6cc3f5862c154757f7dbd5ca312e9',
-                'reasons_by_status_11fc68253b26fc3d2e010e94675d7cf8b',
-                'reasons_by_status_2848ec487e1a0be4abfe5d5722dade4dc',
-                'reasons_by_status_3cb7d746c6663211ac9840871e16bca0c',
-                'reasons_by_status_495b720c6262f0fd97d0ec7e7172a3364',
-                'reasons_by_status_5ab2862e1fe728ffc6ed525d02b1a08b3',
-                'reasons_by_status_64fb7db11b2f190142add5b06cba278b1',
-                'reasons_by_status_7c4921af50cf971f4cf6accb6823428ff',
-                'reasons_by_status_89eda2a8ada4c29bd2618a2a896f67473',
-                'reasons_by_status_9776834c96ed03ea5d6e18bf2f389288f',
-                'reasons_by_status_113d18f99638fba7ed367540edf621056d',
-            ],
+            'excludedRedisKeys' => $excludedRedisKeys,
             'requestBody' => [
                 'id' => NULL,
                 'child_status' => 4,
@@ -92,9 +88,13 @@ return [
                 'reason_for_personal_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
                 'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
                 'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
+                'type_directions' => ['[3,1]', '[3,2]', '[4,0]', '[5,1]', '[6,2]', '[7,0]'],
+                'comment_is_required' => 0,
             ],
             'responseBody' => [
                 'model' => [
+                    'type_directions' => 'Перенос товаров (Работа с товарами Розетки), Перенос товаров (Работа с товарами Маркетплейса), Группировка товаров (Определяется типом задачи), Заливка фото с фотостудии (Работа с товарами Розетки), Проверка скрытых товаров (Работа с товарами Маркетплейса), Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
+                    'comment_is_required' => 'Необязательный',
                     'child_status' => 'Отменена',
                     'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
                     'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
@@ -119,6 +119,8 @@ return [
                                 'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
                                 'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
                                 'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
+                                'type_directions' => '["[3,1]", "[3,2]", "[4,0]", "[5,1]", "[6,2]", "[7,0]"]',
+                                'comment_is_required' => 0,
                             ],
                         ],
                     )
@@ -129,23 +131,11 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Создание причины для перевода в статус 7, Активная',
+            'description' => 'Создание причины для перевода в статус 7, Активная, без типов, с комментарием',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'excludedRedisKeys' => [
-                'all_reasons2fb6cc3f5862c154757f7dbd5ca312e9',
-                'reasons_by_status_11fc68253b26fc3d2e010e94675d7cf8b',
-                'reasons_by_status_2848ec487e1a0be4abfe5d5722dade4dc',
-                'reasons_by_status_3cb7d746c6663211ac9840871e16bca0c',
-                'reasons_by_status_495b720c6262f0fd97d0ec7e7172a3364',
-                'reasons_by_status_5ab2862e1fe728ffc6ed525d02b1a08b3',
-                'reasons_by_status_64fb7db11b2f190142add5b06cba278b1',
-                'reasons_by_status_7c4921af50cf971f4cf6accb6823428ff',
-                'reasons_by_status_89eda2a8ada4c29bd2618a2a896f67473',
-                'reasons_by_status_9776834c96ed03ea5d6e18bf2f389288f',
-                'reasons_by_status_113d18f99638fba7ed367540edf621056d',
-            ],
+            'excludedRedisKeys' => $excludedRedisKeys,
             'requestBody' => [
                 'id' => NULL,
                 'child_status' => 7,
@@ -155,9 +145,13 @@ return [
                 'reason_for_personal_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
                 'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
                 'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
+                'type_directions' => [],
+                'comment_is_required' => 1,
             ],
             'responseBody' => [
                 'model' => [
+                    'type_directions' => '',
+                    'comment_is_required' => 'Обязательный',
                     'child_status' => 'Ожидает',
                     'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
                     'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
@@ -182,6 +176,8 @@ return [
                                 'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
                                 'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
                                 'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
+                                'type_directions' => '[]',
+                                'comment_is_required' => 1,
                             ],
                         ],
                     )
@@ -192,23 +188,11 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Создание причины для перевода в статус 8, Заблокированная',
+            'description' => 'Создание причины для перевода в статус 8, Заблокированная, с одним типом, с комментарием',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'excludedRedisKeys' => [
-                'all_reasons2fb6cc3f5862c154757f7dbd5ca312e9',
-                'reasons_by_status_11fc68253b26fc3d2e010e94675d7cf8b',
-                'reasons_by_status_2848ec487e1a0be4abfe5d5722dade4dc',
-                'reasons_by_status_3cb7d746c6663211ac9840871e16bca0c',
-                'reasons_by_status_495b720c6262f0fd97d0ec7e7172a3364',
-                'reasons_by_status_5ab2862e1fe728ffc6ed525d02b1a08b3',
-                'reasons_by_status_64fb7db11b2f190142add5b06cba278b1',
-                'reasons_by_status_7c4921af50cf971f4cf6accb6823428ff',
-                'reasons_by_status_89eda2a8ada4c29bd2618a2a896f67473',
-                'reasons_by_status_9776834c96ed03ea5d6e18bf2f389288f',
-                'reasons_by_status_113d18f99638fba7ed367540edf621056d',
-            ],
+            'excludedRedisKeys' => $excludedRedisKeys,
             'requestBody' => [
                 'id' => NULL,
                 'child_status' => 8,
@@ -218,9 +202,13 @@ return [
                 'reason_for_personal_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
                 'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
                 'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
+                'type_directions' => ['[15,0]'],
+                'comment_is_required' => 1,
             ],
             'responseBody' => [
                 'model' => [
+                    'type_directions' => 'Добавление/изменение тегов (Определяется типом задачи)',
+                    'comment_is_required' => 'Обязательный',
                     'child_status' => 'Частично выполнена',
                     'reason' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ',
                     'reason_for_personal_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab',
@@ -245,6 +233,8 @@ return [
                                 'reason_for_personal_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_personal_cab_ua',
                                 'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
                                 'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
+                                'type_directions' => '["[15,0]"]',
+                                'comment_is_required' => 1,
                             ],
                         ],
                     )
@@ -268,6 +258,8 @@ return [
                 'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
                 'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                 'status' => 1,
+                'type_directions' => ['[1,1]', '[1,2]', '[2,1]', '[2,2]', '[3,1]', '[3,2]', '[4,0]', '[5,1]', '[6,2]', '[7,0]', '[8,0]', '[9,0]', '[10,0]', '[11,0]', '[12,1]', '[13,0]', '[14,0]', '[15,0]'],
+                'comment_is_required' => 1,
             ],
             'responseBody' => [
                 'errors' => [
@@ -299,6 +291,8 @@ return [
                 'reason_for_supplier_cab' => NULL,
                 'reason_for_supplier_cab_ua' => NULL,
                 'status' => 0,
+                'type_directions' => ['[3,1]', '[3,2]', '[4,0]', '[5,1]', '[6,2]', '[7,0]'],
+                'comment_is_required' => 0,
             ],
             'responseBody' => [
                 'errors' => [
@@ -339,6 +333,8 @@ return [
                 'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
                 'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                 'status' => 0,
+                'type_directions' => '',
+                'comment_is_required' => 1,
             ],
             'responseBody' => [
                 'errors' => [
@@ -370,6 +366,8 @@ return [
                 'reason_for_supplier_cab' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab',
                 'reason_for_supplier_cab_ua' => '=}~!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|reason_for_supplier_cab_ua',
                 'status' => 0,
+                'type_directions' => ["[15,0]"],
+                'comment_is_required' => 1,
             ],
             'responseBody' => [
                 'errors' => [
