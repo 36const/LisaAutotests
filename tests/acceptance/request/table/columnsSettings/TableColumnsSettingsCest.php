@@ -38,7 +38,7 @@ class TableColumnsSettingsCest
         $I->waitForElementVisible(RequestTable::HIDDEN_COLUMNS);
         $I->canSeeNumberOfElements(RequestTable::VISIBLE_COLUMNS, 0);
         $I->canSeeNumberOfElements(RequestTable::HIDDEN_COLUMNS, 83);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1, 1, 0.01, ['div.lisa-request-view > div > button']);
 
         //перевести 18 колонок в видимые
         $quantity = 18;
@@ -48,11 +48,11 @@ class TableColumnsSettingsCest
         }
         $I->canSeeNumberOfElements(RequestTable::VISIBLE_COLUMNS, 18);
         $I->canSeeNumberOfElements(RequestTable::HIDDEN_COLUMNS, 65);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 2);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 2, 1, 0.01, ['div.lisa-request-view > div > button']);
 
         //отфильтровать скрытые колонки с "дата" в названии
         $I->pressKey(RequestTable::SEARCH_COLUMNS, 'дата');
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3, 1, 0.01, ['div.lisa-request-view > div > button']);
 
         //попытаться перевести ещё 4 колонки в видимые, переведутся только 2
         $quantity = 4;
@@ -62,18 +62,18 @@ class TableColumnsSettingsCest
         }
         $I->canSeeNumberOfElements(RequestTable::VISIBLE_COLUMNS, 20);
         $I->canSeeNumberOfElements(RequestTable::HIDDEN_COLUMNS, 5);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4, 1, 0.01, ['div.lisa-request-view > div > button']);
 
         //очистить поле фильтра
         $I->pressKey(
             RequestTable::SEARCH_COLUMNS, 
             WebDriverKeys::BACKSPACE, WebDriverKeys::BACKSPACE, WebDriverKeys::BACKSPACE, WebDriverKeys::BACKSPACE
         );
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 5);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 5, 1, 0.01, ['div.lisa-request-view > div > button']);
 
         //сохранить настройки
         $I->click(RequestTable::SAVE_SETTINGS_BUTTON);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 6);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 6, 1, 0.01, ['div.lisa-request-view > div > button']);
         $I->checkTablesInDB($provider_data['db_1']);
 
         //перезагрузить страницу
