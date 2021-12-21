@@ -3,12 +3,25 @@
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Получить список пользователей',
+            'description' => 'Получить список пользователей без системных',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'requestParameters' => [],
             'responseBody' => include __DIR__ . '/response/case1.php',
+        ]
+    ],
+
+    'case6' => [
+        'setting' => [
+            'description' => 'Получить список пользователей с системными',
+            'parent' => true
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestParameters' => [
+            ],
+            'responseBody' => include __DIR__ . '/response/case6.php',
         ]
     ],
 

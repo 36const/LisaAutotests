@@ -29,7 +29,9 @@ class GETUserListCest
         $I->loadDataForTest($data, 'allUsersWithoutSettings');
         $providerData = $data['provider_data'];
 
-        $I->sendGET('/user/list', $providerData['requestParameters']);
+        isset($data['setting']['parent'])
+            ? $I->sendGET('/user/list?fields=id,name,login&parent')
+            : $I->sendGET('/user/list', $providerData['requestParameters']);
 
         $I->seeResponseCodeIs(200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
