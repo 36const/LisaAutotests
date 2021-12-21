@@ -99,7 +99,6 @@ return [
                         6 => 'Проблемный',
                         7 => 'Требует Верификации',
                     ],
-                    'userNames' => Constants::USER_NAMES
                 ]
             ]
         ]
@@ -163,7 +162,6 @@ return [
                         6 => 'Проблемный',
                         7 => 'Требует Верификации',
                     ],
-                    'userNames' => Constants::USER_NAMES
                 ]
             ],
         ]
@@ -247,7 +245,6 @@ return [
                         6 => 'Проблемный',
                         7 => 'Требует Верификации',
                     ],
-                    'userNames' => Constants::USER_NAMES
                 ]
             ],
         ]
@@ -311,7 +308,6 @@ return [
                         6 => 'Проблемный',
                         7 => 'Требует Верификации',
                     ],
-                    'userNames' => Constants::USER_NAMES
                 ]
             ],
         ]

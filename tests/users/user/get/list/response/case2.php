@@ -373,6 +373,5 @@ return [
         'activeTeams' => Constants::ACTIVE_TEAMS,
         'positions' => Constants::POSITIONS,
         'teams' => Constants::ALL_TEAMS,
-        'userNames' => Constants::USER_NAMES,
     ]
 ];

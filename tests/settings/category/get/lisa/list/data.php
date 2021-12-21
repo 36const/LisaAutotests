@@ -67,7 +67,6 @@ return [
                 'filters' => [
                 ],
                 'initialValues' => [
-                    'userNames' => Constants::USER_NAMES,
                     'exportUrl' => 'http://lisa-api.docker/files/выгрузка_связанных_категорий_LISA.xlsx',
                 ]
             ]
@@ -126,7 +125,6 @@ return [
                     'title' => 'ви',
                 ],
                 'initialValues' => [
-                    'userNames' => Constants::USER_NAMES,
                     'exportUrl' => 'http://lisa-api.docker/files/выгрузка_связанных_категорий_LISA.xlsx',
                 ]
             ],
@@ -195,7 +193,6 @@ return [
                     'supervisor_id' => '6',
                 ],
                 'initialValues' => [
-                    'userNames' => Constants::USER_NAMES,
                     'exportUrl' => 'http://lisa-api.docker/files/выгрузка_связанных_категорий_LISA.xlsx',
                 ]
             ],
