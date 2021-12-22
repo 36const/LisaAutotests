@@ -393,7 +393,33 @@ return [
             'description' => 'Перевод из "Выполнена" в "Закрыта" тип 1 направление 2 + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case9_6_1_2.php',
-        'mock_data' => $mockDataStatusesSingle,
+        'mock_data' => [
+            $mockDataStatusesSingle,
+            'vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Закрыта',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case400.json')),
+                    'statusCode' => 400
+                ],
+            ]
+        ],
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -450,7 +476,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 9,
-                            'supplier_cabinet_id' => null,
+                            'supplier_cabinet_id' => 111,
                             'payload' => '[]',
                             'rz_category_id' => null,
                             'author_team' => 17,
@@ -524,6 +550,16 @@ return [
                         ]
                     ],
                     'requests_reasons' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\Exception',
+                            'message' => "{\n    \"status\": 400,\n    \"errors\": {\n        \"status\": [\n            \"Значение «Статус заявки» должно быть числом.\"\n        ]\n    }\n}",
+                            'file LIKE' => '%/api/infra/api/VATApiClient.php',
+                            'code' => 400
+                        ],
+                    ]
                 ]
             ],
             'RabbitMQ' => [
@@ -538,7 +574,7 @@ return [
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":"11","direction":2,"priority":null,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Маркета)","description":"description","category_id":null,"seller_id":83,"recommendations":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"2020-01-01 00:00:04","supervisor_process_date":"2020-01-01 00:00:02","supervisor_check_date":"' . date('Y-m-d'),
                         '","result_comment":"Комментарий к результату задачи","supervisor_comment":"Комментарий супервайзера","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":"1","sync_source_id":null,"sv_report_periods":"{\"3\": 3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":9,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":1},"changed_fields_names":["status","priority","recommendations","supervisor_check_date","supervisor_comment","last_change_status_date","report_period_id","previous_status"]}',
+                        '","team_direction":2,"report_period_id":"1","sync_source_id":null,"sv_report_periods":"{\"3\": 3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":9,"supplier_cabinet_id":111,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":1},"changed_fields_names":["status","priority","recommendations","supervisor_check_date","supervisor_comment","last_change_status_date","report_period_id","previous_status"]}',
                     ]
                 ],
             ]
@@ -976,7 +1012,33 @@ return [
             'description' => 'Перевод из "Выполнена" во "В работе (на исправление)" тип 1 направление 2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case9_6_1_2.php',
-        'mock_data' => $mockDataStatusesSingle,
+        'mock_data' => [
+            $mockDataStatusesSingle,
+            'vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'В работе',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case404.json')),
+                    'statusCode' => 404
+                ],
+            ]
+        ],
         'provider_data' => [
             'requestParameter' => 'to-correction',
             'requestBody' => [
@@ -1051,7 +1113,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 9,
-                            'supplier_cabinet_id' => null,
+                            'supplier_cabinet_id' => 111,
                             'payload' => '[]',
                             'rz_category_id' => null,
                             'author_team' => 17,
@@ -1272,6 +1334,16 @@ return [
                         ]
                     ],
                     'requests_reasons' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\Exception',
+                            'message' => "{\n    \"id\": 1,\n    \"status\": 404,\n    \"errors\": {\n        \"id\": \"Заявка не найдена\"\n    }\n}",
+                            'file LIKE' => '%/api/infra/api/VATApiClient.php',
+                            'code' => 404,
+                        ],
+                    ]
                 ]
             ],
             'RabbitMQ' => [
@@ -1290,7 +1362,7 @@ return [
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":6,"direction":2,"priority":2,"awaiting_correction":1,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Маркета)","description":"description","category_id":null,"seller_id":83,"recommendations":"","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"2020-01-01 00:00:04","supervisor_process_date":"2020-01-01 00:00:02","supervisor_check_date":"' . date('Y-m-d'),
                         '","result_comment":"Комментарий к результату задачи","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"3\": 3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":9,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":1},"changed_fields_names":["status","awaiting_correction","supervisor_check_date","last_change_status_date","previous_status"]}',
+                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"3\": 3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":9,"supplier_cabinet_id":111,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":1},"changed_fields_names":["status","awaiting_correction","supervisor_check_date","last_change_status_date","previous_status"]}',
                     ]
                 ],
             ]

@@ -264,10 +264,36 @@ return [
 
     'case1_3' => [
         'setting' => [
-            'description' => 'Перевод из "Новая" в "На доработке" + нотификации + добавление вложений',
+            'description' => 'Перевод из "Новая" в "На доработке" + нотификации + добавление вложений + отправка запроса в VAT',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case.php',
-        'mock_data' => $mockDataStatusesSingle,
+        'fixture_data' => include __DIR__ . '/fixture/case1_3_supplier.php',
+        'mock_data' => [
+            $mockDataStatusesSingle,
+            'vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'На доработке',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|Другое ЛК | !@#$%^&*()_+`=-]\'/[;.,}"?{:><\|YES ЛК',
+                        'reasons_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\|Другое_ua ЛК | !@#$%^&*()_+`=-]\'/[;.,}"?{:><\|YES_ua ЛК',
+                        'reason_comment' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                        'type' => 'content'
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case200.json')),
+                    'statusCode' => 200
+                ],
+            ]
+        ],
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -362,7 +388,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 1,
-                            'supplier_cabinet_id' => null,
+                            'supplier_cabinet_id' => 111,
                             'payload' => '[]',
                             'rz_category_id' => null,
                             'author_team' => 17,
@@ -537,7 +563,7 @@ return [
                 'lisa_common' => [
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":null,"status":3,"direction":1,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":null,"amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":1,"seller_id":83,"recommendations":null,"reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":1,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":null},"changed_fields_names":["status","reason","last_change_status_date","previous_status"]}'
+                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":1,"supplier_cabinet_id":111,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":null},"changed_fields_names":["status","reason","last_change_status_date","previous_status"]}'
                     ],
                 ],
             ],

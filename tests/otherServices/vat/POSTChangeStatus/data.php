@@ -289,10 +289,19 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case26.php',
         'mock_data' => [
-            'Vat' => [
+            'vat' => [
                 'httpRequest' => [
                     'method' => 'POST',
                     'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Новая',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
                 ],
                 'httpResponse' => [
                     'headers' => [
@@ -300,7 +309,7 @@ return [
                             'application/json;charset=UTF-8'
                         ]
                     ],
-                    'body' => file_get_contents(__DIR__ . '/mock/Vat/case26.json'),
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case200.json')),
                     'statusCode' => 200
                 ],
             ],
@@ -506,10 +515,19 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case27.php',
         'mock_data' => [
-            'Vat' => [
+            'vat' => [
                 'httpRequest' => [
                     'method' => 'POST',
                     'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Новая',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
                 ],
                 'httpResponse' => [
                     'headers' => [
@@ -517,7 +535,7 @@ return [
                             'application/json;charset=UTF-8'
                         ]
                     ],
-                    'body' => file_get_contents(__DIR__ . '/mock/Vat/case27.json'),
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case400.json')),
                     'statusCode' => 400
                 ],
             ],
@@ -747,7 +765,6 @@ return [
                             'class' => 'yii\base\Exception',
                             'message' => "{\n    \"status\": 400,\n    \"errors\": {\n        \"status\": [\n            \"Значение «Статус заявки» должно быть числом.\"\n        ]\n    }\n}",
                             'file LIKE' => '%/api/infra/api/VATApiClient.php',
-                            'line' => 76,
                             'code' => 400
                         ],
                     ]
@@ -765,10 +782,19 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case26.php',
         'mock_data' => [
-            'Vat' => [
+            'vat' => [
                 'httpRequest' => [
                     'method' => 'POST',
                     'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Новая',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
                 ],
                 'httpResponse' => [
                     'headers' => [
@@ -776,7 +802,7 @@ return [
                             'application/json;charset=UTF-8'
                         ]
                     ],
-                    'body' => file_get_contents(__DIR__ . '/mock/Vat/case28.json'),
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case404.json')),
                     'statusCode' => 404
                 ],
             ],
@@ -1007,7 +1033,6 @@ return [
                             'class' => 'yii\base\Exception',
                             'message' => "{\n    \"id\": 1,\n    \"status\": 404,\n    \"errors\": {\n        \"id\": \"Заявка не найдена\"\n    }\n}",
                             'file LIKE' => '%/api/infra/api/VATApiClient.php',
-                            'line' => 76,
                             'code' => 404,
                         ],
                     ]
@@ -1025,10 +1050,19 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
-            'Vat' => [
+            'vat' => [
                 'httpRequest' => [
                     'method' => 'POST',
                     'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Новая',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
                 ],
                 'httpResponse' => [
                     'headers' => [
@@ -1036,7 +1070,7 @@ return [
                             'application/json;charset=UTF-8'
                         ]
                     ],
-                    'body' => file_get_contents(__DIR__ . '/mock/Vat/case26.json'),
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case200.json')),
                     'statusCode' => 400
                     //доп. проверка, что не будет отправки запроса в Vat, если заявки без supplierCabinetId
                     //т.е. этот запрос в мок-сервер не будет отправлен, ответ 400 не будет получен и exception останется пустой
@@ -1236,10 +1270,19 @@ return [
         ],
         'fixture_data' => include __DIR__ . '/fixture/case26.php',
         'mock_data' => [
-            'Vat' => [
+            'vat' => [
                 'httpRequest' => [
                     'method' => 'POST',
                     'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Новая',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
                 ],
                 'httpResponse' => [
                     'headers' => [
@@ -1247,7 +1290,7 @@ return [
                             'application/json;charset=UTF-8'
                         ]
                     ],
-                    'body' => file_get_contents(__DIR__ . '/mock/Vat/case26.json'),
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case200.json')),
                     'statusCode' => 200
                 ],
             ],

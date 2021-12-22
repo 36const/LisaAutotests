@@ -44,7 +44,7 @@ return [
                 'child_count' => 0,
                 'photo_load_status' => 1,
                 'previous_status' => 5,
-                'supplier_cabinet_id' => null,
+                'supplier_cabinet_id' => 111,
                 'payload' => '[]',
                 'rz_category_id' => null,
                 'author_team' => 17,

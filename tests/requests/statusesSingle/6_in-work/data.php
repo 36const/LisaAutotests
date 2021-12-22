@@ -921,7 +921,7 @@ return [
 
     'case6_7' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Ожидает (ризоны)" + нотификации + добавление и удаление вложений',
+            'description' => 'Перевод из "В работе" в "Ожидает" + нотификации + добавление и удаление вложений',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'mock_data' => $mockDataStatusesSingle,
@@ -1551,11 +1551,37 @@ return [
 
     'case6_7_1_2_photoload_1' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Ожидает (ризоны)" c ранее загруженными фото, причина 1',
+            'description' => 'Перевод из "В работе" в "Ожидает" c ранее загруженными фото, причина 1 + отправка запроса в VAT',
             //проверка обнуления requests.photo_load_status
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
-        'mock_data' => $mockDataStatusesSingle,
+        'mock_data' => [
+            $mockDataStatusesSingle,
+            'vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Ожидает',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case404.json')),
+                    'statusCode' => 404
+                ],
+            ]
+        ],
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -1629,7 +1655,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 6,
-                            'supplier_cabinet_id' => null,
+                            'supplier_cabinet_id' => 111,
                             'payload' => '[]',
                             'rz_category_id' => null,
                             'author_team' => 17,
@@ -1844,7 +1870,17 @@ return [
                             'reason_id' => 1
                         ],
                     ],
-                    'transition_info' => []
+                    'transition_info' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\Exception',
+                            'message' => "{\n    \"id\": 1,\n    \"status\": 404,\n    \"errors\": {\n        \"id\": \"Заявка не найдена\"\n    }\n}",
+                            'file LIKE' => '%/api/infra/api/VATApiClient.php',
+                            'code' => 404,
+                        ],
+                    ]
                 ]
             ],
             'RabbitMQ' => [
@@ -1855,11 +1891,37 @@ return [
 
     'case6_7_1_2_photoload_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Ожидает (ризоны)" c ранее загруженными фото, причина 2',
+            'description' => 'Перевод из "В работе" в "Ожидает" c ранее загруженными фото, причина 2',
             //проверка НЕобнуления requests.photo_load_status
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
-        'mock_data' => $mockDataStatusesSingle,
+        'mock_data' => [
+            $mockDataStatusesSingle,
+            'vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Ожидает',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case200.json')),
+                    'statusCode' => 200
+                ],
+            ]
+        ],
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -1933,7 +1995,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 1,
                             'previous_status' => 6,
-                            'supplier_cabinet_id' => null,
+                            'supplier_cabinet_id' => 111,
                             'payload' => '[]',
                             'rz_category_id' => null,
                             'author_team' => 17,

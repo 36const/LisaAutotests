@@ -3,7 +3,7 @@
 return [
     'case7_6_1_1' => [
         'setting' => [
-            'description' => 'Перевод из "Ожидает (ризоны)" во "В работе" тип 1 направление 1',
+            'description' => 'Перевод из "Ожидает" во "В работе" тип 1 направление 1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'mock_data' => $mockDataStatusesSingle,
@@ -169,10 +169,36 @@ return [
     
     'case7_6_1_2' => [
         'setting' => [
-            'description' => 'Перевод из "Ожидает (ризоны)" во "В работе" тип 1 направление 2 + добавление файлов',
+            'description' => 'Перевод из "Ожидает" во "В работе" тип 1 направление 2 + добавление файлов',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case7_6_1_2.php',
-        'mock_data' => $mockDataStatusesSingle,
+        'mock_data' => [
+            $mockDataStatusesSingle,
+            'vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'В работе',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case200.json')),
+                    'statusCode' => 200
+                ],
+            ]
+        ],
         'provider_data' => [
             'requestParameter' => 'to-work',
             'requestBody' => [
@@ -256,7 +282,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 7,
-                            'supplier_cabinet_id' => null,
+                            'supplier_cabinet_id' => 111,
                             'payload' => '[]',
                             'rz_category_id' => null,
                             'author_team' => 17,
@@ -411,7 +437,7 @@ return [
                 'lisa_common' => [
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":10,"manager_id":11,"status":6,"direction":2,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)","description":"description","category_id":null,"seller_id":83,"recommendations":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":"","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":7,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":7,"manager_team":1},"changed_fields_names":["status","recommendations","last_change_status_date","previous_status"]}',
+                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":7,"supplier_cabinet_id":111,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":7,"manager_team":1},"changed_fields_names":["status","recommendations","last_change_status_date","previous_status"]}',
                     ],
                 ],
             ],

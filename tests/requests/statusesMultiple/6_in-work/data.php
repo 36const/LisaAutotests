@@ -378,7 +378,7 @@ return [
 
     'case6_7' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Ожидает (ризоны)" + нотификации',
+            'description' => 'Перевод из "В работе" в "Ожидает" + нотификации',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'mock_data' => $mockDataStatusesMultiple,
@@ -726,7 +726,7 @@ return [
 
     'case6_7_1_2_photoload_1' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Ожидает (ризоны)" c ранее загруженными фото, причина 1',
+            'description' => 'Перевод из "В работе" в "Ожидает" c ранее загруженными фото, причина 1',
             //проверка, что значение request.photo_load_status собьётся с 1 на 0
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
@@ -1010,7 +1010,7 @@ return [
 
     'case6_7_1_2_photoload_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Ожидает (ризоны)" c ранее загруженными фото, причина 2',
+            'description' => 'Перевод из "В работе" в "Ожидает" c ранее загруженными фото, причина 2',
             //проверка, что значение request.photo_load_status НЕ собьётся с 1 на 0
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',

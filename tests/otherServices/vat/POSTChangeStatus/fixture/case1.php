@@ -93,6 +93,7 @@ return [
         ],
         'user_notifications' => [],
         'request_status_history' => [],
+        'notification_settings' => [],
         'observers' => [
             [
                 'request_id' => 1,
