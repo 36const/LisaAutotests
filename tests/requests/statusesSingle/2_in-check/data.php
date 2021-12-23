@@ -17,6 +17,7 @@ return [
                     0 => [
                         'id' => 11,
                         'reason' => 'Другое (описан в коментариях)',
+                        'comment_is_required' => 1,
                     ],
                 ],
                 'status' => 3,
@@ -194,6 +195,7 @@ return [
                     0 => [
                         'id' => 11,
                         'reason' => 'Другое (описан в коментариях)',
+                        'comment_is_required' => 1,
                     ],
                 ],
                 'status' => 4,

@@ -19,14 +19,17 @@ return [
                     0 => [
                         'id' => 10,
                         'reason' => 'Все товары уже есть на сайте',
+                        'comment_is_required' => 0,
                     ],
                     1 => [
                         'id' => 11,
                         'reason' => 'Другое (описан в коментариях)',
+                        'comment_is_required' => 1,
                     ],
                     2 => [
                         'id' => 9,
                         'reason' => 'Дубль задачи',
+                        'comment_is_required' => 1,
                     ],
                 ],
                 'status' => 4,
@@ -935,14 +938,17 @@ return [
                     0 => [
                         'id' => 1,
                         'reason' => 'Ожидается загрузка фото в товары',
+                        'comment_is_required' => 1,
                     ],
                     1 => [
                         'id' => 2,
                         'reason' => 'Требуется уточнение информации по задаче',
+                        'comment_is_required' => 0,
                     ],
                     2 => [
                         'id' => 3,
                         'reason' => 'Изменен приоритет задачи',
+                        'comment_is_required' => 1,
                     ],
                 ],
                 'status' => 7,
@@ -1592,6 +1598,7 @@ return [
                     0 => [
                         'id' => 1,
                         'reason' => 'Ожидается загрузка фото в товары',
+                        'comment_is_required' => 1,
                     ],
                 ],
                 'status' => 7,
@@ -1932,6 +1939,7 @@ return [
                     0 => [
                         'id' => 2,
                         'reason' => 'Требуется уточнение информации по задаче',
+                        'comment_is_required' => 0,
                     ],
                 ],
                 'status' => 7,
@@ -2251,10 +2259,12 @@ return [
                     0 => [
                         'id' => 11,
                         'reason' => 'Другое (описан в коментариях)',
+                        'comment_is_required' => 1,
                     ],
                     1 => [
                         'id' => 7,
                         'reason' => 'Товары ушли в ошибки',
+                        'comment_is_required' => 1,
                     ],
                 ],
                 'status' => 8,
@@ -2696,13 +2706,14 @@ return [
                 118 => '10',
                 'reasons' => [
                     1 => [
-                        'id' => 7,
-                        'reason' => 'Товары ушли в ошибки',
+                        'id' => 6,
+                        'reason' => 'Не получена запрошенная недостающая информация',
+                        'comment_is_required' => 0,
                     ],
                 ],
                 'status' => 8,
                 'currentStatus' => 6,
-                'result_comment' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'result_comment' => '',
             ],
             'responseBody' => [
                 'success' => true,
@@ -2737,7 +2748,7 @@ return [
                             'actual_finish_date >=' => date('Y-m-d'),
                             'supervisor_process_date >=' => date('Y-m-d'),
                             'supervisor_check_date' => null,
-                            'result_comment' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'result_comment' => '',
                             'supervisor_comment' => '',
                             'last_change_status_date >=' => date('Y-m-d'),
                             'team_direction' => 2,
@@ -2948,16 +2959,16 @@ return [
                             'user_id' => 4,
                             'old_status' => 6,
                             'new_status' => 8,
-                            'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'reason' => '',
                             'created_at >=' => date('Y-m-d'),
                             'manager_id' => 11,
-                            'reasons' => 'Товары ушли в ошибки'
+                            'reasons' => 'Не получена запрошенная недостающая информация'
                         ]
                     ],
                     'requests_reasons' => [
                         [
                             'request_id' => 1,
-                            'reason_id' => 7
+                            'reason_id' => 6
                         ]
                     ],
                     'transition_info' => []
@@ -2981,7 +2992,7 @@ return [
                     '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":49,"value":"60"},"changed_fields_names":["value"]}',
                     '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":64,"value":"60"},"changed_fields_names":["value"]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":89,"value":"',
-                    '{"action":"create","entity":"request_status_history","fields_data":{"id":2,"request_id":1,"user_id":4,"old_status":6,"new_status":8,"reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","created_at":"' . date('Y-m-d'),
+                    '{"action":"create","entity":"request_status_history","fields_data":{"id":2,"request_id":1,"user_id":4,"old_status":6,"new_status":8,"reason":"","created_at":"' . date('Y-m-d'),
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -2989,8 +3000,8 @@ return [
                     'update.requests.all' => [
                         '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":"8","direction":2,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Маркета)","description":"description","category_id":null,"seller_id":83,"recommendations":"","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":"' . date('Y-m-d'),
                         '","supervisor_process_date":"' . date('Y-m-d'),
-                        '","supervisor_check_date":null,"result_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"3\":3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":1},"changed_fields_names":["status","actual_finish_date","supervisor_process_date","result_comment","last_change_status_date","sv_report_periods","previous_status"]}',
+                        '","supervisor_check_date":null,"result_comment":"","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
+                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"3\":3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":1},"changed_fields_names":["status","actual_finish_date","supervisor_process_date","last_change_status_date","sv_report_periods","previous_status"]}',
                     ]
                 ],
             ]
@@ -3037,13 +3048,14 @@ return [
                 118 => '10',
                 'reasons' => [
                     1 => [
-                        'id' => 7,
-                        'reason' => 'Товары ушли в ошибки',
+                        'id' => 6,
+                        'reason' => 'Не получена запрошенная недостающая информация',
+                        'comment_is_required' => 0,
                     ],
                 ],
                 'status' => 8,
                 'currentStatus' => 6,
-                'result_comment' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'result_comment' => '',
             ],
             'responseBody' => [
                 'success' => true,
@@ -3080,7 +3092,7 @@ return [
                             'actual_finish_date' => null,
                             'supervisor_process_date' => null,
                             'supervisor_check_date' => null,
-                            'result_comment' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'result_comment' => '',
                             'supervisor_comment' => '',
                             'last_change_status_date >=' => date('Y-m-d'),
                             'team_direction' => 2,
@@ -3288,7 +3300,7 @@ return [
                             'request_id' => 1,
                             'status' => 8,
                             'reason' => null,
-                            'reasons_list' => '["7"]'
+                            'reasons_list' => '["6"]'
                         ],
                     ]
                 ]
@@ -3312,8 +3324,8 @@ return [
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
                     'update.requests.all' => [
-                        '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":7,"direction":2,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Маркета)","description":"description","category_id":null,"seller_id":83,"recommendations":"","reason":"Заявка переведена в статус \"Ожидает\",\n             так как в GOMER\'e еще не закончилась группировка и/или модерация товаров по этой заявке.","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":1},"changed_fields_names":["status","reason","result_comment","last_change_status_date","previous_status"]}',
+                        '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":7,"direction":2,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Маркета)","description":"description","category_id":null,"seller_id":83,"recommendations":"","reason":"Заявка переведена в статус \"Ожидает\",\n             так как в GOMER\'e еще не закончилась группировка и/или модерация товаров по этой заявке.","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":"","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
+                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":1},"changed_fields_names":["status","reason","last_change_status_date","previous_status"]}',
                     ]
                 ],
             ]

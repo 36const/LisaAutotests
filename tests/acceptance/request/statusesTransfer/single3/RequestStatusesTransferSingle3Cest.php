@@ -79,12 +79,16 @@ class RequestStatusesTransferSingle3Cest
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_6', 2);
         $I->checkTablesInDB($provider_data['db_3']);
 
-        //перевод 5->4
+        //ошибка при переводе 5->4 без комментария
         $I->click(RequestTable::REASON_IN_STATUS_CHANGE_POPUP);
         $I->click(RequestTable::columnValueFromList('Дубль задачи'));
-        $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>');
         $I->click(RequestTable::transferPopUp('Отменить'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_7', 2);
+
+        //перевод 5->4
+        $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>');
+        $I->click(RequestTable::transferPopUp('Отменить'));
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_8', 2);
         $I->checkTablesInDB($provider_data['db_4']);
     }
 }

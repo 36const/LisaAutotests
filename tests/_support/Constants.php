@@ -1338,25 +1338,25 @@ class Constants
         'request_editing_8ce853f951d61029addbed39344d0192d' => 'value',
         'request_editing_957ded90a6bd9c436e62d42dd3a95123a' => 'value',
         'request_editing_1145e03f2f871a9ac568e3451b4750dc23' => 'value',
-        'reasons_by_status_11fc68253b26fc3d2e010e94675d7cf8b' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
-        'reasons_by_status_2848ec487e1a0be4abfe5d5722dade4dc' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
-        'reasons_by_status_5ab2862e1fe728ffc6ed525d02b1a08b3' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
-        'reasons_by_status_64fb7db11b2f190142add5b06cba278b1' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
-        'reasons_by_status_9776834c96ed03ea5d6e18bf2f389288f' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
-        'reasons_by_status_113d18f99638fba7ed367540edf621056d' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
-        'reasons_by_status_3cb7d746c6663211ac9840871e16bca0c' =>
+        'reasons_by_status_and_type_direction_11fc68253b26fc3d2e010e94675d7cf8b' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
+        'reasons_by_status_and_type_direction_2848ec487e1a0be4abfe5d5722dade4dc' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
+        'reasons_by_status_and_type_direction_5ab2862e1fe728ffc6ed525d02b1a08b3' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
+        'reasons_by_status_and_type_direction_64fb7db11b2f190142add5b06cba278b1' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
+        'reasons_by_status_and_type_direction_9776834c96ed03ea5d6e18bf2f389288f' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
+        'reasons_by_status_and_type_direction_113d18f99638fba7ed367540edf621056d' => 'a:2:{i:0;a:1:{i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}}i:1;N;}',
+        'reasons_by_status_and_type_direction_3cb7d746c6663211ac9840871e16bca0c' =>
             'a:2:{i:0;a:3:{' .
             'i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}' .
             'i:1;a:3:{s:2:"id";i:13;s:6:"reason";s:8:"Нада";s:6:"status";i:1;}' .
             'i:2;a:3:{s:2:"id";i:12;s:6:"reason";s:12:"Нинада";s:6:"status";i:0;}' .
             '}i:1;N;}',
-        'reasons_by_status_495b720c6262f0fd97d0ec7e7172a3364' =>
+        'reasons_by_status_and_type_direction_495b720c6262f0fd97d0ec7e7172a3364' =>
             'a:2:{i:0;a:3:{' .
             'i:0;a:3:{s:2:"id";i:10;s:6:"reason";s:51:"Все товары уже есть на сайте";s:6:"status";i:1;}' .
             'i:1;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}' .
             'i:2;a:3:{s:2:"id";i:9;s:6:"reason";s:23:"Дубль задачи";s:6:"status";i:1;}' .
             '}i:1;N;}',
-        'reasons_by_status_7c4921af50cf971f4cf6accb6823428ff' =>
+        'reasons_by_status_and_type_direction_7c4921af50cf971f4cf6accb6823428ff' =>
             'a:2:{i:0;a:8:{' .
             'i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}' .
             'i:1;a:3:{s:2:"id";i:3;s:6:"reason";s:46:"Изменен приоритет задачи";s:6:"status";i:1;}' .
@@ -1367,7 +1367,7 @@ class Constants
             'i:6;a:3:{s:2:"id";i:15;s:6:"reason";s:36:"Товары на модерации";s:6:"status";i:1;}' .
             'i:7;a:3:{s:2:"id";i:2;s:6:"reason";s:76:"Требуется уточнение информации по задаче";s:6:"status";i:1;}' .
             '}i:1;N;}',
-        'reasons_by_status_89eda2a8ada4c29bd2618a2a896f67473' =>
+        'reasons_by_status_and_type_direction_89eda2a8ada4c29bd2618a2a896f67473' =>
             'a:2:{i:0;a:4:{' .
             'i:0;a:3:{s:2:"id";i:11;s:6:"reason";s:53:"Другое (описан в коментариях)";s:6:"status";i:1;}' .
             'i:1;a:3:{s:2:"id";i:6;s:6:"reason";s:88:"Не получена запрошенная недостающая информация";s:6:"status";i:1;}' .

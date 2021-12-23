@@ -17,6 +17,7 @@ return [
                     0 => [
                         'id' => 11,
                         'reason' => 'Другое (описан в коментариях)',
+                        'comment_is_required' => 1,
                     ],
                 ],
                 'status' => 4,
@@ -183,15 +184,16 @@ return [
                 ],
                 'reasons' => [
                     0 => [
-                        'id' => 11,
-                        'reason' => 'Другое (описан в коментариях)',
+                        'id' => 10,
+                        'reason' => 'Все товары уже есть на сайте',
+                        'comment_is_required' => 0,
                     ],
                 ],
                 'status' => 4,
                 'currentStatus' => 5,
                 'payload' => [
                 ],
-                'comment' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'comment' => '',
             ],
             'responseBody' => [
                 'count' => 1,
@@ -218,7 +220,7 @@ return [
                             'category_id' => null,
                             'seller_id' => 83,
                             'recommendations' => null,
-                            'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'reason' => '',
                             'parent_id' => null,
                             'planned_start_date' => null,
                             'planned_finish_date' => null,
@@ -259,7 +261,7 @@ return [
                             'priority' => 2,
                             'amount_to_work' => 10,
                             'request_subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
-                            'fields_for_complete' => '{"Причина": "Другое (описан в коментариях) </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}',
+                            'fields_for_complete' => '{"Причина": "Все товары уже есть на сайте </b>"}',
                             'triggered_by' => 'Константин Куцан',
                             'event' => 'status',
                             'changed_fields' => '{"newValue": 4, "oldValue": 5}',
@@ -275,7 +277,7 @@ return [
                             'priority' => 2,
                             'amount_to_work' => 10,
                             'request_subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
-                            'fields_for_complete' => '{"Причина": "Другое (описан в коментариях) </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}',
+                            'fields_for_complete' => '{"Причина": "Все товары уже есть на сайте </b>"}',
                             'triggered_by' => 'Константин Куцан',
                             'event' => 'status',
                             'changed_fields' => '{"newValue": 4, "oldValue": 5}',
@@ -291,7 +293,7 @@ return [
                             'priority' => 2,
                             'amount_to_work' => 10,
                             'request_subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
-                            'fields_for_complete' => '{"Причина": "Другое (описан в коментариях) </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО"}',
+                            'fields_for_complete' => '{"Причина": "Все товары уже есть на сайте </b>"}',
                             'triggered_by' => 'Константин Куцан',
                             'event' => 'status',
                             'changed_fields' => '{"newValue": 4, "oldValue": 5}',
@@ -305,37 +307,37 @@ return [
                             'user_id' => 4,
                             'old_status' => 5,
                             'new_status' => 4,
-                            'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'reason' => '',
                             'created_at >=' => date('Y-m-d'),
                             'manager_id' => 11,
-                            'reasons' => 'Другое (описан в коментариях)'
+                            'reasons' => 'Все товары уже есть на сайте'
                         ]
                     ],
                     'requests_reasons' => [
                         [
                             'request_id' => 1,
-                            'reason_id' => 11
+                            'reason_id' => 10
                         ],
                     ],
                 ]
             ],
             'RabbitMQ' => [
                 'lisa_sendOuterNotifications' => [
-                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-canceled","fields":{"id":1,"type":"Добавление товаров","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Другое ЛК","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-canceled","fields":{"id":1,"type":"Додавання товарів","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Другое_ua ЛК","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-canceled","fields":{"id":1,"type":"Добавление товаров","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Другое ЛК","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
-                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-canceled","fields":{"id":1,"type":"Додавання товарів","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Другое_ua ЛК","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-canceled","fields":{"id":1,"type":"Добавление товаров","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Все товары уже есть ЛК","reason_comment":"","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-canceled","fields":{"id":1,"type":"Додавання товарів","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Все товары уже есть_ua ЛК","reason_comment":"","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"test1115555@mail.coi","lang":"ru","event":"request-canceled","fields":{"id":1,"type":"Добавление товаров","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Все товары уже есть ЛК","reason_comment":"","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
+                    '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-canceled","fields":{"id":1,"type":"Додавання товарів","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Все товары уже есть_ua ЛК","reason_comment":"","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
                 ],
                 'lisa_common' => [
-                    'create.request_status_history.all' => '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":5,"new_status":4,"reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","created_at":"' . date('Y-m-d'),
+                    'create.request_status_history.all' => '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":5,"new_status":4,"reason":"","created_at":"' . date('Y-m-d'),
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
                     'update.requests.all' => [
-                        '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":10,"manager_id":11,"status":4,"direction":2,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":null,"amount_to_work":10,"subject":"Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)","description":"description","category_id":null,"seller_id":83,"recommendations":null,"reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":"' . date('Y-m-d'),
+                        '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":10,"manager_id":11,"status":4,"direction":2,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":null,"amount_to_work":10,"subject":"Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)","description":"description","category_id":null,"seller_id":83,"recommendations":null,"reason":"","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":"' . date('Y-m-d'),
                         '","supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
-                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"3\":3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":5,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":7,"manager_team":1},"changed_fields_names":["status","reason","supervisor_process_date","last_change_status_date","sv_report_periods","previous_status"]}',
+                        '","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"3\":3}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":5,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":7,"manager_team":1},"changed_fields_names":["status","supervisor_process_date","last_change_status_date","sv_report_periods","previous_status"]}',
                     ],
                 ],
             ],

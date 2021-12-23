@@ -13,7 +13,7 @@ return [
                 'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|NO Output',
                 'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|NO_ua Output',
                 'type_directions' => '["[1,1]", "[1,2]", "[2,1]", "[2,2]", "[3,1]", "[3,2]", "[4,0]", "[5,1]", "[6,2]", "[7,0]", "[8,0]", "[9,0]", "[10,0]", "[11,0]", "[12,1]", "[13,0]", "[14,0]", "[15,0]"]',
-                'comment_is_required' => 1,
+                'comment_is_required' => '1',
             ],
             [
                 //"id" => 2,
@@ -25,7 +25,7 @@ return [
                 'reason_for_supplier_cab' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Дубль Output',
                 'reason_for_supplier_cab_ua' => '!@#$%^&*()_+`=-]\'/[;.,}"?{:><\\|Дубль_ua Output',
                 'type_directions' => '["[4,0]", "[5,1]", "[6,2]", "[7,0]", "[8,0]", "[9,0]", "[10,0]", "[11,0]"]',
-                'comment_is_required' => 0,
+                'comment_is_required' => '0',
             ],
         ],
     ],

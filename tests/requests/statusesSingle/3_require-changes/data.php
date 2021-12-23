@@ -238,14 +238,17 @@ return [
                     0 => [
                         'id' => 10,
                         'reason' => 'Все товары уже есть на сайте',
+                        'comment_is_required' => 0,
                     ],
                     1 => [
                         'id' => 11,
                         'reason' => 'Другое (описан в коментариях)',
+                        'comment_is_required' => 1,
                     ],
                     2 => [
                         'id' => 9,
                         'reason' => 'Дубль задачи',
+                        'comment_is_required' => 1,
                     ],
                 ],
                 'status' => 4,

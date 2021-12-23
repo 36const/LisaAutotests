@@ -18,6 +18,7 @@ return [
                     0 => [
                         'id' => 11,
                         'reason' => 'Другое (описан в коментариях)',
+                        'comment_is_required' => 1,
                     ],
                 ],
                 'comment' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
@@ -257,6 +258,7 @@ return [
                     0 => [
                         'id' => 11,
                         'reason' => 'Другое (описан в коментариях)',
+                        'comment_is_required' => 1,
                     ],
                 ],
                 'comment' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
