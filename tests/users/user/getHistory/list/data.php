@@ -40,6 +40,7 @@ $changed_field = [
     'requestViewOwnRequests' => 'Просмотр своих заявок',
     'requestViewTeamRequests' => 'Просмотр заявок команды',
     'takeToWork' => 'Взятие в работу и выполнение/отмена заявок (не менеджером заявки)',
+    '50kReports' => 'Выгрузка до 50 тысяч заявок',
     'viewSplitterModerationRequests' => 'Просмотр заявок отдела модерации',
     'categoryUpdate' => 'Редактирование категорий',
     'coefUpdate' => 'Редактирование коэфициентов',

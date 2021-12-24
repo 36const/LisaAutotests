@@ -97,6 +97,7 @@ return [
                         72 => 'errorsUpdate',
                         73 => 'transferRequireChangeToDeclined',
                         74 => 'seeHiddenCrossCheckFields',
+                        75 => '50kReports',
                     ],
                     'projects' => Constants::PROJECTS,
                 ],

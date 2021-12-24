@@ -1992,4 +1992,15 @@ return [
         'updated_at' => NULL,
         'project_id' => 1,
     ],
+    [
+        'name' => '50kReports',
+        'type' => 2,
+        'description' => 'Выгрузка до 50 тысяч заявок',
+        'group' => 'requestManagement',
+        'rule_name' => NULL,
+        'data' => NULL,
+        'created_at' => '2021-12-24 04:44:04',
+        'updated_at' => NULL,
+        'project_id' => 1,
+    ],
 ];

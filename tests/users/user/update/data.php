@@ -5358,6 +5358,7 @@ return [
                     'viewOwnRequestsMrk',
                     'viewTeamRequestsMrk',
                     'seeHiddenCrossCheckFields',
+                    '50kReports',
                 ],
                 'access' => [
                     'teams' => [
@@ -5641,6 +5642,7 @@ return [
                     'viewOwnRequestsMrk',
                     'viewTeamRequestsMrk',
                     'seeHiddenCrossCheckFields',
+                    '50kReports',
                 ],
                 'access' => [
                     'teams' => [

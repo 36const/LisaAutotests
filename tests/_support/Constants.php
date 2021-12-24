@@ -401,22 +401,25 @@ class Constants
             'Управление заявками' => [
                 [
                     'takeToWork' => 'Взятие в работу и выполнение/отмена заявок (не менеджером заявки) (Контент)',
+                    '50kReports' => 'Выгрузка до 50 тысяч заявок (Контент)',
                     'requestUpdate' => 'Обновление полей заявок (Контент)',
-                    'massEdit' => 'Пакетное редактирование (Контент)',
                 ],
                 [
+                    'massEdit' => 'Пакетное редактирование (Контент)',
                     'requestViewAllRequests' => 'Просмотр всех заявок (Контент)',
                     'requestViewTeamRequests' => 'Просмотр заявок команды (Контент)',
-                    'viewSplitterModerationRequests' => 'Просмотр заявок отдела модерации (Контент)',
                 ],
                 [
+                    'viewSplitterModerationRequests' => 'Просмотр заявок отдела модерации (Контент)',
                     'requestViewDirectionRequests' => 'Просмотр заявок своего направления (Контент)',
                     'seeHiddenCrossCheckFields' => 'Просмотр полей, скрытых для кросс-чека (Контент)',
-                    'requestViewOwnRequests' => 'Просмотр своих заявок (Контент)',
                 ],
                 [
+                    'requestViewOwnRequests' => 'Просмотр своих заявок (Контент)',
                     'requestCreate' => 'Создание задач (Контент)',
                     'requestCreateRelated' => 'Создание подзадач (Контент)',
+                ],
+                [
                     'requestDeleteAttachments' => 'Удаление вложеных файлов (Контент)',
                 ],
             ],
@@ -564,24 +567,27 @@ class Constants
             'Управление заявками' => [
                 [
                     'takeToWork' => 'Взятие в работу и выполнение/отмена заявок (не менеджером заявки)',
+                    '50kReports' => 'Выгрузка до 50 тысяч заявок',
                     'requestUpdate' => 'Обновление полей заявок',
-                    'massEdit' => 'Пакетное редактирование',
                 ],
                 [
+                    'massEdit' => 'Пакетное редактирование',
                     'requestViewAllRequests' => 'Просмотр всех заявок',
                     'requestViewTeamRequests' => 'Просмотр заявок команды',
-                    'viewSplitterModerationRequests' => 'Просмотр заявок отдела модерации',
                 ],
                 [
+                    'viewSplitterModerationRequests' => 'Просмотр заявок отдела модерации',
                     'requestViewDirectionRequests' => 'Просмотр заявок своего направления',
                     'seeHiddenCrossCheckFields' => 'Просмотр полей, скрытых для кросс-чека',
-                    'requestViewOwnRequests' => 'Просмотр своих заявок',
                 ],
                 [
+                    'requestViewOwnRequests' => 'Просмотр своих заявок',
                     'requestCreate' => 'Создание задач',
                     'requestCreateRelated' => 'Создание подзадач',
-                    'requestDeleteAttachments' => 'Удаление вложеных файлов',
                 ],
+                [
+                    'requestDeleteAttachments' => 'Удаление вложеных файлов',
+                ]
             ],
             'Переходы по статусам' => [
                 [
@@ -727,7 +733,7 @@ class Constants
             ],
         ],
     ];
-    
+
     public const EXCLUDED_FIELDS = [
         1 => [
             0 => 2,

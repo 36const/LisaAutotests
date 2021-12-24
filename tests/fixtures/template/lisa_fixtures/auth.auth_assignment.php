@@ -593,6 +593,10 @@ return [
         'item_name' => 'seeHiddenCrossCheckFields',
         'user_id' => 1,
     ],
+    [
+        'item_name' => '50kReports',
+        'user_id' => 1,
+    ],
 
     [
         'item_name' => 'updateUser',
@@ -1268,6 +1272,10 @@ return [
     ],
     [
         'item_name' => 'seeHiddenCrossCheckFields',
+        'user_id' => 4,
+    ],
+    [
+        'item_name' => '50kReports',
         'user_id' => 4,
     ],
 

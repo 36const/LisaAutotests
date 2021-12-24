@@ -35,7 +35,6 @@ class RequestCreateCest
         $I->amOnPage('/lisa/#/request/list/all');
         $I->waitForElement(RequestCreate::CREATE_BUTTON);
         $I->cantSeeElement(RequestCreate::CREATE_MODAL);
-        $I->scrollTo('//section[@class="content"]', null, -300);
 
         $I->clickAndWait(RequestCreate::CREATE_BUTTON);
         $I->waitForElementVisible(RequestCreate::CREATE_MODAL);

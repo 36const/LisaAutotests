@@ -302,6 +302,10 @@ return [
         'child' => 'seeHiddenCrossCheckFields'
     ],
     [
+        'parent' => 'admin',
+        'child' => '50kReports'
+    ],
+    [
         'parent' => 'contentManager',
         'child' => 'reportView'
     ],
@@ -564,6 +568,10 @@ return [
     [
         'parent' => 'headSupervisor',
         'child' => 'seeHiddenCrossCheckFields'
+    ],
+    [
+        'parent' => 'headSupervisor',
+        'child' => '50kReports'
     ],
     [
         'parent' => 'moderator',

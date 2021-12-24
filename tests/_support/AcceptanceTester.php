@@ -52,8 +52,6 @@ class AcceptanceTester extends GeneralTester
         $I = $this;
 
         if ($I->loadSessionSnapshot('login')) {
-            $I->pressKey('//body', WebDriverKeys::PAGE_UP);
-            $I->scrollTo('//section[@class="content"]', null, -300);
             return;
         }
         
