@@ -85,10 +85,20 @@ class CategoryCreateCest
 
         $I->pressKey(Category::CATEGORY_TITLE, 'Авиабилеты-');
         $I->pressKey(Category::CATEGORY_DIFF, '1.3');
+
+        $I->click(Category::RZ_CATEGORY_BUTTON);
+        $I->pressKey(Category::RZ_CATEGORY_SEARCH, 'папки');
+        $I->wait(1);
+        $I->retryClick(Category::rzCategoryCheckbox(2581742));
+        $I->retryClick(Category::rzCategoryCheckbox(2581737));
+        $I->retryClick(Category::rzCategoryCheckbox(2514862));
+        $I->moveMouseOver(Category::rzCategoryCheckbox(2514862));
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 2);
+
         $I->click(Category::SAVE_BUTTON);
         $I->waitForElement(Category::CREATE_BUTTON);
         $I->canSee('Категория успешно создана!');
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 2);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3);
         $I->checkTablesInDB($providerData['db_2']);
     }
 }
