@@ -13,7 +13,7 @@ return [
                 'status' => 'active',
                 'deleted' => null,
                 'parent_id' => 4627865,
-                'lisa_category_id' => null,
+                'lisa_category_id' => 474,
                 'children' => 0,
             ]
         ],
