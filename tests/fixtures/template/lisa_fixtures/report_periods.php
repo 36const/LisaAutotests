@@ -3,7 +3,8 @@
 return [
     [
         //'id' => 1,
-        'begin' => date('Y-01-01') . ' 00:00:00',
+//        'begin' => date('Y-01-01') . ' 00:00:00',
+        'begin' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' 00:00:00',
         'end' => date('Y-m-d', strtotime('last day of previous month -1 month -1 day')) . ' 00:00:00',
         'created_at' => '2021-01-01 00:00:00',
         'updated_at' => null,

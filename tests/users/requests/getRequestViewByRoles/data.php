@@ -753,7 +753,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -1313,7 +1313,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -2613,7 +2613,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -3451,7 +3451,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -4063,7 +4063,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -5430,7 +5430,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -5997,7 +5997,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -6600,7 +6600,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -7719,7 +7719,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -8275,7 +8275,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -8843,7 +8843,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -10226,7 +10226,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
@@ -10656,7 +10656,7 @@ return [
                         'items' => [
                             0 => [
                                 'id' => 1,
-                                'value' => date('Y-01-01') . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
+                                'value' => date('Y-m-d', strtotime('first day of previous month -1 month')) . ' - ' . date('Y-m-d', strtotime('last day of previous month -1 month -1 day')),
                             ],
                             1 => [
                                 'id' => 2,
