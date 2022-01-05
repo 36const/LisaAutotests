@@ -11,9 +11,9 @@ use Codeception\Module\TestHelper;
  * @group lisa_api_reports
  * @group lisa_api_crons
  * @group CronExportGenerate
- * @group CronReportFixateExportGenerate
+ * @group CronReportExportGenerateByUsers
  */
-class CronReportFixateExportGenerateCest
+class CronReportExportGenerateCest
 {
     protected function pageProvider(): array
     {
@@ -21,20 +21,20 @@ class CronReportFixateExportGenerateCest
     }
 
     /**
-     * @param RequestsTester $I
+     * @param UsersTester $I
      * @param Example $data
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function CronReportFixateExportGenerate(RequestsTester $I, Example $data)
+    public function CronReportExportGenerateByUsers(UsersTester $I, Example $data)
     {
-        $I->loadDataForTest($data);
+        $I->loadDataForTest($data, 'allUsers');
         $providerData = $data['provider_data'];
         $setting = $data['setting'];
 
         $I->runShellCommand(Constants::MAKE_AND_CLEAR_FILES_DIR);
 
-        $I->sendPOST('report/export' . $providerData['url']);
+        $I->sendPOST('report/generate', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);
         $I->canSeeResponseEquals('{"success":true}');
@@ -48,12 +48,10 @@ class CronReportFixateExportGenerateCest
         $I->canSeeNumberOfMessagesInQueue('lisa_exportGenerate', 0);
         $I->checkTablesInDB($providerData['db_2']);
 
-        if (!isset($setting['count'])) {
-            $I->seeFileFound(
-                $providerData['db_2']['lisa_fixtures']['user_exports'][0]['title >'] . '*xlsx',
-                '../../../web/files/'
-            );
-            $I->checkXlsxFile($providerData['fileContent'] ?? null, $setting['rows'] ?? null);
-        }
+        $I->seeFileFound(
+            $providerData['db_2']['lisa_fixtures']['user_exports'][0]['title >'] . ($setting['format'] ?? '*.xlsx'),
+            '../../../web/files/'
+        );
+        $I->checkXlsxFile($providerData['fileContent'] ?? null, $setting['rows'] ?? null);
     }
 }

@@ -3,4 +3,3 @@ actor: RequestsTester
 modules:
     enabled:
         - lisa\Helper\Requests
-        - Filesystem

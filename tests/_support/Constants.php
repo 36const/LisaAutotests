@@ -6,6 +6,8 @@ class Constants
 {
     public const PARAMS_LOCAL = './config/params.php';
 
+    public const MAKE_AND_CLEAR_FILES_DIR = 'mkdir -p ./web/files/ && rm -rf ./web/files/*';
+
     public const TYPES = [
         1 => 'Добавление новых товаров',
         2 => 'Добавление/изменение информации в существующих товарах',

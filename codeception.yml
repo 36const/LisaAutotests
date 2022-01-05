@@ -13,6 +13,7 @@ modules:
   enabled:
     - Cli
     - Asserts
+    - Filesystem
     - PhpBrowser:
         url: http://lisa-api.docker # Domen вашего приложения
         auth: [ 'kutsan.k', '123qweASD!' ]

@@ -7,7 +7,6 @@ step_decorators:
 modules:
     enabled:
         - lisa\Helper\Acceptance
-        - Filesystem
         - WebDriver:
             url: http://splitter.docker
             browser: chrome

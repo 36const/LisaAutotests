@@ -32,9 +32,7 @@ class CronRequestsTableExportGenerateCest
         $providerData = $data['provider_data'];
         $setting = $data['setting'];
 
-        is_dir('./web/files/')
-            ? $I->cleanDir('../../../web/files/')
-            : $I->runShellCommand('mkdir -p ./web/files/');
+        $I->runShellCommand(Constants::MAKE_AND_CLEAR_FILES_DIR);
 
         $I->sendPOST('request/export/' . $providerData['requestUrl'], ['per-page' => 100]);
 

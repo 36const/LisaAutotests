@@ -3,4 +3,3 @@ actor: SettingsTester
 modules:
     enabled:
         - lisa\Helper\Settings
-        - Filesystem
