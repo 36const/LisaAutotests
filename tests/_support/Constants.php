@@ -6,7 +6,9 @@ class Constants
 {
     public const PARAMS_LOCAL = './config/params.php';
 
-    public const MAKE_AND_CLEAR_FILES_DIR = 'mkdir -p ./web/files/ && rm -rf ./web/files/*';
+    public const TEMP_FILES_DIR = '/builds/gomer/lisa/api/web/files/';
+
+    public const MAKE_AND_CLEAR_FILES_DIR = 'mkdir -p ' . self::TEMP_FILES_DIR .' && rm -rf ' . self::TEMP_FILES_DIR . '*';
 
     public const TYPES = [
         1 => 'Добавление новых товаров',

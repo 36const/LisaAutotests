@@ -29,9 +29,8 @@ class CronNotifyCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        is_dir('./web/files/1631802792673')
-            ? $I->cleanDir('../../../web/files/1631802792673')
-            : $I->runShellCommand('mkdir -p ./web/files/1631802792673');
+        $I->runShellCommand(Constants::MAKE_AND_CLEAR_FILES_DIR);
+        $I->runShellCommand('mkdir -p ' . Constants::TEMP_FILES_DIR . '1631802792673');
 
         $I->declareExchange('default', 'direct', false, true, false);
 

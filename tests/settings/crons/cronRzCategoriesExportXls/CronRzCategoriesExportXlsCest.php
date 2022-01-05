@@ -38,9 +38,8 @@ class CronRzCategoriesExportXlsCest
         $I->bindQueueToExchange('lisa_rzCategoriesExport', 'default', 'lisa_rzCategoriesExport');
         $I->pushToExchange('default', '["export"]', 'lisa_rzCategoriesExport');
 
-        $I->runShellCommand('rm -f ./web/files/выгрузка_связанных_категорий_LISA.xlsx');
-        $I->runShellCommand('mkdir -p ./web/files');
-        $I->runShellCommand('touch ./web/files/выгрузка_связанных_категорий_LISA.xlsx');
+        $I->runShellCommand(Constants::MAKE_AND_CLEAR_FILES_DIR);
+        $I->runShellCommand('touch ' . Constants::TEMP_FILES_DIR . 'выгрузка_связанных_категорий_LISA.xlsx');
 
         $I->runShellCommand('./yii request/export-rz-categories', false);
         $I->seeInShellOutput('');
@@ -48,7 +47,7 @@ class CronRzCategoriesExportXlsCest
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);
         $I->checkTablesInDB($providerData['db']);
 
-        $I->seeFileFound('выгрузка_связанных_категорий_LISA.xlsx', '../../../web/files/');
+        $I->seeFileFound('выгрузка_связанных_категорий_LISA.xlsx', Constants::TEMP_FILES_DIR);
         $I->checkXlsxFile($providerData['fileContent'] ?? null, $data['setting']['rows'] ?? null);
 
         $I->sendGET('/category/list');

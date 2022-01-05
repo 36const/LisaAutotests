@@ -33,7 +33,7 @@ class POSTFromStatusesSingleCest
         $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
 
         if (isset($providerData['requestBody']['payload']['files']))
-            $I->runShellCommand('mkdir -p ./web/files/1631802792673');
+            $I->runShellCommand('mkdir -p ' . Constants::TEMP_FILES_DIR . '1631802792673');
 
         in_array($providerData['requestParameter'], ['update', 'to-correction'])
             ? $I->sendPUT('/request/' . $providerData['requestParameter'] . '/1', json_encode($providerData['requestBody']))

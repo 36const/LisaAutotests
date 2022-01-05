@@ -32,7 +32,7 @@ class POSTCreateRequestCest
         $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
 
         if (isset($providerData['requestBody']['files']))
-            $I->runShellCommand('mkdir -p ./web/files/1631802792673');
+            $I->runShellCommand('mkdir -p ' . Constants::TEMP_FILES_DIR . '1631802792673');
 
         $I->sendPOST('/request/create', $providerData['requestBody']);
         $I->seeResponseCodeIs(200);

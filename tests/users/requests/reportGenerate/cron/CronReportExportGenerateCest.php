@@ -50,7 +50,7 @@ class CronReportExportGenerateCest
 
         $I->seeFileFound(
             $providerData['db_2']['lisa_fixtures']['user_exports'][0]['title >'] . ($setting['format'] ?? '*.xlsx'),
-            '../../../web/files/'
+            Constants::TEMP_FILES_DIR
         );
         $I->checkXlsxFile($providerData['fileContent'] ?? null, $setting['rows'] ?? null);
     }

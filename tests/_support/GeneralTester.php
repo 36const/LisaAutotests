@@ -195,7 +195,7 @@ class GeneralTester extends Actor
      * Проверка Excel-файла на количество листов, количество строк и содержимое ячеек (только для первого листа).
      * Содержимое ячеек можно не проверять, указав значение [] для $fileContent
      */
-    public function checkXlsxFile(?array $fileContent, ?int $rowCount = null, int $sheetCount = 1, string $filepath = './web/files/')
+    public function checkXlsxFile(?array $fileContent, ?int $rowCount = null, int $sheetCount = 1, string $filepath = Constants::TEMP_FILES_DIR)
     {
         $I = $this;
 
