@@ -5,7 +5,7 @@ namespace lisa\Page\Settings;
 class Category
 {
     public const CREATE_BUTTON = '//a[@href="#/category/create"]/button/span[text()="Добавить категорию"]';
-    public const SAVE_BUTTON = '//ul[@id="button-group-save"]//a[text()=" Сохранить"]';
+    public const SAVE_BUTTON = '//form/button/span[text()="Сохранить"]';
     public const RZ_CATEGORY_BUTTON = '//button/span[contains(text(),"Открыть привязку категорий")]/..';
 
     public const CATEGORY_TITLE = '//label[text()="Название"]/following::input';
