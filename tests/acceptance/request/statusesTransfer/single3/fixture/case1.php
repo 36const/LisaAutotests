@@ -322,16 +322,5 @@ return [
                 'reason_id' => 7
             ],
         ],
-        'markets_supervisors' => array_merge(
-            include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
-            [
-                [
-                    'owox_id' => 121212,
-                    'supervisor_id' => 10,
-                    'title' => 'Mogozinchik',
-                    'status' => 6
-                ],
-            ]
-        ),
     ]
 ];

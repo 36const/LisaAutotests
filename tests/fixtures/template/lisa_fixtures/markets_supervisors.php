@@ -55,4 +55,10 @@ return [
         'title' => 'Rozetka.uz',
         'status' => 3
     ],
+    [
+        'owox_id' => 121212,
+        'supervisor_id' => 10,
+        'title' => 'Mogo zin-chik',
+        'status' => 6
+    ],
 ];

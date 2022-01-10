@@ -187,17 +187,7 @@ return [
         'request_errors' => [],
         'requests_reasons' => [],
         'observers' => [],
-        'markets_supervisors' => array_merge(
-            include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
-            [
-                [
-                    'owox_id' => 121212,
-                    'supervisor_id' => 10,
-                    'title' => 'Mogozinchik',
-                    'status' => 6
-                ],
-            ]
-        ),
+        'markets_supervisors' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
         'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
         'excluded_fields' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/excluded_fields.php',
         'field_values' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/field_values.php',

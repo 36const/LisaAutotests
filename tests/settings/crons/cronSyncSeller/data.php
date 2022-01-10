@@ -17,7 +17,7 @@ return [
             'numberOfRecords' => [
                 5 => 2,
                 6 => 2,
-                10 => 5,
+                10 => 6,
                 16 => 3,
                 23 => 3,
                 24 => 3,
@@ -216,26 +216,26 @@ return [
         'setting' => [
             'description' => 'Обновление статуса магазина',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'message' => '{"data":{"id":21567,"owox_id":134802,"title_translit":"soska","business_model":"b2c","title":"Soska","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":5,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
+            'message' => '{"data":{"id":11,"owox_id":121212,"title_translit":"mogo zin-chik","business_model":"b2c","title":"Mogo zin-chik","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":5,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
             'routing_key' => 'market.update',
             'response' => 'Магазин обновлен.Array
 (
-    [owox_id] => 134802
-    [supervisor_id] => 24
-    [title] => Soska
+    [owox_id] => 121212
+    [supervisor_id] => 10
+    [title] => Mogo zin-chik
     [status] => 5
 )',
             'db' => [
                 'lisa_fixtures' => [
-                    'markets_supervisors' => array_merge_recursive(
+                    'markets_supervisors' => array_replace_recursive(
                         include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
                         [
-                            [
-                                'owox_id' => 134802,
-                                'supervisor_id' => 24,
-                                'title' => 'Soska',
+                            9 => [
+                                'owox_id' => 121212,
+                                'supervisor_id' => 10,
+                                'title' => 'Mogo zin-chik',
                                 'status' => 5
                             ]
                         ]
@@ -249,25 +249,25 @@ return [
         'setting' => [
             'description' => 'Обновление названия магазина',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'message' => '{"data":{"id":21567,"owox_id":134802,"title_translit":"sososka","business_model":"b2c","title":"Sososka","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":"1","logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
+            'message' => '{"data":{"id":11,"owox_id":121212,"title_translit":"sososka","business_model":"b2c","title":"Sososka","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":"1","logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
             'routing_key' => 'market.update',
             'response' => 'Магазин обновлен.Array
 (
-    [owox_id] => 134802
-    [supervisor_id] => 24
+    [owox_id] => 121212
+    [supervisor_id] => 10
     [title] => Sososka
     [status] => 1
 )',
             'db' => [
                 'lisa_fixtures' => [
-                    'markets_supervisors' => array_merge_recursive(
+                    'markets_supervisors' => array_replace_recursive(
                         include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
                         [
-                            [
-                                'owox_id' => 134802,
-                                'supervisor_id' => 24,
+                            9 => [
+                                'owox_id' => 121212,
+                                'supervisor_id' => 10,
                                 'title' => 'Sososka',
                                 'status' => 1
                             ]
@@ -282,25 +282,25 @@ return [
         'setting' => [
             'description' => 'Обновление статуса и названия магазина',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'message' => '{"data":{"id":21567,"owox_id":134802,"title_translit":"sososka","business_model":"b2c","title":"Sososka","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":5,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
+            'message' => '{"data":{"id":11,"owox_id":121212,"title_translit":"sososka","business_model":"b2c","title":"Sososka","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":5,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
             'routing_key' => 'market.update',
             'response' => 'Магазин обновлен.Array
 (
-    [owox_id] => 134802
-    [supervisor_id] => 24
+    [owox_id] => 121212
+    [supervisor_id] => 10
     [title] => Sososka
     [status] => 5
 )',
             'db' => [
                 'lisa_fixtures' => [
-                    'markets_supervisors' => array_merge_recursive(
+                    'markets_supervisors' => array_replace_recursive(
                         include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
                         [
-                            [
-                                'owox_id' => 134802,
-                                'supervisor_id' => 24,
+                            9 => [
+                                'owox_id' => 121212,
+                                'supervisor_id' => 10,
                                 'title' => 'Sososka',
                                 'status' => 5
                             ]
@@ -315,25 +315,25 @@ return [
         'setting' => [
             'description' => 'Обновление статуса и названия магазина при пустых значениях title и status',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
-            'message' => '{"data":{"id":21567,"owox_id":134802,"title_translit":"sososka","business_model":"b2c","title":"","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":null,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
+            'message' => '{"data":{"id":11,"owox_id":121212,"title_translit":"sososka","business_model":"b2c","title":"","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":null,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
             'routing_key' => 'market.update',
             'response' => 'Магазин обновлен.Array
 (
-    [owox_id] => 134802
-    [supervisor_id] => 24
+    [owox_id] => 121212
+    [supervisor_id] => 10
     [title] =>
     [status] =>
 )',
             'db' => [
                 'lisa_fixtures' => [
-                    'markets_supervisors' => array_merge_recursive(
+                    'markets_supervisors' => array_replace_recursive(
                         include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
                         [
-                            [
-                                'owox_id' => 134802,
-                                'supervisor_id' => 24,
+                            9 => [
+                                'owox_id' => 121212,
+                                'supervisor_id' => 10,
                                 'title' => '',
                                 'status' => null
                             ]
@@ -349,23 +349,13 @@ return [
             'description' => 'Невозможность обновления магазина без owox_id',
             'negative' => true
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
             'message' => '{"data":{"id":21567,"owox_id":null,"title_translit":"sososka","business_model":"b2c","title":"Sososka","extended_description":"","extended_description_ua":"","primary_phone":"+380445021079","description":"","description_ua":"","is_show_phone":"1","is_reliable":"0","status":5,"logo":null,"mobile_logo":null,"big_logo":null,"logo_svg":"","mobile_logo_svg":"","big_logo_svg":"","default_sla_owox_id":"40","manager_id":"194","ff":"0"},"changed":["status"],"time":"2021-05-25 09:57:15"}',
             'routing_key' => 'market.update',
             'db' => [
                 'lisa_fixtures' => [
-                    'markets_supervisors' => array_merge_recursive(
-                        include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
-                        [
-                            [
-                                'owox_id' => 134802,
-                                'supervisor_id' => 24,
-                                'title' => 'Soska',
-                                'status' => 1
-                            ]
-                        ]
-                    ),
+                    'markets_supervisors' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/markets_supervisors.php',
                 ]
             ],
         ]

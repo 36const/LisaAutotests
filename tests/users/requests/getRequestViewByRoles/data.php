@@ -2272,7 +2272,7 @@ return [
                         'disabled' => true,
                         'initValue' => [
                             'owox_id' => 121212,
-                            'title' => 'Mogozinchik',
+                            'title' => 'Mogo zin-chik',
                         ],
                     ],
                     'priority' => [
@@ -3679,7 +3679,7 @@ return [
                         'disabled' => true,
                         'initValue' => [
                             'owox_id' => 121212,
-                            'title' => 'Mogozinchik',
+                            'title' => 'Mogo zin-chik',
                         ],
                     ],
                     'priority' => [
@@ -4259,7 +4259,7 @@ return [
                         'disabled' => false,
                         'initValue' => [
                             'owox_id' => 121212,
-                            'title' => 'Mogozinchik',
+                            'title' => 'Mogo zin-chik',
                         ],
                     ],
                     'priority' => [
@@ -5660,7 +5660,7 @@ return [
                         'disabled' => true,
                         'initValue' => [
                             'owox_id' => 121212,
-                            'title' => 'Mogozinchik',
+                            'title' => 'Mogo zin-chik',
                         ],
                     ],
                     'priority' => [
@@ -6181,7 +6181,7 @@ return [
                         'disabled' => true,
                         'initValue' => [
                             'owox_id' => 121212,
-                            'title' => 'Mogozinchik',
+                            'title' => 'Mogo zin-chik',
                         ],
                     ],
                     'priority' => [
@@ -6897,7 +6897,7 @@ return [
                         'disabled' => true,
                         'initValue' => [
                             'owox_id' => 121212,
-                            'title' => 'Mogozinchik',
+                            'title' => 'Mogo zin-chik',
                         ],
                     ],
                     'priority' => [
