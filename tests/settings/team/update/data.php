@@ -29,10 +29,7 @@ return [
                     'auth.teams' => array_replace_recursive(
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
-                            [],
-                            [],
-                            [],
-                            [
+                            3 => [
                                 'id' => 4,
                                 'name' => 'Маркетплейс 4',
                                 'direction' => 2,
@@ -40,7 +37,19 @@ return [
                                 'project_id' => 1,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 4,
+                            'old_value' => '{"status": 1}',
+                            'new_value' => '{"status": 0}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ]
             ],
             'RabbitMQWithRoutingKey' => [
@@ -79,12 +88,7 @@ return [
                     'auth.teams' => array_replace_recursive(
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
-                            [],
-                            [],
-                            [],
-                            [],
-                            [],
-                            [
+                            5 => [
                                 'id' => 6,
                                 'name' => 'Маркетплейс 6',
                                 'direction' => 2,
@@ -92,7 +96,19 @@ return [
                                 'project_id' => 1,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 6,
+                            'old_value' => '{"status": 0}',
+                            'new_value' => '{"status": "1"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ]
             ],
             'RabbitMQWithRoutingKey' => [
@@ -131,10 +147,7 @@ return [
                     'auth.teams' => array_replace_recursive(
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
-                            [],
-                            [],
-                            [],
-                            [
+                            3 => [
                                 'id' => 4,
                                 'name' => 'Управление отделом',
                                 'direction' => 3,
@@ -142,7 +155,19 @@ return [
                                 'project_id' => 1,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 4,
+                            'old_value' => '{"name": "Маркетплейс 4", "direction": 2}',
+                            'new_value' => '{"name": "Управление отделом", "direction": "3"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -181,10 +206,7 @@ return [
                     'auth.teams' => array_replace_recursive(
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
-                            [],
-                            [],
-                            [],
-                            [
+                            3 => [
                                 'id' => 4,
                                 'name' => 'Управление отделом new',
                                 'direction' => 2,
@@ -192,7 +214,19 @@ return [
                                 'project_id' => 1,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 4,
+                            'old_value' => '{"name": "Маркетплейс 4"}',
+                            'new_value' => '{"name": "Управление отделом new"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -231,10 +265,7 @@ return [
                     'auth.teams' => array_replace_recursive(
                         (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['auth.teams'],
                         [
-                            [],
-                            [],
-                            [],
-                            [
+                            3 => [
                                 'id' => 4,
                                 'name' => 'Управление отделом new',
                                 'direction' => 4,
@@ -242,7 +273,19 @@ return [
                                 'project_id' => 1,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 4,
+                            'old_value' => '{"name": "Маркетплейс 4", "status": 1, "direction": 2}',
+                            'new_value' => '{"name": "Управление отделом new", "status": 0, "direction": "4"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [

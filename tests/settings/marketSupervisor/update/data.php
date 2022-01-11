@@ -43,7 +43,19 @@ return [
                                 'status' => null
                             ],
                         ]
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'markets_supervisors',
+                            'entity_id' => 0,
+                            'old_value' => '{"supervisor_id": 5}',
+                            'new_value' => '{"supervisor_id": "10"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [

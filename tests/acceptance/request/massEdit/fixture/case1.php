@@ -1259,6 +1259,7 @@ return [
             ],
         ],
         'request_errors' => [],
+        'grid_settings' => [],
         'report_periods' => [
             [
                 //'id' => 1,

@@ -76,6 +76,18 @@ return [
                             'comment_is_required' => '0',
                         ],
                     ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 1,
+                            'old_value' => '{"child_status": 3}',
+                            'new_value' => '{"child_status": "2"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -141,6 +153,18 @@ return [
                             'type_directions' => '["[4,0]", "[5,1]", "[6,2]", "[7,0]", "[8,0]", "[9,0]", "[10,0]", "[11,0]"]',
                             'comment_is_required' => '0',
                         ],
+                    ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 1,
+                            'old_value' => '{"reason": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ"}',
+                            'new_value' => '{"reason": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\| "}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
                     ],
                 ],
             ]
@@ -209,6 +233,18 @@ return [
                             'comment_is_required' => '0',
                         ],
                     ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 2,
+                            'old_value' => '{"status": 0}',
+                            'new_value' => '{"status": "1"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -274,6 +310,18 @@ return [
                             'type_directions' => '["[4,0]", "[5,1]", "[6,2]", "[7,0]", "[8,0]", "[9,0]", "[10,0]", "[11,0]"]',
                             'comment_is_required' => '0',
                         ],
+                    ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 1,
+                            'old_value' => '{"status": 1}',
+                            'new_value' => '{"status": 0}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
                     ],
                 ],
             ]
@@ -341,6 +389,18 @@ return [
                             'comment_is_required' => '0',
                         ],
                     ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 1,
+                            'old_value' => '{"reason_for_personal_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO ЛК", "reason_for_personal_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO_ua ЛК"}',
+                            'new_value' => '{"reason_for_personal_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|", "reason_for_personal_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO_ua "}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -406,6 +466,18 @@ return [
                             'type_directions' => '["[4,0]", "[5,1]", "[6,2]", "[7,0]", "[8,0]", "[9,0]", "[10,0]", "[11,0]"]',
                             'comment_is_required' => '0',
                         ],
+                    ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 1,
+                            'old_value' => '{"reason_for_supplier_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO Output", "reason_for_supplier_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO_ua Output"}',
+                            'new_value' => '{"reason_for_supplier_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|", "reason_for_supplier_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO_ua "}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
                     ],
                 ],
             ]
@@ -473,6 +545,18 @@ return [
                             'comment_is_required' => '0',
                         ],
                     ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 1,
+                            'old_value' => '{"type_directions": "[\\"[1,1]\\", \\"[1,2]\\", \\"[2,1]\\", \\"[2,2]\\", \\"[3,1]\\", \\"[3,2]\\", \\"[4,0]\\", \\"[5,1]\\", \\"[6,2]\\", \\"[7,0]\\", \\"[8,0]\\", \\"[9,0]\\", \\"[10,0]\\", \\"[11,0]\\", \\"[12,1]\\", \\"[13,0]\\", \\"[14,0]\\", \\"[15,0]\\"]"}',
+                            'new_value' => '{"type_directions": "[\\"[15,0]\\"]"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -539,6 +623,18 @@ return [
                             'comment_is_required' => '0',
                         ],
                     ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 1,
+                            'old_value' => '{"comment_is_required": 1}',
+                            'new_value' => '{"comment_is_required": "0"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -604,6 +700,18 @@ return [
                             'type_directions' => '["[4,0]", "[5,1]", "[6,2]", "[7,0]", "[8,0]", "[9,0]", "[10,0]", "[11,0]"]',
                             'comment_is_required' => '0',
                         ],
+                    ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 1,
+                            'old_value' => '{"reason": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 1, "child_status": 3, "type_directions": "[\\"[1,1]\\", \\"[1,2]\\", \\"[2,1]\\", \\"[2,2]\\", \\"[3,1]\\", \\"[3,2]\\", \\"[4,0]\\", \\"[5,1]\\", \\"[6,2]\\", \\"[7,0]\\", \\"[8,0]\\", \\"[9,0]\\", \\"[10,0]\\", \\"[11,0]\\", \\"[12,1]\\", \\"[13,0]\\", \\"[14,0]\\", \\"[15,0]\\"]", "comment_is_required": 1, "reason_for_personal_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO ЛК", "reason_for_supplier_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO Output", "reason_for_personal_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO_ua ЛК", "reason_for_supplier_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO_ua Output"}',
+                            'new_value' => '{"reason": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\| ", "status": 0, "child_status": "2", "type_directions": "[\\"[4,0]\\",\\"[5,1]\\",\\"[6,2]\\",\\"[7,0]\\"]", "comment_is_required": "0", "reason_for_personal_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|", "reason_for_supplier_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|", "reason_for_personal_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO_ua ", "reason_for_supplier_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|NO_ua "}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
                     ],
                 ],
             ]

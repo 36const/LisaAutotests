@@ -37,6 +37,18 @@ return [
                         ],
                     ],
                     'goods_in_groups_coefs' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['goods_in_groups_coefs'],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'formula_coefs',
+                            'entity_id' => 1,
+                            'old_value' => '{"coef": 0.07}',
+                            'new_value' => '{"coef": 0.9}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -78,6 +90,18 @@ return [
                         ],
                     ],
                     'goods_in_groups_coefs' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['goods_in_groups_coefs'],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'formula_coefs',
+                            'entity_id' => 2,
+                            'old_value' => '{"coef": 0.15}',
+                            'new_value' => '{"coef": 0.33}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -119,6 +143,18 @@ return [
                         ],
                     ],
                     'goods_in_groups_coefs' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['goods_in_groups_coefs'],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'formula_coefs',
+                            'entity_id' => 3,
+                            'old_value' => '{"coef": 0.1}',
+                            'new_value' => '{"coef": 1.99}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -177,6 +213,18 @@ return [
                             'min_value' => 101,
                             'max_value' => 999999,
                             'coef' => 0.3
+                        ]
+                    ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'goods_in_groups_coefs',
+                            'entity_id' => 3,
+                            'old_value' => '{"coef": 0.7}',
+                            'new_value' => '{"coef": 0.75}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
                         ]
                     ],
                 ],

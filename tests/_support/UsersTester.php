@@ -37,7 +37,7 @@ class UsersTester extends GeneralTester
         $I->loadFixtureFromDataprovider();
         $I->loadMockFromDataprovider();
         $I->purgeAllQueues();
-        $I->truncateTablesInDatabase(['lisa_fixtures' => ['exceptions' => []]]);
+        $I->truncateTablesInDatabase(['lisa_fixtures' => ['exceptions' => [], 'common_log' => []]]);
 
         $I->wantTo($data['setting']['description']);
         $I->haveHttpHeader('Content-Type', 'application/json');

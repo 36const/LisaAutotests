@@ -33,6 +33,18 @@ return [
                             'excluded_field_id' => 6
                         ],
                     ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'excluded_fields',
+                            'entity_id' => 0,
+                            'old_value' => '{"field_id": 10, "excluded_field_id": 11}',
+                            'new_value' => '[]',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 0,
+                        ]
+                    ],
                 ],
             ]
         ]

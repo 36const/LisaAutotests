@@ -56,6 +56,28 @@ return [
                         ],
                     ],
                     'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'categories',
+                            'entity_id' => 1,
+                            'old_value' => '{"supervisor_id": 6}',
+                            'new_value' => '{"supervisor_id": 23}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ],
+                        [
+                            'id' => 2,
+                            'entity' => 'categories',
+                            'entity_id' => 2,
+                            'old_value' => '{"supervisor_id": 10}',
+                            'new_value' => '{"supervisor_id": 23}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ],
+                    ]
                 ],
             ],
             'RabbitMQWithRoutingKey' => [

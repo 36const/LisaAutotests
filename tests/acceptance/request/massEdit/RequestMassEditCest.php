@@ -52,13 +52,13 @@ class RequestMassEditCest
 
         //заполнить все поля модалки
         $I->click(RequestView::listFieldInResultPopUp('Вид структуры'));
-        $I->click(RequestView::valueFromListFieldInResultPopUp(2,
+        $I->retryClick(RequestView::valueFromListFieldInResultPopUp(2,
             'Существующие категории промежуточных уровней/автопорталы + перенос информации'));
         $I->click(RequestView::listFieldInResultPopUp('Сложность структуры'));
-        $I->click(RequestView::valueFromListFieldInResultPopUp(3,
+        $I->retryClick(RequestView::valueFromListFieldInResultPopUp(3,
             'Сложные (физические + функциональные + технологические характеристики) несколько видов товара'));
         $I->click(RequestView::listFieldInResultPopUp('Сложность группировки в заявках'));
-        $I->click(RequestView::valueFromListFieldInResultPopUp(4,
+        $I->retryClick(RequestView::valueFromListFieldInResultPopUp(4,
             'Очевидные товары для группировки + Наличие товаров без необходимых варьируемых параметров (больше 3-х категорий)'));
         $I->click(RequestView::listFieldInResultPopUp('Виза супервайзера'));
         $I->click(RequestView::valueFromListFieldInResultPopUp(5, 'Нет'));

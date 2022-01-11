@@ -131,7 +131,19 @@ return [
                                 'status' => 1
                             ]
                         ]
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 22,
+                            'old_value' => '[]',
+                            'new_value' => '{"name": "Управление отделом", "status": "1", "direction": "1", "project_id": "1"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -176,7 +188,19 @@ return [
                                 'status' => 0
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 22,
+                            'old_value' => '[]',
+                            'new_value' => '{"name": "Заявки Маркетплейс", "status": 0, "direction": "2", "project_id": "1"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -221,7 +245,19 @@ return [
                                 'status' => 1
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 22,
+                            'old_value' => '[]',
+                            'new_value' => '{"name": "Заявки Rozetka", "status": "1", "direction": "3", "project_id": "1"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -266,7 +302,19 @@ return [
                                 'status' => 0
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 22,
+                            'old_value' => '[]',
+                            'new_value' => '{"name": "Работа с группами", "status": 0, "direction": "4", "project_id": "1"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -311,7 +359,19 @@ return [
                                 'status' => 1
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 22,
+                            'old_value' => '[]',
+                            'new_value' => '{"name": "Работа с проектированием структур + фильтрами", "status": "1", "direction": "5", "project_id": "1"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -356,7 +416,19 @@ return [
                                 'status' => 0
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 22,
+                            'old_value' => '[]',
+                            'new_value' => '{"name": "Работа с порталами, фат-меню, категориями", "status": 0, "direction": "6", "project_id": "1"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -402,7 +474,19 @@ return [
                                 'project_id' => 2,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 22,
+                            'old_value' => '[]',
+                            'new_value' => '{"name": "Маркетинг2", "status": "1", "direction": null, "project_id": "2"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -448,7 +532,19 @@ return [
                                 'project_id' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auth.teams',
+                            'entity_id' => 22,
+                            'old_value' => '[]',
+                            'new_value' => '{"name": "Все", "status": 0, "direction": null, "project_id": 0}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [

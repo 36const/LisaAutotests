@@ -39,7 +39,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": "1", "field_id": "21"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -88,7 +100,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 0, "field_id": "22"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -137,7 +161,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "Без уточнений", "status": "1", "field_id": "23"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -186,7 +222,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "Более 5 уточнений", "status": 0, "field_id": "24"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -235,7 +283,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": "1", "field_id": "25"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -284,7 +344,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 0, "field_id": "26"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -333,7 +405,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": "1", "field_id": "27"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -382,7 +466,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 0, "field_id": "28"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -431,7 +527,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": "1", "field_id": "29"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -480,7 +588,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 0, "field_id": "30"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -529,7 +649,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": "1", "field_id": "31"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -578,7 +710,19 @@ return [
                                 'order' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 31,
+                            'old_value' => '[]',
+                            'new_value' => '{"order": 0, "value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 0, "field_id": "32"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -653,7 +797,7 @@ return [
 
     'case15' => [
         'setting' => [
-            'description' => 'Невозможность создания активного значения-дубля одного и того же поля',
+            'description' => 'Невозможность создания значения-дубля одного и того же поля',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -662,40 +806,6 @@ return [
                 'field_id' => 26,
                 'status' => 1,
                 'value' => 'Украинский',
-                'order' => null,
-            ],
-            'responseBody' => [
-                'errors' => [
-                    'field_id' => [
-                        0 => 'Такая комбинация поля и значения уже существует.',
-                    ],
-                    'value' => [
-                        0 => 'Такая комбинация поля и значения уже существует.',
-                    ],
-                ],
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'field_values' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['field_values']
-                ],
-            ],
-            'RabbitMQ' => [
-                'lisa_common' => [],
-            ],
-        ]
-    ],
-
-    'case16' => [
-        'setting' => [
-            'description' => 'Невозможность создания заблокированного значения-дубля одного и того же поля',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'id' => null,
-                'field_id' => 26,
-                'status' => 0,
-                'value' => 'Английский',
                 'order' => null,
             ],
             'responseBody' => [

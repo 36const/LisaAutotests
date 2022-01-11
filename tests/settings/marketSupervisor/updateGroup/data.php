@@ -88,7 +88,29 @@ return [
                             'title' => 'Mogo zin-chik',
                             'status' => 6
                         ],
-                    ]
+                    ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'markets_supervisors',
+                            'entity_id' => 83,
+                            'old_value' => '{"supervisor_id": 6}',
+                            'new_value' => '{"supervisor_id": 23}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ],
+                        [
+                            'id' => 2,
+                            'entity' => 'markets_supervisors',
+                            'entity_id' => 9423,
+                            'old_value' => '{"supervisor_id": 10}',
+                            'new_value' => '{"supervisor_id": 23}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQWithRoutingKey' => [

@@ -67,7 +67,19 @@ return [
                                 'status' => 1
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'difficulty_coefs',
+                            'entity_id' => 43,
+                            'old_value' => '[]',
+                            'new_value' => '{"status": 1, "type_id": 1, "field_ids": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,123,124,125,126,127,159,160,169]", "difficulty_coef": 1.5}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -119,7 +131,19 @@ return [
                                 'status' => 0
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'difficulty_coefs',
+                            'entity_id' => 43,
+                            'old_value' => '[]',
+                            'new_value' => '{"status": 0, "type_id": 4, "field_ids": "[1,4,7,10,13,16,19,125]", "difficulty_coef": 0.75}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -172,7 +196,19 @@ return [
                                 'status' => 1
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'difficulty_coefs',
+                            'entity_id' => 43,
+                            'old_value' => '[]',
+                            'new_value' => '{"status": 1, "type_id": 7, "field_ids": "[2,5,8,11,14,17,123,126]", "difficulty_coef": 2.5}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -216,7 +252,19 @@ return [
                                 'status' => 0
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'difficulty_coefs',
+                            'entity_id' => 43,
+                            'old_value' => '[]',
+                            'new_value' => '{"status": 0, "type_id": 11, "field_ids": "[]", "difficulty_coef": 3}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ]
         ]

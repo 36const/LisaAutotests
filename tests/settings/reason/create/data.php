@@ -66,7 +66,19 @@ return [
                                 'comment_is_required' => '1',
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 16,
+                            'old_value' => '[]',
+                            'new_value' => '{"reason": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": "1", "child_status": "3", "type_directions": "[\\"[1,1]\\",\\"[1,2]\\",\\"[2,1]\\",\\"[2,2]\\",\\"[3,1]\\",\\"[3,2]\\",\\"[4,0]\\",\\"[5,1]\\",\\"[6,2]\\",\\"[7,0]\\",\\"[8,0]\\",\\"[9,0]\\",\\"[10,0]\\",\\"[11,0]\\",\\"[12,1]\\",\\"[13,0]\\",\\"[14,0]\\",\\"[15,0]\\"]", "comment_is_required": "1", "reason_for_personal_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_personal_cab", "reason_for_supplier_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_supplier_cab", "reason_for_personal_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_personal_cab_ua", "reason_for_supplier_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_supplier_cab_ua"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -123,7 +135,19 @@ return [
                                 'comment_is_required' => '0',
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 16,
+                            'old_value' => '[]',
+                            'new_value' => '{"reason": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 0, "child_status": "4", "type_directions": "[\\"[3,1]\\",\\"[3,2]\\",\\"[4,0]\\",\\"[5,1]\\",\\"[6,2]\\",\\"[7,0]\\"]", "comment_is_required": "0", "reason_for_personal_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_personal_cab", "reason_for_supplier_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_supplier_cab", "reason_for_personal_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_personal_cab_ua", "reason_for_supplier_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_supplier_cab_ua"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -180,7 +204,19 @@ return [
                                 'comment_is_required' => '1',
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 16,
+                            'old_value' => '[]',
+                            'new_value' => '{"reason": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": "1", "child_status": "7", "type_directions": "[]", "comment_is_required": "1", "reason_for_personal_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_personal_cab", "reason_for_supplier_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_supplier_cab", "reason_for_personal_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_personal_cab_ua", "reason_for_supplier_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_supplier_cab_ua"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ]
         ]
@@ -237,7 +273,19 @@ return [
                                 'comment_is_required' => '1',
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'reasons',
+                            'entity_id' => 16,
+                            'old_value' => '[]',
+                            'new_value' => '{"reason": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 0, "child_status": "8", "type_directions": "[\\"[15,0]\\"]", "comment_is_required": "1", "reason_for_personal_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_personal_cab", "reason_for_supplier_cab": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_supplier_cab", "reason_for_personal_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_personal_cab_ua", "reason_for_supplier_cab_ua": "!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|reason_for_supplier_cab_ua"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ]
         ]

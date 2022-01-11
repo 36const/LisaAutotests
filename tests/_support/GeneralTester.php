@@ -34,7 +34,7 @@ class GeneralTester extends Actor
         $I->loadFixtureFromDataprovider();
         $I->loadMockFromDataprovider();
         $I->purgeAllQueues();
-        $I->truncateTablesInDatabase(['lisa_fixtures' => ['exceptions' => []]]);
+        $I->truncateTablesInDatabase(['lisa_fixtures' => ['exceptions' => [], 'common_log' => []]]);
 
         $I->wantTo($data['setting']['description']);
         $I->haveHttpHeader('Content-Type', 'application/json');
@@ -55,6 +55,9 @@ class GeneralTester extends Actor
 
             if (!in_array('exceptions', array_keys($dbTable)))
                 $I->assertFalse($I->grabFromDatabase('exceptions', 'message'));
+
+            if (!in_array('common_log', array_keys($dbTable)))
+                $I->assertFalse($I->grabFromDatabase('common_log', 'entity'));
         }
     }
 

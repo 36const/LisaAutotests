@@ -62,7 +62,19 @@ return [
                                 'status' => 1
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'priorities',
+                            'entity_id' => 1,
+                            'old_value' => '{"name": "Информация необходима для склада"}',
+                            'new_value' => '{"name": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -105,7 +117,19 @@ return [
                                 'status' => 0
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'priorities',
+                            'entity_id' => 1,
+                            'old_value' => '{"status": 1}',
+                            'new_value' => '{"status": 0}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -148,7 +172,19 @@ return [
                                 'status' => 0,
                             ],
                         ],
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'priorities',
+                            'entity_id' => 1,
+                            'old_value' => '{"name": "Информация необходима для склада", "status": 1}',
+                            'new_value' => '{"name": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 0}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [

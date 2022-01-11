@@ -32,7 +32,19 @@ return [
                                 'excluded_field_id' => 9
                             ]
                         ]
-                    )
+                    ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'excluded_fields',
+                            'entity_id' => 0,
+                            'old_value' => '[]',
+                            'new_value' => '{"field_id": "10", "excluded_field_id": "9"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ]
+                    ],
                 ],
             ]
         ]

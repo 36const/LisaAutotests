@@ -41,6 +41,18 @@ return [
                             ],
                         ]
                     ),
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'auto_diff_fields',
+                            'entity_id' => 3,
+                            'old_value' => '{"fields": "[21, 22, 23, 24, 25, 26, 27, 31, 68, 71, 111, 93]"}',
+                            'new_value' => '{"fields": "[21,22,23,24,25,26,27,31,68,71,67]"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ]
         ]

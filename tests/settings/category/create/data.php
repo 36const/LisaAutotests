@@ -215,6 +215,18 @@ return [
                         ]
                     ),
                     'rozetka_categories' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['rozetka_categories'],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'categories',
+                            'entity_id' => 4,
+                            'old_value' => '[]',
+                            'new_value' => '{"title": "=}~!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 1, "difficulty": "2.5", "supervisor_id": 6}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQWithRoutingKey' => [
@@ -826,6 +838,88 @@ return [
                             'deleted' => null,
                         ],
                     ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'categories',
+                            'entity_id' => 4,
+                            'old_value' => '[]',
+                            'new_value' => '{"title": "=}~!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 1, "difficulty": "2.5", "supervisor_id": 6}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ],
+                        [
+                            'id' => 2,
+                            'entity' => 'rozetka_categories',
+                            'entity_id' => 4653010,
+                            'old_value' => '{"lisa_category_id": 1}',
+                            'new_value' => '{"lisa_category_id": 4}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ],
+                        [
+                            'id' => 3,
+                            'entity' => 'rozetka_categories',
+                            'entity_id' => 2514872,
+                            'old_value' => '{"lisa_category_id": 2}',
+                            'new_value' => '{"lisa_category_id": 4}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ],
+                        [
+                            'id' => 4,
+                            'entity' => 'rozetka_categories',
+                            'entity_id' => 2973057,
+                            'old_value' => '{"lisa_category_id": 474}',
+                            'new_value' => '{"lisa_category_id": 4}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ],
+                        [
+                            'id' => 5,
+                            'entity' => 'rozetka_categories',
+                            'entity_id' => 3167120,
+                            'old_value' => '{"lisa_category_id": 474}',
+                            'new_value' => '{"lisa_category_id": 4}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ],
+                        [
+                            'id' => 6,
+                            'entity' => 'rozetka_categories',
+                            'entity_id' => 4641568,
+                            'old_value' => '{"lisa_category_id": 474}',
+                            'new_value' => '{"lisa_category_id": 4}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ],
+                        [
+                            'id' => 7,
+                            'entity' => 'rozetka_categories',
+                            'entity_id' => 4655272,
+                            'old_value' => '{"lisa_category_id": 474}',
+                            'new_value' => '{"lisa_category_id": 4}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ],
+                        [
+                            'id' => 8,
+                            'entity' => 'rozetka_categories',
+                            'entity_id' => 2460402,
+                            'old_value' => '{"lisa_category_id": 474}',
+                            'new_value' => '{"lisa_category_id": 4}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ],
+                    ]
                 ]
             ],
             'RabbitMQWithRoutingKey' => [
@@ -880,6 +974,18 @@ return [
                         ]
                     ),
                     'rozetka_categories' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['rozetka_categories'],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'categories',
+                            'entity_id' => 4,
+                            'old_value' => '[]',
+                            'new_value' => '{"title": "=}~!@#$%^&*()_+`=-]\'/[;.,}\\"?{:><\\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 0, "difficulty": "2.5", "supervisor_id": 6}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 1,
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQWithRoutingKey' => [

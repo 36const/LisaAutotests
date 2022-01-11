@@ -109,6 +109,18 @@ return [
                             'order' => 0,
                         ],
                     ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 1,
+                            'old_value' => '{"value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ"}',
+                            'new_value' => '{"value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -169,6 +181,18 @@ return [
                             'order' => 0,
                         ],
                     ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 1,
+                            'old_value' => '{"status": 1}',
+                            'new_value' => '{"status": 0}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
+                    ],
                 ],
             ],
             'RabbitMQWithRoutingKey' => [
@@ -220,6 +244,18 @@ return [
                             'status' => 0,
                             'order' => 0,
                         ],
+                    ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 1,
+                            'old_value' => '{"value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|1234567890абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ", "status": 1, "field_id": 21}',
+                            'new_value' => '{"value": "!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|", "status": 0, "field_id": "22"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
                     ],
                 ],
             ],
@@ -273,6 +309,18 @@ return [
                             'status' => 0,
                             'order' => 0,
                         ],
+                    ],
+                    'common_log' => [
+                        [
+                            'id' => 1,
+                            'entity' => 'field_values',
+                            'entity_id' => 1,
+                            'old_value' => '{"field_id": 21}',
+                            'new_value' => '{"field_id": "23"}',
+                            'user_id' => 4,
+                            'created_at >=' => date('Y-m-d'),
+                            'event' => 2,
+                        ]
                     ],
                 ],
             ],
