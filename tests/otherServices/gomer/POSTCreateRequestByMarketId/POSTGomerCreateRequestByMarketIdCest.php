@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Example;
@@ -34,7 +35,7 @@ class POSTGomerCreateRequestByMarketIdCest
         $I->sendPOST('/request/create-request-by-market-id', $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
-        $I->seeResponseContainsJson($providerData['responseBody']);
+        $I->canSeeJsonResponseEquals($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);

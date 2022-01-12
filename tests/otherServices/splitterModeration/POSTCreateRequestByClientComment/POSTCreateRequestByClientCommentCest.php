@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Example;
@@ -31,7 +32,7 @@ class POSTCreateRequestByClientCommentCest
         $I->sendPOST('/request/create-request-by-client-comment', $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
-        $I->seeResponseContainsJson($providerData['responseBody']);
+        $I->canSeeJsonResponseEquals($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);

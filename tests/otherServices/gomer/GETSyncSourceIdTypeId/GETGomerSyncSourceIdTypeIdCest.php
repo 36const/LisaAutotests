@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Example;

@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Example;
@@ -33,7 +34,7 @@ class POSTCreateRequestByMobileCurrierCest
             $I->sendPOST('/request/create-request-by-mobile-courier', $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
-        $I->seeResponseContainsJson($providerData['responseBody']);
+        $I->canSeeJsonResponseEquals($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);

@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Example;
@@ -31,7 +32,7 @@ class POSTComiJiraRequestCest
         $I->sendPOST('/request/jira-request' . $providerData['requestParameters'], []);
 
         $I->seeResponseCodeIs($providerData['responseCode']);
-        $I->seeResponseContainsJson($providerData['responseBody']);
+        $I->canSeeJsonResponseEquals($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
     }

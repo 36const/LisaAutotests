@@ -387,6 +387,7 @@ Media:
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
+                    'idComment: поле должно быть числом',
                     'Не передано поле idComment',
                 ]
             ],
@@ -510,6 +511,7 @@ Media:
             'responseBody' => [
                 'status' => 400,
                 'errors' => [
+                    'idComment: поле должно быть числом',
                     'Не передано поле sProductName'
                 ]
             ],

@@ -1,4 +1,5 @@
 <?php
+
 namespace lisa;
 
 use Codeception\Example;
@@ -37,7 +38,7 @@ class POSTGomerCreateRequestCest
             $I->sendPOST('/request/create-request', $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode'] ?? 200);
-        $I->seeJsonResponseEquals($providerData['responseBody']);
+        $I->canSeeJsonResponseEquals($providerData['responseBody']);
 
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);
