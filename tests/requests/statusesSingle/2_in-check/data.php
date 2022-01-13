@@ -156,10 +156,10 @@ return [
     'case2_4' => [
         'setting' => [
             'description' => 'Перевод из "Готова для распределения" в "Отменена" + отправка запроса в VAT',
+            //+ проверка что заявка не в статусе 8/9 с supplier_cabinet_id переведётся без загруженных в minio вложений
         ],
         'fixture_data' => include __DIR__ . '/fixture/case2_4_supplier.php',
         'mock_data' => [
-            $mockDataStatusesSingle,
             'vat' => [
                 'httpRequest' => [
                     'method' => 'POST',
@@ -183,7 +183,8 @@ return [
                     'body' => file_get_contents(codecept_data_dir('/Vat/case400.json')),
                     'statusCode' => 400
                 ],
-            ]
+            ],
+            $mockDataStatusesSingle,
         ],
         'provider_data' => [
             'requestParameter' => 'change-reason',

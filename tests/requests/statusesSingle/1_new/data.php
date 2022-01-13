@@ -265,10 +265,10 @@ return [
     'case1_3' => [
         'setting' => [
             'description' => 'Перевод из "Новая" в "На доработке" + нотификации + добавление вложений + отправка запроса в VAT',
+            //+ проверка что заявка не в статусе 8/9 с supplier_cabinet_id переведётся без загруженных в minio вложений
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1_3_supplier.php',
         'mock_data' => [
-            $mockDataStatusesSingle,
             'vat' => [
                 'httpRequest' => [
                     'method' => 'POST',
@@ -292,7 +292,8 @@ return [
                     'body' => file_get_contents(codecept_data_dir('/Vat/case200.json')),
                     'statusCode' => 200
                 ],
-            ]
+            ],
+            $mockDataStatusesSingle,
         ],
         'provider_data' => [
             'requestParameter' => 'change-reason',

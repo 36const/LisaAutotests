@@ -5,7 +5,7 @@ return [
         'setting' => [
             'description' => 'Перевод из "Ожидает" во "В работе" тип 1 направление 1',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case.php',
+        'fixture_data' => include __DIR__ . '/fixture/case7_6_1_1.php',
         'mock_data' => $mockDataStatusesSingle,
         'provider_data' => [
             'requestParameter' => 'to-work',
@@ -72,7 +72,7 @@ return [
                             'manager_team' => 1,
                         ]
                     ],
-                    'requests_fields' => (include __DIR__ . '/fixture/case.php')['lisa_fixtures']['requests_fields'],
+                    'requests_fields' => (include __DIR__ . '/fixture/case7_6_1_1.php')['lisa_fixtures']['requests_fields'],
                     'user_notifications' => [
                         [
                             'id' => 1,

@@ -922,6 +922,492 @@ return [
         ]
     ],
 
+    'case6_5_supplier' => [
+        'setting' => [
+            'description' => 'Перевод из "В работе" в "Ожидает взятия в работу" + нотификации, без вложения при supplier_cabinet_id',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case_supplier.php',
+        'mock_data' => [
+            'vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Ожидает взятия в работу',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case404.json')),
+                    'statusCode' => 404
+                ],
+            ],
+            $mockDataStatusesSingle
+        ],
+        'provider_data' => [
+            'requestParameter' => 'appoint-manager',
+            'requestBody' => [
+                'ids' => [
+                    0 => 1,
+                ],
+                'userId' => 12,
+                'currentStatus' => 6,
+                'payload' => [
+                    1 => false,
+                    2 => true,
+                    20 => 65,
+                    21 => 4,
+                    22 => 9,
+                    23 => 11,
+                    24 => 15,
+                    25 => 18,
+                    26 => 21,
+                    27 => 25,
+                    31 => 48,
+                    66 => '10',
+                    68 => '10',
+                    69 => '10',
+                    70 => '10',
+                    71 => '10',
+                    76 => '10',
+                    77 => '10',
+                    88 => '10',
+                    93 => '10',
+                    94 => '10',
+                    111 => '10',
+                ],
+            ],
+            'responseBody' => [
+                'count' => 1,
+                'message' => 'Менеджер Контентович 1Б назначен исполнителем 1 заявкам',
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 1,
+                            'supervisor_id' => 6,
+                            'manager_id' => 12,
+                            'status' => 5,
+                            'direction' => 1,
+                            'priority' => 2,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => '',
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'description' => 'description',
+                            'category_id' => 1,
+                            'seller_id' => 83,
+                            'recommendations' => '',
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => '2020-01-01 00:00:03',
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => '',
+                            'supervisor_comment' => '',
+                            'last_change_status_date >=' => date('Y-m-d'),
+                            'team_direction' => 3,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0,
+                            'previous_status' => 6,
+                            'supplier_cabinet_id' => 111,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
+                        ]
+                    ],
+                    'requests_fields' => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 2,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 20,
+                            'value' => 65,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 21,
+                            'value' => 4,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 22,
+                            'value' => 9,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 23,
+                            'value' => 11,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 24,
+                            'value' => 15,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 25,
+                            'value' => 18,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 26,
+                            'value' => 21,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 27,
+                            'value' => 25,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 31,
+                            'value' => 48,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 49,
+                            'value' => 60.1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 50,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 51,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 52,
+                            'value' => 2,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => 2,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 54,
+                            'value' => 1.5,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 60.1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 66,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 68,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 69,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 70,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 71,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 76,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 77,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 88,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 89,
+                            'value >' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 93,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 94,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 111,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                    ],
+                    'user_notifications' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 6,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'manager_id',
+                            'changed_fields' => '{"newValue": 12, "oldValue": 11}',
+                            'notify_service_id' => null
+                        ],
+                        [
+                            'id' => 2,
+                            'user_id' => 12,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'manager_id',
+                            'changed_fields' => '{"newValue": 12, "oldValue": 11}',
+                            'notify_service_id' => null
+                        ],
+                        [
+                            'id' => 3,
+                            'user_id' => 4,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'status',
+                            'changed_fields' => '{"newValue": 5, "oldValue": 6}',
+                            'notify_service_id' => null
+                        ],
+                        [
+                            'id' => 4,
+                            'user_id' => 6,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'status',
+                            'changed_fields' => '{"newValue": 5, "oldValue": 6}',
+                            'notify_service_id' => null
+                        ],
+                        [
+                            'id' => 5,
+                            'user_id' => 15,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'status',
+                            'changed_fields' => '{"newValue": 5, "oldValue": 6}',
+                            'notify_service_id' => null
+                        ],
+                        [
+                            'id' => 6,
+                            'user_id' => 17,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'status',
+                            'changed_fields' => '{"newValue": 5, "oldValue": 6}',
+                            'notify_service_id' => null
+                        ]
+                    ],
+                    'request_status_history' => [
+                        [
+                            'id' => 1,
+                            'request_id' => 1,
+                            'user_id' => 4,
+                            'old_status' => 5,
+                            'new_status' => 6,
+                            'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'created_at' => date('Y-m-d H:i:s', strtotime('- 3 minutes')),
+                            'manager_id' => 11,
+                            'reasons' => null
+                        ],
+                        [
+                            'id' => 2,
+                            'request_id' => 1,
+                            'user_id' => 4,
+                            'old_status' => 6,
+                            'new_status' => 5,
+                            'reason' => null,
+                            'created_at >=' => date('Y-m-d'),
+                            'manager_id' => 12,
+                            'reasons' => null
+                        ]
+                    ],
+                    'transition_info' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\Exception',
+                            'message' => "{\n    \"id\": 1,\n    \"status\": 404,\n    \"errors\": {\n        \"id\": \"Заявка не найдена\"\n    }\n}",
+                            'file LIKE' => '%/api/infra/api/VATApiClient.php',
+                            'code' => 404,
+                        ],
+                    ],
+                ],
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [
+                    '{"notificationId":1,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: назначен новый исполнитель Менеджер Контентович 1Б","notification":"Константин Куцан <b>назначил(а) исполнителем заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] пользователя Менеджер Контентович 1Б</br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":2,"userId":12,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: назначен новый исполнитель Менеджер Контентович 1Б","notification":"Константин Куцан <b>назначил(а) исполнителем заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=2\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] Вас</br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":3,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Ожидает взятия в работу`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Ожидает взятия в работу\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                    '{"notificationId":5,"userId":15,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Ожидает взятия в работу`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=5\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Ожидает взятия в работу\"</b> </br><b>Количество в работу:</b> 10</br>","requestId":1}',
+                ],
+                'lisa_sendOuterNotifications' => [],
+                'lisa_common' => [
+                    '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":1},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":2,"value":"1"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":20,"value":"65"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":21,"value":"4"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":22,"value":"9"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":23,"value":"11"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":24,"value":"15"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":25,"value":"18"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":26,"value":"21"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":27,"value":"25"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":31,"value":"48"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":66,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":68,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":69,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":70,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":71,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":76,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":77,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":88,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":93,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":94,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":111,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":49,"value":"60.1"},"changed_fields_names":["value"]}',
+                    '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":64,"value":"60.1"},"changed_fields_names":["value"]}',
+                    '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":54,"value":"1.5"},"changed_fields_names":["value"]}',
+                    '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":53,"value":"2"},"changed_fields_names":["value"]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":89,"value":"',
+                    '{"action":"create","entity":"request_status_history","fields_data":{"id":2,"request_id":1,"user_id":4,"old_status":6,"new_status":5,"reason":null,"created_at":"' . date('Y-m-d'),
+                ],
+            ],
+            'RabbitMQWithRoutingKey' => [
+                'lisa_common' => [
+                    'update.requests.all' => [
+                        '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":12,"status":5,"direction":1,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":1,"seller_id":83,"recommendations":"","reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":"","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
+                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":111,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":1},"changed_fields_names":["manager_id","status","last_change_status_date","previous_status"]}'
+                    ]
+                ],
+            ],
+        ]
+    ],
+
     'case6_7' => [
         'setting' => [
             'description' => 'Перевод из "В работе" в "Ожидает" + нотификации + добавление и удаление вложений',
@@ -1555,9 +2041,668 @@ return [
         ],
     ],
 
+    'case6_7_supplier' => [
+        'setting' => [
+            'description' => 'Перевод из "В работе" в "Ожидает" + нотификации + добавление и удаление вложений, без вложения при supplier_cabinet_id',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case_supplier.php',
+        'mock_data' => [
+            'vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Ожидает',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case200.json')),
+                    'statusCode' => 200
+                ],
+            ],
+            $mockDataStatusesSingle
+        ],
+        'provider_data' => [
+            'requestParameter' => 'change-reason',
+            'requestBody' => [
+                'ids' => [
+                    0 => 1,
+                ],
+                'reasons' => [
+                    0 => [
+                        'id' => 1,
+                        'reason' => 'Ожидается загрузка фото в товары',
+                        'comment_is_required' => 1,
+                    ],
+                    1 => [
+                        'id' => 2,
+                        'reason' => 'Требуется уточнение информации по задаче',
+                        'comment_is_required' => 0,
+                    ],
+                    2 => [
+                        'id' => 3,
+                        'reason' => 'Изменен приоритет задачи',
+                        'comment_is_required' => 1,
+                    ],
+                ],
+                'status' => 7,
+                'currentStatus' => 6,
+                'payload' => [
+                    1 => false,
+                    2 => true,
+                    20 => 65,
+                    21 => 4,
+                    22 => 9,
+                    23 => 11,
+                    24 => 15,
+                    25 => 18,
+                    26 => 21,
+                    27 => 25,
+                    31 => 48,
+                    66 => '10',
+                    68 => '10',
+                    69 => '10',
+                    70 => '10',
+                    71 => '10',
+                    76 => '10',
+                    77 => '10',
+                    88 => '10',
+                    93 => '10',
+                    94 => '10',
+                    111 => '10',
+                    'deletedAttachments' => [
+                        0 => 1,
+                        1 => 4,
+                    ],
+                    'files' => [
+                        0 => [
+                            'folder' => 1631802792673,
+                            'fileName' => '803999_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'alias' => '194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'size' => 60424,
+                        ],
+                        1 => [
+                            'folder' => 1631802792673,
+                            'fileName' => '803999_~!@#$%^&*()_+`-=][\';.|}{:?><.jpg',
+                            'alias' => '~!@#$%^&*()_+`-=][\';.|}{:?><.jpg',
+                            'size' => 34304,
+                        ],
+                    ],
+                ],
+                'comment' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+            ],
+            'responseBody' => [
+                'count' => 1,
+                'message' => 'Обработано заявок: 1',
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 1,
+                            'supervisor_id' => 6,
+                            'manager_id' => 11,
+                            'status' => 7,
+                            'direction' => 1,
+                            'priority' => 2,
+                            'awaiting_correction' => 0,
+                            'created_at' => '2020-01-01 00:00:00',
+                            'correction_comment' => '',
+                            'amount_to_work' => 10,
+                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'description' => 'description',
+                            'category_id' => 1,
+                            'seller_id' => 83,
+                            'recommendations' => '',
+                            'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => '2020-01-01 00:00:03',
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => '',
+                            'supervisor_comment' => '',
+                            'last_change_status_date >=' => date('Y-m-d'),
+                            'team_direction' => 3,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0,
+                            'previous_status' => 6,
+                            'supplier_cabinet_id' => 111,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 1,
+                            'manager_team' => 1,
+                        ]
+                    ],
+                    'requests_fields' => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 2,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 20,
+                            'value' => 65,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 21,
+                            'value' => 4,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 22,
+                            'value' => 9,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 23,
+                            'value' => 11,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 24,
+                            'value' => 15,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 25,
+                            'value' => 18,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 26,
+                            'value' => 21,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 27,
+                            'value' => 25,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 31,
+                            'value' => 48,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 49,
+                            'value' => 60.1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 50,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 51,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 52,
+                            'value' => 2,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => 2,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 54,
+                            'value' => 1.5,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 60.1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 66,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 68,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 69,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 70,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 71,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 76,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 77,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 88,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 89,
+                            'value >' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 93,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 94,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 111,
+                            'value' => 10,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                    ],
+                    'request_attachments' => [
+                        [
+                            'id' => 1,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => '194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'status' => 0,
+                            'uploaded_by' => 'Константин Куцан',
+                            'uploaded_at' => '2020-01-01 00:00:00',
+                            'deleted_by' => 'Константин Куцан',
+                            'deleted_at >=' => date('Y-m-d'),
+                            'file_name' => '803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'size' => 60424,
+                        ],
+                        [
+                            'id' => 2,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => 'doc .doc',
+                            'status' => 1,
+                            'uploaded_by' => 'Константин Куцан',
+                            'uploaded_at' => '2020-01-01 00:00:00',
+                            'deleted_by' => NULL,
+                            'deleted_at' => NULL,
+                            'file_name' => '803902_doc.doc',
+                            'size' => 34304,
+                        ],
+                        [
+                            'id' => 3,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => 'pptx_абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїі.pptx',
+                            'status' => 3,
+                            'uploaded_by' => 'Константин Куцан',
+                            'uploaded_at' => '2020-01-01 00:00:00',
+                            'deleted_by' => NULL,
+                            'deleted_at' => NULL,
+                            'file_name' => '803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx',
+                            'size' => 97152,
+                        ],
+                        [
+                            'id' => 4,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => '!@#$%^&*()_+`-=][\';.|}{:?><.jpg',
+                            'status' => 0,
+                            'uploaded_by' => 'Константин Куцан',
+                            'uploaded_at' => '2020-01-01 00:00:00',
+                            'deleted_by' => 'Константин Куцан',
+                            'deleted_at >=' => date('Y-m-d'),
+                            'file_name' => '803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg',
+                            'size' => 34304,
+                        ],
+                        [
+                            'id' => 5,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => '194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'status' => 3,
+                            'uploaded_by' => 'Константин Куцан',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => NULL,
+                            'deleted_at' => NULL,
+                            'file_name' => '803999_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
+                            'size' => 60424,
+                        ],
+                        [
+                            'id' => 6,
+                            'request_id' => 1,
+                            'file_name_old' => '',
+                            'alias' => '!@#$%^&*()_+`-=][\';.|}{:?><.jpg',
+                            'status' => 3,
+                            'uploaded_by' => 'Константин Куцан',
+                            'uploaded_at >=' => date('Y-m-d'),
+                            'deleted_by' => NULL,
+                            'deleted_at' => NULL,
+                            'file_name' => '803999_~!@#$%^&*()_+`-=][;.|}{:?><.jpg',
+                            'size' => 34304,
+                        ],
+                    ],
+                    'user_notifications' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'attachments',
+                            'changed_fields' => '{"newValue": {"added": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"], "deleted": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"]}, "oldValue": []}',
+                            'notify_service_id' => NULL,
+                        ],
+                        [
+                            'id' => 2,
+                            'user_id' => 6,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'attachments',
+                            'changed_fields' => '{"newValue": {"added": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"], "deleted": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"]}, "oldValue": []}',
+                            'notify_service_id' => NULL,
+                        ],
+                        [
+                            'id' => 3,
+                            'user_id' => 11,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'attachments',
+                            'changed_fields' => '{"newValue": {"added": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"], "deleted": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"]}, "oldValue": []}',
+                            'notify_service_id' => NULL,
+                        ],
+                        [
+                            'id' => 4,
+                            'user_id' => 15,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'attachments',
+                            'changed_fields' => '{"newValue": {"added": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"], "deleted": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"]}, "oldValue": []}',
+                            'notify_service_id' => NULL,
+                        ],
+                        [
+                            'id' => 5,
+                            'user_id' => 17,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'attachments',
+                            'changed_fields' => '{"newValue": {"added": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"], "deleted": ["194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd", "!@#$%^&*()_+`-=][\';.|}{:?><.jpg"]}, "oldValue": []}',
+                            'notify_service_id' => NULL,
+                        ],
+                        [
+                            'id' => 6,
+                            'user_id' => 4,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '{"Причина": "Изменен приоритет задачи | Ожидается загрузка фото в товары | Требуется уточнение информации по задаче"}',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'status',
+                            'changed_fields' => '{"newValue": 7, "oldValue": 6}',
+                            'notify_service_id' => null
+                        ],
+                        [
+                            'id' => 7,
+                            'user_id' => 11,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '{"Причина": "Изменен приоритет задачи | Ожидается загрузка фото в товары | Требуется уточнение информации по задаче"}',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'status',
+                            'changed_fields' => '{"newValue": 7, "oldValue": 6}',
+                            'notify_service_id' => null
+                        ],
+                        [
+                            'id' => 8,
+                            'user_id' => 15,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '{"Причина": "Изменен приоритет задачи | Ожидается загрузка фото в товары | Требуется уточнение информации по задаче"}',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'status',
+                            'changed_fields' => '{"newValue": 7, "oldValue": 6}',
+                            'notify_service_id' => null
+                        ],
+                        [
+                            'id' => 9,
+                            'user_id' => 17,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => 2,
+                            'amount_to_work' => 10,
+                            'request_subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '{"Причина": "Изменен приоритет задачи | Ожидается загрузка фото в товары | Требуется уточнение информации по задаче"}',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'status',
+                            'changed_fields' => '{"newValue": 7, "oldValue": 6}',
+                            'notify_service_id' => null
+                        ]
+                    ],
+                    'request_status_history' => [
+                        [
+                            'id' => 1,
+                            'request_id' => 1,
+                            'user_id' => 4,
+                            'old_status' => 5,
+                            'new_status' => 6,
+                            'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'created_at' => date('Y-m-d H:i:s', strtotime('- 3 minutes')),
+                            'manager_id' => 11,
+                            'reasons' => null
+                        ],
+                        [
+                            'id' => 2,
+                            'request_id' => 1,
+                            'user_id' => 4,
+                            'old_status' => 6,
+                            'new_status' => 7,
+                            'reason' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'created_at >=' => date('Y-m-d'),
+                            'manager_id' => 11,
+                            'reasons' => 'Изменен приоритет задачи | Ожидается загрузка фото в товары | Требуется уточнение информации по задаче'
+                        ]
+                    ],
+                    'requests_reasons' => [
+                        [
+                            'request_id' => 1,
+                            'reason_id' => 1
+                        ],
+                        [
+                            'request_id' => 1,
+                            'reason_id' => 2
+                        ],
+                        [
+                            'request_id' => 1,
+                            'reason_id' => 3
+                        ],
+                    ],
+                    'transition_info' => []
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendMailNotifications' => [
+                    '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: изменен набор вложений","notification":"Константин Куцан <b>изменил(а) набор вложений заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br> <b>Добавлено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br><b>Удалено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br>","requestId":1}',
+                    '{"notificationId":3,"userId":11,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: изменен набор вложений","notification":"Константин Куцан <b>изменил(а) набор вложений заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br> <b>Добавлено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br><b>Удалено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br>","requestId":1}',
+                    '{"notificationId":5,"userId":17,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: изменен набор вложений","notification":"Константин Куцан <b>изменил(а) набор вложений заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=5\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br> <b>Добавлено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br><b>Удалено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br>","requestId":1}',
+                    '{"notificationId":7,"userId":11,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Ожидает`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=7\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Ожидает\"</b> </br><b>Количество в работу:</b> 10</br><b>Причина:</b> Изменен приоритет задачи | Ожидается загрузка фото в товары | Требуется уточнение информации по задаче </br>","requestId":1}',
+                    '{"notificationId":8,"userId":15,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Ожидает`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=8\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Ожидает\"</b> </br><b>Количество в работу:</b> 10</br><b>Причина:</b> Изменен приоритет задачи | Ожидается загрузка фото в товары | Требуется уточнение информации по задаче </br>","requestId":1}',
+                ],
+                'lisa_sendOuterNotifications' => [],
+                'lisa_common' => [
+                    '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":1},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":2,"value":"1"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":20,"value":"65"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":21,"value":"4"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":22,"value":"9"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":23,"value":"11"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":24,"value":"15"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":25,"value":"18"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":26,"value":"21"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":27,"value":"25"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":31,"value":"48"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":66,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":68,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":69,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":70,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":71,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":76,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":77,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":88,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":93,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":94,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":111,"value":"10"},"changed_fields_names":[]}',
+                    '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":49,"value":"60.1"},"changed_fields_names":["value"]}',
+                    '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":64,"value":"60.1"},"changed_fields_names":["value"]}',
+                    '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":54,"value":"1.5"},"changed_fields_names":["value"]}',
+                    '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":53,"value":"2"},"changed_fields_names":["value"]}',
+                    '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":89,"value":"',
+                    '{"action":"create","entity":"request_status_history","fields_data":{"id":2,"request_id":1,"user_id":4,"old_status":6,"new_status":7,"reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","created_at":"' . date('Y-m-d'),
+                ],
+                'lisa_saveFiles' => [
+                    '[{"folder":"1631802792673","fileName":"803999_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","alias":"194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","size":"60424","attachment":{"id":5,"request_id":1,"file_name_old":"","alias":"194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","status":3,"uploaded_by":"Константин Куцан","uploaded_at":null,"deleted_by":null,"deleted_at":null,"file_name":"803999_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd","size":60424}},' .
+                    '{"folder":"1631802792673","fileName":"803999_~!@#$%^&*()_+`-=][\';.|}{:?><.jpg","alias":"!@#$%^&*()_+`-=][\';.|}{:?><.jpg","size":"34304","attachment":{"id":6,"request_id":1,"file_name_old":"","alias":"!@#$%^&*()_+`-=][\';.|}{:?><.jpg","status":3,"uploaded_by":"Константин Куцан","uploaded_at":null,"deleted_by":null,"deleted_at":null,"file_name":"803999_~!@#$%^&*()_+`-=][;.|}{:?><.jpg","size":34304}}]'
+                ]
+            ],
+            'RabbitMQWithRoutingKey' => [
+                'lisa_common' => [
+                    'update.requests.all' => [
+                        '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":1,"supervisor_id":6,"manager_id":11,"status":7,"direction":1,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Добавление новых товаров (Работа с товарами Розетки)","description":"description","category_id":1,"seller_id":83,"recommendations":"","reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":"2020-01-01 00:00:03","actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":"","supervisor_comment":"","last_change_status_date":"' . date('Y-m-d'),
+                        '","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":6,"supplier_cabinet_id":111,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":1},"changed_fields_names":["status","reason","last_change_status_date","previous_status"]}'
+                    ]
+                ],
+            ],
+        ],
+    ],
+
     'case6_7_1_2_photoload_1' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Ожидает" c ранее загруженными фото, причина 1 + отправка запроса в VAT',
+            'description' => 'Перевод из "В работе" в "Ожидает" c ранее загруженными фото в гомере, причина 1 + отправка запроса в VAT',
             //проверка обнуления requests.photo_load_status
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
@@ -1898,7 +3043,7 @@ return [
 
     'case6_7_1_2_photoload_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Ожидает" c ранее загруженными фото, причина 2',
+            'description' => 'Перевод из "В работе" в "Ожидает" c ранее загруженными фото в гомере, причина 2',
             //проверка НЕобнуления requests.photo_load_status
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
@@ -4718,7 +5863,7 @@ return [
 
     'case6_9_2_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" 2/2 без "Ждёт группировки/Товары на модерации" в Гомере',
+            'description' => 'Перевод из "В работе" в "Выполнен" 2/2 без "Ждёт группировки/Товары на модерации" в Гомере, с вложением при supplier_cabinet_id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_2_2.php',
         'mock_data' => [
@@ -4739,6 +5884,30 @@ return [
                         ]
                     ],
                     'body' => file_get_contents(__DIR__ . '/mock/case_not_on-hold.json'),
+                    'statusCode' => 200
+                ],
+            ],
+            'vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Выполнена',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case200.json')),
                     'statusCode' => 200
                 ],
             ],
@@ -4804,7 +5973,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 6,
-                            'supplier_cabinet_id' => null,
+                            'supplier_cabinet_id' => 111,
                             'payload' => '[]',
                             'rz_category_id' => null,
                             'author_team' => 17,
@@ -5004,7 +6173,7 @@ return [
 
     'case6_9_2_2_on-hold' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" 2/2 с "Товары на модерации" в Гомере',
+            'description' => 'Перевод из "В работе" в "Выполнен" 2/2 с "Товары на модерации" в Гомере, с вложением при supplier_cabinet_id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_2_2.php',
         'mock_data' => [
@@ -5026,6 +6195,30 @@ return [
                     ],
                     'body' => file_get_contents(__DIR__ . '/mock/case2_on-hold.json'),
                     'statusCode' => 200
+                ],
+            ],
+            'vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Ожидает',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content'
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case400.json')),
+                    'statusCode' => 400
                 ],
             ],
             $mockDataStatusesSingle
@@ -5092,7 +6285,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 6,
-                            'supplier_cabinet_id' => null,
+                            'supplier_cabinet_id' => 111,
                             'payload' => '[]',
                             'rz_category_id' => null,
                             'author_team' => 17,
@@ -5289,7 +6482,17 @@ return [
                             'reason' => null,
                             'reasons_list' => '[]'
                         ],
-                    ]
+                    ],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'yii\base\Exception',
+                            'message' => "{\n    \"status\": 400,\n    \"errors\": {\n        \"status\": [\n            \"Значение «Статус заявки» должно быть числом.\"\n        ]\n    }\n}",
+                            'file LIKE' => '%/api/infra/api/VATApiClient.php',
+                            'code' => 400,
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -6815,6 +8018,68 @@ return [
                     'requests_reasons' => [],
                     'transition_info' => [],
                     'auto_diff_log' => [],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_sendOuterNotifications' => [],
+            ]
+        ]
+    ],
+
+    'case6_9_5_1_supplier' => [
+        'setting' => [
+            'description' => 'Невозможность перевода из "В работе" в "Выполнен" 5/1 без доступных вложений при supplier_cabinet_id',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case6_9_5_1_supplier.php',
+        'mock_data' => $mockDataStatusesSingle,
+        'provider_data' => [
+            'requestParameter' => 'update',
+            'requestBody' => [
+                21 => 5,
+                22 => 9,
+                23 => 14,
+                24 => 17,
+                25 => 19,
+                26 => 21,
+//                27 => 24,
+//                31 => 48,
+                67 => '10',
+                68 => '1',
+                69 => '10',
+                70 => '10',
+                71 => '0',
+                76 => '10',
+                77 => '10',
+                88 => '10',
+                93 => '0',
+                94 => '10',
+                111 => '0',
+                'status' => 9,
+                'currentStatus' => 6,
+                'result_comment' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+            ],
+            'responseBody' => [
+                'errors' => 'Для выполнения задачи необходимо загрузить файл(ы) для отображения в Кабинете Поставщика'
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => (include __DIR__ . '/fixture/case6_9_5_1_supplier.php')['lisa_fixtures']['requests'],
+                    'requests_fields' => (include __DIR__ . '/fixture/case6_9_5_1_supplier.php')['lisa_fixtures']['requests_fields'],
+                    'user_notifications' => [],
+                    'request_status_history' => (include __DIR__ . '/fixture/case6_9_5_1_supplier.php')['lisa_fixtures']['request_status_history'],
+                    'requests_reasons' => [],
+                    'transition_info' => [],
+                    'auto_diff_log' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\RequestValidationException',
+                            'message' => 'Заявка не сохранилась: Для выполнения задачи необходимо загрузить файл(ы) для отображения в Кабинете Поставщика',
+                            'file LIKE' => '%/models/Request.php',
+                            'code' => 0,
+                        ],
+                    ],
                 ]
             ],
             'RabbitMQ' => [

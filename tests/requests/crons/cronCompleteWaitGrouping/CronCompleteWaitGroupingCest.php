@@ -34,7 +34,10 @@ class CronCompleteWaitGroupingCest
 
         $I->runShellCommand('./yii request/complete-wait-grouping');
         $I->canSeeResultCodeIs(0);
-        $I->canSeeInShellOutput('Задача №1 переведена в статус ' . ($providerData['status'] ?? 7));
+
+        is_null($providerData['status'])
+            ? $I->canSeeInShellOutput('')
+            : $I->canSeeInShellOutput('Задача №1 переведена в статус ' . $providerData['status']);
 
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);

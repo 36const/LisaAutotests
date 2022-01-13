@@ -34,7 +34,7 @@ class UserUpdateCest
         $providerData = $data['provider_data'];
 
         $I->amOnPage('/lisa/#/user/list');
-        $I->moveMouseOver('//h1');
+        $I->moveMouseOver('//h1/../div');
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1);
         $I->clickAndWait('//td[text()="Супервайзер Начальникович 2"]/..//a[@href="#/user/update/10"]');
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 2);
@@ -62,7 +62,7 @@ class UserUpdateCest
         //ошибка при сохранении без ролей
         $I->click(User::field('Роль (Контент)') . '//button');
         $I->click(User::SAVE_BUTTON);
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 6);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 6, 2);
         $I->checkTablesInDB($providerData['db_2']);
 
         //сохранить с новой командой, ролями и без руководителя

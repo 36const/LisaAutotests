@@ -53,7 +53,6 @@ return [
             ],
         ],
         'requests_fields' => [
-
             [
                 'request_id' => 1,
                 'field_id' => 8,
@@ -135,6 +134,7 @@ return [
                 'value' => 0,
             ],
         ],
+        'request_attachments' => [],
         'report_periods' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/report_periods.php',
         'request_errors' => [],
         'notification_settings' => [],
