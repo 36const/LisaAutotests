@@ -32,6 +32,7 @@ class POSTMassEditNegativeCest
         $providerData = $data['provider_data'];
 
         $I->sendPOST('/request/mass-editing', $providerData['requestBody']);
+        
         $I->seeResponseCodeIs(200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
 

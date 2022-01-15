@@ -30,8 +30,8 @@ class GETRequestViewByRolesCest
         $providerData = $data['provider_data'];
 
         $I->sendGET('/request/view/1');
+        
         $I->canSeeResponseCodeIs(200);
-
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
     }
 }

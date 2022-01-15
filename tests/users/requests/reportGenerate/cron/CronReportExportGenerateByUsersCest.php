@@ -13,7 +13,7 @@ use Codeception\Module\TestHelper;
  * @group CronExportGenerate
  * @group CronReportExportGenerateByUsers
  */
-class CronReportExportGenerateCest
+class CronReportExportGenerateByUsersCest
 {
     protected function pageProvider(): array
     {

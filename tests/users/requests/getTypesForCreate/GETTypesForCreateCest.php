@@ -30,8 +30,8 @@ class GETTypesForCreateCest
         $providerData = $data['provider_data'];
 
         $I->sendGET('/request/types-for-create');
+        
         $I->canSeeResponseCodeIs(200);
-
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
     }
 }
