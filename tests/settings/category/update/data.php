@@ -9,7 +9,8 @@ return [
         'provider_data' => [
             'excludedRedisKeys' => [
                 'all_category_namesfa94761536e04215430d7de0b502b16e',
-                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478'
+                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478',
+                'rozetka_categories_names_concatenated2f2317f7103bd28bbb76c4d92800d203',
             ],
             'requestBody' => [
                 'id' => 2,
@@ -1025,7 +1026,8 @@ return [
         'provider_data' => [
             'excludedRedisKeys' => [
                 'all_category_namesfa94761536e04215430d7de0b502b16e',
-                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478'
+                'active_category_ids5ec4d878ccfce7dc3c19481d6a063478',
+                'rozetka_categories_names_concatenated2f2317f7103bd28bbb76c4d92800d203',
             ],
             'requestBody' => [
                 'id' => 2,

@@ -983,5 +983,5 @@ return [
                 'cat_and_portal_changes_sv_id' => 2,
             ],
         ]
-    ],
+    ]
 ];

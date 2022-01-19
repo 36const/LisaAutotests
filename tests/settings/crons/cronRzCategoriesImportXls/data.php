@@ -628,6 +628,7 @@ return [
             ],
             'excludedRedisKeys' => [
                 'rozetka_categories_names04b50846f22b55d74fd96f1ab0847b52',
+                'rozetka_categories_names_concatenated2f2317f7103bd28bbb76c4d92800d203',
             ],
             'redisValueAfter' => [
                 'rz_category_import_status' => [
@@ -1253,6 +1254,7 @@ return [
             ],
             'excludedRedisKeys' => [
                 'rozetka_categories_names04b50846f22b55d74fd96f1ab0847b52',
+                'rozetka_categories_names_concatenated2f2317f7103bd28bbb76c4d92800d203',
             ],
             'redisValueAfter' => [
                 'rz_category_import_status' => [
@@ -1919,6 +1921,7 @@ return [
             ],
             'excludedRedisKeys' => [
                 'rozetka_categories_names04b50846f22b55d74fd96f1ab0847b52',
+                'rozetka_categories_names_concatenated2f2317f7103bd28bbb76c4d92800d203',
             ],
             'redisValueAfter' => [
                 'rz_category_import_status' => [
@@ -2613,6 +2616,7 @@ return [
             ],
             'excludedRedisKeys' => [
                 'rozetka_categories_names04b50846f22b55d74fd96f1ab0847b52',
+                'rozetka_categories_names_concatenated2f2317f7103bd28bbb76c4d92800d203',
             ],
             'redisValueAfter' => [
                 'rz_category_import_status' => [
@@ -3238,6 +3242,7 @@ return [
             ],
             'excludedRedisKeys' => [
                 'rozetka_categories_names04b50846f22b55d74fd96f1ab0847b52',
+                'rozetka_categories_names_concatenated2f2317f7103bd28bbb76c4d92800d203',
             ],
             'redisValueAfter' => [
                 'rz_category_import_status' => [

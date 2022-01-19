@@ -11,6 +11,7 @@ return [
             'routing_key' => 'create.category.entity.SLR.DVR.CMT.CTT.SEO.BI.LLT.1C.MRK.CTL.DBA.EBQ.GML.SMD.SSH.LIS',
             'excludedRedisKeys' => [
                 'rozetka_categories_names04b50846f22b55d74fd96f1ab0847b52',
+                'rozetka_categories_names_concatenated2f2317f7103bd28bbb76c4d92800d203',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -90,6 +91,7 @@ return [
             'routing_key' => 'create.category.entity.SLR.DVR.CMT.CTT.SEO.BI.LLT.1C.MRK.CTL.DBA.EBQ.GML.SMD.SSH.LIS',
             'excludedRedisKeys' => [
                 'rozetka_categories_names04b50846f22b55d74fd96f1ab0847b52',
+                'rozetka_categories_names_concatenated2f2317f7103bd28bbb76c4d92800d203',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -179,6 +181,7 @@ return [
             'routing_key' => 'update.category.entity.SLR.DVR.CMT.CTT.SEO.BI.LLT.1C.MRK.CTL.DBA.EBQ.GML.SMD.SSH.LIS',
             'excludedRedisKeys' => [
                 'rozetka_categories_names04b50846f22b55d74fd96f1ab0847b52',
+                'rozetka_categories_names_concatenated2f2317f7103bd28bbb76c4d92800d203',
             ],
             'db' => [
                 'lisa_fixtures' => [
@@ -229,6 +232,7 @@ return [
             'routing_key' => 'update.category.entity.SLR.DVR.CMT.CTT.SEO.BI.LLT.1C.MRK.CTL.DBA.EBQ.GML.SMD.SSH.LIS',
             'excludedRedisKeys' => [
                 'rozetka_categories_names04b50846f22b55d74fd96f1ab0847b52',
+                'rozetka_categories_names_concatenated2f2317f7103bd28bbb76c4d92800d203',
             ],
             'db' => [
                 'lisa_fixtures' => [

@@ -10,13 +10,13 @@ use Codeception\Module\TestHelper;
  * @group lisa_api
  * @group lisa_api_settings
  * @group lisa_api_category
- * @group GETRzCategoriesInForms
+ * @group POSTRzCategoriesSupervisorUpdate
  */
-class GETRzCategoriesInFormsCest
+class POSTRzCategoriesSupervisorUpdateCest
 {
     protected function pageProvider(): array
     {
-        return TestHelper::prepareDataprovider(require 'data.php', '');
+        return TestHelper::prepareDataprovider(require 'data.php', 'case1');
     }
 
     /**
@@ -25,14 +25,19 @@ class GETRzCategoriesInFormsCest
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @dataProvider pageProvider
      */
-    public function GETRzCategoriesInForms(SettingsTester $I, Example $data)
+    public function POSTRzCategoriesSupervisorUpdate(SettingsTester $I, Example $data)
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->sendGET('/rozetka-category/' . $providerData['urlPart'], $providerData['requestParameters'] ?? []);
+        $I->loadDataForRedis();
+
+        $I->sendPOST('/rozetka-category/appoint', $providerData['requestBody']);
 
         $I->seeResponseCodeIs(200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
+
+        $I->checkRedis($providerData['excludedRedisKeys'] ?? null);
+        $I->checkTablesInDB($providerData['db']);
     }
 }

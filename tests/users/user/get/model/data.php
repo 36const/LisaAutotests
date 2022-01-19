@@ -209,6 +209,8 @@ return [
                     ],
                     'hasUnfinishedRequests' => false,
                     'boundCategories' => true,
+                    'boundRzCategories' => false,
+                    'boundSellers' => true,
                     'types' => [
                         0 => [
                             'value' => 1,
@@ -491,6 +493,8 @@ return [
                     ],
                     'hasUnfinishedRequests' => false,
                     'boundCategories' => false,
+                    'boundRzCategories' => false,
+                    'boundSellers' => false,
                     'types' => [
                         0 => [
                             'value' => 1,
