@@ -1815,7 +1815,6 @@ return [
             ],
             'RabbitMQ' => [
                 'lisa_rzCategoriesExport' => [
-                    '["export"]',
                     '["export"]'
                 ]
             ]
