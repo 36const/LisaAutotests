@@ -43,6 +43,12 @@ class UsersTester extends GeneralTester
         $I->haveHttpHeader('Content-Type', 'application/json');
     }
 
+    public static function sidebarItem(int $itemNumber, string $itemHref, string $itemName)
+    {
+        $lisaSidebarBlock = "//section[@class='sidebar']//li//span[text()='Lisa']/../../ul";
+        return $lisaSidebarBlock . "/li[$itemNumber]//a[@href='/lisa$itemHref']/span[text()='$itemName']";
+    }
+
     public static function tableMassButtons($status)
     {
         return [
