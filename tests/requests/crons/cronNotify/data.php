@@ -118,6 +118,24 @@ return [
             'description' => 'Удаление сообщения из очереди при переводе в статус 2, если файлы не загрузились',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4.php',
+        'mock_data' => [
+            'Notifications' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/v1/send',
+                    'body' => 'event=lisa-send-email&from=gomer_services%40rozetka.com.ua&to=bpm_headSupervisor_1%40rozetka.com.ua&attrs=%7B%22subject%22%3A%22%5BLISA%5D+%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0+%E2%84%961+%60%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5+%D0%BD%D0%BE%D0%B2%D1%8B%D1%85+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2+%28%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%D0%BC%D0%B8+%D0%A0%D0%BE%D0%B7%D0%B5%D1%82%D0%BA%D0%B8%29%60+%D0%BF%D0%B5%D1%80%D0%B5%D1%88%D0%BB%D0%B0+%D0%B2+%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81+%60%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B0%60%22%2C%22body%22%3A%22%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD+%D0%9A%D1%83%D1%86%D0%B0%D0%BD+%3Cb%3E%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%BB%28%D0%B0%29+%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D1%83%3C%2Fb%3E+%3Ca+href%3D%5C%22http%3A%2F%2Fsplitter.docker%2Flisa%2F%23%2Frequest%2Fview%2F1%3FnotifyId%3D1%5C%22%3E%E2%84%961+%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5+%D0%BD%D0%BE%D0%B2%D1%8B%D1%85+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2+%28%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%D0%BC%D0%B8+%D0%A0%D0%BE%D0%B7%D0%B5%D1%82%D0%BA%D0%B8%29%3C%2Fa%3E+%5B%D0%A2%D0%BE%D0%B2%D0%B0%D1%80-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%BA%D0%B0%2F%D1%8D%D0%BA%D1%81%D0%BA%D0%BB%D1%8E%D0%B7%D0%B8%D0%B2+%28%D1%82%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83%D1%8E%D1%89%D0%B8%D0%B9%29%5D+%D0%B2+%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81+%3Cb%3E%5C%22%D0%93%D0%BE%D1%82%D0%BE%D0%B2%D0%B0+%D0%B4%D0%BB%D1%8F+%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%5C%22%3C%2Fb%3E+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D0%B2+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83%3A%3C%2Fb%3E+10%3C%2Fbr%3E%22%2C%22attachmentsMessage%22%3A%22%22%7D'
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json; charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Notifications/case1.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
         'provider_data' => [
             'pushToRabbit' => $withoutAttachments,
             'db' => [
@@ -149,6 +167,24 @@ return [
             'description' => 'Удаление сообщения из очереди при переводе в статус 9, если файлы загрузились',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case5.php',
+        'mock_data' => [
+            'Notifications' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/v1/send',
+                    'body' => 'event=lisa-send-email&from=gomer_services%40rozetka.com.ua&to=bpm_headSupervisor_1%40rozetka.com.ua&attrs=%7B%22subject%22%3A%22%5BLISA%5D+%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0+%E2%84%961+%60%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5+%D0%BD%D0%BE%D0%B2%D1%8B%D1%85+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2+%28%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%D0%BC%D0%B8+%D0%A0%D0%BE%D0%B7%D0%B5%D1%82%D0%BA%D0%B8%29%60+%D0%BF%D0%B5%D1%80%D0%B5%D1%88%D0%BB%D0%B0+%D0%B2+%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81+%60%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B0%60%22%2C%22body%22%3A%22%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD+%D0%9A%D1%83%D1%86%D0%B0%D0%BD+%3Cb%3E%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%BB%28%D0%B0%29+%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D1%83%3C%2Fb%3E+%3Ca+href%3D%5C%22http%3A%2F%2Fsplitter.docker%2Flisa%2F%23%2Frequest%2Fview%2F1%3FnotifyId%3D1%5C%22%3E%E2%84%961+%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5+%D0%BD%D0%BE%D0%B2%D1%8B%D1%85+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2+%28%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%D0%BC%D0%B8+%D0%A0%D0%BE%D0%B7%D0%B5%D1%82%D0%BA%D0%B8%29%3C%2Fa%3E+%5B%D0%A2%D0%BE%D0%B2%D0%B0%D1%80-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%BA%D0%B0%2F%D1%8D%D0%BA%D1%81%D0%BA%D0%BB%D1%8E%D0%B7%D0%B8%D0%B2+%28%D1%82%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83%D1%8E%D1%89%D0%B8%D0%B9%29%5D+%D0%B2+%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81+%3Cb%3E%5C%22%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B0%5C%22%3C%2Fb%3E+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D0%B2+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83%3A%3C%2Fb%3E+10%3C%2Fbr%3E%3Cb%3E%D0%A0%D1%83%D1%87%D0%BD%D0%B0%D1%8F+%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0%3A%3C%2Fb%3E+%D0%94%D0%B0+%3C%2Fbr%3E%3Cb%3E%D0%9F%D0%B0%D0%BA%D0%B5%D1%82%D0%BD%D0%B0%D1%8F+%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C+%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%3A%3C%2Fb%3E+2+%3C%2Fbr%3E%3Cb%3E%D0%92%D0%B8%D0%B4+%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%A1%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C+%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82+%D1%82%D0%B8%D0%BF%D0%B0+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%3A%3C%2Fb%3E+0.5+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82+%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F+%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%3A%3C%2Fb%3E+1.1+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D1%85+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%9E%D0%B1%D1%89%D0%B5%D0%B5+%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA%3A%3C%2Fb%3E+0+%3C%2Fbr%3E%3Cb%3E%D0%9E%D0%B1%D1%89%D0%B5%D0%B5+%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2+%D1%81+%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D0%BC%D0%B8%3A%3C%2Fb%3E+0+%3C%2Fbr%3E%22%2C%22attachmentsMessage%22%3A%22%3Cbr%3E%3Cb%3E%D0%A4%D0%B0%D0%B9%D0%BB%D1%8B+%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%8E%D1%82+%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5+9%2C5+%D0%9C%D0%B1.+%D0%94%D0%BB%D1%8F+%D0%B8%D1%85+%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B0+%D0%BF%D0%B5%D1%80%D0%B5%D0%B9%D0%B4%D0%B8%D1%82%D0%B5+%D0%B2+%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D1%83%3C%2Fb%3E%22%7D',
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json; charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Notifications/case1.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
         'provider_data' => [
             'pushToRabbit' => $withAttachments,
             'db' => [
@@ -183,6 +219,24 @@ return [
             'description' => 'Удаление сообщения из очереди при переводе в статус 8, если файлы загрузились',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6.php',
+        'mock_data' => [
+            'Notifications' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/v1/send',
+                    'body' => 'event=lisa-send-email&from=gomer_services%40rozetka.com.ua&to=bpm_headSupervisor_1%40rozetka.com.ua&attrs=%7B%22subject%22%3A%22%5BLISA%5D+%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0+%E2%84%961+%60%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5+%D0%BD%D0%BE%D0%B2%D1%8B%D1%85+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2+%28%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%D0%BC%D0%B8+%D0%A0%D0%BE%D0%B7%D0%B5%D1%82%D0%BA%D0%B8%29%60+%D0%BF%D0%B5%D1%80%D0%B5%D1%88%D0%BB%D0%B0+%D0%B2+%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81+%60%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B0%60%22%2C%22body%22%3A%22%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD+%D0%9A%D1%83%D1%86%D0%B0%D0%BD+%3Cb%3E%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%BB%28%D0%B0%29+%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D1%83%3C%2Fb%3E+%3Ca+href%3D%5C%22http%3A%2F%2Fsplitter.docker%2Flisa%2F%23%2Frequest%2Fview%2F1%3FnotifyId%3D1%5C%22%3E%E2%84%961+%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5+%D0%BD%D0%BE%D0%B2%D1%8B%D1%85+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2+%28%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%D0%BC%D0%B8+%D0%A0%D0%BE%D0%B7%D0%B5%D1%82%D0%BA%D0%B8%29%3C%2Fa%3E+%5B%D0%A2%D0%BE%D0%B2%D0%B0%D1%80-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%BA%D0%B0%2F%D1%8D%D0%BA%D1%81%D0%BA%D0%BB%D1%8E%D0%B7%D0%B8%D0%B2+%28%D1%82%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83%D1%8E%D1%89%D0%B8%D0%B9%29%5D+%D0%B2+%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81+%3Cb%3E%5C%22%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B0%5C%22%3C%2Fb%3E+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D0%B2+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83%3A%3C%2Fb%3E+10%3C%2Fbr%3E%3Cb%3E%D0%A0%D1%83%D1%87%D0%BD%D0%B0%D1%8F+%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0%3A%3C%2Fb%3E+%D0%94%D0%B0+%3C%2Fbr%3E%3Cb%3E%D0%9F%D0%B0%D0%BA%D0%B5%D1%82%D0%BD%D0%B0%D1%8F+%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C+%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%3A%3C%2Fb%3E+2+%3C%2Fbr%3E%3Cb%3E%D0%92%D0%B8%D0%B4+%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%A1%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C+%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82+%D1%82%D0%B8%D0%BF%D0%B0+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%3A%3C%2Fb%3E+0.5+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82+%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F+%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%3A%3C%2Fb%3E+1.1+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D1%85+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%9E%D0%B1%D1%89%D0%B5%D0%B5+%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA%3A%3C%2Fb%3E+0+%3C%2Fbr%3E%3Cb%3E%D0%9E%D0%B1%D1%89%D0%B5%D0%B5+%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2+%D1%81+%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D0%BC%D0%B8%3A%3C%2Fb%3E+0+%3C%2Fbr%3E%22%2C%22attachmentsMessage%22%3A%22%3Cbr%3E%3Cb%3E%D0%A4%D0%B0%D0%B9%D0%BB%D1%8B+%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%8E%D1%82+%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5+9%2C5+%D0%9C%D0%B1.+%D0%94%D0%BB%D1%8F+%D0%B8%D1%85+%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B0+%D0%BF%D0%B5%D1%80%D0%B5%D0%B9%D0%B4%D0%B8%D1%82%D0%B5+%D0%B2+%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D1%83%3C%2Fb%3E%22%7D'
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json; charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Notifications/case1.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
         'provider_data' => [
             'pushToRabbit' => $withAttachments,
             'db' => [
@@ -217,6 +271,24 @@ return [
             'description' => 'Удаление сообщения из очереди при переводе в статус 11, если файлы загрузились',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case7.php',
+        'mock_data' => [
+            'Notifications' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/v1/send',
+                    'body' => 'event=lisa-send-email&from=gomer_services%40rozetka.com.ua&to=bpm_headSupervisor_1%40rozetka.com.ua&attrs=%7B%22subject%22%3A%22%5BLISA%5D+%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0+%E2%84%961+%60%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5+%D0%BD%D0%BE%D0%B2%D1%8B%D1%85+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2+%28%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%D0%BC%D0%B8+%D0%A0%D0%BE%D0%B7%D0%B5%D1%82%D0%BA%D0%B8%29%60+%D0%BF%D0%B5%D1%80%D0%B5%D1%88%D0%BB%D0%B0+%D0%B2+%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81+%60%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B0%60%22%2C%22body%22%3A%22%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD+%D0%9A%D1%83%D1%86%D0%B0%D0%BD+%3Cb%3E%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%BB%28%D0%B0%29+%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D1%83%3C%2Fb%3E+%3Ca+href%3D%5C%22http%3A%2F%2Fsplitter.docker%2Flisa%2F%23%2Frequest%2Fview%2F1%3FnotifyId%3D1%5C%22%3E%E2%84%961+%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5+%D0%BD%D0%BE%D0%B2%D1%8B%D1%85+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2+%28%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%D0%BC%D0%B8+%D0%A0%D0%BE%D0%B7%D0%B5%D1%82%D0%BA%D0%B8%29%3C%2Fa%3E+%5B%D0%A2%D0%BE%D0%B2%D0%B0%D1%80-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%BA%D0%B0%2F%D1%8D%D0%BA%D1%81%D0%BA%D0%BB%D1%8E%D0%B7%D0%B8%D0%B2+%28%D1%82%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83%D1%8E%D1%89%D0%B8%D0%B9%29%5D+%D0%B2+%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81+%3Cb%3E%5C%22%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B0%5C%22%3C%2Fb%3E+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D0%B2+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83%3A%3C%2Fb%3E+10%3C%2Fbr%3E%3Cb%3E%D0%A0%D1%83%D1%87%D0%BD%D0%B0%D1%8F+%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0%3A%3C%2Fb%3E+%D0%94%D0%B0+%3C%2Fbr%3E%3Cb%3E%D0%9F%D0%B0%D0%BA%D0%B5%D1%82%D0%BD%D0%B0%D1%8F+%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C+%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%3A%3C%2Fb%3E+2+%3C%2Fbr%3E%3Cb%3E%D0%92%D0%B8%D0%B4+%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%A1%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C+%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82+%D1%82%D0%B8%D0%BF%D0%B0+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%3A%3C%2Fb%3E+0.5+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82+%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F+%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%3A%3C%2Fb%3E+1.1+%3C%2Fbr%3E%3Cb%3E%D0%9A%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D1%85+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2%3A%3C%2Fb%3E+%28%D0%BD%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%29+%3C%2Fbr%3E%3Cb%3E%D0%9E%D0%B1%D1%89%D0%B5%D0%B5+%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA%3A%3C%2Fb%3E+0+%3C%2Fbr%3E%3Cb%3E%D0%9E%D0%B1%D1%89%D0%B5%D0%B5+%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE+%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2+%D1%81+%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D0%BC%D0%B8%3A%3C%2Fb%3E+0+%3C%2Fbr%3E%22%2C%22attachmentsMessage%22%3A%22%3Cbr%3E%3Cb%3E%D0%A4%D0%B0%D0%B9%D0%BB%D1%8B+%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%8E%D1%82+%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5+9%2C5+%D0%9C%D0%B1.+%D0%94%D0%BB%D1%8F+%D0%B8%D1%85+%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B0+%D0%BF%D0%B5%D1%80%D0%B5%D0%B9%D0%B4%D0%B8%D1%82%D0%B5+%D0%B2+%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D1%83%3C%2Fb%3E%22%7D'
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json; charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(__DIR__ . '/mock/Notifications/case1.json'),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
         'provider_data' => [
             'pushToRabbit' => $withAttachments,
             'db' => [
