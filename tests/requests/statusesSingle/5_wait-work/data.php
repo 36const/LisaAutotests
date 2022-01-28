@@ -188,7 +188,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments' => '',
                     ]
                 ],
                 'httpResponse' => [
@@ -544,7 +545,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments' => '',
                     ]
                 ],
                 'httpResponse' => [

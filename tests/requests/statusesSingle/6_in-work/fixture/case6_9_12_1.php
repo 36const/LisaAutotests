@@ -40,7 +40,6 @@ return [
                 'sv_report_periods' => null,
                 'cross_check_status' => 0,
                 'cross_check_manager_id' => null,
-                'photo_load_status' => 0,
                 'employee_code_1c' => null,
                 'child_count' => 0,
                 'photo_load_status' => 0,

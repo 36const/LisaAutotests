@@ -596,7 +596,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments[0]' => 'http://minio.docker/lisa-auto/1/803902_doc.doc',
                     ]
                 ],
                 'httpResponse' => [

@@ -406,7 +406,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments' => '',
                     ]
                 ],
                 'httpResponse' => [
@@ -556,7 +557,7 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\Exception',
                             'message' => "{\n    \"status\": 400,\n    \"errors\": {\n        \"status\": [\n            \"Значение «Статус заявки» должно быть числом.\"\n        ]\n    }\n}",
-                            'file LIKE' => '%/api/infra/api/VATApiClient.php',
+                            'file LIKE' => '%/api/infra/apiClients/VATApiClient.php',
                             'code' => 400
                         ],
                     ]
@@ -1010,6 +1011,7 @@ return [
     'case9_6_1_2' => [
         'setting' => [
             'description' => 'Перевод из "Выполнена" во "В работе (на исправление)" тип 1 направление 2',
+            //при переводе в статус кроме 8/9 вложение для vat не обязательно
         ],
         'fixture_data' => include __DIR__ . '/fixture/case9_6_1_2.php',
         'mock_data' => [
@@ -1025,7 +1027,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments' => '',
                     ]
                 ],
                 'httpResponse' => [
@@ -1291,6 +1294,7 @@ return [
                             'correction_date' => null,
                         ],
                     ],
+                    'request_attachments' => (include __DIR__ . '/fixture/case9_6_1_2.php')['lisa_fixtures']['request_attachments'],
                     'user_notifications' => [
                         [
                             'id' => 1,
@@ -1340,7 +1344,7 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\Exception',
                             'message' => "{\n    \"id\": 1,\n    \"status\": 404,\n    \"errors\": {\n        \"id\": \"Заявка не найдена\"\n    }\n}",
-                            'file LIKE' => '%/api/infra/api/VATApiClient.php',
+                            'file LIKE' => '%/api/infra/apiClients/VATApiClient.php',
                             'code' => 404,
                         ],
                     ]

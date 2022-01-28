@@ -171,7 +171,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments' => '',
                     ]
                 ],
                 'httpResponse' => [
@@ -377,7 +378,7 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\Exception',
                             'message' => "{\n    \"status\": 400,\n    \"errors\": {\n        \"status\": [\n            \"Значение «Статус заявки» должно быть числом.\"\n        ]\n    }\n}",
-                            'file LIKE' => '%/api/infra/api/VATApiClient.php',
+                            'file LIKE' => '%/api/infra/apiClients/VATApiClient.php',
                             'code' => 400
                         ],
                     ]

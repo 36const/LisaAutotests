@@ -925,6 +925,7 @@ return [
     'case6_5_supplier' => [
         'setting' => [
             'description' => 'Перевод из "В работе" в "Ожидает взятия в работу" + нотификации, без вложения при supplier_cabinet_id',
+            //при переводе в статус кроме 8/9 вложение для vat не обязательно
         ],
         'fixture_data' => include __DIR__ . '/fixture/case_supplier.php',
         'mock_data' => [
@@ -939,7 +940,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments' => '',
                     ]
                 ],
                 'httpResponse' => [
@@ -1352,7 +1354,7 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\Exception',
                             'message' => "{\n    \"id\": 1,\n    \"status\": 404,\n    \"errors\": {\n        \"id\": \"Заявка не найдена\"\n    }\n}",
-                            'file LIKE' => '%/api/infra/api/VATApiClient.php',
+                            'file LIKE' => '%/api/infra/apiClients/VATApiClient.php',
                             'code' => 404,
                         ],
                     ],
@@ -2044,6 +2046,7 @@ return [
     'case6_7_supplier' => [
         'setting' => [
             'description' => 'Перевод из "В работе" в "Ожидает" + нотификации + добавление и удаление вложений, без вложения при supplier_cabinet_id',
+            //при переводе в статус кроме 8/9 вложение для vat не обязательно
         ],
         'fixture_data' => include __DIR__ . '/fixture/case_supplier.php',
         'mock_data' => [
@@ -2058,7 +2061,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments' => '',
                     ]
                 ],
                 'httpResponse' => [
@@ -2704,6 +2708,7 @@ return [
         'setting' => [
             'description' => 'Перевод из "В работе" в "Ожидает" c ранее загруженными фото в гомере, причина 1 + отправка запроса в VAT',
             //проверка обнуления requests.photo_load_status
+            //при переводе в статус кроме 8/9 вложение для vat не обязательно
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_7_1_2_photoload.php',
         'mock_data' => [
@@ -2719,7 +2724,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments' => '',
                     ]
                 ],
                 'httpResponse' => [
@@ -3029,7 +3035,7 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\Exception',
                             'message' => "{\n    \"id\": 1,\n    \"status\": 404,\n    \"errors\": {\n        \"id\": \"Заявка не найдена\"\n    }\n}",
-                            'file LIKE' => '%/api/infra/api/VATApiClient.php',
+                            'file LIKE' => '%/api/infra/apiClients/VATApiClient.php',
                             'code' => 404,
                         ],
                     ]
@@ -3060,7 +3066,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments' => '',
                     ]
                 ],
                 'httpResponse' => [
@@ -5863,7 +5870,7 @@ return [
 
     'case6_9_2_2' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" 2/2 без "Ждёт группировки/Товары на модерации" в Гомере, с вложением при supplier_cabinet_id',
+            'description' => 'Перевод из "В работе" в "Выполнен" 2/2 без "Ждёт группировки/Товары на модерации" в Гомере, с одим вложением при supplier_cabinet_id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_2_2.php',
         'mock_data' => [
@@ -5898,7 +5905,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments[0]' => 'http://minio.docker/lisa-auto/1/803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd',
                     ]
                 ],
                 'httpResponse' => [
@@ -6174,6 +6182,8 @@ return [
     'case6_9_2_2_on-hold' => [
         'setting' => [
             'description' => 'Перевод из "В работе" в "Выполнен" 2/2 с "Товары на модерации" в Гомере, с вложением при supplier_cabinet_id',
+            //по-факту заявка переводится в статус 7 для ожидания статуса гомера
+            //при переводе в статус кроме 8/9 вложение для vat не обязательно
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_2_2.php',
         'mock_data' => [
@@ -6208,7 +6218,8 @@ return [
                         'reasons' => '',
                         'reasons_ua' => '',
                         'reason_comment' => '',
-                        'type' => 'content'
+                        'type' => 'content',
+                        'attachments' => '',
                     ]
                 ],
                 'httpResponse' => [
@@ -6489,7 +6500,7 @@ return [
                             'date >=' => date('Y-m-d'),
                             'class' => 'yii\base\Exception',
                             'message' => "{\n    \"status\": 400,\n    \"errors\": {\n        \"status\": [\n            \"Значение «Статус заявки» должно быть числом.\"\n        ]\n    }\n}",
-                            'file LIKE' => '%/api/infra/api/VATApiClient.php',
+                            'file LIKE' => '%/api/infra/apiClients/VATApiClient.php',
                             'code' => 400,
                         ],
                     ],
@@ -7130,6 +7141,7 @@ return [
     'case6_9_3_2_on-hold' => [
         'setting' => [
             'description' => 'Перевод из "В работе" в "Выполнен" 3/2 с "Ждёт группировки/Товары на модерации" в Гомере',
+            //по-факту заявка переводится в статус 7 для ожидания статуса гомера
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_3_2.php',
         'mock_data' => [
@@ -10232,10 +10244,39 @@ return [
 
     'case6_9_13_0' => [
         'setting' => [
-            'description' => 'Перевод из "В работе" в "Выполнен" 13/0 + автосложность',
+            'description' => 'Перевод из "В работе" в "Выполнен" 13/0 + автосложность, с несколькими вложениями при supplier_cabinet_id',
+            //должны отправиться только файлы со статусом загрузки 2
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6_9_13_0.php',
-        'mock_data' => $mockDataStatusesSingle,
+        'mock_data' => [
+            $mockDataStatusesSingle,
+            'vat' => [
+                'httpRequest' => [
+                    'method' => 'POST',
+                    'path' => '/templates/validation-results',
+                    'body' => [
+                        'id' => 111,
+                        'status' => 'Выполнена',
+                        //'validated_at' => '2021-12-21+19%3A59%3A03',
+                        'reasons' => '',
+                        'reasons_ua' => '',
+                        'reason_comment' => '',
+                        'type' => 'content',
+                        'attachments[0]' => 'http://minio.docker/lisa-auto/1/803902_doc.doc',
+                        'attachments[1]' => 'http://minio.docker/lisa-auto/1/803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx',
+                    ]
+                ],
+                'httpResponse' => [
+                    'headers' => [
+                        'content-type' => [
+                            'application/json;charset=UTF-8'
+                        ]
+                    ],
+                    'body' => file_get_contents(codecept_data_dir('/Vat/case200.json')),
+                    'statusCode' => 200
+                ],
+            ],
+        ],
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
@@ -10299,7 +10340,7 @@ return [
                             'child_count' => 0,
                             'photo_load_status' => 0,
                             'previous_status' => 6,
-                            'supplier_cabinet_id' => null,
+                            'supplier_cabinet_id' => 111,
                             'payload' => '[]',
                             'rz_category_id' => null,
                             'author_team' => 17,
