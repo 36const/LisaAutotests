@@ -50,7 +50,7 @@ class RequestStatusesTransferMultipleCest
         $I->click(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
         $I->click(RequestTable::columnValueFromList('Нада'));
         $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, 'http://splitter.docker');
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 3);
+        $I->waitAndCantSeeVisualChanges([__FUNCTION__ . '3_1', __FUNCTION__ . '3_2']);  //иногда список немного смещается
         $I->click(RequestTable::transferPopUp('На доработку'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 4, 2);
         $I->checkTablesInDB($provider_data['db_2']);
@@ -60,6 +60,7 @@ class RequestStatusesTransferMultipleCest
         $I->click('//tr/th[@role="columnheader"][1]');
         $I->click(RequestTable::transferButton('Отменить'));
         $I->clickAndWait(RequestTable::REASON_IN_STATUS_CHANGE_POPUP);
+        $I->moveMouseOver(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
         $I->click(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
         $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>');
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 5, 2);
