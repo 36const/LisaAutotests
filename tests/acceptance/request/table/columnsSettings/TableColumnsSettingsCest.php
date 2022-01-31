@@ -11,6 +11,7 @@ use lisa\Page\Requests\RequestCreate;
 /**
  * @group lisa
  * @group lisa_acceptance
+ * @group lisa_acceptance_2
  * @group lisa_acceptance_requests
  * @group TableColumnsSettings
  */

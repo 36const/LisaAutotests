@@ -10,6 +10,7 @@ use lisa\Page\Requests\RequestTable;
 /**
  * @group lisa
  * @group lisa_acceptance
+ * @group lisa_acceptance_2
  * @group lisa_acceptance_requests
  * @group TableColumnsFiltersSearch
  * @group TableColumnsFiltersSearch2

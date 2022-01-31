@@ -11,6 +11,7 @@ use lisa\Page\Requests\RequestView;
 /**
  * @group lisa
  * @group lisa_acceptance
+ * @group lisa_acceptance_1
  * @group lisa_acceptance_requests
  * @group RequestMassEdit
  */

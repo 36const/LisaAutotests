@@ -9,6 +9,7 @@ use lisa\Page\Requests\RequestTable;
 /**
  * @group lisa
  * @group lisa_acceptance
+ * @group lisa_acceptance_1
  * @group lisa_acceptance_requests
  * @group RequestStatusesTransfer
  * @group RequestStatusesTransferMultiple

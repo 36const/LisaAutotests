@@ -12,6 +12,7 @@ use lisa\Page\Users\User;
 /**
  * @group lisa
  * @group lisa_acceptance
+ * @group lisa_acceptance_1
  * @group lisa_acceptance_settings
  * @group UserUpdate
  */
