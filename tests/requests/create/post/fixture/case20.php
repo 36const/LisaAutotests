@@ -77,7 +77,7 @@ return [
                 'name' => 'Добавление/изменение информации',
                 'type_id' => 2,
                 'direction' => 1,
-                'fields' => '{"2": "1", "123": "1", "subject": "Добавление/изменение информации", "type_id": "2", "priority": "1", "direction": "1", "description": "Добавление/изменение информации"}',
+                'fields' => '{"2": "1", "123": "1", "subject": "Добавление/изменение информации", "type_id": "2", "priority": "3", "direction": "1", "description": "Добавление/изменение информации"}',
                 'user_id' => 4,
                 'seller_id' => 67757,
                 'category_id' => 3,
