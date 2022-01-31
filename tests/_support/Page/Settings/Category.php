@@ -11,7 +11,7 @@ class Category
     public const CATEGORY_TITLE = '//label[text()="Название"]/following::input';
     public const CATEGORY_DIFF = '//label[text()="Сложность"]/following::input';
     public const CATEGORY_SV = '//label[text()="Супервайзер"]/following::input';
-    public const RZ_CATEGORY_SEARCH = '//span[text()="Найти категорию:"]/..//input';
+    public const RZ_CATEGORY_SEARCH = '//div[text()="Найти категорию"]/..//input';
 
     public static function errorField(string $text): string
     {
