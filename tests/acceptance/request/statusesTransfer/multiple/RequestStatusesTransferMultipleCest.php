@@ -64,7 +64,7 @@ class RequestStatusesTransferMultipleCest
         $I->moveMouseOver(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
         $I->click(RequestTable::columnValueFromList('Другое (описан в коментариях)'));
         $I->pressKey(RequestTable::COMMENT_IN_STATUS_CHANGE_POPUP, '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\\|<1001234567890>');
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 5, 2);
+        $I->waitAndCantSeeVisualChanges([__FUNCTION__ . '5_1', __FUNCTION__ . '5_2']);  //иногда третий пункт подсвечивается как при наведении курсора
         $I->click(RequestTable::transferPopUp('Отменить'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 6, 2);
         $I->checkTablesInDB($provider_data['db_3']);
