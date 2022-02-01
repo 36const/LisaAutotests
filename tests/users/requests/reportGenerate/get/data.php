@@ -27,7 +27,7 @@ return [
                     ],
                 ],
                 'currentPeriod' => 3,
-                'currentPeriodWithDelay' => 3,
+                'currentPeriodWithDelay' => date('m', strtotime('-3 day')) == date('m') ? 3 : 2,
                 'permissions' => [
                     'isNotManager' => true,
                     'isAdmin' => true,
@@ -74,7 +74,7 @@ return [
                     ],
                 ],
                 'currentPeriod' => 3,
-                'currentPeriodWithDelay' => 3,
+                'currentPeriodWithDelay' => date('m', strtotime('-3 day')) == date('m') ? 3 : 2,
                 'permissions' => [
                     'isNotManager' => true,
                     'isAdmin' => false,
@@ -119,7 +119,7 @@ return [
                     ],
                 ],
                 'currentPeriod' => 3,
-                'currentPeriodWithDelay' => 3,
+                'currentPeriodWithDelay' => date('m', strtotime('-3 day')) == date('m') ? 3 : 2,
                 'permissions' => [
                     'isNotManager' => false,
                     'isAdmin' => false,
