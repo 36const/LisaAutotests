@@ -2,6 +2,7 @@
 
 namespace lisa;
 
+use yii\helpers\Json;
 use Codeception\Example;
 use Codeception\Module\TestHelper;
 
@@ -33,6 +34,6 @@ class GETMarketSupervisorListCest
         $I->sendGET('/market-supervisor/list', $providerData['requestParameters']);
 
         $I->seeResponseCodeIs(200);
-        $I->canSeeJsonResponseEquals($providerData['responseBody']);
+        $I->canSeeResponseEquals(Json::encode($providerData['responseBody']));
     }
 }
