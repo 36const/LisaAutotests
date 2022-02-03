@@ -15,7 +15,7 @@ class RequestCreate
     public const AMOUNT = "//div[@class='v-input__control']//label[text()='Количество в работу']/following::input";
     public const PLANNED_FINISH_DATE = "//div[@class='v-input__control']//label[text()='Плановая дата завершения']/following::input";
     public const ALL_CHECKBOXES = "//div[@class='row ma-6 align-center']";
-    public const PRIORITY = "//div[@class='v-input__control']//label[text()='Количество в работу']/following::input";
+    public const PRIORITY = "//div[@class='v-input__control']//label[text()='Приоритет']/following::input";
     public const OBSERVERS = "//div[@class='v-input__control']//label[text()='Наблюдатели']/following::div";
 
     public const CREATE_FORM_BUTTON = "//button/span[text()='Сохранить']";
