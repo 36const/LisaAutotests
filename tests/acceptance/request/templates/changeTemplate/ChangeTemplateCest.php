@@ -36,11 +36,11 @@ class ChangeTemplateCest
 
         $I->amOnPage('/lisa/#/request-template/list');
         $I->reloadPage();
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1, 2);
 
         //заходим на страницу родительского шаблона с актуальными значениями
         $I->click('//tr[2]/td/a/span');
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 2);
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 2, 2);
 
         //заходим на страницу дочернего шаблона с заблоченными категорией, приоритетом и наблюдателем
         $I->amOnPage('/lisa/#/request-template/list');
