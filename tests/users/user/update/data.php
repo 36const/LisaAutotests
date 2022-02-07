@@ -5359,6 +5359,7 @@ return [
                     'viewTeamRequestsMrk',
                     'seeHiddenCrossCheckFields',
                     '50kReports',
+                    'SvDistributionUpdate',
                 ],
                 'access' => [
                     'teams' => [
@@ -5643,6 +5644,7 @@ return [
                     'viewTeamRequestsMrk',
                     'seeHiddenCrossCheckFields',
                     '50kReports',
+                    'SvDistributionUpdate',
                 ],
                 'access' => [
                     'teams' => [

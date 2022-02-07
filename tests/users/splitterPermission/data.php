@@ -32,7 +32,7 @@ return [
                     UsersTester::sidebarItem(2, '/#/auto-diff-field/list', 'Поля автосложности'),
                     UsersTester::sidebarItem(2, '/#/auto-diff-condition/list', 'Условия автосложности'),
                     UsersTester::sidebarItem(2, '/#/cross-check-filter/update/1', 'Условия выборки кросс-чек'),
-                    UsersTester::sidebarItem(2, '/#/request-distribution/list', 'Автораспределение задач'),
+                    UsersTester::sidebarItem(2, '/#/sv-distribution/list', 'Автораспределение задач'),
 
                     UsersTester::sidebarItem(3, '', 'Личные настройки'),
                     UsersTester::sidebarItem(3, '/#/filter/list', 'Фильтры'),
@@ -99,7 +99,7 @@ return [
                     UsersTester::sidebarItem(2, '/#/auto-diff-field/list', 'Поля автосложности'),
                     UsersTester::sidebarItem(2, '/#/auto-diff-condition/list', 'Условия автосложности'),
                     UsersTester::sidebarItem(2, '/#/cross-check-filter/update/1', 'Условия выборки кросс-чек'),
-                    UsersTester::sidebarItem(2, '/#/request-distribution/list', 'Автораспределение задач'),
+                    UsersTester::sidebarItem(2, '/#/sv-distribution/list', 'Автораспределение задач'),
 
                     UsersTester::sidebarItem(7, '/#/report/list', 'Шаблоны отчетов'),
                     UsersTester::sidebarItem(7, '/#/report-period/list', 'Отчетные периоды'),
@@ -152,7 +152,7 @@ return [
                     UsersTester::sidebarItem(2, '/#/auto-diff-field/list', 'Поля автосложности'),
                     UsersTester::sidebarItem(2, '/#/auto-diff-condition/list', 'Условия автосложности'),
                     UsersTester::sidebarItem(2, '/#/cross-check-filter/update/1', 'Условия выборки кросс-чек'),
-                    UsersTester::sidebarItem(2, '/#/request-distribution/list', 'Автораспределение задач'),
+                    UsersTester::sidebarItem(2, '/#/sv-distribution/list', 'Автораспределение задач'),
 
                     UsersTester::sidebarItem(7, '/#/report/list', 'Шаблоны отчетов'),
                     UsersTester::sidebarItem(7, '/#/report-period/list', 'Отчетные периоды'),

@@ -2003,4 +2003,15 @@ return [
         'updated_at' => NULL,
         'project_id' => 1,
     ],
+    [
+        'name' => 'SvDistributionUpdate',
+        'type' => 2,
+        'description' => 'Редактирование автораспределения задач',
+        'group' => 'settings',
+        'rule_name' => NULL,
+        'data' => NULL,
+        'created_at' => '2022-02-07 13:44:59',
+        'updated_at' => NULL,
+        'project_id' => 1,
+    ],
 ];

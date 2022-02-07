@@ -307,6 +307,7 @@ return [
                 'commentRequestMrk',
                 'seeHiddenCrossCheckFields',
                 '50kReports',
+                'SvDistributionUpdate',
             ]
         ]
     ],

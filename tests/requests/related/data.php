@@ -648,7 +648,7 @@ return [
                     'type_id' => '7',
                     'direction' => 0,
                     'parent_id' => '1',
-                    'supervisor_id' => '35',
+                    'supervisor_id' => 35,
                     'team_direction' => 6,
                     'awaiting_correction' => 0,
                     'child_count' => 0,
@@ -856,7 +856,7 @@ return [
                     'type_id' => '9',
                     'direction' => 0,
                     'parent_id' => '1',
-                    'supervisor_id' => '34',
+                    'supervisor_id' => 34,
                     'team_direction' => 5,
                     'awaiting_correction' => 0,
                     'child_count' => 0,
@@ -1106,7 +1106,7 @@ return [
                     'type_id' => '10',
                     'direction' => 0,
                     'parent_id' => '1',
-                    'supervisor_id' => '37',
+                    'supervisor_id' => 37,
                     'team_direction' => 5,
                     'awaiting_correction' => 0,
                     'child_count' => 0,
@@ -1311,7 +1311,7 @@ return [
                     'type_id' => '13',
                     'direction' => 0,
                     'parent_id' => '1',
-                    'supervisor_id' => '38',
+                    'supervisor_id' => 38,
                     'team_direction' => 6,
                     'awaiting_correction' => 0,
                     'child_count' => 0,
@@ -1786,7 +1786,7 @@ return [
                     'type_id' => '7',
                     'direction' => 0,
                     'parent_id' => '1',
-                    'supervisor_id' => '35',
+                    'supervisor_id' => 35,
                     'team_direction' => 6,
                     'awaiting_correction' => 0,
                     'child_count' => 0,
@@ -2013,7 +2013,7 @@ return [
                     'type_id' => '7',
                     'direction' => 0,
                     'parent_id' => '3',
-                    'supervisor_id' => '35',
+                    'supervisor_id' => 35,
                     'team_direction' => 6,
                     'awaiting_correction' => 0,
                     'child_count' => 0,
@@ -2250,7 +2250,7 @@ return [
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [
                     'create.requests.all' => [
-                        '{"action":"create","entity":"requests","fields_data":{"id":4,"author_id":4,"type_id":"7","supervisor_id":"35","manager_id":null,"status":1,"direction":0,"priority":"2","awaiting_correction":0,"created_at":"' . date('Y-m-d'),
+                        '{"action":"create","entity":"requests","fields_data":{"id":4,"author_id":4,"type_id":"7","supervisor_id":35,"manager_id":null,"status":1,"direction":0,"priority":"2","awaiting_correction":0,"created_at":"' . date('Y-m-d'),
                         '","correction_comment":null,"amount_to_work":"10","subject":"Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)","description":"Описание","category_id":"1","seller_id":"83","recommendations":null,"reason":null,"parent_id":"3","planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"' . date('Y-m-d'),
                         '","team_direction":6,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":null,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":null,"previous_status":null,"supplier_cabinet_id":null,"payload":null,"rz_category_id":null,"author_team":17,"supervisor_team":16,"manager_team":null},"changed_fields_names":[]}'
                     ]

@@ -98,6 +98,7 @@ return [
                         73 => 'transferRequireChangeToDeclined',
                         74 => 'seeHiddenCrossCheckFields',
                         75 => '50kReports',
+                        76 => 'SvDistributionUpdate',
                     ],
                     'projects' => Constants::PROJECTS,
                 ],

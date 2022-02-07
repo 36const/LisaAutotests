@@ -1278,6 +1278,10 @@ return [
         'item_name' => '50kReports',
         'user_id' => 4,
     ],
+    [
+        'item_name' => 'SvDistributionUpdate',
+        'user_id' => 4,
+    ],
 
     [
         'item_name' => 'requestUpdate',

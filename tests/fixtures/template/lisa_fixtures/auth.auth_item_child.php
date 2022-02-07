@@ -306,6 +306,10 @@ return [
         'child' => '50kReports'
     ],
     [
+        'parent' => 'admin',
+        'child' => 'SvDistributionUpdate'
+    ],
+    [
         'parent' => 'contentManager',
         'child' => 'reportView'
     ],
