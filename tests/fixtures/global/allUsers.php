@@ -25,6 +25,7 @@ return [
         'request_attachments' => [],
         'request_errors' => [],
         'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
+        'sv_distribution' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/sv_distribution.php',
         'observers' => [],
         'user_notifications' => [],
     ],
