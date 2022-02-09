@@ -36,6 +36,8 @@ class POSTAutochangeCategorySVCest
         $I->seeResponseCodeIs(200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);
 
+        $I->runShellCommand('./yii request/sv-redistribution', false);
+
         $I->checkTablesInDB($providerData['db']);
         $I->checkRabbitMQ($providerData['RabbitMQ'] ?? null);
         $I->checkRabbitMQWithRoutingKey($providerData['RabbitMQWithRoutingKey'] ?? null, true);
