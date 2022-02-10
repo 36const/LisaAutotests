@@ -33,7 +33,24 @@ class RequestCreateCest
         $provider_data = $data['provider_data'];
         $setting = $data['setting'];
 
-        $I->amOnPage('/lisa/#/request/list/all');
+//        $I->makeScreenshot();
+//        $I->makeHtmlSnapshot();
+//        $I->amOnPage('/lisa/#/request/list/all');
+
+        $I->makeScreenshot();
+        $I->makeHtmlSnapshot();
+
+        $I->retryClick("//section[@class='sidebar']//li//span[text()='Lisa']/../..");
+        $I->wait(1);
+        $I->makeScreenshot();
+        $I->makeHtmlSnapshot();
+        $I->retryClick("//section[@class='sidebar']//li//span[text()='Lisa']//../..//a[@href='/lisa/#/request/list/all']");
+        $I->wait(1);
+        $I->makeScreenshot();
+        $I->makeHtmlSnapshot();
+        var_dump($I->grabFromCurrentUrl());
+
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
         $I->waitForElement(RequestCreate::CREATE_BUTTON);
         $I->cantSeeElement(RequestCreate::CREATE_MODAL);
 
@@ -73,21 +90,18 @@ class RequestCreateCest
             $I->pressKey(RequestCreate::CATEGORY, 'Ав');
             $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 7, 2);
             $I->retryClick(SearchField::searchResult('иабилеты'));
-        }
-        elseif ($setting['direction'] == 'Работа с товарами Маркетплейса') {
+        } elseif ($setting['direction'] == 'Работа с товарами Маркетплейса') {
             $I->click(RequestCreate::SELLER);
             $I->pressKey(RequestCreate::SELLER, 'Ма');
             $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 7, 2);
             $I->retryClick(SearchField::searchResult('ркетплейс (общий)'));
-        }
-        elseif ($setting['direction'] == 'Определяется типом задачи' && $setting['case'] == '3_') {
+        } elseif ($setting['direction'] == 'Определяется типом задачи' && $setting['case'] == '3_') {
             $I->click(RequestCreate::ROZETKA_CATEGORY);
             $I->pressKey(RequestCreate::ROZETKA_CATEGORY, 'по');
             $I->wait(1);
             $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 7, 2);
             $I->retryClick(SearchField::searchResult('дарки и товары для праздников (80260)'));
-        }
-        else {
+        } else {
             $I->click(RequestCreate::CATEGORY);
             $I->pressKey(RequestCreate::CATEGORY, 'Ав');
             $I->waitAndCantSeeVisualChanges(__FUNCTION__ . $setting['case'] . 7, 2);
