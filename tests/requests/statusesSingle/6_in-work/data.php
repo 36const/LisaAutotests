@@ -421,6 +421,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Отменена`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Отменена\"</b> </br><b>Количество в работу:</b> 10</br><b>Причина:</b> Все товары уже есть на сайте | Другое (описан в коментариях) | Дубль задачи </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО </br><b>Ручная загрузка:</b> (не указан) </br><b>Пакетная загрузка:</b> Да </br><b>Уровень сложности задачи:</b> 5 </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 2 </br><b>Коэффициент уровня сложности задачи:</b> 1.5 </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
                     '{"notificationId":2,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Отменена`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=2\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Отменена\"</b> </br><b>Количество в работу:</b> 10</br><b>Причина:</b> Все товары уже есть на сайте | Другое (описан в коментариях) | Дубль задачи </b>!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО </br><b>Ручная загрузка:</b> (не указан) </br><b>Пакетная загрузка:</b> Да </br><b>Уровень сложности задачи:</b> 5 </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 2 </br><b>Коэффициент уровня сложности задачи:</b> 1.5 </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
@@ -873,6 +874,9 @@ return [
                 ],
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: назначен новый исполнитель Менеджер Контентович 1Б","notification":"Константин Куцан <b>назначил(а) исполнителем заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] пользователя Менеджер Контентович 1Б</br><b>Количество в работу:</b> 10</br>","requestId":1}',
                     '{"notificationId":2,"userId":12,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: назначен новый исполнитель Менеджер Контентович 1Б","notification":"Константин Куцан <b>назначил(а) исполнителем заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=2\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] Вас</br><b>Количество в работу:</b> 10</br>","requestId":1}',
@@ -1361,6 +1365,9 @@ return [
                 ],
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: назначен новый исполнитель Менеджер Контентович 1Б","notification":"Константин Куцан <b>назначил(а) исполнителем заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] пользователя Менеджер Контентович 1Б</br><b>Количество в работу:</b> 10</br>","requestId":1}',
                     '{"notificationId":2,"userId":12,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: назначен новый исполнитель Менеджер Контентович 1Б","notification":"Константин Куцан <b>назначил(а) исполнителем заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=2\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] Вас</br><b>Количество в работу:</b> 10</br>","requestId":1}',
@@ -1989,6 +1996,9 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: изменен набор вложений","notification":"Константин Куцан <b>изменил(а) набор вложений заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br> <b>Добавлено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br><b>Удалено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br>","requestId":1}',
                     '{"notificationId":3,"userId":11,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: изменен набор вложений","notification":"Константин Куцан <b>изменил(а) набор вложений заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br> <b>Добавлено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br><b>Удалено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br>","requestId":1}',
@@ -2650,6 +2660,9 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: изменен набор вложений","notification":"Константин Куцан <b>изменил(а) набор вложений заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br> <b>Добавлено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br><b>Удалено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br>","requestId":1}',
                     '{"notificationId":3,"userId":11,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: изменен набор вложений","notification":"Константин Куцан <b>изменил(а) набор вложений заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)]</br><b>Количество в работу:</b> 10</br> <b>Добавлено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br><b>Удалено:</b> 194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd, !@#$%^&*()_+`-=][\';.|}{:?><.jpg</br>","requestId":1}',
@@ -3042,6 +3055,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -3374,6 +3388,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -3772,6 +3787,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":6,"attachments":"[\"803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd\",\"803902_doc.doc\",\"803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx\",\"803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg\"]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Частично выполнена`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Частично выполнена\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> Да </br><b>Пакетная загрузка:</b> (не указан) </br><b>Уровень сложности задачи:</b> 2 </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 0.5 </br><b>Коэффициент уровня сложности задачи:</b> 1.1 </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
                     '{"notificationId":3,"userId":15,"attachments":"[\"803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd\",\"803902_doc.doc\",\"803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx\",\"803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg\"]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Частично выполнена`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Частично выполнена\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> Да </br><b>Пакетная загрузка:</b> (не указан) </br><b>Уровень сложности задачи:</b> 2 </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 0.5 </br><b>Коэффициент уровня сложности задачи:</b> 1.1 </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
@@ -4127,6 +4143,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-completed","fields":{"id":1,"type":"Добавление товаров","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Количество добавленных товаров — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество сгруппированных товаров — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество скрытых товаров/осталось скрытых — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-completed","fields":{"id":1,"type":"Додавання товарів","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Кількість доданих товарів — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість згрупованих товарів — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість прихованих товарів/лишилось прихованих — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
@@ -4458,6 +4475,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":72,"value":"10"},"changed_fields_names":[]}',
@@ -4856,6 +4874,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":4,"attachments":"[\"803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd\",\"803902_doc.doc\",\"803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx\",\"803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg\"]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Выполнена`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Выполнена\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> Да </br><b>Пакетная загрузка:</b> (не указан) </br><b>Уровень сложности задачи:</b> 2 </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 0.5 </br><b>Коэффициент уровня сложности задачи:</b> 1.1 </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
                     '{"notificationId":3,"userId":15,"attachments":"[\"803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd\",\"803902_doc.doc\",\"803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx\",\"803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg\"]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)` перешла в статус `Выполнена`","notification":"Константин Куцан <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=3\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Выполнена\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> Да </br><b>Пакетная загрузка:</b> (не указан) </br><b>Уровень сложности задачи:</b> 2 </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 0.5 </br><b>Коэффициент уровня сложности задачи:</b> 1.1 </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
@@ -5178,6 +5197,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-completed","fields":{"id":1,"type":"Добавление товаров","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Количество добавленных товаров — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество сгруппированных товаров — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество скрытых товаров/осталось скрытых — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-completed","fields":{"id":1,"type":"Додавання товарів","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Кількість доданих товарів — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість згрупованих товарів — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість прихованих товарів/лишилось прихованих — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
@@ -5502,6 +5522,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":72,"value":"10"},"changed_fields_names":[]}',
@@ -5863,6 +5884,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -6169,6 +6191,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-completed","fields":{"id":1,"type":"Обновление товаров","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Количество измененных товаров — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество сгруппированных товаров — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество скрытых товаров/осталось скрытых — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-completed","fields":{"id":1,"type":"Оновлення товарів","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Кількість змінених товарів — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість згрупованих товарів — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість прихованих товарів/лишилось прихованих — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
@@ -6507,6 +6530,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -6847,6 +6871,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -7128,6 +7153,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-completed","fields":{"id":1,"type":"Перенос товаров","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Количество измененных товаров — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество сгруппированных товаров — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество скрытых товаров/осталось скрытых — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-completed","fields":{"id":1,"type":"Перенесення товарів","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Кількість змінених товарів — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість згрупованих товарів — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість прихованих товарів/лишилось прихованих — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
@@ -7434,6 +7460,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -7700,6 +7727,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-completed","fields":{"id":1,"type":"Группировка товаров","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Количество сгруппированных товаров — 300</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-completed","fields":{"id":1,"type":"Групування товарів","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Кількість згрупованих товарів — 300</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
@@ -8033,6 +8061,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -8095,6 +8124,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -8376,6 +8406,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-completed","fields":{"id":1,"type":"Проверка скрытых товаров","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Количество измененных товаров — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество сгруппированных товаров — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество скрытых товаров/осталось скрытых — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-completed","fields":{"id":1,"type":"Перевірка прихованих товарів","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Кількість змінених товарів — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість згрупованих товарів — 5</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість прихованих товарів/лишилось прихованих — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
@@ -8677,6 +8708,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -8942,6 +8974,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -9224,6 +9257,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -9449,6 +9483,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -9674,6 +9709,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -9911,6 +9947,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -10237,6 +10274,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -10517,6 +10555,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-completed","fields":{"id":1,"type":"Добавление/изменение видео","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Количество добавленных видеороликов — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество измененных/замененных видеороликов — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Количество товаров, к которым добавлены видео — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-completed","fields":{"id":1,"type":"Додавання/змінення відео","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Кількість доданих відеороликів — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість змінених/замінених відеороликів — 10</p><p style=\"font-size:16px;line-height:24px;margin:0\">Кількість товарів, до яких додано відео — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
@@ -10724,6 +10763,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-completed","fields":{"id":1,"type":"Добавление/изменение размерной сетки","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Количество добавленных/измененных размерных сеток — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-completed","fields":{"id":1,"type":"Додавання/змінення розмірної сітки","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Кількість доданих/змінених розмірних сіток — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
@@ -10924,6 +10964,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
@@ -11047,6 +11088,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: назначен новый супервайзер Супервайзер Начальникович 2","notification":"Константин Куцан <b>назначил(а) супервайзером заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] пользователя Супервайзер Начальникович 2</br><b>Количество в работу:</b> 10</br>","requestId":1}',
                 ],
@@ -11258,6 +11300,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: назначен новый исполнитель Менеджер Контентович 1Б","notification":"Константин Куцан <b>назначил(а) исполнителем заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] пользователя Менеджер Контентович 1Б</br><b>Количество в работу:</b> 10</br>","requestId":1}',
                     '{"notificationId":2,"userId":12,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Розетки)`: назначен новый исполнитель Менеджер Контентович 1Б","notification":"Константин Куцан <b>назначил(а) исполнителем заявки</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=2\">№1 Добавление новых товаров (Работа с товарами Розетки)</a> [Товар-новинка/эксклюзив (трафикообразующий)] Вас</br><b>Количество в работу:</b> 10</br>","requestId":1}',

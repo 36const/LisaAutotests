@@ -153,6 +153,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     'create.request_status_history.all' => '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":5,"new_status":4,"reason":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","created_at":"' . date('Y-m-d'),
@@ -350,6 +351,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-canceled","fields":{"id":1,"type":"Обновление товаров","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Все товары уже есть ЛК","reason_comment":"","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-canceled","fields":{"id":1,"type":"Оновлення товарів","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Все товары уже есть_ua ЛК","reason_comment":"","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
@@ -511,6 +513,7 @@ return [
                 ],
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     'create.request_status_history.all' => '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":5,"new_status":6,"reason":null,"created_at":"' . date('Y-m-d'),
@@ -694,6 +697,7 @@ return [
                 ],
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-in-progress","fields":{"id":1,"type":"Обновление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-in-progress","fields":{"id":1,"type":"Оновлення товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":false}',

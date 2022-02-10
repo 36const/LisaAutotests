@@ -175,6 +175,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Маркета)` перешла в статус `Частично выполнена`","notification":"Администратор <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Маркета)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Частично выполнена\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> (не указан) </br><b>С размерной сеткой:</b> Да </br><b>С палитрой:</b> Да </br><b>Вид структуры:</b> (не указан) </br><b>Рассчитанное количество добавленных товаров:</b> 60 </br><b>Коэффициент типа задачи:</b> 3 </br><b>Коэффициент уровня сложности задачи:</b> (не указан) </br><b>Количество сгруппированых товаров:</b> 5 </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
                     '{"notificationId":2,"userId":6,"attachments":"[]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Маркета)` перешла в статус `Частично выполнена`","notification":"Администратор <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=2\">№1 Добавление новых товаров (Работа с товарами Маркета)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Частично выполнена\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> (не указан) </br><b>Пакетная загрузка:</b> (не указан) </br><b>Уровень сложности задачи:</b> (не указан) </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 3 </br><b>Коэффициент уровня сложности задачи:</b> (не указан) </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
@@ -230,6 +231,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
             ],
@@ -277,6 +279,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
             ],
@@ -324,6 +327,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
             ],
@@ -376,6 +380,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
             ],
@@ -428,6 +433,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
             ],
@@ -480,6 +486,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
             ],
@@ -553,6 +560,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
             ],
@@ -748,6 +756,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":4,"attachments":"[\"803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd\",\"803902_doc.doc\",\"803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx\",\"803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg\"]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Маркета)` перешла в статус `Частично выполнена`","notification":"Администратор <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=1\">№1 Добавление новых товаров (Работа с товарами Маркета)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Частично выполнена\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> (не указан) </br><b>С размерной сеткой:</b> Да </br><b>С палитрой:</b> Да </br><b>Вид структуры:</b> (не указан) </br><b>Рассчитанное количество добавленных товаров:</b> 60 </br><b>Коэффициент типа задачи:</b> 3 </br><b>Коэффициент уровня сложности задачи:</b> (не указан) </br><b>Количество сгруппированых товаров:</b> 5 </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',
                     '{"notificationId":2,"userId":6,"attachments":"[\"803902_194psdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdpsdp.psd\",\"803902_doc.doc\",\"803902_pptx_abvgdeezzijklmnoprstufhccssyeuaegii.pptx\",\"803902_~!@#$%^&*()_+`-=][;.|}{:?><.jpg\"]","subject":"[LISA] Заявка №1 `Добавление новых товаров (Работа с товарами Маркета)` перешла в статус `Частично выполнена`","notification":"Администратор <b>перевел(а) заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/1?notifyId=2\">№1 Добавление новых товаров (Работа с товарами Маркета)</a> [Товар-новинка/эксклюзив (трафикообразующий)] в статус <b>\"Частично выполнена\"</b> </br><b>Количество в работу:</b> 10</br><b>Ручная загрузка:</b> (не указан) </br><b>Пакетная загрузка:</b> (не указан) </br><b>Уровень сложности задачи:</b> (не указан) </br><b>Вид структуры:</b> (не указан) </br><b>Сложность структуры:</b> (не указан) </br><b>Коэффициент типа задачи:</b> 3 </br><b>Коэффициент уровня сложности задачи:</b> (не указан) </br><b>Количество изменённых товаров:</b> (не указан) </br><b>Общее количество ошибок:</b> 0 </br><b>Общее количество товаров с ошибками:</b> 0 </br>","requestId":1}',

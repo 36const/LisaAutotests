@@ -303,6 +303,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_common' => [
                     '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":3,"supervisor_id":6,"manager_id":null,"status":2,"direction":2,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":null,"amount_to_work":10,"subject":"Перенос товаров (Работа с товарами Маркетплейса)","description":"Описание","category_id":null,"seller_id":83,"recommendations":null,"reason":null,"parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":"2020-01-01 00:00:02","supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"2020-01-01 00:00:01","team_direction":2,"report_period_id":null,"sync_source_id":null,"sv_report_periods":"{\"1\": 1}","cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":1,"photo_load_status":0,"previous_status":1,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":null},"changed_fields_names":["child_count"]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":2,"field_id":8,"value":"1"},"changed_fields_names":[]}',
@@ -1061,6 +1062,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendMailNotifications' => [
                     '{"notificationId":1,"userId":4,"attachments":"[]","subject":"[LISA] Создана новая заявка №2 `Добавление параметров/значений (Определяется типом задачи)`","notification":"Константин Куцан <b>создал(а) связанную заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/2?notifyId=1\">№2 Добавление параметров/значений (Определяется типом задачи)</a>\n [Товар-новинка/эксклюзив (трафикообразующий)]\n</br><b>Количество в работу:</b> 10</br> из заявки <a href=\"http://splitter.docker/lisa/#/request/view/1\">№1</a>","requestId":2}',
                     '{"notificationId":2,"userId":34,"attachments":"[]","subject":"[LISA] Создана новая заявка №2 `Добавление параметров/значений (Определяется типом задачи)`","notification":"Константин Куцан <b>создал(а) связанную заявку</b> <a href=\"http://splitter.docker/lisa/#/request/view/2?notifyId=2\">№2 Добавление параметров/значений (Определяется типом задачи)</a>\n [Товар-новинка/эксклюзив (трафикообразующий)]\n</br><b>Количество в работу:</b> 10</br> из заявки <a href=\"http://splitter.docker/lisa/#/request/view/1\">№1</a>","requestId":2}',
@@ -2235,6 +2237,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_common' => [
                     '{"action":"update","entity":"requests","fields_data":{"id":3,"author_id":4,"type_id":7,"supervisor_id":35,"manager_id":null,"status":1,"direction":0,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":null,"amount_to_work":10,"subject":"Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)","description":"Описание","category_id":1,"seller_id":83,"recommendations":null,"reason":null,"parent_id":1,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":null,"supervisor_comment":null,"last_change_status_date":"2020-01-01 00:00:01","team_direction":6,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":1,"photo_load_status":0,"previous_status":null,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":16,"manager_team":null},"changed_fields_names":["child_count"]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":4,"field_id":2,"value":"1"},"changed_fields_names":[]}',
@@ -2695,7 +2698,7 @@ return [
                         ],
                     ]
                 ]
-            ]
+            ],
         ]
     ],
 

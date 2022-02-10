@@ -150,6 +150,9 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_common' => [
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":{',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":1,"value":"1"},"changed_fields_names":[]}',
@@ -361,7 +364,12 @@ return [
                         ],
                     ],
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
+            ],
         ]
     ],
 
@@ -515,7 +523,12 @@ return [
                         ],
                     ],
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
+            ],
         ]
     ],
 
@@ -629,7 +642,12 @@ return [
                         ],
                     ],
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
+            ],
         ]
     ],
 
@@ -783,7 +801,12 @@ return [
                         ],
                     ],
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
+            ],
         ]
     ],
 
@@ -997,7 +1020,12 @@ return [
                         ],
                     ],
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
+            ],
         ]
     ],
 
@@ -1205,7 +1233,10 @@ return [
                         ]
                     ],
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
+            ],
         ]
     ],
 
@@ -1427,6 +1458,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_common' => [
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":{',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":8,"value":"1"},"changed_fields_names":[]}',

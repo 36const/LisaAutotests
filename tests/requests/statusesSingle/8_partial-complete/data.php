@@ -342,6 +342,7 @@ http://splitter.docker/lisa/#/request/view/3',
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
                 'lisa_common' => [
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":20,"value":"66"},"changed_fields_names":[]}',

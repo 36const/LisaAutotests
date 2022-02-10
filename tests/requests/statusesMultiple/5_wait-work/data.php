@@ -243,6 +243,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-in-progress","fields":{"id":2,"type":"Обновление товаров","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-in-progress","fields":{"id":2,"type":"Оновлення товарів","amount_to_work":10,"user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',

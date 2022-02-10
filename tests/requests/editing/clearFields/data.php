@@ -267,6 +267,7 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [],
                 'lisa_common' => [
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":20},"changed_fields_names":[]}',
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":24},"changed_fields_names":[]}',
@@ -367,6 +368,7 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [],
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [],
@@ -538,6 +540,9 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_common' => [
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":8},"changed_fields_names":[]}',
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":15},"changed_fields_names":[]}',
@@ -800,6 +805,9 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_common' => [
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":20},"changed_fields_names":[]}',
                     '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":91,"value":"0"},"changed_fields_names":["value"]}',
@@ -895,6 +903,7 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [],
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [],
@@ -1065,6 +1074,9 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_common' => [
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":1},"changed_fields_names":[]}',
                     '{"action":"create","entity":"requests_fields","fields_data":{"request_id":1,"field_id":2,"value":"1"},"changed_fields_names":[]}',
@@ -1188,6 +1200,7 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [],
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [],
@@ -1339,6 +1352,9 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_common' => [
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":20},"changed_fields_names":[]}',
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":29},"changed_fields_names":[]}',
@@ -1434,6 +1450,7 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [],
             ],
             'RabbitMQWithRoutingKey' => [
                 'lisa_common' => [],
@@ -1587,6 +1604,9 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_common' => [
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":20},"changed_fields_names":[]}',
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":47},"changed_fields_names":[]}',
@@ -1753,6 +1773,9 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_common' => [
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":20},"changed_fields_names":[]}',
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":80},"changed_fields_names":[]}',
@@ -1907,6 +1930,9 @@ return [
             'RabbitMQ' => [
                 'lisa_sendMailNotifications' => [],
                 'lisa_sendOuterNotifications' => [],
+                'lisa_svRedistribution' => [
+                    '{"requestId":1}'
+                ],
                 'lisa_common' => [
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":20},"changed_fields_names":[]}',
                     '{"action":"delete","entity":"requests_fields","fields_data":{"request_id":1,"field_id":65},"changed_fields_names":[]}',

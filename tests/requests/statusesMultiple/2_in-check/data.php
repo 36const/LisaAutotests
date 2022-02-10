@@ -231,6 +231,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-revision","fields":{"id":2,"type":"Обновление товаров","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Другое ЛК","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-revision","fields":{"id":2,"type":"Оновлення товарів","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Другое_ua ЛК","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
@@ -471,6 +472,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [
                     '{"email":"testing.rozetka+165@gmail.com","lang":"ru","event":"request-canceled","fields":{"id":2,"type":"Обновление товаров","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Другое ЛК","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
                     '{"email":"budan#ov2_2_2@rozetka.com.ua","lang":"uk","event":"request-canceled","fields":{"id":2,"type":"Оновлення товарів","reasons":"!@#$%^&*()_+`=-]\'/[;.,}\"?{:><\\\|Другое_ua ЛК","reason_comment":"!@#$%^&*()_+`-]\'/[;.,}\"?{:>\\\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО","user_name":"Менеджер Розетки","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=2"},"requireAttachments":false}',
@@ -790,6 +792,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_sendOuterNotifications' => [],
             ]
         ]
