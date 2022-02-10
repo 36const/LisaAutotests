@@ -1,5 +1,7 @@
 <?php
 
+use lisa\RequestsTester;
+
 $requests_fields = [
     [
         'request_id' => 1,
@@ -159,6 +161,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_common' => [
                     '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":52,"value":"3"},"changed_fields_names":["value"]}',
                     '{"action":"create","entity":"request_status_history","fields_data":{"id":1,"request_id":1,"user_id":4,"old_status":1,"new_status":2,"reason":null,"created_at":"' . date('Y-m-d'),
@@ -245,6 +248,7 @@ return [
                 ]
             ],
             'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
                 'lisa_common' => [
                     '{"action":"update","entity":"requests_fields","fields_data":{"request_id":1,"field_id":52,"value":"3"},"changed_fields_names":["value"]}',
                     '{"action":"update","entity":"requests","fields_data":{"id":1,"author_id":4,"type_id":5,"supervisor_id":6,"manager_id":null,"status":3,"direction":1,"priority":2,"awaiting_correction":0,"created_at":"2020-01-01 00:00:00","correction_comment":"","amount_to_work":10,"subject":"Заливка фото с фотостудии (Работа с товарами Розетки)","description":"description","category_id":"2","seller_id":5,"recommendations":"","reason":"Комментарий","parent_id":null,"planned_start_date":null,"planned_finish_date":null,"actual_start_date":null,"actual_finish_date":null,"supervisor_process_date":null,"supervisor_check_date":null,"result_comment":"","supervisor_comment":"","last_change_status_date":"2020-01-01 00:00:01","team_direction":3,"report_period_id":null,"sync_source_id":null,"sv_report_periods":null,"cross_check_status":0,"cross_check_manager_id":null,"employee_code_1c":null,"child_count":0,"photo_load_status":0,"previous_status":1,"supplier_cabinet_id":null,"payload":"[]","rz_category_id":null,"author_team":17,"supervisor_team":1,"manager_team":null},"changed_fields_names":["category_id"]}'
@@ -262,9 +266,17 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Автоизменение СВ при изменении категории и переводе 5->6 (статус 5, тип 3, направление 1)',
+            'description' => 'Автоизменение СВ при изменении продавца и переводе 5->6 (статус 5, тип 3, направление 2)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case3.php',
+        'mock_data' => [
+            RequestsTester::interiorMockArray('request-create', 121212),
+            RequestsTester::interiorMockArray('request-revision', 121212),
+            RequestsTester::interiorMockArray('request-in-progress', 121212),
+            RequestsTester::interiorMockArray('request-completed', 121212),
+            RequestsTester::interiorMockArray('request-canceled', 121212),
+            RequestsTester::interiorMockArray('request-update', 121212),
+        ],
         'provider_data' => [
             'requestParameter' => 'to-work',
             'requestBody' => [
@@ -273,7 +285,7 @@ return [
                 ],
                 'currentStatus' => 5,
                 'payload' => [
-                    'category_id' => 2,
+                    'seller_id' => 121212,
                 ],
             ],
             'responseBody' => [
@@ -290,16 +302,16 @@ return [
                             'supervisor_id' => 10,
                             'manager_id' => 11,
                             'status' => 6,
-                            'direction' => 1,
+                            'direction' => 2,
                             'priority' => 2,
                             'awaiting_correction' => 0,
                             'created_at' => '2020-01-01 00:00:00',
                             'correction_comment' => '',
                             'amount_to_work' => 10,
-                            'subject' => 'Перенос товаров (Работа с товарами Розетки)',
+                            'subject' => 'Перенос товаров (Работа с товарами Маркета)',
                             'description' => 'description',
-                            'category_id' => 2,
-                            'seller_id' => 5,
+                            'category_id' => null,
+                            'seller_id' => 121212,
                             'recommendations' => '',
                             'reason' => '',
                             'parent_id' => null,
@@ -330,21 +342,24 @@ return [
                             'manager_team' => 1,
                         ]
                     ],
-                    'requests_fields' => $requests_fields
+                    'requests_fields' => (include __DIR__ . '/fixture/case3.php')['lisa_fixtures']['requests_fields'],
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
+            ],
         ]
     ],
 
     'case4' => [
         'setting' => [
-            'description' => 'Автоизменение СВ при изменении категории и сохранении (статус 6, тип 2, направление 1)',
+            'description' => 'Автоизменение СВ при изменении rz-категории и сохранении (статус 6, тип 4, направление 0)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4.php',
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
-                'category_id' => 2,
+                'rz_category_id' => 2581737,
                 'currentStatus' => 6,
             ],
             'responseBody' => [
@@ -355,24 +370,24 @@ return [
                 'lisa_fixtures' => [
                     'requests' => [
                         [
-                            'id' => 1,
+                            //"id" => 1,
                             'author_id' => 4,
-                            'type_id' => 2,
-                            'supervisor_id' => 10,
+                            'type_id' => 4,
+                            'supervisor_id' => 2,
                             'manager_id' => 11,
                             'status' => 6,
-                            'direction' => 1,
+                            'direction' => 0,
                             'priority' => 2,
                             'awaiting_correction' => 0,
                             'created_at' => '2020-01-01 00:00:00',
                             'correction_comment' => '',
                             'amount_to_work' => 10,
-                            'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
+                            'subject' => 'Группировка товаров (Определяется типом задачи)',
                             'description' => 'description',
-                            'category_id' => 2,
-                            'seller_id' => 5,
+                            'category_id' => 1,
+                            'seller_id' => 83,
                             'recommendations' => '',
-                            'reason' => '',
+                            'reason' => null,
                             'parent_id' => null,
                             'planned_start_date' => null,
                             'planned_finish_date' => null,
@@ -383,7 +398,7 @@ return [
                             'result_comment' => '',
                             'supervisor_comment' => '',
                             'last_change_status_date' => '2020-01-01 00:00:01',
-                            'team_direction' => 3,
+                            'team_direction' => 4,
                             'report_period_id' => null,
                             'sync_source_id' => null,
                             'sv_report_periods' => null,
@@ -395,23 +410,34 @@ return [
                             'previous_status' => 5,
                             'supplier_cabinet_id' => null,
                             'payload' => '[]',
-                            'rz_category_id' => null,
+                            'rz_category_id' => 2581737,
                             'author_team' => 17,
-                            'supervisor_team' => 7,
+                            'supervisor_team' => null,
                             'manager_team' => 1,
-                        ]
+                        ],
                     ],
-                    'requests_fields' => $requests_fields
+                    'requests_fields' => (include __DIR__ . '/fixture/case4.php')['lisa_fixtures']['requests_fields'],
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
+            ],
         ]
     ],
 
     'case5' => [
         'setting' => [
-            'description' => 'Автоизменение СВ при изменении категории и переводе 6->7 (статус 6, тип 3, направление 1)',
+            'description' => 'Автоизменение СВ при изменении продавца и переводе 6->7 (статус 6, тип 6, направление 2)',
         ],
-        'fixture_data' => include __DIR__ . '/fixture/case4.php',
+        'fixture_data' => include __DIR__ . '/fixture/case5.php',
+        'mock_data' => [
+            RequestsTester::interiorMockArray('request-create', 121212),
+            RequestsTester::interiorMockArray('request-revision', 121212),
+            RequestsTester::interiorMockArray('request-in-progress', 121212),
+            RequestsTester::interiorMockArray('request-completed', 121212),
+            RequestsTester::interiorMockArray('request-canceled', 121212),
+            RequestsTester::interiorMockArray('request-update', 121212),
+        ],
         'provider_data' => [
             'requestParameter' => 'change-reason',
             'requestBody' => [
@@ -427,7 +453,7 @@ return [
                 'status' => 7,
                 'currentStatus' => 6,
                 'payload' => [
-                    'category_id' => 2,
+                    'seller_id' => 121212,
                 ],
                 'comment' => 'comment',
             ],
@@ -439,22 +465,22 @@ return [
                 'lisa_fixtures' => [
                     'requests' => [
                         [
-                            'id' => 1,
+                            //"id" => 1,
                             'author_id' => 4,
-                            'type_id' => 2,
+                            'type_id' => 6,
                             'supervisor_id' => 10,
                             'manager_id' => 11,
                             'status' => 7,
-                            'direction' => 1,
+                            'direction' => 2,
                             'priority' => 2,
                             'awaiting_correction' => 0,
                             'created_at' => '2020-01-01 00:00:00',
                             'correction_comment' => '',
                             'amount_to_work' => 10,
-                            'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
+                            'subject' => 'Проверка скрытых товаров (Работа с товарами Маркета)',
                             'description' => 'description',
-                            'category_id' => 2,
-                            'seller_id' => 5,
+                            'category_id' => null,
+                            'seller_id' => 121212,
                             'recommendations' => '',
                             'reason' => 'comment',
                             'parent_id' => null,
@@ -467,7 +493,7 @@ return [
                             'result_comment' => '',
                             'supervisor_comment' => '',
                             'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 3,
+                            'team_direction' => 2,
                             'report_period_id' => null,
                             'sync_source_id' => null,
                             'sv_report_periods' => null,
@@ -485,95 +511,27 @@ return [
                             'manager_team' => 1,
                         ]
                     ],
-                    'requests_fields' => [
+                    'requests_fields' => array_merge(
+                        (include __DIR__ . '/fixture/case5.php')['lisa_fixtures']['requests_fields'],
+                        [
+                            [
+                                'request_id' => 1,
+                                'field_id' => 89,
+                                'value >=' => 3,
+                            ]
+                        ]
+                    ),
+                    'requests_reasons' => [
                         [
                             'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 8,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 89,
-                            'value >' => 3,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
+                            'reason_id' => 15
                         ]
                     ]
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
+            ],
         ]
     ],
 
@@ -649,7 +607,10 @@ return [
                     ],
                     'requests_fields' => $requests_fields
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
+            ],
         ]
     ],
 
@@ -720,7 +681,10 @@ return [
                     ],
                     'requests_fields' => $requests_fields
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => []
+            ],
         ]
     ],
 
@@ -791,7 +755,10 @@ return [
                     ],
                     'requests_fields' => $requests_fields
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => []
+            ],
         ]
     ],
 
@@ -862,7 +829,10 @@ return [
                     ],
                     'requests_fields' => $requests_fields
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => []
+            ],
         ]
     ],
 
@@ -933,7 +903,10 @@ return [
                     ],
                     'requests_fields' => $requests_fields
                 ]
-            ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => []
+            ],
         ]
     ],
 
