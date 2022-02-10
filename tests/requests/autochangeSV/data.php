@@ -353,7 +353,8 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Автоизменение СВ при изменении rz-категории и сохранении (статус 6, тип 4, направление 0)',
+            'description' => 'Не-изменение СВ при изменении rz-категории и сохранении (статус 6, тип 4, направление 0)',
+            //правило, по которому заявка должна была бы переназначиться на другого СВ, заблокировано
         ],
         'fixture_data' => include __DIR__ . '/fixture/case4.php',
         'provider_data' => [
@@ -373,7 +374,7 @@ return [
                             //"id" => 1,
                             'author_id' => 4,
                             'type_id' => 4,
-                            'supervisor_id' => 2,
+                            'supervisor_id' => 33,
                             'manager_id' => 11,
                             'status' => 6,
                             'direction' => 0,
@@ -412,7 +413,7 @@ return [
                             'payload' => '[]',
                             'rz_category_id' => 2581737,
                             'author_team' => 17,
-                            'supervisor_team' => null,
+                            'supervisor_team' => 14,
                             'manager_team' => 1,
                         ],
                     ],

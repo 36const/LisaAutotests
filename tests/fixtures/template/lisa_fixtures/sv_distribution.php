@@ -119,7 +119,7 @@ return [
         'rz_category_ids' => '[]',
         'author_id' => null,
         'team_ids' => '[]',
-        'status' => 1,
+        'status' => 0,
         'is_system_rule' => false,
         'distribute_by' => 3,
         'weight' => 3,
