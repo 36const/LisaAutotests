@@ -63,7 +63,8 @@ modules:
                   'lisa_rzCategoriesImport',
                   'goods-lisa',
                   'lisa_failedApiRequests',
-                  'lisa_sendOuterNotifications' ]
+                  'lisa_sendOuterNotifications',
+                  'lisa_svRedistribution' ]
 extensions:
   enabled:
     - Codeception\Extension\RunFailed
