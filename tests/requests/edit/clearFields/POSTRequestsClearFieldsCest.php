@@ -9,7 +9,7 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_api
  * @group lisa_api_requests
- * @group lisa_api_editing
+ * @group lisa_api_edit
  * @group POSTRequestsClearFields
  */
 class POSTRequestsClearFieldsCest
