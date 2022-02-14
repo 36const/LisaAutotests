@@ -28,6 +28,7 @@ class POSTMassCreateCest
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
+        $setting = $data['setting'];
 
         foreach ($providerData['requests'] as $request) {
             $I->sendPOST('/request/create', $request);
@@ -35,5 +36,10 @@ class POSTMassCreateCest
         }
 
         $I->checkTablesInDB($providerData['db']);
+
+        if (stripos($setting['description'], '5')) {
+            $I->seeNumRecords(6, 'requests', ['supervisor_id' => '34']);
+            $I->seeNumRecords(6, 'requests', ['supervisor_id' => '37']);
+        }
     }
 }
