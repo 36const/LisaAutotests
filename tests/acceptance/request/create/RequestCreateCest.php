@@ -18,7 +18,7 @@ class RequestCreateCest
 {
     protected function pageProvider(): array
     {
-        return TestHelper::prepareDataprovider(require 'data.php', 'case1');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**
@@ -33,6 +33,7 @@ class RequestCreateCest
         $provider_data = $data['provider_data'];
         $setting = $data['setting'];
 
+        $I->amOnPage('/lisa/#/request/list/all');
         $I->waitForElement(RequestCreate::CREATE_BUTTON);
         $I->cantSeeElement(RequestCreate::CREATE_MODAL);
 
