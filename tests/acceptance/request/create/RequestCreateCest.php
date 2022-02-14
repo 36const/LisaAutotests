@@ -18,7 +18,7 @@ class RequestCreateCest
 {
     protected function pageProvider(): array
     {
-        return TestHelper::prepareDataprovider(require 'data.php', '');
+        return TestHelper::prepareDataprovider(require 'data.php', 'case1');
     }
 
     /**
@@ -33,24 +33,6 @@ class RequestCreateCest
         $provider_data = $data['provider_data'];
         $setting = $data['setting'];
 
-//        $I->makeScreenshot();
-//        $I->makeHtmlSnapshot();
-//        $I->amOnPage('/lisa/#/request/list/all');
-
-        $I->makeScreenshot();
-        $I->makeHtmlSnapshot();
-
-        $I->retryClick("//section[@class='sidebar']//li//span[text()='Lisa']/../..");
-        $I->wait(1);
-        $I->makeScreenshot();
-        $I->makeHtmlSnapshot();
-        $I->retryClick("//section[@class='sidebar']//li//span[text()='Lisa']//../..//a[@href='/lisa/#/request/list/all']");
-        $I->wait(1);
-        $I->makeScreenshot();
-        $I->makeHtmlSnapshot();
-        var_dump($I->grabFromCurrentUrl());
-
-        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
         $I->waitForElement(RequestCreate::CREATE_BUTTON);
         $I->cantSeeElement(RequestCreate::CREATE_MODAL);
 
