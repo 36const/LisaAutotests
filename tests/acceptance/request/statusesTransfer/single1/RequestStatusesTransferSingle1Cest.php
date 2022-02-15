@@ -57,7 +57,7 @@ class RequestStatusesTransferSingle1Cest
         $I->click(RequestView::field('Супервайзер'));
         $I->click(RequestTable::columnValueFromListSingle('Супервайзер Начальникович 2'));
         $I->click(RequestView::checkbox('Пакетная загрузка'));
-        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_4');
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_4', 2);
 
         //перевод 6->7
         $I->click(RequestTable::transferButton('Ожидать'));
