@@ -60,10 +60,6 @@ return [
                     'observers' => [
                         [
                             'request_id' => 1,
-                            'user_id' => 5,
-                        ],
-                        [
-                            'request_id' => 1,
                             'user_id' => 6,
                         ],
                     ],

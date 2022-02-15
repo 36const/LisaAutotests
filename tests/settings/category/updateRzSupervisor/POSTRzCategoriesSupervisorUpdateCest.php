@@ -16,7 +16,7 @@ class POSTRzCategoriesSupervisorUpdateCest
 {
     protected function pageProvider(): array
     {
-        return TestHelper::prepareDataprovider(require 'data.php', 'case1');
+        return TestHelper::prepareDataprovider(require 'data.php', '');
     }
 
     /**

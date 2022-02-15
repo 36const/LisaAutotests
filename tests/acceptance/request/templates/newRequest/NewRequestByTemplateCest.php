@@ -41,6 +41,9 @@ class NewRequestByTemplateCest
         $I->click(SearchField::searchResult('Добавление (Розетка)'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . 1, 2);
 
+        //удаляем одного наблюдателя
+        $I->click('//label[text()="Наблюдатели"]/..//button');
+
         //создаём новую заявку
         $I->click(RequestCreate::CREATE_FORM_BUTTON);
         $I->waitForElement(RequestCreate::CREATE_BUTTON);
