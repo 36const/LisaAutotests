@@ -10575,13 +10575,6 @@ return [
         'provider_data' => [
             'requestParameter' => 'update',
             'requestBody' => [
-                'RequestField[26]' => '23',
-                'RequestField[80]' => '10',
-                'RequestField[82]' => '10',
-                'Request[result_comment]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[status]' => '9',
-            ],
-            'requestBody' => [
                 26 => 23,
                 80 => '10',
                 82 => '10',
@@ -10770,6 +10763,54 @@ return [
                     '{"email":"test1115555@mail.coi","lang":"ru","event":"request-completed","fields":{"id":1,"type":"Добавление/изменение размерной сетки","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Количество добавленных/измененных размерных сеток — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                     '{"email":"MF-3517-2@MF-3517-2.com","lang":"uk","event":"request-completed","fields":{"id":1,"type":"Додавання/змінення розмірної сітки","fields_data":"<p style=\"font-size:16px;line-height:24px;margin:0\">Кількість доданих/змінених розмірних сіток — 10</p><br>","link":"http://m2-front.dev.rozetka.com.ua/main/goods-manage/moderation?page=1&pageSize=20&id=1"},"requireAttachments":true}',
                 ]
+            ]
+        ]
+    ],
+
+    'case6_9_14_0_supplier' => [
+        'setting' => [
+            'description' => 'Невозможность перевода из "В работе" в "Выполнен" 14/0 без доступных вложений при supplier_cabinet_id',
+            //статусы вложений только 4
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case6_9_14_0_supplier.php',
+        'mock_data' => $mockDataStatusesSingle,
+        'provider_data' => [
+            'requestParameter' => 'update',
+            'requestBody' => [
+                26 => 23,
+                80 => '10',
+                82 => '10',
+                'status' => 9,
+                'currentStatus' => 6,
+                'result_comment' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+            ],
+            'responseBody' => [
+                'errors' => 'При загрузке файлов произошла ошибка. Загрузите файлы повторно для их отображения в Кабинете Поставщика'
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => (include __DIR__ . '/fixture/case6_9_14_0_supplier.php')['lisa_fixtures']['requests'],
+                    'requests_fields' => (include __DIR__ . '/fixture/case6_9_14_0_supplier.php')['lisa_fixtures']['requests_fields'],
+                    'user_notifications' => [],
+                    'request_status_history' => (include __DIR__ . '/fixture/case6_9_14_0_supplier.php')['lisa_fixtures']['request_status_history'],
+                    'requests_reasons' => [],
+                    'transition_info' => [],
+                    'auto_diff_log' => [],
+                    'exceptions' => [
+                        [
+                            'id' => 1,
+                            'date >=' => date('Y-m-d'),
+                            'class' => 'app\infra\exceptions\RequestValidationException',
+                            'message' => 'Заявка не сохранилась: При загрузке файлов произошла ошибка. Загрузите файлы повторно для их отображения в Кабинете Поставщика',
+                            'file LIKE' => '%/models/Request.php',
+                            'code' => 0,
+                        ],
+                    ],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_svRedistribution' => [],
+                'lisa_sendOuterNotifications' => []
             ]
         ]
     ],
