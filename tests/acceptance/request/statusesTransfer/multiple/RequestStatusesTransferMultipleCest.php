@@ -33,6 +33,7 @@ class RequestStatusesTransferMultipleCest
         $provider_data = $data['provider_data'];
 
         $I->amOnPage('/lisa/#/request/list/all');
+        $I->reloadPage();
 
         //перевод 1->2
         $I->clickAndWait(RequestTable::requestsTableTab('Новые'), 2);

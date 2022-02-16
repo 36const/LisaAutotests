@@ -35,9 +35,10 @@ class RequestStatusesTransferSingle2Cest
         $provider_data = $data['provider_data'];
 
         $I->amOnPage('/lisa/#/request/view/1');
+        $I->reloadPage();
 
         //перевод 7->6
-        $I->click(RequestTable::transferButton('В работу'));
+        $I->retryClick(RequestTable::transferButton('В работу'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_1', 2);
         $I->checkTablesInDB($provider_data['db_1']);
 

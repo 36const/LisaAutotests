@@ -36,6 +36,7 @@ class RequestStatusesTransferSingle3Cest
         $provider_data = $data['provider_data'];
 
         $I->amOnPage('/lisa/#/request/view/1');
+        $I->reloadPage();
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_1', 2, 0.001, ['div.lisa-request-view > div > button']);
 
         //заполнение проверенных ссылок, количества проверенных товаров и сохранение без перевода

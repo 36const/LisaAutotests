@@ -34,9 +34,10 @@ class RequestStatusesTransferSingle1Cest
         $provider_data = $data['provider_data'];
 
         $I->amOnPage('/lisa/#/request/view/1');
+        $I->reloadPage();
 
         //перевод 1->5
-        $I->click(RequestTable::transferButton('Назначить исполнителя'));
+        $I->retryClick(RequestTable::transferButton('Назначить исполнителя'));
         $I->click(RequestTable::REASON_IN_STATUS_CHANGE_POPUP); //переименовать
         $I->click(RequestTable::columnValueFromListSingle('Менеджер Контентович 1А'));
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_1', 1, 0.001, ['div.lisa-request-view > div > button']);
