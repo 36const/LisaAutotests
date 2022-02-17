@@ -246,7 +246,7 @@ return [
     [
         'name' => 'reportLoadYourTeam',
         'type' => 2,
-        'description' => 'Выгрузка отчетов по своей комманде',
+        'description' => 'Выгрузка отчетов по своей команде',
         'group' => 'report',
         'rule_name' => null,
         'data' => null,

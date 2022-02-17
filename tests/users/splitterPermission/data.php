@@ -70,6 +70,9 @@ return [
                     UsersTester::sidebarItem(1, '/#/user-changing-history/list', 'История изменения пользователей'),
 
                     UsersTester::sidebarItem(2, '', 'Настройки'),
+                    UsersTester::sidebarItem(2, '/#/category/list', 'Категории'),
+                    UsersTester::sidebarItem(2, '/#/market-supervisor/list', 'Магазины'),
+                    UsersTester::sidebarItem(2, '/#/priority/list', 'Приоритеты'),
                     UsersTester::sidebarItem(2, '/#/team/list', 'Команды'),
                     UsersTester::sidebarItem(2, '/#/field-value/list', 'Значения полей заявок'),
                     UsersTester::sidebarItem(2, '/#/difficulty-coef/list', 'Коэффициенты типов задач'),
@@ -92,9 +95,6 @@ return [
                 'cantSee' => [
                     UsersTester::sidebarItem(1, '/#/auth-item/list', 'Роли пользователей'),
 
-                    UsersTester::sidebarItem(2, '/#/category/list', 'Категории'),
-                    UsersTester::sidebarItem(2, '/#/market-supervisor/list', 'Магазины'),
-                    UsersTester::sidebarItem(2, '/#/priority/list', 'Приоритеты'),
                     UsersTester::sidebarItem(2, '/#/request-editing/list', 'Редактирование полей заявок'),
                     UsersTester::sidebarItem(2, '/#/auto-diff-field/list', 'Поля автосложности'),
                     UsersTester::sidebarItem(2, '/#/auto-diff-condition/list', 'Условия автосложности'),
