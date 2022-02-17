@@ -34,7 +34,7 @@ return [
             ]
         ),
         'rozetka_categories' => [
-            0 => [
+            [
                 'id' => 4626923,
                 'title' => 'Алкогольные напитки и продукты питания',
                 'mpath' => '.',
@@ -50,7 +50,7 @@ return [
                 'filters_and_cat_structures_sv_id' => 34,
                 'cat_and_portal_changes_sv_id' => 38,
             ],
-            1 => [
+            [
                 'id' => 80025,
                 'title' => 'Бытовая техника, интерьер',
                 'mpath' => '.',

@@ -13,187 +13,187 @@ return [
                 'name' => 'name',
             ],
             'responseBody' => [
-                0 => [
+                [
                     'name' => 'Бытовая техника, интерьер',
                     'id' => 80025,
                 ],
-                1 => [
+                [
                     'name' => 'Дача, сад, огород',
                     'id' => 2394297,
                 ],
-                2 => [
+                [
                     'name' => 'Компьютеры и ноутбуки',
                     'id' => 80253,
                 ],
-                3 => [
+                [
                     'name' => 'Красота и здоровье',
                     'id' => 4629305,
                 ],
-                4 => [
+                [
                     'name' => 'Одежда, обувь и аксессуары',
                     'id' => 1162030,
                 ],
-                5 => [
+                [
                     'name' => 'Оружие',
                     'id' => 84625,
                 ],
-                6 => [
+                [
                     'name' => 'Подарки и товары для праздников',
                     'id' => 80260,
                 ],
-                7 => [
+                [
                     'name' => 'Сантехника и ремонт',
                     'id' => 4628418,
                 ],
-                8 => [
+                [
                     'name' => 'Сельское хозяйство',
                     'id' => 4655216,
                 ],
-                9 => [
+                [
                     'name' => 'Скрытые категории',
                     'id' => 80262,
                 ],
-                10 => [
+                [
                     'name' => 'Смартфоны, ТВ и электроника',
                     'id' => 4627949,
                 ],
-                11 => [
+                [
                     'name' => 'Спорт и увлечения',
                     'id' => 4627893,
                 ],
-                12 => [
+                [
                     'name' => 'Товары для бизнеса',
                     'id' => 4627851,
                 ],
-                13 => [
+                [
                     'name' => 'Товары для детей',
                     'id' => 88468,
                 ],
-                14 => [
+                [
                     'name' => 'Товары для дома',
                     'id' => 2394287,
                 ],
-                15 => [
+                [
                     'name' => 'Услуги и сервисы',
                     'id' => 4630262,
                 ],
-                16 => [
+                [
                     'name' => 'Уцененные товары',
                     'id' => 83850,
                 ],
-                17 => [
-                    'name' => 'Банковские принадлежности',
-                    'id' => 2560747,
-                ],
-                18 => [
-                    'name' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
-                    'id' => 2514872,
-                ],
-                19 => [
-                    'name' => 'Визитницы',
-                    'id' => 2514867,
-                ],
-                20 => [
-                    'name' => 'Досточки для оттиска',
-                    'id' => 4655272,
-                ],
-                21 => [
-                    'name' => 'Настольные картотеки',
-                    'id' => 4641568,
-                ],
-                22 => [
-                    'name' => 'Новая категория',
-                    'id' => 3167120,
-                ],
-                23 => [
-                    'name' => 'Новая категория',
-                    'id' => 2973057,
-                ],
-                24 => [
-                    'name' => 'Пломбы и пломбираторы',
-                    'id' => 4655242,
-                ],
-                25 => [
-                    'name' => 'Разделители и закладки',
-                    'id' => 2660622,
-                ],
-                26 => [
-                    'name' => 'Сургуч',
-                    'id' => 4655266,
-                ],
-                27 => [
-                    'name' => 'Файлы',
-                    'id' => 2514857,
-                ],
-                28 => [
-                    'name' => 'Шило, нити и шпагаты',
-                    'id' => 4630034,
-                ],
-                29 => [
-                    'name' => 'Датеры',
-                    'id' => 4628926,
-                ],
-                30 => [
-                    'name' => 'Оснастки, штампы стандартные',
-                    'id' => 4629073,
-                ],
-                31 => [
-                    'name' => 'Самонаборные штампы, кассы букв',
-                    'id' => 2898382,
-                ],
-                32 => [
-                    'name' => 'Штемпельные краски и подушки',
-                    'id' => 2898387,
-                ],
-                33 => [
-                    'name' => 'Архивные короба и боксы',
-                    'id' => 2666302,
-                ],
-                34 => [
-                    'name' => 'Папки и файлы подвесные',
-                    'id' => 2581742,
-                ],
-                35 => [
-                    'name' => 'Папки-планшеты',
-                    'id' => 2581737,
-                ],
-                36 => [
-                    'name' => 'Папки пластиковые',
-                    'id' => 2514862,
-                ],
-                37 => [
-                    'name' => 'Папки-портфели, папки-боксы',
-                    'id' => 2581727,
-                ],
-                38 => [
-                    'name' => 'Папки-регистраторы',
-                    'id' => 2581732,
-                ],
-                39 => [
-                    'name' => 'Папки специальные',
-                    'id' => 4626584,
-                ],
-                40 => [
-                    'name' => 'Папки с файлами',
-                    'id' => 2595767,
-                ],
-                41 => [
+                [
                     'name' => 'Мини-бары',
                     'id' => 4652996,
                 ],
-                42 => [
-                    'name' => 'Упаковки для алкогольных напитков',
-                    'id' => 4653017,
-                ],
-                43 => [
+                [
                     'name' => 'Фляги',
                     'id' => 4653010,
                 ],
-                44 => [
+                [
+                    'name' => 'Упаковки для алкогольных напитков',
+                    'id' => 4653017,
+                ],
+                [
                     'name' => 'Фото и видео',
                     'id' => 4628124,
                 ],
-            ]
+                [
+                    'name' => 'Файлы',
+                    'id' => 2514857,
+                ],
+                [
+                    'name' => 'Визитницы',
+                    'id' => 2514867,
+                ],
+                [
+                    'name' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
+                    'id' => 2514872,
+                ],
+                [
+                    'name' => 'Банковские принадлежности',
+                    'id' => 2560747,
+                ],
+                [
+                    'name' => 'Папки пластиковые',
+                    'id' => 2514862,
+                ],
+                [
+                    'name' => 'Папки-портфели, папки-боксы',
+                    'id' => 2581727,
+                ],
+                [
+                    'name' => 'Папки-регистраторы',
+                    'id' => 2581732,
+                ],
+                [
+                    'name' => 'Папки-планшеты',
+                    'id' => 2581737,
+                ],
+                [
+                    'name' => 'Папки и файлы подвесные',
+                    'id' => 2581742,
+                ],
+                [
+                    'name' => 'Папки с файлами',
+                    'id' => 2595767,
+                ],
+                [
+                    'name' => 'Архивные короба и боксы',
+                    'id' => 2666302,
+                ],
+                [
+                    'name' => 'Папки специальные',
+                    'id' => 4626584,
+                ],
+                [
+                    'name' => 'Разделители и закладки',
+                    'id' => 2660622,
+                ],
+                [
+                    'name' => 'Новая категория',
+                    'id' => 2973057,
+                ],
+                [
+                    'name' => 'Новая категория',
+                    'id' => 3167120,
+                ],
+                [
+                    'name' => 'Шило, нити и шпагаты',
+                    'id' => 4630034,
+                ],
+                [
+                    'name' => 'Настольные картотеки',
+                    'id' => 4641568,
+                ],
+                [
+                    'name' => 'Пломбы и пломбираторы',
+                    'id' => 4655242,
+                ],
+                [
+                    'name' => 'Сургуч',
+                    'id' => 4655266,
+                ],
+                [
+                    'name' => 'Досточки для оттиска',
+                    'id' => 4655272,
+                ],
+                [
+                    'name' => 'Самонаборные штампы, кассы букв',
+                    'id' => 2898382,
+                ],
+                [
+                    'name' => 'Штемпельные краски и подушки',
+                    'id' => 2898387,
+                ],
+                [
+                    'name' => 'Датеры',
+                    'id' => 4628926,
+                ],
+                [
+                    'name' => 'Оснастки, штампы стандартные',
+                    'id' => 4629073,
+                ],
+            ],
         ]
     ],
 
@@ -208,7 +208,7 @@ return [
             'responseBody' => [
                 'data' => [
                     'models' => [
-                        0 => [
+                        [
                             'id' => 4626923,
                             'title' => 'Алкогольные напитки и продукты питания',
                             'mpath' => '.',
@@ -232,7 +232,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        1 => [
+                        [
                             'id' => 80025,
                             'title' => 'Бытовая техника, интерьер',
                             'mpath' => '.',
@@ -256,7 +256,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        2 => [
+                        [
                             'id' => 2394297,
                             'title' => 'Дача, сад, огород',
                             'mpath' => '.',
@@ -280,7 +280,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        3 => [
+                        [
                             'id' => 80253,
                             'title' => 'Компьютеры и ноутбуки',
                             'mpath' => '.',
@@ -304,7 +304,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        4 => [
+                        [
                             'id' => 4629305,
                             'title' => 'Красота и здоровье',
                             'mpath' => '.',
@@ -328,7 +328,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        5 => [
+                        [
                             'id' => 1162030,
                             'title' => 'Одежда, обувь и аксессуары',
                             'mpath' => '.',
@@ -352,7 +352,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        6 => [
+                        [
                             'id' => 84625,
                             'title' => 'Оружие',
                             'mpath' => '.',
@@ -376,7 +376,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        7 => [
+                        [
                             'id' => 4625734,
                             'title' => 'Офис, школа, книги',
                             'mpath' => '.',
@@ -400,7 +400,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        8 => [
+                        [
                             'id' => 80260,
                             'title' => 'Подарки и товары для праздников',
                             'mpath' => '.',
@@ -424,7 +424,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        9 => [
+                        [
                             'id' => 4628418,
                             'title' => 'Сантехника и ремонт',
                             'mpath' => '.',
@@ -448,7 +448,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        10 => [
+                        [
                             'id' => 4655216,
                             'title' => 'Сельское хозяйство',
                             'mpath' => '.',
@@ -472,7 +472,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        11 => [
+                        [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
                             'mpath' => '.',
@@ -496,7 +496,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        12 => [
+                        [
                             'id' => 4627949,
                             'title' => 'Смартфоны, ТВ и электроника',
                             'mpath' => '.',
@@ -520,7 +520,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        13 => [
+                        [
                             'id' => 4627893,
                             'title' => 'Спорт и увлечения',
                             'mpath' => '.',
@@ -544,7 +544,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        14 => [
+                        [
                             'id' => 4627851,
                             'title' => 'Товары для бизнеса',
                             'mpath' => '.',
@@ -568,7 +568,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        15 => [
+                        [
                             'id' => 88468,
                             'title' => 'Товары для детей',
                             'mpath' => '.',
@@ -592,7 +592,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        16 => [
+                        [
                             'id' => 2394287,
                             'title' => 'Товары для дома',
                             'mpath' => '.',
@@ -616,7 +616,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        17 => [
+                        [
                             'id' => 4630262,
                             'title' => 'Услуги и сервисы',
                             'mpath' => '.',
@@ -640,7 +640,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        18 => [
+                        [
                             'id' => 83850,
                             'title' => 'Уцененные товары',
                             'mpath' => '.',
@@ -664,29 +664,29 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        19 => [
-                            'id' => 2460392,
-                            'title' => 'Канцелярия',
-                            'mpath' => '.4625734.',
+                        [
+                            'id' => 753399,
+                            'title' => 'Аксессуары для алкоголя',
+                            'mpath' => '.4626923.',
                             'status' => 'active',
                             'deleted' => NULL,
-                            'parent_id' => 4625734,
-                            'lisa_category_id' => 474,
-                            'children' => 1,
+                            'parent_id' => 4626923,
+                            'lisa_category_id' => 1,
+                            'children' => 3,
                             'dept_management_sv_id' => 5,
                             'market_sv_id' => 10,
-                            'rz_sv_id' => 31,
+                            'rz_sv_id' => 32,
                             'groups_sv_id' => 36,
                             'filters_and_cat_structures_sv_id' => 37,
-                            'cat_and_portal_changes_sv_id' => 35,
-                            'parent_name' => 'Офис, школа, книги (4625734)',
-                            'lisa_category_name' => 'Распределить категорию в Lisa (474)',
+                            'cat_and_portal_changes_sv_id' => 38,
+                            'parent_name' => 'Алкогольные напитки и продукты питания (4626923)',
+                            'lisa_category_name' => 'Авиабилеты (1)',
                             'dept_management_sv_name' => 'Супервайзер Руководько 1',
                             'market_sv_name' => 'Супервайзер Начальникович 2',
-                            'rz_sv_name' => 'Супервайзер Начальникович 11',
+                            'rz_sv_name' => 'Супервайзер Начальникович 12',
                             'groups_sv_name' => 'Супервайзер Групповушкин 16',
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
-                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
+                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
                     ],
                     '_links' => [
@@ -747,15 +747,15 @@ return [
             'responseBody' => [
                 'data' => [
                     'models' => [
-                        0 => [
+                        [
                             'id' => 4655025,
                             'title' => 'Скрытые',
                         ],
-                        1 => [
+                        [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
                         ],
-                        2 => [
+                        [
                             'id' => 4656380,
                             'title' => 'Скрытые товары',
                         ],
@@ -811,55 +811,7 @@ return [
             'responseBody' => [
                 'data' => [
                     'models' => [
-                        0 => [
-                            'id' => 2514872,
-                            'title' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
-                            'mpath' => '.4625734.2460392.2460402.',
-                            'status' => 'active',
-                            'deleted' => NULL,
-                            'parent_id' => 2460402,
-                            'lisa_category_id' => 2,
-                            'children' => 0,
-                            'dept_management_sv_id' => 2,
-                            'market_sv_id' => 10,
-                            'rz_sv_id' => 32,
-                            'groups_sv_id' => 36,
-                            'filters_and_cat_structures_sv_id' => 37,
-                            'cat_and_portal_changes_sv_id' => 35,
-                            'parent_name' => 'Архивирование и делопроизводство (2460402)',
-                            'lisa_category_name' => 'Видео к товару (2)',
-                            'dept_management_sv_name' => 'Администратор',
-                            'market_sv_name' => 'Супервайзер Начальникович 2',
-                            'rz_sv_name' => 'Супервайзер Начальникович 12',
-                            'groups_sv_name' => 'Супервайзер Групповушкин 16',
-                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
-                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
-                        ],
-                        1 => [
-                            'id' => 2581722,
-                            'title' => 'Папки, регистраторы',
-                            'mpath' => '.4625734.2460392.2460402.',
-                            'status' => 'active',
-                            'deleted' => NULL,
-                            'parent_id' => 2460402,
-                            'lisa_category_id' => 2,
-                            'children' => 9,
-                            'dept_management_sv_id' => 2,
-                            'market_sv_id' => 10,
-                            'rz_sv_id' => 32,
-                            'groups_sv_id' => 33,
-                            'filters_and_cat_structures_sv_id' => 37,
-                            'cat_and_portal_changes_sv_id' => 35,
-                            'parent_name' => 'Архивирование и делопроизводство (2460402)',
-                            'lisa_category_name' => 'Видео к товару (2)',
-                            'dept_management_sv_name' => 'Администратор',
-                            'market_sv_name' => 'Супервайзер Начальникович 2',
-                            'rz_sv_name' => 'Супервайзер Начальникович 12',
-                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
-                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
-                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
-                        ],
-                        2 => [
+                        [
                             'id' => 2666302,
                             'title' => 'Архивные короба и боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -883,7 +835,55 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        3 => [
+                        [
+                            'id' => 2514872,
+                            'title' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
+                            'mpath' => '.4625734.2460392.2460402.',
+                            'status' => 'active',
+                            'deleted' => NULL,
+                            'parent_id' => 2460402,
+                            'lisa_category_id' => 2,
+                            'children' => 0,
+                            'dept_management_sv_id' => 2,
+                            'market_sv_id' => 10,
+                            'rz_sv_id' => 32,
+                            'groups_sv_id' => 36,
+                            'filters_and_cat_structures_sv_id' => 37,
+                            'cat_and_portal_changes_sv_id' => 35,
+                            'parent_name' => 'Архивирование и делопроизводство (2460402)',
+                            'lisa_category_name' => 'Видео к товару (2)',
+                            'dept_management_sv_name' => 'Администратор',
+                            'market_sv_name' => 'Супервайзер Начальникович 2',
+                            'rz_sv_name' => 'Супервайзер Начальникович 12',
+                            'groups_sv_name' => 'Супервайзер Групповушкин 16',
+                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
+                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
+                        ],
+                        [
+                            'id' => 2581722,
+                            'title' => 'Папки, регистраторы',
+                            'mpath' => '.4625734.2460392.2460402.',
+                            'status' => 'active',
+                            'deleted' => NULL,
+                            'parent_id' => 2460402,
+                            'lisa_category_id' => 2,
+                            'children' => 9,
+                            'dept_management_sv_id' => 2,
+                            'market_sv_id' => 10,
+                            'rz_sv_id' => 32,
+                            'groups_sv_id' => 33,
+                            'filters_and_cat_structures_sv_id' => 37,
+                            'cat_and_portal_changes_sv_id' => 35,
+                            'parent_name' => 'Архивирование и делопроизводство (2460402)',
+                            'lisa_category_name' => 'Видео к товару (2)',
+                            'dept_management_sv_name' => 'Администратор',
+                            'market_sv_name' => 'Супервайзер Начальникович 2',
+                            'rz_sv_name' => 'Супервайзер Начальникович 12',
+                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
+                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
+                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
+                        ],
+                        [
                             'id' => 2581727,
                             'title' => 'Папки-портфели, папки-боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -907,7 +907,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        4 => [
+                        [
                             'id' => 2581732,
                             'title' => 'Папки-регистраторы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -931,103 +931,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        5 => [
-                            'id' => 3167120,
-                            'title' => 'Новая категория',
-                            'mpath' => '.4625734.2460392.2460402.',
-                            'status' => 'locked',
-                            'deleted' => NULL,
-                            'parent_id' => 2460402,
-                            'lisa_category_id' => 474,
-                            'children' => 0,
-                            'dept_management_sv_id' => 5,
-                            'market_sv_id' => 10,
-                            'rz_sv_id' => 31,
-                            'groups_sv_id' => 36,
-                            'filters_and_cat_structures_sv_id' => 34,
-                            'cat_and_portal_changes_sv_id' => 35,
-                            'parent_name' => 'Архивирование и делопроизводство (2460402)',
-                            'lisa_category_name' => 'Распределить категорию в Lisa (474)',
-                            'dept_management_sv_name' => 'Супервайзер Руководько 1',
-                            'market_sv_name' => 'Супервайзер Начальникович 2',
-                            'rz_sv_name' => 'Супервайзер Начальникович 11',
-                            'groups_sv_name' => 'Супервайзер Групповушкин 16',
-                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
-                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
-                        ],
-                        6 => [
-                            'id' => 2394297,
-                            'title' => 'Дача, сад, огород',
-                            'mpath' => '.',
-                            'status' => 'active',
-                            'deleted' => NULL,
-                            'parent_id' => 0,
-                            'lisa_category_id' => 474,
-                            'children' => 0,
-                            'dept_management_sv_id' => 2,
-                            'market_sv_id' => 6,
-                            'rz_sv_id' => 31,
-                            'groups_sv_id' => 36,
-                            'filters_and_cat_structures_sv_id' => 37,
-                            'cat_and_portal_changes_sv_id' => 38,
-                            'parent_name' => NULL,
-                            'lisa_category_name' => 'Распределить категорию в Lisa (474)',
-                            'dept_management_sv_name' => 'Администратор',
-                            'market_sv_name' => 'Супервайзер Начальникович 1',
-                            'rz_sv_name' => 'Супервайзер Начальникович 11',
-                            'groups_sv_name' => 'Супервайзер Групповушкин 16',
-                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
-                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
-                        ],
-                        7 => [
-                            'id' => 4655242,
-                            'title' => 'Пломбы и пломбираторы',
-                            'mpath' => '.4625734.2460392.2460402.',
-                            'status' => 'active',
-                            'deleted' => NULL,
-                            'parent_id' => 2460402,
-                            'lisa_category_id' => 474,
-                            'children' => 0,
-                            'dept_management_sv_id' => 2,
-                            'market_sv_id' => 10,
-                            'rz_sv_id' => 31,
-                            'groups_sv_id' => 33,
-                            'filters_and_cat_structures_sv_id' => 34,
-                            'cat_and_portal_changes_sv_id' => 35,
-                            'parent_name' => 'Архивирование и делопроизводство (2460402)',
-                            'lisa_category_name' => 'Распределить категорию в Lisa (474)',
-                            'dept_management_sv_name' => 'Администратор',
-                            'market_sv_name' => 'Супервайзер Начальникович 2',
-                            'rz_sv_name' => 'Супервайзер Начальникович 11',
-                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
-                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
-                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
-                        ],
-                        8 => [
-                            'id' => 2898382,
-                            'title' => 'Самонаборные штампы, кассы букв',
-                            'mpath' => '.4625734.2460392.2460402.2514877.',
-                            'status' => 'active',
-                            'deleted' => NULL,
-                            'parent_id' => 2514877,
-                            'lisa_category_id' => 474,
-                            'children' => 0,
-                            'dept_management_sv_id' => 5,
-                            'market_sv_id' => 10,
-                            'rz_sv_id' => 31,
-                            'groups_sv_id' => 33,
-                            'filters_and_cat_structures_sv_id' => 34,
-                            'cat_and_portal_changes_sv_id' => 35,
-                            'parent_name' => 'Штемпельная продукция (2514877)',
-                            'lisa_category_name' => 'Распределить категорию в Lisa (474)',
-                            'dept_management_sv_name' => 'Супервайзер Руководько 1',
-                            'market_sv_name' => 'Супервайзер Начальникович 2',
-                            'rz_sv_name' => 'Супервайзер Начальникович 11',
-                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
-                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
-                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
-                        ],
-                        9 => [
+                        [
                             'id' => 2973057,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1051,7 +955,103 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        10 => [
+                        [
+                            'id' => 3167120,
+                            'title' => 'Новая категория',
+                            'mpath' => '.4625734.2460392.2460402.',
+                            'status' => 'locked',
+                            'deleted' => NULL,
+                            'parent_id' => 2460402,
+                            'lisa_category_id' => 474,
+                            'children' => 0,
+                            'dept_management_sv_id' => 5,
+                            'market_sv_id' => 10,
+                            'rz_sv_id' => 31,
+                            'groups_sv_id' => 36,
+                            'filters_and_cat_structures_sv_id' => 34,
+                            'cat_and_portal_changes_sv_id' => 35,
+                            'parent_name' => 'Архивирование и делопроизводство (2460402)',
+                            'lisa_category_name' => 'Распределить категорию в Lisa (474)',
+                            'dept_management_sv_name' => 'Супервайзер Руководько 1',
+                            'market_sv_name' => 'Супервайзер Начальникович 2',
+                            'rz_sv_name' => 'Супервайзер Начальникович 11',
+                            'groups_sv_name' => 'Супервайзер Групповушкин 16',
+                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
+                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
+                        ],
+                        [
+                            'id' => 4655242,
+                            'title' => 'Пломбы и пломбираторы',
+                            'mpath' => '.4625734.2460392.2460402.',
+                            'status' => 'active',
+                            'deleted' => NULL,
+                            'parent_id' => 2460402,
+                            'lisa_category_id' => 474,
+                            'children' => 0,
+                            'dept_management_sv_id' => 2,
+                            'market_sv_id' => 10,
+                            'rz_sv_id' => 31,
+                            'groups_sv_id' => 33,
+                            'filters_and_cat_structures_sv_id' => 34,
+                            'cat_and_portal_changes_sv_id' => 35,
+                            'parent_name' => 'Архивирование и делопроизводство (2460402)',
+                            'lisa_category_name' => 'Распределить категорию в Lisa (474)',
+                            'dept_management_sv_name' => 'Администратор',
+                            'market_sv_name' => 'Супервайзер Начальникович 2',
+                            'rz_sv_name' => 'Супервайзер Начальникович 11',
+                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
+                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
+                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
+                        ],
+                        [
+                            'id' => 2394297,
+                            'title' => 'Дача, сад, огород',
+                            'mpath' => '.',
+                            'status' => 'active',
+                            'deleted' => NULL,
+                            'parent_id' => 0,
+                            'lisa_category_id' => 474,
+                            'children' => 0,
+                            'dept_management_sv_id' => 2,
+                            'market_sv_id' => 6,
+                            'rz_sv_id' => 31,
+                            'groups_sv_id' => 36,
+                            'filters_and_cat_structures_sv_id' => 37,
+                            'cat_and_portal_changes_sv_id' => 38,
+                            'parent_name' => NULL,
+                            'lisa_category_name' => 'Распределить категорию в Lisa (474)',
+                            'dept_management_sv_name' => 'Администратор',
+                            'market_sv_name' => 'Супервайзер Начальникович 1',
+                            'rz_sv_name' => 'Супервайзер Начальникович 11',
+                            'groups_sv_name' => 'Супервайзер Групповушкин 16',
+                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
+                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
+                        ],
+                        [
+                            'id' => 2898382,
+                            'title' => 'Самонаборные штампы, кассы букв',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
+                            'status' => 'active',
+                            'deleted' => NULL,
+                            'parent_id' => 2514877,
+                            'lisa_category_id' => 474,
+                            'children' => 0,
+                            'dept_management_sv_id' => 5,
+                            'market_sv_id' => 10,
+                            'rz_sv_id' => 31,
+                            'groups_sv_id' => 33,
+                            'filters_and_cat_structures_sv_id' => 34,
+                            'cat_and_portal_changes_sv_id' => 35,
+                            'parent_name' => 'Штемпельная продукция (2514877)',
+                            'lisa_category_name' => 'Распределить категорию в Lisa (474)',
+                            'dept_management_sv_name' => 'Супервайзер Руководько 1',
+                            'market_sv_name' => 'Супервайзер Начальникович 2',
+                            'rz_sv_name' => 'Супервайзер Начальникович 11',
+                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
+                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
+                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
+                        ],
+                        [
                             'id' => 4629305,
                             'title' => 'Красота и здоровье',
                             'mpath' => '.',
@@ -1075,7 +1075,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        11 => [
+                        [
                             'id' => 84625,
                             'title' => 'Оружие',
                             'mpath' => '.',
@@ -1099,7 +1099,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        12 => [
+                        [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
                             'mpath' => '.',
@@ -1123,7 +1123,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 17',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        13 => [
+                        [
                             'id' => 4627893,
                             'title' => 'Спорт и увлечения',
                             'mpath' => '.',
@@ -1200,7 +1200,7 @@ return [
             'responseBody' => [
                 'data' => [
                     'models' => [
-                        0 => [
+                        [
                             'id' => 2660622,
                             'title' => 'Разделители и закладки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1224,7 +1224,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        1 => [
+                        [
                             'id' => 4630034,
                             'title' => 'Шило, нити и шпагаты',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1248,31 +1248,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        2 => [
-                            'id' => 4629073,
-                            'title' => 'Оснастки, штампы стандартные',
-                            'mpath' => '.4625734.2460392.2460402.2514877.',
-                            'status' => 'active',
-                            'deleted' => NULL,
-                            'parent_id' => 2514877,
-                            'lisa_category_id' => 474,
-                            'children' => 0,
-                            'dept_management_sv_id' => 5,
-                            'market_sv_id' => 10,
-                            'rz_sv_id' => 31,
-                            'groups_sv_id' => 33,
-                            'filters_and_cat_structures_sv_id' => 34,
-                            'cat_and_portal_changes_sv_id' => 35,
-                            'parent_name' => 'Штемпельная продукция (2514877)',
-                            'lisa_category_name' => 'Распределить категорию в Lisa (474)',
-                            'dept_management_sv_name' => 'Супервайзер Руководько 1',
-                            'market_sv_name' => 'Супервайзер Начальникович 2',
-                            'rz_sv_name' => 'Супервайзер Начальникович 11',
-                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
-                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
-                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
-                        ],
-                        3 => [
+                        [
                             'id' => 2898382,
                             'title' => 'Самонаборные штампы, кассы букв',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -1296,7 +1272,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        4 => [
+                        [
                             'id' => 2898387,
                             'title' => 'Штемпельные краски и подушки',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -1320,55 +1296,31 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        5 => [
-                            'id' => 2581742,
-                            'title' => 'Папки и файлы подвесные',
-                            'mpath' => '.4625734.2460392.2460402.2581722.',
+                        [
+                            'id' => 4629073,
+                            'title' => 'Оснастки, штампы стандартные',
+                            'mpath' => '.4625734.2460392.2460402.2514877.',
                             'status' => 'active',
                             'deleted' => NULL,
-                            'parent_id' => 2581722,
-                            'lisa_category_id' => 2,
+                            'parent_id' => 2514877,
+                            'lisa_category_id' => 474,
                             'children' => 0,
                             'dept_management_sv_id' => 5,
                             'market_sv_id' => 10,
-                            'rz_sv_id' => 32,
+                            'rz_sv_id' => 31,
                             'groups_sv_id' => 33,
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
-                            'parent_name' => 'Папки, регистраторы (2581722)',
-                            'lisa_category_name' => 'Видео к товару (2)',
+                            'parent_name' => 'Штемпельная продукция (2514877)',
+                            'lisa_category_name' => 'Распределить категорию в Lisa (474)',
                             'dept_management_sv_name' => 'Супервайзер Руководько 1',
                             'market_sv_name' => 'Супервайзер Начальникович 2',
-                            'rz_sv_name' => 'Супервайзер Начальникович 12',
+                            'rz_sv_name' => 'Супервайзер Начальникович 11',
                             'groups_sv_name' => 'Супервайзер Групповушкин 13',
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        6 => [
-                            'id' => 2581737,
-                            'title' => 'Папки-планшеты',
-                            'mpath' => '.4625734.2460392.2460402.2581722.',
-                            'status' => 'active',
-                            'deleted' => NULL,
-                            'parent_id' => 2581722,
-                            'lisa_category_id' => 2,
-                            'children' => 0,
-                            'dept_management_sv_id' => 5,
-                            'market_sv_id' => 10,
-                            'rz_sv_id' => 32,
-                            'groups_sv_id' => 33,
-                            'filters_and_cat_structures_sv_id' => 34,
-                            'cat_and_portal_changes_sv_id' => 35,
-                            'parent_name' => 'Папки, регистраторы (2581722)',
-                            'lisa_category_name' => 'Видео к товару (2)',
-                            'dept_management_sv_name' => 'Супервайзер Руководько 1',
-                            'market_sv_name' => 'Супервайзер Начальникович 2',
-                            'rz_sv_name' => 'Супервайзер Начальникович 12',
-                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
-                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
-                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
-                        ],
-                        7 => [
+                        [
                             'id' => 2581727,
                             'title' => 'Папки-портфели, папки-боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -1392,31 +1344,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        8 => [
-                            'id' => 2581732,
-                            'title' => 'Папки-регистраторы',
-                            'mpath' => '.4625734.2460392.2460402.2581722.',
-                            'status' => 'active',
-                            'deleted' => NULL,
-                            'parent_id' => 2581722,
-                            'lisa_category_id' => 2,
-                            'children' => 0,
-                            'dept_management_sv_id' => 5,
-                            'market_sv_id' => 10,
-                            'rz_sv_id' => 32,
-                            'groups_sv_id' => 33,
-                            'filters_and_cat_structures_sv_id' => 34,
-                            'cat_and_portal_changes_sv_id' => 35,
-                            'parent_name' => 'Папки, регистраторы (2581722)',
-                            'lisa_category_name' => 'Видео к товару (2)',
-                            'dept_management_sv_name' => 'Супервайзер Руководько 1',
-                            'market_sv_name' => 'Супервайзер Начальникович 2',
-                            'rz_sv_name' => 'Супервайзер Начальникович 12',
-                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
-                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
-                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
-                        ],
-                        9 => [
+                        [
                             'id' => 4626584,
                             'title' => 'Папки специальные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -1440,7 +1368,79 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        10 => [
+                        [
+                            'id' => 2581732,
+                            'title' => 'Папки-регистраторы',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
+                            'status' => 'active',
+                            'deleted' => NULL,
+                            'parent_id' => 2581722,
+                            'lisa_category_id' => 2,
+                            'children' => 0,
+                            'dept_management_sv_id' => 5,
+                            'market_sv_id' => 10,
+                            'rz_sv_id' => 32,
+                            'groups_sv_id' => 33,
+                            'filters_and_cat_structures_sv_id' => 34,
+                            'cat_and_portal_changes_sv_id' => 35,
+                            'parent_name' => 'Папки, регистраторы (2581722)',
+                            'lisa_category_name' => 'Видео к товару (2)',
+                            'dept_management_sv_name' => 'Супервайзер Руководько 1',
+                            'market_sv_name' => 'Супервайзер Начальникович 2',
+                            'rz_sv_name' => 'Супервайзер Начальникович 12',
+                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
+                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
+                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
+                        ],
+                        [
+                            'id' => 2581737,
+                            'title' => 'Папки-планшеты',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
+                            'status' => 'active',
+                            'deleted' => NULL,
+                            'parent_id' => 2581722,
+                            'lisa_category_id' => 2,
+                            'children' => 0,
+                            'dept_management_sv_id' => 5,
+                            'market_sv_id' => 10,
+                            'rz_sv_id' => 32,
+                            'groups_sv_id' => 33,
+                            'filters_and_cat_structures_sv_id' => 34,
+                            'cat_and_portal_changes_sv_id' => 35,
+                            'parent_name' => 'Папки, регистраторы (2581722)',
+                            'lisa_category_name' => 'Видео к товару (2)',
+                            'dept_management_sv_name' => 'Супервайзер Руководько 1',
+                            'market_sv_name' => 'Супервайзер Начальникович 2',
+                            'rz_sv_name' => 'Супервайзер Начальникович 12',
+                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
+                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
+                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
+                        ],
+                        [
+                            'id' => 2581742,
+                            'title' => 'Папки и файлы подвесные',
+                            'mpath' => '.4625734.2460392.2460402.2581722.',
+                            'status' => 'active',
+                            'deleted' => NULL,
+                            'parent_id' => 2581722,
+                            'lisa_category_id' => 2,
+                            'children' => 0,
+                            'dept_management_sv_id' => 5,
+                            'market_sv_id' => 10,
+                            'rz_sv_id' => 32,
+                            'groups_sv_id' => 33,
+                            'filters_and_cat_structures_sv_id' => 34,
+                            'cat_and_portal_changes_sv_id' => 35,
+                            'parent_name' => 'Папки, регистраторы (2581722)',
+                            'lisa_category_name' => 'Видео к товару (2)',
+                            'dept_management_sv_name' => 'Супервайзер Руководько 1',
+                            'market_sv_name' => 'Супервайзер Начальникович 2',
+                            'rz_sv_name' => 'Супервайзер Начальникович 12',
+                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
+                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
+                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
+                        ],
+                        [
                             'id' => 2595767,
                             'title' => 'Папки с файлами',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -1522,7 +1522,7 @@ return [
             'responseBody' => [
                 'data' => [
                     'models' => [
-                        0 => [
+                        [
                             'id' => 4626923,
                             'title' => 'Алкогольные напитки и продукты питания',
                             'mpath' => '.',
@@ -1546,7 +1546,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 18',
                         ],
-                        1 => [
+                        [
                             'id' => 4628124,
                             'title' => 'Фото и видео',
                             'mpath' => '.4627949.80258.',
@@ -1570,7 +1570,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        2 => [
+                        [
                             'id' => 4652996,
                             'title' => 'Мини-бары',
                             'mpath' => '.4626923.753399.',
@@ -1594,31 +1594,7 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        3 => [
-                            'id' => 4653017,
-                            'title' => 'Упаковки для алкогольных напитков',
-                            'mpath' => '.4626923.753399.',
-                            'status' => 'active',
-                            'deleted' => NULL,
-                            'parent_id' => 753399,
-                            'lisa_category_id' => 1,
-                            'children' => 0,
-                            'dept_management_sv_id' => 2,
-                            'market_sv_id' => 10,
-                            'rz_sv_id' => 32,
-                            'groups_sv_id' => 33,
-                            'filters_and_cat_structures_sv_id' => 34,
-                            'cat_and_portal_changes_sv_id' => 35,
-                            'parent_name' => 'Аксессуары для алкоголя (753399)',
-                            'lisa_category_name' => 'Авиабилеты (1)',
-                            'dept_management_sv_name' => 'Администратор',
-                            'market_sv_name' => 'Супервайзер Начальникович 2',
-                            'rz_sv_name' => 'Супервайзер Начальникович 12',
-                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
-                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
-                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
-                        ],
-                        4 => [
+                        [
                             'id' => 4653010,
                             'title' => 'Фляги',
                             'mpath' => '.4626923.753399.',
@@ -1642,7 +1618,31 @@ return [
                             'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
                             'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
                         ],
-                        5 => [
+                        [
+                            'id' => 4653017,
+                            'title' => 'Упаковки для алкогольных напитков',
+                            'mpath' => '.4626923.753399.',
+                            'status' => 'active',
+                            'deleted' => NULL,
+                            'parent_id' => 753399,
+                            'lisa_category_id' => 1,
+                            'children' => 0,
+                            'dept_management_sv_id' => 2,
+                            'market_sv_id' => 10,
+                            'rz_sv_id' => 32,
+                            'groups_sv_id' => 33,
+                            'filters_and_cat_structures_sv_id' => 34,
+                            'cat_and_portal_changes_sv_id' => 35,
+                            'parent_name' => 'Аксессуары для алкоголя (753399)',
+                            'lisa_category_name' => 'Авиабилеты (1)',
+                            'dept_management_sv_name' => 'Администратор',
+                            'market_sv_name' => 'Супервайзер Начальникович 2',
+                            'rz_sv_name' => 'Супервайзер Начальникович 12',
+                            'groups_sv_name' => 'Супервайзер Групповушкин 13',
+                            'filters_and_cat_structures_sv_name' => 'Супервайзер Проектенко 14',
+                            'cat_and_portal_changes_sv_name' => 'Супервайзер Категоркин 15',
+                        ],
+                        [
                             'id' => 753399,
                             'title' => 'Аксессуары для алкоголя',
                             'mpath' => '.4626923.',

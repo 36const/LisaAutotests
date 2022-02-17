@@ -16,7 +16,7 @@ return [
                             'name' => 'Добавление',
                             'type_id' => 1,
                             'direction' => 2,
-                            'fields' => '{"5": "1", "160": "1", "subject": "Добавление новых товаров (Работа с товарами Розетки)", "type_id": "1", "direction": "2", "description": "description", "rz_category_id": ""}',
+                            'fields' => '{"5": "1", "160": "1", "subject": "Добавление новых товаров (Работа с товарами Маркетплейса)", "type_id": "1", "direction": "2", "description": "description", "rz_category_id": ""}',
                             'user_id' => 4,
                             'seller_id' => 83,
                             'category_id' => NULL,

@@ -34,7 +34,7 @@ return [
                 'lisa_fixtures' => [
                     'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
                     'rozetka_categories' => [
-                        0 => [
+                        [
                             'id' => 4660651,
                             'title' => 'Рестораны и продуктовые сети',
                             'mpath' => '.',
@@ -50,7 +50,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        1 => [
+                        [
                             'id' => 4655025,
                             'title' => 'Скрытые',
                             'mpath' => '.',
@@ -66,7 +66,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        2 => [
+                        [
                             'id' => 4660667,
                             'title' => 'не должно выгружаться (old)',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -82,7 +82,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        3 => [
+                        [
                             'id' => 4660669,
                             'title' => 'не использовать не должно выгружаться ',
                             'mpath' => '.4660666.',
@@ -98,7 +98,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        4 => [
+                        [
                             'id' => 4660652,
                             'title' => 'Рестораны',
                             'mpath' => '.4660651.',
@@ -114,7 +114,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        5 => [
+                        [
                             'id' => 4660653,
                             'title' => 'Продуктовые сети',
                             'mpath' => '.4660651.',
@@ -130,7 +130,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        6 => [
+                        [
                             'id' => 4660668,
                             'title' => 'old не должно выгружаться',
                             'mpath' => '.4626923.',
@@ -146,7 +146,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        7 => [
+                        [
                             'id' => 4660666,
                             'title' => 'не должно выгружаться _old',
                             'mpath' => '.',
@@ -162,7 +162,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        8 => [
+                        [
                             'id' => 4656380,
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
@@ -178,7 +178,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        9 => [
+                        [
                             'id' => 4627851,
                             'title' => 'Товары для бизнеса',
                             'mpath' => '.',
@@ -194,7 +194,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        10 => [
+                        [
                             'id' => 4628124,
                             'title' => 'Фото и видео',
                             'mpath' => '.4627949.80258.',
@@ -210,7 +210,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        11 => [
+                        [
                             'id' => 88468,
                             'title' => 'Товары для детей',
                             'mpath' => '.',
@@ -226,7 +226,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        12 => [
+                        [
                             'id' => 2394287,
                             'title' => 'Товары для дома',
                             'mpath' => '.',
@@ -242,7 +242,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        13 => [
+                        [
                             'id' => 4630262,
                             'title' => 'Услуги и сервисы',
                             'mpath' => '.',
@@ -258,7 +258,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        14 => [
+                        [
                             'id' => 83850,
                             'title' => 'Уцененные товары',
                             'mpath' => '.',
@@ -274,7 +274,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        15 => [
+                        [
                             'id' => 80025,
                             'title' => 'Бытовая техника, интерьер',
                             'mpath' => '.',
@@ -290,7 +290,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        16 => [
+                        [
                             'id' => 2394297,
                             'title' => 'Дача, сад, огород',
                             'mpath' => '.',
@@ -306,7 +306,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        17 => [
+                        [
                             'id' => 80253,
                             'title' => 'Компьютеры и ноутбуки',
                             'mpath' => '.',
@@ -322,7 +322,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        18 => [
+                        [
                             'id' => 4629305,
                             'title' => 'Красота и здоровье',
                             'mpath' => '.',
@@ -338,7 +338,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        19 => [
+                        [
                             'id' => 84625,
                             'title' => 'Оружие',
                             'mpath' => '.',
@@ -354,7 +354,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        20 => [
+                        [
                             'id' => 1162030,
                             'title' => 'Одежда, обувь и аксессуары',
                             'mpath' => '.',
@@ -370,7 +370,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        21 => [
+                        [
                             'id' => 4625734,
                             'title' => 'Офис, школа, книги',
                             'mpath' => '.',
@@ -386,7 +386,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        22 => [
+                        [
                             'id' => 80260,
                             'title' => 'Подарки и товары для праздников',
                             'mpath' => '.',
@@ -402,7 +402,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        23 => [
+                        [
                             'id' => 4628418,
                             'title' => 'Сантехника и ремонт',
                             'mpath' => '.',
@@ -418,7 +418,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        24 => [
+                        [
                             'id' => 4655216,
                             'title' => 'Сельское хозяйство',
                             'mpath' => '.',
@@ -434,7 +434,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        25 => [
+                        [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
                             'mpath' => '.',
@@ -450,7 +450,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        26 => [
+                        [
                             'id' => 4626923,
                             'title' => 'Алкогольные напитки и продукты питания',
                             'mpath' => '.',
@@ -466,7 +466,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        27 => [
+                        [
                             'id' => 4627949,
                             'title' => 'Смартфоны, ТВ и электроника',
                             'mpath' => '.',
@@ -482,7 +482,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        28 => [
+                        [
                             'id' => 4627893,
                             'title' => 'Спорт и увлечения',
                             'mpath' => '.',
@@ -498,7 +498,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        29 => [
+                        [
                             'id' => 2898387,
                             'title' => 'Штемпельные краски и подушки',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -514,7 +514,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        30 => [
+                        [
                             'id' => 2460392,
                             'title' => 'Канцелярия',
                             'mpath' => '.4625734.',
@@ -530,7 +530,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        31 => [
+                        [
                             'id' => 2460402,
                             'title' => 'Архивирование и делопроизводство',
                             'mpath' => '.4625734.2460392.',
@@ -546,7 +546,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        32 => [
+                        [
                             'id' => 4655272,
                             'title' => 'Досточки для оттиска',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -562,7 +562,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        33 => [
+                        [
                             'id' => 4641568,
                             'title' => 'Настольные картотеки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -578,7 +578,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        34 => [
+                        [
                             'id' => 3167120,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -594,7 +594,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        35 => [
+                        [
                             'id' => 2973057,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -610,7 +610,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        36 => [
+                        [
                             'id' => 4655242,
                             'title' => 'Пломбы и пломбираторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -626,7 +626,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        37 => [
+                        [
                             'id' => 2660622,
                             'title' => 'Разделители и закладки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -642,7 +642,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        38 => [
+                        [
                             'id' => 4655266,
                             'title' => 'Сургуч',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -658,7 +658,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        39 => [
+                        [
                             'id' => 4630034,
                             'title' => 'Шило, нити и шпагаты',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -674,7 +674,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        40 => [
+                        [
                             'id' => 2514877,
                             'title' => 'Штемпельная продукция',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -690,7 +690,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        41 => [
+                        [
                             'id' => 4628926,
                             'title' => 'Датеры',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -706,7 +706,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        42 => [
+                        [
                             'id' => 4629073,
                             'title' => 'Оснастки, штампы стандартные',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -722,7 +722,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        43 => [
+                        [
                             'id' => 2898382,
                             'title' => 'Самонаборные штампы, кассы букв',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -738,7 +738,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        44 => [
+                        [
                             'id' => 753399,
                             'title' => 'Аксессуары для алкоголя',
                             'mpath' => '.4626923.',
@@ -754,7 +754,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        45 => [
+                        [
                             'id' => 4652996,
                             'title' => 'Мини-бары',
                             'mpath' => '.4626923.753399.',
@@ -770,7 +770,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        46 => [
+                        [
                             'id' => 4653017,
                             'title' => 'Упаковки для алкогольных напитков',
                             'mpath' => '.4626923.753399.',
@@ -786,7 +786,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        47 => [
+                        [
                             'id' => 4653010,
                             'title' => 'Фляги',
                             'mpath' => '.4626923.753399.',
@@ -802,7 +802,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        48 => [
+                        [
                             'id' => 2666302,
                             'title' => 'Архивные короба и боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -818,7 +818,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        49 => [
+                        [
                             'id' => 2581742,
                             'title' => 'Папки и файлы подвесные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -834,7 +834,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        50 => [
+                        [
                             'id' => 2581737,
                             'title' => 'Папки-планшеты',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -850,7 +850,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        51 => [
+                        [
                             'id' => 2514862,
                             'title' => 'Папки пластиковые',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -866,7 +866,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        52 => [
+                        [
                             'id' => 2581727,
                             'title' => 'Папки-портфели, папки-боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -882,7 +882,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        53 => [
+                        [
                             'id' => 2581732,
                             'title' => 'Папки-регистраторы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -898,7 +898,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        54 => [
+                        [
                             'id' => 4626584,
                             'title' => 'Папки специальные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -914,7 +914,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        55 => [
+                        [
                             'id' => 2595767,
                             'title' => 'Папки с файлами',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -930,7 +930,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        56 => [
+                        [
                             'id' => 2514857,
                             'title' => 'Файлы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -946,7 +946,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        57 => [
+                        [
                             'id' => 2581722,
                             'title' => 'Папки, регистраторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -962,7 +962,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        58 => [
+                        [
                             'id' => 2514867,
                             'title' => 'Визитницы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -978,7 +978,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        59 => [
+                        [
                             'id' => 2514872,
                             'title' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -994,7 +994,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        60 => [
+                        [
                             'id' => 2560747,
                             'title' => 'Банковские принадлежности',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1012,8 +1012,8 @@ return [
                         ],
                     ],
                     'common_log' => [
-                        0 => [
-                            'id' => 1,
+                        [
+                            //'id' => 1,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2560747,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1022,8 +1022,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        1 => [
-                            'id' => 2,
+                        [
+                            //'id' => 2,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514872,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1032,8 +1032,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        2 => [
-                            'id' => 3,
+                        [
+                            //'id' => 3,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514867,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1042,8 +1042,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        3 => [
-                            'id' => 4,
+                        [
+                            //'id' => 4,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2581722,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1052,8 +1052,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        4 => [
-                            'id' => 5,
+                        [
+                            //'id' => 5,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514857,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1062,8 +1062,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        5 => [
-                            'id' => 6,
+                        [
+                            //'id' => 6,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2666302,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1072,8 +1072,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        6 => [
-                            'id' => 7,
+                        [
+                            //'id' => 7,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2581742,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1082,8 +1082,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        7 => [
-                            'id' => 8,
+                        [
+                            //'id' => 8,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2581737,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1092,8 +1092,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        8 => [
-                            'id' => 9,
+                        [
+                            //'id' => 9,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514862,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1102,8 +1102,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        9 => [
-                            'id' => 10,
+                        [
+                            //'id' => 10,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2581727,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1112,8 +1112,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        10 => [
-                            'id' => 11,
+                        [
+                            //'id' => 11,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2581732,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1122,8 +1122,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        11 => [
-                            'id' => 12,
+                        [
+                            //'id' => 12,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4626584,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1132,8 +1132,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        12 => [
-                            'id' => 13,
+                        [
+                            //'id' => 13,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2595767,
                             'old_value' => '{"market_sv_id": 10}',
@@ -1185,7 +1185,7 @@ return [
                 'lisa_fixtures' => [
                     'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
                     'rozetka_categories' => [
-                        0 => [
+                        [
                             'id' => 4660651,
                             'title' => 'Рестораны и продуктовые сети',
                             'mpath' => '.',
@@ -1201,7 +1201,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        1 => [
+                        [
                             'id' => 4655025,
                             'title' => 'Скрытые',
                             'mpath' => '.',
@@ -1217,7 +1217,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        2 => [
+                        [
                             'id' => 4660667,
                             'title' => 'не должно выгружаться (old)',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -1233,7 +1233,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        3 => [
+                        [
                             'id' => 4660669,
                             'title' => 'не использовать не должно выгружаться ',
                             'mpath' => '.4660666.',
@@ -1249,7 +1249,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        4 => [
+                        [
                             'id' => 4660652,
                             'title' => 'Рестораны',
                             'mpath' => '.4660651.',
@@ -1265,7 +1265,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        5 => [
+                        [
                             'id' => 4660653,
                             'title' => 'Продуктовые сети',
                             'mpath' => '.4660651.',
@@ -1281,7 +1281,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        6 => [
+                        [
                             'id' => 4660668,
                             'title' => 'old не должно выгружаться',
                             'mpath' => '.4626923.',
@@ -1297,7 +1297,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        7 => [
+                        [
                             'id' => 4660666,
                             'title' => 'не должно выгружаться _old',
                             'mpath' => '.',
@@ -1313,7 +1313,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        8 => [
+                        [
                             'id' => 4656380,
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
@@ -1329,7 +1329,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        9 => [
+                        [
                             'id' => 4627851,
                             'title' => 'Товары для бизнеса',
                             'mpath' => '.',
@@ -1345,7 +1345,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        10 => [
+                        [
                             'id' => 4628124,
                             'title' => 'Фото и видео',
                             'mpath' => '.4627949.80258.',
@@ -1361,7 +1361,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        11 => [
+                        [
                             'id' => 88468,
                             'title' => 'Товары для детей',
                             'mpath' => '.',
@@ -1377,7 +1377,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        12 => [
+                        [
                             'id' => 2394287,
                             'title' => 'Товары для дома',
                             'mpath' => '.',
@@ -1393,7 +1393,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        13 => [
+                        [
                             'id' => 4630262,
                             'title' => 'Услуги и сервисы',
                             'mpath' => '.',
@@ -1409,7 +1409,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        14 => [
+                        [
                             'id' => 83850,
                             'title' => 'Уцененные товары',
                             'mpath' => '.',
@@ -1425,7 +1425,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        15 => [
+                        [
                             'id' => 80025,
                             'title' => 'Бытовая техника, интерьер',
                             'mpath' => '.',
@@ -1441,7 +1441,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        16 => [
+                        [
                             'id' => 2394297,
                             'title' => 'Дача, сад, огород',
                             'mpath' => '.',
@@ -1457,7 +1457,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        17 => [
+                        [
                             'id' => 80253,
                             'title' => 'Компьютеры и ноутбуки',
                             'mpath' => '.',
@@ -1473,7 +1473,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        18 => [
+                        [
                             'id' => 4629305,
                             'title' => 'Красота и здоровье',
                             'mpath' => '.',
@@ -1489,7 +1489,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        19 => [
+                        [
                             'id' => 84625,
                             'title' => 'Оружие',
                             'mpath' => '.',
@@ -1505,7 +1505,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        20 => [
+                        [
                             'id' => 1162030,
                             'title' => 'Одежда, обувь и аксессуары',
                             'mpath' => '.',
@@ -1521,7 +1521,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        21 => [
+                        [
                             'id' => 4625734,
                             'title' => 'Офис, школа, книги',
                             'mpath' => '.',
@@ -1537,7 +1537,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        22 => [
+                        [
                             'id' => 80260,
                             'title' => 'Подарки и товары для праздников',
                             'mpath' => '.',
@@ -1553,7 +1553,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        23 => [
+                        [
                             'id' => 4628418,
                             'title' => 'Сантехника и ремонт',
                             'mpath' => '.',
@@ -1569,7 +1569,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        24 => [
+                        [
                             'id' => 4655216,
                             'title' => 'Сельское хозяйство',
                             'mpath' => '.',
@@ -1585,7 +1585,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        25 => [
+                        [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
                             'mpath' => '.',
@@ -1601,7 +1601,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        26 => [
+                        [
                             'id' => 4626923,
                             'title' => 'Алкогольные напитки и продукты питания',
                             'mpath' => '.',
@@ -1617,7 +1617,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        27 => [
+                        [
                             'id' => 4627949,
                             'title' => 'Смартфоны, ТВ и электроника',
                             'mpath' => '.',
@@ -1633,7 +1633,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        28 => [
+                        [
                             'id' => 4627893,
                             'title' => 'Спорт и увлечения',
                             'mpath' => '.',
@@ -1649,7 +1649,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        29 => [
+                        [
                             'id' => 2898387,
                             'title' => 'Штемпельные краски и подушки',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -1665,7 +1665,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        30 => [
+                        [
                             'id' => 2460392,
                             'title' => 'Канцелярия',
                             'mpath' => '.4625734.',
@@ -1681,7 +1681,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        31 => [
+                        [
                             'id' => 2460402,
                             'title' => 'Архивирование и делопроизводство',
                             'mpath' => '.4625734.2460392.',
@@ -1697,7 +1697,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        32 => [
+                        [
                             'id' => 4655272,
                             'title' => 'Досточки для оттиска',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1713,7 +1713,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        33 => [
+                        [
                             'id' => 4641568,
                             'title' => 'Настольные картотеки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1729,7 +1729,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        34 => [
+                        [
                             'id' => 3167120,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1745,7 +1745,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        35 => [
+                        [
                             'id' => 2973057,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1761,7 +1761,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        36 => [
+                        [
                             'id' => 4655242,
                             'title' => 'Пломбы и пломбираторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1777,7 +1777,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        37 => [
+                        [
                             'id' => 2660622,
                             'title' => 'Разделители и закладки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1793,7 +1793,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        38 => [
+                        [
                             'id' => 4655266,
                             'title' => 'Сургуч',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1809,7 +1809,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        39 => [
+                        [
                             'id' => 4630034,
                             'title' => 'Шило, нити и шпагаты',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1825,7 +1825,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        40 => [
+                        [
                             'id' => 2514877,
                             'title' => 'Штемпельная продукция',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -1841,7 +1841,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        41 => [
+                        [
                             'id' => 4628926,
                             'title' => 'Датеры',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -1857,7 +1857,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        42 => [
+                        [
                             'id' => 4629073,
                             'title' => 'Оснастки, штампы стандартные',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -1873,7 +1873,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        43 => [
+                        [
                             'id' => 2898382,
                             'title' => 'Самонаборные штампы, кассы букв',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -1889,7 +1889,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        44 => [
+                        [
                             'id' => 753399,
                             'title' => 'Аксессуары для алкоголя',
                             'mpath' => '.4626923.',
@@ -1905,7 +1905,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        45 => [
+                        [
                             'id' => 4652996,
                             'title' => 'Мини-бары',
                             'mpath' => '.4626923.753399.',
@@ -1921,7 +1921,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        46 => [
+                        [
                             'id' => 4653017,
                             'title' => 'Упаковки для алкогольных напитков',
                             'mpath' => '.4626923.753399.',
@@ -1937,7 +1937,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        47 => [
+                        [
                             'id' => 4653010,
                             'title' => 'Фляги',
                             'mpath' => '.4626923.753399.',
@@ -1953,7 +1953,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        48 => [
+                        [
                             'id' => 2666302,
                             'title' => 'Архивные короба и боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -1969,7 +1969,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        49 => [
+                        [
                             'id' => 2581742,
                             'title' => 'Папки и файлы подвесные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -1985,7 +1985,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        50 => [
+                        [
                             'id' => 2581737,
                             'title' => 'Папки-планшеты',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -2001,7 +2001,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        51 => [
+                        [
                             'id' => 2514862,
                             'title' => 'Папки пластиковые',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -2017,7 +2017,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        52 => [
+                        [
                             'id' => 2581727,
                             'title' => 'Папки-портфели, папки-боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -2033,7 +2033,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        53 => [
+                        [
                             'id' => 2581732,
                             'title' => 'Папки-регистраторы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -2049,7 +2049,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        54 => [
+                        [
                             'id' => 4626584,
                             'title' => 'Папки специальные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -2065,7 +2065,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        55 => [
+                        [
                             'id' => 2595767,
                             'title' => 'Папки с файлами',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -2081,7 +2081,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        56 => [
+                        [
                             'id' => 2514857,
                             'title' => 'Файлы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2097,7 +2097,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        57 => [
+                        [
                             'id' => 2581722,
                             'title' => 'Папки, регистраторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2113,7 +2113,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        58 => [
+                        [
                             'id' => 2514867,
                             'title' => 'Визитницы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2129,7 +2129,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        59 => [
+                        [
                             'id' => 2514872,
                             'title' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2145,7 +2145,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        60 => [
+                        [
                             'id' => 2560747,
                             'title' => 'Банковские принадлежности',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2163,8 +2163,8 @@ return [
                         ],
                     ],
                     'common_log' => [
-                        0 => [
-                            'id' => 1,
+                        [
+                            //'id' => 1,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2560747,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2173,8 +2173,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        1 => [
-                            'id' => 2,
+                        [
+                            //'id' => 2,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514872,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2183,8 +2183,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        2 => [
-                            'id' => 3,
+                        [
+                            //'id' => 3,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514867,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2193,8 +2193,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        3 => [
-                            'id' => 4,
+                        [
+                            //'id' => 4,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2581722,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2203,8 +2203,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        4 => [
-                            'id' => 5,
+                        [
+                            //'id' => 5,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514857,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2213,8 +2213,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        5 => [
-                            'id' => 6,
+                        [
+                            //'id' => 6,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2666302,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2223,8 +2223,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        6 => [
-                            'id' => 7,
+                        [
+                            //'id' => 7,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2581742,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2233,8 +2233,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        7 => [
-                            'id' => 8,
+                        [
+                            //'id' => 8,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2581737,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2243,8 +2243,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        8 => [
-                            'id' => 9,
+                        [
+                            //'id' => 9,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514862,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2253,8 +2253,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        9 => [
-                            'id' => 10,
+                        [
+                            //'id' => 10,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2581727,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2263,8 +2263,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        10 => [
-                            'id' => 11,
+                        [
+                            //'id' => 11,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2581732,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2273,8 +2273,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        11 => [
-                            'id' => 12,
+                        [
+                            //'id' => 12,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4626584,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2283,8 +2283,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        12 => [
-                            'id' => 13,
+                        [
+                            //'id' => 13,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2595767,
                             'old_value' => '{"market_sv_id": 10}',
@@ -2323,7 +2323,7 @@ return [
                 'lisa_fixtures' => [
                     'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
                     'rozetka_categories' => [
-                        0 => [
+                        [
                             'id' => 4626923,
                             'title' => 'Алкогольные напитки и продукты питания',
                             'mpath' => '.',
@@ -2339,7 +2339,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        1 => [
+                        [
                             'id' => 80025,
                             'title' => 'Бытовая техника, интерьер',
                             'mpath' => '.',
@@ -2355,7 +2355,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        2 => [
+                        [
                             'id' => 2394297,
                             'title' => 'Дача, сад, огород',
                             'mpath' => '.',
@@ -2371,7 +2371,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        3 => [
+                        [
                             'id' => 80253,
                             'title' => 'Компьютеры и ноутбуки',
                             'mpath' => '.',
@@ -2387,7 +2387,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        4 => [
+                        [
                             'id' => 4629305,
                             'title' => 'Красота и здоровье',
                             'mpath' => '.',
@@ -2403,7 +2403,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        5 => [
+                        [
                             'id' => 4660666,
                             'title' => 'не должно выгружаться _old',
                             'mpath' => '.',
@@ -2419,7 +2419,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        6 => [
+                        [
                             'id' => 1162030,
                             'title' => 'Одежда, обувь и аксессуары',
                             'mpath' => '.',
@@ -2435,7 +2435,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        7 => [
+                        [
                             'id' => 84625,
                             'title' => 'Оружие',
                             'mpath' => '.',
@@ -2451,7 +2451,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        8 => [
+                        [
                             'id' => 4625734,
                             'title' => 'Офис, школа, книги',
                             'mpath' => '.',
@@ -2467,7 +2467,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        9 => [
+                        [
                             'id' => 80260,
                             'title' => 'Подарки и товары для праздников',
                             'mpath' => '.',
@@ -2483,7 +2483,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        10 => [
+                        [
                             'id' => 4660651,
                             'title' => 'Рестораны и продуктовые сети',
                             'mpath' => '.',
@@ -2499,7 +2499,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        11 => [
+                        [
                             'id' => 4628418,
                             'title' => 'Сантехника и ремонт',
                             'mpath' => '.',
@@ -2515,7 +2515,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        12 => [
+                        [
                             'id' => 4655216,
                             'title' => 'Сельское хозяйство',
                             'mpath' => '.',
@@ -2531,7 +2531,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        13 => [
+                        [
                             'id' => 4655025,
                             'title' => 'Скрытые',
                             'mpath' => '.',
@@ -2547,7 +2547,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        14 => [
+                        [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
                             'mpath' => '.',
@@ -2563,7 +2563,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        15 => [
+                        [
                             'id' => 4656380,
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
@@ -2579,7 +2579,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        16 => [
+                        [
                             'id' => 4627949,
                             'title' => 'Смартфоны, ТВ и электроника',
                             'mpath' => '.',
@@ -2595,7 +2595,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        17 => [
+                        [
                             'id' => 4627893,
                             'title' => 'Спорт и увлечения',
                             'mpath' => '.',
@@ -2611,7 +2611,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        18 => [
+                        [
                             'id' => 4627851,
                             'title' => 'Товары для бизнеса',
                             'mpath' => '.',
@@ -2627,7 +2627,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        19 => [
+                        [
                             'id' => 88468,
                             'title' => 'Товары для детей',
                             'mpath' => '.',
@@ -2643,7 +2643,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        20 => [
+                        [
                             'id' => 2394287,
                             'title' => 'Товары для дома',
                             'mpath' => '.',
@@ -2659,7 +2659,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        21 => [
+                        [
                             'id' => 4630262,
                             'title' => 'Услуги и сервисы',
                             'mpath' => '.',
@@ -2675,7 +2675,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        22 => [
+                        [
                             'id' => 83850,
                             'title' => 'Уцененные товары',
                             'mpath' => '.',
@@ -2691,7 +2691,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        23 => [
+                        [
                             'id' => 2460392,
                             'title' => 'Канцелярия',
                             'mpath' => '.4625734.',
@@ -2707,7 +2707,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        24 => [
+                        [
                             'id' => 2460402,
                             'title' => 'Архивирование и делопроизводство',
                             'mpath' => '.4625734.2460392.',
@@ -2723,7 +2723,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        25 => [
+                        [
                             'id' => 2560747,
                             'title' => 'Банковские принадлежности',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2739,7 +2739,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        26 => [
+                        [
                             'id' => 2514872,
                             'title' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2755,7 +2755,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        27 => [
+                        [
                             'id' => 2514867,
                             'title' => 'Визитницы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2771,7 +2771,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        28 => [
+                        [
                             'id' => 4655272,
                             'title' => 'Досточки для оттиска',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2787,7 +2787,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        29 => [
+                        [
                             'id' => 4641568,
                             'title' => 'Настольные картотеки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2803,7 +2803,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        30 => [
+                        [
                             'id' => 2973057,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2819,7 +2819,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        31 => [
+                        [
                             'id' => 3167120,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2835,7 +2835,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        32 => [
+                        [
                             'id' => 2581722,
                             'title' => 'Папки, регистраторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2851,7 +2851,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        33 => [
+                        [
                             'id' => 4655242,
                             'title' => 'Пломбы и пломбираторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2867,7 +2867,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        34 => [
+                        [
                             'id' => 2660622,
                             'title' => 'Разделители и закладки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2883,7 +2883,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        35 => [
+                        [
                             'id' => 4655266,
                             'title' => 'Сургуч',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2899,7 +2899,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        36 => [
+                        [
                             'id' => 2514857,
                             'title' => 'Файлы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2915,7 +2915,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        37 => [
+                        [
                             'id' => 4630034,
                             'title' => 'Шило, нити и шпагаты',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2931,7 +2931,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        38 => [
+                        [
                             'id' => 2514877,
                             'title' => 'Штемпельная продукция',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -2947,7 +2947,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        39 => [
+                        [
                             'id' => 4628926,
                             'title' => 'Датеры',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -2963,7 +2963,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        40 => [
+                        [
                             'id' => 4629073,
                             'title' => 'Оснастки, штампы стандартные',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -2979,7 +2979,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        41 => [
+                        [
                             'id' => 2898382,
                             'title' => 'Самонаборные штампы, кассы букв',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -2995,7 +2995,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        42 => [
+                        [
                             'id' => 2898387,
                             'title' => 'Штемпельные краски и подушки',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -3011,7 +3011,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        43 => [
+                        [
                             'id' => 2666302,
                             'title' => 'Архивные короба и боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -3027,7 +3027,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        44 => [
+                        [
                             'id' => 4660667,
                             'title' => 'не должно выгружаться (old)',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -3043,7 +3043,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        45 => [
+                        [
                             'id' => 2581742,
                             'title' => 'Папки и файлы подвесные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -3059,7 +3059,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        46 => [
+                        [
                             'id' => 2581737,
                             'title' => 'Папки-планшеты',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -3075,7 +3075,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        47 => [
+                        [
                             'id' => 2514862,
                             'title' => 'Папки пластиковые',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -3091,7 +3091,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        48 => [
+                        [
                             'id' => 2581727,
                             'title' => 'Папки-портфели, папки-боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -3107,7 +3107,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        49 => [
+                        [
                             'id' => 2581732,
                             'title' => 'Папки-регистраторы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -3123,7 +3123,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        50 => [
+                        [
                             'id' => 4626584,
                             'title' => 'Папки специальные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -3139,7 +3139,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        51 => [
+                        [
                             'id' => 2595767,
                             'title' => 'Папки с файлами',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -3155,7 +3155,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        52 => [
+                        [
                             'id' => 4660668,
                             'title' => 'old не должно выгружаться',
                             'mpath' => '.4626923.',
@@ -3171,7 +3171,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        53 => [
+                        [
                             'id' => 753399,
                             'title' => 'Аксессуары для алкоголя',
                             'mpath' => '.4626923.',
@@ -3187,7 +3187,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        54 => [
+                        [
                             'id' => 4652996,
                             'title' => 'Мини-бары',
                             'mpath' => '.4626923.753399.',
@@ -3203,7 +3203,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        55 => [
+                        [
                             'id' => 4653017,
                             'title' => 'Упаковки для алкогольных напитков',
                             'mpath' => '.4626923.753399.',
@@ -3219,7 +3219,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        56 => [
+                        [
                             'id' => 4653010,
                             'title' => 'Фляги',
                             'mpath' => '.4626923.753399.',
@@ -3235,7 +3235,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        57 => [
+                        [
                             'id' => 4628124,
                             'title' => 'Фото и видео',
                             'mpath' => '.4627949.80258.',
@@ -3251,7 +3251,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        58 => [
+                        [
                             'id' => 4660653,
                             'title' => 'Продуктовые сети',
                             'mpath' => '.4660651.',
@@ -3267,7 +3267,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        59 => [
+                        [
                             'id' => 4660652,
                             'title' => 'Рестораны',
                             'mpath' => '.4660651.',
@@ -3283,7 +3283,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        60 => [
+                        [
                             'id' => 4660669,
                             'title' => 'не использовать не должно выгружаться ',
                             'mpath' => '.4660666.',
@@ -3301,8 +3301,8 @@ return [
                         ],
                     ],
                     'common_log' => [
-                        0 => [
-                            'id' => 1,
+                        [
+                            //'id' => 1,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 80025,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3311,8 +3311,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        1 => [
-                            'id' => 2,
+                        [
+                            //'id' => 2,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2394297,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3321,8 +3321,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        2 => [
-                            'id' => 3,
+                        [
+                            //'id' => 3,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 80253,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3331,8 +3331,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        3 => [
-                            'id' => 4,
+                        [
+                            //'id' => 4,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4629305,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3341,8 +3341,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        4 => [
-                            'id' => 5,
+                        [
+                            //'id' => 5,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 1162030,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3351,8 +3351,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        5 => [
-                            'id' => 6,
+                        [
+                            //'id' => 6,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 84625,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3361,8 +3361,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        6 => [
-                            'id' => 7,
+                        [
+                            //'id' => 7,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4625734,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3371,8 +3371,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        7 => [
-                            'id' => 8,
+                        [
+                            //'id' => 8,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 80260,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3381,8 +3381,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        8 => [
-                            'id' => 9,
+                        [
+                            //'id' => 9,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4628418,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3391,8 +3391,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        9 => [
-                            'id' => 10,
+                        [
+                            //'id' => 10,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4655216,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3401,8 +3401,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        10 => [
-                            'id' => 11,
+                        [
+                            //'id' => 11,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 80262,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3411,8 +3411,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        11 => [
-                            'id' => 12,
+                        [
+                            //'id' => 12,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4627949,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3421,8 +3421,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        12 => [
-                            'id' => 13,
+                        [
+                            //'id' => 13,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4627893,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3431,8 +3431,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        13 => [
-                            'id' => 14,
+                        [
+                            //'id' => 14,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4627851,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3441,8 +3441,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        14 => [
-                            'id' => 15,
+                        [
+                            //'id' => 15,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 88468,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3451,8 +3451,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        15 => [
-                            'id' => 16,
+                        [
+                            //'id' => 16,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2394287,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3461,8 +3461,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        16 => [
-                            'id' => 17,
+                        [
+                            //'id' => 17,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4630262,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3471,8 +3471,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        17 => [
-                            'id' => 18,
+                        [
+                            //'id' => 18,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 83850,
                             'old_value' => '{"rz_sv_id": 32}',
@@ -3481,8 +3481,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        18 => [
-                            'id' => 19,
+                        [
+                            //'id' => 19,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2460392,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3491,8 +3491,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        19 => [
-                            'id' => 20,
+                        [
+                            //'id' => 20,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2460402,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3501,8 +3501,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        20 => [
-                            'id' => 21,
+                        [
+                            //'id' => 21,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4655272,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3511,8 +3511,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        21 => [
-                            'id' => 22,
+                        [
+                            //'id' => 22,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4641568,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3521,8 +3521,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        22 => [
-                            'id' => 23,
+                        [
+                            //'id' => 23,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 3167120,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3531,8 +3531,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        23 => [
-                            'id' => 24,
+                        [
+                            //'id' => 24,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2973057,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3541,8 +3541,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        24 => [
-                            'id' => 25,
+                        [
+                            //'id' => 25,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4655242,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3551,8 +3551,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        25 => [
-                            'id' => 26,
+                        [
+                            //'id' => 26,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2660622,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3561,8 +3561,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        26 => [
-                            'id' => 27,
+                        [
+                            //'id' => 27,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4655266,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3571,8 +3571,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        27 => [
-                            'id' => 28,
+                        [
+                            //'id' => 28,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4630034,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3581,8 +3581,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        28 => [
-                            'id' => 29,
+                        [
+                            //'id' => 29,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514877,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3591,8 +3591,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        29 => [
-                            'id' => 30,
+                        [
+                            //'id' => 30,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4628926,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3601,8 +3601,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        30 => [
-                            'id' => 31,
+                        [
+                            //'id' => 31,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4629073,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3611,8 +3611,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        31 => [
-                            'id' => 32,
+                        [
+                            //'id' => 32,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2898382,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3621,8 +3621,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        32 => [
-                            'id' => 33,
+                        [
+                            //'id' => 33,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2898387,
                             'old_value' => '{"rz_sv_id": 31}',
@@ -3668,7 +3668,7 @@ return [
                 'lisa_fixtures' => [
                     'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
                     'rozetka_categories' => [
-                        0 => [
+                        [
                             'id' => 4626923,
                             'title' => 'Алкогольные напитки и продукты питания',
                             'mpath' => '.',
@@ -3684,7 +3684,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        1 => [
+                        [
                             'id' => 80025,
                             'title' => 'Бытовая техника, интерьер',
                             'mpath' => '.',
@@ -3700,7 +3700,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        2 => [
+                        [
                             'id' => 2394297,
                             'title' => 'Дача, сад, огород',
                             'mpath' => '.',
@@ -3716,7 +3716,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        3 => [
+                        [
                             'id' => 80253,
                             'title' => 'Компьютеры и ноутбуки',
                             'mpath' => '.',
@@ -3732,7 +3732,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        4 => [
+                        [
                             'id' => 4629305,
                             'title' => 'Красота и здоровье',
                             'mpath' => '.',
@@ -3748,7 +3748,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        5 => [
+                        [
                             'id' => 4660666,
                             'title' => 'не должно выгружаться _old',
                             'mpath' => '.',
@@ -3764,7 +3764,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        6 => [
+                        [
                             'id' => 1162030,
                             'title' => 'Одежда, обувь и аксессуары',
                             'mpath' => '.',
@@ -3780,7 +3780,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        7 => [
+                        [
                             'id' => 84625,
                             'title' => 'Оружие',
                             'mpath' => '.',
@@ -3796,7 +3796,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        8 => [
+                        [
                             'id' => 4625734,
                             'title' => 'Офис, школа, книги',
                             'mpath' => '.',
@@ -3812,7 +3812,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        9 => [
+                        [
                             'id' => 80260,
                             'title' => 'Подарки и товары для праздников',
                             'mpath' => '.',
@@ -3828,7 +3828,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        10 => [
+                        [
                             'id' => 4660651,
                             'title' => 'Рестораны и продуктовые сети',
                             'mpath' => '.',
@@ -3844,7 +3844,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        11 => [
+                        [
                             'id' => 4628418,
                             'title' => 'Сантехника и ремонт',
                             'mpath' => '.',
@@ -3860,7 +3860,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        12 => [
+                        [
                             'id' => 4655216,
                             'title' => 'Сельское хозяйство',
                             'mpath' => '.',
@@ -3876,7 +3876,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        13 => [
+                        [
                             'id' => 4655025,
                             'title' => 'Скрытые',
                             'mpath' => '.',
@@ -3892,7 +3892,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        14 => [
+                        [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
                             'mpath' => '.',
@@ -3908,7 +3908,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        15 => [
+                        [
                             'id' => 4656380,
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
@@ -3924,7 +3924,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        16 => [
+                        [
                             'id' => 4627949,
                             'title' => 'Смартфоны, ТВ и электроника',
                             'mpath' => '.',
@@ -3940,7 +3940,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        17 => [
+                        [
                             'id' => 4627893,
                             'title' => 'Спорт и увлечения',
                             'mpath' => '.',
@@ -3956,7 +3956,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        18 => [
+                        [
                             'id' => 4627851,
                             'title' => 'Товары для бизнеса',
                             'mpath' => '.',
@@ -3972,7 +3972,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        19 => [
+                        [
                             'id' => 88468,
                             'title' => 'Товары для детей',
                             'mpath' => '.',
@@ -3988,7 +3988,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        20 => [
+                        [
                             'id' => 2394287,
                             'title' => 'Товары для дома',
                             'mpath' => '.',
@@ -4004,7 +4004,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        21 => [
+                        [
                             'id' => 4630262,
                             'title' => 'Услуги и сервисы',
                             'mpath' => '.',
@@ -4020,7 +4020,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        22 => [
+                        [
                             'id' => 83850,
                             'title' => 'Уцененные товары',
                             'mpath' => '.',
@@ -4036,7 +4036,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        23 => [
+                        [
                             'id' => 2460392,
                             'title' => 'Канцелярия',
                             'mpath' => '.4625734.',
@@ -4052,7 +4052,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        24 => [
+                        [
                             'id' => 2460402,
                             'title' => 'Архивирование и делопроизводство',
                             'mpath' => '.4625734.2460392.',
@@ -4068,7 +4068,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        25 => [
+                        [
                             'id' => 2560747,
                             'title' => 'Банковские принадлежности',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4084,7 +4084,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        26 => [
+                        [
                             'id' => 2514872,
                             'title' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4100,7 +4100,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        27 => [
+                        [
                             'id' => 2514867,
                             'title' => 'Визитницы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4116,7 +4116,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        28 => [
+                        [
                             'id' => 4655272,
                             'title' => 'Досточки для оттиска',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4132,7 +4132,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        29 => [
+                        [
                             'id' => 4641568,
                             'title' => 'Настольные картотеки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4148,7 +4148,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        30 => [
+                        [
                             'id' => 3167120,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4164,7 +4164,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        31 => [
+                        [
                             'id' => 2973057,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4180,7 +4180,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        32 => [
+                        [
                             'id' => 2581722,
                             'title' => 'Папки, регистраторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4196,7 +4196,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        33 => [
+                        [
                             'id' => 4655242,
                             'title' => 'Пломбы и пломбираторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4212,7 +4212,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        34 => [
+                        [
                             'id' => 2660622,
                             'title' => 'Разделители и закладки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4228,7 +4228,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        35 => [
+                        [
                             'id' => 4655266,
                             'title' => 'Сургуч',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4244,7 +4244,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        36 => [
+                        [
                             'id' => 2514857,
                             'title' => 'Файлы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4260,7 +4260,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        37 => [
+                        [
                             'id' => 4630034,
                             'title' => 'Шило, нити и шпагаты',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4276,7 +4276,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        38 => [
+                        [
                             'id' => 2514877,
                             'title' => 'Штемпельная продукция',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -4292,7 +4292,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        39 => [
+                        [
                             'id' => 4628926,
                             'title' => 'Датеры',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -4308,7 +4308,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        40 => [
+                        [
                             'id' => 4629073,
                             'title' => 'Оснастки, штампы стандартные',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -4324,7 +4324,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        41 => [
+                        [
                             'id' => 2898382,
                             'title' => 'Самонаборные штампы, кассы букв',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -4340,7 +4340,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        42 => [
+                        [
                             'id' => 2898387,
                             'title' => 'Штемпельные краски и подушки',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -4356,7 +4356,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        43 => [
+                        [
                             'id' => 2666302,
                             'title' => 'Архивные короба и боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -4372,7 +4372,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        44 => [
+                        [
                             'id' => 4660667,
                             'title' => 'не должно выгружаться (old)',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -4388,7 +4388,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        45 => [
+                        [
                             'id' => 2581742,
                             'title' => 'Папки и файлы подвесные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -4404,7 +4404,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        46 => [
+                        [
                             'id' => 2581737,
                             'title' => 'Папки-планшеты',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -4420,7 +4420,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        47 => [
+                        [
                             'id' => 2514862,
                             'title' => 'Папки пластиковые',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -4436,7 +4436,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        48 => [
+                        [
                             'id' => 2581727,
                             'title' => 'Папки-портфели, папки-боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -4452,7 +4452,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        49 => [
+                        [
                             'id' => 2581732,
                             'title' => 'Папки-регистраторы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -4468,7 +4468,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        50 => [
+                        [
                             'id' => 4626584,
                             'title' => 'Папки специальные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -4484,7 +4484,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        51 => [
+                        [
                             'id' => 2595767,
                             'title' => 'Папки с файлами',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -4500,7 +4500,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        52 => [
+                        [
                             'id' => 4660668,
                             'title' => 'old не должно выгружаться',
                             'mpath' => '.4626923.',
@@ -4516,7 +4516,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        53 => [
+                        [
                             'id' => 753399,
                             'title' => 'Аксессуары для алкоголя',
                             'mpath' => '.4626923.',
@@ -4532,7 +4532,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        54 => [
+                        [
                             'id' => 4652996,
                             'title' => 'Мини-бары',
                             'mpath' => '.4626923.753399.',
@@ -4548,7 +4548,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        55 => [
+                        [
                             'id' => 4653017,
                             'title' => 'Упаковки для алкогольных напитков',
                             'mpath' => '.4626923.753399.',
@@ -4564,7 +4564,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        56 => [
+                        [
                             'id' => 4653010,
                             'title' => 'Фляги',
                             'mpath' => '.4626923.753399.',
@@ -4580,7 +4580,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        57 => [
+                        [
                             'id' => 4628124,
                             'title' => 'Фото и видео',
                             'mpath' => '.4627949.80258.',
@@ -4596,7 +4596,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        58 => [
+                        [
                             'id' => 4660653,
                             'title' => 'Продуктовые сети',
                             'mpath' => '.4660651.',
@@ -4612,7 +4612,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        59 => [
+                        [
                             'id' => 4660652,
                             'title' => 'Рестораны',
                             'mpath' => '.4660651.',
@@ -4628,7 +4628,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        60 => [
+                        [
                             'id' => 4660669,
                             'title' => 'не использовать не должно выгружаться ',
                             'mpath' => '.4660666.',
@@ -4646,8 +4646,8 @@ return [
                         ],
                     ],
                     'common_log' => [
-                        0 => [
-                            'id' => 1,
+                        [
+                            //'id' => 1,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4626923,
                             'old_value' => '{"groups_sv_id": 36}',
@@ -4656,8 +4656,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        1 => [
-                            'id' => 2,
+                        [
+                            //'id' => 2,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2394297,
                             'old_value' => '{"groups_sv_id": 36}',
@@ -4666,8 +4666,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        2 => [
-                            'id' => 3,
+                        [
+                            //'id' => 3,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4629305,
                             'old_value' => '{"groups_sv_id": 36}',
@@ -4676,8 +4676,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        3 => [
-                            'id' => 4,
+                        [
+                            //'id' => 4,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2460402,
                             'old_value' => '{"groups_sv_id": 36}',
@@ -4686,8 +4686,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        4 => [
-                            'id' => 5,
+                        [
+                            //'id' => 5,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2666302,
                             'old_value' => '{"groups_sv_id": 36}',
@@ -4729,7 +4729,7 @@ return [
                 'lisa_fixtures' => [
                     'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
                     'rozetka_categories' => [
-                        0 => [
+                        [
                             'id' => 4626923,
                             'title' => 'Алкогольные напитки и продукты питания',
                             'mpath' => '.',
@@ -4745,7 +4745,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        1 => [
+                        [
                             'id' => 80025,
                             'title' => 'Бытовая техника, интерьер',
                             'mpath' => '.',
@@ -4761,7 +4761,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        2 => [
+                        [
                             'id' => 2394297,
                             'title' => 'Дача, сад, огород',
                             'mpath' => '.',
@@ -4777,7 +4777,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        3 => [
+                        [
                             'id' => 80253,
                             'title' => 'Компьютеры и ноутбуки',
                             'mpath' => '.',
@@ -4793,7 +4793,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        4 => [
+                        [
                             'id' => 4629305,
                             'title' => 'Красота и здоровье',
                             'mpath' => '.',
@@ -4809,7 +4809,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        5 => [
+                        [
                             'id' => 4660666,
                             'title' => 'не должно выгружаться _old',
                             'mpath' => '.',
@@ -4825,7 +4825,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        6 => [
+                        [
                             'id' => 1162030,
                             'title' => 'Одежда, обувь и аксессуары',
                             'mpath' => '.',
@@ -4841,7 +4841,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        7 => [
+                        [
                             'id' => 84625,
                             'title' => 'Оружие',
                             'mpath' => '.',
@@ -4857,7 +4857,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        8 => [
+                        [
                             'id' => 4625734,
                             'title' => 'Офис, школа, книги',
                             'mpath' => '.',
@@ -4873,7 +4873,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        9 => [
+                        [
                             'id' => 80260,
                             'title' => 'Подарки и товары для праздников',
                             'mpath' => '.',
@@ -4889,7 +4889,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        10 => [
+                        [
                             'id' => 4660651,
                             'title' => 'Рестораны и продуктовые сети',
                             'mpath' => '.',
@@ -4905,7 +4905,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        11 => [
+                        [
                             'id' => 4628418,
                             'title' => 'Сантехника и ремонт',
                             'mpath' => '.',
@@ -4921,7 +4921,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        12 => [
+                        [
                             'id' => 4655216,
                             'title' => 'Сельское хозяйство',
                             'mpath' => '.',
@@ -4937,7 +4937,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        13 => [
+                        [
                             'id' => 4655025,
                             'title' => 'Скрытые',
                             'mpath' => '.',
@@ -4953,7 +4953,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        14 => [
+                        [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
                             'mpath' => '.',
@@ -4969,7 +4969,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        15 => [
+                        [
                             'id' => 4656380,
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
@@ -4985,7 +4985,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        16 => [
+                        [
                             'id' => 4627949,
                             'title' => 'Смартфоны, ТВ и электроника',
                             'mpath' => '.',
@@ -5001,7 +5001,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        17 => [
+                        [
                             'id' => 4627893,
                             'title' => 'Спорт и увлечения',
                             'mpath' => '.',
@@ -5017,7 +5017,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        18 => [
+                        [
                             'id' => 4627851,
                             'title' => 'Товары для бизнеса',
                             'mpath' => '.',
@@ -5033,7 +5033,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        19 => [
+                        [
                             'id' => 88468,
                             'title' => 'Товары для детей',
                             'mpath' => '.',
@@ -5049,7 +5049,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        20 => [
+                        [
                             'id' => 2394287,
                             'title' => 'Товары для дома',
                             'mpath' => '.',
@@ -5065,7 +5065,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        21 => [
+                        [
                             'id' => 4630262,
                             'title' => 'Услуги и сервисы',
                             'mpath' => '.',
@@ -5081,7 +5081,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        22 => [
+                        [
                             'id' => 83850,
                             'title' => 'Уцененные товары',
                             'mpath' => '.',
@@ -5097,7 +5097,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        23 => [
+                        [
                             'id' => 2460392,
                             'title' => 'Канцелярия',
                             'mpath' => '.4625734.',
@@ -5113,7 +5113,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        24 => [
+                        [
                             'id' => 2460402,
                             'title' => 'Архивирование и делопроизводство',
                             'mpath' => '.4625734.2460392.',
@@ -5129,7 +5129,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        25 => [
+                        [
                             'id' => 2560747,
                             'title' => 'Банковские принадлежности',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5145,7 +5145,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        26 => [
+                        [
                             'id' => 2514872,
                             'title' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5161,7 +5161,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        27 => [
+                        [
                             'id' => 2514867,
                             'title' => 'Визитницы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5177,7 +5177,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        28 => [
+                        [
                             'id' => 4655272,
                             'title' => 'Досточки для оттиска',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5193,7 +5193,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        29 => [
+                        [
                             'id' => 4641568,
                             'title' => 'Настольные картотеки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5209,7 +5209,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        30 => [
+                        [
                             'id' => 3167120,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5225,7 +5225,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        31 => [
+                        [
                             'id' => 2973057,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5241,7 +5241,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        32 => [
+                        [
                             'id' => 2581722,
                             'title' => 'Папки, регистраторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5257,7 +5257,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        33 => [
+                        [
                             'id' => 4655242,
                             'title' => 'Пломбы и пломбираторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5273,7 +5273,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        34 => [
+                        [
                             'id' => 2660622,
                             'title' => 'Разделители и закладки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5289,7 +5289,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        35 => [
+                        [
                             'id' => 4655266,
                             'title' => 'Сургуч',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5305,7 +5305,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        36 => [
+                        [
                             'id' => 2514857,
                             'title' => 'Файлы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5321,7 +5321,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        37 => [
+                        [
                             'id' => 4630034,
                             'title' => 'Шило, нити и шпагаты',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5337,7 +5337,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        38 => [
+                        [
                             'id' => 2514877,
                             'title' => 'Штемпельная продукция',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -5353,7 +5353,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        39 => [
+                        [
                             'id' => 4628926,
                             'title' => 'Датеры',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -5369,7 +5369,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        40 => [
+                        [
                             'id' => 4629073,
                             'title' => 'Оснастки, штампы стандартные',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -5385,7 +5385,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        41 => [
+                        [
                             'id' => 2898382,
                             'title' => 'Самонаборные штампы, кассы букв',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -5401,7 +5401,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        42 => [
+                        [
                             'id' => 2898387,
                             'title' => 'Штемпельные краски и подушки',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -5417,7 +5417,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        43 => [
+                        [
                             'id' => 2666302,
                             'title' => 'Архивные короба и боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -5433,7 +5433,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        44 => [
+                        [
                             'id' => 4660667,
                             'title' => 'не должно выгружаться (old)',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -5449,7 +5449,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        45 => [
+                        [
                             'id' => 2581742,
                             'title' => 'Папки и файлы подвесные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -5465,7 +5465,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        46 => [
+                        [
                             'id' => 2581737,
                             'title' => 'Папки-планшеты',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -5481,7 +5481,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        47 => [
+                        [
                             'id' => 2514862,
                             'title' => 'Папки пластиковые',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -5497,7 +5497,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        48 => [
+                        [
                             'id' => 2581727,
                             'title' => 'Папки-портфели, папки-боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -5513,7 +5513,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        49 => [
+                        [
                             'id' => 2581732,
                             'title' => 'Папки-регистраторы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -5529,7 +5529,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        50 => [
+                        [
                             'id' => 4626584,
                             'title' => 'Папки специальные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -5545,7 +5545,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        51 => [
+                        [
                             'id' => 2595767,
                             'title' => 'Папки с файлами',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -5561,7 +5561,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        52 => [
+                        [
                             'id' => 4660668,
                             'title' => 'old не должно выгружаться',
                             'mpath' => '.4626923.',
@@ -5577,7 +5577,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        53 => [
+                        [
                             'id' => 753399,
                             'title' => 'Аксессуары для алкоголя',
                             'mpath' => '.4626923.',
@@ -5593,7 +5593,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        54 => [
+                        [
                             'id' => 4652996,
                             'title' => 'Мини-бары',
                             'mpath' => '.4626923.753399.',
@@ -5609,7 +5609,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        55 => [
+                        [
                             'id' => 4653017,
                             'title' => 'Упаковки для алкогольных напитков',
                             'mpath' => '.4626923.753399.',
@@ -5625,7 +5625,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        56 => [
+                        [
                             'id' => 4653010,
                             'title' => 'Фляги',
                             'mpath' => '.4626923.753399.',
@@ -5641,7 +5641,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        57 => [
+                        [
                             'id' => 4628124,
                             'title' => 'Фото и видео',
                             'mpath' => '.4627949.80258.',
@@ -5657,7 +5657,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        58 => [
+                        [
                             'id' => 4660653,
                             'title' => 'Продуктовые сети',
                             'mpath' => '.4660651.',
@@ -5673,7 +5673,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        59 => [
+                        [
                             'id' => 4660652,
                             'title' => 'Рестораны',
                             'mpath' => '.4660651.',
@@ -5689,7 +5689,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        60 => [
+                        [
                             'id' => 4660669,
                             'title' => 'не использовать не должно выгружаться ',
                             'mpath' => '.4660666.',
@@ -5707,8 +5707,8 @@ return [
                         ],
                     ],
                     'common_log' => [
-                        0 => [
-                            'id' => 1,
+                        [
+                            //'id' => 1,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2560747,
                             'old_value' => '{"filters_and_cat_structures_sv_id": 37}',
@@ -5717,8 +5717,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        1 => [
-                            'id' => 2,
+                        [
+                            //'id' => 2,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514872,
                             'old_value' => '{"filters_and_cat_structures_sv_id": 37}',
@@ -5727,8 +5727,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        2 => [
-                            'id' => 3,
+                        [
+                            //'id' => 3,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514867,
                             'old_value' => '{"filters_and_cat_structures_sv_id": 37}',
@@ -5737,8 +5737,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        3 => [
-                            'id' => 4,
+                        [
+                            //'id' => 4,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2581722,
                             'old_value' => '{"filters_and_cat_structures_sv_id": 37}',
@@ -5747,8 +5747,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        4 => [
-                            'id' => 5,
+                        [
+                            //'id' => 5,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514857,
                             'old_value' => '{"filters_and_cat_structures_sv_id": 37}',
@@ -5757,8 +5757,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        5 => [
-                            'id' => 6,
+                        [
+                            //'id' => 6,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 2514862,
                             'old_value' => '{"filters_and_cat_structures_sv_id": 37}',
@@ -5803,7 +5803,7 @@ return [
                 'lisa_fixtures' => [
                     'categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/categories.php',
                     'rozetka_categories' => [
-                        0 => [
+                        [
                             'id' => 4626923,
                             'title' => 'Алкогольные напитки и продукты питания',
                             'mpath' => '.',
@@ -5819,7 +5819,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        1 => [
+                        [
                             'id' => 80025,
                             'title' => 'Бытовая техника, интерьер',
                             'mpath' => '.',
@@ -5835,7 +5835,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        2 => [
+                        [
                             'id' => 2394297,
                             'title' => 'Дача, сад, огород',
                             'mpath' => '.',
@@ -5851,7 +5851,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        3 => [
+                        [
                             'id' => 80253,
                             'title' => 'Компьютеры и ноутбуки',
                             'mpath' => '.',
@@ -5867,7 +5867,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        4 => [
+                        [
                             'id' => 4629305,
                             'title' => 'Красота и здоровье',
                             'mpath' => '.',
@@ -5883,7 +5883,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        5 => [
+                        [
                             'id' => 4660666,
                             'title' => 'не должно выгружаться _old',
                             'mpath' => '.',
@@ -5899,7 +5899,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        6 => [
+                        [
                             'id' => 1162030,
                             'title' => 'Одежда, обувь и аксессуары',
                             'mpath' => '.',
@@ -5915,7 +5915,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        7 => [
+                        [
                             'id' => 84625,
                             'title' => 'Оружие',
                             'mpath' => '.',
@@ -5931,7 +5931,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        8 => [
+                        [
                             'id' => 4625734,
                             'title' => 'Офис, школа, книги',
                             'mpath' => '.',
@@ -5947,7 +5947,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        9 => [
+                        [
                             'id' => 80260,
                             'title' => 'Подарки и товары для праздников',
                             'mpath' => '.',
@@ -5963,7 +5963,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        10 => [
+                        [
                             'id' => 4660651,
                             'title' => 'Рестораны и продуктовые сети',
                             'mpath' => '.',
@@ -5979,7 +5979,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        11 => [
+                        [
                             'id' => 4628418,
                             'title' => 'Сантехника и ремонт',
                             'mpath' => '.',
@@ -5995,7 +5995,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        12 => [
+                        [
                             'id' => 4655216,
                             'title' => 'Сельское хозяйство',
                             'mpath' => '.',
@@ -6011,7 +6011,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        13 => [
+                        [
                             'id' => 4655025,
                             'title' => 'Скрытые',
                             'mpath' => '.',
@@ -6027,7 +6027,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        14 => [
+                        [
                             'id' => 80262,
                             'title' => 'Скрытые категории',
                             'mpath' => '.',
@@ -6043,7 +6043,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        15 => [
+                        [
                             'id' => 4656380,
                             'title' => 'Скрытые товары',
                             'mpath' => '.',
@@ -6059,7 +6059,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        16 => [
+                        [
                             'id' => 4627949,
                             'title' => 'Смартфоны, ТВ и электроника',
                             'mpath' => '.',
@@ -6075,7 +6075,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        17 => [
+                        [
                             'id' => 4627893,
                             'title' => 'Спорт и увлечения',
                             'mpath' => '.',
@@ -6091,7 +6091,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        18 => [
+                        [
                             'id' => 4627851,
                             'title' => 'Товары для бизнеса',
                             'mpath' => '.',
@@ -6107,7 +6107,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        19 => [
+                        [
                             'id' => 88468,
                             'title' => 'Товары для детей',
                             'mpath' => '.',
@@ -6123,7 +6123,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        20 => [
+                        [
                             'id' => 2394287,
                             'title' => 'Товары для дома',
                             'mpath' => '.',
@@ -6139,7 +6139,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        21 => [
+                        [
                             'id' => 4630262,
                             'title' => 'Услуги и сервисы',
                             'mpath' => '.',
@@ -6155,7 +6155,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        22 => [
+                        [
                             'id' => 83850,
                             'title' => 'Уцененные товары',
                             'mpath' => '.',
@@ -6171,7 +6171,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        23 => [
+                        [
                             'id' => 2460392,
                             'title' => 'Канцелярия',
                             'mpath' => '.4625734.',
@@ -6187,7 +6187,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        24 => [
+                        [
                             'id' => 2460402,
                             'title' => 'Архивирование и делопроизводство',
                             'mpath' => '.4625734.2460392.',
@@ -6203,7 +6203,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        25 => [
+                        [
                             'id' => 2560747,
                             'title' => 'Банковские принадлежности',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6219,7 +6219,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        26 => [
+                        [
                             'id' => 2514872,
                             'title' => 'Бейджи, брелоки-идентификаторы, настольные таблички',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6235,7 +6235,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        27 => [
+                        [
                             'id' => 2514867,
                             'title' => 'Визитницы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6251,7 +6251,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        28 => [
+                        [
                             'id' => 4655272,
                             'title' => 'Досточки для оттиска',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6267,7 +6267,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        29 => [
+                        [
                             'id' => 4641568,
                             'title' => 'Настольные картотеки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6283,7 +6283,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        30 => [
+                        [
                             'id' => 3167120,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6299,7 +6299,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        31 => [
+                        [
                             'id' => 2973057,
                             'title' => 'Новая категория',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6315,7 +6315,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        32 => [
+                        [
                             'id' => 2581722,
                             'title' => 'Папки, регистраторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6331,7 +6331,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        33 => [
+                        [
                             'id' => 4655242,
                             'title' => 'Пломбы и пломбираторы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6347,7 +6347,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        34 => [
+                        [
                             'id' => 2660622,
                             'title' => 'Разделители и закладки',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6363,7 +6363,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        35 => [
+                        [
                             'id' => 4655266,
                             'title' => 'Сургуч',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6379,7 +6379,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        36 => [
+                        [
                             'id' => 2514857,
                             'title' => 'Файлы',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6395,7 +6395,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        37 => [
+                        [
                             'id' => 4630034,
                             'title' => 'Шило, нити и шпагаты',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6411,7 +6411,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        38 => [
+                        [
                             'id' => 2514877,
                             'title' => 'Штемпельная продукция',
                             'mpath' => '.4625734.2460392.2460402.',
@@ -6427,7 +6427,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        39 => [
+                        [
                             'id' => 4628926,
                             'title' => 'Датеры',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -6443,7 +6443,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        40 => [
+                        [
                             'id' => 4629073,
                             'title' => 'Оснастки, штампы стандартные',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -6459,7 +6459,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        41 => [
+                        [
                             'id' => 2898382,
                             'title' => 'Самонаборные штампы, кассы букв',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -6475,7 +6475,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        42 => [
+                        [
                             'id' => 2898387,
                             'title' => 'Штемпельные краски и подушки',
                             'mpath' => '.4625734.2460392.2460402.2514877.',
@@ -6491,7 +6491,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        43 => [
+                        [
                             'id' => 2666302,
                             'title' => 'Архивные короба и боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -6507,7 +6507,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        44 => [
+                        [
                             'id' => 4660667,
                             'title' => 'не должно выгружаться (old)',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -6523,7 +6523,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        45 => [
+                        [
                             'id' => 2581742,
                             'title' => 'Папки и файлы подвесные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -6539,7 +6539,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        46 => [
+                        [
                             'id' => 2581737,
                             'title' => 'Папки-планшеты',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -6555,7 +6555,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        47 => [
+                        [
                             'id' => 2514862,
                             'title' => 'Папки пластиковые',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -6571,7 +6571,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        48 => [
+                        [
                             'id' => 2581727,
                             'title' => 'Папки-портфели, папки-боксы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -6587,7 +6587,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        49 => [
+                        [
                             'id' => 2581732,
                             'title' => 'Папки-регистраторы',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -6603,7 +6603,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        50 => [
+                        [
                             'id' => 4626584,
                             'title' => 'Папки специальные',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -6619,7 +6619,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        51 => [
+                        [
                             'id' => 2595767,
                             'title' => 'Папки с файлами',
                             'mpath' => '.4625734.2460392.2460402.2581722.',
@@ -6635,7 +6635,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        52 => [
+                        [
                             'id' => 4660668,
                             'title' => 'old не должно выгружаться',
                             'mpath' => '.4626923.',
@@ -6651,7 +6651,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        53 => [
+                        [
                             'id' => 753399,
                             'title' => 'Аксессуары для алкоголя',
                             'mpath' => '.4626923.',
@@ -6667,7 +6667,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 37,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        54 => [
+                        [
                             'id' => 4652996,
                             'title' => 'Мини-бары',
                             'mpath' => '.4626923.753399.',
@@ -6683,7 +6683,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        55 => [
+                        [
                             'id' => 4653017,
                             'title' => 'Упаковки для алкогольных напитков',
                             'mpath' => '.4626923.753399.',
@@ -6699,7 +6699,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        56 => [
+                        [
                             'id' => 4653010,
                             'title' => 'Фляги',
                             'mpath' => '.4626923.753399.',
@@ -6715,7 +6715,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 38,
                         ],
-                        57 => [
+                        [
                             'id' => 4628124,
                             'title' => 'Фото и видео',
                             'mpath' => '.4627949.80258.',
@@ -6731,7 +6731,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 34,
                             'cat_and_portal_changes_sv_id' => 35,
                         ],
-                        58 => [
+                        [
                             'id' => 4660653,
                             'title' => 'Продуктовые сети',
                             'mpath' => '.4660651.',
@@ -6747,7 +6747,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        59 => [
+                        [
                             'id' => 4660652,
                             'title' => 'Рестораны',
                             'mpath' => '.4660651.',
@@ -6763,7 +6763,7 @@ return [
                             'filters_and_cat_structures_sv_id' => 2,
                             'cat_and_portal_changes_sv_id' => 2,
                         ],
-                        60 => [
+                        [
                             'id' => 4660669,
                             'title' => 'не использовать не должно выгружаться ',
                             'mpath' => '.4660666.',
@@ -6781,8 +6781,8 @@ return [
                         ],
                     ],
                     'common_log' => [
-                        0 => [
-                            'id' => 1,
+                        [
+                            //'id' => 1,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4655242,
                             'old_value' => '{"cat_and_portal_changes_sv_id": 35}',
@@ -6791,8 +6791,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        1 => [
-                            'id' => 2,
+                        [
+                            //'id' => 2,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4653017,
                             'old_value' => '{"cat_and_portal_changes_sv_id": 35}',
@@ -6801,8 +6801,8 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'event' => 2,
                         ],
-                        2 => [
-                            'id' => 3,
+                        [
+                            //'id' => 3,
                             'entity' => 'rozetka_categories',
                             'entity_id' => 4653010,
                             'old_value' => '{"cat_and_portal_changes_sv_id": 35}',

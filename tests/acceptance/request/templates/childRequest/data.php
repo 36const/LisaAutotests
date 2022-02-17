@@ -69,7 +69,7 @@ return [
                             'created_at >=' => date('Y-m-d'),
                             'correction_comment' => NULL,
                             'amount_to_work' => 999999999,
-                            'subject' => 'Добавление новых товаров (Работа с товарами Розетки)',
+                            'subject' => 'Добавление новых товаров (Работа с товарами Маркетплейса)',
                             'description' => 'description',
                             'category_id' => NULL,
                             'seller_id' => 83,
