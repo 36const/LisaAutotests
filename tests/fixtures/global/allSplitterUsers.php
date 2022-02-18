@@ -4,10 +4,21 @@ use Codeception\Module\TestHelper;
 use lisa\AcceptanceTester;
 
 (new Symfony\Component\Dotenv\Dotenv())->overload(realpath(__DIR__ . '/../../../../../../.env' ));
+$manifest = AcceptanceTester::manifest();
 
 return [
     'splitter_fixtures' => [
         'users' => include TestHelper::getFixtureTempleteDefaultPath() . 'splitter_fixtures/users.php',
+        'manifest_configs' => [
+            [
+                'hash' => md5($manifest),
+                'module_id' => 'lisa',
+                'version' => '1',
+                'is_active' => 1,
+                'manifest' => $manifest,
+                'created_at' => '2021-12-03 14:00:45'
+            ]
+        ],
         'auth_item' => [
             [
                 'name' => 'marketGomerManager',
@@ -2480,15 +2491,5 @@ return [
                 'created_at' => 1584081425,
             ],
         ],
-        'manifest_configs' => [
-            [
-                'hash' => getenv('MANIFEST_HASH'),
-                'module_id' => 'lisa',
-                'version' => '1',
-                'is_active' => 1,
-                'manifest' => AcceptanceTester::manifest(),
-                'created_at' => '2021-12-03 14:00:45'
-            ]
-        ]
     ],
 ];
