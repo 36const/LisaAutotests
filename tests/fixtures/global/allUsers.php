@@ -24,6 +24,7 @@ return [
         'reasons' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/reasons.php',
         'request_attachments' => [],
         'request_errors' => [],
+        'request_rz_categories' => [],
         'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
         'sv_distribution' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/sv_distribution.php',
         'observers' => [],

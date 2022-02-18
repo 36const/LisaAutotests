@@ -22,7 +22,7 @@ return [
      */
     'case1' => [
         'setting' => [
-            'description' => 'Создание заявки тип 1 направление 1 + нотификации', // + все форматы вложений
+            'description' => 'Создание заявки тип 1/1 + нотификации', // + все форматы вложений
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
@@ -553,7 +553,7 @@ return [
 
     'case2' => [
         'setting' => [
-            'description' => 'Создание заявки тип 1 направление 2',
+            'description' => 'Создание заявки тип 1/2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
@@ -739,7 +739,7 @@ return [
 
     'case3' => [
         'setting' => [
-            'description' => 'Создание заявки тип 2 направление 1',
+            'description' => 'Создание заявки тип 2/1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
@@ -936,7 +936,7 @@ return [
 
     'case4' => [
         'setting' => [
-            'description' => 'Создание заявки тип 2 направление 2 (без логина и id автора)',
+            'description' => 'Создание заявки тип 2/2 (без логина и id автора)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
@@ -1171,7 +1171,7 @@ return [
 
     'case5' => [
         'setting' => [
-            'description' => 'Создание заявки тип 3 направление 1',
+            'description' => 'Создание заявки тип 3/1',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1407,7 +1407,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Создание заявки тип 3 направление 2',
+            'description' => 'Создание заявки тип 3/2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
@@ -1664,7 +1664,7 @@ return [
 
     'case7' => [
         'setting' => [
-            'description' => 'Создание заявки тип 4 направление 0',
+            'description' => 'Создание заявки тип 4/0',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -1916,7 +1916,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Создание заявки тип 5 направление 1 (с author_id)',
+            'description' => 'Создание заявки тип 5/1 (с author_id)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2152,7 +2152,7 @@ return [
 
     'case9' => [
         'setting' => [
-            'description' => 'Создание заявки тип 6 направление 2',
+            'description' => 'Создание заявки тип 6/2',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
@@ -2408,7 +2408,7 @@ return [
 
     'case10' => [
         'setting' => [
-            'description' => 'Создание заявки тип 7 направление 0 (без кат.) (с author_id)',
+            'description' => 'Создание заявки тип 7/0 (без кат.) (с author_id)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2621,7 +2621,7 @@ return [
 
     'case11' => [
         'setting' => [
-            'description' => 'Создание заявки тип 8 направление 0 (без прод.) (с несуществующим author_login)',
+            'description' => 'Создание заявки тип 8/0 (без прод.) (с несуществующим author_login)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -2817,7 +2817,7 @@ return [
 
     'case12' => [
         'setting' => [
-            'description' => 'Создание заявки тип 9 направление 0 (без прод.) (с несуществующим author_id)',
+            'description' => 'Создание заявки тип 9/0 (без прод.) (с несуществующим author_id)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -3002,7 +3002,7 @@ return [
 
     'case13' => [
         'setting' => [
-            'description' => 'Создание заявки тип 10 направление 0 (без кат.) (с одинаковыми существующими author_id и author_login)',
+            'description' => 'Создание заявки тип 10/0 (без кат.) (с одинаковыми существующими author_id и author_login)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -3204,7 +3204,7 @@ return [
 
     'case14' => [
         'setting' => [
-            'description' => 'Создание заявки тип 11 направление 0 (с разными существующими author_id и author_login)',
+            'description' => 'Создание заявки тип 11/0 (с разными существующими author_id и author_login)',
             'type' => 11,
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -3397,7 +3397,7 @@ return [
 
     'case15' => [
         'setting' => [
-            'description' => 'Создание заявки тип 12 направление 1 (с несуществующим author_id и существующим author_login)',
+            'description' => 'Создание заявки тип 12/1 (с несуществующим author_id и существующим author_login)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -3634,7 +3634,7 @@ return [
 
     'case16' => [
         'setting' => [
-            'description' => 'Создание заявки тип 13 направление 0 (с существующим author_id и несуществующим author_login)',
+            'description' => 'Создание заявки тип 13/0 (с существующим author_id и несуществующим author_login)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
@@ -3828,7 +3828,7 @@ return [
 
     'case17' => [
         'setting' => [
-            'description' => 'Создание заявки тип 14 направление 0 (без кат.) (с несуществующими author_id и author_login)',
+            'description' => 'Создание заявки тип 14/0 (без кат.) (с несуществующими author_id и author_login)',
             'type' => 14,
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -4018,7 +4018,7 @@ return [
 
     'case18' => [
         'setting' => [
-            'description' => 'Создание заявки тип 15 направление 0',
+            'description' => 'Создание заявки тип 15/0',
             'type' => 15,
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -4223,7 +4223,7 @@ return [
      */
     'case62' => [
         'setting' => [
-            'description' => 'Создание заявки тип 1 направление 1 с 1 непривяз. категорией стора, с category_id',
+            'description' => 'Создание заявки тип 1/1 с 1 непривяз. категорией стора, с category_id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -4464,7 +4464,7 @@ return [
 
     'case63' => [
         'setting' => [
-            'description' => 'Создание заявки тип 4 направление 0 (с author_id) с 1 привяз. категорией стора, без category_id',
+            'description' => 'Создание заявки тип 4/0 (с author_id) с 1 привяз. категорией стора, без category_id',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -4720,7 +4720,8 @@ return [
 
     'case64' => [
         'setting' => [
-            'description' => 'Создание заявки тип 2 направление 2 (без логина и id автора), c 1 непривяз. и 1 привяз. кат. стора',
+            'description' => 'Создание заявки тип 2/2 (без логина и id автора), c 1 непривяз. и 1 привяз. кат. стора',
+            //753399 - к 1 категории, 4628418 - к 474
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'mock_data' => [
@@ -4740,7 +4741,7 @@ return [
                 'Request[subject]' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
                 'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 2,
-                'rz_categories' => [753399, 4628418], //пропускается потому что направление Маркет
+                'rz_categories' => [4628418, 753399],
             ],
             'responseBody' => [
                 'status' => 200,
@@ -4748,10 +4749,6 @@ return [
                     [
                         'rzCategoryId' => 753399,
                         'requestId' => 1,
-                    ],
-                    [
-                        'rzCategoryId' => 4628418,
-                        'requestId' => 2,
                     ],
                 ]
             ],
@@ -4804,52 +4801,6 @@ return [
                             'supervisor_team' => 17,
                             'manager_team' => null,
                         ],
-                        [
-                            'id' => 2,
-                            'author_id' => 1,
-                            'type_id' => 2,
-                            'supervisor_id' => 5, //присваивается не категорийному СВ 10, потому что направление Маркет
-                            'manager_id' => null,
-                            'status' => 1,
-                            'direction' => 2,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => '[API] Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
-                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            'category_id' => null,
-                            'seller_id' => 0,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 2,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 0,
-                            'previous_status' => null,
-                            'supplier_cabinet_id' => 1,
-                            'payload' => '[]',
-                            'rz_category_id' => null,
-                            'author_team' => null,
-                            'supervisor_team' => 17,
-                            'manager_team' => null,
-                        ]
                     ],
                     'requests_fields' => [
                         [
@@ -4932,85 +4883,15 @@ return [
                             'field_id' => 158,
                             'value' => 0,
                         ],
+                    ],
+                    'request_rz_categories' => [
                         [
-                            'request_id' => 2,
-                            'field_id' => 8,
-                            'value' => 1,
+                            'request_id' => 1,
+                            'rz_category_id' => 753399,
                         ],
                         [
-                            'request_id' => 2,
-                            'field_id' => 15,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 19,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 114,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 158,
-                            'value' => 0,
+                            'request_id' => 1,
+                            'rz_category_id' => 4628418,
                         ],
                     ],
                     'user_notifications' => [
@@ -5062,54 +4943,6 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": null}',
                             'notify_service_id' => null,
                         ],
-                        [
-                            'id' => 4,
-                            'user_id' => 5,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 2,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Система',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 2, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 5,
-                            'user_id' => 16,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 2,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Система',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 2, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 6,
-                            'user_id' => 17,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 2,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Добавление/изменение информации в существующих товарах (Работа с товарами Маркетплейса)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Система',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 2, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
                     ],
                     'observers' => [
                         [
@@ -5118,14 +4951,6 @@ return [
                         ],
                         [
                             'request_id' => 1,
-                            'user_id' => 17
-                        ],
-                        [
-                            'request_id' => 2,
-                            'user_id' => 16
-                        ],
-                        [
-                            'request_id' => 2,
                             'user_id' => 17
                         ],
                     ],
@@ -5140,7 +4965,8 @@ return [
 
     'case65' => [
         'setting' => [
-            'description' => 'Создание заявки тип 7 направление 0 (без кат.) (с author_id) c 1 непривяз. и 2 привяз. к одинаковой кат. стора',
+            'description' => 'Создание заявки тип 7/0 (без кат.) (с author_id) c 1 непривяз. и 2 привяз. к разным кат. стора',
+            //753399 - к 1 категории, 2514857 - к 2, 4628418 - к 474
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
         'provider_data' => [
@@ -5158,21 +4984,18 @@ return [
                 'Request[subject]' => 'Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
                 //'Request[supplier_cabinet_id]' => 1,
                 'Request[type_id]' => 7,
-                'rz_categories' => [753399, 4653010, 4653010, 4628418, 4628418],
+                'rz_categories[0]' => 753399,
+                'rz_categories[1]' => 4628418,
+                'rz_categories[2]' => 4628418,
+                'rz_categories[3]' => 2514857,
+                'rz_categories[4]' => 2514857,
+
             ],
             'responseBody' => [
                 'status' => 200,
                 'requests' => [
                     [
                         'rzCategoryId' => 753399,
-                        'requestId' => 1,
-                    ],
-                    [
-                        'rzCategoryId' => 4628418,
-                        'requestId' => 2,
-                    ],
-                    [
-                        'rzCategoryId' => 4653010,
                         'requestId' => 1,
                     ],
                 ]
@@ -5232,52 +5055,6 @@ return [
                             'supervisor_team' => 16,
                             'manager_team' => null,
                         ],
-                        [
-                            'id' => 2,
-                            'author_id' => 4,
-                            'type_id' => 7,
-                            'supervisor_id' => 38,
-                            'manager_id' => null,
-                            'status' => 1,
-                            'direction' => 0,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => '[API] Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
-                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            'category_id' => 474,
-                            'seller_id' => 0,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 6,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 0,
-                            'previous_status' => null,
-                            'supplier_cabinet_id' => null,
-                            'payload' => '[]',
-                            'rz_category_id' => null,
-                            'author_team' => 17,
-                            'supervisor_team' => 16,
-                            'manager_team' => null,
-                        ]
                     ],
                     'requests_fields' => [
                         [
@@ -5330,56 +5107,6 @@ return [
                             'field_id' => 158,
                             'value' => 0,
                         ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 6,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 7,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 55,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
                     ],
                     'request_attachments' => [
                         [
@@ -5398,32 +5125,6 @@ return [
                         [
                             'id' => 2,
                             'request_id' => 1,
-                            'file_name_old' => '',
-                            'alias' => 'xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml',
-                            'status' => 2,
-                            'uploaded_by' => 'Система',
-                            'uploaded_at >=' => date('Y-m-d'),
-                            'deleted_by' => null,
-                            'deleted_at' => null,
-                            'file_name LIKE' => '%_xml_ABVGDEEZZIJKLMNOPRSTUFHCCSSYEUAEGII.xml',
-                            'size' => 40861,
-                        ],
-                        [
-                            'id' => 3,
-                            'request_id' => 2,
-                            'file_name_old' => '',
-                            'alias' => 'doc .doc',
-                            'status' => 2,
-                            'uploaded_by' => 'Система',
-                            'uploaded_at >=' => date('Y-m-d'),
-                            'deleted_by' => null,
-                            'deleted_at' => null,
-                            'file_name LIKE' => '%_doc_.doc',
-                            'size' => 34304,
-                        ],
-                        [
-                            'id' => 4,
-                            'request_id' => 2,
                             'file_name_old' => '',
                             'alias' => 'xml_АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄҐЇІ.xml',
                             'status' => 2,
@@ -5468,36 +5169,389 @@ return [
                             'changed_fields' => '{"newValue": 1, "oldValue": null}',
                             'notify_service_id' => null,
                         ],
+                    ],
+                    'observers' => [],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_failedApiRequests' => [],
+            ],
+        ]
+    ],
+
+    'case66' => [
+        'setting' => [
+            'description' => 'Создание заявки тип 3/1 c 2 непривяз. и 2 привяз. к разным кат. стора, c category_id',
+            //753399 - к 1 категории, 2514857 - к 2, 4628418 и 2898382 - к 474
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'RequestField[1]' => 1,
+                'Request[amount_to_work]' => 10,
+                'Request[author_login]' => 'kutsan.k',
+                'Request[category_id]' => 4,
+                'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'Request[observers]' => [16],
+                'Request[direction]' => 1,
+                'Request[seller_id]' => 83,
+                'Request[subject]' => 'Перенос товаров (Работа с товарами Розетки)',
+                'Request[supplier_cabinet_id]' => 1,
+                'Request[type_id]' => 3,
+                'rz_categories' => [2514857, 753399, 4628418, 2898382],
+            ],
+            'responseBody' => [
+                'status' => 200,
+                'requests' => [
+                    [
+                        'rzCategoryId' => 2514857,
+                        'requestId' => 1,
+                    ],
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
                         [
-                            'id' => 3,
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 3,
+                            'supervisor_id' => 10,
+                            'manager_id' => null,
+                            'status' => 1,
+                            'direction' => 1,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
+                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'category_id' => 2,
+                            'seller_id' => 83,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date >=' => date('Y-m-d'),
+                            'team_direction' => 3,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0,
+                            'previous_status' => null,
+                            'supplier_cabinet_id' => 1,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 7,
+                            'manager_team' => null,
+                        ],
+                    ],
+                    'requests_fields' => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 1,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 49,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 50,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 51,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 52,
+                            'value' => 3,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 54,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 60,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 64,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 142,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 143,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                    ],
+                    'user_notifications' => [
+                        [
+                            'id' => 1,
                             'user_id' => 4,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
-                            'request_id' => 2,
+                            'request_id' => 1,
                             'priority' => null,
                             'amount_to_work' => 10,
-                            'request_subject' => '[API] Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
+                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
                             'fields_for_complete' => '[]',
                             'triggered_by' => 'Константин Куцан',
                             'event' => 'create',
-                            'changed_fields' => '{"newValue": 2, "oldValue": null}',
+                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
                             'notify_service_id' => null,
                         ],
                         [
-                            'id' => 4,
-                            'user_id' => 38,
+                            'id' => 2,
+                            'user_id' => 10,
                             'notification' => '',
                             'status' => 0,
                             'created_at >=' => date('Y-m-d'),
-                            'request_id' => 2,
+                            'request_id' => 1,
                             'priority' => null,
                             'amount_to_work' => 10,
-                            'request_subject' => '[API] Добавление нового портала/раздела фат-меню/категории товаров (Определяется типом задачи)',
+                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
                             'fields_for_complete' => '[]',
                             'triggered_by' => 'Константин Куцан',
                             'event' => 'create',
-                            'changed_fields' => '{"newValue": 2, "oldValue": null}',
+                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
+                            'notify_service_id' => null,
+                        ],
+                        [
+                            'id' => 3,
+                            'user_id' => 16,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'create',
+                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
+                            'notify_service_id' => null,
+                        ],
+                    ],
+                    'observers' => [
+                        [
+                            'request_id' => 1,
+                            'user_id' => 16
+                        ],
+                    ],
+                ]
+            ],
+            'RabbitMQ' => [
+                'lisa_failedApiRequests' => [],
+            ],
+        ]
+    ],
+
+    'case70' => [
+        'setting' => [
+            'description' => 'Создание заявки тип 9/0 c 3 непривяз. кат. стора, без category_id',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'RequestField[2]' => 1,
+                'Request[amount_to_work]' => 10,
+                'Request[author_login]' => 'kutsan.k',
+                //'Request[category_id]' => 4,
+                'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                //'Request[observers]' => [16],
+                'Request[direction]' => 0,
+                'Request[seller_id]' => 83,
+                'Request[subject]' => 'Добавление параметров/значений (Определяется типом)',
+                //'Request[supplier_cabinet_id]' => 1,
+                'Request[type_id]' => 9,
+                'rz_categories' => [4628418, 2898382, 4660666],
+            ],
+            'responseBody' => [
+                'status' => 200,
+                'requests' => [
+                    [
+                        'rzCategoryId' => 4628418,
+                        'requestId' => 1,
+                    ],
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => [
+                    'requests' => [
+                        [
+                            'id' => 1,
+                            'author_id' => 4,
+                            'type_id' => 9,
+                            'supervisor_id' => 34,
+                            'manager_id' => null,
+                            'status' => 1,
+                            'direction' => 0,
+                            'priority' => null,
+                            'awaiting_correction' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'correction_comment' => null,
+                            'amount_to_work' => 10,
+                            'subject' => '[API] Добавление параметров/значений (Определяется типом)',
+                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
+                            'category_id' => 474,
+                            'seller_id' => 83,
+                            'recommendations' => null,
+                            'reason' => null,
+                            'parent_id' => null,
+                            'planned_start_date' => null,
+                            'planned_finish_date' => null,
+                            'actual_start_date' => null,
+                            'actual_finish_date' => null,
+                            'supervisor_process_date' => null,
+                            'supervisor_check_date' => null,
+                            'result_comment' => null,
+                            'supervisor_comment' => null,
+                            'last_change_status_date >=' => date('Y-m-d'),
+                            'team_direction' => 5,
+                            'report_period_id' => null,
+                            'sync_source_id' => null,
+                            'sv_report_periods' => null,
+                            'cross_check_status' => 0,
+                            'cross_check_manager_id' => null,
+                            'employee_code_1c' => null,
+                            'child_count' => 0,
+                            'photo_load_status' => 0,
+                            'previous_status' => null,
+                            'supplier_cabinet_id' => null,
+                            'payload' => '[]',
+                            'rz_category_id' => null,
+                            'author_team' => 17,
+                            'supervisor_team' => 15,
+                            'manager_team' => null,
+                        ],
+                    ],
+                    'requests_fields' => [
+                        [
+                            'request_id' => 1,
+                            'field_id' => 2,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 53,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 54,
+                            'value' => 1,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 59,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 101,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 122,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 146,
+                            'value' => 0,
+                        ],
+                        [
+                            'request_id' => 1,
+                            'field_id' => 158,
+                            'value' => 0,
+                        ],
+                    ],
+                    'user_notifications' => [
+                        [
+                            'id' => 1,
+                            'user_id' => 4,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => '[API] Добавление параметров/значений (Определяется типом)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'create',
+                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
+                            'notify_service_id' => null,
+                        ],
+                        [
+                            'id' => 2,
+                            'user_id' => 34,
+                            'notification' => '',
+                            'status' => 0,
+                            'created_at >=' => date('Y-m-d'),
+                            'request_id' => 1,
+                            'priority' => null,
+                            'amount_to_work' => 10,
+                            'request_subject' => '[API] Добавление параметров/значений (Определяется типом)',
+                            'fields_for_complete' => '[]',
+                            'triggered_by' => 'Константин Куцан',
+                            'event' => 'create',
+                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
                             'notify_service_id' => null,
                         ],
                     ],
@@ -5512,7 +5566,7 @@ return [
 
     'case69' => [
         'setting' => [
-            'description' => 'Создание заявки тип 4 направление 0 (без кат.) (с author_id) c 1 непривяз. и 2 привяз. к одинаковой кат. стора',
+            'description' => 'Создание заявки тип 4/0 (без кат.) (с author_id) c 1 непривяз. и 2 привяз. к одинаковой кат. стора',
             //в типе 4 для каждой категории стора (даже если они привязаны к одной категории Лизы) создаётся отдельная заявка
         ],
         'fixture_data' => include __DIR__ . '/fixture/case1.php',
@@ -6131,757 +6185,6 @@ return [
                         ],
                     ],
                     'observers' => [],
-                ]
-            ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [],
-            ],
-        ]
-    ],
-
-    'case66' => [
-        'setting' => [
-            'description' => 'Создание заявки тип 3 направление 1 c 2 непривяз. и 2 привяз. к разным кат. стора, c category_id',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'RequestField[1]' => 1,
-                'Request[amount_to_work]' => 10,
-                'Request[author_login]' => 'kutsan.k',
-                'Request[category_id]' => 4,
-                'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[observers]' => [16],
-                'Request[direction]' => 1,
-                'Request[seller_id]' => 83,
-                'Request[subject]' => 'Перенос товаров (Работа с товарами Розетки)',
-                'Request[supplier_cabinet_id]' => 1,
-                'Request[type_id]' => 3,
-                'rz_categories' => [753399, 2514857, 4628418, 2898382],
-            ],
-            'responseBody' => [
-                'status' => 200,
-                'requests' => [
-                    [
-                        'rzCategoryId' => 753399,
-                        'requestId' => 1,
-                    ],
-                    [
-                        'rzCategoryId' => 2514857,
-                        'requestId' => 2,
-                    ],
-                    [
-                        'rzCategoryId' => 2898382,
-                        'requestId' => 3,
-                    ],
-                    [
-                        'rzCategoryId' => 4628418,
-                        'requestId' => 3,
-                    ],
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [
-                        [
-                            'id' => 1,
-                            'author_id' => 4,
-                            'type_id' => 3,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 1,
-                            'direction' => 1,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            'category_id' => 1,
-                            'seller_id' => 83,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 0,
-                            'previous_status' => null,
-                            'supplier_cabinet_id' => 1,
-                            'payload' => '[]',
-                            'rz_category_id' => null,
-                            'author_team' => 17,
-                            'supervisor_team' => 1,
-                            'manager_team' => null,
-                        ],
-                        [
-                            'id' => 2,
-                            'author_id' => 4,
-                            'type_id' => 3,
-                            'supervisor_id' => 10,
-                            'manager_id' => null,
-                            'status' => 1,
-                            'direction' => 1,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            'category_id' => 2,
-                            'seller_id' => 83,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 0,
-                            'previous_status' => null,
-                            'supplier_cabinet_id' => 1,
-                            'payload' => '[]',
-                            'rz_category_id' => null,
-                            'author_team' => 17,
-                            'supervisor_team' => 7,
-                            'manager_team' => null,
-                        ],
-                        [
-                            'id' => 3,
-                            'author_id' => 4,
-                            'type_id' => 3,
-                            'supervisor_id' => 10,
-                            'manager_id' => null,
-                            'status' => 1,
-                            'direction' => 1,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            'category_id' => 474,
-                            'seller_id' => 83,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 0,
-                            'previous_status' => null,
-                            'supplier_cabinet_id' => 1,
-                            'payload' => '[]',
-                            'rz_category_id' => null,
-                            'author_team' => 17,
-                            'supervisor_team' => 7,
-                            'manager_team' => null,
-                        ],
-//                        [
-//                            'id' => 4,
-//                            'author_id' => 4,
-//                            'type_id' => 3,
-//                            'supervisor_id' => 10,
-//                            'manager_id' => null,
-//                            'status' => 1,
-//                            'direction' => 1,
-//                            'priority' => null,
-//                            'awaiting_correction' => 0,
-//                            'created_at >=' => date('Y-m-d'),
-//                            'correction_comment' => null,
-//                            'amount_to_work' => 10,
-//                            'subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-//                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-//                            'category_id' => 474,
-//                            'seller_id' => 83,
-//                            'recommendations' => null,
-//                            'reason' => null,
-//                            'parent_id' => null,
-//                            'planned_start_date' => null,
-//                            'planned_finish_date' => null,
-//                            'actual_start_date' => null,
-//                            'actual_finish_date' => null,
-//                            'supervisor_process_date' => null,
-//                            'supervisor_check_date' => null,
-//                            'result_comment' => null,
-//                            'supervisor_comment' => null,
-//                            'last_change_status_date >=' => date('Y-m-d'),
-//                            'team_direction' => 3,
-//                            'report_period_id' => null,
-//                            'sync_source_id' => null,
-//                            'sv_report_periods' => null,
-//                            'cross_check_status' => 0,
-//                            'cross_check_manager_id' => null,
-//                            'employee_code_1c' => null,
-//                            'child_count' => 0,
-//                            'photo_load_status' => 0,
-//                            'previous_status' => null,
-//                            'supplier_cabinet_id' => 1,
-//                            'payload' => '[]',
-//                            'rz_category_id' => null,
-//                            'author_team' => 17,
-//                            'supervisor_team' => 7,
-//                            'manager_team' => null,
-//                        ],
-                    ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 2,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 2,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 52,
-                            'value' => 3,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 3,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 1,
-//                            'value' => 1,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 49,
-//                            'value' => 0,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 50,
-//                            'value' => 0,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 51,
-//                            'value' => 0,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 52,
-//                            'value' => 3,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 53,
-//                            'value' => 0,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 54,
-//                            'value' => 1,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 60,
-//                            'value' => 0,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 64,
-//                            'value' => 0,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 101,
-//                            'value' => 0,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 122,
-//                            'value' => 0,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 142,
-//                            'value' => 0,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 143,
-//                            'value' => 0,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 146,
-//                            'value' => 0,
-//                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'field_id' => 158,
-//                            'value' => 0,
-//                        ],
-                    ],
-                    'user_notifications' => [
-                        [
-                            'id' => 1,
-                            'user_id' => 4,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 2,
-                            'user_id' => 6,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 3,
-                            'user_id' => 16,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 4,
-                            'user_id' => 4,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 2,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 2, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 5,
-                            'user_id' => 10,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 2,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 2, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 6,
-                            'user_id' => 16,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 2,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 2, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 7,
-                            'user_id' => 4,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 3,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 3, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 8,
-                            'user_id' => 10,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 3,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 3, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 9,
-                            'user_id' => 16,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 3,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 3, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-//                        [
-//                            'id' => 10,
-//                            'user_id' => 4,
-//                            'notification' => '',
-//                            'status' => 0,
-//                            'created_at >=' => date('Y-m-d'),
-//                            'request_id' => 4,
-//                            'priority' => null,
-//                            'amount_to_work' => 10,
-//                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-//                            'fields_for_complete' => '[]',
-//                            'triggered_by' => 'Константин Куцан',
-//                            'event' => 'create',
-//                            'changed_fields' => '{"newValue": 4, "oldValue": null}',
-//                            'notify_service_id' => null,
-//                        ],
-//                        [
-//                            'id' => 11,
-//                            'user_id' => 10,
-//                            'notification' => '',
-//                            'status' => 0,
-//                            'created_at >=' => date('Y-m-d'),
-//                            'request_id' => 4,
-//                            'priority' => null,
-//                            'amount_to_work' => 10,
-//                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-//                            'fields_for_complete' => '[]',
-//                            'triggered_by' => 'Константин Куцан',
-//                            'event' => 'create',
-//                            'changed_fields' => '{"newValue": 4, "oldValue": null}',
-//                            'notify_service_id' => null,
-//                        ],
-//                        [
-//                            'id' => 12,
-//                            'user_id' => 16,
-//                            'notification' => '',
-//                            'status' => 0,
-//                            'created_at >=' => date('Y-m-d'),
-//                            'request_id' => 4,
-//                            'priority' => null,
-//                            'amount_to_work' => 10,
-//                            'request_subject' => '[API] Перенос товаров (Работа с товарами Розетки)',
-//                            'fields_for_complete' => '[]',
-//                            'triggered_by' => 'Константин Куцан',
-//                            'event' => 'create',
-//                            'changed_fields' => '{"newValue": 4, "oldValue": null}',
-//                            'notify_service_id' => null,
-//                        ],
-                    ],
-                    'observers' => [
-                        [
-                            'request_id' => 1,
-                            'user_id' => 16
-                        ],
-                        [
-                            'request_id' => 2,
-                            'user_id' => 16
-                        ],
-                        [
-                            'request_id' => 3,
-                            'user_id' => 16
-                        ],
-//                        [
-//                            'request_id' => 4,
-//                            'user_id' => 16
-//                        ],
-                    ],
                 ]
             ],
             'RabbitMQ' => [
@@ -8602,7 +7905,7 @@ return [
 
     'case68' => [
         'setting' => [
-            'description' => 'Ошибка при создании без rz-категории для типа 4',
+            'description' => 'Ошибка при создании без категории стора для типа 4',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case19.php',
         'provider_data' => [

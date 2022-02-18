@@ -11,6 +11,7 @@ return [
         'auth.user_access' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/auth.user_access.php',
         'request_attachments' => [],
         'request_errors' => [],
+        'request_rz_categories' => [],
         'rozetka_categories' => include TestHelper::getFixtureTempleteDefaultPath() . 'lisa_fixtures/rozetka_categories.php',
         'observers' => [],
         'user_notifications' => [],

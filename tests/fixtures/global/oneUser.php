@@ -22,6 +22,7 @@ return [
         ],
         'request_attachments' => [],
         'request_errors' => [],
+        'request_rz_categories' => [],
         'observers' => [],
         'user_notifications' => [],
     ],
