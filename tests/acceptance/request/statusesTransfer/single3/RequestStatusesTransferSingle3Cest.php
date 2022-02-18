@@ -54,8 +54,9 @@ class RequestStatusesTransferSingle3Cest
         $I->checkTablesInDB($provider_data['db_1']);
 
         //заполнение количества ошибок/товаров с ошибками/комментария и сохранение с переводом 8->6
-        $I->pressKey("//div[text()='Неправильная категория товаров']/../div[3]//input", 10);
-        $I->pressKey("//div[text()='Неправильная категория товаров']/../div[4]//input", 5);
+        $I->scrollTo("//div[@id='sticky-toolbar']//button/span[contains(text(),'Сохранить и отправить на исправление')]/..");
+        $I->pressKey("//div[text()='Неправильная категория товаров']/../div[2]//input", 10);
+        $I->pressKey("//div[text()='Неправильная категория товаров']/../div[3]//input", 5);
         $I->pressKey(
             "//div[text()='Неправильная категория товаров']/..//div[@class='v-input__control']//textarea",
             '/#/request/to-correction/1');
