@@ -215,11 +215,6 @@ return [
             [
                 'created_at' => null,
                 'user_id' => 4,
-                'item_name' => 'requestAddUpdateSC'
-            ],
-            [
-                'created_at' => null,
-                'user_id' => 4,
                 'item_name' => 'requestAddUpdateVideo'
             ],
             [

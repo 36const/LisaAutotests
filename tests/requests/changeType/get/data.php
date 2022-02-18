@@ -990,47 +990,6 @@ return [
         ]
     ],
 
-    'case12_1' => [
-        'setting' => [
-            'description' => 'Изменение типа на Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestParameters' => [
-                'typeId' => 12,
-                'direction' => 1,
-                'id' => 1
-            ],
-            'responseBody' => [
-                'checkboxes' => $checkboxesDirection1,
-                'excludedFields' => Constants::EXCLUDED_FIELDS,
-                'priorities' => $priorities,
-                'pageTitle' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
-                'request' => [
-                    'subject' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['subject'],
-                    'description' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['description'],
-                    'category_id' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['category_id'],
-                    'seller_id' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['seller_id'],
-                    'amount_to_work' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['amount_to_work'],
-                    'planned_finish_date' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['planned_finish_date'],
-                    'priority' => (include __DIR__ . '/fixture/case1.php')['lisa_fixtures']['requests'][0]['priority'],
-                    'rz_category_id' => NULL,
-                    'supervisor_id' => 6,
-                    'type_id' => 12,
-                    'direction' => 1,
-                ],
-                'templates' => [
-                ],
-                'initCategory' => $initCategory,
-                'initRzCategory' => [],
-                'initSeller' => $initSeller,
-                'initObservers' => $initObservers,
-                'parentAttachments' => [
-                ],
-            ]
-        ]
-    ],
-
     'case13_0' => [
         'setting' => [
             'description' => 'Изменение типа на Добавление/изменение видео (Определяется типом задачи)',

@@ -3395,243 +3395,6 @@ return [
         ]
     ],
 
-    'case15' => [
-        'setting' => [
-            'description' => 'Создание заявки тип 12/1 (с несуществующим author_id и существующим author_login)',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestBody' => [
-                'RequestField[1]' => 1,
-                'Request[amount_to_work]' => 10,
-                'Request[author_login]' => 'kutsan.k',
-                'Request[author_id]' => 999,
-                'Request[category_id]' => 1,
-                'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
-                'Request[observers]' => [16, 17],
-                'Request[direction]' => 1,
-                'Request[seller_id]' => 83,
-                'Request[subject]' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
-                'Request[supplier_cabinet_id]' => 1,
-                'Request[type_id]' => 12,
-            ],
-            'responseBody' => [
-                'status' => 200,
-                'result' => [
-                    'id' => 1
-                ]
-            ],
-            'db' => [
-                'lisa_fixtures' => [
-                    'requests' => [
-                        [
-                            'id' => 1,
-                            'author_id' => 4,
-                            'type_id' => 12,
-                            'supervisor_id' => 6,
-                            'manager_id' => null,
-                            'status' => 1,
-                            'direction' => 1,
-                            'priority' => null,
-                            'awaiting_correction' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'correction_comment' => null,
-                            'amount_to_work' => 10,
-                            'subject' => '[API] Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
-                            'description' => '!@#$%^&*()_+`-]\'/[;.,}"?{:>\|абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО',
-                            'category_id' => 1,
-                            'seller_id' => 83,
-                            'recommendations' => null,
-                            'reason' => null,
-                            'parent_id' => null,
-                            'planned_start_date' => null,
-                            'planned_finish_date' => null,
-                            'actual_start_date' => null,
-                            'actual_finish_date' => null,
-                            'supervisor_process_date' => null,
-                            'supervisor_check_date' => null,
-                            'result_comment' => null,
-                            'supervisor_comment' => null,
-                            'last_change_status_date >=' => date('Y-m-d'),
-                            'team_direction' => 3,
-                            'report_period_id' => null,
-                            'sync_source_id' => null,
-                            'sv_report_periods' => null,
-                            'cross_check_status' => 0,
-                            'cross_check_manager_id' => null,
-                            'employee_code_1c' => null,
-                            'child_count' => 0,
-                            'photo_load_status' => 0,
-                            'previous_status' => null,
-                            'supplier_cabinet_id' => 1,
-                            'payload' => '[]',
-                            'rz_category_id' => null,
-                            'author_team' => 17,
-                            'supervisor_team' => 1,
-                            'manager_team' => null,
-                        ]
-                    ],
-                    'requests_fields' => [
-                        [
-                            'request_id' => 1,
-                            'field_id' => 1,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 49,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 50,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 51,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 52,
-                            'value' => 2,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 53,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 54,
-                            'value' => 1,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 60,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 64,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 101,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 122,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 142,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 143,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 146,
-                            'value' => 0,
-                        ],
-                        [
-                            'request_id' => 1,
-                            'field_id' => 158,
-                            'value' => 0,
-                        ],
-                    ],
-                    'user_notifications' => [
-                        [
-                            'id' => 1,
-                            'user_id' => 4,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 2,
-                            'user_id' => 6,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 3,
-                            'user_id' => 16,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                        [
-                            'id' => 4,
-                            'user_id' => 17,
-                            'notification' => '',
-                            'status' => 0,
-                            'created_at >=' => date('Y-m-d'),
-                            'request_id' => 1,
-                            'priority' => null,
-                            'amount_to_work' => 10,
-                            'request_subject' => '[API] Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
-                            'fields_for_complete' => '[]',
-                            'triggered_by' => 'Константин Куцан',
-                            'event' => 'create',
-                            'changed_fields' => '{"newValue": 1, "oldValue": null}',
-                            'notify_service_id' => null,
-                        ],
-                    ],
-                    'observers' => [
-                        [
-                            'request_id' => 1,
-                            'user_id' => 16
-                        ],
-                        [
-                            'request_id' => 1,
-                            'user_id' => 17
-                        ],
-                    ],
-                ]
-            ],
-            'RabbitMQ' => [
-                'lisa_failedApiRequests' => [],
-            ],
-        ]
-    ],
-
     'case16' => [
         'setting' => [
             'description' => 'Создание заявки тип 13/0 (с существующим author_id и несуществующим author_login)',
@@ -7527,9 +7290,9 @@ return [
                 'Request[observers]' => [16, 17],
                 'Request[direction]' => 1,
                 'Request[seller_id]' => 83,
-                'Request[subject]' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
+                'Request[subject]' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
                 'Request[supplier_cabinet_id]' => 1,
-                'Request[type_id]' => 12,
+                'Request[type_id]' => 2,
             ],
             'responseBody' => [
                 'status' => 400,
@@ -8613,5 +8376,42 @@ return [
             'RabbitMQ' => $rabbitMQ,
         ]
     ],
+
+    /*
+     * Ошибки при создании без пермишена на выбранный тип
+     */
+    'case15' => [
+        'setting' => [
+            'description' => 'Ошибка при создании заявки тип 12/1',
+        ],
+        'fixture_data' => include __DIR__ . '/fixture/case1.php',
+        'provider_data' => [
+            'requestBody' => [
+                'RequestField[1]' => 1,
+                'Request[amount_to_work]' => 10,
+                'Request[author_login]' => 'kutsan.k',
+                'Request[author_id]' => 999,
+                'Request[category_id]' => 1,
+                'Request[description]' => '=~}!@#$%^&*()_+`-]\'/[;.,}"?{:>\|<1001234567890>абвгдеёжзийклмнопрстуфхцчшщъыьэюяєґїіАБВГДЕЁЖЗИЙКЛМНО<textarea /><input></input><form action="http://live.hh.ru"><input type="submit"></form>',
+                'Request[observers]' => [16, 17],
+                'Request[direction]' => 1,
+                'Request[seller_id]' => 83,
+                'Request[subject]' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
+                'Request[supplier_cabinet_id]' => 1,
+                'Request[type_id]' => 12,
+            ],
+            'responseBody' => [
+                'status' => 400,
+                'errors' => [
+                    'kutsan.k не имеете права создавать задачи с типом 12'
+                ]
+            ],
+            'db' => [
+                'lisa_fixtures' => $lisa_fixtures
+            ],
+            'RabbitMQ' => $rabbitMQ,
+        ]
+    ],
+
 
 ];

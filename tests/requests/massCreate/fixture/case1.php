@@ -5,6 +5,7 @@ use Codeception\Module\TestHelper;
 return [
     'lisa_fixtures' => [
         'requests' => [
+            //направление Розетка
             [
                 //'id' => 1,
                 'author_id' => 4,
@@ -192,7 +193,7 @@ return [
             [
                 //'id' => 5,
                 'author_id' => 4,
-                'type_id' => 12,
+                'type_id' => 3,
                 'supervisor_id' => 10,
                 'manager_id' => null,
                 'status' => 1,
@@ -328,7 +329,7 @@ return [
                 'manager_team' => null,
             ],
 
-
+            //направление Маркетплейс
             [
                 //'id' => 1,
                 'author_id' => 4,
@@ -790,7 +791,7 @@ return [
                 'manager_team' => null,
             ],
 
-
+            //направление Группировка
             [
                 //'id' => 1,
                 'author_id' => 4,
@@ -1068,7 +1069,7 @@ return [
                 'manager_team' => null,
             ],
 
-
+            //направление Порталы/фат-меню/категории
             [
                 //'id' => 1,
                 'author_id' => 4,
@@ -1576,7 +1577,7 @@ return [
                 'manager_team' => null,
             ],
 
-
+            //направление Проектирование структур + фильтры
             [
                 //'id' => 1,
                 'author_id' => 4,

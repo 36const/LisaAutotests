@@ -299,17 +299,6 @@ return [
         'project_id' => 1
     ],
     [
-        'name' => 'requestAddUpdateSC',
-        'type' => 2,
-        'description' => 'Добавление новых СЦ/изменение существующих СЦ',
-        'group' => 'request',
-        'rule_name' => null,
-        'data' => null,
-        'created_at' => '2020-03-10 12:07:48',
-        'updated_at' => null,
-        'project_id' => 1
-    ],
-    [
         'name' => 'requestAddUpdateSizeGrid',
         'type' => 2,
         'description' => 'Добавление/изменение размерной сетки',

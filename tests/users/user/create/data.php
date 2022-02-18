@@ -541,11 +541,6 @@ return [
                                 'created_at >=' => date('Y-m-d')
                             ],
                             [
-                                'item_name' => 'requestAddUpdateSC',
-                                'user_id' => 5,
-                                'created_at >=' => date('Y-m-d')
-                            ],
-                            [
                                 'item_name' => 'requestAddUpdateVideo',
                                 'user_id' => 5,
                                 'created_at >=' => date('Y-m-d')
@@ -765,11 +760,6 @@ return [
                             ],
                             [
                                 'item_name' => 'requestStructureDesign',
-                                'user_id' => 5,
-                                'created_at >=' => date('Y-m-d')
-                            ],
-                            [
-                                'item_name' => 'requestAddUpdateSC',
                                 'user_id' => 5,
                                 'created_at >=' => date('Y-m-d')
                             ],
@@ -1342,11 +1332,6 @@ return [
                             ],
                             [
                                 'item_name' => 'requestAddNewItems',
-                                'created_at >=' => date('Y-m-d'),
-                                'user_id' => 5
-                            ],
-                            [
-                                'item_name' => 'requestAddUpdateSC',
                                 'created_at >=' => date('Y-m-d'),
                                 'user_id' => 5
                             ],

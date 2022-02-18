@@ -197,11 +197,6 @@ return [
                             'user_id' => 1
                         ],
                         [
-                            'item_name' => 'requestAddUpdateSC',
-                            'created_at' => '2021-04-04 13:27:59',
-                            'user_id' => 1
-                        ],
-                        [
                             'item_name' => 'requestAddUpdateSizeGrid',
                             'created_at' => '2021-04-04 13:27:59',
                             'user_id' => 1
@@ -558,11 +553,6 @@ return [
                         ],
                         [
                             'item_name' => 'requestAddNewItems',
-                            'created_at' => '2021-04-04 13:27:59',
-                            'user_id' => 2
-                        ],
-                        [
-                            'item_name' => 'requestAddUpdateSC',
                             'created_at' => '2021-04-04 13:27:59',
                             'user_id' => 2
                         ],
@@ -933,11 +923,6 @@ return [
                         ],
                         [
                             'item_name' => 'requestAddNewItems',
-                            'created_at' => '2021-04-04 13:31:19',
-                            'user_id' => 5
-                        ],
-                        [
-                            'item_name' => 'requestAddUpdateSC',
                             'created_at' => '2021-04-04 13:31:19',
                             'user_id' => 5
                         ],
@@ -1396,17 +1381,6 @@ return [
                             'changer_id' => 4,
                             'changer_login' => 'kutsan.k',
                             'changed_field' => 'requestAddFatPortalCat',
-                            'old_value' => '1',
-                            'new_value' => '0',
-                            'date >=' => date('Y-m-d'),
-                        ],
-                        [
-                            //'id' => 22,
-                            'changed_user_id' => 4,
-                            'changed_user_login' => 'kutsan.k',
-                            'changer_id' => 4,
-                            'changer_login' => 'kutsan.k',
-                            'changed_field' => 'requestAddUpdateSC',
                             'old_value' => '1',
                             'new_value' => '0',
                             'date >=' => date('Y-m-d'),
@@ -1959,7 +1933,6 @@ return [
                     'requestAddUpdateSizeGrid',
                     'requestAddUpdateTags',
                     'requestAddFatPortalCat',
-                    'requestAddUpdateSC',
                     'requestAddNewItems',
                     'requestAddAttrOrValues',
                     'requestUploadPhoto',
@@ -2134,11 +2107,6 @@ return [
                         ],
                         [
                             'item_name' => 'requestAddNewItems',
-                            'user_id' => 1,
-                            'created_at' => '2021-04-04 13:27:59'
-                        ],
-                        [
-                            'item_name' => 'requestAddUpdateSC',
                             'user_id' => 1,
                             'created_at' => '2021-04-04 13:27:59'
                         ],
@@ -2499,11 +2467,6 @@ return [
                         ],
                         [
                             'item_name' => 'requestAddNewItems',
-                            'user_id' => 2,
-                            'created_at' => '2021-04-04 13:27:59'
-                        ],
-                        [
-                            'item_name' => 'requestAddUpdateSC',
                             'user_id' => 2,
                             'created_at' => '2021-04-04 13:27:59'
                         ],
@@ -2828,11 +2791,6 @@ return [
                             'created_at' => null
                         ],
                         [
-                            'item_name' => 'requestAddUpdateSC',
-                            'user_id' => 4,
-                            'created_at' => null
-                        ],
-                        [
                             'item_name' => 'requestAddUpdateSizeGrid',
                             'user_id' => 4,
                             'created_at' => null
@@ -3084,11 +3042,6 @@ return [
                         ],
                         [
                             'item_name' => 'requestAddNewItems',
-                            'user_id' => 5,
-                            'created_at' => '2021-04-04 13:31:19'
-                        ],
-                        [
-                            'item_name' => 'requestAddUpdateSC',
                             'user_id' => 5,
                             'created_at' => '2021-04-04 13:31:19'
                         ],
@@ -3649,7 +3602,6 @@ return [
                     'requestAddUpdateSizeGrid',
                     'requestAddUpdateTags',
                     'requestAddFatPortalCat',
-                    'requestAddUpdateSC',
                     'requestAddNewItems',
                     'requestAddAttrOrValues',
                     'requestUploadPhoto',
@@ -3827,11 +3779,6 @@ return [
                             'user_id' => 1
                         ],
                         [
-                            'item_name' => 'requestAddUpdateSC',
-                            'created_at' => '2021-04-04 13:27:59',
-                            'user_id' => 1
-                        ],
-                        [
                             'item_name' => 'requestAddUpdateSizeGrid',
                             'created_at' => '2021-04-04 13:27:59',
                             'user_id' => 1
@@ -4192,11 +4139,6 @@ return [
                             'user_id' => 2
                         ],
                         [
-                            'item_name' => 'requestAddUpdateSC',
-                            'created_at' => '2021-04-04 13:27:59',
-                            'user_id' => 2
-                        ],
-                        [
                             'item_name' => 'requestAddUpdateSizeGrid',
                             'created_at' => '2021-04-04 13:27:59',
                             'user_id' => 2
@@ -4552,11 +4494,6 @@ return [
                             'user_id' => 4
                         ],
                         [
-                            'item_name' => 'requestAddUpdateSC',
-                            'created_at' => null,
-                            'user_id' => 4
-                        ],
-                        [
                             'item_name' => 'requestAddUpdateSizeGrid',
                             'created_at' => null,
                             'user_id' => 4
@@ -4828,11 +4765,6 @@ return [
                         ],
                         [
                             'item_name' => 'requestAddNewItems',
-                            'created_at' => '2021-04-04 13:31:19',
-                            'user_id' => 5
-                        ],
-                        [
-                            'item_name' => 'requestAddUpdateSC',
                             'created_at' => '2021-04-04 13:31:19',
                             'user_id' => 5
                         ],
@@ -5207,7 +5139,6 @@ return [
                     'requestAddAttrOrValues',
                     'requestAddFatPortalCat',
                     'requestAddNewItems',
-                    'requestAddUpdateSC',
                     'requestAddUpdateSizeGrid',
                     'requestAddUpdateTags',
                     'requestAddUpdateVideo',
@@ -5492,7 +5423,6 @@ return [
                     'requestAddAttrOrValues',
                     'requestAddFatPortalCat',
                     'requestAddNewItems',
-                    'requestAddUpdateSC',
                     'requestAddUpdateSizeGrid',
                     'requestAddUpdateTags',
                     'requestAddUpdateVideo',

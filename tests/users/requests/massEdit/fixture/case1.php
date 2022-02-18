@@ -56,11 +56,6 @@ return [
                 'created_at' => null
             ],
             [
-                'item_name' => 'requestAddUpdateSC',
-                'user_id' => 4,
-                'created_at' => null
-            ],
-            [
                 'item_name' => 'requestAddUpdateSizeGrid',
                 'user_id' => 4,
                 'created_at' => null

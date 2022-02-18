@@ -271,11 +271,6 @@ return [
                 'user_id' => 4,
                 'item_name' => 'requestStructureDesign'
             ],
-//            [
-                //'id' => 3301,
-//                'user_id' => 4,
-//                'item_name' => 'requestAddUpdateSC'
-//            ],
             [
                 'created_at' => null,
                 'user_id' => 4,

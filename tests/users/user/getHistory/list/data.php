@@ -18,7 +18,6 @@ $changed_field = [
     'requestAddAttrOrValues' => 'Добавление параметров/значений',
     'requestAddFatPortalCat' => 'Добавление нового портала/раздела фат-меню/категории товаров',
     'requestAddNewItems' => 'Добавление новых товаров',
-    'requestAddUpdateSC' => 'Добавление новых СЦ/изменение существующих СЦ',
     'requestAddUpdateSizeGrid' => 'Добавление/изменение размерной сетки',
     'requestAddUpdateTags' => 'Добавление/изменение тегов',
     'requestAddUpdateVideo' => 'Добавление/изменение видео',

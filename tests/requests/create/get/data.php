@@ -938,48 +938,6 @@ return [
         ]
     ],
 
-    'case12_1' => [
-        'setting' => [
-            'description' => 'Новая заявка на Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
-        ],
-        'fixture_data' => include __DIR__ . '/fixture/case1.php',
-        'provider_data' => [
-            'requestParameters' => [
-                'typeId' => 12,
-                'direction' => 1,
-            ],
-            'responseBody' => [
-                'checkboxes' => $checkboxesDirection1,
-                'excludedFields' => Constants::EXCLUDED_FIELDS,
-                'priorities' => $priorities,
-                'pageTitle' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
-                'request' => [
-                    'subject' => NULL,
-                    'description' => NULL,
-                    'category_id' => NULL,
-                    'seller_id' => 5,
-                    'amount_to_work' => NULL,
-                    'planned_finish_date' => NULL,
-                    'priority' => NULL,
-                    'rz_category_id' => NULL,
-                    'type_id' => 12,
-                    'direction' => 1,
-                ],
-                'templates' => [
-                ],
-                'initCategory' => [
-                ],
-                'initRzCategory' => [
-                ],
-                'initSeller' => $initSeller,
-                'initObservers' => [
-                ],
-                'parentAttachments' => [
-                ],
-            ]
-        ]
-    ],
-
     'case13_0' => [
         'setting' => [
             'description' => 'Новая заявка на Добавление/изменение видео (Определяется типом задачи)',

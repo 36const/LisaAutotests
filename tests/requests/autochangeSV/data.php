@@ -538,7 +538,7 @@ return [
 
     'case6' => [
         'setting' => [
-            'description' => 'Автоизменение СВ при изменении категории и переводе 7->6 (статус 7, тип 12, направление 1)',
+            'description' => 'Автоизменение СВ при изменении категории и переводе 7->6 (статус 7, тип 2, направление 1)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case6.php',
         'provider_data' => [
@@ -562,7 +562,7 @@ return [
                         [
                             'id' => 1,
                             'author_id' => 4,
-                            'type_id' => 12,
+                            'type_id' => 2,
                             'supervisor_id' => 10,
                             'manager_id' => 11,
                             'status' => 6,
@@ -572,7 +572,7 @@ return [
                             'created_at' => '2020-01-01 00:00:00',
                             'correction_comment' => '',
                             'amount_to_work' => 10,
-                            'subject' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
+                            'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
                             'description' => 'description',
                             'category_id' => 2,
                             'seller_id' => 5,
@@ -691,7 +691,7 @@ return [
 
     'case8' => [
         'setting' => [
-            'description' => 'Не-изменение СВ при изменении категории и сохранении (статус 8, тип 12, направление 1)',
+            'description' => 'Не-изменение СВ при изменении категории и сохранении (статус 8, тип 2, направление 1)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case8.php',
         'provider_data' => [
@@ -710,7 +710,7 @@ return [
                         [
                             'id' => 1,
                             'author_id' => 4,
-                            'type_id' => 12,
+                            'type_id' => 2,
                             'supervisor_id' => 6,
                             'manager_id' => 11,
                             'status' => 8,
@@ -720,7 +720,7 @@ return [
                             'created_at' => '2020-01-01 00:00:00',
                             'correction_comment' => '',
                             'amount_to_work' => 10,
-                            'subject' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
+                            'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
                             'description' => 'description',
                             'category_id' => 2,
                             'seller_id' => 5,

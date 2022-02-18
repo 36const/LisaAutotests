@@ -8,7 +8,7 @@ return [
             [
                 //"id" => 1,
                 'author_id' => 4,
-                'type_id' => 12,
+                'type_id' => 2,
                 'supervisor_id' => 6,
                 'manager_id' => 11,
                 'status' => 7,
@@ -18,7 +18,7 @@ return [
                 'created_at' => '2020-01-01 00:00:00',
                 'correction_comment' => '',
                 'amount_to_work' => 10,
-                'subject' => 'Добавление новых СЦ/изменение существующих СЦ (Работа с товарами Розетки)',
+                'subject' => 'Добавление/изменение информации в существующих товарах (Работа с товарами Розетки)',
                 'description' => 'description',
                 'category_id' => 1,
                 'seller_id' => 5,

@@ -250,11 +250,6 @@ return [
                             'user_id' => 1
                         ],
                         [
-                            'item_name' => 'requestAddUpdateSC',
-                            'created_at' => '2021-04-04 13:27:59',
-                            'user_id' => 1
-                        ],
-                        [
                             'item_name' => 'requestAddUpdateSizeGrid',
                             'created_at' => '2021-04-04 13:27:59',
                             'user_id' => 1
@@ -616,11 +611,6 @@ return [
                         ],
                         [
                             'item_name' => 'requestAddNewItems',
-                            'created_at' => '2021-04-04 13:27:59',
-                            'user_id' => 2
-                        ],
-                        [
-                            'item_name' => 'requestAddUpdateSC',
                             'created_at' => '2021-04-04 13:27:59',
                             'user_id' => 2
                         ],
@@ -990,11 +980,6 @@ return [
                             'created_at' => null
                         ],
                         [
-                            'item_name' => 'requestAddUpdateSC',
-                            'user_id' => 4,
-                            'created_at' => null
-                        ],
-                        [
                             'item_name' => 'requestAddUpdateSizeGrid',
                             'user_id' => 4,
                             'created_at' => null
@@ -1296,11 +1281,6 @@ return [
                         ],
                         [
                             'item_name' => 'requestAddNewItems',
-                            'created_at' => '2021-04-04 13:31:19',
-                            'user_id' => 5
-                        ],
-                        [
-                            'item_name' => 'requestAddUpdateSC',
                             'created_at' => '2021-04-04 13:31:19',
                             'user_id' => 5
                         ],
@@ -2375,11 +2355,6 @@ return [
                                 'created_at >=' => date('Y-m-d'),
                             ],
                             [
-                                'item_name' => 'requestAddUpdateSC',
-                                'user_id' => 6,
-                                'created_at >=' => date('Y-m-d'),
-                            ],
-                            [
                                 'item_name' => 'requestAddUpdateSizeGrid',
                                 'user_id' => 6,
                                 'created_at >=' => date('Y-m-d'),
@@ -2670,11 +2645,6 @@ return [
                                 'created_at >=' => date('Y-m-d'),
                             ],
                             [
-                                'item_name' => 'requestAddUpdateSC',
-                                'user_id' => 8,
-                                'created_at >=' => date('Y-m-d'),
-                            ],
-                            [
                                 'item_name' => 'requestAddUpdateSizeGrid',
                                 'user_id' => 8,
                                 'created_at >=' => date('Y-m-d'),
@@ -2961,11 +2931,6 @@ return [
                             ],
                             [
                                 'item_name' => 'requestAddNewItems',
-                                'user_id' => 9,
-                                'created_at >=' => date('Y-m-d'),
-                            ],
-                            [
-                                'item_name' => 'requestAddUpdateSC',
                                 'user_id' => 9,
                                 'created_at >=' => date('Y-m-d'),
                             ],
@@ -3280,17 +3245,6 @@ return [
                             'changer_id' => 4,
                             'changer_login' => 'kutsan.k',
                             'changed_field' => 'requestAddNewItems',
-                            'old_value' => '0',
-                            'new_value' => '1',
-                            'date >=' => date('Y-m-d'),
-                        ],
-                        [
-                            //'id' => 8,
-                            'changed_user_id' => 6,
-                            'changed_user_login' => 'bpm_supervisor_1',
-                            'changer_id' => 4,
-                            'changer_login' => 'kutsan.k',
-                            'changed_field' => 'requestAddUpdateSC',
                             'old_value' => '0',
                             'new_value' => '1',
                             'date >=' => date('Y-m-d'),
@@ -3945,17 +3899,6 @@ return [
                             'date >=' => date('Y-m-d'),
                         ],
                         [
-                            //'id' => 67,
-                            'changed_user_id' => 8,
-                            'changed_user_login' => 'bpm_supervisor_13',
-                            'changer_id' => 4,
-                            'changer_login' => 'kutsan.k',
-                            'changed_field' => 'requestAddUpdateSC',
-                            'old_value' => '0',
-                            'new_value' => '1',
-                            'date >=' => date('Y-m-d'),
-                        ],
-                        [
                             //'id' => 68,
                             'changed_user_id' => 8,
                             'changed_user_login' => 'bpm_supervisor_13',
@@ -4600,17 +4543,6 @@ return [
                             'changer_id' => 4,
                             'changer_login' => 'kutsan.k',
                             'changed_field' => 'requestAddNewItems',
-                            'old_value' => '0',
-                            'new_value' => '1',
-                            'date >=' => date('Y-m-d'),
-                        ],
-                        [
-                            //'id' => 126,
-                            'changed_user_id' => 9,
-                            'changed_user_login' => 'bpm_supervisor_16',
-                            'changer_id' => 4,
-                            'changer_login' => 'kutsan.k',
-                            'changed_field' => 'requestAddUpdateSC',
                             'old_value' => '0',
                             'new_value' => '1',
                             'date >=' => date('Y-m-d'),
@@ -5417,11 +5349,6 @@ return [
                                 'created_at >=' => date('Y-m-d'),
                             ],
                             [
-                                'item_name' => 'requestAddUpdateSC',
-                                'user_id' => 6,
-                                'created_at >=' => date('Y-m-d'),
-                            ],
-                            [
                                 'item_name' => 'requestAddUpdateSizeGrid',
                                 'user_id' => 6,
                                 'created_at >=' => date('Y-m-d'),
@@ -5702,11 +5629,6 @@ return [
                                 'created_at >=' => date('Y-m-d'),
                             ],
                             [
-                                'item_name' => 'requestAddUpdateSC',
-                                'user_id' => 8,
-                                'created_at >=' => date('Y-m-d'),
-                            ],
-                            [
                                 'item_name' => 'requestAddUpdateSizeGrid',
                                 'user_id' => 8,
                                 'created_at >=' => date('Y-m-d'),
@@ -5983,11 +5905,6 @@ return [
                             ],
                             [
                                 'item_name' => 'requestAddNewItems',
-                                'user_id' => 9,
-                                'created_at >=' => date('Y-m-d'),
-                            ],
-                            [
-                                'item_name' => 'requestAddUpdateSC',
                                 'user_id' => 9,
                                 'created_at >=' => date('Y-m-d'),
                             ],
@@ -6324,17 +6241,6 @@ return [
                             'changer_id' => 4,
                             'changer_login' => 'kutsan.k',
                             'changed_field' => 'requestAddNewItems',
-                            'old_value' => '0',
-                            'new_value' => '1',
-                            'date >=' => date('Y-m-d'),
-                        ],
-                        [
-                            //'id' => 10,
-                            'changed_user_id' => 6,
-                            'changed_user_login' => 'bpm_supervisor_1',
-                            'changer_id' => 4,
-                            'changer_login' => 'kutsan.k',
-                            'changed_field' => 'requestAddUpdateSC',
                             'old_value' => '0',
                             'new_value' => '1',
                             'date >=' => date('Y-m-d'),
@@ -6967,17 +6873,6 @@ return [
                             'date >=' => date('Y-m-d'),
                         ],
                         [
-                            //'id' => 66,
-                            'changed_user_id' => 8,
-                            'changed_user_login' => 'bpm_supervisor_13',
-                            'changer_id' => 4,
-                            'changer_login' => 'kutsan.k',
-                            'changed_field' => 'requestAddUpdateSC',
-                            'old_value' => '0',
-                            'new_value' => '1',
-                            'date >=' => date('Y-m-d'),
-                        ],
-                        [
                             //'id' => 67,
                             'changed_user_id' => 8,
                             'changed_user_login' => 'bpm_supervisor_13',
@@ -7600,17 +7495,6 @@ return [
                             'changer_id' => 4,
                             'changer_login' => 'kutsan.k',
                             'changed_field' => 'requestAddNewItems',
-                            'old_value' => '0',
-                            'new_value' => '1',
-                            'date >=' => date('Y-m-d'),
-                        ],
-                        [
-                            //'id' => 122,
-                            'changed_user_id' => 9,
-                            'changed_user_login' => 'bpm_supervisor_16',
-                            'changer_id' => 4,
-                            'changer_login' => 'kutsan.k',
-                            'changed_field' => 'requestAddUpdateSC',
                             'old_value' => '0',
                             'new_value' => '1',
                             'date >=' => date('Y-m-d'),

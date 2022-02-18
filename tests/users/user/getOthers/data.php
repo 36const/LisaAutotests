@@ -190,7 +190,6 @@ return [
                 'requestAddAttrOrValues',
                 'requestUpdateAttrOrValues',
                 'requestStructureDesign',
-                'requestAddUpdateSC',
                 'requestAddUpdateVideo',
                 'requestAddUpdateSizeGrid',
                 'requestAddUpdateTags',

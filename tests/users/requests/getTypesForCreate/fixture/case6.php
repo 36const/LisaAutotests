@@ -62,11 +62,6 @@ return [
 //                'created_at' => '2021-10-22 10:15:05',
 //            ],
             [
-                'item_name' => 'requestAddUpdateSC',
-                'user_id' => 4,
-                'created_at' => '2021-10-22 10:15:05',
-            ],
-            [
                 'item_name' => 'requestAddUpdateSizeGrid',
                 'user_id' => 4,
                 'created_at' => '2021-10-22 10:15:05',

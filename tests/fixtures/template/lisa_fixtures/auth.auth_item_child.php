@@ -71,10 +71,6 @@ return [
     ],
     [
         'parent' => 'admin',
-        'child' => 'requestAddUpdateSC'
-    ],
-    [
-        'parent' => 'admin',
         'child' => 'requestAddUpdateSizeGrid'
     ],
     [
@@ -387,10 +383,6 @@ return [
     ],
     [
         'parent' => 'headSupervisor',
-        'child' => 'requestAddUpdateSC'
-    ],
-    [
-        'parent' => 'headSupervisor',
         'child' => 'requestAddUpdateSizeGrid'
     ],
     [
@@ -623,10 +615,6 @@ return [
     ],
     [
         'parent' => 'productManager',
-        'child' => 'requestAddUpdateSC'
-    ],
-    [
-        'parent' => 'productManager',
         'child' => 'requestAddUpdateSizeGrid'
     ],
     [
@@ -776,10 +764,6 @@ return [
     [
         'parent' => 'supervisor',
         'child' => 'requestAddNewItems'
-    ],
-    [
-        'parent' => 'supervisor',
-        'child' => 'requestAddUpdateSC'
     ],
     [
         'parent' => 'supervisor',
@@ -984,10 +968,6 @@ return [
     [
         'parent' => 'teamLead',
         'child' => 'requestAddNewItems'
-    ],
-    [
-        'parent' => 'teamLead',
-        'child' => 'requestAddUpdateSC'
     ],
     [
         'parent' => 'teamLead',

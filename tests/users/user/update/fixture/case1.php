@@ -101,11 +101,6 @@ return [
                 'user_id' => 1
             ],
             [
-                'item_name' => 'requestAddUpdateSC',
-                'created_at' => '2021-04-04 13:27:59',
-                'user_id' => 1
-            ],
-            [
                 'item_name' => 'requestAddUpdateSizeGrid',
                 'created_at' => '2021-04-04 13:27:59',
                 'user_id' => 1
@@ -466,11 +461,6 @@ return [
                 'user_id' => 2
             ],
             [
-                'item_name' => 'requestAddUpdateSC',
-                'created_at' => '2021-04-04 13:27:59',
-                'user_id' => 2
-            ],
-            [
                 'item_name' => 'requestAddUpdateSizeGrid',
                 'created_at' => '2021-04-04 13:27:59',
                 'user_id' => 2
@@ -826,11 +816,6 @@ return [
                 'created_at' => null
             ],
             [
-                'item_name' => 'requestAddUpdateSC',
-                'user_id' => 4,
-                'created_at' => null
-            ],
-            [
                 'item_name' => 'requestAddUpdateSizeGrid',
                 'user_id' => 4,
                 'created_at' => null
@@ -1132,11 +1117,6 @@ return [
             ],
             [
                 'item_name' => 'requestAddNewItems',
-                'created_at' => '2021-04-04 13:31:19',
-                'user_id' => 5
-            ],
-            [
-                'item_name' => 'requestAddUpdateSC',
                 'created_at' => '2021-04-04 13:31:19',
                 'user_id' => 5
             ],

@@ -72,7 +72,7 @@ return [
                 [
                     '1' => true,
                     'direction' => 1,
-                    'type_id' => 12,
+                    'type_id' => 3,
                     'category_id' => 2,
                     'rz_category_id' => null,
                     'seller_id' => 72141,
@@ -305,7 +305,7 @@ return [
                             [
                                 'id' => 45,
                                 'author_id' => 4,
-                                'type_id' => 12,
+                                'type_id' => 3,
                                 'supervisor_id' => 10,
                                 'manager_id' => null,
                                 'status' => 1,

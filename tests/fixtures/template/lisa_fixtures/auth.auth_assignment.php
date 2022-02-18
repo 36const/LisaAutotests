@@ -66,10 +66,6 @@ return [
         'user_id' => 1,
     ],
     [
-        'item_name' => 'requestAddUpdateSC',
-        'user_id' => 1,
-    ],
-    [
         'item_name' => 'requestAddUpdateSizeGrid',
         'user_id' => 1,
     ],
@@ -808,10 +804,6 @@ return [
     ],
     [
         'item_name' => 'requestStructureDesign',
-        'user_id' => 4,
-    ],
-    [
-        'item_name' => 'requestAddUpdateSC',
         'user_id' => 4,
     ],
     [

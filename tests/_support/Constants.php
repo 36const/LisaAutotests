@@ -491,31 +491,30 @@ class Constants
                 ],
                 [
                     'requestAddFatPortalCat' => 'Добавление нового портала/раздела фат-меню/категории товаров (Контент)',
-                    'requestAddUpdateSC' => 'Добавление новых СЦ/изменение существующих СЦ (Контент)',
                     'requestAddNewItems' => 'Добавление новых товаров (Контент)',
+                    'requestAddAttrOrValues' => 'Добавление параметров/значений (Контент)',
                 ],
                 [
-                    'requestAddAttrOrValues' => 'Добавление параметров/значений (Контент)',
                     'requestUploadPhoto' => 'Заливка фото с фотостудии (Контент)',
                     'requestUpdateAttrOrValues' => 'Изменение существующих параметров/значений (Контент)',
+                    'commentRequestMrk' => 'Комментирование задач (Маркетинг)',
                 ],
                 [
-                    'commentRequestMrk' => 'Комментирование задач (Маркетинг)',
                     'requestTransferItems' => 'Перенос товаров (Контент)',
                     'requestCheckHidden' => 'Проверка скрытых товаров (Контент)',
+                    'requestStructureDesign' => 'Проектирование структуры (Контент)',
                 ],
                 [
-                    'requestStructureDesign' => 'Проектирование структуры (Контент)',
                     'viewAllRequestsMrk' => 'Просмотр всех задач (Маркетинг)',
                     'viewTeamRequestsMrk' => 'Просмотр задач команды (Маркетинг)',
+                    'viewOwnRequestsMrk' => 'Просмотр только своих задач (Маркетинг)',
                 ],
                 [
-                    'viewOwnRequestsMrk' => 'Просмотр только своих задач (Маркетинг)',
                     'updateRequestMrk' => 'Редактирование задач (Маркетинг)',
                     'createRequestMrk' => 'Создание задач (Маркетинг)',
+                    'createSubRequestMrk' => 'Создание подзадач (Маркетинг)',
                 ],
                 [
-                    'createSubRequestMrk' => 'Создание подзадач (Маркетинг)',
                     'createFilterMrk' => 'Создание фильтра (Маркетинг)',
                 ],
             ],
@@ -658,16 +657,15 @@ class Constants
                 ],
                 [
                     'requestAddFatPortalCat' => 'Добавление нового портала/раздела фат-меню/категории товаров',
-                    'requestAddUpdateSC' => 'Добавление новых СЦ/изменение существующих СЦ',
                     'requestAddNewItems' => 'Добавление новых товаров',
+                    'requestAddAttrOrValues' => 'Добавление параметров/значений',
                 ],
                 [
-                    'requestAddAttrOrValues' => 'Добавление параметров/значений',
                     'requestUploadPhoto' => 'Заливка фото с фотостудии',
                     'requestUpdateAttrOrValues' => 'Изменение существующих параметров/значений',
+                    'requestTransferItems' => 'Перенос товаров',
                 ],
                 [
-                    'requestTransferItems' => 'Перенос товаров',
                     'requestCheckHidden' => 'Проверка скрытых товаров',
                     'requestStructureDesign' => 'Проектирование структуры',
                 ],
