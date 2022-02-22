@@ -30,8 +30,6 @@ class POSTGomerUpdateAmountCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
-
         $I->sendPOST('/request/update-amount-to-work', $providerData['requestBody']);
 
         $I->seeResponseCodeIs($providerData['responseCode']);

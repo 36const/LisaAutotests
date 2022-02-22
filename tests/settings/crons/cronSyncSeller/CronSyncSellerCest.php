@@ -29,9 +29,7 @@ class CronSyncSellerCest
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
-        
-        $I->declareExchange('marketplace_exchange', 'topic', false, true, false);
-        $I->declareQueue('market_queue', false, true, false, false);
+
         $I->bindQueueToExchange('market_queue', 'marketplace_exchange', $providerData['routing_key']);
 
         if (isset($data['setting']['multi'])) {

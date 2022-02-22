@@ -33,10 +33,7 @@ class CronSyncCategoryCest
 
         $I->loadDataForRedis();
 
-        $I->declareExchange('goods_service', 'topic', false, true, false);
-        $I->declareQueue('goods-lisa', false, true, false, false);
         $I->bindQueueToExchange('goods-lisa', 'goods_service', $providerData['routing_key']);
-
         $I->pushToExchange('goods_service', $providerData['message'], $providerData['routing_key']);
 
         $I->runShellCommand('./yii request/sync-category', false);

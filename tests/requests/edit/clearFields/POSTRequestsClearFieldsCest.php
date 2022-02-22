@@ -30,8 +30,6 @@ class POSTRequestsClearFieldsCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
-
         $I->sendPUT('/request/update/1', json_encode($providerData['requestBody']));
 
         $I->seeResponseCodeIs(200);

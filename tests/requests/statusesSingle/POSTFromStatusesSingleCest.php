@@ -30,9 +30,6 @@ class POSTFromStatusesSingleCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
-        $I->declareQueue('lisa_svRedistribution', false, true, false, false);
-
         if (isset($providerData['requestBody']['payload']['files']))
             $I->runShellCommand('mkdir -p ' . Constants::TEMP_FILES_DIR . '1631802792673');
 

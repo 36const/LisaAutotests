@@ -31,7 +31,6 @@ class POSTGomerCreateRequestCest
         $providerData = $data['provider_data'];
 
         $I->changeMaxFileSize();
-        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
 
         isset($providerData['attachments']) ?
             $I->sendPOST('/request/create-request', $providerData['requestBody'], $providerData['attachments']) :

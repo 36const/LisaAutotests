@@ -33,9 +33,6 @@ class CronRzCategoriesExportXlsCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->declareExchange('default', 'direct', false, true, false);
-        $I->declareQueue('lisa_rzCategoriesExport', false, true, false, false);
-        $I->bindQueueToExchange('lisa_rzCategoriesExport', 'default', 'lisa_rzCategoriesExport');
         $I->pushToExchange('default', '["export"]', 'lisa_rzCategoriesExport');
 
         $I->runShellCommand(Constants::MAKE_AND_CLEAR_FILES_DIR);

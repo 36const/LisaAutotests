@@ -30,8 +30,6 @@ class POSTFromStatusesMultipleCest
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
 
-        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
-
         $I->sendPOST('/request/' . $providerData['requestParameter'], $providerData['requestBody']);
         $I->seeResponseCodeIs(200);
         $I->canSeeJsonResponseEquals($providerData['responseBody']);

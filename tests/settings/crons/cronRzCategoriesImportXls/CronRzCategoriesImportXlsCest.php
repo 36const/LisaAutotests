@@ -34,9 +34,6 @@ class CronRzCategoriesImportXlsCest
 
         $I->loadDataForRedis();
 
-        $I->declareExchange('default', 'direct', false, true, false);
-        $I->declareQueue('lisa_rzCategoriesImport', false, true, false, false);
-        $I->bindQueueToExchange('lisa_rzCategoriesImport', 'default', 'lisa_rzCategoriesImport');
         $I->pushToExchange('default', $providerData['user'] ?? '{"userId":4}', 'lisa_rzCategoriesImport');
 
         $I->runShellCommand('cp '. codecept_data_dir('CategoriesImport/' . $providerData['file']) . ' ./web/files/rz_categories_import.xlsx');

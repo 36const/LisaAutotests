@@ -9,6 +9,7 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_api
  * @group lisa_api_requests
+ * @group lisa_api_requests_create
  * @group POSTCreateRequest
  */
 class POSTCreateRequestCest
@@ -28,8 +29,6 @@ class POSTCreateRequestCest
     {
         $I->loadDataForTest($data);
         $providerData = $data['provider_data'];
-
-        $I->declareQueue('lisa_sendOuterNotifications', false, true, false, false);
 
         if (isset($providerData['requestBody']['files']))
             $I->runShellCommand('mkdir -p ' . Constants::TEMP_FILES_DIR . '1631802792673');

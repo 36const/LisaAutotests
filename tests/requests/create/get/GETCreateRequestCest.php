@@ -9,6 +9,7 @@ use Codeception\Module\TestHelper;
  * @group lisa
  * @group lisa_api
  * @group lisa_api_requests
+ * @group lisa_api_requests_create
  * @group GETCreateRequest
  */
 class GETCreateRequestCest
