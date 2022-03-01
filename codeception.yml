@@ -52,7 +52,7 @@ modules:
         username: 'lisa'
         password: 'lisa'
         vhost: '/'
-        cleanup: false
+        cleanup: true
         single_channel: true
         queues: [ 'lisa_saveFiles',
                   'lisa_exportGenerate',

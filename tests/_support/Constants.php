@@ -8,7 +8,11 @@ class Constants
 
     public const TEMP_FILES_DIR = '/builds/gomer/lisa/api/web/files/';
 
+    public const MINIO_DIR = '/builds/gomer/lisa/minio/lisa-auto/1/';
+
     public const MAKE_AND_CLEAR_FILES_DIR = 'mkdir -p ' . self::TEMP_FILES_DIR . ' && rm -rf ' . self::TEMP_FILES_DIR . '*';
+    
+    public const MAKE_AND_CLEAR_MINIO_DIR = 'mkdir -p ' . self::MINIO_DIR . ' && rm -rf ' . self::MINIO_DIR . '*';
 
     public const TYPES = [
         1 => 'Добавление новых товаров',

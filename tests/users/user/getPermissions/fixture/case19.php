@@ -53,7 +53,7 @@ return [
                 'manager_id' => 11,
                 'errors_count' => 10,
                 'items_with_errors' => 10,
-                'field_value_id' => 142,
+                'field_value_id' => 67,
                 'comment' => 'comment',
                 'status' => 0,
                 //'create_ts' => null,
