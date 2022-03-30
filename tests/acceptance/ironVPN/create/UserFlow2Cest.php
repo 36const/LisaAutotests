@@ -11,15 +11,14 @@ use lisa\Page\Other\SearchField;
 /**
  * @group lisa
  * @group lisa_acceptance
- * @group lisa_acceptance_1
- * @group lisa_acceptance_requests
+ * @group lisa_acceptance_ironVPN
  * @group UserFlow2
  */
 class UserFlow2Cest
 {
     protected function pageProvider(): array
     {
-        return TestHelper::prepareDataprovider(require 'data.php', '');
+        return TestHelper::prepareDataprovider(require 'data.php', 'case2');
     }
 
     /**
@@ -58,7 +57,8 @@ class UserFlow2Cest
 
         //попытка нажать на оплату со всеми пустыми полями
         $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton" and @disabled]');
+        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
+        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
         $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"]');
         $I->switchToIFrame();
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_3');
@@ -66,9 +66,6 @@ class UserFlow2Cest
 
         //заполнить и сразу очистить каждое поле для показа предупреждений
         $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-//        $I->retryClick('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_number"]');
-//        $I->retryClick('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]');
-//        $I->retryClick('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]');
         $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_number"]//input', '0', WebDriverKeys::BACKSPACE);
         $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', '0', WebDriverKeys::BACKSPACE);
         $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', '0', WebDriverKeys::BACKSPACE);
@@ -106,7 +103,7 @@ class UserFlow2Cest
         $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', '879');
         $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', '0000');
         $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton" and @disabled]');
+        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
         $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"]');
         $I->switchToIFrame();
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_7');
@@ -118,38 +115,58 @@ class UserFlow2Cest
         $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', ['ctrl', 'a'], date('mY', strtotime('-2 month -1 day')));
         $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', ['ctrl', 'a'], '111');
         $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton" and @disabled]');
+        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
         //здесь не подходит сравнение скринов, потому что месяц и год будут меняться, а исключить это поле из сравнения скрина нельзя, потому что оно находится в iframe
         //поэтому здесь сравниваем только элементы html страницы
         $I->canSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardNumber_error-text"][text()="Please, check card number"]');
         $I->canSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardExpiryDate_error-text"][text()="You entered an expiration date that has already passed"]');
         $I->cantSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardCvv_error-text"]');
-        $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton" and @disabled]');
+        $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
         $I->switchToIFrame();
-//        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_8', 1, 0.001, ['//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input']);
         $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
 
         //заполнить цифрами, полностью, срок текущий месяц, но номер с невозможным значением
         $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
         $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_number"]//input', ['ctrl', 'a'], '9876543210987654321');
         $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', ['ctrl', 'a'], date('mY'));
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', ['ctrl', 'a'], '987');
+        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', ['ctrl', 'a'], '9999');
         $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton" and @disabled]');
+        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
         //здесь не подходит сравнение скринов, потому что месяц и год будут меняться, а исключить это поле из сравнения скрина нельзя, потому что оно находится в iframe
         //поэтому здесь сравниваем только элементы html страницы
         $I->canSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardNumber_error-text"][text()="Please, check card number"]');
         $I->cantSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardExpiryDate_error-text"]');
         $I->cantSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardCvv_error-text"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton" and @disabled]');
+        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
         $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"]');
         $I->switchToIFrame();
-//        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_9',1, 0.001, ['//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input']);
         $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
 
+        //заполнить цифрами, полностью, срок текущий месяц, номер с возможным значением, но без индекса
+        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
+        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', ['ctrl', 'a'], '32029');
+        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', ['ctrl', 'a'], '967');
+        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_number"]//input', ['ctrl', 'a'], '4532456618142692');
+        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
+        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
+        $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"]');
+        $I->switchToIFrame();
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_8');
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
 
-//        попытка нажать на оплату со всеми пустыми полями
-//        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-//        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//input', '1111');
+        //заполнить все поля правильно
+        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
+        $I->pressKey('//div[@id="root"]/form//div[contains(@class, "zip_code")]//input', '98765');
+        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
+        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"]');
+        $I->switchToIFrame();
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_9');
+
+        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
+        $I->retryClick('//div[@id="root"]/form//button[@name="submitButton"]');
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
+        //пароль каждый раз уникальный, поэтому убираем это поле со скрина
+        $I->switchToIFrame();
+        $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_10', 4, 0.001, ['div.access-block > p.get-plan_pass']);
     }
 }

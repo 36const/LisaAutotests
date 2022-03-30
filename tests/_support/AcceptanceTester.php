@@ -89,7 +89,7 @@ class AcceptanceTester extends GeneralTester
         int $waitTime = 1,
         float $deviation = 0.001,
         array $exclude = [],
-        string $elementID = '.content-wrapper'
+        string $elementID = null
     )
     {
         $I = $this;
@@ -98,7 +98,7 @@ class AcceptanceTester extends GeneralTester
 
         $I->wait($waitTime);
 
-        $I->cantSeeVisualChanges($fileID);
+        $I->cantSeeVisualChanges($fileID, $elementID, $exclude, [], $deviation);
 
 //        if (!is_array($fileID)) {
 //            $I->cantSeeVisualChanges($fileID, $elementID, array_merge($defaultExclude, $exclude), [], $deviation);
