@@ -43,7 +43,7 @@ class AcceptanceTester extends GeneralTester
         $I->truncateTablesInDatabase(['lisa_fixtures' => ['exceptions' => [], 'common_log' => []]]);
 
         $I->wantTo($data['setting']['description']);
-        $I->authorize();
+//        $I->authorize();
         $I->retry(3);
     }
 
@@ -98,16 +98,18 @@ class AcceptanceTester extends GeneralTester
 
         $I->wait($waitTime);
 
-        if (!is_array($fileID)) {
-            $I->cantSeeVisualChanges($fileID, $elementID, array_merge($defaultExclude, $exclude), [], $deviation);
-        } else {
-            foreach ($fileID as $id) {
-                $result[] = $I->tryToDontSeeVisualChanges($id, $elementID, array_merge($defaultExclude, $exclude), [], $deviation);
-            }
-            in_array(true, $result)
-                ? $I->assertTrue(true)
-                : $I->assertTrue(false, 'Ни один скриншот не совпал');
-        }
+        $I->cantSeeVisualChanges($fileID);
+
+//        if (!is_array($fileID)) {
+//            $I->cantSeeVisualChanges($fileID, $elementID, array_merge($defaultExclude, $exclude), [], $deviation);
+//        } else {
+//            foreach ($fileID as $id) {
+//                $result[] = $I->tryToDontSeeVisualChanges($id, $elementID, array_merge($defaultExclude, $exclude), [], $deviation);
+//            }
+//            in_array(true, $result)
+//                ? $I->assertTrue(true)
+//                : $I->assertTrue(false, 'Ни один скриншот не совпал');
+//        }
     }
 
     public function checkObjectsOnPage($pageObjects)
