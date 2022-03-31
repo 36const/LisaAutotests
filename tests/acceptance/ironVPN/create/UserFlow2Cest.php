@@ -5,8 +5,8 @@ namespace lisa;
 use Codeception\Example;
 use Codeception\Module\TestHelper;
 use Facebook\WebDriver\WebDriverKeys;
-use lisa\Page\Requests\RequestCreate;
-use lisa\Page\Other\SearchField;
+use lisa\Page\IronVPN\Home;
+use lisa\Page\IronVPN\Processing;
 
 /**
  * @group lisa
@@ -39,134 +39,136 @@ class UserFlow2Cest
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_1');
 
         //ввод тестового эмейла, проставление соглашения и переход на страницу покупки
-        $I->retryClick('//button//span[text()="Get IronVPN Now"]');
-        $I->retryClick('//div[@role="dialog"]');
-        $I->pressKey('//div[@role="dialog"]//div[@id="checkUserEmail"]/p/following-sibling::input', 'qa@test.com');
-        $I->retryClick('//div[@role="dialog"]//div[@id="checkAgree"]');
-        $I->retryClick('//div[@role="dialog"]//button//span[text()="Get IronVPN Now"]');
+        $I->retryClick(Home::GET_NOW_BUTTON_BTN);
+        $I->retryClick(Home::GET_NOW_POPUP);
+        $I->pressKey(Home::EMAIL_INPUT_FIELD_IN_POPUP, ['ctrl', 'a'], 'qa@test.com');
+        $I->retryClick(Home::AGREE_CHECKBOX_IN_POPUP);
+        $I->retryClick(Home::GET_NOW_BUTTON_IN_POPUP);
         $I->waitForElement('//h1[text()="Special Offer"]');
         //при необходимости, можно установить чтобы на скрине не проверялись элементы с числами,
         //чтобы не редактировать скрины при каждом изменении цен/акций
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_2');
-        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php'); //проверка, что в БД не появилось новых записей
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case.php'); //проверка, что в БД не появилось новых записей
 
         //открытие всплывашки оплаты
-        $I->retryClick('//section[@id="trial"]//a/span[text()="Get IronVPN Now"]');
-        $I->waitForElement('//iframe[@id="solid-payment-form-iframe"]', 3);
+        $I->retryClick(Processing::GET_NOW_BUTTON_TRIAL);
+        $I->waitForElement(Processing::PAYMENT_IFRAME, 3);
         $I->wait(3);
 
         //попытка нажать на оплату со всеми пустыми полями
-        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
-        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"]');
+        $I->switchToIFrame(Processing::PAYMENT_IFRAME);
+        $I->canSeeElement(Processing::SUBMIT_BUTTON . '[@disabled]');
+        $I->click(Processing::CARD_BRANDS);
+        $I->tryToClick(Processing::SUBMIT_BUTTON);
         $I->switchToIFrame();
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_3');
-        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case.php');
 
         //заполнить и сразу очистить каждое поле для показа предупреждений
-        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_number"]//input', '0', WebDriverKeys::BACKSPACE);
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', '0', WebDriverKeys::BACKSPACE);
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', '0', WebDriverKeys::BACKSPACE);
-        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"]');
+        $I->switchToIFrame(Processing::PAYMENT_IFRAME);
+        $I->pressKey(Processing::CARD_VIEW_NUMBER, '0', WebDriverKeys::BACKSPACE);
+        $I->pressKey(Processing::CARD_VIEW_EXPIRY_DATE, '0', WebDriverKeys::BACKSPACE);
+        $I->pressKey(Processing::CARD_VIEW_CVV, '0', WebDriverKeys::BACKSPACE);
+        $I->click(Processing::CARD_BRANDS);
+        $I->tryToClick(Processing::SUBMIT_BUTTON);
         $I->switchToIFrame();
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_4');
-        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case.php');
 
         //заполнить не-цифрами
-        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_number"]//input', 'йцукенгASDF№!@#$%^&*()_+-=~`-=\"\'|}"?{:><');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', '-=\"\'|}"?{:><!@#$%^&*()_+-=~`йцукенгASDF№!');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', '!@#$%^&*()_+-=~`-=\"\'|}"?{:><йцукенгASDF№!');
-        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"]');
+        $I->switchToIFrame(Processing::PAYMENT_IFRAME);
+        $I->pressKey(Processing::CARD_VIEW_NUMBER, 'йцукенгASDF№!@#$%^&*()_+-=~`-=\"\'|}"?{:><');
+        $I->pressKey(Processing::CARD_VIEW_EXPIRY_DATE, '-=\"\'|}"?{:><!@#$%^&*()_+-=~`йцукенгASDF№!');
+        $I->pressKey(Processing::CARD_VIEW_CVV, '!@#$%^&*()_+-=~`-=\"\'|}"?{:><йцукенгASDF№!');
+        $I->click(Processing::CARD_BRANDS);
+        $I->tryToClick(Processing::SUBMIT_BUTTON);
         $I->switchToIFrame();
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_5');
-        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case.php');
 
         //заполнить цифрами, но не полностью
-        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_number"]//input', '1234');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', '12');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', '99');
-        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"]');
+        $I->switchToIFrame(Processing::PAYMENT_IFRAME);
+        $I->pressKey(Processing::CARD_VIEW_NUMBER, '1234');
+        $I->pressKey(Processing::CARD_VIEW_EXPIRY_DATE, '12');
+        $I->pressKey(Processing::CARD_VIEW_CVV, '99');
+        $I->click(Processing::CARD_BRANDS);
+        $I->tryToClick(Processing::SUBMIT_BUTTON);
         $I->switchToIFrame();
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_6');
-        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case.php');
 
         //заполнить цифрами, полностью, но номер и срок с невозможными значениями
-        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_number"]//input', '9876543210987654');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', '879');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', '0000');
-        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
-        $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"]');
+        $I->switchToIFrame(Processing::PAYMENT_IFRAME);
+        $I->pressKey(Processing::CARD_VIEW_NUMBER, '9876543210987654');
+        $I->pressKey(Processing::CARD_VIEW_EXPIRY_DATE, '879');
+        $I->pressKey(Processing::CARD_VIEW_CVV, '0000');
+        $I->click(Processing::CARD_BRANDS);
+        $I->canSeeElement(Processing::SUBMIT_BUTTON . '[@disabled]');
+        $I->tryToClick(Processing::SUBMIT_BUTTON);
         $I->switchToIFrame();
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_7');
-        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case.php');
 
-        //заполнить цифрами, полностью, но номер с невозможным значением, а срок крайний прошедший (прошлый месяц)
-        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_number"]//input', ['ctrl', 'a'], '9876543210987654321');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', ['ctrl', 'a'], date('mY', strtotime('-2 month -1 day')));
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', ['ctrl', 'a'], '111');
-        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
+        //заполнить цифрами, полностью, но номер с невозможным значением, а срок ближайший прошедший (прошлый месяц)
+        $I->switchToIFrame(Processing::PAYMENT_IFRAME);
+        $I->pressKey(Processing::CARD_VIEW_NUMBER, ['ctrl', 'a'], '9876543210987654321');
+        $I->pressKey(Processing::CARD_VIEW_EXPIRY_DATE, ['ctrl', 'a'], date('mY', strtotime('-1 month -3 day')));
+        $I->pressKey(Processing::CARD_VIEW_CVV, ['ctrl', 'a'], '111');
+        $I->click(Processing::CARD_BRANDS);
+        $I->canSeeElement(Processing::SUBMIT_BUTTON . '[@disabled]');
         //здесь не подходит сравнение скринов, потому что месяц и год будут меняться, а исключить это поле из сравнения скрина нельзя, потому что оно находится в iframe
         //поэтому здесь сравниваем только элементы html страницы
-        $I->canSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardNumber_error-text"][text()="Please, check card number"]');
-        $I->canSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardExpiryDate_error-text"][text()="You entered an expiration date that has already passed"]');
-        $I->cantSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardCvv_error-text"]');
-        $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
+        $I->canSeeElement(Processing::CARD_VIEW_ERROR_NUMBER . '[text()="Please, check card number"]');
+        $I->canSeeElement(Processing::CARD_VIEW_ERROR_EXPIRY_DATE . '[text()="You entered an expiration date that has already passed"]');
+        $I->cantSeeElement(Processing::CARD_VIEW_ERROR_CVV . '');
+        $I->tryToClick(Processing::SUBMIT_BUTTON . '[@disabled]');
         $I->switchToIFrame();
-        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case.php');
 
         //заполнить цифрами, полностью, срок текущий месяц, но номер с невозможным значением
-        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_number"]//input', ['ctrl', 'a'], '9876543210987654321');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', ['ctrl', 'a'], date('mY'));
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', ['ctrl', 'a'], '9999');
-        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
+        $I->switchToIFrame(Processing::PAYMENT_IFRAME);
+        $I->pressKey(Processing::CARD_VIEW_NUMBER, ['ctrl', 'a'], '9876543210987654321');
+        $I->pressKey(Processing::CARD_VIEW_EXPIRY_DATE, ['ctrl', 'a'], date('mY'));
+        $I->pressKey(Processing::CARD_VIEW_CVV, ['ctrl', 'a'], '9999');
+        $I->click(Processing::CARD_BRANDS);
+        $I->canSeeElement(Processing::SUBMIT_BUTTON . '[@disabled]');
         //здесь не подходит сравнение скринов, потому что месяц и год будут меняться, а исключить это поле из сравнения скрина нельзя, потому что оно находится в iframe
         //поэтому здесь сравниваем только элементы html страницы
-        $I->canSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardNumber_error-text"][text()="Please, check card number"]');
-        $I->cantSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardExpiryDate_error-text"]');
-        $I->cantSeeElement('//div[@id="root"]/form//div[@class="body_errors"]/div[@id="cardCvv_error-text"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
-        $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"]');
+        $I->canSeeElement(Processing::CARD_VIEW_ERROR_NUMBER . '[text()="Please, check card number"]');
+        $I->cantSeeElement(Processing::CARD_VIEW_ERROR_EXPIRY_DATE . '');
+        $I->cantSeeElement(Processing::CARD_VIEW_ERROR_CVV . '');
+        $I->canSeeElement(Processing::SUBMIT_BUTTON . '[@disabled]');
+        $I->tryToClick(Processing::SUBMIT_BUTTON);
         $I->switchToIFrame();
-        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case.php');
 
         //заполнить цифрами, полностью, срок текущий месяц, номер с возможным значением, но без индекса
-        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group expiry_date"]//input', ['ctrl', 'a'], '32029');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_cvv"]//input', ['ctrl', 'a'], '967');
-        $I->pressKey('//div[@id="root"]/form//div[@class="card_view"]//div[@class="input_group card_number"]//input', ['ctrl', 'a'], '4532456618142692');
-        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"][@disabled]');
-        $I->tryToClick('//div[@id="root"]/form//button[@name="submitButton"]');
+        $I->switchToIFrame(Processing::PAYMENT_IFRAME);
+        $I->pressKey(Processing::CARD_VIEW_EXPIRY_DATE, ['ctrl', 'a'], '32029');
+        $I->pressKey(Processing::CARD_VIEW_CVV, ['ctrl', 'a'], '967');
+        $I->pressKey(Processing::CARD_VIEW_NUMBER, ['ctrl', 'a'], '4532456618142692');
+        $I->click(Processing::CARD_BRANDS);
+        $I->canSeeElement(Processing::SUBMIT_BUTTON . '[@disabled]');
+        $I->tryToClick(Processing::SUBMIT_BUTTON);
         $I->switchToIFrame();
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_8');
-        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case.php');
 
         //заполнить все поля правильно
-        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-        $I->pressKey('//div[@id="root"]/form//div[contains(@class, "zip_code")]//input', '98765');
-        $I->click('//div[@id="root"]/form//div[@class="card_brands"]');
-        $I->canSeeElement('//div[@id="root"]/form//button[@name="submitButton"]');
+        $I->switchToIFrame(Processing::PAYMENT_IFRAME);
+        $I->pressKey(Processing::CARD_VIEW_INDEX, '98765');
+        $I->click(Processing::CARD_BRANDS);
+        $I->canSeeElement(Processing::SUBMIT_BUTTON);
         $I->switchToIFrame();
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_9');
 
-        $I->switchToIFrame('//iframe[@id="solid-payment-form-iframe"]');
-        $I->retryClick('//div[@id="root"]/form//button[@name="submitButton"]');
-        $I->checkTablesInDB(include __DIR__ . '/fixture/case1.php');
-        //пароль каждый раз уникальный, поэтому убираем это поле со скрина
+        $I->switchToIFrame(Processing::PAYMENT_IFRAME);
+        $I->retryClick(Processing::SUBMIT_BUTTON);
+        $I->checkTablesInDB(include __DIR__ . '/fixture/case.php');
         $I->switchToIFrame();
+        //пароль каждый раз новый, поэтому убираем это поле со скрина
         $I->waitAndCantSeeVisualChanges(__FUNCTION__ . '_10', 4, 0.001, ['div.access-block > p.get-plan_pass']);
+
+        //$I->checkTablesInDB($provider_data['db']); //проверка созданной записи в базе
     }
 }
