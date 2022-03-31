@@ -7,9 +7,7 @@ use Codeception\Module\TestHelper;
 use lisa\Page\IronVPN\Home;
 
 /**
- * @group lisa
- * @group lisa_acceptance
- * @group lisa_acceptance_ironVPN
+ * @group ironVPN
  * @group UserFlow1
  */
 class UserFlow1Cest

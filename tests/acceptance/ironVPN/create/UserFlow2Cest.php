@@ -9,9 +9,7 @@ use lisa\Page\IronVPN\Home;
 use lisa\Page\IronVPN\Processing;
 
 /**
- * @group lisa
- * @group lisa_acceptance
- * @group lisa_acceptance_ironVPN
+ * @group ironVPN
  * @group UserFlow2
  */
 class UserFlow2Cest

@@ -5,7 +5,7 @@ use lisa\Page\Requests\RequestCreate;
 return [
     'case1' => [
         'setting' => [
-            'description' => 'Переход на страницу оплаты (с негативными кейсами email)',
+            'description' => 'Переход на страницу оплаты (с негативными кейсами модалки email)',
         ],
         'fixture_data' => include __DIR__ . '/fixture/case.php',
         'provider_data' => [
