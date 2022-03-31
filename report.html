@@ -1,0 +1,2608 @@
+<html>
+ <head>
+	<title>Test results</title>
+	<meta charset='utf-8'>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round&v2' rel='stylesheet' type='text/css'>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <style>
+		 .layout {
+		 margin: 0 auto;
+		 max-width: 1000px;
+
+		 }
+		 body { font-family: arial, serif; margin: 0; padding: 0; background: #ecf0f1; font-size: 20px; }
+		 h1,h2,h3 { font-family: arial, serif; color: #7f8c8d; }
+		 h1 { font-size: 2.5em; }
+		 h2 { font-size: 1.3em; }
+         h3 { font-size: 1em; color: #84BBDD; margin: 0.5em 0; }
+
+		 table { border: none; margin: 0; padding: 0; font-size: 0.9em;}
+		 .scenarioStepsTable .stepName { padding: 5px; }
+
+		 .scenarioStepsTable td {
+            background: #fff;
+		 }
+
+         .quiet {
+             color: #333;
+             font-size: 0.8em;
+         }
+
+         .screenshot {
+             max-height: 400px;
+             overflow-y: scroll;
+             display: block;
+         }
+         .screenshot img {
+             zoom: 0.5;
+         }
+
+         @media (max-width: 1200px) {
+           #toolbar-filter {
+             display: none !important;
+           }
+         }
+
+         .scenarioStepsTable .nostyle {
+             background: none;
+             border: none;
+         }
+
+		 p {
+		    cursor: pointer;
+		 }
+
+         .scenarioRow>td>p {
+             padding: 5px;
+         }
+
+         .scenarioStepsTable .failedStep {
+             padding: 10px;
+             background: #ecf0f1;
+             border: 2px solid #e74c3c;
+             border-radius: 0px;
+             color:  #e74c3c;
+         }
+
+         .scenarioStepsTable .error {
+             background:  #999;
+             padding: 10px;
+             color: #fff;
+             border-radius: 0px;
+         }
+
+         .scenarioStepsTable .error a {
+             color: #eef;
+         }
+
+         .scenarioStepsTable.substeps td {
+             background: #bdc3c7;
+         }
+
+		 .header { font-size: large; font-weight: bold; }
+		 p.scenarioSuccess {
+    		 background: rgb(157,213,58); /* Old browsers */
+		 }
+
+
+		 .scenario { color: black; }
+		 p.scenarioFailed, p.scenarioError { color: black;
+		   background: #e74c3c
+		 }
+
+		 table.scenarioFailed tr:last-child { font-weight: bold; }
+
+		 td.scenarioSuccess { color: green }
+		 td.scenarioFailed { color: red }
+		 .scenarioSkipped { color: teal; }
+		 .scenarioIncomplete { color: gray; }
+		 .scenarioStepsTable { margin-left: 10px; display: none; color: #333; }
+
+		 #stepContainerSummary {
+		 background: white;
+		 -webkit-border-radius: 5px;
+		 -moz-border-radius: 5px;
+		 border-radius: 5px;
+		 padding: 20px;
+		 }
+
+         .toggle {
+             background: rgba(255,255,255,0.5);
+             border-radius: 10px;
+             display: inline-block;
+             width: 20px;
+             height: 20px;
+             text-align: center;
+             margin: auto;
+             color: #666
+         }
+
+		 ul#toolbar-filter {
+            display: block;
+            position: fixed;
+            top: 20px;
+            left: 0px;
+            padding: 0px;
+		 }
+		 ul#toolbar-filter li {
+		    list-style: none;
+		    text-align: center;
+			padding: 20px;
+			background-color: #3498db;
+		 }
+		 ul#toolbar-filter li a, ul#toolbar-filter li a:hover, ul#toolbar-filter li a:visited {
+		    color: #34495e;
+		    text-decoration: none;
+		 }
+		 ul#toolbar-filter li.disabled {
+			background-color: #bdc3c7;
+		 }
+	 </style>
+
+  <script type="text/javascript">
+  var showAll = true;
+  function showHide(nodeId, linkObj)
+  {
+    var subObj = document.getElementById('stepContainer' + nodeId);
+    var toggle = linkObj.childNodes[0];
+    if (toggle.innerHTML != '-') {
+      toggle.innerHTML = '-';
+      subObj.style.display='block';
+      subObj.style.width = '100%';
+    } else {
+      toggle.innerHTML = '+';
+      subObj.style.display='none';
+    }
+  }
+
+  function showAllScenarios() {
+    var toolbar = document.getElementById('toolbar-filter');
+    for (var i = 0; i < toolbar.children.length; i++) {
+      toolbar.children[i].className = '';
+    }
+
+    var trs = document.getElementsByTagName('tr');
+    for(var z = 0; z < trs.length; z++) {
+      trs[z].style.display = '';
+    }
+    showAll = true;
+  }
+
+  function toggleScenarios(name, linkObj) {
+    var links = document.getElementById('toolbar-filter').children;
+    var rows = document.getElementsByClassName('scenarioRow');
+    if (showAll) {
+        for (var i = 0; i < links.length; i++) {
+            links[i].className = 'disabled';
+        }
+
+        for (var i = 0; i < rows.length; i++) {
+            rows[i].style.display = 'none';
+        }
+
+    }
+    showAll = false;
+
+    if (linkObj.className == '') {
+        linkObj.className = 'disabled';
+        for (var i = 0; i < rows.length; i++) {
+          if (rows[i].classList.contains(name)) {
+                rows[i].style.display = 'none';
+          }
+        }
+        return;
+    }
+    if (linkObj.className == 'disabled') {
+        linkObj.className = '';
+        for (var i = 0; i < rows.length; i++) {
+          if (rows[i].classList.contains(name)) {
+                rows[i].style.display = 'table-row';
+          }
+        }
+        return;
+    }
+
+  }
+  </script>
+ </head>
+
+ <body>
+   <ul id="toolbar-filter">
+     <li> <a href="#" title="Show all" onClick="showAllScenarios()">◯</a></li>
+     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 6</a></li>
+     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 0</a></li>
+     <li> <a href="#" title="Skipped" onClick="toggleScenarios('scenarioSkipped', this.parentElement)"><strong>S</strong> 0</a></li>
+     <li> <a href="#" title="Incomplete" onClick="toggleScenarios('scenarioIncomplete', this.parentElement)"><strong>I</strong> 0</a></li>
+   </ul>
+ <div class="layout">
+ <h1>Codeception Results <small><span style="color: green">OK</span> (217.5s)</small></h1>
+
+
+
+	 <table border="0" style="width: 100%;">
+		<tr>
+ <td>
+     <h3>Lisa.acceptance Tests</h3>
+ </td>
+</tr>   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('1', this)"><span class="toggle">+</span>
+          <span class="quiet">UserFlow1Cest &raquo;</span> Переход на страницу оплаты (с негативными кейсами модалки email) <span style="color: #34495e; font-size: 70%;">152.77s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer1">
+
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd050', this)"><span class="toggle">+</span> I load data for test <span style="color: #732E81">&quot;Codeception\\Example&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd050">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load fixture from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load mock from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I purge all queues</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I truncate tables in database <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;exceptions&quot;:[],&quot;common_log&quot;:[]}}</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/?source=test&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd193', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow1_1&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd193">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow1_1&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//section[@id=&quot;get_now_btn&quot;]//button//span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//button//span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd238', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow1_2&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd238">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow1_2&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd296', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd296">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkAgree&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//button//span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd40c', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow1_2&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd40c">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow1_2&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd469', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd469">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkUserEmail&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkUserEmail&quot;]//div[@class=&#039;input-box__input-list show&#039;]/div[text()=&#039;@gmail.com&#039;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//button//span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd5f3', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow1_3&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd5f3">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow1_3&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd650', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd650">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkUserEmail&quot;]/p/following-sibling::input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;qa&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd7b3', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow1_4&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd7b3">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow1_4&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkUserEmail&quot;]//div[@class=&#039;input-box__input-list show&#039;]/div[text()=&#039;qa@yahoo.com&#039;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd82a', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow1_5&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd82a">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow1_5&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd886', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd886">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkUserEmail&quot;]/p/following-sibling::input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;qa@test.com&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkAgree&quot;]//span/i&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddd9ff', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow1_6&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddd9ff">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow1_6&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//button//span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455feddda72', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow1_6&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455feddda72">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow1_6&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455fedddace', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455fedddace">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkAgree&quot;]//span/i&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455fedddc2e', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow1_7&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455fedddc2e">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow1_7&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//button//span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait for element <span style="color: #732E81">&quot;//h1[text()=&quot;Special Offer&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455fedddcb7', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow1_8&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455fedddcb7">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow1_8&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('62455fedddd14', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62455fedddd14">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+         
+         
+     </table>
+
+
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('2', this)"><span class="toggle">+</span>
+          <span class="quiet">UserFlow2Cest &raquo;</span> Переход на страницу оплаты и совершение оплаты (с негативными кейсами оплаты) <span style="color: #34495e; font-size: 70%;">37.01s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer2">
+
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601301ca9', this)"><span class="toggle">+</span> I load data for test <span style="color: #732E81">&quot;Codeception\\Example&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601301ca9">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load fixture from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load mock from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I purge all queues</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I truncate tables in database <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;exceptions&quot;:[],&quot;common_log&quot;:[]}}</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/?source=test&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601301d64', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow2_1&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601301d64">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow2_1&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//section[@id=&quot;get_now_btn&quot;]//button//span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkUserEmail&quot;]/p/following-sibling::input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;qa@test.com&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkAgree&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//button//span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait for element <span style="color: #732E81">&quot;//h1[text()=&quot;Special Offer&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601301e53', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow2_2&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601301e53">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow2_2&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601301eb1', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601301eb1">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//section[@id=&quot;trial&quot;]//a/span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait for element <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;,3</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">3</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;][@disabled]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_brands&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62456013020b9', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow2_3&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62456013020b9">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow2_3&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601302117', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601302117">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_number&quot;]//input&quot;,&quot;0&quot;,&quot;&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group expiry_date&quot;]//input&quot;,&quot;0&quot;,&quot;&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_cvv&quot;]//input&quot;,&quot;0&quot;,&quot;&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_brands&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601302347', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow2_4&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601302347">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow2_4&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('62456013023bd', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62456013023bd">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_number&quot;]//input&quot;,&quot;йцукенгASDF№!@#$%^&amp;*()_+-=~`-=\&quot;&#039;|}&quot;?{:&gt;&lt;&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group expiry_date&quot;]//input&quot;,&quot;-=\&quot;&#039;|}&quot;?{:&gt;&lt;!@#$%^&amp;*()_+-=~`йцукенгASDF№!&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_cvv&quot;]//input&quot;,&quot;!@#$%^&amp;*()_+-=~`-=\&quot;&#039;|}&quot;?{:&gt;&lt;йцукенгASDF№!&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_brands&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62456013025b1', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow2_5&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62456013025b1">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow2_5&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('624560130260f', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer624560130260f">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_number&quot;]//input&quot;,&quot;1234&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group expiry_date&quot;]//input&quot;,&quot;12&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_cvv&quot;]//input&quot;,&quot;99&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_brands&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62456013027fd', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow2_6&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62456013027fd">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow2_6&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('624560130285a', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer624560130285a">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_number&quot;]//input&quot;,&quot;9876543210987654&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group expiry_date&quot;]//input&quot;,&quot;879&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_cvv&quot;]//input&quot;,&quot;0000&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_brands&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;][@disabled]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601302a58', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow2_7&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601302a58">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow2_7&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601302ab6', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601302ab6">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_number&quot;]//input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;9876543210987654321&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group expiry_date&quot;]//input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;022022&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_cvv&quot;]//input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;111&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_brands&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;][@disabled]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;body_errors&quot;]/div[@id=&quot;cardNumber_error-text&quot;][text()=&quot;Please, check card number&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;body_errors&quot;]/div[@id=&quot;cardExpiryDate_error-text&quot;][text()=&quot;You entered an expiration date that has already passed&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;body_errors&quot;]/div[@id=&quot;cardCvv_error-text&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;][@disabled]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601302d66', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601302d66">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_number&quot;]//input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;9876543210987654321&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group expiry_date&quot;]//input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;032022&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_cvv&quot;]//input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;9999&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_brands&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;][@disabled]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;body_errors&quot;]/div[@id=&quot;cardNumber_error-text&quot;][text()=&quot;Please, check card number&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;body_errors&quot;]/div[@id=&quot;cardExpiryDate_error-text&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;body_errors&quot;]/div[@id=&quot;cardCvv_error-text&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;][@disabled]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601302fd6', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601302fd6">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group expiry_date&quot;]//input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;32029&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_cvv&quot;]//input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;967&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_number&quot;]//input&quot;,[&quot;ctrl&quot;,&quot;a&quot;],&quot;4532456618142692&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_brands&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;][@disabled]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62456013031df', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow2_8&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62456013031df">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow2_8&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('624560130323c', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer624560130323c">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[contains(@class, &quot;zip_code&quot;)]//input&quot;,&quot;98765&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_brands&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601303436', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow2_9&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601303436">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow2_9&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62456013034cc', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62456013034cc">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245601303636', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow2_10&quot;,4,0.001,[&quot;div.access-block &gt; p.get-plan_pass&quot;]</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245601303636">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">4</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow2_10&quot;,null,[&quot;div.access-block &gt; p.get-plan_pass&quot;],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+         
+         
+     </table>
+
+
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('3', this)"><span class="toggle">+</span>
+          <span class="quiet">UserFlow3Cest &raquo;</span> Переход на страницу оплаты и совершение оплаты через нижние ссылки <span style="color: #34495e; font-size: 70%;">24.12s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer3">
+
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b33d6f', this)"><span class="toggle">+</span> I load data for test <span style="color: #732E81">&quot;Codeception\\Example&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b33d6f">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load fixture from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load mock from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I purge all queues</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I truncate tables in database <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;exceptions&quot;:[],&quot;common_log&quot;:[]}}</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/?source=test&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b33f2c', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow3_1&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b33f2c">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow3_1&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I scroll to <span style="color: #732E81">&quot;//section[@id=&quot;get_now_mini&quot;]//button//span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b3409f', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow3_2&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b3409f">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow3_2&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//section[@id=&quot;get_now_mini&quot;]//button//span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkUserEmail&quot;]/p/following-sibling::input&quot;,&quot;qa@test.com&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//div[@id=&quot;checkAgree&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b3426b', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow3_3&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b3426b">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow3_3&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@role=&quot;dialog&quot;]//button//span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait for element <span style="color: #732E81">&quot;//h1[text()=&quot;Special Offer&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b343bf', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow3_4&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b343bf">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow3_4&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b344a6', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b344a6">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I scroll to <span style="color: #732E81">&quot;//section[@id=&quot;money-back&quot;]//a/span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b3481f', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow3_5&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b3481f">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow3_5&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//section[@id=&quot;money-back&quot;]//a/span[text()=&quot;Get IronVPN Now&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait for element <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;,3</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">3</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b349ad', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow3_6&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b349ad">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow3_6&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group expiry_date&quot;]//input&quot;,&quot;32029&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_cvv&quot;]//input&quot;,&quot;967&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_view&quot;]//div[@class=&quot;input_group card_number&quot;]//input&quot;,&quot;4532456618142692&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_brands&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I press key <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[contains(@class, &quot;zip_code&quot;)]//input&quot;,&quot;98765&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//div[@class=&quot;card_brands&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see element <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b34c7e', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow3_7&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b34c7e">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow3_7&quot;,null,[],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame <span style="color: #732E81">&quot;//iframe[@id=&quot;solid-payment-form-iframe&quot;]&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;//div[@id=&quot;root&quot;]/form//button[@name=&quot;submitButton&quot;]&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b34dd8', this)"><span class="toggle">+</span> I check tables in db <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;requests&quot;:[],&quot;requests_fields&quot;:[],&quot;request_errors&quot;:[],&quot;request_status_history&quot;:[],&quot;observers&quot;:[],&quot;grid_settings&quot;:[]}}</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b34dd8">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;requests_fields&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_errors&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;request_status_history&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;observers&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see num records <span style="color: #732E81">0,&quot;grid_settings&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;exceptions&quot;,&quot;message&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab from database <span style="color: #732E81">&quot;common_log&quot;,&quot;entity&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I assert false <span style="color: #732E81">false</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I switch to i frame</td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b3519e', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow3_8&quot;,1,1.69</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b3519e">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">1</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow3_8&quot;,null,[],[],1.69</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602b35244', this)"><span class="toggle">+</span> I wait and cant see visual changes <span style="color: #732E81">&quot;UserFlow3_9&quot;,3,0.001,[&quot;div.access-block &gt; p.get-plan_pass&quot;]</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602b35244">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I wait <span style="color: #732E81">3</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I cant see visual changes <span style="color: #732E81">&quot;UserFlow3_9&quot;,null,[&quot;div.access-block &gt; p.get-plan_pass&quot;],[],0.001</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+
+         
+         
+         
+     </table>
+
+
+    </td>
+   </tr>
+
+
+<tr>
+ <td>
+     <h3>Lisa.otherServices Tests</h3>
+ </td>
+</tr>   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('4', this)"><span class="toggle">+</span>
+          <span class="quiet">POSTCreateOrderCest &raquo;</span> Создание ордера <span style="color: #34495e; font-size: 70%;">0.7s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer4">
+
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602de8d54', this)"><span class="toggle">+</span> I load data for test <span style="color: #732E81">&quot;Codeception\\Example&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602de8d54">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load fixture from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load mock from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I purge all queues</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I truncate tables in database <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;exceptions&quot;:[],&quot;common_log&quot;:[]}}</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I send post <span style="color: #732E81">&quot;https://web2app.fx2.io/order/create&quot;,{&quot;_method&quot;:&quot;POST&quot;,&quot;landing_uuid&quot;:&quot;d782ee74-4b7d-4060-bb76-024549e98fbe&quot;,&quot;fbclid&quot;:&quot;&quot;,&quot;mail&quot;:&quot;qa%40test.com&quot;,&quot;raw_url&quot;:&quot;source%3Dtest&quot;,&quot;event_id&quot;:&quot;35776226&quot;}</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see response code is <span style="color: #732E81">200</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see json response equals <span style="color: #732E81">{&quot;res&quot;:&quot;fail&quot;}</span></td>
+      </tr>
+
+
+         
+         
+         
+     </table>
+
+
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('5', this)"><span class="toggle">+</span>
+          <span class="quiet">POSTCreateOrderCest &raquo;</span> Ошибка при неправильном методе <span style="color: #34495e; font-size: 70%;">0.69s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer5">
+
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('6245602ea4425', this)"><span class="toggle">+</span> I load data for test <span style="color: #732E81">&quot;Codeception\\Example&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer6245602ea4425">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load fixture from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load mock from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I purge all queues</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I truncate tables in database <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;exceptions&quot;:[],&quot;common_log&quot;:[]}}</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I send post <span style="color: #732E81">&quot;https://web2app.fx2.io/order/create&quot;,{&quot;_method&quot;:&quot;PUT&quot;,&quot;landing_uuid&quot;:&quot;d782ee74-4b7d-4060-bb76-024549e98fbe&quot;,&quot;fbclid&quot;:&quot;&quot;,&quot;mail&quot;:&quot;qa%40test.com&quot;,&quot;raw_url&quot;:&quot;source%3Dtest&quot;,&quot;event_id&quot;:&quot;35776226&quot;}</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see response code is <span style="color: #732E81">405</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see response contains <span style="color: #732E81">&quot;An Error Occurred: Method Not Allowed&quot;</span></td>
+      </tr>
+
+
+         
+         
+         
+     </table>
+
+
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <p class="scenarioSuccess" onclick="showHide('6', this)"><span class="toggle">+</span>
+          <span class="quiet">POSTCreateOrderCest &raquo;</span> Ошибка при отсутствии всех полей кроме метода <span style="color: #34495e; font-size: 70%;">2.23s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioSuccess">
+    <td>
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer6">
+
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('62456030e4ddf', this)"><span class="toggle">+</span> I load data for test <span style="color: #732E81">&quot;Codeception\\Example&quot;</span></p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer62456030e4ddf">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load fixture from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I load mock from dataprovider</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I purge all queues</td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I truncate tables in database <span style="color: #732E81">{&quot;lisa_fixtures&quot;:{&quot;exceptions&quot;:[],&quot;common_log&quot;:[]}}</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I send post <span style="color: #732E81">&quot;https://web2app.fx2.io/order/create&quot;,{&quot;_method&quot;:&quot;POST&quot;}</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see response code is <span style="color: #732E81">500</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I can see response contains <span style="color: #732E81">&quot;Server Error&quot;</span></td>
+      </tr>
+
+
+         
+         
+         
+     </table>
+
+
+    </td>
+   </tr>
+
+
+
+   <tr>
+    <td>
+	    <h2>Summary</h2>
+     <div id="stepContainerSummary">
+      <table border="0">
+       <tr>
+        <td width="250" class="scenarioSuccess">Successful scenarios:</td>
+        <td class="scenarioSuccessValue"><strong>6</strong></td>
+       </tr>
+       <tr>
+        <td class="scenarioFailed">Failed scenarios:</td>
+        <td class="scenarioFailedValue"><strong>0</strong></td>
+       </tr>
+       <tr>
+        <td class="scenarioSkipped">Skipped scenarios:</td>
+        <td class="scenarioSkippedValue"><strong>0</strong></td>
+       </tr>
+       <tr>
+        <td class="scenarioIncomplete">Incomplete scenarios:</td>
+        <td class="scenarioIncompleteValue"><strong>0</strong></td>
+       </tr>
+      </table>
+     </div>
+    </td>
+   </tr>
+  </table>
+ </div>
+ </body>
+</html>
